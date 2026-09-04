@@ -7,8 +7,8 @@ from pathlib import Path
 QUERIES = {
     "씨야": ['"씨야" 가수', '"씨야" 콘서트 OR 앨범 OR 신곡 OR 컴백'],
     "남규리": ['"남규리" 가수', '"남규리" 신곡 OR 앨범 OR 씨야'],
-    "김연지": ['"김연지" 가수 -코스프레 -모델', '"김연지" 신곡 OR 앨범 OR OST OR 뮤지컬'],
-    "이보람": ['"이보람" 가수', '"이보람" 신곡 OR 앨범 OR 씨야']
+    "김연지": ['"씨야 김연지"', '"김연지" 가수 "노래"', '"김연지" 신곡 OR 앨범 OR OST OR 뮤지컬'],
+    "이보람": ['"씨야 이보람"', '"이보람" 가수', '"이보람" 골때녀 OR 신곡 OR 앨범']
 }
 OUT = Path("data/news.json")
 
@@ -57,7 +57,7 @@ for category, queries in QUERIES.items():
         seen.add(key)
         clean.append(x)
     clean.sort(key=lambda x:x["pubDate"], reverse=True)
-    data[category]=clean[:10]
+    data[category]=clean[:5]
 
 data["updatedAt"]=datetime.now(timezone.utc).isoformat()
 OUT.parent.mkdir(parents=True, exist_ok=True)

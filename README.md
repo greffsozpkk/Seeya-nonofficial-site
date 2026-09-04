@@ -1,15 +1,8 @@
-# SEEYA ARCHIVE v3.9
+# SEEYA ARCHIVE v4.1
 
-## MUSIC direct-link fix
-사용자 제공 Melon albumId 반영:
-- Brilliant Change → 398227
-- See You Again → 1150052
-
-이제 MUSIC의 8개 음반/싱글은 모두 Melon 앨범 상세 페이지로 직접 연결됩니다.
-
-## `그럼에도, 우린` 커버 수정
-기존 Cover Art Archive 이미지가 미리보기에서 깨져 보여
-2026-03-30 발매 기사에 사용된 실제 프로모션 이미지를 외부 참조하도록 교체했습니다.
-
-현재 커버 URL:
-https://www.bntnews.co.kr/data/bnt/image/2026/03/30/bnt202603300083.jpeg
+## HISTORY redesign
+- 기존 단순 연도별 타임라인을 5개 스토리 챕터로 재구성
+- 각 챕터 안에 ALBUM / MUSIC / AWARD / STAGE / REUNION / CONCERT 마일스톤 배치
+- 2026 THE FAN 공개 전국투어 일정 전체 반영
+- 마지막을 연도로 닫지 않고 `NOW · AND THE STORY GOES ON`으로 구성
+- 기존 v4.0 NEWS, v3.9 MUSIC direct links, 로고, TAROT 구성 유지

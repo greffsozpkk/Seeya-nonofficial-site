@@ -562,6 +562,46 @@ main{margin-left:225px}.page{max-width:1160px;margin:auto;padding:50px 46px 90px
   color:#6f4354!important;
 }
 
+
+/* v4.1 HISTORY — story + milestones */
+.history-hero{padding:76px 0 50px;border-bottom:1px solid var(--line)}
+.history-hero h1{font-size:clamp(52px,8vw,92px);margin:8px 0 12px;letter-spacing:-.045em}
+.history-hero .history-kicker{font-family:'Gowun Batang',serif;font-size:clamp(20px,3vw,31px);color:var(--wine);margin:0 0 20px}
+.history-intro{max-width:700px;font-size:15px;line-height:2;color:var(--muted)}
+.history-story{position:relative;padding:24px 0 80px}
+.history-story:before{content:"";position:absolute;left:24px;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--line),#dca6bc 82%,rgba(220,166,188,0))}
+.history-chapter{position:relative;margin:52px 0 88px;padding-left:78px;max-width:920px}
+.history-chapter:before{content:"";position:absolute;left:18px;top:8px;width:13px;height:13px;border-radius:50%;background:#fff;border:3px solid #d59bb3;box-shadow:0 0 0 7px rgba(213,155,179,.12)}
+.history-no{font-size:10px;letter-spacing:.22em;color:#b78097;font-weight:700}
+.history-years{font-size:10px;letter-spacing:.16em;color:var(--muted);margin-left:10px}
+.history-chapter h2{font-family:'Gowun Batang',serif;font-size:clamp(31px,5vw,52px);line-height:1.15;margin:9px 0 4px;color:var(--ink)}
+.history-sub{font-family:'Gowun Batang',serif;font-size:18px;color:#9a6178;margin-bottom:25px}
+.history-copy{max-width:730px;font-size:14px;line-height:2.05;color:#62545a}
+.history-copy p{margin:0 0 13px}
+.history-quote{font-family:'Gowun Batang',serif;font-size:clamp(19px,3vw,27px);line-height:1.65;color:#86566a;margin:30px 0 33px;padding-left:20px;border-left:2px solid #e1afc2}
+.milestones{margin-top:34px;max-width:790px}
+.milestones-title{font-size:9px;letter-spacing:.24em;color:#b17b91;font-weight:700;margin-bottom:12px}
+.milestone{display:grid;grid-template-columns:112px 76px 1fr;gap:12px;align-items:start;padding:13px 0;border-top:1px solid var(--line)}
+.milestone:last-child{border-bottom:1px solid var(--line)}
+.m-date{font-size:11px;font-weight:700;color:#8d6575;letter-spacing:.02em}
+.m-type{font-size:8px;letter-spacing:.14em;border:1px solid #e7c7d4;border-radius:20px;text-align:center;padding:4px 6px;color:#a66d84;background:rgba(255,255,255,.5)}
+.m-text{font-size:12px;line-height:1.65;color:#54484d}
+.m-text b{color:var(--ink)}
+.history-now{position:relative;padding:15px 0 130px 78px}
+.history-now:before{content:"";position:absolute;left:18px;top:12px;width:13px;height:13px;border-radius:50%;background:#d59bb3;box-shadow:0 0 0 8px rgba(213,155,179,.13)}
+.history-now .now-label{font-size:10px;letter-spacing:.3em;color:#ad748c;font-weight:700}
+.history-now h2{font-family:'Gowun Batang',serif;font-size:clamp(34px,6vw,64px);margin:10px 0 18px}
+.history-now p{font-family:'Gowun Batang',serif;font-size:17px;line-height:1.9;color:#80616d}
+@media(max-width:700px){
+ .history-hero{padding-top:48px}
+ .history-story:before{left:11px}
+ .history-chapter{padding-left:38px;margin:42px 0 70px}
+ .history-chapter:before,.history-now:before{left:5px}
+ .history-now{padding-left:38px}
+ .milestone{grid-template-columns:1fr;gap:5px;padding:14px 0}
+ .m-type{width:max-content}
+}
+
 </style></head><body>
 <aside><a class="brand logo-brand" href="#/"><img src="data:image/png;base64,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" alt="SEEYA"><small>UNOFFICIAL ARCHIVE</small></a><nav>
 <a href="#/">HOME</a>
@@ -645,7 +685,119 @@ function home(){return `<div class="home-aespa">
 function today(){return W(`<div class="section" style="border:0"><div class="eye">DAILY EXPERIENCE</div><h1 style="font-size:55px">TODAY'S SEEYA</h1><p class="lead">하루에 한 번, 씨야의 노래와 감정을 새로운 방식으로 만나보세요.</p></div>${todayBlock()}`)}
 function tarotPage(){return W(`<div class="tarothead"><div class="eye">SEEYA MAJOR ARCANA</div><h2>노래로 다시 읽는 22개의 마음</h2><p>현재는 카드 디자인을 미리 확인하기 위해 THE WORLD 이미지를 22장 전체에 공통 적용했습니다. 이후 번호별 완성 이미지를 받으면 각 카드에 개별 교체합니다.</p><button class="btn" onclick="showCard(Math.floor(Math.random()*22))">한 장 뽑기</button></div><div class="tarotgrid">${tarot.map(t=>`<div class="tcard" onclick="showCard(${t.n})"><div class="tcard-visual"><img src="assets/tarot/21-world-preview.png" alt="${t.name} tarot preview" loading="lazy"><div class="tcard-preview-tag">${String(t.n).padStart(2,"0")} · PREVIEW</div></div><div class="tcard-info"><div class="eye">${String(t.n).padStart(2,"0")}</div><h3>${t.name}</h3><small>${t.theme}</small><div class="song">♪ ${t.song}</div><div class="rel">RELATED<br>${t.related.join(" · ")}</div></div></div>`).join("")}</div><div class="notice" style="margin-top:22px">현재 카드 이미지는 디자인 미리보기용 공통 이미지입니다. 번호별 최종 카드가 준비되면 00–21 각각 교체할 예정입니다.</div>`)}
 function music(){return W(`<div class="section" style="border:0"><div class="eye">DISCOGRAPHY</div><h1 style="font-size:55px">MUSIC</h1><p class="lead">정규·미니·베스트 앨범을 커버 이미지와 함께 찾아가는 공간입니다.</p></div><div class="albums">${albums.map(a=>`<a class="album" href="${a.url}" target="_blank" rel="noopener noreferrer"><div class="album-cover"><img src="${a.cover}" alt="${a.name} album cover" loading="lazy"></div><div class="album-info"><div class="eye">${a.type}</div><b>${a.name}</b><small>${a.meta}</small><span class="album-link">Melon에서 감상하기 →</span></div></a>`).join("")}</div><div class="notice" style="margin-top:22px">음반 카드를 선택하면 Melon에서 해당 앨범 또는 싱글을 감상할 수 있습니다. 커버 이미지는 외부 원본을 참조하며 저장소에는 복제하지 않습니다.</div>`) }
-function historyPage(){return W(`<div class="section" style="border:0"><div class="eye">2006 — 2026</div><h1 style="font-size:55px">HISTORY</h1><p class="lead">씨야라는 이름이 지나온 시간을 차분하게 기록합니다.</p></div><div class="timeline">${history.map(x=>`<div class="time"><div class="year">${x[0]}</div><p>${x[1]}</p></div>`).join("")}</div>`)}
+function historyPage(){return W(`
+<div class="history-hero">
+  <div class="eye">SEEYA · HISTORY</div>
+  <h1>HISTORY</h1>
+  <div class="history-kicker">Our story, still being written.</div>
+  <p class="history-intro">씨야의 이야기는 한 번 끝난 적이 있다. 그리고 아주 오랜 시간이 지나, 다시 시작됐다.<br>노래로 만났던 순간부터 다시 같은 이름으로 무대에 서기까지. SEEYA의 지나온 시간, 그리고 계속될 이야기.</p>
+</div>
+
+<div class="history-story">
+  <section class="history-chapter">
+    <div><span class="history-no">01 · FIRST MIND</span><span class="history-years">2006</span></div>
+    <h2>처음, 세 목소리가 하나가 되다</h2>
+    <div class="history-sub">모든 이야기는 세 사람의 목소리에서 시작됐다.</div>
+    <div class="history-copy">
+      <p>2006년, 남규리·김연지·이보람 세 사람의 목소리가 <b>씨야(SeeYa)</b>라는 이름으로 만났다.</p>
+      <p>첫 정규앨범 <i>The First Mind</i>와 ‘여인의 향기’로 시작된 씨야의 음악은 애절한 감성과 세 사람의 하모니로 빠르게 사랑받았다. 이어 ‘구두’, ‘미친 사랑의 노래’ 등이 사랑받으며 데뷔 첫해부터 자신들만의 색을 가진 여성 보컬 그룹으로 자리 잡았다.</p>
+      <p>그리고 그 시작은 여러 시상식의 신인상으로 이어졌다.</p>
+    </div>
+    <div class="milestones">
+      <div class="milestones-title">MILESTONES</div>
+      <div class="milestone"><span class="m-date">2006.02.24</span><span class="m-type">ALBUM</span><span class="m-text">정규 1집 <b>The First Mind</b> 발매</span></div>
+      <div class="milestone"><span class="m-date">2006</span><span class="m-type">MUSIC</span><span class="m-text"><b>여인의 향기 · 구두 · 미친 사랑의 노래</b> 활동</span></div>
+      <div class="milestone"><span class="m-date">2006</span><span class="m-type">AWARD</span><span class="m-text"><b>골든디스크 신인상</b></span></div>
+      <div class="milestone"><span class="m-date">2006</span><span class="m-type">AWARD</span><span class="m-text"><b>SBS 가요대전 여자 신인상</b></span></div>
+      <div class="milestone"><span class="m-date">2006</span><span class="m-type">AWARD</span><span class="m-text"><b>서울가요대상 신인상 · 아시아송페스티벌 신인상</b></span></div>
+    </div>
+  </section>
+
+  <section class="history-chapter">
+    <div><span class="history-no">02 · OUR DAYS</span><span class="history-years">2007 — 2009</span></div>
+    <h2>노래마다 추억이 되어가던 시간</h2>
+    <div class="history-sub">신인에서, 한 시대를 기억하게 하는 목소리로.</div>
+    <div class="history-copy">
+      <p>데뷔의 성공은 시작에 불과했다. 2007년 정규 2집 <i>Lovely Sweet Heart</i>와 함께 ‘사랑의 인사’, ‘결혼할까요’가 이어졌고, 이후 ‘슬픈 발걸음’, ‘가니’, ‘Hot Girl’, ‘그 놈 목소리’까지 씨야의 음악은 폭을 넓혀갔다.</p>
+      <p>발라드부터 미디엄 템포와 댄스곡까지 음악은 계속 달라졌지만, 세 사람의 목소리가 만났을 때 느껴지는 <b>‘씨야의 감성’</b>은 변하지 않았다.</p>
+      <p>2007년에는 ‘사랑의 인사’로 MKMF 여자그룹상을, 골든디스크에서 디지털음원부문 본상을 수상하며 대표 여성 보컬 그룹으로 자리매김했다.</p>
+    </div>
+    <div class="milestones">
+      <div class="milestones-title">MILESTONES</div>
+      <div class="milestone"><span class="m-date">2007.05.25</span><span class="m-type">ALBUM</span><span class="m-text">정규 2집 <b>Lovely Sweet Heart</b> 발매</span></div>
+      <div class="milestone"><span class="m-date">2007.11.17</span><span class="m-type">AWARD</span><span class="m-text"><b>MKMF 여자그룹상</b> · 사랑의 인사</span></div>
+      <div class="milestone"><span class="m-date">2007.12.14</span><span class="m-type">AWARD</span><span class="m-text"><b>골든디스크 디지털음원부문 본상</b></span></div>
+      <div class="milestone"><span class="m-date">2008.01.02</span><span class="m-type">ALBUM</span><span class="m-text">2.5집 <b>California Dream</b> 발매</span></div>
+      <div class="milestone"><span class="m-date">2008.09.26</span><span class="m-type">ALBUM</span><span class="m-text">정규 3집 <b>Brilliant Change</b> 발매</span></div>
+      <div class="milestone"><span class="m-date">2009.10.26</span><span class="m-type">ALBUM</span><span class="m-text">미니앨범 <b>Rebloom</b> 발매</span></div>
+    </div>
+  </section>
+
+  <section class="history-chapter">
+    <div><span class="history-no">03 · SEE YOU AGAIN</span><span class="history-years">2010 — 2011</span></div>
+    <h2>끝이라고 생각했던 인사</h2>
+    <div class="history-sub">See You Again.</div>
+    <div class="history-copy">
+      <p>함께 달려온 시간 속에서 씨야에게도 변화가 찾아왔다.</p>
+      <p>그리고 2011년, <i>See You Again</i>. 다시 세 사람이 함께한 마지막 앨범은 제목 그대로 팬들에게 건네는 하나의 인사처럼 남았다.</p>
+      <p>마지막 무대가 끝나고 씨야라는 이름의 시간도 멈췄다. 수많은 노래와 추억을 남긴 채, 그렇게 씨야의 첫 번째 이야기는 끝나는 것처럼 보였다.</p>
+    </div>
+    <div class="history-quote">그때는 정말 마지막인 줄 알았다.</div>
+    <div class="milestones">
+      <div class="milestones-title">MILESTONES</div>
+      <div class="milestone"><span class="m-date">2011.01.21</span><span class="m-type">ALBUM</span><span class="m-text"><b>See You Again</b> 발매</span></div>
+      <div class="milestone"><span class="m-date">2011.01.30</span><span class="m-type">STAGE</span><span class="m-text">SBS <b>인기가요 마지막 음악방송 무대</b></span></div>
+    </div>
+  </section>
+
+  <section class="history-chapter">
+    <div><span class="history-no">04 · AGAIN, BUT NOT YET</span><span class="history-years">2020</span></div>
+    <h2>다시 만났지만, 아직은 아니었던</h2>
+    <div class="history-sub">아홉 해 만의 세 사람.</div>
+    <div class="history-copy">
+      <p>그렇게 9년이 흘렀다. 2020년 JTBC <b>슈가맨3</b>에서 남규리, 김연지, 이보람이 다시 씨야라는 이름으로 한 무대에 섰다.</p>
+      <p>오랜 시간이 흘렀음에도 세 사람의 목소리는 여전히 씨야였고, 이 만남은 추억으로만 남아 있던 이름을 다시 움직이게 했다. 실제로 프로젝트 앨범을 통한 재결합까지 추진됐지만, 계획은 결국 성사되지 못했다.</p>
+      <p>다시 만났지만, 다시 시작하기에는 아직 조금 이른 시간이었던 셈이다.</p>
+    </div>
+    <div class="history-quote">다시 만났다는 것만으로도, 기다릴 이유는 충분했다.</div>
+    <div class="milestones">
+      <div class="milestones-title">MILESTONES</div>
+      <div class="milestone"><span class="m-date">2020.02</span><span class="m-type">REUNION</span><span class="m-text">JTBC <b>슈가맨3 · 완전체 무대</b></span></div>
+      <div class="milestone"><span class="m-date">2020</span><span class="m-type">REUNION</span><span class="m-text"><b>씨야 프로젝트 앨범 및 재결합 추진</b></span></div>
+      <div class="milestone"><span class="m-date">2020.11.25</span><span class="m-type">REUNION</span><span class="m-text"><b>재결합 프로젝트 무산 발표</b></span></div>
+    </div>
+  </section>
+
+  <section class="history-chapter">
+    <div><span class="history-no">05 · FIRST, AGAIN</span><span class="history-years">NOW</span></div>
+    <h2>그럼에도, 우린 다시</h2>
+    <div class="history-sub">끝났던 이야기가 아니라, 다시 쓰이기 시작한 이야기.</div>
+    <div class="history-copy">
+      <p>그리고 또 시간이 흘렀다. 데뷔 20주년을 맞은 남규리, 김연지, 이보람은 다시 한번 <b>씨야</b>라는 이름으로 노래하기 시작했다.</p>
+      <p>2026년 3월 30일 ‘그럼에도, 우린’. 그리고 5월 14일, 15년 만의 정규앨범 <i>First, Again</i>.</p>
+      <p>과거의 씨야를 그대로 되풀이하기보다 긴 시간을 지나온 지금의 세 사람이 부르는 새로운 씨야의 음악이 시작됐다. 그리고 그 이야기는 음반에서 끝나지 않았다. 팬들과 다시 만나는 20주년 전국투어 <b>THE FAN</b>이 서울에서 시작되어 전국으로 이어진다.</p>
+    </div>
+    <div class="milestones">
+      <div class="milestones-title">MILESTONES · THE SECOND CHAPTER</div>
+      <div class="milestone"><span class="m-date">2026.03.30</span><span class="m-type">SINGLE</span><span class="m-text"><b>그럼에도, 우린</b> 발매</span></div>
+      <div class="milestone"><span class="m-date">2026.05.14</span><span class="m-type">ALBUM</span><span class="m-text">정규 4집 <b>First, Again</b> 발매</span></div>
+      <div class="milestone"><span class="m-date">2026.08.29–30</span><span class="m-type">CONCERT</span><span class="m-text"><b>THE FAN · SEOUL</b> · 경희대학교 평화의전당</span></div>
+      <div class="milestone"><span class="m-date">2026.09.05</span><span class="m-type">CONCERT</span><span class="m-text"><b>THE FAN · BUSAN</b> · KBS부산홀</span></div>
+      <div class="milestone"><span class="m-date">2026.09.12</span><span class="m-type">CONCERT</span><span class="m-text"><b>THE FAN · DAEGU</b> · EXCO 5층 컨벤션홀</span></div>
+      <div class="milestone"><span class="m-date">2026.10.04</span><span class="m-type">CONCERT</span><span class="m-text"><b>THE FAN · GOYANG</b> · 킨텍스 제2전시장 10홀</span></div>
+      <div class="milestone"><span class="m-date">2026.10.10</span><span class="m-type">CONCERT</span><span class="m-text"><b>THE FAN · CHEONGJU</b> · 청주대학교 석우문화체육관</span></div>
+      <div class="milestone"><span class="m-date">2026.10.17</span><span class="m-type">CONCERT</span><span class="m-text"><b>THE FAN · SUWON</b> · 경희대학교 국제캠퍼스 선승관</span></div>
+      <div class="milestone"><span class="m-date">2026.10.31</span><span class="m-type">CONCERT</span><span class="m-text"><b>THE FAN · INCHEON</b> · 인천남동체육관</span></div>
+    </div>
+  </section>
+
+  <section class="history-now">
+    <div class="now-label">NOW · AND THE STORY GOES ON</div>
+    <h2>계속되는 이야기.</h2>
+    <p>다시 만난 세 사람의 이야기는<br>아직 쓰이는 중입니다.</p>
+  </section>
+</div>
+`) }
 function members(){return W(`<div class="section" style="border:0"><div class="eye">MEMBERS</div><h1 style="font-size:55px">세 사람, 다시 씨야.</h1><p class="lead">First, Again의 유쾌한 회사 콘셉트와 함께 세 멤버의 프로필을 소개합니다.</p></div><div class="membergrid">
 
 <div class="membercard"><div class="member-photo"><img src="https://unavatar.io/youtube/UC_naRJKw5Isgpv5nF8yNXLw" alt="남규리 유튜브 프로필 사진" loading="lazy"></div><div class="member-role">대표</div><h3>남규리</h3><div class="eng">NAM GYU-RI</div><div class="facts"><div class="fact"><b>활동</b><span>가수 · 배우</span></div><div class="fact"><b>생일</b><span>4월 26일</span></div></div><div class="socials"><a class="social" href="https://www.instagram.com/nam_gyuri/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8Zm5.4-1.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UC_naRJKw5Isgpv5nF8yNXLw" target="_blank" rel="noopener noreferrer" title="남규리의 귤멍"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a></div><div class="channel-name">YouTube · 남규리의 귤멍</div></div>
@@ -705,7 +857,7 @@ function parseCSV(text){
 let scheduleItems=[];
 let scheduleMember="전체";
 
-const NEWS_FALLBACK={"updatedAt":"2026-09-04T21:30:00+09:00","씨야":[{"title":"“기다린 시간만, 15년이야”…씨야, 다시 무대로 20주년","source":"디스패치","pubDate":"2026-09-01T09:21:00+09:00","link":"https://www.dispatch.co.kr/","description":"데뷔 20주년과 재결합 후 전국투어 무대에 오른 씨야의 현재를 다룬 기사입니다."},{"title":"15년을 기다린 씨야의 20주년, '더팬'으로 다시 증명한 건재함","source":"티브이데일리","pubDate":"2026-08-29T21:24:00+09:00","link":"https://m.news.nate.com/view/20260829n11390?cpcd=&list=recent&mid=e02","description":"서울에서 열린 20주년 전국투어 THE FAN 공연 리뷰입니다."},{"title":"씨야, 데뷔 20주년 전국투어 'THE FAN' 서울 공연으로 개막","source":"한국사회복지저널","pubDate":"2026-08-28T20:30:00+09:00","link":"https://www.ksw-news.com/news/articleView.html?idxno=3028276","description":"서울을 시작으로 부산·대구·고양·청주·수원·인천으로 이어지는 전국투어 소식입니다."}],"남규리":[{"title":"씨야 남규리, 6일 신곡 '우리 사랑 그런 거 해요' 발매","source":"뉴스핌","pubDate":"2026-09-04T10:57:00+09:00","link":"https://www.newspim.com/news/view/20260904000333","description":"남규리가 9월 6일 새로운 디지털 앨범을 발매한다는 소식입니다."},{"title":"남규리, 6일 신곡 ‘우.사.그’ 발매…두 컨셉트 뮤비 공개","source":"Moment-K","pubDate":"2026-09-04T13:30:00+09:00","link":"https://www.moment-k.co.kr/news/musics/12144377","description":"하나의 멜로디를 서로 다른 두 콘셉트로 편곡한 신곡 관련 기사입니다."},{"title":"남규리, 9월 6일 신곡 발표…‘극과 극’ 보컬 변신","source":"bnt뉴스","pubDate":"2026-09-04T09:55:00+09:00","link":"https://www.bntnews.co.kr/article/view/bnt202609040164","description":"솔로 신곡과 씨야 전국투어 활동을 함께 다룬 기사입니다."}],"김연지":[{"title":"김연지, 새 싱글 '노래' 발매","source":"벅스","pubDate":"2026-08-29T18:00:00+09:00","link":"https://music.bugs.co.kr/album/4154269","description":"김연지가 직접 작사·작곡에 참여한 싱글 '노래'가 8월 29일 발매됐습니다."},{"title":"김연지 '노래' — 8월 29일 발매","source":"멜론","pubDate":"2026-08-29T18:00:00+09:00","link":"https://www.melon.com/album/detail.htm?albumId=14493829","description":"김연지의 2026년 8월 29일 발매 싱글 앨범 정보입니다."},{"title":"씨야 15년 만의 재결합, 김연지 “세 명 목소리 다시 합쳐져 큰 감동”","source":"연합뉴스","pubDate":"2026-03-30T06:00:00+09:00","link":"https://www.yna.co.kr/amp/view/AKR20260326174000005","description":"씨야 재결합 과정과 김연지의 소감을 담은 인터뷰입니다."}],"이보람":[{"title":"이보람, ‘빛의 반대편에서’로 대체 불가 가창력 증명","source":"스포츠경향","pubDate":"2026-08-07T18:39:00+09:00","link":"https://sports.khan.co.kr/article/202608071839003","description":"Simply K-Pop 시즌2에서 신곡 무대를 선보인 소식입니다."},{"title":"이보람 \"부를 때마다 죽을 맛\"…신곡 비하인드 공개","source":"iMBC연예","pubDate":"2026-08-04T15:30:00+09:00","link":"https://enews.imbc.com/News/ViewAmp/513650","description":"라디오에서 '빛의 반대편에서'의 제작·가창 비하인드를 전한 기사입니다."},{"title":"이보람, 신곡 '빛의 반대편에서' 오늘(2일) 발매","source":"iMBC연예","pubDate":"2026-08-02T17:00:00+09:00","link":"https://enews.imbc.com/News/ViewAmp/513423","description":"이보람의 새 싱글 발매 소식입니다."}]};
+const NEWS_FALLBACK={"updatedAt":"2026-09-04T23:29:00+09:00","씨야":[{"title":"씨야, 20주년 전국투어 'THE FAN' 서울 공연으로 포문","source":"스포츠경향","pubDate":"2026-08-28T21:23:00+09:00","link":"https://v.daum.net/v/20260828212327829","description":"씨야가 서울을 시작으로 부산·대구·고양·청주·수원·인천을 잇는 20주년 전국투어를 시작했습니다."},{"title":"[가요소식] 씨야, 내일 서울서 20주년 전국투어 시작","source":"연합뉴스","pubDate":"2026-08-28T10:13:00+09:00","link":"https://www.yna.co.kr/view/AKR20260828056200005","description":"데뷔 20주년 기념 전국투어 'THE FAN' 서울 공연 개막 소식입니다."},{"title":"씨야, 20주년 콘서트 포문은 '사랑의 인사'로","source":"티브이데일리","pubDate":"2026-08-29T18:59:00+09:00","link":"https://m.tvdaily.co.kr/article.php?aid=17879963501799834010","description":"서울 공연 첫날 현장에서 씨야가 팬들에게 전한 이야기와 무대 소식을 담은 기사입니다."},{"title":"씨야 김연지-남규리-이보람, 관객 홀리는 무대","source":"스포츠투데이","pubDate":"2026-08-29T18:51:00+09:00","link":"https://v.daum.net/v/20260829185147846","description":"20주년 전국투어 'THE FAN' 서울 공연 현장 사진 기사입니다."},{"title":"'더팬' 씨야 이보람 \"20주년, 생각도 못해\"","source":"티브이데일리","pubDate":"2026-08-29T20:15:00+09:00","link":"https://m.tvdaily.co.kr/article.php?aid=17880021401799852010","description":"서울 공연에서 멤버들이 데뷔 20주년을 함께 축하한 현장 기사입니다."}],"남규리":[{"title":"씨야 남규리, 솔로 신보 '우리 사랑 그런 거 해요' 발매","source":"이데일리","pubDate":"2026-09-04T15:08:00+09:00","link":"https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03824486645576840","description":"남규리가 9월 6일 새 디지털 앨범 '우리 사랑 그런 거 해요'를 공개한다는 소식입니다."},{"title":"남규리, 6일 신곡 '우.사.그' 발매…두 컨셉트 뮤비 공개","source":"스타투데이","pubDate":"2026-09-04T13:30:00+09:00","link":"https://m.mk.co.kr/news/musics/12144377","description":"같은 멜로디를 서로 다른 두 스타일로 편곡한 신보와 뮤직비디오 소식입니다."},{"title":"씨야 남규리, 6일 신곡 '우리 사랑 그런 거 해요' 발매","source":"뉴스핌","pubDate":"2026-09-04T10:57:00+09:00","link":"https://www.newspim.com/news/view/20260904000333","description":"씨야 전국투어와 함께 이어지는 남규리의 솔로 신곡 발매 소식입니다."},{"title":"극과 극의 남규리…하나의 멜로디, 두 개의 파격","source":"OSEN","pubDate":"2026-09-04T09:41:00+09:00","link":"https://v.daum.net/v/20260904094109864","description":"신곡 '우리 사랑 그런 거 해요'의 두 가지 콘셉트와 편곡 방향을 소개한 기사입니다."},{"title":"남규리, 한돈 광고모델 발탁…콘서트 준비 근황","source":"뉴시스","pubDate":"2026-09-04T00:40:00+09:00","link":"https://nwww.newsis.com/view/NISX20260903_0003775236","description":"광고 모델 발탁과 함께 씨야 콘서트를 준비 중인 최근 근황을 전한 기사입니다."}],"김연지":[{"title":"김연지, 새 싱글 '노래' 발매","source":"벅스","pubDate":"2026-08-29T18:00:00+09:00","link":"https://music.bugs.co.kr/album/4154269","description":"김연지가 직접 작사·작곡에 참여한 새 싱글 '노래'의 발매 정보입니다."},{"title":"김연지 '노래' — 8월 29일 발매","source":"멜론","pubDate":"2026-08-29T18:00:00+09:00","link":"https://www.melon.com/album/detail.htm?albumId=14493829","description":"김연지의 2026년 8월 29일 발매 싱글 앨범 정보입니다."},{"title":"씨야 김연지 \"남규리, 10시간 연습 후에도 트레이닝\"","source":"스포츠투데이","pubDate":"2026-08-29T18:40:00+09:00","link":"https://www.stoo.com/article.php?aid=108590597989","description":"씨야 20주년 콘서트 준비 과정과 멤버들의 연습 이야기를 전한 현장 기사입니다."},{"title":"씨야 김연지, 20주년 콘서트 시작합니다","source":"스포츠투데이","pubDate":"2026-08-29T18:39:00+09:00","link":"https://v.daum.net/v/20260829183946680","description":"씨야 전국투어 'THE FAN' 서울 공연에서의 김연지 현장 사진 기사입니다."},{"title":"씨야 15년 만의 재결합, 김연지 \"세 명 목소리 다시 합쳐져 큰 감동\"","source":"연합뉴스","pubDate":"2026-03-30T06:00:00+09:00","link":"https://www.yna.co.kr/amp/view/AKR20260326174000005","description":"씨야 재결합 과정과 세 멤버가 다시 노래하게 된 소감을 담은 인터뷰입니다."}],"이보람":[{"title":"씨야 이보람, 스포츠 예능 첫 도전…'골때녀' 핸드볼컵 합류","source":"MHN스포츠","pubDate":"2026-09-03T20:18:00+09:00","link":"https://v.daum.net/v/20260903201820636","description":"이보람이 FC발라드림 새 멤버로 합류해 데뷔 후 처음으로 스포츠 예능에 도전합니다."},{"title":"'골때녀' 이보람, FC발라드림 새 멤버 합류","source":"bnt뉴스","pubDate":"2026-09-03T07:42:00+09:00","link":"https://www.bntnews.co.kr/article/view/bnt202609030041","description":"이보람의 핸드볼컵 출전과 9월 9일 첫 경기 방송 소식을 전한 기사입니다."},{"title":"씨야 이보람, 'THE FAN' 서울 무대","source":"티브이데일리","pubDate":"2026-08-29T18:30:00+09:00","link":"https://news.nate.com/view/20260829n10284","description":"씨야 20주년 전국투어 서울 공연에서 이보람의 무대를 담은 현장 기사입니다."},{"title":"이보람, '빛의 반대편에서' 대체 불가 가창력 증명","source":"스포츠경향","pubDate":"2026-08-07T18:39:00+09:00","link":"https://sports.khan.co.kr/article/202608071839003","description":"Simply K-Pop 시즌2에서 신곡 '빛의 반대편에서' 라이브 무대를 선보인 소식입니다."},{"title":"이보람 \"부를 때마다 죽을 맛\"…신곡 비하인드 공개","source":"iMBC연예","pubDate":"2026-08-04T15:30:00+09:00","link":"https://enews.imbc.com/News/ViewAmp/513650","description":"라디오에서 '빛의 반대편에서'의 제작 과정과 고난도 가창 비하인드를 전한 기사입니다."}]};
 
 let currentNewsCategory="씨야";
 
@@ -728,7 +880,7 @@ function renderNews(items){
   const box=document.getElementById("newsBox");
   if(!box)return;
   if(!items?.length){box.innerHTML='<div class="news-empty">최근 검색된 기사가 없습니다.</div>';return;}
-  box.innerHTML=`<div class="news-list">${items.slice(0,10).map(item=>{
+  box.innerHTML=`<div class="news-list">${items.slice(0,5).map(item=>{
     const p=newsDateParts(item.pubDate);
     return `<a class="news-card" href="${esc(item.link)}" target="_blank" rel="noopener noreferrer">
       <div class="news-date"><strong>${p.day}</strong><span>${p.ym}</span></div>
