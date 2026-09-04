@@ -400,6 +400,53 @@ main{margin-left:225px}.page{max-width:1160px;margin:auto;padding:50px 46px 90px
   .modal-tarot-image{max-width:360px;margin:0 auto}
 }
 
+
+/* v3.0 · crisp hero logo */
+.home-logo-wrap{
+  width:min(443px,68vw)!important;
+  max-width:443px!important;
+  margin:0 0 24px!important;
+  padding:0!important;
+  background:none!important;
+  box-shadow:none!important;
+  filter:none!important;
+}
+.home-logo-wrap .seeya-inline-logo{
+  width:100%!important;
+  height:auto!important;
+  display:block!important;
+  filter:none!important;
+  transform:none!important;
+  shape-rendering:geometricPrecision;
+}
+
+
+/* v3.0 · vertical tarot detail */
+.modal-card-layout{
+  display:block!important;
+  max-width:860px;
+  margin:0 auto;
+}
+.modal-card-image-wrap{
+  max-width:420px;
+  margin:0 auto 30px;
+}
+.modal-tarot-image{
+  width:100%;
+  height:auto;
+  aspect-ratio:auto!important;
+  object-fit:contain!important;
+}
+.modal-card-content{
+  width:100%;
+  max-width:760px;
+  margin:0 auto;
+}
+.modal-card-content p{
+  max-width:none;
+}
+.modal-card-note{text-align:center}
+
 </style></head><body>
 <aside><a class="brand logo-brand" href="#/"><img src="data:image/png;base64,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" alt="SEEYA"><small>UNOFFICIAL ARCHIVE</small></a><nav>
 <a href="#/">HOME</a>
@@ -423,7 +470,9 @@ function home(){return `<div class="home-aespa">
   <img src="https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/kpics/2026/04/1775079390478-grlcud-0.jpg" alt="씨야 남규리 김연지 이보람 단체 사진">
   <div class="home-copy">
     <div class="home-kicker">2006 — 2026 · FIRST, AGAIN</div>
-    <div class="home-logo-wrap"><svg class="seeya-inline-logo" viewBox="0 0 443 125" role="img" aria-label="SEEYA"><path fill="#f7a9b8" fill-rule="evenodd" d="M 356,3 L 337,3 L 317,45 L 313,57 L 300,84 L 298,91 L 284,120 L 284,123 L 305,124 L 332,64 L 342,39 L 346,32 L 349,23 L 357,7 Z M 0,124 L 57,124 L 66,122 L 72,119 L 79,111 L 83,101 L 82,87 L 74,69 L 61,49 L 56,36 L 57,28 L 63,24 L 88,23 L 89,24 L 105,24 L 106,25 L 106,124 L 178,124 L 178,103 L 148,103 L 147,102 L 127,102 L 126,101 L 126,89 L 125,88 L 125,75 L 126,74 L 160,74 L 160,53 L 127,53 L 126,52 L 126,25 L 127,24 L 190,24 L 191,25 L 191,123 L 192,124 L 263,124 L 263,103 L 234,103 L 233,102 L 212,102 L 211,101 L 211,87 L 210,86 L 210,75 L 211,74 L 245,74 L 245,53 L 211,53 L 210,52 L 211,25 L 212,24 L 271,24 L 273,26 L 291,69 L 293,68 L 297,60 L 297,58 L 302,49 L 303,44 L 288,12 L 285,3 L 62,3 L 61,4 L 55,4 L 44,10 L 41,14 L 36,26 L 36,41 L 42,56 L 61,86 L 62,96 L 59,100 L 55,102 L 49,102 L 48,103 L 9,103 Z M 388,0 L 383,9 L 377,25 L 368,43 L 366,50 L 361,59 L 358,68 L 334,120 L 334,123 L 336,124 L 354,124 L 355,123 L 355,121 L 359,114 L 359,111 L 363,104 L 383,55 L 388,47 L 392,53 L 422,124 L 442,123 L 441,118 L 436,109 L 407,41 Z"/></svg></div>
+    <div class="home-logo-wrap"><svg class="seeya-inline-logo" viewBox="0 0 443 125" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SEEYA">
+<path d="M 357 4 L 355 4 L 354 3 L 337 3 L 328 21 L 328 23 L 321 37 L 321 39 L 317 46 L 317 48 L 314 53 L 314 55 L 312 58 L 312 60 L 303 78 L 303 80 L 296 94 L 296 96 L 286 116 L 286 118 L 284 121 L 284 123 L 305 123 L 306 122 L 306 120 L 311 110 L 311 108 L 317 97 L 317 95 L 321 88 L 321 86 L 329 70 L 329 68 L 332 63 L 332 61 L 335 56 L 335 54 L 339 47 L 339 45 L 343 38 L 343 36 L 347 29 L 347 27 L 355 11 L 355 9 L 357 6 Z M 0 124 L 56 124 L 57 123 L 61 123 L 62 122 L 65 122 L 66 121 L 68 121 L 70 120 L 72 118 L 73 118 L 78 112 L 79 109 L 81 107 L 81 105 L 82 104 L 82 101 L 83 100 L 83 93 L 82 92 L 82 88 L 81 87 L 81 84 L 79 81 L 79 79 L 76 73 L 74 71 L 73 68 L 71 66 L 67 58 L 65 56 L 62 50 L 60 48 L 58 44 L 57 39 L 56 38 L 56 31 L 57 30 L 57 28 L 60 25 L 62 24 L 66 24 L 67 23 L 105 23 L 106 24 L 106 88 L 107 89 L 107 123 L 178 123 L 178 103 L 127 103 L 125 101 L 125 75 L 126 74 L 160 74 L 160 53 L 127 53 L 126 52 L 126 24 L 127 23 L 190 23 L 191 24 L 191 84 L 192 85 L 192 123 L 263 123 L 263 103 L 212 103 L 211 102 L 211 100 L 210 99 L 210 75 L 211 74 L 245 74 L 245 53 L 211 53 L 210 52 L 210 27 L 212 23 L 271 23 L 275 30 L 275 32 L 285 52 L 285 54 L 288 59 L 288 61 L 292 69 L 298 57 L 298 55 L 303 46 L 303 44 L 293 24 L 293 22 L 289 15 L 289 13 L 287 10 L 287 8 L 285 4 L 199 4 L 198 3 L 79 3 L 78 4 L 55 4 L 49 7 L 47 9 L 46 9 L 40 16 L 39 18 L 39 20 L 37 23 L 37 26 L 36 27 L 36 39 L 37 40 L 37 44 L 38 45 L 38 47 L 39 48 L 39 50 L 40 52 L 42 54 L 43 57 L 47 62 L 48 65 L 52 70 L 53 73 L 55 75 L 55 76 L 57 78 L 57 79 L 59 81 L 61 85 L 61 87 L 62 88 L 62 91 L 63 92 L 62 97 L 58 101 L 56 102 L 53 102 L 52 103 L 9 103 Z M 388 0 L 383 10 L 383 12 L 379 19 L 379 21 L 376 26 L 376 28 L 369 41 L 369 44 L 359 64 L 359 66 L 353 78 L 353 80 L 348 89 L 348 91 L 340 107 L 340 109 L 337 114 L 337 116 L 334 121 L 334 123 L 354 123 L 356 120 L 356 118 L 359 113 L 360 108 L 364 101 L 364 99 L 370 87 L 370 85 L 372 82 L 372 80 L 375 75 L 375 73 L 378 68 L 378 66 L 384 54 L 384 52 L 386 48 L 388 46 L 391 50 L 391 52 L 394 57 L 394 59 L 400 71 L 400 73 L 402 76 L 402 78 L 404 81 L 404 83 L 408 90 L 408 92 L 410 95 L 410 97 L 412 100 L 412 102 L 414 105 L 414 107 L 417 112 L 417 114 L 421 121 L 421 123 L 442 123 L 441 121 L 441 119 L 432 101 L 432 99 L 429 94 L 429 92 L 426 87 L 426 85 L 420 74 L 419 69 L 415 62 L 415 60 L 411 53 L 411 51 L 407 44 L 407 42 L 404 37 L 404 35 L 399 26 L 399 24 L 395 17 L 395 15 L 391 8 L 391 6 Z" fill="#F8A7B8" fill-rule="evenodd"/>
+</svg></div>
     <div class="home-sub">
       <p>다시 시작된 세 사람의 노래.<br>씨야의 음악과 시간, 그리고 지금의 순간을 기록하는 비공식 팬 아카이브입니다.</p>
       <div class="home-scroll">SCROLL TO SEE MORE ↓</div>
@@ -496,7 +545,7 @@ function members(){return W(`<div class="section" style="border:0"><div class="e
 function news(){return W(`<div class="section" style="border:0">
 <div class="eye">SCHEDULE</div>
 <h1 style="font-size:55px">SEEYA Schedule</h1>
-<p class="lead">공식 활동과 멤버별 일정을 한눈에 볼 수 있도록 정리했습니다.</p>
+<p class="lead">Google Sheets의 일정을 팬페이지 스타일로 정리하고, 멤버별로 골라볼 수 있습니다.</p>
 </div>
 
 <div class="schedule-filter" id="scheduleFilter">
@@ -588,52 +637,91 @@ function bindScheduleFilter(){
     renderSchedule();
   }));
 }
-async function loadSchedule(){
+function loadSchedule(){
   const box=document.getElementById("scheduleBox");
   if(!box)return;
   bindScheduleFilter();
-  try{
-    const r=await fetch(SCHEDULE_CSV_URL,{cache:"no-store"});
-    if(!r.ok)throw new Error("sheet");
-    const rows=parseCSV(await r.text());
-    const hi=rows.findIndex(r=>r.includes("날짜")&&r.includes("멤버")&&r.includes("내용"));
-    if(hi<0)throw new Error("header");
-    const h=rows[hi].map(v=>v.trim());
-    const idx=name=>h.indexOf(name);
-    scheduleItems=rows.slice(hi+1).map(r=>({
-      rawDate:(r[idx("날짜")]||"").trim(),
-      date:parseYYMMDD(r[idx("날짜")]),
-      week:(r[idx("요일")]||"").trim(),
-      time:(r[idx("시간")]||"").trim(),
-      member:(r[idx("멤버")]||"").trim(),
-      content:(r[idx("내용")]||"").trim(),
-      note:(r[idx("비고")]||"").trim()
-    })).filter(x=>x.rawDate&&x.member&&x.content);
-    renderSchedule();
-  }catch(e){
-    box.innerHTML=`<div class="schedule-error"><b>스케줄을 불러오지 못했습니다.</b>잠시 후 다시 확인해주세요.</div>`;
+
+  const callbackName="seeyaScheduleCallback_"+Date.now();
+  const timeout=setTimeout(()=>{
+    cleanup();
+    box.innerHTML=`<div class="schedule-error"><b>스케줄을 불러오지 못했습니다.</b>Google Sheets에서 <strong>파일 → 공유 → 웹에 게시</strong>를 켠 뒤 다시 확인해주세요.</div>`;
+  },12000);
+
+  function cleanup(){
+    clearTimeout(timeout);
+    try{delete window[callbackName]}catch(e){}
+    const s=document.getElementById("seeyaScheduleJsonp");
+    if(s)s.remove();
   }
+
+  window[callbackName]=function(resp){
+    try{
+      if(!resp||resp.status==="error")throw new Error("gviz");
+      const table=resp.table;
+      const headers=(table.cols||[]).map(c=>(c.label||c.id||"").trim());
+      const idx=name=>headers.indexOf(name);
+      const required=["날짜","요일","시간","멤버","내용","비고"];
+      if(["날짜","멤버","내용"].some(x=>idx(x)<0))throw new Error("header");
+
+      scheduleItems=(table.rows||[]).map(row=>{
+        const vals=(row.c||[]).map(c=>c?(c.f ?? c.v ?? ""):"");
+        const rawDate=String(vals[idx("날짜")]||"").trim();
+        return {
+          rawDate,
+          date:parseYYMMDD(rawDate),
+          week:String(vals[idx("요일")]||"").trim(),
+          time:String(vals[idx("시간")]||"").trim(),
+          member:String(vals[idx("멤버")]||"").trim(),
+          content:String(vals[idx("내용")]||"").trim(),
+          note:idx("비고")>=0?String(vals[idx("비고")]||"").trim():""
+        }
+      }).filter(x=>x.rawDate&&x.member&&x.content);
+
+      if(!scheduleItems.length)throw new Error("empty");
+      renderSchedule();
+      cleanup();
+    }catch(e){
+      cleanup();
+      box.innerHTML=`<div class="schedule-error"><b>스케줄 데이터를 읽었지만 형식을 확인할 수 없습니다.</b>시트 첫 행의 열 이름이 날짜 / 요일 / 시간 / 멤버 / 내용 / 비고인지 확인해주세요.</div>`;
+    }
+  };
+
+  const script=document.createElement("script");
+  script.id="seeyaScheduleJsonp";
+  script.src=`https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/gviz/tq?gid=0&tqx=responseHandler:${callbackName}`;
+  script.onerror=()=>{
+    cleanup();
+    box.innerHTML=`<div class="schedule-error"><b>Google Sheets에 연결하지 못했습니다.</b>시트를 웹에 게시한 뒤 다시 확인해주세요.</div>`;
+  };
+  document.body.appendChild(script);
 }
 
-function showCard(n){let t=tarot[n];modalbox.innerHTML=`<button class="close" onclick="closeCard()">×</button>
-<div class="modal-card-layout">
-<div>
-<img class="modal-tarot-image" src="assets/tarot/21-world-preview.png" alt="${t.name} tarot preview">
-<div class="modal-card-note">현재는 THE WORLD 이미지를 공통 미리보기로 사용 중입니다.</div>
-</div>
-<div>
-<div class="eye">${String(t.n).padStart(2,"0")} · SEEYA TAROT</div>
-<h2>${t.name}</h2>
-<div style="font-size:13px;color:var(--deep);font-weight:700">${t.keywords}</div>
-<h3 style="color:var(--deep);margin-top:28px">♪ 대표곡 · ${t.song}</h3>
-<div class="chips">${t.related.map(x=>`<span>관련곡 · ${x}</span>`).join("")}</div>
-<hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
-<div class="eye">CARD READING</div><p style="line-height:1.95">${t.detail}</p>
-<div class="eye" style="margin-top:24px">SHADOW</div><p style="line-height:1.8;color:var(--muted)">${t.shadow}</p>
-<div class="eye" style="margin-top:24px">SEEYA STORY</div><p style="line-height:1.95">${t.story}</p>
-<div class="eye" style="margin-top:24px">VISUAL MOTIF</div><p>${t.motif}</p>
-<div class="eye" style="margin-top:24px">TODAY'S MESSAGE</div><p style="font-family:'Gowun Batang';font-size:18px;line-height:1.95">${t.message}</p>
-<div class="eye" style="margin-top:24px">LYRIC MOMENT</div><p class="notice">${t.lyric}</p>`;modal.classList.add("on")}
+function showCard(n){
+  let t=tarot[n];
+  modalbox.innerHTML=`<button class="close" onclick="closeCard()">×</button>
+  <div class="modal-card-layout">
+    <div class="modal-card-image-wrap">
+      <img class="modal-tarot-image" src="assets/tarot/21-world-preview.png" alt="${t.name} tarot preview">
+      <div class="modal-card-note">현재는 THE WORLD 이미지를 공통 미리보기로 사용 중입니다.</div>
+    </div>
+    <div class="modal-card-content">
+      <div class="eye">${String(t.n).padStart(2,"0")} · SEEYA TAROT</div>
+      <h2>${t.name}</h2>
+      <div style="font-size:13px;color:var(--deep);font-weight:700">${t.keywords}</div>
+      <h3 style="color:var(--deep);margin-top:28px">♪ 대표곡 · ${t.song}</h3>
+      <div class="chips">${t.related.map(x=>`<span>관련곡 · ${x}</span>`).join("")}</div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
+      <div class="eye">CARD READING</div><p style="line-height:1.95">${t.detail}</p>
+      <div class="eye" style="margin-top:24px">SHADOW</div><p style="line-height:1.8;color:var(--muted)">${t.shadow}</p>
+      <div class="eye" style="margin-top:24px">SEEYA STORY</div><p style="line-height:1.95">${t.story}</p>
+      <div class="eye" style="margin-top:24px">VISUAL MOTIF</div><p>${t.motif}</p>
+      <div class="eye" style="margin-top:24px">TODAY'S MESSAGE</div><p style="font-family:'Gowun Batang';font-size:18px;line-height:1.95">${t.message}</p>
+      <div class="eye" style="margin-top:24px">LYRIC MOMENT</div><p class="notice">${t.lyric}</p>
+    </div>
+  </div>`;
+  modal.classList.add("on")
+}
 function closeCard(){modal.classList.remove("on")}
 function route(){let p=location.hash.slice(1)||"/";let f=p.startsWith("/today")?today:p.startsWith("/tarot")?tarotPage:p.startsWith("/music")?music:p.startsWith("/history")?historyPage:p.startsWith("/members")?members:p.startsWith("/news")?news:home;app.innerHTML=f();scrollTo(0,0);if(f===news)loadSchedule()}
 addEventListener("hashchange",route);route();
