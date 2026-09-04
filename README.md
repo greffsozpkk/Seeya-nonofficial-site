@@ -1,29 +1,16 @@
-# SEEYA ARCHIVE v2.8
+# SEEYA ARCHIVE v2.9
 
-기준: v2.7
+기준: v2.8.2
 
-## HOME
-- Official Instagram 섹션 완전 제거
-- 메인 흐름:
-  1. SEEYA 단체 비주얼 + 최신 핑크 로고
-  2. Official YouTube
-  3. NOW WITH SEEYA
-     - `FIRST, AGAIN` 4집 감상하기 → Melon
-     - `THE FAN` 콘서트 예매하기 → YES24
-  4. Official Links
-- Instagram 자동 갱신용 GitHub Actions / 토큰 구조 제거
+## 변경사항
+- 메인 핑크 SEEYA 로고의 그림자/필터 제거 → 더 선명한 단색 로고 표현
+- 사용자가 제공한 THE WORLD 타로 이미지를 사이트 내부 asset으로 추가
+- SEEYA TAROT 22장 전체에 해당 이미지를 공통 '디자인 미리보기'로 표시
+- 각 카드 클릭 시 상세 모달에도 타로 이미지가 함께 표시
+- 카드 번호/이름/대표곡/관련곡/해석 데이터는 기존 22장 데이터 그대로 유지
 
-## Logo
-사용자가 제공한 최신 로고 2종을 사이트 내부 asset으로 포함했습니다.
-- `assets/logo/seeya-logo-pink.png` : 메인 히어로
-- `assets/logo/seeya-logo-gray.png` : PC/모바일 내비게이션
+## Tarot asset
+`assets/tarot/21-world-preview.png`
 
-외부 로고 URL에 의존하지 않습니다.
-
-## Schedule
-v2.7의 카드형 월별 일정 및 멤버 필터를 그대로 유지합니다.
-- 전체
-- 씨야
-- 남규리
-- 김연지
-- 이보람
+현재는 22장 모두 같은 이미지가 표시됩니다.
+향후 00~21 번호별 완성 이미지를 받으면 개별 파일로 연결하면 됩니다.
