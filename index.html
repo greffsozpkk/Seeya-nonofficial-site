@@ -642,7 +642,7 @@ function members(){return W(`<div class="section" style="border:0"><div class="e
 function news(){return W(`<div class="section news-hero" style="border:0">
 <div class="eye">LATEST STORIES</div>
 <h1 style="font-size:55px">SEEYA NEWS</h1>
-<p class="lead">씨야 전체 소식과 세 멤버의 최근 기사 10개를 골라서 확인할 수 있습니다.</p>
+<p class="lead">씨야 전체 소식과 세 멤버의 최근 기사 중 최신순 10개를 골라서 확인할 수 있습니다.</p>
 </div>
 
 <div class="news-filter" id="newsFilter">
@@ -690,10 +690,22 @@ let scheduleItems=[];
 let scheduleMember="전체";
 
 const NEWS_QUERIES={
-  "씨야":'"씨야" 가수',
-  "남규리":'"남규리"',
-  "김연지":'"김연지" 씨야',
-  "이보람":'"이보람" 씨야'
+  "씨야":[
+    '"씨야" 가수',
+    '"씨야" 컴백 OR 콘서트 OR 앨범 OR 신곡'
+  ],
+  "남규리":[
+    '"남규리" 가수 OR 배우',
+    '"남규리" 신곡 OR 드라마 OR 영화 OR 씨야'
+  ],
+  "김연지":[
+    '"김연지" 가수',
+    '"김연지" 신곡 OR 앨범 OR OST OR 뮤지컬'
+  ],
+  "이보람":[
+    '"이보람" 가수',
+    '"이보람" 신곡 OR 앨범 OR 콘서트 OR 씨야'
+  ]
 };
 let currentNewsCategory="씨야";
 
@@ -749,30 +761,59 @@ function bindNewsFilter(){
     loadNews(currentNewsCategory,false);
   }));
 }
-async function fetchGoogleNews(category){
-  const q=NEWS_QUERIES[category]||NEWS_QUERIES["씨야"];
-  const rss=`https://news.google.com/rss/search?q=${encodeURIComponent(q+" when:30d")}&hl=ko&gl=KR&ceid=KR:ko`;
-  const proxy=`https://api.allorigins.win/raw?url=${encodeURIComponent(rss)}`;
-  const controller=new AbortController();
-  const timer=setTimeout(()=>controller.abort(),8000);
-  let r;
-  try{
-    r=await fetch(proxy,{cache:"no-store",signal:controller.signal});
-  }finally{
-    clearTimeout(timer);
+async function fetchRSSViaProxy(rss){
+  const proxies=[
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(rss)}`,
+    `https://api.codetabs.com/v1/proxy?quest=${encodeURIComponent(rss)}`
+  ];
+  let lastErr;
+  for(const proxy of proxies){
+    const controller=new AbortController();
+    const timer=setTimeout(()=>controller.abort(),7000);
+    try{
+      const r=await fetch(proxy,{cache:"no-store",signal:controller.signal});
+      clearTimeout(timer);
+      if(!r.ok)throw new Error("proxy");
+      const xml=await r.text();
+      const doc=new DOMParser().parseFromString(xml,"text/xml");
+      if(doc.querySelector("parsererror"))throw new Error("xml");
+      return [...doc.querySelectorAll("item")].map(x=>({
+        title:x.querySelector("title")?.textContent||"",
+        link:x.querySelector("link")?.textContent||"",
+        pubDate:x.querySelector("pubDate")?.textContent||"",
+        description:x.querySelector("description")?.textContent||"",
+        source:x.querySelector("source")?.textContent||""
+      })).filter(x=>x.title&&x.link);
+    }catch(e){
+      clearTimeout(timer);
+      lastErr=e;
+    }
   }
-  if(!r.ok)throw new Error("proxy");
-  const xml=await r.text();
-  const doc=new DOMParser().parseFromString(xml,"text/xml");
-  if(doc.querySelector("parsererror"))throw new Error("xml");
-  return [...doc.querySelectorAll("item")].map(x=>({
-    title:x.querySelector("title")?.textContent||"",
-    link:x.querySelector("link")?.textContent||"",
-    pubDate:x.querySelector("pubDate")?.textContent||"",
-    description:x.querySelector("description")?.textContent||"",
-    source:x.querySelector("source")?.textContent||""
-  })).filter(x=>x.title&&x.link);
+  throw lastErr||new Error("news");
 }
+async function fetchGoogleNews(category){
+  const queries=NEWS_QUERIES[category]||NEWS_QUERIES["씨야"];
+  const all=[];
+  for(const q of queries){
+    const rss=`https://news.google.com/rss/search?q=${encodeURIComponent(q+" when:45d")}&hl=ko&gl=KR&ceid=KR:ko`;
+    try{
+      const items=await fetchRSSViaProxy(rss);
+      all.push(...items);
+    }catch(e){}
+  }
+  const seen=new Set();
+  const merged=all
+    .filter(item=>{
+      const key=(item.title||"").replace(/\s+-\s+[^-]+$/,"").trim();
+      if(!key||seen.has(key))return false;
+      seen.add(key);
+      return true;
+    })
+    .sort((a,b)=>new Date(b.pubDate)-new Date(a.pubDate));
+  if(!merged.length)throw new Error("news");
+  return merged.slice(0,10);
+}
+
 async function loadNews(category="씨야",bind=true){
   const box=document.getElementById("newsBox");
   const label=document.getElementById("newsLabel");
