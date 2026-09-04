@@ -1,14 +1,12 @@
-# SEEYA ARCHIVE — Tarot Detail v2
-Pearl Light Pink 기반 비공식 씨야 팬 아카이브 프로토타입.
+# SEEYA ARCHIVE v2.1
 
-## 이번 버전 추가
-- 최종 대표곡/관련곡 엑셀 구조 반영
-- 22장 전부 상세 카드 해석
-- 그림자(주의) 해석
-- 오늘의 메시지
-- SEEYA STORY
-- 비주얼 모티프
-- 오늘의 키워드
-- 가사 한 구절 입력 자리
+기준: 기존 SEEYA ARCHIVE Pearl Light Pink Tarot v2
 
-가사 칸은 실제 가사·출처·저작권 검토 전까지 placeholder로 유지합니다.
+변경:
+- 전체 폰트를 Gowun Batang + Gowun Dodum으로 부드럽게 변경
+- 기존 HOME / TODAY / 22장 TAROT / HISTORY / NEWS / FANDOM 구조 유지
+- MEMBERS: 기본 정보 + Instagram / YouTube 아이콘형 링크 추가
+- MUSIC: 앨범 커버 기반 디스코그래피로 변경
+- 앨범 커버는 외부 서비스 이미지 URL을 사용
+
+주의: 일부 YouTube 채널의 정확한 고유 URL은 공개 전 한 번 더 검증 권장.
