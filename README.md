@@ -1,17 +1,15 @@
-# SEEYA ARCHIVE v3.5
+# SEEYA ARCHIVE v3.9
 
-## MUSIC
-- `First, Again`은 검증된 Melon 앨범 direct link로 연결했습니다.
-- 나머지 과거 앨범은 이번 작업에서 정확한 Melon albumId를 모두 신뢰성 있게 확인하지 못해,
-  잘못된 direct link를 넣는 대신 Melon 앨범 검색으로 임시 교체했습니다.
+## MUSIC direct-link fix
+사용자 제공 Melon albumId 반영:
+- Brilliant Change → 398227
+- See You Again → 1150052
 
-## NEWS
-- 김연지/이보람 검색에서 `씨야`를 강제하지 않도록 수정했습니다.
-- 멤버마다 2개의 검색어를 사용하고 결과를 합칩니다.
-- 최근 45일 기사만 검색하고 날짜 기준 최신순으로 정렬합니다.
-- 제목 중복 제거 후 최신 10개만 노출합니다.
-- allorigins 실패 시 codetabs 프록시를 2차로 시도합니다.
-- 각 프록시 요청은 7초 타임아웃입니다.
+이제 MUSIC의 8개 음반/싱글은 모두 Melon 앨범 상세 페이지로 직접 연결됩니다.
 
-웹 확인 결과, 이보람의 `빛의 반대편에서`는 2026-08-02 발매된 최신 싱글이고
-2026-08-02 및 08-04 관련 기사도 확인됩니다.
+## `그럼에도, 우린` 커버 수정
+기존 Cover Art Archive 이미지가 미리보기에서 깨져 보여
+2026-03-30 발매 기사에 사용된 실제 프로모션 이미지를 외부 참조하도록 교체했습니다.
+
+현재 커버 URL:
+https://www.bntnews.co.kr/data/bnt/image/2026/03/30/bnt202603300083.jpeg
