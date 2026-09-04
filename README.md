@@ -1,28 +1,29 @@
-# SEEYA ARCHIVE v2.6
+# SEEYA ARCHIVE v2.8
 
-기준: v2.5
+기준: v2.7
 
-## Official Instagram 자동 갱신
-- HOME은 `data/instagram.json`의 최신 3개 게시물을 표시합니다.
-- `.github/workflows/update-instagram.yml`이 6시간마다 실행됩니다.
-- `scripts/update_instagram.py`가 공개 Instagram 프로필의 최신 게시물 3개를 가져옵니다.
-- 갱신 실패 시 마지막으로 성공한 JSON을 유지해 화면이 깨지지 않습니다.
-- GitHub 저장소의 Actions가 활성화되어 있어야 합니다.
+## HOME
+- Official Instagram 섹션 완전 제거
+- 메인 흐름:
+  1. SEEYA 단체 비주얼 + 최신 핑크 로고
+  2. Official YouTube
+  3. NOW WITH SEEYA
+     - `FIRST, AGAIN` 4집 감상하기 → Melon
+     - `THE FAN` 콘서트 예매하기 → YES24
+  4. Official Links
+- Instagram 자동 갱신용 GitHub Actions / 토큰 구조 제거
 
-주의: 이 방식은 Instagram의 공개 웹 엔드포인트를 이용하므로 Instagram 측 차단/변경에 영향을 받을 수 있습니다.
+## Logo
+사용자가 제공한 최신 로고 2종을 사이트 내부 asset으로 포함했습니다.
+- `assets/logo/seeya-logo-pink.png` : 메인 히어로
+- `assets/logo/seeya-logo-gray.png` : PC/모바일 내비게이션
 
-## Google Sheets 스케줄
-NEWS & SCHEDULE 페이지는 아래 시트의 gid=0을 CSV로 직접 읽습니다.
-https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit?gid=0#gid=0
+외부 로고 URL에 의존하지 않습니다.
 
-시트 수정 → 사이트 새로고침 시 자동 반영됩니다.
-
-필수 공유 설정:
-Google Sheets → 공유 → 일반 액세스 → 링크가 있는 모든 사용자 → 뷰어
-
-## GitHub 업로드 구조
-index.html
-data/instagram.json
-scripts/update_instagram.py
-.github/workflows/update-instagram.yml
-README.md
+## Schedule
+v2.7의 카드형 월별 일정 및 멤버 필터를 그대로 유지합니다.
+- 전체
+- 씨야
+- 남규리
+- 김연지
+- 이보람
