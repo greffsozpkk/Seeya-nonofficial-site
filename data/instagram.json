@@ -1,0 +1,22 @@
+{
+  "account": "seeya_ent_official",
+  "updated_at": "2026-09-04T12:15:00Z",
+  "source": "fallback",
+  "posts": [
+    {
+      "url": "https://www.instagram.com/seeya_ent_official/",
+      "image": "https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/kpics/2026/04/1775079390478-grlcud-0.jpg",
+      "type": "image"
+    },
+    {
+      "url": "https://www.instagram.com/seeya_ent_official/",
+      "image": "https://image.bugsm.co.kr/album/images/500/41474/4147431.jpg",
+      "type": "image"
+    },
+    {
+      "url": "https://www.instagram.com/seeya_ent_official/",
+      "image": "https://i.ytimg.com/vi/I1zhkwIuZ0A/maxresdefault.jpg",
+      "type": "image"
+    }
+  ]
+}
