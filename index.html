@@ -447,10 +447,109 @@ main{margin-left:225px}.page{max-width:1160px;margin:auto;padding:50px 46px 90px
 }
 .modal-card-note{text-align:center}
 
+
+/* v3.1 · exact official SVG, slightly smaller */
+.home-logo-wrap{
+  width:min(365px,58vw)!important;
+  max-width:365px!important;
+  margin:0 0 22px!important;
+}
+.home-logo-wrap .seeya-official-hero-logo{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-width:none!important;
+  filter:none!important;
+  transform:none!important;
+}
+@media(max-width:700px){
+  .home-logo-wrap{width:min(275px,67vw)!important}
+}
+
+
+/* v3.2 · exact uploaded SVG inline, no external SVG loading */
+.home-logo-wrap{
+  width:min(350px,56vw)!important;
+  max-width:350px!important;
+  margin:0 0 21px!important;
+  padding:0!important;
+  overflow:visible!important;
+  background:transparent!important;
+  box-shadow:none!important;
+}
+.home-logo-wrap .seeya-official-inline{
+  display:block!important;
+  width:100%!important;
+  height:auto!important;
+  max-width:none!important;
+  overflow:visible!important;
+  filter:none!important;
+  transform:none!important;
+}
+@media(max-width:700px){
+  .home-logo-wrap{width:min(260px,64vw)!important}
+}
+
+
+/* v3.3 · NEWS */
+.news-hero{padding-bottom:18px!important}
+.news-filter{
+  display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 28px
+}
+.news-filter button{
+  appearance:none;border:1px solid #dfbdca;background:#fffafa;color:#82566a;
+  border-radius:999px;padding:10px 17px;
+  font:400 11px "Gowun Dodum",sans-serif;cursor:pointer;transition:.18s
+}
+.news-filter button:hover,.news-filter button.active{
+  background:#9f627a;color:#fff;border-color:#9f627a
+}
+.news-meta{
+  display:flex;justify-content:space-between;gap:18px;align-items:center;
+  padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  margin-bottom:0;color:#a18590;font-size:9px;letter-spacing:.1em
+}
+.news-list{display:grid}
+.news-card{
+  display:grid;grid-template-columns:90px minmax(0,1fr) 130px;
+  gap:22px;align-items:center;
+  padding:24px 6px;border-bottom:1px solid var(--line);
+  color:inherit;text-decoration:none;transition:.16s
+}
+.news-card:hover{background:#fff7fa;padding-left:13px;padding-right:13px}
+.news-date strong{
+  display:block;font:700 23px "Gowun Batang",serif;color:#654553;line-height:1
+}
+.news-date span{display:block;margin-top:6px;font-size:9px;color:#ad909b;letter-spacing:.08em}
+.news-body .news-source{
+  display:block;margin-bottom:7px;font-size:9px;color:#b17c90;letter-spacing:.08em
+}
+.news-body h3{
+  margin:0;font:700 17px/1.55 "Gowun Batang",serif;color:#44343b
+}
+.news-body p{
+  margin:8px 0 0;font-size:10px;line-height:1.75;color:#8d7780;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden
+}
+.news-go{
+  justify-self:end;font-size:10px;color:#9b687c;white-space:nowrap
+}
+.news-loading,.news-error,.news-empty{
+  padding:58px 18px;text-align:center;color:#9b818b;font-size:11px;
+  border-bottom:1px solid var(--line)
+}
+.news-error b{display:block;color:#76515f;margin-bottom:8px}
+@media(max-width:720px){
+  .news-card{grid-template-columns:64px minmax(0,1fr);gap:12px;padding:19px 0}
+  .news-go{grid-column:2;justify-self:start;margin-top:-3px}
+  .news-body h3{font-size:15px}
+  .news-meta{align-items:flex-start;flex-direction:column;gap:5px}
+}
+
 </style></head><body>
 <aside><a class="brand logo-brand" href="#/"><img src="data:image/png;base64,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" alt="SEEYA"><small>UNOFFICIAL ARCHIVE</small></a><nav>
 <a href="#/">HOME</a>
-<a href="#/news">NEWS & SCHEDULE</a>
+<a href="#/news">NEWS</a>
 <a href="#/music">MUSIC</a>
 <a href="#/history">HISTORY</a>
 <a href="#/members">MEMBERS</a>
@@ -470,9 +569,7 @@ function home(){return `<div class="home-aespa">
   <img src="https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/kpics/2026/04/1775079390478-grlcud-0.jpg" alt="씨야 남규리 김연지 이보람 단체 사진">
   <div class="home-copy">
     <div class="home-kicker">2006 — 2026 · FIRST, AGAIN</div>
-    <div class="home-logo-wrap"><svg class="seeya-inline-logo" viewBox="0 0 443 125" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SEEYA">
-<path d="M 357 4 L 355 4 L 354 3 L 337 3 L 328 21 L 328 23 L 321 37 L 321 39 L 317 46 L 317 48 L 314 53 L 314 55 L 312 58 L 312 60 L 303 78 L 303 80 L 296 94 L 296 96 L 286 116 L 286 118 L 284 121 L 284 123 L 305 123 L 306 122 L 306 120 L 311 110 L 311 108 L 317 97 L 317 95 L 321 88 L 321 86 L 329 70 L 329 68 L 332 63 L 332 61 L 335 56 L 335 54 L 339 47 L 339 45 L 343 38 L 343 36 L 347 29 L 347 27 L 355 11 L 355 9 L 357 6 Z M 0 124 L 56 124 L 57 123 L 61 123 L 62 122 L 65 122 L 66 121 L 68 121 L 70 120 L 72 118 L 73 118 L 78 112 L 79 109 L 81 107 L 81 105 L 82 104 L 82 101 L 83 100 L 83 93 L 82 92 L 82 88 L 81 87 L 81 84 L 79 81 L 79 79 L 76 73 L 74 71 L 73 68 L 71 66 L 67 58 L 65 56 L 62 50 L 60 48 L 58 44 L 57 39 L 56 38 L 56 31 L 57 30 L 57 28 L 60 25 L 62 24 L 66 24 L 67 23 L 105 23 L 106 24 L 106 88 L 107 89 L 107 123 L 178 123 L 178 103 L 127 103 L 125 101 L 125 75 L 126 74 L 160 74 L 160 53 L 127 53 L 126 52 L 126 24 L 127 23 L 190 23 L 191 24 L 191 84 L 192 85 L 192 123 L 263 123 L 263 103 L 212 103 L 211 102 L 211 100 L 210 99 L 210 75 L 211 74 L 245 74 L 245 53 L 211 53 L 210 52 L 210 27 L 212 23 L 271 23 L 275 30 L 275 32 L 285 52 L 285 54 L 288 59 L 288 61 L 292 69 L 298 57 L 298 55 L 303 46 L 303 44 L 293 24 L 293 22 L 289 15 L 289 13 L 287 10 L 287 8 L 285 4 L 199 4 L 198 3 L 79 3 L 78 4 L 55 4 L 49 7 L 47 9 L 46 9 L 40 16 L 39 18 L 39 20 L 37 23 L 37 26 L 36 27 L 36 39 L 37 40 L 37 44 L 38 45 L 38 47 L 39 48 L 39 50 L 40 52 L 42 54 L 43 57 L 47 62 L 48 65 L 52 70 L 53 73 L 55 75 L 55 76 L 57 78 L 57 79 L 59 81 L 61 85 L 61 87 L 62 88 L 62 91 L 63 92 L 62 97 L 58 101 L 56 102 L 53 102 L 52 103 L 9 103 Z M 388 0 L 383 10 L 383 12 L 379 19 L 379 21 L 376 26 L 376 28 L 369 41 L 369 44 L 359 64 L 359 66 L 353 78 L 353 80 L 348 89 L 348 91 L 340 107 L 340 109 L 337 114 L 337 116 L 334 121 L 334 123 L 354 123 L 356 120 L 356 118 L 359 113 L 360 108 L 364 101 L 364 99 L 370 87 L 370 85 L 372 82 L 372 80 L 375 75 L 375 73 L 378 68 L 378 66 L 384 54 L 384 52 L 386 48 L 388 46 L 391 50 L 391 52 L 394 57 L 394 59 L 400 71 L 400 73 L 402 76 L 402 78 L 404 81 L 404 83 L 408 90 L 408 92 L 410 95 L 410 97 L 412 100 L 412 102 L 414 105 L 414 107 L 417 112 L 417 114 L 421 121 L 421 123 L 442 123 L 441 121 L 441 119 L 432 101 L 432 99 L 429 94 L 429 92 L 426 87 L 426 85 L 420 74 L 419 69 L 415 62 L 415 60 L 411 53 L 411 51 L 407 44 L 407 42 L 404 37 L 404 35 L 399 26 L 399 24 L 395 17 L 395 15 L 391 8 L 391 6 Z" fill="#F8A7B8" fill-rule="evenodd"/>
-</svg></div>
+    <div class="home-logo-wrap"><svg class="seeya-official-inline" xmlns="http://www.w3.org/2000/svg" width="442.7605" height="125.4917" viewBox="0 0 442.7605 125.4917"><path d="M1428.754 3123.479s23.849-.1 38.625-.16c22.717.326 14.227-17.256 8.164-25.681-1.95-2.71-9.32-15.267-14.116-22.567-4.337-6.6-6.655-17.03-5.713-25.704.581-5.36 4.108-13.855 7.23-17.415 2.608-2.975 9.334-6.95 13.28-7.848 1.91-.434 33.623-.712 70.473-.618 36.85.095 87.557.168 112.682.162l45.683-.01.671 2.25c.624 2.092 5.252 12.946 9.487 22.25 1.001 2.2 3.18 7.043 4.84 10.761l3.021 6.761-3.07 6.74c-9.107 19.983-8.478 18.884-9.278 16.204-.678-2.272-7.72-18.444-11.09-25.466-.792-1.65-2.987-6.6-4.879-11l-3.439-8h-60.628l-.277 14.75-.277 14.75h35.054v21h-35.055l.277 14.25.278 14.25 26.25.267 26.25.266v21.008l-35.991-.066-35.99-.066-.26-50.204-.26-50.205h-65v29l17.25.273 17.25.274v20.953h-35.054l.277 14.25.278 14.25 26.25.266 26.25.267v20.877l-36 .065-36 .063-.08-28.269c-.043-15.548-.155-38.17-.25-50.27l-.17-22-20.48-.167c-22.75-.186-26.223.477-28.114 5.369q-3.242 8.388 4.586 21.006c2.66 4.286 8.363 13.35 12.422 20.292 4.909 8.398 14.041 25.936 5.175 39.985-5.044 7.992-8.4 15.025-37.571 14.775 0 0-33.305-.165-42.279-.102 2.043-4.086 9.318-21.817 9.318-21.817m274.443 20.534c0-.802 4.32-10.886 8.513-19.875 1.796-3.85 5.165-11.5 7.487-17s4.56-10.45 4.977-11c.416-.55 1.75-3.695 2.965-6.988s2.618-6.482 3.12-7.086c.5-.604 1.552-2.916 2.336-5.137s2.54-6.457 3.905-9.414 4.14-9.2 6.168-13.875c5.129-11.825 9.202-20.738 11.81-25.843l2.219-4.344 10.5-.066c11.634-.073 11.305-.35 8.047 6.753-2.398 5.228-13.444 30.352-23.522 53.5-5.516 12.67-5.933 13.621-10.96 25-2.551 5.775-5.524 12.3-6.606 14.5s-2.796 6.025-3.809 8.5a854 854 0 0 1-3.648 8.75l-1.806 4.25h-10.848c-5.967 0-10.848-.281-10.848-.625zm50-.675c0-.715.382-1.728.85-2.25.467-.523 1.632-2.975 2.59-5.45.957-2.475 2.767-6.75 4.02-9.5 1.254-2.75 3.951-8.825 5.994-13.5s4.534-10.3 5.537-12.5c1.002-2.2 3.691-8.275 5.977-13.5s5.478-12.274 7.094-15.664 2.938-6.677 2.938-7.302c0-.626.9-2.802 2.002-4.836s3.836-7.973 6.079-13.198c6.987-16.283 11.302-25.953 11.477-25.722.093.122 1.854 4.047 3.914 8.722s6.428 14.575 9.706 22 7.544 17.1 9.48 21.5c1.938 4.4 4.57 10.25 5.85 13s2.645 6.125 3.033 7.5 1.06 2.95 1.495 3.5 2.9 5.95 5.477 12c4.521 10.611 5.525 12.875 12.358 27.862 1.72 3.774 3.129 7.262 3.129 7.75s-4.723.888-10.495.888h-10.495l-1.971-4.25c-2.377-5.125-7.366-17.204-10.223-24.75-1.145-3.025-2.475-6-2.955-6.609-.48-.61-1.739-3.535-2.799-6.5s-3.273-8.541-4.919-12.391-4.507-10.6-6.36-15-3.78-8-4.283-8-2.339 3.375-4.078 7.5a9011 9011 0 0 1-8.91 21c-3.16 7.425-7.059 16.65-8.663 20.5s-3.802 8.908-4.883 11.239c-1.082 2.332-1.966 4.525-1.966 4.875s-1.187 3.28-2.637 6.51l-2.636 5.876h-10.364c-7.836 0-10.363-.317-10.363-1.3" style="fill:#ffb6c1;fill-opacity:1" transform="translate(-1419.436 -3019.912)"/></svg></div>
     <div class="home-sub">
       <p>다시 시작된 세 사람의 노래.<br>씨야의 음악과 시간, 그리고 지금의 순간을 기록하는 비공식 팬 아카이브입니다.</p>
       <div class="home-scroll">SCROLL TO SEE MORE ↓</div>
@@ -542,24 +639,26 @@ function members(){return W(`<div class="section" style="border:0"><div class="e
 <div class="membercard"><div class="member-photo"><img src="https://unavatar.io/youtube/UCz11CPccQ2AnizJrdp58Bog" alt="이보람 유튜브 프로필 사진" loading="lazy"></div><div class="member-role">상무</div><h3>이보람</h3><div class="eng">LEE BO-RAM</div><div class="facts"><div class="fact"><b>활동</b><span>가수</span></div><div class="fact"><b>생일</b><span>2월 17일</span></div></div><div class="socials"><a class="social" href="https://www.instagram.com/dlqhfka0217/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8Zm5.4-1.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UCz11CPccQ2AnizJrdp58Bog" target="_blank" rel="noopener noreferrer" title="보람씨야"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a></div><div class="channel-name">YouTube · 보람씨야</div></div>
 
 </div><div class="notice" style="margin-top:22px">이번 활동에서 멤버들이 농담처럼 사용한 회사 직급 콘셉트를 반영했습니다.</div>`)}
-function news(){return W(`<div class="section" style="border:0">
-<div class="eye">SCHEDULE</div>
-<h1 style="font-size:55px">SEEYA Schedule</h1>
-<p class="lead">Google Sheets의 일정을 팬페이지 스타일로 정리하고, 멤버별로 골라볼 수 있습니다.</p>
+function news(){return W(`<div class="section news-hero" style="border:0">
+<div class="eye">LATEST STORIES</div>
+<h1 style="font-size:55px">SEEYA NEWS</h1>
+<p class="lead">씨야 전체 소식과 세 멤버의 최근 기사를 골라서 확인할 수 있습니다.</p>
 </div>
 
-<div class="schedule-filter" id="scheduleFilter">
-  <button class="active" data-member="전체">전체</button>
-  <button data-member="씨야">씨야</button>
-  <button data-member="남규리">남규리</button>
-  <button data-member="김연지">김연지</button>
-  <button data-member="이보람">이보람</button>
+<div class="news-filter" id="newsFilter">
+  <button class="active" data-news="씨야">씨야</button>
+  <button data-news="남규리">남규리</button>
+  <button data-news="김연지">김연지</button>
+  <button data-news="이보람">이보람</button>
 </div>
 
-<div id="scheduleBox"><div class="schedule-loading">일정을 불러오는 중입니다…</div></div>
+<div class="news-meta">
+  <span id="newsLabel">SEEYA · LATEST NEWS</span>
+  <span id="newsUpdated"></span>
+</div>
 
-<div class="schedule-source">
-  <a href="https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit?gid=0#gid=0" target="_blank" rel="noopener noreferrer">SCHEDULE DATA · GOOGLE SHEETS ↗</a>
+<div id="newsBox">
+  <div class="news-loading">최근 뉴스를 불러오는 중입니다…</div>
 </div>`)}
 
 const SCHEDULE_CSV_URL="https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/gviz/tq?tqx=out:csv&gid=0";
@@ -590,111 +689,100 @@ function parseCSV(text){
 let scheduleItems=[];
 let scheduleMember="전체";
 
-function parseYYMMDD(v){
-  const s=String(v||"").replace(/\D/g,"");
-  if(s.length!==6)return null;
-  return {year:2000+Number(s.slice(0,2)),month:Number(s.slice(2,4)),day:Number(s.slice(4,6))};
+const NEWS_QUERIES={
+  "씨야":'"씨야" 가수',
+  "남규리":'"남규리"',
+  "김연지":'"김연지" 씨야',
+  "이보람":'"이보람" 씨야'
+};
+let currentNewsCategory="씨야";
+
+function decodeHTML(s){
+  const t=document.createElement("textarea");
+  t.innerHTML=s||"";
+  return t.value;
 }
-function memberClass(m){
-  return m==="씨야"?"seeya":m==="남규리"?"nam":m==="김연지"?"kim":m==="이보람"?"lee":"";
+function cleanNewsText(s){
+  const d=document.createElement("div");
+  d.innerHTML=s||"";
+  return (d.textContent||d.innerText||"").replace(/\s+/g," ").trim();
 }
-function renderSchedule(){
-  const box=document.getElementById("scheduleBox");
+function newsDateParts(pubDate){
+  const d=new Date(pubDate);
+  if(isNaN(d))return {day:"--",ym:""};
+  return {
+    day:String(d.getDate()).padStart(2,"0"),
+    ym:`${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,"0")}`
+  };
+}
+function renderNews(items, category){
+  const box=document.getElementById("newsBox");
   if(!box)return;
-  const filtered=scheduleItems.filter(x=>scheduleMember==="전체"||x.member===scheduleMember);
-  if(!filtered.length){
-    box.innerHTML='<div class="schedule-empty">해당 멤버의 등록된 일정이 없습니다.</div>';
+  if(!items.length){
+    box.innerHTML='<div class="news-empty">최근 검색된 기사가 없습니다.</div>';
     return;
   }
-  const groups={};
-  filtered.forEach(x=>{
-    const key=x.date?`${x.date.year}-${String(x.date.month).padStart(2,"0")}`:"기타";
-    (groups[key]??=[]).push(x);
-  });
-  box.innerHTML=`<div class="schedule-groups">${Object.entries(groups).map(([key,items])=>{
-    const title=key==="기타"?"기타 일정":`${Number(key.slice(5))}월`;
-    const year=key==="기타"?"":key.slice(0,4);
-    return `<section class="schedule-month">
-      <div class="schedule-month-title">${title}<small>${year}</small></div>
-      <div class="schedule-list">${items.map(x=>`
-        <article class="schedule-card">
-          <div class="schedule-date"><strong>${x.date?String(x.date.day).padStart(2,"0"):"--"}</strong><span>${esc(x.week||"")}</span></div>
-          <div class="member-pill ${memberClass(x.member)}">${esc(x.member)}</div>
-          <div class="schedule-main"><strong>${esc(x.content)}</strong>${x.note?`<span>${esc(x.note)}</span>`:""}</div>
-          <div class="schedule-time">${esc(x.time||"시간 미정")}</div>
-        </article>`).join("")}
+  box.innerHTML=`<div class="news-list">${items.slice(0,10).map(item=>{
+    const p=newsDateParts(item.pubDate);
+    const title=decodeHTML(item.title||"").replace(/\s+-\s+[^-]+$/,"");
+    const source=decodeHTML(item.source||item.author||"NEWS");
+    const desc=cleanNewsText(item.description||"");
+    return `<a class="news-card" href="${esc(item.link)}" target="_blank" rel="noopener noreferrer">
+      <div class="news-date"><strong>${p.day}</strong><span>${p.ym}</span></div>
+      <div class="news-body">
+        <span class="news-source">${esc(source)}</span>
+        <h3>${esc(title)}</h3>
+        ${desc?`<p>${esc(desc)}</p>`:""}
       </div>
-    </section>`;
+      <div class="news-go">기사 읽기 ↗</div>
+    </a>`;
   }).join("")}</div>`;
 }
-function bindScheduleFilter(){
-  const f=document.getElementById("scheduleFilter");
+function bindNewsFilter(){
+  const f=document.getElementById("newsFilter");
   if(!f)return;
   f.querySelectorAll("button").forEach(btn=>btn.addEventListener("click",()=>{
+    if(btn.dataset.news===currentNewsCategory)return;
     f.querySelectorAll("button").forEach(b=>b.classList.remove("active"));
     btn.classList.add("active");
-    scheduleMember=btn.dataset.member;
-    renderSchedule();
+    currentNewsCategory=btn.dataset.news;
+    loadNews(currentNewsCategory,false);
   }));
 }
-function loadSchedule(){
-  const box=document.getElementById("scheduleBox");
+async function fetchGoogleNews(category){
+  const q=NEWS_QUERIES[category]||NEWS_QUERIES["씨야"];
+  const rss=`https://news.google.com/rss/search?q=${encodeURIComponent(q+" when:90d")}&hl=ko&gl=KR&ceid=KR:ko`;
+  const proxy=`https://api.allorigins.win/raw?url=${encodeURIComponent(rss)}`;
+  const r=await fetch(proxy,{cache:"no-store"});
+  if(!r.ok)throw new Error("proxy");
+  const xml=await r.text();
+  const doc=new DOMParser().parseFromString(xml,"text/xml");
+  if(doc.querySelector("parsererror"))throw new Error("xml");
+  return [...doc.querySelectorAll("item")].map(x=>({
+    title:x.querySelector("title")?.textContent||"",
+    link:x.querySelector("link")?.textContent||"",
+    pubDate:x.querySelector("pubDate")?.textContent||"",
+    description:x.querySelector("description")?.textContent||"",
+    source:x.querySelector("source")?.textContent||""
+  })).filter(x=>x.title&&x.link);
+}
+async function loadNews(category="씨야",bind=true){
+  const box=document.getElementById("newsBox");
+  const label=document.getElementById("newsLabel");
+  const updated=document.getElementById("newsUpdated");
   if(!box)return;
-  bindScheduleFilter();
-
-  const callbackName="seeyaScheduleCallback_"+Date.now();
-  const timeout=setTimeout(()=>{
-    cleanup();
-    box.innerHTML=`<div class="schedule-error"><b>스케줄을 불러오지 못했습니다.</b>Google Sheets에서 <strong>파일 → 공유 → 웹에 게시</strong>를 켠 뒤 다시 확인해주세요.</div>`;
-  },12000);
-
-  function cleanup(){
-    clearTimeout(timeout);
-    try{delete window[callbackName]}catch(e){}
-    const s=document.getElementById("seeyaScheduleJsonp");
-    if(s)s.remove();
+  currentNewsCategory=category;
+  if(bind)bindNewsFilter();
+  if(label)label.textContent=`${category==="씨야"?"SEEYA":category} · LATEST NEWS`;
+  if(updated)updated.textContent="";
+  box.innerHTML='<div class="news-loading">최근 뉴스를 불러오는 중입니다…</div>';
+  try{
+    const items=await fetchGoogleNews(category);
+    renderNews(items,category);
+    if(updated)updated.textContent=`UPDATED · ${new Date().toLocaleString("ko-KR",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"})}`;
+  }catch(e){
+    box.innerHTML=`<div class="news-error"><b>뉴스를 불러오지 못했습니다.</b>잠시 후 다시 시도해주세요.</div>`;
   }
-
-  window[callbackName]=function(resp){
-    try{
-      if(!resp||resp.status==="error")throw new Error("gviz");
-      const table=resp.table;
-      const headers=(table.cols||[]).map(c=>(c.label||c.id||"").trim());
-      const idx=name=>headers.indexOf(name);
-      const required=["날짜","요일","시간","멤버","내용","비고"];
-      if(["날짜","멤버","내용"].some(x=>idx(x)<0))throw new Error("header");
-
-      scheduleItems=(table.rows||[]).map(row=>{
-        const vals=(row.c||[]).map(c=>c?(c.f ?? c.v ?? ""):"");
-        const rawDate=String(vals[idx("날짜")]||"").trim();
-        return {
-          rawDate,
-          date:parseYYMMDD(rawDate),
-          week:String(vals[idx("요일")]||"").trim(),
-          time:String(vals[idx("시간")]||"").trim(),
-          member:String(vals[idx("멤버")]||"").trim(),
-          content:String(vals[idx("내용")]||"").trim(),
-          note:idx("비고")>=0?String(vals[idx("비고")]||"").trim():""
-        }
-      }).filter(x=>x.rawDate&&x.member&&x.content);
-
-      if(!scheduleItems.length)throw new Error("empty");
-      renderSchedule();
-      cleanup();
-    }catch(e){
-      cleanup();
-      box.innerHTML=`<div class="schedule-error"><b>스케줄 데이터를 읽었지만 형식을 확인할 수 없습니다.</b>시트 첫 행의 열 이름이 날짜 / 요일 / 시간 / 멤버 / 내용 / 비고인지 확인해주세요.</div>`;
-    }
-  };
-
-  const script=document.createElement("script");
-  script.id="seeyaScheduleJsonp";
-  script.src=`https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/gviz/tq?gid=0&tqx=responseHandler:${callbackName}`;
-  script.onerror=()=>{
-    cleanup();
-    box.innerHTML=`<div class="schedule-error"><b>Google Sheets에 연결하지 못했습니다.</b>시트를 웹에 게시한 뒤 다시 확인해주세요.</div>`;
-  };
-  document.body.appendChild(script);
 }
 
 function showCard(n){
@@ -723,6 +811,6 @@ function showCard(n){
   modal.classList.add("on")
 }
 function closeCard(){modal.classList.remove("on")}
-function route(){let p=location.hash.slice(1)||"/";let f=p.startsWith("/today")?today:p.startsWith("/tarot")?tarotPage:p.startsWith("/music")?music:p.startsWith("/history")?historyPage:p.startsWith("/members")?members:p.startsWith("/news")?news:home;app.innerHTML=f();scrollTo(0,0);if(f===news)loadSchedule()}
+function route(){let p=location.hash.slice(1)||"/";let f=p.startsWith("/today")?today:p.startsWith("/tarot")?tarotPage:p.startsWith("/music")?music:p.startsWith("/history")?historyPage:p.startsWith("/members")?members:p.startsWith("/news")?news:home;app.innerHTML=f();scrollTo(0,0);if(f===news)loadNews()}
 addEventListener("hashchange",route);route();
 </script></body></html>
