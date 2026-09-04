@@ -642,7 +642,7 @@ function members(){return W(`<div class="section" style="border:0"><div class="e
 function news(){return W(`<div class="section news-hero" style="border:0">
 <div class="eye">LATEST STORIES</div>
 <h1 style="font-size:55px">SEEYA NEWS</h1>
-<p class="lead">씨야 전체 소식과 세 멤버의 최근 기사를 골라서 확인할 수 있습니다.</p>
+<p class="lead">씨야 전체 소식과 세 멤버의 최근 기사 10개를 골라서 확인할 수 있습니다.</p>
 </div>
 
 <div class="news-filter" id="newsFilter">
@@ -658,7 +658,7 @@ function news(){return W(`<div class="section news-hero" style="border:0">
 </div>
 
 <div id="newsBox">
-  <div class="news-loading">최근 뉴스를 불러오는 중입니다…</div>
+  <div class="news-loading">최근 뉴스 10개를 불러오는 중입니다…</div>
 </div>`)}
 
 const SCHEDULE_CSV_URL="https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/gviz/tq?tqx=out:csv&gid=0";
@@ -751,9 +751,16 @@ function bindNewsFilter(){
 }
 async function fetchGoogleNews(category){
   const q=NEWS_QUERIES[category]||NEWS_QUERIES["씨야"];
-  const rss=`https://news.google.com/rss/search?q=${encodeURIComponent(q+" when:90d")}&hl=ko&gl=KR&ceid=KR:ko`;
+  const rss=`https://news.google.com/rss/search?q=${encodeURIComponent(q+" when:30d")}&hl=ko&gl=KR&ceid=KR:ko`;
   const proxy=`https://api.allorigins.win/raw?url=${encodeURIComponent(rss)}`;
-  const r=await fetch(proxy,{cache:"no-store"});
+  const controller=new AbortController();
+  const timer=setTimeout(()=>controller.abort(),8000);
+  let r;
+  try{
+    r=await fetch(proxy,{cache:"no-store",signal:controller.signal});
+  }finally{
+    clearTimeout(timer);
+  }
   if(!r.ok)throw new Error("proxy");
   const xml=await r.text();
   const doc=new DOMParser().parseFromString(xml,"text/xml");
@@ -775,7 +782,7 @@ async function loadNews(category="씨야",bind=true){
   if(bind)bindNewsFilter();
   if(label)label.textContent=`${category==="씨야"?"SEEYA":category} · LATEST NEWS`;
   if(updated)updated.textContent="";
-  box.innerHTML='<div class="news-loading">최근 뉴스를 불러오는 중입니다…</div>';
+  box.innerHTML='<div class="news-loading">최근 뉴스 10개를 불러오는 중입니다…</div>';
   try{
     const items=await fetchGoogleNews(category);
     renderNews(items,category);
