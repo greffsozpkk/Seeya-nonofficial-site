@@ -890,45 +890,52 @@ body.fanchant-lightbox-open{overflow:hidden}
 @media(max-width:850px){.fanchant{min-height:320px;background-position:center}.fanchant-copy{padding:42px 28px;max-width:100%}}
 
 
-/* MEMBERS · SIGNATURE */
+/* MEMBERS · SIGNATURE — fixed beside the name */
 .membercard{position:relative;overflow:hidden}
-.member-signature{
-  position:absolute;
+.member-name-row{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-height:72px;
+  position:relative;
+  isolation:isolate;
+}
+.member-name-copy{
+  position:relative;
   z-index:2;
-  width:clamp(108px,12vw,155px);
-  height:auto;
+  flex:0 0 auto;
+}
+.member-name-copy h3{margin-bottom:4px}
+.member-name-row .member-signature{
+  position:relative;
+  z-index:1;
+  flex:0 0 auto;
+  width:132px;
+  height:68px;
+  max-width:44%;
   object-fit:contain;
-  opacity:.62;
+  object-position:left center;
+  opacity:1;
   pointer-events:none;
-  filter:drop-shadow(0 1px 0 rgba(255,255,255,.3));
-  transform-origin:center;
+  filter:none;
+  margin-left:0;
 }
-/* Keep signatures in the decorative top-right space, clear of the face */
-.member-signature.sig-nam{
-  top:34px;
-  right:10px;
-  transform:rotate(-4deg);
-}
-.member-signature.sig-yeonji{
-  top:38px;
-  right:8px;
-  transform:rotate(-5deg);
-}
-.member-signature.sig-boram{
-  top:36px;
-  right:8px;
-  transform:rotate(2deg);
-}
+.member-name-row .sig-nam{transform:rotate(-3deg)}
+.member-name-row .sig-yeonji{transform:rotate(-4deg)}
+.member-name-row .sig-boram{transform:rotate(1deg)}
 @media(max-width:850px){
-  .member-signature{
-    width:108px;
-    opacity:.52;
+  .member-name-row{gap:10px;min-height:74px}
+  .member-name-row .member-signature{
+    width:132px;
+    height:68px;
+    max-width:46%;
   }
-  .member-signature.sig-nam,
-  .member-signature.sig-yeonji,
-  .member-signature.sig-boram{
-    top:28px;
-    right:6px;
+}
+@media(max-width:390px){
+  .member-name-row .member-signature{
+    width:118px;
+    height:62px;
+    max-width:43%;
   }
 }
 
@@ -1464,12 +1471,12 @@ function historyPage(){return W(`
 
 function members(){return W(`<div class="section" style="border:0"><div class="eye">MEMBERS</div><h1 style="font-size:55px">세 사람, 다시 씨야.</h1><p class="lead">First, Again의 유쾌한 회사 콘셉트와 함께 세 멤버의 프로필을 소개합니다.</p></div><div class="membergrid">
 
-<div class="membercard"><img class="member-signature sig-nam" src="images/members/nam-gyuri-signature.png" alt="" aria-hidden="true"><div class="member-photo"><img src="https://unavatar.io/youtube/UC_naRJKw5Isgpv5nF8yNXLw" alt="남규리 유튜브 프로필 사진" loading="lazy"></div><div class="member-role">대표</div><h3>남규리</h3><div class="eng">NAM GYU-RI</div><div class="facts"><div class="fact"><b>활동</b><span>가수 · 배우</span></div><div class="fact"><b>생일</b><span>4월 26일</span></div></div><div class="socials"><a class="social" href="https://www.instagram.com/nam_gyuri/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8Zm5.4-1.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UC_naRJKw5Isgpv5nF8yNXLw" target="_blank" rel="noopener noreferrer" title="남규리의 귤멍"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UCNbU5_rEMwaqy6PSXS1wiBA" target="_blank" rel="noopener noreferrer" title="남규리 YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a></div><div class="channel-name">YouTube · 남규리의 귤멍</div>
+<div class="membercard"><div class="member-photo"><img src="https://unavatar.io/youtube/UC_naRJKw5Isgpv5nF8yNXLw" alt="남규리 유튜브 프로필 사진" loading="lazy"></div><div class="member-role">대표</div><div class="member-name-row"><div class="member-name-copy"><h3>남규리</h3><div class="eng">NAM GYU-RI</div></div><img class="member-signature sig-nam" src="images/members/nam-gyuri-signature.png" alt="" aria-hidden="true"></div><div class="facts"><div class="fact"><b>활동</b><span>가수 · 배우</span></div><div class="fact"><b>생일</b><span>4월 26일</span></div></div><div class="socials"><a class="social" href="https://www.instagram.com/nam_gyuri/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8Zm5.4-1.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UC_naRJKw5Isgpv5nF8yNXLw" target="_blank" rel="noopener noreferrer" title="남규리의 귤멍"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UCNbU5_rEMwaqy6PSXS1wiBA" target="_blank" rel="noopener noreferrer" title="남규리 YouTube"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a></div><div class="channel-name">YouTube · 남규리의 귤멍</div>
 <div class="channel-name">YouTube · 남규리 Official</div></div>
 
-<div class="membercard"><img class="member-signature sig-yeonji" src="images/members/kim-yeonji-signature.png" alt="" aria-hidden="true"><div class="member-photo"><img src="https://unavatar.io/youtube/UCjLZIdvRV7fQ3m_DA9NEkOg" alt="김연지 유튜브 프로필 사진" loading="lazy"></div><div class="member-role">전무</div><h3>김연지</h3><div class="eng">KIM YEON-JI</div><div class="facts"><div class="fact"><b>활동</b><span>가수 · 뮤지컬 배우</span></div><div class="fact"><b>생일</b><span>10월 30일</span></div></div><div class="socials"><a class="social" href="https://www.instagram.com/rorakim0927/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8Zm5.4-1.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UCjLZIdvRV7fQ3m_DA9NEkOg" target="_blank" rel="noopener noreferrer" title="김연지 Official"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a></div><div class="channel-name">YouTube · 김연지 Official</div></div>
+<div class="membercard"><div class="member-photo"><img src="https://unavatar.io/youtube/UCjLZIdvRV7fQ3m_DA9NEkOg" alt="김연지 유튜브 프로필 사진" loading="lazy"></div><div class="member-role">전무</div><div class="member-name-row"><div class="member-name-copy"><h3>김연지</h3><div class="eng">KIM YEON-JI</div></div><img class="member-signature sig-yeonji" src="images/members/kim-yeonji-signature.png" alt="" aria-hidden="true"></div><div class="facts"><div class="fact"><b>활동</b><span>가수 · 뮤지컬 배우</span></div><div class="fact"><b>생일</b><span>10월 30일</span></div></div><div class="socials"><a class="social" href="https://www.instagram.com/rorakim0927/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8Zm5.4-1.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UCjLZIdvRV7fQ3m_DA9NEkOg" target="_blank" rel="noopener noreferrer" title="김연지 Official"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a></div><div class="channel-name">YouTube · 김연지 Official</div></div>
 
-<div class="membercard"><img class="member-signature sig-boram" src="images/members/lee-boram-signature.png" alt="" aria-hidden="true"><div class="member-photo"><img src="https://unavatar.io/youtube/UCz11CPccQ2AnizJrdp58Bog" alt="이보람 유튜브 프로필 사진" loading="lazy"></div><div class="member-role">상무</div><h3>이보람</h3><div class="eng">LEE BO-RAM</div><div class="facts"><div class="fact"><b>활동</b><span>가수</span></div><div class="fact"><b>생일</b><span>2월 17일</span></div></div><div class="socials"><a class="social" href="https://www.instagram.com/dlqhfka0217/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8Zm5.4-1.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UCz11CPccQ2AnizJrdp58Bog" target="_blank" rel="noopener noreferrer" title="보람씨야"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a></div><div class="channel-name">YouTube · 보람씨야</div></div>
+<div class="membercard"><div class="member-photo"><img src="https://unavatar.io/youtube/UCz11CPccQ2AnizJrdp58Bog" alt="이보람 유튜브 프로필 사진" loading="lazy"></div><div class="member-role">상무</div><div class="member-name-row"><div class="member-name-copy"><h3>이보람</h3><div class="eng">LEE BO-RAM</div></div><img class="member-signature sig-boram" src="images/members/lee-boram-signature.png" alt="" aria-hidden="true"></div><div class="facts"><div class="fact"><b>활동</b><span>가수</span></div><div class="fact"><b>생일</b><span>2월 17일</span></div></div><div class="socials"><a class="social" href="https://www.instagram.com/dlqhfka0217/" target="_blank" rel="noopener noreferrer" title="Instagram"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.8A4.2 4.2 0 1 1 7.8 12 4.2 4.2 0 0 1 12 7.8Zm5.4-1.3a1 1 0 1 1-1 1 1 1 0 0 1 1-1Z"/></svg></a><a class="social" href="https://www.youtube.com/channel/UCz11CPccQ2AnizJrdp58Bog" target="_blank" rel="noopener noreferrer" title="보람씨야"><svg viewBox="0 0 24 24"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg></a></div><div class="channel-name">YouTube · 보람씨야</div></div>
 
 </div><div class="notice" style="margin-top:22px">이번 활동에서 멤버들이 농담처럼 사용한 회사 직급 콘셉트를 반영했습니다.</div>`)}
 function news(){return W(`<div class="section news-hero" style="border:0">
