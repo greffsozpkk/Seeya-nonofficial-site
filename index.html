@@ -991,6 +991,26 @@ body.fanchant-lightbox-open{overflow:hidden}
   .guide-lines{gap:7px}
 }
 
+
+/* HOME · PIXEL CHARACTER FOOTER */
+.home-pixel-footer{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  padding:18px clamp(12px,4vw,48px) 0;
+  overflow:hidden;
+}
+.home-pixel-footer img{
+  display:block;
+  width:min(900px,92vw);
+  height:auto;
+  object-fit:contain;
+}
+@media(max-width:600px){
+  .home-pixel-footer{padding:16px 0 0}
+  .home-pixel-footer img{width:104vw;max-width:none}
+}
+
 </style></head><body>
 <aside><a class="brand logo-brand" href="#/"><img src="data:image/png;base64,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" alt="SEEYA"><small>UNOFFICIAL ARCHIVE</small></a><nav>
 <a href="#/">HOME</a>
@@ -1128,14 +1148,14 @@ function home(){return `<div class="home-aespa">
       <p>씨야의 이름으로 함께하는 시간과 나란히 이어지는 세 멤버의 개인 음악 활동을 만나보세요.</p>
     </div>
     <div class="solo-grid">
-      <a class="solo-card" href="https://youtu.be/W_0qUZ6rnLc?si=KwKByB1FxFFX36L5" target="_blank" rel="noopener noreferrer">
-        <div class="solo-art"><img src="https://img.youtube.com/vi/W_0qUZ6rnLc/maxresdefault.jpg" alt="남규리 우리 사랑 그런 거 해요 1차 티저" loading="lazy"></div>
+      <a class="solo-card" href="https://www.youtube.com/watch?v=z3NdruMIj8g" target="_blank" rel="noopener noreferrer">
+        <div class="solo-art"><img src="https://img.youtube.com/vi/z3NdruMIj8g/maxresdefault.jpg" alt="남규리 우리 사랑 그런 거 해요 2차 티저" loading="lazy"></div>
         <div class="solo-card-content">
           <div class="solo-member">NAM GYU-RI · 남규리</div>
           <span class="solo-status">2026.09.06 · 18:00 OPEN</span>
           <h3>우리 사랑 그런 거 해요</h3>
-          <div class="solo-meta">2026.09.06 18:00 공개 예정 · YouTube 1차 티저</div>
-          <div class="solo-action">1차 티저 보기 →</div>
+          <div class="solo-meta">2026.09.06 18:00 공개 예정 · YouTube 2차 티저</div>
+          <div class="solo-action">2차 티저 보기 →</div>
         </div>
       </a>
 
@@ -1176,6 +1196,9 @@ function home(){return `<div class="home-aespa">
     <span>이 페이지는 아티스트 씨야(SeeYa)를 응원하는 팬이 제작한 <b>비영리 팬 페이지</b>입니다.</span>
     <span>어떠한 형태의 영리적 목적이나 상업적 수수료 취득, 광고 수익 창출 행위를 하지 않습니다.</span>
   </div>
+</section>
+<section class="home-pixel-footer" aria-label="SEEYA pixel characters">
+  <img src="images/common/seeya-pixel-characters.png" alt="씨야 팬페이지 도트 캐릭터" loading="lazy">
 </section>
 </div>`}
 function today(){return W(`<div class="section" style="border:0"><div class="eye">DAILY SEEYA</div><h1 style="font-size:55px">TODAY'S SEEYA</h1><p class="lead">오늘의 흐름을 가볍게 읽고, 그 기분에 어울리는 씨야의 노래를 한 곡 추천합니다.</p></div>${todayBlock()}`)}
