@@ -891,24 +891,44 @@ body.fanchant-lightbox-open{overflow:hidden}
 
 
 /* MEMBERS · SIGNATURE */
-.member-card,.member{position:relative}
+.membercard{position:relative;overflow:hidden}
 .member-signature{
   position:absolute;
-  z-index:3;
-  width:clamp(150px,18vw,245px);
+  z-index:2;
+  width:clamp(108px,12vw,155px);
   height:auto;
   object-fit:contain;
-  opacity:.78;
+  opacity:.62;
   pointer-events:none;
-  filter:drop-shadow(0 1px 0 rgba(255,255,255,.25));
+  filter:drop-shadow(0 1px 0 rgba(255,255,255,.3));
+  transform-origin:center;
 }
-.member-signature.sig-nam{top:26px;right:24px;transform:rotate(-2deg)}
-.member-signature.sig-yeonji{top:28px;right:22px;transform:rotate(-3deg)}
-.member-signature.sig-boram{top:24px;right:22px;transform:rotate(1deg)}
+/* Keep signatures in the decorative top-right space, clear of the face */
+.member-signature.sig-nam{
+  top:34px;
+  right:10px;
+  transform:rotate(-4deg);
+}
+.member-signature.sig-yeonji{
+  top:38px;
+  right:8px;
+  transform:rotate(-5deg);
+}
+.member-signature.sig-boram{
+  top:36px;
+  right:8px;
+  transform:rotate(2deg);
+}
 @media(max-width:850px){
-  .member-signature{width:145px;opacity:.68}
-  .member-signature.sig-nam,.member-signature.sig-yeonji,.member-signature.sig-boram{
-    top:20px;right:16px
+  .member-signature{
+    width:108px;
+    opacity:.52;
+  }
+  .member-signature.sig-nam,
+  .member-signature.sig-yeonji,
+  .member-signature.sig-boram{
+    top:28px;
+    right:6px;
   }
 }
 
