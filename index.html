@@ -910,32 +910,36 @@ body.fanchant-lightbox-open{overflow:hidden}
   position:relative;
   z-index:1;
   flex:0 0 auto;
-  width:132px;
-  height:68px;
-  max-width:44%;
+  width:clamp(135px,14vw,170px);
+  height:82px;
+  max-width:46%;
   object-fit:contain;
   object-position:left center;
   opacity:1;
   pointer-events:none;
   filter:none;
-  margin-left:0;
+  margin-left:-2px;
 }
 .member-name-row .sig-nam{transform:rotate(-3deg)}
 .member-name-row .sig-yeonji{transform:rotate(-4deg)}
 .member-name-row .sig-boram{transform:rotate(1deg)}
 @media(max-width:850px){
-  .member-name-row{gap:10px;min-height:74px}
+  .member-name-row{
+    gap:8px;
+    min-height:88px;
+  }
   .member-name-row .member-signature{
-    width:132px;
-    height:68px;
-    max-width:46%;
+    width:clamp(155px,44vw,190px);
+    height:92px;
+    max-width:50%;
+    margin-left:-4px;
   }
 }
 @media(max-width:390px){
   .member-name-row .member-signature{
-    width:118px;
-    height:62px;
-    max-width:43%;
+    width:clamp(138px,42vw,165px);
+    height:82px;
+    max-width:48%;
   }
 }
 
