@@ -1,0 +1,60 @@
+{
+  "photos": [
+    {
+      "image": "images/gallery/2026-still-here-still-us.jpg",
+      "title": "STILL HERE, STILL US",
+      "member": "SEEYA",
+      "order": 1,
+      "featured": true
+    },
+    {
+      "image": "images/gallery/2026-first-again-group-room.jpg",
+      "title": "First, Again · 함께한 순간",
+      "member": "SEEYA",
+      "order": 2,
+      "featured": true
+    },
+    {
+      "image": "images/gallery/2026-first-again-moment-01.jpg",
+      "title": "First, Again · Moment 01",
+      "member": "SEEYA",
+      "order": 3,
+      "featured": true
+    },
+    {
+      "image": "images/gallery/2026-first-again-moment-02.jpg",
+      "title": "First, Again · Moment 02",
+      "member": "SEEYA",
+      "order": 4,
+      "featured": true
+    },
+    {
+      "image": "images/gallery/2026-first-again-moment-03.jpg",
+      "title": "First, Again · Moment 03",
+      "member": "SEEYA",
+      "order": 5,
+      "featured": true
+    },
+    {
+      "image": "images/gallery/2026-first-again-group-01.jpg",
+      "title": "First, Again · Group 01",
+      "member": "SEEYA",
+      "order": 6,
+      "featured": true
+    },
+    {
+      "image": "images/gallery/2026-first-again-group-02.jpg",
+      "title": "First, Again · Group 02",
+      "member": "SEEYA",
+      "order": 7,
+      "featured": true
+    },
+    {
+      "image": "images/gallery/2026-first-again-cover.webp",
+      "title": "First, Again · 20th Anniversary",
+      "member": "SEEYA",
+      "order": 8,
+      "featured": true
+    }
+  ]
+}
