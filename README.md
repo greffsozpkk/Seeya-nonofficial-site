@@ -113,3 +113,12 @@ v4.45 기반.
 - 실제 썸네일이 존재하면 placeholder보다 실제 썸네일을 우선 표시
 - placeholder 이미지 로딩 실패 시 기존 연도/카테고리 텍스트 fallback 유지
 - v4.48 페이지네이션의 카드 렌더 할당도 함께 점검/교정
+
+
+## v4.50 · GUIDE / FAN CHANT Ending Art
+- 사용자 제공 응원 도트 이미지를 공용 자산으로 추가
+  - `images/common/seeya-cheer-pixel.png`
+- MUSIC → FAN CHANT 페이지 최하단에 배치
+- GUIDE 페이지 최하단에 동일 이미지 배치
+- 기존 TODAY / GALLERY / ARCHIVE / NEWS와 동일한 `.page-pixel-art` 엔딩 스타일 재사용
+- 장식 이미지로 처리하여 빈 alt 사용
