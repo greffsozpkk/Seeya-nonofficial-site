@@ -40,3 +40,13 @@ Melon 기준:
   `10549d56351a36ea7d8df11682ed09dfe3b75bc9`
 - Applied to root and clean-URL routed HTML copies.
 - Existing `robots.txt` and `sitemap.xml` are preserved.
+
+
+## v4.45 · Naver Description Optimization
+- 메인 페이지 description을 네이버 권장 80자 이내로 축약
+- Open Graph description과 Twitter description을 동일 문구로 동기화
+- GUIDE 포함 모든 clean URL 페이지 description을 80자 이하로 점검/정리
+- 런타임 routeMeta의 description도 정적 HTML과 동일하게 동기화
+
+메인 설명:
+`씨야(SeeYa) 팬 아카이브. 남규리, 김연지, 이보람의 음악과 활동 기록, 사진, 역사를 만나보세요.`
