@@ -1397,7 +1397,8 @@ function moveFanChantLightbox(step){fanChantLightboxIndex+=step;updateFanChantLi
 if(!window.__fanchantKeysBound){window.__fanchantKeysBound=true;document.addEventListener("keydown",e=>{const lb=document.getElementById("fanChantLightbox");if(!lb||!lb.classList.contains("open"))return;if(e.key==="Escape")closeFanChantLightbox();else if(e.key==="ArrowLeft")moveFanChantLightbox(-1);else if(e.key==="ArrowRight")moveFanChantLightbox(1)})}
 
 function music(){
- const sub=(location.hash||"").includes("/fanchant")?"fanchant":"discography";
+ const currentMusicRoute=(location.hash?location.hash.slice(1):location.pathname).replace(/\/+$/,"")||"/";
+ const sub=currentMusicRoute.startsWith("/music/fanchant")?"fanchant":"discography";
  const subnav=`<div class="music-subnav"><a href="/music/" class="${sub==="discography"?"active":""}">DISCOGRAPHY</a><a href="/music/fanchant/" class="${sub==="fanchant"?"active":""}">FAN CHANT · 응원법</a></div>`;
  if(sub==="fanchant")return W(`
     <div class="section" style="border:0">

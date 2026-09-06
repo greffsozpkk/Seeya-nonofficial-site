@@ -1,10 +1,18 @@
-# SEEYA ARCHIVE v4.39 — HISTORY Transparent Art / Size Tuning
+# SEEYA ARCHIVE v4.40 — FAN CHANT Route Fix
 
-v4.38 기반.
+v4.39 기반.
 
-## HISTORY 변경
-- 사용자가 제공한 투명 배경 PNG로 HISTORY 하단 도트 일러스트 교체
-- PC 최대 폭: 약 1040px → 약 820px
-- PC viewport 기준 폭도 96vw → 84vw로 축소
-- 모바일은 104vw → 96vw로 줄여 과도한 확대 방지
-- 기존 엔딩 배치/구분선/약한 글로우는 유지
+## 수정
+MUSIC 내부 `FAN CHANT · 응원법` 탭이 clean URL 환경에서 반응하지 않던 문제를 수정했습니다.
+
+원인:
+- MUSIC 함수가 응원법 여부를 `location.hash`만 보고 판단하고 있었음.
+- v4.32 이후 공개 URL은 `/music/fanchant/` 형태의 pathname 기반 clean URL이므로,
+  해당 페이지에 들어가도 MUSIC이 계속 DISCOGRAPHY로 판단했습니다.
+
+수정:
+- `location.hash`가 있으면 기존 hash route를 사용
+- 아니면 `location.pathname`을 사용
+- `/music/fanchant/`를 정확히 FAN CHANT 하위 페이지로 인식
+
+따라서 localhost와 GitHub Pages의 clean URL 모두 정상 동작합니다.
