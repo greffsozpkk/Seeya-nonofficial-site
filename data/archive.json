@@ -1,206 +1,30 @@
 [
   {
-    "id": "20060224-first-mind-release",
-    "date": "2006-02-24",
+    "id": "20260906-gyuri-love-teaser2",
+    "date": "2026-09-06",
     "addedAt": "2026-09-06",
-    "title": "The First Mind 발매",
-    "program": "SEEYA 1st Album",
+    "title": "우리 사랑 그런 거 해요 Part.2 Teaser",
+    "program": "남규리 Official",
     "type": "official",
     "members": [
+      "남규리"
+    ],
+    "songs": [
+      "우리 사랑 그런 거 해요"
+    ],
+    "album": "",
+    "thumbnail": "https://img.youtube.com/vi/z3NdruMIj8g/maxresdefault.jpg",
+    "source": {
+      "platform": "youtube",
+      "url": "https://www.youtube.com/watch?v=z3NdruMIj8g"
+    },
+    "status": "available",
+    "tags": [
       "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "여인의 향기",
-      "구두",
-      "미친 사랑의 노래"
-    ],
-    "album": "The First Mind",
-    "thumbnail": "",
-    "source": {
-      "platform": "bugs",
-      "url": "https://music.bugs.co.kr/album/8016131"
-    },
-    "status": "available",
-    "tags": [
-      "1집",
-      "데뷔",
-      "앨범"
-    ],
-    "note": "씨야의 첫 정규 앨범."
-  },
-  {
-    "id": "20071117-mkmf-female-group",
-    "date": "2007-11-17",
-    "addedAt": "2026-09-05",
-    "title": "MKMF 여자그룹상 수상",
-    "program": "2007 MKMF",
-    "type": "event",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "사랑의 인사"
-    ],
-    "album": "Lovely Sweet Heart",
-    "thumbnail": "",
-    "source": {
-      "platform": "news",
-      "url": "https://www.starnewskorea.com/music/2007/11/17/2007111721271013098"
-    },
-    "status": "available",
-    "tags": [
-      "사랑의인사",
-      "2집",
-      "수상"
-    ],
-    "note": "〈사랑의 인사〉로 여자그룹상 수상."
-  },
-  {
-    "id": "20110121-see-you-again",
-    "date": "2011-01-21",
-    "addedAt": "2026-09-04",
-    "title": "See You Again 발매",
-    "program": "SEEYA Best Album",
-    "type": "official",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "The Last"
-    ],
-    "album": "See You Again",
-    "thumbnail": "",
-    "source": {
-      "platform": "melon",
-      "url": "https://www.melon.com/album/detail.htm?albumId=1150052"
-    },
-    "status": "available",
-    "tags": [
-      "베스트앨범",
-      "SeeYouAgain",
-      "2011"
-    ],
-    "note": "씨야의 베스트 앨범."
-  },
-  {
-    "id": "20110130-inkigayo-last-stage",
-    "date": "2011-01-30",
-    "addedAt": "2026-09-03",
-    "title": "마지막 음악방송 무대",
-    "program": "SBS 인기가요",
-    "type": "music-show",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "The Last"
-    ],
-    "album": "See You Again",
-    "thumbnail": "",
-    "source": {
-      "platform": "news",
-      "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01161126596122312"
-    },
-    "status": "available",
-    "tags": [
-      "인기가요",
-      "마지막무대",
-      "TheLast"
-    ],
-    "note": "2011년 씨야의 마지막 음악방송 무대 기록."
-  },
-  {
-    "id": "20260330-nevertheless-we",
-    "date": "2026-03-30",
-    "addedAt": "2026-09-02",
-    "title": "그럼에도, 우린 공개",
-    "program": "SEEYA Pre-release Single",
-    "type": "official",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "그럼에도, 우린"
-    ],
-    "album": "그럼에도, 우린",
-    "thumbnail": "",
-    "source": {
-      "platform": "bugs",
-      "url": "https://music.bugs.co.kr/album/4144173"
-    },
-    "status": "available",
-    "tags": [
-      "재결합",
-      "선공개",
-      "그럼에도우린"
-    ],
-    "note": "2026년 재결합 후 공개된 선공개 싱글."
-  },
-  {
-    "id": "20260514-first-again",
-    "date": "2026-05-14",
-    "addedAt": "2026-09-01",
-    "title": "First, Again 발매",
-    "program": "SEEYA 4th Album",
-    "type": "official",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "봄처럼 그댄"
-    ],
-    "album": "First, Again",
-    "thumbnail": "images/gallery/2026-first-again-cover.webp",
-    "source": {
-      "platform": "melon",
-      "url": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
-    },
-    "status": "available",
-    "tags": [
-      "4집",
-      "20주년",
-      "FirstAgain"
-    ],
-    "note": "20주년과 함께 다시 시작된 정규 앨범."
-  },
-  {
-    "id": "20260802-boram-light-opposite",
-    "date": "2026-08-02",
-    "addedAt": "2026-08-31",
-    "title": "빛의 반대편에서",
-    "program": "이보람 Solo Single",
-    "type": "official",
-    "members": [
-      "이보람"
-    ],
-    "songs": [
-      "빛의 반대편에서"
-    ],
-    "album": "빛의 반대편에서",
-    "thumbnail": "https://image.bugsm.co.kr/album/images/200/41527/4152707.jpg?version=20260805010017",
-    "source": {
-      "platform": "melon",
-      "url": "https://www.melon.com/album/detail.htm?albumId=14335999"
-    },
-    "status": "available",
-    "tags": [
-      "이보람",
       "솔로",
-      "싱글"
+      "티저"
     ],
-    "note": "이보람 솔로 싱글."
+    "note": "〈우리 사랑 그런 거 해요〉 2차 티저."
   },
   {
     "id": "20260829-yeonji-song",
@@ -257,30 +81,1106 @@
     "note": "SEEYA THE FAN 전국투어 서울 공연."
   },
   {
-    "id": "20260906-gyuri-love-teaser2",
-    "date": "2026-09-06",
-    "addedAt": "2026-09-06",
-    "title": "우리 사랑 그런 거 해요 Part.2 Teaser",
-    "program": "남규리 Official",
+    "id": "20260802-boram-light-opposite",
+    "date": "2026-08-02",
+    "addedAt": "2026-08-31",
+    "title": "빛의 반대편에서",
+    "program": "이보람 Solo Single",
     "type": "official",
     "members": [
-      "남규리"
+      "이보람"
     ],
     "songs": [
-      "우리 사랑 그런 거 해요"
+      "빛의 반대편에서"
     ],
-    "album": "",
-    "thumbnail": "https://img.youtube.com/vi/z3NdruMIj8g/maxresdefault.jpg",
+    "album": "빛의 반대편에서",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/200/41527/4152707.jpg?version=20260805010017",
     "source": {
-      "platform": "youtube",
-      "url": "https://www.youtube.com/watch?v=z3NdruMIj8g"
+      "platform": "melon",
+      "url": "https://www.melon.com/album/detail.htm?albumId=14335999"
     },
     "status": "available",
     "tags": [
-      "남규리",
+      "이보람",
       "솔로",
-      "티저"
+      "싱글"
     ],
-    "note": "〈우리 사랑 그런 거 해요〉 2차 티저."
+    "note": "이보람 솔로 싱글."
+  },
+  {
+    "id": "20260514-first-again",
+    "date": "2026-05-14",
+    "addedAt": "2026-09-06",
+    "title": "First, Again 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Stay",
+      "계절은 돌고 돌아",
+      "봄처럼 그댄",
+      "I Believe",
+      "그럼에도, 우린",
+      "안돼요",
+      "잔향",
+      "끝내 꺾이지 않는 것",
+      "우리 Live Ver.",
+      "Stay Inst.",
+      "그럼에도, 우린 Inst. (To My Fan)"
+    ],
+    "album": "First, Again",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/41474/4147431.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/4147431"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "정규 4집",
+      "20주년",
+      "재결합",
+      "정규"
+    ],
+    "note": "데뷔 20주년 기념 정규 앨범.",
+    "releaseType": "정규",
+    "genre": "발라드, 댄스/팝",
+    "style": "발라드, 댄스 팝",
+    "distributor": "카카오엔터테인먼트",
+    "agency": "㈜씨야 엔터테인먼트",
+    "duration": "",
+    "trackCount": 11,
+    "collaborators": [],
+    "titleTracks": [
+      "Stay",
+      "봄처럼 그댄"
+    ]
+  },
+  {
+    "id": "20260330-nevertheless-we",
+    "date": "2026-03-30",
+    "addedAt": "2026-09-06",
+    "title": "그럼에도, 우린 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "그럼에도, 우린",
+      "그럼에도, 우린 (Inst.)"
+    ],
+    "album": "그럼에도, 우린",
+    "thumbnail": "https://www.bntnews.co.kr/data/bnt/image/2026/03/30/bnt202603300083.jpeg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/4144173"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "싱글",
+      "재결합",
+      "선공개",
+      "싱글"
+    ],
+    "note": "",
+    "releaseType": "싱글",
+    "genre": "발라드",
+    "style": "발라드",
+    "distributor": "카카오엔터테인먼트",
+    "agency": "㈜씨야엔터테인먼트",
+    "duration": "",
+    "trackCount": 2,
+    "collaborators": [],
+    "titleTracks": [
+      "그럼에도, 우린"
+    ]
+  },
+  {
+    "id": "20110801-ghastly-ost",
+    "date": "2011-08-01",
+    "addedAt": "2026-09-06",
+    "title": "기생령 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "끝까지"
+    ],
+    "album": "기생령",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/2951/295147.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/295147"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "OST",
+      "영화",
+      "참여",
+      "OST"
+    ],
+    "note": "이보람과 티아라 소연이 ‘끝까지’에 참여.",
+    "releaseType": "OST",
+    "genre": "OST",
+    "style": "영화",
+    "distributor": "주식회사 플랜비뮤직",
+    "agency": "코어콘텐츠미디어",
+    "duration": "",
+    "trackCount": 21,
+    "collaborators": [
+      "티아라 소연"
+    ],
+    "titleTracks": [
+      "끝까지"
+    ]
+  },
+  {
+    "id": "20110130-inkigayo-last-stage",
+    "date": "2011-01-30",
+    "addedAt": "2026-09-03",
+    "title": "마지막 음악방송 무대",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "The Last"
+    ],
+    "album": "See You Again",
+    "thumbnail": "",
+    "source": {
+      "platform": "news",
+      "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01161126596122312"
+    },
+    "status": "available",
+    "tags": [
+      "인기가요",
+      "마지막무대",
+      "TheLast"
+    ],
+    "note": "2011년 씨야의 마지막 음악방송 무대 기록."
+  },
+  {
+    "id": "20110121-see-you-again",
+    "date": "2011-01-21",
+    "addedAt": "2026-09-06",
+    "title": "See You Again 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "내겐 너무 멋진 그대",
+      "The Last",
+      "여인의 향기",
+      "구두",
+      "사랑의 인사"
+    ],
+    "album": "See You Again",
+    "thumbnail": "https://i.scdn.co/image/ab67616d0000b273190e0c6930ae2521e1c0688a",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/259909"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "베스트",
+      "마지막 앨범",
+      "베스트"
+    ],
+    "note": "",
+    "releaseType": "베스트",
+    "genre": "발라드, 댄스/팝, 알앤비/소울",
+    "style": "발라드, 댄스 팝, 알앤비",
+    "distributor": "Various",
+    "agency": "코어콘텐츠미디어",
+    "duration": "",
+    "trackCount": 15,
+    "collaborators": [],
+    "titleTracks": [
+      "내겐 너무 멋진 그대",
+      "The Last"
+    ]
+  },
+  {
+    "id": "20101011-seeya-davichi",
+    "date": "2010-10-11",
+    "addedAt": "2026-09-06",
+    "title": "씨야 그리고 다비치 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "다 컸잖아"
+    ],
+    "album": "씨야 그리고 다비치",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/2412/241289.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/241289"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "싱글",
+      "콜라보",
+      "싱글"
+    ],
+    "note": "",
+    "releaseType": "싱글",
+    "genre": "발라드",
+    "style": "발라드",
+    "distributor": "Beyond Music",
+    "agency": "Beyond Music",
+    "duration": "",
+    "trackCount": 1,
+    "collaborators": [
+      "다비치"
+    ],
+    "titleTracks": [
+      "다 컸잖아"
+    ]
+  },
+  {
+    "id": "20101008-twentieth-urban",
+    "date": "2010-10-08",
+    "addedAt": "2026-09-06",
+    "title": "TWENTYth Urban 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "TWENTYth Urban",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/2407/240729.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/240729"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "싱글",
+      "프로젝트",
+      "싱글"
+    ],
+    "note": "",
+    "releaseType": "싱글",
+    "genre": "발라드",
+    "style": "발라드",
+    "distributor": "NHN벅스",
+    "agency": "노트뮤직",
+    "duration": "",
+    "trackCount": 2,
+    "collaborators": [],
+    "titleTracks": []
+  },
+  {
+    "id": "20100928-superstar-k2",
+    "date": "2010-09-28",
+    "addedAt": "2026-09-06",
+    "title": "슈퍼스타 K 2 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "슈퍼스타 K 2",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/2394/239472.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/239472"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "컴필레이션",
+      "참여",
+      "컴필레이션"
+    ],
+    "note": "Various Artists 컴필레이션 참여 기록.",
+    "releaseType": "컴필레이션",
+    "genre": "발라드, 댄스/팝",
+    "style": "발라드, 댄스 팝, 팝",
+    "distributor": "지니뮤직",
+    "agency": "Stone Music Entertainment",
+    "duration": "",
+    "trackCount": 24,
+    "collaborators": [],
+    "titleTracks": []
+  },
+  {
+    "id": "20100906-baby-brown",
+    "date": "2010-09-06",
+    "addedAt": "2026-09-06",
+    "title": "안영민 Baby Brown 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "안영민 Baby Brown",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/2366/236654.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/236654"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "싱글",
+      "프로젝트",
+      "싱글"
+    ],
+    "note": "",
+    "releaseType": "싱글",
+    "genre": "발라드",
+    "style": "발라드",
+    "distributor": "지니뮤직, STONE MUSIC",
+    "agency": "넥스타엔터테인먼트",
+    "duration": "",
+    "trackCount": null,
+    "collaborators": [],
+    "titleTracks": []
+  },
+  {
+    "id": "20100421-personal-taste-ost",
+    "date": "2010-04-21",
+    "addedAt": "2026-09-06",
+    "title": "개인의 취향 (MBC 수목드라마) 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "가슴이 뭉클"
+    ],
+    "album": "개인의 취향 (MBC 수목드라마)",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/2212/221210.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/221210"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "OST",
+      "드라마",
+      "정식 OST",
+      "OST"
+    ],
+    "note": "정식 OST 앨범에 씨야 참여곡 수록.",
+    "releaseType": "OST",
+    "genre": "",
+    "style": "",
+    "distributor": "",
+    "agency": "",
+    "duration": "",
+    "trackCount": null,
+    "collaborators": [],
+    "titleTracks": [
+      "가슴이 뭉클"
+    ]
+  },
+  {
+    "id": "20100407-personal-taste-part2",
+    "date": "2010-04-07",
+    "addedAt": "2026-09-06",
+    "title": "개인의 취향 (MBC 수목드라마) - Part.2 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "가슴이 뭉클"
+    ],
+    "album": "개인의 취향 (MBC 수목드라마) - Part.2",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/2204/220428.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/220428"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "OST",
+      "드라마",
+      "OST"
+    ],
+    "note": "",
+    "releaseType": "OST",
+    "genre": "OST",
+    "style": "TV 드라마",
+    "distributor": "뮤직앤뉴",
+    "agency": "(주)뮤직카우, 이김프로덕션",
+    "duration": "",
+    "trackCount": 1,
+    "collaborators": [],
+    "titleTracks": [
+      "가슴이 뭉클"
+    ]
+  },
+  {
+    "id": "20100107-wonder-woman",
+    "date": "2010-01-07",
+    "addedAt": "2026-09-06",
+    "title": "원더우먼 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "원더우먼"
+    ],
+    "album": "원더우먼",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/2141/214161.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/214161"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "싱글",
+      "콜라보",
+      "싱글"
+    ],
+    "note": "",
+    "releaseType": "싱글",
+    "genre": "댄스/팝",
+    "style": "댄스 팝",
+    "distributor": "주식회사 플랜비뮤직",
+    "agency": "코어콘텐츠미디어",
+    "duration": "",
+    "trackCount": null,
+    "collaborators": [
+      "다비치",
+      "티아라"
+    ],
+    "titleTracks": [
+      "원더우먼"
+    ]
+  },
+  {
+    "id": "20091026-rebloom",
+    "date": "2009-10-26",
+    "addedAt": "2026-09-06",
+    "title": "Rebloom 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "그 놈 목소리",
+      "앗차!",
+      "눈물의 여왕",
+      "바람핀다 믿었니",
+      "T-Gana (티가나)"
+    ],
+    "album": "Rebloom",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/2037/203741.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/203741"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "미니앨범",
+      "EP(미니)"
+    ],
+    "note": "",
+    "releaseType": "EP(미니)",
+    "genre": "댄스/팝",
+    "style": "댄스 팝",
+    "distributor": "주식회사 플랜비뮤직",
+    "agency": "코어콘텐츠미디어",
+    "duration": "",
+    "trackCount": 5,
+    "collaborators": [],
+    "titleTracks": [
+      "그 놈 목소리"
+    ]
+  },
+  {
+    "id": "20090506-womens-generation",
+    "date": "2009-05-06",
+    "addedAt": "2026-09-06",
+    "title": "여성시대 / 영원한 사랑 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여성시대",
+      "영원한 사랑"
+    ],
+    "album": "여성시대 / 영원한 사랑",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/1834/183422.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/183422"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "싱글",
+      "콜라보",
+      "싱글"
+    ],
+    "note": "씨야·다비치·티아라 협업 싱글.",
+    "releaseType": "싱글",
+    "genre": "댄스/팝",
+    "style": "댄스 팝",
+    "distributor": "오감엔터테인먼트",
+    "agency": "",
+    "duration": "",
+    "trackCount": 3,
+    "collaborators": [
+      "다비치",
+      "티아라"
+    ],
+    "titleTracks": [
+      "여성시대"
+    ]
+  },
+  {
+    "id": "20080926-brillant-change",
+    "date": "2008-09-26",
+    "addedAt": "2026-09-06",
+    "title": "Brillant Change 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "가니",
+      "Hot Girl",
+      "Turn It Up",
+      "집으로 돌아오는 길",
+      "내가 울더라도",
+      "덩그러니",
+      "사모곡",
+      "I Wish"
+    ],
+    "album": "Brillant Change",
+    "thumbnail": "https://coverartarchive.org/release/dc732f97-ca67-4325-b575-54cebd35a969/front-500",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/164383"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "정규 3집",
+      "정규"
+    ],
+    "note": "",
+    "releaseType": "정규",
+    "genre": "발라드, 댄스/팝",
+    "style": "발라드, 댄스 팝",
+    "distributor": "지니뮤직",
+    "agency": "Stone Music Entertainment",
+    "duration": "",
+    "trackCount": 13,
+    "collaborators": [],
+    "titleTracks": [
+      "Hot Girl"
+    ]
+  },
+  {
+    "id": "20080529-color-pink",
+    "date": "2008-05-29",
+    "addedAt": "2026-09-06",
+    "title": "Color Pink - Musiccube Artist Album #1 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Blue Moon"
+    ],
+    "album": "Color Pink - Musiccube Artist Album #1",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/1557/155708.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/155708"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "싱글",
+      "콜라보",
+      "싱글"
+    ],
+    "note": "",
+    "releaseType": "싱글",
+    "genre": "댄스/팝",
+    "style": "댄스 팝",
+    "distributor": "킹핀엔터테인먼트",
+    "agency": "",
+    "duration": "",
+    "trackCount": null,
+    "collaborators": [
+      "다비치",
+      "블랙펄"
+    ],
+    "titleTracks": [
+      "Blue Moon"
+    ]
+  },
+  {
+    "id": "20080320-fool-allstar",
+    "date": "2008-03-20",
+    "addedAt": "2026-09-06",
+    "title": "바보 (All Star 2집 Vol.4) 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "바보"
+    ],
+    "album": "바보 (All Star 2집 Vol.4)",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/1512/151202.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/151202"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "싱글",
+      "All Star",
+      "싱글"
+    ],
+    "note": "",
+    "releaseType": "싱글",
+    "genre": "댄스/팝",
+    "style": "댄스 팝",
+    "distributor": "카카오엔터테인먼트",
+    "agency": "도토리뮤직",
+    "duration": "",
+    "trackCount": 4,
+    "collaborators": [
+      "이지혜"
+    ],
+    "titleTracks": [
+      "바보"
+    ]
+  },
+  {
+    "id": "20080313-fate-ost",
+    "date": "2008-03-13",
+    "addedAt": "2026-09-06",
+    "title": "숙명 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "숙명",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/1018/101865.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/101865"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "OST",
+      "영화",
+      "OST"
+    ],
+    "note": "영화 《숙명》 OST 참여 음반.",
+    "releaseType": "OST",
+    "genre": "",
+    "style": "",
+    "distributor": "",
+    "agency": "",
+    "duration": "",
+    "trackCount": null,
+    "collaborators": [],
+    "titleTracks": []
+  },
+  {
+    "id": "20080102-california-dream",
+    "date": "2008-01-02",
+    "addedAt": "2026-09-06",
+    "title": "California Dream 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "슬픈 발걸음",
+      "그래도 좋아",
+      "Classic",
+      "연가",
+      "미워요",
+      "요즘 나는",
+      "깊은 밤을 날아서",
+      "처음 그 자리에",
+      "미친 사랑의 노래"
+    ],
+    "album": "California Dream",
+    "thumbnail": "https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/055/420/850/55420850_1405324372412_1_600x600.JPG",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/100005"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "정규 2.5집",
+      "정규"
+    ],
+    "note": "",
+    "releaseType": "정규",
+    "genre": "발라드",
+    "style": "발라드",
+    "distributor": "Various",
+    "agency": "STONE MUSIC",
+    "duration": "",
+    "trackCount": 11,
+    "collaborators": [],
+    "titleTracks": [
+      "슬픈 발걸음",
+      "그래도 좋아"
+    ]
+  },
+  {
+    "id": "20071220-sad-footsteps",
+    "date": "2007-12-20",
+    "addedAt": "2026-09-06",
+    "title": "슬픈 발걸음 (구두 II) 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "슬픈 발걸음 (구두 II)"
+    ],
+    "album": "슬픈 발걸음 (구두 II)",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/80325/8032567.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/8032567"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "싱글",
+      "구두 시리즈",
+      "싱글"
+    ],
+    "note": "",
+    "releaseType": "싱글",
+    "genre": "발라드",
+    "style": "발라드",
+    "distributor": "지니뮤직",
+    "agency": "Stone Music Entertainment",
+    "duration": "",
+    "trackCount": 1,
+    "collaborators": [],
+    "titleTracks": [
+      "슬픈 발걸음 (구두 II)"
+    ]
+  },
+  {
+    "id": "20071117-mkmf-female-group",
+    "date": "2007-11-17",
+    "addedAt": "2026-09-05",
+    "title": "MKMF 여자그룹상 수상",
+    "program": "2007 MKMF",
+    "type": "event",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "사랑의 인사"
+    ],
+    "album": "Lovely Sweet Heart",
+    "thumbnail": "",
+    "source": {
+      "platform": "news",
+      "url": "https://www.starnewskorea.com/music/2007/11/17/2007111721271013098"
+    },
+    "status": "available",
+    "tags": [
+      "사랑의인사",
+      "2집",
+      "수상"
+    ],
+    "note": "〈사랑의 인사〉로 여자그룹상 수상."
+  },
+  {
+    "id": "20071115-koongya-ost",
+    "date": "2007-11-15",
+    "addedAt": "2026-09-06",
+    "title": "쿵야 어드벤처 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "용기를 주세요",
+      "용기를 주세요 (inst.)"
+    ],
+    "album": "쿵야 어드벤처",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/80316/8031630.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/8031630"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "OST",
+      "애니메이션",
+      "OST"
+    ],
+    "note": "",
+    "releaseType": "OST",
+    "genre": "OST",
+    "style": "OST",
+    "distributor": "지니뮤직",
+    "agency": "",
+    "duration": "",
+    "trackCount": 2,
+    "collaborators": [],
+    "titleTracks": [
+      "용기를 주세요"
+    ]
+  },
+  {
+    "id": "20070525-lovely-sweet-heart",
+    "date": "2007-05-25",
+    "addedAt": "2026-09-06",
+    "title": "Lovely Sweet Heart 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "사랑의 인사",
+      "결혼할까요",
+      "너는 내 남자",
+      "Dirty Dancing",
+      "어떻게 널 잊겠니"
+    ],
+    "album": "Lovely Sweet Heart",
+    "thumbnail": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3d/5c/cd/3d5ccd4e-facb-5d08-bb32-0fe1d50ed182/8806163340050_cover.jpg/1200x1200bb.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/8026965"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "정규 2집",
+      "정규"
+    ],
+    "note": "",
+    "releaseType": "정규",
+    "genre": "알앤비/소울",
+    "style": "알앤비",
+    "distributor": "AURORA with Danal Entertainment",
+    "agency": "",
+    "duration": "",
+    "trackCount": 13,
+    "collaborators": [],
+    "titleTracks": [
+      "사랑의 인사"
+    ]
+  },
+  {
+    "id": "20060908-to-my-lover",
+    "date": "2006-09-08",
+    "addedAt": "2026-09-06",
+    "title": "To My Lover - 브라운 아이드 걸스 & 씨야 프로젝트 싱글 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "To My Lover - 브라운 아이드 걸스 & 씨야 프로젝트 싱글",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/80215/8021538.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/8021538"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "프로젝트",
+      "콜라보",
+      "싱글"
+    ],
+    "note": "브라운 아이드 걸스와 씨야의 프로젝트 싱글.",
+    "releaseType": "싱글",
+    "genre": "알앤비/소울",
+    "style": "알앤비",
+    "distributor": "지니뮤직",
+    "agency": "Stone Music Entertainment",
+    "duration": "",
+    "trackCount": null,
+    "collaborators": [
+      "브라운 아이드 걸스"
+    ],
+    "titleTracks": [
+      "The Day"
+    ]
+  },
+  {
+    "id": "20060718-invisible-choi-ost",
+    "date": "2006-07-18",
+    "addedAt": "2026-09-06",
+    "title": "투명인간 최장수 (KBS 수목드라마) 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "미친 사랑의 노래"
+    ],
+    "album": "투명인간 최장수 (KBS 수목드라마)",
+    "thumbnail": "https://image.bugsm.co.kr/album/images/500/80201/8020137.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/8020137"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "OST",
+      "드라마",
+      "OST"
+    ],
+    "note": "Various Artists OST. 씨야 참여곡 수록.",
+    "releaseType": "OST",
+    "genre": "OST",
+    "style": "TV 드라마",
+    "distributor": "Beyond Music",
+    "agency": "Beyond Music",
+    "duration": "",
+    "trackCount": null,
+    "collaborators": [],
+    "titleTracks": [
+      "미친 사랑의 노래"
+    ]
+  },
+  {
+    "id": "20060224-the-first-mind",
+    "date": "2006-02-24",
+    "addedAt": "2026-09-06",
+    "title": "The First Mind 발매",
+    "program": "DISCOGRAPHY",
+    "type": "album",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기",
+      "구두",
+      "사랑하기 때문에 (feat. SG 워너비)",
+      "접시꽃",
+      "Promise U"
+    ],
+    "album": "The First Mind",
+    "thumbnail": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4f/90/b7/4f90b7bb-17a4-9989-4ec0-f5e5ea8eb807/8806163340067_cover.jpg/1200x1200bf-60.jpg",
+    "source": {
+      "label": "Bugs",
+      "url": "https://music.bugs.co.kr/album/8016131"
+    },
+    "status": "available",
+    "tags": [
+      "앨범",
+      "정규 1집",
+      "데뷔앨범",
+      "정규"
+    ],
+    "note": "씨야의 데뷔 정규 앨범.",
+    "releaseType": "정규",
+    "genre": "알앤비/소울",
+    "style": "알앤비",
+    "distributor": "AURORA with Danal Entertainment",
+    "agency": "",
+    "duration": "",
+    "trackCount": 12,
+    "collaborators": [],
+    "titleTracks": [
+      "여인의 향기"
+    ]
   }
 ]
