@@ -1,20 +1,13 @@
-# SEEYA ARCHIVE v4.37 — Album Card Cleanup
+# SEEYA ARCHIVE v4.38 — HISTORY Continuing Story Art
 
-v4.36 기반.
+v4.37 기반.
 
-## 변경
-1. 음반 미리보기는 앨범 커버 우선
-   - 기존 MUSIC 페이지에서 사용하던 검증된 커버 URL은 그대로 재사용
-   - 나머지 Bugs 음반은 Bugs 표준 커버 URL 사용
-   - 외부 커버가 로딩되지 않으면 연도 / 음반유형 / 앨범명이 들어간 Pearl Light Pink 대체 카드가 자동 노출
-
-2. 음반 카드에서 재생 시간 제거
-
-3. 곡 정보는 전체/주요 수록곡 대신 타이틀곡만 노출
-   - `TITLE · 곡명`
-   - 복수 타이틀은 함께 표시
-   - Inst. / MR 등은 표시하지 않음
-   - 타이틀곡을 확실히 특정하지 않은 참여/컴필레이션 음반은 억지로 곡명을 표시하지 않음
-
-4. 원본 `songs` 데이터는 검색/향후 상세 페이지 확장을 위해 내부 JSON에는 유지
-   - 화면 노출은 `titleTracks`만 사용
+## HISTORY 변경
+- 사용자가 제공한 도트 일러스트를 `images/history/seeya-history-ing.png`로 추가
+- HISTORY 최하단 `계속되는 이야기. / SEE YOU ALWAYS.` 아래에 배치
+- 별도 카드/박스 없이 페이지 배경에 자연스럽게 이어지는 엔딩 비주얼로 구성
+- PC에서는 최대 약 1040px
+- 모바일에서는 화면 폭을 조금 넓게 사용해 캐릭터/화이트보드 디테일 유지
+- 위쪽에 Pearl Light Pink의 짧은 구분선
+- 아주 약한 핑크 글로우와 그림자만 사용
+- 장식 이미지이므로 alt는 빈 값
