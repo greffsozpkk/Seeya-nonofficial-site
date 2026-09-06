@@ -32,3 +32,11 @@ Melon 기준:
 - 장르: 발라드
 - 기획사: ㈜탱글미디어
 - 수록곡 2곡, 두 곡 모두 타이틀
+
+
+## v4.44 · Naver Search Advisor
+- Naver site verification meta tag added inside `<head>`.
+- Verification token:
+  `10549d56351a36ea7d8df11682ed09dfe3b75bc9`
+- Applied to root and clean-URL routed HTML copies.
+- Existing `robots.txt` and `sitemap.xml` are preserved.
