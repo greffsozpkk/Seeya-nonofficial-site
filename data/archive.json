@@ -374,6 +374,265 @@
     "note": "이보람 솔로 싱글."
   },
   {
+    "id": "20260630-ena-kpopup-stay",
+    "date": "2026-06-30",
+    "addedAt": "2026-09-06",
+    "title": "‘Stay’ 스테이지",
+    "program": "ENA 케이팝업 차트쇼 · 에피소드 21",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Stay"
+    ],
+    "album": "First, Again",
+    "thumbnail": "",
+    "source": {
+      "label": "Apple TV · ENA",
+      "url": "https://tv.apple.com/kr/episode/%E1%84%8B%E1%85%A6%E1%84%91%E1%85%B5%E1%84%89%E1%85%A9%E1%84%83%E1%85%B3-21/umc.cmc.320d9jurodo8msr1f8mmh6x4x?showId=umc.cmc.6iqjeapp4qyjv6cxdnse83jgs"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "케이팝업 차트쇼",
+      "ENA",
+      "Stay"
+    ],
+    "note": "ENA 케이팝업 차트쇼에서 선보인 ‘Stay’ 스테이지.",
+    "stageKind": "음악방송"
+  },
+  {
+    "id": "20260627-mbc-musiccore-stay",
+    "date": "2026-06-27",
+    "addedAt": "2026-09-06",
+    "title": "‘Stay’ 무대",
+    "program": "MBC 쇼! 음악중심 · 952회",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Stay"
+    ],
+    "album": "First, Again",
+    "thumbnail": "https://img.youtube.com/vi/XZOKi5OMtAs/maxresdefault.jpg",
+    "source": {
+      "label": "MBCkpop",
+      "url": "https://www.youtube.com/watch?v=XZOKi5OMtAs"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "쇼! 음악중심",
+      "MBC",
+      "Stay",
+      "완전체"
+    ],
+    "note": "정규 4집 ‘First, Again’ 활동기의 쇼! 음악중심 무대.",
+    "stageKind": "음악방송"
+  },
+  {
+    "id": "20260626-arirang-simply-kpop-stay",
+    "date": "2026-06-26",
+    "addedAt": "2026-09-06",
+    "title": "‘Stay’ 무대",
+    "program": "Simply K-Pop · EP.12",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Stay"
+    ],
+    "album": "First, Again",
+    "thumbnail": "https://img.youtube.com/vi/-hPFuX3DYqI/maxresdefault.jpg",
+    "source": {
+      "label": "ARIRANG K-POP",
+      "url": "https://www.youtube.com/watch?v=-hPFuX3DYqI"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "Simply K-Pop",
+      "Arirang",
+      "Stay"
+    ],
+    "note": "Simply K-Pop EP.12의 ‘Stay’ 무대.",
+    "stageKind": "음악방송"
+  },
+  {
+    "id": "20260621-sbs-inkigayo-stay",
+    "date": "2026-06-21",
+    "addedAt": "2026-09-06",
+    "title": "‘Stay’ 무대",
+    "program": "SBS 인기가요 · 1315회",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Stay"
+    ],
+    "album": "First, Again",
+    "thumbnail": "https://img.youtube.com/vi/Tm2OdWE8KBc/maxresdefault.jpg",
+    "source": {
+      "label": "SBSKPOP X INKIGAYO",
+      "url": "https://www.youtube.com/watch?v=Tm2OdWE8KBc"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "인기가요",
+      "SBS",
+      "Stay",
+      "완전체"
+    ],
+    "note": "15년 만에 완전체로 돌아온 씨야의 ‘Stay’ 인기가요 무대.",
+    "stageKind": "음악방송"
+  },
+  {
+    "id": "20260619-arirang-simply-kpop-stay",
+    "date": "2026-06-19",
+    "addedAt": "2026-09-06",
+    "title": "‘Stay’ 무대",
+    "program": "Simply K-Pop · EP.11",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Stay"
+    ],
+    "album": "First, Again",
+    "thumbnail": "https://img.youtube.com/vi/_FXstRqU4Qo/maxresdefault.jpg",
+    "source": {
+      "label": "Koreanet",
+      "url": "https://www.youtube.com/watch?v=_FXstRqU4Qo"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "Simply K-Pop",
+      "Arirang",
+      "Stay"
+    ],
+    "note": "Simply K-Pop EP.11에서 선보인 ‘Stay’ 무대.",
+    "stageKind": "음악방송"
+  },
+  {
+    "id": "20260618-mnet-mcountdown-stay",
+    "date": "2026-06-18",
+    "addedAt": "2026-09-06",
+    "title": "‘Stay’ 음악방송 컴백 무대",
+    "program": "Mnet M Countdown · EP.933",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Stay"
+    ],
+    "album": "First, Again",
+    "thumbnail": "",
+    "source": {
+      "label": "Mnet Plus",
+      "url": "https://www.mnetplus.world/media/ko/videos/6a33c48ea9add261a6add9bf"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "엠카운트다운",
+      "Mnet",
+      "Stay",
+      "컴백",
+      "15년 만의 음악방송"
+    ],
+    "note": "정규 4집 활동의 음악방송 컴백 무대. 2011년 고별 활동 이후 약 15년 만의 음악 순위 프로그램 출연.",
+    "stageKind": "음악방송"
+  },
+  {
+    "id": "20260607-kbs-openconcert",
+    "date": "2026-06-07",
+    "addedAt": "2026-09-06",
+    "title": "열린음악회 · 씨야 라이브",
+    "program": "KBS 1TV 열린음악회",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "그럼에도, 우린",
+      "미친 사랑의 노래",
+      "사랑의 인사"
+    ],
+    "album": "First, Again",
+    "thumbnail": "https://img.youtube.com/vi/TUVREvz3ejc/maxresdefault.jpg",
+    "source": {
+      "label": "KBS Kpop",
+      "url": "https://www.youtube.com/watch?v=TUVREvz3ejc"
+    },
+    "status": "available",
+    "tags": [
+      "라이브",
+      "열린음악회",
+      "KBS",
+      "그럼에도 우린",
+      "미친 사랑의 노래",
+      "사랑의 인사"
+    ],
+    "note": "‘그럼에도, 우린’, ‘미친 사랑의 노래’, ‘사랑의 인사’ 세 곡을 선보인 열린음악회 무대.",
+    "stageKind": "라이브 음악프로그램"
+  },
+  {
+    "id": "20260529-kbs-the-seasons-stay",
+    "date": "2026-05-29",
+    "addedAt": "2026-09-06",
+    "title": "‘Stay’ · ‘사랑의 인사’ 라이브",
+    "program": "KBS 2TV 더 시즌즈 - 성시경의 고막남친",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Stay",
+      "사랑의 인사"
+    ],
+    "album": "First, Again",
+    "thumbnail": "https://img.youtube.com/vi/8t-o9zRZGx8/maxresdefault.jpg",
+    "source": {
+      "label": "KBS Kpop",
+      "url": "https://www.youtube.com/watch?v=8t-o9zRZGx8"
+    },
+    "status": "available",
+    "tags": [
+      "라이브",
+      "더 시즌즈",
+      "KBS",
+      "Stay",
+      "사랑의 인사",
+      "완전체"
+    ],
+    "note": "재결합 후 KBS 음악 토크쇼 출연. 신곡 ‘Stay’와 대표곡 ‘사랑의 인사’를 선보였다.",
+    "stageKind": "라이브 음악프로그램"
+  },
+  {
     "id": "20260514-first-again",
     "date": "2026-05-14",
     "addedAt": "2026-09-06",
@@ -642,6 +901,40 @@
     ]
   },
   {
+    "id": "20110130-sbs-inkigayo-goodbye",
+    "date": "2011-01-30",
+    "addedAt": "2026-09-06",
+    "title": "씨야 마지막 Goodbye Stage",
+    "program": "SBS 인기가요 · 606회",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "The Last",
+      "내겐 너무 멋진 그대"
+    ],
+    "album": "See You Again",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/clip/pc/22000006680"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "인기가요",
+      "SBS",
+      "마지막 무대",
+      "고별무대",
+      "원년멤버"
+    ],
+    "note": "SBS 인기가요의 Goodbye Special. 원년 멤버 세 사람의 공식 마지막 음악방송 무대.",
+    "stageKind": "고별무대"
+  },
+  {
     "id": "20110130-inkigayo-last-stage",
     "date": "2011-01-30",
     "addedAt": "2026-09-06",
@@ -675,6 +968,107 @@
     "venue": "",
     "awardName": "",
     "awardCategory": ""
+  },
+  {
+    "id": "20110129-mbc-musiccore-goodbye",
+    "date": "2011-01-29",
+    "addedAt": "2026-09-06",
+    "title": "씨야 Goodbye Stage",
+    "program": "MBC 쇼! 음악중심 · 244회",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "The Last",
+      "내겐 너무 멋진 그대"
+    ],
+    "album": "See You Again",
+    "thumbnail": "https://img.youtube.com/vi/4gpfFganjz4/maxresdefault.jpg",
+    "source": {
+      "label": "MBCkpop",
+      "url": "https://www.youtube.com/watch?v=4gpfFganjz4"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "쇼! 음악중심",
+      "MBC",
+      "고별무대",
+      "See You Again",
+      "원년멤버"
+    ],
+    "note": "쇼! 음악중심에서 진행된 고별 무대. 공식 MBC 영상은 ‘The Last’ 무대로 연결합니다.",
+    "stageKind": "고별무대"
+  },
+  {
+    "id": "20110128-kbs-musicbank-goodbye",
+    "date": "2011-01-28",
+    "addedAt": "2026-09-06",
+    "title": "씨야 Goodbye Stage",
+    "program": "KBS 2TV 뮤직뱅크",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "The Last",
+      "내겐 너무 멋진 그대"
+    ],
+    "album": "See You Again",
+    "thumbnail": "",
+    "source": {
+      "label": "이데일리",
+      "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01518646596122312"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "뮤직뱅크",
+      "KBS",
+      "고별무대",
+      "See You Again",
+      "원년멤버"
+    ],
+    "note": "마지막 활동 주간에 원년 멤버 세 사람이 함께한 뮤직뱅크 고별 무대.",
+    "stageKind": "고별무대"
+  },
+  {
+    "id": "20110127-mnet-mcountdown-goodbye",
+    "date": "2011-01-27",
+    "addedAt": "2026-09-06",
+    "title": "씨야 Goodbye Stage · 첫 무대",
+    "program": "Mnet M Countdown",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "The Last",
+      "내겐 너무 멋진 그대"
+    ],
+    "album": "See You Again",
+    "thumbnail": "",
+    "source": {
+      "label": "스타뉴스 · 네이트",
+      "url": "https://news.nate.com/view/20110127n25183"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "엠카운트다운",
+      "고별무대",
+      "See You Again",
+      "원년멤버"
+    ],
+    "note": "원년 멤버 세 사람이 함께 시작한 마지막 음악방송 주간의 첫 고별 무대.",
+    "stageKind": "고별무대"
   },
   {
     "id": "20110121-see-you-again",
@@ -982,6 +1376,39 @@
     ]
   },
   {
+    "id": "20100130-mbc-musiccore-wonder-woman",
+    "date": "2010-01-30",
+    "addedAt": "2026-09-06",
+    "title": "‘원더우먼’ 컬래버레이션 무대",
+    "program": "MBC 쇼! 음악중심 · 198회",
+    "type": "music-show",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "원더우먼"
+    ],
+    "album": "원더우먼",
+    "thumbnail": "https://img.youtube.com/vi/r-qF5o8CoBQ/maxresdefault.jpg",
+    "source": {
+      "label": "MBCkpop",
+      "url": "https://www.youtube.com/watch?v=r-qF5o8CoBQ"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "쇼! 음악중심",
+      "MBC",
+      "원더우먼",
+      "컬래버레이션",
+      "다비치",
+      "티아라"
+    ],
+    "note": "씨야·다비치·티아라가 함께한 프로젝트 싱글 ‘원더우먼’ 무대.",
+    "stageKind": "컬래버레이션"
+  },
+  {
     "id": "20100107-wonder-woman",
     "date": "2010-01-07",
     "addedAt": "2026-09-06",
@@ -1023,6 +1450,38 @@
     "titleTracks": [
       "원더우먼"
     ]
+  },
+  {
+    "id": "20091114-mbc-musiccore-his-voice",
+    "date": "2009-11-14",
+    "addedAt": "2026-09-06",
+    "title": "‘그 놈 목소리’ 무대",
+    "program": "MBC 쇼! 음악중심 · 188회",
+    "type": "music-show",
+    "members": [
+      "김연지",
+      "이보람",
+      "이수미"
+    ],
+    "songs": [
+      "그 놈 목소리"
+    ],
+    "album": "Rebloom",
+    "thumbnail": "https://img.youtube.com/vi/iXzTNAD2m20/maxresdefault.jpg",
+    "source": {
+      "label": "MBCkpop",
+      "url": "https://www.youtube.com/watch?v=iXzTNAD2m20"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "쇼! 음악중심",
+      "MBC",
+      "그 놈 목소리",
+      "Rebloom"
+    ],
+    "note": "수미 합류 후 ‘Rebloom’ 활동기의 대표 음악방송 무대.",
+    "stageKind": "음악방송"
   },
   {
     "id": "20091026-rebloom",
@@ -1099,6 +1558,39 @@
     "awardCategory": ""
   },
   {
+    "id": "20090606-mbc-musiccore-womens-generation",
+    "date": "2009-06-06",
+    "addedAt": "2026-09-06",
+    "title": "‘여성시대’ 컬래버레이션 무대",
+    "program": "MBC 쇼! 음악중심",
+    "type": "music-show",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여성시대"
+    ],
+    "album": "여성시대 / 영원한 사랑",
+    "thumbnail": "https://img.youtube.com/vi/VPVBPWWOMKI/maxresdefault.jpg",
+    "source": {
+      "label": "TV-People · MBC",
+      "url": "https://www.youtube.com/watch?v=VPVBPWWOMKI"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "쇼! 음악중심",
+      "MBC",
+      "여성시대",
+      "컬래버레이션",
+      "다비치",
+      "지연"
+    ],
+    "note": "씨야·다비치·티아라 지연이 함께한 프로젝트 무대.",
+    "stageKind": "컬래버레이션"
+  },
+  {
     "id": "20090506-womens-generation",
     "date": "2009-05-06",
     "addedAt": "2026-09-06",
@@ -1141,6 +1633,38 @@
     "titleTracks": [
       "여성시대"
     ]
+  },
+  {
+    "id": "20081004-mbc-musiccore-hot-girl",
+    "date": "2008-10-04",
+    "addedAt": "2026-09-06",
+    "title": "‘Hot Girl’ 무대",
+    "program": "MBC 쇼! 음악중심",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "Hot Girl"
+    ],
+    "album": "Brillant Change",
+    "thumbnail": "https://img.youtube.com/vi/28tmGVxRG3s/maxresdefault.jpg",
+    "source": {
+      "label": "MBCkpop",
+      "url": "https://www.youtube.com/watch?v=28tmGVxRG3s"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "쇼! 음악중심",
+      "MBC",
+      "Hot Girl",
+      "3집"
+    ],
+    "note": "정규 3집 ‘Brillant Change’의 타이틀곡 ‘Hot Girl’ 활동 무대.",
+    "stageKind": "음악방송"
   },
   {
     "id": "20080926-brillant-change",
@@ -1426,6 +1950,37 @@
       "슬픈 발걸음",
       "그래도 좋아"
     ]
+  },
+  {
+    "id": "20071222-mbc-musiccore-sad-step",
+    "date": "2007-12-22",
+    "addedAt": "2026-09-06",
+    "title": "‘슬픈 발걸음’ 무대",
+    "program": "MBC 쇼! 음악중심 · 101회",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "슬픈 발걸음 (구두 II)"
+    ],
+    "album": "슬픈 발걸음 (구두 II)",
+    "thumbnail": "https://img.youtube.com/vi/YiH5BQKgIsI/maxresdefault.jpg",
+    "source": {
+      "label": "MBCkpop",
+      "url": "https://www.youtube.com/watch?v=YiH5BQKgIsI"
+    },
+    "status": "available",
+    "tags": [
+      "음악방송",
+      "쇼! 음악중심",
+      "MBC",
+      "슬픈 발걸음"
+    ],
+    "note": "‘슬픈 발걸음 (구두 II)’ 활동기의 쇼! 음악중심 무대.",
+    "stageKind": "음악방송"
   },
   {
     "id": "20071220-sad-footsteps",
@@ -1756,6 +2311,37 @@
     "eventState": "completed"
   },
   {
+    "id": "20070721-kbs-7080-love-greeting",
+    "date": "2007-07-21",
+    "addedAt": "2026-09-06",
+    "title": "‘사랑의 인사’ 라이브",
+    "program": "KBS 1TV 콘서트7080 · 133회",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "사랑의 인사"
+    ],
+    "album": "Lovely Sweet Heart",
+    "thumbnail": "https://img.youtube.com/vi/8W-nCivQswg/maxresdefault.jpg",
+    "source": {
+      "label": "KBS KPOP Classic",
+      "url": "https://www.youtube.com/watch?v=8W-nCivQswg"
+    },
+    "status": "available",
+    "tags": [
+      "라이브",
+      "콘서트7080",
+      "KBS",
+      "사랑의 인사"
+    ],
+    "note": "2집 활동기의 ‘사랑의 인사’ 라이브 무대.",
+    "stageKind": "라이브 음악프로그램"
+  },
+  {
     "id": "20070525-lovely-sweet-heart",
     "date": "2007-05-25",
     "addedAt": "2026-09-06",
@@ -1996,6 +2582,37 @@
     "titleTracks": [
       "The Day"
     ]
+  },
+  {
+    "id": "20060826-kbs-7080-scent-of-a-woman",
+    "date": "2006-08-26",
+    "addedAt": "2026-09-06",
+    "title": "‘여인의 향기’ 라이브",
+    "program": "KBS 1TV 콘서트7080 · 87회",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "The First Mind",
+    "thumbnail": "https://img.youtube.com/vi/nn639JifcBQ/maxresdefault.jpg",
+    "source": {
+      "label": "KBS KPOP Classic",
+      "url": "https://www.youtube.com/watch?v=nn639JifcBQ"
+    },
+    "status": "available",
+    "tags": [
+      "라이브",
+      "콘서트7080",
+      "KBS",
+      "여인의 향기"
+    ],
+    "note": "KBS 콘서트7080에서 선보인 데뷔 앨범 대표곡 라이브.",
+    "stageKind": "라이브 음악프로그램"
   },
   {
     "id": "20060718-invisible-choi-ost",
