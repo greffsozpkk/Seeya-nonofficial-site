@@ -77,3 +77,14 @@ v4.45 기반.
 - 방송사 공식 YouTube·공식 VOD를 우선 연결
 - 공식 영상이 확인되지 않은 과거 무대는 당시 기사로 방송 사실을 확인
 - 이번 버전은 전수 목록이 아니라 출처가 명확한 대표·핵심 무대 1차 구축
+
+
+## v4.47 · TODAY / GALLERY / ARCHIVE Pixel Art
+- 사용자 제공 `도트_Today.png` → TODAY'S SEEYA 하단
+- 사용자 제공 `도트_사진.png` → GALLERY 하단
+- 사용자 제공 `도트_아카이브.png` → ARCHIVE 하단
+- 각 이미지는 사이트 로컬 자산으로 저장
+- HISTORY 이미지(최대 820px)보다 작은 최대 720px로 조정
+- PC 기준 74vw + `max-width: calc(100% - 48px)`로 가로 스크롤 방지
+- 모바일 최대 88vw
+- 카드/박스 없이 짧은 Pearl Light Pink 구분선과 약한 그림자만 사용
