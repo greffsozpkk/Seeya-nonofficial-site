@@ -1,5 +1,165 @@
 [
   {
+    "id": "20261031-the-fan-incheon",
+    "date": "2026-10-31",
+    "addedAt": "2026-09-06",
+    "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · INCHEON",
+    "program": "THE FAN",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "YES24",
+      "url": "https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "전국투어",
+      "THE FAN",
+      "20주년",
+      "인천",
+      "예정"
+    ],
+    "note": "THE FAN 인천 공연 예정.",
+    "venue": "인천남동체육관",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20261017-the-fan-suwon",
+    "date": "2026-10-17",
+    "addedAt": "2026-09-06",
+    "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · SUWON",
+    "program": "THE FAN",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "YES24",
+      "url": "https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "전국투어",
+      "THE FAN",
+      "20주년",
+      "수원",
+      "예정"
+    ],
+    "note": "THE FAN 수원 공연 예정.",
+    "venue": "경희대학교 국제캠퍼스 선승관",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20261010-the-fan-cheongju",
+    "date": "2026-10-10",
+    "addedAt": "2026-09-06",
+    "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · CHEONGJU",
+    "program": "THE FAN",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "YES24",
+      "url": "https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "전국투어",
+      "THE FAN",
+      "20주년",
+      "청주",
+      "예정"
+    ],
+    "note": "THE FAN 청주 공연 예정.",
+    "venue": "청주대학교 석우문화체육관",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20261004-the-fan-goyang",
+    "date": "2026-10-04",
+    "addedAt": "2026-09-06",
+    "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · GOYANG",
+    "program": "THE FAN",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "YES24",
+      "url": "https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "전국투어",
+      "THE FAN",
+      "20주년",
+      "고양",
+      "예정"
+    ],
+    "note": "THE FAN 고양 공연 예정.",
+    "venue": "킨텍스 제2전시장 10홀",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20260912-the-fan-daegu",
+    "date": "2026-09-12",
+    "addedAt": "2026-09-06",
+    "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · DAEGU",
+    "program": "THE FAN",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "YES24",
+      "url": "https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17981&order=1&type=1"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "전국투어",
+      "THE FAN",
+      "20주년",
+      "대구",
+      "예정"
+    ],
+    "note": "2026년 9월 12일 오후 6시 예정.",
+    "venue": "대구 엑스코 5층 컨벤션홀",
+    "eventState": "scheduled"
+  },
+  {
     "id": "20260906-gyuri-love-teaser2",
     "date": "2026-09-06",
     "addedAt": "2026-09-06",
@@ -25,6 +185,37 @@
       "티저"
     ],
     "note": "〈우리 사랑 그런 거 해요〉 2차 티저."
+  },
+  {
+    "id": "20260905-the-fan-busan",
+    "date": "2026-09-05",
+    "addedAt": "2026-09-06",
+    "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · BUSAN",
+    "program": "THE FAN",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "YES24",
+      "url": "https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "전국투어",
+      "THE FAN",
+      "20주년",
+      "부산"
+    ],
+    "note": "THE FAN 부산 공연.",
+    "venue": "부산 KBS홀",
+    "eventState": "completed"
   },
   {
     "id": "20260829-yeonji-song",
@@ -56,9 +247,9 @@
   {
     "id": "20260829-the-fan-seoul",
     "date": "2026-08-29",
-    "addedAt": "2026-08-29",
-    "title": "THE FAN · SEOUL",
-    "program": "경희대학교 평화의전당",
+    "addedAt": "2026-09-06",
+    "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · SEOUL",
+    "program": "THE FAN",
     "type": "concert",
     "members": [
       "남규리",
@@ -69,16 +260,20 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "platform": "yes24",
-      "url": "https://m.ticket.yes24.com/genre/genrebridge.aspx?genre=15456&id=1530&utm_source=ig&utm_medium=social&utm_content=link_in_bio"
+      "label": "YES24",
+      "url": "https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17950&order=1"
     },
     "status": "available",
     "tags": [
-      "THEFAN",
-      "서울",
-      "콘서트"
+      "공연",
+      "전국투어",
+      "THE FAN",
+      "20주년",
+      "서울"
     ],
-    "note": "SEEYA THE FAN 전국투어 서울 공연."
+    "note": "THE FAN 전국투어의 시작. 서울 공연은 8월 29~30일 이틀간 진행.",
+    "venue": "경희대학교 평화의 전당",
+    "eventState": "completed"
   },
   {
     "id": "20260802-boram-light-opposite",
@@ -161,6 +356,37 @@
     ]
   },
   {
+    "id": "20260330-rebloom-fanmeeting",
+    "date": "2026-03-30",
+    "addedAt": "2026-09-06",
+    "title": "씨야 재결합 기념 첫 팬미팅 · RE:BLOOM",
+    "program": "RE:BLOOM",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "이데일리",
+      "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02197606645388568"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "팬미팅",
+      "RE:BLOOM",
+      "재결합",
+      "서울"
+    ],
+    "note": "재결합 후 첫 공식 팬미팅. 티켓은 예매 시작 직후 매진됐다.",
+    "venue": "서울 종로구 이들스(EDLS)",
+    "eventState": "completed"
+  },
+  {
     "id": "20260330-nevertheless-we",
     "date": "2026-03-30",
     "addedAt": "2026-09-06",
@@ -202,6 +428,105 @@
     "titleTracks": [
       "그럼에도, 우린"
     ]
+  },
+  {
+    "id": "20260312-reunion-announced",
+    "date": "2026-03-12",
+    "addedAt": "2026-09-06",
+    "title": "데뷔 20주년 · 15년 만의 완전체 재결합 공식 발표",
+    "program": "SEEYA 20TH ANNIVERSARY",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20260312055800005"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "재결합",
+      "20주년",
+      "완전체",
+      "새로운 시작"
+    ],
+    "note": "선공개곡·팬미팅·5월 정규앨범 계획과 함께 완전체 활동 재개를 공식 발표. 단체 활동을 위한 프로젝트 법인 ‘씨야’ 설립도 알려졌다.",
+    "venue": "",
+    "awardName": "",
+    "awardCategory": ""
+  },
+  {
+    "id": "20201125-reunion-project-cancelled",
+    "date": "2020-11-25",
+    "addedAt": "2026-09-06",
+    "title": "2020 재결합 프로젝트 무산 발표",
+    "program": "REUNION PROJECT",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20201125110600005"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "재결합",
+      "무산",
+      "2020"
+    ],
+    "note": "‘슈가맨3’ 이후 추진되던 프로젝트 앨범 재결합이 각 소속사의 활동 합의 불발로 중단됐다고 발표됐다.",
+    "venue": "",
+    "awardName": "",
+    "awardCategory": ""
+  },
+  {
+    "id": "20200221-sugarman3-reunion",
+    "date": "2020-02-21",
+    "addedAt": "2026-09-06",
+    "title": "JTBC ‘슈가맨3’ 원년 3인 완전체 무대",
+    "program": "JTBC 투유 프로젝트 - 슈가맨3",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "사랑의 인사",
+      "여인의 향기",
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "JTBC",
+      "url": "https://tv.jtbc.co.kr/clip/pr10011122/pm10055652/vo10354827/view"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "완전체",
+      "슈가맨3",
+      "재회",
+      "2020"
+    ],
+    "note": "오랜 공백 뒤 남규리·김연지·이보람이 완전체로 다시 한 무대에 섰다.",
+    "venue": "",
+    "awardName": "",
+    "awardCategory": ""
   },
   {
     "id": "20110801-ghastly-ost",
@@ -248,31 +573,37 @@
   {
     "id": "20110130-inkigayo-last-stage",
     "date": "2011-01-30",
-    "addedAt": "2026-09-03",
-    "title": "마지막 음악방송 무대",
+    "addedAt": "2026-09-06",
+    "title": "SBS 인기가요 고별 무대 · 공식 활동 종료",
     "program": "SBS 인기가요",
-    "type": "music-show",
+    "type": "milestone",
     "members": [
       "남규리",
       "김연지",
       "이보람"
     ],
     "songs": [
-      "The Last"
+      "The Last",
+      "내겐 너무 멋진 그대"
     ],
-    "album": "See You Again",
+    "album": "",
     "thumbnail": "",
     "source": {
-      "platform": "news",
-      "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01161126596122312"
+      "label": "이데일리",
+      "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01525206596122968"
     },
     "status": "available",
     "tags": [
+      "주요 기록",
+      "고별무대",
+      "해체",
       "인기가요",
-      "마지막무대",
-      "TheLast"
+      "See You Again"
     ],
-    "note": "2011년 씨야의 마지막 음악방송 무대 기록."
+    "note": "남규리·김연지·이보람 원년 멤버가 함께한 고별 무대. ‘The Last’와 ‘내겐 너무 멋진 그대’를 선보였다.",
+    "venue": "",
+    "awardName": "",
+    "awardCategory": ""
   },
   {
     "id": "20110121-see-you-again",
@@ -318,6 +649,35 @@
       "내겐 너무 멋진 그대",
       "The Last"
     ]
+  },
+  {
+    "id": "20101214-disband-announced",
+    "date": "2010-12-14",
+    "addedAt": "2026-09-06",
+    "title": "씨야 해체 계획 공식 발표",
+    "program": "CORE CONTENTS MEDIA",
+    "type": "milestone",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20101214144100005"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "해체 발표",
+      "2010"
+    ],
+    "note": "소속사가 굿바이 앨범 발표 후 팀 활동을 마무리하고 각자의 길을 걷기로 했다고 발표.",
+    "venue": "",
+    "awardName": "",
+    "awardCategory": ""
   },
   {
     "id": "20101011-seeya-davichi",
@@ -637,6 +997,37 @@
     ]
   },
   {
+    "id": "20090819-sumi-joins",
+    "date": "2009-08-19",
+    "addedAt": "2026-09-06",
+    "title": "새 멤버 수미 공개 · 3인조 재편",
+    "program": "MEMBER CHANGE",
+    "type": "milestone",
+    "members": [
+      "김연지",
+      "이보람",
+      "이수미"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스포츠동아",
+      "url": "https://sports.donga.com/article/all/20090819/22400981/1"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "멤버 변화",
+      "수미",
+      "2009"
+    ],
+    "note": "코어콘텐츠미디어가 씨야의 새 멤버 수미를 공개하고 김연지·이보람·수미 체제의 활동을 준비했다.",
+    "venue": "",
+    "awardName": "",
+    "awardCategory": ""
+  },
+  {
     "id": "20090506-womens-generation",
     "date": "2009-05-06",
     "addedAt": "2026-09-06",
@@ -852,6 +1243,71 @@
     "titleTracks": []
   },
   {
+    "id": "20080131-seoul-music-awards-bonsang",
+    "date": "2008-01-31",
+    "addedAt": "2026-09-06",
+    "title": "제17회 하이원 서울가요대상 본상",
+    "program": "서울가요대상",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "한국경제",
+      "url": "https://www.hankyung.com/article/2008013113707"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "수상",
+      "본상",
+      "서울가요대상"
+    ],
+    "note": "‘사랑의 인사’, ‘슬픈 발걸음’ 활동으로 본상 수상.",
+    "venue": "강원랜드 하이원호텔 컨퍼런스홀",
+    "awardName": "제17회 하이원 서울가요대상",
+    "awardCategory": "본상"
+  },
+  {
+    "id": "20080120-inkigayo-sad-footsteps-win",
+    "date": "2008-01-20",
+    "addedAt": "2026-09-06",
+    "title": "‘슬픈 발걸음’ SBS 인기가요 뮤티즌송",
+    "program": "SBS 인기가요",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "슬픈 발걸음"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "조선일보",
+      "url": "https://www.chosun.com/site/data/html_dir/2008/01/20/2008012000590.html"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "수상",
+      "음악방송 1위",
+      "슬픈 발걸음",
+      "뮤티즌송"
+    ],
+    "note": "",
+    "venue": "",
+    "awardName": "SBS 인기가요",
+    "awardCategory": "뮤티즌송"
+  },
+  {
     "id": "20080102-california-dream",
     "date": "2008-01-02",
     "addedAt": "2026-09-06",
@@ -942,12 +1398,133 @@
     ]
   },
   {
+    "id": "20071215-first-concert-busan",
+    "date": "2007-12-15",
+    "addedAt": "2026-09-06",
+    "title": "씨야 1st Concert – 女神 · BUSAN",
+    "program": "SEEYA 1ST CONCERT – 女神",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "동아일보",
+      "url": "https://www.donga.com/news/article/all/20071025/8504322/9"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "단독콘서트",
+      "첫 단독콘서트",
+      "부산"
+    ],
+    "note": "첫 단독 콘서트 3개 도시 투어의 부산 공연.",
+    "venue": "부산 KBS홀",
+    "eventState": "completed"
+  },
+  {
+    "id": "20071214-golden-disc-digital-bonsang",
+    "date": "2007-12-14",
+    "addedAt": "2026-09-06",
+    "title": "제22회 골든디스크 디지털 음원 본상",
+    "program": "골든디스크",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "OSEN",
+      "url": "https://www.osen.co.kr/article/G0712140129"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "수상",
+      "골든디스크",
+      "디지털 음원 본상"
+    ],
+    "note": "원더걸스·아이비와 함께 디지털 음원 본상 수상.",
+    "venue": "",
+    "awardName": "제22회 골든디스크상",
+    "awardCategory": "디지털 음원 본상"
+  },
+  {
+    "id": "20071208-first-concert-daegu",
+    "date": "2007-12-08",
+    "addedAt": "2026-09-06",
+    "title": "씨야 1st Concert – 女神 · DAEGU",
+    "program": "SEEYA 1ST CONCERT – 女神",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "동아일보",
+      "url": "https://www.donga.com/news/article/all/20071025/8504322/9"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "단독콘서트",
+      "첫 단독콘서트",
+      "대구"
+    ],
+    "note": "첫 단독 콘서트 3개 도시 투어의 대구 공연.",
+    "venue": "대구 시민회관 대극장",
+    "eventState": "completed"
+  },
+  {
+    "id": "20071123-first-concert-seoul",
+    "date": "2007-11-23",
+    "addedAt": "2026-09-06",
+    "title": "씨야 1st Concert – 女神 · SEOUL",
+    "program": "SEEYA 1ST CONCERT – 女神",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "동아일보",
+      "url": "https://www.donga.com/news/article/all/20071025/8504322/9"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "단독콘서트",
+      "첫 단독콘서트",
+      "서울"
+    ],
+    "note": "씨야 데뷔 후 첫 단독 콘서트. 서울 공연은 11월 23~25일 일정으로 소개됐다.",
+    "venue": "서울 멜론 악스홀",
+    "eventState": "completed"
+  },
+  {
     "id": "20071117-mkmf-female-group",
     "date": "2007-11-17",
-    "addedAt": "2026-09-05",
-    "title": "MKMF 여자그룹상 수상",
-    "program": "2007 MKMF",
-    "type": "event",
+    "addedAt": "2026-09-06",
+    "title": "2007 MKMF 여자그룹상",
+    "program": "Mnet KM Music Festival",
+    "type": "milestone",
     "members": [
       "남규리",
       "김연지",
@@ -956,19 +1533,24 @@
     "songs": [
       "사랑의 인사"
     ],
-    "album": "Lovely Sweet Heart",
+    "album": "",
     "thumbnail": "",
     "source": {
-      "platform": "news",
+      "label": "스타뉴스",
       "url": "https://www.starnewskorea.com/music/2007/11/17/2007111721271013098"
     },
     "status": "available",
     "tags": [
-      "사랑의인사",
-      "2집",
-      "수상"
+      "주요 기록",
+      "수상",
+      "MKMF",
+      "여자그룹상",
+      "사랑의 인사"
     ],
-    "note": "〈사랑의 인사〉로 여자그룹상 수상."
+    "note": "‘사랑의 인사’로 2007 MKMF 여자그룹상 수상.",
+    "venue": "서울 잠실 실내체육관",
+    "awardName": "2007 Mnet KM Music Festival",
+    "awardCategory": "여자그룹상"
   },
   {
     "id": "20071115-koongya-ost",
@@ -1013,6 +1595,96 @@
     ]
   },
   {
+    "id": "20070811-cj-korea-big4-lasvegas",
+    "date": "2007-08-11",
+    "addedAt": "2026-09-06",
+    "title": "CJ Korea Big4 Concert · LAS VEGAS",
+    "program": "CJ KOREA BIG4",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스포츠경향",
+      "url": "https://sports.khan.co.kr/article/200707192145153"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "해외공연",
+      "BIG4",
+      "라스베이거스"
+    ],
+    "note": "뉴욕 공연에 이어 진행된 미국 BIG4 공연.",
+    "venue": "미국 라스베이거스 시저스 팰리스 더 콜로세움",
+    "eventState": "completed"
+  },
+  {
+    "id": "20070804-cj-korea-big4-newyork",
+    "date": "2007-08-04",
+    "addedAt": "2026-09-06",
+    "title": "CJ Korea Big4 Concert · NEW YORK",
+    "program": "CJ KOREA BIG4",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스포츠경향",
+      "url": "https://sports.khan.co.kr/article/200707192145153"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "해외공연",
+      "BIG4",
+      "뉴욕"
+    ],
+    "note": "씨야·이효리·SG워너비·에픽하이가 함께한 미국 BIG4 공연.",
+    "venue": "미국 뉴욕 맨해튼 센터 해머스타인 볼룸",
+    "eventState": "completed"
+  },
+  {
+    "id": "20070722-summer-big4",
+    "date": "2007-07-22",
+    "addedAt": "2026-09-06",
+    "title": "2007 Summer Big4 Concert · Fantastic Star",
+    "program": "SUMMER BIG4 CONCERT",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "PlayDB",
+      "url": "https://m.playdb.co.kr/Artist/PlayList/1023"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "합동공연",
+      "BIG4",
+      "서울"
+    ],
+    "note": "씨야가 참여한 2007 Summer Big4 콘서트.",
+    "venue": "서울 올림픽공원 체조경기장",
+    "eventState": "completed"
+  },
+  {
     "id": "20070525-lovely-sweet-heart",
     "date": "2007-05-25",
     "addedAt": "2026-09-06",
@@ -1055,6 +1727,163 @@
     "titleTracks": [
       "사랑의 인사"
     ]
+  },
+  {
+    "id": "20061229-sbs-gayo-rookie",
+    "date": "2006-12-29",
+    "addedAt": "2026-09-06",
+    "title": "2006 SBS 가요대전 신인상",
+    "program": "SBS 가요대전",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS 뉴스",
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1000202762"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "수상",
+      "신인상",
+      "SBS 가요대전"
+    ],
+    "note": "슈퍼주니어와 함께 2006 SBS 가요대전 신인상 수상.",
+    "venue": "일산 킨텍스",
+    "awardName": "2006 SBS 가요대전",
+    "awardCategory": "신인상"
+  },
+  {
+    "id": "20061223-big4-christmas",
+    "date": "2006-12-23",
+    "addedAt": "2026-09-06",
+    "title": "제2회 빅4 콘서트 · Christmas",
+    "program": "BIG4 CONCERT",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "조선일보",
+      "url": "https://www.chosun.com/site/data/html_dir/2006/11/28/2006112860592.html"
+    },
+    "status": "available",
+    "tags": [
+      "공연",
+      "합동공연",
+      "BIG4",
+      "서울"
+    ],
+    "note": "SG워너비·휘성·바이브·씨야가 함께한 연말 합동 콘서트. 12월 23~24일 이틀간 개최.",
+    "venue": "서울 코엑스 대서양홀",
+    "eventState": "completed"
+  },
+  {
+    "id": "20061214-golden-disc-rookie",
+    "date": "2006-12-14",
+    "addedAt": "2026-09-06",
+    "title": "2006 골든디스크상 신인상",
+    "program": "골든디스크",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스타뉴스",
+      "url": "https://www.starnewskorea.com/music/2006/12/14/2006121419431240698"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "수상",
+      "신인상",
+      "골든디스크"
+    ],
+    "note": "가비앤제이·슈퍼주니어와 함께 신인상 수상.",
+    "venue": "서울 올림픽공원 올림픽홀",
+    "awardName": "2006 골든디스크상",
+    "awardCategory": "신인상"
+  },
+  {
+    "id": "20061201-seoul-music-awards-rookie",
+    "date": "2006-12-01",
+    "addedAt": "2026-09-06",
+    "title": "제16회 서울가요대상 신인상",
+    "program": "서울가요대상",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "OSEN",
+      "url": "https://www.osen.co.kr/article/G0612010132"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "수상",
+      "신인상",
+      "서울가요대상"
+    ],
+    "note": "슈퍼주니어·브라운아이드걸스와 함께 신인상 수상.",
+    "venue": "일산 킨텍스",
+    "awardName": "제16회 서울가요대상",
+    "awardCategory": "신인상"
+  },
+  {
+    "id": "20061125-mkmf-best-ost",
+    "date": "2006-11-25",
+    "addedAt": "2026-09-06",
+    "title": "2006 MKMF 최우수 OST상",
+    "program": "Mnet KM Music Festival",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "미친 사랑의 노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스타뉴스",
+      "url": "https://www.starnewskorea.com/music/2006/11/25/2006112518150646752"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "수상",
+      "MKMF",
+      "OST",
+      "미친 사랑의 노래"
+    ],
+    "note": "KBS2 드라마 ‘투명인간 최장수’ 주제곡 ‘미친 사랑의 노래’로 최우수 OST상 수상.",
+    "venue": "서울 올림픽공원 체조경기장",
+    "awardName": "2006 Mnet KM Music Festival",
+    "awardCategory": "최우수 OST상"
   },
   {
     "id": "20060908-to-my-lover",
@@ -1137,6 +1966,73 @@
     "titleTracks": [
       "미친 사랑의 노래"
     ]
+  },
+  {
+    "id": "20060423-first-win-inkigayo",
+    "date": "2006-04-23",
+    "addedAt": "2026-09-06",
+    "title": "데뷔 40일 만에 첫 음악방송 1위",
+    "program": "SBS 인기가요",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스포츠경향",
+      "url": "https://sports.khan.co.kr/article/200604242153023"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "수상",
+      "첫 1위",
+      "뮤티즌송",
+      "여인의 향기"
+    ],
+    "note": "‘여인의 향기’로 SBS 인기가요 뮤티즌송을 수상하며 첫 음악방송 1위를 기록.",
+    "venue": "",
+    "awardName": "SBS 인기가요",
+    "awardCategory": "뮤티즌송"
+  },
+  {
+    "id": "20060312-inkigayo-debut",
+    "date": "2006-03-12",
+    "addedAt": "2026-09-06",
+    "title": "SBS 인기가요 공식 데뷔 무대",
+    "program": "SBS 인기가요",
+    "type": "milestone",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "조이뉴스24·네이트",
+      "url": "https://news.nate.com/view/20060312n03037"
+    },
+    "status": "available",
+    "tags": [
+      "주요 기록",
+      "데뷔",
+      "첫 무대",
+      "인기가요"
+    ],
+    "note": "씨야가 대중 앞에 처음 선 공식 방송 데뷔 무대.",
+    "venue": "SBS 등촌동 공개홀",
+    "awardName": "",
+    "awardCategory": ""
   },
   {
     "id": "20060224-the-first-mind",

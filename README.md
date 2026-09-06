@@ -1,18 +1,30 @@
-# SEEYA ARCHIVE v4.40 — FAN CHANT Route Fix
+# SEEYA ARCHIVE v4.41 — Concerts & Milestones
 
-v4.39 기반.
+v4.40 기반.
 
-## 수정
-MUSIC 내부 `FAN CHANT · 응원법` 탭이 clean URL 환경에서 반응하지 않던 문제를 수정했습니다.
+## ARCHIVE 확장
+- 전체 기록: 58개
+- 앨범·음원: 24개
+- 공연: 15개
+- 주요 기록: 16개
 
-원인:
-- MUSIC 함수가 응원법 여부를 `location.hash`만 보고 판단하고 있었음.
-- v4.32 이후 공개 URL은 `/music/fanchant/` 형태의 pathname 기반 clean URL이므로,
-  해당 페이지에 들어가도 MUSIC이 계속 DISCOGRAPHY로 판단했습니다.
+## 이번에 추가한 범위
+- 2006 연말 BIG4 콘서트
+- 2007 Summer BIG4 및 미국 뉴욕·라스베이거스 BIG4
+- 2007 첫 단독 콘서트 `女神` 서울·대구·부산
+- 2026 첫 팬미팅 `RE:BLOOM`
+- 2026 20주년 전국투어 `THE FAN` 서울·부산·대구·고양·청주·수원·인천
+- 공식 데뷔 무대 / 첫 음악방송 1위
+- 2006~2008 주요 시상식 수상
+- 2009 수미 합류
+- 2010 해체 발표 / 2011 고별 무대
+- 2020 슈가맨3 완전체 무대 / 재결합 프로젝트 무산
+- 2026 데뷔 20주년 완전체 재결합 공식 발표
 
-수정:
-- `location.hash`가 있으면 기존 hash route를 사용
-- 아니면 `location.pathname`을 사용
-- `/music/fanchant/`를 정확히 FAN CHANT 하위 페이지로 인식
-
-따라서 localhost와 GitHub Pages의 clean URL 모두 정상 동작합니다.
+## UI
+- 상단 사이트 메뉴는 그대로 유지
+- ARCHIVE의 CATEGORY 필터에만 `주요 기록` 추가 (`type: milestone`)
+- 공연 카드에 장소 표시
+- 수상 카드에 수상 부문과 관련곡 표시
+- 아직 열리지 않은 THE FAN 공연에는 `UPCOMING` 배지 표시
+- 앨범 카드는 v4.37의 규칙 유지: 앨범 커버 우선 / 재생시간 미노출 / TITLE만 노출
