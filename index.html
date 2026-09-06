@@ -1026,23 +1026,53 @@ body.fanchant-lightbox-open{overflow:hidden}
 }
 
 
-/* HOME · PIXEL CHARACTER FOOTER */
-.home-pixel-footer{
+/* HOME · PIXEL SIGN-OFF
+   The characters are treated as part of the official/footer ending,
+   rather than as a separate full-width section. */
+.home-pixel-signoff{
+  position:relative;
+  width:min(560px,88vw);
+  margin:42px auto 20px;
+  padding-top:28px;
   display:flex;
-  justify-content:center;
-  align-items:flex-end;
-  padding:18px clamp(12px,4vw,48px) 0;
-  overflow:hidden;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
 }
-.home-pixel-footer img{
+.home-pixel-signoff::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:50%;
+  width:min(260px,56vw);
+  height:1px;
+  transform:translateX(-50%);
+  background:linear-gradient(90deg,transparent,#ddb7c6 22%,#ddb7c6 78%,transparent);
+}
+.home-pixel-signoff .pixel-signoff-copy{
+  font-family:"Gowun Batang",serif;
+  font-size:10px;
+  letter-spacing:.24em;
+  color:#b4758d;
+}
+.home-pixel-signoff img{
   display:block;
-  width:min(900px,92vw);
+  width:min(430px,72vw);
+  max-height:190px;
   height:auto;
   object-fit:contain;
 }
 @media(max-width:600px){
-  .home-pixel-footer{padding:16px 0 0}
-  .home-pixel-footer img{width:104vw;max-width:none}
+  .home-pixel-signoff{
+    width:100%;
+    margin-top:34px;
+    padding-top:23px;
+    gap:8px;
+  }
+  .home-pixel-signoff img{
+    width:min(300px,78vw);
+    max-height:150px;
+  }
 }
 
 
@@ -1249,14 +1279,15 @@ function home(){return `<div class="home-aespa">
     <a class="official-link" href="https://www.instagram.com/seeya_ent_official/" target="_blank" rel="noopener noreferrer" aria-label="씨야 엔터테인먼트 공식 인스타그램"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.6A4.4 4.4 0 1 1 7.6 12 4.4 4.4 0 0 1 12 7.6Zm0 2A2.4 2.4 0 1 0 14.4 12 2.4 2.4 0 0 0 12 9.6Zm5.3-3.2a1.05 1.05 0 1 1-1.05 1.05A1.05 1.05 0 0 1 17.3 6.4Z"/></svg><span>INSTAGRAM</span></a>
     <a class="official-link" href="https://www.youtube.com/@SEEYA_Ent_Official" target="_blank" rel="noopener noreferrer" aria-label="SEEYA 공식 유튜브"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg><span>YOUTUBE</span></a>
   </div>
-<div class="home-credit home-nonprofit">
+<div class="home-pixel-signoff" aria-label="SEEYA pixel characters">
+    <span class="pixel-signoff-copy">SEE YOU ALWAYS.</span>
+    <img src="images/common/seeya-pixel-characters.png" alt="" loading="lazy">
+  </div>
+  <div class="home-credit home-nonprofit">
     <strong>UNOFFICIAL · NON-PROFIT FAN PAGE</strong>
     <span>이 페이지는 아티스트 씨야(SeeYa)를 응원하는 팬이 제작한 <b>비영리 팬 페이지</b>입니다.</span>
     <span>어떠한 형태의 영리적 목적이나 상업적 수수료 취득, 광고 수익 창출 행위를 하지 않습니다.</span>
   </div>
-</section>
-<section class="home-pixel-footer" aria-label="SEEYA pixel characters">
-  <img src="images/common/seeya-pixel-characters.png" alt="씨야 팬페이지 도트 캐릭터" loading="lazy">
 </section>
 </div>`}
 function today(){return W(`<div class="section" style="border:0"><div class="eye">DAILY SEEYA</div><h1 style="font-size:55px">TODAY'S SEEYA</h1><p class="lead">오늘의 흐름을 가볍게 읽고, 그 기분에 어울리는 씨야의 노래를 한 곡 추천합니다.</p></div>${todayBlock()}`)}

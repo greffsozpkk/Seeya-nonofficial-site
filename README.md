@@ -1,25 +1,18 @@
-# SEEYA ARCHIVE v4.34 — Local Preview / Clean URL
+# SEEYA ARCHIVE v4.35 — HOME Pixel Sign-off
 
-## 변경 사항
-- v4.33의 ChatGPT/web-sandbox 전용 우회 라우팅 제거
-- localhost와 실제 `seeya-fanpage.com`에서 동일한 clean URL 구조 사용
-- `popstate` 라우팅 추가
-- `/guide/`, `/news/`, `/music/`, `/history/`, `/members/`, `/gallery/`, `/archive/`, `/today/` 구조 유지
-- `serve-local.bat` 추가
-- `serve-local.sh` 추가
-- `LOCAL_PREVIEW.md` 추가
+v4.34 기반.
 
-## 로컬 확인
-Windows:
-`serve-local.bat`
+## HOME 마지막 도트 캐릭터 정리
+기존에는 OFFICIAL 영역 아래에 별도의 큰 full-width 섹션으로 도트 이미지가 붙어 있어
+페이지 끝에서 혼자 떨어져 보이는 문제가 있었습니다.
 
-직접 실행:
-`py -m http.server 8000`
-또는
-`python -m http.server 8000`
+v4.35에서는:
+- 별도 `.home-pixel-footer` 섹션 제거
+- OFFICIAL/footer 영역 안으로 도트 캐릭터 통합
+- PC 기준 최대 약 430px로 축소
+- 모바일 기준 최대 약 300px로 축소
+- 위쪽에 짧고 옅은 구분선 추가
+- `SEE YOU ALWAYS.`를 작은 sign-off 문구로 함께 배치
+- 비영리 팬페이지 안내와 하나의 엔딩 블록처럼 이어지도록 구성
 
-브라우저:
-`http://localhost:8000/`
-
-## 배포
-GitHub Pages에는 ZIP의 폴더 구조 전체를 그대로 업로드해야 합니다.
+따라서 도트 이미지는 '추가 이미지 한 장'이 아니라 팬페이지의 작은 엔딩 시그니처처럼 보이도록 했습니다.
