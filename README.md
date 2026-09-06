@@ -1,30 +1,34 @@
-# SEEYA ARCHIVE v4.41 — Concerts & Milestones
+# SEEYA ARCHIVE v4.43 — Solo Melon Links + Nam Gyu-ri Archive
 
-v4.40 기반.
+v4.42 기반.
 
-## ARCHIVE 확장
-- 전체 기록: 58개
-- 앨범·음원: 24개
-- 공연: 15개
-- 주요 기록: 16개
+## HOME · MEMBER SOLO
+### 남규리
+- `우리 사랑 그런 거 해요`
+- PART.1 MV / PART.2 MV 버튼 유지
+- `Melon에서 감상하기 →` 추가
+- Melon: https://www.melon.com/album/detail.htm?albumId=14521264
+- 사용자 제공 Part.1 + Part.2 합성 이미지 유지
 
-## 이번에 추가한 범위
-- 2006 연말 BIG4 콘서트
-- 2007 Summer BIG4 및 미국 뉴욕·라스베이거스 BIG4
-- 2007 첫 단독 콘서트 `女神` 서울·대구·부산
-- 2026 첫 팬미팅 `RE:BLOOM`
-- 2026 20주년 전국투어 `THE FAN` 서울·부산·대구·고양·청주·수원·인천
-- 공식 데뷔 무대 / 첫 음악방송 1위
-- 2006~2008 주요 시상식 수상
-- 2009 수미 합류
-- 2010 해체 발표 / 2011 고별 무대
-- 2020 슈가맨3 완전체 무대 / 재결합 프로젝트 무산
-- 2026 데뷔 20주년 완전체 재결합 공식 발표
+### 김연지
+- `노래`
+- Melon: https://www.melon.com/album/detail.htm?albumId=14493829
+- 카드 전체 링크 대신 하단 Melon 버튼으로 통일
 
-## UI
-- 상단 사이트 메뉴는 그대로 유지
-- ARCHIVE의 CATEGORY 필터에만 `주요 기록` 추가 (`type: milestone`)
-- 공연 카드에 장소 표시
-- 수상 카드에 수상 부문과 관련곡 표시
-- 아직 열리지 않은 THE FAN 공연에는 `UPCOMING` 배지 표시
-- 앨범 카드는 v4.37의 규칙 유지: 앨범 커버 우선 / 재생시간 미노출 / TITLE만 노출
+### 이보람
+- `빛의 반대편에서`
+- Melon: https://www.melon.com/album/detail.htm?albumId=14335999
+- 카드 전체 링크 대신 하단 Melon 버튼으로 통일
+
+## ARCHIVE
+기존 남규리 Part.2 teaser 단독 기록을 제거하고 정식 공개 기록으로 교체:
+1. `우리 사랑 그런 거 해요` 싱글 발매 · Melon
+2. `우리 사랑 그런 거 해요 Part.1` Official MV · YouTube
+3. `우리 사랑 그런 거 해요 Part.2 (feat. KoN)` Official MV · YouTube
+
+Melon 기준:
+- 발매일: 2026.09.06
+- 싱글
+- 장르: 발라드
+- 기획사: ㈜탱글미디어
+- 수록곡 2곡, 두 곡 모두 타이틀
