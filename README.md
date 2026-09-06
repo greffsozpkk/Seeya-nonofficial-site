@@ -1,14 +1,25 @@
-# SEEYA ARCHIVE v4.29
+# SEEYA ARCHIVE v4.34 — Local Preview / Clean URL
 
-## 404 redesign
-- 승인한 핑크/아이보리 404 디자인 방향을 HTML/CSS로 반영
-- 404 숫자 바로 아래에 도트 캐릭터 배치
-- 사용자 제공 배경 제거 PNG로 교체
-- `씨야 팬페이지 도트 캐릭터` 같은 노출 문구 제거
-- 이미지 alt도 빈 값으로 두어 장식 이미지로 처리
-- PAGE NOT FOUND / 안내 문구 / 홈 버튼 / SeeYa ALWAYS WITH YOU 구성
-- 모바일에서도 캐릭터가 충분히 크게 보이도록 반응형 처리
+## 변경 사항
+- v4.33의 ChatGPT/web-sandbox 전용 우회 라우팅 제거
+- localhost와 실제 `seeya-fanpage.com`에서 동일한 clean URL 구조 사용
+- `popstate` 라우팅 추가
+- `/guide/`, `/news/`, `/music/`, `/history/`, `/members/`, `/gallery/`, `/archive/`, `/today/` 구조 유지
+- `serve-local.bat` 추가
+- `serve-local.sh` 추가
+- `LOCAL_PREVIEW.md` 추가
 
-## HOME
-- 동일한 새 투명 PNG를 사용하므로 HOME 최하단 캐릭터도 자동 교체됨
-- v4.28의 남규리 2차 티저 변경 유지
+## 로컬 확인
+Windows:
+`serve-local.bat`
+
+직접 실행:
+`py -m http.server 8000`
+또는
+`python -m http.server 8000`
+
+브라우저:
+`http://localhost:8000/`
+
+## 배포
+GitHub Pages에는 ZIP의 폴더 구조 전체를 그대로 업로드해야 합니다.
