@@ -224,3 +224,48 @@ v4.45 기반.
 - 숙명 OST `시차`, Baby Brown `미쳤나봐`, TWENTYth Urban `이별이 오지 못하게` 보강
 - `See You Again` 참여 멤버를 남규리·김연지·이보람으로 교정
 - 2026.08.27 K-WORLD DREAM AWARDS `K 월드 드림 리스너 초이스상` 수상 기록 추가
+
+
+## v4.57 · SEEYA LYRIC QUIZ
+- 신규 clean URL: `/game/lyrics/`
+- 상단 메인 메뉴는 유지하고 HOME 팬게임 배너 / GUIDE / SEO footer에서 진입
+- 총 90문제: LEVEL 1 20 / LEVEL 2 30 / LEVEL 3 40
+- 한 게임당 랜덤 10문제, 게임 내 중복 없음
+- 모든 문제는 가사 한 줄만 표시
+- LEVEL 1: 4지선다
+- LEVEL 2·3: 주관식, 앞뒤 공백만 제거하고 내부 띄어쓰기·문장부호·영문 표기를 정확히 비교
+- LEVEL 2·3은 문제당 2회 입력 가능
+- 첫 시도 정답만 10점 만점에 반영, 두 번째 정답은 총 정답 수에만 반영
+- 결과 칭호: ROOKIE / LISTENER / ARCHIVIST / EXPERT / MASTER
+- 문제은행: `data/lyric-quiz.json`
+- 게임 자산: `assets/lyric-quiz.js`, `assets/lyric-quiz.css`
+
+
+## v4.58 · LYRIC QUIZ 105 Questions
+
+### 문제은행 확장
+- 총 90문제 → **105문제**
+- LEVEL 1: 20 → **25문제**
+- LEVEL 2: 30 → **35문제**
+- LEVEL 3: 40 → **45문제**
+
+### LEVEL 3 기준 보강
+- 수록곡만 어렵다고 보지 않음
+- 유명 타이틀곡/히트곡도 **덜 알려진 가사 구간**이면 LEVEL 3에 출제
+- 이번 추가 예시: `가니`, `눈물의 여왕`, `원더우먼`, `T-Gana`, `정`
+- LEVEL 3 안내문에도 이 기준을 명시
+
+### 추가 곡 범위
+- California Dream
+- Rebloom
+- 주요 프로젝트/OST
+- 여성시대/원더우먼 등 합동 프로젝트
+- Brillant Change의 추가 수록/타이틀곡
+
+### 기존 규칙 유지
+- 한 게임 10문제 랜덤
+- 문제당 가사 한 줄
+- LEVEL 1 4지선다
+- LEVEL 2·3 주관식
+- 앞뒤 공백만 제거, 내부 띄어쓰기/문장부호/영문 표기까지 정확히 비교
+- LEVEL 2·3 두 번의 입력 기회

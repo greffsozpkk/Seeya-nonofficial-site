@@ -9,5 +9,6 @@
   <url><loc>https://seeya-fanpage.com/members/</loc><priority>0.8</priority></url>
   <url><loc>https://seeya-fanpage.com/gallery/</loc><priority>0.8</priority></url>
   <url><loc>https://seeya-fanpage.com/archive/</loc><priority>1.0</priority></url>
+  <url><loc>https://seeya-fanpage.com/game/lyrics/</loc><priority>0.6</priority></url>
 <url><loc>https://seeya-fanpage.com/today/</loc><priority>0.6</priority></url>
 </urlset>
