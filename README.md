@@ -1,6 +1,8 @@
-# SEEYA ARCHIVE — v4.65 정적 생성판
+# SEEYA ARCHIVE — v4.67
 
 기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
+
+이번 버전은 뉴스 오탐 필터를 추가했습니다. 변경 내용은 CHANGELOG.md를 참조하세요. 이후 전달본도 버전을 순차 증가합니다.
 
 ## 실행
 

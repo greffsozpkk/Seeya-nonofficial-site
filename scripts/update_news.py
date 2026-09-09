@@ -3,11 +3,12 @@ import json, re, urllib.parse, urllib.request, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+from news_filter import relevant_news
 
 QUERIES = {
     "씨야": ['"씨야" 가수', '"씨야" 콘서트 OR 앨범 OR 신곡 OR 컴백'],
     "남규리": ['"남규리" 가수', '"남규리" 신곡 OR 앨범 OR 씨야'],
-    "김연지": ['"씨야 김연지"', '"김연지" 가수 "노래"', '"김연지" 신곡 OR 앨범 OR OST OR 뮤지컬'],
+    "김연지": ['"씨야" "김연지"', '"김연지" "가수"', '"김연지" (신곡 OR 앨범 OR OST OR 뮤지컬)'],
     "이보람": ['"씨야 이보람"', '"이보람" 가수', '"이보람" 골때녀 OR 신곡 OR 앨범']
 }
 OUT = Path("data/news.json")
@@ -52,6 +53,8 @@ for category, queries in QUERIES.items():
     seen=set()
     clean=[]
     for x in merged:
+        if not relevant_news(x, category):
+            continue
         key=re.sub(r"\s+-\s+[^-]+$","",x["title"]).strip()
         if key in seen: continue
         seen.add(key)

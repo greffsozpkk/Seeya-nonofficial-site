@@ -59,5 +59,5 @@ write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http
 // Delete only obsolete assets previously owned by this build, never user assets.
 const old=fs.existsSync(path.join(root,'build-manifest.json'))?json('build-manifest.json'):{assets:[]};
 for(const p of old.assets||[])if(/^assets\/(site|lyric-quiz)\.[a-f0-9]{12}\.(js|css)$/.test(p)&&!assets.includes(p)&&fs.existsSync(path.join(root,p)))fs.unlinkSync(path.join(root,p));
-write('build-manifest.json',JSON.stringify({baseline:site.baseline,files:[...files,'sitemap.xml'],assets},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml'],assets},null,2)+'\n');
 console.log(`Built ${routes.length} pages and ${assets.length} cached assets.`);

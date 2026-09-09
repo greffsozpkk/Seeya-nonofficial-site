@@ -1,6 +1,6 @@
 const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('../shared/common');
 const {newsList,galleryMoment,archiveView}=require('../shared/views');
-function news(data){return W(`<div class="section news-hero" style="border:0">
+function news(data){data={...data,"씨야":require('../shared/news-filter').filterNews(data["씨야"],"씨야")};return W(`<div class="section news-hero" style="border:0">
 <div class="eye">LATEST STORIES</div>
 <h1 style="font-size:55px">SEEYA NEWS</h1>
 <p class="lead">씨야 전체 소식과 세 멤버의 최근 기사를 최신순으로 확인할 수 있습니다.</p>

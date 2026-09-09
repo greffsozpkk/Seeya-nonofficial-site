@@ -146,7 +146,7 @@ async function loadNews(category="씨야",bind=true){
   if(label)label.textContent=`${category==="씨야"?"SEEYA":category} · LATEST NEWS`;
 
   const data=await getNewsData();
-  const items=(data[category]||[]).slice().sort((a,b)=>new Date(b.pubDate)-new Date(a.pubDate));
+  const items=require('../shared/news-filter').filterNews(data[category],category).sort((a,b)=>new Date(b.pubDate)-new Date(a.pubDate));
   renderNews(items);
   if(updated && data.updatedAt){
     const d=new Date(data.updatedAt);
