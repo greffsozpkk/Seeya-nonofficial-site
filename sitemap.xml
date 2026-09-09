@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://seeya-fanpage.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://seeya-fanpage.com/guide/</loc><priority>0.8</priority></url>
-  <url><loc>https://seeya-fanpage.com/news/</loc><priority>0.8</priority></url>
-  <url><loc>https://seeya-fanpage.com/music/</loc><priority>0.9</priority></url>
-  <url><loc>https://seeya-fanpage.com/music/fanchant/</loc><priority>0.6</priority></url>
-  <url><loc>https://seeya-fanpage.com/history/</loc><priority>0.9</priority></url>
-  <url><loc>https://seeya-fanpage.com/members/</loc><priority>0.8</priority></url>
-  <url><loc>https://seeya-fanpage.com/gallery/</loc><priority>0.8</priority></url>
-  <url><loc>https://seeya-fanpage.com/archive/</loc><priority>1.0</priority></url>
-  <url><loc>https://seeya-fanpage.com/game/lyrics/</loc><priority>0.6</priority></url>
-<url><loc>https://seeya-fanpage.com/today/</loc><priority>0.6</priority></url>
+  <url><loc>https://seeya-fanpage.com/</loc></url>
+  <url><loc>https://seeya-fanpage.com/members/</loc></url>
+  <url><loc>https://seeya-fanpage.com/music/</loc></url>
+  <url><loc>https://seeya-fanpage.com/music/fanchant/</loc></url>
+  <url><loc>https://seeya-fanpage.com/history/</loc></url>
+  <url><loc>https://seeya-fanpage.com/gallery/</loc></url>
+  <url><loc>https://seeya-fanpage.com/archive/</loc></url>
+  <url><loc>https://seeya-fanpage.com/guide/</loc></url>
+  <url><loc>https://seeya-fanpage.com/today/</loc></url>
+  <url><loc>https://seeya-fanpage.com/game/lyrics/</loc></url>
+  <url><loc>https://seeya-fanpage.com/news/</loc></url>
 </urlset>

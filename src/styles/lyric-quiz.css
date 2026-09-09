@@ -1,0 +1,70 @@
+
+/* SEEYA LYRIC QUIZ */
+.home-game{margin:0 clamp(20px,5vw,70px) 76px;border:1px solid var(--line);background:radial-gradient(circle at 84% 18%,rgba(245,183,207,.28),transparent 32%),linear-gradient(135deg,#fffaf9 0%,#fff0f5 58%,#f8e3ec 100%);display:grid;grid-template-columns:minmax(0,1.25fr) minmax(250px,.75fr);min-height:300px;overflow:hidden}.home-game-copy{padding:clamp(36px,5vw,66px)}.home-game-copy h2{font-size:clamp(34px,4.8vw,56px);margin:10px 0 15px;line-height:1.1}.home-game-copy p{max-width:590px;margin:0 0 22px;color:var(--muted);line-height:1.9}.home-game-go{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;background:#b97890;border:1px solid #b97890;color:#fff;font-size:11px;font-weight:800;letter-spacing:.04em}.home-game-art{position:relative;display:flex;align-items:center;justify-content:center;padding:28px;min-height:300px}.home-game-art::before{content:"“";font-family:"Gowun Batang",serif;font-size:190px;line-height:1;color:rgba(183,111,139,.18);position:absolute;top:31px;left:50%;transform:translateX(-50%)}.home-game-art strong{position:relative;font-family:"Gowun Batang",serif;font-size:clamp(24px,3vw,38px);line-height:1.45;text-align:center;color:#76505f}.home-game-art span{display:block;margin-top:12px;font-family:Arial,sans-serif;font-size:10px;letter-spacing:.18em;color:#b17a90}
+.lyric-game-page{max-width:1100px;margin:0 auto;padding:clamp(58px,7vw,90px) clamp(18px,5vw,58px) 110px}.lyric-game-hero{max-width:790px;margin-bottom:30px}.lyric-game-hero h1{font-family:"Gowun Batang",serif;font-size:clamp(42px,6vw,70px);line-height:1.05;margin:10px 0 15px}.lyric-game-hero p{line-height:1.9;color:var(--muted);margin:0}.lyric-game-shell{border:1px solid var(--line);background:rgba(255,255,255,.83)}.lyric-level-select{padding:clamp(24px,4vw,42px)}.lyric-level-title{display:flex;justify-content:space-between;align-items:end;gap:18px;margin-bottom:20px}.lyric-level-title h2{font-family:"Gowun Batang",serif;font-size:28px;margin:0}.lyric-level-title span{font-size:10px;color:var(--muted)}.lyric-level-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.lyric-level-card{border:1px solid var(--line);background:#fffafc;padding:22px;text-align:left;cursor:pointer;min-height:185px;transition:.18s;font:inherit;color:var(--ink)}.lyric-level-card:hover{transform:translateY(-2px);border-color:#c98ba2;background:#fff3f7}.lyric-level-card small{font-size:9px;letter-spacing:.16em;color:#b17188;font-weight:800}.lyric-level-card h3{font-family:"Gowun Batang",serif;font-size:24px;margin:12px 0 9px}.lyric-level-card p{font-size:12px;line-height:1.75;color:var(--muted);margin:0}.lyric-level-card b{display:block;margin-top:15px;font-size:10px;color:#9b5d73}.lyric-rule{margin-top:20px;padding:15px 17px;border:1px dashed #d8b5c2;background:#fff9fb;font-size:10px;line-height:1.8;color:var(--muted)}.lyric-quiz-stage{display:none}.lyric-quiz-stage.active{display:block}.lyric-quiz-head{padding:18px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:16px}.lyric-progress{font-size:10px;font-weight:800;letter-spacing:.08em;color:#a0647b}.lyric-score{font-size:10px;color:var(--muted)}.lyric-progressbar{height:3px;background:#f2dfe7}.lyric-progressbar span{display:block;height:100%;background:#bd7a92;transition:width .2s}.lyric-question{padding:clamp(28px,5vw,52px);text-align:center}.lyric-level-badge{display:inline-block;margin-bottom:20px;padding:6px 10px;border:1px solid #d9b3c1;color:#a4647c;font-size:9px;font-weight:800;letter-spacing:.12em}.lyric-line{margin:0 auto 28px;max-width:780px;font-family:"Gowun Batang",serif;font-size:clamp(24px,4vw,38px);line-height:1.55;color:#5c414b}.lyric-line::before{content:"“";color:#d2a2b4;margin-right:4px}.lyric-line::after{content:"”";color:#d2a2b4;margin-left:4px}.lyric-answer-area{max-width:640px;margin:0 auto}.lyric-choices{display:grid;grid-template-columns:1fr 1fr;gap:10px}.lyric-choice{min-height:52px;border:1px solid var(--line);background:#fffafc;padding:10px 14px;font:inherit;font-size:12px;color:var(--ink);cursor:pointer}.lyric-choice:hover:not(:disabled){border-color:#c78aa1;background:#fff1f6}.lyric-choice.correct{border-color:#96a887;background:#f3f8f0}.lyric-choice.wrong{border-color:#c98c9e;background:#fff0f3}.lyric-subjective{display:flex;gap:8px}.lyric-input{flex:1;min-width:0;min-height:50px;border:1px solid var(--line);background:#fff;padding:0 14px;font:inherit;color:var(--ink);outline:none}.lyric-input:focus{border-color:#c88ba2;box-shadow:0 0 0 3px rgba(202,135,161,.1)}.lyric-submit{min-width:110px;border:1px solid #b97890;background:#b97890;color:#fff;font:inherit;font-size:11px;font-weight:800;cursor:pointer;padding:0 14px}.lyric-submit:disabled{opacity:.45;cursor:not-allowed}.lyric-attempt{min-height:24px;margin-top:10px;font-size:10px;color:#a1677d}.lyric-result{display:none;margin-top:22px;padding:18px;border-top:1px solid var(--line)}.lyric-result.show{display:block}.lyric-result strong{display:block;font-family:"Gowun Batang",serif;font-size:22px;margin-bottom:6px}.lyric-result p{margin:0 0 12px;font-size:11px;line-height:1.7;color:var(--muted)}.lyric-result-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.lyric-next,.lyric-source{min-height:40px;padding:0 14px;border:1px solid #b97890;background:#b97890;color:#fff;font:inherit;font-size:10px;font-weight:800;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}.lyric-source{background:#fff;color:#9d6076}.lyric-finish{display:none;padding:clamp(30px,5vw,55px);text-align:center}.lyric-finish.show{display:block}.lyric-final-score{font-family:"Gowun Batang",serif;font-size:clamp(50px,8vw,86px);line-height:1}.lyric-finish h2{font-family:"Gowun Batang",serif;font-size:30px;margin:14px 0 8px}.lyric-finish p{color:var(--muted);line-height:1.8}.lyric-finish-actions{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:22px}.lyric-finish-actions button{min-height:42px;padding:0 16px;border:1px solid #b97890;background:#b97890;color:#fff;font:inherit;font-size:10px;font-weight:800;cursor:pointer}.lyric-finish-actions button.alt{background:#fff;color:#9c6076}@media(max-width:760px){.home-game{grid-template-columns:1fr;margin-bottom:56px}.home-game-art{min-height:200px;padding-top:0}.home-game-art::before{top:-5px}.lyric-level-grid{grid-template-columns:1fr}.lyric-level-card{min-height:0}.lyric-choices{grid-template-columns:1fr}.lyric-subjective{flex-direction:column}.lyric-submit{min-height:48px}.lyric-quiz-head{padding:15px 17px}.lyric-question{padding:28px 17px}}
+
+
+/* v4.62 quiz visual update */
+.home-game{align-items:stretch;overflow:hidden}.home-game-art{position:relative;min-height:320px;padding:clamp(18px,3vw,28px);background:linear-gradient(180deg,rgba(255,247,251,.12),rgba(255,238,245,.26)),url('/images/game/lyric-quiz-hero.png') center/cover no-repeat;border-left:1px solid var(--line);display:flex;align-items:flex-end;justify-content:flex-start}.home-game-art::before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(91,39,64,.12))}.home-game-art strong{position:relative;z-index:1;display:inline-flex;flex-direction:column;gap:8px;max-width:min(360px,92%);padding:16px 18px;border:1px solid rgba(255,255,255,.78);background:rgba(255,250,252,.78);backdrop-filter:blur(3px);box-shadow:0 10px 28px rgba(99,54,74,.12)}.home-game-art strong span{display:block}.lyric-rule{display:grid;gap:9px}.lyric-rule-item{position:relative;padding-left:14px}.lyric-rule-item::before{content:"-";position:absolute;left:0;top:0;color:#b17188;font-weight:800}.lyric-rule b{color:#845165}.lyric-game-art-footer{margin-top:24px;border:1px solid var(--line);background:rgba(255,255,255,.86);overflow:hidden}.lyric-game-art-footer img{display:block;width:100%;height:auto;vertical-align:top}@media(max-width:760px){.home-game-art{min-height:220px;padding:16px}.home-game-art strong{max-width:100%;padding:14px 15px}.lyric-game-art-footer{margin-top:18px}}
+
+/* v4.65 readability + full-background quiz banner */
+.home-game{
+  position:relative;
+  isolation:isolate;
+  grid-template-columns:minmax(0,1fr) minmax(220px,.48fr);
+  background:#7d5968;
+}
+.home-game::before{
+  content:"";
+  position:absolute;
+  z-index:-2;
+  inset:-10px;
+  background:url('/images/game/lyric-quiz-hero.png') center 43%/cover no-repeat;
+  filter:blur(2.5px);
+  transform:scale(1.025);
+}
+.home-game::after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  inset:0;
+  background:linear-gradient(90deg,rgba(67,38,51,.76) 0%,rgba(81,46,62,.62) 48%,rgba(63,37,49,.42) 100%);
+}
+.home-game-copy{
+  position:relative;
+  z-index:1;
+  color:#fff;
+  text-shadow:0 1px 12px rgba(50,22,34,.32);
+}
+.home-game-copy .eye,.home-game-copy h2{color:#fff}
+.home-game-copy p{color:rgba(255,255,255,.92)}
+.home-game-go{background:rgba(255,250,252,.94);border-color:rgba(255,255,255,.94);color:#915f73;text-shadow:none}
+.home-game-art{
+  position:relative;
+  z-index:1;
+  min-height:300px;
+  border-left:0;
+  background:none;
+  align-items:flex-end;
+  justify-content:flex-end;
+}
+.home-game-art::before{display:none}
+.home-game-art strong{
+  background:rgba(255,248,251,.82);
+  border:1px solid rgba(255,255,255,.9);
+  color:#704b5a;
+  text-shadow:none;
+}
+.lyric-finish-summary{display:grid;gap:8px;margin:22px auto 0;max-width:560px}
+.lyric-finish-summary span{display:block}
+.lyric-finish-summary span+span{padding-top:8px;border-top:1px solid rgba(197,149,167,.24)}
+.lyric-finish-summary b{color:#8e5c70}
+@media(max-width:760px){
+  .home-game{grid-template-columns:1fr;min-height:390px}
+  .home-game::before{inset:-14px;background-position:center center;filter:blur(3.5px);transform:scale(1.06)}
+  .home-game::after{background:linear-gradient(180deg,rgba(59,32,45,.70) 0%,rgba(72,39,55,.62) 62%,rgba(61,33,46,.68) 100%)}
+  .home-game-copy{padding:34px 26px 30px;min-height:390px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+  .home-game-copy h2{font-size:clamp(34px,10vw,47px);max-width:10em}
+  .home-game-copy p{font-size:12px;line-height:1.95;max-width:28em}
+  .home-game-art{display:none}
+}

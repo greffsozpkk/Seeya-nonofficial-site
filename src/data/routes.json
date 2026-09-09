@@ -1,0 +1,68 @@
+[
+  {
+    "key": "home",
+    "path": "/",
+    "title": "씨야 SeeYa 팬페이지 · 팬 아카이브 | SEEYA ARCHIVE",
+    "description": "씨야(SeeYa) 팬 아카이브. 남규리, 김연지, 이보람의 음악과 활동 기록, 사진, 역사를 만나보세요."
+  },
+  {
+    "key": "members",
+    "path": "/members/",
+    "title": "씨야 멤버 남규리 · 김연지 · 이보람 | SEEYA ARCHIVE",
+    "description": "씨야 멤버 남규리, 김연지, 이보람의 프로필과 공식 SNS, YouTube 및 현재 활동을 확인하세요."
+  },
+  {
+    "key": "music",
+    "path": "/music/",
+    "title": "씨야 SeeYa 노래 · 앨범 · 디스코그래피 | SEEYA ARCHIVE",
+    "description": "씨야의 The First Mind부터 First, Again까지 주요 앨범과 노래를 정리한 디스코그래피입니다."
+  },
+  {
+    "key": "fanchant",
+    "path": "/music/fanchant/",
+    "title": "씨야 SeeYa 응원법 | SEEYA ARCHIVE",
+    "description": "씨야 콘서트와 공연에서 함께 즐길 수 있는 응원법 영상과 이미지를 모아봅니다."
+  },
+  {
+    "key": "history",
+    "path": "/history/",
+    "title": "씨야 SeeYa 역사 · 활동 연혁 | SEEYA ARCHIVE",
+    "description": "2006년 데뷔부터 2011년 마지막 인사, 2020년 재회와 2026년 재결합까지 씨야의 이야기를 기록합니다."
+  },
+  {
+    "key": "gallery",
+    "path": "/gallery/",
+    "title": "씨야 SeeYa 사진 갤러리 | SEEYA ARCHIVE",
+    "description": "씨야의 순간을 사진으로 기록하는 팬 아카이브 갤러리입니다."
+  },
+  {
+    "key": "archive",
+    "path": "/archive/",
+    "title": "씨야 활동 기록 검색 · 디지털 아카이브 | SEEYA ARCHIVE",
+    "description": "씨야의 음악방송, 공연, 예능, 인터뷰, 기사와 공식 콘텐츠를 연도·멤버·분류별로 검색합니다."
+  },
+  {
+    "key": "guide",
+    "path": "/guide/",
+    "title": "씨야 SeeYa 입문 가이드 | SEEYA ARCHIVE",
+    "description": "씨야 입문 가이드. 대표곡과 추천 앨범, 2006년 데뷔부터 2026년 재결합까지의 이야기를 만나보세요."
+  },
+  {
+    "key": "today",
+    "path": "/today/",
+    "title": "오늘의 씨야 · 추천곡 | TODAY'S SEEYA",
+    "description": "오늘의 흐름에 맞춰 씨야의 그룹곡과 주요 프로젝트·OST, 최근 멤버 솔로곡을 추천하는 팬 콘텐츠입니다."
+  },
+  {
+    "key": "quiz",
+    "path": "/game/lyrics/",
+    "title": "씨야 가사 퀴즈 · 노래 제목 맞히기 | SEEYA ARCHIVE",
+    "description": "씨야 노래 가사 한 줄을 보고 제목을 맞히는 3단계 팬게임. 4지선다와 주관식으로 10문제에 도전하세요."
+  },
+  {
+    "key": "news",
+    "path": "/news/",
+    "title": "씨야 SeeYa 최신 뉴스 | SEEYA ARCHIVE",
+    "description": "씨야와 남규리, 김연지, 이보람의 최근 활동과 새로운 소식을 모아봅니다."
+  }
+]

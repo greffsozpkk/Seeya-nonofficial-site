@@ -1,0 +1,13 @@
+{
+  "passes": [
+    "Archive: search, category, pagination, sorting, reset, escaped search text",
+    "News: all four category filters",
+    "Quiz: all three levels, 135 questions, 30 answers, album hint, score excludes second try, three result lines, restart/reset",
+    "Fanchant: 12 cards, open, arrow navigation, Escape",
+    "Gallery: injected test data, two photos, lightbox and arrow/Escape",
+    "Normal link navigation, reload, old hash bookmark",
+    "Hidden tarot shortcut and modal retained",
+    "JavaScript disabled: 11 routes have readable content, news/archive/fanchant populated"
+  ],
+  "errors": []
+}

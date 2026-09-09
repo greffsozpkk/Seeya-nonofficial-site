@@ -1,8 +1,4 @@
-#!/usr/bin/env bash
-cd "$(dirname "$0")"
-echo
-echo "SEEYA ARCHIVE local server"
+#!/bin/sh
+cd "$(dirname "$0")" || exit 1
 echo "Open: http://localhost:8000/"
-echo "Stop: Ctrl+C"
-echo
-python3 -m http.server 8000
+python3 -m http.server 8000 --bind 127.0.0.1

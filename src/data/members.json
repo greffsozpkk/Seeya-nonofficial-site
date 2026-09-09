@@ -1,0 +1,26 @@
+[
+  {
+    "name": "남규리",
+    "english": "NAM GYU-RI",
+    "role": "대표",
+    "birthday": "4월 26일",
+    "photo": "https://unavatar.io/youtube/UC_naRJKw5Isgpv5nF8yNXLw",
+    "signature": "images/members/nam-gyuri-signature.png"
+  },
+  {
+    "name": "김연지",
+    "english": "KIM YEON-JI",
+    "role": "전무",
+    "birthday": "10월 30일",
+    "photo": "https://unavatar.io/youtube/UCjLZIdvRV7fQ3m_DA9NEkOg",
+    "signature": "images/members/kim-yeonji-signature.png"
+  },
+  {
+    "name": "이보람",
+    "english": "LEE BO-RAM",
+    "role": "상무",
+    "birthday": "2월 17일",
+    "photo": "https://unavatar.io/youtube/UCz11CPccQ2AnizJrdp58Bog",
+    "signature": "images/members/lee-boram-signature.png"
+  }
+]

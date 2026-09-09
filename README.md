@@ -1,271 +1,65 @@
-# SEEYA ARCHIVE v4.43 — Solo Melon Links + Nam Gyu-ri Archive
+# SEEYA ARCHIVE — v4.65 정적 생성판
 
-v4.42 기반.
+기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
 
-## HOME · MEMBER SOLO
-### 남규리
-- `우리 사랑 그런 거 해요`
-- PART.1 MV / PART.2 MV 버튼 유지
-- `Melon에서 감상하기 →` 추가
-- Melon: https://www.melon.com/album/detail.htm?albumId=14521264
-- 사용자 제공 Part.1 + Part.2 합성 이미지 유지
+## 실행
 
-### 김연지
-- `노래`
-- Melon: https://www.melon.com/album/detail.htm?albumId=14493829
-- 카드 전체 링크 대신 하단 Melon 버튼으로 통일
+이미 생성된 사이트를 보려면 기존처럼 **serve-local.bat을 실행하고 http://localhost:8000/ 을 여세요.** Python 3을 사용하므로 Node.js는 필요하지 않습니다. 서버 창은 열어 두세요.
 
-### 이보람
-- `빛의 반대편에서`
-- Melon: https://www.melon.com/album/detail.htm?albumId=14335999
-- 카드 전체 링크 대신 하단 Melon 버튼으로 통일
+소스를 수정하여 HTML을 다시 생성할 때만 Node.js 22 이상을 권장합니다. 빌드에는 npm 패키지가 필요 없습니다.
 
-## ARCHIVE
-기존 남규리 Part.2 teaser 단독 기록을 제거하고 정식 공개 기록으로 교체:
-1. `우리 사랑 그런 거 해요` 싱글 발매 · Melon
-2. `우리 사랑 그런 거 해요 Part.1` Official MV · YouTube
-3. `우리 사랑 그런 거 해요 Part.2 (feat. KoN)` Official MV · YouTube
+```sh
+node build.js
+node scripts/check.js
+node scripts/serve.js
+```
 
-Melon 기준:
-- 발매일: 2026.09.06
-- 싱글
-- 장르: 발라드
-- 기획사: ㈜탱글미디어
-- 수록곡 2곡, 두 곡 모두 타이틀
+http://127.0.0.1:8080/ 에서 확인합니다. 종료는 Ctrl+C. file:// 더블클릭 대신 로컬 서버를 사용하세요. 도메인 루트 배포 기준입니다.
 
+**생성된 HTML 직접 편집 금지.** 각 경로 index.html, 해시가 붙은 assets/site.* 및 assets/lyric-quiz.*, sitemap.xml, build-manifest.json은 빌드 산출물입니다. src/ 또는 data/를 수정하고 node build.js를 실행하세요.
 
-## v4.44 · Naver Search Advisor
-- Naver site verification meta tag added inside `<head>`.
-- Verification token:
-  `10549d56351a36ea7d8df11682ed09dfe3b75bc9`
-- Applied to root and clean-URL routed HTML copies.
-- Existing `robots.txt` and `sitemap.xml` are preserved.
+## 편집 위치
 
+- src/template.html: 공통 head·메뉴·main·모달
+- src/pages/: 페이지별 렌더 함수. FANCHANT는 music.js에서 경로로 구분
+- src/shared/: 빌드·브라우저 공용 순수 렌더 함수
+- src/client/: 검색·필터·확대·추천·퀴즈 동작
+- src/styles/: 기존 CSS. 인스타 피드 스타일 제거·배경 경로 보정 외 유지
+- src/data/: albums, members, guide, history, tarot, today-songs, today-moods, fanchant, archive-types, routes, site JSON
+- data/news.json: 뉴스 빌드 입력 및 브라우저 최신 갱신
+- data/archive.json, data/photos.json: 활동 기록·갤러리
+- scripts/update_news.py: 기존 뉴스 수집기
 
-## v4.45 · Naver Description Optimization
-- 메인 페이지 description을 네이버 권장 80자 이내로 축약
-- Open Graph description과 Twitter description을 동일 문구로 동기화
-- GUIDE 포함 모든 clean URL 페이지 description을 80자 이하로 점검/정리
-- 런타임 routeMeta의 description도 정적 HTML과 동일하게 동기화
+앨범·멤버 기본 프로필·가이드 추천곡·오늘의 추천곡·분위기·응원법을 JSON으로 분리했습니다. HISTORY 기존 요약 배열도 보존했습니다. 긴 HISTORY 서술, GUIDE 설명, 멤버 SNS 마크업은 디자인 보존을 위해 페이지 렌더 함수에 남겨 점진 분리합니다.
 
-메인 설명:
-`씨야(SeeYa) 팬 아카이브. 남규리, 김연지, 이보람의 음악과 활동 기록, 사진, 역사를 만나보세요.`
+퀴즈 실행 문제은행은 원본처럼 src/client/lyric-quiz.js에 내장되어 있습니다. 문제 변경 시 참고용 data/lyric-quiz.json도 함께 수정하세요. 총 135문제(30/45/60), 무작위 10문제, 앨범 힌트, 첫 시도 점수, 결과 줄바꿈·모바일 배너를 유지했습니다.
 
+## 생성·이동
 
-## v4.46 · Music Broadcast / Live Stage Archive
+src/data/routes.json이 경로·메타·sitemap의 단일 기준입니다. 메뉴는 일반 링크로 실제 HTML을 엽니다. route()를 통한 본문 재생성이 없습니다. 예전 #/guide/ 같은 북마크만 실제 경로로 전환합니다. 숨겨진 타로는 기존 키 입력으로 클라이언트에서 열립니다.
 
-v4.45 기반.
+NEWS·ARCHIVE·GALLERY는 JSON을 초기 HTML에 반영하고 브라우저에서 갱신합니다. 통신 실패 시 빌드 데이터가 대체합니다. JS를 꺼도 본문과 링크는 동작합니다. 검색·필터·퀴즈·확대에는 JS가 필요합니다.
 
-### ARCHIVE
-- `음악방송` 필터명을 `음악방송·무대`로 확장
-- `type: music-show` 기록 19개 추가
-- 현재 전체 ARCHIVE: 79개
-- 현재 음악방송·무대 기록: 19개
+같은 입력은 같은 산출물을 만듭니다. src/data/site.json의 snapshotDate는 TODAY·갤러리 기본 표시 기준이며, TODAY는 방문 시 현재 날짜·무작위 추천으로 갱신됩니다. 날짜를 바꾸려면 이 설정을 수정하세요. 뉴스 날짜는 한국 시간 기준입니다.
 
-### 1차 수록 범위
-- 2006 KBS 콘서트7080 · 여인의 향기
-- 2007 KBS 콘서트7080 · 사랑의 인사
-- 2007 MBC 쇼! 음악중심 · 슬픈 발걸음
-- 2008 MBC 쇼! 음악중심 · Hot Girl
-- 2009 MBC 쇼! 음악중심 · 여성시대 / 그 놈 목소리
-- 2010 MBC 쇼! 음악중심 · 원더우먼
-- 2011 마지막 방송 주간 · M Countdown / 뮤직뱅크 / 음악중심 / 인기가요
-- 2026 더 시즌즈 / 열린음악회
-- 2026 M Countdown / Simply K-Pop / 인기가요 / 음악중심 / ENA 케이팝업 차트쇼
+CSS/JS는 내용 해시 파일명을 사용합니다. 생성기가 소유한 오래된 해시 자산만 정리합니다. 소스와 산출물을 함께 보관하세요.
 
-### 데이터 원칙
-- 방송사 공식 YouTube·공식 VOD를 우선 연결
-- 공식 영상이 확인되지 않은 과거 무대는 당시 기사로 방송 사실을 확인
-- 이번 버전은 전수 목록이 아니라 출처가 명확한 대표·핵심 무대 1차 구축
+## 기준 ZIP 누락 보충
 
+ZIP에 news.json·photos.json·뉴스 수집기·Actions가 없었습니다. 뉴스는 v4.65 NEWS_FALLBACK을 JSON으로 옮겼습니다. 사진은 원본처럼 빈 목록이며 테스트용 사진은 포함하지 않습니다.
 
-## v4.47 · TODAY / GALLERY / ARCHIVE Pixel Art
-- 사용자 제공 `도트_Today.png` → TODAY'S SEEYA 하단
-- 사용자 제공 `도트_사진.png` → GALLERY 하단
-- 사용자 제공 `도트_아카이브.png` → ARCHIVE 하단
-- 각 이미지는 사이트 로컬 자산으로 저장
-- HISTORY 이미지(최대 820px)보다 작은 최대 720px로 조정
-- PC 기준 74vw + `max-width: calc(100% - 48px)`로 가로 스크롤 방지
-- 모바일 최대 88vw
-- 카드/박스 없이 짧은 Pearl Light Pink 구분선과 약한 그림자만 사용
+원본이 참조하지만 ZIP에 없던 멤버 서명 3개, 응원법 이미지·배경 13개, 타로 이미지 1개와 뉴스 수집기를 기존 greffsozpkk/Seeya-nonofficial-site 저장소 커밋 87b9ddc7459fde1ba9996a78ade847ca504f6033에서 보충했습니다. v4.65에 존재하는 파일은 구버전으로 덮어쓰지 않았습니다.
 
+메인 인스타 피드·전용 스타일·데이터 의존·갱신 자동화는 제거했습니다. 공식 인스타 및 멤버 SNS로 가는 일반 링크는 유지합니다.
 
-## v4.48 · NEWS 10 + ARCHIVE Pagination
-- NEWS: 카테고리별 화면 노출 최대 5개 → 최대 10개
-- ARCHIVE: 페이지당 9개
-- 검색 / 연도 / 멤버 / 카테고리 / 정렬 변경 시 자동으로 1페이지 복귀
-- 페이지 번호는 많은 경우 `1 … 4 5 6 … 9`처럼 압축 표시
-- 이전/다음 버튼 지원
-- 페이지 이동 시 ARCHIVE 결과 상단으로 부드럽게 이동
-- 결과 카운트에 현재 페이지 표시 (`총 79개의 기록 · 1 / 9 페이지`)
-- 모바일에서도 페이지 버튼이 과하게 넓어지지 않도록 별도 크기 조정
-- ARCHIVE 이미지/placeholder는 이번 버전에서 변경하지 않음
+## 자동화·배포
 
-※ NEWS 데이터 자체가 10건 미만인 카테고리는 존재하는 기사 수만큼만 표시됩니다.
+.github/workflows/update-news.yml: 수집 → 빌드 → 검증 → JSON·HTML·자산 동시 커밋. build.yml: main의 소스·데이터 변경 시 재생성. 저장소 쓰기 권한이 필요합니다. 이번 작업에서 원격 업로드·실제 Actions 실행·배포는 하지 않았습니다.
 
+배포 파일: index.html, 각 경로 폴더, assets/, images/, data/, 404.html, robots.txt, sitemap.xml. GitHub Pages 저장소의 기존 CNAME 설정을 유지하세요.
 
-## v4.49 · Stage / Interview Placeholder Art
-- `archive-stage.png`
-  - ARCHIVE `음악방송·무대` 카드에서 실제 썸네일이 없는 경우 기본 이미지로 사용
-- `archive-interview.png`
-  - ARCHIVE `인터뷰` 카드에서 실제 썸네일이 없는 경우 기본 이미지로 사용
-  - SEEYA NEWS 페이지 최하단에도 다른 페이지와 같은 엔딩 아트 형식으로 배치
-- 실제 썸네일이 존재하면 placeholder보다 실제 썸네일을 우선 표시
-- placeholder 이미지 로딩 실패 시 기존 연도/카테고리 텍스트 fallback 유지
-- v4.48 페이지네이션의 카드 렌더 할당도 함께 점검/교정
+## 검증
 
+node scripts/check.js는 재현성·JS 구문·로컬 링크를 확인합니다. 선택적 기능 검사는 Playwright 설치 환경에서 node scripts/browser-check.cjs로 실행합니다(Edge 필요). 빌드 자체는 Playwright에 의존하지 않습니다.
 
-## v4.50 · GUIDE / FAN CHANT Ending Art
-- 사용자 제공 응원 도트 이미지를 공용 자산으로 추가
-  - `images/common/seeya-cheer-pixel.png`
-- MUSIC → FAN CHANT 페이지 최하단에 배치
-- GUIDE 페이지 최하단에 동일 이미지 배치
-- 기존 TODAY / GALLERY / ARCHIVE / NEWS와 동일한 `.page-pixel-art` 엔딩 스타일 재사용
-- 장식 이미지로 처리하여 빈 alt 사용
-
-
-## v4.51 · 씨야엔터테인먼트 명예 영업사원증 발급소
-
-### 신규 페이지
-- `/employee-card/`
-- 상단 메인 메뉴에는 추가하지 않음
-- HOME 참여형 배너 + GUIDE 마지막 버튼 + SEO footer에서 진입
-
-### 기능
-- 이름 또는 닉네임 입력
-- JPG / PNG / WEBP 사진 업로드
-- 사진 확대/축소
-- 사원증 미리보기에서 사진 직접 드래그
-- 사진 위치 초기화
-- 장식용 사번 자동 생성 / 재생성
-- 발급일 자동 입력
-- `명예 영업사원증 발급하기`
-- 1086×1448 PNG 저장
-
-### 개인정보
-- 사진 합성은 브라우저 Canvas 안에서만 수행
-- 사진을 서버에 업로드하거나 저장하지 않음
-- localStorage / sessionStorage 사용하지 않음
-
-### 디자인
-- 승인된 B안 템플릿 사용
-- `SEE YOU ALWAYS`
-- `UNOFFICIAL · FAN MADE ID CARD`
-- 실제 씨야엔터테인먼트 공식 사원증이 아닌 팬 콘텐츠임을 명시
-
-### SEO
-- `/employee-card/` clean URL 생성
-- 고유 title / description / canonical / OG / Twitter metadata
-- sitemap.xml 등록
-
-
-## v4.52 · Employee Card Rendering Fix
-- 템플릿에 박혀 있던 샘플 이름/사번/발급일이 신규 값과 겹쳐 보이던 문제 수정
-- 반투명 개별 덮개 대신 NAME/FAN TITLE/ID/DATE 값 영역 전체를 불투명 패널로 정리
-- 패널 위에 구분선을 다시 그리고, 이름·팬 호칭·사번·발급일을 한 번만 렌더링
-- `씨야와 함께하는`도 Canvas 레이어에서 다시 출력
-- 한글 폰트 fallback 보강
-- 1086×1448 PNG 출력 유지
-
-
-## v4.53 · Employee Card Alignment + HOME Pixel Restore
-- 사원증 값 영역 전체를 덮던 큰 사각 패널 제거
-- 템플릿의 고정 FAN TITLE / 꽃 / 구분선 / 배경 질감을 그대로 유지
-- 샘플 `홍길동`, `SY-2026-001`, `2026.09.07` 부분만 좁게 마스킹 후 새 값 합성
-- 이름 글자 크기를 템플릿 원본에 가깝게 축소
-- ID / 발급일 좌표를 원본 행 중앙에 맞춤
-- 사진 영역을 실제 템플릿 안쪽 프레임 크기(338×382)에 맞게 확대
-- 사진 미선택 시 원래 PHOTO 플레이스홀더를 그대로 표시
-- 우측 하단과 겹치던 `ISSUED · SEEYA ARCHIVE` 추가 스탬프 제거
-- 최근 ZIP에서 누락됐던 HOME 도트 캐릭터 자산 복구:
-  `images/common/seeya-pixel-characters.png`
-
-
-## v4.54 · Employee Card Text Alignment Fix
-- 사원증 이름/사번/발급일 마스킹 영역을 더 넓혀 브라우저별 잔상이 보이지 않도록 조정
-- 글자 기준선을 middle → alphabetic 으로 변경해 템플릿 원본 행과 더 자연스럽게 정렬
-- 이름/사번/발급일의 X/Y 좌표와 폰트 크기를 재조정
-- HOME 하단 도트 캐릭터 복구 상태 유지
-
-
-## v4.55 · Employee Card Temporarily Disabled
-- 명예 영업사원증 기능 임시 비활성화
-- HOME `명예 영업사원 모집중` 배너 제거
-- GUIDE `명예 영업사원증 만들기` 버튼 제거
-- SEO footer `STAFF ID` 링크 제거
-- `/employee-card/` clean URL 페이지 제거
-- sitemap.xml에서 `/employee-card/` 제거
-- 라우터의 employee-card 진입 및 초기화 제거
-- 기존 사원증 코드와 템플릿 자산은 나중에 새 템플릿으로 재작업할 수 있도록 내부에 보존
-
-
-## v4.56 · TODAY'S SEEYA 80 Songs + ARCHIVE Tracklist Update
-
-### TODAY'S SEEYA
-- 기존 Tarot 22장 대표곡 의존 구조 제거
-- 추천곡 전용 풀 `data/today-songs.json` 신설
-- 총 80곡
-- 범위:
-  - 씨야 정규/미니/베스트의 주요 고유 수록곡
-  - 주요 프로젝트/OST
-  - 2026 남규리·김연지·이보람 최근 솔로곡
-- Inst. 트랙은 TODAY 추천에서 제외
-- 8개 분위기:
-  `start / love / energy / comfort / longing / breakup / reflection / connection`
-- 먼저 오늘의 분위기를 뽑고, 그 분위기에 매칭된 곡만 추천
-- 같이 들으면 좋은 곡도 같은 분위기 풀에서 2곡 추천
-- 추천 링크는 직접 확인된 Melon 앨범 링크를 우선하고, 프로젝트/OST는 Bugs 원본 페이지 사용
-- Tarot 기능은 기존 22장 구조 그대로 유지하며 TODAY와 분리
-
-### ARCHIVE
-- 전체 기록: 80개
-- The First Mind / Lovely Sweet Heart / California Dream / Brillant Change / Rebloom /
-  See You Again / First, Again 전체 트랙 검색 가능하도록 songs 배열 보강
-- 숙명 OST `시차`, Baby Brown `미쳤나봐`, TWENTYth Urban `이별이 오지 못하게` 보강
-- `See You Again` 참여 멤버를 남규리·김연지·이보람으로 교정
-- 2026.08.27 K-WORLD DREAM AWARDS `K 월드 드림 리스너 초이스상` 수상 기록 추가
-
-
-## v4.57 · SEEYA LYRIC QUIZ
-- 신규 clean URL: `/game/lyrics/`
-- 상단 메인 메뉴는 유지하고 HOME 팬게임 배너 / GUIDE / SEO footer에서 진입
-- 총 90문제: LEVEL 1 20 / LEVEL 2 30 / LEVEL 3 40
-- 한 게임당 랜덤 10문제, 게임 내 중복 없음
-- 모든 문제는 가사 한 줄만 표시
-- LEVEL 1: 4지선다
-- LEVEL 2·3: 주관식, 앞뒤 공백만 제거하고 내부 띄어쓰기·문장부호·영문 표기를 정확히 비교
-- LEVEL 2·3은 문제당 2회 입력 가능
-- 첫 시도 정답만 10점 만점에 반영, 두 번째 정답은 총 정답 수에만 반영
-- 결과 칭호: ROOKIE / LISTENER / ARCHIVIST / EXPERT / MASTER
-- 문제은행: `data/lyric-quiz.json`
-- 게임 자산: `assets/lyric-quiz.js`, `assets/lyric-quiz.css`
-
-
-## v4.58 · LYRIC QUIZ 105 Questions
-
-### 문제은행 확장
-- 총 90문제 → **105문제**
-- LEVEL 1: 20 → **25문제**
-- LEVEL 2: 30 → **35문제**
-- LEVEL 3: 40 → **45문제**
-
-### LEVEL 3 기준 보강
-- 수록곡만 어렵다고 보지 않음
-- 유명 타이틀곡/히트곡도 **덜 알려진 가사 구간**이면 LEVEL 3에 출제
-- 이번 추가 예시: `가니`, `눈물의 여왕`, `원더우먼`, `T-Gana`, `정`
-- LEVEL 3 안내문에도 이 기준을 명시
-
-### 추가 곡 범위
-- California Dream
-- Rebloom
-- 주요 프로젝트/OST
-- 여성시대/원더우먼 등 합동 프로젝트
-- Brillant Change의 추가 수록/타이틀곡
-
-### 기존 규칙 유지
-- 한 게임 10문제 랜덤
-- 문제당 가사 한 줄
-- LEVEL 1 4지선다
-- LEVEL 2·3 주관식
-- 앞뒤 공백만 제거, 내부 띄어쓰기/문장부호/영문 표기까지 정확히 비교
-- LEVEL 2·3 두 번의 입력 기회
+검증 범위와 기존 제한은 validation/REPORT.md를 확인하세요.

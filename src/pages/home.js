@@ -1,0 +1,127 @@
+const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('../shared/common');
+const {newsList,galleryMoment,archiveView}=require('../shared/views');
+function home(){return `<div class="home-aespa">
+<section class="home-visual">
+  <img src="https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/kpics/2026/04/1775079390478-grlcud-0.jpg" alt="씨야 남규리 김연지 이보람 단체 사진">
+  <div class="home-copy">
+    <div class="home-kicker">2006 — 2026 · FIRST, AGAIN</div>
+    <div class="home-logo-wrap"><svg class="seeya-official-inline" xmlns="http://www.w3.org/2000/svg" width="442.7605" height="125.4917" viewBox="0 0 442.7605 125.4917"><path d="M1428.754 3123.479s23.849-.1 38.625-.16c22.717.326 14.227-17.256 8.164-25.681-1.95-2.71-9.32-15.267-14.116-22.567-4.337-6.6-6.655-17.03-5.713-25.704.581-5.36 4.108-13.855 7.23-17.415 2.608-2.975 9.334-6.95 13.28-7.848 1.91-.434 33.623-.712 70.473-.618 36.85.095 87.557.168 112.682.162l45.683-.01.671 2.25c.624 2.092 5.252 12.946 9.487 22.25 1.001 2.2 3.18 7.043 4.84 10.761l3.021 6.761-3.07 6.74c-9.107 19.983-8.478 18.884-9.278 16.204-.678-2.272-7.72-18.444-11.09-25.466-.792-1.65-2.987-6.6-4.879-11l-3.439-8h-60.628l-.277 14.75-.277 14.75h35.054v21h-35.055l.277 14.25.278 14.25 26.25.267 26.25.266v21.008l-35.991-.066-35.99-.066-.26-50.204-.26-50.205h-65v29l17.25.273 17.25.274v20.953h-35.054l.277 14.25.278 14.25 26.25.266 26.25.267v20.877l-36 .065-36 .063-.08-28.269c-.043-15.548-.155-38.17-.25-50.27l-.17-22-20.48-.167c-22.75-.186-26.223.477-28.114 5.369q-3.242 8.388 4.586 21.006c2.66 4.286 8.363 13.35 12.422 20.292 4.909 8.398 14.041 25.936 5.175 39.985-5.044 7.992-8.4 15.025-37.571 14.775 0 0-33.305-.165-42.279-.102 2.043-4.086 9.318-21.817 9.318-21.817m274.443 20.534c0-.802 4.32-10.886 8.513-19.875 1.796-3.85 5.165-11.5 7.487-17s4.56-10.45 4.977-11c.416-.55 1.75-3.695 2.965-6.988s2.618-6.482 3.12-7.086c.5-.604 1.552-2.916 2.336-5.137s2.54-6.457 3.905-9.414 4.14-9.2 6.168-13.875c5.129-11.825 9.202-20.738 11.81-25.843l2.219-4.344 10.5-.066c11.634-.073 11.305-.35 8.047 6.753-2.398 5.228-13.444 30.352-23.522 53.5-5.516 12.67-5.933 13.621-10.96 25-2.551 5.775-5.524 12.3-6.606 14.5s-2.796 6.025-3.809 8.5a854 854 0 0 1-3.648 8.75l-1.806 4.25h-10.848c-5.967 0-10.848-.281-10.848-.625zm50-.675c0-.715.382-1.728.85-2.25.467-.523 1.632-2.975 2.59-5.45.957-2.475 2.767-6.75 4.02-9.5 1.254-2.75 3.951-8.825 5.994-13.5s4.534-10.3 5.537-12.5c1.002-2.2 3.691-8.275 5.977-13.5s5.478-12.274 7.094-15.664 2.938-6.677 2.938-7.302c0-.626.9-2.802 2.002-4.836s3.836-7.973 6.079-13.198c6.987-16.283 11.302-25.953 11.477-25.722.093.122 1.854 4.047 3.914 8.722s6.428 14.575 9.706 22 7.544 17.1 9.48 21.5c1.938 4.4 4.57 10.25 5.85 13s2.645 6.125 3.033 7.5 1.06 2.95 1.495 3.5 2.9 5.95 5.477 12c4.521 10.611 5.525 12.875 12.358 27.862 1.72 3.774 3.129 7.262 3.129 7.75s-4.723.888-10.495.888h-10.495l-1.971-4.25c-2.377-5.125-7.366-17.204-10.223-24.75-1.145-3.025-2.475-6-2.955-6.609-.48-.61-1.739-3.535-2.799-6.5s-3.273-8.541-4.919-12.391-4.507-10.6-6.36-15-3.78-8-4.283-8-2.339 3.375-4.078 7.5a9011 9011 0 0 1-8.91 21c-3.16 7.425-7.059 16.65-8.663 20.5s-3.802 8.908-4.883 11.239c-1.082 2.332-1.966 4.525-1.966 4.875s-1.187 3.28-2.637 6.51l-2.636 5.876h-10.364c-7.836 0-10.363-.317-10.363-1.3" style="fill:#ffb6c1;fill-opacity:1" transform="translate(-1419.436 -3019.912)"/></svg></div>
+    <h1 class="home-seo-title">씨야 SeeYa</h1>
+    <div class="home-sub">
+      <p>다시 시작된 세 사람의 노래.<br>씨야의 음악과 시간, 그리고 지금의 순간을 기록하는 비공식 팬 아카이브입니다.</p>
+      <div class="home-scroll">SCROLL TO SEE MORE ↓</div>
+    </div>
+  </div>
+</section>
+
+<section class="home-video">
+  <div class="home-video-head">
+    <h2>SEEYA<br>OFFICIAL</h2>
+    <p>15년 만의 완전체 정규 4집 <b>First, Again</b>.<br>공식 채널의 최신 음악을 홈에서 바로 만나보세요.</p>
+  </div>
+  <div class="home-video-frame">
+    <iframe src="https://www.youtube.com/embed/I1zhkwIuZ0A?rel=0" title="씨야 SEEYA - Stay Official MV (SEEYA Ver.)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+  <a class="home-channel" href="https://www.youtube.com/@SEEYA_Ent_Official" target="_blank" rel="noopener noreferrer">
+    <span>OFFICIAL YOUTUBE CHANNEL</span><strong>@SEEYA_Ent_Official ↗</strong>
+  </a>
+</section>
+
+
+<section class="home-current">
+  <div class="home-current-head">
+    <div class="eyebrow">NOW WITH SEEYA</div>
+    <h2>First, Again.</h2>
+  </div>
+  <div class="current-grid">
+    <a class="current-card" href="https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y" target="_blank" rel="noopener noreferrer">
+      <img src="https://image.bugsm.co.kr/album/images/500/41474/4147431.jpg" alt="SEEYA First, Again album cover" loading="lazy">
+      <div class="current-copy">
+        <div class="meta">4TH FULL ALBUM · 2026</div>
+        <h3>FIRST, AGAIN</h3>
+        <div class="go"><span>4집 감상하기</span><span>MELON ↗</span></div>
+      </div>
+    </a>
+    <a class="current-card ticket" href="https://m.ticket.yes24.com/genre/genrebridge.aspx?genre=15456&id=1530&utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" rel="noopener noreferrer">
+      <div class="ticket-art">THE<br>FAN</div>
+      <div class="current-copy">
+        <div class="meta">20TH ANNIVERSARY TOUR · 2026</div>
+        <h3>THE FAN</h3>
+        <div class="go"><span>콘서트 예매하기</span><span>YES24 ↗</span></div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+  <section class="home-solo">
+    <div class="home-solo-head">
+      <div><div class="eye">MEMBER SOLO · NOW</div><h2>각자의 목소리로, 지금.</h2></div>
+      <p>씨야의 이름으로 함께하는 시간과 나란히 이어지는 세 멤버의 개인 음악 활동을 만나보세요.</p>
+    </div>
+    <div class="solo-grid">
+      <article class="solo-card solo-card-release">
+        <div class="solo-art"><img src="images/home/nam-gyuri-our-love-part1-part2.png" alt="남규리 우리 사랑 그런 거 해요 Part.1 Part.2" loading="lazy"></div>
+        <div class="solo-card-content">
+          <div class="solo-member">NAM GYU-RI · 남규리</div>
+          <span class="solo-status">NEW SINGLE · 2026.09.06</span>
+          <h3>우리 사랑 그런 거 해요</h3>
+          <div class="solo-meta">Part.1 · Part.2 · Single</div>
+          <div class="solo-actions">
+            <a class="solo-action-btn" href="https://www.youtube.com/watch?v=06MOxzzMPvI" target="_blank" rel="noopener noreferrer">PART.1 MV →</a>
+            <a class="solo-action-btn" href="https://www.youtube.com/watch?v=DFBk5oSn72Y" target="_blank" rel="noopener noreferrer">PART.2 MV →</a>
+            <a class="solo-action-btn solo-action-melon" href="https://www.melon.com/album/detail.htm?albumId=14521264" target="_blank" rel="noopener noreferrer">Melon에서 감상하기 →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="solo-card solo-card-release">
+        <div class="solo-art"><img src="https://image.bugsm.co.kr/album/images/200/41542/4154269.jpg?version=20260829180007" alt="김연지 노래 앨범 커버" loading="lazy"></div>
+        <div class="solo-card-content">
+          <div class="solo-member">KIM YEON-JI · 김연지</div>
+          <span class="solo-status">NEW SINGLE · 2026.08.29</span>
+          <h3>노래</h3>
+          <div class="solo-meta">김연지 · Single</div>
+          <div class="solo-actions solo-actions-single">
+            <a class="solo-action-btn solo-action-melon" href="https://www.melon.com/album/detail.htm?albumId=14493829" target="_blank" rel="noopener noreferrer">Melon에서 감상하기 →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="solo-card solo-card-release">
+        <div class="solo-art"><img src="https://image.bugsm.co.kr/album/images/200/41527/4152707.jpg?version=20260805010017" alt="이보람 빛의 반대편에서 앨범 커버" loading="lazy"></div>
+        <div class="solo-card-content">
+          <div class="solo-member">LEE BO-RAM · 이보람</div>
+          <span class="solo-status">NEW SINGLE · 2026.08.02</span>
+          <h3>빛의 반대편에서</h3>
+          <div class="solo-meta">이보람 (씨야) · Single</div>
+          <div class="solo-actions solo-actions-single">
+            <a class="solo-action-btn solo-action-melon" href="https://www.melon.com/album/detail.htm?albumId=14335999" target="_blank" rel="noopener noreferrer">Melon에서 감상하기 →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+
+<section class="home-game"><div class="home-game-copy"><div class="eye">SEEYA · FAN GAME</div><h2>가사 보고 제목 맞히기</h2><p>후렴부터 수록곡의 어려운 한 줄까지.<br>LEVEL 1·2·3 중 원하는 난이도를 골라<br>10문제에 도전해보세요.</p><a class="home-game-go" href="/game/lyrics/">MUSIC QUIZ →</a></div><div class="home-game-art" aria-hidden="true"><strong>가사 한 줄로<br>제목을 맞혀보세요.<span>135 QUESTIONS · 3 LEVELS</span></strong></div></section>
+
+<section class="home-official">
+  <div class="tiny">OFFICIAL LINKS</div>
+  
+  <div class="official-links">
+    <a class="official-link" href="https://www.instagram.com/seeya_ent_official/" target="_blank" rel="noopener noreferrer" aria-label="씨야 엔터테인먼트 공식 인스타그램"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.6A4.4 4.4 0 1 1 7.6 12 4.4 4.4 0 0 1 12 7.6Zm0 2A2.4 2.4 0 1 0 14.4 12 2.4 2.4 0 0 0 12 9.6Zm5.3-3.2a1.05 1.05 0 1 1-1.05 1.05A1.05 1.05 0 0 1 17.3 6.4Z"/></svg><span>INSTAGRAM</span></a>
+    <a class="official-link" href="https://www.youtube.com/@SEEYA_Ent_Official" target="_blank" rel="noopener noreferrer" aria-label="SEEYA 공식 유튜브"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23 12s0-3.5-.45-5.2a3 3 0 0 0-2.1-2.1C18.7 4.2 12 4.2 12 4.2s-6.7 0-8.45.5a3 3 0 0 0-2.1 2.1C1 8.5 1 12 1 12s0 3.5.45 5.2a3 3 0 0 0 2.1 2.1c1.75.5 8.45.5 8.45.5s6.7 0 8.45-.5a3 3 0 0 0 2.1-2.1C23 15.5 23 12 23 12ZM10 15.4V8.6l6 3.4-6 3.4Z"/></svg><span>YOUTUBE</span></a>
+  </div>
+<div class="home-pixel-signoff" aria-label="SEEYA pixel characters">
+    <span class="pixel-signoff-copy">SEE YOU ALWAYS.</span>
+    <img src="images/common/seeya-pixel-characters.png" alt="" loading="lazy">
+  </div>
+  <div class="home-credit home-nonprofit">
+    <strong>UNOFFICIAL · NON-PROFIT FAN PAGE</strong>
+    <span>이 페이지는 아티스트 씨야(SeeYa)를 응원하는 팬이 제작한 <b>비영리 팬 페이지</b>입니다.</span>
+    <span>어떠한 형태의 영리적 목적이나 상업적 수수료 취득, 광고 수익 창출 행위를 하지 않습니다.</span>
+  </div>
+</section>
+</div>`}
+module.exports=home;
