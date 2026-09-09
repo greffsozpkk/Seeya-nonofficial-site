@@ -1,0 +1,2 @@
+PASS: all 86 original entries preserved; 16 additions; 102 unique IDs; date bounds; member/category/title filters; all 2026 pagination in three sorts; reproducible build, JavaScript syntax, and local links.
+Data-only update: browser UI and external video playback were not retested.

@@ -1,0 +1,424 @@
+[
+  {
+    "id": "20260329-seeya-my-little-old-boy",
+    "date": "2026-03-29",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 미운 우리 새끼 출연",
+    "program": "미운 우리 새끼",
+    "type": "variety",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "티브이데일리",
+      "url": "https://www.tvdaily.co.kr/read.php3?aid=17747954591781889019"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "완전체"
+    ],
+    "note": "남규리의 집에 멤버들이 모여 데뷔 20주년과 활동 당시 이야기를 나눈 방송. 방송 보도 기사로 연결합니다."
+  },
+  {
+    "id": "20260330-seeya-yonhap-interview",
+    "date": "2026-03-30",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 재결합 기념 인터뷰",
+    "program": "연합뉴스 인터뷰",
+    "type": "interview",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "연합뉴스",
+      "url": "https://www.yna.co.kr/view/AKR20260326174000005"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "완전체"
+    ],
+    "note": "3월 26일 진행한 인터뷰의 3월 30일 공개 기록. 재결합과 앞으로의 음악 활동을 이야기했습니다.",
+    "dateKind": "published",
+    "recordedAt": "2026-03-26"
+  },
+  {
+    "id": "20260405-gyuri-first-pitch",
+    "date": "2026-04-05",
+    "addedAt": "2026-09-10",
+    "title": "남규리 · 키움 히어로즈 홈경기 시구",
+    "program": "2026 KBO 리그",
+    "type": "event",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스타투데이",
+      "url": "https://www.mk.co.kr/news/hot-issues/12014666"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "솔로"
+    ],
+    "note": "고척스카이돔 LG–키움전 시구. 4월 12일 공개된 시구 브이로그 보도와 구단의 4월 5일 행사 안내를 대조했습니다.",
+    "venue": "고척스카이돔",
+    "evidenceUrls": [
+      "https://heroesbaseball.co.kr/mobile/story/nexenNews/list.do?cPage=11&searchType=all"
+    ]
+  },
+  {
+    "id": "20260411-seeya-bae-ten",
+    "date": "2026-04-11",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 프로듀스 1077",
+    "program": "배성재의 텐",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS 팟캐스트(Apple)",
+      "url": "https://podcasts.apple.com/kr/podcast/id1096961355"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "완전체"
+    ],
+    "note": "SBS 팟캐스트에 기재된 4월 11일 회차 기준. 일부 보도의 4월 9일 표기와 구분했습니다. 프로그램 다시듣기 목록에서 회차를 선택하세요.",
+    "evidenceUrls": [
+      "https://podcasts.apple.com/my/podcast/%EB%B0%B0%EC%84%B1%EC%9E%AC%EC%9D%98-%ED%85%90/id1096961355?uo=2"
+    ]
+  },
+  {
+    "id": "20260412-seeya-newsroom",
+    "date": "2026-04-12",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 뉴스룸 초대석",
+    "program": "JTBC 뉴스룸",
+    "type": "interview",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스포츠투데이",
+      "url": "https://www.stoo.com/article.php?aid=106113468565"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "완전체"
+    ],
+    "note": "완전체로 출연해 재결합과 씨야엔터테인먼트 설립을 이야기했습니다. 방송 보도 기사로 연결합니다."
+  },
+  {
+    "id": "20260412-yeonji-heels",
+    "date": "2026-04-12",
+    "addedAt": "2026-09-10",
+    "title": "김연지 · 구두 발매",
+    "program": "솔로 리메이크",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "구두"
+    ],
+    "album": "구두",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스",
+      "url": "https://music.bugs.co.kr/track/6451339"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "솔로"
+    ],
+    "note": "씨야의 구두를 김연지의 목소리로 다시 선보인 솔로 싱글."
+  },
+  {
+    "id": "20260419-gyuri-love-greeting-2026",
+    "date": "2026-04-19",
+    "addedAt": "2026-09-10",
+    "title": "남규리 · 사랑의 인사 2026 발매",
+    "program": "솔로 리메이크",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "사랑의 인사 2026"
+    ],
+    "album": "사랑의 인사 2026",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스",
+      "url": "https://music.bugs.co.kr/album/4145735"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "솔로"
+    ],
+    "note": "사랑의 인사를 새롭게 편곡해 발표한 남규리의 솔로 싱글."
+  },
+  {
+    "id": "20260426-boram-marry-me",
+    "date": "2026-04-26",
+    "addedAt": "2026-09-10",
+    "title": "이보람 · 결혼할까요 발매",
+    "program": "솔로 리메이크",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "결혼할까요"
+    ],
+    "album": "결혼할까요",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스",
+      "url": "https://music.bugs.co.kr/album/4146150"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "솔로"
+    ],
+    "note": "씨야의 결혼할까요를 이보람의 목소리로 다시 선보인 솔로 싱글."
+  },
+  {
+    "id": "20260502-boram-sparkle-busan",
+    "date": "2026-05-02",
+    "addedAt": "2026-09-10",
+    "title": "이보람 단독 콘서트 · SPARKLE 부산",
+    "program": "SPARKLE",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "NOL 티켓",
+      "url": "https://ticket.interpark.com/OtherSite/Ticket/Ticket_GoodsInfo.asp?Ca=01003&GroupCode=26004739"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "솔로"
+    ],
+    "note": "부산 단독 콘서트. 공식 예매처의 일시·공연장을 기준으로 기록했습니다.",
+    "venue": "영화의전당 하늘연극장"
+  },
+  {
+    "id": "20260506-gyuri-radio-star",
+    "date": "2026-05-06",
+    "addedAt": "2026-09-10",
+    "title": "남규리 · 라디오스타 964회",
+    "program": "라디오스타",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBC",
+      "url": "https://playvod.imbc.com/Templete/VodView?bid=1000794103335100000"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "솔로"
+    ],
+    "note": "만나서 안광입니다 특집 출연. 씨야 재결합 이야기를 다룬 MBC 공식 회차입니다."
+  },
+  {
+    "id": "20260525-gyuri-namgyeoseo",
+    "date": "2026-05-25",
+    "addedAt": "2026-09-10",
+    "title": "남규리 · 남겨서 뭐하게 출연",
+    "program": "남겨서 뭐하게",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "iMBC연예",
+      "url": "https://enews.imbc.com/News/RetrieveNewsInfo/506148"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "솔로"
+    ],
+    "note": "씨야엔터테인먼트 설립과 완전체 활동 준비를 이야기한 tvN STORY 방송. 방송 보도 기사로 연결합니다."
+  },
+  {
+    "id": "20260530-seeya-immortal-songs",
+    "date": "2026-05-30",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 보여줄게 무대",
+    "program": "불후의 명곡 758회",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "보여줄게"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS",
+      "url": "https://vod.kbs.co.kr/m/index.html?program_code=T2011-0781&program_id=PS-2026084241-01-000&section_code=04&sname=vod&source=episode&stype=vod"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "완전체"
+    ],
+    "note": "작곡가 김도훈 편 1부에서 선보인 보여줄게 무대. 녹화일이 아닌 방송일 기준입니다."
+  },
+  {
+    "id": "20260531-seeya-baekban",
+    "date": "2026-05-31",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 성남 성찬 나들이",
+    "program": "식객 허영만의 백반기행 350회",
+    "type": "variety",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MHN(다음)",
+      "url": "https://v.daum.net/v/20260531210412470"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "완전체"
+    ],
+    "note": "완전체로 성남을 찾은 TV CHOSUN 방송. 방송 보도 기사로 연결합니다."
+  },
+  {
+    "id": "20260605-seeya-powerfm-environment",
+    "date": "2026-06-05",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 환경의 날 특집",
+    "program": "김영철의 파워FM",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS 팟캐스트(Apple)",
+      "url": "https://podcasts.apple.com/kr/podcast/id1168512355?i=1000771250023"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "완전체"
+    ],
+    "note": "환경의 날 특집 순환을 할 거야 출연. 공개녹화 일정과 구분해 SBS 팟캐스트의 6월 5일 회차로 기록했습니다."
+  },
+  {
+    "id": "20260806-seeya-musing-sa",
+    "date": "2026-08-06",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 무싱사 EP.2",
+    "program": "MUSINSA TV · 무싱사",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "도망가자",
+      "봄처럼 그댄"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "무신사",
+      "url": "https://www.musinsa.com/content/1534458033081427365"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "완전체"
+    ],
+    "note": "무신사 공식 웹 라이브 콘텐츠. 제작사 페이지의 공개일 기준입니다.",
+    "dateKind": "published"
+  },
+  {
+    "id": "20260906-boram-bae-ten-mafia",
+    "date": "2026-09-06",
+    "addedAt": "2026-09-10",
+    "title": "이보람 · 판까지 마.피아",
+    "program": "배성재의 텐",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS 팟캐스트(Apple)",
+      "url": "https://podcasts.apple.com/kr/podcast/id1096961355"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "솔로"
+    ],
+    "note": "유희관·HYNN과 함께한 9월 6일 회차. 프로그램 다시듣기 목록에서 회차를 선택하세요."
+  }
+]

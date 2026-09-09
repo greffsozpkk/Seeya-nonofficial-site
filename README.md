@@ -1,8 +1,8 @@
-# SEEYA ARCHIVE — v4.69
+# SEEYA ARCHIVE — v4.70
 
 기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
 
-이번 버전은 방송·라디오 출연 기록 6건을 추가했습니다. 변경 내용은 CHANGELOG.md를 참조하세요. 이후 전달본도 버전을 순차 증가합니다.
+이번 버전은 2026년 누락 활동 기록 16건을 추가했습니다. GitHub 업데이트는 DATA_PATCH 사용법을 ARCHIVE_UPDATE_v4_70.md에서 확인하세요. 변경 내용은 CHANGELOG.md를 참조하세요. 이후 전달본도 버전을 순차 증가합니다.
 
 ## 실행
 
