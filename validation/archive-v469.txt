@@ -1,0 +1,2 @@
+PASS: 80 existing records unchanged; 6 additions; unique IDs; radio/member/search filters; server-rendered recent broadcast; reproducible build, JS syntax and local links passed.
+Browser UI and external video playback were not retested for this data-only update.

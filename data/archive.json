@@ -160,6 +160,30 @@
     "eventState": "scheduled"
   },
   {
+    "id": "20260909-boram-kick-a-goal",
+    "date": "2026-09-09",
+    "addedAt": "2026-09-10",
+    "title": "이보람 · 골 때리는 그녀들 231회",
+    "program": "골 때리는 그녀들",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/kickagoal/22000635460"
+    },
+    "status": "available",
+    "tags": [
+      "FC발라드림",
+      "핸드볼"
+    ],
+    "note": "FC발라드림 멤버로 출연. 액셔니스타와의 핸드볼 경기를 다룬 회차."
+  },
+  {
     "id": "20260906-gyuri-our-love-single",
     "date": "2026-09-06",
     "addedAt": "2026-09-06",
@@ -377,6 +401,58 @@
     "venue": "경기 고양시 킨텍스",
     "awardName": "2026 K-WORLD DREAM AWARDS",
     "awardCategory": "K 월드 드림 리스너 초이스상"
+  },
+  {
+    "id": "20260807-boram-simply-kpop",
+    "date": "2026-08-07",
+    "addedAt": "2026-09-10",
+    "title": "이보람 · 빛의 반대편에서 무대",
+    "program": "Simply K-Pop 시즌2",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "빛의 반대편에서"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "bnt뉴스",
+      "url": "https://www.bntnews.co.kr/article/view/bnt202608070236"
+    },
+    "status": "available",
+    "tags": [
+      "아리랑TV",
+      "솔로"
+    ],
+    "note": "아리랑TV 출연 및 신곡 무대 기록. 연결된 자료는 방송 보도 기사입니다."
+  },
+  {
+    "id": "20260804-boram-noon-radio",
+    "date": "2026-08-04",
+    "addedAt": "2026-09-10",
+    "title": "이보람 · 라이브 온 에어",
+    "program": "정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "빛의 반대편에서"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "iMBC연예",
+      "url": "https://enews.imbc.com/News/ViewAmp/513650"
+    },
+    "status": "available",
+    "tags": [
+      "MBC FM4U",
+      "솔로"
+    ],
+    "note": "신곡 라이브와 제작 이야기를 나눈 출연. 연결된 자료는 방송 보도 기사입니다."
   },
   {
     "id": "20260802-boram-light-opposite",
@@ -665,6 +741,32 @@
     "stageKind": "라이브 음악프로그램"
   },
   {
+    "id": "20260518-seeya-radio-show",
+    "date": "2026-05-18",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 박명수의 휘낭시에",
+    "program": "박명수의 라디오쇼",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "뉴스엔(다음)",
+      "url": "https://v.daum.net/v/GSff7enQWF?f=p"
+    },
+    "status": "available",
+    "tags": [
+      "KBS CoolFM",
+      "완전체"
+    ],
+    "note": "완전체로 출연해 재결합 과정을 이야기했습니다. 연결된 자료는 방송 보도 기사입니다."
+  },
+  {
     "id": "20260514-first-again",
     "date": "2026-05-14",
     "addedAt": "2026-09-06",
@@ -716,6 +818,61 @@
       "Stay",
       "봄처럼 그댄"
     ]
+  },
+  {
+    "id": "20260420-seeya-noon-radio",
+    "date": "2026-04-20",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 라이브 온 에어",
+    "program": "정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBC",
+      "url": "https://playvod.imbc.com/Vod/VodPlay?broadcastId=1001919103451100000"
+    },
+    "status": "available",
+    "tags": [
+      "MBC FM4U",
+      "완전체"
+    ],
+    "note": "씨야와 함께한 라이브 온 에어. MBC 공식 다시보기 2039회."
+  },
+  {
+    "id": "20260402-seeya-cultwo",
+    "date": "2026-04-02",
+    "addedAt": "2026-09-10",
+    "title": "씨야 · 특별 초대석",
+    "program": "두시탈출 컬투쇼",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "사랑의 인사",
+      "그럼에도, 우린"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS연예뉴스",
+      "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008503225"
+    },
+    "status": "available",
+    "tags": [
+      "SBS 파워FM",
+      "완전체"
+    ],
+    "note": "완전체로 출연해 라이브와 재결합 이야기를 전했습니다. 연결된 자료는 방송 보도 기사입니다."
   },
   {
     "id": "20260330-rebloom-fanmeeting",
