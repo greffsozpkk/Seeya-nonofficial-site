@@ -1,0 +1,738 @@
+(function(){'use strict';const modules={
+"src/client/site.js":function(module,exports,__require){
+const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=__require("src/shared/common.js");
+const {newsList,galleryMoment,archiveView,getFilteredArchive:filterArchive}=__require("src/shared/views.js");
+const today=__require("src/pages/today.js");
+const tarotPage=__require("src/pages/tarot.js");
+const ARCHIVE_FALLBACK=__require("data/archive.json");
+const NEWS_FALLBACK=__require("data/news.json");
+const PHOTOS_FALLBACK=__require("data/photos.json");
+let fanChantLightboxIndex=0,fanChantTouchX=null;
+function renderFanChantGrid(){
+  const grid=document.getElementById("fanChantGrid");if(!grid)return;
+  grid.innerHTML=fanChantImages.map((x,i)=>`<button type="button" class="fanchant-image-card" onclick="openFanChantLightbox(${i})" aria-label="${x.title} 응원법 크게 보기"><img src="${x.image}" alt="${x.title} 응원법" loading="lazy"><span class="fanchant-image-label">${x.title}</span></button>`).join("");
+}
+function ensureFanChantLightbox(){
+  let lb=document.getElementById("fanChantLightbox");if(lb)return lb;
+  lb=document.createElement("div");lb.id="fanChantLightbox";lb.className="fanchant-lightbox";
+  lb.innerHTML=`<div class="fanchant-lightbox-stage" role="dialog" aria-modal="true" aria-label="응원법 이미지 크게 보기">
+    <button type="button" class="fanchant-lightbox-close" aria-label="닫기" onclick="closeFanChantLightbox()">×</button>
+    <button type="button" class="fanchant-lightbox-nav fanchant-lightbox-prev" aria-label="이전 응원법" onclick="moveFanChantLightbox(-1)">‹</button>
+    <img class="fanchant-lightbox-img" id="fanChantLightboxImg" alt="">
+    <button type="button" class="fanchant-lightbox-nav fanchant-lightbox-next" aria-label="다음 응원법" onclick="moveFanChantLightbox(1)">›</button>
+    <div class="fanchant-lightbox-info"><div class="fanchant-lightbox-title" id="fanChantLightboxTitle"></div><div class="fanchant-lightbox-count" id="fanChantLightboxCount"></div></div>
+  </div>`;
+  lb.addEventListener("click",e=>{if(e.target===lb)closeFanChantLightbox()});
+  lb.addEventListener("touchstart",e=>{fanChantTouchX=e.changedTouches[0].clientX},{passive:true});
+  lb.addEventListener("touchend",e=>{if(fanChantTouchX==null)return;const dx=e.changedTouches[0].clientX-fanChantTouchX;fanChantTouchX=null;if(Math.abs(dx)>45)moveFanChantLightbox(dx>0?-1:1)},{passive:true});
+  document.body.appendChild(lb);return lb;
+}
+function updateFanChantLightbox(){
+  fanChantLightboxIndex=(fanChantLightboxIndex+fanChantImages.length)%fanChantImages.length;
+  const x=fanChantImages[fanChantLightboxIndex];
+  document.getElementById("fanChantLightboxImg").src=x.image;
+  document.getElementById("fanChantLightboxImg").alt=x.title+" 응원법";
+  document.getElementById("fanChantLightboxTitle").textContent=x.title;
+  document.getElementById("fanChantLightboxCount").textContent=`${fanChantLightboxIndex+1} / ${fanChantImages.length}`;
+}
+function openFanChantLightbox(i){const lb=ensureFanChantLightbox();fanChantLightboxIndex=i;updateFanChantLightbox();lb.classList.add("open");document.body.classList.add("fanchant-lightbox-open");lb.querySelector(".fanchant-lightbox-close").focus()}
+function closeFanChantLightbox(){const lb=document.getElementById("fanChantLightbox");if(lb)lb.classList.remove("open");document.body.classList.remove("fanchant-lightbox-open")}
+function moveFanChantLightbox(step){fanChantLightboxIndex+=step;updateFanChantLightbox()}
+if(!window.__fanchantKeysBound){window.__fanchantKeysBound=true;document.addEventListener("keydown",e=>{const lb=document.getElementById("fanChantLightbox");if(!lb||!lb.classList.contains("open"))return;if(e.key==="Escape")closeFanChantLightbox();else if(e.key==="ArrowLeft")moveFanChantLightbox(-1);else if(e.key==="ArrowRight")moveFanChantLightbox(1)})}
+const GALLERY_DATA_URL="data/photos.json";
+let galleryItems=[],galleryLightboxIndex=0,galleryTouchX=null;
+function renderGallery(){
+  const grid=document.getElementById("galleryGrid");if(!grid)return;
+  const items=galleryItems.filter(x=>x.hidden!==true).slice(0,8);
+  grid.innerHTML=items.length?items.map((x,i)=>galleryCard(x,i)).join(""):`<div class="gallery-empty"><div class="gallery-empty-inner"><div class="gallery-empty-mark">✦</div><h2>아직 등록된 사진이 없어요.</h2></div></div>`;
+  renderGalleryMoment();
+}
+function ensureGalleryLightbox(){
+  let lb=document.getElementById("galleryLightbox");
+  if(lb)return lb;
+  lb=document.createElement("div");lb.id="galleryLightbox";lb.className="gallery-lightbox";
+  lb.innerHTML=`<div class="gallery-lightbox-stage" role="dialog" aria-modal="true" aria-label="갤러리 사진 크게 보기">
+    <button type="button" class="gallery-lightbox-close" aria-label="닫기" onclick="closeGalleryLightbox()">×</button>
+    <button type="button" class="gallery-lightbox-nav gallery-lightbox-prev" aria-label="이전 사진" onclick="moveGalleryLightbox(-1)">‹</button>
+    <img class="gallery-lightbox-img" id="galleryLightboxImg" alt="">
+    <button type="button" class="gallery-lightbox-nav gallery-lightbox-next" aria-label="다음 사진" onclick="moveGalleryLightbox(1)">›</button>
+    <div class="gallery-lightbox-info"><div class="gallery-lightbox-title" id="galleryLightboxTitle"></div><div class="gallery-lightbox-count" id="galleryLightboxCount"></div></div>
+  </div>`;
+  lb.addEventListener("click",e=>{if(e.target===lb)closeGalleryLightbox()});
+  lb.addEventListener("touchstart",e=>{galleryTouchX=e.changedTouches[0]?.clientX??null},{passive:true});
+  lb.addEventListener("touchend",e=>{if(galleryTouchX==null)return;const dx=(e.changedTouches[0]?.clientX??galleryTouchX)-galleryTouchX;galleryTouchX=null;if(Math.abs(dx)>55)moveGalleryLightbox(dx<0?1:-1)},{passive:true});
+  document.body.appendChild(lb);return lb;
+}
+function updateGalleryLightbox(){
+  const items=galleryItems.filter(x=>x.hidden!==true).slice(0,8);if(!items.length)return;
+  galleryLightboxIndex=(galleryLightboxIndex+items.length)%items.length;
+  const x=items[galleryLightboxIndex];
+  document.getElementById("galleryLightboxImg").src=x.image||"";
+  document.getElementById("galleryLightboxImg").alt=x.title||"SEEYA PHOTO";
+  document.getElementById("galleryLightboxTitle").textContent=x.title||x.member||"SEEYA PHOTO";
+  document.getElementById("galleryLightboxCount").textContent=`${galleryLightboxIndex+1} / ${items.length}`;
+  const lb=document.getElementById("galleryLightbox");
+  lb.querySelectorAll(".gallery-lightbox-nav").forEach(b=>b.style.display=items.length>1?"flex":"none");
+}
+function openGalleryLightbox(index){
+  const lb=ensureGalleryLightbox();galleryLightboxIndex=index;updateGalleryLightbox();lb.classList.add("open");document.body.classList.add("gallery-lightbox-open");lb.querySelector(".gallery-lightbox-close").focus();
+}
+function closeGalleryLightbox(){const lb=document.getElementById("galleryLightbox");if(lb)lb.classList.remove("open");document.body.classList.remove("gallery-lightbox-open")}
+function moveGalleryLightbox(step){galleryLightboxIndex+=step;updateGalleryLightbox()}
+if(!window.__galleryKeysBound){
+  window.__galleryKeysBound=true;
+  document.addEventListener("keydown",e=>{const lb=document.getElementById("galleryLightbox");if(!lb||!lb.classList.contains("open"))return;if(e.key==="Escape")closeGalleryLightbox();else if(e.key==="ArrowLeft")moveGalleryLightbox(-1);else if(e.key==="ArrowRight")moveGalleryLightbox(1)});
+}
+async function loadGallery(){
+  const status=document.getElementById("galleryStatus");
+  if(status)status.textContent="사진을 불러오는 중…";
+  try{
+    const r=await fetch(GALLERY_DATA_URL+`?v=${Date.now()}`,{cache:"no-store"});
+    if(!r.ok)throw new Error("photos json "+r.status);
+    const data=await r.json();
+    galleryItems=(Array.isArray(data)?data:(data.photos||[])).filter(x=>x&&x.hidden!==true);
+    galleryItems.sort((a,b)=>String(b.date||"").localeCompare(String(a.date||"")) || Number(a.order||999)-Number(b.order||999));
+    if(status)status.textContent=`${Math.min(galleryItems.length,8)} PHOTOS · MANUAL ARCHIVE`;
+  }catch(e){
+    galleryItems=normalizePhotos(PHOTOS_FALLBACK);
+    if(status)status.textContent="사진 데이터를 불러오지 못했습니다";
+
+  }
+  renderGallery();
+}
+let archiveData=[];
+const ARCHIVE_PAGE_SIZE=9;
+let archiveState={query:"",year:"all",member:"all",type:"all",sort:"newest",page:1};
+async function loadArchive(){try{const r=await fetch("data/archive.json",{cache:"no-store"});if(!r.ok)throw new Error("archive fetch failed");archiveData=await r.json();}catch(e){archiveData=ARCHIVE_FALLBACK;}renderArchive();}
+function setArchiveQuery(v){archiveState.query=v.trim();archiveState.page=1;renderArchive();}
+function setArchiveFilter(k,v){archiveState[k]=v;archiveState.page=1;syncArchiveControls();renderArchive();}
+function setArchiveSort(v){archiveState.sort=v;archiveState.page=1;renderArchive();}
+function resetArchiveFilters(){archiveState={query:"",year:"all",member:"all",type:"all",sort:"newest",page:1};const q=document.getElementById("archiveSearch");if(q)q.value="";const s=document.getElementById("archiveSort");if(s)s.value="newest";syncArchiveControls();renderArchive();}
+function setArchivePage(page){
+  const total=Math.max(1,Math.ceil(getFilteredArchive().length/ARCHIVE_PAGE_SIZE));
+  const next=Math.max(1,Math.min(Number(page)||1,total));
+  if(next===archiveState.page)return;
+  archiveState.page=next;
+  renderArchive();
+  requestAnimationFrame(()=>document.querySelector(".archive-results-head")?.scrollIntoView({behavior:"smooth",block:"start"}));
+}
+function syncArchiveControls(){const map={year:"archiveYears",member:"archiveMembers",type:"archiveTypes"};Object.entries(map).forEach(([k,id])=>{const box=document.getElementById(id);if(!box)return;box.querySelectorAll(".archive-chip").forEach(b=>b.classList.toggle("active",b.dataset.value===archiveState[k]));});}
+let currentNewsCategory="씨야";
+function bindNewsFilter(){
+  const f=document.getElementById("newsFilter");
+  if(!f)return;
+  f.querySelectorAll("button").forEach(btn=>btn.addEventListener("click",()=>{
+    if(btn.dataset.news===currentNewsCategory)return;
+    f.querySelectorAll("button").forEach(b=>b.classList.remove("active"));
+    btn.classList.add("active");
+    currentNewsCategory=btn.dataset.news;
+    loadNews(currentNewsCategory,false);
+  }));
+}
+async function getNewsData(){
+  try{
+    const r=await fetch(`data/news.json?v=${Date.now()}`,{cache:"no-store"});
+    if(!r.ok)throw new Error("local news json");
+    return await r.json();
+  }catch(e){
+    return NEWS_FALLBACK;
+  }
+}
+async function loadNews(category="씨야",bind=true){
+  const box=document.getElementById("newsBox");
+  const label=document.getElementById("newsLabel");
+  const updated=document.getElementById("newsUpdated");
+  if(!box)return;
+  currentNewsCategory=category;
+  if(bind)bindNewsFilter();
+  if(label)label.textContent=`${category==="씨야"?"SEEYA":category} · LATEST NEWS`;
+
+  const data=await getNewsData();
+  const items=__require("src/shared/news-filter.js").filterNews(data[category],category).sort((a,b)=>new Date(b.pubDate)-new Date(a.pubDate));
+  renderNews(items);
+  if(updated && data.updatedAt){
+    const d=new Date(data.categoryUpdatedAt?.[category]||data.updatedAt);
+    updated.textContent=`UPDATED · ${d.toLocaleString("ko-KR",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"})}`;
+  }
+}
+function showCard(n){
+  let t=tarot[n];
+  modalbox.innerHTML=`<button class="close" onclick="closeCard()">×</button>
+  <div class="modal-card-layout">
+    <div class="modal-card-image-wrap">
+      <img class="modal-tarot-image" src="assets/tarot/21-world-preview.png" alt="${t.name} tarot preview">
+      <div class="modal-card-note">현재는 THE WORLD 이미지를 공통 미리보기로 사용 중입니다.</div>
+    </div>
+    <div class="modal-card-content">
+      <div class="eye">${String(t.n).padStart(2,"0")} · SEEYA TAROT</div>
+      <h2>${t.name}</h2>
+      <div style="font-size:13px;color:var(--deep);font-weight:700">${t.keywords}</div>
+      <h3 style="color:var(--deep);margin-top:28px">♪ 대표곡 · ${t.song}</h3>
+      <div class="chips">${t.related.map(x=>`<span>관련곡 · ${x}</span>`).join("")}</div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:24px 0">
+      <div class="eye">CARD READING</div><p style="line-height:1.95">${t.detail}</p>
+      <div class="eye" style="margin-top:24px">SHADOW</div><p style="line-height:1.8;color:var(--muted)">${t.shadow}</p>
+      <div class="eye" style="margin-top:24px">SEEYA STORY</div><p style="line-height:1.95">${t.story}</p>
+      <div class="eye" style="margin-top:24px">VISUAL MOTIF</div><p>${t.motif}</p>
+      <div class="eye" style="margin-top:24px">TODAY'S MESSAGE</div><p style="font-family:'Gowun Batang';font-size:18px;line-height:1.95">${t.message}</p>
+      <div class="eye" style="margin-top:24px">LYRIC MOMENT</div><p class="notice">${t.lyric}</p>
+    </div>
+  </div>`;
+  modal.classList.add("on")
+}
+function closeCard(){modal.classList.remove("on")}
+let tarotUnlocked=false;
+let easterKeys="";
+const TAROT_EASTER_TRIGGER="seeyatarot";
+function showEasterToast(){
+  const old=document.querySelector(".preview-toast");
+  if(old)old.remove();
+  const t=document.createElement("div");
+  t.className="preview-toast";
+  t.textContent="EASTER EGG · SEEYA TAROT";
+  document.body.appendChild(t);
+  setTimeout(()=>t.remove(),2600);
+}
+addEventListener("keydown",e=>{
+  if(e.ctrlKey||e.altKey||e.metaKey||e.key.length!==1)return;
+  easterKeys=(easterKeys+e.key.toLowerCase()).slice(-TAROT_EASTER_TRIGGER.length);
+  if(easterKeys===TAROT_EASTER_TRIGGER){
+    tarotUnlocked=true;
+    showEasterToast();
+    document.getElementById("app").innerHTML=tarotPage();
+    scrollTo(0,0);
+  }
+});
+function employeeCard(){return W(`
+<section class="employee-page">
+  <div class="employee-hero">
+    <div class="eye">SEEYA · FAN PLAY</div>
+    <h1>명예 영업사원증 발급소</h1>
+    <div class="employee-kicker">씨야의 좋은 음악을 널리 알리는 당신에게.</div>
+    <p>이름 또는 닉네임과 사진 한 장으로 <b>씨야엔터테인먼트 명예 영업사원증</b>을 만들어보세요.<br>사진은 브라우저 안에서만 처리되며 서버로 전송하거나 저장하지 않습니다.</p>
+  </div>
+
+  <div class="employee-layout">
+    <section class="employee-panel">
+      <div class="employee-field">
+        <div class="employee-label"><b>01 · 이름 또는 닉네임</b><small>필수</small></div>
+        <input class="employee-input" id="employeeName" type="text" maxlength="14" placeholder="사원증에 표시할 이름" autocomplete="off">
+      </div>
+
+      <div class="employee-field">
+        <div class="employee-label"><b>02 · 사진</b><small>JPG · PNG · WEBP</small></div>
+        <label class="employee-file" for="employeePhoto">사진 선택하기
+          <input id="employeePhoto" type="file" accept="image/*">
+        </label>
+        <div class="employee-photo-name" id="employeePhotoName">아직 선택한 사진이 없습니다.</div>
+      </div>
+
+      <div class="employee-field">
+        <div class="employee-label"><b>03 · 사진 맞추기</b><small>미리보기를 직접 드래그할 수 있어요</small></div>
+        <input class="employee-range" id="employeeZoom" type="range" min="1" max="2.3" value="1" step="0.01">
+        <div class="employee-help">슬라이더로 확대하고, 오른쪽 사원증의 사진 영역을 마우스나 손가락으로 드래그해 위치를 조절하세요.</div>
+        <div class="employee-control-row" style="margin-top:10px">
+          <button class="employee-mini-btn" type="button" id="employeePhotoReset">사진 위치 초기화</button>
+          <button class="employee-mini-btn" type="button" id="employeeIdReset">사번 새로 만들기</button>
+        </div>
+      </div>
+
+      <div class="employee-field">
+        <div class="employee-label"><b>04 · 자동 입력</b><small>직접 입력할 필요 없어요</small></div>
+        <div class="employee-auto">
+          <div class="employee-auto-box"><small>EMPLOYEE NO.</small><b id="employeeIdText"></b></div>
+          <div class="employee-auto-box"><small>ISSUE DATE</small><b id="employeeDateText"></b></div>
+        </div>
+      </div>
+
+      <div class="employee-field">
+        <button class="employee-issue" type="button" id="employeeIssue">명예 영업사원증 발급하기</button>
+        <button class="employee-download" type="button" id="employeeDownload" disabled>PNG로 저장하기</button>
+        <div class="employee-status" id="employeeStatus"></div>
+      </div>
+
+      <div class="employee-privacy">
+        <b>UNOFFICIAL · FAN MADE ID CARD</b><br>
+        이 사원증은 SEEYA ARCHIVE에서 제공하는 팬메이드 콘텐츠이며 실제 씨야엔터테인먼트의 공식 사원증이 아닙니다.<br>
+        선택한 사진은 현재 브라우저 안에서만 합성되며 별도의 서버에 업로드하거나 보관하지 않습니다.
+      </div>
+    </section>
+
+    <section class="employee-preview-panel">
+      <div class="employee-preview-title"><b>실시간 미리보기</b><span>SEEYA ENTERTAINMENT · FAN MADE</span></div>
+      <div class="employee-canvas-shell">
+        <canvas id="employeeCardCanvas" width="1086" height="1448" aria-label="씨야엔터테인먼트 명예 영업사원증 미리보기"></canvas>
+      </div>
+      <p class="employee-preview-note">최종 저장 이미지는 1086 × 1448 PNG로 생성됩니다. 이름·사번·발급일만 템플릿의 해당 위치에 맞춰 합성됩니다.</p>
+    </section>
+  </div>
+</section>
+`)}
+const EMPLOYEE_TEMPLATE_URL="images/employee-card/seeya-honorary-sales-staff-template.png";
+let employeeTemplateImage=null;
+let employeePhotoImage=null;
+let employeePhotoObjectUrl="";
+let employeePhotoZoom=1;
+let employeePhotoOffset={x:0,y:0};
+let employeeIssued=false;
+let employeeDrag=null;
+let employeeIdValue="";
+let employeeIssueDateValue="";
+function employeeFormatDate(d=new Date()){
+  return `${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,"0")}.${String(d.getDate()).padStart(2,"0")}`;
+}
+function employeeMakeId(){
+  const d=new Date();
+  const code=String(Math.floor(1000+Math.random()*9000));
+  return `SY-${String(d.getFullYear()).slice(-2)}${String(d.getMonth()+1).padStart(2,"0")}${String(d.getDate()).padStart(2,"0")}-${code}`;
+}
+function employeeRoundRect(ctx,x,y,w,h,r){
+  const rr=Math.min(r,w/2,h/2);
+  ctx.beginPath();
+  ctx.moveTo(x+rr,y);
+  ctx.arcTo(x+w,y,x+w,y+h,rr);
+  ctx.arcTo(x+w,y+h,x,y+h,rr);
+  ctx.arcTo(x,y+h,x,y,rr);
+  ctx.arcTo(x,y,x+w,y,rr);
+  ctx.closePath();
+}
+function employeeFitText(ctx,text,maxWidth,startSize,minSize=26){
+  let size=startSize;
+  while(size>minSize){
+    ctx.font=`700 ${size}px "Gowun Batang", serif`;
+    if(ctx.measureText(text).width<=maxWidth)break;
+    size-=2;
+  }
+  return size;
+}
+function employeeMarkDirty(){
+  employeeIssued=false;
+  const dl=document.getElementById("employeeDownload");
+  if(dl)dl.disabled=true;
+  const s=document.getElementById("employeeStatus");
+  if(s)s.textContent="";
+}
+function employeeCoverSampleValue(ctx,x,y,w,h,c1,c2){
+  const g=ctx.createLinearGradient(x,y,x+w,y+h);
+  g.addColorStop(0,c1);
+  g.addColorStop(.55,c2);
+  g.addColorStop(1,c1);
+  ctx.fillStyle=g;
+  ctx.fillRect(x,y,w,h);
+}
+function renderEmployeeCard(){
+  const canvas=document.getElementById("employeeCardCanvas");
+  if(!canvas)return;
+  const ctx=canvas.getContext("2d");
+  ctx.clearRect(0,0,canvas.width,canvas.height);
+
+  if(!employeeTemplateImage||!employeeTemplateImage.complete){
+    ctx.fillStyle="#fff5f8";ctx.fillRect(0,0,canvas.width,canvas.height);
+    ctx.fillStyle="#a06a7d";ctx.font='28px "Gowun Batang",serif';ctx.textAlign="center";
+    ctx.fillText("사원증 템플릿을 불러오는 중…",canvas.width/2,canvas.height/2);
+    return;
+  }
+  ctx.drawImage(employeeTemplateImage,0,0,canvas.width,canvas.height);
+
+  // Photo area: cover the baked-in sample silhouette while preserving the outer frame.
+  const box={x:376,y:498,w:338,h:382,r:20};
+  ctx.save();
+  employeeRoundRect(ctx,box.x,box.y,box.w,box.h,box.r);
+  ctx.clip();
+  if(employeePhotoImage){
+    const base=Math.max(box.w/employeePhotoImage.naturalWidth,box.h/employeePhotoImage.naturalHeight);
+    const scale=base*employeePhotoZoom;
+    const dw=employeePhotoImage.naturalWidth*scale;
+    const dh=employeePhotoImage.naturalHeight*scale;
+    const dx=box.x+(box.w-dw)/2+employeePhotoOffset.x;
+    const dy=box.y+(box.h-dh)/2+employeePhotoOffset.y;
+    ctx.drawImage(employeePhotoImage,dx,dy,dw,dh);
+  }
+  ctx.restore();
+
+  // The template already contains the fixed FAN TITLE.
+  // Cover only the editable sample values, but use slightly larger masks than before
+  // so the baked-in demo text never peeks through on different browsers.
+  employeeCoverSampleValue(ctx,480,891,260,60,"#faeeeb","#f8eae8");
+  employeeCoverSampleValue(ctx,480,1031,300,60,"#f9ece9","#f7e8e6");
+  employeeCoverSampleValue(ctx,480,1101,260,60,"#f9ece9","#f7e8e6");
+
+  const name=(document.getElementById("employeeName")?.value||"").trim();
+  ctx.textAlign="left";
+  ctx.textBaseline="alphabetic";
+
+  const valueX=492;
+  const nameSize=employeeFitText(ctx,name||"이름을 입력하세요",232,30,19);
+  ctx.font=`700 ${nameSize}px "Gowun Batang","Noto Serif KR",serif`;
+  ctx.fillStyle=name?"#5b4549":"#b4979f";
+  ctx.fillText(name||"이름을 입력하세요",valueX,929,236);
+
+  ctx.fillStyle="#5b474b";
+  ctx.font='700 25px "Gowun Batang","Noto Serif KR",serif';
+  ctx.fillText(employeeIdValue||"SY-000000-0000",valueX,1068,288);
+  ctx.fillText(employeeIssueDateValue||employeeFormatDate(),valueX,1138,248);
+
+}
+function employeeResetPhotoPosition(){
+  employeePhotoZoom=1;
+  employeePhotoOffset={x:0,y:0};
+  const zoom=document.getElementById("employeeZoom");
+  if(zoom)zoom.value="1";
+  employeeMarkDirty();
+  renderEmployeeCard();
+}
+function employeeSetStatus(text,error=false){
+  const s=document.getElementById("employeeStatus");
+  if(!s)return;
+  s.textContent=text;
+  s.classList.toggle("employee-error",!!error);
+}
+function issueEmployeeCard(){
+  const name=(document.getElementById("employeeName")?.value||"").trim();
+  if(!name){employeeSetStatus("이름 또는 닉네임을 입력해주세요.",true);document.getElementById("employeeName")?.focus();return false;}
+  if(!employeePhotoImage){employeeSetStatus("사원증에 사용할 사진을 선택해주세요.",true);return false;}
+  employeeIssued=true;
+  renderEmployeeCard();
+  const dl=document.getElementById("employeeDownload");
+  if(dl)dl.disabled=false;
+  employeeSetStatus("SEEYA ENTERTAINMENT · 명예 영업사원 등록 완료 ♡");
+  return true;
+}
+function downloadEmployeeCard(){
+  if(!employeeIssued&&!issueEmployeeCard())return;
+  renderEmployeeCard();
+  const canvas=document.getElementById("employeeCardCanvas");
+  const name=(document.getElementById("employeeName")?.value||"SEEYA_FAN").trim().replace(/[\\/:*?"<>|]/g,"_");
+  canvas.toBlob(blob=>{
+    if(!blob){employeeSetStatus("이미지를 저장하지 못했습니다. 다시 시도해주세요.",true);return;}
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement("a");
+    a.href=url;
+    a.download=`SEEYA_명예영업사원_${name}.png`;
+    document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(url),1500);
+  },"image/png");
+}
+function initEmployeeCard(){
+  const canvas=document.getElementById("employeeCardCanvas");
+  if(!canvas)return;
+
+  if(!employeeIdValue)employeeIdValue=employeeMakeId();
+  if(!employeeIssueDateValue)employeeIssueDateValue=employeeFormatDate();
+
+  document.getElementById("employeeIdText").textContent=employeeIdValue;
+  document.getElementById("employeeDateText").textContent=employeeIssueDateValue;
+
+  const nameInput=document.getElementById("employeeName");
+  const photoInput=document.getElementById("employeePhoto");
+  const zoomInput=document.getElementById("employeeZoom");
+
+  nameInput.addEventListener("input",()=>{employeeMarkDirty();renderEmployeeCard()});
+  zoomInput.value=String(employeePhotoZoom);
+  zoomInput.addEventListener("input",()=>{
+    employeePhotoZoom=Number(zoomInput.value)||1;
+    employeeMarkDirty();renderEmployeeCard();
+  });
+
+  photoInput.addEventListener("change",()=>{
+    const file=photoInput.files?.[0];
+    if(!file)return;
+    if(!file.type.startsWith("image/")){
+      employeeSetStatus("이미지 파일을 선택해주세요.",true);photoInput.value="";return;
+    }
+    if(file.size>15*1024*1024){
+      employeeSetStatus("사진은 15MB 이하를 권장합니다.",true);photoInput.value="";return;
+    }
+    if(employeePhotoObjectUrl)URL.revokeObjectURL(employeePhotoObjectUrl);
+    employeePhotoObjectUrl=URL.createObjectURL(file);
+    const img=new Image();
+    img.onload=()=>{
+      employeePhotoImage=img;
+      employeePhotoZoom=1;employeePhotoOffset={x:0,y:0};
+      zoomInput.value="1";
+      document.getElementById("employeePhotoName").textContent=file.name;
+      employeeMarkDirty();renderEmployeeCard();
+    };
+    img.onerror=()=>employeeSetStatus("사진을 읽지 못했습니다. 다른 파일을 선택해주세요.",true);
+    img.src=employeePhotoObjectUrl;
+  });
+
+  document.getElementById("employeePhotoReset").addEventListener("click",employeeResetPhotoPosition);
+  document.getElementById("employeeIdReset").addEventListener("click",()=>{
+    employeeIdValue=employeeMakeId();
+    document.getElementById("employeeIdText").textContent=employeeIdValue;
+    employeeMarkDirty();renderEmployeeCard();
+  });
+  document.getElementById("employeeIssue").addEventListener("click",issueEmployeeCard);
+  document.getElementById("employeeDownload").addEventListener("click",downloadEmployeeCard);
+
+  canvas.addEventListener("pointerdown",e=>{
+    if(!employeePhotoImage)return;
+    canvas.setPointerCapture(e.pointerId);
+    const rect=canvas.getBoundingClientRect();
+    const scale=canvas.width/rect.width;
+    employeeDrag={x:e.clientX,y:e.clientY,ox:employeePhotoOffset.x,oy:employeePhotoOffset.y,scale};
+    canvas.classList.add("dragging");
+  });
+  canvas.addEventListener("pointermove",e=>{
+    if(!employeeDrag)return;
+    employeePhotoOffset.x=employeeDrag.ox+(e.clientX-employeeDrag.x)*employeeDrag.scale;
+    employeePhotoOffset.y=employeeDrag.oy+(e.clientY-employeeDrag.y)*employeeDrag.scale;
+    employeeMarkDirty();renderEmployeeCard();
+  });
+  const endDrag=e=>{
+    if(!employeeDrag)return;
+    employeeDrag=null;canvas.classList.remove("dragging");
+    try{canvas.releasePointerCapture(e.pointerId)}catch(_){}
+  };
+  canvas.addEventListener("pointerup",endDrag);
+  canvas.addEventListener("pointercancel",endDrag);
+
+  if(!employeeTemplateImage){
+    employeeTemplateImage=new Image();
+    employeeTemplateImage.onload=()=>document.fonts?.ready?document.fonts.ready.then(renderEmployeeCard):renderEmployeeCard();
+    employeeTemplateImage.onerror=()=>employeeSetStatus("사원증 템플릿을 불러오지 못했습니다.",true);
+    employeeTemplateImage.src=EMPLOYEE_TEMPLATE_URL;
+  }else{
+    document.fonts?.ready?document.fonts.ready.then(renderEmployeeCard):renderEmployeeCard();
+  }
+}
+function normalizePhotos(data){return (Array.isArray(data)?data:(data.photos||[])).filter(x=>x&&x.hidden!==true).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||Number(a.order||999)-Number(b.order||999));}
+function renderNews(items){const box=document.getElementById('newsBox');if(box)box.innerHTML=newsList(items);}
+function renderGalleryMoment(){const box=document.getElementById('galleryMoment');if(box)box.innerHTML=galleryMoment(galleryItems);}
+function getFilteredArchive(){return filterArchive(archiveData,archiveState);}
+function renderArchive(){const view=archiveView(archiveData,archiveState);for(const [key,id] of Object.entries({grid:'archiveGrid',count:'archiveCount',active:'archiveActive',pagination:'archivePagination'})){const el=document.getElementById(id);if(el){if(key==='count')el.textContent=view[key];else el.innerHTML=view[key];}}}
+// Old bookmarked hash routes become normal page navigations; ordinary anchors are untouched.
+if(/^#\/(?:$|guide|news|music|history|members|gallery|archive|today|game\/lyrics)/.test(location.hash)){location.replace(location.hash.slice(1));}
+const page=document.body.dataset.page;
+if(page==='news')loadNews();
+if(page==='gallery'){galleryItems=normalizePhotos(PHOTOS_FALLBACK);loadGallery();}
+if(page==='archive'){archiveData=ARCHIVE_FALLBACK;loadArchive();}
+if(page==='quiz')window.initLyricQuiz();
+if(page==='today'){const block=document.querySelector('.today-fortune');if(block){const holder=document.createElement('div');holder.innerHTML=today();block.replaceWith(holder.querySelector('.today-fortune'));}}
+
+Object.assign(window,{renderFanChantGrid,ensureFanChantLightbox,updateFanChantLightbox,openFanChantLightbox,closeFanChantLightbox,moveFanChantLightbox,renderGallery,ensureGalleryLightbox,updateGalleryLightbox,openGalleryLightbox,closeGalleryLightbox,moveGalleryLightbox,loadGallery,loadArchive,setArchiveQuery,setArchiveFilter,setArchiveSort,resetArchiveFilters,setArchivePage,syncArchiveControls,bindNewsFilter,getNewsData,loadNews,showCard,closeCard,showEasterToast,employeeCard,employeeFormatDate,employeeMakeId,employeeRoundRect,employeeFitText,employeeMarkDirty,employeeCoverSampleValue,renderEmployeeCard,employeeResetPhotoPosition,employeeSetStatus,issueEmployeeCard,downloadEmployeeCard,initEmployeeCard,normalizePhotos,renderNews,renderGalleryMoment,getFilteredArchive,renderArchive});
+
+},
+"src/shared/common.js":function(module,exports,__require){
+const albums=__require("src/data/albums.json");
+const history=__require("src/data/history.json");
+const tarot=__require("src/data/tarot.json");
+const TODAY_SONGS=__require("src/data/today-songs.json");
+const TODAY_MOODS=__require("src/data/today-moods.json");
+const fanChantImages=__require("src/data/fanchant.json");
+const archiveTypes=__require("src/data/archive-types.json");
+const W=x=>`<div class="page">${x}</div>`;
+function esc(s){
+  return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))
+}
+function archivePageItems(current,total){
+  if(total<=7)return Array.from({length:total},(_,i)=>i+1);
+  const items=[1];
+  if(current>4)items.push("…");
+  const start=Math.max(2,current-1);
+  const end=Math.min(total-1,current+1);
+  for(let i=start;i<=end;i++)items.push(i);
+  if(current<total-3)items.push("…");
+  items.push(total);
+  return items;
+}
+function archiveSearchText(x){return [x.date,x.title,x.program,x.type,x.album,x.releaseType,x.genre,x.style,x.distributor,x.agency,x.note,x.venue,x.awardName,x.awardCategory,x.eventState,x.stageKind,...(x.members||[]),...(x.titleTracks||[]),...(x.songs||[]),...(x.tags||[]),...(x.collaborators||[])].join(" ").toLowerCase();}
+function galleryCard(x,index){
+  const image=x.image||"";
+  const title=esc(x.title||"SEEYA PHOTO");
+  const member=esc(x.member||"씨야");
+  const media=image?`<img class="gallery-image" src="${esc(image)}" alt="${title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-image-fallback&quot;><b>${member}</b><span>ADD PHOTO</span></div>'">`:`<div class="gallery-image-fallback"><b>${member}</b><span>ADD PHOTO</span></div>`;
+  return `<article class="gallery-card">
+    <button type="button" class="gallery-image-wrap" onclick="openGalleryLightbox(${index})" aria-label="${title} 크게 보기" style="border:0;padding:0;width:100%;font:inherit;text-align:inherit">${media}<span class="gallery-badge">${member}</span></button>
+  </article>`;
+}
+function pickTodayMoment(items,now=new Date()){if(!items.length)return null;const pool=items.filter(x=>x.featured!==false);const list=pool.length?pool:items;const key=Number(`${now.getFullYear()}${String(now.getMonth()+1).padStart(2,"0")}${String(now.getDate()).padStart(2,"0")}`);return list[key%list.length];}
+function newsDateParts(pubDate){
+  const d=new Date(pubDate);
+  if(isNaN(d))return {day:"--",ym:""};
+  const parts=Object.fromEntries(new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(d).map(p=>[p.type,p.value]));
+  return {day:parts.day,ym:parts.year+'.'+parts.month};
+}
+module.exports={albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts};
+
+},
+"src/data/albums.json":function(module,exports,__require){
+module.exports=[{"name":"The First Mind","type":"1ST ALBUM · 2006.02.24","meta":"여인의 향기 · 구두 · Promise U","cover":"https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4f/90/b7/4f90b7bb-17a4-9989-4ec0-f5e5ea8eb807/8806163340067_cover.jpg/1200x1200bf-60.jpg","url":"https://www.melon.com/album/detail.htm?albumId=314286"},{"name":"Lovely Sweet Heart","type":"2ND ALBUM · 2007.05.25","meta":"사랑의 인사 · 결혼할까요 · 얼음인형","cover":"https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3d/5c/cd/3d5ccd4e-facb-5d08-bb32-0fe1d50ed182/8806163340050_cover.jpg/1200x1200bb.jpg","url":"https://www.melon.com/album/detail.htm?albumId=352046"},{"name":"California Dream","type":"2.5 ALBUM · 2008.01.02","meta":"슬픈 발걸음 · 그래도 좋아 · 미워요","cover":"https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/055/420/850/55420850_1405324372412_1_600x600.JPG","url":"https://www.melon.com/album/detail.htm?albumId=362767"},{"name":"Brilliant Change","type":"3RD ALBUM · 2008.09.26","meta":"Hot Girl · 가니 · 그 사람 (구두 III)","cover":"https://coverartarchive.org/release/dc732f97-ca67-4325-b575-54cebd35a969/front-500","url":"https://www.melon.com/album/detail.htm?albumId=398227"},{"name":"Rebloom","type":"MINI ALBUM · 2009.10.26","meta":"그 놈 목소리 · 눈물의 여왕 · 여성시대","cover":"https://image.bugsm.co.kr/album/images/500/2037/203741.jpg","url":"https://www.melon.com/album/detail.htm?albumId=703853"},{"name":"See You Again","type":"BEST ALBUM · 2011.01.21","meta":"내겐 너무 멋진 그대 · The Last · 사모곡","cover":"https://i.scdn.co/image/ab67616d0000b273190e0c6930ae2521e1c0688a","url":"https://www.melon.com/album/detail.htm?albumId=1150052"},{"name":"그럼에도, 우린","type":"PRE-RELEASE SINGLE · 2026.03.30","meta":"그럼에도, 우린 · 그럼에도, 우린 (Inst.)","cover":"https://www.bntnews.co.kr/data/bnt/image/2026/03/30/bnt202603300083.jpeg","url":"https://www.melon.com/album/detail.htm?albumId=13299661"},{"name":"First, Again","type":"4TH ALBUM · 2026.05.14","meta":"Stay · 봄처럼 그댄 · 그럼에도, 우린","cover":"https://image.bugsm.co.kr/album/images/500/41474/4147431.jpg","url":"https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"}];
+},
+"src/data/history.json":function(module,exports,__require){
+module.exports=[["2006","씨야 데뷔 — 세 사람의 이야기가 시작됩니다."],["2007","2집 활동."],["2008","2.5집과 3집으로 활동을 이어갑니다."],["2011","씨야 활동 종료와 긴 공백."],["2020","재결합이 논의되었으나 성사되지 않았습니다."],["2026","원년 세 멤버가 다시 씨야라는 이름으로 팬들 앞에 섭니다."],["2026.03.30","‘그럼에도, 우린’과 함께 새로운 이야기가 시작됩니다."],["2026.05.14","4집 앨범 발매."],["2026.08.29–30","20주년 콘서트 투어 서울 공연."]];
+},
+"src/data/tarot.json":function(module,exports,__require){
+module.exports=[{"n":0,"name":"The Fool","theme":"새로운 시작","song":"그럼에도, 우린","related":["그때가 좋았어","See You Again"],"meaning":"다시 시작하는 용기와 첫걸음","match":"대표곡은 '다시 시작'의 상징, 관련곡은 과거와 현재를 잇는 재회의 정서","detail":"새로운 출발 앞에서 과거의 무게를 잠시 내려놓는 카드입니다. 준비가 완벽하지 않아도 마음이 향하는 쪽으로 한 걸음 내딛는 힘을 뜻합니다.","shadow":"성급함 · 방향 없는 시작 · 과거를 지우려는 조급함","message":"끝났다고 생각했던 이야기도 다시 시작할 수 있습니다. 오늘은 작게라도 먼저 움직여 보세요.","story":"긴 공백 이후 다시 '씨야'라는 이름으로 시작하는 서사와 연결되는 카드.","motif":"새벽빛 · 열린 문 · 길 위의 세 실루엣","keywords":"재시작 · 설렘 · 용기","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":1,"name":"The Magician","theme":"가능성·실현","song":"결혼할까요","related":["여인의 향기","Promise U"],"meaning":"마음속 바람을 현실로 만드는 의지","match":"원하는 미래를 스스로 만들어가는 능력","detail":"내 안에 이미 가진 능력과 자원을 꺼내 실제 결과로 만드는 카드입니다. 가능성을 꿈으로만 두지 않고 행동으로 연결하는 순간을 뜻합니다.","shadow":"과신 · 보여주기식 행동 · 능력을 쓰지 못함","message":"이미 필요한 것은 꽤 많이 갖고 있습니다. 오늘은 생각보다 실행에 힘을 주세요.","story":"노래와 무대라는 도구로 감정을 현실의 작품으로 바꾸는 씨야의 이미지와 연결.","motif":"마이크 · 빛나는 손끝 · 네 가지 상징물","keywords":"실행 · 자신감 · 창조","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":2,"name":"The High Priestess","theme":"숨겨진 마음","song":"얼음인형","related":["그 사람","사랑하는 사람에게"],"meaning":"말하지 못한 감정과 내면의 비밀","match":"겉으로 드러나지 않는 마음을 읽는 카드","detail":"겉으로 드러난 말보다 안쪽의 감정과 직감을 읽는 카드입니다. 표현되지 못한 마음, 조용히 간직한 기억을 상징합니다.","shadow":"감정 억압 · 지나친 추측 · 마음을 닫음","message":"오늘은 남의 답보다 내 마음이 무엇을 말하는지 먼저 들어보세요.","story":"말하지 못한 사랑과 숨겨둔 감정을 노래해온 씨야의 발라드 정서와 연결.","motif":"달 · 얼음 결정 · 봉인된 편지","keywords":"직감 · 침묵 · 내면","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":3,"name":"The Empress","theme":"사랑·포용·풍요","song":"사랑하기 때문에","related":["사랑의 인사","미친 사랑의 노래"],"meaning":"사랑이 주는 따뜻함과 감정의 풍요","match":"사랑의 감정 자체를 넓게 품는 카드","detail":"돌보고 품고 키워내는 사랑의 카드입니다. 관계와 감정이 풍성해지고, 누군가에게 따뜻함을 건네는 힘을 뜻합니다.","shadow":"과보호 · 감정 소모 · 사랑받고 싶은 집착","message":"오늘은 받는 것보다 따뜻함을 먼저 건네보세요.","story":"사랑 그 자체의 풍요로움과 씨야의 부드럽고 따뜻한 정서를 담는 카드.","motif":"만개한 꽃 · 진주빛 천 · 따뜻한 햇살","keywords":"포용 · 풍요 · 애정","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":4,"name":"The Emperor","theme":"버팀·책임·보호","song":"Promise U","related":["순애보","결혼할까요"],"meaning":"흔들려도 지키는 약속과 책임","match":"관계와 마음을 단단하게 지키는 힘","detail":"흔들리는 순간에도 기준과 책임을 지키는 카드입니다. 감정보다 중심을 세우고 약속을 지켜내는 힘을 의미합니다.","shadow":"통제 · 완고함 · 감정을 억누름","message":"오늘 정한 기준 하나는 끝까지 지켜보세요.","story":"오랜 시간 관계와 이름을 지켜내는 '버팀'의 이미지와 연결.","motif":"단단한 의자 · 봉인된 약속 · 정돈된 무대","keywords":"책임 · 안정 · 보호","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":5,"name":"The Hierophant","theme":"약속·인연·헌신","song":"결혼할까요","related":["사랑의 인사","Promise U"],"meaning":"오래 지키고 싶은 약속","match":"공식적인 약속과 오래 이어지는 인연","detail":"오래된 약속, 전통, 함께 공유하는 가치와 인연을 뜻하는 카드입니다. 관계를 더 깊은 약속으로 이어가는 순간과 맞닿아 있습니다.","shadow":"형식에 갇힘 · 타인의 기준 · 의미 없는 약속","message":"오늘은 관계에서 '왜 이 약속이 중요한가'를 떠올려보세요.","story":"팬과 가수, 멤버 사이에 오랫동안 이어진 약속과 인연을 상징.","motif":"두 손 · 서약서 · 진주 장식","keywords":"약속 · 신뢰 · 인연","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":6,"name":"The Lovers","theme":"사랑·선택·관계","song":"사랑의 인사","related":["사랑하기 때문에","미친 사랑의 노래"],"meaning":"사랑하는 마음과 관계의 선택","match":"연애뿐 아니라 사람과 사람 사이의 연결","detail":"사랑뿐 아니라 '무엇을 선택할 것인가'를 묻는 카드입니다. 서로에게 끌리는 마음과 그 관계를 선택하는 책임이 함께 존재합니다.","shadow":"갈등 · 우유부단 · 관계의 불균형","message":"마음을 숨기기보다 내가 진짜 원하는 관계를 솔직히 바라보세요.","story":"씨야의 수많은 사랑 노래와 팬-가수 사이의 연결까지 넓게 해석하는 카드.","motif":"마주 선 두 사람 · 이어진 리본 · 꽃잎","keywords":"사랑 · 선택 · 연결","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":7,"name":"The Chariot","theme":"전진·결단·이동","song":"슬픈 발걸음","related":["구두","미워요"],"meaning":"상처를 안고서도 앞으로 나아가는 발걸음","match":"멈추지 않고 자신의 길을 선택하는 힘","detail":"상처와 미련이 있어도 자신의 방향으로 나아가는 카드입니다. 결단과 추진력, 멈추지 않는 움직임을 뜻합니다.","shadow":"폭주 · 조급한 전진 · 방향 상실","message":"오늘은 생각만 하던 것을 실제 행동 하나로 옮겨보세요.","story":"'발걸음'과 '구두'의 이미지처럼 떠남과 전진을 씨야식으로 표현.","motif":"길 · 높은 구두 · 멀어지는 빛","keywords":"전진 · 결단 · 독립","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":8,"name":"Strength","theme":"인내·감정의 힘","song":"미친 사랑의 노래","related":["그래도 좋아","사랑하기 때문에"],"meaning":"강한 감정을 견디고 품는 힘","match":"사랑을 억누르는 것이 아니라 감당하는 힘","detail":"강함은 감정을 없애는 것이 아니라 다룰 수 있는 힘이라는 카드입니다. 아픔과 사랑을 품고도 무너지지 않는 내면의 용기를 뜻합니다.","shadow":"감정 폭발 · 억지 인내 · 자기 소모","message":"감정을 부정하지 말고 이름 붙여보세요. 그것만으로도 힘이 생깁니다.","story":"격한 사랑의 감정을 견뎌내는 씨야 특유의 애절한 정서와 연결.","motif":"붉은 장미 · 손 · 작은 불꽃","keywords":"용기 · 인내 · 감정 조절","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":9,"name":"The Hermit","theme":"고독·성찰·기억","song":"여인의 향기","related":["구두","슬픈 발걸음"],"meaning":"혼자 남은 시간에 기억을 돌아보는 마음","match":"외로운 시간을 통해 자신을 바라보는 카드","detail":"혼자만의 시간 속에서 답을 찾는 카드입니다. 외로움 자체보다 그 시간을 통해 자신과 기억을 돌아보는 성찰에 가깝습니다.","shadow":"고립 · 지나친 회상 · 세상과 단절","message":"잠깐 조용한 시간을 만들어 마음을 정리해보세요.","story":"떠난 뒤 남은 향기와 흔적처럼, 씨야의 그리움 정서를 상징.","motif":"빈 거리 · 작은 등불 · 희미한 향기","keywords":"고독 · 성찰 · 기억","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":10,"name":"Wheel of Fortune","theme":"순환·운명·귀환","song":"그럼에도, 우린","related":["See You Again","봄처럼 그댄"],"meaning":"돌고 돌아 다시 만나는 운명","match":"씨야의 2006→2026 서사와 특히 강하게 연결","detail":"삶의 흐름이 다시 돌아오는 카드입니다. 예상치 못한 전환, 반복되는 인연, 돌고 돌아 다시 만나는 순간을 뜻합니다.","shadow":"변화에 끌려감 · 같은 실수의 반복 · 운에만 의존","message":"변화가 찾아왔다면 과거의 경험을 이번에는 다르게 써보세요.","story":"2006에서 2026으로 이어지는 씨야의 긴 순환과 귀환 서사를 대표.","motif":"원형 필름 · 시계 · 2006↔2026","keywords":"운명 · 전환 · 귀환","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":11,"name":"Justice","theme":"진실·선택·결과","song":"미워요","related":["사랑의 인사","그 사람"],"meaning":"감정과 현실을 직시하고 내려놓는 선택","match":"사랑의 결과를 받아들이는 카드","detail":"감정과 사실을 분리해 공정하게 바라보는 카드입니다. 선택에는 결과가 따르며, 자신에게도 솔직해야 한다는 메시지를 담습니다.","shadow":"자기합리화 · 편견 · 책임 회피","message":"오늘 결정할 일이 있다면 감정과 사실을 따로 적어보세요.","story":"사랑의 끝에서 상대를 놓아주거나 결과를 받아들이는 씨야의 이별 정서와 연결.","motif":"저울 · 편지 · 거울","keywords":"진실 · 균형 · 책임","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":12,"name":"The Hanged Man","theme":"기다림·멈춤·관점 전환","song":"그래도 좋아","related":["봄처럼 그댄","여전히"],"meaning":"움직이지 못하는 시간 속에서 다른 시선으로 바라보기","match":"기다림 자체가 의미를 갖는 카드","detail":"멈춤은 실패가 아니라 다른 시선을 얻기 위한 시간일 수 있다는 카드입니다. 기다림과 희생, 관점 전환을 뜻합니다.","shadow":"무기력 · 의미 없는 희생 · 끝없는 기다림","message":"당장 답을 내리지 않아도 괜찮습니다. 시선을 한 번 바꿔보세요.","story":"오랜 기다림과 멈춰 있던 시간, 재결합을 기다린 팬의 감정과도 연결.","motif":"멈춘 시계 · 거꾸로 놓인 사진 · 빗방울","keywords":"기다림 · 정지 · 관점","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":13,"name":"Death","theme":"끝·이별·변화","song":"구두","related":["슬픈 발걸음","미워요","그 사람"],"meaning":"한 시대의 끝과 그 뒤에 남은 변화","match":"끝났지만 기억까지 사라지지는 않는다는 의미","detail":"무언가를 완전히 끝내야 새로운 변화가 들어올 수 있음을 뜻합니다. 죽음 자체가 아니라 종결과 변환의 카드입니다.","shadow":"끝을 인정하지 못함 · 과거에 매임 · 변화 거부","message":"끝난 것을 붙잡기보다 그 경험이 나를 어떻게 바꿨는지 바라보세요.","story":"'구두'가 가진 이별의 상징성과 활동 종료 후 긴 공백이라는 서사에 맞닿는 카드.","motif":"빈 구두 · 밤길 · 떨어지는 꽃잎","keywords":"종결 · 변화 · 이별","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":14,"name":"Temperance","theme":"회복·조화·재생","song":"봄처럼 그댄","related":["그럼에도, 우린","See You Again"],"meaning":"서로 다른 시간을 지나 다시 맞춰가는 마음","match":"상처 이후 균형을 되찾는 과정","detail":"서로 다른 감정과 시간을 천천히 섞어 균형을 만드는 카드입니다. 치유, 조율, 관계 회복을 뜻합니다.","shadow":"균형 깨짐 · 성급한 화해 · 감정의 과잉","message":"오늘은 극단적인 선택보다 중간 지점을 찾아보세요.","story":"오랜 시간을 지나 다시 호흡을 맞추는 재회의 이미지와 연결.","motif":"두 잔 사이의 물 · 봄꽃 · 세 줄기 빛","keywords":"조화 · 회복 · 재생","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":15,"name":"The Devil","theme":"미련·집착·욕망","song":"미친 사랑의 노래","related":["구두","사랑의 인사"],"meaning":"잊으려 해도 놓지 못하는 감정","match":"사랑이 집착으로 변하는 순간까지 포함","detail":"강한 끌림과 미련, 끊기 어려운 감정의 연결을 뜻합니다. 무엇이 나를 붙잡고 있는지 바라보게 하는 카드입니다.","shadow":"집착 · 의존 · 반복되는 상처","message":"놓지 못하는 것이 사랑인지 습관인지 한 번 구분해보세요.","story":"잊으려 해도 다시 찾게 되는 씨야의 애절한 사랑 노래 정서를 응축.","motif":"붉은 실 · 거울 · 어두운 무대","keywords":"집착 · 유혹 · 미련","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":16,"name":"The Tower","theme":"붕괴·충격·예상 밖의 변화","song":"흩어지는 중","related":["구두","미워요"],"meaning":"붙잡고 있던 것이 한순간에 무너지는 경험","match":"관계의 붕괴와 예기치 못한 이별","detail":"내가 믿었던 구조가 갑자기 무너지는 충격을 뜻합니다. 아프지만 거짓된 안정에서 벗어나게 하는 변화이기도 합니다.","shadow":"붕괴에 대한 공포 · 충격에 머무름 · 회복 거부","message":"계획이 무너졌다면 '무엇을 새로 세울 수 있는가'를 생각해보세요.","story":"관계의 붕괴와 재결합이 무산되었던 시간처럼 예상 밖의 상실을 상징.","motif":"금 간 유리 · 흩어진 사진 · 번개","keywords":"붕괴 · 충격 · 각성","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":17,"name":"The Star","theme":"희망·치유·기다림","song":"봄처럼 그댄","related":["그럼에도, 우린","See You Again"],"meaning":"긴 기다림 끝에 다시 찾아온 빛","match":"씨야 재결합 서사의 희망을 상징하는 핵심 카드","detail":"긴 어둠 이후 다시 믿을 수 있게 되는 희망의 카드입니다. 치유와 회복, 미래에 대한 조용한 확신을 뜻합니다.","shadow":"희망 상실 · 과도한 기대 · 회복을 서두름","message":"아직 끝나지 않은 것이 있다면 오늘 하루만 더 믿어보세요.","story":"'봄처럼 그댄'과 오랜 기다림 끝에 다시 찾아온 씨야의 봄을 대표하는 핵심 카드.","motif":"별빛 · 연분홍 봄꽃 · 오래된 사진","keywords":"희망 · 치유 · 재회","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":18,"name":"The Moon","theme":"불안·그리움·혼란","song":"그 사람","related":["여전히","얼음인형"],"meaning":"확실하지 않은 마음과 깊어지는 그리움","match":"보이는 것과 실제 마음 사이의 간극","detail":"보이지 않는 것 때문에 마음이 흔들리는 카드입니다. 불안, 그리움, 착각과 직감이 한꺼번에 섞여 있는 상태를 뜻합니다.","shadow":"오해 · 불안 증폭 · 현실 회피","message":"확인되지 않은 생각을 사실처럼 단정하지 마세요.","story":"그리움과 불확실한 관계를 노래해온 씨야의 어두운 정서와 연결.","motif":"달 · 안개 · 물 위의 구두","keywords":"불안 · 그리움 · 직감","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":19,"name":"The Sun","theme":"기쁨·활력·행복","song":"그래도 좋아","related":["여성시대","결혼할까요"],"meaning":"상처가 있어도 지금의 행복을 온전히 즐기는 마음","match":"밝고 에너지 넘치는 씨야의 순간","detail":"숨김없는 기쁨과 생명력, 함께 웃는 순간의 행복을 뜻합니다. 결과보다 지금의 빛을 온전히 누리는 카드입니다.","shadow":"과한 낙관 · 들뜸 · 타인의 감정 무시","message":"오늘 즐거운 순간이 있다면 이유를 따지지 말고 충분히 누려보세요.","story":"밝은 무대와 함께 노래하는 세 사람, 팬들과 공유하는 기쁨을 상징.","motif":"햇빛 · 무대 조명 · 진주빛 반짝임","keywords":"기쁨 · 활력 · 성공","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":20,"name":"Judgement","theme":"재생·부름·두 번째 기회","song":"그럼에도, 우린","related":["봄처럼 그댄","See You Again"],"meaning":"끝난 줄 알았던 이야기가 다시 시작되는 순간","match":"2026 재결합을 가장 직접적으로 상징하는 카드","detail":"과거를 돌아본 뒤 다시 부름을 받고 일어서는 카드입니다. 재생, 두 번째 기회, '다시 해야 할 일'을 뜻합니다.","shadow":"과거에 대한 죄책감 · 기회를 외면함 · 결단 회피","message":"예전에 포기했던 것 중 아직 마음에 남아 있는 하나를 다시 바라보세요.","story":"'그럼에도, 우린'과 2026년 재결합 서사를 가장 직접적으로 담는 핵심 카드.","motif":"새벽빛 · 울리는 종 · 세 사람의 실루엣","keywords":"재생 · 소명 · 두 번째 기회","lyric":"추후 실제 가사·출처 검증 후 입력"},{"n":21,"name":"The World","theme":"완성·귀환·다음 장","song":"The Last","related":["그럼에도, 우린","봄처럼 그댄"],"meaning":"하나의 긴 이야기를 완성하고 다음 장으로 넘어가는 순간","match":"20년의 시간을 하나의 원으로 묶는 마지막 카드","detail":"하나의 사이클이 완성되고 그 경험을 품은 채 다음 단계로 넘어가는 카드입니다. 끝과 시작이 연결되는 완성을 의미합니다.","shadow":"마무리 미룸 · 성취를 인정하지 못함 · 다음 단계 두려움","message":"오늘 끝낼 수 있는 작은 목표 하나를 완성해보세요.","story":"씨야의 20년을 하나의 원으로 묶고, '다시 만남' 이후의 다음 장을 여는 마지막 카드.","motif":"원형 화환 · 열린 무대 · 진주빛 테두리","keywords":"완성 · 통합 · 다음 장","lyric":"추후 실제 가사·출처 검증 후 입력"}];
+},
+"src/data/today-songs.json":function(module,exports,__require){
+module.exports=[{"song":"여인의 향기","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"구두","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"사랑하기 때문에 (feat. SG 워너비)","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love"]},{"song":"접시꽃","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["comfort"]},{"song":"Promise U","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love","connection"]},{"song":"처음부터 또다시","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["start"]},{"song":"유죄","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["reflection"]},{"song":"이별해보기","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"Tearsandfears","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["reflection"]},{"song":"사랑했다면","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"그냥","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["reflection"]},{"song":"내 잘못입니다","album":"The First Mind · 2006","url":"https://www.melon.com/album/detail.htm?albumId=314286","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["reflection"]},{"song":"사랑의 인사","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love","connection"]},{"song":"결혼할까요","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love","connection"]},{"song":"너는 내 남자","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love"]},{"song":"Dirty Dancing","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["energy"]},{"song":"어떻게 널 잊겠니","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"사랑아","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love"]},{"song":"그 사람이 나를 사랑해요","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love","connection"]},{"song":"Summer Dream","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love"]},{"song":"사랑이 간다","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"감동을 주세요","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love","connection"]},{"song":"얼음인형","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"순애보","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love"]},{"song":"남","album":"Lovely Sweet Heart · 2007","url":"https://www.melon.com/album/detail.htm?albumId=352046","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["reflection"]},{"song":"슬픈 발걸음","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"그래도 좋아","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["comfort"]},{"song":"Classic","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"연가","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"미워요","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"요즘 나는","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"깊은 밤을 날아서","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["comfort"]},{"song":"처음 그 자리에","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["comfort"]},{"song":"미친 사랑의 노래","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"The Day","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"정","album":"California Dream · 2008","url":"https://www.melon.com/album/detail.htm?albumId=362767","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"가니 (feat. SG워너비 - 김용준, 황정음, Mario)","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["energy"]},{"song":"Hot Girl","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["energy"]},{"song":"Turn It Up","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["energy"]},{"song":"집으로 돌아오는 길 (feat. SG워너비 - 김진호)","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"내가 울더라도","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"덩그러니","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"사모곡","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"I Wish","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["longing"]},{"song":"남자는 그래요","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["reflection"]},{"song":"그 사람 (구두 Ⅲ)","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"솜사탕","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love"]},{"song":"나 없이도","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"Loving You","album":"Brillant Change · 2008","url":"https://www.melon.com/album/detail.htm?albumId=398227","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["love"]},{"song":"그 놈 목소리","album":"Rebloom · 2009","url":"https://www.melon.com/album/detail.htm?albumId=703853","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["reflection"]},{"song":"앗차!","album":"Rebloom · 2009","url":"https://www.melon.com/album/detail.htm?albumId=703853","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["energy"]},{"song":"눈물의 여왕","album":"Rebloom · 2009","url":"https://www.melon.com/album/detail.htm?albumId=703853","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"바람핀다 믿었니","album":"Rebloom · 2009","url":"https://www.melon.com/album/detail.htm?albumId=703853","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup","reflection"]},{"song":"T-Gana (티가나)","album":"Rebloom · 2009","url":"https://www.melon.com/album/detail.htm?albumId=703853","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["energy"]},{"song":"내겐 너무 멋진 그대","album":"See You Again · 2011","url":"https://www.melon.com/album/detail.htm?albumId=1150052","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["start"]},{"song":"The Last","album":"See You Again · 2011","url":"https://www.melon.com/album/detail.htm?albumId=1150052","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup","reflection"]},{"song":"Stay","album":"First, Again · 2026","url":"https://www.melon.com/album/detail.htm?albumId=13391243","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["start","energy"]},{"song":"계절은 돌고 돌아","album":"First, Again · 2026","url":"https://www.melon.com/album/detail.htm?albumId=13391243","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["start","comfort"]},{"song":"봄처럼 그댄","album":"First, Again · 2026","url":"https://www.melon.com/album/detail.htm?albumId=13391243","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["start","connection"]},{"song":"I Believe","album":"First, Again · 2026","url":"https://www.melon.com/album/detail.htm?albumId=13391243","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["start","comfort"]},{"song":"그럼에도, 우린","album":"First, Again · 2026","url":"https://www.melon.com/album/detail.htm?albumId=13391243","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["start","connection"]},{"song":"안돼요","album":"First, Again · 2026","url":"https://www.melon.com/album/detail.htm?albumId=13391243","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["breakup"]},{"song":"잔향","album":"First, Again · 2026","url":"https://www.melon.com/album/detail.htm?albumId=13391243","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["comfort","reflection"]},{"song":"끝내 꺾이지 않는 것","album":"First, Again · 2026","url":"https://www.melon.com/album/detail.htm?albumId=13391243","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["start","comfort"]},{"song":"우리 Live Ver.","album":"First, Again · 2026","url":"https://www.melon.com/album/detail.htm?albumId=13391243","linkLabel":"Melon 앨범에서 듣기","scope":"SEEYA","moods":["start","comfort","connection"]},{"song":"바보","album":"All Star 2집 Vol.4 · 2008","url":"https://music.bugs.co.kr/album/151202","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["love"]},{"song":"Blue Moon","album":"Color Pink · 2008","url":"https://music.bugs.co.kr/album/155708","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["love","connection"]},{"song":"여성시대","album":"여성시대 / 영원한 사랑 · 2009","url":"https://music.bugs.co.kr/album/183422","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["energy"]},{"song":"영원한 사랑","album":"여성시대 / 영원한 사랑 · 2009","url":"https://music.bugs.co.kr/album/183422","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["energy","connection"]},{"song":"원더우먼","album":"원더우먼 · 2010","url":"https://music.bugs.co.kr/album/214161","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["energy","connection"]},{"song":"가슴이 뭉클","album":"개인의 취향 OST Part.2 · 2010","url":"https://music.bugs.co.kr/album/220428","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["comfort"]},{"song":"미쳤나봐","album":"안영민 Baby Brown · 2010","url":"https://music.bugs.co.kr/album/236654","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["breakup"]},{"song":"이별이 오지 못하게","album":"TWENTYth Urban · 2010","url":"https://music.bugs.co.kr/album/240729","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["breakup"]},{"song":"다 컸잖아","album":"씨야 그리고 다비치 · 2010","url":"https://music.bugs.co.kr/album/241289","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["breakup","connection"]},{"song":"시차 (With 다비치, 블랙펄)","album":"숙명 OST · 2008","url":"https://music.bugs.co.kr/album/101865","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["longing","reflection"]},{"song":"용기를 주세요","album":"쿵야 어드벤처 OST · 2007","url":"https://music.bugs.co.kr/album/8031630","linkLabel":"Bugs에서 듣기","scope":"PROJECT","moods":["start","energy"]},{"song":"우리 사랑 그런 거 해요 Part.1","album":"남규리 Solo Single · 2026","url":"https://www.melon.com/album/detail.htm?albumId=14521264","linkLabel":"Melon에서 듣기","scope":"SOLO","moods":["love"]},{"song":"우리 사랑 그런 거 해요 Part.2 (feat. KoN)","album":"남규리 Solo Single · 2026","url":"https://www.melon.com/album/detail.htm?albumId=14521264","linkLabel":"Melon에서 듣기","scope":"SOLO","moods":["energy"]},{"song":"노래","album":"김연지 Solo Single · 2026","url":"https://www.melon.com/album/detail.htm?albumId=14493829","linkLabel":"Melon에서 듣기","scope":"SOLO","moods":["energy","comfort"]},{"song":"빛의 반대편에서","album":"이보람 Solo Single · 2026","url":"https://www.melon.com/album/detail.htm?albumId=14335999","linkLabel":"Melon에서 듣기","scope":"SOLO","moods":["start","comfort"]}];
+},
+"src/data/today-moods.json":function(module,exports,__require){
+module.exports={"start":{"title":"다시 움직이기 좋은 날","text":"완벽한 준비보다 작은 시작 하나가 더 힘이 되는 날이에요. 멈춰 있던 일에 아주 작게라도 손을 대보세요.","keywords":["시작","전진","가능성"],"message":"오늘은 지나간 장면보다 다음 장면에 마음을 두어도 좋아요.","detail":"새로운 시작은 거창할 필요가 없습니다. 다시 움직이기 시작했다는 사실 자체가 오늘의 의미가 될 수 있어요."},"love":{"title":"마음을 표현하기 좋은 날","text":"좋아하는 사람과 좋아하는 것을 조금 더 솔직하게 표현해도 좋은 하루예요. 따뜻한 말 한마디가 오래 남을 수 있어요.","keywords":["애정","표현","설렘"],"message":"마음이 향하는 곳을 너무 오래 숨기지 않아도 괜찮아요.","detail":"오늘은 관계의 정답보다 진심을 전하는 방식에 집중해보세요. 작은 표현이 생각보다 큰 온기를 만들 수 있습니다."},"energy":{"title":"분위기를 바꾸기 좋은 날","text":"평소보다 한 박자 빠르게 움직여보세요. 밝은 음악과 가벼운 행동 하나가 하루 전체의 흐름을 바꿀 수 있어요.","keywords":["활력","자신감","기분전환"],"message":"오늘은 고민보다 리듬을 먼저 타도 좋은 날입니다.","detail":"기분이 가라앉아 있다면 억지로 답을 찾기보다 몸을 움직여보세요. 에너지가 생각을 따라오게 해도 괜찮습니다."},"comfort":{"title":"스스로에게 조금 다정해도 되는 날","text":"오늘만큼은 잘한 것보다 버틴 것을 먼저 알아주세요. 쉬어가는 시간도 앞으로 나아가는 과정의 일부예요.","keywords":["위로","회복","여유"],"message":"조금 느려져도 괜찮아요. 오늘 필요한 건 속도보다 회복일 수 있습니다.","detail":"모든 일을 한 번에 해결하지 않아도 됩니다. 마음이 따라올 시간을 주는 것도 충분히 좋은 선택이에요."},"longing":{"title":"오래된 기억이 문득 떠오르는 날","text":"예전의 사람이나 장면이 생각날 수 있어요. 그리움을 밀어내기보다 잠깐 꺼내보고 다시 잘 넣어두는 것도 괜찮습니다.","keywords":["기억","그리움","추억"],"message":"떠오른 기억을 굳이 지우지 않아도 괜찮아요. 오늘은 잠시 함께 걸어보세요.","detail":"과거를 돌아보는 것이 반드시 뒤로 가는 것은 아닙니다. 지금의 내가 얼마나 달라졌는지 확인하는 시간이 될 수도 있어요."},"breakup":{"title":"놓아줄 것은 조금씩 놓아도 되는 날","text":"계속 마음을 잡아끄는 것이 있다면 오늘은 거리를 조금 두어보세요. 정리한다는 건 잊는 것과는 다른 일이에요.","keywords":["정리","이별","전환"],"message":"끝난 장면을 인정하는 순간 다음 장면이 보이기 시작할 수 있어요.","detail":"아쉬움이 남는다고 해서 잘못된 선택은 아닙니다. 오늘은 무엇을 더 붙잡을지보다 무엇을 내려놓을지 생각해보세요."},"reflection":{"title":"내 마음을 천천히 읽어보기 좋은 날","text":"밖의 소리보다 내 안의 생각이 더 크게 들릴 수 있는 하루예요. 결론을 서두르지 말고 감정의 이름부터 찾아보세요.","keywords":["성찰","마음","균형"],"message":"답을 바로 내리지 않아도 괜찮아요. 먼저 내가 무엇을 느끼는지 확인해보세요.","detail":"복잡한 감정은 빠르게 정리할수록 정확해지는 것이 아닙니다. 오늘은 판단보다 관찰에 조금 더 시간을 써보세요."},"connection":{"title":"함께일 때 힘이 커지는 날","text":"혼자 해결하려 하기보다 가까운 사람에게 먼저 말을 걸어보세요. 생각보다 쉽게 마음의 거리가 가까워질 수 있어요.","keywords":["인연","함께","신뢰"],"message":"오늘의 좋은 순간은 누군가와 나눌 때 더 오래 남을 수 있어요.","detail":"오래 이어지는 관계는 거창한 약속보다 작은 안부에서 시작됩니다. 오늘 떠오르는 사람이 있다면 먼저 연락해보세요."}};
+},
+"src/data/fanchant.json":function(module,exports,__require){
+module.exports=[{"title":"Hot Girl","image":"images/fanchant/hot-girl.png"},{"title":"Stay","image":"images/fanchant/stay.png"},{"title":"결혼할까요","image":"images/fanchant/marry-me.png"},{"title":"그 놈 목소리","image":"images/fanchant/that-guys-voice.png"},{"title":"그 사람 (구두 III)","image":"images/fanchant/that-person-shoes-iii.png"},{"title":"그래도 좋아","image":"images/fanchant/still-like-you.png"},{"title":"내겐 너무 멋진 그대","image":"images/fanchant/wonderful-you.png"},{"title":"미워요","image":"images/fanchant/hate-you.png"},{"title":"미친 사랑의 노래","image":"images/fanchant/crazy-love-song.png"},{"title":"봄처럼 그댄","image":"images/fanchant/spring-like-you.png"},{"title":"사랑의 인사","image":"images/fanchant/love-greeting.png"},{"title":"얼음 인형","image":"images/fanchant/ice-doll.png"}];
+},
+"src/data/archive-types.json":function(module,exports,__require){
+module.exports={"all":"전체","album":"앨범·음원","music-show":"음악방송·무대","concert":"공연","milestone":"주요 기록","event":"행사","variety":"예능","radio":"라디오","interview":"인터뷰","news":"기사","official":"공식","etc":"기타"};
+},
+"src/shared/views.js":function(module,exports,__require){
+const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=__require("src/shared/common.js");
+function newsList(items){
+  if(!items?.length)return '<div class="news-empty">최근 검색된 기사가 없습니다.</div>';
+  return `<div class="news-list">${items.slice(0,10).map(item=>{
+    const p=newsDateParts(item.pubDate);
+    return `<a class="news-card" href="${esc(item.link)}" target="_blank" rel="noopener noreferrer">
+      <div class="news-date"><strong>${p.day}</strong><span>${p.ym}</span></div>
+      <div class="news-body">
+        <span class="news-source">${esc(item.source||"NEWS")}</span>
+        <h3>${esc(item.title||"")}</h3>
+        ${item.description?`<p>${esc(item.description)}</p>`:""}
+      </div>
+      <div class="news-go">기사 읽기 ↗</div>
+    </a>`;
+  }).join("")}</div>`;
+}
+function galleryMoment(galleryItems,now=new Date()){
+  const x=pickTodayMoment(galleryItems,now);
+  if(!x)return `<div class="gallery-moment-empty"><b>SEEYA</b><span>ADD YOUR PHOTOS</span></div>`;
+  const index=galleryItems.indexOf(x);
+  const image=x.image||"";
+  const title=esc(x.title||"오늘 만나는 씨야의 한 장");
+  const member=esc(x.member||"씨야");
+  const source=esc(x.source||"");
+  const date=esc(x.date||"");
+  const sourceLink=esc(x.sourceLink||x.link||"");
+  const media=image?`<img src="${esc(image)}" alt="${title}" onerror="this.parentElement.innerHTML='<div class=&quot;gallery-moment-empty&quot;><b>SEEYA</b><span>ADD PHOTO</span></div>'">`:`<div class="gallery-moment-empty"><b>SEEYA</b><span>ADD PHOTO</span></div>`;
+  return `<article class="gallery-moment">
+    <button type="button" class="gallery-moment-media" onclick="openGalleryLightbox(${index})" aria-label="${title} 크게 보기" style="border:0;padding:0;width:100%;font:inherit;text-align:inherit">${media}</button>
+    <div class="gallery-moment-copy">
+      <div class="gallery-moment-label">TODAY'S SEEYA PHOTO</div>
+      <h3 class="gallery-moment-member">${member}</h3>
+      <p class="gallery-moment-title">${title}</p>
+      ${(source||date)?`<div class="gallery-moment-meta">${source?`<span>${source}</span>`:""}${date?`<span>· ${date}</span>`:""}</div>`:""}
+      ${sourceLink?`<a class="gallery-moment-link" href="${sourceLink}" target="_blank" rel="noopener noreferrer">원본 게시물 보기 <span>↗</span></a>`:""}
+    </div>
+  </article>`;
+}
+function getFilteredArchive(archiveData,archiveState){const q=archiveState.query.toLowerCase();let rows=archiveData.filter(x=>{if(archiveState.year!=="all"&&!String(x.date||"").startsWith(archiveState.year))return false;if(archiveState.member!=="all"&&!(x.members||[]).includes(archiveState.member))return false;if(archiveState.type!=="all"&&x.type!==archiveState.type)return false;if(q&&!archiveSearchText(x).includes(q))return false;return true;});rows.sort((a,b)=>archiveState.sort==="oldest"?String(a.date).localeCompare(String(b.date)):archiveState.sort==="added"?(String(b.addedAt||"").localeCompare(String(a.addedAt||""))||String(b.date).localeCompare(String(a.date))):String(b.date).localeCompare(String(a.date)));return rows;}
+function archivePagination(totalPages,archiveState){
+  if(totalPages<=1)return "";
+  const current=archiveState.page;
+  const pages=archivePageItems(current,totalPages);
+  return `<button class="archive-page-btn" type="button" onclick="setArchivePage(${current-1})" ${current===1?"disabled":""} aria-label="이전 페이지">‹</button>${pages.map(p=>p==="…"?`<span class="archive-page-gap">…</span>`:`<button class="archive-page-btn ${p===current?"active":""}" type="button" onclick="setArchivePage(${p})" ${p===current?'aria-current="page"':""}>${p}</button>`).join("")}<button class="archive-page-btn" type="button" onclick="setArchivePage(${current+1})" ${current===totalPages?"disabled":""} aria-label="다음 페이지">›</button>`;
+}
+function archiveView(archiveData,archiveState){
+  const view={grid:"",count:"",active:"",pagination:""};
+  const ARCHIVE_PAGE_SIZE=9;
+  const rows=getFilteredArchive(archiveData,archiveState);
+  const totalPages=Math.max(1,Math.ceil(rows.length/ARCHIVE_PAGE_SIZE));
+  if(archiveState.page>totalPages)archiveState.page=totalPages;
+  if(archiveState.page<1)archiveState.page=1;
+  const currentPage=archiveState.page;
+  const start=(currentPage-1)*ARCHIVE_PAGE_SIZE;
+  const pageRows=rows.slice(start,start+ARCHIVE_PAGE_SIZE);
+  view.count=rows.length?`총 ${rows.length}개의 기록 · ${currentPage} / ${totalPages} 페이지`:"총 0개의 기록";
+  {
+    const arr=[];
+    if(archiveState.query)arr.push(`검색 · ${archiveState.query}`);
+    if(archiveState.year!=="all")arr.push(archiveState.year);
+    if(archiveState.member!=="all")arr.push(archiveState.member);
+    if(archiveState.type!=="all")arr.push(archiveTypes[archiveState.type]||archiveState.type);
+    view.active=arr.length?arr.map(x=>`<span>${esc(x)}</span>`).join("")+`<button class="archive-reset" onclick="resetArchiveFilters()">조건 초기화 ×</button>`:"";
+  }
+  if(!rows.length){
+    view.grid=`<div class="archive-empty"><b>조건에 맞는 기록이 없습니다.</b><br><br>검색어나 필터를 바꿔보세요.</div>`;
+    return view;
+  }
+  view.grid=pageRows.map(x=>{const typeLabel=archiveTypes[x.type]||x.type;const members=(x.members||[]).join(" · ");const titleTracks=(x.titleTracks||[]).filter(s=>!/(\binst\.?\b|\(inst\.?\))/i.test(s)).join(" · ");const relatedSongs=x.type!=="album"?(x.songs||[]).filter(s=>!/(\binst\.?\b|\(inst\.?\))/i.test(s)).join(" · "):"";const collaborators=(x.collaborators||[]).join(" · ");const fallback=`<div class="archive-thumb-placeholder archive-cover-fallback"><b>${String(x.date).slice(0,4)}</b><small>${x.releaseType||typeLabel}</small><em>${x.album||x.program||x.title}</em></div>`;const categoryPlaceholder=x.type==="music-show"?"images/archive/archive-stage.png":x.type==="interview"?"images/archive/archive-interview.png":"";const visual=x.thumbnail||categoryPlaceholder;const visualAlt=x.thumbnail&&x.type==="album"?(x.album||x.title)+" 앨범 커버":"";const thumb=visual?`${fallback}<img src="${visual}" alt="${visualAlt}" loading="lazy" onerror="this.remove()">`:fallback;const albumInfo=x.type==="album"?`${x.releaseType?`유형 · ${x.releaseType}<br>`:""}${x.trackCount?`수록 · ${x.trackCount}곡<br>`:""}${x.genre?`장르 · ${x.genre}<br>`:""}`:"";const eventMark=x.eventState==="scheduled"?`<span class="archive-event-state">UPCOMING</span>`:"";const awardInfo=x.awardCategory?`수상 · ${x.awardCategory}<br>`:"";return `<article class="archive-card"><div class="archive-thumb">${thumb}<span class="archive-status">${x.status==="available"?"● AVAILABLE":"○ UNKNOWN"}</span>${eventMark}</div><div class="archive-body"><div class="archive-date">${x.date}</div><div class="archive-program">${x.program||typeLabel}</div><h3>${x.title}</h3><div class="archive-meta">${albumInfo}${x.venue?`장소 · ${x.venue}<br>`:""}${awardInfo}${members?`멤버 · ${members}<br>`:""}${collaborators?`함께 · ${collaborators}<br>`:""}${titleTracks?`<strong class="archive-title-track">TITLE · ${titleTracks}</strong>`:""}${relatedSongs?`<span class="archive-related-song">관련곡 · ${relatedSongs}</span>`:""}${x.agency?`<br>기획 · ${x.agency}`:""}${x.note?`<span class="archive-card-note">${x.note}</span>`:""}</div><div class="archive-tags">${(x.tags||[]).slice(0,6).map(t=>`<span>#${t}</span>`).join("")}</div><a class="archive-source" href="${x.source?.url||"#"}" target="_blank" rel="noopener">${x.source?.label||x.source?.platform||"원본"}에서 보기 →</a></div></article>`;}).join("");
+  view.pagination=archivePagination(totalPages,archiveState);
+  return view;
+}
+module.exports={newsList,galleryMoment,getFilteredArchive,archiveView};
+
+},
+"src/pages/today.js":function(module,exports,__require){
+const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=__require("src/shared/common.js");
+const {newsList,galleryMoment,archiveView}=__require("src/shared/views.js");
+function todayPickSong(mood,random=Math.random){
+  const pool=TODAY_SONGS.filter(x=>(x.moods||[]).includes(mood));
+  return pool[Math.floor(random()*pool.length)]||TODAY_SONGS[Math.floor(random()*TODAY_SONGS.length)];
+}
+function todayRelatedSongs(song,mood,random=Math.random){
+  const pool=TODAY_SONGS.filter(x=>x.song!==song.song&&(x.moods||[]).includes(mood));
+  const shuffled=[...pool].sort(()=>random()-.5);
+  return shuffled.slice(0,2).map(x=>x.song);
+}
+function todayBlock(now=new Date(),random=Math.random){
+  const d=now;
+  const keys=Object.keys(TODAY_MOODS);
+  const todayRandomMood=keys[Math.floor(random()*keys.length)];
+  const f=TODAY_MOODS[todayRandomMood];
+  const s=todayPickSong(todayRandomMood,random);
+  const related=todayRelatedSongs(s,todayRandomMood,random);
+  return `<div class="today-fortune">
+    <section class="fortune-main">
+      <div class="eye">TODAY'S FORTUNE · ${d.getFullYear()}.${String(d.getMonth()+1).padStart(2,"0")}.${String(d.getDate()).padStart(2,"0")}</div>
+      <h2>${f.title}</h2>
+      <p class="fortune-note">${f.text}</p>
+      <div class="fortune-keywords">${f.keywords.map(x=>`<span>${x}</span>`).join("")}</div>
+    </section>
+    <section class="fortune-song">
+      <div class="eye">SONG FOR TODAY · ${TODAY_SONGS.length} TRACKS</div>
+      <h3>♪ ${s.song}</h3>
+      <div class="song-album-info">${s.album} · ${s.scope}</div>
+      <p>${f.message}</p>
+      <a class="melon-song-link" href="${s.url}" target="_blank" rel="noopener noreferrer">${s.linkLabel} →</a>
+      <div class="related-song-line"><b>같이 들으면 좋은 곡</b><span>${related.join(" · ")}</span></div>
+    </section>
+    <section class="fortune-guide">
+      <div class="mini-fortune"><b>오늘의 한마디</b><span>${f.detail}</span></div>
+      <div class="mini-fortune"><b>오늘의 키워드</b><span>${f.keywords.join(" · ")}</span></div>
+      <div class="notice">오늘의 운세와 추천곡은 재미로 즐기는 팬 콘텐츠입니다. 씨야 그룹곡, 주요 프로젝트·OST와 최근 멤버 솔로곡 중 오늘의 분위기와 맞는 곡을 무작위로 추천하며 사용자 정보는 저장하지 않습니다.</div>
+    </section>
+  </div>`;
+}
+function today(now,random){return W(`<div class="section" style="border:0"><div class="eye">DAILY SEEYA</div><h1 style="font-size:55px">TODAY'S SEEYA</h1><p class="lead">오늘의 흐름을 가볍게 읽고, 그 기분에 어울리는 씨야와 멤버들의 노래를 한 곡 추천합니다.</p></div>${todayBlock(now,random)}<div class="page-pixel-art" aria-hidden="true"><img src="images/today/seeya-today-pixel.png" alt="" loading="lazy"></div>`)}
+module.exports=today;
+
+},
+"src/pages/tarot.js":function(module,exports,__require){
+const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=__require("src/shared/common.js");
+const {newsList,galleryMoment,archiveView}=__require("src/shared/views.js");
+function tarotPage(){return W(`<div class="tarothead"><div class="eye">SEEYA MAJOR ARCANA</div><h2>노래로 다시 읽는 22개의 마음</h2><p>현재는 카드 디자인을 미리 확인하기 위해 THE WORLD 이미지를 22장 전체에 공통 적용했습니다. 이후 번호별 완성 이미지를 받으면 각 카드에 개별 교체합니다.</p><button class="btn" onclick="showCard(Math.floor(Math.random()*22))">한 장 뽑기</button></div><div class="tarotgrid">${tarot.map(t=>`<div class="tcard" onclick="showCard(${t.n})"><div class="tcard-visual"><img src="assets/tarot/21-world-preview.png" alt="${t.name} tarot preview" loading="lazy"><div class="tcard-preview-tag">${String(t.n).padStart(2,"0")} · PREVIEW</div></div><div class="tcard-info"><div class="eye">${String(t.n).padStart(2,"0")}</div><h3>${t.name}</h3><small>${t.theme}</small><div class="song">♪ ${t.song}</div><div class="rel">RELATED<br>${t.related.join(" · ")}</div></div></div>`).join("")}</div><div class="notice" style="margin-top:22px">현재 카드 이미지는 디자인 미리보기용 공통 이미지입니다. 번호별 최종 카드가 준비되면 00–21 각각 교체할 예정입니다.</div>`)}
+module.exports=tarotPage;
+
+},
+"data/archive.json":function(module,exports,__require){
+module.exports=[{"id":"20261031-the-fan-incheon","date":"2026-10-31","addedAt":"2026-09-06","title":"2026 씨야 20주년 전국 투어 콘서트 : THE FAN · INCHEON","program":"THE FAN","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"YES24","url":"https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"},"status":"available","tags":["공연","전국투어","THE FAN","20주년","인천","예정"],"note":"THE FAN 인천 공연 예정.","venue":"인천남동체육관","eventState":"scheduled"},{"id":"20261017-the-fan-suwon","date":"2026-10-17","addedAt":"2026-09-06","title":"2026 씨야 20주년 전국 투어 콘서트 : THE FAN · SUWON","program":"THE FAN","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"YES24","url":"https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"},"status":"available","tags":["공연","전국투어","THE FAN","20주년","수원","예정"],"note":"THE FAN 수원 공연 예정.","venue":"경희대학교 국제캠퍼스 선승관","eventState":"scheduled"},{"id":"20261010-the-fan-cheongju","date":"2026-10-10","addedAt":"2026-09-06","title":"2026 씨야 20주년 전국 투어 콘서트 : THE FAN · CHEONGJU","program":"THE FAN","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"YES24","url":"https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"},"status":"available","tags":["공연","전국투어","THE FAN","20주년","청주","예정"],"note":"THE FAN 청주 공연 예정.","venue":"청주대학교 석우문화체육관","eventState":"scheduled"},{"id":"20261004-the-fan-goyang","date":"2026-10-04","addedAt":"2026-09-06","title":"2026 씨야 20주년 전국 투어 콘서트 : THE FAN · GOYANG","program":"THE FAN","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"YES24","url":"https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"},"status":"available","tags":["공연","전국투어","THE FAN","20주년","고양","예정"],"note":"THE FAN 고양 공연 예정.","venue":"킨텍스 제2전시장 10홀","eventState":"scheduled"},{"id":"20260912-the-fan-daegu","date":"2026-09-12","addedAt":"2026-09-06","title":"2026 씨야 20주년 전국 투어 콘서트 : THE FAN · DAEGU","program":"THE FAN","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"YES24","url":"https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17981&order=1&type=1"},"status":"available","tags":["공연","전국투어","THE FAN","20주년","대구","예정"],"note":"2026년 9월 12일 오후 6시 예정.","venue":"대구 엑스코 5층 컨벤션홀","eventState":"scheduled"},{"id":"20260906-gyuri-our-love-single","date":"2026-09-06","addedAt":"2026-09-06","title":"우리 사랑 그런 거 해요","program":"남규리 Solo Single","type":"official","members":["남규리"],"songs":["우리 사랑 그런 거 해요 Part.1","우리 사랑 그런 거 해요 Part.2 (feat. KoN)"],"album":"우리 사랑 그런 거 해요","thumbnail":"images/home/nam-gyuri-our-love-part1-part2.png","source":{"label":"Melon","platform":"melon","url":"https://www.melon.com/album/detail.htm?albumId=14521264"},"status":"available","tags":["남규리","솔로","싱글","Part.1","Part.2"],"note":"남규리 솔로 싱글. Part.1과 Part.2 두 곡이 모두 타이틀곡으로 수록.","releaseType":"싱글","genre":"발라드","agency":"㈜탱글미디어","trackCount":2,"titleTracks":["우리 사랑 그런 거 해요 Part.1","우리 사랑 그런 거 해요 Part.2 (feat. KoN)"]},{"id":"20260906-gyuri-our-love-part2-mv","date":"2026-09-06","addedAt":"2026-09-06","title":"우리 사랑 그런 거 해요 Part.2 (feat. KoN) · Official MV","program":"남규리 Official","type":"official","members":["남규리"],"songs":["우리 사랑 그런 거 해요 Part.2 (feat. KoN)"],"album":"우리 사랑 그런 거 해요","thumbnail":"https://img.youtube.com/vi/DFBk5oSn72Y/maxresdefault.jpg","source":{"label":"YouTube","platform":"youtube","url":"https://www.youtube.com/watch?v=DFBk5oSn72Y"},"status":"available","tags":["남규리","솔로","뮤직비디오","Part.2","KoN"],"note":"‘우리 사랑 그런 거 해요 Part.2 (feat. KoN)’ 공식 뮤직비디오."},{"id":"20260906-gyuri-our-love-part1-mv","date":"2026-09-06","addedAt":"2026-09-06","title":"우리 사랑 그런 거 해요 Part.1 · Official MV","program":"남규리 Official","type":"official","members":["남규리"],"songs":["우리 사랑 그런 거 해요 Part.1"],"album":"우리 사랑 그런 거 해요","thumbnail":"https://img.youtube.com/vi/06MOxzzMPvI/maxresdefault.jpg","source":{"label":"YouTube","platform":"youtube","url":"https://www.youtube.com/watch?v=06MOxzzMPvI"},"status":"available","tags":["남규리","솔로","뮤직비디오","Part.1"],"note":"‘우리 사랑 그런 거 해요 Part.1’ 공식 뮤직비디오."},{"id":"20260905-the-fan-busan","date":"2026-09-05","addedAt":"2026-09-06","title":"2026 씨야 20주년 전국 투어 콘서트 : THE FAN · BUSAN","program":"THE FAN","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"YES24","url":"https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"},"status":"available","tags":["공연","전국투어","THE FAN","20주년","부산"],"note":"THE FAN 부산 공연.","venue":"부산 KBS홀","eventState":"completed"},{"id":"20260829-yeonji-song","date":"2026-08-29","addedAt":"2026-08-30","title":"노래","program":"김연지 Solo Single","type":"official","members":["김연지"],"songs":["노래"],"album":"노래","thumbnail":"https://image.bugsm.co.kr/album/images/200/41542/4154269.jpg?version=20260829180007","source":{"platform":"melon","url":"https://www.melon.com/album/detail.htm?albumId=14493829"},"status":"available","tags":["김연지","솔로","싱글"],"note":"김연지 솔로 싱글."},{"id":"20260829-the-fan-seoul","date":"2026-08-29","addedAt":"2026-09-06","title":"2026 씨야 20주년 전국 투어 콘서트 : THE FAN · SEOUL","program":"THE FAN","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"YES24","url":"https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17950&order=1"},"status":"available","tags":["공연","전국투어","THE FAN","20주년","서울"],"note":"THE FAN 전국투어의 시작. 서울 공연은 8월 29~30일 이틀간 진행.","venue":"경희대학교 평화의 전당","eventState":"completed"},{"id":"20260827-kwda-listener-choice","date":"2026-08-27","addedAt":"2026-09-08","title":"2026 K-WORLD DREAM AWARDS · 리스너 초이스상","program":"2026 K-WORLD DREAM AWARDS","type":"milestone","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"매일경제","url":"https://www.mk.co.kr/news/entertain/12138344"},"status":"available","tags":["주요 기록","수상","KWDA","리스너 초이스상","20주년"],"note":"15년 만의 완전체 활동 재개 이후 2026 케이 월드 드림 어워즈에서 K 월드 드림 리스너 초이스상을 수상.","venue":"경기 고양시 킨텍스","awardName":"2026 K-WORLD DREAM AWARDS","awardCategory":"K 월드 드림 리스너 초이스상"},{"id":"20260802-boram-light-opposite","date":"2026-08-02","addedAt":"2026-08-31","title":"빛의 반대편에서","program":"이보람 Solo Single","type":"official","members":["이보람"],"songs":["빛의 반대편에서"],"album":"빛의 반대편에서","thumbnail":"https://image.bugsm.co.kr/album/images/200/41527/4152707.jpg?version=20260805010017","source":{"platform":"melon","url":"https://www.melon.com/album/detail.htm?albumId=14335999"},"status":"available","tags":["이보람","솔로","싱글"],"note":"이보람 솔로 싱글."},{"id":"20260630-ena-kpopup-stay","date":"2026-06-30","addedAt":"2026-09-06","title":"‘Stay’ 스테이지","program":"ENA 케이팝업 차트쇼 · 에피소드 21","type":"music-show","members":["남규리","김연지","이보람"],"songs":["Stay"],"album":"First, Again","thumbnail":"","source":{"label":"Apple TV · ENA","url":"https://tv.apple.com/kr/episode/%E1%84%8B%E1%85%A6%E1%84%91%E1%85%B5%E1%84%89%E1%85%A9%E1%84%83%E1%85%B3-21/umc.cmc.320d9jurodo8msr1f8mmh6x4x?showId=umc.cmc.6iqjeapp4qyjv6cxdnse83jgs"},"status":"available","tags":["음악방송","케이팝업 차트쇼","ENA","Stay"],"note":"ENA 케이팝업 차트쇼에서 선보인 ‘Stay’ 스테이지.","stageKind":"음악방송"},{"id":"20260627-mbc-musiccore-stay","date":"2026-06-27","addedAt":"2026-09-06","title":"‘Stay’ 무대","program":"MBC 쇼! 음악중심 · 952회","type":"music-show","members":["남규리","김연지","이보람"],"songs":["Stay"],"album":"First, Again","thumbnail":"https://img.youtube.com/vi/XZOKi5OMtAs/maxresdefault.jpg","source":{"label":"MBCkpop","url":"https://www.youtube.com/watch?v=XZOKi5OMtAs"},"status":"available","tags":["음악방송","쇼! 음악중심","MBC","Stay","완전체"],"note":"정규 4집 ‘First, Again’ 활동기의 쇼! 음악중심 무대.","stageKind":"음악방송"},{"id":"20260626-arirang-simply-kpop-stay","date":"2026-06-26","addedAt":"2026-09-06","title":"‘Stay’ 무대","program":"Simply K-Pop · EP.12","type":"music-show","members":["남규리","김연지","이보람"],"songs":["Stay"],"album":"First, Again","thumbnail":"https://img.youtube.com/vi/-hPFuX3DYqI/maxresdefault.jpg","source":{"label":"ARIRANG K-POP","url":"https://www.youtube.com/watch?v=-hPFuX3DYqI"},"status":"available","tags":["음악방송","Simply K-Pop","Arirang","Stay"],"note":"Simply K-Pop EP.12의 ‘Stay’ 무대.","stageKind":"음악방송"},{"id":"20260621-sbs-inkigayo-stay","date":"2026-06-21","addedAt":"2026-09-06","title":"‘Stay’ 무대","program":"SBS 인기가요 · 1315회","type":"music-show","members":["남규리","김연지","이보람"],"songs":["Stay"],"album":"First, Again","thumbnail":"https://img.youtube.com/vi/Tm2OdWE8KBc/maxresdefault.jpg","source":{"label":"SBSKPOP X INKIGAYO","url":"https://www.youtube.com/watch?v=Tm2OdWE8KBc"},"status":"available","tags":["음악방송","인기가요","SBS","Stay","완전체"],"note":"15년 만에 완전체로 돌아온 씨야의 ‘Stay’ 인기가요 무대.","stageKind":"음악방송"},{"id":"20260619-arirang-simply-kpop-stay","date":"2026-06-19","addedAt":"2026-09-06","title":"‘Stay’ 무대","program":"Simply K-Pop · EP.11","type":"music-show","members":["남규리","김연지","이보람"],"songs":["Stay"],"album":"First, Again","thumbnail":"https://img.youtube.com/vi/_FXstRqU4Qo/maxresdefault.jpg","source":{"label":"Koreanet","url":"https://www.youtube.com/watch?v=_FXstRqU4Qo"},"status":"available","tags":["음악방송","Simply K-Pop","Arirang","Stay"],"note":"Simply K-Pop EP.11에서 선보인 ‘Stay’ 무대.","stageKind":"음악방송"},{"id":"20260618-mnet-mcountdown-stay","date":"2026-06-18","addedAt":"2026-09-06","title":"‘Stay’ 음악방송 컴백 무대","program":"Mnet M Countdown · EP.933","type":"music-show","members":["남규리","김연지","이보람"],"songs":["Stay"],"album":"First, Again","thumbnail":"","source":{"label":"Mnet Plus","url":"https://www.mnetplus.world/media/ko/videos/6a33c48ea9add261a6add9bf"},"status":"available","tags":["음악방송","엠카운트다운","Mnet","Stay","컴백","15년 만의 음악방송"],"note":"정규 4집 활동의 음악방송 컴백 무대. 2011년 고별 활동 이후 약 15년 만의 음악 순위 프로그램 출연.","stageKind":"음악방송"},{"id":"20260607-kbs-openconcert","date":"2026-06-07","addedAt":"2026-09-06","title":"열린음악회 · 씨야 라이브","program":"KBS 1TV 열린음악회","type":"music-show","members":["남규리","김연지","이보람"],"songs":["그럼에도, 우린","미친 사랑의 노래","사랑의 인사"],"album":"First, Again","thumbnail":"https://img.youtube.com/vi/TUVREvz3ejc/maxresdefault.jpg","source":{"label":"KBS Kpop","url":"https://www.youtube.com/watch?v=TUVREvz3ejc"},"status":"available","tags":["라이브","열린음악회","KBS","그럼에도 우린","미친 사랑의 노래","사랑의 인사"],"note":"‘그럼에도, 우린’, ‘미친 사랑의 노래’, ‘사랑의 인사’ 세 곡을 선보인 열린음악회 무대.","stageKind":"라이브 음악프로그램"},{"id":"20260529-kbs-the-seasons-stay","date":"2026-05-29","addedAt":"2026-09-06","title":"‘Stay’ · ‘사랑의 인사’ 라이브","program":"KBS 2TV 더 시즌즈 - 성시경의 고막남친","type":"music-show","members":["남규리","김연지","이보람"],"songs":["Stay","사랑의 인사"],"album":"First, Again","thumbnail":"https://img.youtube.com/vi/8t-o9zRZGx8/maxresdefault.jpg","source":{"label":"KBS Kpop","url":"https://www.youtube.com/watch?v=8t-o9zRZGx8"},"status":"available","tags":["라이브","더 시즌즈","KBS","Stay","사랑의 인사","완전체"],"note":"재결합 후 KBS 음악 토크쇼 출연. 신곡 ‘Stay’와 대표곡 ‘사랑의 인사’를 선보였다.","stageKind":"라이브 음악프로그램"},{"id":"20260514-first-again","date":"2026-05-14","addedAt":"2026-09-06","title":"First, Again 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["Stay","계절은 돌고 돌아","봄처럼 그댄","I Believe","그럼에도, 우린","안돼요","잔향","끝내 꺾이지 않는 것","우리 Live Ver.","Stay Inst.","그럼에도, 우린 Inst. (To My Fan)"],"album":"First, Again","thumbnail":"https://image.bugsm.co.kr/album/images/500/41474/4147431.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/4147431"},"status":"available","tags":["앨범","정규 4집","20주년","재결합","정규"],"note":"데뷔 20주년 기념 정규 앨범.","releaseType":"정규","genre":"발라드, 댄스/팝","style":"발라드, 댄스 팝","distributor":"카카오엔터테인먼트","agency":"㈜씨야 엔터테인먼트","duration":"","trackCount":11,"collaborators":[],"titleTracks":["Stay","봄처럼 그댄"]},{"id":"20260330-rebloom-fanmeeting","date":"2026-03-30","addedAt":"2026-09-06","title":"씨야 재결합 기념 첫 팬미팅 · RE:BLOOM","program":"RE:BLOOM","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"이데일리","url":"https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02197606645388568"},"status":"available","tags":["공연","팬미팅","RE:BLOOM","재결합","서울"],"note":"재결합 후 첫 공식 팬미팅. 티켓은 예매 시작 직후 매진됐다.","venue":"서울 종로구 이들스(EDLS)","eventState":"completed"},{"id":"20260330-nevertheless-we","date":"2026-03-30","addedAt":"2026-09-06","title":"그럼에도, 우린 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["그럼에도, 우린","그럼에도, 우린 (Inst.)"],"album":"그럼에도, 우린","thumbnail":"https://www.bntnews.co.kr/data/bnt/image/2026/03/30/bnt202603300083.jpeg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/4144173"},"status":"available","tags":["앨범","싱글","재결합","선공개","싱글"],"note":"","releaseType":"싱글","genre":"발라드","style":"발라드","distributor":"카카오엔터테인먼트","agency":"㈜씨야엔터테인먼트","duration":"","trackCount":2,"collaborators":[],"titleTracks":["그럼에도, 우린"]},{"id":"20260312-reunion-announced","date":"2026-03-12","addedAt":"2026-09-06","title":"데뷔 20주년 · 15년 만의 완전체 재결합 공식 발표","program":"SEEYA 20TH ANNIVERSARY","type":"milestone","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"연합뉴스","url":"https://www.yna.co.kr/view/AKR20260312055800005"},"status":"available","tags":["주요 기록","재결합","20주년","완전체","새로운 시작"],"note":"선공개곡·팬미팅·5월 정규앨범 계획과 함께 완전체 활동 재개를 공식 발표. 단체 활동을 위한 프로젝트 법인 ‘씨야’ 설립도 알려졌다.","venue":"","awardName":"","awardCategory":""},{"id":"20201125-reunion-project-cancelled","date":"2020-11-25","addedAt":"2026-09-06","title":"2020 재결합 프로젝트 무산 발표","program":"REUNION PROJECT","type":"milestone","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"연합뉴스","url":"https://www.yna.co.kr/view/AKR20201125110600005"},"status":"available","tags":["주요 기록","재결합","무산","2020"],"note":"‘슈가맨3’ 이후 추진되던 프로젝트 앨범 재결합이 각 소속사의 활동 합의 불발로 중단됐다고 발표됐다.","venue":"","awardName":"","awardCategory":""},{"id":"20200221-sugarman3-reunion","date":"2020-02-21","addedAt":"2026-09-06","title":"JTBC ‘슈가맨3’ 원년 3인 완전체 무대","program":"JTBC 투유 프로젝트 - 슈가맨3","type":"milestone","members":["남규리","김연지","이보람"],"songs":["사랑의 인사","여인의 향기","구두"],"album":"","thumbnail":"","source":{"label":"JTBC","url":"https://tv.jtbc.co.kr/clip/pr10011122/pm10055652/vo10354827/view"},"status":"available","tags":["주요 기록","완전체","슈가맨3","재회","2020"],"note":"오랜 공백 뒤 남규리·김연지·이보람이 완전체로 다시 한 무대에 섰다.","venue":"","awardName":"","awardCategory":""},{"id":"20110801-ghastly-ost","date":"2011-08-01","addedAt":"2026-09-06","title":"기생령 발매","program":"DISCOGRAPHY","type":"album","members":["이보람"],"songs":["끝까지"],"album":"기생령","thumbnail":"https://image.bugsm.co.kr/album/images/500/2951/295147.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/295147"},"status":"available","tags":["앨범","OST","영화","참여","OST"],"note":"이보람과 티아라 소연이 ‘끝까지’에 참여.","releaseType":"OST","genre":"OST","style":"영화","distributor":"주식회사 플랜비뮤직","agency":"코어콘텐츠미디어","duration":"","trackCount":21,"collaborators":["티아라 소연"],"titleTracks":["끝까지"]},{"id":"20110130-sbs-inkigayo-goodbye","date":"2011-01-30","addedAt":"2026-09-06","title":"씨야 마지막 Goodbye Stage","program":"SBS 인기가요 · 606회","type":"music-show","members":["남규리","김연지","이보람"],"songs":["The Last","내겐 너무 멋진 그대"],"album":"See You Again","thumbnail":"","source":{"label":"SBS","url":"https://programs.sbs.co.kr/programTemplate/amp/clip/pc/22000006680"},"status":"available","tags":["음악방송","인기가요","SBS","마지막 무대","고별무대","원년멤버"],"note":"SBS 인기가요의 Goodbye Special. 원년 멤버 세 사람의 공식 마지막 음악방송 무대.","stageKind":"고별무대"},{"id":"20110130-inkigayo-last-stage","date":"2011-01-30","addedAt":"2026-09-06","title":"SBS 인기가요 고별 무대 · 공식 활동 종료","program":"SBS 인기가요","type":"milestone","members":["남규리","김연지","이보람"],"songs":["The Last","내겐 너무 멋진 그대"],"album":"","thumbnail":"","source":{"label":"이데일리","url":"https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01525206596122968"},"status":"available","tags":["주요 기록","고별무대","해체","인기가요","See You Again"],"note":"남규리·김연지·이보람 원년 멤버가 함께한 고별 무대. ‘The Last’와 ‘내겐 너무 멋진 그대’를 선보였다.","venue":"","awardName":"","awardCategory":""},{"id":"20110129-mbc-musiccore-goodbye","date":"2011-01-29","addedAt":"2026-09-06","title":"씨야 Goodbye Stage","program":"MBC 쇼! 음악중심 · 244회","type":"music-show","members":["남규리","김연지","이보람"],"songs":["The Last","내겐 너무 멋진 그대"],"album":"See You Again","thumbnail":"https://img.youtube.com/vi/4gpfFganjz4/maxresdefault.jpg","source":{"label":"MBCkpop","url":"https://www.youtube.com/watch?v=4gpfFganjz4"},"status":"available","tags":["음악방송","쇼! 음악중심","MBC","고별무대","See You Again","원년멤버"],"note":"쇼! 음악중심에서 진행된 고별 무대. 공식 MBC 영상은 ‘The Last’ 무대로 연결합니다.","stageKind":"고별무대"},{"id":"20110128-kbs-musicbank-goodbye","date":"2011-01-28","addedAt":"2026-09-06","title":"씨야 Goodbye Stage","program":"KBS 2TV 뮤직뱅크","type":"music-show","members":["남규리","김연지","이보람"],"songs":["The Last","내겐 너무 멋진 그대"],"album":"See You Again","thumbnail":"","source":{"label":"이데일리","url":"https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01518646596122312"},"status":"available","tags":["음악방송","뮤직뱅크","KBS","고별무대","See You Again","원년멤버"],"note":"마지막 활동 주간에 원년 멤버 세 사람이 함께한 뮤직뱅크 고별 무대.","stageKind":"고별무대"},{"id":"20110127-mnet-mcountdown-goodbye","date":"2011-01-27","addedAt":"2026-09-06","title":"씨야 Goodbye Stage · 첫 무대","program":"Mnet M Countdown","type":"music-show","members":["남규리","김연지","이보람"],"songs":["The Last","내겐 너무 멋진 그대"],"album":"See You Again","thumbnail":"","source":{"label":"스타뉴스 · 네이트","url":"https://news.nate.com/view/20110127n25183"},"status":"available","tags":["음악방송","엠카운트다운","고별무대","See You Again","원년멤버"],"note":"원년 멤버 세 사람이 함께 시작한 마지막 음악방송 주간의 첫 고별 무대.","stageKind":"고별무대"},{"id":"20110121-see-you-again","date":"2011-01-21","addedAt":"2026-09-06","title":"See You Again 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["내겐 너무 멋진 그대","The Last","여인의 향기","구두","사랑의 인사","결혼할까요","사랑이 간다","슬픈 발걸음 (구두 Ⅱ)","그래도 좋아","미워요","미친 사랑의 노래","가니 (feat. 김용준 Of SG워너비, 황정음, Mario)","사모곡","그 놈 목소리","눈물의 여왕"],"album":"See You Again","thumbnail":"https://i.scdn.co/image/ab67616d0000b273190e0c6930ae2521e1c0688a","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/259909"},"status":"available","tags":["앨범","베스트","마지막 앨범","베스트"],"note":"","releaseType":"베스트","genre":"발라드, 댄스/팝, 알앤비/소울","style":"발라드, 댄스 팝, 알앤비","distributor":"Various","agency":"코어콘텐츠미디어","duration":"","trackCount":15,"collaborators":[],"titleTracks":["내겐 너무 멋진 그대","The Last"]},{"id":"20101214-disband-announced","date":"2010-12-14","addedAt":"2026-09-06","title":"씨야 해체 계획 공식 발표","program":"CORE CONTENTS MEDIA","type":"milestone","members":["김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"연합뉴스","url":"https://www.yna.co.kr/view/AKR20101214144100005"},"status":"available","tags":["주요 기록","해체 발표","2010"],"note":"소속사가 굿바이 앨범 발표 후 팀 활동을 마무리하고 각자의 길을 걷기로 했다고 발표.","venue":"","awardName":"","awardCategory":""},{"id":"20101011-seeya-davichi","date":"2010-10-11","addedAt":"2026-09-06","title":"씨야 그리고 다비치 발매","program":"DISCOGRAPHY","type":"album","members":["김연지","이보람"],"songs":["다 컸잖아"],"album":"씨야 그리고 다비치","thumbnail":"https://image.bugsm.co.kr/album/images/500/2412/241289.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/241289"},"status":"available","tags":["앨범","싱글","콜라보","싱글"],"note":"","releaseType":"싱글","genre":"발라드","style":"발라드","distributor":"Beyond Music","agency":"Beyond Music","duration":"","trackCount":1,"collaborators":["다비치"],"titleTracks":["다 컸잖아"]},{"id":"20101008-twentieth-urban","date":"2010-10-08","addedAt":"2026-09-06","title":"TWENTYth Urban 발매","program":"DISCOGRAPHY","type":"album","members":["김연지","이보람"],"songs":["이별이 오지 못하게"],"album":"TWENTYth Urban","thumbnail":"https://image.bugsm.co.kr/album/images/500/2407/240729.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/240729"},"status":"available","tags":["앨범","싱글","프로젝트","싱글"],"note":"","releaseType":"싱글","genre":"발라드","style":"발라드","distributor":"NHN벅스","agency":"노트뮤직","duration":"","trackCount":2,"collaborators":[],"titleTracks":[]},{"id":"20100928-superstar-k2","date":"2010-09-28","addedAt":"2026-09-06","title":"슈퍼스타 K 2 발매","program":"DISCOGRAPHY","type":"album","members":["김연지","이보람"],"songs":[],"album":"슈퍼스타 K 2","thumbnail":"https://image.bugsm.co.kr/album/images/500/2394/239472.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/239472"},"status":"available","tags":["앨범","컴필레이션","참여","컴필레이션"],"note":"Various Artists 컴필레이션 참여 기록.","releaseType":"컴필레이션","genre":"발라드, 댄스/팝","style":"발라드, 댄스 팝, 팝","distributor":"지니뮤직","agency":"Stone Music Entertainment","duration":"","trackCount":24,"collaborators":[],"titleTracks":[]},{"id":"20100906-baby-brown","date":"2010-09-06","addedAt":"2026-09-06","title":"안영민 Baby Brown 발매","program":"DISCOGRAPHY","type":"album","members":["김연지","이보람"],"songs":["미쳤나봐"],"album":"안영민 Baby Brown","thumbnail":"https://image.bugsm.co.kr/album/images/500/2366/236654.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/236654"},"status":"available","tags":["앨범","싱글","프로젝트","싱글"],"note":"","releaseType":"싱글","genre":"발라드","style":"발라드","distributor":"지니뮤직, STONE MUSIC","agency":"넥스타엔터테인먼트","duration":"","trackCount":null,"collaborators":[],"titleTracks":[]},{"id":"20100421-personal-taste-ost","date":"2010-04-21","addedAt":"2026-09-06","title":"개인의 취향 (MBC 수목드라마) 발매","program":"DISCOGRAPHY","type":"album","members":["김연지","이보람"],"songs":["가슴이 뭉클"],"album":"개인의 취향 (MBC 수목드라마)","thumbnail":"https://image.bugsm.co.kr/album/images/500/2212/221210.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/221210"},"status":"available","tags":["앨범","OST","드라마","정식 OST","OST"],"note":"정식 OST 앨범에 씨야 참여곡 수록.","releaseType":"OST","genre":"","style":"","distributor":"","agency":"","duration":"","trackCount":null,"collaborators":[],"titleTracks":["가슴이 뭉클"]},{"id":"20100407-personal-taste-part2","date":"2010-04-07","addedAt":"2026-09-06","title":"개인의 취향 (MBC 수목드라마) - Part.2 발매","program":"DISCOGRAPHY","type":"album","members":["김연지","이보람"],"songs":["가슴이 뭉클"],"album":"개인의 취향 (MBC 수목드라마) - Part.2","thumbnail":"https://image.bugsm.co.kr/album/images/500/2204/220428.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/220428"},"status":"available","tags":["앨범","OST","드라마","OST"],"note":"","releaseType":"OST","genre":"OST","style":"TV 드라마","distributor":"뮤직앤뉴","agency":"(주)뮤직카우, 이김프로덕션","duration":"","trackCount":1,"collaborators":[],"titleTracks":["가슴이 뭉클"]},{"id":"20100130-mbc-musiccore-wonder-woman","date":"2010-01-30","addedAt":"2026-09-06","title":"‘원더우먼’ 컬래버레이션 무대","program":"MBC 쇼! 음악중심 · 198회","type":"music-show","members":["김연지","이보람"],"songs":["원더우먼"],"album":"원더우먼","thumbnail":"https://img.youtube.com/vi/r-qF5o8CoBQ/maxresdefault.jpg","source":{"label":"MBCkpop","url":"https://www.youtube.com/watch?v=r-qF5o8CoBQ"},"status":"available","tags":["음악방송","쇼! 음악중심","MBC","원더우먼","컬래버레이션","다비치","티아라"],"note":"씨야·다비치·티아라가 함께한 프로젝트 싱글 ‘원더우먼’ 무대.","stageKind":"컬래버레이션"},{"id":"20100107-wonder-woman","date":"2010-01-07","addedAt":"2026-09-06","title":"원더우먼 발매","program":"DISCOGRAPHY","type":"album","members":["김연지","이보람"],"songs":["원더우먼"],"album":"원더우먼","thumbnail":"https://image.bugsm.co.kr/album/images/500/2141/214161.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/214161"},"status":"available","tags":["앨범","싱글","콜라보","싱글"],"note":"","releaseType":"싱글","genre":"댄스/팝","style":"댄스 팝","distributor":"주식회사 플랜비뮤직","agency":"코어콘텐츠미디어","duration":"","trackCount":null,"collaborators":["다비치","티아라"],"titleTracks":["원더우먼"]},{"id":"20091114-mbc-musiccore-his-voice","date":"2009-11-14","addedAt":"2026-09-06","title":"‘그 놈 목소리’ 무대","program":"MBC 쇼! 음악중심 · 188회","type":"music-show","members":["김연지","이보람","이수미"],"songs":["그 놈 목소리"],"album":"Rebloom","thumbnail":"https://img.youtube.com/vi/iXzTNAD2m20/maxresdefault.jpg","source":{"label":"MBCkpop","url":"https://www.youtube.com/watch?v=iXzTNAD2m20"},"status":"available","tags":["음악방송","쇼! 음악중심","MBC","그 놈 목소리","Rebloom"],"note":"수미 합류 후 ‘Rebloom’ 활동기의 대표 음악방송 무대.","stageKind":"음악방송"},{"id":"20091026-rebloom","date":"2009-10-26","addedAt":"2026-09-06","title":"Rebloom 발매","program":"DISCOGRAPHY","type":"album","members":["김연지","이보람"],"songs":["그 놈 목소리","앗차!","눈물의 여왕","바람핀다 믿었니","T-Gana (티가나)"],"album":"Rebloom","thumbnail":"https://image.bugsm.co.kr/album/images/500/2037/203741.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/203741"},"status":"available","tags":["앨범","미니앨범","EP(미니)"],"note":"","releaseType":"EP(미니)","genre":"댄스/팝","style":"댄스 팝","distributor":"주식회사 플랜비뮤직","agency":"코어콘텐츠미디어","duration":"","trackCount":5,"collaborators":[],"titleTracks":["그 놈 목소리"]},{"id":"20090819-sumi-joins","date":"2009-08-19","addedAt":"2026-09-06","title":"새 멤버 수미 공개 · 3인조 재편","program":"MEMBER CHANGE","type":"milestone","members":["김연지","이보람","이수미"],"songs":[],"album":"","thumbnail":"","source":{"label":"스포츠동아","url":"https://sports.donga.com/article/all/20090819/22400981/1"},"status":"available","tags":["주요 기록","멤버 변화","수미","2009"],"note":"코어콘텐츠미디어가 씨야의 새 멤버 수미를 공개하고 김연지·이보람·수미 체제의 활동을 준비했다.","venue":"","awardName":"","awardCategory":""},{"id":"20090606-mbc-musiccore-womens-generation","date":"2009-06-06","addedAt":"2026-09-06","title":"‘여성시대’ 컬래버레이션 무대","program":"MBC 쇼! 음악중심","type":"music-show","members":["김연지","이보람"],"songs":["여성시대"],"album":"여성시대 / 영원한 사랑","thumbnail":"https://img.youtube.com/vi/VPVBPWWOMKI/maxresdefault.jpg","source":{"label":"TV-People · MBC","url":"https://www.youtube.com/watch?v=VPVBPWWOMKI"},"status":"available","tags":["음악방송","쇼! 음악중심","MBC","여성시대","컬래버레이션","다비치","지연"],"note":"씨야·다비치·티아라 지연이 함께한 프로젝트 무대.","stageKind":"컬래버레이션"},{"id":"20090506-womens-generation","date":"2009-05-06","addedAt":"2026-09-06","title":"여성시대 / 영원한 사랑 발매","program":"DISCOGRAPHY","type":"album","members":["김연지","이보람"],"songs":["여성시대","영원한 사랑"],"album":"여성시대 / 영원한 사랑","thumbnail":"https://image.bugsm.co.kr/album/images/500/1834/183422.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/183422"},"status":"available","tags":["앨범","싱글","콜라보","싱글"],"note":"씨야·다비치·티아라 협업 싱글.","releaseType":"싱글","genre":"댄스/팝","style":"댄스 팝","distributor":"오감엔터테인먼트","agency":"","duration":"","trackCount":3,"collaborators":["다비치","티아라"],"titleTracks":["여성시대"]},{"id":"20081004-mbc-musiccore-hot-girl","date":"2008-10-04","addedAt":"2026-09-06","title":"‘Hot Girl’ 무대","program":"MBC 쇼! 음악중심","type":"music-show","members":["남규리","김연지","이보람"],"songs":["Hot Girl"],"album":"Brillant Change","thumbnail":"https://img.youtube.com/vi/28tmGVxRG3s/maxresdefault.jpg","source":{"label":"MBCkpop","url":"https://www.youtube.com/watch?v=28tmGVxRG3s"},"status":"available","tags":["음악방송","쇼! 음악중심","MBC","Hot Girl","3집"],"note":"정규 3집 ‘Brillant Change’의 타이틀곡 ‘Hot Girl’ 활동 무대.","stageKind":"음악방송"},{"id":"20080926-brillant-change","date":"2008-09-26","addedAt":"2026-09-06","title":"Brillant Change 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["가니 (feat. SG워너비 - 김용준, 황정음, Mario)","Hot Girl","Turn It Up","집으로 돌아오는 길 (feat. SG워너비 - 김진호)","내가 울더라도","덩그러니","사모곡","I Wish","남자는 그래요","그 사람 (구두 Ⅲ)","솜사탕","나 없이도","Loving You"],"album":"Brillant Change","thumbnail":"https://coverartarchive.org/release/dc732f97-ca67-4325-b575-54cebd35a969/front-500","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/164383"},"status":"available","tags":["앨범","정규 3집","정규"],"note":"","releaseType":"정규","genre":"발라드, 댄스/팝","style":"발라드, 댄스 팝","distributor":"지니뮤직","agency":"Stone Music Entertainment","duration":"","trackCount":13,"collaborators":[],"titleTracks":["Hot Girl"]},{"id":"20080529-color-pink","date":"2008-05-29","addedAt":"2026-09-06","title":"Color Pink - Musiccube Artist Album #1 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["Blue Moon"],"album":"Color Pink - Musiccube Artist Album #1","thumbnail":"https://image.bugsm.co.kr/album/images/500/1557/155708.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/155708"},"status":"available","tags":["앨범","싱글","콜라보","싱글"],"note":"","releaseType":"싱글","genre":"댄스/팝","style":"댄스 팝","distributor":"킹핀엔터테인먼트","agency":"","duration":"","trackCount":null,"collaborators":["다비치","블랙펄"],"titleTracks":["Blue Moon"]},{"id":"20080320-fool-allstar","date":"2008-03-20","addedAt":"2026-09-06","title":"바보 (All Star 2집 Vol.4) 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["바보"],"album":"바보 (All Star 2집 Vol.4)","thumbnail":"https://image.bugsm.co.kr/album/images/500/1512/151202.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/151202"},"status":"available","tags":["앨범","싱글","All Star","싱글"],"note":"","releaseType":"싱글","genre":"댄스/팝","style":"댄스 팝","distributor":"카카오엔터테인먼트","agency":"도토리뮤직","duration":"","trackCount":4,"collaborators":["이지혜"],"titleTracks":["바보"]},{"id":"20080313-fate-ost","date":"2008-03-13","addedAt":"2026-09-06","title":"숙명 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["시차 (With 다비치, 블랙펄)"],"album":"숙명","thumbnail":"https://image.bugsm.co.kr/album/images/500/1018/101865.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/101865"},"status":"available","tags":["앨범","OST","영화","OST"],"note":"영화 《숙명》 OST 참여 음반.","releaseType":"OST","genre":"","style":"","distributor":"","agency":"","duration":"","trackCount":null,"collaborators":[],"titleTracks":[]},{"id":"20080131-seoul-music-awards-bonsang","date":"2008-01-31","addedAt":"2026-09-06","title":"제17회 하이원 서울가요대상 본상","program":"서울가요대상","type":"milestone","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"한국경제","url":"https://www.hankyung.com/article/2008013113707"},"status":"available","tags":["주요 기록","수상","본상","서울가요대상"],"note":"‘사랑의 인사’, ‘슬픈 발걸음’ 활동으로 본상 수상.","venue":"강원랜드 하이원호텔 컨퍼런스홀","awardName":"제17회 하이원 서울가요대상","awardCategory":"본상"},{"id":"20080120-inkigayo-sad-footsteps-win","date":"2008-01-20","addedAt":"2026-09-06","title":"‘슬픈 발걸음’ SBS 인기가요 뮤티즌송","program":"SBS 인기가요","type":"milestone","members":["남규리","김연지","이보람"],"songs":["슬픈 발걸음"],"album":"","thumbnail":"","source":{"label":"조선일보","url":"https://www.chosun.com/site/data/html_dir/2008/01/20/2008012000590.html"},"status":"available","tags":["주요 기록","수상","음악방송 1위","슬픈 발걸음","뮤티즌송"],"note":"","venue":"","awardName":"SBS 인기가요","awardCategory":"뮤티즌송"},{"id":"20080102-california-dream","date":"2008-01-02","addedAt":"2026-09-06","title":"California Dream 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["슬픈 발걸음","그래도 좋아","Classic","연가","미워요","요즘 나는","깊은 밤을 날아서","처음 그 자리에","미친 사랑의 노래","The Day","정"],"album":"California Dream","thumbnail":"https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/055/420/850/55420850_1405324372412_1_600x600.JPG","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/100005"},"status":"available","tags":["앨범","정규 2.5집","정규"],"note":"","releaseType":"정규","genre":"발라드","style":"발라드","distributor":"Various","agency":"STONE MUSIC","duration":"","trackCount":11,"collaborators":[],"titleTracks":["슬픈 발걸음","그래도 좋아"]},{"id":"20071222-mbc-musiccore-sad-step","date":"2007-12-22","addedAt":"2026-09-06","title":"‘슬픈 발걸음’ 무대","program":"MBC 쇼! 음악중심 · 101회","type":"music-show","members":["남규리","김연지","이보람"],"songs":["슬픈 발걸음 (구두 II)"],"album":"슬픈 발걸음 (구두 II)","thumbnail":"https://img.youtube.com/vi/YiH5BQKgIsI/maxresdefault.jpg","source":{"label":"MBCkpop","url":"https://www.youtube.com/watch?v=YiH5BQKgIsI"},"status":"available","tags":["음악방송","쇼! 음악중심","MBC","슬픈 발걸음"],"note":"‘슬픈 발걸음 (구두 II)’ 활동기의 쇼! 음악중심 무대.","stageKind":"음악방송"},{"id":"20071220-sad-footsteps","date":"2007-12-20","addedAt":"2026-09-06","title":"슬픈 발걸음 (구두 II) 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["슬픈 발걸음 (구두 II)"],"album":"슬픈 발걸음 (구두 II)","thumbnail":"https://image.bugsm.co.kr/album/images/500/80325/8032567.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/8032567"},"status":"available","tags":["앨범","싱글","구두 시리즈","싱글"],"note":"","releaseType":"싱글","genre":"발라드","style":"발라드","distributor":"지니뮤직","agency":"Stone Music Entertainment","duration":"","trackCount":1,"collaborators":[],"titleTracks":["슬픈 발걸음 (구두 II)"]},{"id":"20071215-first-concert-busan","date":"2007-12-15","addedAt":"2026-09-06","title":"씨야 1st Concert – 女神 · BUSAN","program":"SEEYA 1ST CONCERT – 女神","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"동아일보","url":"https://www.donga.com/news/article/all/20071025/8504322/9"},"status":"available","tags":["공연","단독콘서트","첫 단독콘서트","부산"],"note":"첫 단독 콘서트 3개 도시 투어의 부산 공연.","venue":"부산 KBS홀","eventState":"completed"},{"id":"20071214-golden-disc-digital-bonsang","date":"2007-12-14","addedAt":"2026-09-06","title":"제22회 골든디스크 디지털 음원 본상","program":"골든디스크","type":"milestone","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"OSEN","url":"https://www.osen.co.kr/article/G0712140129"},"status":"available","tags":["주요 기록","수상","골든디스크","디지털 음원 본상"],"note":"원더걸스·아이비와 함께 디지털 음원 본상 수상.","venue":"","awardName":"제22회 골든디스크상","awardCategory":"디지털 음원 본상"},{"id":"20071208-first-concert-daegu","date":"2007-12-08","addedAt":"2026-09-06","title":"씨야 1st Concert – 女神 · DAEGU","program":"SEEYA 1ST CONCERT – 女神","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"동아일보","url":"https://www.donga.com/news/article/all/20071025/8504322/9"},"status":"available","tags":["공연","단독콘서트","첫 단독콘서트","대구"],"note":"첫 단독 콘서트 3개 도시 투어의 대구 공연.","venue":"대구 시민회관 대극장","eventState":"completed"},{"id":"20071123-first-concert-seoul","date":"2007-11-23","addedAt":"2026-09-06","title":"씨야 1st Concert – 女神 · SEOUL","program":"SEEYA 1ST CONCERT – 女神","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"동아일보","url":"https://www.donga.com/news/article/all/20071025/8504322/9"},"status":"available","tags":["공연","단독콘서트","첫 단독콘서트","서울"],"note":"씨야 데뷔 후 첫 단독 콘서트. 서울 공연은 11월 23~25일 일정으로 소개됐다.","venue":"서울 멜론 악스홀","eventState":"completed"},{"id":"20071117-mkmf-female-group","date":"2007-11-17","addedAt":"2026-09-06","title":"2007 MKMF 여자그룹상","program":"Mnet KM Music Festival","type":"milestone","members":["남규리","김연지","이보람"],"songs":["사랑의 인사"],"album":"","thumbnail":"","source":{"label":"스타뉴스","url":"https://www.starnewskorea.com/music/2007/11/17/2007111721271013098"},"status":"available","tags":["주요 기록","수상","MKMF","여자그룹상","사랑의 인사"],"note":"‘사랑의 인사’로 2007 MKMF 여자그룹상 수상.","venue":"서울 잠실 실내체육관","awardName":"2007 Mnet KM Music Festival","awardCategory":"여자그룹상"},{"id":"20071115-koongya-ost","date":"2007-11-15","addedAt":"2026-09-06","title":"쿵야 어드벤처 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["용기를 주세요","용기를 주세요 (inst.)"],"album":"쿵야 어드벤처","thumbnail":"https://image.bugsm.co.kr/album/images/500/80316/8031630.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/8031630"},"status":"available","tags":["앨범","OST","애니메이션","OST"],"note":"","releaseType":"OST","genre":"OST","style":"OST","distributor":"지니뮤직","agency":"","duration":"","trackCount":2,"collaborators":[],"titleTracks":["용기를 주세요"]},{"id":"20070811-cj-korea-big4-lasvegas","date":"2007-08-11","addedAt":"2026-09-06","title":"CJ Korea Big4 Concert · LAS VEGAS","program":"CJ KOREA BIG4","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"스포츠경향","url":"https://sports.khan.co.kr/article/200707192145153"},"status":"available","tags":["공연","해외공연","BIG4","라스베이거스"],"note":"뉴욕 공연에 이어 진행된 미국 BIG4 공연.","venue":"미국 라스베이거스 시저스 팰리스 더 콜로세움","eventState":"completed"},{"id":"20070804-cj-korea-big4-newyork","date":"2007-08-04","addedAt":"2026-09-06","title":"CJ Korea Big4 Concert · NEW YORK","program":"CJ KOREA BIG4","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"스포츠경향","url":"https://sports.khan.co.kr/article/200707192145153"},"status":"available","tags":["공연","해외공연","BIG4","뉴욕"],"note":"씨야·이효리·SG워너비·에픽하이가 함께한 미국 BIG4 공연.","venue":"미국 뉴욕 맨해튼 센터 해머스타인 볼룸","eventState":"completed"},{"id":"20070722-summer-big4","date":"2007-07-22","addedAt":"2026-09-06","title":"2007 Summer Big4 Concert · Fantastic Star","program":"SUMMER BIG4 CONCERT","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"PlayDB","url":"https://m.playdb.co.kr/Artist/PlayList/1023"},"status":"available","tags":["공연","합동공연","BIG4","서울"],"note":"씨야가 참여한 2007 Summer Big4 콘서트.","venue":"서울 올림픽공원 체조경기장","eventState":"completed"},{"id":"20070721-kbs-7080-love-greeting","date":"2007-07-21","addedAt":"2026-09-06","title":"‘사랑의 인사’ 라이브","program":"KBS 1TV 콘서트7080 · 133회","type":"music-show","members":["남규리","김연지","이보람"],"songs":["사랑의 인사"],"album":"Lovely Sweet Heart","thumbnail":"https://img.youtube.com/vi/8W-nCivQswg/maxresdefault.jpg","source":{"label":"KBS KPOP Classic","url":"https://www.youtube.com/watch?v=8W-nCivQswg"},"status":"available","tags":["라이브","콘서트7080","KBS","사랑의 인사"],"note":"2집 활동기의 ‘사랑의 인사’ 라이브 무대.","stageKind":"라이브 음악프로그램"},{"id":"20070525-lovely-sweet-heart","date":"2007-05-25","addedAt":"2026-09-06","title":"Lovely Sweet Heart 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["사랑의 인사","결혼할까요","너는 내 남자","Dirty Dancing","어떻게 널 잊겠니","사랑아","그 사람이 나를 사랑해요","Summer Dream","사랑이 간다","감동을 주세요","얼음인형","순애보","남"],"album":"Lovely Sweet Heart","thumbnail":"https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/3d/5c/cd/3d5ccd4e-facb-5d08-bb32-0fe1d50ed182/8806163340050_cover.jpg/1200x1200bb.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/8026965"},"status":"available","tags":["앨범","정규 2집","정규"],"note":"","releaseType":"정규","genre":"알앤비/소울","style":"알앤비","distributor":"AURORA with Danal Entertainment","agency":"","duration":"","trackCount":13,"collaborators":[],"titleTracks":["사랑의 인사"]},{"id":"20061229-sbs-gayo-rookie","date":"2006-12-29","addedAt":"2026-09-06","title":"2006 SBS 가요대전 신인상","program":"SBS 가요대전","type":"milestone","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"SBS 뉴스","url":"https://news.sbs.co.kr/news/endPage.do?news_id=N1000202762"},"status":"available","tags":["주요 기록","수상","신인상","SBS 가요대전"],"note":"슈퍼주니어와 함께 2006 SBS 가요대전 신인상 수상.","venue":"일산 킨텍스","awardName":"2006 SBS 가요대전","awardCategory":"신인상"},{"id":"20061223-big4-christmas","date":"2006-12-23","addedAt":"2026-09-06","title":"제2회 빅4 콘서트 · Christmas","program":"BIG4 CONCERT","type":"concert","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"조선일보","url":"https://www.chosun.com/site/data/html_dir/2006/11/28/2006112860592.html"},"status":"available","tags":["공연","합동공연","BIG4","서울"],"note":"SG워너비·휘성·바이브·씨야가 함께한 연말 합동 콘서트. 12월 23~24일 이틀간 개최.","venue":"서울 코엑스 대서양홀","eventState":"completed"},{"id":"20061214-golden-disc-rookie","date":"2006-12-14","addedAt":"2026-09-06","title":"2006 골든디스크상 신인상","program":"골든디스크","type":"milestone","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"스타뉴스","url":"https://www.starnewskorea.com/music/2006/12/14/2006121419431240698"},"status":"available","tags":["주요 기록","수상","신인상","골든디스크"],"note":"가비앤제이·슈퍼주니어와 함께 신인상 수상.","venue":"서울 올림픽공원 올림픽홀","awardName":"2006 골든디스크상","awardCategory":"신인상"},{"id":"20061201-seoul-music-awards-rookie","date":"2006-12-01","addedAt":"2026-09-06","title":"제16회 서울가요대상 신인상","program":"서울가요대상","type":"milestone","members":["남규리","김연지","이보람"],"songs":[],"album":"","thumbnail":"","source":{"label":"OSEN","url":"https://www.osen.co.kr/article/G0612010132"},"status":"available","tags":["주요 기록","수상","신인상","서울가요대상"],"note":"슈퍼주니어·브라운아이드걸스와 함께 신인상 수상.","venue":"일산 킨텍스","awardName":"제16회 서울가요대상","awardCategory":"신인상"},{"id":"20061125-mkmf-best-ost","date":"2006-11-25","addedAt":"2026-09-06","title":"2006 MKMF 최우수 OST상","program":"Mnet KM Music Festival","type":"milestone","members":["남규리","김연지","이보람"],"songs":["미친 사랑의 노래"],"album":"","thumbnail":"","source":{"label":"스타뉴스","url":"https://www.starnewskorea.com/music/2006/11/25/2006112518150646752"},"status":"available","tags":["주요 기록","수상","MKMF","OST","미친 사랑의 노래"],"note":"KBS2 드라마 ‘투명인간 최장수’ 주제곡 ‘미친 사랑의 노래’로 최우수 OST상 수상.","venue":"서울 올림픽공원 체조경기장","awardName":"2006 Mnet KM Music Festival","awardCategory":"최우수 OST상"},{"id":"20060908-to-my-lover","date":"2006-09-08","addedAt":"2026-09-06","title":"To My Lover - 브라운 아이드 걸스 & 씨야 프로젝트 싱글 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":[],"album":"To My Lover - 브라운 아이드 걸스 & 씨야 프로젝트 싱글","thumbnail":"https://image.bugsm.co.kr/album/images/500/80215/8021538.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/8021538"},"status":"available","tags":["앨범","프로젝트","콜라보","싱글"],"note":"브라운 아이드 걸스와 씨야의 프로젝트 싱글.","releaseType":"싱글","genre":"알앤비/소울","style":"알앤비","distributor":"지니뮤직","agency":"Stone Music Entertainment","duration":"","trackCount":null,"collaborators":["브라운 아이드 걸스"],"titleTracks":["The Day"]},{"id":"20060826-kbs-7080-scent-of-a-woman","date":"2006-08-26","addedAt":"2026-09-06","title":"‘여인의 향기’ 라이브","program":"KBS 1TV 콘서트7080 · 87회","type":"music-show","members":["남규리","김연지","이보람"],"songs":["여인의 향기"],"album":"The First Mind","thumbnail":"https://img.youtube.com/vi/nn639JifcBQ/maxresdefault.jpg","source":{"label":"KBS KPOP Classic","url":"https://www.youtube.com/watch?v=nn639JifcBQ"},"status":"available","tags":["라이브","콘서트7080","KBS","여인의 향기"],"note":"KBS 콘서트7080에서 선보인 데뷔 앨범 대표곡 라이브.","stageKind":"라이브 음악프로그램"},{"id":"20060718-invisible-choi-ost","date":"2006-07-18","addedAt":"2026-09-06","title":"투명인간 최장수 (KBS 수목드라마) 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["미친 사랑의 노래"],"album":"투명인간 최장수 (KBS 수목드라마)","thumbnail":"https://image.bugsm.co.kr/album/images/500/80201/8020137.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/8020137"},"status":"available","tags":["앨범","OST","드라마","OST"],"note":"Various Artists OST. 씨야 참여곡 수록.","releaseType":"OST","genre":"OST","style":"TV 드라마","distributor":"Beyond Music","agency":"Beyond Music","duration":"","trackCount":null,"collaborators":[],"titleTracks":["미친 사랑의 노래"]},{"id":"20060423-first-win-inkigayo","date":"2006-04-23","addedAt":"2026-09-06","title":"데뷔 40일 만에 첫 음악방송 1위","program":"SBS 인기가요","type":"milestone","members":["남규리","김연지","이보람"],"songs":["여인의 향기"],"album":"","thumbnail":"","source":{"label":"스포츠경향","url":"https://sports.khan.co.kr/article/200604242153023"},"status":"available","tags":["주요 기록","수상","첫 1위","뮤티즌송","여인의 향기"],"note":"‘여인의 향기’로 SBS 인기가요 뮤티즌송을 수상하며 첫 음악방송 1위를 기록.","venue":"","awardName":"SBS 인기가요","awardCategory":"뮤티즌송"},{"id":"20060312-inkigayo-debut","date":"2006-03-12","addedAt":"2026-09-06","title":"SBS 인기가요 공식 데뷔 무대","program":"SBS 인기가요","type":"milestone","members":["남규리","김연지","이보람"],"songs":["여인의 향기"],"album":"","thumbnail":"","source":{"label":"조이뉴스24·네이트","url":"https://news.nate.com/view/20060312n03037"},"status":"available","tags":["주요 기록","데뷔","첫 무대","인기가요"],"note":"씨야가 대중 앞에 처음 선 공식 방송 데뷔 무대.","venue":"SBS 등촌동 공개홀","awardName":"","awardCategory":""},{"id":"20060224-the-first-mind","date":"2006-02-24","addedAt":"2026-09-06","title":"The First Mind 발매","program":"DISCOGRAPHY","type":"album","members":["남규리","김연지","이보람"],"songs":["여인의 향기","구두","사랑하기 때문에 (feat. SG 워너비)","접시꽃","Promise U","처음부터 또다시","유죄","이별해보기","Tearsandfears","사랑했다면","그냥","내 잘못입니다"],"album":"The First Mind","thumbnail":"https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4f/90/b7/4f90b7bb-17a4-9989-4ec0-f5e5ea8eb807/8806163340067_cover.jpg/1200x1200bf-60.jpg","source":{"label":"Bugs","url":"https://music.bugs.co.kr/album/8016131"},"status":"available","tags":["앨범","정규 1집","데뷔앨범","정규"],"note":"씨야의 데뷔 정규 앨범.","releaseType":"정규","genre":"알앤비/소울","style":"알앤비","distributor":"AURORA with Danal Entertainment","agency":"","duration":"","trackCount":12,"collaborators":[],"titleTracks":["여인의 향기"]}];
+},
+"data/news.json":function(module,exports,__require){
+module.exports={"씨야":[{"title":"42살 남규리, 씨야 위해 눈썹 뚫고 타임머신 승차 - 미디어파인","source":"미디어파인","pubDate":"2026-09-07T05:55:39+00:00","link":"https://news.google.com/rss/articles/CBMibkFVX3lxTE9ValFtQjA0cVRleFFhdmdoNFlHMXkxVFplUC02QUhtZXpTZzJBT1pJam9vUmdId0gxRV9WdkRGQ0Q2WTlWRjJrLW1xVUJLZElDdjBNTFQtbWQ5ZnF2YUp2cjJzQ21INFVweEpqSmhB?oc=5","description":"42살 남규리, 씨야 위해 눈썹 뚫고 타임머신 승차 미디어파인"},{"title":"QWER, 미발매 신곡 2곡 일부 기습 공개…씨야·리센느 미나미 솔직 감상평 - news.nate.com","source":"news.nate.com","pubDate":"2026-09-06T06:11:00+00:00","link":"https://news.google.com/rss/articles/CBMieEFVX3lxTE1UT2VOVG8wQUk3bHI3eEg0aFkwSW5lNkRWejdIejBXRmxQcElWRDh1dzg3ZW5sZjBjRVY2ZlJ3ZTVoekZZSXN6aWVvOGJKbGZfLURkbTlzR3d2UjhQRmJ0WFFwbTlVbW1EYXgyWFIwb1JHT1NGYzVmTQ?oc=5","description":"QWER, 미발매 신곡 2곡 일부 기습 공개…씨야·리센느 미나미 솔직 감상평 news.nate.com"},{"title":"씨야 남규리, 포근한 홈 인테리어 속 여유…20주년 콘서트·광고까지 바쁜 근황 - 톱스타뉴스","source":"톱스타뉴스","pubDate":"2026-09-04T11:38:56+00:00","link":"https://news.google.com/rss/articles/CBMickFVX3lxTE1ZUHBIVnppUlNnR3RHTkxtQVZXVE5uMnhwcGpLck5QWnRheGV0SjNoWXduXzVxT3ctRHJmc0t0U2sxZkdOSS1pd3k5dnB0aWF0NjhUcWo4eWRleWJwQVlqYk9vT2ZxdXV5N1piNXM1cHBrQQ?oc=5","description":"씨야 남규리, 포근한 홈 인테리어 속 여유…20주년 콘서트·광고까지 바쁜 근황 톱스타뉴스"},{"title":"씨야 남규리, 솔로 신보 '우리 사랑 그런 거 해요' 발매 - news.nate.com","source":"news.nate.com","pubDate":"2026-09-04T06:10:00+00:00","link":"https://news.google.com/rss/articles/CBMiU0FVX3lxTE5UMk02VlM1Tk1UcV9yQmJZdGNKWFpYaW4xWkJLMC1FUkxZU19DZDItb29OWjNzTjFKR0FDLWZHSU56Y1RqUDA4SDd1dWM4YkxNZkVZ?oc=5","description":"씨야 남규리, 솔로 신보 '우리 사랑 그런 거 해요' 발매 news.nate.com"},{"title":"남규리, 6일 신곡 발표…씨야부터 솔로까지 '열일' 행보 - news.nate.com","source":"news.nate.com","pubDate":"2026-09-04T03:06:00+00:00","link":"https://news.google.com/rss/articles/CBMiU0FVX3lxTE5MM0JzOXNERlJEeXRjQXpWYU5YUC1BQzI2czJzUEQ4SzJXMGthSEtRczFpbE9aTy1fZl9udExsODM5VGUzN0RZZnRHVDN5azJZUU9Z?oc=5","description":"남규리, 6일 신곡 발표…씨야부터 솔로까지 '열일' 행보 news.nate.com"}],"남규리":[],"김연지":[{"title":"씨야 김연지, 20주년 콘서트 첫 무대 후 꽃다발 인증…부산 공연 예고 - 톱스타뉴스","source":"톱스타뉴스","pubDate":"2026-09-02T11:39:51+00:00","link":"https://news.google.com/rss/articles/CBMickFVX3lxTE9odWNzbFZMVHpCaWxLd1h6Um9Qa2F3WE1EUk9NbzBvYXduendpdG1TdnBwNTMxcDU5T09KdW41b2FoVEpBa2dWdXR4VXBnXzU4S1pENFoxTldyc1YzSlhPTDVjREUyc1VSLUJhMXdYdDlpZw?oc=5","description":"씨야 김연지, 20주년 콘서트 첫 무대 후 꽃다발 인증…부산 공연 예고 톱스타뉴스"},{"title":"[HD포토] 씨야 김연지, ‘기분 좋은 하트’ (2026 KWDA 블루카펫) - 톱스타뉴스","source":"톱스타뉴스","pubDate":"2026-08-30T05:45:00+00:00","link":"https://news.google.com/rss/articles/CBMickFVX3lxTE5WQXlXWTY3N3lJaGp1S2ZVUlVpWG9PY18tSmM4ZGI5VWZxTWFtQm9rdnJfWEpfeWRTOVpMbFpXeEtIdENGN1BWLXlSc0ZhdTlxaTljdzQxZEtxazhsR0tobjJnUVFTRU1qb2JLbFdLN0NJUQ?oc=5","description":"[HD포토] 씨야 김연지, ‘기분 좋은 하트’ (2026 KWDA 블루카펫) 톱스타뉴스"},{"title":"“그래도 난 노래해”…김연지, 목소리를 잃었던 시간을 신곡 ‘노래’에 담다 - 제이앤엠뉴스","source":"제이앤엠뉴스","pubDate":"2026-08-29T10:06:55+00:00","link":"https://news.google.com/rss/articles/CBMiYEFVX3lxTFBTdDFaVHRkUmxwR0ZneVV5TkV6TnRYUUlNUHB6VHROUjNGR1k1VDRJZm5rbEU0Y2c3WDRadHhyanV6MDBqcEdEN1hxODNOZ0ZUcXdEd0lJSXFMa0tnQkNvMQ?oc=5","description":"“그래도 난 노래해”…김연지, 목소리를 잃었던 시간을 신곡 ‘노래’에 담다 제이앤엠뉴스"},{"title":"[ST포토] 씨야 김연지, '노래 천재' - news.nate.com","source":"news.nate.com","pubDate":"2026-08-29T09:03:00+00:00","link":"https://news.google.com/rss/articles/CBMiU0FVX3lxTE40WGxDM19kcHFVQk14MGZhay1HYWpDcFZvMTR0OENBWjd5Y01IZGVONDlxSkxZeDZTTmhGdVRXNU50YTR0dmQ0d254cURnZ1RZRzFn?oc=5","description":"[ST포토] 씨야 김연지, '노래 천재' news.nate.com"}],"이보람":[{"title":"씨야 이보람, 골때녀 FC 발라드림 합류…첫 스포츠 예능 도전 - 톱스타뉴스","source":"톱스타뉴스","pubDate":"2026-09-09T10:54:56+00:00","link":"https://news.google.com/rss/articles/CBMickFVX3lxTE1JOV9oVGJIM09Zek81eUF5dkRQY1hYbHZfOEFUeUwzSFFwNkRpU3ItbUk0dmxlZWRqbDNDbHhUVjduclRTTzZoSl9XWlpDaXpVek0xODhoQTBGejVxaEt3bEFVdDJ0NWtqOEZLbTZzeXBMZw?oc=5","description":"씨야 이보람, 골때녀 FC 발라드림 합류…첫 스포츠 예능 도전 톱스타뉴스"},{"title":"발라드림, 구원투수 등장… 씨야 이보람· \\'우발라\\' 이예지 합류 (골때녀) - 티브이데일리","source":"티브이데일리","pubDate":"2026-09-09T09:32:06+00:00","link":"https://news.google.com/rss/articles/CBMia0FVX3lxTFBCWUluVTVCT0kxT1hLMlNyQUVaZmFlbUN0dy1yMGRhWFMtSjdrcXFVMWYyN1c0YXkzVURoVi1zNUtIelRDc1c1eW5QWDlnSVZCVVNHQkNYV0tEVld6dWtpYWVvQ2ktRmhEQWt3?oc=5","description":"발라드림, 구원투수 등장… 씨야 이보람· \\'우발라\\' 이예지 합류 (골때녀) 티브이데일리"},{"title":"’15년 만 재결합’ 이보람, 주장 빠진 위기 속 ‘구세주’ 될까…핸드볼 코트 출격 (‘골때녀’) - mhnse.com","source":"mhnse.com","pubDate":"2026-09-09T08:31:11+00:00","link":"https://news.google.com/rss/articles/CBMiY0FVX3lxTFAxZ2FienJtd2hYbXoyQ2RWd0RiTE0wTkhHQTNsNnl3WXNHOGJZWFBBOTZvQWlpeXl4SHVnSjVreFpGd2hCYzcyYl9GdUJEbnoweWtFeXEtTlVSc1U2Y1hyYzhEOA?oc=5","description":"’15년 만 재결합’ 이보람, 주장 빠진 위기 속 ‘구세주’ 될까…핸드볼 코트 출격 (‘골때녀’) mhnse.com"},{"title":"‘씨야’ 이보람X‘우발’ 이예지, ‘골때녀’ 합류…주포 빠진 발라드림 구할까 - 브릿지경제","source":"브릿지경제","pubDate":"2026-09-09T06:29:00+00:00","link":"https://news.google.com/rss/articles/CBMiWkFVX3lxTE5QRmFvZXAtQ1RxS0xERmZPRElCLVd2NjB0S2V1NEtITXlDUks4NDd4R1BvVmVIckJLRVFibWc0NmY5bmU0d1F4bkdMRUNfbXItVi1rU0xyd2gtZw?oc=5","description":"‘씨야’ 이보람X‘우발’ 이예지, ‘골때녀’ 합류…주포 빠진 발라드림 구할까 브릿지경제"},{"title":"'골때리는그녀들' 이보람X이예지, 새 멤버(골때녀) - bntnews.co.kr","source":"bntnews.co.kr","pubDate":"2026-09-09T01:11:03+00:00","link":"https://news.google.com/rss/articles/CBMiZEFVX3lxTE9QNnUzMVdnY0hLOEVxYk5MOVFhMXFXXzhRLVRhLXp2cXRNOVJHNGd1eGdIYi0tQWxIREVsSU5oWHBEdmRKdUlSd1pJMDVKSmdFWlFGNWswRHhMVDl4ZjlCVTFWUE4?oc=5","description":"'골때리는그녀들' 이보람X이예지, 새 멤버(골때녀) bntnews.co.kr"}],"updatedAt":"2026-09-09T11:27:04.878068+00:00"};
+},
+"data/photos.json":function(module,exports,__require){
+module.exports={"photos":[{"image":"images/gallery/2026-still-here-still-us.jpg","title":"STILL HERE, STILL US","member":"SEEYA","order":1,"featured":true},{"image":"images/gallery/2026-first-again-group-room.jpg","title":"First, Again · 함께한 순간","member":"SEEYA","order":2,"featured":true},{"image":"images/gallery/2026-first-again-moment-01.jpg","title":"First, Again · Moment 01","member":"SEEYA","order":3,"featured":true},{"image":"images/gallery/2026-first-again-moment-02.jpg","title":"First, Again · Moment 02","member":"SEEYA","order":4,"featured":true},{"image":"images/gallery/2026-first-again-moment-03.jpg","title":"First, Again · Moment 03","member":"SEEYA","order":5,"featured":true},{"image":"images/gallery/2026-first-again-group-01.jpg","title":"First, Again · Group 01","member":"SEEYA","order":6,"featured":true},{"image":"images/gallery/2026-first-again-group-02.jpg","title":"First, Again · Group 02","member":"SEEYA","order":7,"featured":true},{"image":"images/gallery/2026-first-again-cover.webp","title":"First, Again · 20th Anniversary","member":"SEEYA","order":8,"featured":true}]};
+},
+"src/shared/news-filter.js":function(module,exports,__require){
+const policy=__require("src/data/news-filter.json");
+function relevantNews(item,category){
+  try{const url=new URL(item.link);if(policy.blockedArticleIds.includes(url.pathname.split('/').filter(Boolean).pop()))return false;}catch{return false;}
+  const strip=value=>String(value||'').replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
+  const title=strip(item.title),description=strip(item.description);
+  const byline=new RegExp(category+'\\s*(?:'+policy.bylineRoles.join('|')+')','g');
+  const headline=title.replace(byline,'');
+  const text=(headline+' '+description.replace(byline,'')).toLowerCase();
+  if(category==='씨야')return headline.includes('씨야')||/\bseeya\b/i.test(headline);
+  // A name appearing only in a reporter credit or RSS description is insufficient.
+  return headline.includes(category)&&policy.artistContext.some(term=>text.includes(term.toLowerCase()));
+}
+function filterNews(items,category){return (Array.isArray(items)?items:[]).filter(item=>relevantNews(item,category));}
+module.exports={filterNews,relevantNews};
+
+},
+"src/data/news-filter.json":function(module,exports,__require){
+module.exports={"blockedArticleIds":["CBMiWkFVX3lxTE1sbGRidEZrc0paazcyb3hlSEdpaGN0ZldudU9fcVhGZE5PeEJvbDVPTnFmMVpLcVVyUlFtOW1QQmVhaHgxbTR4SWd3ODJvemtCTThNSW0yTUJfQQ"],"artistContext":["씨야","SeeYa","가수","뮤지컬","OST","신곡","싱글","앨범","콘서트","음원","발매","보컬","가창","골때녀","골 때리는 그녀들","발라드림","배우","드라마","연기"],"bylineRoles":["기자","특파원","통신원","에디터","리포터"]};
+}
+};const cache={};function __require(id){if(cache[id])return cache[id].exports;const m=cache[id]={exports:{}};modules[id](m,m.exports,__require);return m.exports;}__require("src/client/site.js");})();

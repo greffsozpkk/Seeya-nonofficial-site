@@ -22,7 +22,7 @@ function gallery(items,now){return W(`
         </div>
         <div class="gallery-status" id="galleryStatus">PHOTO ARCHIVE</div>
       </div>
-      <div class="gallery-grid" id="galleryGrid">${items.length?items.slice(0,8).map((x,i)=>galleryCard(x,i)).join(""):`<div class="gallery-empty"><div class="gallery-empty-inner"><div class="gallery-empty-mark">✦</div><h2>아직 등록된 사진이 없어요.</h2><p>data/photos.json에 사진을 추가하면 이곳에 자동으로 표시됩니다.</p></div></div>`}</div>
+      <div class="gallery-grid" id="galleryGrid">${items.length?items.slice(0,8).map((x,i)=>galleryCard(x,i)).join(""):`<div class="gallery-empty"><div class="gallery-empty-inner"><div class="gallery-empty-mark">✦</div><h2>아직 등록된 사진이 없어요.</h2></div></div>`}</div>
       <div class="gallery-footnote">사진을 클릭하면 원본 비율로 크게 볼 수 있습니다.</div>
     </section>
   </div>

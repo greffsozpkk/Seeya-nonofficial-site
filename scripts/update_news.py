@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import json, re, urllib.parse, urllib.request, xml.etree.ElementTree as ET
+from html import unescape
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -32,7 +33,7 @@ def parse(xml_bytes):
         src_el=item.find("source")
         source=(src_el.text if src_el is not None and src_el.text else "").strip()
         desc=re.sub(r"<[^>]+>"," ",desc)
-        desc=re.sub(r"\s+"," ",desc).strip()
+        desc=re.sub(r"\s+"," ",unescape(desc)).strip()
         if title and link:
             try:
                 dt=parsedate_to_datetime(pub)
@@ -42,26 +43,51 @@ def parse(xml_bytes):
             out.append({"title":title,"source":source or "NEWS","pubDate":pub_iso,"link":link,"description":desc[:220]})
     return out
 
-data={}
-for category, queries in QUERIES.items():
-    merged=[]
-    for q in queries:
-        try:
-            merged.extend(parse(fetch(q)))
-        except Exception as e:
-            print(category, q, e)
-    seen=set()
-    clean=[]
-    for x in merged:
-        if not relevant_news(x, category):
-            continue
-        key=re.sub(r"\s+-\s+[^-]+$","",x["title"]).strip()
-        if key in seen: continue
-        seen.add(key)
-        clean.append(x)
-    clean.sort(key=lambda x:x["pubDate"], reverse=True)
-    data[category]=clean[:5]
+def collect(previous, fetcher=fetch, now=None):
+    now = now or datetime.now(timezone.utc).isoformat()
+    data = dict(previous)
+    updated = dict(previous.get('categoryUpdatedAt', {}))
+    successful = 0
+    for category, queries in QUERIES.items():
+        merged = []
+        for q in queries:
+            try:
+                merged.extend(parse(fetcher(q)))
+            except Exception as e:
+                print(category, q, e)
+        fresh = [x for x in merged if relevant_news(x, category)]
+        old = [x for x in previous.get(category, []) if relevant_news(x, category)]
+        if fresh:
+            successful += 1
+            updated[category] = now
+        else:
+            print(category, ': no valid new results; preserving previous articles')
+        seen = set()
+        clean = []
+        def timestamp(item):
+            try:
+                return datetime.fromisoformat(item.get('pubDate','').replace('Z','+00:00')).timestamp()
+            except (ValueError, TypeError):
+                return 0
+        for item in sorted(fresh + old, key=timestamp, reverse=True):
+            key = re.sub(r'\s+-\s+[^-]+$', '', item['title']).strip()
+            if key not in seen:
+                seen.add(key)
+                clean.append(item)
+        data[category] = clean[:5]
+    data['lastCheckedAt'] = now
+    data['categoryUpdatedAt'] = updated
+    if successful:
+        data['updatedAt'] = now
+    return data, successful
 
-data["updatedAt"]=datetime.now(timezone.utc).isoformat()
-OUT.parent.mkdir(parents=True, exist_ok=True)
-OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+def main():
+    previous = json.loads(OUT.read_text(encoding='utf-8')) if OUT.exists() else {}
+    data, successful = collect(previous)
+    OUT.parent.mkdir(parents=True, exist_ok=True)
+    OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
+    # The workflow still builds and deploys preserved data, then reports the outage.
+    return 0 if successful else 2
+
+if __name__ == '__main__':
+    raise SystemExit(main())

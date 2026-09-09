@@ -42,7 +42,7 @@ let galleryItems=[],galleryLightboxIndex=0,galleryTouchX=null;
 function renderGallery(){
   const grid=document.getElementById("galleryGrid");if(!grid)return;
   const items=galleryItems.filter(x=>x.hidden!==true).slice(0,8);
-  grid.innerHTML=items.length?items.map((x,i)=>galleryCard(x,i)).join(""):`<div class="gallery-empty"><div class="gallery-empty-inner"><div class="gallery-empty-mark">✦</div><h2>아직 등록된 사진이 없어요.</h2><p>data/photos.json에 사진을 추가하면 이곳에 자동으로 표시됩니다.</p></div></div>`;
+  grid.innerHTML=items.length?items.map((x,i)=>galleryCard(x,i)).join(""):`<div class="gallery-empty"><div class="gallery-empty-inner"><div class="gallery-empty-mark">✦</div><h2>아직 등록된 사진이 없어요.</h2></div></div>`;
   renderGalleryMoment();
 }
 function ensureGalleryLightbox(){
@@ -149,7 +149,7 @@ async function loadNews(category="씨야",bind=true){
   const items=require('../shared/news-filter').filterNews(data[category],category).sort((a,b)=>new Date(b.pubDate)-new Date(a.pubDate));
   renderNews(items);
   if(updated && data.updatedAt){
-    const d=new Date(data.updatedAt);
+    const d=new Date(data.categoryUpdatedAt?.[category]||data.updatedAt);
     updated.textContent=`UPDATED · ${d.toLocaleString("ko-KR",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"})}`;
   }
 }

@@ -1,8 +1,8 @@
-# SEEYA ARCHIVE — v4.67
+# SEEYA ARCHIVE — v4.68
 
 기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
 
-이번 버전은 뉴스 오탐 필터를 추가했습니다. 변경 내용은 CHANGELOG.md를 참조하세요. 이후 전달본도 버전을 순차 증가합니다.
+이번 버전은 갤러리 8장 복원·뉴스 갱신 자동화·빈 갤러리 문구를 수정했습니다. 변경 내용은 CHANGELOG.md를 참조하세요. 이후 전달본도 버전을 순차 증가합니다.
 
 ## 실행
 
@@ -48,7 +48,7 @@ CSS/JS는 내용 해시 파일명을 사용합니다. 생성기가 소유한 오
 
 ## 기준 ZIP 누락 보충
 
-ZIP에 news.json·photos.json·뉴스 수집기·Actions가 없었습니다. 뉴스는 v4.65 NEWS_FALLBACK을 JSON으로 옮겼습니다. 사진은 원본처럼 빈 목록이며 테스트용 사진은 포함하지 않습니다.
+ZIP에 news.json·photos.json·뉴스 수집기·Actions가 없었습니다. 뉴스는 v4.65 NEWS_FALLBACK을 JSON으로 옮겼습니다. v4.68에서 기존 저장소의 사진 목록 8장과 실제 이미지 파일을 복원했습니다. 테스트용 사진은 포함하지 않습니다.
 
 원본이 참조하지만 ZIP에 없던 멤버 서명 3개, 응원법 이미지·배경 13개, 타로 이미지 1개와 뉴스 수집기를 기존 greffsozpkk/Seeya-nonofficial-site 저장소 커밋 87b9ddc7459fde1ba9996a78ade847ca504f6033에서 보충했습니다. v4.65에 존재하는 파일은 구버전으로 덮어쓰지 않았습니다.
 
@@ -56,7 +56,7 @@ ZIP에 news.json·photos.json·뉴스 수집기·Actions가 없었습니다. 뉴
 
 ## 자동화·배포
 
-.github/workflows/update-news.yml: 수집 → 빌드 → 검증 → JSON·HTML·자산 동시 커밋. build.yml: main의 소스·데이터 변경 시 재생성. 저장소 쓰기 권한이 필요합니다. 이번 작업에서 원격 업로드·실제 Actions 실행·배포는 하지 않았습니다.
+.github/workflows/update-news.yml: 수집 → 빌드 → 검증 → JSON·HTML·자산 동시 커밋. 업로드(push) 직후에도 뉴스 수집을 실행합니다. build.yml은 수동 빌드용입니다. 두 워크플로는 생성 파일 커밋 후 GitHub Pages 재빌드를 명시적으로 요청합니다. 저장소 쓰기 권한이 필요합니다. 이번 작업에서 원격 업로드·실제 Actions 실행·배포는 하지 않았습니다.
 
 배포 파일: index.html, 각 경로 폴더, assets/, images/, data/, 404.html, robots.txt, sitemap.xml. GitHub Pages 저장소의 기존 CNAME 설정을 유지하세요.
 
@@ -65,3 +65,9 @@ ZIP에 news.json·photos.json·뉴스 수집기·Actions가 없었습니다. 뉴
 node scripts/check.js는 재현성·JS 구문·로컬 링크를 확인합니다. 선택적 기능 검사는 Playwright 설치 환경에서 node scripts/browser-check.cjs로 실행합니다(Edge 필요). 빌드 자체는 Playwright에 의존하지 않습니다.
 
 검증 범위와 기존 제한은 validation/REPORT.md를 확인하세요.
+
+## v4.68 적용
+
+폴더 내용물을 기존 저장소 루트에 덮어쓰세요. data/photos.json, images/gallery/ 및 .github/workflows/를 빠뜨리지 마세요. 기존 CNAME은 유지합니다. 업로드 뒤 Actions의 Update SEEYA news and static HTML과 pages-build-deployment 완료를 확인하세요. 즉시 실행 및 6시간 주기 갱신을 유지합니다. 뉴스 수집 실패 시 캐시로 사이트를 빌드하고 실패 상태를 기록합니다. 배포본 데이터는 9월 9일 확보한 캐시이며 업로드 후 실제 수집 결과로 갱신됩니다.
+
+향후 코드 업데이트에 운영 중인 data/를 빈 초기 데이터로 덮어쓰지 마세요. 사진 목록은 실제 운영 데이터를 유지하고, 뉴스는 수집기가 갱신합니다.

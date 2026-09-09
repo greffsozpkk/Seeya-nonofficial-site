@@ -1,10 +1,13 @@
 name: Update SEEYA news and static HTML
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
   schedule:
     - cron: '17 */6 * * *'
 permissions:
   contents: write
+  pages: write
 concurrency:
   group: seeya-generated-files
   cancel-in-progress: false
@@ -19,7 +22,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - run: python scripts/update_news.py
+      - name: Refresh news while retaining cache on failure
+        id: refresh
+        continue-on-error: true
+        run: python scripts/update_news.py
       - run: node build.js
       - run: node scripts/check.js
       - name: Commit news and generated files together
@@ -30,3 +36,12 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'chore: update news and prerendered pages'
           git push
+      - name: Request GitHub Pages rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
+      - name: Report news source outage
+        if: steps.refresh.outcome == 'failure'
+        run: |
+          echo 'News refresh failed. Existing articles were retained and the site rebuild was requested.'
+          exit 1

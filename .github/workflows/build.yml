@@ -1,11 +1,9 @@
 name: Build static SEEYA site
 on:
-  push:
-    branches: [main]
-    paths: ['src/**', 'data/**', 'build.js', '.github/workflows/build.yml']
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
 concurrency:
   group: seeya-generated-files
   cancel-in-progress: false
@@ -27,3 +25,7 @@ jobs:
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'build: regenerate static pages'
           git push
+      - name: Request GitHub Pages rebuild
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"
