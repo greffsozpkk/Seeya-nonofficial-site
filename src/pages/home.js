@@ -121,6 +121,8 @@ function home(){return `<div class="home-aespa">
     <strong>UNOFFICIAL · NON-PROFIT FAN PAGE</strong>
     <span>이 페이지는 아티스트 씨야(SeeYa)를 응원하는 팬이 제작한 <b>비영리 팬 페이지</b>입니다.</span>
     <span>어떠한 형태의 영리적 목적이나 상업적 수수료 취득, 광고 수익 창출 행위를 하지 않습니다.</span>
+    <div class="today-visitors" aria-live="polite">Today <strong id="today-visitors-count">—</strong><span id="today-visitors-status">집계 준비 중</span></div>
+    <div class="creator-contact">contact. <a href="https://www.instagram.com/seeya_archive_fanpage/" target="_blank" rel="noopener noreferrer" aria-label="제작자 인스타그램으로 연락하기 (새 창)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="contact-dot" cx="17.5" cy="6.5" r="1"/></svg></a></div>
   </div>
 </section>
 </div>`}

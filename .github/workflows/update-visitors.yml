@@ -1,0 +1,36 @@
+name: Update daily visitors
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '43 * * * *'
+permissions:
+  contents: write
+  pages: write
+concurrency:
+  group: seeya-generated-files
+  cancel-in-progress: false
+jobs:
+  visitors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install 'google-auth>=2,<3' 'requests>=2,<3'
+      - run: python scripts/update_visitors.py
+        env:
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+          GA_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
+      - name: Publish visitor count
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ ! -f data/visitors.json ]; then exit 0; fi
+          git add data/visitors.json
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: update daily visitors'
+          git push
+          gh api --method POST "repos/$GITHUB_REPOSITORY/pages/builds"

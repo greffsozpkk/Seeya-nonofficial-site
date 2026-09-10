@@ -1,4 +1,4 @@
-# SEEYA ARCHIVE — v4.70
+# SEEYA ARCHIVE — v4.73
 
 기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
 
@@ -71,3 +71,6 @@ node scripts/check.js는 재현성·JS 구문·로컬 링크를 확인합니다.
 폴더 내용물을 기존 저장소 루트에 덮어쓰세요. data/photos.json, images/gallery/ 및 .github/workflows/를 빠뜨리지 마세요. 기존 CNAME은 유지합니다. 업로드 뒤 Actions의 Update SEEYA news and static HTML과 pages-build-deployment 완료를 확인하세요. 즉시 실행 및 6시간 주기 갱신을 유지합니다. 뉴스 수집 실패 시 캐시로 사이트를 빌드하고 실패 상태를 기록합니다. 배포본 데이터는 9월 9일 확보한 캐시이며 업로드 후 실제 수집 결과로 갱신됩니다.
 
 향후 코드 업데이트에 운영 중인 data/를 빈 초기 데이터로 덮어쓰지 마세요. 사진 목록은 실제 운영 데이터를 유지하고, 뉴스는 수집기가 갱신합니다.
+
+## 방문자 표시
+Today 집계 연결은 UPDATE_v4_73.md를 참조하세요. 설정 전에는 숫자 대신 — 를 표시합니다.
