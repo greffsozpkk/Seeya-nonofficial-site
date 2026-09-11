@@ -744,10 +744,10 @@
     },
     {
       "id": "v474-stage-research-031",
-      "date": "",
-      "dateStatus": "unknown",
+      "date": "2026-05-28",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
-      "title": "씨야 · 먼키의 발자국 EP.35",
+      "title": "씨야 · 여인의 향기 / 사랑하기 때문에 외 라이브",
       "program": "먼키의 발자국 EP.35",
       "type": "music-show",
       "members": [
@@ -755,25 +755,41 @@
         "김연지",
         "이보람"
       ],
-      "songs": [],
+      "songs": [
+        "여인의 향기",
+        "사랑하기 때문에",
+        "구두",
+        "미친 사랑의 노래",
+        "사랑의 인사",
+        "사랑의 인사 2026",
+        "결혼할까요",
+        "그럼에도, 우린",
+        "Stay",
+        "내겐 너무 멋진 그대"
+      ],
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
+        "label": "스튜디오 드리밍 [Dreaming]",
         "url": "https://www.youtube.com/watch?v=_RENYXAj3us"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 스튜디오 드리밍 공식 채널 영상 발견. 정확한 공개일과 원본 곡 목록 확인 필요. VZcFQv8efTA는 라이브 모음 편집본으로 같은 출연인지 대조."
+      "note": "촬영일 대신 공식 영상 게시일을 기준으로 기록했습니다.",
+      "dateBasis": "video-published",
+      "publishedDate": "2026-05-28",
+      "collaborators": [
+        "먼데이 키즈"
+      ]
     },
     {
       "id": "v474-stage-research-032",
-      "date": "",
-      "dateStatus": "unknown",
+      "date": "2026-08-26",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "씨야 · 내겐 너무 멋진 그대 / 사랑의 인사 외 라이브",
       "program": "월간다음 EP.5",
@@ -793,23 +809,25 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
+        "label": "월간다음",
         "url": "https://www.youtube.com/watch?v=9EOZb_bRG9s"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 공식 채널 검색 제목 기준 곡 후보. 공개일과 본편 공연 구성 확인 필요."
+      "note": "촬영일 대신 공식 영상 게시일을 기준으로 기록했습니다.",
+      "dateBasis": "video-published",
+      "publishedDate": "2026-08-26"
     },
     {
       "id": "v474-stage-research-033",
-      "date": "",
-      "dateStatus": "unknown",
+      "date": "2026-06-12",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
-      "title": "씨야 · 제이키아웃 백그라운드 라이브",
+      "title": "씨야 · 여인의 향기 / 사랑의 인사 외 라이브",
       "program": "제이키아웃 백그라운드 라이브",
       "type": "music-show",
       "members": [
@@ -817,31 +835,38 @@
         "김연지",
         "이보람"
       ],
-      "songs": [],
+      "songs": [
+        "여인의 향기",
+        "사랑의 인사",
+        "결혼할까요",
+        "Stay",
+        "미친 사랑의 노래"
+      ],
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
+        "label": "제이키아웃 JAYKEEOUT",
         "url": "https://www.youtube.com/watch?v=7AnevPm_sho"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 공식 채널 영상 발견. 공개일·곡 목록 확인 필요."
+      "note": "촬영일 대신 공식 영상 게시일을 기준으로 기록했습니다.",
+      "dateBasis": "video-published",
+      "publishedDate": "2026-06-12"
     },
     {
       "id": "v474-stage-research-034",
-      "date": "",
-      "dateStatus": "unknown",
+      "date": "2010-02-06",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "씨야 참여 프로젝트 · 원더우먼",
       "program": "MBC 쇼! 음악중심",
       "type": "music-show",
       "members": [
-        "남규리",
         "김연지",
         "이보람"
       ],
@@ -851,27 +876,33 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
+        "label": "MBCkpop",
         "url": "https://www.youtube.com/watch?v=kJX0UfSWuYA"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. MBCkpop 공식 영상 검색 결과. 제목의 방송일이 잘려 날짜 미확인. 기존 2010-01-30과 중복 여부 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-02-04",
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ]
     },
     {
       "id": "v474-stage-research-035",
-      "date": "",
-      "dateStatus": "unknown",
+      "date": "2010-01-23",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "씨야 참여 프로젝트 · 원더우먼",
       "program": "MBC 쇼! 음악중심",
       "type": "music-show",
       "members": [
-        "남규리",
         "김연지",
         "이보람"
       ],
@@ -881,99 +912,127 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
+        "label": "MBCkpop",
         "url": "https://www.youtube.com/watch?v=uDbh2ZEF32A"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. MBCkpop 공식 영상 검색 결과. 제목의 방송일이 잘려 날짜 미확인. 기존 2010-01-30과 중복 여부 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-02-04",
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ]
     },
     {
       "id": "v474-stage-research-036",
       "date": "2015-07-04",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
-      "title": "김연지 · KBS 불후의 명곡",
+      "title": "김연지 · 남남북녀",
       "program": "KBS 불후의 명곡",
       "type": "music-show",
       "members": [
         "김연지"
       ],
-      "songs": [],
+      "songs": [
+        "남남북녀"
+      ],
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01249686609431568"
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=Xvc8kRhU9lM"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 출연·우승 보도 확인. 곡명과 영상 추가 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-08-18"
     },
     {
       "id": "v474-stage-research-037",
       "date": "2015-12-12",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
-      "title": "김연지 · KBS 불후의 명곡 · god 편",
+      "title": "김연지 · 거짓말",
       "program": "KBS 불후의 명곡 · god 편",
       "type": "music-show",
       "members": [
         "김연지"
       ],
-      "songs": [],
+      "songs": [
+        "거짓말"
+      ],
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://www.newsen.com/news_view.php?uid=201512121901093510"
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=tm-8G4KsS4o"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 출연 보도. 곡명과 협업 구성 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2016-12-23",
+      "collaborators": [
+        "황치열"
+      ]
     },
     {
       "id": "v474-stage-research-038",
       "date": "2016-03-05",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
-      "title": "김연지 참여 5벤져스 · KBS 불후의 명곡 · 김종서 편",
+      "title": "김연지 · 아름다운 구속",
       "program": "KBS 불후의 명곡 · 김종서 편",
       "type": "music-show",
       "members": [
         "김연지"
       ],
-      "songs": [],
+      "songs": [
+        "아름다운 구속"
+      ],
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://mylovekbs.kbs.co.kr/index.html?contents_id=70000000278345&sname=mylovekbs&source=mylovekbs&stype=magazine"
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=y1i_GxZ-C7g"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. KBS 사전 예고 근거. 실제 방송·곡 확인 필요. 이세준·스테파니·DK·손준호 협업 예고."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2016-03-05",
+      "collaborators": [
+        "이세준",
+        "스테파니",
+        "DK",
+        "손준호"
+      ]
     },
     {
       "id": "v474-stage-research-039",
       "date": "2022-07-16",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "WSG워너비 가야G · 이보람 · 그때 그 순간 그대로",
       "program": "MBC 쇼! 음악중심 772회",
@@ -987,21 +1046,23 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://voda.donga.com/view/3/all/39/3514873/1"
+        "label": "MBCkpop",
+        "url": "https://www.youtube.com/watch?v=kZvzjX35KxY"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 페이지의 연관 MBC 클립 목록에서 발견. 링크 본편은 다른 가수이므로 정확한 공연 클립 확보 전 등록 금지."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2022-07-16"
     },
     {
       "id": "v474-stage-research-040",
       "date": "2024-04-13",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "김연지 · 제발",
       "program": "KBS 불후의 명곡",
@@ -1015,23 +1076,25 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://chordify.net/chords/gim-yeonji-jebal-bulhuui-myeong-gog2-jeonseol-eul-nolaehada-immortal-songs-2-kbs-240413-bangsong-kbs-lejeondeu-keipab"
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=qZ6GCuD8CFU"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 2차 사이트에 표시된 KBS 영상 제목의 날짜. 공식 원본 대조 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2024-04-13"
     },
     {
       "id": "v474-stage-research-041",
       "date": "2008-02-03",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
-      "title": "씨야 · SBS 인기가요",
+      "title": "씨야 · 그래도 좋아",
       "program": "SBS 인기가요",
       "type": "music-show",
       "members": [
@@ -1039,25 +1102,29 @@
         "김연지",
         "이보람"
       ],
-      "songs": [],
+      "songs": [
+        "그래도 좋아"
+      ],
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01128326586306912"
+        "label": "SBSKPOP X INKIGAYO",
+        "url": "https://www.youtube.com/watch?v=Z7QOYi6iR70"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 출연 기사 단서. 곡명과 실제 방송 무대 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-10"
     },
     {
       "id": "v474-stage-research-042",
       "date": "2007-05-19",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "남규리 · 깊은 밤을 날아서",
       "program": "MBC 쇼! 음악중심",
@@ -1071,21 +1138,23 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://sonichits.com/video/남규리/깊은_밤을_날아서"
+        "label": "MBCkpop",
+        "url": "https://www.youtube.com/watch?v=ESHVYVU2ivs"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 2차 사이트 영상 제목에서 발견한 잠정 방송일. 공식 원본 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-02-16"
     },
     {
       "id": "v474-stage-research-043",
       "date": "2007-05-05",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "남규리 · 깊은 밤을 날아서",
       "program": "KBS 콘서트7080",
@@ -1099,21 +1168,23 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://sonichits.com/video/남규리/깊은_밤을_날아서"
+        "label": "Again 가요톱10 : KBS KPOP Classic",
+        "url": "https://www.youtube.com/watch?v=MbHnINHWyC0"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 2차 사이트 영상 제목에서 발견한 잠정 방송일. 공식 원본 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2021-10-30"
     },
     {
       "id": "v474-stage-research-044",
       "date": "2009-10-31",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "씨야 · 그 놈 목소리",
       "program": "MBC 쇼! 음악중심",
@@ -1128,21 +1199,23 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://sonichits.com/artist/씨야"
+        "label": "MBCkpop",
+        "url": "https://www.youtube.com/watch?v=EhS-8MqgmlA"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 2차 사이트 영상 제목에서 발견한 잠정 방송일. 공식 원본 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-02-04"
     },
     {
       "id": "v474-stage-research-045",
       "date": "2009-11-21",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "씨야 · 그 놈 목소리",
       "program": "MBC 쇼! 음악중심",
@@ -1157,21 +1230,23 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://sonichits.com/artist/씨야"
+        "label": "MBCkpop",
+        "url": "https://www.youtube.com/watch?v=RZ4z4-sL8Jw"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 2차 사이트 영상 제목에서 발견한 잠정 방송일. 공식 원본 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-02-03"
     },
     {
       "id": "v474-stage-research-046",
       "date": "2022-07-30",
-      "dateStatus": "tentative",
+      "dateStatus": "confirmed",
       "addedAt": "2026-09-11",
       "title": "WSG워너비 가야G · 이보람 · 원더우먼 / 여성시대",
       "program": "MBC 놀면 뭐하니?",
@@ -1186,16 +1261,18 @@
       "album": "",
       "thumbnail": "",
       "source": {
-        "label": "확인 자료",
-        "url": "https://sonichits.com/video/SeeYa_%26_Davichi_%26_T-Ara_%28JiYeon%29/여성시대영원한_사랑_(Women's_Generation)"
+        "label": "MBCentertainment",
+        "url": "https://www.youtube.com/watch?v=6PMXBoS_Hy4"
       },
       "additionalSources": [],
-      "status": "unverified",
+      "status": "available",
       "tags": [
         "무대",
-        "자료 확인 중"
+        "라이브"
       ],
-      "note": "공개일·무대 정보 추가 확인 중. 2차 목록의 MBC 220730 제목 단서. 공식 원본·곡 구성 확인 필요."
+      "note": "공식 영상의 방송일을 기준으로 기록했습니다.",
+      "dateBasis": "broadcast",
+      "publishedDate": "2022-07-30"
     }
   ],
   "patches": [

@@ -1,4 +1,4 @@
-# SEEYA ARCHIVE — v4.73
+# SEEYA ARCHIVE — v4.75
 
 기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
 
@@ -74,3 +74,7 @@ node scripts/check.js는 재현성·JS 구문·로컬 링크를 확인합니다.
 
 ## 방문자 표시
 Today 집계 연결은 UPDATE_v4_73.md를 참조하세요. 설정 전에는 숫자 대신 — 를 표시합니다.
+
+
+## v4.75 아카이브 일정 확장
+추가 기록은 `data/archive-stage-v474.json`과 `data/archive-schedule-v475.json`에서 기존 아카이브와 합쳐집니다. 기본 아카이브·뉴스·방문자 JSON을 덮어쓸 필요가 없습니다. 업로드 방법과 날짜 기준은 `UPDATE_v4_75.md`를 참고하세요.
