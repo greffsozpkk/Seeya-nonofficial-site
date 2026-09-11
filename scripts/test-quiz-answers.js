@@ -1,0 +1,18 @@
+const assert=require('node:assert/strict');
+const {isLyricAnswer}=require('../src/shared/quiz-answers');
+const song='가니 (feat. SG워너비 - 김용준, 황정음, Mario)';
+for(const answer of ['가니','  가니  ',song,song.toUpperCase()])assert(isLyricAnswer(answer,song));
+for(const answer of ['stay','STAY','sTaY',' Stay '])assert(isLyricAnswer(answer,'Stay'));
+assert(isLyricAnswer('promise u','Promise U'));
+assert(isLyricAnswer('노래','노래 (Featuring Guest)'));
+assert(isLyricAnswer('노래','노래 [ft. Guest]'));
+assert(!isLyricAnswer('가니 (feat. 다른 가수)',song));
+assert(!isLyricAnswer('hotgirl','Hot Girl'));
+assert(!isLyricAnswer('티가나','T-Gana (티가나)'));
+assert(!isLyricAnswer('다른 곡','Stay'));
+assert(!isLyricAnswer('','Stay'));
+assert(!isLyricAnswer('  ','Stay'));
+const bank=require('../data/lyric-quiz.json');
+for(const q of bank)assert(isLyricAnswer(q.song,q.song));
+for(const q of bank.filter(q=>q.song.startsWith('가니 (feat.')))assert(isLyricAnswer('가니',q.song));
+console.log('PASS: bare featuring titles, case-insensitive English, original answers, incorrect answers rejected.');
