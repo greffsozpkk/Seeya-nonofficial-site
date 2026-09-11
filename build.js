@@ -45,7 +45,7 @@ for(const route of routes){
  const render=require('./src/pages/'+(key==='fanchant'?'music':key)+'.js');
  let content;
  if(key==='news')content=render(json('data/news.json'));
- else if(key==='archive')content=render(json('data/archive.json'));
+ else if(key==='archive')content=render(require('./src/shared/archive-data').mergeArchive(json('data/archive.json')));
  else if(key==='gallery')content=render(photos,new Date(site.snapshotDate));
  else if(key==='today'){let seed=465;const random=()=>((seed=(seed*1664525+1013904223)>>>0)/4294967296);content=render(new Date(site.snapshotDate),random);}
  else if(key==='music'||key==='fanchant')content=render(route.path);

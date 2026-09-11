@@ -2,7 +2,8 @@ const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,
 const {newsList,galleryMoment,archiveView,getFilteredArchive:filterArchive}=require('../shared/views');
 const today=require('../pages/today');
 const tarotPage=require('../pages/tarot');
-const ARCHIVE_FALLBACK=require('../../data/archive.json');
+const {mergeArchive}=require('../shared/archive-data');
+const ARCHIVE_FALLBACK=mergeArchive(require('../../data/archive.json'));
 const NEWS_FALLBACK=require('../../data/news.json');
 const PHOTOS_FALLBACK=require('../../data/photos.json');
 let fanChantLightboxIndex=0,fanChantTouchX=null;
@@ -101,7 +102,7 @@ async function loadGallery(){
 let archiveData=[];
 const ARCHIVE_PAGE_SIZE=9;
 let archiveState={query:"",year:"all",member:"all",type:"all",sort:"newest",page:1};
-async function loadArchive(){try{const r=await fetch("data/archive.json",{cache:"no-store"});if(!r.ok)throw new Error("archive fetch failed");archiveData=await r.json();}catch(e){archiveData=ARCHIVE_FALLBACK;}renderArchive();}
+async function loadArchive(){try{const r=await fetch("data/archive.json",{cache:"no-store"});if(!r.ok)throw new Error("archive fetch failed");archiveData=mergeArchive(await r.json());}catch(e){archiveData=ARCHIVE_FALLBACK;}renderArchive();}
 function setArchiveQuery(v){archiveState.query=v.trim();archiveState.page=1;renderArchive();}
 function setArchiveFilter(k,v){archiveState[k]=v;archiveState.page=1;syncArchiveControls();renderArchive();}
 function setArchiveSort(v){archiveState.sort=v;archiveState.page=1;renderArchive();}
