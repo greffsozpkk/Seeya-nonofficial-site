@@ -1,4 +1,6 @@
-# SEEYA ARCHIVE — v4.87
+# SEEYA ARCHIVE — v4.88
+
+v4.88: 2026년 공개 기록 재조사. 신규 48건·기존 23건 보강. UPDATE_v4_88.md 및 AUDIT_2026_v4_88.md 참고.
 
 기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
 
