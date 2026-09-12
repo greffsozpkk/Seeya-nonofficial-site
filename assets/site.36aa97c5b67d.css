@@ -1034,7 +1034,7 @@ body.fanchant-lightbox-open{overflow:hidden}
 /* HISTORY · CONTINUING STORY ART */
 .history-ing-art{
   position:relative;
-  width:min(820px,84vw);
+  width:min(760px,100%);
   margin:34px auto -8px;
   padding:20px 18px 0;
 }
@@ -1068,11 +1068,8 @@ body.fanchant-lightbox-open{overflow:hidden}
 }
 @media(max-width:700px){
   .history-ing-art{
-    width:96vw;
-    max-width:none;
-    margin:26px 0 -4px;
-    margin-left:50%;
-    transform:translateX(-50%);
+    width:100%;
+    margin:26px auto -4px;
     padding:16px 0 0;
   }
   .history-ing-art::before{width:44vw}
