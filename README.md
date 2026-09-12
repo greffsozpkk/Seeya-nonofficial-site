@@ -1,8 +1,10 @@
-# SEEYA ARCHIVE — v4.83
+# SEEYA ARCHIVE — v4.86
 
 기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
 
-v4.83: 라디오 6건, 인터뷰 8건 추가. 날짜와 비공식 영상 여부는 각 카드에 표시합니다. 상세 목록은 UPDATE_v4_83.md 참고.
+v4.86: HISTORY 이미지 폭을 본문 안에 맞춰 모바일·세로 모니터의 가로 넘침을 수정했습니다. UPDATE_v4_86.md 참고.
+
+v4.85: 2006~2011년 과거 기사 154건 추가. 독립 취재·현장 사진·인터뷰를 구분해 수록했습니다. UPDATE_v4_85.md 참고.
 
 ## 실행
 
