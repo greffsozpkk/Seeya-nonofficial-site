@@ -1,0 +1,1821 @@
+{
+  "records": [
+    {
+      "id": "v480-stage-001",
+      "date": "2008-02-16",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-02-14",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그래도 좋아",
+      "program": "MBC 쇼! 음악중심",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "그래도 좋아"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=u5VzPd5zJUE"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "MBCkpop 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-002",
+      "date": "2008-04-13",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-13",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 바보",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "바보"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=8BBTw0eJ4HA"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-003",
+      "date": "2008-01-06",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-06",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 슬픈 발걸음",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "슬픈 발걸음"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=_ynv3RnZddw"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-004",
+      "date": "2008-01-13",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-06",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 슬픈 발걸음",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "슬픈 발걸음"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=zDjkCVF9zzI"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-005",
+      "date": "2008-10-19",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-18",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · Hot Girl",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "Hot Girl"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=iEl0SHS7XAk"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-006",
+      "date": "2008-10-12",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-18",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · Hot Girl",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "Hot Girl"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=28ufqSi5_WQ"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-007",
+      "date": "2009-05-09",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-02-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 여성시대",
+      "program": "MBC 쇼! 음악중심",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "다비치",
+        "지연"
+      ],
+      "songs": [
+        "여성시대"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=4-jfUmzIchE"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "MBCkpop 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-008",
+      "date": "2009-06-13",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-02-06",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 여성시대",
+      "program": "MBC 쇼! 음악중심",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "다비치",
+        "지연"
+      ],
+      "songs": [
+        "여성시대"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=JUdX_WaIXCA"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "MBCkpop 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-009",
+      "date": "2009-05-17",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-19",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 영원한 사랑",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "다비치",
+        "지연"
+      ],
+      "songs": [
+        "영원한 사랑"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=UfUHiGrwb9s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-010",
+      "date": "2009-07-05",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-19",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 사랑의 배터리 (Remix)",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "홍진영",
+        "다비치"
+      ],
+      "songs": [
+        "사랑의 배터리 (Remix)"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=NTMzM9CRNDo"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-011",
+      "date": "2009-07-12",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2019-06-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 사랑의 배터리 (Remix)",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "홍진영",
+        "다비치"
+      ],
+      "songs": [
+        "사랑의 배터리 (Remix)"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=VmrvyZ0qOsY"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBS 옛날 예능 - 빽능 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-012",
+      "date": "2009-11-01",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-25",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그 놈 목소리",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미"
+      ],
+      "songs": [
+        "그 놈 목소리"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=9cVJDjIL5dM"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-013",
+      "date": "2009-11-08",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-25",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그 놈 목소리",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미"
+      ],
+      "songs": [
+        "그 놈 목소리"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=QzCKRF7MXvA"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-014",
+      "date": "2009-11-15",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-25",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그 놈 목소리",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미"
+      ],
+      "songs": [
+        "그 놈 목소리"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=NPJAPJdi6Ww"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-015",
+      "date": "2009-11-29",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-25",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그 놈 목소리",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미"
+      ],
+      "songs": [
+        "그 놈 목소리"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=BCOLtdNWDDA"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-016",
+      "date": "2009-12-20",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-25",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그 놈 목소리",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미"
+      ],
+      "songs": [
+        "그 놈 목소리"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=9AseMGUeNqY"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-017",
+      "date": "2009-05-10",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-16",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 여성시대",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "다비치",
+        "지연"
+      ],
+      "songs": [
+        "여성시대"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=VOca3LT2SKk"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-018",
+      "date": "2009-05-31",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-19",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 여성시대",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "다비치",
+        "지연"
+      ],
+      "songs": [
+        "여성시대"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=j7lCY7DseD0"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-019",
+      "date": "2009-06-14",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-19",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 여성시대",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "다비치",
+        "지연"
+      ],
+      "songs": [
+        "여성시대"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=kBq-HUsAgKY"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-020",
+      "date": "2009-06-21",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-19",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 여성시대",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "다비치",
+        "지연"
+      ],
+      "songs": [
+        "여성시대"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=GtisM-_a4-k"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-021",
+      "date": "2010-01-16",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-02-04",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 원더우먼",
+      "program": "MBC 쇼! 음악중심",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ],
+      "songs": [
+        "원더우먼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=0qxabzjOINU"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "MBCkpop 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-022",
+      "date": "2010-01-17",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-26",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 원더우먼",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ],
+      "songs": [
+        "원더우먼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=UrWOJiZWqBU"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-023",
+      "date": "2010-01-24",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-26",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 원더우먼",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ],
+      "songs": [
+        "원더우먼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=645n2dRD77U"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-024",
+      "date": "2010-01-31",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-26",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 원더우먼",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ],
+      "songs": [
+        "원더우먼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=h2mAlyCtxK8"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-025",
+      "date": "2010-02-07",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-26",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 원더우먼",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ],
+      "songs": [
+        "원더우먼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=4820nJFP0K0"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-026",
+      "date": "2010-02-14",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2012-01-26",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 원더우먼",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ],
+      "songs": [
+        "원더우먼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=KYQYK5HgslM"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBSKPOP X INKIGAYO 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-027",
+      "date": "2006-04-17",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 여인의 향기 / 구두 / 처음부터 또 다시 / Promise U",
+      "program": "KBS 정은아의 i콘서트",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "여인의 향기",
+        "구두",
+        "처음부터 또 다시",
+        "Promise U"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-028",
+      "date": "2006-09-09",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 미친 사랑의 노래",
+      "program": "KBS 사랑의 콘서트",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "미친 사랑의 노래"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=1145s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-029",
+      "date": "2006-12-30",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 동백 아가씨",
+      "program": "KBS 2006 KBS 가요대축제",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "동백 아가씨"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=1380s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-030",
+      "date": "2007-02-25",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 미워요",
+      "program": "KBS 뮤직뱅크",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "미워요"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=1494s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-031",
+      "date": "2007-07-06",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 사랑의 인사 / 페스티벌",
+      "program": "KBS 윤도현의 러브레터",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "사랑의 인사",
+        "페스티벌"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=1719s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-032",
+      "date": "2007-09-16",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 결혼할까요",
+      "program": "KBS 2007 전국기능경기대회 축하쇼",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "결혼할까요"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=2456s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-033",
+      "date": "2008-01-04",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 슬픈 발걸음 / 당돌한 여자",
+      "program": "KBS 뮤직뱅크",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "슬픈 발걸음",
+        "당돌한 여자"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=2663s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-034",
+      "date": "2008-02-15",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그래도 좋아",
+      "program": "KBS 뮤직뱅크",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "그래도 좋아"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=2910s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-035",
+      "date": "2008-10-03",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 가니 / Hot Girl",
+      "program": "KBS 뮤직뱅크",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "가니",
+        "Hot Girl"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=3105s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-036",
+      "date": "2008-11-21",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그 사람",
+      "program": "KBS 뮤직뱅크",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "그 사람"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=3398s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-037",
+      "date": "2009-05-08",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 여성시대",
+      "program": "KBS 뮤직뱅크",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "다비치",
+        "지연"
+      ],
+      "songs": [
+        "여성시대"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=3585s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-038",
+      "date": "2009-07-05",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 인디안 인형처럼",
+      "program": "KBS 열린음악회",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "다비치"
+      ],
+      "songs": [
+        "인디안 인형처럼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=3794s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-039",
+      "date": "2009-11-13",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그 놈 목소리",
+      "program": "KBS 뮤직뱅크",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미"
+      ],
+      "songs": [
+        "그 놈 목소리"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=4004s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-040",
+      "date": "2009-12-04",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 난 남자가 있는데",
+      "program": "KBS 유희열의 스케치북",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미"
+      ],
+      "songs": [
+        "난 남자가 있는데"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=4185s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-041",
+      "date": "2009-12-20",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 겨울 아이",
+      "program": "KBS 열린음악회",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미"
+      ],
+      "songs": [
+        "겨울 아이"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=4427s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-042",
+      "date": "2010-01-22",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-05-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 원더우먼",
+      "program": "KBS 뮤직뱅크",
+      "type": "music-show",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ],
+      "songs": [
+        "원더우먼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=4678s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-043",
+      "date": "2006-04-14",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2026-08-05",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 여인의 향기 / Promise U",
+      "program": "KBS 윤도현의 러브레터",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "여인의 향기",
+        "Promise U"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=L0plLJw2v-I"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "Again 가요톱10 : KBS KPOP Classic 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-044",
+      "date": "2006-09-01",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2022-06-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 구두 / 미친 사랑의 노래",
+      "program": "KBS 윤도현의 러브레터",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "구두",
+        "미친 사랑의 노래"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=o1qI8s6ZFHg"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS전주 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-045",
+      "date": "2007-06-24",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2022-08-28",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 사랑의 인사",
+      "program": "KBS 열린음악회",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "사랑의 인사"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=7_nMS8ej2BU"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS전주 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-046",
+      "date": "2008-01-18",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2022-08-28",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 슬픈 발걸음",
+      "program": "KBS 뮤직뱅크",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "슬픈 발걸음"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 모음 · 해당 구간",
+        "url": "https://www.youtube.com/watch?v=7_nMS8ej2BU&t=260s"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "KBS전주 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-047",
+      "date": "2007-05-27",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2020-01-12",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 사랑의 인사",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "사랑의 인사"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=fFA8uMG8QVE"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBS 옛날 예능 - 빽능 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-048",
+      "date": "2007-08-26",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2020-01-12",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 결혼할까요",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "결혼할까요"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=fFA8uMG8QVE"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBS 옛날 예능 - 빽능 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-049",
+      "date": "2008-10-05",
+      "dateStatus": "confirmed",
+      "dateBasis": "broadcast",
+      "publishedDate": "2020-01-12",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 가니 / Hot Girl",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "가니",
+        "Hot Girl"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=fFA8uMG8QVE"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "SBS 옛날 예능 - 빽능 공식 영상의 제목·설명에 기재된 방송일 기준."
+    },
+    {
+      "id": "v480-stage-050",
+      "date": "2012-01-10",
+      "dateStatus": "unknown",
+      "dateBasis": "video-published",
+      "publishedDate": "2012-01-10",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 그래도 좋아",
+      "program": "SBS 인기가요",
+      "type": "music-show",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "collaborators": [],
+      "songs": [
+        "그래도 좋아"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "공식 무대 영상",
+        "url": "https://www.youtube.com/watch?v=1fzT-UcIF5E"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "무대",
+        "라이브"
+      ],
+      "note": "2008년 활동기 영상. 공식 제목의 날짜가 200802017로 잘못 표기되어 방송일을 확정하지 않고 영상 게시일로 등록했습니다."
+    }
+  ],
+  "patches": [
+    {
+      "id": "20080120-inkigayo-sad-footsteps-win",
+      "songs": [
+        "슬픈 발걸음"
+      ],
+      "additionalSources": [
+        {
+          "label": "공식 무대 영상",
+          "url": "https://www.youtube.com/watch?v=QrhZq0FckNE"
+        }
+      ],
+      "appendNote": ""
+    },
+    {
+      "id": "20090606-mbc-musiccore-womens-generation",
+      "songs": [
+        "여성시대"
+      ],
+      "additionalSources": [
+        {
+          "label": "공식 무대 영상",
+          "url": "https://www.youtube.com/watch?v=vUCw7uF75I4"
+        }
+      ],
+      "appendNote": ""
+    },
+    {
+      "id": "20060826-kbs-7080-scent-of-a-woman",
+      "songs": [
+        "칵테일 사랑"
+      ],
+      "additionalSources": [
+        {
+          "label": "공식 무대 모음 · 해당 구간",
+          "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=917s"
+        }
+      ],
+      "appendNote": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "20070721-kbs-7080-love-greeting",
+      "songs": [
+        "일과 이분의 일"
+      ],
+      "additionalSources": [
+        {
+          "label": "공식 무대 모음 · 해당 구간",
+          "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=2225s"
+        }
+      ],
+      "appendNote": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "20110128-kbs-musicbank-goodbye",
+      "songs": [
+        "내겐 너무 멋진 그대",
+        "The Last"
+      ],
+      "additionalSources": [
+        {
+          "label": "공식 무대 모음 · 해당 구간",
+          "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=4873s"
+        }
+      ],
+      "appendNote": "KBS 공식 무대 모음의 곡별 방송일·구간 안내 기준. 같은 방송의 여러 곡을 한 출연으로 묶었습니다."
+    },
+    {
+      "id": "v480-stage-043",
+      "songs": [
+        "Promise U"
+      ],
+      "additionalSources": [
+        {
+          "label": "공식 무대 모음 · 해당 구간",
+          "url": "https://www.youtube.com/watch?v=o1qI8s6ZFHg&t=730s"
+        }
+      ],
+      "appendNote": ""
+    },
+    {
+      "id": "20060312-inkigayo-debut",
+      "songs": [
+        "여인의 향기"
+      ],
+      "additionalSources": [
+        {
+          "label": "공식 무대 영상",
+          "url": "https://www.youtube.com/watch?v=fFA8uMG8QVE"
+        }
+      ],
+      "appendNote": ""
+    },
+    {
+      "id": "20110130-sbs-inkigayo-goodbye",
+      "songs": [
+        "The Last",
+        "내겐 너무 멋진 그대"
+      ],
+      "additionalSources": [
+        {
+          "label": "공식 무대 영상",
+          "url": "https://www.youtube.com/watch?v=Mpwz84iI6vQ"
+        }
+      ],
+      "appendNote": ""
+    }
+  ]
+}

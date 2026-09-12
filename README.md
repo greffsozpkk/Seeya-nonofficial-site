@@ -1,8 +1,8 @@
-# SEEYA ARCHIVE — v4.78
+# SEEYA ARCHIVE — v4.81
 
 기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
 
-이번 버전은 2026년 누락 활동 기록 16건을 추가했습니다. GitHub 업데이트는 DATA_PATCH 사용법을 ARCHIVE_UPDATE_v4_70.md에서 확인하세요. 변경 내용은 CHANGELOG.md를 참조하세요. 이후 전달본도 버전을 순차 증가합니다.
+v4.81: 공연·예능 등 29건 추가, 기존 공연 2건 보강. 상세 목록과 날짜 기준은 UPDATE_v4_81.md를 확인하세요.
 
 ## 실행
 
