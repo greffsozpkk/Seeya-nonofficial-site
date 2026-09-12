@@ -1,4 +1,4 @@
-const additions=[require('../../data/archive-stage-v474.json'),require('../../data/archive-schedule-v475.json'),require('../../data/archive-stage-v480.json'),require('../../data/archive-concert-variety-v481.json'),require('../../data/archive-events-v482.json')];
+const additions=[require('../../data/archive-stage-v474.json'),require('../../data/archive-schedule-v475.json'),require('../../data/archive-stage-v480.json'),require('../../data/archive-concert-variety-v481.json'),require('../../data/archive-events-v482.json'),require('../../data/archive-radio-interviews-v483.json')];
 function mergeArchive(base){
  const rows=base.map(x=>({...x}));
  const ids=new Set(rows.map(x=>x.id));

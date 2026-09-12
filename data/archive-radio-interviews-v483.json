@@ -1,0 +1,422 @@
+{
+  "records": [
+    {
+      "id": "v483-radio-001",
+      "date": "2007-07-11",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 안재욱 & 차태현의 Mr.라디오",
+      "program": "안재욱 & 차태현의 Mr.라디오",
+      "type": "radio",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "songs": [
+        "사랑의 인사",
+        "늘 지금처럼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "보존 영상 (비공식)",
+        "url": "https://www.youtube.com/watch?v=33wUg2Kuo6E"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "라디오"
+      ],
+      "note": "씨야박물관 채널의 비공식 보존 영상. 영상 제목·설명에 방송일 2007-07-11 기재. 방송사 원자료로 재확인하지 못한 잠정 날짜입니다.",
+      "dateStatus": "tentative",
+      "dateBasis": "broadcast",
+      "publishedDate": "2020-04-20"
+    },
+    {
+      "id": "v483-radio-002",
+      "date": "2008-12-04",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 슈퍼주니어의 키스 더 라디오",
+      "program": "슈퍼주니어의 키스 더 라디오",
+      "type": "radio",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "songs": [
+        "그 사람",
+        "사랑스러워"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "보존 영상 (비공식)",
+        "url": "https://www.youtube.com/watch?v=kxW5_QUIrfY"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "라디오"
+      ],
+      "note": "씨야박물관 채널의 비공식 보존 영상. 영상 제목·설명에 방송일 2008-12-04 기재. 방송사 원자료로 재확인하지 못한 잠정 날짜입니다.",
+      "dateStatus": "tentative",
+      "dateBasis": "broadcast",
+      "publishedDate": "2020-04-16"
+    },
+    {
+      "id": "v483-radio-003",
+      "date": "2010-11-18",
+      "addedAt": "2026-09-12",
+      "title": "남규리 · 푸른밤 정엽입니다",
+      "program": "푸른밤 정엽입니다",
+      "type": "radio",
+      "members": [
+        "남규리"
+      ],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "보존 영상 (비공식)",
+        "url": "https://www.youtube.com/watch?v=2HCxLC8SFVM"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "라디오"
+      ],
+      "note": "김포비 채널의 비공식 보존 영상. 영상 제목·설명에 방송일 2010-11-18 기재. 방송사 원자료로 재확인하지 못한 잠정 날짜입니다.",
+      "dateStatus": "tentative",
+      "dateBasis": "broadcast",
+      "publishedDate": "2020-04-27"
+    },
+    {
+      "id": "v483-radio-004",
+      "date": "2020-02-29",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 서경석의 뮤직쇼",
+      "program": "서경석의 뮤직쇼",
+      "type": "radio",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "보존 영상 (비공식)",
+        "url": "https://www.youtube.com/watch?v=-sBEvFr5Rs0"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "라디오"
+      ],
+      "note": "씨야박물관 채널의 비공식 보존 영상. 방송일 미확인으로 영상 게시일을 표시했습니다. 게시 연도는 실제 활동 연도가 아닙니다.",
+      "dateStatus": "confirmed",
+      "dateBasis": "video-published",
+      "publishedDate": "2020-02-29"
+    },
+    {
+      "id": "v483-radio-005",
+      "date": "2020-04-07",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 볼륨을 높여요",
+      "program": "볼륨을 높여요",
+      "type": "radio",
+      "members": [],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "보존 영상 (비공식)",
+        "url": "https://www.youtube.com/watch?v=q7uiiomUUxs"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "라디오"
+      ],
+      "note": "김포비 채널의 비공식 보존 영상. 방송일 미확인으로 영상 게시일을 표시했습니다. 게시 연도는 실제 활동 연도가 아닙니다. 후반부가 없는 일부 영상이며 출연 멤버 명단은 미확인입니다.",
+      "dateStatus": "confirmed",
+      "dateBasis": "video-published",
+      "publishedDate": "2020-04-07"
+    },
+    {
+      "id": "v483-radio-006",
+      "date": "2020-03-26",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 소유진의 FM인기가요",
+      "program": "소유진의 FM인기가요",
+      "type": "radio",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "songs": [
+        "가니"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "보존 영상 (비공식)",
+        "url": "https://www.youtube.com/watch?v=W4Tf7fjJg3M"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "라디오"
+      ],
+      "note": "씨야박물관 채널의 비공식 보존 영상. 방송일 미확인으로 영상 게시일을 표시했습니다. 게시 연도는 실제 활동 연도가 아닙니다.",
+      "dateStatus": "confirmed",
+      "dateBasis": "video-published",
+      "publishedDate": "2020-03-26"
+    },
+    {
+      "id": "v483-interview-007",
+      "date": "2007-06-09",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 마이데일리 2집 인터뷰",
+      "program": "마이데일리 2집 인터뷰",
+      "type": "interview",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "인터뷰 기사",
+        "url": "https://news.nate.com/view/20070609n04137"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "인터뷰"
+      ],
+      "note": "Lovely Sweet Heart 활동과 음악적 변화에 관한 인터뷰. 인터뷰 진행일은 미확인으로 기사 게시일 기준.",
+      "dateStatus": "confirmed",
+      "dateBasis": "article-published"
+    },
+    {
+      "id": "v483-interview-008",
+      "date": "2008-08-02",
+      "addedAt": "2026-09-12",
+      "title": "남규리 · OSEN 고사 인터뷰",
+      "program": "OSEN 고사 인터뷰",
+      "type": "interview",
+      "members": [
+        "남규리"
+      ],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "인터뷰 기사",
+        "url": "https://news.nate.com/view/20080802n02872"
+      },
+      "additionalSources": [
+        {
+          "label": "관련 인터뷰",
+          "url": "https://news.nate.com/view/20080802n08363"
+        }
+      ],
+      "status": "available",
+      "tags": [
+        "인터뷰"
+      ],
+      "note": "영화 고사 출연과 연기 도전에 관한 인터뷰. 같은 날 게시된 관련 인터뷰는 한 카드로 묶었습니다.",
+      "dateStatus": "confirmed",
+      "dateBasis": "article-published"
+    },
+    {
+      "id": "v483-interview-009",
+      "date": "2009-10-24",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 동아일보 Rebloom 인터뷰",
+      "program": "동아일보 Rebloom 인터뷰",
+      "type": "interview",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "인터뷰 기사",
+        "url": "https://www.donga.com/news/article/all/20091024/23654183/9"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "인터뷰"
+      ],
+      "note": "새 음반 준비와 팀 활동에 관한 인터뷰. 기사 게시일 기준.",
+      "dateStatus": "confirmed",
+      "dateBasis": "article-published",
+      "collaborators": [
+        "수미"
+      ]
+    },
+    {
+      "id": "v483-interview-010",
+      "date": "2009-11-13",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 세계일보 Rebloom 인터뷰",
+      "program": "세계일보 Rebloom 인터뷰",
+      "type": "interview",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "인터뷰 기사",
+        "url": "https://www.segye.com/newsView/20091112000839"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "인터뷰"
+      ],
+      "note": "새 멤버 합류와 음악·무대의 변화에 관한 인터뷰. URL의 숫자가 아닌 화면의 기사 입력일 기준.",
+      "dateStatus": "confirmed",
+      "dateBasis": "article-published",
+      "collaborators": [
+        "수미"
+      ]
+    },
+    {
+      "id": "v483-interview-011",
+      "date": "2009-11-17",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 티브이데일리 인터뷰",
+      "program": "티브이데일리 인터뷰",
+      "type": "interview",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "인터뷰 기사",
+        "url": "https://www.tvdaily.co.kr/read.php3?aid=125843807126893002"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "인터뷰"
+      ],
+      "note": "동료 가수와 새 장르의 무대 준비에 관한 인터뷰. 본문에 과거 시점의 예고가 포함돼 진행일을 추정하지 않고 기사 게시일을 사용했습니다.",
+      "dateStatus": "confirmed",
+      "dateBasis": "article-published",
+      "collaborators": [
+        "수미"
+      ]
+    },
+    {
+      "id": "v483-interview-012",
+      "date": "2010-01-12",
+      "addedAt": "2026-09-12",
+      "title": "씨야 · 원더우먼 촬영 현장 인터뷰",
+      "program": "원더우먼 촬영 현장 인터뷰",
+      "type": "interview",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "songs": [
+        "원더우먼"
+      ],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "인터뷰 기사",
+        "url": "https://enews.imbc.com/News/RetrieveNewsInfo/6852"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "인터뷰"
+      ],
+      "note": "일산 스튜디오에서 진행한 프로젝트 뮤직비디오 촬영 현장 인터뷰. 기사 게시일 1월 13일과 구분.",
+      "dateStatus": "confirmed",
+      "dateBasis": "interview",
+      "collaborators": [
+        "수미",
+        "다비치",
+        "티아라"
+      ]
+    },
+    {
+      "id": "v483-interview-013",
+      "date": "2010-03-08",
+      "addedAt": "2026-09-12",
+      "title": "남규리 · 노컷뉴스 인생은 아름다워 인터뷰",
+      "program": "노컷뉴스 인생은 아름다워 인터뷰",
+      "type": "interview",
+      "members": [
+        "남규리"
+      ],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "인터뷰 기사",
+        "url": "https://www.nocutnews.co.kr/news/4157556"
+      },
+      "additionalSources": [
+        {
+          "label": "인터뷰 ②",
+          "url": "https://www.nocutnews.co.kr/news/4157557"
+        }
+      ],
+      "status": "available",
+      "tags": [
+        "인터뷰"
+      ],
+      "note": "드라마 첫 도전과 배역에 관한 인터뷰. ①·②를 한 기록으로 묶고 기사 게시일을 표시했습니다.",
+      "dateStatus": "confirmed",
+      "dateBasis": "article-published"
+    },
+    {
+      "id": "v483-interview-014",
+      "date": "2011-01-30",
+      "addedAt": "2026-09-12",
+      "title": "김연지·이보람 · 스타뉴스 고별 무대 전화 인터뷰",
+      "program": "스타뉴스 고별 무대 전화 인터뷰",
+      "type": "interview",
+      "members": [
+        "김연지",
+        "이보람"
+      ],
+      "songs": [],
+      "album": "",
+      "thumbnail": "",
+      "source": {
+        "label": "인터뷰 기사",
+        "url": "https://www.starnewskorea.com/music/2011/01/30/2011013011312367388"
+      },
+      "additionalSources": [],
+      "status": "available",
+      "tags": [
+        "인터뷰"
+      ],
+      "note": "인기가요 현장에서 두 멤버가 진행한 전화 인터뷰. 무대 영상 기록과 별개의 인터뷰이며 기사 본문에 명시된 진행일 기준.",
+      "dateStatus": "confirmed",
+      "dateBasis": "interview"
+    }
+  ],
+  "patches": []
+}
