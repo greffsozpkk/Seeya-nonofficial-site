@@ -1,8 +1,8 @@
-# SEEYA ARCHIVE — v4.81
+# SEEYA ARCHIVE — v4.82
 
 기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
 
-v4.81: 공연·예능 등 29건 추가, 기존 공연 2건 보강. 상세 목록과 날짜 기준은 UPDATE_v4_81.md를 확인하세요.
+v4.82: 과거 행사 15건 추가. 실제 참석·공연 보도 10건, 사전 공지 등 잠정 일정 5건입니다. 상세 목록은 UPDATE_v4_82.md를 확인하세요.
 
 ## 실행
 
