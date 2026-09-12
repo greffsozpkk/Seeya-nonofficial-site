@@ -8,3 +8,5 @@ for(const p of manifest.files.filter(p=>p.endsWith('.html'))){const html=read(p)
 assert(!manifest.assets.some(p=>read(p).includes('data/instagram.json')));
 assert.equal(JSON.parse(read('src/data/routes.json')).length,11);
 console.log('PASS: reproducible build, JS syntax, 11 static bodies, local links, no Instagram feed dependency.');
+
+require('./check-archive');

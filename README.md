@@ -1,84 +1,70 @@
-# SEEYA ARCHIVE — v4.88
+# SEEYA ARCHIVE — v4.90
 
-v4.88: 2026년 공개 기록 재조사. 신규 48건·기존 23건 보강. UPDATE_v4_88.md 및 AUDIT_2026_v4_88.md 참고.
+v4.89 통합본의 기존 아카이브 553건을 보존하고, 2012~2019년 씨야 멤버 활동 156건을 추가했습니다. 전체 아카이브는 709건입니다. 개인·공동 무대, 공연·행사, 라디오·인터뷰, 음원·OST, 예능·연기 활동과 기사 기록을 포함합니다. 공개 자료로 확인한 범위이며 이 기간의 모든 활동을 빠짐없이 수집했다는 의미는 아닙니다.
 
-기준: 사용자 지정 SEEYA_ARCHIVE_Pearl_Light_Pink_v4_65_QUIZ_READABILITY_MOBILE_BANNER.zip.
+## 이번 통합본 적용
 
-v4.86: HISTORY 이미지 폭을 본문 안에 맞춰 모바일·세로 모니터의 가로 넘침을 수정했습니다. UPDATE_v4_86.md 참고.
+1. GitHub Desktop에서 **Fetch origin → Pull origin**으로 최신 파일을 받습니다.
+2. `SEEYA_v4_90_UPLOAD.zip`의 내용물을 저장소 최상위 폴더에 같은 경로로 복사합니다.
+3. 복사한 **cleanup-legacy.bat**을 한 번 실행합니다. Node 설치 없이 Windows PowerShell로 동작하며 이전 버전별 문서·아카이브 JSON·검사 파일을 백업 후 정리합니다.
+4. GitHub Desktop에서 변경·삭제 내역을 확인하고 **Commit → Push**합니다. 뉴스/사이트 빌드와 Pages 배포 완료를 기다립니다.
 
-v4.85: 2006~2011년 과거 기사 154건 추가. 독립 취재·현장 사진·인터뷰를 구분해 수록했습니다. UPDATE_v4_85.md 참고.
+정리 대상 44개 중 원본 내용과 일치하는 파일만 삭제합니다. 별도로 편집한 파일은 `SKIP changed`로 남깁니다. 백업 ZIP은 임시 폴더의 `SEEYA-backups`에 생성되며 정확한 경로가 실행 결과에 나옵니다. 오래 보관할 백업은 따로 복사하세요. 재실행해도 이미 없는 파일은 건너뜁니다. 정리 도구를 실행하지 않아도 새 사이트는 동작하지만 예전 파일은 남습니다.
 
-## 실행
+UPLOAD는 변경 소스와 정리 도구입니다. **news.json·photos.json·visitors.json·CNAME 및 생성 HTML은 덮어쓰지 않습니다.** 이번에는 통합된 기존 553건과 새 기록 156건을 합친 `data/archive.json`이 포함됩니다. v4.89 정리를 아직 적용하지 않은 v4.88 저장소에서도 사용할 수 있도록 통합 로더·정리 도구를 함께 넣었습니다. FULL_BACKUP은 전체 소스·이미지·빌드 산출물이 있는 보관·미리보기용입니다.
 
-이미 생성된 사이트를 보려면 기존처럼 **serve-local.bat을 실행하고 http://localhost:8000/ 을 여세요.** Python 3을 사용하므로 Node.js는 필요하지 않습니다. 서버 창은 열어 두세요.
+## 앞으로 수정할 파일
 
-소스를 수정하여 HTML을 다시 생성할 때만 Node.js 22 이상을 권장합니다. 빌드에는 npm 패키지가 필요 없습니다.
+| 내용 | 편집 위치 |
+|---|---|
+| 아카이브 전체 기록·날짜·출처·설명 | `data/archive.json` |
+| 현재 실행·운영 안내 | `README.md` |
+| 버전별 변경 내역·과거 조사 문서 | `CHANGELOG.md` |
+| 뉴스 | `data/news.json` — 자동 갱신 |
+| 갤러리 | `data/photos.json`, `images/gallery/` |
+| 오늘 방문자 집계 | `data/visitors.json` — 자동 갱신 |
+| 메뉴·하단 안내·GA 태그 | `src/template.html`, `src/pages/home.js` |
+| 페이지 내용·동작·스타일 | `src/pages/`, `src/shared/`, `src/client/`, `src/styles/` |
+| 앨범·멤버·연표·가이드 등 | `src/data/` |
+| 경로·메타·사이트맵 기준 | `src/data/routes.json` |
+
+앞으로 버전별 아카이브 JSON이나 MD 파일을 새로 만들지 않습니다. `data/archive.json`에 새 고유 ID를 추가하거나 기존 기록을 수정하고 `CHANGELOG.md`에 변경 내역을 누적합니다. 같은 출연의 여러 곡·영상은 songs·additionalSources에 모읍니다. 날짜가 불명확하면 영상 게시일을 표시하고 dateBasis·note에 근거를 남깁니다. 발매·공개일, 첫 방송일, 공연 시즌도 따로 표시합니다. 팬 보관 자료의 날짜만 확인된 경우에는 잠정 표시를 유지합니다.
+
+기존 별도 MD 문서는 CHANGELOG에 원문을 보관했습니다. 그 안의 과거 적용 방법·당시 수치·확인 대기 문구는 역사적 기록이며 현재 안내를 대체하지 않습니다. 현재 출처와 확정 여부는 아카이브 각 기록에 있습니다.
+
+## 로컬 실행과 빌드
+
+생성된 사이트를 확인하려면 Python 3이 설치된 PC에서 `serve-local.bat`을 실행하고 http://localhost:8000/ 을 엽니다. 서버 창은 열어 두세요. 미리보기에는 Node가 필요하지 않습니다.
+
+소스를 수정한 뒤 HTML을 만들 때는 Node.js가 필요합니다. 기존 Actions와 같은 Node 22를 사용할 수 있고 별도 npm 패키지는 필요 없습니다.
 
 ```sh
 node build.js
 node scripts/check.js
+node scripts/check-archive.js
 node scripts/serve.js
 ```
 
-http://127.0.0.1:8080/ 에서 확인합니다. 종료는 Ctrl+C. file:// 더블클릭 대신 로컬 서버를 사용하세요. 도메인 루트 배포 기준입니다.
+Node 서버 주소는 http://127.0.0.1:8080/ 입니다. file:// 더블클릭 대신 로컬 서버를 사용하세요.
 
-**생성된 HTML 직접 편집 금지.** 각 경로 index.html, 해시가 붙은 assets/site.* 및 assets/lyric-quiz.*, sitemap.xml, build-manifest.json은 빌드 산출물입니다. src/ 또는 data/를 수정하고 node build.js를 실행하세요.
+**생성된 HTML 직접 편집 금지.** 각 경로 index.html, 해시 파일명 assets/site.*·assets/lyric-quiz.*, sitemap.xml, build-manifest.json은 빌드 산출물입니다. 일반 링크로 이동하며 NEWS·ARCHIVE·GALLERY는 빌드 시 본문과 대체 데이터를 만들고 방문 후 최신 JSON을 읽습니다.
 
-## 편집 위치
+이전 해시 자산은 캐시된 HTML이 참조할 수 있어 유지합니다. 임의로 지우면 예전 페이지에서 퀴즈가 실행되지 않을 수 있습니다. 정리 도구는 이 파일들을 삭제하지 않습니다.
 
-- src/template.html: 공통 head·메뉴·main·모달
-- src/pages/: 페이지별 렌더 함수. FANCHANT는 music.js에서 경로로 구분
-- src/shared/: 빌드·브라우저 공용 순수 렌더 함수
-- src/client/: 검색·필터·확대·추천·퀴즈 동작
-- src/styles/: 기존 CSS. 인스타 피드 스타일 제거·배경 경로 보정 외 유지
-- src/data/: albums, members, guide, history, tarot, today-songs, today-moods, fanchant, archive-types, routes, site JSON
-- data/news.json: 뉴스 빌드 입력 및 브라우저 최신 갱신
-- data/archive.json, data/photos.json: 활동 기록·갤러리
-- scripts/update_news.py: 기존 뉴스 수집기
+## 자동화와 방문 통계
 
-앨범·멤버 기본 프로필·가이드 추천곡·오늘의 추천곡·분위기·응원법을 JSON으로 분리했습니다. HISTORY 기존 요약 배열도 보존했습니다. 긴 HISTORY 서술, GUIDE 설명, 멤버 SNS 마크업은 디자인 보존을 위해 페이지 렌더 함수에 남겨 점진 분리합니다.
+- `update-news.yml`: main Push 시와 6시간마다 뉴스 수집·빌드·배포. 수집 실패 시 기존 기사를 보존합니다.
+- `build.yml`: 수동 사이트 빌드.
+- `update-visitors.yml`: 매시간 43분 방문 통계 갱신. 실행·GA 반영에는 지연이 있을 수 있습니다.
 
-퀴즈 실행 문제은행은 원본처럼 src/client/lyric-quiz.js에 내장되어 있습니다. 문제 변경 시 참고용 data/lyric-quiz.json도 함께 수정하세요. 총 135문제(30/45/60), 무작위 10문제, 앨범 힌트, 첫 시도 점수, 결과 줄바꿈·모바일 배너를 유지했습니다.
+GA4 수집 태그는 `G-0S36GKBD8C`, 조회 속성은 `553597076`입니다. 실제 조회는 GitHub Secrets의 `GA_PROPERTY_ID`, `GA_SERVICE_ACCOUNT_JSON`을 사용하며 기존 Secrets를 다시 등록할 필요가 없습니다. 비밀 키는 통합본에 포함하지 않습니다.
 
-## 생성·이동
+오늘의 숫자는 한국 시간 기준 GA `totalUsers`입니다. 실시간 접속자 수나 새로고침 횟수가 아닙니다. GA 속성 시간대는 `Asia/Seoul`, 서비스 계정은 해당 속성 조회 권한이 있어야 합니다. 최초 설정 안내는 CHANGELOG의 v4.73 보관 문서에 있습니다.
 
-src/data/routes.json이 경로·메타·sitemap의 단일 기준입니다. 메뉴는 일반 링크로 실제 HTML을 엽니다. route()를 통한 본문 재생성이 없습니다. 예전 #/guide/ 같은 북마크만 실제 경로로 전환합니다. 숨겨진 타로는 기존 키 입력으로 클라이언트에서 열립니다.
+제작자 contact는 https://www.instagram.com/seeya_archive_fanpage/ 로 연결됩니다. 최신 인스타 글 피드는 사용하지 않습니다.
 
-NEWS·ARCHIVE·GALLERY는 JSON을 초기 HTML에 반영하고 브라우저에서 갱신합니다. 통신 실패 시 빌드 데이터가 대체합니다. JS를 꺼도 본문과 링크는 동작합니다. 검색·필터·퀴즈·확대에는 JS가 필요합니다.
+## 검증과 배포 범위
 
-같은 입력은 같은 산출물을 만듭니다. src/data/site.json의 snapshotDate는 TODAY·갤러리 기본 표시 기준이며, TODAY는 방문 시 현재 날짜·무작위 추천으로 갱신됩니다. 날짜를 바꾸려면 이 설정을 수정하세요. 뉴스 날짜는 한국 시간 기준입니다.
+`scripts/check.js`는 빌드 재현성·11개 경로 본문·JS 문법·로컬 링크와 아카이브 검사를 실행합니다. `scripts/check-archive.js`는 ID·날짜·출처, 필터·페이지 이동 및 주요 회차를 검사합니다. 별도 브라우저 검사는 Edge와 Playwright 설치 환경에서 진행합니다.
 
-CSS/JS는 내용 해시 파일명을 사용합니다. 생성기가 소유한 오래된 해시 자산만 정리합니다. 소스와 산출물을 함께 보관하세요.
-
-## 기준 ZIP 누락 보충
-
-ZIP에 news.json·photos.json·뉴스 수집기·Actions가 없었습니다. 뉴스는 v4.65 NEWS_FALLBACK을 JSON으로 옮겼습니다. v4.68에서 기존 저장소의 사진 목록 8장과 실제 이미지 파일을 복원했습니다. 테스트용 사진은 포함하지 않습니다.
-
-원본이 참조하지만 ZIP에 없던 멤버 서명 3개, 응원법 이미지·배경 13개, 타로 이미지 1개와 뉴스 수집기를 기존 greffsozpkk/Seeya-nonofficial-site 저장소 커밋 87b9ddc7459fde1ba9996a78ade847ca504f6033에서 보충했습니다. v4.65에 존재하는 파일은 구버전으로 덮어쓰지 않았습니다.
-
-메인 인스타 피드·전용 스타일·데이터 의존·갱신 자동화는 제거했습니다. 공식 인스타 및 멤버 SNS로 가는 일반 링크는 유지합니다.
-
-## 자동화·배포
-
-.github/workflows/update-news.yml: 수집 → 빌드 → 검증 → JSON·HTML·자산 동시 커밋. 업로드(push) 직후에도 뉴스 수집을 실행합니다. build.yml은 수동 빌드용입니다. 두 워크플로는 생성 파일 커밋 후 GitHub Pages 재빌드를 명시적으로 요청합니다. 저장소 쓰기 권한이 필요합니다. 이번 작업에서 원격 업로드·실제 Actions 실행·배포는 하지 않았습니다.
-
-배포 파일: index.html, 각 경로 폴더, assets/, images/, data/, 404.html, robots.txt, sitemap.xml. GitHub Pages 저장소의 기존 CNAME 설정을 유지하세요.
-
-## 검증
-
-node scripts/check.js는 재현성·JS 구문·로컬 링크를 확인합니다. 선택적 기능 검사는 Playwright 설치 환경에서 node scripts/browser-check.cjs로 실행합니다(Edge 필요). 빌드 자체는 Playwright에 의존하지 않습니다.
-
-검증 범위와 기존 제한은 validation/REPORT.md를 확인하세요.
-
-## v4.68 적용
-
-폴더 내용물을 기존 저장소 루트에 덮어쓰세요. data/photos.json, images/gallery/ 및 .github/workflows/를 빠뜨리지 마세요. 기존 CNAME은 유지합니다. 업로드 뒤 Actions의 Update SEEYA news and static HTML과 pages-build-deployment 완료를 확인하세요. 즉시 실행 및 6시간 주기 갱신을 유지합니다. 뉴스 수집 실패 시 캐시로 사이트를 빌드하고 실패 상태를 기록합니다. 배포본 데이터는 9월 9일 확보한 캐시이며 업로드 후 실제 수집 결과로 갱신됩니다.
-
-향후 코드 업데이트에 운영 중인 data/를 빈 초기 데이터로 덮어쓰지 마세요. 사진 목록은 실제 운영 데이터를 유지하고, 뉴스는 수집기가 갱신합니다.
-
-## 방문자 표시
-Today 집계 연결은 UPDATE_v4_73.md를 참조하세요. 설정 전에는 숫자 대신 — 를 표시합니다.
-
-
-## v4.75 아카이브 일정 확장
-추가 기록은 `data/archive-stage-v474.json`과 `data/archive-schedule-v475.json`에서 기존 아카이브와 합쳐집니다. 기본 아카이브·뉴스·방문자 JSON을 덮어쓸 필요가 없습니다. 업로드 방법과 날짜 기준은 `UPDATE_v4_75.md`를 참고하세요.
+사이트 실행에는 각 경로 HTML, assets/, images/, data/, 404.html, robots.txt, sitemap.xml이 필요합니다. GitHub에서 빌드하려면 src/, scripts/, build.js, .github/도 유지하세요. 운영 저장소의 CNAME·사진·자동화 데이터는 계속 보존합니다.

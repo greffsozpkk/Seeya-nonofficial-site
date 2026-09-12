@@ -1,0 +1,182 @@
+{
+  "version": "4.90",
+  "minimumArchiveRecords": 553,
+  "files": [
+    {
+      "path": "ARCHIVE_CHANGES_v4_75.md",
+      "sha256": "9669d446bcad50373c85cac2c0f1250062ddb086dd960a6161922f66ad92fbe4"
+    },
+    {
+      "path": "ARCHIVE_UPDATE_v4_69.md",
+      "sha256": "c57789ee10bc189480e5cf03a5ea653514fea57b8e108e3497a0508607293d21"
+    },
+    {
+      "path": "ARCHIVE_UPDATE_v4_70.md",
+      "sha256": "ff8dd8c081c6e78cd66fa8ae9af755db5a5a372794c401e9a793d873d882c8a0"
+    },
+    {
+      "path": "AUDIT_2026_v4_88.md",
+      "sha256": "bb94c9d8d737fc8d0e10a553a890ee026768a997f618c7ea1a0d6336039ad9d0"
+    },
+    {
+      "path": "data/archive-audit-v488.json",
+      "sha256": "b53603c0bb6c42a76cebd613615cb64fd00306c2ee240240ae1216f930f5e94c"
+    },
+    {
+      "path": "data/archive-concert-variety-v481.json",
+      "sha256": "9562d26ef9ec22167b7d22a730f13cc954718cf10f4da9b2f432d0f939235091"
+    },
+    {
+      "path": "data/archive-events-v482.json",
+      "sha256": "03bb8847090d484bf93baa05ba470680f0a70f98ce6094924c400a7e9cc1cf4e"
+    },
+    {
+      "path": "data/archive-expanded-v487.json",
+      "sha256": "c58cf94c5792f7570625c128edb56d69b0ada99c39b90b34b7d3434a27715198"
+    },
+    {
+      "path": "data/archive-press-v484.json",
+      "sha256": "4e7fab564194dbfbdfd5b7e98c5c64110e6f93039432009c3b240352f11c55d7"
+    },
+    {
+      "path": "data/archive-press-v485.json",
+      "sha256": "fb7cf1af4a4e6e4dc16bdffa2580f5df3afa6c486fea25b6b752302ecd2c9366"
+    },
+    {
+      "path": "data/archive-radio-interviews-v483.json",
+      "sha256": "743c7185ad55740805f1f62696b725c5d8dcd832a0c064cb843619acfc95c0b7"
+    },
+    {
+      "path": "data/archive-schedule-v475.json",
+      "sha256": "4e8b59f11a8f3c2dbfedc9afa5a69c54d3206d3f7d6a6a3df068f60ee09a76bd"
+    },
+    {
+      "path": "data/archive-stage-v474.json",
+      "sha256": "b0793a5d93c531812745de200b98a695bab03d473baa8236b29774a59c842b4d"
+    },
+    {
+      "path": "data/archive-stage-v480.json",
+      "sha256": "636373b06b9c208870c85feb89bed503666e1409c1a42d6b62147bf94ab3fd47"
+    },
+    {
+      "path": "LOCAL_PREVIEW.md",
+      "sha256": "ffc688a5d6dca8770693f4d481ca12c8b309ff0b25f627ad53b82d7a0504d8bd"
+    },
+    {
+      "path": "scripts/check-archive-schedule.js",
+      "sha256": "ad7f234873cc4317469875cf5ba4d52661f5a67c3c59f7ca02ca7621919ef40c"
+    },
+    {
+      "path": "scripts/check-archive-v480.js",
+      "sha256": "7037bba0c238480ef095e92251bb2c3e214a744ceb8925c93ecf04ca71f8b352"
+    },
+    {
+      "path": "scripts/check-archive-v481.js",
+      "sha256": "983fa7fd7650a5969b1f72c4a6ff3873f49d11f0e30a2e7e770835b2e2a32f63"
+    },
+    {
+      "path": "scripts/check-archive-v482.js",
+      "sha256": "0240895fcfba1f78e1778a174b5d51bbf4f03ed56464bdbf46fc50ba1b5802f0"
+    },
+    {
+      "path": "scripts/check-archive-v483.js",
+      "sha256": "bb4b0a450478eece2b223eda63d4493d10da4b1cca6585bfba8691a16e8d515c"
+    },
+    {
+      "path": "scripts/check-archive-v484.js",
+      "sha256": "104cad36c01d75127a5051a0b02c78c9cd70b319fbed18e40162ed0d9fd7b146"
+    },
+    {
+      "path": "scripts/check-archive-v485.js",
+      "sha256": "c8921c375dd7920500dfbf9a7010821c91a9bcb8936f936b722ed6e3fa8db38c"
+    },
+    {
+      "path": "scripts/check-archive-v487.js",
+      "sha256": "5faeaae31c4f1a121a0d8e346f8409fc4a9a3782b8cdc4cf969cdcb4e0ab40cc"
+    },
+    {
+      "path": "scripts/check-archive-v488.js",
+      "sha256": "acc87992bed5fff6ab0f05929151552a8f4895f86c506e05b04edae570bb40eb"
+    },
+    {
+      "path": "UPDATE_v4_71.md",
+      "sha256": "b3e30b1bb9ae7d74580d3330bff2b19e8e36eb796b6683073e660f980eb9e64f"
+    },
+    {
+      "path": "UPDATE_v4_72.md",
+      "sha256": "0137c40fe601c0d25f18f7ad3d56f61e5d8d5c4f7162477b89d7d8b442d8fe2e"
+    },
+    {
+      "path": "UPDATE_v4_73.md",
+      "sha256": "5241653ada7ca2e0e33c9798be219e1f57be27b3ab92d9443e01eca1fcefb775"
+    },
+    {
+      "path": "UPDATE_v4_74.md",
+      "sha256": "c39df6787b657a1eeca30b752b38830678c757c7b4b491ea793862cdb2289d76"
+    },
+    {
+      "path": "UPDATE_v4_75.md",
+      "sha256": "b2cccbc5c942bd0f8936d10e0db5800c0b44c9dc2d10117b52facec80712bbc7"
+    },
+    {
+      "path": "UPDATE_v4_76.md",
+      "sha256": "25f438c1df2ea6d3bd5a7f80d2a3a767dfa83305a387a34afed18207e799f12a"
+    },
+    {
+      "path": "UPDATE_v4_78.md",
+      "sha256": "2658046645a4dfeefe179b5dc45d186c8663e3ea2171c531a13b92d691e2c460"
+    },
+    {
+      "path": "UPDATE_v4_79.md",
+      "sha256": "934560c5778a402132011f3118625533c46dca6fccebfc180daf6bd2032afc06"
+    },
+    {
+      "path": "UPDATE_v4_80.md",
+      "sha256": "d0505ac2223032fa314ce761ab879c6f85eeeb0078cc47b31afc5a90c67565d7"
+    },
+    {
+      "path": "UPDATE_v4_81.md",
+      "sha256": "99dbc9c8f17c2017feb19fe8add14b460e995eaf2f040dfbcf990e4f0ee7f1d9"
+    },
+    {
+      "path": "UPDATE_v4_82.md",
+      "sha256": "3c3cd70266b0e2b880583df372115b3939a4c1ae0f44f6bda8418b17566faca1"
+    },
+    {
+      "path": "UPDATE_v4_83.md",
+      "sha256": "4da26e1a8da4cd4afd2eb3ba00b1ac70add4a5dfc3898be66190caace91d1e87"
+    },
+    {
+      "path": "UPDATE_v4_84.md",
+      "sha256": "eaf8e851414776849997b5b0d3141077375ff7c596908ae1e4e26139563ed092"
+    },
+    {
+      "path": "UPDATE_v4_85.md",
+      "sha256": "c0721a69f03acfc590441c58b3b7a201003fe19a88107ed20f628efbfa9469f8"
+    },
+    {
+      "path": "UPDATE_v4_86.md",
+      "sha256": "2da2aa1e34508fd8308805ddf604f5f8a148e0957b1f5432a3ca1966912523ff"
+    },
+    {
+      "path": "UPDATE_v4_87.md",
+      "sha256": "25d66d4ea9913986b538b37f7350ce8ab238d449b3b2501761ee6cf90d83fdd7"
+    },
+    {
+      "path": "UPDATE_v4_88.md",
+      "sha256": "e6fbc9ae5cebd44d9298b82f3becc0ab139454d0c9bea9a9ed3abbe1b781148c"
+    },
+    {
+      "path": "validation/FIX_4_68.md",
+      "sha256": "f4b12bd00f784c11f329e8f22657f1cb4d1c762fbc28acfe0c46ad72037c8da6"
+    },
+    {
+      "path": "validation/NEWS_FILTER_4_67.md",
+      "sha256": "a639b9b5fe493f961e0bb1815eebad1525d4911456335ab6f8065213a4bd809a"
+    },
+    {
+      "path": "validation/REPORT.md",
+      "sha256": "a70e93715f20f1db1ab1bd3535c69bf92d22ab94c3fa83630e73e6f633f8ab72"
+    }
+  ]
+}

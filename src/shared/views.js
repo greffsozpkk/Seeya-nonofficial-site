@@ -41,7 +41,7 @@ function archiveDateLabel(x){
  const date=archiveEffectiveDate(x);
  if(!date)return "날짜 확인 중";
  const basis=x.dateBasis||(!x.date&&x.publishedDate?"video-published":"");
- const label={"article-published":"기사 게시일",interview:"인터뷰일","video-published":"영상 게시일",broadcast:"방송일",recording:"녹화일",schedule:"일정표 기준",event:"행사일"}[basis]||(x.dateStatus==="tentative"?"잠정 날짜":"");
+ const label={"article-published":"기사 게시일",interview:"인터뷰일","video-published":"영상 게시일",broadcast:"방송일",recording:"녹화일",schedule:"일정표 기준",event:"행사일",release:"발매·공개일","series-start":"첫 방송일",season:"공연 시즌"}[basis]||(x.dateStatus==="tentative"?"잠정 날짜":"");
  return esc(date)+(x.endDate?" ~ "+esc(x.endDate):"")+(label?" · "+label:"")+(x.dateStatus==="tentative"&&label!=="잠정 날짜"?" (잠정)":"");
 }
 function getFilteredArchive(archiveData,archiveState){const q=archiveState.query.toLowerCase();let rows=archiveData.filter(x=>{if(archiveState.year!=="all"&&!archiveEffectiveDate(x).startsWith(archiveState.year))return false;if(archiveState.member!=="all"&&!(x.members||[]).includes(archiveState.member))return false;if(archiveState.type!=="all"&&x.type!==archiveState.type)return false;if(q&&!archiveSearchText(x).includes(q))return false;return true;});rows.sort((a,b)=>!archiveEffectiveDate(a)!==!archiveEffectiveDate(b)?(!archiveEffectiveDate(a)?1:-1):archiveState.sort==="oldest"?archiveEffectiveDate(a).localeCompare(archiveEffectiveDate(b)):archiveState.sort==="added"?(String(b.addedAt||"").localeCompare(String(a.addedAt||""))||archiveEffectiveDate(b).localeCompare(archiveEffectiveDate(a))):archiveEffectiveDate(b).localeCompare(archiveEffectiveDate(a)));return rows;}
