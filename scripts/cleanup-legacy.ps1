@@ -35,7 +35,7 @@ if (!$Apply) { $candidates | ForEach-Object { Write-Host "Would remove: $($_.pat
 if ($candidates.Count -eq 0) { Write-Host 'No unchanged legacy files remain.'; exit 0 }
 $backupRoot = Join-Path ([IO.Path]::GetTempPath()) 'SEEYA-backups'
 $stamp = (Get-Date -Format 'yyyyMMdd-HHmmss') + '-' + [guid]::NewGuid().ToString('N').Substring(0,8)
-$backupPath = Join-Path $backupRoot ("before-v490-" + $stamp + '.zip')
+$backupPath = Join-Path $backupRoot ("before-v492-" + $stamp + '.zip')
 New-Item -ItemType Directory -Path $backupRoot -Force | Out-Null
 Add-Type -AssemblyName System.IO.Compression
 Add-Type -AssemblyName System.IO.Compression.FileSystem

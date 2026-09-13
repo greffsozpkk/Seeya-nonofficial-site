@@ -163,12 +163,21 @@
       "김연지",
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "사랑의 인사",
+      "여인의 향기",
+      "미워요",
+      "얼음인형",
+      "그럼에도, 우린",
+      "그래도 좋아",
+      "Stay"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "YES24",
-      "url": "https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17981&order=1&type=1"
+      "label": "대구 공연 · 대표곡 4곡 직캠",
+      "url": "https://www.youtube.com/watch?v=736SlL_RabA",
+      "publishedDate": "2026-09-12"
     },
     "status": "available",
     "tags": [
@@ -176,18 +185,44 @@
       "전국투어",
       "THE FAN",
       "20주년",
-      "대구",
-      "예정"
+      "대구"
     ],
-    "note": "2026년 9월 12일 오후 6시 예정. 일정표 기준 예매 오픈: 2026-06-25.",
+    "note": "9월 12일 대구 공연. 9월 12~13일 게시된 현장 직캠을 곡별로 연결했습니다. 공연일은 예매처 일정과 영상 제목을 대조했습니다. 나열된 곡은 연결 영상에서 확인한 범위이며 전체 공연 순서가 아닙니다.",
     "venue": "대구 엑스코 5층 컨벤션홀",
-    "eventState": "scheduled",
+    "eventState": "completed",
     "additionalSources": [
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A28%3AF28"
+      },
+      {
+        "label": "YES24",
+        "url": "https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17981&order=1&type=1"
+      },
+      {
+        "label": "대구 공연 · 그럼에도, 우린 직캠",
+        "url": "https://www.youtube.com/watch?v=SKZr7-QfysI",
+        "publishedDate": "2026-09-13"
+      },
+      {
+        "label": "대구 공연 · 그래도 좋아 직캠",
+        "url": "https://www.youtube.com/watch?v=KOntKSpNxHo",
+        "publishedDate": "2026-09-13"
+      },
+      {
+        "label": "대구 공연 · Stay 직캠",
+        "url": "https://www.youtube.com/watch?v=lu8KcdOAQPo",
+        "publishedDate": "2026-09-13"
+      },
+      {
+        "label": "대구 공연 · 얼음인형 4K 직캠",
+        "url": "https://www.youtube.com/watch?v=DpIkcrhqobw",
+        "publishedDate": "2026-09-13"
       }
-    ]
+    ],
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "updatedAt": "2026-09-13"
   },
   {
     "id": "20260909-boram-kick-a-goal",
@@ -216,8 +251,13 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%8A%A4%EC%BC%80%EC%A4%84%ED%91%9C%27%21A12%3AF12"
+      },
+      {
+        "label": "스포츠경향 · 핸드볼 데뷔전 보도",
+        "url": "https://sports.khan.co.kr/article/202609101840003"
       }
-    ]
+    ],
+    "updatedAt": "2026-09-13"
   },
   {
     "id": "20260906-gyuri-our-love-single",
@@ -436,7 +476,15 @@
       "솔로",
       "싱글"
     ],
-    "note": "김연지 솔로 싱글."
+    "note": "김연지 솔로 싱글.",
+    "additionalSources": [
+      {
+        "label": "1theK · 노래 공식 MV",
+        "url": "https://www.youtube.com/watch?v=CGgkgRk5xEg",
+        "publishedDate": "2026-08-29"
+      }
+    ],
+    "updatedAt": "2026-09-13"
   },
   {
     "id": "20260829-the-fan-seoul",
@@ -5670,21 +5718,30 @@
     "members": [
       "남규리"
     ],
-    "songs": [],
+    "songs": [
+      "Stay"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 일정표",
-      "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A31%3AF31"
+      "label": "대구 롤리 버스킹 · Stay 직캠",
+      "url": "https://www.youtube.com/watch?v=xBmjJGAYa7A",
+      "publishedDate": "2026-09-10"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 일정표",
+        "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A31%3AF31"
+      }
+    ],
+    "status": "available",
     "tags": [
       "2026",
       "일정 기록"
     ],
-    "note": "공유 일정표에 기록된 일정입니다. 출연 영상은 확인되는 대로 연결합니다.",
-    "venue": "롤리커피 가창점"
+    "note": "기존 6월 28일 버스킹에 9월 10일 게시된 현장 영상을 연결했습니다. 영상 게시일을 새로운 공연일로 등록하지 않았습니다.",
+    "venue": "롤리커피 가창점",
+    "updatedAt": "2026-09-13"
   },
   {
     "id": "v475-sheet2-row35",
@@ -6374,8 +6431,8 @@
     "dateStatus": "confirmed",
     "dateBasis": "recording",
     "addedAt": "2026-09-11",
-    "title": "씨야 · 피크닉 라이브 소풍 녹화",
-    "program": "피크닉 라이브 소풍 · 녹화",
+    "title": "씨야 · 피크닉 라이브 소풍 150회",
+    "program": "피크닉 라이브 소풍 EP.150",
     "type": "music-show",
     "members": [
       "남규리",
@@ -6383,22 +6440,39 @@
       "이보람"
     ],
     "songs": [
-      "Stay"
+      "Stay",
+      "봄처럼 그댄"
     ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "피크닉라이브 소풍",
-      "url": "https://www.youtube.com/watch?v=55xQxdPzGrQ"
+      "label": "소풍 · Stay (9/12 공개)",
+      "url": "https://www.youtube.com/watch?v=55xQxdPzGrQ",
+      "publishedDate": "2026-09-12"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "소풍 · 봄처럼 그댄 (9/13 공개)",
+        "url": "https://www.youtube.com/watch?v=umxr2fEgcas",
+        "publishedDate": "2026-09-13"
+      },
+      {
+        "label": "ALL THE K-POP · Stay",
+        "url": "https://www.youtube.com/watch?v=gTlU9VhJSPs",
+        "publishedDate": "2026-09-12"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
       "일정 기록"
     ],
-    "note": "공유 일정표에 기록된 일정입니다. 출연 영상은 확인되는 대로 연결합니다. 2026년 9월 12일 공개된 피크닉 라이브 소풍 EP.150 공식 Stay 영상을 연결했습니다. 기존 날짜는 녹화일입니다.",
-    "venue": "국립 4.19 민주묘지 주차장"
+    "note": "8월 24일 녹화 기록입니다. 공식 Stay 영상은 9월 12일, 봄처럼 그댄 영상은 9월 13일 공개됐습니다. 같은 회차의 무대는 이 카드에 모았습니다.",
+    "venue": "국립 4.19 민주묘지 주차장",
+    "episode": 150,
+    "recordedDate": "2026-08-24",
+    "publishedDate": "2026-09-12",
+    "updatedAt": "2026-09-13"
   },
   {
     "id": "v475-sheet2-row77",
@@ -6588,7 +6662,7 @@
     "id": "v475-sheet1-row13",
     "date": "2026-09-10",
     "dateStatus": "confirmed",
-    "dateBasis": "schedule",
+    "dateBasis": "event",
     "addedAt": "2026-09-11",
     "title": "김연지 · 제 13회 박카스 29초 영화제 시상식",
     "program": "제13회 박카스 29초 영화제 시상식",
@@ -6596,21 +6670,32 @@
     "members": [
       "김연지"
     ],
-    "songs": [],
+    "songs": [
+      "사랑의 인사",
+      "노래",
+      "미친 사랑의 노래"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 일정표",
-      "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%8A%A4%EC%BC%80%EC%A4%84%ED%91%9C%27%21A13%3AF13"
+      "label": "박카스 영화제 축하무대 직캠",
+      "url": "https://www.youtube.com/watch?v=GdtBetckWXs",
+      "publishedDate": "2026-09-10"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 일정표",
+        "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%8A%A4%EC%BC%80%EC%A4%84%ED%91%9C%27%21A13%3AF13"
+      }
+    ],
+    "status": "available",
     "tags": [
       "2026",
       "일정 기록"
     ],
-    "note": "공유 일정표에 기록된 일정입니다. 출연 영상은 확인되는 대로 연결합니다.",
-    "venue": "한국경제신문사 다산홀"
+    "note": "기존 9월 10일 일정과 같은 날짜가 명시된 현장 직캠을 연결했습니다. 영상 설명의 세 곡을 한 카드에 모았습니다.",
+    "venue": "한국경제신문사 다산홀",
+    "updatedAt": "2026-09-13"
   },
   {
     "id": "v480-stage-001",
@@ -15894,7 +15979,12 @@
       "label": "진짜 이진성 (먼데이 키즈)",
       "url": "https://www.youtube.com/watch?v=6PrNUPIaibQ"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "뉴스1 · 음악·연기 활동 회고 보도",
+        "url": "https://v.daum.net/v/7rgQc2XS5V"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -15903,7 +15993,8 @@
     "note": "공개 영상 기준 기록입니다. 촬영일과 영상 게시일은 다를 수 있습니다.",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
-    "publishedDate": "2026-09-10"
+    "publishedDate": "2026-09-10",
+    "updatedAt": "2026-09-13"
   },
   {
     "id": "v487-2026-006",
@@ -22608,6 +22699,6407 @@
       "남규리"
     ],
     "note": "미키 역을 맡았던 이몽의 종영 소감을 다룬 기사입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-album-20702891",
+    "date": "2025-02-09",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 한번만 더",
+    "program": "한번만 더",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "한번만 더"
+    ],
+    "album": "한번만 더",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20702891"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "한번만 더"
+    ]
+  },
+  {
+    "id": "v491-album-20686184",
+    "date": "2024-11-24",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 당신은 천사와 커피를 마셔본 적이 있습니까",
+    "program": "당신은 천사와 커피를 마셔본 적이 있습니까 (청설 X 김연지)",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "당신은 천사와 커피를 마셔본 적이 있습니까"
+    ],
+    "album": "당신은 천사와 커피를 마셔본 적이 있습니까 (청설 X 김연지)",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20686184"
+    },
+    "additionalSources": [
+      {
+        "label": "TOON STUDIO",
+        "url": "https://www.youtube.com/watch?v=Uko7Y-Tfj-8"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "당신은 천사와 커피를 마셔본 적이 있습니까"
+    ]
+  },
+  {
+    "id": "v491-album-20671912",
+    "date": "2024-09-23",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 그래, 너야",
+    "program": "그래, 너야",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "그래, 너야"
+    ],
+    "album": "그래, 너야",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20671912"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "그래, 너야"
+    ]
+  },
+  {
+    "id": "v491-album-20623793",
+    "date": "2024-02-25",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 안부",
+    "program": "안부",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "안부"
+    ],
+    "album": "안부",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20623793"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "안부"
+    ]
+  },
+  {
+    "id": "v491-album-4093845",
+    "date": "2023-12-06",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — Little Star",
+    "program": "오늘도 사랑스럽개 OST Part. 5 : Little Star",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "Little Star"
+    ],
+    "album": "오늘도 사랑스럽개 OST Part. 5 : Little Star",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4093845"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "OST",
+    "titleTracks": [
+      "Little Star"
+    ]
+  },
+  {
+    "id": "v491-album-4091640",
+    "date": "2023-10-03",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 혼자 왔어요",
+    "program": "혼자 왔어요",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "혼자 왔어요"
+    ],
+    "album": "혼자 왔어요",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4091640"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "DK(디셈버)와 함께한 프로젝트 음원입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "혼자 왔어요"
+    ]
+  },
+  {
+    "id": "v491-album-4090311",
+    "date": "2023-08-20",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 미친 사랑의 노래",
+    "program": "미친 사랑의 노래",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "미친 사랑의 노래"
+    ],
+    "album": "미친 사랑의 노래",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4090311"
+    },
+    "additionalSources": [
+      {
+        "label": "방구석 캐스팅",
+        "url": "https://www.youtube.com/watch?v=kn7l8lJAwOY"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "DK(디셈버)와 함께한 프로젝트 음원입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "미친 사랑의 노래"
+    ]
+  },
+  {
+    "id": "v491-album-4088070",
+    "date": "2023-06-25",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 비가 오면 마음껏 울어도 되니까",
+    "program": "비가 오면 마음껏 울어도 되니까",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "비가 오면 마음껏 울어도 되니까"
+    ],
+    "album": "비가 오면 마음껏 울어도 되니까",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4088070"
+    },
+    "additionalSources": [
+      {
+        "label": "1theK (원더케이)",
+        "url": "https://www.youtube.com/watch?v=arm2c6NH9vg"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "비가 오면 마음껏 울어도 되니까"
+    ]
+  },
+  {
+    "id": "v491-album-4084635",
+    "date": "2023-03-15",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 사랑의 인사",
+    "program": "사랑의 인사",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "사랑의 인사"
+    ],
+    "album": "사랑의 인사",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4084635"
+    },
+    "additionalSources": [
+      {
+        "label": "김연지 Official",
+        "url": "https://www.youtube.com/watch?v=gwRkvYc59_s"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "사랑의 인사"
+    ]
+  },
+  {
+    "id": "v491-album-4082994",
+    "date": "2023-01-11",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 가슴으로 운다",
+    "program": "가슴으로 운다",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "가슴으로 운다"
+    ],
+    "album": "가슴으로 운다",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4082994"
+    },
+    "additionalSources": [
+      {
+        "label": "김연지 Official",
+        "url": "https://www.youtube.com/watch?v=atp-TU4Xezs"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "가슴으로 운다"
+    ]
+  },
+  {
+    "id": "v491-album-4082589",
+    "date": "2022-12-25",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 빨간풍선",
+    "program": "빨간풍선 OST Part.1",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "빨간풍선"
+    ],
+    "album": "빨간풍선 OST Part.1",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4082589"
+    },
+    "additionalSources": [
+      {
+        "label": "김연지 Official",
+        "url": "https://www.youtube.com/watch?v=8k-YrZ5Gg2g"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "OST",
+    "titleTracks": [
+      "빨간풍선"
+    ]
+  },
+  {
+    "id": "v491-album-4080008",
+    "date": "2022-09-25",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 시간이 지나면 잊혀진다 누가 그랬어",
+    "program": "시간이 지나면 잊혀진다 누가 그랬어 (뷰티풀 모먼트 OST Part.2)",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "시간이 지나면 잊혀진다 누가 그랬어"
+    ],
+    "album": "시간이 지나면 잊혀진다 누가 그랬어 (뷰티풀 모먼트 OST Part.2)",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4080008"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "OST",
+    "titleTracks": [
+      "시간이 지나면 잊혀진다 누가 그랬어"
+    ]
+  },
+  {
+    "id": "v491-album-20461118",
+    "date": "2022-04-10",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — Whisky on the Rock",
+    "program": "우리들의 블루스 OST Part 1",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "Whisky on the Rock"
+    ],
+    "album": "우리들의 블루스 OST Part 1",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20461118"
+    },
+    "additionalSources": [
+      {
+        "label": "냠냠엔터테인먼트 YAMYAM ENTERTAINMENT",
+        "url": "https://www.youtube.com/watch?v=7h3ndp05JN0"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "OST",
+    "titleTracks": [
+      "Whisky on the Rock"
+    ]
+  },
+  {
+    "id": "v491-album-20307775",
+    "date": "2020-02-21",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 바람이 불면",
+    "program": "바람이 불면",
+    "type": "album",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "바람이 불면"
+    ],
+    "album": "바람이 불면",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20307775"
+    },
+    "additionalSources": [
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=lOvBRahMvtQ"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "바람이 불면"
+    ]
+  },
+  {
+    "id": "v491-album-4132158",
+    "date": "2025-11-02",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 당신을 위하여",
+    "program": "당신을 위하여",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "당신을 위하여"
+    ],
+    "album": "당신을 위하여",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4132158"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "당신을 위하여"
+    ]
+  },
+  {
+    "id": "v491-album-20734762",
+    "date": "2025-06-23",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 매일 이렇게 비가 내려",
+    "program": "IONY의 오선지 : Project #01",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "매일 이렇게 비가 내려"
+    ],
+    "album": "IONY의 오선지 : Project #01",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20734762"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "매일 이렇게 비가 내려"
+    ]
+  },
+  {
+    "id": "v491-album-20682844",
+    "date": "2024-11-07",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 노래가 된 너",
+    "program": "노래가 된 너",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "노래가 된 너"
+    ],
+    "album": "노래가 된 너",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20682844"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "노래가 된 너"
+    ]
+  },
+  {
+    "id": "v491-album-20671417",
+    "date": "2024-09-14",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 우리 어머니 내 꿈 찾아오면",
+    "program": "우리 어머니 내 꿈 찾아오면",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "우리 어머니 내 꿈 찾아오면"
+    ],
+    "album": "우리 어머니 내 꿈 찾아오면",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20671417"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "우리 어머니 내 꿈 찾아오면"
+    ]
+  },
+  {
+    "id": "v491-album-20665772",
+    "date": "2024-08-23",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 달빛 속삭임",
+    "program": "굿파트너 OST Part.3",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "달빛 속삭임"
+    ],
+    "album": "굿파트너 OST Part.3",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20665772"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "OST",
+    "titleTracks": [
+      "달빛 속삭임"
+    ]
+  },
+  {
+    "id": "v491-album-20645846",
+    "date": "2024-05-27",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 너를 사랑하니까",
+    "program": "너를 사랑하니까",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "너를 사랑하니까"
+    ],
+    "album": "너를 사랑하니까",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20645846"
+    },
+    "additionalSources": [
+      {
+        "label": "냠냠엔터테인먼트 YAMYAM ENTERTAINMENT",
+        "url": "https://www.youtube.com/watch?v=pwdQrpNpFyA"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "너를 사랑하니까"
+    ]
+  },
+  {
+    "id": "v491-album-4096397",
+    "date": "2024-02-21",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 형 (兄)",
+    "program": "형 (兄)",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "형 (兄)"
+    ],
+    "album": "형 (兄)",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4096397"
+    },
+    "additionalSources": [
+      {
+        "label": "방구석 캐스팅",
+        "url": "https://www.youtube.com/watch?v=oukYixC1ldo"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "형 (兄)"
+    ]
+  },
+  {
+    "id": "v491-album-4088880",
+    "date": "2023-07-14",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 지금 술 한잔했어 (2023)",
+    "program": "지금 술 한잔했어 (2023)",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "지금 술 한잔했어 (2023)"
+    ],
+    "album": "지금 술 한잔했어 (2023)",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4088880"
+    },
+    "additionalSources": [
+      {
+        "label": "방구석 캐스팅",
+        "url": "https://www.youtube.com/watch?v=o8vT_K3FZRc"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "김보경와 함께한 프로젝트 음원입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "지금 술 한잔했어 (2023)"
+    ]
+  },
+  {
+    "id": "v491-album-4082402",
+    "date": "2022-12-18",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 크리스마스에는",
+    "program": "크리스마스에는",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "크리스마스에는"
+    ],
+    "album": "크리스마스에는",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4082402"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "펀치·백예빈와 함께한 프로젝트 음원입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "크리스마스에는"
+    ]
+  },
+  {
+    "id": "v491-album-20489851",
+    "date": "2022-08-30",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 한 밤의 꿈처럼",
+    "program": "한 밤의 꿈처럼",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "한 밤의 꿈처럼"
+    ],
+    "album": "한 밤의 꿈처럼",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20489851"
+    },
+    "additionalSources": [
+      {
+        "label": "STONE MUSIC",
+        "url": "https://www.youtube.com/watch?v=c6MlQvbbZw0"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "한 밤의 꿈처럼"
+    ]
+  },
+  {
+    "id": "v491-album-20415750",
+    "date": "2021-08-18",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 사랑하니까 (2021)",
+    "program": "사랑하니까 (2021)",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "사랑하니까 (2021)"
+    ],
+    "album": "사랑하니까 (2021)",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20415750"
+    },
+    "additionalSources": [
+      {
+        "label": "STONE MUSIC",
+        "url": "https://www.youtube.com/watch?v=D8XGN_VKRG0"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "사랑하니까 (2021)"
+    ]
+  },
+  {
+    "id": "v491-album-20311741",
+    "date": "2020-03-13",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — Freak (English Ver.) / Freak (Korean Ver.)",
+    "program": "하이에나 OST Part.5",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "Freak (English Ver.)",
+      "Freak (Korean Ver.)"
+    ],
+    "album": "하이에나 OST Part.5",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20311741"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "OST",
+    "titleTracks": [
+      "Freak (English Ver.)"
+    ]
+  },
+  {
+    "id": "v491-album-4136527",
+    "date": "2025-12-23",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — December Dream",
+    "program": "December Dream",
+    "type": "album",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "December Dream"
+    ],
+    "album": "December Dream",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4136527"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "December Dream"
+    ]
+  },
+  {
+    "id": "v491-album-20758654",
+    "date": "2025-09-29",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 슬픔이 찾아와서 그래(Prod. 로코베리)",
+    "program": "슬픔이 찾아와서 그래",
+    "type": "album",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "슬픔이 찾아와서 그래(Prod. 로코베리)"
+    ],
+    "album": "슬픔이 찾아와서 그래",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20758654"
+    },
+    "additionalSources": [
+      {
+        "label": "에잇 8recordz x studio8",
+        "url": "https://www.youtube.com/watch?v=nN7NV5FBhBw"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "슬픔이 찾아와서 그래(Prod. 로코베리)"
+    ]
+  },
+  {
+    "id": "v491-album-4125418",
+    "date": "2025-08-17",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 그래도 좋아해요",
+    "program": "그래도 좋아해요",
+    "type": "album",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "그래도 좋아해요"
+    ],
+    "album": "그래도 좋아해요",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4125418"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "그래도 좋아해요"
+    ]
+  },
+  {
+    "id": "v491-album-4120228",
+    "date": "2025-05-25",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 가슴앓이",
+    "program": "기억",
+    "type": "album",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "가슴앓이"
+    ],
+    "album": "기억",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4120228"
+    },
+    "additionalSources": [
+      {
+        "label": "1theK (원더케이)",
+        "url": "https://www.youtube.com/watch?v=5USUHmWpPcg"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "가슴앓이"
+    ]
+  },
+  {
+    "id": "v491-album-4099893",
+    "date": "2024-04-08",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 고백하는 거 맞아",
+    "program": "고백하는 거 맞아",
+    "type": "album",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "고백하는 거 맞아"
+    ],
+    "album": "고백하는 거 맞아",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4099893"
+    },
+    "additionalSources": [
+      {
+        "label": "뮤직카우",
+        "url": "https://www.youtube.com/watch?v=Mjl8tBDX5Ik"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "고백하는 거 맞아"
+    ]
+  },
+  {
+    "id": "v491-album-4096435",
+    "date": "2024-02-22",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — HALO",
+    "program": "기적:奇跡",
+    "type": "album",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "HALO"
+    ],
+    "album": "기적:奇跡",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4096435"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "솔로·프로젝트 음반",
+    "titleTracks": [
+      "HALO"
+    ]
+  },
+  {
+    "id": "v491-album-4076482",
+    "date": "2022-06-04",
+    "addedAt": "2026-09-13",
+    "title": "이보람 참여 — 어마어마해",
+    "program": "WSG워너비 12",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "어마어마해"
+    ],
+    "album": "WSG워너비 12",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4076482"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람",
+      "WSG워너비",
+      "가야G"
+    ],
+    "note": "WSG워너비·가야G 활동으로 참여한 음원입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "프로젝트 음반",
+    "titleTracks": [
+      "어마어마해"
+    ]
+  },
+  {
+    "id": "v491-album-4077595",
+    "date": "2022-07-09",
+    "addedAt": "2026-09-13",
+    "title": "이보람 참여 — 그때 그 순간 그대로 (그그그)",
+    "program": "WSG워너비 1집",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "그때 그 순간 그대로 (그그그)"
+    ],
+    "album": "WSG워너비 1집",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4077595"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람",
+      "WSG워너비",
+      "가야G"
+    ],
+    "note": "WSG워너비·가야G 활동으로 참여한 음원입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "프로젝트 음반",
+    "titleTracks": [
+      "그때 그 순간 그대로 (그그그)"
+    ]
+  },
+  {
+    "id": "v491-album-4078494",
+    "date": "2022-08-06",
+    "addedAt": "2026-09-13",
+    "title": "이보람 참여 — 눈을 감으면",
+    "program": "눈을 감으면",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "눈을 감으면"
+    ],
+    "album": "눈을 감으면",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4078494"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람",
+      "WSG워너비",
+      "가야G"
+    ],
+    "note": "WSG워너비·가야G 활동으로 참여한 음원입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "프로젝트 음반",
+    "titleTracks": [
+      "눈을 감으면"
+    ]
+  },
+  {
+    "id": "v491-album-4084716",
+    "date": "2023-03-17",
+    "addedAt": "2026-09-13",
+    "title": "이보람 참여 — 결국엔 너에게 닿아서",
+    "program": "결국엔 너에게 닿아서",
+    "type": "album",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "결국엔 너에게 닿아서"
+    ],
+    "album": "결국엔 너에게 닿아서",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4084716"
+    },
+    "additionalSources": [
+      {
+        "label": "냠냠엔터테인먼트 YAMYAM ENTERTAINMENT",
+        "url": "https://www.youtube.com/watch?v=SPbPYQ8aTPc"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람",
+      "WSG워너비",
+      "가야G"
+    ],
+    "note": "WSG워너비·가야G 활동으로 참여한 음원입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "releaseType": "프로젝트 음반",
+    "titleTracks": [
+      "결국엔 너에게 닿아서"
+    ]
+  },
+  {
+    "id": "v491-sketchbook-20200306",
+    "date": "2020-03-06",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 야생화 / 바람이 불면",
+    "program": "KBS 유희열의 스케치북",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "야생화",
+      "바람이 불면"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS Kpop",
+      "url": "https://www.youtube.com/watch?v=oIWCLgFO0so"
+    },
+    "additionalSources": [
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=lOvBRahMvtQ"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-immortal-2023-04-22",
+    "date": "2023-04-22",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — Memory",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "Memory"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 레전드 케이팝",
+      "url": "https://www.youtube.com/watch?v=qJ-_JHI-TWI"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-immortal-2024-02-03",
+    "date": "2024-02-03",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 애인 있어요",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "애인 있어요"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 레전드 케이팝",
+      "url": "https://www.youtube.com/watch?v=Gbt93X7CnGk"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-immortal-2024-06-01",
+    "date": "2024-06-01",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 개여울",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "개여울"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 레전드 케이팝",
+      "url": "https://www.youtube.com/watch?v=TRxoWKKDY6A"
+    },
+    "additionalSources": [
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=-p00sDPOtec"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-immortal-2024-08-24",
+    "date": "2024-08-24",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 잊지 말아요",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "잊지 말아요"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 레전드 케이팝",
+      "url": "https://www.youtube.com/watch?v=DmkBpa-6aJY"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-immortal-2024-12-14",
+    "date": "2024-12-14",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 만남",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "만남"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 레전드 케이팝",
+      "url": "https://www.youtube.com/watch?v=6_aYTp7ykHw"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-immortal-2023-01-28",
+    "date": "2023-01-28",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 나 가거든",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "나 가거든"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 레전드 케이팝",
+      "url": "https://www.youtube.com/watch?v=LeePjjetoZw"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-immortal-2023-02-04",
+    "date": "2023-02-04",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 바람의 노래",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "바람의 노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 레전드 케이팝",
+      "url": "https://www.youtube.com/watch?v=WBeJRw2xxV0"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-immortal-2024-03-09",
+    "date": "2024-03-09",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 죄와 벌",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "죄와 벌"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 레전드 케이팝",
+      "url": "https://www.youtube.com/watch?v=iH_KGFI-D6k"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-immortal-2020-03-28",
+    "date": "2020-03-28",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 그대 떠난 뒤",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "그대 떠난 뒤"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 방송 음반 정보",
+      "url": "https://music.bugs.co.kr/album/20315229"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "공식 방송 음반의 공개일을 기준으로 등록했습니다. 영상은 확인 후 연결합니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release"
+  },
+  {
+    "id": "v491-immortal-2022-09-17",
+    "date": "2022-09-17",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — Forever",
+    "program": "KBS 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "Forever"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "벅스 방송 음반 정보",
+      "url": "https://music.bugs.co.kr/album/4079834"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "공식 방송 음반의 공개일을 기준으로 등록했습니다. 영상은 확인 후 연결합니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release"
+  },
+  {
+    "id": "v491-misstrot-1",
+    "date": "2020-12-17",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 타인",
+    "program": "TV조선 미스트롯2 1회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "타인"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "TVCHOSUN - TV조선",
+      "url": "https://www.youtube.com/watch?v=WOJOwiXeESg"
+    },
+    "additionalSources": [
+      {
+        "label": "미스&미스터트롯",
+        "url": "https://www.youtube.com/watch?v=IllQVfXCrRY"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-misstrot-4",
+    "date": "2021-01-07",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 바람 바람 바람",
+    "program": "TV조선 미스트롯2 4회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "바람 바람 바람"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미스&미스터트롯",
+      "url": "https://www.youtube.com/watch?v=QHICHwHcz4Y"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-misstrot-5",
+    "date": "2021-01-14",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 여인의 눈물",
+    "program": "TV조선 미스트롯2 5회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "여인의 눈물"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미스&미스터트롯",
+      "url": "https://www.youtube.com/watch?v=31t-Ps4FHwk"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-misstrot-7",
+    "date": "2021-01-28",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 여고시절 / 살다 보면",
+    "program": "TV조선 미스트롯2 7회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "여고시절",
+      "살다 보면"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미스&미스터트롯",
+      "url": "https://www.youtube.com/watch?v=Oq9hdvW1CJo"
+    },
+    "additionalSources": [
+      {
+        "label": "TVCHOSUN - TV조선",
+        "url": "https://www.youtube.com/watch?v=9zvQx4-uAks"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-misstrot-8",
+    "date": "2021-02-04",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 십분내로",
+    "program": "TV조선 미스트롯2 8회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "십분내로"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미스&미스터트롯",
+      "url": "https://www.youtube.com/watch?v=JdrpcI95Wpk"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-misstrot-10",
+    "date": "2021-02-18",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 물망초 / 사랑아",
+    "program": "TV조선 미스트롯2 10회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "물망초",
+      "사랑아"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "TVCHOSUN JOY",
+      "url": "https://www.youtube.com/watch?v=JaAHEh5XsxI"
+    },
+    "additionalSources": [
+      {
+        "label": "미스&미스터트롯",
+        "url": "https://www.youtube.com/watch?v=agF9scgEA5E"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-misstrot-talk2",
+    "date": "2021-03-25",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 꽃",
+    "program": "TV조선 미스트롯2 토크 콘서트 2회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "꽃"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미스&미스터트롯",
+      "url": "https://www.youtube.com/watch?v=bfIuA6LYbRQ"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-callcenter47",
+    "date": "2021-03-19",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 천상재회",
+    "program": "TV조선 사랑의 콜센타 47회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "천상재회"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미스&미스터트롯",
+      "url": "https://www.youtube.com/watch?v=OV7vBnl7-5w"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-openconcert-20210718",
+    "date": "2021-07-18",
+    "addedAt": "2026-09-13",
+    "title": "김연지·앙상블 — 더는 참지 않아",
+    "program": "KBS 열린음악회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "더는 참지 않아"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 레전드 케이팝",
+      "url": "https://www.youtube.com/watch?v=QqV_JlP0Kvs"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-wsg-musiccore-20220723",
+    "date": "2022-07-23",
+    "addedAt": "2026-09-13",
+    "title": "가야G·이보람 — 음악중심 1위 앵콜",
+    "program": "MBC 쇼! 음악중심",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "그때 그 순간 그대로 (그그그)"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCkpop",
+      "url": "https://www.youtube.com/watch?v=lBbOL7zrA-o"
+    },
+    "additionalSources": [
+      {
+        "label": "MBCkpop",
+        "url": "https://www.youtube.com/watch?v=P3Cn1eZ0GPQ"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-gaya-inkigayo-20230319",
+    "date": "2023-03-19",
+    "addedAt": "2026-09-13",
+    "title": "가야G·이보람 — 결국엔 너에게 닿아서",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "결국엔 너에게 닿아서"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBSKPOP ZOOM",
+      "url": "https://www.youtube.com/watch?v=GI7wUNcrTho"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-monthlystage-20230325",
+    "date": "2023-03-25",
+    "addedAt": "2026-09-13",
+    "title": "소연·이보람 — 라라라",
+    "program": "SBS FiL 월간 더 스테이지",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "라라라"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "THE K-POP2",
+      "url": "https://www.youtube.com/watch?v=jQwB6lt0g9g"
+    },
+    "additionalSources": [
+      {
+        "label": "벅스 방송 음반 정보",
+        "url": "https://music.bugs.co.kr/album/20555022"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-mbc-ent2022",
+    "date": "2022-12-29",
+    "addedAt": "2026-09-13",
+    "title": "가야G·이보람 — MBC 방송연예대상 축하무대",
+    "program": "2022 MBC 방송연예대상",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "그때 그 순간 그대로 (그그그)"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=4oFkePKzbF0"
+    },
+    "additionalSources": [
+      {
+        "label": "MBC 특별상 수상 영상",
+        "url": "https://playvod.imbc.com/Vod/ClipPlay?broadcastId=1005852100006100004"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "가야G의 축하무대와 특별상 수상을 같은 시상식 카드에 모았습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-picnic134",
+    "date": "2024-11-15",
+    "addedAt": "2026-09-13",
+    "title": "김연지·진호 — 널 사랑하지 않아",
+    "program": "MBC M 피크닉 라이브 소풍 134회",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "널 사랑하지 않아"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "피크닉라이브 소풍",
+      "url": "https://www.youtube.com/watch?v=JFBttydT1WM"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "연천에서 녹화한 무대이며 공식 안내의 방송일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-picnic143",
+    "date": "2025-11-11",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 숲",
+    "program": "MBC M 피크닉 라이브 소풍 143회",
+    "type": "music-show",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "숲"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "ALL THE K-POP",
+      "url": "https://www.youtube.com/watch?v=lsBVurnIq_w"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2025-11-11"
+  },
+  {
+    "id": "v491-picnic144",
+    "date": "2025-12-18",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 당신을 위하여 / 다시 만난 세계",
+    "program": "MBC M 피크닉 라이브 소풍 144회",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "당신을 위하여",
+      "다시 만난 세계"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "ALL THE K-POP",
+      "url": "https://www.youtube.com/watch?v=aq9JEbKYxLs"
+    },
+    "additionalSources": [
+      {
+        "label": "피크닉라이브 소풍",
+        "url": "https://www.youtube.com/watch?v=k6ndCIwMPcA"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2025-12-18"
+  },
+  {
+    "id": "v491-ena-20250829",
+    "date": "2025-08-29",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 그래도 좋아해요",
+    "program": "ENA 케이팝업 차트쇼",
+    "type": "music-show",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "그래도 좋아해요"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "ENA K-POP",
+      "url": "https://www.youtube.com/watch?v=FbOzui3wk1Q"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-singtoyou",
+    "date": "2025-12-16",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 가슴앓이 / 기댈곳",
+    "program": "ch B tv 싱투유",
+    "type": "music-show",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "가슴앓이",
+      "기댈곳"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "싱투유",
+      "url": "https://www.youtube.com/watch?v=iC4zMiuY0XM"
+    },
+    "additionalSources": [
+      {
+        "label": "싱투유",
+        "url": "https://www.youtube.com/watch?v=yHghWSst9ic"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2025-12-16"
+  },
+  {
+    "id": "v491-cultwo20230704",
+    "date": "2023-07-04",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 게스트 출연·라이브",
+    "program": "SBS 두시탈출 컬투쇼",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "Whisky on the Rock",
+      "비가 오면 마음껏 울어도 되니까"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Radio 에라오",
+      "url": "https://www.youtube.com/watch?v=hRa-tMp6Jaw"
+    },
+    "additionalSources": [
+      {
+        "label": "SBS Radio 에라오",
+        "url": "https://www.youtube.com/watch?v=mGdxJKLlP4Y"
+      },
+      {
+        "label": "SBS Radio 에라오",
+        "url": "https://www.youtube.com/watch?v=PccTj5qta44"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-back20220817",
+    "date": "2022-08-17",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 게스트 출연·라이브",
+    "program": "KBS 임백천의 백뮤직",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "Whisky on the Rock",
+      "모든 날, 모든 순간"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS KONG",
+      "url": "https://www.youtube.com/watch?v=NRhYAttexQ0"
+    },
+    "additionalSources": [
+      {
+        "label": "KBS KONG",
+        "url": "https://www.youtube.com/watch?v=KoIux8M0zqQ"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-back20221012",
+    "date": "2022-10-12",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 게스트 출연·라이브",
+    "program": "KBS 임백천의 백뮤직",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "가을 편지"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS KONG",
+      "url": "https://www.youtube.com/watch?v=kTwbFXCambI"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-chin20221015",
+    "date": "2022-10-15",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 게스트 출연·라이브",
+    "program": "MBC GOT7 영재의 친한친구",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO",
+      "url": "https://www.youtube.com/watch?v=kotA7eI5ojY"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-chin20221210",
+    "date": "2022-12-10",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 게스트 출연·라이브",
+    "program": "MBC GOT7 영재의 친한친구",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "White"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO",
+      "url": "https://www.youtube.com/watch?v=R23co2Dl8nY"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-chin20221220",
+    "date": "2022-12-20",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 게스트 출연·라이브",
+    "program": "MBC GOT7 영재의 친한친구",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO",
+      "url": "https://www.youtube.com/watch?v=e_YRJcWw8no"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-chin20230120",
+    "date": "2023-01-20",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 게스트 출연·라이브",
+    "program": "MBC GOT7 영재의 친한친구",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "엄마의 일기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO",
+      "url": "https://www.youtube.com/watch?v=oOUSSGJ0DNs"
+    },
+    "additionalSources": [
+      {
+        "label": "Mhz 므흐즈: MBC RADIO",
+        "url": "https://www.youtube.com/watch?v=d-49VIWLNKM"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-chin20230328",
+    "date": "2023-03-28",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 게스트 출연·라이브",
+    "program": "MBC GOT7 영재의 친한친구",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "I"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO",
+      "url": "https://www.youtube.com/watch?v=n5OTj1huvJM"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-gayo20220929",
+    "date": "2022-09-29",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 게스트 출연·라이브",
+    "program": "KBS 이기광의 가요광장",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS CoolFM",
+      "url": "https://www.youtube.com/watch?v=msRtI7iRpKA"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-power20230322",
+    "date": "2023-03-22",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 게스트 출연·라이브",
+    "program": "SBS 최화정의 파워타임",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "결국엔 너에게 닿아서"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Radio 에라오",
+      "url": "https://www.youtube.com/watch?v=PF5Awba2LxM"
+    },
+    "additionalSources": [
+      {
+        "label": "SBS Radio 에라오",
+        "url": "https://www.youtube.com/watch?v=O6pGTlga6gg"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-noon20240226",
+    "date": "2024-02-26",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게스트 출연·라이브",
+    "program": "MBC 정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "HALO"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO",
+      "url": "https://www.youtube.com/watch?v=vovC-nMWIFk"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-noon20250909",
+    "date": "2025-09-09",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게스트 출연·라이브",
+    "program": "MBC 정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "결혼할까요"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO",
+      "url": "https://www.youtube.com/watch?v=b6HZaEePl3k"
+    },
+    "additionalSources": [
+      {
+        "label": "Mhz 므흐즈: MBC RADIO",
+        "url": "https://www.youtube.com/watch?v=OYtworDwczI"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-god20210309",
+    "date": "2021-03-09",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 게스트 출연",
+    "program": "네이버 NOW god의 점심어택",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김포비",
+      "url": "https://www.youtube.com/watch?v=2Bd2UeZqz6M"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "팬 보관 영상 제목의 방송일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-nabi20210314",
+    "date": "2021-03-14",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 게스트 출연",
+    "program": "MBC 주말엔 나비인가봐",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김포비",
+      "url": "https://www.youtube.com/watch?v=Sp78XTebJbA"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "팬 보관 영상 제목의 방송일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-radioshow20240303",
+    "date": "2024-03-03",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게스트 출연",
+    "program": "KBS 박명수의 라디오쇼 전화 연결",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "seeyalover",
+      "url": "https://www.youtube.com/watch?v=IkkHWOKec0M"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "팬 보관 영상 제목의 방송일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-mayradio",
+    "date": "2025-11-07",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 일일 DJ와 라이브",
+    "program": "Studio May 라디오",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "사랑의 인사"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Studio May",
+      "url": "https://www.youtube.com/watch?v=xpqSqncno48"
+    },
+    "additionalSources": [
+      {
+        "label": "Studio May",
+        "url": "https://www.youtube.com/watch?v=rLpu5WpRNZo"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2025-11-07"
+  },
+  {
+    "id": "v491-kim-imbc",
+    "date": "2021-04-06",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — iMBC Who일담 인터뷰",
+    "program": "iMBC Who일담 인터뷰",
+    "type": "interview",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "iMBC연예",
+      "url": "https://www.youtube.com/watch?v=ARaJxsECVCs"
+    },
+    "additionalSources": [
+      {
+        "label": "iMBC 인터뷰 원문",
+        "url": "https://enews.imbc.com/News/ViewAmp/310295"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-04-06"
+  },
+  {
+    "id": "v491-kim-comments",
+    "date": "2021-03-02",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 미스트롯2 댓글 읽기",
+    "program": "미스트롯2 댓글 읽기",
+    "type": "interview",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미스&미스터트롯",
+      "url": "https://www.youtube.com/watch?v=x9ZCnE71kNE"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-03-02"
+  },
+  {
+    "id": "v491-boram-diggle",
+    "date": "2022-12-29",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 디글 매운맛 인터뷰",
+    "program": "디글 매운맛 인터뷰",
+    "type": "interview",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "디글 :Diggle",
+      "url": "https://www.youtube.com/watch?v=4m4iY8x5urU"
+    },
+    "additionalSources": [
+      {
+        "label": "디글 :Diggle",
+        "url": "https://www.youtube.com/watch?v=Mg1GpV1l3MI"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2022-12-29"
+  },
+  {
+    "id": "v491-nam-thestar",
+    "date": "2021-02-05",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 더스타 핫터뷰",
+    "program": "더스타 핫터뷰",
+    "type": "interview",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "THE STAR MAGAZINE",
+      "url": "https://www.youtube.com/watch?v=PcemP5ZaXAM"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-02-05"
+  },
+  {
+    "id": "v491-nam-documentary",
+    "date": "2025-08-10",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 그래도 좋아해요 프로젝트 다큐멘터리",
+    "program": "그래도 좋아해요 프로젝트 다큐멘터리",
+    "type": "interview",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "비온후 오픈뮤직프로젝트",
+      "url": "https://www.youtube.com/watch?v=w0gDkIwRT7c"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2025-08-10"
+  },
+  {
+    "id": "v491-gongdo",
+    "date": "2023-09-23",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 공도문화축제 힐링콘서트",
+    "program": "공도문화축제 힐링콘서트",
+    "type": "event",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "idori73",
+      "url": "https://www.youtube.com/watch?v=yg1_vjBwPF0"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-cheonan2023",
+    "date": "2023-07-30",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 썸머 콘서트 in 천안",
+    "program": "썸머 콘서트 in 천안",
+    "type": "event",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "idori73",
+      "url": "https://www.youtube.com/watch?v=gQxHo_t64zk"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-cheonan2024",
+    "date": "2024-05-23",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 천안 K-컬처 박람회 미니 콘서트",
+    "program": "천안 K-컬처 박람회 미니 콘서트",
+    "type": "event",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "idori73",
+      "url": "https://www.youtube.com/watch?v=HPMBi-9r90g"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-suncheon",
+    "date": "2024-08-17",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 락카페 레트로 순천 콘서트",
+    "program": "락카페 레트로 순천 콘서트",
+    "type": "event",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "콘서트1열",
+      "url": "https://www.youtube.com/watch?v=E2sGgVvScfo"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-bupyeong",
+    "date": "2024-11-09",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 부평그랑힐스 주민축제",
+    "program": "부평그랑힐스 주민축제",
+    "type": "event",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "태민월드",
+      "url": "https://www.youtube.com/watch?v=-yNJ-tzY1ss"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-bonghwa2025",
+    "date": "2025-07-26",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 제27회 봉화은어축제",
+    "program": "제27회 봉화은어축제",
+    "type": "event",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "idori73",
+      "url": "https://www.youtube.com/watch?v=_BuzsS2ooeQ"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-daegu2025",
+    "date": "2025-10-18",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 대구 남구 복지 힐링 콘서트",
+    "program": "대구 남구 복지 힐링 콘서트",
+    "type": "event",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "idori73",
+      "url": "https://www.youtube.com/watch?v=k6a7Wd3-aEE"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-gongju2025",
+    "date": "2025-10-25",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 공주에서 날밤까기",
+    "program": "공주에서 날밤까기",
+    "type": "event",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "idori73",
+      "url": "https://www.youtube.com/watch?v=bFlIWzovimY"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-youth2022",
+    "date": "2022-07-30",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 청소년무대예술페스티벌",
+    "program": "청소년무대예술페스티벌",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Lunatic Soul",
+      "url": "https://www.youtube.com/watch?v=9MrdClM1FzA"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-yangcheon",
+    "date": "2022-10-28",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 양천구 청소년 진로·미래 축제",
+    "program": "양천구 청소년 진로·미래 축제",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "탐정단_fancam",
+      "url": "https://www.youtube.com/watch?v=0Fo3uOTmdPM"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-daegaya",
+    "date": "2023-04-01",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 고령 대가야축제",
+    "program": "고령 대가야축제",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "낭만음치",
+      "url": "https://www.youtube.com/watch?v=cRwlBy2oDss"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-andong",
+    "date": "2023-10-28",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 21세기 인문가치포럼",
+    "program": "21세기 인문가치포럼",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "땅콩크림샌드",
+      "url": "https://www.youtube.com/watch?v=4cfkpaz26AA"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-jangseong",
+    "date": "2023-11-30",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 장성 민관군 화합 군악음악회",
+    "program": "장성 민관군 화합 군악음악회",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=CQVh5aFLji8"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-navy2023",
+    "date": "2023-12-14",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 해군 3함대 송년음악회",
+    "program": "해군 3함대 송년음악회",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=uxroB1GYQAM"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-gongju2024",
+    "date": "2024-05-04",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 공주 자전거 대축제",
+    "program": "공주 자전거 대축제",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=RrZ1OH12TX8"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-bonghwa2024",
+    "date": "2024-07-27",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 제26회 봉화은어축제",
+    "program": "제26회 봉화은어축제",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Kpop Music 케이팝뮤직",
+      "url": "https://www.youtube.com/watch?v=nr-Adl5OA18"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-paju",
+    "date": "2024-09-28",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 파주 불꽃축제",
+    "program": "파주 불꽃축제",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "처키아빠",
+      "url": "https://www.youtube.com/watch?v=RI06TaolFv4"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-kia2024",
+    "date": "2024-11-30",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — KIA 타이거즈 팬페스타",
+    "program": "KIA 타이거즈 팬페스타",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "지니진니징니",
+      "url": "https://www.youtube.com/watch?v=CYGsUHVTtgU"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-daegujc",
+    "date": "2025-06-07",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 대구지구 JC 회원대회",
+    "program": "대구지구 JC 회원대회",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "처키아빠",
+      "url": "https://www.youtube.com/watch?v=4IUwrDKdaTY"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-gijang",
+    "date": "2025-09-27",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 기장 차성문화제",
+    "program": "기장 차성문화제",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=PVs_gbRHJjk"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-gyeongbukjc",
+    "date": "2025-10-03",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 경북지구 JC 회원대회",
+    "program": "경북지구 JC 회원대회",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=b2yGItFBXSI"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-ocheon",
+    "date": "2025-10-07",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 순천 한가위드 오천 파워우먼 DAY",
+    "program": "순천 한가위드 오천 파워우먼 DAY",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "콘서트1열",
+      "url": "https://www.youtube.com/watch?v=ywc2aEaPV6E"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-autoland",
+    "date": "2025-10-12",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — AutoLand 광명 Music Fest",
+    "program": "AutoLand 광명 Music Fest",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "처키아빠",
+      "url": "https://www.youtube.com/watch?v=rs7hp13vHs4"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-jejujc",
+    "date": "2025-10-25",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 제주 한국JC 전국회원대회",
+    "program": "제주 한국JC 전국회원대회",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=qPlTU59vOYI"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-change-seoul",
+    "date": "2025-11-07",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 세상을 바꾸는 여자들 — 흰물결 화이트홀",
+    "program": "세상을 바꾸는 여자들 — 흰물결 화이트홀",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "노브스튜디오(Nob)",
+      "url": "https://www.youtube.com/watch?v=21YYr5Fp_qo"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-kia2025",
+    "date": "2025-11-16",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — AutoLand 광주 KIA 하모니 콘서트",
+    "program": "AutoLand 광주 KIA 하모니 콘서트",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "콘서트1열",
+      "url": "https://www.youtube.com/watch?v=7CBf6QhQO4c"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-change-gumi",
+    "date": "2025-11-29",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 세상을 바꾸는 여자들 — 구미",
+    "program": "세상을 바꾸는 여자들 — 구미",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=7yOMgATJ7eg"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-change-suwon",
+    "date": "2025-12-27",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 세상을 바꾸는 여자들 — 수원",
+    "program": "세상을 바꾸는 여자들 — 수원",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=P2i-pE312-M"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-change-jinju",
+    "date": "2025-12-29",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 세상을 바꾸는 여자들 — 진주",
+    "program": "세상을 바꾸는 여자들 — 진주",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=J1YbJrR5p2M"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-kexpo2022",
+    "date": "2022-08-25",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 제4회 한류엑스포 축하무대",
+    "program": "뉴시스 한류엑스포",
+    "type": "event",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "Whisky on the Rock"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "tv 뉴시스",
+      "url": "https://www.youtube.com/watch?v=fhkK_d2ITJA"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "행사 주최 매체의 영상 설명에 기재된 행사일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-culture-boram2023",
+    "date": "2023-06-04",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 문화가 흐르는 예술마당",
+    "program": "2023 문화가 흐르는 예술마당",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "그때 그 순간 그대로 (그그그)",
+      "결국엔 너에게 닿아서"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "나미의 관심, 사고, 생활",
+      "url": "https://www.youtube.com/watch?v=uLQlTBZAynE"
+    },
+    "additionalSources": [
+      {
+        "label": "나미의 관심, 사고, 생활",
+        "url": "https://www.youtube.com/watch?v=y5kOGb-lb8M"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2023-06-04"
+  },
+  {
+    "id": "v491-sunset2023",
+    "date": "2023-09-10",
+    "addedAt": "2026-09-13",
+    "title": "가야G·이보람 — 선셋재즈페스티벌",
+    "program": "제2회 선셋재즈페스티벌",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "그때 그 순간 그대로 (그그그)",
+      "결국엔 너에게 닿아서"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WSG워너비 가야G 팬",
+      "url": "https://www.youtube.com/watch?v=XzAU48110bc"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "팬 보관 영상에 기재된 출연일입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-summer2022",
+    "date": "2022-08-13",
+    "addedAt": "2026-09-13",
+    "title": "가야G·이보람 — 청춘썸머나잇",
+    "program": "2022 청춘썸머나잇",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "사랑의 인사",
+      "원더우먼",
+      "여성시대",
+      "그때 그 순간 그대로 (그그그)"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "홍차하나비",
+      "url": "https://www.youtube.com/watch?v=vzwLsvaOM54"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목에 기재된 공연일로 잠정 등록했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-boryeong2023",
+    "date": "2023-12-09",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 보령 송년콘서트",
+    "program": "2023 보령 송년콘서트",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "지금 술 한잔했어"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "동구",
+      "url": "https://www.youtube.com/watch?v=4EHhoa95MvU"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 직캠 제목과 공연 목록을 대조했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-still-singing",
+    "date": "2025-12-06",
+    "addedAt": "2026-09-13",
+    "title": "이보람 단독 콘서트 — Still Singing",
+    "program": "Still Singing",
+    "type": "concert",
+    "members": [
+      "이보람",
+      "김연지"
+    ],
+    "songs": [
+      "미친 사랑의 노래",
+      "당신을 위하여"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "메이저나인 공연 공지",
+      "url": "https://enter.major9.net/press/"
+    },
+    "additionalSources": [
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=VlMSK-TXdP0"
+      },
+      {
+        "label": "h.a.p.p.y.3.6.5",
+        "url": "https://www.youtube.com/watch?v=VEXAcaMgmMg"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람",
+      "김연지"
+    ],
+    "note": "12월 6~7일 공연을 한 기록으로 묶었습니다. 김연지는 6일 게스트로 함께했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "endDate": "2025-12-07",
+    "venue": "성신여자대학교 운정그린캠퍼스 대강당"
+  },
+  {
+    "id": "v491-lux",
+    "date": "2024-06-09",
+    "addedAt": "2026-09-13",
+    "title": "남규리 첫 팬미팅 — LUX",
+    "program": "LUX",
+    "type": "concert",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "세계일보 공연 안내",
+      "url": "https://www.segye.com/newsView/20240529511366"
+    },
+    "additionalSources": [
+      {
+        "label": "정영도",
+        "url": "https://www.youtube.com/watch?v=JoTeIYpxSzg"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "성암아트홀에서 열린 첫 단독 팬미팅입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "성암아트홀"
+  },
+  {
+    "id": "v491-marie2021",
+    "date": "2021-07-13",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 뮤지컬 마리 앙투아네트",
+    "program": "마리 앙투아네트",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연·캐스팅 정보",
+      "url": "https://myukit.com/plays/630"
+    },
+    "additionalSources": [
+      {
+        "label": "멜론티켓 드레스리허설 안내",
+        "url": "https://tv.kakao.com/channel/3307050/cliplink/420750898"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "마그리드 아르노 역. 작품 공연 시즌이며 개인별 첫 출연일·전체 회차를 의미하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "season",
+    "endDate": "2021-10-03",
+    "venue": "샤롯데씨어터"
+  },
+  {
+    "id": "v491-lesmis2024",
+    "date": "2024-11-21",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 연극 레 미제라블",
+    "program": "레 미제라블",
+    "type": "concert",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스타투데이 제작발표회 기사",
+      "url": "https://www.mk.co.kr/news/hot-issues/11154675"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "코제트 역으로 연극에 출연했습니다. 작품 공연 기간을 표시합니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "season",
+    "endDate": "2024-11-24",
+    "venue": "국립극장 해오름극장"
+  },
+  {
+    "id": "v491-onoff2020",
+    "date": "2020-11-21",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 일상과 철권 이야기",
+    "program": "tvN 온앤오프 29회",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "tvN Joy",
+      "url": "https://www.youtube.com/watch?v=opBqF2_3PdQ"
+    },
+    "additionalSources": [
+      {
+        "label": "tvN Joy",
+        "url": "https://www.youtube.com/watch?v=NOAiyat0ygM"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-strongheart2024",
+    "date": "2024-04-16",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 강심장VS 출연",
+    "program": "SBS 강심장VS 18회",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Entertainment",
+      "url": "https://www.youtube.com/watch?v=nnzrfxXrBkY"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "공식 선공개 영상 설명의 본방송 날짜입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-tak2024",
+    "date": "2024-03-14",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 노빠꾸탁재훈 출연",
+    "program": "노빠꾸탁재훈 시즌2 95회",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "노빠꾸탁재훈",
+      "url": "https://www.youtube.com/watch?v=oK27BWKvEIU"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2024-03-14"
+  },
+  {
+    "id": "v491-hangout-2022-04-16",
+    "date": "2022-04-16",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 블라인드 오디션 — 살다가",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "놀면 뭐하니?",
+      "url": "https://www.youtube.com/watch?v=sT377BTDQkk"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-hangout-2022-06-04",
+    "date": "2022-06-04",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — WSG워너비 첫 만남과 결혼할까요",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=7QKEuAqK9rA"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-hangout-2022-06-18",
+    "date": "2022-06-18",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 가야G 결성과 팀 선택",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=k1zEcM1N1yU"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-hangout-2022-06-25",
+    "date": "2022-06-25",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 가야G 보컬 호흡",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=EqKu1ul6aDY"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-hangout-2022-07-23",
+    "date": "2022-07-23",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 음악방송 데뷔·음원 1위 이야기",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=gLHckwdl7WI"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-hangout-2022-08-13",
+    "date": "2022-08-13",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 콘서트 연습 비하인드",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=riu4J8y3ESg"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-hangout-2023-04-15",
+    "date": "2023-04-15",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 가야G 유봉두 학교 방문",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "엠뚜루마뚜루 : MBC 공식 종합 채널",
+      "url": "https://www.youtube.com/watch?v=BZDU10mfFHI"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-hangout-audition-extra",
+    "date": "2022-06-01",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 눈을 보고 말해요 미방분",
+    "program": "MBC 놀면 뭐하니? 블라인드 오디션",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "눈을 보고 말해요"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "놀면 뭐하니?",
+      "url": "https://www.youtube.com/watch?v=YUCwKziF2jg"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2022-06-01"
+  },
+  {
+    "id": "v491-gamegyuri-2",
+    "date": "2023-06-20",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게임광규리 2화",
+    "program": "M드로메다 게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=BEwzj13Omj4"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 2,
+    "publishedDate": "2023-06-20"
+  },
+  {
+    "id": "v491-gamegyuri-4",
+    "date": "2023-07-04",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게임광규리 4화",
+    "program": "M드로메다 게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=Mv0DlKAG4xo"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 4,
+    "publishedDate": "2023-07-04"
+  },
+  {
+    "id": "v491-gamegyuri-6",
+    "date": "2023-07-25",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게임광규리 6화",
+    "program": "M드로메다 게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=maijFZApOCQ"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 6,
+    "publishedDate": "2023-07-25"
+  },
+  {
+    "id": "v491-gamegyuri-7",
+    "date": "2023-08-01",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게임광규리 7화",
+    "program": "M드로메다 게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=pDjW3KYrZwA"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 7,
+    "publishedDate": "2023-08-01"
+  },
+  {
+    "id": "v491-gamegyuri-8",
+    "date": "2023-08-08",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게임광규리 8화",
+    "program": "M드로메다 게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=e2h2Cl5ZDsg"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 8,
+    "publishedDate": "2023-08-08"
+  },
+  {
+    "id": "v491-gamegyuri-9",
+    "date": "2023-08-15",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게임광규리 9화",
+    "program": "M드로메다 게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=MJ431OoCvNs"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 9,
+    "publishedDate": "2023-08-15"
+  },
+  {
+    "id": "v491-gamegyuri-extra",
+    "date": "2023-08-17",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게임광규리 미공개 비하인드",
+    "program": "M드로메다 게임광규리",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=R6DaWKCl_Vo"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2023-08-17"
+  },
+  {
+    "id": "v491-allgood48",
+    "date": "2023-04-07",
+    "addedAt": "2026-09-13",
+    "title": "DK·김연지 — 한강 버스킹",
+    "program": "전부 노래 잘함 48회",
+    "type": "variety",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "가슴으로 운다",
+      "사랑의 인사",
+      "미친 사랑의 노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스튜디오 피넛버터 - Studio Peanut Butter",
+      "url": "https://www.youtube.com/watch?v=DDtjY67zDNM"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2023-04-07"
+  },
+  {
+    "id": "v491-soyugi2024",
+    "date": "2024-10-03",
+    "addedAt": "2026-09-13",
+    "title": "소유·김연지 — 구두",
+    "program": "소유기 노상어게인2",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "소유기 SOYOUGI",
+      "url": "https://www.youtube.com/watch?v=HiKij2KWXrU"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2024-10-03"
+  },
+  {
+    "id": "v491-monday24",
+    "date": "2025-11-06",
+    "addedAt": "2026-09-13",
+    "title": "먼데이 키즈·이보람 — 추억의 명곡 메들리",
+    "program": "먼키의 발자국 24회",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스튜디오 드리밍 [Dreaming]",
+      "url": "https://www.youtube.com/watch?v=cVFtwMlTFsg"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2025-11-06"
+  },
+  {
+    "id": "v491-begin2024",
+    "date": "2024-04-29",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 형 (兄)",
+    "program": "비긴어게인 오픈마이크",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "형 (兄)"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Beginagain 비긴어게인",
+      "url": "https://www.youtube.com/watch?v=_y5Pbme0BBo"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2024-04-29"
+  },
+  {
+    "id": "v491-acultures2024",
+    "date": "2024-05-05",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 형 (兄) 라이브",
+    "program": "A.Cultures Live",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "형 (兄)"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "A.Cultures",
+      "url": "https://www.youtube.com/watch?v=cgnxMwZdMIQ"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2024-05-05"
+  },
+  {
+    "id": "v491-cover-eJcxC1f-YTM",
+    "date": "2020-03-12",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 사랑의 인사 라이브",
+    "program": "김연지 Official",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "사랑의 인사"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official",
+      "url": "https://www.youtube.com/watch?v=eJcxC1f-YTM"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-12"
+  },
+  {
+    "id": "v491-cover-YTjhddY18WI",
+    "date": "2020-03-18",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 미친 사랑의 노래 라이브",
+    "program": "김연지 Official",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "미친 사랑의 노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official",
+      "url": "https://www.youtube.com/watch?v=YTjhddY18WI"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-18"
+  },
+  {
+    "id": "v491-cover-tBkXPEddWD4",
+    "date": "2020-10-05",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 입모양 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "입모양"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=tBkXPEddWD4"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-10-05"
+  },
+  {
+    "id": "v491-cover-viCpi-KTXbU",
+    "date": "2020-10-27",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 힘든 건 사랑이 아니다 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "힘든 건 사랑이 아니다"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=viCpi-KTXbU"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-10-27"
+  },
+  {
+    "id": "v491-cover-BtNY_6QXXvk",
+    "date": "2020-09-14",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — Dynamite 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "Dynamite"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=BtNY_6QXXvk"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-09-14"
+  },
+  {
+    "id": "v491-cover-NH0uUxO0MCw",
+    "date": "2021-04-19",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 오르막길 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "오르막길"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=NH0uUxO0MCw"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-04-19"
+  },
+  {
+    "id": "v491-cover-S26yKHgCpLQ",
+    "date": "2020-12-28",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 어디에도 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "어디에도"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=S26yKHgCpLQ"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-12-28"
+  },
+  {
+    "id": "v491-cover-K_GGhmCnVRc",
+    "date": "2020-07-27",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 하늘 끝에서 흘린 눈물 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "하늘 끝에서 흘린 눈물"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=K_GGhmCnVRc"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-07-27"
+  },
+  {
+    "id": "v491-cover-yhDlGFZyd9k",
+    "date": "2021-11-01",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 사랑 안 해 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "사랑 안 해"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=yhDlGFZyd9k"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-11-01"
+  },
+  {
+    "id": "v491-cover-hcaCPLuKsFg",
+    "date": "2020-08-17",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 바람기억 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "바람기억"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=hcaCPLuKsFg"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-08-17"
+  },
+  {
+    "id": "v491-cover-qagiSVG5MyE",
+    "date": "2020-09-07",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 연 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "연"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=qagiSVG5MyE"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-09-07"
+  },
+  {
+    "id": "v491-cover-bshC6bXVnos",
+    "date": "2021-09-06",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — You 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "You"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=bshC6bXVnos"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-09-06"
+  },
+  {
+    "id": "v491-cover-I2SaTVt-OwQ",
+    "date": "2021-12-13",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 응급실 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "응급실"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=I2SaTVt-OwQ"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-12-13"
+  },
+  {
+    "id": "v491-cover-5C8O5IEBfXw",
+    "date": "2021-08-30",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 비가 오는 날엔 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "비가 오는 날엔"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=5C8O5IEBfXw"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-08-30"
+  },
+  {
+    "id": "v491-cover--_j3UCirOio",
+    "date": "2022-01-10",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 첫눈처럼 너에게 가겠다 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "첫눈처럼 너에게 가겠다"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=-_j3UCirOio"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2022-01-10"
+  },
+  {
+    "id": "v491-cover-MxQA54orKlE",
+    "date": "2021-08-16",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 사랑앓이 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "사랑앓이"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=MxQA54orKlE"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-08-16"
+  },
+  {
+    "id": "v491-cover-Hlj0ItkkP4A",
+    "date": "2024-04-29",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — Love wins all 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "Love wins all"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=Hlj0ItkkP4A"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2024-04-29"
+  },
+  {
+    "id": "v491-cover-9l4XXP5Tlhk",
+    "date": "2025-03-03",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 나는 반딧불 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "나는 반딧불"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=9l4XXP5Tlhk"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2025-03-03"
+  },
+  {
+    "id": "v491-cover-5auNDhYBVI4",
+    "date": "2022-09-05",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 그때 그 순간 그대로 (그그그) 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "그때 그 순간 그대로 (그그그)"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=5auNDhYBVI4"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2022-09-05"
+  },
+  {
+    "id": "v491-cover-tE0DpENLHn4",
+    "date": "2023-05-04",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 결국엔 너에게 닿아서 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "결국엔 너에게 닿아서"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=tE0DpENLHn4"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2023-05-04"
+  },
+  {
+    "id": "v491-cover-tg2IuFVhUps",
+    "date": "2022-06-11",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 어마어마해 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "어마어마해"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=tg2IuFVhUps"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2022-06-11"
+  },
+  {
+    "id": "v491-cover-eP4cvTgvRys",
+    "date": "2025-11-18",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 당신을 위하여 라이브",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "당신을 위하여"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야",
+      "url": "https://www.youtube.com/watch?v=eP4cvTgvRys"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2025-11-18"
+  },
+  {
+    "id": "v491-cover-U4BELsBJyL4",
+    "date": "2023-08-21",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 슬픔보다 더 슬픈 이야기 라이브",
+    "program": "김범수 KIM BUM SOO",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "슬픔보다 더 슬픈 이야기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김범수 KIM BUM SOO",
+      "url": "https://www.youtube.com/watch?v=U4BELsBJyL4"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2023-08-21"
+  },
+  {
+    "id": "v491-cover-LVK8gtWOaBw",
+    "date": "2024-11-20",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 눈물이 왈칵 쏟아진다 라이브",
+    "program": "OS Projects",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "눈물이 왈칵 쏟아진다"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "OS Projects",
+      "url": "https://www.youtube.com/watch?v=LVK8gtWOaBw"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2024-11-20"
+  },
+  {
+    "id": "v491-mozart2020",
+    "date": "2020-06-16",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 뮤지컬 모차르트!",
+    "program": "모차르트!",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "더뮤지컬 출연·공연 기간",
+      "url": "https://www.themusical.co.kr/People/Detail?num=5829"
+    },
+    "additionalSources": [
+      {
+        "label": "이데일리 연장 공연 종료 보도",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02840486625868960"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "콘스탄체 베버 역. 개인 첫 출연일이 아닌 작품 시즌입니다. 연장 공연은 8월 20일 종료됐습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "season",
+    "endDate": "2020-08-20",
+    "venue": "세종문화회관 대극장"
+  },
+  {
+    "id": "v491-ballad-seoul",
+    "date": "2023-08-05",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 오늘, 발라드 콘서트 in 서울",
+    "program": "오늘, 발라드 콘서트",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연 정보",
+      "url": "https://sports.donga.com/ent/article/all/20230807/120593936/1"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "윤민수·포맨·DK와 함께한 합동 콘서트입니다. 같은 도시의 연속 회차는 한 기록으로 묶었습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "올림픽공원 올림픽홀",
+    "endDate": "2023-08-06"
+  },
+  {
+    "id": "v491-ballad-daegu",
+    "date": "2023-08-12",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 오늘, 발라드 콘서트 in 대구",
+    "program": "오늘, 발라드 콘서트",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연 정보",
+      "url": "https://www.stagepick.co.kr/performances/detail/184977"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "윤민수·포맨·DK와 함께한 합동 콘서트입니다. 같은 도시의 연속 회차는 한 기록으로 묶었습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "천마아트센터"
+  },
+  {
+    "id": "v491-ballad-suwon",
+    "date": "2023-09-02",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 오늘, 발라드 콘서트 in 수원",
+    "program": "오늘, 발라드 콘서트",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연 정보",
+      "url": "https://www.stagepick.co.kr/performances/detail/185456"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "윤민수·포맨·DK와 함께한 합동 콘서트입니다. 같은 도시의 연속 회차는 한 기록으로 묶었습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "경기아트센터 대극장"
+  },
+  {
+    "id": "v491-ballad-busan",
+    "date": "2023-09-16",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 오늘, 발라드 콘서트 in 부산",
+    "program": "오늘, 발라드 콘서트",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연 정보",
+      "url": "https://www.ticketlink.co.kr/help/notice/57178"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "윤민수·포맨·DK와 함께한 합동 콘서트입니다. 같은 도시의 연속 회차는 한 기록으로 묶었습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "부산 KBS홀",
+    "endDate": "2023-09-17"
+  },
+  {
+    "id": "v491-medium",
+    "date": "2024-01-06",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 미디엄템포 콘서트",
+    "program": "미디엄템포 콘서트",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연·출연 안내",
+      "url": "https://artsro.com/about/sub02_view.html?ReIdx=722"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "고려대학교 화정체육관"
+  },
+  {
+    "id": "v491-bom",
+    "date": "2024-04-12",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 봄서트",
+    "program": "봄서트",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연·출연 안내",
+      "url": "https://www.stagepick.co.kr/performances/detail/188459"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "연천수레울아트홀 대공연장"
+  },
+  {
+    "id": "v491-damda",
+    "date": "2023-12-15",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 담다 닮다",
+    "program": "담다 닮다",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연·출연 안내",
+      "url": "https://www.stagepick.co.kr/performances/detail/186922"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "건국대학교 새천년관 대공연장"
+  },
+  {
+    "id": "v491-green",
+    "date": "2023-06-03",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 서원밸리 자선 그린콘서트",
+    "program": "서원밸리 자선 그린콘서트",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연·출연 안내",
+      "url": "https://www.stagepick.co.kr/performances/detail/191254"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "서원밸리CC"
+  },
+  {
+    "id": "v491-uiseong",
+    "date": "2021-12-28",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 의성 송년음악회",
+    "program": "의성 송년음악회",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "공연·출연 안내",
+      "url": "https://www.xportsnews.com/article/1517288"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "의성문화회관"
+  },
+  {
+    "id": "v491-navy2025",
+    "date": "2025-12-09",
+    "addedAt": "2026-09-13",
+    "title": "이보람 — 해군 송년음악회",
+    "program": "해군 송년음악회",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=K-sN1h-JgRU"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "이보람"
+    ],
+    "note": "현장 영상 설명의 행사일을 표시했습니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event",
+    "venue": "계룡문화예술의전당"
+  },
+  {
+    "id": "v491-kairos",
+    "date": "2020-10-26",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 카이로스 — 강현채 역",
+    "program": "MBC 카이로스",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "작품 출연 보도",
+      "url": "https://www.kmib.co.kr/article/view.asp?arcid=0014921859"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "드라마 첫 방송일 기준으로 작품 출연을 한 기록으로 묶었습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "series-start"
+  },
+  {
+    "id": "v491-fair",
+    "date": "2021-04-07",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 더 페어 출연",
+    "program": "tvN 드라마 스테이지 2021 — 더 페어",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "작품 출연 보도",
+      "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01282486629012184"
+    },
+    "additionalSources": [
+      {
+        "label": "tvN DRAMA",
+        "url": "https://www.youtube.com/watch?v=-cFEhHM6jV0"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "방송사 편성일 4월 7일 밤 12시 10분 기준입니다. 실제 시각은 다음 날 0시 10분입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-spring",
+    "date": "2021-07-05",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 너는 나의 봄 — 안가영 역",
+    "program": "tvN 너는 나의 봄",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "작품 출연 보도",
+      "url": "https://enews.imbc.com/News/RetrieveNewsInfo/319160"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "드라마 첫 방송일 기준입니다. 같은 날 제작발표회 인터뷰도 원문에서 확인할 수 있습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "series-start"
+  },
+  {
+    "id": "v491-park",
+    "date": "2023-12-12",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 열녀박씨 계약결혼뎐 — 윤희 역 특별출연",
+    "program": "MBC 열녀박씨 계약결혼뎐",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "작품 출연 보도",
+      "url": "https://enews.imbc.com/News/RetrieveNewsInfo/402935"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "출연을 확인한 보도일을 표시했습니다. 개별 등장 장면의 방송일을 뜻하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-face",
+    "date": "2024-11-27",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 페이스미 7회 특별출연",
+    "program": "KBS 페이스미",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "작품 출연 보도",
+      "url": "https://news.nate.com/view/20241128n05970"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "다음 날 보도에서 명시한 11월 27일 방송 기준입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "v491-mbc-drama2020",
+    "date": "2020-12-30",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 카이로스로 여자 우수연기상 수상",
+    "program": "2020 MBC 연기대상",
+    "type": "event",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCdrama",
+      "url": "https://www.youtube.com/watch?v=sBEMVQJ255Q"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "월화 미니·단막 부문 여자 우수연기상 수상 영상입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event"
+  },
+  {
+    "id": "v491-gamegyuri-1",
+    "date": "2023-06-13",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 게임광규리 1화",
+    "program": "M드로메다 게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=tnIhUZr2H0c"
+    },
+    "additionalSources": [
+      {
+        "label": "MBC 첫 공개 안내",
+        "url": "https://enews.imbc.com/News/ViewAmp/384478"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "MBC 첫 공개 안내와 공식 1화 영상을 대조했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "episode": 1
+  },
+  {
+    "id": "v491-kim-interview-feb",
+    "date": "2021-02-19",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 미스트롯2 도전 인터뷰",
+    "program": "미스트롯2 도전 인터뷰",
+    "type": "interview",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://v.daum.net/v/cbDYYNVwED"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "경연 도전과 가창 활동에 관한 인터뷰입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-kim-spotv",
+    "date": "2021-04-15",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — SPOTV 인터뷰",
+    "program": "SPOTV 인터뷰",
+    "type": "interview",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://v.daum.net/v/20210415170524155"
+    },
+    "additionalSources": [
+      {
+        "label": "SPOTV 후속 인터뷰",
+        "url": "https://v.daum.net/v/20210418090001795"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "미스트롯2 이후 음악 활동을 이야기한 영상 인터뷰 보도입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-nam-woman",
+    "date": "2025-08-22",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 여성동아 인터뷰 — 음악과 연기 활동",
+    "program": "여성동아 인터뷰 — 음악과 연기 활동",
+    "type": "interview",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://woman.donga.com/people/article/all/12/5796337/1"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "음악 활동과 작품 출연을 돌아본 인터뷰입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-nam-lesmis-press",
+    "date": "2024-10-30",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 레 미제라블 제작발표회",
+    "program": "레 미제라블 제작발표회",
+    "type": "interview",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://www.mk.co.kr/news/hot-issues/11154675"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "코제트 역으로 연극에 참여한 소감이 담긴 제작발표회 보도입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-nam-fashion",
+    "date": "2024-03-25",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 올리비아하슬러 화보 공개",
+    "program": "올리비아하슬러 화보 공개",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://www.segye.com/newsView/20240325502791"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "브랜드 화보 공개 보도일을 표시했습니다. 촬영일은 확인되지 않았습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-kim-dk-remake",
+    "date": "2023-08-16",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — DK와 미친 사랑의 노래 리메이크 발표 소식",
+    "program": "DK와 미친 사랑의 노래 리메이크 발표 소식",
+    "type": "news",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://circlechart.kr/page_article/view.circle?idx=22874&sgenre=album"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "프로젝트 음원 발표 안내 기사입니다. 날짜는 음원 발매일과 구분한 기사 게시일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-kim-dk-tour",
+    "date": "2023-09-26",
+    "addedAt": "2026-09-13",
+    "title": "김연지 — 오늘, 발라드 투어 마무리와 혼자 왔어요 발표 소식",
+    "program": "오늘, 발라드 투어 마무리와 혼자 왔어요 발표 소식",
+    "type": "news",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://circlechart.kr/page_article/view.circle?idx=23038&sgenre=album"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "김연지"
+    ],
+    "note": "전국 투어 이후 DK와의 듀엣 신곡 소식을 전한 보도입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-nam-cannes-casting",
+    "date": "2025-04-24",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 동요괴담 출연·칸 시리즈 초청 소식",
+    "program": "동요괴담 출연·칸 시리즈 초청 소식",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://www.osen.co.kr/article/G1112553661"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "옴니버스 작품 중 즐거운 나의 집의 연수 역 출연 소식입니다. 기사 날짜를 작품의 일반 공개일로 해석하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-nam-cannes",
+    "date": "2025-05-07",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 칸 시리즈 핑크카펫 참석 보도",
+    "program": "칸 시리즈 핑크카펫 참석 보도",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://enews.imbc.com/News/RetrieveNewsInfo/460012"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "동요괴담으로 칸 국제 시리즈 페스티벌에 참석한 보도입니다. 행사일을 확정하지 않고 기사 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-nam-cannes-vlog",
+    "date": "2025-07-28",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 칸 시리즈 현장 브이로그 공개 소식",
+    "program": "칸 시리즈 현장 브이로그 공개 소식",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://sports.khan.co.kr/article/202507282208003"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "이전에 참석한 행사 현장을 담은 영상 공개 보도입니다. 새로운 행사 참석으로 계산하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v491-nam-bloody",
+    "date": "2024-09-08",
+    "addedAt": "2026-09-13",
+    "title": "남규리 — 피타는 연애 공개·일본 방송 소식",
+    "program": "피타는 연애 공개·일본 방송 소식",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인터뷰·기사 원문",
+      "url": "https://www.fnnews.com/news/202409081632064774"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2020~2025",
+      "남규리"
+    ],
+    "note": "백영옥 역 출연작. 기사에서 6월 비키 공개와 8월 26일 일본 방송 시작을 확인했습니다. 첫 공개일의 세부 날짜는 확정하지 않고 보도일을 표시합니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v492-wBJxsUK0nc8",
+    "date": "2026-09-13",
+    "addedAt": "2026-09-13",
+    "title": "씨야 · 귤멍 62회 — THE FAN 콘서트 비하인드",
+    "program": "남규리의 귤멍 EP.62",
+    "type": "official",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍",
+      "url": "https://www.youtube.com/watch?v=wBJxsUK0nc8",
+      "publishedDate": "2026-09-13"
+    },
+    "additionalSources": [
+      {
+        "label": "톱스타뉴스 · 9월 13일 보도",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16191442"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2026",
+      "활동 기록"
+    ],
+    "note": "서울·부산 공연의 준비 과정과 무대 뒤 모습을 담은 공식 채널 영상입니다. 촬영일과 구분해 한국 시간 기준 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-09-13",
+    "episode": 62
+  },
+  {
+    "id": "v492-lpokioFRzfs",
+    "date": "2026-09-12",
+    "addedAt": "2026-09-13",
+    "title": "김연지 · 노래를 자기 것으로 만드는 방법",
+    "program": "목소리는 오재국 — 솔직리얼TALK",
+    "type": "interview",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "목소리는 오재국",
+      "url": "https://www.youtube.com/watch?v=lpokioFRzfs",
+      "publishedDate": "2026-09-12"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2026",
+      "활동 기록"
+    ],
+    "note": "발성과 노래 해석을 주제로 한 대담입니다. 촬영일과 구분해 한국 시간 기준 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-09-12"
+  },
+  {
+    "id": "v492-sVhd4C_aeKM",
+    "date": "2026-08-27",
+    "addedAt": "2026-09-13",
+    "title": "이보람 · 정준힐의 야간비행 출연",
+    "program": "유스데스크 — 정준힐의 야간비행",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "유스데스크 YOO'S DESK.",
+      "url": "https://www.youtube.com/watch?v=sVhd4C_aeKM",
+      "publishedDate": "2026-08-27"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2026",
+      "활동 기록"
+    ],
+    "note": "출연 영상 제목에서 듀엣곡 제안을 다룹니다. 실제 듀엣 음원 발매 기록은 아닙니다. 촬영일과 구분해 한국 시간 기준 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-08-27"
+  },
+  {
+    "id": "v492-qrPmy0itA3c",
+    "date": "2026-02-07",
+    "addedAt": "2026-09-13",
+    "title": "남규리 · 밥묵자 출연",
+    "program": "꼰대희 — 밥묵자",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "꼰대희",
+      "url": "https://www.youtube.com/watch?v=qrPmy0itA3c",
+      "publishedDate": "2026-02-07"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2026",
+      "활동 기록"
+    ],
+    "note": "삼겹살 식사와 토크를 담은 웹예능입니다. 촬영일과 구분해 한국 시간 기준 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-02-07"
+  },
+  {
+    "id": "v492-2FBZ9Vib3Lw",
+    "date": "2026-09-06",
+    "addedAt": "2026-09-13",
+    "title": "남규리 · 귤멍 61회 — 우리 사랑 그런 거 해요 MV 비하인드",
+    "program": "남규리의 귤멍 EP.61",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "우리 사랑 그런 거 해요 Part.1",
+      "우리 사랑 그런 거 해요 Part.2"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍",
+      "url": "https://www.youtube.com/watch?v=2FBZ9Vib3Lw",
+      "publishedDate": "2026-09-06"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2026",
+      "활동 기록"
+    ],
+    "note": "Part.1·Part.2 뮤직비디오 촬영 현장을 담았습니다. 촬영일과 구분해 한국 시간 기준 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-09-06",
+    "episode": 61
+  },
+  {
+    "id": "v492-j9bpzfdX5yc",
+    "date": "2026-08-16",
+    "addedAt": "2026-09-13",
+    "title": "씨야 · 귤멍 59회 — THE FAN 콘서트 연습",
+    "program": "남규리의 귤멍 EP.59",
+    "type": "official",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍",
+      "url": "https://www.youtube.com/watch?v=j9bpzfdX5yc",
+      "publishedDate": "2026-08-16"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2026",
+      "활동 기록"
+    ],
+    "note": "전국투어를 준비하는 세 멤버의 연습 과정입니다. 촬영일과 구분해 한국 시간 기준 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-08-16",
+    "episode": 59
+  },
+  {
+    "id": "v492-XYxAjjpYz5Y",
+    "date": "2026-09-06",
+    "addedAt": "2026-09-13",
+    "title": "남규리 · 우리 라이브 그런거해요!",
+    "program": "남규리의 귤멍 — 신곡 발매 라이브",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍",
+      "url": "https://www.youtube.com/watch?v=XYxAjjpYz5Y",
+      "publishedDate": "2026-09-06"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2026",
+      "활동 기록"
+    ],
+    "note": "신곡 발매일에 진행한 공식 채널 라이브 보관 영상입니다. 촬영일과 구분해 한국 시간 기준 영상 게시일을 표시했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-09-06"
+  },
+  {
+    "id": "v492-tour-news",
+    "date": "2026-09-13",
+    "addedAt": "2026-09-13",
+    "title": "씨야 · 20주년 전국투어 비하인드 공개 보도",
+    "program": "톱스타뉴스",
+    "type": "news",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "톱스타뉴스",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16191442"
+    },
+    "additionalSources": [
+      {
+        "label": "남규리의 귤멍",
+        "url": "https://www.youtube.com/watch?v=wBJxsUK0nc8",
+        "publishedDate": "2026-09-13"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "2026",
+      "기사"
+    ],
+    "note": "귤멍 62회에 담긴 서울·부산 공연 준비와 무대 뒤 소감을 소개한 기사입니다. 기사 게시일이며 새 공연 개최일이 아닙니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v492-kick-news",
+    "date": "2026-09-10",
+    "addedAt": "2026-09-13",
+    "title": "이보람 · 골 때리는 그녀들 핸드볼 데뷔전 보도",
+    "program": "스포츠경향",
+    "type": "news",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스포츠경향",
+      "url": "https://sports.khan.co.kr/article/202609101840003"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2026",
+      "기사"
+    ],
+    "note": "9월 9일 방송의 FC발라드림 합류와 핸드볼 경기를 다룬 기사입니다. 날짜는 기사 게시일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published"
+  },
+  {
+    "id": "v492-nam-news",
+    "date": "2026-09-11",
+    "addedAt": "2026-09-13",
+    "title": "남규리 · 음악·연기 활동 회고 인터뷰 보도",
+    "program": "뉴스1",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "뉴스1",
+      "url": "https://v.daum.net/v/7rgQc2XS5V"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "2026",
+      "기사"
+    ],
+    "note": "9월 10일 공개된 진짜 이진성 영상에서 남규리가 직접 이야기한 음악·연기 활동 경험을 전하는 기사입니다. 날짜는 기사 게시일입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "article-published"
   }
