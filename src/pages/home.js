@@ -104,7 +104,7 @@ function home(){return `<div class="home-aespa">
   </section>
 
 
-<section class="home-game"><div class="home-game-copy"><div class="eye">SEEYA · FAN GAME</div><h2>가사 보고 제목 맞히기</h2><p>후렴부터 수록곡의 어려운 한 줄까지.<br>LEVEL 1·2·3 중 원하는 난이도를 골라<br>10문제에 도전해보세요.</p><a class="home-game-go" href="/game/lyrics/">MUSIC QUIZ →</a></div><div class="home-game-art" aria-hidden="true"><strong>가사 한 줄로<br>제목을 맞혀보세요.<span>135 QUESTIONS · 3 LEVELS</span></strong></div></section>
+<section class="home-game"><div class="home-game-copy"><div class="eye">SEEYA · FAN GAME</div><h2>SEEYA PLAY</h2><p>씨야와 함께하는 팬 놀이터<br>가사 보고 제목 맞히기에 도전해보세요.<br>씨야 모의고사는 업데이트 예정입니다.</p><a class="home-game-go" href="/game/">게임 선택하기 →</a></div><div class="home-game-art" aria-hidden="true"><strong>가사 한 줄로<br>제목을 맞혀보세요.<span>135 QUESTIONS · 3 LEVELS</span></strong></div></section>
 
 <section class="home-official">
   <div class="tiny">OFFICIAL LINKS</div>

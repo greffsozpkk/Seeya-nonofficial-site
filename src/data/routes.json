@@ -54,10 +54,22 @@
     "description": "오늘의 흐름에 맞춰 씨야의 그룹곡과 주요 프로젝트·OST, 최근 멤버 솔로곡을 추천하는 팬 콘텐츠입니다."
   },
   {
+    "key": "games",
+    "path": "/game/",
+    "title": "SEEYA PLAY · 씨야와 함께하는 팬 놀이터 | SEEYA ARCHIVE",
+    "description": "씨야와 함께하는 팬 놀이터 SEEYA PLAY. 가사 보고 제목 맞히기에 도전해보세요. 씨야 모의고사는 업데이트 예정입니다."
+  },
+  {
     "key": "quiz",
     "path": "/game/lyrics/",
     "title": "씨야 가사 퀴즈 · 노래 제목 맞히기 | SEEYA ARCHIVE",
     "description": "씨야 노래 가사 한 줄을 보고 제목을 맞히는 3단계 팬게임. 4지선다와 주관식으로 10문제에 도전하세요."
+  },
+  {
+    "key": "exam",
+    "path": "/game/exam/",
+    "title": "씨야 모의고사 · 업데이트 예정 | SEEYA ARCHIVE",
+    "description": "씨야 모의고사를 준비하고 있습니다. 문제와 시험 안내가 차례로 추가될 예정이며, 지금은 가사 보고 제목 맞히기에 도전할 수 있습니다."
   },
   {
     "key": "news",

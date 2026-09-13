@@ -6,7 +6,9 @@ const before=hashes();execFileSync(process.execPath,['build.js'],{cwd:root});ass
 for(const p of manifest.assets.filter(p=>p.endsWith('.js')))execFileSync(process.execPath,['--check',p],{cwd:root});
 for(const p of manifest.files.filter(p=>p.endsWith('.html'))){const html=read(p),main=html.match(/<main id="app">([\s\S]*?)<\/main>/);assert(main&&main[1].replace(/<[^>]*>/g,'').trim().length>100,p+' missing static content');assert(!html.includes('function route('));assert(!html.includes('{{'));for(const m of html.matchAll(/(?:href|src)="([^"#]+)"/g)){const ref=m[1];if(/^(?:https?:|data:|mailto:|tel:|javascript:|\/\/)/.test(ref))continue;const clean=decodeURIComponent(ref.split(/[?#]/)[0]).replace(/^\//,'');if(!clean)continue;let dest=path.join(root,clean);if(fs.existsSync(dest)&&fs.statSync(dest).isDirectory())dest=path.join(dest,'index.html');assert(fs.existsSync(dest),p+' missing local link '+ref);}}
 assert(!manifest.assets.some(p=>read(p).includes('data/instagram.json')));
-assert.equal(JSON.parse(read('src/data/routes.json')).length,11);
-console.log('PASS: reproducible build, JS syntax, 11 static bodies, local links, no Instagram feed dependency.');
+const routes=JSON.parse(read('src/data/routes.json'));
+assert.equal(manifest.files.filter(p=>p.endsWith('.html')).length,routes.length);
+assert.equal(new Set(routes.map(r=>r.path)).size,routes.length,'Route paths must be unique');
+console.log(`PASS: reproducible build, JS syntax, ${routes.length} static bodies, local links, no Instagram feed dependency.`);
 
 require('./check-archive');
