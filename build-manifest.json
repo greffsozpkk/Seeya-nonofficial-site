@@ -1,5 +1,5 @@
 {
-  "version": "4.93",
+  "version": "4.96",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -11,14 +11,16 @@
     "archive/index.html",
     "guide/index.html",
     "today/index.html",
+    "game/index.html",
     "game/lyrics/index.html",
+    "game/exam/index.html",
     "news/index.html",
     "sitemap.xml"
   ],
   "assets": [
-    "assets/site.f6c65374fd4f.css",
-    "assets/lyric-quiz.07119a44aa7b.css",
-    "assets/site.3c2e58177650.js",
+    "assets/site.59b46a0c77a9.css",
+    "assets/lyric-quiz.b65f08dd136e.css",
+    "assets/site.8c66a7f776f2.js",
     "assets/lyric-quiz.cd5889581fa7.js"
   ]
 }
