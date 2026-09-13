@@ -12,3 +12,4 @@ assert.equal(new Set(routes.map(r=>r.path)).size,routes.length,'Route paths must
 console.log(`PASS: reproducible build, JS syntax, ${routes.length} static bodies, local links, no Instagram feed dependency.`);
 
 require('./check-archive');
+require('./check-on-this-day');

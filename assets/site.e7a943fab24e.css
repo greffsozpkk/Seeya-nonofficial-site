@@ -1321,7 +1321,7 @@ body.fanchant-lightbox-open{overflow:hidden}
 .today-visitors span{font-size:11px}
 
 /* v4.97 On this day: archive anniversaries */
-.on-this-day{margin:0 0 48px;border:1px solid var(--line);padding:clamp(22px,4vw,42px);background:#fffcfd}
+.on-this-day{margin:0 clamp(18px,5vw,70px) 48px;border:1px solid var(--line);padding:clamp(22px,4vw,42px);background:#fffcfd}
 .on-this-day-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
 .on-this-day-heading h2{font-family:"Gowun Batang",serif;font-size:clamp(28px,4vw,40px);margin:10px 0;line-height:1.35;word-break:keep-all}
 .on-this-day-date{padding:8px 11px;border:1px solid var(--line);color:#915d72;font-size:11px;white-space:nowrap}

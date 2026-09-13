@@ -85,4 +85,4 @@ function archiveView(archiveData,archiveState){
   view.pagination=archivePagination(totalPages,archiveState);
   return view;
 }
-module.exports={archiveDateLabel,newsList,galleryMoment,getFilteredArchive,archiveView};
+module.exports={archiveDateLabel,archiveSourceLinks,newsList,galleryMoment,getFilteredArchive,archiveView};

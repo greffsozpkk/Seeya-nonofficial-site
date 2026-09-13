@@ -18,9 +18,7 @@ module.exports=()=>W(`<section class="game-hub">
       </div>
     </a>
     <a class="game-card game-card-exam" href="/game/exam/" aria-labelledby="game-exam-title" aria-describedby="game-exam-description game-exam-status">
-      <div class="game-card-art game-card-art-exam" aria-hidden="true">
-        <div class="game-exam-paper"><span>SEEYA ARCHIVE</span><strong>씨야 모의고사</strong><i></i><i></i><div>①　②　③　④</div><i></i></div>
-      </div>
+      <div class="game-card-art game-card-art-exam"><img src="/images/game/seeya-exam.png" alt="교실에서 씨야 모의고사를 푸는 세 멤버의 일러스트" width="1402" height="1122" loading="lazy"></div>
       <div class="game-card-copy">
         <span class="game-card-kicker">02 · SEEYA EXAM</span>
         <h2 id="game-exam-title">씨야 모의고사</h2>

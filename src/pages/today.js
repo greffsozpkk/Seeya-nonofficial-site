@@ -1,3 +1,4 @@
+const {onThisDay}=require('../shared/on-this-day');
 const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('../shared/common');
 const {newsList,galleryMoment,archiveView}=require('../shared/views');
 function todayPickSong(mood,random=Math.random){
@@ -38,5 +39,5 @@ function todayBlock(now=new Date(),random=Math.random){
     </section>
   </div>`;
 }
-function today(now,random){return W(`<div class="section" style="border:0"><div class="eye">DAILY SEEYA</div><h1 style="font-size:55px">TODAY'S SEEYA</h1><p class="lead">오늘의 흐름을 가볍게 읽고, 그 기분에 어울리는 씨야와 멤버들의 노래를 한 곡 추천합니다.</p></div>${todayBlock(now,random)}<div class="page-pixel-art" aria-hidden="true"><img src="images/today/seeya-today-pixel.png" alt="" loading="lazy"></div>`)}
+function today(now,random,archiveRows=[]){return W(`<div class="section" style="border:0"><div class="eye">DAILY SEEYA</div><h1 style="font-size:55px">TODAY'S SEEYA</h1><p class="lead">과거 오늘의 씨야를 돌아보고,<br>오늘의 기분에 어울리는 노래도 만나보세요.</p></div>${onThisDay(archiveRows,now)}${todayBlock(now,random)}<div class="page-pixel-art" aria-hidden="true"><img src="images/today/seeya-today-pixel.png" alt="" loading="lazy"></div>`)}
 module.exports=today;

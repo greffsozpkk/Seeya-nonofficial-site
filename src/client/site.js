@@ -1,3 +1,4 @@
+const {initOnThisDay}=require('./on-this-day');
 const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('../shared/common');
 const {newsList,galleryMoment,archiveView,getFilteredArchive:filterArchive}=require('../shared/views');
 const today=require('../pages/today');
@@ -508,6 +509,6 @@ if(page==='news')loadNews();
 if(page==='gallery'){galleryItems=normalizePhotos(PHOTOS_FALLBACK);loadGallery();}
 if(page==='archive'){archiveData=ARCHIVE_FALLBACK;loadArchive();}
 if(page==='quiz')window.initLyricQuiz();
-if(page==='today'){const block=document.querySelector('.today-fortune');if(block){const holder=document.createElement('div');holder.innerHTML=today();block.replaceWith(holder.querySelector('.today-fortune'));}}
+if(page==='today'){initOnThisDay(ARCHIVE_FALLBACK);const block=document.querySelector('.today-fortune');if(block){const holder=document.createElement('div');holder.innerHTML=today();block.replaceWith(holder.querySelector('.today-fortune'));}}
 
 Object.assign(window,{renderFanChantGrid,ensureFanChantLightbox,updateFanChantLightbox,openFanChantLightbox,closeFanChantLightbox,moveFanChantLightbox,renderGallery,ensureGalleryLightbox,updateGalleryLightbox,openGalleryLightbox,closeGalleryLightbox,moveGalleryLightbox,loadGallery,loadArchive,setArchiveQuery,setArchiveFilter,setArchiveSort,resetArchiveFilters,setArchivePage,syncArchiveControls,bindNewsFilter,getNewsData,loadNews,showCard,closeCard,showEasterToast,employeeCard,employeeFormatDate,employeeMakeId,employeeRoundRect,employeeFitText,employeeMarkDirty,employeeCoverSampleValue,renderEmployeeCard,employeeResetPhotoPosition,employeeSetStatus,issueEmployeeCard,downloadEmployeeCard,initEmployeeCard,normalizePhotos,renderNews,renderGalleryMoment,getFilteredArchive,renderArchive});
