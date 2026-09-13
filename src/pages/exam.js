@@ -7,7 +7,7 @@ module.exports=()=>W(`<section class="game-hub game-exam-page">
     <h1>씨야 모의고사</h1>
     <p>씨야와 함께한 시간, 얼마나 기억하고 있나요?<br>팬심을 확인할 새로운 시험을 준비하고 있어요.</p>
   </header>
-  <figure class="game-exam-illustration"><img src="/images/game/seeya-exam.png?v=4.99" alt="교실에서 씨야 모의고사를 푸는 세 멤버의 일러스트" width="1402" height="1122"></figure>
+  <figure class="game-exam-illustration"><img src="/images/game/seeya-exam.png?v=4.100" alt="교실에서 씨야 모의고사를 푸는 세 멤버의 일러스트" width="1402" height="1122"></figure>
   <section class="game-exam-notice" aria-labelledby="exam-status-title">
     <span class="game-card-kicker">SEEYA EXAM</span>
     <h2 id="exam-status-title">업데이트 예정</h2>
