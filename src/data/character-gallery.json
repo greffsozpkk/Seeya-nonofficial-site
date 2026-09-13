@@ -1,0 +1,161 @@
+[
+  {
+    "id": "archive-room",
+    "title": "씨야의 기록실",
+    "image": "/images/archive/seeya-archive-room.png?v=4.101",
+    "width": 1774,
+    "height": 887,
+    "usedOn": [
+      {
+        "label": "ARCHIVE",
+        "path": "/archive/"
+      }
+    ]
+  },
+  {
+    "id": "exam",
+    "title": "씨야 모의고사",
+    "image": "/images/game/seeya-exam.png?v=4.100",
+    "width": 1402,
+    "height": 1122,
+    "usedOn": [
+      {
+        "label": "SEEYA PLAY",
+        "path": "/game/"
+      },
+      {
+        "label": "모의고사",
+        "path": "/game/exam/"
+      }
+    ]
+  },
+  {
+    "id": "lyrics",
+    "title": "가사 한 줄, 씨야 한 곡",
+    "image": "/images/game/lyric-quiz-hero.png",
+    "width": 1586,
+    "height": 992,
+    "usedOn": [
+      {
+        "label": "HOME",
+        "path": "/"
+      },
+      {
+        "label": "제목 맞히기",
+        "path": "/game/lyrics/"
+      }
+    ]
+  },
+  {
+    "id": "home",
+    "title": "SEE YOU ALWAYS",
+    "image": "/images/common/seeya-pixel-characters.png",
+    "width": 1536,
+    "height": 1024,
+    "usedOn": [
+      {
+        "label": "HOME",
+        "path": "/"
+      }
+    ]
+  },
+  {
+    "id": "cheer",
+    "title": "씨야와 함께 응원해요",
+    "image": "/images/common/seeya-cheer-pixel.png",
+    "width": 1536,
+    "height": 1024,
+    "usedOn": [
+      {
+        "label": "GUIDE",
+        "path": "/guide/"
+      },
+      {
+        "label": "MUSIC",
+        "path": "/music/"
+      }
+    ]
+  },
+  {
+    "id": "history",
+    "title": "우리의 이야기는 계속",
+    "image": "/images/history/seeya-history-ing.png",
+    "width": 1536,
+    "height": 1024,
+    "usedOn": [
+      {
+        "label": "HISTORY",
+        "path": "/history/"
+      }
+    ]
+  },
+  {
+    "id": "gallery",
+    "title": "씨야의 포토 부스",
+    "image": "/images/gallery/seeya-gallery-pixel.png",
+    "width": 1448,
+    "height": 1086,
+    "usedOn": [
+      {
+        "label": "GALLERY",
+        "path": "/gallery/"
+      }
+    ]
+  },
+  {
+    "id": "today",
+    "title": "오늘도 씨야와 함께",
+    "image": "/images/today/seeya-today-pixel.png",
+    "width": 1536,
+    "height": 1024,
+    "usedOn": [
+      {
+        "label": "TODAY",
+        "path": "/today/"
+      }
+    ]
+  },
+  {
+    "id": "stage",
+    "title": "무대 위의 씨야",
+    "image": "/images/archive/archive-stage.png",
+    "width": 1586,
+    "height": 992,
+    "usedOn": [
+      {
+        "label": "ARCHIVE · 무대 카드",
+        "path": "/archive/"
+      }
+    ]
+  },
+  {
+    "id": "interview",
+    "title": "씨야의 이야기",
+    "image": "/images/archive/archive-interview.png",
+    "width": 1586,
+    "height": 992,
+    "usedOn": [
+      {
+        "label": "NEWS",
+        "path": "/news/"
+      },
+      {
+        "label": "ARCHIVE · 인터뷰 카드",
+        "path": "/archive/"
+      }
+    ]
+  },
+  {
+    "id": "archive-previous",
+    "title": "사진 속에 담긴 기억",
+    "image": "/images/archive/seeya-archive-pixel.png",
+    "width": 1448,
+    "height": 1086,
+    "usedOn": [
+      {
+        "label": "ARCHIVE · 이전 그림",
+        "path": "/archive/"
+      }
+    ]
+  }
+]

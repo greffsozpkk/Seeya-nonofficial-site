@@ -1,12 +1,9 @@
+const {galleryHeader}=require('../shared/gallery-layout');
 const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('../shared/common');
 const {newsList,galleryMoment,archiveView}=require('../shared/views');
 function gallery(items,now){return W(`
-  <div class="gallery-head">
-    <div class="eye">SEEYA · GALLERY</div>
-    <h1 style="font-size:55px;margin:10px 0 4px">GALLERY</h1>
-    <div class="gallery-tagline">SeeYa in Pictures</div>
-  </div>
-  <div class="gallery-shell">
+  ${galleryHeader('photos')}
+  <div class="gallery-shell" id="photoCollection">
     <section class="gallery-section">
       <div class="gallery-section-kicker">TODAY'S PICK</div>
       <h2 class="gallery-section-title">SEEYA MOMENT</h2>
@@ -29,3 +26,4 @@ function gallery(items,now){return W(`
   <div class="page-pixel-art" aria-hidden="true"><img src="images/gallery/seeya-gallery-pixel.png" alt="" loading="lazy"></div>
 `) }
 module.exports=gallery;
+

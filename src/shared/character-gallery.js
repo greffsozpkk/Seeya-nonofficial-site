@@ -1,0 +1,9 @@
+const items=require('../data/character-gallery.json');
+const {esc}=require('./common');
+function characterGallery(){return `<section class="character-collection" id="characterCollection" aria-labelledby="characterCollectionTitle">
+ <header class="character-collection-head"><div><div class="gallery-section-kicker">SEEYA CHARACTERS</div><h2 class="gallery-section-title" id="characterCollectionTitle">캐릭터 이미지 모음</h2></div><span class="character-total">${items.length}개의 그림</span></header>
+ <p class="gallery-section-desc">페이지 곳곳에서 만난 작은 씨야를 한자리에 모았어요.<br>그림을 누르면 원본 비율로 크게 볼 수 있습니다.</p>
+ <div class="character-grid">${items.map((x,i)=>`<article class="character-card"><a class="character-open" href="${esc(x.image)}" data-character-index="${i}" aria-haspopup="dialog" aria-label="${esc(x.title)} 크게 보기"><img src="${esc(x.image)}" width="${x.width}" height="${x.height}" alt="${esc(x.title)} 캐릭터 일러스트" loading="lazy"><span aria-hidden="true">크게 보기 ＋</span></a><div class="character-card-copy"><h3>${esc(x.title)}</h3><div class="character-used">${x.usedOn.map(p=>`<a href="${esc(p.path)}">${esc(p.label)} →</a>`).join('')}</div></div></article>`).join('')}</div>
+ <dialog class="character-dialog" id="characterDialog" aria-labelledby="characterDialogTitle"><div class="character-dialog-head"><span id="characterDialogCount"></span><button type="button" class="character-close" aria-label="캐릭터 이미지 닫기">닫기 ×</button></div><img id="characterDialogImage" alt=""><div class="character-dialog-info"><h3 id="characterDialogTitle"></h3><a id="characterOriginal" href="${esc(items[0].image)}" target="_blank" rel="noopener noreferrer">원본 보기 ↗</a></div><div class="character-dialog-controls"><button type="button" data-character-step="-1" aria-label="이전 캐릭터 이미지">← 이전</button><button type="button" data-character-step="1" aria-label="다음 캐릭터 이미지">다음 →</button></div></dialog>
+</section>`;}
+module.exports={characterGallery};

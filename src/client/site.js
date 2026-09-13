@@ -1,3 +1,4 @@
+const {initCharacterGallery}=require('./character-gallery');
 const {initOnThisDay}=require('./on-this-day');
 const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('../shared/common');
 const {newsList,galleryMoment,archiveView,getFilteredArchive:filterArchive}=require('../shared/views');
@@ -506,7 +507,12 @@ function renderArchive(){const view=archiveView(archiveData,archiveState);for(co
 if(/^#\/(?:$|guide|news|music|history|members|gallery|archive|today|game\/lyrics)/.test(location.hash)){location.replace(location.hash.slice(1));}
 const page=document.body.dataset.page;
 if(page==='news')loadNews();
-if(page==='gallery'){galleryItems=normalizePhotos(PHOTOS_FALLBACK);loadGallery();}
+if(page==='characters')initCharacterGallery();
+if(page==='gallery'){
+ const openCharacterCollection=()=>{if(location.hash==='#characterCollection')location.replace('/gallery/characters/');};
+ openCharacterCollection();window.addEventListener('hashchange',openCharacterCollection);
+ galleryItems=normalizePhotos(PHOTOS_FALLBACK);loadGallery();
+}
 if(page==='archive'){archiveData=ARCHIVE_FALLBACK;loadArchive();}
 if(page==='quiz')window.initLyricQuiz();
 if(page==='today'){initOnThisDay(ARCHIVE_FALLBACK);const block=document.querySelector('.today-fortune');if(block){const holder=document.createElement('div');holder.innerHTML=today();block.replaceWith(holder.querySelector('.today-fortune'));}}

@@ -1,5 +1,5 @@
 {
-  "version": "4.100",
+  "version": "4.102",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -8,6 +8,7 @@
     "music/fanchant/index.html",
     "history/index.html",
     "gallery/index.html",
+    "gallery/characters/index.html",
     "archive/index.html",
     "guide/index.html",
     "today/index.html",
@@ -18,9 +19,9 @@
     "sitemap.xml"
   ],
   "assets": [
-    "assets/site.1dba17adfc9b.css",
+    "assets/site.30051f875090.css",
     "assets/lyric-quiz.16248c1b0faf.css",
-    "assets/site.1185d6f33099.js",
-    "assets/lyric-quiz.cd5889581fa7.js"
+    "assets/site.4c50922da488.js",
+    "assets/lyric-quiz.bd45d95a165e.js"
   ]
 }

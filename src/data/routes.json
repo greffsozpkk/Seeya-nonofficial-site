@@ -33,7 +33,13 @@
     "key": "gallery",
     "path": "/gallery/",
     "title": "씨야 SeeYa 사진 갤러리 | SEEYA ARCHIVE",
-    "description": "씨야의 순간을 사진으로 기록하는 팬 아카이브 갤러리입니다."
+    "description": "씨야의 사진을 모아보는 팬 갤러리입니다. 사진을 원본 비율로 크게 감상하고, 별도 캐릭터 이미지 모음으로 이동할 수 있습니다."
+  },
+  {
+    "key": "characters",
+    "path": "/gallery/characters/",
+    "title": "씨야 캐릭터 이미지 모음 · 갤러리 | SEEYA ARCHIVE",
+    "description": "팬페이지에서 만난 씨야 캐릭터 일러스트 11장을 모았습니다. 기록실, 모의고사, 무대와 일상 속 작은 씨야를 원본 비율로 크게 감상해보세요."
   },
   {
     "key": "archive",
