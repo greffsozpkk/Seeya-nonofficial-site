@@ -1,5 +1,21 @@
 [
   {
+    "id": "seeya-today-four-cuts",
+    "title": "TODAY WITH SEEYA · 씨야 네 컷",
+    "image": "/images/characters/seeya-today-four-cuts.png",
+    "width": 809,
+    "height": 1942,
+    "usedOn": []
+  },
+  {
+    "id": "seeya-blue-night",
+    "title": "푸른 밤의 씨야",
+    "image": "/images/characters/seeya-blue-night.png",
+    "width": 1448,
+    "height": 1086,
+    "usedOn": []
+  },
+  {
     "id": "archive-room",
     "title": "씨야의 기록실",
     "image": "/images/archive/seeya-archive-room.png?v=4.101",
