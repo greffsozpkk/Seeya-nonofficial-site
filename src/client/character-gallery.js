@@ -1,4 +1,5 @@
 const items=require('../data/character-gallery.json');
+const {characterCaption,characterAlt}=require('../shared/character-caption');
 function initCharacterGallery(){
  const section=document.getElementById('characterCollection'),dialog=document.getElementById('characterDialog');
  if(!section)return;
@@ -26,8 +27,8 @@ function initCharacterGallery(){
  let index=0,opener=null,touchX=null;
  function render(){
   index=(index+items.length)%items.length;const item=items[index];
-  const img=document.getElementById('characterDialogImage');img.src=item.image;img.alt=item.title+' 캐릭터 일러스트';
-  document.getElementById('characterDialogTitle').textContent=item.title;
+  const img=document.getElementById('characterDialogImage');img.src=item.image;img.alt=characterAlt(item,index);
+  document.getElementById('characterDialogTitle').innerHTML=characterCaption(item);
   document.getElementById('characterDialogCount').textContent=`${index+1} / ${items.length}`;
   document.getElementById('characterOriginal').href=item.image;
  }

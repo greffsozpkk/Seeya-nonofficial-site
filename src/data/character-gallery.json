@@ -1,7 +1,6 @@
 [
   {
     "id": "seeya-today-four-cuts",
-    "title": "TODAY WITH SEEYA · 씨야 네 컷",
     "image": "/images/characters/seeya-today-four-cuts.png",
     "width": 809,
     "height": 1942,
@@ -9,7 +8,6 @@
   },
   {
     "id": "seeya-blue-night",
-    "title": "푸른 밤의 씨야",
     "image": "/images/characters/seeya-blue-night.png",
     "width": 1448,
     "height": 1086,
@@ -17,7 +15,6 @@
   },
   {
     "id": "archive-room",
-    "title": "씨야의 기록실",
     "image": "/images/archive/seeya-archive-room.png?v=4.101",
     "width": 1774,
     "height": 887,
@@ -30,7 +27,6 @@
   },
   {
     "id": "exam",
-    "title": "씨야 모의고사",
     "image": "/images/game/seeya-exam.png?v=4.100",
     "width": 1402,
     "height": 1122,
@@ -47,7 +43,6 @@
   },
   {
     "id": "lyrics",
-    "title": "가사 한 줄, 씨야 한 곡",
     "image": "/images/game/lyric-quiz-hero.png",
     "width": 1586,
     "height": 992,
@@ -64,7 +59,6 @@
   },
   {
     "id": "home",
-    "title": "SEE YOU ALWAYS",
     "image": "/images/common/seeya-pixel-characters.png",
     "width": 1536,
     "height": 1024,
@@ -77,7 +71,6 @@
   },
   {
     "id": "cheer",
-    "title": "씨야와 함께 응원해요",
     "image": "/images/common/seeya-cheer-pixel.png",
     "width": 1536,
     "height": 1024,
@@ -94,7 +87,6 @@
   },
   {
     "id": "history",
-    "title": "우리의 이야기는 계속",
     "image": "/images/history/seeya-history-ing.png",
     "width": 1536,
     "height": 1024,
@@ -107,7 +99,6 @@
   },
   {
     "id": "gallery",
-    "title": "씨야의 포토 부스",
     "image": "/images/gallery/seeya-gallery-pixel.png",
     "width": 1448,
     "height": 1086,
@@ -120,7 +111,6 @@
   },
   {
     "id": "today",
-    "title": "오늘도 씨야와 함께",
     "image": "/images/today/seeya-today-pixel.png",
     "width": 1536,
     "height": 1024,
@@ -133,7 +123,6 @@
   },
   {
     "id": "stage",
-    "title": "무대 위의 씨야",
     "image": "/images/archive/archive-stage.png",
     "width": 1586,
     "height": 992,
@@ -146,7 +135,6 @@
   },
   {
     "id": "interview",
-    "title": "씨야의 이야기",
     "image": "/images/archive/archive-interview.png",
     "width": 1586,
     "height": 992,
@@ -163,7 +151,6 @@
   },
   {
     "id": "archive-previous",
-    "title": "사진 속에 담긴 기억",
     "image": "/images/archive/seeya-archive-pixel.png",
     "width": 1448,
     "height": 1086,
