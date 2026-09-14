@@ -1,5 +1,17 @@
 [
   {
+    "id": "members-character",
+    "image": "/images/members/seeya-members-character.png",
+    "width": 1536,
+    "height": 1024,
+    "usedOn": [
+      {
+        "label": "MEMBERS",
+        "path": "/members/"
+      }
+    ]
+  },
+  {
     "id": "seeya-today-four-cuts",
     "image": "/images/characters/seeya-today-four-cuts.png",
     "width": 809,
