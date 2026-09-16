@@ -523,5 +523,35 @@
     "scope": "single",
     "category": "broadcast",
     "basis": "기존 영상 출처의 곡명 및 아카이브 설명으로 연결"
+  },
+  {
+    "archiveId": "20260330-rebloom-fanmeeting",
+    "url": "https://www.youtube.com/watch?v=QKNH-IrU78U",
+    "songIds": [
+      "still-like-you"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "현장 직캠 제목에 260330 팬미팅 및 그래도 좋아 명시"
+  },
+  {
+    "archiveId": "v491-green",
+    "url": "https://www.youtube.com/watch?v=mPRYInVlUzM",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "James Lee TV 원본 제목·설명에 행사일과 사랑의 인사 명시"
+  },
+  {
+    "archiveId": "v491-cheonan2023",
+    "url": "https://www.youtube.com/watch?v=gQxHo_t64zk",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "원본 영상 설명의 04:30 사랑의 인사 시간표"
   }
 ]

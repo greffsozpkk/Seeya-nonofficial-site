@@ -4727,11 +4727,16 @@
       "2026",
       "완전체"
     ],
-    "note": "SBS 팟캐스트에 기재된 4월 11일 회차 기준. 일부 보도의 4월 9일 표기와 구분했습니다. 프로그램 다시듣기 목록에서 회차를 선택하세요. 4월 9일은 녹화 자료 표기이며 기존 4월 11일 방송 기록을 유지했습니다.",
+    "note": "SBS 팟캐스트에 기재된 4월 11일 회차 기준. 일부 보도의 4월 9일 표기와 구분했습니다. 프로그램 다시듣기 목록에서 회차를 선택하세요. 4월 9일은 녹화 자료 표기이며 기존 4월 11일 방송 기록을 유지했습니다. 4월 9일 공개된 녹화 영상을 추가 연결했습니다. 영상 게시일을 별도 방송 회차로 중복 등록하지 않습니다.",
     "evidenceUrls": [
       "https://podcasts.apple.com/my/podcast/%EB%B0%B0%EC%84%B1%EC%9E%AC%EC%9D%98-%ED%85%90/id1096961355?uo=2"
     ],
-    "additionalSources": []
+    "additionalSources": [
+      {
+        "label": "4월 9일 녹화 영상 · 코빨간배춘기 [배성재의 텐]",
+        "url": "https://www.youtube.com/watch?v=jrjFibBT3kk"
+      }
+    ]
   },
   {
     "id": "v487-2026-006",
@@ -5017,7 +5022,9 @@
       "김연지",
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "그래도 좋아"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
@@ -5032,9 +5039,15 @@
       "재결합",
       "서울"
     ],
-    "note": "재결합 후 첫 공식 팬미팅. 티켓은 예매 시작 직후 매진됐다.",
+    "note": "재결합 후 첫 공식 팬미팅. 티켓은 예매 시작 직후 매진됐다. 현장 직캠 제목에 팬미팅 날짜와 곡명이 명시되어 있어 그래도 좋아를 연결했습니다. 확인된 일부 곡이며 전체 세트리스트는 아닙니다.",
     "venue": "서울 종로구 이들스(EDLS)",
-    "eventState": "completed"
+    "eventState": "completed",
+    "additionalSources": [
+      {
+        "label": "그래도 좋아 · 현장 직캠 (정아선)",
+        "url": "https://www.youtube.com/watch?v=QKNH-IrU78U"
+      }
+    ]
   },
   {
     "id": "20260330-nevertheless-we",
@@ -7876,7 +7889,12 @@
       "label": "KBS 레전드 케이팝",
       "url": "https://www.youtube.com/watch?v=qZ6GCuD8CFU"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "제발 · KBS 공식 세로 직캠",
+        "url": "https://www.youtube.com/watch?v=c7mIr8vp1ss"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
@@ -8902,7 +8920,12 @@
     "members": [
       "김연지"
     ],
-    "songs": [],
+    "songs": [
+      "가슴으로 운다",
+      "사랑의 인사",
+      "Whisky on the Rock",
+      "비가 오면 마음껏 울어도 되니까"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
@@ -8915,7 +8938,7 @@
       "2020~2025",
       "김연지"
     ],
-    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다.",
+    "note": "현장 직캠 제목에 명시된 행사일로 잠정 등록했습니다. 영상 설명의 곡 목록과 시간표(00:00 가슴으로 운다, 04:30 사랑의 인사, 10:00 Whisky on the Rock, 17:04 비가 오면 마음껏 울어도 되니까)를 반영했습니다. 영상에 수록된 곡 목록이며 행사 전체 순서는 아닙니다.",
     "dateStatus": "tentative",
     "dateBasis": "event"
   },
@@ -9200,20 +9223,32 @@
     "members": [
       "김연지"
     ],
-    "songs": [],
+    "songs": [
+      "사랑의 인사",
+      "Whisky on the Rock"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
       "label": "공연·출연 안내",
       "url": "https://www.stagepick.co.kr/performances/detail/191254"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "사랑의 인사 · 현장 직캠 (James Lee TV)",
+        "url": "https://www.youtube.com/watch?v=mPRYInVlUzM"
+      },
+      {
+        "label": "Whisky on the Rock · 현장 직캠 (James Lee TV)",
+        "url": "https://www.youtube.com/watch?v=HobMjZbKrgM"
+      }
+    ],
+    "status": "available",
     "tags": [
       "2020~2025",
       "김연지"
     ],
-    "note": "",
+    "note": "현장 영상 설명에 2023년 6월 3일 그린콘서트와 곡명이 명시되어 있습니다. 확인된 두 곡을 연결했으며 전체 세트리스트는 아닙니다.",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "venue": "서원밸리CC"
@@ -29369,5 +29404,120 @@
     "titleTracks": [
       "여인의 향기"
     ]
+  },
+  {
+    "id": "v4110-boram-inears",
+    "date": "2020-05-12",
+    "addedAt": "2026-09-17",
+    "title": "이보람 · 커스텀 인이어 제작기",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야 · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=1fjX0ibzUlE"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "공식 콘텐츠",
+      "비하인드",
+      "인이어"
+    ],
+    "note": "공식 채널 영상의 한국 시간 게시일 기준입니다. 촬영일이나 팬 서포트 전달일을 뜻하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-05-12"
+  },
+  {
+    "id": "v4110-yeonji-inears-live",
+    "date": "2020-08-05",
+    "addedAt": "2026-09-17",
+    "title": "김연지 · 인이어 언박싱 라이브",
+    "program": "김연지 Official",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=YpaUJoDM_MM"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "공식 콘텐츠",
+      "비하인드",
+      "인이어"
+    ],
+    "note": "공식 채널 영상의 한국 시간 게시일 기준입니다. 촬영일이나 팬 서포트 전달일을 뜻하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-08-05"
+  },
+  {
+    "id": "v4110-yeonji-inears-behind",
+    "date": "2020-08-11",
+    "addedAt": "2026-09-17",
+    "title": "김연지 · 첫 커스텀 인이어 제작 비하인드",
+    "program": "김연지 Official",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=uSWmUJF6Oeg"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "공식 콘텐츠",
+      "비하인드",
+      "인이어"
+    ],
+    "note": "공식 채널 영상의 한국 시간 게시일 기준입니다. 촬영일이나 팬 서포트 전달일을 뜻하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-08-11"
+  },
+  {
+    "id": "v4110-boram-gallery-message",
+    "date": "2021-02-22",
+    "addedAt": "2026-09-17",
+    "title": "이보람 · 씨야 갤러리에 생일 선물 감사 인사",
+    "program": "씨야 갤러리 공개 인사",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 이보람 공개 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=217256"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "공식 콘텐츠",
+      "팬 소통"
+    ],
+    "note": "갤러리 서포트 모음에 연결된 이보람의 공개 감사 글입니다. 편지·생일 축하 영상·선물에 대한 인사를 남겼으며, 날짜는 글 작성일입니다. 별도 공연이나 방문 일정으로 집계하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "post-published",
+    "publishedDate": "2021-02-22"
   }
 ]

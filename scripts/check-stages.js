@@ -8,6 +8,9 @@ for(const s of songs){assert(routes.some(r=>r.path===songPath(s)&&r.songId===s.i
 for(const m of mappings){const row=byId.get(m.archiveId);assert(row,'Unknown archive reference');assert(['broadcast','concert','live'].includes(m.category));assert(['single','multi','compilation'].includes(m.scope));assert(videoId(m.url));assert([row.source,...(row.additionalSources||[])].some(s=>s?.url===m.url),'Must reference an existing source');for(const id of m.songIds)assert(songs.some(s=>s.id===id));}
 assert.equal(songByTitle('그놈 목소리').id,'his-voice');assert.equal(songByTitle('sTaY').id,'stay');assert.equal(songByTitle('사랑의 인사 2026'),undefined,'Different editions must not merge automatically');
 const stay=performances(archive,'stay',cutoff),spring=performances(archive,'like-spring',cutoff);
+const green=performances(archive,'love-greeting',cutoff).find(r=>r.id==='v491-green');
+assert.deepEqual(green.clips.map(c=>videoId(c.url)),['mPRYInVlUzM'],'Other songs at the same concert must not leak into Love Greeting');
+assert.equal(performances(archive,'still-like-you',cutoff).find(r=>r.id==='20260330-rebloom-fanmeeting').clips[0].url,'https://www.youtube.com/watch?v=QKNH-IrU78U');
 const picnic=stay.find(r=>r.id==='v475-sheet2-row74');assert.equal(picnic.clips.length,2);assert.equal(stay.filter(r=>r.id===picnic.id).length,1);assert(!picnic.clips.some(c=>videoId(c.url)==='umxr2fEgcas'));assert.equal(spring.find(r=>r.id===picnic.id).clips[0].url,'https://www.youtube.com/watch?v=umxr2fEgcas');
 for(const replacement of [{eventState:'scheduled'},{date:'2099-01-01'},{source:{},additionalSources:[]}])assert(!performances(archive.map(r=>r.id===picnic.id?{...r,...replacement}:r),'stay',cutoff).some(r=>r.id===picnic.id));
 const {getFilteredArchive}=require('../src/shared/views');assert.deepEqual(getFilteredArchive(archive,{query:'',year:'all',member:'all',type:'all',sort:'newest',record:picnic.id}).map(r=>r.id),[picnic.id]);

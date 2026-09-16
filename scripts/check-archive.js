@@ -13,6 +13,7 @@ for(const x of rows){
  if(x.dateBasis==='video-published'&&x.publishedDate)assert.equal(x.date,x.publishedDate,x.id+' publication date');
 }
 const state={query:'',year:'all',member:'all',type:'all',sort:'newest',page:1};
+assert(archiveDateLabel({date:'2021-02-22',dateBasis:'post-published'}).includes('게시글 작성일'));
 for(const sort of ['newest','oldest','added'])for(let page=1;page<=Math.ceil(rows.length/9);page++){
  const html=archiveView(rows,{...state,sort,page}).grid;
  assert(!html.includes('undefined'));assert(!html.includes('>null<'));
