@@ -3,7 +3,7 @@ const {newsList,galleryMoment,archiveView}=require('../shared/views');
 function music(route="/music/"){
  const currentMusicRoute=route;
  const sub=currentMusicRoute.startsWith("/music/fanchant")?"fanchant":"discography";
- const subnav=`<div class="music-subnav"><a href="/music/" class="${sub==="discography"?"active":""}">DISCOGRAPHY</a><a href="/music/fanchant/" class="${sub==="fanchant"?"active":""}">FAN CHANT · 응원법</a></div>`;
+ const subnav=require('../shared/music-nav')(sub);
  if(sub==="fanchant")return W(`
     <div class="section" style="border:0">
       <div class="eye">MUSIC · FAN GUIDE</div>

@@ -1,3 +1,4 @@
+const {initStages}=require('./stages');
 const {initCharacterGallery}=require('./character-gallery');
 const {initOnThisDay}=require('./on-this-day');
 const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('../shared/common');
@@ -105,7 +106,7 @@ let archiveData=[];
 const ARCHIVE_PAGE_SIZE=9;
 let archiveState={query:"",year:"all",member:"all",type:"all",sort:"newest",page:1};
 async function loadArchive(){try{const r=await fetch("data/archive.json",{cache:"no-store"});if(!r.ok)throw new Error("archive fetch failed");archiveData=mergeArchive(await r.json());}catch(e){archiveData=ARCHIVE_FALLBACK;}renderArchive();}
-function setArchiveQuery(v){archiveState.query=v.trim();archiveState.page=1;renderArchive();}
+function setArchiveQuery(v){delete archiveState.record;archiveState.query=v.trim();archiveState.page=1;renderArchive();}
 function setArchiveFilter(k,v){archiveState[k]=v;archiveState.page=1;syncArchiveControls();renderArchive();}
 function setArchiveSort(v){archiveState.sort=v;archiveState.page=1;renderArchive();}
 function resetArchiveFilters(){archiveState={query:"",year:"all",member:"all",type:"all",sort:"newest",page:1};const q=document.getElementById("archiveSearch");if(q)q.value="";const s=document.getElementById("archiveSort");if(s)s.value="newest";syncArchiveControls();renderArchive();}
@@ -506,6 +507,7 @@ function renderArchive(){const view=archiveView(archiveData,archiveState);for(co
 // Old bookmarked hash routes become normal page navigations; ordinary anchors are untouched.
 if(/^#\/(?:$|guide|news|music|history|members|gallery|archive|today|game\/lyrics)/.test(location.hash)){location.replace(location.hash.slice(1));}
 const page=document.body.dataset.page;
+if(page==='stages'||page==='song')initStages();
 if(page==='news')loadNews();
 if(page==='characters')initCharacterGallery();
 if(page==='gallery'){
@@ -513,7 +515,7 @@ if(page==='gallery'){
  openCharacterCollection();window.addEventListener('hashchange',openCharacterCollection);
  galleryItems=normalizePhotos(PHOTOS_FALLBACK);loadGallery();
 }
-if(page==='archive'){archiveData=ARCHIVE_FALLBACK;loadArchive();}
+if(page==='archive'){archiveData=ARCHIVE_FALLBACK;const id=new URLSearchParams(location.search).get('record');const selected=archiveData.find(x=>x.id===id);if(selected){archiveState.record=id;archiveState.query=selected.title;const input=document.getElementById('archiveSearch');if(input)input.value=selected.title;}renderArchive();loadArchive();}
 if(page==='quiz')window.initLyricQuiz();
 if(page==='today'){initOnThisDay(ARCHIVE_FALLBACK);const block=document.querySelector('.today-fortune');if(block){const holder=document.createElement('div');holder.innerHTML=today();block.replaceWith(holder.querySelector('.today-fortune'));}}
 

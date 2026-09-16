@@ -18,6 +18,110 @@
     "description": "씨야의 The First Mind부터 First, Again까지 주요 앨범과 노래를 정리한 디스코그래피입니다."
   },
   {
+    "key": "stages",
+    "path": "/music/stages/",
+    "title": "씨야 곡별 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "좋아하는 씨야 노래로 음악방송, 공연과 라이브 영상을 모아보세요."
+  },
+  {
+    "key": "song",
+    "songId": "scent-of-a-woman",
+    "path": "/music/stages/scent-of-a-woman/",
+    "title": "여인의 향기 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 여인의 향기의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "shoes",
+    "path": "/music/stages/shoes/",
+    "title": "구두 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 구두의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "crazy-love-song",
+    "path": "/music/stages/crazy-love-song/",
+    "title": "미친 사랑의 노래 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 미친 사랑의 노래의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "love-greeting",
+    "path": "/music/stages/love-greeting/",
+    "title": "사랑의 인사 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 사랑의 인사의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "marry-me",
+    "path": "/music/stages/marry-me/",
+    "title": "결혼할까요 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 결혼할까요의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "ice-doll",
+    "path": "/music/stages/ice-doll/",
+    "title": "얼음인형 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 얼음인형의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "sad-footsteps",
+    "path": "/music/stages/sad-footsteps/",
+    "title": "슬픈 발걸음 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 슬픈 발걸음의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "still-like-you",
+    "path": "/music/stages/still-like-you/",
+    "title": "그래도 좋아 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 그래도 좋아의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "hot-girl",
+    "path": "/music/stages/hot-girl/",
+    "title": "Hot Girl · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 Hot Girl의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "his-voice",
+    "path": "/music/stages/his-voice/",
+    "title": "그 놈 목소리 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 그 놈 목소리의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "wonderful-you",
+    "path": "/music/stages/wonderful-you/",
+    "title": "내겐 너무 멋진 그대 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 내겐 너무 멋진 그대의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "nevertheless-us",
+    "path": "/music/stages/nevertheless-us/",
+    "title": "그럼에도, 우린 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 그럼에도, 우린의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "stay",
+    "path": "/music/stages/stay/",
+    "title": "Stay · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 Stay의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
+    "key": "song",
+    "songId": "like-spring",
+    "path": "/music/stages/like-spring/",
+    "title": "봄처럼 그댄 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 봄처럼 그댄의 음악방송, 공연과 라이브 기록을 날짜와 멤버별로 만나보세요."
+  },
+  {
     "key": "fanchant",
     "path": "/music/fanchant/",
     "title": "씨야 SeeYa 응원법 | SEEYA ARCHIVE",

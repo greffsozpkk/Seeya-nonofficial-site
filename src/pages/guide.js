@@ -23,7 +23,7 @@ function guide(){
         <div class="guide-route"><b>ROUTE B · 히트곡 중심</b><strong>Lovely Sweet Heart<br>↓<br>California Dream<br>↓<br>Brilliant Change</strong><span>익숙한 대표곡을 중심으로 2000년대 씨야의 흐름을 따라가는 루트.</span></div>
         <div class="guide-route"><b>ROUTE C · 2026부터</b><strong>그럼에도, 우린<br>↓<br>First, Again<br>↓<br>과거 앨범으로</strong><span>지금의 씨야를 먼저 만난 뒤 스무 해의 음악을 거꾸로 찾아가는 루트.</span></div>
       </div>
-      <div class="guide-actions"><a class="guide-link" href="/music/">전체 디스코그래피 보기 →</a></div>
+      <div class="guide-actions"><a class="guide-link" href="/music/">전체 디스코그래피 보기 →</a><a class="guide-link" href="/music/stages/">곡별 무대 모아보기 →</a></div>
     </section>
     <section class="guide-step">
       <div class="guide-step-head"><div class="guide-no">04</div><div><div class="eye">THE STORY SO FAR</div><h2>스무 해를 다섯 장면으로</h2><div class="guide-lines"><span>씨야의 시간을 아주 짧게 훑어보면</span><span>지금의 <i>First, Again</i>이 조금 다르게 들립니다.</span></div></div></div>

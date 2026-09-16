@@ -1,0 +1,20 @@
+const {W,esc}=require('../shared/common');
+const nav=require('../shared/music-nav');
+const {songs,performances,videoId}=require('../shared/stage-data');
+const {archiveDateLabel}=require('../shared/views');
+const site=require('../data/site.json');
+const categories={all:'전체',broadcast:'음악방송',concert:'공연·행사',live:'기타 라이브'};
+module.exports=function songPage(route,archive){
+ const song=songs.find(s=>s.id===route.songId);if(!song)throw new Error('Unknown song '+route.songId);
+ const rows=performances(archive,song.id,site.snapshotDate.slice(0,10));
+ const years=[...new Set(rows.map(r=>r.date.slice(0,4)))].sort().reverse();
+ return W(`<section class="stage-heading stage-detail-heading"><div class="eye">MUSIC · LIVE ARCHIVE</div>${nav('stages')}<a class="stage-back" href="/music/stages/">← 곡 목록으로</a>
+ <div class="stage-song-hero"><div class="stage-album-art"><span>SEEYA</span><img src="${esc(song.cover)}" alt="${esc(song.album)} 앨범 커버" onerror="this.remove()"></div><div><span class="eye">SEEYA · ${song.release.slice(0,4)}</span><h1>${esc(song.name)}</h1><p>${esc(song.album)}<br><span>발매 ${esc(song.release)}</span></p><div class="stage-hero-links"><a href="${esc(song.albumUrl)}" target="_blank" rel="noopener noreferrer">앨범 듣기 ↗</a><a href="/music/fanchant/">응원법 모음 →</a></div></div></div></section>
+ <section class="stage-browser" data-stage-browser="detail" data-page-size="6" aria-label="${esc(song.name)} 무대 목록"><div class="stage-intro"><h2>이 곡이 울려 퍼진 순간</h2><p>등록된 무대 ${rows.length}개</p></div>
+ <div class="stage-type-tabs" role="group" aria-label="무대 종류">${Object.entries(categories).map(([value,label])=>`<button type="button" data-stage-type="${value}" aria-pressed="${value==='all'}">${label}<span>${value==='all'?rows.length:rows.filter(r=>r.category===value).length}</span></button>`).join('')}</div>
+ <form class="stage-controls"><label>연도<select name="year"><option value="all">모든 연도</option>${years.map(y=>`<option value="${y}">${y}년</option>`).join('')}</select></label><label>멤버<select name="member"><option value="all">모든 멤버</option>${[...new Set(rows.flatMap(r=>r.members||[]))].map(m=>`<option value="${esc(m)}">${esc(m)}</option>`).join('')}</select></label><label>정렬<select name="sort"><option value="newest">최신순</option><option value="oldest">오래된순</option></select></label></form>
+ <p class="stage-result" role="status" aria-live="polite">${rows.length}개 무대</p>
+ <div class="stage-event-grid">${rows.map(r=>`<article class="stage-event-card" data-stage-item data-date="${esc(r.date)}" data-type="${r.category}" data-members="${esc((r.members||[]).join('|'))}"><a class="stage-video-thumb" href="${esc(r.clips[0].url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(r.program||r.title)} 영상 보기 (새 탭)"><span class="stage-thumb-fallback">SEEYA · LIVE</span><img src="https://i.ytimg.com/vi/${videoId(r.clips[0].url)}/hqdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="stage-play" aria-hidden="true">▶</span><span class="stage-video-tag">${categories[r.category]}</span></a><div class="stage-event-copy"><p class="stage-event-date">${archiveDateLabel(r)}</p><h3>${esc(r.program||r.title)}</h3><p class="stage-event-title">${esc(r.title)}</p><p class="stage-event-members">${esc((r.members||[]).join(' · '))}</p><div class="stage-clip-links">${r.clips.map((clip,i)=>`<a href="${esc(clip.url)}" target="_blank" rel="noopener noreferrer">${i?'다른 영상':'영상 보기'} ↗ <small>${clip.scope==='multi'?'여러 곡 포함':clip.scope==='compilation'?'무대 모음 · 해당 구간':'곡별 영상'}</small></a>`).join('')}</div><a class="stage-archive-link" href="/archive/?record=${encodeURIComponent(r.id)}">아카이브 기록 보기 →</a></div></article>`).join('')}</div>
+ <div class="stage-empty" hidden><h3>이 조건에 맞는 무대가 없어요.</h3><p>연도나 무대 종류를 바꿔보세요.</p><button type="button" data-stage-reset>전체 무대 보기</button></div><nav class="stage-pagination" aria-label="무대 목록 페이지" hidden></nav>
+ <p class="stage-footnote">영상은 원본 게시 페이지에서 열립니다. 여러 곡이 담긴 영상은 곡 시작 지점으로 바로 이동하지 않을 수 있어요.<br>실제 활동일이 확인되지 않은 기록은 영상 게시일 등 날짜 기준을 함께 표시합니다.</p><noscript><p>모든 무대를 표시하고 있습니다. 필터와 페이지 이동은 JavaScript를 켜면 사용할 수 있습니다.</p></noscript></section>`);
+};
