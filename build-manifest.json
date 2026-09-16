@@ -19,14 +19,9 @@
     "sitemap.xml"
   ],
   "assets": [
-    "assets/site.fb30ff66f1a7.css",
+    "assets/site.f3ba155f8cb6.css",
     "assets/lyric-quiz.16248c1b0faf.css",
-<<<<<<< HEAD
-    "assets/site.9e4be6fd6161.js",
+    "assets/site.0e0a590003ba.js",
     "assets/lyric-quiz.bd45d95a165e.js"
-=======
-    "assets/site.27dce30b0348.js",
-    "assets/lyric-quiz.cd5889581fa7.js"
->>>>>>> 7d6701647aa3b057a0e1dda6238bd98debcaeb13
   ]
 }
