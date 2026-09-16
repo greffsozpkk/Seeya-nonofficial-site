@@ -12,6 +12,6 @@ module.exports=function stages(route,archive){
  <div class="stage-song-grid">${cards.sort((a,b)=>b.release.localeCompare(a.release)||a.name.localeCompare(b.name,'ko')).map(s=>`<a class="stage-song-card" href="${songPath(s)}" data-stage-item data-name="${esc(s.name)}" data-search="${esc([s.name,s.album,...s.aliases].join(' '))}" data-album="${esc(s.album)}" data-date="${s.release}" data-count="${s.count}"><div class="stage-album-art"><span>SEEYA</span><img src="${esc(s.cover)}" alt="" loading="lazy" onerror="this.remove()"><b>무대 ${s.count}</b></div><div class="stage-song-copy"><small>${esc(s.release.slice(0,4))} · SEEYA</small><h3>${esc(s.name)}</h3><p>${esc(s.album)}</p><span class="stage-card-go">무대 모아보기 <span aria-hidden="true">↗</span></span></div></a>`).join('')}</div>
  <div class="stage-empty" hidden><h3>찾는 곡이 아직 없어요.</h3><p>다른 검색어로 찾아보거나 필터를 초기화해보세요.</p><button type="button" data-stage-reset>전체 곡 보기</button></div>
  <nav class="stage-pagination" aria-label="곡 목록 페이지" hidden></nav>
- <p class="stage-footnote">기존 아카이브에서 곡과 영상의 연결을 정리한 목록입니다.<br>한 무대의 여러 영상은 카드 하나에 모으고, 예정된 행사는 제외했습니다.</p>
+ <p class="stage-footnote">기존 아카이브에서 곡과 영상의 연결을 정리한 목록입니다.<br>한 무대의 여러 영상은 카드 하나에 모으고, 예정된 행사는 제외했습니다.<br><a href="/archive/concerts/">공연별로 보고 싶다면, 콘서트 기록관 →</a></p>
  <noscript><p>모든 곡을 표시하고 있습니다. 검색과 페이지 이동은 JavaScript를 켜면 사용할 수 있습니다.</p></noscript></section>`);
 };

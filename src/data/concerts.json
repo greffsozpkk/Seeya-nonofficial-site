@@ -1,0 +1,11 @@
+[
+ {"id":"the-fan-2026","name":"THE FAN","subtitle":"씨야 20주년 전국 투어","category":"seeya","theme":"rose","description":"다시 함께하는 세 사람, 그리고 오랫동안 기다린 팬들의 만남. 지역별 공연 기록을 한곳에 모았습니다.","events":[{"id":"20260829-the-fan-seoul","label":"서울"},{"id":"20260905-the-fan-busan","label":"부산"},{"id":"20260912-the-fan-daegu","label":"대구"},{"id":"20261004-the-fan-goyang","label":"고양"},{"id":"20261010-the-fan-cheongju","label":"청주"},{"id":"20261017-the-fan-suwon","label":"수원"},{"id":"20261031-the-fan-incheon","label":"인천"}]},
+ {"id":"first-concert-2007","name":"女神","subtitle":"씨야 첫 단독 콘서트","category":"seeya","theme":"plum","description":"씨야의 첫 단독 콘서트. 서울·대구·부산에서 이어진 첫 만남의 기록입니다.","events":[{"id":"20071123-first-concert-seoul","label":"서울"},{"id":"20071208-first-concert-daegu","label":"대구"},{"id":"20071215-first-concert-busan","label":"부산"}]},
+ {"id":"boram-sparkle-2026","name":"SPARKLE","subtitle":"이보람 단독 콘서트","category":"member","theme":"peach","description":"이보람의 목소리로 채운 공연. 등록된 부산 공연 정보를 만나보세요.","events":[{"id":"20260502-boram-sparkle-busan","label":"부산"}]},
+ {"id":"boram-still-singing-2025","name":"Still Singing","subtitle":"이보람 단독 콘서트","category":"member","theme":"rose","description":"이보람의 노래와 함께한 이틀. 게스트와 현장 영상의 기록을 모았습니다.","events":[{"id":"v491-still-singing","label":"서울"}]},
+ {"id":"yeonji-hug-2019","name":"HUG","subtitle":"김연지 단독 콘서트","category":"member","theme":"plum","description":"김연지의 목소리로 전한 연말의 인사. 공연 일정과 남아 있는 영상을 함께 봅니다.","events":[{"id":"v490-hug2019","label":"서울"}]},
+ {"id":"boram-boramhada-2019","name":"보람하다","subtitle":"이보람 첫 단독 콘서트","category":"member","theme":"peach","description":"첫 단독 콘서트에서 만난 이보람. 남규리와 함께한 무대 기록도 담았습니다.","events":[{"id":"v490-boramhada","label":"서울"}]},
+ {"id":"yeonji-daegu-2017","name":"김연지 첫 단독 콘서트","subtitle":"단독 콘서트 in 대구","category":"member","theme":"rose","description":"대구에서 열린 김연지 첫 단독 콘서트의 공연 정보와 현장 자료입니다.","events":[{"id":"v490-daegu2017","label":"대구"}]},
+ {"id":"rebloom-2026","name":"RE:BLOOM","subtitle":"씨야 재결합 기념 첫 팬미팅","category":"fanmeeting","theme":"peach","description":"다시 피어나는 씨야. 재결합을 기념해 팬들과 마주한 첫 팬미팅의 기록입니다.","events":[{"id":"20260330-rebloom-fanmeeting","label":"서울"}]},
+ {"id":"gyuri-lux-2024","name":"LUX","subtitle":"남규리 첫 팬미팅","category":"fanmeeting","theme":"plum","description":"남규리와 팬들이 함께한 첫 팬미팅. 등록된 공연 정보와 관련 자료를 모았습니다.","events":[{"id":"v491-lux","label":"공연 기록"}]}
+]

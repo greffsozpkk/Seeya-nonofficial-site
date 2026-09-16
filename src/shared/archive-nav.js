@@ -1,0 +1,1 @@
+module.exports=active=>`<nav class="music-subnav concert-archive-nav" aria-label="아카이브 메뉴"><a href="/archive/"${active==='archive'?' class="active" aria-current="page"':''}>전체 아카이브</a><a href="/archive/concerts/"${active==='concerts'?' class="active" aria-current="page"':''}>콘서트 기록관</a></nav>`;

@@ -17,3 +17,4 @@ require('./check-archive');
 require('./check-on-this-day');
 
 require('./check-stages');
+require('./check-concerts');

@@ -152,6 +152,75 @@
     "description": "씨야의 음악방송, 공연, 예능, 인터뷰, 기사와 공식 콘텐츠를 연도·멤버·분류별로 검색합니다."
   },
   {
+    "key": "concerts",
+    "path": "/archive/concerts/",
+    "title": "씨야 콘서트 기록관 · 공연과 팬미팅 | SEEYA ARCHIVE",
+    "description": "THE FAN, 첫 단독 콘서트 女神과 멤버들의 단독 공연·팬미팅을 지역별 일정과 영상으로 만나보세요."
+  },
+  {
+    "key": "concert",
+    "concertId": "the-fan-2026",
+    "path": "/archive/concerts/the-fan-2026/",
+    "title": "THE FAN · 씨야 20주년 전국 투어 | SEEYA ARCHIVE",
+    "description": "다시 함께하는 세 사람, 그리고 오랫동안 기다린 팬들의 만남. 지역별 공연 기록을 한곳에 모았습니다."
+  },
+  {
+    "key": "concert",
+    "concertId": "first-concert-2007",
+    "path": "/archive/concerts/first-concert-2007/",
+    "title": "女神 · 씨야 첫 단독 콘서트 | SEEYA ARCHIVE",
+    "description": "씨야의 첫 단독 콘서트. 서울·대구·부산에서 이어진 첫 만남의 기록입니다."
+  },
+  {
+    "key": "concert",
+    "concertId": "boram-sparkle-2026",
+    "path": "/archive/concerts/boram-sparkle-2026/",
+    "title": "SPARKLE · 이보람 단독 콘서트 | SEEYA ARCHIVE",
+    "description": "이보람의 목소리로 채운 공연. 등록된 부산 공연 정보를 만나보세요."
+  },
+  {
+    "key": "concert",
+    "concertId": "boram-still-singing-2025",
+    "path": "/archive/concerts/boram-still-singing-2025/",
+    "title": "Still Singing · 이보람 단독 콘서트 | SEEYA ARCHIVE",
+    "description": "이보람의 노래와 함께한 이틀. 게스트와 현장 영상의 기록을 모았습니다."
+  },
+  {
+    "key": "concert",
+    "concertId": "yeonji-hug-2019",
+    "path": "/archive/concerts/yeonji-hug-2019/",
+    "title": "HUG · 김연지 단독 콘서트 | SEEYA ARCHIVE",
+    "description": "김연지의 목소리로 전한 연말의 인사. 공연 일정과 남아 있는 영상을 함께 봅니다."
+  },
+  {
+    "key": "concert",
+    "concertId": "boram-boramhada-2019",
+    "path": "/archive/concerts/boram-boramhada-2019/",
+    "title": "보람하다 · 이보람 첫 단독 콘서트 | SEEYA ARCHIVE",
+    "description": "첫 단독 콘서트에서 만난 이보람. 남규리와 함께한 무대 기록도 담았습니다."
+  },
+  {
+    "key": "concert",
+    "concertId": "yeonji-daegu-2017",
+    "path": "/archive/concerts/yeonji-daegu-2017/",
+    "title": "김연지 첫 단독 콘서트 · 단독 콘서트 in 대구 | SEEYA ARCHIVE",
+    "description": "대구에서 열린 김연지 첫 단독 콘서트의 공연 정보와 현장 자료입니다."
+  },
+  {
+    "key": "concert",
+    "concertId": "rebloom-2026",
+    "path": "/archive/concerts/rebloom-2026/",
+    "title": "RE:BLOOM · 씨야 재결합 기념 첫 팬미팅 | SEEYA ARCHIVE",
+    "description": "다시 피어나는 씨야. 재결합을 기념해 팬들과 마주한 첫 팬미팅의 기록입니다."
+  },
+  {
+    "key": "concert",
+    "concertId": "gyuri-lux-2024",
+    "path": "/archive/concerts/gyuri-lux-2024/",
+    "title": "LUX · 남규리 첫 팬미팅 | SEEYA ARCHIVE",
+    "description": "남규리와 팬들이 함께한 첫 팬미팅. 등록된 공연 정보와 관련 자료를 모았습니다."
+  },
+  {
     "key": "guide",
     "path": "/guide/",
     "title": "씨야 SeeYa 입문 가이드 | SEEYA ARCHIVE",

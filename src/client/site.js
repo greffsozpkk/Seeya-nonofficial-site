@@ -1,3 +1,4 @@
+const {initConcerts}=require('./concerts');
 const {initStages}=require('./stages');
 const {initCharacterGallery}=require('./character-gallery');
 const {initOnThisDay}=require('./on-this-day');
@@ -507,6 +508,7 @@ function renderArchive(){const view=archiveView(archiveData,archiveState);for(co
 // Old bookmarked hash routes become normal page navigations; ordinary anchors are untouched.
 if(/^#\/(?:$|guide|news|music|history|members|gallery|archive|today|game\/lyrics)/.test(location.hash)){location.replace(location.hash.slice(1));}
 const page=document.body.dataset.page;
+if(page==='concerts'||page==='concert')initConcerts();
 if(page==='stages'||page==='song')initStages();
 if(page==='news')loadNews();
 if(page==='characters')initCharacterGallery();

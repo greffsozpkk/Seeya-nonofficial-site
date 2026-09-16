@@ -36,7 +36,7 @@ function bundle(entry){
 }
 const assets=[];
 function asset(name,ext,source){const hash=crypto.createHash('sha256').update(source).digest('hex').slice(0,12);const p=`assets/${name}.${hash}.${ext}`;write(p,source);assets.push(p);return '/'+p;}
-const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css'));
+const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css')+'\n'+read('src/styles/concerts.css'));
 const quizCss=asset('lyric-quiz','css',read('src/styles/lyric-quiz.css'));
 const siteJs=asset('site','js',bundle('src/client/site.js'));
 const quizJs=asset('lyric-quiz','js',bundle('src/client/lyric-quiz.js'));
@@ -52,7 +52,7 @@ for(const route of routes){
  else if(key==='archive')content=render(require('./src/shared/archive-data').mergeArchive(json('data/archive.json')));
  else if(key==='gallery')content=render(photos,new Date(site.snapshotDate));
  else if(key==='today'){let seed=465;const random=()=>((seed=(seed*1664525+1013904223)>>>0)/4294967296);content=render(new Date(site.snapshotDate),random,json('data/archive.json'));}
- else if(key==='stages'||key==='song')content=render(route,json('data/archive.json'));
+ else if(key==='stages'||key==='song'||key==='concerts'||key==='concert')content=render(route,json('data/archive.json'));
  else if(key==='music'||key==='fanchant')content=render(route.path);
  else content=render();
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
