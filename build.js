@@ -5,9 +5,13 @@ const fs=require('node:fs');
 const path=require('node:path');
 const crypto=require('node:crypto');
 const root=__dirname;
+const args=process.argv.slice(2);
+if(args.some(arg=>arg!=='--preview'))throw new Error('Usage: node build.js [--preview]');
+const outputRoot=args.includes('--preview')?require('./scripts/preview-path')(root):root;
+require('./scripts/conflict-markers')(root,['src','data','scripts','build.js']);
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const json=p=>JSON.parse(read(p));
-const write=(p,s)=>{fs.mkdirSync(path.dirname(path.join(root,p)),{recursive:true});fs.writeFileSync(path.join(root,p),s);};
+const write=(p,s)=>{fs.mkdirSync(path.dirname(path.join(outputRoot,p)),{recursive:true});fs.writeFileSync(path.join(outputRoot,p),s);};
 const routes=json('src/data/routes.json'),site=json('src/data/site.json');
 const {esc}=require('./src/shared/common');
 // Small local CommonJS bundler: build-time only, no npm or browser dependency.
@@ -59,3 +63,4 @@ write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml'],assets},null,2)+'\n');
 console.log(`Built ${routes.length} pages and ${assets.length} cached assets.`);
+if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

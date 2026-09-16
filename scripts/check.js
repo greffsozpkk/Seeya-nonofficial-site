@@ -1,6 +1,8 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto'),{execFileSync}=require('node:child_process');
 const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const manifest=JSON.parse(read('build-manifest.json'));
+// Inspect the current files before rebuilding: a rebuild can erase HTML markers.
+require('./conflict-markers')(root,['src','data','scripts','.github','build.js',...manifest.files,...manifest.assets]);
 const hashes=()=>Object.fromEntries([...manifest.files,...manifest.assets].map(p=>[p,crypto.createHash('sha256').update(read(p)).digest('hex')]));
 const before=hashes();execFileSync(process.execPath,['build.js'],{cwd:root});assert.deepEqual(hashes(),before,'Build must reproduce exactly');
 for(const p of manifest.assets.filter(p=>p.endsWith('.js')))execFileSync(process.execPath,['--check',p],{cwd:root});
