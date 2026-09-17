@@ -53,12 +53,15 @@ function archivePagination(totalPages,archiveState){
   const pages=archivePageItems(current,totalPages);
   return `<button class="archive-page-btn" type="button" onclick="setArchivePage(${current-1})" ${current===1?"disabled":""} aria-label="이전 페이지">‹</button>${pages.map(p=>p==="…"?`<span class="archive-page-gap">…</span>`:`<button class="archive-page-btn ${p===current?"active":""}" type="button" onclick="setArchivePage(${p})" ${p===current?'aria-current="page"':""}>${p}</button>`).join("")}<button class="archive-page-btn" type="button" onclick="setArchivePage(${current+1})" ${current===totalPages?"disabled":""} aria-label="다음 페이지">›</button>`;
 }
-function archiveSourceLinks(x){
+function archiveSources(x){
  const sources=[x.source,...(x.additionalSources||[])].filter(s=>{
   if(!s?.url)return false;
   try{const u=new URL(s.url);return ["http:","https:"].includes(u.protocol)&&!(u.hostname==="docs.google.com"&&u.pathname.startsWith("/spreadsheets/"));}catch{return false;}
  });
- return sources.filter((s,i,a)=>a.findIndex(t=>t.url===s.url)===i).map(s=>`<a class="archive-source" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label||s.platform||"원본")} 보기 →</a>`).join("");
+ return sources.filter((s,i,a)=>a.findIndex(t=>t.url===s.url)===i);
+}
+function archiveSourceLinks(x){
+ return archiveSources(x).map(s=>`<a class="archive-source" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label||s.platform||"원본")} 보기 →</a>`).join("");
 }
 function archiveView(archiveData,archiveState){
   const view={grid:"",count:"",active:"",pagination:""};
@@ -83,7 +86,49 @@ function archiveView(archiveData,archiveState){
     view.grid=`<div class="archive-empty"><b>조건에 맞는 기록이 없습니다.</b><br><br>검색어나 필터를 바꿔보세요.</div>`;
     return view;
   }
-  view.grid=pageRows.map(x=>{const typeLabel=archiveTypes[x.type]||x.type;const members=(x.members||[]).join(" · ");const titleTracks=(x.titleTracks||[]).filter(s=>!/(\binst\.?\b|\(inst\.?\))/i.test(s)).join(" · ");const relatedSongs=x.type!=="album"?(x.songs||[]).filter(s=>!/(\binst\.?\b|\(inst\.?\))/i.test(s)).map(name=>{const song=songByTitle(name);return song?`<a href="${songPath(song)}">${esc(name)}</a>`:esc(name);}).join(" · "):"";const collaborators=(x.collaborators||[]).join(" · ");const fallback=`<div class="archive-thumb-placeholder archive-cover-fallback"><b>${x.date?String(x.date).slice(0,4):"확인 중"}</b><small>${x.releaseType||typeLabel}</small><em>${x.album||x.program||x.title}</em></div>`;const categoryPlaceholder=x.type==="music-show"?"images/archive/archive-stage.png":x.type==="interview"?"images/archive/archive-interview.png":"";const visual=x.thumbnail||categoryPlaceholder;const visualAlt=x.thumbnail&&x.type==="album"?(x.album||x.title)+" 앨범 커버":"";const thumb=visual?`${fallback}<img src="${visual}" alt="${visualAlt}" loading="lazy" onerror="this.remove()">`:fallback;const albumInfo=x.type==="album"?`${x.releaseType?`유형 · ${x.releaseType}<br>`:""}${x.trackCount?`수록 · ${x.trackCount}곡<br>`:""}${x.genre?`장르 · ${x.genre}<br>`:""}`:"";const eventMark=x.eventState==="scheduled"?`<span class="archive-event-state">UPCOMING</span>`:"";const awardInfo=x.awardCategory?`수상 · ${x.awardCategory}<br>`:"";return `<article class="archive-card"><div class="archive-thumb">${thumb}<span class="archive-status">${x.status==="documented"?"○ 일정 기록":x.status==="unverified"?"○ 자료 확인 중":x.status==="available"?"● AVAILABLE":"○ UNKNOWN"}</span>${eventMark}</div><div class="archive-body"><div class="archive-date">${archiveDateLabel(x)}</div><div class="archive-program">${x.program||typeLabel}</div><h3>${x.title}</h3><div class="archive-meta">${albumInfo}${x.venue?`장소 · ${x.venue}<br>`:""}${awardInfo}${members?`멤버 · ${members}<br>`:""}${collaborators?`함께 · ${collaborators}<br>`:""}${titleTracks?`<strong class="archive-title-track">TITLE · ${titleTracks}</strong>`:""}${relatedSongs?`<span class="archive-related-song">관련곡 · ${relatedSongs}</span>`:""}${x.agency?`<br>기획 · ${x.agency}`:""}${x.note?`<span class="archive-card-note">${x.note}</span>`:""}</div><div class="archive-tags">${(x.tags||[]).slice(0,6).map(t=>`<span>#${t}</span>`).join("")}</div>${archiveSourceLinks(x)}${concertForRecord(x.id)?`<a class="archive-source" href="${concertPath(concertForRecord(x.id))}?event=${encodeURIComponent(x.id)}">콘서트 기록관 보기 →</a>`:""}</div></article>`;}).join("");
+  view.grid=pageRows.map(x=>{
+    const typeLabel=archiveTypes[x.type]||x.type;
+    const members=(x.members||[]).join(" · ");
+    const titleTracks=(x.titleTracks||[]).filter(s=>!/(\binst\.?\b|\(inst\.?\))/i.test(s)).join(" · ");
+    const relatedSongs=x.type!=="album"?(x.songs||[]).filter(s=>!/(\binst\.?\b|\(inst\.?\))/i.test(s)).map(name=>{
+      const song=songByTitle(name);return song?`<a href="${songPath(song)}">${esc(name)}</a>`:esc(name);
+    }).join(" · "):"";
+    const collaborators=(x.collaborators||[]).join(" · ");
+    const visual=x.thumbnail||(x.type==="music-show"?"images/archive/archive-stage.png":x.type==="interview"?"images/archive/archive-interview.png":"");
+    const visualAlt=x.thumbnail&&x.type==="album"?(x.album||x.title)+" 앨범 커버":"";
+    const thumbnail=visual?`<img class="archive-small-thumb" src="${esc(visual)}" alt="${esc(visualAlt)}" loading="lazy" onerror="this.remove()">`:"";
+    const sources=archiveSources(x),primary=sources[0],extra=sources.slice(1);
+    const primaryLabel=x.eventState==="scheduled"?"안내 보기":x.type==="news"?"기사 보기":x.type==="radio"?"방송 보기":"원본 보기";
+    const sourceLink=s=>`<a class="archive-source" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label||s.platform||"원본")} 보기 ↗</a>`;
+    const concert=concertForRecord(x.id);
+    const state=x.status==="documented"?"일정 기록":x.status==="unverified"?"자료 확인 중":x.status!=="available"?"자료 확인 중":"";
+    const badges=`${x.eventState==="scheduled"?'<span class="archive-compact-state">UPCOMING · 예정</span>':""}${state?`<span class="archive-compact-state">${state}</span>`:""}`;
+    const albumInfo=x.type==="album"?`${x.releaseType?`유형 · ${esc(x.releaseType)}<br>`:""}${x.trackCount?`수록 · ${esc(x.trackCount)}곡<br>`:""}${x.genre?`장르 · ${esc(x.genre)}<br>`:""}`:"";
+    return `<article class="archive-card" data-record-id="${esc(x.id)}">
+      <div class="archive-compact-head">
+        <div class="archive-date">${archiveDateLabel(x)}</div>
+        ${thumbnail}
+        <div class="archive-compact-category">${esc(typeLabel)}</div>
+        <h3>${esc(x.title)}</h3>
+        ${members?`<div class="archive-compact-members">${esc(members)}</div>`:""}
+        ${badges?`<div class="archive-compact-badges">${badges}</div>`:""}
+      </div>
+      <div class="archive-card-footer ${primary?'has-primary':''}">
+        ${primary?`<a class="archive-source" href="${esc(primary.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(x.title)} · ${esc(primary.label||primary.platform||'원본')} 보기">${primaryLabel} ↗</a>`:""}
+        <details class="archive-details">
+          <summary><span class="archive-detail-closed">${extra.length?`상세·추가 자료 ${extra.length}개`:"상세 보기"}</span><span class="archive-detail-open">접기</span><span class="archive-detail-arrow" aria-hidden="true">⌄</span></summary>
+          <div class="archive-detail-content">
+            ${x.program?`<div class="archive-detail-program">${esc(x.program)}</div>`:""}
+            <div class="archive-meta">${albumInfo}${x.venue?`장소 · ${esc(x.venue)}<br>`:""}${x.awardCategory?`수상 · ${esc(x.awardCategory)}<br>`:""}${collaborators?`함께 · ${esc(collaborators)}<br>`:""}${titleTracks?`<strong class="archive-title-track">TITLE · ${esc(titleTracks)}</strong>`:""}${relatedSongs?`<span class="archive-related-song">관련곡 · ${relatedSongs}</span>`:""}${x.agency?`<div>기획 · ${esc(x.agency)}</div>`:""}${x.note?`<p class="archive-card-note">${esc(x.note)}</p>`:""}</div>
+            ${primary?`<div class="archive-primary-credit">대표 출처 · ${esc(primary.label||primary.platform||"원본")}</div>`:""}
+            ${extra.length?`<div class="archive-extra-sources">${extra.map(sourceLink).join("")}</div>`:""}
+            ${concert?`<a class="archive-source" href="${concertPath(concert)}?event=${encodeURIComponent(x.id)}">콘서트 기록관 보기 →</a>`:""}
+            ${(x.tags||[]).length?`<div class="archive-tags">${x.tags.slice(0,6).map(t=>`<span>#${esc(t)}</span>`).join("")}</div>`:""}
+          </div>
+        </details>
+      </div>
+    </article>`;
+  }).join("");
   view.pagination=archivePagination(totalPages,archiveState);
   return view;
 }

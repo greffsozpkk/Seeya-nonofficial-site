@@ -20,6 +20,18 @@ assert(archiveDateLabel({date:'2021-02-22',dateBasis:'post-published'}).includes
 for(const sort of ['newest','oldest','added'])for(let page=1;page<=Math.ceil(rows.length/9);page++){
  const html=archiveView(rows,{...state,sort,page}).grid;
  assert(!html.includes('undefined'));assert(!html.includes('>null<'));
+ assert.equal((html.match(/<article class="archive-card"/g)||[]).length,Math.min(9,rows.length-(page-1)*9),'Keep nine records per page');
+}
+// Every source must remain reachable after collapsing the long card body.
+for(const record of rows){
+ const html=archiveView(rows,{...state,record:record.id}).grid;
+ assert(html.includes('<details class="archive-details">'),'Native disclosure must work without JavaScript');
+ for(const source of [record.source,...(record.additionalSources||[])]){
+  const url=new URL(source.url);
+  if(url.hostname==='docs.google.com'&&url.pathname.startsWith('/spreadsheets/'))continue;
+  const escaped=source.url.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+  assert(html.includes(`href="${escaped}"`),record.id+' missing source after compact layout');
+ }
 }
 const cultwo=rows.filter(x=>x.date==='2026-04-02'&&x.type==='radio'&&x.program.includes('컬투쇼'));
 assert.equal(cultwo.length,1);assert.equal(cultwo[0].members.length,3);assert(cultwo[0].source.url.includes('ghw-gqpjAD8'));
