@@ -553,5 +553,15 @@
     "scope": "multi",
     "category": "concert",
     "basis": "원본 영상 설명의 04:30 사랑의 인사 시간표"
+  },
+  {
+    "archiveId": "20260917-gyuri-yeonji-sbs12n",
+    "url": "https://www.youtube.com/watch?v=zWtgqg1RoQA",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "SBS 공식 개별 라이브 제목과 설명에 남규리·김연지, 사랑의 인사, 2026년 9월 17일 방송 명시"
   }
 ]

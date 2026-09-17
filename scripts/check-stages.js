@@ -9,6 +9,9 @@ for(const m of mappings){const row=byId.get(m.archiveId);assert(row,'Unknown arc
 assert.equal(songByTitle('그놈 목소리').id,'his-voice');assert.equal(songByTitle('sTaY').id,'stay');assert.equal(songByTitle('사랑의 인사 2026'),undefined,'Different editions must not merge automatically');
 const stay=performances(archive,'stay',cutoff),spring=performances(archive,'like-spring',cutoff);
 const green=performances(archive,'love-greeting',cutoff).find(r=>r.id==='v491-green');
+const sbs12=performances(archive,'love-greeting',cutoff).find(r=>r.id==='20260917-gyuri-yeonji-sbs12n');
+assert.deepEqual(sbs12.clips.map(c=>videoId(c.url)),['zWtgqg1RoQA'],'Radio solo songs must not appear under Love Greeting');
+assert.deepEqual(sbs12.members,['남규리','김연지']);
 assert.deepEqual(green.clips.map(c=>videoId(c.url)),['mPRYInVlUzM'],'Other songs at the same concert must not leak into Love Greeting');
 assert.equal(performances(archive,'still-like-you',cutoff).find(r=>r.id==='20260330-rebloom-fanmeeting').clips[0].url,'https://www.youtube.com/watch?v=QKNH-IrU78U');
 const picnic=stay.find(r=>r.id==='v475-sheet2-row74');assert.equal(picnic.clips.length,2);assert.equal(stay.filter(r=>r.id===picnic.id).length,1);assert(!picnic.clips.some(c=>videoId(c.url)==='umxr2fEgcas'));assert.equal(spring.find(r=>r.id===picnic.id).clips[0].url,'https://www.youtube.com/watch?v=umxr2fEgcas');
