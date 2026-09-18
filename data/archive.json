@@ -4945,13 +4945,20 @@
       "label": "공식 영상",
       "url": "https://www.youtube.com/watch?v=mqxNyvKqJmk"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "갤러리 · 두 주 출연 자료 글",
+        "url": "https://gall.dcinside.com/board/view/?id=seeya&no=187459",
+        "publishedDate": "2020-03-16"
+      }
+    ],
     "status": "available",
     "tags": [
       "예능"
     ],
-    "note": "공식 편집 영상에 회차만 기재되어 방송일은 미확인. 영상 게시일로 등록했으며 두 회차를 합친 모음 영상입니다.",
-    "publishedDate": "2026-04-03"
+    "note": "공식 편집 영상에 회차만 기재되어 방송일은 미확인. 영상 게시일로 등록했으며 두 회차를 합친 모음 영상입니다. 갤러리 187459의 두 주 출연 자료도 연결했습니다. 공식 모음 영상과 동일한 프로그램의 출연 기록이므로 새 카드는 만들지 않았습니다. 이 글에도 본방송일이 없어 날짜 확정 근거로 사용하지 않습니다.",
+    "publishedDate": "2026-04-03",
+    "updatedAt": "2026-09-18"
   },
   {
     "id": "20260402-seeya-cultwo",
@@ -31518,5 +31525,358 @@
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "episode": 30
+  },
+  {
+    "id": "gallery-gyuri-truthgame",
+    "date": "2020-03-16",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 진실게임 출연 자료",
+    "program": "SBS 진실게임",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 출연 자료 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=187464",
+      "publishedDate": "2020-03-16"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "SBS 진실게임"
+    ],
+    "note": "갤러리 글에 남규리의 진실게임 출연 자료와 1주 분량이라는 설명이 남아 있습니다. 방송일·회차를 확인할 수 없어 게시일로 표시합니다. 2020년 신규 출연이라는 뜻이 아니며, 본문의 오래된 메일 다운로드 링크 대신 출연 자료 글을 연결합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "post-published",
+    "publishedDate": "2020-03-16"
+  },
+  {
+    "id": "gallery-gyuri-mannerking",
+    "date": "2020-03-14",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 도전! 예의지왕 출연 자료",
+    "program": "MBC 도전! 예의지왕",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 출연 자료 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=186503",
+      "publishedDate": "2020-03-14"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "MBC 도전! 예의지왕"
+    ],
+    "note": "갤러리 본문이 남규리와 이경규·이혁재·이홍기 등의 출연 자료를 소개합니다. 이 글과 일치하는 공식 회차·방송일은 확인되지 않아 게시일로 표시합니다. 검색되는 다른 회차나 해피타임 재편집 방송 날짜를 원방송일로 대신 쓰지 않았습니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "post-published",
+    "publishedDate": "2020-03-14"
+  },
+  {
+    "id": "20080705-gyuri-starfriend6",
+    "date": "2008-07-05",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 스타의 친구를 소개합니다 6회",
+    "program": "MBC 스타의 친구를 소개합니다",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBC 공식 · 첫 대면·미션",
+      "url": "https://www.youtube.com/watch?v=Ka07tmkE3h8"
+    },
+    "additionalSources": [
+      {
+        "label": "이데일리 · 두 주 방송 출연 보도",
+        "url": "https://v.daum.net/v/20080712182702499",
+        "publishedDate": "2008-07-12"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "MBC 스타의 친구를 소개합니다"
+    ],
+    "note": "갤러리 글 186500의 2주 출연 자료를 방송별로 나눴습니다. MBC 공식 영상의 회차·방송일과 2008년 7월 12일 이데일리의 7월 5일·12일 출연 보도를 대조했습니다. 친구를 소개하는 주선자로 출연한 기록입니다. 영상 업로드일 대신 본방송 날짜로 표시합니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 6
+  },
+  {
+    "id": "20080712-gyuri-starfriend7",
+    "date": "2008-07-12",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 스타의 친구를 소개합니다 7회",
+    "program": "MBC 스타의 친구를 소개합니다",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBC 공식 · 두 번째 이야기",
+      "url": "https://www.youtube.com/watch?v=OyJonmYm7mc"
+    },
+    "additionalSources": [
+      {
+        "label": "이데일리 · 두 주 방송 출연 보도",
+        "url": "https://v.daum.net/v/20080712182702499",
+        "publishedDate": "2008-07-12"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "MBC 스타의 친구를 소개합니다"
+    ],
+    "note": "갤러리 글 186500의 2주 출연 자료를 방송별로 나눴습니다. MBC 공식 영상의 회차·방송일과 2008년 7월 12일 이데일리의 7월 5일·12일 출연 보도를 대조했습니다. 친구를 소개하는 주선자로 출연한 기록입니다. 영상 업로드일 대신 본방송 날짜로 표시합니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 7
+  },
+  {
+    "id": "20071223-gyuri-impossible",
+    "date": "2007-12-23",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 불가능은 없다 · 마카오 번지점프",
+    "program": "MBC 일요일 일요일 밤에 · 불가능은 없다",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "한국경제 · 12월 23일 방송 보도",
+      "url": "https://news.nate.com/view/20071224n18903",
+      "publishedDate": "2007-12-24"
+    },
+    "additionalSources": [
+      {
+        "label": "뉴스엔 · 남규리 번지점프 출연 보도",
+        "url": "https://m.news.nate.com/view/20071224n02104?mid=e02",
+        "publishedDate": "2007-12-24"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "MBC 일요일 일요일 밤에 · 불가능은 없다"
+    ],
+    "note": "갤러리의 번지점프 출연 글에서 확인을 시작해 당시 보도로 방송 날짜를 대조했습니다. 한국경제는 12월 23일 방송을 명시하고 뉴스엔은 남규리의 마카오 타워 번지점프 출연을 전합니다. 게시글에 있던 유튜브 영상은 현재 확인되지 않아 당시 보도를 대표 링크로 연결합니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20200313-yeonji-cartalk2",
+    "date": "2020-03-13",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "김연지 · 차에타봐 2화 · 토크와 무반주 노래",
+    "program": "SBS 차에타봐",
+    "type": "interview",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS 뉴스 · 차에타봐 공식 영상",
+      "url": "https://www.youtube.com/watch?v=CWZyIkQfcgU",
+      "publishedDate": "2020-03-13"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "SBS 차에타봐"
+    ],
+    "note": "씨야 메인보컬에서 솔로 활동까지의 이야기와 무반주 노래를 담은 SBS 웹 인터뷰입니다. 갤러리의 당일 업로드 글과 SBS 공식 공개일이 일치합니다. 날짜는 웹 콘텐츠 공개일이며 별도의 촬영일로 단정하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-13",
+    "episode": 2
+  },
+  {
+    "id": "20180525-gyuri-movieroom4",
+    "date": "2018-05-25",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 방구석1열 4회 · 데자뷰 이야기",
+    "program": "JTBC 방구석1열",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "JTBC 공식 · 데자뷰 역할 몰입 이야기",
+      "url": "https://www.youtube.com/watch?v=upDaeZO1nx8",
+      "publishedDate": "2018-05-25"
+    },
+    "additionalSources": [
+      {
+        "label": "JTBC 공식 · 데자뷰 촬영 에피소드",
+        "url": "https://www.youtube.com/watch?v=zoi0V8W8F6Y",
+        "publishedDate": "2018-05-25"
+      },
+      {
+        "label": "텐아시아 · 5월 25일 방송 안내",
+        "url": "https://www.tenasia.co.kr/article/2018052528264",
+        "publishedDate": "2018-05-25"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "JTBC 방구석1열"
+    ],
+    "note": "갤러리의 남규리 출연 편집본을 단서로 JTBC 공식 클립 두 편과 당일 방송 예고 보도를 확인했습니다. 이규한과 함께 영화 데자뷰의 촬영 이야기를 나누는 4회 출연이며 방송일은 2018년 5월 25일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 4
+  },
+  {
+    "id": "gallery-2007-boryeong-gyuri",
+    "date": "2020-03-09",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 2007 보령머드축제 현장 사진 자료",
+    "program": "보령머드축제",
+    "type": "event",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 보령머드축제 현장 사진 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=183768",
+      "publishedDate": "2020-03-09"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "보령머드축제"
+    ],
+    "note": "게시글은 2007년 여름 보령머드축제에서 촬영한 남규리의 현장 사진이라고 소개합니다. 정확한 촬영일과 출연 형식은 확인되지 않았습니다. 날짜는 2020년 자료 게시일이며 행사일이나 공연일이 아닙니다. 축제 개막일이나 이미지 파일의 숫자를 촬영일로 추정하지 않았습니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "post-published",
+    "publishedDate": "2020-03-09"
+  },
+  {
+    "id": "20200311-yeonji-boram-instagram",
+    "date": "2020-03-11",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "김연지·이보람 · 인스타그램 라이브 자료",
+    "program": "인스타그램 라이브",
+    "type": "official",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 당일 라이브 기록 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=184425",
+      "publishedDate": "2020-03-11"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "인스타그램 라이브"
+    ],
+    "note": "게시글 제목에 200311 보람 연지 인스타라이브가 명시되고 글은 3월 11일 00시 57분에 작성되었습니다. 동시대 글의 명시 날짜를 잠정 라이브 날짜로 등록합니다. 공식 다시보기는 확인되지 않았으며 만료된 메일 파일 주소 대신 게시글을 연결합니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "gallery-gyuri-coco-marc1",
+    "date": "2009-10-19",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 코코앤마크 1회 · 스모키 메이크업",
+    "program": "올리브TV 코코앤마크",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 출연 장면과 영상 소개",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=187604",
+      "publishedDate": "2020-03-16"
+    },
+    "additionalSources": [
+      {
+        "label": "미니러브 · 팬 보관 영상",
+        "url": "https://www.youtube.com/watch?v=3j4eH10i6vo",
+        "publishedDate": "2009-10-19"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "올리브TV 코코앤마크"
+    ],
+    "note": "갤러리의 출연 장면과 연결된 팬 보관 영상 설명에서 코코앤마크 1회임을 확인했습니다. 공식 영상·정확한 본방송일은 미확인입니다. 날짜는 팬 보관 영상의 한국 시간 공개일(2009-10-19)이며 갤러리 게시일(2020-03-16) 및 실제 방송일과 구분합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2009-10-19",
+    "episode": 1
+  },
+  {
+    "id": "20180525-gyuri-dejavu-screening",
+    "date": "2018-05-25",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 데자뷰 언론시사회·기자간담회",
+    "program": "영화 데자뷰 언론시사회",
+    "type": "interview",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "서울경제 · 당일 시사회 현장 보도",
+      "url": "https://www.sedaily.com/NewsView/1RZO5EX8ZV",
+      "publishedDate": "2018-05-25"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "영화 데자뷰 언론시사회"
+    ],
+    "note": "갤러리의 데자뷰 시사회 자료를 계기로 당시 보도를 확인했습니다. 2018년 5월 25일 CGV 용산아이파크몰 언론시사회 참석이 기사에 명시됩니다. 기존 4월 25일 제작보고회·5월 28일 인터뷰·5월 30일 개봉 기록과 구분합니다. 갤러리 사진의 촬영일 자체를 확정한 것은 아닙니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "CGV 용산아이파크몰"
   }
 ]

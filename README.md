@@ -1,14 +1,14 @@
-# SEEYA ARCHIVE — v4.116
+# SEEYA ARCHIVE — v4.117
 
-직접 제보된 디시 게시글 6개의 출연을 재대조해 누락된 씨야 스케치북 30회와 공식 예고편을 보완했습니다. 이전 채널 조사·등록분을 모두 포함해 총 985건이며 페이지당 9개는 유지합니다.
+씨야 갤러리 출연 자료를 추가 대조해 신규 11건과 기존 1건을 보완했습니다. 총 996건이며 요약 카드와 페이지당 9개를 유지합니다.
 
 ## 이번 업데이트 적용
 
 1. GitHub Desktop에서 **Fetch origin → Pull origin**으로 최신 파일을 받습니다.
-2. `SEEYA_v4_116_UPLOAD.zip`의 내용물을 저장소 최상위 폴더에 같은 경로로 복사합니다.
+2. `SEEYA_v4_117_UPLOAD.zip`의 내용물을 저장소 최상위 폴더에 같은 경로로 복사합니다.
 3. 변경 내역을 확인하고 **Commit → Push**합니다. 기존 Actions의 사이트 빌드와 Pages 배포 완료를 기다립니다.
 
-이번 UPLOAD는 **v4.94~v4.115에서 바로 적용할 수 있는 누적본**입니다. 새 아카이브·모의고사 이미지 파일과 캐릭터 모음집 및 관련 페이지·스타일·날짜 기능·배치파일이 모두 들어 있습니다. 이번 ZIP에는 총 985건의 `data/archive.json`이 포함됩니다. 직전 v4.115의 기존 ID 984개를 모두 보존하고 그중 1건에 공식 예고편을 추가했습니다. 나머지 983건은 그대로이며 신규 1건을 추가했습니다. 뉴스·사진·방문자 데이터와 생성 HTML은 덮어쓰지 않습니다. 이미지 주소에는 버전 표시를 붙여 이전 응답이 캐시에 남아도 새 주소로 요청합니다. FULL_BACKUP은 전체 보관용이며 로컬 확인을 위해 풀 필요는 없습니다.
+이번 UPLOAD는 **v4.94~v4.116에서 바로 적용할 수 있는 누적본**입니다. 새 아카이브·모의고사 이미지 파일과 캐릭터 모음집 및 관련 페이지·스타일·날짜 기능·배치파일이 모두 들어 있습니다. 이번 ZIP에는 총 996건의 `data/archive.json`이 포함됩니다. 직전 v4.116의 기존 ID 985개를 모두 보존하고 그중 1건의 출연 근거를 보완했습니다. 나머지 984건은 그대로이며 신규 11건을 추가했습니다. 뉴스·사진·방문자 데이터와 생성 HTML은 덮어쓰지 않습니다. 이미지 주소에는 버전 표시를 붙여 이전 응답이 캐시에 남아도 새 주소로 요청합니다. FULL_BACKUP은 전체 보관용이며 로컬 확인을 위해 풀 필요는 없습니다.
 
 앞으로도 UPLOAD는 직전 버전에서 바뀐 파일만 담지 않고, 이 소스 구조의 기준 버전(v4.94) 이후 필요한 소스·추가 이미지·실행 파일을 누적해 제공합니다. 지원 기준을 바꾸는 경우 README에 먼저 명시합니다. 업데이트 ZIP을 빈 폴더에 푸는 신규 설치 방식은 지원하지 않으며 기존 사이트 폴더에 덮어써야 합니다.
 
@@ -69,15 +69,40 @@
 |---|---:|---:|---:|---:|---:|
 | 음악방송·무대 | 102 | 42 | 33 | 32 | 209 |
 | 공연 | 18 | 9 | 17 | 36 | 80 |
-| 행사 | 20 | 9 | 37 | 15 | 81 |
-| 예능 | 26 | 13 | 33 | 21 | 93 |
+| 행사 | 20 | 9 | 38 | 15 | 82 |
+| 예능 | 30 | 14 | 35 | 21 | 100 |
 | 라디오 | 4 | 8 | 20 | 37 | 69 |
-| 인터뷰 | 13 | 12 | 15 | 8 | 48 |
+| 인터뷰 | 13 | 13 | 16 | 8 | 50 |
 | 기사 | 168 | 7 | 7 | 3 | 185 |
-| 공식 콘텐츠 | 1 | 22 | 38 | 24 | 85 |
+| 공식 콘텐츠 | 1 | 22 | 39 | 24 | 86 |
 | 음반 | 22 | 58 | 36 | 2 | 118 |
 | 주요 기록 | 13 | 0 | 2 | 2 | 17 |
-| **합계** | 387 | 180 | 238 | 180 | 985 |
+| **합계** | 391 | 182 | 243 | 180 | 996 |
+
+### 갤러리 출연 자료 추가 대조 — v4.117
+
+2026-09-18 기준 본 갤러리 개념글 목록 55~61쪽의 제목을 훑고 출연 자료 글을 선별하여 본문·영상 정보·공식 출처·당시 보도를 대조했습니다. 갤러리 전체 전수조사 완료를 뜻하지 않으며 페이지 번호는 새 글과 추천 변화에 따라 달라집니다. 다음 조사에서는 아래 글 번호와 기존 등록 ID를 기준으로 중복을 피합니다.
+
+신규 11건: 실제 방송일 확인 4건(스친소 두 회차·불가능은 없다·방구석1열), 행사일 확인 1건(데자뷰 시사회), 공식 웹 공개일 1건(차에타봐), 동시대 갤러리 제목에 근거한 잠정 라이브 날짜 1건, 활동일 미확인 4건(진실게임·예의지왕·보령머드축제·코코앤마크). 활동일 미확인 4건은 자료 게시일을 표시하며 2020년 재출연이나 같은 날짜의 활동으로 해석하지 않습니다. 아래 현황 표는 표시 날짜 기준 카드 수입니다.
+
+| 발견 글 | 반영 기록 | 날짜 판단·대표 출처 |
+|---|---|---|
+| [187464](https://gall.dcinside.com/board/view/?id=seeya&no=187464) | [남규리 · 진실게임 출연 자료](https://seeya-fanpage.com/archive/?record=gallery-gyuri-truthgame) | 2020-03-16 · unknown · post-published · [갤러리 · 출연 자료 글](https://gall.dcinside.com/board/view/?id=seeya&no=187464) |
+| [186503](https://gall.dcinside.com/board/view/?id=seeya&no=186503) | [남규리 · 도전! 예의지왕 출연 자료](https://seeya-fanpage.com/archive/?record=gallery-gyuri-mannerking) | 2020-03-14 · unknown · post-published · [갤러리 · 출연 자료 글](https://gall.dcinside.com/board/view/?id=seeya&no=186503) |
+| [186500](https://gall.dcinside.com/board/view/?id=seeya&no=186500) | [남규리 · 스타의 친구를 소개합니다 6회](https://seeya-fanpage.com/archive/?record=20080705-gyuri-starfriend6) | 2008-07-05 · confirmed · broadcast · [MBC 공식 · 첫 대면·미션](https://www.youtube.com/watch?v=Ka07tmkE3h8) |
+| [186500](https://gall.dcinside.com/board/view/?id=seeya&no=186500) | [남규리 · 스타의 친구를 소개합니다 7회](https://seeya-fanpage.com/archive/?record=20080712-gyuri-starfriend7) | 2008-07-12 · confirmed · broadcast · [MBC 공식 · 두 번째 이야기](https://www.youtube.com/watch?v=OyJonmYm7mc) |
+| [186690](https://gall.dcinside.com/board/view/?id=seeya&no=186690) | [남규리 · 불가능은 없다 · 마카오 번지점프](https://seeya-fanpage.com/archive/?record=20071223-gyuri-impossible) | 2007-12-23 · confirmed · broadcast · [한국경제 · 12월 23일 방송 보도](https://news.nate.com/view/20071224n18903) |
+| [185906](https://gall.dcinside.com/board/view/?id=seeya&no=185906) | [김연지 · 차에타봐 2화 · 토크와 무반주 노래](https://seeya-fanpage.com/archive/?record=20200313-yeonji-cartalk2) | 2020-03-13 · confirmed · video-published · [SBS 뉴스 · 차에타봐 공식 영상](https://www.youtube.com/watch?v=CWZyIkQfcgU) |
+| [183498](https://gall.dcinside.com/board/view/?id=seeya&no=183498) | [남규리 · 방구석1열 4회 · 데자뷰 이야기](https://seeya-fanpage.com/archive/?record=20180525-gyuri-movieroom4) | 2018-05-25 · confirmed · broadcast · [JTBC 공식 · 데자뷰 역할 몰입 이야기](https://www.youtube.com/watch?v=upDaeZO1nx8) |
+| [183768](https://gall.dcinside.com/board/view/?id=seeya&no=183768) | [남규리 · 2007 보령머드축제 현장 사진 자료](https://seeya-fanpage.com/archive/?record=gallery-2007-boryeong-gyuri) | 2020-03-09 · unknown · post-published · [갤러리 · 보령머드축제 현장 사진 글](https://gall.dcinside.com/board/view/?id=seeya&no=183768) |
+| [184425](https://gall.dcinside.com/board/view/?id=seeya&no=184425) | [김연지·이보람 · 인스타그램 라이브 자료](https://seeya-fanpage.com/archive/?record=20200311-yeonji-boram-instagram) | 2020-03-11 · tentative · broadcast · [갤러리 · 당일 라이브 기록 글](https://gall.dcinside.com/board/view/?id=seeya&no=184425) |
+| [187604](https://gall.dcinside.com/board/view/?id=seeya&no=187604) | [남규리 · 코코앤마크 1회 · 스모키 메이크업](https://seeya-fanpage.com/archive/?record=gallery-gyuri-coco-marc1) | 2009-10-19 · unknown · video-published · [갤러리 · 출연 장면과 영상 소개](https://gall.dcinside.com/board/view/?id=seeya&no=187604) |
+| [184628](https://gall.dcinside.com/board/view/?id=seeya&no=184628) | [남규리 · 데자뷰 언론시사회·기자간담회](https://seeya-fanpage.com/archive/?record=20180525-gyuri-dejavu-screening) | 2018-05-25 · confirmed · event · [서울경제 · 당일 시사회 현장 보도](https://www.sedaily.com/NewsView/1RZO5EX8ZV) |
+| [187459](https://gall.dcinside.com/board/view/?id=seeya&no=187459) | [남규리 · SBS 일요일이 좋다 · 러브 체인지 38·39회 모음](https://seeya-fanpage.com/archive/?record=v481-archive-019) | 2026-04-03 · unknown · video-published · [공식 영상](https://www.youtube.com/watch?v=mqxNyvKqJmk) |
+
+**확인 대기 / 중복 방지:** 184299(2006-04-05 한밤 보컬분석)은 팬 영상 제목만 날짜가 남고 원본은 재생 불가로 응답했습니다. 기존 `museum-hanbam` 동요 이어부르기와 같은 원방송인지 확인 전 별도 카드로 늘리지 않았습니다. 184252(김연지 미니콘서트)와 186473(음악중심)은 이번 열람에서 본문을 확인하지 못했습니다. 2007-12-22 음악중심 슬픈 발걸음은 이미 `20071222-mbc-musiccore-sad-step`에 있습니다. 예의지왕 검색에 나오는 다른 회차·해피타임 재편집 날짜는 남규리 원출연일로 대입하지 않았습니다. 진실게임 2008-03-11 공식 회차 안내는 확인했지만 출연자 정보가 없어 해당 글과 같은 출연으로 확정하지 않았습니다.
+
+공식 유튜브는 채널·제목·설명·공개일 정보를 확인했으며 모든 영상 전체를 재생·시청한 것은 아닙니다. 메일 첨부 파일을 내려받거나 다시 호스팅하지 않았습니다. 새 기사 카드를 늘리는 대신 방송·행사 카드의 날짜 근거 링크로 사용했습니다.
 
 ### 직접 제보한 디시 6개 글 재대조 — v4.116
 
