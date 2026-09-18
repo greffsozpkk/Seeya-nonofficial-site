@@ -5,7 +5,6 @@
 #seeya-makers-letter .letter-page{padding:35px 36px 28px;container-type:inline-size}
 #seeya-makers-letter .letter-page-heading{text-align:center;margin-bottom:30px}
 #seeya-makers-letter .letter-page-heading>span{font:10px Arial,sans-serif;letter-spacing:2.5px;color:var(--letter-rose)}
-#seeya-makers-letter h1{font:400 36px 'Nanum Pen Script',cursive;margin:10px 0 0;color:#684451}
 #seeya-makers-letter .letter-paper{position:relative;background:var(--letter-paper);border:1px solid #e9dfd3;padding:38px 48px 20px;box-shadow:0 9px 26px rgba(89,61,67,.07),3px 4px 0 -1px #f6eee4,3px 4px 0 0 #e9dfd3}
 #seeya-makers-letter .letter-paper::before{content:'';position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(rgba(134,99,73,.09) .5px,transparent .5px);background-size:5px 5px;opacity:.28}
 #seeya-makers-letter .letter-tape{position:absolute;top:-10px;left:calc(50% - 39px);width:78px;height:24px;background:repeating-linear-gradient(90deg,#ebc7ceaa 0 2px,#eed2d7aa 2px 5px);transform:rotate(-4deg);border-left:2px dotted #fffdf588;border-right:2px dotted #fffdf588}
@@ -14,7 +13,7 @@
 #seeya-makers-letter .letter-date>span{font:9px Arial,sans-serif;letter-spacing:1.6px}
 #seeya-makers-letter .letter-postmark{width:65px;height:65px;flex-shrink:0;border:1px solid #bd8b9b;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;transform:rotate(12deg);font:8px Arial,sans-serif;letter-spacing:1.2px;color:#b47c90;outline:1px solid #dec0c8;outline-offset:3px}
 #seeya-makers-letter .letter-postmark svg{width:15px;height:15px;stroke-width:1.2}
-#seeya-makers-letter h2{font:400 29px/1.5 'Nanum Pen Script',cursive;margin:0 0 22px;letter-spacing:-.3px;color:#744858;overflow-wrap:anywhere}
+#seeya-makers-letter h1{font:400 29px/1.5 'Nanum Pen Script',cursive;margin:0 0 22px;letter-spacing:-.3px;color:#744858;word-break:keep-all;overflow-wrap:anywhere}
 #seeya-makers-letter .letter-writing{font:400 15px/32px 'Gowun Batang',Georgia,serif;letter-spacing:-.25px;word-break:keep-all;overflow-wrap:anywhere;background-image:repeating-linear-gradient(to bottom,transparent 0 31px,var(--letter-line) 31px 32px);background-position:0 -2px}
 #seeya-makers-letter .letter-writing p{margin:0 0 32px;padding:0}
 #seeya-makers-letter .letter-writing p:last-child{margin-bottom:0}
@@ -30,9 +29,8 @@
  #seeya-makers-letter .letter-paper{padding:29px 23px 18px}
  #seeya-makers-letter .letter-paper-header{margin-bottom:22px}
  #seeya-makers-letter .letter-postmark{width:53px;height:53px;gap:3px;font-size:7px}
- #seeya-makers-letter h2{font-size:27px}
+ #seeya-makers-letter h1{font-size:27px}
  #seeya-makers-letter .letter-writing{font-size:15px}
- #seeya-makers-letter .letter-writing br{display:none}
  #seeya-makers-letter .letter-signature>div{font-size:24px}
 }
 #seeya-makers-letter{background:#faf3f5;min-height:85vh;padding:24px 0}
