@@ -255,5 +255,11 @@
     "path": "/news/",
     "title": "씨야 SeeYa 최신 뉴스 | SEEYA ARCHIVE",
     "description": "씨야와 남규리, 김연지, 이보람의 최근 활동과 새로운 소식을 모아봅니다."
+  },
+  {
+    "key": "letter",
+    "path": "/letter/",
+    "title": "제작자의 편지 | SEEYA ARCHIVE",
+    "description": "씨야 아카이브를 찾아주신 여러분께 전하는 제작자의 편지입니다."
   }
 ]
