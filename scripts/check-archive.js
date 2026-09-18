@@ -1,7 +1,17 @@
 const assert=require('node:assert/strict');
 const rows=require('../data/archive.json');
 const {mergeArchive}=require('../src/shared/archive-data');
-const {getFilteredArchive,archiveView,archiveDateLabel}=require('../src/shared/views');
+const {getFilteredArchive,archiveView,archiveDateLabel,archiveSourceAction}=require('../src/shared/views');
+// Labels follow each destination, even when a card mixes video, press and event links.
+for(const [url,label,type,eventState,expected] of [
+ ['https://www.youtube.com/watch?v=example','출연 영상','news','scheduled','영상 보기'],
+ ['https://gall.dcinside.com/board/view/?id=seeya&no=1','자료 글','variety','','게시글 보기'],
+ ['https://v.daum.net/v/example','당시 보도','variety','','기사 읽기'],
+ ['https://tickets.example.com/event/1','예매처 안내','concert','scheduled','안내 보기'],
+ ['https://www.melon.com/album/detail.htm?albumId=1','앨범','album','','음원 듣기'],
+ ['https://programs.sbs.co.kr/enter/show/vod/1/2','SBS','variety','','영상 보기'],
+ ['https://example.com/reference','출연 자료','interview','','자료 보기']
+])assert.equal(archiveSourceAction({url,label},{type,eventState}),expected);
 assert(Array.isArray(rows));
 assert.equal(new Set(rows.map(x=>x.id)).size,rows.length,'Duplicate record IDs');
 assert.deepEqual(mergeArchive(rows),rows,'Loading must not alter canonical records');

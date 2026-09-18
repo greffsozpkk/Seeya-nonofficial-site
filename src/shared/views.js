@@ -63,6 +63,23 @@ function archiveSources(x){
 function archiveSourceLinks(x){
  return archiveSources(x).map(s=>`<a class="archive-source" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label||s.platform||"원본")} 보기 →</a>`).join("");
 }
+function archiveSourceAction(s,x={}){
+ const host=new URL(s.url).hostname.replace(/^www\./,'');
+ const label=s.label||s.platform||'';
+ if(host==='youtu.be'||host==='youtube.com'||host.endsWith('.youtube.com')||host==='tv.naver.com'||host==='tv.kakao.com'||host==='dailymotion.com')return '영상 보기';
+ if(host==='gall.dcinside.com'||host==='cafe.naver.com'||host==='instagram.com'||host.endsWith('.instagram.com')||host==='facebook.com'||host==='x.com')return '게시글 보기';
+ if(/(^|\.)(melon\.com|genie\.co\.kr|bugs\.co\.kr|music\.apple\.com|open\.spotify\.com)$/.test(host))return '음원 듣기';
+ if(/기사|보도|뉴스/.test(label)||x.type==='news')return '기사 읽기';
+ if(/영상|다시보기|VOD|클립/i.test(label)||/\/vod\/|\/clip\//i.test(s.url))return '영상 보기';
+ if(x.eventState==='scheduled'||/안내|예매|티켓|YES24|인터파크|NOL/i.test(label))return '안내 보기';
+ return '자료 보기';
+}
+function archiveNoteParagraphs(note){
+ // Break Korean sentences without splitting dates, URLs or titles such as Part.1.
+ return String(note||'').replace(/([가-힣][.!?。！？](?:["'’”」』)]*))[\t ]+(?=\S)/gu,'$1\n')
+  .split(/\r?\n+/).map(s=>s.trim()).filter(Boolean)
+  .map(s=>`<p>${esc(s)}</p>`).join('');
+}
 function archiveView(archiveData,archiveState){
   const view={grid:"",count:"",active:"",pagination:""};
   const ARCHIVE_PAGE_SIZE=9;
@@ -89,21 +106,23 @@ function archiveView(archiveData,archiveState){
   view.grid=pageRows.map(x=>{
     const typeLabel=archiveTypes[x.type]||x.type;
     const members=(x.members||[]).join(" · ");
-    const titleTracks=(x.titleTracks||[]).filter(s=>!/(\binst\.?\b|\(inst\.?\))/i.test(s)).join(" · ");
+    const titleTracks=(x.titleTracks||[]).filter(s=>!/(\binst\.?\b|\(inst\.?\))/i.test(s)).map(name=>`<li>${esc(name)}</li>`).join('');
     const relatedSongs=x.type!=="album"?(x.songs||[]).filter(s=>!/(\binst\.?\b|\(inst\.?\))/i.test(s)).map(name=>{
-      const song=songByTitle(name);return song?`<a href="${songPath(song)}">${esc(name)}</a>`:esc(name);
-    }).join(" · "):"";
+      const song=songByTitle(name);return `<li>${song?`<a href="${songPath(song)}">${esc(name)}</a>`:esc(name)}</li>`;
+    }).join(""):"";
     const collaborators=(x.collaborators||[]).join(" · ");
     const visual=x.thumbnail||(x.type==="music-show"?"images/archive/archive-stage.png":x.type==="interview"?"images/archive/archive-interview.png":"");
     const visualAlt=x.thumbnail&&x.type==="album"?(x.album||x.title)+" 앨범 커버":"";
     const thumbnail=visual?`<img class="archive-small-thumb" src="${esc(visual)}" alt="${esc(visualAlt)}" loading="lazy" onerror="this.remove()">`:"";
     const sources=archiveSources(x),primary=sources[0],extra=sources.slice(1);
-    const primaryLabel=x.eventState==="scheduled"?"안내 보기":x.type==="news"?"기사 보기":x.type==="radio"?"방송 보기":"원본 보기";
-    const sourceLink=s=>`<a class="archive-source" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label||s.platform||"원본")} 보기 ↗</a>`;
+    const primaryLabel=primary?archiveSourceAction(primary,x):'';
+    const sourceLink=s=>`<a class="archive-source" href="${esc(s.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(s.label||s.platform||'원본')} · ${archiveSourceAction(s,x)} (새 탭)"><span class="archive-source-name">${esc(s.label||s.platform||"원본 자료")}</span><span class="archive-source-action">${archiveSourceAction(s,x)}</span></a>`;
     const concert=concertForRecord(x.id);
     const state=x.status==="documented"?"일정 기록":x.status==="unverified"?"자료 확인 중":x.status!=="available"?"자료 확인 중":"";
     const badges=`${x.eventState==="scheduled"?'<span class="archive-compact-state">UPCOMING · 예정</span>':""}${state?`<span class="archive-compact-state">${state}</span>`:""}`;
-    const albumInfo=x.type==="album"?`${x.releaseType?`유형 · ${esc(x.releaseType)}<br>`:""}${x.trackCount?`수록 · ${esc(x.trackCount)}곡<br>`:""}${x.genre?`장르 · ${esc(x.genre)}<br>`:""}`:"";
+    const field=(label,value)=>value?`<div class="archive-info-row"><dt>${label}</dt><dd>${value}</dd></div>`:'';
+    const albumInfo=x.type==="album"?field('유형',esc(x.releaseType||''))+field('수록',x.trackCount?`${esc(x.trackCount)}곡`:'')+field('장르',esc(x.genre||'')):'';
+    const info=albumInfo+field('장소',esc(x.venue||''))+field('수상',esc(x.awardCategory||''))+field('함께',esc(collaborators))+field('타이틀곡',titleTracks?`<ul class="archive-title-track">${titleTracks}</ul>`:'')+field('관련곡',relatedSongs?`<ul class="archive-related-song">${relatedSongs}</ul>`:'')+field('기획',esc(x.agency||''));
     return `<article class="archive-card" data-record-id="${esc(x.id)}">
       <div class="archive-compact-head">
         <div class="archive-date">${archiveDateLabel(x)}</div>
@@ -114,15 +133,15 @@ function archiveView(archiveData,archiveState){
         ${badges?`<div class="archive-compact-badges">${badges}</div>`:""}
       </div>
       <div class="archive-card-footer ${primary?'has-primary':''}">
-        ${primary?`<a class="archive-source" href="${esc(primary.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(x.title)} · ${esc(primary.label||primary.platform||'원본')} 보기">${primaryLabel} ↗</a>`:""}
+        ${primary?`<a class="archive-source" href="${esc(primary.url)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(x.title)} · ${esc(primary.label||primary.platform||'원본')} · ${primaryLabel} (새 탭)">${primaryLabel}</a>`:""}
         <details class="archive-details">
-          <summary><span class="archive-detail-closed">${extra.length?`상세·추가 자료 ${extra.length}개`:"상세 보기"}</span><span class="archive-detail-open">접기</span><span class="archive-detail-arrow" aria-hidden="true">⌄</span></summary>
+          <summary><span class="archive-detail-closed">상세 정보${extra.length?`<small>추가 자료 ${extra.length}개</small>`:''}</span><span class="archive-detail-open">상세 접기</span><span class="archive-detail-toggle" aria-hidden="true"></span></summary>
           <div class="archive-detail-content">
             ${x.program?`<div class="archive-detail-program">${esc(x.program)}</div>`:""}
-            <div class="archive-meta">${albumInfo}${x.venue?`장소 · ${esc(x.venue)}<br>`:""}${x.awardCategory?`수상 · ${esc(x.awardCategory)}<br>`:""}${collaborators?`함께 · ${esc(collaborators)}<br>`:""}${titleTracks?`<strong class="archive-title-track">TITLE · ${esc(titleTracks)}</strong>`:""}${relatedSongs?`<span class="archive-related-song">관련곡 · ${relatedSongs}</span>`:""}${x.agency?`<div>기획 · ${esc(x.agency)}</div>`:""}${x.note?`<p class="archive-card-note">${esc(x.note)}</p>`:""}</div>
-            ${primary?`<div class="archive-primary-credit">대표 출처 · ${esc(primary.label||primary.platform||"원본")}</div>`:""}
+            <div class="archive-meta">${info?`<dl class="archive-info">${info}</dl>`:''}${x.note?`<div class="archive-card-note">${archiveNoteParagraphs(x.note)}</div>`:""}</div>
+            ${primary?`<div class="archive-primary-credit">대표 출처<span>${esc(primary.label||primary.platform||"원본")}</span></div>`:""}
             ${extra.length?`<div class="archive-extra-sources">${extra.map(sourceLink).join("")}</div>`:""}
-            ${concert?`<a class="archive-source" href="${concertPath(concert)}?event=${encodeURIComponent(x.id)}">콘서트 기록관 보기 →</a>`:""}
+            ${concert?`<a class="archive-source" href="${concertPath(concert)}?event=${encodeURIComponent(x.id)}"><span class="archive-source-name">${esc(concert.name)} 콘서트 기록관</span><span class="archive-source-action">기록관 열기</span></a>`:""}
             ${(x.tags||[]).length?`<div class="archive-tags">${x.tags.slice(0,6).map(t=>`<span>#${esc(t)}</span>`).join("")}</div>`:""}
           </div>
         </details>
@@ -132,4 +151,4 @@ function archiveView(archiveData,archiveState){
   view.pagination=archivePagination(totalPages,archiveState);
   return view;
 }
-module.exports={archiveDateLabel,archiveSourceLinks,newsList,galleryMoment,getFilteredArchive,archiveView};
+module.exports={archiveDateLabel,archiveSourceLinks,archiveSourceAction,archiveNoteParagraphs,newsList,galleryMoment,getFilteredArchive,archiveView};

@@ -1389,34 +1389,52 @@ body.fanchant-lightbox-open{overflow:hidden}
 
 /* v4.112 Archive summary cards: details remain in the static HTML. */
 .archive-grid{align-items:start}
-.archive-card{border-radius:15px;background:#fff;display:block;overflow-wrap:anywhere}
+.archive-card{border-radius:15px;background:#fff;display:block;overflow-wrap:anywhere;font-family:"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
 .archive-compact-head{padding:18px}
 .archive-compact-head::after{content:"";display:block;clear:both}
-.archive-compact-head .archive-date{font-size:12px;line-height:1.7;margin-bottom:10px}
+.archive-compact-head .archive-date{font-size:13px;line-height:1.65;letter-spacing:.02em;margin-bottom:10px;color:#853b57}
 .archive-small-thumb{float:right;display:block;width:66px;height:66px;object-fit:cover;border-radius:10px;margin:4px 0 8px 12px}
-.archive-compact-category{font-size:11px;line-height:1.6;color:var(--deep);margin-bottom:3px}
+.archive-compact-category{font-size:12px;line-height:1.6;color:#754258;font-weight:700;margin-bottom:5px}
 .archive-card .archive-compact-head h3{font-size:20px;line-height:1.5;margin:0 0 8px;word-break:normal;overflow-wrap:anywhere}
-.archive-compact-members{font-size:12px;line-height:1.7;color:var(--muted)}
+.archive-compact-members{font-size:13px;line-height:1.7;color:#61505a}
 .archive-compact-badges{display:flex;gap:6px;flex-wrap:wrap;clear:both;padding-top:10px}
-.archive-compact-state{font-size:10px;line-height:1.6;color:var(--deep);background:#faf0f5;padding:3px 7px;border-radius:5px}
+.archive-compact-state{font-size:12px;line-height:1.6;color:#753650;background:#faedf2;padding:3px 7px;border-radius:5px}
 .archive-card-footer{position:relative;border-top:1px solid #f2e3e9}
-.archive-card-footer>.archive-source{position:absolute;top:0;left:18px;margin:0;min-height:44px;max-width:95px;padding:0;border:0;border-radius:0;background:none;color:var(--deep);font-size:12px;font-weight:400}
-.archive-details>summary{display:flex;align-items:center;gap:9px;min-height:44px;padding:11px 18px;list-style:none;font-size:12px;line-height:1.8;color:var(--deep);cursor:pointer;background:#fffdfd}
+.archive-card-footer>.archive-source{position:absolute;z-index:1;top:12px;left:16px;margin:0;min-height:44px;width:calc(45% - 16px);max-width:150px;padding:9px 12px;border:1px solid #e3b9ca;border-radius:9px;background:#f7dce7;color:#713650;font-size:14px;line-height:1.7;font-weight:700;text-align:center}
+.archive-card-footer>.archive-source:hover{background:#efc8d8;border-color:#d7a4ba}
+.archive-details>summary{display:flex;align-items:center;gap:8px;min-height:68px;padding:12px 16px;list-style:none;font-size:14px;font-weight:700;line-height:1.6;color:#683d50;cursor:pointer;background:#fffdfd}
+.archive-details>summary:hover{background:#fcf0f5}
 .archive-details>summary::-webkit-details-marker{display:none}
-.has-primary>.archive-details>summary{padding-left:112px;justify-content:flex-end}
-.archive-detail-arrow{margin-left:auto;flex-shrink:0}
+.has-primary>.archive-details>summary{padding-left:calc(45% + 14px);justify-content:flex-end}
+.archive-detail-closed small{display:block;font-size:12px;font-weight:400;color:#61505a}
+.archive-detail-toggle{flex-shrink:0;font-size:21px;line-height:1}
+.archive-detail-toggle::before{content:"+"}
+.archive-details[open]>summary .archive-detail-toggle::before{content:"−"}
 .archive-detail-open{display:none}
 .archive-details[open]>summary .archive-detail-closed{display:none}
 .archive-details[open]>summary .archive-detail-open{display:inline}
-.archive-details[open]>summary .archive-detail-arrow{transform:rotate(180deg)}
-.archive-detail-content{padding:17px 18px;background:#faf1f5;font-size:13px;line-height:1.85}
-.archive-detail-program{font-size:12px;color:var(--deep);margin-bottom:10px}
-.archive-detail-content .archive-meta{font-size:13px;line-height:1.85}
-.archive-detail-content .archive-card-note{margin:10px 0 14px}
-.archive-primary-credit{font-size:11px;color:var(--muted);margin:12px 0 6px}
-.archive-detail-content .archive-source{display:flex;justify-content:flex-start;min-height:44px;margin:0;padding:10px 0;border:0;border-bottom:1px solid var(--line);border-radius:0;line-height:1.8;font-size:12px;font-weight:400;color:var(--deep);overflow-wrap:anywhere}
+.archive-detail-content{padding:18px;background:#f4e3eb;font-size:14px;line-height:1.85;color:#51424a;border-top:1px solid #dfbdcd}
+.archive-detail-program{font-size:14px;font-weight:700;color:#49313d;margin-bottom:10px}
+.archive-detail-content .archive-meta{font-size:14px;line-height:1.85;color:#51424a}
+.archive-detail-content .archive-card-note{margin:10px 0 16px;color:#51424a}
+.archive-card-note p{margin:0 0 12px}
+.archive-card-note p:last-child{margin-bottom:0}
+.archive-info{display:grid;gap:14px;margin:0 0 18px}
+.archive-info dt{font-size:12px;font-weight:700;color:#694051;margin-bottom:3px}
+.archive-info dd{margin:0}
+.archive-info ul{list-style:none;padding:0;margin:0}
+.archive-info li+li{margin-top:5px}
+.archive-info .archive-title-track{color:#51424a;font-size:14px;font-weight:400}
+.archive-primary-credit{font-size:12px;line-height:1.7;color:#61505a;margin:14px 0 10px}
+.archive-primary-credit>span{display:block;margin-top:3px;font-size:13px;color:#51424a}
+.archive-detail-content .archive-source{display:flex;gap:10px;align-items:center;justify-content:space-between;min-height:48px;margin:8px 0 0;padding:10px 12px;border:1px solid #d9bcc8;border-radius:9px;background:#fff;line-height:1.7;font-size:13px;font-weight:400;color:#513241;overflow-wrap:anywhere}
+.archive-detail-content .archive-source:hover{border-color:#783c55;background:#fff0f6}
+.archive-source-name{min-width:0}
+.archive-source-action{flex-shrink:0;font-size:12px;font-weight:700;color:#783c55;text-decoration:underline;text-underline-offset:3px}
+.archive-detail-content .archive-related-song a{color:#783c55;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.archive-card .archive-tags span{color:#694b58;background:#f3e8ee;font-size:11px}
 .archive-detail-content .archive-tags{margin:14px 0 0}
-.archive-details>summary:focus-visible,.archive-card-footer a:focus-visible{outline:2px solid var(--deep);outline-offset:-3px}
+.archive-details>summary:focus-visible,.archive-card-footer a:focus-visible{outline:3px solid #38262e;outline-offset:-3px}
 @media(max-width:680px){
  .archive-grid{gap:12px}
  .archive-small-thumb{width:74px;height:74px}
