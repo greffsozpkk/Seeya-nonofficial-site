@@ -280,6 +280,74 @@
     "updatedAt": "2026-09-18"
   },
   {
+    "id": "20260921-gyuri-mbc-noon-dj",
+    "date": "2026-09-21",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · MBC 정오의 희망곡 스페셜 DJ 예정",
+    "program": "정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBC RADIO · 스페셜 DJ 공식 라이브 안내",
+      "url": "https://www.youtube.com/watch?v=pOqhfoHhW9A"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "eventState": "scheduled",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "예정",
+      "라디오",
+      "스페셜 DJ"
+    ],
+    "note": "9월 21일 낮 12시 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다."
+  },
+  {
+    "id": "20260920-gyuri-gwangju-charity",
+    "date": "2026-09-20",
+    "addedAt": "2026-09-18",
+    "title": "남규리 · 어깨동무 연예인봉사단 자선공연 출연 예정",
+    "program": "한마음 대축제 · 어깨동무 연예인봉사단 자선공연",
+    "type": "event",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "9월 18일 공유된 변경 포스터 · 공식 원문 확인 전",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8548"
+    },
+    "additionalSources": [
+      {
+        "label": "9월 17일 공유된 이전 포스터 · 시간 상이",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8528"
+      }
+    ],
+    "status": "documented",
+    "eventState": "scheduled",
+    "tags": [
+      "2026",
+      "예정",
+      "광주",
+      "자선공연"
+    ],
+    "note": "9월 20일 광주교육대학교 제1운동장에서 열리는 행사에 남규리가 출연할 예정입니다. 새 포스터는 낮 12시 시작으로 안내하지만 이전 포스터의 오후 7시와 달라, 방문 전 최종 시간 확인이 필요합니다. 일정은 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event",
+    "venue": "광주교육대학교 제1운동장",
+    "updatedAt": "2026-09-18"
+  },
+  {
     "id": "20260919-daegu-national-song-festival",
     "date": "2026-09-19",
     "addedAt": "2026-09-16",
@@ -316,6 +384,38 @@
       }
     ],
     "updatedAt": "2026-09-18"
+  },
+  {
+    "id": "20260918-boram-daegu-vlog",
+    "date": "2026-09-18",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 씨야 대구 콘서트 비하인드 VLOG",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야 · 대구 콘서트 비하인드 VLOG",
+      "url": "https://www.youtube.com/watch?v=dW8vBqXwWGE",
+      "publishedDate": "2026-09-18"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "보람씨야",
+      "THE FAN",
+      "대구",
+      "비하인드"
+    ],
+    "note": "보람씨야 공식 채널의 대구 콘서트 비하인드 영상입니다. 9월 12일 공연 현장을 담았으며, 날짜는 9월 18일 영상 공개일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-09-18"
   },
   {
     "id": "20260917-gyuri-yeonji-sbs12n",
@@ -440,6 +540,42 @@
     "publishedDate": "2026-09-16",
     "episode": 21,
     "additionalSources": []
+  },
+  {
+    "id": "20260916-seeya-october-tour-message",
+    "date": "2026-09-16",
+    "addedAt": "2026-09-18",
+    "title": "씨야 · THE FAN 10월 전국투어 안내 영상",
+    "program": "SEEYA Official",
+    "type": "official",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SEEYA Official · 원본 안내 영상",
+      "url": "https://www.youtube.com/watch?v=b7NzrBXnWnI"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 영상 공유",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8441"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "2026",
+      "공식 콘텐츠",
+      "THE FAN"
+    ],
+    "note": "고양(10월 4일)·청주(10월 10일)·수원(10월 17일)·인천(10월 31일) 투어 일정을 소개하는 공식 안내 영상입니다. 날짜는 영상 공개일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-09-16"
   },
   {
     "id": "v492-wBJxsUK0nc8",
@@ -6772,6 +6908,40 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20250822-gyuri-wansun-talk",
+    "date": "2025-08-22",
+    "title": "남규리 · 완선한 수다 · 김완선과 솔직 토크",
+    "program": "김완선 TV · 완선한 수다",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "source": {
+      "label": "김완선 TV · 공식 토크 영상",
+      "url": "https://www.youtube.com/watch?v=WLc4782-c9U"
+    },
+    "additionalSources": [
+      {
+        "label": "스타뉴스 · 영상 공개일 보도",
+        "url": "https://v.daum.net/v/20250822225436443"
+      }
+    ],
+    "note": "김완선과 가수 활동, 성장 과정, 일상에 대해 이야기를 나눈 토크입니다. 날짜는 영상 공개일입니다.",
+    "dateBasis": "video-published",
+    "publishedDate": "2025-08-22",
+    "tags": [
+      "2025",
+      "완선한 수다",
+      "토크"
+    ],
+    "addedAt": "2026-09-18",
+    "album": "",
+    "thumbnail": "",
+    "status": "available",
+    "dateStatus": "confirmed"
+  },
+  {
     "id": "v491-album-4125418",
     "date": "2025-08-17",
     "addedAt": "2026-09-13",
@@ -7913,6 +8083,41 @@
     "publishedDate": "2024-04-29"
   },
   {
+    "id": "20240429-gyuri-hypeboy3",
+    "date": "2024-04-29",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 하입보이스카웃 3회",
+    "program": "ENA 하입보이스카웃",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "ENA 이엔에이",
+      "url": "https://www.youtube.com/watch?v=s7icCqjKF3A",
+      "publishedDate": "2024-04-29"
+    },
+    "additionalSources": [
+      {
+        "label": "일간스포츠 · 4월 29일 3회 방송 보도",
+        "url": "https://m.news.nate.com/view/20240429n36994"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "ENA 하입보이스카웃"
+    ],
+    "note": "남규리의 오디션 토크 출연입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 3
+  },
+  {
     "id": "v491-strongheart2024",
     "date": "2024-04-16",
     "addedAt": "2026-09-13",
@@ -8513,6 +8718,51 @@
     "dateBasis": "event"
   },
   {
+    "id": "20231031-yeonji-returnking4",
+    "date": "2023-10-31",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "김연지 · DK와 복학가왕 4화",
+    "program": "복학가왕",
+    "type": "variety",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "미친 사랑의 노래",
+      "혼자 왔어요"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스튜디오 지지지",
+      "url": "https://www.youtube.com/watch?v=GR7v1z34x9o",
+      "publishedDate": "2023-10-31"
+    },
+    "additionalSources": [
+      {
+        "label": "복학가왕 · 미친 사랑의 노래 라이브",
+        "url": "https://www.youtube.com/watch?v=22cUW7asxWs",
+        "publishedDate": "2023-10-24"
+      },
+      {
+        "label": "복학가왕 · 혼자 왔어요 라이브",
+        "url": "https://www.youtube.com/watch?v=xth4PZBByr4",
+        "publishedDate": "2023-10-26"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "복학가왕"
+    ],
+    "note": "DK·김연지의 토크와 듀엣 라이브입니다. 날짜는 영상 공개일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 4,
+    "publishedDate": "2023-10-31"
+  },
+  {
     "id": "v491-andong",
     "date": "2023-10-28",
     "addedAt": "2026-09-13",
@@ -8654,6 +8904,42 @@
     "dateBasis": "event",
     "venue": "부산 KBS홀",
     "endDate": "2023-09-17"
+  },
+  {
+    "id": "20230916-boram-immortal-festival",
+    "date": "2023-09-16",
+    "title": "이보람·백예빈 · 불후의 명곡 · Festival",
+    "program": "KBS 불후의 명곡 624회 · 기억의 노래 특집",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "Festival"
+    ],
+    "source": {
+      "label": "KBS 레전드 케이팝 · 공식 무대 영상",
+      "url": "https://www.youtube.com/watch?v=4q24ykhAg2k"
+    },
+    "additionalSources": [
+      {
+        "label": "KBS 레전드 케이팝 · 세로 직캠",
+        "url": "https://www.youtube.com/watch?v=KZXhvQGLVVg"
+      }
+    ],
+    "note": "‘기억의 노래’ 특집에서 백예빈과 함께 엄정화의 ‘Festival’을 부른 무대입니다.",
+    "dateBasis": "broadcast",
+    "episode": 624,
+    "tags": [
+      "2023",
+      "불후의 명곡",
+      "듀엣"
+    ],
+    "addedAt": "2026-09-18",
+    "album": "",
+    "thumbnail": "",
+    "status": "available",
+    "dateStatus": "confirmed"
   },
   {
     "id": "v491-sunset2023",
@@ -9080,6 +9366,37 @@
     ]
   },
   {
+    "id": "20230711-gyuri-game5",
+    "date": "2023-07-11",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 게임광규리 5화 · 이세영·넉살·CIX BX와 축구 게임 대결",
+    "program": "게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=zfUAUTofSls",
+      "publishedDate": "2023-07-11"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "게임광규리"
+    ],
+    "note": "날짜는 영상 공개일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 5,
+    "publishedDate": "2023-07-11"
+  },
+  {
     "id": "v491-cultwo20230704",
     "date": "2023-07-04",
     "addedAt": "2026-09-13",
@@ -9146,6 +9463,37 @@
     "dateBasis": "video-published",
     "episode": 4,
     "publishedDate": "2023-07-04"
+  },
+  {
+    "id": "20230627-gyuri-game3",
+    "date": "2023-06-27",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 게임광규리 3화 · 이석훈과 게임 대결",
+    "program": "게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=0vlBCQ2TqWQ",
+      "publishedDate": "2023-06-27"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "게임광규리"
+    ],
+    "note": "날짜는 영상 공개일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 3,
+    "publishedDate": "2023-06-27"
   },
   {
     "id": "v491-album-4088070",
@@ -9997,6 +10345,42 @@
     "dateBasis": "broadcast"
   },
   {
+    "id": "20221128-boram-freedoctor81",
+    "date": "2022-11-28",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 프리한 닥터M 81회",
+    "program": "tvN 프리한 닥터M",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "tvN Joy",
+      "url": "https://www.youtube.com/watch?v=188HU9L7rzk",
+      "publishedDate": "2022-11-29"
+    },
+    "additionalSources": [
+      {
+        "label": "tvN · 이보람 편 하이라이트",
+        "url": "https://www.youtube.com/watch?v=W8C1hEJhP6E",
+        "publishedDate": "2022-11-29"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "tvN 프리한 닥터M"
+    ],
+    "note": "씨야 활동과 공백기, WSG워너비 활동을 돌아보는 토크입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 81
+  },
+  {
     "id": "v491-yangcheon",
     "date": "2022-10-28",
     "addedAt": "2026-09-13",
@@ -10431,6 +10815,42 @@
     ]
   },
   {
+    "id": "20220806-boram-hangout",
+    "date": "2022-08-06",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · WSG워너비 언니즈 무대",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "Ma Boy"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=RXVBCvW1gLc",
+      "publishedDate": "2022-08-06"
+    },
+    "additionalSources": [
+      {
+        "label": "MBC · 언니즈 출연진·149회 공식 클립",
+        "url": "https://playvod.imbc.com/Vod/ClipPlay?broadcastId=1004711100716100007"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "윤은혜·이보람·나비가 함께한 무대입니다. 날짜는 콘서트 개최일이 아닌 방송일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v474-stage-research-046",
     "date": "2022-07-30",
     "dateStatus": "confirmed",
@@ -10580,6 +11000,35 @@
     "publishedDate": "2022-07-16"
   },
   {
+    "id": "20220716-boram-hangout",
+    "date": "2022-07-16",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · 가야G 첫 쇼케이스",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "TV-People",
+      "url": "https://www.youtube.com/watch?v=cojgPoISAf0",
+      "publishedDate": "2023-04-08"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "이보람·소연·HYNN·정지소가 함께한 가야G 출연입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v491-album-4077595",
     "date": "2022-07-09",
     "addedAt": "2026-09-13",
@@ -10613,6 +11062,37 @@
     "titleTracks": [
       "그때 그 순간 그대로 (그그그)"
     ]
+  },
+  {
+    "id": "20220709-boram-hangout",
+    "date": "2022-07-09",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · WSG워너비 데뷔곡 라이브 청음회",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "그때 그 순간 그대로"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "놀면 뭐하니?",
+      "url": "https://www.youtube.com/watch?v=X9GzIC93VF0",
+      "publishedDate": "2022-07-09"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "이보람이 속한 가야G의 WSG워너비 청음회입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v491-hangout-2022-06-25",
@@ -10800,6 +11280,71 @@
     "publishedDate": "2022-06-01"
   },
   {
+    "id": "20220528-boram-hangout",
+    "date": "2022-05-28",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · WSG워너비 이성경 정체 공개",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=4LOX-hnrTVc",
+      "publishedDate": "2022-05-28"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "블라인드 오디션 참가자 ‘이성경’의 정체가 이보람으로 공개된 방송입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20220514-boram-hangout",
+    "date": "2022-05-14",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · WSG워너비 대청봉 조 경연",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "You And I"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "놀면 뭐하니?",
+      "url": "https://www.youtube.com/watch?v=RaCg40e8gAU",
+      "publishedDate": "2022-05-14"
+    },
+    "additionalSources": [
+      {
+        "label": "iMBC · 대청봉 조 구성 및 경연 안내",
+        "url": "https://enews.imbc.com/M/Detail/347733"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "대청봉 조 블라인드 오디션에 ‘이성경’이라는 가명으로 참여했습니다. 이성경의 정체는 5월 28일 방송에서 이보람으로 공개됐습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v491-hangout-2022-04-16",
     "date": "2022-04-16",
     "addedAt": "2026-09-13",
@@ -10981,6 +11526,44 @@
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
     "publishedDate": "2021-11-01"
+  },
+  {
+    "id": "20210919-yeonji-performance8",
+    "date": "2021-09-19",
+    "title": "김연지 · 공연에 반하다 8회 · 마리 앙투아네트 토크와 라이브",
+    "program": "UMAX 공연에 반하다 8회",
+    "type": "variety",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "더는 참지 않아"
+    ],
+    "source": {
+      "label": "UMAX 공연에 반하다 · 더는 참지 않아 라이브",
+      "url": "https://www.youtube.com/watch?v=zTsje6_Qm8I"
+    },
+    "additionalSources": [
+      {
+        "label": "UMAX 공연에 반하다 · 김소향·김연지 토크",
+        "url": "https://www.youtube.com/watch?v=jnWuJoGV2EY"
+      }
+    ],
+    "note": "김소향과 뮤지컬 ‘마리 앙투아네트’의 장면과 배우 이야기를 나누고, ‘더는 참지 않아’를 라이브로 선보였습니다. 날짜는 라이브 영상 게시일입니다.",
+    "dateBasis": "video-published",
+    "publishedDate": "2021-09-19",
+    "episode": 8,
+    "tags": [
+      "2021",
+      "공연에 반하다",
+      "뮤지컬",
+      "마리 앙투아네트"
+    ],
+    "addedAt": "2026-09-18",
+    "album": "",
+    "thumbnail": "",
+    "status": "available",
+    "dateStatus": "confirmed"
   },
   {
     "id": "v491-cover-bshC6bXVnos",
@@ -11328,6 +11911,35 @@
     "publishedDate": "2021-04-06"
   },
   {
+    "id": "20210406-gyuri-onoff",
+    "date": "2021-04-06",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 온앤오프 · 일상과 복싱",
+    "program": "tvN 온앤오프",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "샾잉 #ing",
+      "url": "https://www.youtube.com/watch?v=dEDW2QwGTxw",
+      "publishedDate": "2021-04-08"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "tvN 온앤오프"
+    ],
+    "note": "남규리의 온앤오프 출연입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v491-misstrot-talk2",
     "date": "2021-03-25",
     "addedAt": "2026-09-13",
@@ -11466,6 +12078,34 @@
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
     "publishedDate": "2021-03-02"
+  },
+  {
+    "id": "v4110-boram-gallery-message",
+    "date": "2021-02-22",
+    "addedAt": "2026-09-17",
+    "title": "이보람 · 씨야 갤러리에 생일 선물 감사 인사",
+    "program": "씨야 갤러리 공개 인사",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 이보람 공개 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=217256"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "공식 콘텐츠",
+      "팬 소통"
+    ],
+    "note": "편지·생일 축하 영상·선물에 대해 이보람이 남긴 공개 감사 글입니다. 날짜는 글 작성일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "post-published",
+    "publishedDate": "2021-02-22"
   },
   {
     "id": "v491-kim-interview-feb",
@@ -12011,6 +12651,64 @@
     "publishedDate": "2020-08-17"
   },
   {
+    "id": "v4110-yeonji-inears-behind",
+    "date": "2020-08-11",
+    "addedAt": "2026-09-17",
+    "title": "김연지 · 첫 커스텀 인이어 제작 비하인드",
+    "program": "김연지 Official",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=uSWmUJF6Oeg"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "공식 콘텐츠",
+      "비하인드",
+      "인이어"
+    ],
+    "note": "날짜는 영상 공개일이며 촬영일은 미상입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-08-11"
+  },
+  {
+    "id": "v4110-yeonji-inears-live",
+    "date": "2020-08-05",
+    "addedAt": "2026-09-17",
+    "title": "김연지 · 인이어 언박싱 라이브",
+    "program": "김연지 Official",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=YpaUJoDM_MM"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "공식 콘텐츠",
+      "비하인드",
+      "인이어"
+    ],
+    "note": "날짜는 영상 공개일이며 촬영일은 미상입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-08-05"
+  },
+  {
     "id": "v491-cover-K_GGhmCnVRc",
     "date": "2020-07-27",
     "addedAt": "2026-09-13",
@@ -12075,6 +12773,66 @@
     "venue": "세종문화회관 대극장"
   },
   {
+    "id": "v4110-boram-inears",
+    "date": "2020-05-12",
+    "addedAt": "2026-09-17",
+    "title": "이보람 · 커스텀 인이어 제작기",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야 · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=1fjX0ibzUlE"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "공식 콘텐츠",
+      "비하인드",
+      "인이어"
+    ],
+    "note": "날짜는 영상 공개일이며 촬영일은 미상입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-05-12"
+  },
+  {
+    "id": "museum-seeya-starrynight",
+    "date": "2020-04-09",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 별이 빛나는 밤에 · 2.5집 활동 토크",
+    "program": "MBC 별이 빛나는 밤에",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=nB13cfYOLfo",
+      "publishedDate": "2020-04-09"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "MBC 별이 빛나는 밤에"
+    ],
+    "note": "2.5집 활동기에 멤버들이 나눈 음악 이야기를 담은 클립입니다. 방송일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-04-09"
+  },
+  {
     "id": "v483-radio-005",
     "date": "2020-04-07",
     "addedAt": "2026-09-12",
@@ -12098,6 +12856,99 @@
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
     "publishedDate": "2020-04-07"
+  },
+  {
+    "id": "museum-hanbit",
+    "date": "2020-04-04",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 대전 한빛 주간 콘서트 · 사랑의 인사",
+    "program": "대전 한빛 주간 콘서트",
+    "type": "event",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "사랑의 인사"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=qO3K2K0GW_A",
+      "publishedDate": "2020-04-04"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "대전 한빛 주간 콘서트"
+    ],
+    "note": "대전 한빛 주간 콘서트 보관 자료입니다. 정확한 행사일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-04-04"
+  },
+  {
+    "id": "museum-boram-solomon",
+    "date": "2020-04-03",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · TV 로펌 솔로몬 출연 클립",
+    "program": "SBS TV 로펌 솔로몬",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=6i4-sJ3e9nc",
+      "publishedDate": "2020-04-03"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "SBS TV 로펌 솔로몬"
+    ],
+    "note": "이보람의 솔로몬의 선택 출연 자료입니다. 방송일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-04-03"
+  },
+  {
+    "id": "museum-bodyguard",
+    "date": "2020-03-29",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 연예가중계 · 경호원 관련 토크",
+    "program": "KBS 연예가중계",
+    "type": "interview",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=NzHVyKMmiPI",
+      "publishedDate": "2020-03-29"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "KBS 연예가중계"
+    ],
+    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-29"
   },
   {
     "id": "v491-immortal-2020-03-28",
@@ -12127,6 +12978,37 @@
     "note": "날짜는 공식 방송 음반 공개일입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "release"
+  },
+  {
+    "id": "museum-hanbam",
+    "date": "2020-03-27",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 한밤의 TV연예 · 동요 이어부르기",
+    "program": "SBS 한밤의 TV연예",
+    "type": "interview",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=U0IYPDCvksM",
+      "publishedDate": "2020-03-27"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "SBS 한밤의 TV연예"
+    ],
+    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-27"
   },
   {
     "id": "v483-radio-006",
@@ -12160,6 +13042,99 @@
     "publishedDate": "2020-03-26"
   },
   {
+    "id": "museum-mnet-interview",
+    "date": "2020-03-24",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · Mnet 인터뷰",
+    "program": "Mnet 인터뷰",
+    "type": "interview",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=hDKzK1g3_zQ",
+      "publishedDate": "2020-03-24"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "Mnet 인터뷰"
+    ],
+    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-24"
+  },
+  {
+    "id": "museum-marry-making",
+    "date": "2020-03-23",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 결혼할까요 뮤직비디오 촬영 현장",
+    "program": "결혼할까요 MV 촬영 현장",
+    "type": "interview",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=g4A79QYDWds",
+      "publishedDate": "2020-03-23"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "결혼할까요 MV 촬영 현장"
+    ],
+    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-23"
+  },
+  {
+    "id": "museum-wastar-concert",
+    "date": "2020-03-22",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 와스타매거진 · 단독 콘서트 이후 인터뷰",
+    "program": "와스타매거진",
+    "type": "interview",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=42t7HuQJEEQ",
+      "publishedDate": "2020-03-22"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "와스타매거진"
+    ],
+    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-22"
+  },
+  {
     "id": "v491-cover-YTjhddY18WI",
     "date": "2020-03-18",
     "addedAt": "2026-09-13",
@@ -12188,6 +13163,157 @@
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
     "publishedDate": "2020-03-18"
+  },
+  {
+    "id": "museum-fansign-first",
+    "date": "2020-03-18",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 1집 활동 팬사인회 현장",
+    "program": "1집 팬사인회",
+    "type": "event",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=jNyrf-qPzFA",
+      "publishedDate": "2020-03-18"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "1집 팬사인회"
+    ],
+    "note": "씨야 1집 활동기 팬사인회 현장입니다. 정확한 행사일·장소 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-18"
+  },
+  {
+    "id": "museum-fansign-second",
+    "date": "2020-03-18",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 2집 활동 팬사인회 현장",
+    "program": "2집 팬사인회",
+    "type": "event",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=6eI--fEA_f4",
+      "publishedDate": "2020-03-18"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "2집 팬사인회"
+    ],
+    "note": "씨야 2집 활동기 팬사인회 현장입니다. 정확한 행사일·장소 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-18"
+  },
+  {
+    "id": "gallery-gyuri-truthgame",
+    "date": "2020-03-16",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 진실게임 출연 자료",
+    "program": "SBS 진실게임",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 출연 자료 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=187464",
+      "publishedDate": "2020-03-16"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "SBS 진실게임"
+    ],
+    "note": "남규리의 진실게임 출연 자료입니다. 방송일·회차 미상으로 자료 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "post-published",
+    "publishedDate": "2020-03-16"
+  },
+  {
+    "id": "museum-starwatch",
+    "date": "2020-03-14",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · STAR WATCH 출연 자료",
+    "program": "STAR WATCH",
+    "type": "interview",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=99vvNdKDaDU",
+      "publishedDate": "2020-03-14"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "STAR WATCH"
+    ],
+    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-14"
+  },
+  {
+    "id": "gallery-gyuri-mannerking",
+    "date": "2020-03-14",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 도전! 예의지왕 출연 자료",
+    "program": "MBC 도전! 예의지왕",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 출연 자료 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=186503",
+      "publishedDate": "2020-03-14"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "MBC 도전! 예의지왕"
+    ],
+    "note": "남규리와 이경규·이혁재·이홍기 등이 함께한 예의지왕 출연 자료입니다. 방송일·회차 미상으로 자료 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "post-published",
+    "publishedDate": "2020-03-14"
   },
   {
     "id": "v491-album-20311741",
@@ -12224,6 +13350,36 @@
     ]
   },
   {
+    "id": "20200313-yeonji-cartalk2",
+    "date": "2020-03-13",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "김연지 · 차에타봐 2화 · 토크와 무반주 노래",
+    "program": "SBS 차에타봐",
+    "type": "interview",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS 뉴스 · 차에타봐 공식 영상",
+      "url": "https://www.youtube.com/watch?v=CWZyIkQfcgU",
+      "publishedDate": "2020-03-13"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "SBS 차에타봐"
+    ],
+    "note": "씨야 메인보컬에서 솔로 활동까지의 이야기와 무반주 노래를 담은 SBS 웹 인터뷰입니다. 날짜는 콘텐츠 공개일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2020-03-13",
+    "episode": 2
+  },
+  {
     "id": "v491-cover-eJcxC1f-YTM",
     "date": "2020-03-12",
     "addedAt": "2026-09-13",
@@ -12252,6 +13408,108 @@
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
     "publishedDate": "2020-03-12"
+  },
+  {
+    "id": "20200311-yeonji-trot6",
+    "date": "2020-03-11",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "김연지 · 나는 트로트 가수다 6회 · 유지나와 낭만에 대하여",
+    "program": "MBC every1 나는 트로트 가수다",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "낭만에 대하여"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "트롯869",
+      "url": "https://www.youtube.com/watch?v=gIxwya06UbI",
+      "publishedDate": "2020-03-12"
+    },
+    "additionalSources": [
+      {
+        "label": "텐아시아 · 3월 11일 듀엣 경연 방송 안내",
+        "url": "https://www.tenasia.co.kr/article/2020031132484"
+      },
+      {
+        "label": "트롯869 · 6회 공식 예고편",
+        "url": "https://www.youtube.com/watch?v=dcgVPRXqp0c",
+        "publishedDate": "2020-03-05"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "MBC every1 나는 트로트 가수다"
+    ],
+    "note": "김연지·유지나가 함께 낭만에 대하여를 선보인 6회 무대입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 6,
+    "collaborators": [
+      "유지나"
+    ]
+  },
+  {
+    "id": "20200311-yeonji-boram-instagram",
+    "date": "2020-03-11",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "김연지·이보람 · 인스타그램 라이브 자료",
+    "program": "인스타그램 라이브",
+    "type": "official",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 당일 라이브 기록 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=184425",
+      "publishedDate": "2020-03-11"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "인스타그램 라이브"
+    ],
+    "note": "김연지·이보람이 함께한 인스타그램 라이브 자료입니다. 라이브 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "gallery-2007-boryeong-gyuri",
+    "date": "2020-03-09",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 2007 보령머드축제 현장 사진 자료",
+    "program": "보령머드축제",
+    "type": "event",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 보령머드축제 현장 사진 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=183768",
+      "publishedDate": "2020-03-09"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "보령머드축제"
+    ],
+    "note": "2007년 여름 보령머드축제에서 촬영한 남규리의 현장 사진 자료입니다. 정확한 촬영일 미상으로 자료 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "post-published",
+    "publishedDate": "2020-03-09"
   },
   {
     "id": "v491-sketchbook-20200306",
@@ -14375,6 +15633,75 @@
     "dateBasis": "interview"
   },
   {
+    "id": "20180525-gyuri-movieroom4",
+    "date": "2018-05-25",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 방구석1열 4회 · 데자뷰 이야기",
+    "program": "JTBC 방구석1열",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "JTBC 공식 · 데자뷰 역할 몰입 이야기",
+      "url": "https://www.youtube.com/watch?v=upDaeZO1nx8",
+      "publishedDate": "2018-05-25"
+    },
+    "additionalSources": [
+      {
+        "label": "JTBC 공식 · 데자뷰 촬영 에피소드",
+        "url": "https://www.youtube.com/watch?v=zoi0V8W8F6Y",
+        "publishedDate": "2018-05-25"
+      },
+      {
+        "label": "텐아시아 · 5월 25일 방송 안내",
+        "url": "https://www.tenasia.co.kr/article/2018052528264",
+        "publishedDate": "2018-05-25"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "JTBC 방구석1열"
+    ],
+    "note": "이규한과 함께 영화 데자뷰의 촬영 이야기를 나눈 4회 출연입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 4
+  },
+  {
+    "id": "20180525-gyuri-dejavu-screening",
+    "date": "2018-05-25",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 데자뷰 언론시사회·기자간담회",
+    "program": "영화 데자뷰 언론시사회",
+    "type": "interview",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "서울경제 · 당일 시사회 현장 보도",
+      "url": "https://www.sedaily.com/NewsView/1RZO5EX8ZV",
+      "publishedDate": "2018-05-25"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "영화 데자뷰 언론시사회"
+    ],
+    "note": "5월 25일 CGV 용산아이파크몰에서 열린 데자뷰 언론시사회 참석입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "CGV 용산아이파크몰"
+  },
+  {
     "id": "v490-sisters-20180521",
     "date": "2018-05-21",
     "addedAt": "2026-09-12",
@@ -14409,6 +15736,43 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast"
+  },
+  {
+    "id": "20180519-yeonji-boram-kia",
+    "date": "2018-05-19",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "김연지·이보람 · 광주-기아 챔피언스필드 행사",
+    "program": "광주-기아 챔피언스필드",
+    "type": "event",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "애국가",
+      "비의 노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "무등일보 · 현장 취재·시구 및 애국가",
+      "url": "https://www.mdilbo.com/detail/nVtPPU/542031"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야박물관 · 팬 보관 영상",
+        "url": "https://www.youtube.com/watch?v=y4WM47V60EY",
+        "publishedDate": "2020-04-08"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "광주-기아 챔피언스필드"
+    ],
+    "note": "김연지는 애국가와 비의 노래를 선보였고, 이보람은 시구에 참여했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event"
   },
   {
     "id": "v490-cinetown-20180516",
@@ -14975,6 +16339,40 @@
     "dateBasis": "broadcast"
   },
   {
+    "id": "20170811-gyuri-kindness",
+    "date": "2017-08-11",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 친절의 신 1회 · 홍콩 편",
+    "program": "KBS 친절의 신",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 교양",
+      "url": "https://www.youtube.com/watch?v=xOklnY6P6aA",
+      "publishedDate": "2017-08-11"
+    },
+    "additionalSources": [
+      {
+        "label": "스포츠조선 · 홍콩 편 방송 안내",
+        "url": "https://www.sportschosun.com/entertainment/2017-08-10/201708110100105660007434"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "KBS 친절의 신"
+    ],
+    "note": "장혁·류담과 함께한 1회 홍콩 여행 특집입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 1
+  },
+  {
     "id": "v490-acting-anna",
     "date": "2017-08-08",
     "addedAt": "2026-09-12",
@@ -15514,6 +16912,39 @@
     "dateBasis": "event",
     "endDate": "2016-10-16",
     "venue": "경희대학교 평화의전당"
+  },
+  {
+    "id": "20160923-gyuri-topgear7",
+    "date": "2016-09-23",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 탑기어 코리아 시즌7 2회",
+    "program": "XTM 탑기어 코리아 시즌7",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "sidusHQ · 촬영 현장 공개",
+      "url": "https://tv.naver.com/v/1127197"
+    },
+    "additionalSources": [
+      {
+        "label": "스포츠동아 · 2회 출연·방송일 안내",
+        "url": "https://sports.donga.com/ent/article/all/20160923/80413849/1"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "XTM 탑기어 코리아 시즌7"
+    ],
+    "note": "윤현민·남규리가 함께한 탑기어 코리아 시즌7 2회입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 2
   },
   {
     "id": "v490-noon-20160907",
@@ -16246,6 +17677,66 @@
     "episode": 174
   },
   {
+    "id": "20150807-gyuri-jungle173",
+    "date": "2015-08-07",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 정글의 법칙 173회 · 히든킹덤",
+    "program": "SBS 정글의 법칙",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Entertainment",
+      "url": "https://www.youtube.com/watch?v=3352b3a2xk0",
+      "publishedDate": "2015-08-08"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 정글의 법칙"
+    ],
+    "note": "카사바 채집 중 남규리의 부상과 치료 과정이 담긴 회차입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 173
+  },
+  {
+    "id": "20150731-gyuri-jungle172",
+    "date": "2015-07-31",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 정글의 법칙 172회 · 히든킹덤",
+    "program": "SBS 정글의 법칙",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Entertainment",
+      "url": "https://www.youtube.com/watch?v=GdxYFNTMBA4",
+      "publishedDate": "2015-07-31"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 정글의 법칙"
+    ],
+    "note": "불 피우기에 참여하는 남규리의 모습이 담긴 회차입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 172
+  },
+  {
     "id": "v490-jtbc-37",
     "date": "2015-07-28",
     "addedAt": "2026-09-12",
@@ -16279,6 +17770,36 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast"
+  },
+  {
+    "id": "20150724-gyuri-jungle171",
+    "date": "2015-07-24",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 정글의 법칙 171회 · 히든킹덤",
+    "program": "SBS 정글의 법칙",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Entertainment",
+      "url": "https://www.youtube.com/watch?v=m1clOgcNkWs",
+      "publishedDate": "2015-07-25"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 정글의 법칙"
+    ],
+    "note": "남규리·전효성의 생존 활동이 담긴 회차입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 171
   },
   {
     "id": "v490-immortal-2015-07-18",
@@ -16822,6 +18343,75 @@
     "note": "방송 날짜는 잠정입니다.",
     "dateStatus": "tentative",
     "dateBasis": "broadcast"
+  },
+  {
+    "id": "20150401-gyuri-invisible12",
+    "date": "2015-04-01",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 투명인간 12회 · 호텔리어 체험 2부",
+    "program": "KBS 투명인간",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS StarTV: 인물사전",
+      "url": "https://www.youtube.com/watch?v=gr-3lz0y9kQ",
+      "publishedDate": "2022-05-26"
+    },
+    "additionalSources": [
+      {
+        "label": "엑스포츠뉴스 · 4월 1일 호텔리어 체험 2부 보도",
+        "url": "https://www.xportsnews.com/article/569449"
+      },
+      {
+        "label": "스타뉴스 · 최종회 방송 및 회차별 방송일",
+        "url": "https://www.starnewskorea.com/broadcast-show/2015/04/02/2015040123040351036"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "KBS 투명인간"
+    ],
+    "note": "남규리가 함께한 호텔리어 체험 2부입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 12
+  },
+  {
+    "id": "20150325-gyuri-invisible11",
+    "date": "2015-03-25",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 투명인간 11회 · 호텔리어 체험 1부",
+    "program": "KBS 투명인간",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS StarTV: 인물사전",
+      "url": "https://www.youtube.com/watch?v=cwkQh77MmWQ",
+      "publishedDate": "2022-05-23"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "KBS 투명인간"
+    ],
+    "note": "남규리의 투명인간 11회 출연입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 11
   },
   {
     "id": "v490-tekken",
@@ -17455,6 +19045,43 @@
     "releaseType": "솔로·프로젝트 음반",
     "titleTracks": [
       "아파도 행복해"
+    ]
+  },
+  {
+    "id": "20130315-gyuri-sketchbook",
+    "date": "2013-03-15",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 유희열의 스케치북 · 버벌진트와 이게 사랑이 아니면",
+    "program": "KBS 유희열의 스케치북",
+    "type": "music-show",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "이게 사랑이 아니면"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS연예뉴스 · 3월 15일 합동 무대 보도",
+      "url": "https://ent.sbs.co.kr/news/article.do?article_id=E10002708863"
+    },
+    "additionalSources": [
+      {
+        "label": "스포츠경향 · 방송 출연 안내",
+        "url": "https://sports.khan.co.kr/article/201303151029063"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "KBS 유희열의 스케치북"
+    ],
+    "note": "버벌진트와 남규리가 함께한 방송 무대입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "collaborators": [
+      "버벌진트"
     ]
   },
   {
@@ -18655,6 +20282,46 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20110315-gyuri-strongheart68",
+    "date": "2011-03-15",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 강심장 68회 · 인형의 집 2부",
+    "program": "SBS 강심장",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미우새",
+      "url": "https://www.youtube.com/watch?v=pxvZ3Nv6p3A",
+      "publishedDate": "2011-03-28"
+    },
+    "additionalSources": [
+      {
+        "label": "강심장 · 남규리 댄스 클립",
+        "url": "https://www.youtube.com/watch?v=jFbJhHJ2YuE",
+        "publishedDate": "2011-03-28"
+      },
+      {
+        "label": "SBS · 68회 공식 다시보기",
+        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/strongheart/22000064322"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 강심장"
+    ],
+    "note": "남규리의 성대모사와 댄스가 담긴 강심장 68회입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 68
+  },
+  {
     "id": "v484-news-011",
     "date": "2011-03-14",
     "addedAt": "2026-09-12",
@@ -18760,6 +20427,41 @@
     "note": "제작발표회에서 밝힌 배역과 촬영 경험에 관한 기사.",
     "dateStatus": "confirmed",
     "dateBasis": "article-published"
+  },
+  {
+    "id": "20110308-gyuri-strongheart67",
+    "date": "2011-03-08",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 강심장 67회 · 인형의 집 1부",
+    "program": "SBS 강심장",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미우새",
+      "url": "https://www.youtube.com/watch?v=5ezEDMMikLQ",
+      "publishedDate": "2011-03-26"
+    },
+    "additionalSources": [
+      {
+        "label": "SBS · 67회 공식 다시보기·출연 안내",
+        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/strongheart/22000064321"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 강심장"
+    ],
+    "note": "남규리의 강심장 67회 출연입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 67
   },
   {
     "id": "v485-news-2132fdafc2f6",
@@ -19561,6 +21263,38 @@
     "trackCount": null,
     "collaborators": [],
     "titleTracks": []
+  },
+  {
+    "id": "20100820-gyuri-superstark2",
+    "date": "2010-08-20",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 슈퍼스타K2 · 제주 예선 심사위원",
+    "program": "Mnet 슈퍼스타K2",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "TV리포트 · 제주 예선 심사위원·방송일 안내",
+      "url": "https://news.nate.com/view/20100820n11726"
+    },
+    "additionalSources": [
+      {
+        "label": "스포츠경향 · 제주 예선 심사위원 참여",
+        "url": "https://sports.khan.co.kr/article/201008201737573"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "Mnet 슈퍼스타K2"
+    ],
+    "note": "남규리가 길·김태우와 함께 제주 예선 심사위원으로 참여했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v481-archive-022",
@@ -20603,6 +22337,46 @@
     ]
   },
   {
+    "id": "20091212-seeya-chocolate82",
+    "date": "2009-12-12",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 김정은의 초콜릿 82회 · 이영현과 합동 무대",
+    "program": "SBS 김정은의 초콜릿",
+    "type": "music-show",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "It's Raining Man"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 씨야·이영현 합동 무대",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/chocolate/22000286612"
+    },
+    "additionalSources": [
+      {
+        "label": "SBS · 82회 공식 출연 안내",
+        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/chocolate/22000053591"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "SBS 김정은의 초콜릿"
+    ],
+    "note": "김연지·이보람·수미가 함께한 씨야 활동기의 합동 무대입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 82,
+    "collaborators": [
+      "수미",
+      "이영현"
+    ]
+  },
+  {
     "id": "v481-archive-005",
     "date": "2009-12-06",
     "dateBasis": "broadcast",
@@ -20692,6 +22466,42 @@
       "라이브"
     ],
     "note": ""
+  },
+  {
+    "id": "20091204-seeya-sketchbook30",
+    "date": "2009-12-04",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 유희열의 스케치북 30회 · 난 남자가 있는데",
+    "program": "KBS 유희열의 스케치북",
+    "type": "music-show",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "collaborators": [
+      "수미"
+    ],
+    "songs": [
+      "난 남자가 있는데"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 공식 · 난 남자가 있는데 무대",
+      "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=4185s",
+      "publishedDate": "2026-05-07"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "KBS 유희열의 스케치북",
+      "커버 무대"
+    ],
+    "note": "김연지·이보람·수미가 유희열의 스케치북 30회에서 난 남자가 있는데를 선보인 무대입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 30
   },
   {
     "id": "v480-stage-015",
@@ -21456,6 +23266,42 @@
     "collaborators": [
       "수미"
     ]
+  },
+  {
+    "id": "gallery-gyuri-coco-marc1",
+    "date": "2009-10-19",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 코코앤마크 1회 · 스모키 메이크업",
+    "program": "올리브TV 코코앤마크",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 출연 장면과 영상 소개",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=187604",
+      "publishedDate": "2020-03-16"
+    },
+    "additionalSources": [
+      {
+        "label": "미니러브 · 팬 보관 영상",
+        "url": "https://www.youtube.com/watch?v=3j4eH10i6vo",
+        "publishedDate": "2009-10-19"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "올리브TV 코코앤마크"
+    ],
+    "note": "남규리가 출연한 코코앤마크 1회 자료입니다. 방송일 미상으로 팬 보관 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2009-10-19",
+    "episode": 1
   },
   {
     "id": "v485-news-b5716ffce2da",
@@ -22424,6 +24270,39 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20090127-gyuri-shallwedance",
+    "date": "2009-01-27",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 설특집 쉘 위 댄스 · 탱고",
+    "program": "KBS 설특집 가요계 톱스타 총집합! 쉘 위 댄스",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "대한민국댄스스포츠연맹 · 방송 안내",
+      "url": "https://www.kfd.or.kr/bbs/board.php?bo_table=notice&wr_id=629"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야박물관 · 팬 보관 영상",
+        "url": "https://www.youtube.com/watch?v=Evej65E_3EU",
+        "publishedDate": "2020-03-27"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "KBS 설특집 가요계 톱스타 총집합! 쉘 위 댄스"
+    ],
+    "note": "남규리의 탱고 무대입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v484-news-008",
     "date": "2008-12-17",
     "addedAt": "2026-09-12",
@@ -22520,6 +24399,50 @@
     "dateBasis": "broadcast",
     "activityYear": "2008",
     "publishedDate": "2020-03-28"
+  },
+  {
+    "id": "20081123-seeya-madamb",
+    "date": "2008-11-23",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 마담 B의 살롱 · 그 사람 / 좋을텐데",
+    "program": "Mnet 김윤아의 마담 B의 살롱",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "그 사람 (구두 III)",
+      "좋을텐데"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "seeyalover · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=oZls9PHJETQ",
+      "publishedDate": "2022-11-07"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야박물관 · 팬 보관 영상",
+        "url": "https://www.youtube.com/watch?v=U8Bvh3Wcx3Y",
+        "publishedDate": "2020-03-18"
+      },
+      {
+        "label": "씨야박물관 · 팬 보관 영상",
+        "url": "https://www.youtube.com/watch?v=b7CXgs_YfRc",
+        "publishedDate": "2020-03-21"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "Mnet 김윤아의 마담 B의 살롱"
+    ],
+    "note": "씨야의 마담B의 살롱 출연 자료로, 미방송 토크도 포함합니다. 방송 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v480-stage-036",
@@ -23567,6 +25490,40 @@
     "publishedDate": "2012-04-23"
   },
   {
+    "id": "20080712-gyuri-starfriend7",
+    "date": "2008-07-12",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 스타의 친구를 소개합니다 7회",
+    "program": "MBC 스타의 친구를 소개합니다",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBC 공식 · 두 번째 이야기",
+      "url": "https://www.youtube.com/watch?v=OyJonmYm7mc"
+    },
+    "additionalSources": [
+      {
+        "label": "이데일리 · 두 주 방송 출연 보도",
+        "url": "https://v.daum.net/v/20080712182702499",
+        "publishedDate": "2008-07-12"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "MBC 스타의 친구를 소개합니다"
+    ],
+    "note": "남규리가 친구를 소개하는 주선자로 출연한 방송입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 7
+  },
+  {
     "id": "v482-event-006",
     "date": "2008-07-11",
     "dateStatus": "tentative",
@@ -23595,6 +25552,40 @@
     ],
     "note": "리조트 축제의 출연진으로 안내된 일정입니다. 7월 11일~8월 17일은 축제 전체 기간이며 씨야의 개별 출연일은 미상입니다.",
     "endDate": "2008-08-17"
+  },
+  {
+    "id": "20080705-gyuri-starfriend6",
+    "date": "2008-07-05",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 스타의 친구를 소개합니다 6회",
+    "program": "MBC 스타의 친구를 소개합니다",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBC 공식 · 첫 대면·미션",
+      "url": "https://www.youtube.com/watch?v=Ka07tmkE3h8"
+    },
+    "additionalSources": [
+      {
+        "label": "이데일리 · 두 주 방송 출연 보도",
+        "url": "https://v.daum.net/v/20080712182702499",
+        "publishedDate": "2008-07-12"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "MBC 스타의 친구를 소개합니다"
+    ],
+    "note": "남규리가 친구를 소개하는 주선자로 출연한 방송입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 6
   },
   {
     "id": "v485-news-3816651d1b26",
@@ -23872,6 +25863,38 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20080419-seeya-gyeongbuk",
+    "date": "2008-04-19",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 경북 미인대회 축하무대 · 그래도 좋아",
+    "program": "경북 미인대회",
+    "type": "event",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "그래도 좋아"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=XQe6Vme4i0E",
+      "publishedDate": "2020-03-21"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "경북 미인대회"
+    ],
+    "note": "경북 미인대회 축하무대 보관 자료입니다. 행사 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
+  },
+  {
     "id": "v480-stage-002",
     "date": "2008-04-13",
     "dateStatus": "confirmed",
@@ -24044,6 +26067,36 @@
     "trackCount": null,
     "collaborators": [],
     "titleTracks": []
+  },
+  {
+    "id": "20080303-seeya-tax-service",
+    "date": "2008-03-03",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 일일 명예민원봉사실장 위촉 현장",
+    "program": "일일 명예민원봉사실장 위촉",
+    "type": "event",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=MzeIp8e3ypg",
+      "publishedDate": "2020-03-25"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "일일 명예민원봉사실장 위촉"
+    ],
+    "note": "씨야의 일일 명예민원봉사실장 위촉 현장입니다. 행사 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "event"
   },
   {
     "id": "v485-news-cd93b5765fcb",
@@ -24594,6 +26647,38 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20080105-seeya-love-request",
+    "date": "2008-01-05",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 사랑의 리퀘스트 · 슬픈 발걸음",
+    "program": "KBS 사랑의 리퀘스트",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "슬픈 발걸음"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=2NEn0Ffus2g",
+      "publishedDate": "2020-03-10"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "KBS 사랑의 리퀘스트"
+    ],
+    "note": "방송 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v480-stage-033",
     "date": "2008-01-04",
     "dateStatus": "confirmed",
@@ -24789,6 +26874,40 @@
     "note": "12월 22일 열린 시상식 축하 무대를 담은 사진 기사.",
     "dateStatus": "confirmed",
     "dateBasis": "article-published"
+  },
+  {
+    "id": "20071223-gyuri-impossible",
+    "date": "2007-12-23",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 불가능은 없다 · 마카오 번지점프",
+    "program": "MBC 일요일 일요일 밤에 · 불가능은 없다",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "한국경제 · 12월 23일 방송 보도",
+      "url": "https://news.nate.com/view/20071224n18903",
+      "publishedDate": "2007-12-24"
+    },
+    "additionalSources": [
+      {
+        "label": "뉴스엔 · 남규리 번지점프 출연 보도",
+        "url": "https://m.news.nate.com/view/20071224n02104?mid=e02",
+        "publishedDate": "2007-12-24"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "MBC 일요일 일요일 밤에 · 불가능은 없다"
+    ],
+    "note": "남규리가 마카오 타워에서 번지점프에 도전한 방송입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
   },
   {
     "id": "20071222-mbc-musiccore-sad-step",
@@ -25716,6 +27835,38 @@
     "publishedDate": "2019-08-16"
   },
   {
+    "id": "20070830-seeya-mcount",
+    "date": "2007-08-30",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 엠카운트다운 · 결혼할까요",
+    "program": "Mnet 엠카운트다운",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "결혼할까요"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=uMPhy9E_hHw",
+      "publishedDate": "2020-03-09"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "Mnet 엠카운트다운"
+    ],
+    "note": "방송 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v480-stage-048",
     "date": "2007-08-26",
     "dateStatus": "confirmed",
@@ -25805,6 +27956,38 @@
     "note": "8월 16일 무대 사진으로, 기사 게시일은 8월 17일입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "article-published"
+  },
+  {
+    "id": "20070816-seeya-mcount",
+    "date": "2007-08-16",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 엠카운트다운 · 결혼할까요",
+    "program": "Mnet 엠카운트다운",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "결혼할까요"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=hkP26XJfSVs",
+      "publishedDate": "2020-03-19"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "Mnet 엠카운트다운"
+    ],
+    "note": "방송 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v481-archive-004",
@@ -26421,6 +28604,36 @@
     ],
     "note": "윤하의 미션 상대인 씨야가 등장하는 클립. 씨야가 본편의 대결 주인공인 회차는 아닙니다.",
     "publishedDate": "2012-08-09"
+  },
+  {
+    "id": "20070630-seeya-big4-making",
+    "date": "2007-06-30",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 연예가중계 · BIG4 화보 촬영 현장",
+    "program": "KBS 연예가중계",
+    "type": "interview",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=w7qt2_tR-EM",
+      "publishedDate": "2020-03-26"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "KBS 연예가중계"
+    ],
+    "note": "BIG4 콘서트 화보 촬영 현장을 다룬 방송입니다. 날짜는 잠정 방송일입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v485-news-00151648bffd",
@@ -27181,6 +29394,52 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20070507-seeya-wedding-showcase",
+    "date": "2007-05-07",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 못말리는 결혼 대규모 시사회·축하공연",
+    "program": "못말리는 결혼 음악 시사회",
+    "type": "event",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "미워요",
+      "깊은 밤을 날아서"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제작·배급 홍보자료 · 시사회 공연 기록",
+      "url": "https://www.newswire.co.kr/newsRead.php?no=252727"
+    },
+    "additionalSources": [
+      {
+        "label": "뉴스엔 · 현장 취재",
+        "url": "https://news.nate.com/view/20070507n15605"
+      },
+      {
+        "label": "뉴스엔 · 남규리 깊은 밤을 날아서",
+        "url": "https://news.nate.com/view/20070508n04694"
+      },
+      {
+        "label": "씨야박물관 · 팬 보관 영상",
+        "url": "https://www.youtube.com/watch?v=sJ0cwg4525Y",
+        "publishedDate": "2020-03-10"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "못말리는 결혼 음악 시사회"
+    ],
+    "note": "5월 7일 올림픽홀 영화 시사회에서 선보인 씨야의 공연입니다. 미워요와 남규리의 깊은 밤을 날아서 무대를 볼 수 있습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event"
+  },
+  {
     "id": "v474-stage-research-043",
     "date": "2007-05-05",
     "dateStatus": "confirmed",
@@ -27236,6 +29495,34 @@
     "note": "박태환과 함께 영화를 관람한 시사회 기사입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "article-published"
+  },
+  {
+    "id": "20070430-gyuri-yashim209",
+    "date": "2007-04-30",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 야심만만 209회",
+    "program": "SBS 야심만만 만명에게 물었습니다",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 209회 공식 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/yashimmanman/22000020059"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "SBS 야심만만 만명에게 물었습니다"
+    ],
+    "note": "남규리의 야심만만 209회 출연입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 209
   },
   {
     "id": "v485-news-c96ab22a176d",
@@ -27897,6 +30184,36 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20060929-seeya-musicwave51",
+    "date": "2006-09-29",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 김윤아의 뮤직웨이브 51회",
+    "program": "SBS 김윤아의 뮤직웨이브",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 공식 회차 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/musicwave/22000032007"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "SBS 김윤아의 뮤직웨이브"
+    ],
+    "note": "씨야와 브라운아이드걸스의 합동 무대입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 51
+  },
+  {
     "id": "v485-news-87c60d87d23f",
     "date": "2006-09-28",
     "addedAt": "2026-09-12",
@@ -27953,6 +30270,38 @@
     "note": "쥬크온 운영사가 발표한 프로젝트곡의 주간 1위 소식.",
     "dateStatus": "confirmed",
     "dateBasis": "article-published"
+  },
+  {
+    "id": "20060924-seeya-funfun",
+    "date": "2006-09-24",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 박명수의 펀펀 라디오 · 구두 무반주",
+    "program": "MBC 박명수의 펀펀 라디오",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=wM79rXkXj4E",
+      "publishedDate": "2020-04-10"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "MBC 박명수의 펀펀 라디오"
+    ],
+    "note": "씨야의 짧은 무반주 라이브 클립입니다. 방송 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v485-news-c744bf76e17c",
@@ -28461,6 +30810,42 @@
     "publishedDate": "2018-04-13"
   },
   {
+    "id": "20060808-seeya-hellochat",
+    "date": "2006-08-08",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 헬로우챗 · 미친 사랑의 노래 활동",
+    "program": "Mnet 헬로우챗",
+    "type": "variety",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야박물관 · 팬 보관 영상",
+      "url": "https://www.youtube.com/watch?v=xnyLLKsv5Lg",
+      "publishedDate": "2020-03-20"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야박물관 · 팬 보관 영상",
+        "url": "https://www.youtube.com/watch?v=cNdbh_COkv4",
+        "publishedDate": "2020-03-20"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "Mnet 헬로우챗"
+    ],
+    "note": "씨야의 헬로우 챗 출연 전반·후반 영상입니다. 방송 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v485-news-0a27853fc8bb",
     "date": "2006-08-07",
     "addedAt": "2026-09-12",
@@ -28932,6 +31317,36 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20060609-seeya-musicwave40",
+    "date": "2006-06-09",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 김윤아의 뮤직웨이브 40회",
+    "program": "SBS 김윤아의 뮤직웨이브",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 공식 회차 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/musicwave/22000031996"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "SBS 김윤아의 뮤직웨이브"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 40
+  },
+  {
     "id": "v485-news-2628cb13661a",
     "date": "2006-05-22",
     "addedAt": "2026-09-12",
@@ -29366,6 +31781,39 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20060324-seeya-musicwave32",
+    "date": "2006-03-24",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "씨야 · 김윤아의 뮤직웨이브 32회",
+    "program": "SBS 김윤아의 뮤직웨이브",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기",
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 공식 회차 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/musicwave/22000031988"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "SBS 김윤아의 뮤직웨이브"
+    ],
+    "note": "여인의 향기·구두를 선보인 씨야의 라이브입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 32
+  },
+  {
     "id": "v485-news-c647aee4f082",
     "date": "2006-03-21",
     "addedAt": "2026-09-12",
@@ -29575,2345 +32023,5 @@
     "titleTracks": [
       "여인의 향기"
     ]
-  },
-  {
-    "id": "v4110-boram-inears",
-    "date": "2020-05-12",
-    "addedAt": "2026-09-17",
-    "title": "이보람 · 커스텀 인이어 제작기",
-    "program": "보람씨야",
-    "type": "official",
-    "members": [
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "보람씨야 · 원본 영상",
-      "url": "https://www.youtube.com/watch?v=1fjX0ibzUlE"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "공식 콘텐츠",
-      "비하인드",
-      "인이어"
-    ],
-    "note": "날짜는 영상 공개일이며 촬영일은 미상입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-05-12"
-  },
-  {
-    "id": "v4110-yeonji-inears-live",
-    "date": "2020-08-05",
-    "addedAt": "2026-09-17",
-    "title": "김연지 · 인이어 언박싱 라이브",
-    "program": "김연지 Official",
-    "type": "official",
-    "members": [
-      "김연지"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "김연지 Official · 원본 영상",
-      "url": "https://www.youtube.com/watch?v=YpaUJoDM_MM"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "공식 콘텐츠",
-      "비하인드",
-      "인이어"
-    ],
-    "note": "날짜는 영상 공개일이며 촬영일은 미상입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-08-05"
-  },
-  {
-    "id": "v4110-yeonji-inears-behind",
-    "date": "2020-08-11",
-    "addedAt": "2026-09-17",
-    "title": "김연지 · 첫 커스텀 인이어 제작 비하인드",
-    "program": "김연지 Official",
-    "type": "official",
-    "members": [
-      "김연지"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "김연지 Official · 원본 영상",
-      "url": "https://www.youtube.com/watch?v=uSWmUJF6Oeg"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "공식 콘텐츠",
-      "비하인드",
-      "인이어"
-    ],
-    "note": "날짜는 영상 공개일이며 촬영일은 미상입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-08-11"
-  },
-  {
-    "id": "v4110-boram-gallery-message",
-    "date": "2021-02-22",
-    "addedAt": "2026-09-17",
-    "title": "이보람 · 씨야 갤러리에 생일 선물 감사 인사",
-    "program": "씨야 갤러리 공개 인사",
-    "type": "official",
-    "members": [
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야 갤러리 · 이보람 공개 글",
-      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=217256"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "공식 콘텐츠",
-      "팬 소통"
-    ],
-    "note": "편지·생일 축하 영상·선물에 대해 이보람이 남긴 공개 감사 글입니다. 날짜는 글 작성일입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "post-published",
-    "publishedDate": "2021-02-22"
-  },
-  {
-    "id": "20260916-seeya-october-tour-message",
-    "date": "2026-09-16",
-    "addedAt": "2026-09-18",
-    "title": "씨야 · THE FAN 10월 전국투어 안내 영상",
-    "program": "SEEYA Official",
-    "type": "official",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SEEYA Official · 원본 안내 영상",
-      "url": "https://www.youtube.com/watch?v=b7NzrBXnWnI"
-    },
-    "additionalSources": [
-      {
-        "label": "씨야 갤러리 · 영상 공유",
-        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8441"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "2026",
-      "공식 콘텐츠",
-      "THE FAN"
-    ],
-    "note": "고양(10월 4일)·청주(10월 10일)·수원(10월 17일)·인천(10월 31일) 투어 일정을 소개하는 공식 안내 영상입니다. 날짜는 영상 공개일입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
-    "publishedDate": "2026-09-16"
-  },
-  {
-    "id": "20260920-gyuri-gwangju-charity",
-    "date": "2026-09-20",
-    "addedAt": "2026-09-18",
-    "title": "남규리 · 어깨동무 연예인봉사단 자선공연 출연 예정",
-    "program": "한마음 대축제 · 어깨동무 연예인봉사단 자선공연",
-    "type": "event",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "9월 18일 공유된 변경 포스터 · 공식 원문 확인 전",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8548"
-    },
-    "additionalSources": [
-      {
-        "label": "9월 17일 공유된 이전 포스터 · 시간 상이",
-        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8528"
-      }
-    ],
-    "status": "documented",
-    "eventState": "scheduled",
-    "tags": [
-      "2026",
-      "예정",
-      "광주",
-      "자선공연"
-    ],
-    "note": "9월 20일 광주교육대학교 제1운동장에서 열리는 행사에 남규리가 출연할 예정입니다. 새 포스터는 낮 12시 시작으로 안내하지만 이전 포스터의 오후 7시와 달라, 방문 전 최종 시간 확인이 필요합니다. 일정은 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "event",
-    "venue": "광주교육대학교 제1운동장",
-    "updatedAt": "2026-09-18"
-  },
-  {
-    "id": "20260921-gyuri-mbc-noon-dj",
-    "date": "2026-09-21",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · MBC 정오의 희망곡 스페셜 DJ 예정",
-    "program": "정오의 희망곡 김신영입니다",
-    "type": "radio",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "MBC RADIO · 스페셜 DJ 공식 라이브 안내",
-      "url": "https://www.youtube.com/watch?v=pOqhfoHhW9A"
-    },
-    "additionalSources": [],
-    "status": "documented",
-    "eventState": "scheduled",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "tags": [
-      "2026",
-      "예정",
-      "라디오",
-      "스페셜 DJ"
-    ],
-    "note": "9월 21일 낮 12시 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다."
-  },
-  {
-    "id": "20110308-gyuri-strongheart67",
-    "date": "2011-03-08",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 강심장 67회 · 인형의 집 1부",
-    "program": "SBS 강심장",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "미우새",
-      "url": "https://www.youtube.com/watch?v=5ezEDMMikLQ",
-      "publishedDate": "2011-03-26"
-    },
-    "additionalSources": [
-      {
-        "label": "SBS · 67회 공식 다시보기·출연 안내",
-        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/strongheart/22000064321"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "예능",
-      "SBS 강심장"
-    ],
-    "note": "남규리의 강심장 67회 출연입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 67
-  },
-  {
-    "id": "20110315-gyuri-strongheart68",
-    "date": "2011-03-15",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 강심장 68회 · 인형의 집 2부",
-    "program": "SBS 강심장",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "미우새",
-      "url": "https://www.youtube.com/watch?v=pxvZ3Nv6p3A",
-      "publishedDate": "2011-03-28"
-    },
-    "additionalSources": [
-      {
-        "label": "강심장 · 남규리 댄스 클립",
-        "url": "https://www.youtube.com/watch?v=jFbJhHJ2YuE",
-        "publishedDate": "2011-03-28"
-      },
-      {
-        "label": "SBS · 68회 공식 다시보기",
-        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/strongheart/22000064322"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "예능",
-      "SBS 강심장"
-    ],
-    "note": "남규리의 성대모사와 댄스가 담긴 강심장 68회입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 68
-  },
-  {
-    "id": "20150325-gyuri-invisible11",
-    "date": "2015-03-25",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 투명인간 11회 · 호텔리어 체험 1부",
-    "program": "KBS 투명인간",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "KBS StarTV: 인물사전",
-      "url": "https://www.youtube.com/watch?v=cwkQh77MmWQ",
-      "publishedDate": "2022-05-23"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "KBS 투명인간"
-    ],
-    "note": "남규리의 투명인간 11회 출연입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 11
-  },
-  {
-    "id": "20150401-gyuri-invisible12",
-    "date": "2015-04-01",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 투명인간 12회 · 호텔리어 체험 2부",
-    "program": "KBS 투명인간",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "KBS StarTV: 인물사전",
-      "url": "https://www.youtube.com/watch?v=gr-3lz0y9kQ",
-      "publishedDate": "2022-05-26"
-    },
-    "additionalSources": [
-      {
-        "label": "엑스포츠뉴스 · 4월 1일 호텔리어 체험 2부 보도",
-        "url": "https://www.xportsnews.com/article/569449"
-      },
-      {
-        "label": "스타뉴스 · 최종회 방송 및 회차별 방송일",
-        "url": "https://www.starnewskorea.com/broadcast-show/2015/04/02/2015040123040351036"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "예능",
-      "KBS 투명인간"
-    ],
-    "note": "남규리가 함께한 호텔리어 체험 2부입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 12
-  },
-  {
-    "id": "20150724-gyuri-jungle171",
-    "date": "2015-07-24",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 정글의 법칙 171회 · 히든킹덤",
-    "program": "SBS 정글의 법칙",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS Entertainment",
-      "url": "https://www.youtube.com/watch?v=m1clOgcNkWs",
-      "publishedDate": "2015-07-25"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "SBS 정글의 법칙"
-    ],
-    "note": "남규리·전효성의 생존 활동이 담긴 회차입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 171
-  },
-  {
-    "id": "20150731-gyuri-jungle172",
-    "date": "2015-07-31",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 정글의 법칙 172회 · 히든킹덤",
-    "program": "SBS 정글의 법칙",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS Entertainment",
-      "url": "https://www.youtube.com/watch?v=GdxYFNTMBA4",
-      "publishedDate": "2015-07-31"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "SBS 정글의 법칙"
-    ],
-    "note": "불 피우기에 참여하는 남규리의 모습이 담긴 회차입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 172
-  },
-  {
-    "id": "20150807-gyuri-jungle173",
-    "date": "2015-08-07",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 정글의 법칙 173회 · 히든킹덤",
-    "program": "SBS 정글의 법칙",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS Entertainment",
-      "url": "https://www.youtube.com/watch?v=3352b3a2xk0",
-      "publishedDate": "2015-08-08"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "SBS 정글의 법칙"
-    ],
-    "note": "카사바 채집 중 남규리의 부상과 치료 과정이 담긴 회차입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 173
-  },
-  {
-    "id": "20210406-gyuri-onoff",
-    "date": "2021-04-06",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 온앤오프 · 일상과 복싱",
-    "program": "tvN 온앤오프",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "샾잉 #ing",
-      "url": "https://www.youtube.com/watch?v=dEDW2QwGTxw",
-      "publishedDate": "2021-04-08"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "tvN 온앤오프"
-    ],
-    "note": "남규리의 온앤오프 출연입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20221128-boram-freedoctor81",
-    "date": "2022-11-28",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "이보람 · 프리한 닥터M 81회",
-    "program": "tvN 프리한 닥터M",
-    "type": "variety",
-    "members": [
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "tvN Joy",
-      "url": "https://www.youtube.com/watch?v=188HU9L7rzk",
-      "publishedDate": "2022-11-29"
-    },
-    "additionalSources": [
-      {
-        "label": "tvN · 이보람 편 하이라이트",
-        "url": "https://www.youtube.com/watch?v=W8C1hEJhP6E",
-        "publishedDate": "2022-11-29"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "예능",
-      "tvN 프리한 닥터M"
-    ],
-    "note": "씨야 활동과 공백기, WSG워너비 활동을 돌아보는 토크입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 81
-  },
-  {
-    "id": "20231031-yeonji-returnking4",
-    "date": "2023-10-31",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "김연지 · DK와 복학가왕 4화",
-    "program": "복학가왕",
-    "type": "variety",
-    "members": [
-      "김연지"
-    ],
-    "songs": [
-      "미친 사랑의 노래",
-      "혼자 왔어요"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "스튜디오 지지지",
-      "url": "https://www.youtube.com/watch?v=GR7v1z34x9o",
-      "publishedDate": "2023-10-31"
-    },
-    "additionalSources": [
-      {
-        "label": "복학가왕 · 미친 사랑의 노래 라이브",
-        "url": "https://www.youtube.com/watch?v=22cUW7asxWs",
-        "publishedDate": "2023-10-24"
-      },
-      {
-        "label": "복학가왕 · 혼자 왔어요 라이브",
-        "url": "https://www.youtube.com/watch?v=xth4PZBByr4",
-        "publishedDate": "2023-10-26"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "예능",
-      "복학가왕"
-    ],
-    "note": "DK·김연지의 토크와 듀엣 라이브입니다. 날짜는 영상 공개일입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
-    "episode": 4,
-    "publishedDate": "2023-10-31"
-  },
-  {
-    "id": "20230627-gyuri-game3",
-    "date": "2023-06-27",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 게임광규리 3화 · 이석훈과 게임 대결",
-    "program": "게임광규리",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "M드로메다 스튜디오",
-      "url": "https://www.youtube.com/watch?v=0vlBCQ2TqWQ",
-      "publishedDate": "2023-06-27"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "게임광규리"
-    ],
-    "note": "날짜는 영상 공개일입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
-    "episode": 3,
-    "publishedDate": "2023-06-27"
-  },
-  {
-    "id": "20230711-gyuri-game5",
-    "date": "2023-07-11",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 게임광규리 5화 · 이세영·넉살·CIX BX와 축구 게임 대결",
-    "program": "게임광규리",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "M드로메다 스튜디오",
-      "url": "https://www.youtube.com/watch?v=zfUAUTofSls",
-      "publishedDate": "2023-07-11"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "게임광규리"
-    ],
-    "note": "날짜는 영상 공개일입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
-    "episode": 5,
-    "publishedDate": "2023-07-11"
-  },
-  {
-    "id": "20240429-gyuri-hypeboy3",
-    "date": "2024-04-29",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 하입보이스카웃 3회",
-    "program": "ENA 하입보이스카웃",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "ENA 이엔에이",
-      "url": "https://www.youtube.com/watch?v=s7icCqjKF3A",
-      "publishedDate": "2024-04-29"
-    },
-    "additionalSources": [
-      {
-        "label": "일간스포츠 · 4월 29일 3회 방송 보도",
-        "url": "https://m.news.nate.com/view/20240429n36994"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "예능",
-      "ENA 하입보이스카웃"
-    ],
-    "note": "남규리의 오디션 토크 출연입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 3
-  },
-  {
-    "id": "20220514-boram-hangout",
-    "date": "2022-05-14",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "이보람 · 놀면 뭐하니? · WSG워너비 대청봉 조 경연",
-    "program": "MBC 놀면 뭐하니?",
-    "type": "variety",
-    "members": [
-      "이보람"
-    ],
-    "songs": [
-      "You And I"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "놀면 뭐하니?",
-      "url": "https://www.youtube.com/watch?v=RaCg40e8gAU",
-      "publishedDate": "2022-05-14"
-    },
-    "additionalSources": [
-      {
-        "label": "iMBC · 대청봉 조 구성 및 경연 안내",
-        "url": "https://enews.imbc.com/M/Detail/347733"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "예능",
-      "MBC 놀면 뭐하니?"
-    ],
-    "note": "대청봉 조 블라인드 오디션에 ‘이성경’이라는 가명으로 참여했습니다. 이성경의 정체는 5월 28일 방송에서 이보람으로 공개됐습니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20220528-boram-hangout",
-    "date": "2022-05-28",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "이보람 · 놀면 뭐하니? · WSG워너비 이성경 정체 공개",
-    "program": "MBC 놀면 뭐하니?",
-    "type": "variety",
-    "members": [
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "MBCentertainment",
-      "url": "https://www.youtube.com/watch?v=4LOX-hnrTVc",
-      "publishedDate": "2022-05-28"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "MBC 놀면 뭐하니?"
-    ],
-    "note": "블라인드 오디션 참가자 ‘이성경’의 정체가 이보람으로 공개된 방송입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20220709-boram-hangout",
-    "date": "2022-07-09",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "이보람 · 놀면 뭐하니? · WSG워너비 데뷔곡 라이브 청음회",
-    "program": "MBC 놀면 뭐하니?",
-    "type": "variety",
-    "members": [
-      "이보람"
-    ],
-    "songs": [
-      "그때 그 순간 그대로"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "놀면 뭐하니?",
-      "url": "https://www.youtube.com/watch?v=X9GzIC93VF0",
-      "publishedDate": "2022-07-09"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "MBC 놀면 뭐하니?"
-    ],
-    "note": "이보람이 속한 가야G의 WSG워너비 청음회입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20220716-boram-hangout",
-    "date": "2022-07-16",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "이보람 · 놀면 뭐하니? · 가야G 첫 쇼케이스",
-    "program": "MBC 놀면 뭐하니?",
-    "type": "variety",
-    "members": [
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "TV-People",
-      "url": "https://www.youtube.com/watch?v=cojgPoISAf0",
-      "publishedDate": "2023-04-08"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "예능",
-      "MBC 놀면 뭐하니?"
-    ],
-    "note": "이보람·소연·HYNN·정지소가 함께한 가야G 출연입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20220806-boram-hangout",
-    "date": "2022-08-06",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "이보람 · 놀면 뭐하니? · WSG워너비 언니즈 무대",
-    "program": "MBC 놀면 뭐하니?",
-    "type": "variety",
-    "members": [
-      "이보람"
-    ],
-    "songs": [
-      "Ma Boy"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "MBCentertainment",
-      "url": "https://www.youtube.com/watch?v=RXVBCvW1gLc",
-      "publishedDate": "2022-08-06"
-    },
-    "additionalSources": [
-      {
-        "label": "MBC · 언니즈 출연진·149회 공식 클립",
-        "url": "https://playvod.imbc.com/Vod/ClipPlay?broadcastId=1004711100716100007"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "예능",
-      "MBC 놀면 뭐하니?"
-    ],
-    "note": "윤은혜·이보람·나비가 함께한 무대입니다. 날짜는 콘서트 개최일이 아닌 방송일입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20060324-seeya-musicwave32",
-    "date": "2006-03-24",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 김윤아의 뮤직웨이브 32회",
-    "program": "SBS 김윤아의 뮤직웨이브",
-    "type": "music-show",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "여인의 향기",
-      "구두"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS · 공식 회차 안내·다시보기",
-      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/musicwave/22000031988"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "SBS 김윤아의 뮤직웨이브"
-    ],
-    "note": "여인의 향기·구두를 선보인 씨야의 라이브입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 32
-  },
-  {
-    "id": "20060609-seeya-musicwave40",
-    "date": "2006-06-09",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 김윤아의 뮤직웨이브 40회",
-    "program": "SBS 김윤아의 뮤직웨이브",
-    "type": "music-show",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS · 공식 회차 안내·다시보기",
-      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/musicwave/22000031996"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "SBS 김윤아의 뮤직웨이브"
-    ],
-    "note": "",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 40
-  },
-  {
-    "id": "20060929-seeya-musicwave51",
-    "date": "2006-09-29",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 김윤아의 뮤직웨이브 51회",
-    "program": "SBS 김윤아의 뮤직웨이브",
-    "type": "music-show",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS · 공식 회차 안내·다시보기",
-      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/musicwave/22000032007"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "SBS 김윤아의 뮤직웨이브"
-    ],
-    "note": "씨야와 브라운아이드걸스의 합동 무대입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 51
-  },
-  {
-    "id": "20091212-seeya-chocolate82",
-    "date": "2009-12-12",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 김정은의 초콜릿 82회 · 이영현과 합동 무대",
-    "program": "SBS 김정은의 초콜릿",
-    "type": "music-show",
-    "members": [
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "It's Raining Man"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS · 씨야·이영현 합동 무대",
-      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/chocolate/22000286612"
-    },
-    "additionalSources": [
-      {
-        "label": "SBS · 82회 공식 출연 안내",
-        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/chocolate/22000053591"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "SBS 김정은의 초콜릿"
-    ],
-    "note": "김연지·이보람·수미가 함께한 씨야 활동기의 합동 무대입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 82,
-    "collaborators": [
-      "수미",
-      "이영현"
-    ]
-  },
-  {
-    "id": "20130315-gyuri-sketchbook",
-    "date": "2013-03-15",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 유희열의 스케치북 · 버벌진트와 이게 사랑이 아니면",
-    "program": "KBS 유희열의 스케치북",
-    "type": "music-show",
-    "members": [
-      "남규리"
-    ],
-    "songs": [
-      "이게 사랑이 아니면"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS연예뉴스 · 3월 15일 합동 무대 보도",
-      "url": "https://ent.sbs.co.kr/news/article.do?article_id=E10002708863"
-    },
-    "additionalSources": [
-      {
-        "label": "스포츠경향 · 방송 출연 안내",
-        "url": "https://sports.khan.co.kr/article/201303151029063"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "KBS 유희열의 스케치북"
-    ],
-    "note": "버벌진트와 남규리가 함께한 방송 무대입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "collaborators": [
-      "버벌진트"
-    ]
-  },
-  {
-    "id": "20200311-yeonji-trot6",
-    "date": "2020-03-11",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "김연지 · 나는 트로트 가수다 6회 · 유지나와 낭만에 대하여",
-    "program": "MBC every1 나는 트로트 가수다",
-    "type": "music-show",
-    "members": [
-      "김연지"
-    ],
-    "songs": [
-      "낭만에 대하여"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "트롯869",
-      "url": "https://www.youtube.com/watch?v=gIxwya06UbI",
-      "publishedDate": "2020-03-12"
-    },
-    "additionalSources": [
-      {
-        "label": "텐아시아 · 3월 11일 듀엣 경연 방송 안내",
-        "url": "https://www.tenasia.co.kr/article/2020031132484"
-      },
-      {
-        "label": "트롯869 · 6회 공식 예고편",
-        "url": "https://www.youtube.com/watch?v=dcgVPRXqp0c",
-        "publishedDate": "2020-03-05"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "MBC every1 나는 트로트 가수다"
-    ],
-    "note": "김연지·유지나가 함께 낭만에 대하여를 선보인 6회 무대입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 6,
-    "collaborators": [
-      "유지나"
-    ]
-  },
-  {
-    "id": "20170811-gyuri-kindness",
-    "date": "2017-08-11",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 친절의 신 1회 · 홍콩 편",
-    "program": "KBS 친절의 신",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "KBS 교양",
-      "url": "https://www.youtube.com/watch?v=xOklnY6P6aA",
-      "publishedDate": "2017-08-11"
-    },
-    "additionalSources": [
-      {
-        "label": "스포츠조선 · 홍콩 편 방송 안내",
-        "url": "https://www.sportschosun.com/entertainment/2017-08-10/201708110100105660007434"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "KBS 친절의 신"
-    ],
-    "note": "장혁·류담과 함께한 1회 홍콩 여행 특집입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 1
-  },
-  {
-    "id": "20160923-gyuri-topgear7",
-    "date": "2016-09-23",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 탑기어 코리아 시즌7 2회",
-    "program": "XTM 탑기어 코리아 시즌7",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "sidusHQ · 촬영 현장 공개",
-      "url": "https://tv.naver.com/v/1127197"
-    },
-    "additionalSources": [
-      {
-        "label": "스포츠동아 · 2회 출연·방송일 안내",
-        "url": "https://sports.donga.com/ent/article/all/20160923/80413849/1"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "XTM 탑기어 코리아 시즌7"
-    ],
-    "note": "윤현민·남규리가 함께한 탑기어 코리아 시즌7 2회입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 2
-  },
-  {
-    "id": "20070430-gyuri-yashim209",
-    "date": "2007-04-30",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 야심만만 209회",
-    "program": "SBS 야심만만 만명에게 물었습니다",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS · 209회 공식 출연 안내·다시보기",
-      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/yashimmanman/22000020059"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "SBS 야심만만 만명에게 물었습니다"
-    ],
-    "note": "남규리의 야심만만 209회 출연입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 209
-  },
-  {
-    "id": "20100820-gyuri-superstark2",
-    "date": "2010-08-20",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 슈퍼스타K2 · 제주 예선 심사위원",
-    "program": "Mnet 슈퍼스타K2",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "TV리포트 · 제주 예선 심사위원·방송일 안내",
-      "url": "https://news.nate.com/view/20100820n11726"
-    },
-    "additionalSources": [
-      {
-        "label": "스포츠경향 · 제주 예선 심사위원 참여",
-        "url": "https://sports.khan.co.kr/article/201008201737573"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "Mnet 슈퍼스타K2"
-    ],
-    "note": "남규리가 길·김태우와 함께 제주 예선 심사위원으로 참여했습니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20090127-gyuri-shallwedance",
-    "date": "2009-01-27",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 설특집 쉘 위 댄스 · 탱고",
-    "program": "KBS 설특집 가요계 톱스타 총집합! 쉘 위 댄스",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "대한민국댄스스포츠연맹 · 방송 안내",
-      "url": "https://www.kfd.or.kr/bbs/board.php?bo_table=notice&wr_id=629"
-    },
-    "additionalSources": [
-      {
-        "label": "씨야박물관 · 팬 보관 영상",
-        "url": "https://www.youtube.com/watch?v=Evej65E_3EU",
-        "publishedDate": "2020-03-27"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "KBS 설특집 가요계 톱스타 총집합! 쉘 위 댄스"
-    ],
-    "note": "남규리의 탱고 무대입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "museum-fansign-first",
-    "date": "2020-03-18",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 1집 활동 팬사인회 현장",
-    "program": "1집 팬사인회",
-    "type": "event",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=jNyrf-qPzFA",
-      "publishedDate": "2020-03-18"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "1집 팬사인회"
-    ],
-    "note": "씨야 1집 활동기 팬사인회 현장입니다. 정확한 행사일·장소 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-03-18"
-  },
-  {
-    "id": "museum-fansign-second",
-    "date": "2020-03-18",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 2집 활동 팬사인회 현장",
-    "program": "2집 팬사인회",
-    "type": "event",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=6eI--fEA_f4",
-      "publishedDate": "2020-03-18"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "2집 팬사인회"
-    ],
-    "note": "씨야 2집 활동기 팬사인회 현장입니다. 정확한 행사일·장소 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-03-18"
-  },
-  {
-    "id": "20060924-seeya-funfun",
-    "date": "2006-09-24",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 박명수의 펀펀 라디오 · 구두 무반주",
-    "program": "MBC 박명수의 펀펀 라디오",
-    "type": "radio",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "구두"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=wM79rXkXj4E",
-      "publishedDate": "2020-04-10"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "MBC 박명수의 펀펀 라디오"
-    ],
-    "note": "씨야의 짧은 무반주 라이브 클립입니다. 방송 날짜는 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "museum-seeya-starrynight",
-    "date": "2020-04-09",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 별이 빛나는 밤에 · 2.5집 활동 토크",
-    "program": "MBC 별이 빛나는 밤에",
-    "type": "radio",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=nB13cfYOLfo",
-      "publishedDate": "2020-04-09"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "MBC 별이 빛나는 밤에"
-    ],
-    "note": "2.5집 활동기에 멤버들이 나눈 음악 이야기를 담은 클립입니다. 방송일 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-04-09"
-  },
-  {
-    "id": "museum-boram-solomon",
-    "date": "2020-04-03",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "이보람 · TV 로펌 솔로몬 출연 클립",
-    "program": "SBS TV 로펌 솔로몬",
-    "type": "variety",
-    "members": [
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=6i4-sJ3e9nc",
-      "publishedDate": "2020-04-03"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "SBS TV 로펌 솔로몬"
-    ],
-    "note": "이보람의 솔로몬의 선택 출연 자료입니다. 방송일 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-04-03"
-  },
-  {
-    "id": "20060808-seeya-hellochat",
-    "date": "2006-08-08",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 헬로우챗 · 미친 사랑의 노래 활동",
-    "program": "Mnet 헬로우챗",
-    "type": "variety",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=xnyLLKsv5Lg",
-      "publishedDate": "2020-03-20"
-    },
-    "additionalSources": [
-      {
-        "label": "씨야박물관 · 팬 보관 영상",
-        "url": "https://www.youtube.com/watch?v=cNdbh_COkv4",
-        "publishedDate": "2020-03-20"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "Mnet 헬로우챗"
-    ],
-    "note": "씨야의 헬로우 챗 출연 전반·후반 영상입니다. 방송 날짜는 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20070630-seeya-big4-making",
-    "date": "2007-06-30",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 연예가중계 · BIG4 화보 촬영 현장",
-    "program": "KBS 연예가중계",
-    "type": "interview",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=w7qt2_tR-EM",
-      "publishedDate": "2020-03-26"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "KBS 연예가중계"
-    ],
-    "note": "BIG4 콘서트 화보 촬영 현장을 다룬 방송입니다. 날짜는 잠정 방송일입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20081123-seeya-madamb",
-    "date": "2008-11-23",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 마담 B의 살롱 · 그 사람 / 좋을텐데",
-    "program": "Mnet 김윤아의 마담 B의 살롱",
-    "type": "music-show",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "그 사람 (구두 III)",
-      "좋을텐데"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "seeyalover · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=oZls9PHJETQ",
-      "publishedDate": "2022-11-07"
-    },
-    "additionalSources": [
-      {
-        "label": "씨야박물관 · 팬 보관 영상",
-        "url": "https://www.youtube.com/watch?v=U8Bvh3Wcx3Y",
-        "publishedDate": "2020-03-18"
-      },
-      {
-        "label": "씨야박물관 · 팬 보관 영상",
-        "url": "https://www.youtube.com/watch?v=b7CXgs_YfRc",
-        "publishedDate": "2020-03-21"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "Mnet 김윤아의 마담 B의 살롱"
-    ],
-    "note": "씨야의 마담B의 살롱 출연 자료로, 미방송 토크도 포함합니다. 방송 날짜는 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20080419-seeya-gyeongbuk",
-    "date": "2008-04-19",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 경북 미인대회 축하무대 · 그래도 좋아",
-    "program": "경북 미인대회",
-    "type": "event",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "그래도 좋아"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=XQe6Vme4i0E",
-      "publishedDate": "2020-03-21"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "경북 미인대회"
-    ],
-    "note": "경북 미인대회 축하무대 보관 자료입니다. 행사 날짜는 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "event"
-  },
-  {
-    "id": "20070816-seeya-mcount",
-    "date": "2007-08-16",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 엠카운트다운 · 결혼할까요",
-    "program": "Mnet 엠카운트다운",
-    "type": "music-show",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "결혼할까요"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=hkP26XJfSVs",
-      "publishedDate": "2020-03-19"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "Mnet 엠카운트다운"
-    ],
-    "note": "방송 날짜는 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20070830-seeya-mcount",
-    "date": "2007-08-30",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 엠카운트다운 · 결혼할까요",
-    "program": "Mnet 엠카운트다운",
-    "type": "music-show",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "결혼할까요"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=uMPhy9E_hHw",
-      "publishedDate": "2020-03-09"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "Mnet 엠카운트다운"
-    ],
-    "note": "방송 날짜는 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20080105-seeya-love-request",
-    "date": "2008-01-05",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 사랑의 리퀘스트 · 슬픈 발걸음",
-    "program": "KBS 사랑의 리퀘스트",
-    "type": "music-show",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "슬픈 발걸음"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=2NEn0Ffus2g",
-      "publishedDate": "2020-03-10"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "KBS 사랑의 리퀘스트"
-    ],
-    "note": "방송 날짜는 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20180519-yeonji-boram-kia",
-    "date": "2018-05-19",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "김연지·이보람 · 광주-기아 챔피언스필드 행사",
-    "program": "광주-기아 챔피언스필드",
-    "type": "event",
-    "members": [
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "애국가",
-      "비의 노래"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "무등일보 · 현장 취재·시구 및 애국가",
-      "url": "https://www.mdilbo.com/detail/nVtPPU/542031"
-    },
-    "additionalSources": [
-      {
-        "label": "씨야박물관 · 팬 보관 영상",
-        "url": "https://www.youtube.com/watch?v=y4WM47V60EY",
-        "publishedDate": "2020-04-08"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "광주-기아 챔피언스필드"
-    ],
-    "note": "김연지는 애국가와 비의 노래를 선보였고, 이보람은 시구에 참여했습니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "event"
-  },
-  {
-    "id": "20070507-seeya-wedding-showcase",
-    "date": "2007-05-07",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 못말리는 결혼 대규모 시사회·축하공연",
-    "program": "못말리는 결혼 음악 시사회",
-    "type": "event",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "미워요",
-      "깊은 밤을 날아서"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "제작·배급 홍보자료 · 시사회 공연 기록",
-      "url": "https://www.newswire.co.kr/newsRead.php?no=252727"
-    },
-    "additionalSources": [
-      {
-        "label": "뉴스엔 · 현장 취재",
-        "url": "https://news.nate.com/view/20070507n15605"
-      },
-      {
-        "label": "뉴스엔 · 남규리 깊은 밤을 날아서",
-        "url": "https://news.nate.com/view/20070508n04694"
-      },
-      {
-        "label": "씨야박물관 · 팬 보관 영상",
-        "url": "https://www.youtube.com/watch?v=sJ0cwg4525Y",
-        "publishedDate": "2020-03-10"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "못말리는 결혼 음악 시사회"
-    ],
-    "note": "5월 7일 올림픽홀 영화 시사회에서 선보인 씨야의 공연입니다. 미워요와 남규리의 깊은 밤을 날아서 무대를 볼 수 있습니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "event"
-  },
-  {
-    "id": "museum-starwatch",
-    "date": "2020-03-14",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · STAR WATCH 출연 자료",
-    "program": "STAR WATCH",
-    "type": "interview",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=99vvNdKDaDU",
-      "publishedDate": "2020-03-14"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "STAR WATCH"
-    ],
-    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-03-14"
-  },
-  {
-    "id": "museum-hanbam",
-    "date": "2020-03-27",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 한밤의 TV연예 · 동요 이어부르기",
-    "program": "SBS 한밤의 TV연예",
-    "type": "interview",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=U0IYPDCvksM",
-      "publishedDate": "2020-03-27"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "SBS 한밤의 TV연예"
-    ],
-    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-03-27"
-  },
-  {
-    "id": "museum-bodyguard",
-    "date": "2020-03-29",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 연예가중계 · 경호원 관련 토크",
-    "program": "KBS 연예가중계",
-    "type": "interview",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=NzHVyKMmiPI",
-      "publishedDate": "2020-03-29"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "KBS 연예가중계"
-    ],
-    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-03-29"
-  },
-  {
-    "id": "museum-mnet-interview",
-    "date": "2020-03-24",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · Mnet 인터뷰",
-    "program": "Mnet 인터뷰",
-    "type": "interview",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=hDKzK1g3_zQ",
-      "publishedDate": "2020-03-24"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "Mnet 인터뷰"
-    ],
-    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-03-24"
-  },
-  {
-    "id": "museum-wastar-concert",
-    "date": "2020-03-22",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 와스타매거진 · 단독 콘서트 이후 인터뷰",
-    "program": "와스타매거진",
-    "type": "interview",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=42t7HuQJEEQ",
-      "publishedDate": "2020-03-22"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "와스타매거진"
-    ],
-    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-03-22"
-  },
-  {
-    "id": "museum-marry-making",
-    "date": "2020-03-23",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 결혼할까요 뮤직비디오 촬영 현장",
-    "program": "결혼할까요 MV 촬영 현장",
-    "type": "interview",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=g4A79QYDWds",
-      "publishedDate": "2020-03-23"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "결혼할까요 MV 촬영 현장"
-    ],
-    "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-03-23"
-  },
-  {
-    "id": "museum-hanbit",
-    "date": "2020-04-04",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 대전 한빛 주간 콘서트 · 사랑의 인사",
-    "program": "대전 한빛 주간 콘서트",
-    "type": "event",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [
-      "사랑의 인사"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=qO3K2K0GW_A",
-      "publishedDate": "2020-04-04"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "대전 한빛 주간 콘서트"
-    ],
-    "note": "대전 한빛 주간 콘서트 보관 자료입니다. 정확한 행사일 미상으로 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-04-04"
-  },
-  {
-    "id": "20080303-seeya-tax-service",
-    "date": "2008-03-03",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 일일 명예민원봉사실장 위촉 현장",
-    "program": "일일 명예민원봉사실장 위촉",
-    "type": "event",
-    "members": [
-      "남규리",
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "씨야박물관 · 팬 보관 영상",
-      "url": "https://www.youtube.com/watch?v=MzeIp8e3ypg",
-      "publishedDate": "2020-03-25"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "일일 명예민원봉사실장 위촉"
-    ],
-    "note": "씨야의 일일 명예민원봉사실장 위촉 현장입니다. 행사 날짜는 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "event"
-  },
-  {
-    "id": "20091204-seeya-sketchbook30",
-    "date": "2009-12-04",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "씨야 · 유희열의 스케치북 30회 · 난 남자가 있는데",
-    "program": "KBS 유희열의 스케치북",
-    "type": "music-show",
-    "members": [
-      "김연지",
-      "이보람"
-    ],
-    "collaborators": [
-      "수미"
-    ],
-    "songs": [
-      "난 남자가 있는데"
-    ],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "KBS 공식 · 난 남자가 있는데 무대",
-      "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=4185s",
-      "publishedDate": "2026-05-07"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "KBS 유희열의 스케치북",
-      "커버 무대"
-    ],
-    "note": "김연지·이보람·수미가 유희열의 스케치북 30회에서 난 남자가 있는데를 선보인 무대입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 30
-  },
-  {
-    "id": "gallery-gyuri-truthgame",
-    "date": "2020-03-16",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 진실게임 출연 자료",
-    "program": "SBS 진실게임",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "갤러리 · 출연 자료 글",
-      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=187464",
-      "publishedDate": "2020-03-16"
-    },
-    "additionalSources": [],
-    "status": "documented",
-    "tags": [
-      "SBS 진실게임"
-    ],
-    "note": "남규리의 진실게임 출연 자료입니다. 방송일·회차 미상으로 자료 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "post-published",
-    "publishedDate": "2020-03-16"
-  },
-  {
-    "id": "gallery-gyuri-mannerking",
-    "date": "2020-03-14",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 도전! 예의지왕 출연 자료",
-    "program": "MBC 도전! 예의지왕",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "갤러리 · 출연 자료 글",
-      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=186503",
-      "publishedDate": "2020-03-14"
-    },
-    "additionalSources": [],
-    "status": "documented",
-    "tags": [
-      "MBC 도전! 예의지왕"
-    ],
-    "note": "남규리와 이경규·이혁재·이홍기 등이 함께한 예의지왕 출연 자료입니다. 방송일·회차 미상으로 자료 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "post-published",
-    "publishedDate": "2020-03-14"
-  },
-  {
-    "id": "20080705-gyuri-starfriend6",
-    "date": "2008-07-05",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 스타의 친구를 소개합니다 6회",
-    "program": "MBC 스타의 친구를 소개합니다",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "MBC 공식 · 첫 대면·미션",
-      "url": "https://www.youtube.com/watch?v=Ka07tmkE3h8"
-    },
-    "additionalSources": [
-      {
-        "label": "이데일리 · 두 주 방송 출연 보도",
-        "url": "https://v.daum.net/v/20080712182702499",
-        "publishedDate": "2008-07-12"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "MBC 스타의 친구를 소개합니다"
-    ],
-    "note": "남규리가 친구를 소개하는 주선자로 출연한 방송입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 6
-  },
-  {
-    "id": "20080712-gyuri-starfriend7",
-    "date": "2008-07-12",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 스타의 친구를 소개합니다 7회",
-    "program": "MBC 스타의 친구를 소개합니다",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "MBC 공식 · 두 번째 이야기",
-      "url": "https://www.youtube.com/watch?v=OyJonmYm7mc"
-    },
-    "additionalSources": [
-      {
-        "label": "이데일리 · 두 주 방송 출연 보도",
-        "url": "https://v.daum.net/v/20080712182702499",
-        "publishedDate": "2008-07-12"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "MBC 스타의 친구를 소개합니다"
-    ],
-    "note": "남규리가 친구를 소개하는 주선자로 출연한 방송입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 7
-  },
-  {
-    "id": "20071223-gyuri-impossible",
-    "date": "2007-12-23",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 불가능은 없다 · 마카오 번지점프",
-    "program": "MBC 일요일 일요일 밤에 · 불가능은 없다",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "한국경제 · 12월 23일 방송 보도",
-      "url": "https://news.nate.com/view/20071224n18903",
-      "publishedDate": "2007-12-24"
-    },
-    "additionalSources": [
-      {
-        "label": "뉴스엔 · 남규리 번지점프 출연 보도",
-        "url": "https://m.news.nate.com/view/20071224n02104?mid=e02",
-        "publishedDate": "2007-12-24"
-      }
-    ],
-    "status": "documented",
-    "tags": [
-      "MBC 일요일 일요일 밤에 · 불가능은 없다"
-    ],
-    "note": "남규리가 마카오 타워에서 번지점프에 도전한 방송입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "20200313-yeonji-cartalk2",
-    "date": "2020-03-13",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "김연지 · 차에타봐 2화 · 토크와 무반주 노래",
-    "program": "SBS 차에타봐",
-    "type": "interview",
-    "members": [
-      "김연지"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "SBS 뉴스 · 차에타봐 공식 영상",
-      "url": "https://www.youtube.com/watch?v=CWZyIkQfcgU",
-      "publishedDate": "2020-03-13"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "SBS 차에타봐"
-    ],
-    "note": "씨야 메인보컬에서 솔로 활동까지의 이야기와 무반주 노래를 담은 SBS 웹 인터뷰입니다. 날짜는 콘텐츠 공개일입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
-    "publishedDate": "2020-03-13",
-    "episode": 2
-  },
-  {
-    "id": "20180525-gyuri-movieroom4",
-    "date": "2018-05-25",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 방구석1열 4회 · 데자뷰 이야기",
-    "program": "JTBC 방구석1열",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "JTBC 공식 · 데자뷰 역할 몰입 이야기",
-      "url": "https://www.youtube.com/watch?v=upDaeZO1nx8",
-      "publishedDate": "2018-05-25"
-    },
-    "additionalSources": [
-      {
-        "label": "JTBC 공식 · 데자뷰 촬영 에피소드",
-        "url": "https://www.youtube.com/watch?v=zoi0V8W8F6Y",
-        "publishedDate": "2018-05-25"
-      },
-      {
-        "label": "텐아시아 · 5월 25일 방송 안내",
-        "url": "https://www.tenasia.co.kr/article/2018052528264",
-        "publishedDate": "2018-05-25"
-      }
-    ],
-    "status": "available",
-    "tags": [
-      "JTBC 방구석1열"
-    ],
-    "note": "이규한과 함께 영화 데자뷰의 촬영 이야기를 나눈 4회 출연입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "broadcast",
-    "episode": 4
-  },
-  {
-    "id": "gallery-2007-boryeong-gyuri",
-    "date": "2020-03-09",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 2007 보령머드축제 현장 사진 자료",
-    "program": "보령머드축제",
-    "type": "event",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "갤러리 · 보령머드축제 현장 사진 글",
-      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=183768",
-      "publishedDate": "2020-03-09"
-    },
-    "additionalSources": [],
-    "status": "documented",
-    "tags": [
-      "보령머드축제"
-    ],
-    "note": "2007년 여름 보령머드축제에서 촬영한 남규리의 현장 사진 자료입니다. 정확한 촬영일 미상으로 자료 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "post-published",
-    "publishedDate": "2020-03-09"
-  },
-  {
-    "id": "20200311-yeonji-boram-instagram",
-    "date": "2020-03-11",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "김연지·이보람 · 인스타그램 라이브 자료",
-    "program": "인스타그램 라이브",
-    "type": "official",
-    "members": [
-      "김연지",
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "갤러리 · 당일 라이브 기록 글",
-      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=184425",
-      "publishedDate": "2020-03-11"
-    },
-    "additionalSources": [],
-    "status": "documented",
-    "tags": [
-      "인스타그램 라이브"
-    ],
-    "note": "김연지·이보람이 함께한 인스타그램 라이브 자료입니다. 라이브 날짜는 잠정입니다.",
-    "dateStatus": "tentative",
-    "dateBasis": "broadcast"
-  },
-  {
-    "id": "gallery-gyuri-coco-marc1",
-    "date": "2009-10-19",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 코코앤마크 1회 · 스모키 메이크업",
-    "program": "올리브TV 코코앤마크",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "갤러리 · 출연 장면과 영상 소개",
-      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=187604",
-      "publishedDate": "2020-03-16"
-    },
-    "additionalSources": [
-      {
-        "label": "미니러브 · 팬 보관 영상",
-        "url": "https://www.youtube.com/watch?v=3j4eH10i6vo",
-        "publishedDate": "2009-10-19"
-      }
-    ],
-    "status": "documented",
-    "tags": [
-      "올리브TV 코코앤마크"
-    ],
-    "note": "남규리가 출연한 코코앤마크 1회 자료입니다. 방송일 미상으로 팬 보관 영상 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "video-published",
-    "publishedDate": "2009-10-19",
-    "episode": 1
-  },
-  {
-    "id": "20180525-gyuri-dejavu-screening",
-    "date": "2018-05-25",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 데자뷰 언론시사회·기자간담회",
-    "program": "영화 데자뷰 언론시사회",
-    "type": "interview",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "서울경제 · 당일 시사회 현장 보도",
-      "url": "https://www.sedaily.com/NewsView/1RZO5EX8ZV",
-      "publishedDate": "2018-05-25"
-    },
-    "additionalSources": [],
-    "status": "documented",
-    "tags": [
-      "영화 데자뷰 언론시사회"
-    ],
-    "note": "5월 25일 CGV 용산아이파크몰에서 열린 데자뷰 언론시사회 참석입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "event",
-    "venue": "CGV 용산아이파크몰"
-  },
-  {
-    "id": "20260918-boram-daegu-vlog",
-    "date": "2026-09-18",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "이보람 · 씨야 대구 콘서트 비하인드 VLOG",
-    "program": "보람씨야",
-    "type": "official",
-    "members": [
-      "이보람"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "보람씨야 · 대구 콘서트 비하인드 VLOG",
-      "url": "https://www.youtube.com/watch?v=dW8vBqXwWGE",
-      "publishedDate": "2026-09-18"
-    },
-    "additionalSources": [],
-    "status": "available",
-    "tags": [
-      "보람씨야",
-      "THE FAN",
-      "대구",
-      "비하인드"
-    ],
-    "note": "보람씨야 공식 채널의 대구 콘서트 비하인드 영상입니다. 9월 12일 공연 현장을 담았으며, 날짜는 9월 18일 영상 공개일입니다.",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
-    "publishedDate": "2026-09-18"
   }
 ]
