@@ -563,5 +563,25 @@
     "scope": "single",
     "category": "live",
     "basis": "SBS 공식 개별 라이브 제목과 설명에 남규리·김연지, 사랑의 인사, 2026년 9월 17일 방송 명시"
+  },
+  {
+    "archiveId": "20231031-yeonji-returnking4",
+    "url": "https://www.youtube.com/watch?v=22cUW7asxWs",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "single",
+    "category": "broadcast",
+    "basis": "공식 개별 클립 제목에 출연자와 해당 곡이 명시됨. 같은 회차의 다른 곡은 배정하지 않음."
+  },
+  {
+    "archiveId": "v491-hangout-2022-06-04",
+    "url": "https://www.youtube.com/watch?v=13IWAL3-TpE",
+    "songIds": [
+      "scent-of-a-woman"
+    ],
+    "scope": "single",
+    "category": "broadcast",
+    "basis": "공식 개별 클립 제목에 출연자와 해당 곡이 명시됨. 같은 회차의 다른 곡은 배정하지 않음."
   }
 ]

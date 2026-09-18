@@ -6083,28 +6083,44 @@
   },
   {
     "id": "v491-singtoyou",
-    "date": "2025-12-16",
+    "date": "2025-12-12",
     "addedAt": "2026-09-13",
-    "title": "남규리 — 가슴앓이 / 기댈곳",
+    "title": "남규리 · 싱투유 울주군 온산 편 · 그래도 좋아해요 / 가슴앓이 / 기댈곳",
     "program": "ch B tv 싱투유",
     "type": "music-show",
     "members": [
       "남규리"
     ],
     "songs": [
+      "그래도 좋아해요",
       "가슴앓이",
       "기댈곳"
     ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "싱투유",
-      "url": "https://www.youtube.com/watch?v=iC4zMiuY0XM"
+      "label": "싱투유 · 울주군 온산 편 전체 영상",
+      "url": "https://www.youtube.com/watch?v=fIWlAJBnl88",
+      "publishedDate": "2025-12-12"
     },
     "additionalSources": [
       {
         "label": "싱투유",
+        "url": "https://www.youtube.com/watch?v=iC4zMiuY0XM"
+      },
+      {
+        "label": "싱투유",
         "url": "https://www.youtube.com/watch?v=yHghWSst9ic"
+      },
+      {
+        "label": "싱투유 · 그래도 좋아해요 (원본 제목: 그래도 사랑해요)",
+        "url": "https://www.youtube.com/watch?v=8kPzSL6tAKI",
+        "publishedDate": "2025-12-16"
+      },
+      {
+        "label": "싱투유 · 남규리 무대 모아듣기",
+        "url": "https://www.youtube.com/watch?v=xFbj2mgZPPQ",
+        "publishedDate": "2025-12-23"
       }
     ],
     "status": "available",
@@ -6112,10 +6128,11 @@
       "2020~2025",
       "남규리"
     ],
-    "note": "촬영·진행일이 확인되지 않아 영상 게시일을 표시했습니다.",
+    "note": "기존 카드에는 가슴앓이·기댈곳만 연결되어 있어 사용자 제보 곡과 무대 모음·전체 영상을 보완했습니다. 제보 영상 제목에는 ‘그래도 사랑해요’로 적혀 있지만 설명과 공식 무대 모음에는 ‘그래도 좋아해요’로 표기되어 있어 곡 목록에는 후자를 사용합니다. 대표 전체 영상의 한국 시간 게시일인 2025년 12월 12일로 날짜를 보완했습니다(기존 단곡 클립은 12월 16일 공개). 촬영·실제 방송일은 별도 확인되지 않았습니다.",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
-    "publishedDate": "2025-12-16"
+    "publishedDate": "2025-12-12",
+    "updatedAt": "2026-09-18"
   },
   {
     "id": "v491-navy2025",
@@ -10708,28 +10725,37 @@
     "id": "v491-hangout-2022-06-04",
     "date": "2022-06-04",
     "addedAt": "2026-09-13",
-    "title": "이보람 — WSG워너비 첫 만남과 결혼할까요",
+    "title": "이보람 · 놀면 뭐하니? WSG워너비 첫 만남 · 결혼할까요 / 여인의 향기",
     "program": "MBC 놀면 뭐하니?",
     "type": "variety",
     "members": [
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "여인의 향기"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
       "label": "MBCentertainment",
       "url": "https://www.youtube.com/watch?v=7QKEuAqK9rA"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "MBC · 쏠·이보람 여인의 향기",
+        "url": "https://www.youtube.com/watch?v=13IWAL3-TpE",
+        "publishedDate": "2022-06-04"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
       "이보람"
     ],
-    "note": "",
+    "note": " 같은 6월 4일 방송의 쏠·이보람 여인의 향기 클립을 보완했습니다.",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-09-18"
   },
   {
     "id": "v491-hangout-audition-extra",
@@ -12372,10 +12398,23 @@
       "재회",
       "2020"
     ],
-    "note": "오랜 공백 뒤 남규리·김연지·이보람이 완전체로 다시 한 무대에 섰다.",
+    "note": "오랜 공백 뒤 남규리·김연지·이보람이 완전체로 다시 한 무대에 섰다. 같은 슈가맨3 12회의 토크와 무대 모음을 추가 연결했습니다. 기존 주요 기록 카드를 보존하고 예능 카드를 중복 생성하지 않았습니다.",
     "venue": "",
     "awardName": "",
-    "awardCategory": ""
+    "awardCategory": "",
+    "additionalSources": [
+      {
+        "label": "JTBC · 씨야 해체와 재회 토크",
+        "url": "https://www.youtube.com/watch?v=XtaAdrspGMo",
+        "publishedDate": "2020-02-21"
+      },
+      {
+        "label": "JTBC · 씨야 무대와 근황 토크 모음",
+        "url": "https://www.youtube.com/watch?v=u_JQMyOicoE",
+        "publishedDate": "2023-07-12"
+      }
+    ],
+    "updatedAt": "2026-09-18"
   },
   {
     "id": "v491-album-20307775",
@@ -16163,7 +16202,7 @@
     "id": "v490-jungle",
     "date": "2015-08-14",
     "addedAt": "2026-09-12",
-    "title": "남규리 — 정글의 법칙 출연",
+    "title": "남규리 · 정글의 법칙 174회 · 히든킹덤",
     "program": "SBS 정글의 법칙",
     "type": "variety",
     "members": [
@@ -16176,15 +16215,23 @@
       "label": "SBS Entertainment",
       "url": "https://www.youtube.com/watch?v=h2Cvej_4WEQ"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "SBS · 남규리 애벌레 시식",
+        "url": "https://www.youtube.com/watch?v=HeQJ7m6tUug",
+        "publishedDate": "2015-08-15"
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
       "남규리"
     ],
-    "note": "확인된 공식 영상의 해당 회차 방송일로 등록했습니다.",
+    "note": "확인된 공식 영상의 해당 회차 방송일로 등록했습니다. 같은 8월 14일 공식 클립을 추가했습니다. 앞선 171~173회 출연은 방송일별 별도 기록으로 보완했습니다.",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-09-18",
+    "episode": 174
   },
   {
     "id": "v490-jtbc-37",
@@ -16474,14 +16521,16 @@
     "id": "v490-jtbc-26",
     "date": "2015-04-28",
     "addedAt": "2026-09-12",
-    "title": "김연지 — Tears",
+    "title": "김연지 · 끝까지 간다 26회 · Tears / 널 위한거야 / 기억상실",
     "program": "JTBC 끝까지 간다 26회",
     "type": "music-show",
     "members": [
       "김연지"
     ],
     "songs": [
-      "Tears"
+      "Tears",
+      "널 위한거야",
+      "기억상실"
     ],
     "album": "",
     "thumbnail": "",
@@ -16489,15 +16538,27 @@
       "label": "JTBC Entertainment",
       "url": "https://www.youtube.com/watch?v=-Npm8czETkw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "JTBC · 널 위한거야",
+        "url": "https://www.youtube.com/watch?v=auAYFYwlb3k",
+        "publishedDate": "2015-04-28"
+      },
+      {
+        "label": "JTBC · 기억상실",
+        "url": "https://www.youtube.com/watch?v=DwJCZR3mRfg",
+        "publishedDate": "2015-04-28"
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
       "김연지"
     ],
-    "note": "",
+    "note": "같은 26회 공식 클립에서 누락됐던 두 곡을 보완했습니다. 별도 출연이나 별도 방송일로 만들지 않았습니다.",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-09-18"
   },
   {
     "id": "v490-powertime-20150428",
@@ -25784,14 +25845,25 @@
       {
         "label": "공식 영상",
         "url": "https://www.youtube.com/watch?v=ipoO3SfCxO4"
+      },
+      {
+        "label": "MBC · 라디오스타 2007-08-08 추가 클립",
+        "url": "https://www.youtube.com/watch?v=mNSO-Qciars",
+        "publishedDate": "2012-04-24"
+      },
+      {
+        "label": "MBC TVPP · 남규리 출연 모음",
+        "url": "https://www.youtube.com/watch?v=MAxlNrubmZE",
+        "publishedDate": "2020-11-29"
       }
     ],
     "status": "available",
     "tags": [
       "예능"
     ],
-    "note": "공식 방송사 영상 제목·설명의 방송일과 출연자 기준.",
-    "publishedDate": "2012-04-24"
+    "note": "공식 방송사 영상 제목·설명의 방송일과 출연자 기준. 같은 방송일이 명시된 MBC 공식 클립과 TVPP 모음을 추가했습니다.",
+    "publishedDate": "2012-04-24",
+    "updatedAt": "2026-09-18"
   },
   {
     "id": "20070804-cj-korea-big4-newyork",
@@ -29664,5 +29736,607 @@
       "스페셜 DJ"
     ],
     "note": "Mhz 므흐즈: MBC RADIO 공식 예약 라이브 제목의 MBC 260921 방송 및 스페셜 DJ 남규리 표기, 예약 시작 시간(한국 시간 9월 21일 낮 12시)을 확인했습니다. 현재는 방송 전 안내이며 다시보기 공개나 출연 완료를 의미하지 않습니다. 다른 멤버의 동반 출연과 선곡은 확인되지 않았습니다."
+  },
+  {
+    "id": "20110308-gyuri-strongheart67",
+    "date": "2011-03-08",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 강심장 67회 · 인형의 집 1부",
+    "program": "SBS 강심장",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미우새",
+      "url": "https://www.youtube.com/watch?v=5ezEDMMikLQ",
+      "publishedDate": "2011-03-26"
+    },
+    "additionalSources": [
+      {
+        "label": "SBS · 67회 공식 다시보기·출연 안내",
+        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/strongheart/22000064321"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 강심장"
+    ],
+    "note": "SBS 공식 다시보기의 67회 방송일과 출연 소개에서 남규리를 확인했습니다. 유튜브에 뒤늦게 올라온 클립의 게시일과 구분해 2011년 3월 8일 방송 기록으로 추가했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 67
+  },
+  {
+    "id": "20110315-gyuri-strongheart68",
+    "date": "2011-03-15",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 강심장 68회 · 인형의 집 2부",
+    "program": "SBS 강심장",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "미우새",
+      "url": "https://www.youtube.com/watch?v=pxvZ3Nv6p3A",
+      "publishedDate": "2011-03-28"
+    },
+    "additionalSources": [
+      {
+        "label": "강심장 · 남규리 댄스 클립",
+        "url": "https://www.youtube.com/watch?v=jFbJhHJ2YuE",
+        "publishedDate": "2011-03-28"
+      },
+      {
+        "label": "SBS · 68회 공식 다시보기",
+        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/strongheart/22000064322"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 강심장"
+    ],
+    "note": "사용자가 제보한 성대모사 클립입니다. 영상 제목·설명의 방송일과 SBS 공식 68회 다시보기를 대조했습니다. 같은 회차의 댄스 클립도 한 카드에 연결했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 68
+  },
+  {
+    "id": "20150325-gyuri-invisible11",
+    "date": "2015-03-25",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 투명인간 11회 · 호텔리어 체험 1부",
+    "program": "KBS 투명인간",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS StarTV: 인물사전",
+      "url": "https://www.youtube.com/watch?v=cwkQh77MmWQ",
+      "publishedDate": "2022-05-23"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "KBS 투명인간"
+    ],
+    "note": "KBS 공식 클립의 11회·2015년 3월 25일 방송 표기를 확인했습니다. 2022년 재업로드 날짜를 실제 출연일로 사용하지 않았습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 11
+  },
+  {
+    "id": "20150401-gyuri-invisible12",
+    "date": "2015-04-01",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 투명인간 12회 · 호텔리어 체험 2부",
+    "program": "KBS 투명인간",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS StarTV: 인물사전",
+      "url": "https://www.youtube.com/watch?v=gr-3lz0y9kQ",
+      "publishedDate": "2022-05-26"
+    },
+    "additionalSources": [
+      {
+        "label": "엑스포츠뉴스 · 4월 1일 호텔리어 체험 2부 보도",
+        "url": "https://www.xportsnews.com/article/569449"
+      },
+      {
+        "label": "스타뉴스 · 최종회 방송 및 회차별 방송일",
+        "url": "https://www.starnewskorea.com/broadcast-show/2015/04/02/2015040123040351036"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "KBS 투명인간"
+    ],
+    "note": "KBS 공식 영상은 EP.12로 표기하면서 날짜는 150325로 적어 앞 회차와 겹칩니다. 2015년 4월 1일 당시 보도의 호텔리어 체험 2부·남규리 출연을 대조해 4월 1일 방송으로 기록했습니다. 원본 영상의 날짜 표기와 차이가 있습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 12
+  },
+  {
+    "id": "20150724-gyuri-jungle171",
+    "date": "2015-07-24",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 정글의 법칙 171회 · 히든킹덤",
+    "program": "SBS 정글의 법칙",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Entertainment",
+      "url": "https://www.youtube.com/watch?v=m1clOgcNkWs",
+      "publishedDate": "2015-07-25"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 정글의 법칙"
+    ],
+    "note": "SBS 공식 클립의 방송일과 출연 내용을 확인했습니다. 남규리·전효성의 생존 활동이 담긴 회차입니다. 기존 8월 14일 출연과 방송일이 달라 별도 카드로 등록했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 171
+  },
+  {
+    "id": "20150731-gyuri-jungle172",
+    "date": "2015-07-31",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 정글의 법칙 172회 · 히든킹덤",
+    "program": "SBS 정글의 법칙",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Entertainment",
+      "url": "https://www.youtube.com/watch?v=GdxYFNTMBA4",
+      "publishedDate": "2015-07-31"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 정글의 법칙"
+    ],
+    "note": "SBS 공식 클립의 방송일과 출연 내용을 확인했습니다. 불 피우기에 참여하는 남규리이 담긴 회차입니다. 기존 8월 14일 출연과 방송일이 달라 별도 카드로 등록했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 172
+  },
+  {
+    "id": "20150807-gyuri-jungle173",
+    "date": "2015-08-07",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 정글의 법칙 173회 · 히든킹덤",
+    "program": "SBS 정글의 법칙",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Entertainment",
+      "url": "https://www.youtube.com/watch?v=3352b3a2xk0",
+      "publishedDate": "2015-08-08"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "SBS 정글의 법칙"
+    ],
+    "note": "SBS 공식 클립의 방송일과 출연 내용을 확인했습니다. 카사바 채집 중 남규리의 부상과 치료이 담긴 회차입니다. 기존 8월 14일 출연과 방송일이 달라 별도 카드로 등록했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 173
+  },
+  {
+    "id": "20210406-gyuri-onoff",
+    "date": "2021-04-06",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 온앤오프 · 일상과 복싱",
+    "program": "tvN 온앤오프",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "샾잉 #ing",
+      "url": "https://www.youtube.com/watch?v=dEDW2QwGTxw",
+      "publishedDate": "2021-04-08"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "tvN 온앤오프"
+    ],
+    "note": "CJ ENM 공식 클립 제목의 210406 방송 표기를 기준으로 등록했습니다. 기존 2020년 11월 21일 출연과 다른 방송일입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20221128-boram-freedoctor81",
+    "date": "2022-11-28",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 프리한 닥터M 81회",
+    "program": "tvN 프리한 닥터M",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "tvN Joy",
+      "url": "https://www.youtube.com/watch?v=188HU9L7rzk",
+      "publishedDate": "2022-11-29"
+    },
+    "additionalSources": [
+      {
+        "label": "tvN · 이보람 편 하이라이트",
+        "url": "https://www.youtube.com/watch?v=W8C1hEJhP6E",
+        "publishedDate": "2022-11-29"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "tvN 프리한 닥터M"
+    ],
+    "note": "tvN 공식 클립 제목의 81회·221128 방송 표기를 확인했습니다. 씨야 활동과 공백기, WSG워너비 활동을 돌아보는 토크입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 81
+  },
+  {
+    "id": "20231031-yeonji-returnking4",
+    "date": "2023-10-31",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "김연지 · DK와 복학가왕 4화",
+    "program": "복학가왕",
+    "type": "variety",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "미친 사랑의 노래",
+      "혼자 왔어요"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스튜디오 지지지",
+      "url": "https://www.youtube.com/watch?v=GR7v1z34x9o",
+      "publishedDate": "2023-10-31"
+    },
+    "additionalSources": [
+      {
+        "label": "복학가왕 · 미친 사랑의 노래 라이브",
+        "url": "https://www.youtube.com/watch?v=22cUW7asxWs",
+        "publishedDate": "2023-10-24"
+      },
+      {
+        "label": "복학가왕 · 혼자 왔어요 라이브",
+        "url": "https://www.youtube.com/watch?v=xth4PZBByr4",
+        "publishedDate": "2023-10-26"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "복학가왕"
+    ],
+    "note": "제작 채널 스튜디오 지지지의 공개일(한국 시간)을 기준으로 등록했습니다. DK·김연지의 토크와 듀엣 라이브를 같은 출연으로 묶었습니다. 별도 촬영일은 미확인입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 4,
+    "publishedDate": "2023-10-31"
+  },
+  {
+    "id": "20230627-gyuri-game3",
+    "date": "2023-06-27",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 게임광규리 3화 · 이석훈과 게임 대결",
+    "program": "게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=0vlBCQ2TqWQ",
+      "publishedDate": "2023-06-27"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "게임광규리"
+    ],
+    "note": "M드로메다 스튜디오의 해당 회차 제목과 한국 시간 공개일을 확인했습니다. 기존 1·2·4·6·7·8·9화 사이에 누락된 회차입니다. 공개일을 촬영일로 단정하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 3,
+    "publishedDate": "2023-06-27"
+  },
+  {
+    "id": "20230711-gyuri-game5",
+    "date": "2023-07-11",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 게임광규리 5화 · 이세영·넉살·CIX BX와 축구 게임 대결",
+    "program": "게임광규리",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "M드로메다 스튜디오",
+      "url": "https://www.youtube.com/watch?v=zfUAUTofSls",
+      "publishedDate": "2023-07-11"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "게임광규리"
+    ],
+    "note": "M드로메다 스튜디오의 해당 회차 제목과 한국 시간 공개일을 확인했습니다. 기존 1·2·4·6·7·8·9화 사이에 누락된 회차입니다. 공개일을 촬영일로 단정하지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "episode": 5,
+    "publishedDate": "2023-07-11"
+  },
+  {
+    "id": "20240429-gyuri-hypeboy3",
+    "date": "2024-04-29",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "남규리 · 하입보이스카웃 3회",
+    "program": "ENA 하입보이스카웃",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "ENA 이엔에이",
+      "url": "https://www.youtube.com/watch?v=s7icCqjKF3A",
+      "publishedDate": "2024-04-29"
+    },
+    "additionalSources": [
+      {
+        "label": "일간스포츠 · 4월 29일 3회 방송 보도",
+        "url": "https://m.news.nate.com/view/20240429n36994"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "ENA 하입보이스카웃"
+    ],
+    "note": "ENA 공식 3회 클립과 당시 방송 보도를 대조했습니다. 남규리의 오디션 토크 출연 기록입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 3
+  },
+  {
+    "id": "20220514-boram-hangout",
+    "date": "2022-05-14",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · WSG워너비 대청봉 조 경연",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "You And I"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "놀면 뭐하니?",
+      "url": "https://www.youtube.com/watch?v=RaCg40e8gAU",
+      "publishedDate": "2022-05-14"
+    },
+    "additionalSources": [
+      {
+        "label": "iMBC · 대청봉 조 구성 및 경연 안내",
+        "url": "https://enews.imbc.com/M/Detail/347733"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "공식 클립의 방송일과 iMBC의 대청봉 조(이성경 포함) 설명을 대조했습니다. 이성경은 이후 5월 28일 방송에서 이보람으로 공개된 오디션 가명입니다. 다른 조가 부른 5월 21일 사랑의 인사 영상과 구분합니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20220528-boram-hangout",
+    "date": "2022-05-28",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · WSG워너비 이성경 정체 공개",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=4LOX-hnrTVc",
+      "publishedDate": "2022-05-28"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "MBC 공식 클립 제목에서 이성경의 정체가 이보람임을 확인했습니다. 이전 블라인드 오디션 출연과 정체 공개 방송을 구분했습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20220709-boram-hangout",
+    "date": "2022-07-09",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · WSG워너비 데뷔곡 라이브 청음회",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "그때 그 순간 그대로"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "놀면 뭐하니?",
+      "url": "https://www.youtube.com/watch?v=X9GzIC93VF0",
+      "publishedDate": "2022-07-09"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "공식 프로그램 채널의 220709 방송 표기를 확인했습니다. WSG워너비 청음회 중 이보람이 속한 가야G 출연을 기록하며 다른 팀의 곡은 이보람의 곡 목록에 넣지 않습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20220716-boram-hangout",
+    "date": "2022-07-16",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · 가야G 첫 쇼케이스",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "TV-People",
+      "url": "https://www.youtube.com/watch?v=cojgPoISAf0",
+      "publishedDate": "2023-04-08"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "MBC TV-People 공식 클립 제목의 이보람·소연·HYNN·정지소와 220716 방송 표기를 확인했습니다. 같은 날 음악중심 무대와 별개 프로그램입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20220806-boram-hangout",
+    "date": "2022-08-06",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-18",
+    "title": "이보람 · 놀면 뭐하니? · WSG워너비 언니즈 무대",
+    "program": "MBC 놀면 뭐하니?",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "Ma Boy"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=RXVBCvW1gLc",
+      "publishedDate": "2022-08-06"
+    },
+    "additionalSources": [
+      {
+        "label": "MBC · 언니즈 출연진·149회 공식 클립",
+        "url": "https://playvod.imbc.com/Vod/ClipPlay?broadcastId=1004711100716100007"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "예능",
+      "MBC 놀면 뭐하니?"
+    ],
+    "note": "MBC 공식 클립의 방송일과 iMBC 출연 표기(윤은혜·이보람·나비)를 대조했습니다. 8월 6일은 방송일이며 콘서트 현장 개최일로 바꾸지 않았습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
   }
 ]
