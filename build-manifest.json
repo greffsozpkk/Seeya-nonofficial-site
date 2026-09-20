@@ -1,5 +1,5 @@
 {
-  "version": "4.127",
+  "version": "4.128",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -47,7 +47,7 @@
   "assets": [
     "assets/site.acc3885789d4.css",
     "assets/lyric-quiz.16248c1b0faf.css",
-    "assets/site.6ea22dd12a07.js",
+    "assets/site.391e7dd28ea5.js",
     "assets/lyric-quiz.cd5889581fa7.js"
   ]
 }
