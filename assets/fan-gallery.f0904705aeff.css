@@ -1,0 +1,23 @@
+.fan-photo-shell{max-width:1100px;margin:40px auto 0;min-width:0}
+.fan-photo-shell .gallery-section-title{margin-bottom:12px}
+.fan-photo-note{font-size:13px;line-height:1.9;color:#765561;margin:20px 0}
+.fan-photo-status{font-size:14px;color:#765561;margin:24px 0 16px}
+.fan-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;align-items:start}
+.fan-photo-card{min-width:0;background:#fff;border:1px solid #ead1dc;border-radius:16px;padding:18px;overflow:hidden}
+.fan-photo-card h3{font-size:17px;line-height:1.6;color:#513740;margin:0;overflow-wrap:anywhere}
+.fan-photo-date{font-size:12px;line-height:1.6;color:#765561;margin:4px 0 16px}
+.fan-photo-embed{position:relative;min-width:0}
+.fan-photo-embed blockquote.instagram-media{margin:0;width:100%;min-height:180px;padding:18px;background:#fff9fb}
+.fan-photo-embed iframe.instagram-media{width:100%!important;max-width:100%!important;min-width:0!important;margin:0!important}
+.fan-photo-credit{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px;margin-top:18px;font-size:13px;line-height:1.6}
+.fan-photo-credit a{color:#873955;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+.fan-photo-credit span{display:block;font-size:11px;color:#765561}
+.fan-photo-pages{display:flex;justify-content:center;align-items:center;gap:20px;margin:32px 0}
+.fan-photo-pages:empty{display:none}
+.fan-photo-pages button{background:#f9e9f0;color:#723e53;border:1px solid #dcb4c5;border-radius:24px;min-height:44px;padding:8px 22px;font:inherit;cursor:pointer}
+.fan-photo-pages button:disabled{opacity:.45;cursor:default}
+.fan-photo-shell a:focus-visible,.fan-photo-pages button:focus-visible{outline:2px solid #873955;outline-offset:4px}
+.fan-photo-shell h2{scroll-margin-top:90px}
+.gallery-subnav{flex-wrap:wrap}
+@media(max-width:899px){.fan-photo-grid{grid-template-columns:minmax(0,1fr);max-width:560px;margin:auto}.fan-photo-shell{margin-top:28px}}
+@media(max-width:400px){body[data-page="fans"] .page{padding-left:4px;padding-right:4px}.fan-photo-card{padding:4px}.fan-photo-grid{gap:20px}.fan-photo-card h3{font-size:16px}}
