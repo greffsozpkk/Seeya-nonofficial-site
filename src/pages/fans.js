@@ -6,8 +6,9 @@ module.exports=()=>{
  const state=pageSlice(posts,1);
  return W(`${galleryHeader('fans')}<section class="fan-photo-shell" aria-labelledby="fanPhotoTitle">
  <div class="gallery-section-kicker">THROUGH FANS' EYES</div><h2 id="fanPhotoTitle" class="gallery-section-title" tabindex="-1">팬이 담은 씨야</h2>
- <p class="gallery-section-desc">팬의 시선으로 간직한 씨야의 순간들.<br>사진을 남겨주신 분들의 Instagram 게시물을 모았습니다.</p>
- <p class="fan-photo-note">사진은 Instagram에서 불러옵니다. 표시되지 않으면 ‘원본 게시물 보기’를 이용해주세요.<br>날짜는 촬영일이 아닌 게시일 기준입니다.</p>
+ <p class="gallery-section-desc">팬의 시선으로 간직한 씨야의 순간들.<br>사진과 영상을 남겨주신 분들의 Instagram 게시물을 모았습니다.</p>
+ <p class="fan-photo-note">사진과 영상은 Instagram에서 불러옵니다. 표시되지 않으면 ‘원본 게시물 보기’를 이용해주세요.<br>날짜는 촬영일이 아닌 게시일 기준입니다.</p>
+ <p class="fan-photo-removal">해당 게시물은 팬들이 올린 사진 및 영상이며, 본 페이지에 게재를 원하지 않을 시 <a href="https://www.instagram.com/seeya_archive_fanpage/" target="_blank" rel="noopener noreferrer">제작자에게 연락</a> 부탁드립니다.</p>
  <p id="fanPhotoStatus" class="fan-photo-status" role="status">총 ${posts.length}개 게시물 · 1 / ${state.totalPages} 페이지</p>
  <div id="fanPhotoGrid" class="fan-photo-grid">${cards(state.items)}</div>
  <nav id="fanPhotoPages" class="fan-photo-pages" aria-label="팬 사진 페이지">${pagination(1,state.totalPages)}</nav>
