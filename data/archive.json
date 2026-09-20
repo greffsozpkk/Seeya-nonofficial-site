@@ -381,7 +381,7 @@
     "id": "20260919-daegu-national-song-festival",
     "date": "2026-09-19",
     "addedAt": "2026-09-16",
-    "title": "씨야 · 2026 대구전국가요제 축하공연 예정",
+    "title": "씨야 · 2026 대구전국가요제 축하공연",
     "program": "2026 대구전국가요제",
     "type": "event",
     "members": [
@@ -389,31 +389,50 @@
       "김연지",
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "사랑의 인사",
+      "미친 사랑의 노래",
+      "Stay",
+      "봄처럼 그댄"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "매일신문 · 공동 주최사 개최 안내",
-      "url": "https://v.daum.net/v/20260910194241310"
+      "label": "매일신문 · 대구전국가요제 본선 공식 생중계",
+      "url": "https://www.youtube.com/watch?v=J2xrekf0nzs",
+      "publishedDate": "2026-09-19"
     },
-    "status": "documented",
+    "status": "available",
     "tags": [
       "2026",
-      "예정",
       "2026 대구전국가요제"
     ],
-    "note": "9월 19일 오후 6시 30분에 시작하는 무료 가요제에 씨야가 축하공연으로 출연할 예정입니다. 안내된 시간은 행사 시작 시간입니다.",
+    "note": "9월 19일 대구 두류공원 코오롱 야외음악당에서 열린 대구전국가요제 축하공연입니다.\n사랑의 인사·미친 사랑의 노래·Stay·봄처럼 그댄을 선보였습니다.\n공동 주최사 매일신문의 본선 생중계와 씨야 무대 직캠을 함께 볼 수 있습니다.",
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "eventState": "scheduled",
+    "eventState": "completed",
     "venue": "대구 두류공원 코오롱 야외음악당",
     "additionalSources": [
       {
+        "label": "매일신문 · 공동 주최사 개최 안내",
+        "url": "https://v.daum.net/v/20260910194241310"
+      },
+      {
         "label": "동아일보 · 행사 시간 안내",
         "url": "https://www.donga.com/news/Society/article/all/20260910/134637850/2"
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야 무대 직캠",
+        "url": "https://www.youtube.com/watch?v=BFCMsthBBy4",
+        "publishedDate": "2026-09-20"
+      },
+      {
+        "label": "땅콩크림샌드 · 씨야 무대 직캠",
+        "url": "https://www.youtube.com/watch?v=AE1PViJLNr4",
+        "publishedDate": "2026-09-20"
       }
     ],
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-09-20"
   },
   {
     "id": "20260918-boram-daegu-vlog",
@@ -7891,6 +7910,40 @@
     "note": "행사 날짜는 잠정입니다.",
     "dateStatus": "tentative",
     "dateBasis": "event"
+  },
+  {
+    "id": "20240720-seeya-videotank-sad-steps",
+    "date": "2024-07-20",
+    "addedAt": "2026-09-20",
+    "updatedAt": "2026-09-20",
+    "title": "씨야 · 비디오탱크 공개 무대 · 슬픈 발걸음",
+    "program": "VIDEOTANK 비탱!핫클립",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "슬픈 발걸음"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "VIDEOTANK 비디오탱크 · 무대 영상",
+      "url": "https://www.youtube.com/watch?v=nO0xT0WK6Jc",
+      "publishedDate": "2024-07-20"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "tags": [
+      "무대",
+      "슬픈 발걸음"
+    ],
+    "note": "비디오탱크 채널에 공개된 슬픈 발걸음(구두 II) 무대입니다.\n원 방송일 미상으로 영상 게시일을 표시합니다.",
+    "dateStatus": "unknown",
+    "dateBasis": "video-published",
+    "publishedDate": "2024-07-20"
   },
   {
     "id": "v491-lux",
@@ -24794,6 +24847,48 @@
     "dateBasis": "broadcast"
   },
   {
+    "id": "20081226-gyuri-musicbank-buttons",
+    "date": "2008-12-26",
+    "addedAt": "2026-09-20",
+    "updatedAt": "2026-09-20",
+    "title": "남규리 · 뮤직뱅크 연말결산 · Buttons 합동 무대",
+    "program": "KBS 뮤직뱅크 · 2008 연말결산",
+    "type": "music-show",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "Buttons"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "901K · 무대 영상",
+      "url": "https://www.youtube.com/watch?v=ENQ1O79MD54",
+      "publishedDate": "2020-04-22"
+    },
+    "additionalSources": [
+      {
+        "label": "한국경제 · 합동 무대 방송 보도",
+        "url": "https://www.hankyung.com/article/2008122750107"
+      }
+    ],
+    "status": "available",
+    "tags": [
+      "무대",
+      "Buttons"
+    ],
+    "note": "남규리·태연·선예·가인이 함께한 푸시캣 돌스의 Buttons 커버 무대입니다.\n뮤직뱅크 2008 연말결산 특집에서 선보였습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "publishedDate": "2020-04-22",
+    "collaborators": [
+      "태연",
+      "선예",
+      "가인"
+    ]
+  },
+  {
     "id": "20081219-seeya-radio-musicshow",
     "date": "2008-12-19",
     "addedAt": "2026-09-19",
@@ -24861,7 +24956,7 @@
     "id": "20081211-seeya-radio-simta",
     "date": "2008-12-11",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · 신동·김신영의 심심타파",
     "program": "신동·김신영의 심심타파",
     "type": "radio",
@@ -24874,11 +24969,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=rHCFmx2o5uk",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "신동·김신영의 심심타파"
     ],
@@ -25311,7 +25412,7 @@
     "id": "20081108-seeya-radio-fm",
     "date": "2008-11-08",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · 소유진의 FM 인기가요",
     "program": "소유진의 FM 인기가요",
     "type": "radio",
@@ -25324,11 +25425,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=G0PzSOwn0fc",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "소유진의 FM 인기가요"
     ],
@@ -27261,7 +27368,7 @@
     "id": "20080130-seeya-radio-chinchin",
     "date": "2008-01-30",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · 강인·조정린의 친한친구",
     "program": "강인·조정린의 친한친구",
     "type": "radio",
@@ -27274,11 +27381,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=XTyrZtKUq-0",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "강인·조정린의 친한친구"
     ],
@@ -27462,7 +27575,7 @@
     "id": "20080118-seeya-radio-noon",
     "date": "2008-01-18",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · 정선희의 정오의 희망곡",
     "program": "정선희의 정오의 희망곡",
     "type": "radio",
@@ -27475,11 +27588,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=SgaOgXa0o70",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "정선희의 정오의 희망곡"
     ],
@@ -27592,7 +27711,7 @@
     "id": "20080113-seeya-radio-funfun",
     "date": "2008-01-13",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · 붐의 펀펀 라디오",
     "program": "붐의 펀펀 라디오",
     "type": "radio",
@@ -27605,11 +27724,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=pq2x54Yf7R0",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "붐의 펀펀 라디오"
     ],
@@ -28863,7 +28988,7 @@
     "id": "20070927-seeya-radio-cultwo",
     "date": "2007-09-27",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · 두시탈출 컬투쇼",
     "program": "두시탈출 컬투쇼",
     "type": "radio",
@@ -28876,11 +29001,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=X06Y1wA7DwQ",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "두시탈출 컬투쇼"
     ],
@@ -29010,7 +29141,7 @@
     "id": "20070916-seeya-radio-mr",
     "date": "2007-09-16",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · Mr.라디오 공개방송",
     "program": "Mr.라디오 공개방송",
     "type": "radio",
@@ -29023,11 +29154,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=Zl28NEHsjBE",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "Mr.라디오 공개방송"
     ],
@@ -29187,7 +29324,7 @@
     "id": "20070820-seeya-radio-donggo",
     "date": "2007-08-20",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · 동고동락",
     "program": "동고동락",
     "type": "radio",
@@ -29200,11 +29337,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=U1VFYF2N9bI",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "동고동락"
     ],
@@ -29449,7 +29592,7 @@
     "id": "20070808-seeya-radio-kiss",
     "date": "2007-08-08",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · 슈퍼주니어의 키스 더 라디오",
     "program": "슈퍼주니어의 키스 더 라디오",
     "type": "radio",
@@ -29462,11 +29605,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=bZkNO1b8v3Q",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "슈퍼주니어의 키스 더 라디오"
     ],
@@ -29801,10 +29950,15 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "보존 영상 (비공식)",
-      "url": "https://www.youtube.com/watch?v=33wUg2Kuo6E"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=xFZ3j_r8mTU",
+      "publishedDate": "2026-09-20"
     },
     "additionalSources": [
+      {
+        "label": "보존 영상 (비공식)",
+        "url": "https://www.youtube.com/watch?v=33wUg2Kuo6E"
+      },
       {
         "label": "씨야박물관 · 팬 보관 영상",
         "url": "https://www.youtube.com/watch?v=GUqRR_4KC2g",
@@ -29823,7 +29977,7 @@
     "dateStatus": "tentative",
     "dateBasis": "broadcast",
     "publishedDate": "2020-04-20",
-    "updatedAt": "2026-09-19"
+    "updatedAt": "2026-09-20"
   },
   {
     "id": "v485-news-89c369698975",
@@ -33761,7 +33915,7 @@
     "id": "20060404-seeya-radio-power",
     "date": "2006-04-04",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-09-20",
     "title": "씨야 · 최화정의 파워타임",
     "program": "최화정의 파워타임",
     "type": "radio",
@@ -33774,11 +33928,17 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 팬 보관자료 목록",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      "label": "씨야 아카이브 · 라디오 보관 영상",
+      "url": "https://www.youtube.com/watch?v=MaI6oC_TiAU",
+      "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
+    "status": "available",
     "tags": [
       "최화정의 파워타임"
     ],

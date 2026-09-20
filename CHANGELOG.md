@@ -1,5 +1,32 @@
 # SEEYA ARCHIVE 변경 기록
 
+## v4.128 — 제보 무대·라디오 영상·대구전국가요제 완료 (2026-09-20)
+
+- 아카이브 1,067 → 1,069건. 무대 2건 신규, 라디오 11건·행사 1건 보완. 기존 ID·날짜·멤버·모든 출처·곡 보존.
+- ENQ1O79MD54는 기존 미등록. 901K 영상 설명과 2008-12-27 한국경제 보도를 대조해 남규리·태연·선예·가인의 2008-12-26 뮤직뱅크 Buttons 합동 무대로 등록.
+- nO0xT0WK6Jc는 기존 미등록. VIDEOTANK 제목·설명과 무대 화면을 확인. 원 방송일·회차가 특정되지 않아 한국 게시일 2024-07-20(원 타임스탬프 2024-07-19T08:15:29-07:00)을 사용하고 unknown/video-published 표시. 다른 방송의 슬픈 발걸음 카드에 임의 병합하지 않음. 프로그램 필드는 현재 공개 시리즈명이며 원 방송 프로그램명을 확정한 것이 아님.
+- 대구전국가요제 20260919-daegu-national-song-festival은 ID·행사 날짜를 유지하며 scheduled → completed, documented → available. 제목·태그·본문의 예정 표현 제거. 기존 주최사·동아일보 안내 링크를 보존하고 매일신문 생중계 J2xrekf0nzs를 대표 출처로 연결.
+- 직캠 BFCMsthBBy4·AE1PViJLNr4의 2026-09-19 행사명과 챕터를 대조해 사랑의 인사·미친 사랑의 노래·Stay·봄처럼 그댄 4곡을 보완. 두 직캠도 추가 출처로 연결.
+- 씨야 아카이브 UC-qcCzSCH7lmq__kVsTvAww 공개 일반 영상 목록 13개 중 라디오 11개 모두 아래 기존 출연과 일치. 업로드 날짜로 새 출연을 만들지 않음. 비공식 재업로드는 독립적인 방송일 확정 근거가 아니므로 기존 tentative 유지.
+- 라디오 대표 링크를 씨야 아카이브 보관 영상으로 변경하고 기존 게시글·보관 영상은 상세 정보에 보존. 나머지 일반 영상 2개는 이번 요청의 라디오 범위 밖(KLL41wV8mpg 와스타매거진, 8mIc11Q5yIY 스타 대 발견 특종).
+- 소스 디자인 변경 없음. 페이지당 9개 유지. 누적 UPLOAD는 생성 HTML·자동 뉴스·사진·방문자 데이터를 제외.
+
+### 라디오 연결 목록
+
+| 영상 | 기존 기록 ID | 방송일 |
+|---|---|---|
+| [070916 미스터 라디오 공개방송](https://www.youtube.com/watch?v=Zl28NEHsjBE) | 20070916-seeya-radio-mr | 2007-09-16 (잠정) |
+| [080118 정선희의 정오의 희망곡](https://www.youtube.com/watch?v=SgaOgXa0o70) | 20080118-seeya-radio-noon | 2008-01-18 (잠정) |
+| [081211 신동&김신영의 심심타파 씨야편](https://www.youtube.com/watch?v=rHCFmx2o5uk) | 20081211-seeya-radio-simta | 2008-12-11 (잠정) |
+| [080113 붐의 펀펀라디오](https://www.youtube.com/watch?v=pq2x54Yf7R0) | 20080113-seeya-radio-funfun | 2008-01-13 (잠정) |
+| [080130 강인 & 조정린의 친한친구](https://www.youtube.com/watch?v=XTyrZtKUq-0) | 20080130-seeya-radio-chinchin | 2008-01-30 (잠정) |
+| [070820 송은이 신봉선의 동고동락](https://www.youtube.com/watch?v=U1VFYF2N9bI) | 20070820-seeya-radio-donggo | 2007-08-20 (잠정) |
+| [081108 소유진의 FM 인기가요 씨야편](https://www.youtube.com/watch?v=G0PzSOwn0fc) | 20081108-seeya-radio-fm | 2008-11-08 (잠정) |
+| [070927 두시탈출 컬투쇼](https://www.youtube.com/watch?v=X06Y1wA7DwQ) | 20070927-seeya-radio-cultwo | 2007-09-27 (잠정) |
+| [070808 슈퍼주니어의 키스 더 라디오(슈키라)](https://www.youtube.com/watch?v=bZkNO1b8v3Q) | 20070808-seeya-radio-kiss | 2007-08-08 (잠정) |
+| [060404 최화정의 파워타임](https://www.youtube.com/watch?v=MaI6oC_TiAU) | 20060404-seeya-radio-power | 2006-04-04 (잠정) |
+| [070711 안재욱, 차태현의 미스터라디오 (Mr.라디오)](https://www.youtube.com/watch?v=xFZ3j_r8mTU) | v483-radio-001 | 2007-07-11 (잠정) |
+
 ## v4.127 — 씨야박물관 대조·귤멍 Ep.63 (2026-09-20)
 
 - 1,045 → 1,067건. 신규 22건, 기존 4건 링크 보완. 신규 분류: {"concert": 2, "music-show": 7, "variety": 3, "official": 2, "milestone": 1, "interview": 5, "event": 1, "radio": 1}.
