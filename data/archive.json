@@ -3889,6 +3889,35 @@
     "episode": 6
   },
   {
+    "id": "20260602-seeya-instagram-live",
+    "date": "2026-06-02",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 인스타그램 라이브",
+    "program": "인스타그램 라이브",
+    "type": "official",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=2130"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "인스타그램 라이브"
+    ],
+    "note": "씨야의 인스타그램 라이브 기록입니다.\n날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "20260531-seeya-baekban",
     "date": "2026-05-31",
     "addedAt": "2026-09-10",
@@ -7843,7 +7872,9 @@
     "members": [
       "남규리"
     ],
-    "songs": [],
+    "songs": [
+      "사랑스러워"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
@@ -7854,6 +7885,10 @@
       {
         "label": "정영도",
         "url": "https://www.youtube.com/watch?v=JoTeIYpxSzg"
+      },
+      {
+        "label": "팬 촬영 · LUX 사랑스러워 무대",
+        "url": "https://www.youtube.com/watch?v=5wz0wF6xg-Y"
       }
     ],
     "status": "documented",
@@ -7864,7 +7899,8 @@
     "note": "성암아트홀에서 열린 첫 단독 팬미팅입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "venue": "성암아트홀"
+    "venue": "성암아트홀",
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "v491-immortal-2024-06-01",
@@ -13284,35 +13320,6 @@
     "note": "원방송·촬영일 미상으로 영상 게시일을 표시합니다.",
     "dateStatus": "unknown",
     "dateBasis": "video-published",
-    "publishedDate": "2020-03-14"
-  },
-  {
-    "id": "gallery-gyuri-mannerking",
-    "date": "2020-03-14",
-    "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · 도전! 예의지왕 출연 자료",
-    "program": "MBC 도전! 예의지왕",
-    "type": "variety",
-    "members": [
-      "남규리"
-    ],
-    "songs": [],
-    "album": "",
-    "thumbnail": "",
-    "source": {
-      "label": "갤러리 · 출연 자료 글",
-      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=186503",
-      "publishedDate": "2020-03-14"
-    },
-    "additionalSources": [],
-    "status": "documented",
-    "tags": [
-      "MBC 도전! 예의지왕"
-    ],
-    "note": "남규리와 이경규·이혁재·이홍기 등이 함께한 예의지왕 출연 자료입니다. 방송일·회차 미상으로 자료 게시일을 표시합니다.",
-    "dateStatus": "unknown",
-    "dateBasis": "post-published",
     "publishedDate": "2020-03-14"
   },
   {
@@ -24273,7 +24280,7 @@
     "id": "20090127-gyuri-shallwedance",
     "date": "2009-01-27",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-19",
     "title": "남규리 · 설특집 쉘 위 댄스 · 탱고",
     "program": "KBS 설특집 가요계 톱스타 총집합! 쉘 위 댄스",
     "type": "variety",
@@ -24292,6 +24299,10 @@
         "label": "씨야박물관 · 팬 보관 영상",
         "url": "https://www.youtube.com/watch?v=Evej65E_3EU",
         "publishedDate": "2020-03-27"
+      },
+      {
+        "label": "씨야 갤러리 · 예능 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
       }
     ],
     "status": "available",
@@ -24300,6 +24311,35 @@
     ],
     "note": "남규리의 탱고 무대입니다.",
     "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20081219-seeya-radio-musicshow",
+    "date": "2008-12-19",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 서경석의 뮤직쇼 · 번개 초대석",
+    "program": "서경석의 뮤직쇼 · 번개 초대석",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "서경석의 뮤직쇼 · 번개 초대석"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
     "dateBasis": "broadcast"
   },
   {
@@ -24338,6 +24378,69 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20081211-seeya-radio-simta",
+    "date": "2008-12-11",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 신동·김신영의 심심타파",
+    "program": "신동·김신영의 심심타파",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "신동·김신영의 심심타파"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20081207-seeya-1000songs",
+    "date": "2008-12-07",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 도전 1000곡 한소절 노래방",
+    "program": "SBS 도전 1000곡 한소절 노래방",
+    "type": "variety",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "CNB뉴스 · 당일 방송 보도",
+      "url": "https://www.cnbnews.com/news/article.html?no=57232"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "SBS 도전 1000곡 한소절 노래방"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v483-radio-002",
     "date": "2008-12-04",
     "addedAt": "2026-09-12",
@@ -24359,7 +24462,12 @@
       "label": "보존 영상 (비공식)",
       "url": "https://www.youtube.com/watch?v=kxW5_QUIrfY"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 라디오 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+      }
+    ],
     "status": "available",
     "tags": [
       "라디오"
@@ -24367,7 +24475,8 @@
     "note": "방송 날짜는 잠정입니다.",
     "dateStatus": "tentative",
     "dateBasis": "broadcast",
-    "publishedDate": "2020-04-16"
+    "publishedDate": "2020-04-16",
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "v487-history-011",
@@ -24404,7 +24513,7 @@
     "id": "20081123-seeya-madamb",
     "date": "2008-11-23",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-19",
     "title": "씨야 · 마담 B의 살롱 · 그 사람 / 좋을텐데",
     "program": "Mnet 김윤아의 마담 B의 살롱",
     "type": "music-show",
@@ -24434,6 +24543,10 @@
         "label": "씨야박물관 · 팬 보관 영상",
         "url": "https://www.youtube.com/watch?v=b7CXgs_YfRc",
         "publishedDate": "2020-03-21"
+      },
+      {
+        "label": "씨야 갤러리 · 예능 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
       }
     ],
     "status": "available",
@@ -24505,6 +24618,35 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20081111-seeya-radio-power",
+    "date": "2008-11-11",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 최화정의 파워타임",
+    "program": "최화정의 파워타임",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "최화정의 파워타임"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v487-history-023",
     "date": "2008-11-10",
     "addedAt": "2026-09-12",
@@ -24548,6 +24690,35 @@
     "updatedAt": "2026-09-18"
   },
   {
+    "id": "20081110-seeya-radio-chinchin",
+    "date": "2008-11-10",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 친한친구",
+    "program": "친한친구",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "친한친구"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v487-history-015",
     "date": "2008-11-09",
     "addedAt": "2026-09-12",
@@ -24577,6 +24748,35 @@
     "dateBasis": "event",
     "activityYear": "2008",
     "publishedDate": "2020-03-26"
+  },
+  {
+    "id": "20081108-seeya-radio-fm",
+    "date": "2008-11-08",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 소유진의 FM 인기가요",
+    "program": "소유진의 FM 인기가요",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "소유진의 FM 인기가요"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v474-stage-research-013",
@@ -25615,6 +25815,39 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20080701-gyuri-sangsang",
+    "date": "2008-07-01",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "남규리 · KBS 상상플러스 시즌2",
+    "program": "KBS 상상플러스 시즌2",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "OSEN · 7월 1일 방송 보도",
+      "url": "https://news.nate.com/view/20080702n00323"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "KBS 상상플러스 시즌2"
+    ],
+    "note": "윤정희·알렉스·박현빈과 함께 출연해 가족과 데뷔 전의 이야기를 나눈 방송입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 187
+  },
+  {
     "id": "v474-stage-research-015",
     "date": "2008-06-21",
     "dateStatus": "confirmed",
@@ -26128,6 +26361,33 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20080217-gyuri-einstein",
+    "date": "2008-02-17",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "남규리 · 두뇌왕 아인슈타인",
+    "program": "두뇌왕 아인슈타인",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "두뇌왕 아인슈타인"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v480-stage-001",
     "date": "2008-02-16",
     "dateStatus": "confirmed",
@@ -26355,6 +26615,35 @@
     "note": "씨야의 축하공연이 예고된 잠정 일정입니다."
   },
   {
+    "id": "20080130-seeya-radio-chinchin",
+    "date": "2008-01-30",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 강인·조정린의 친한친구",
+    "program": "강인·조정린의 친한친구",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "강인·조정린의 친한친구"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v487-history-026",
     "date": "2008-01-26",
     "addedAt": "2026-09-12",
@@ -26459,6 +26748,41 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "gallery-gyuri-mannerking",
+    "date": "2008-01-18",
+    "addedAt": "2026-09-18",
+    "updatedAt": "2026-09-19",
+    "title": "남규리 · 도전! 예의지왕 11회 · 상가 예절",
+    "program": "MBC 도전! 예의지왕",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "갤러리 · 출연 자료 글",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=186503",
+      "publishedDate": "2020-03-14"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 날짜·11회가 표기된 예능 자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "MBC 도전! 예의지왕"
+    ],
+    "note": "남규리와 이경규·이혁재·이홍기 등이 함께한 상가 예절 편입니다.\n방송일은 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast",
+    "publishedDate": "2020-03-14",
+    "episode": 11
+  },
+  {
     "id": "v480-stage-046",
     "date": "2008-01-18",
     "dateStatus": "confirmed",
@@ -26492,6 +26816,64 @@
     "note": ""
   },
   {
+    "id": "20080118-seeya-radio-noon",
+    "date": "2008-01-18",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 정선희의 정오의 희망곡",
+    "program": "정선희의 정오의 희망곡",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "정선희의 정오의 희망곡"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20080115-seeya-radio-power",
+    "date": "2008-01-15",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 최화정의 파워타임",
+    "program": "최화정의 파워타임",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "최화정의 파워타임"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v480-stage-004",
     "date": "2008-01-13",
     "dateStatus": "confirmed",
@@ -26523,6 +26905,35 @@
       "라이브"
     ],
     "note": ""
+  },
+  {
+    "id": "20080113-seeya-radio-funfun",
+    "date": "2008-01-13",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 붐의 펀펀 라디오",
+    "program": "붐의 펀펀 라디오",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "붐의 펀펀 라디오"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v485-news-22699a219507",
@@ -27235,6 +27646,33 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20071129-gyuri-romance2",
+    "date": "2007-11-29",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "남규리 · 그녀의 로맨스 · 하편",
+    "program": "그녀의 로맨스 · 하편",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "그녀의 로맨스 · 하편"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v485-news-9a4dd1abc759",
     "date": "2007-11-25",
     "addedAt": "2026-09-12",
@@ -27404,6 +27842,33 @@
     "note": "씨야 데뷔 후 첫 단독 콘서트. 서울 공연은 11월 23~25일 일정으로 소개됐다.",
     "venue": "서울 멜론 악스홀",
     "eventState": "completed"
+  },
+  {
+    "id": "20071122-gyuri-romance1",
+    "date": "2007-11-22",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "남규리 · 그녀의 로맨스 · 상편",
+    "program": "그녀의 로맨스 · 상편",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "그녀의 로맨스 · 상편"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "20071117-mkmf-female-group",
@@ -27607,6 +28072,35 @@
     "note": "서울 동성고등학교 대강당 공연입니다."
   },
   {
+    "id": "20071019-seeya-park-show",
+    "date": "2007-10-19",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 박경림의 화려한 외출 7회",
+    "program": "박경림의 화려한 외출 7회",
+    "type": "variety",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "박경림의 화려한 외출 7회"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v485-news-7ba5acb3f591",
     "date": "2007-10-17",
     "addedAt": "2026-09-12",
@@ -27632,6 +28126,35 @@
     "note": "CJ인터넷이 제공한 광고 및 게임 음성 참여 보도자료.",
     "dateStatus": "confirmed",
     "dateBasis": "article-published"
+  },
+  {
+    "id": "20070927-seeya-radio-cultwo",
+    "date": "2007-09-27",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 두시탈출 컬투쇼",
+    "program": "두시탈출 컬투쇼",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "두시탈출 컬투쇼"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v485-news-a6b31001f085",
@@ -27750,6 +28273,35 @@
       "라이브"
     ],
     "note": ""
+  },
+  {
+    "id": "20070916-seeya-radio-mr",
+    "date": "2007-09-16",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · Mr.라디오 공개방송",
+    "program": "Mr.라디오 공개방송",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "Mr.라디오 공개방송"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v485-news-0ef5c870c1e5",
@@ -27900,6 +28452,35 @@
     "note": ""
   },
   {
+    "id": "20070820-seeya-radio-donggo",
+    "date": "2007-08-20",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 동고동락",
+    "program": "동고동락",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "동고동락"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v482-event-014",
     "date": "2007-08-18",
     "dateStatus": "tentative",
@@ -27986,6 +28567,35 @@
       "Mnet 엠카운트다운"
     ],
     "note": "방송 날짜는 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20070814-seeya-radio-chinchin",
+    "date": "2007-08-14",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 강인·조정린의 친한친구",
+    "program": "강인·조정린의 친한친구",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "강인·조정린의 친한친구"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
     "dateStatus": "tentative",
     "dateBasis": "broadcast"
   },
@@ -28089,6 +28699,10 @@
         "label": "MBC TVPP · 남규리 출연 모음",
         "url": "https://www.youtube.com/watch?v=MAxlNrubmZE",
         "publishedDate": "2020-11-29"
+      },
+      {
+        "label": "씨야 갤러리 · 예능 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
       }
     ],
     "status": "available",
@@ -28097,7 +28711,36 @@
     ],
     "note": "",
     "publishedDate": "2012-04-24",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-09-19"
+  },
+  {
+    "id": "20070808-seeya-radio-kiss",
+    "date": "2007-08-08",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 슈퍼주니어의 키스 더 라디오",
+    "program": "슈퍼주니어의 키스 더 라디오",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "슈퍼주니어의 키스 더 라디오"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "20070804-cj-korea-big4-newyork",
@@ -28169,6 +28812,35 @@
     ],
     "note": "",
     "publishedDate": "2025-05-15"
+  },
+  {
+    "id": "20070726-seeya-radio-tenten",
+    "date": "2007-07-26",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 하하의 텐텐클럽",
+    "program": "하하의 텐텐클럽",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "하하의 텐텐클럽"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "20070722-summer-big4",
@@ -28323,6 +28995,35 @@
     "publishedDate": "2012-08-09"
   },
   {
+    "id": "20070713-seeya-radio-noon",
+    "date": "2007-07-13",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 정오의 희망곡",
+    "program": "정오의 희망곡",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "정오의 희망곡"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v485-news-f94d152816ba",
     "date": "2007-07-12",
     "addedAt": "2026-09-12",
@@ -28376,6 +29077,10 @@
         "label": "씨야박물관 · 팬 보관 영상",
         "url": "https://www.youtube.com/watch?v=GUqRR_4KC2g",
         "publishedDate": "2020-04-05"
+      },
+      {
+        "label": "씨야 갤러리 · 라디오 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
       }
     ],
     "status": "available",
@@ -28386,7 +29091,7 @@
     "dateStatus": "tentative",
     "dateBasis": "broadcast",
     "publishedDate": "2020-04-20",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "v485-news-89c369698975",
@@ -28870,6 +29575,35 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20070615-seeya-starwatch",
+    "date": "2007-06-15",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · Mnet STAR WATCH 24",
+    "program": "Mnet STAR WATCH 24",
+    "type": "variety",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "Mnet STAR WATCH 24"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v485-news-03c35770d759",
     "date": "2007-06-12",
     "addedAt": "2026-09-12",
@@ -29105,6 +29839,33 @@
       "라이브"
     ],
     "note": ""
+  },
+  {
+    "id": "20070527-gyuri-ready",
+    "date": "2007-05-27",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "남규리 · 해피선데이 · 준비됐어요",
+    "program": "해피선데이 · 준비됐어요",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "해피선데이 · 준비됐어요"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v474-stage-research-002",
@@ -29500,7 +30261,7 @@
     "id": "20070430-gyuri-yashim209",
     "date": "2007-04-30",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-19",
     "title": "남규리 · 야심만만 209회",
     "program": "SBS 야심만만 만명에게 물었습니다",
     "type": "variety",
@@ -29514,7 +30275,12 @@
       "label": "SBS · 209회 공식 출연 안내·다시보기",
       "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/yashimmanman/22000020059"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 예능 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+      }
+    ],
     "status": "available",
     "tags": [
       "SBS 야심만만 만명에게 물었습니다"
@@ -29586,7 +30352,7 @@
     "id": "v487-history-009",
     "date": "2007-03-28",
     "addedAt": "2026-09-12",
-    "title": "씨야 · 음악공간 20회 — 미워요 및 토크",
+    "title": "씨야 · 음악공간 20회 — 미워요·사랑스러워 및 토크",
     "program": "음악공간 20회",
     "type": "music-show",
     "members": [
@@ -29594,7 +30360,10 @@
       "김연지",
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "미워요",
+      "사랑스러워"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
@@ -29605,6 +30374,10 @@
       {
         "label": "스내치[SNATCH] · 비공식 보관 영상",
         "url": "https://www.youtube.com/watch?v=jVbGTxcWRZE"
+      },
+      {
+        "label": "스내치[SNATCH] · 사랑스러워 보관 영상",
+        "url": "https://www.youtube.com/watch?v=NJCseAj6su4"
       }
     ],
     "status": "available",
@@ -29616,7 +30389,8 @@
     "dateStatus": "tentative",
     "dateBasis": "broadcast",
     "activityYear": "2007",
-    "publishedDate": "2020-03-23"
+    "publishedDate": "2020-03-23",
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "v487-history-008",
@@ -30904,6 +31678,35 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20060727-seeya-radio-afternoon",
+    "date": "2006-07-27",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 김원희의 오후의 발견",
+    "program": "김원희의 오후의 발견",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "김원희의 오후의 발견"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v485-news-5fe892e1783d",
     "date": "2006-07-25",
     "addedAt": "2026-09-12",
@@ -31069,6 +31872,38 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20060716-seeya-inkigayo",
+    "date": "2006-07-16",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 인기가요 · 미친 사랑의 노래",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "미친 사랑의 노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 402회 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006477"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "SBS 인기가요"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 402
+  },
+  {
     "id": "v481-archive-016",
     "date": "2006-07-15",
     "dateBasis": "broadcast",
@@ -31125,6 +31960,38 @@
     ],
     "note": "",
     "publishedDate": "2025-01-17"
+  },
+  {
+    "id": "20060709-seeya-inkigayo",
+    "date": "2006-07-09",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 인기가요 · 구두",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 401회 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006476"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "SBS 인기가요"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 401
   },
   {
     "id": "v481-archive-015",
@@ -31238,6 +32105,70 @@
     "publishedDate": "2024-11-22"
   },
   {
+    "id": "20060625-seeya-inkigayo",
+    "date": "2006-06-25",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 인기가요 · 구두",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 399회 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006474"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "SBS 인기가요"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 399
+  },
+  {
+    "id": "20060618-seeya-inkigayo",
+    "date": "2006-06-18",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 인기가요 · 구두",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 398회 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006473"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "SBS 인기가요"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 398
+  },
+  {
     "id": "v481-archive-014",
     "date": "2006-06-17",
     "dateBasis": "broadcast",
@@ -31262,6 +32193,43 @@
       "예능"
     ],
     "note": "실제상황! 토요일의 연애편지 코너 출연입니다."
+  },
+  {
+    "id": "20060611-seeya-inkigayo",
+    "date": "2006-06-11",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 인기가요 · 구두",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 397회 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006472"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "SBS 인기가요"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 397
   },
   {
     "id": "v481-archive-013",
@@ -31347,6 +32315,75 @@
     "episode": 40
   },
   {
+    "id": "20060528-seeya-youth-concert",
+    "date": "2006-05-28",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 청소년의 달 특집 콘서트 · 여인의 향기",
+    "program": "청소년의 달 특집 콘서트",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "청소년의 달 특집 콘서트"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20060527-seeya-iconcert",
+    "date": "2006-05-27",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 사랑한다 대한민국 2006 아이-콘서트 · 구두 / 사랑하기 때문에",
+    "program": "사랑한다 대한민국 2006 아이-콘서트",
+    "type": "concert",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "구두",
+      "사랑하기 때문에"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "조이뉴스24 · 공연 일시·출연 안내",
+      "url": "https://www.joynews24.com/view/205294"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "사랑한다 대한민국 2006 아이-콘서트"
+    ],
+    "note": "서울 올림픽주경기장에서 열린 합동 공연입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "venue": "서울 올림픽주경기장"
+  },
+  {
     "id": "v485-news-2628cb13661a",
     "date": "2006-05-22",
     "addedAt": "2026-09-12",
@@ -31421,7 +32458,12 @@
       "label": "스내치[SNATCH] · 비공식 보관 영상",
       "url": "https://www.youtube.com/watch?v=B_QzklAMkb4"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 1집 무대 자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      }
+    ],
     "status": "available",
     "tags": [
       "2006",
@@ -31431,7 +32473,8 @@
     "dateStatus": "tentative",
     "dateBasis": "broadcast",
     "activityYear": "2006",
-    "publishedDate": "2020-03-20"
+    "publishedDate": "2020-03-20",
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "v487-history-006",
@@ -31452,7 +32495,12 @@
       "label": "채동하를 기록하다. · 비공식 보관 영상",
       "url": "https://www.youtube.com/watch?v=jjib4UiVHCk"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 1집 무대 자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      }
+    ],
     "status": "available",
     "tags": [
       "2006",
@@ -31462,7 +32510,8 @@
     "dateStatus": "tentative",
     "dateBasis": "broadcast",
     "activityYear": "2006",
-    "publishedDate": "2023-09-13"
+    "publishedDate": "2023-09-13",
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "v485-news-c885b2e9268c",
@@ -31494,6 +32543,38 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20060516-seeya-musictank",
+    "date": "2006-05-16",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 쇼! 뮤직탱크 · 사랑하기 때문에 / 여인의 향기",
+    "program": "쇼! 뮤직탱크",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "사랑하기 때문에",
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "쇼! 뮤직탱크"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "v485-news-1f8827952efb",
     "date": "2006-05-10",
     "addedAt": "2026-09-12",
@@ -31521,6 +32602,132 @@
     "note": "여성 가수들의 음반 판매 흐름 속에서 씨야의 성과를 소개한 기사.",
     "dateStatus": "confirmed",
     "dateBasis": "article-published"
+  },
+  {
+    "id": "20060507-seeya-inkigayo",
+    "date": "2006-05-07",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 인기가요 · 사랑하기 때문에",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "사랑하기 때문에"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 393회 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006468"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "SBS 인기가요"
+    ],
+    "note": "SG워너비와 함께한 합동 무대입니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 393,
+    "collaborators": [
+      "SG워너비"
+    ]
+  },
+  {
+    "id": "20060428-seeya-youth-report",
+    "date": "2006-04-28",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 청춘! 신고합니다 · 여인의 향기",
+    "program": "청춘! 신고합니다",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "청춘! 신고합니다"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20060427-seeya-mcount",
+    "date": "2006-04-27",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · Mnet 엠카운트다운 · 여인의 향기",
+    "program": "Mnet 엠카운트다운",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "Mnet 엠카운트다운"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20060426-seeya-hello-chat",
+    "date": "2006-04-26",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 헬로우챗",
+    "program": "헬로우챗",
+    "type": "variety",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "헬로우챗"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "20060423-first-win-inkigayo",
@@ -31554,7 +32761,14 @@
     "note": "‘여인의 향기’로 SBS 인기가요 뮤티즌송을 수상하며 첫 음악방송 1위를 기록.",
     "venue": "",
     "awardName": "SBS 인기가요",
-    "awardCategory": "뮤티즌송"
+    "awardCategory": "뮤티즌송",
+    "additionalSources": [
+      {
+        "label": "SBS · 391회 공식 출연 안내·다시보기",
+        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006466"
+      }
+    ],
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "v485-news-f0843ca6681e",
@@ -31651,6 +32865,10 @@
       {
         "label": "공식 무대 모음 · 해당 구간",
         "url": "https://www.youtube.com/watch?v=o1qI8s6ZFHg&t=730s"
+      },
+      {
+        "label": "씨야 갤러리 · 1집 무대 자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
       }
     ],
     "status": "available",
@@ -31658,7 +32876,8 @@
       "무대",
       "라이브"
     ],
-    "note": ""
+    "note": "",
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "v484-news-002",
@@ -31720,6 +32939,172 @@
     "dateBasis": "interview",
     "activityYear": "2006",
     "publishedDate": "2020-04-19"
+  },
+  {
+    "id": "20060409-seeya-inkigayo",
+    "date": "2006-04-09",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 인기가요 · 여인의 향기",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 389회 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006464"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "SBS 인기가요"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 389
+  },
+  {
+    "id": "20060404-seeya-radio-power",
+    "date": "2006-04-04",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · 최화정의 파워타임",
+    "program": "최화정의 파워타임",
+    "type": "radio",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "최화정의 파워타임"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20060402-seeya-inkigayo",
+    "date": "2006-04-02",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 인기가요 · 여인의 향기",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 388회 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006463"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "SBS 인기가요"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 388
+  },
+  {
+    "id": "20060331-seeya-mtvwow",
+    "date": "2006-03-31",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · MTV 라이브 WOW · 여인의 향기 / 구두",
+    "program": "MTV 라이브 WOW",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기",
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "MTV 라이브 WOW"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
+    "id": "20060330-seeya-mcount",
+    "date": "2006-03-30",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · Mnet 엠카운트다운 · 여인의 향기",
+    "program": "Mnet 엠카운트다운",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "Mnet 엠카운트다운"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
   },
   {
     "id": "v485-news-09ec3324f761",
@@ -31784,7 +33169,7 @@
     "id": "20060324-seeya-musicwave32",
     "date": "2006-03-24",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-19",
     "title": "씨야 · 김윤아의 뮤직웨이브 32회",
     "program": "SBS 김윤아의 뮤직웨이브",
     "type": "music-show",
@@ -31803,7 +33188,12 @@
       "label": "SBS · 공식 회차 안내·다시보기",
       "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/musicwave/22000031988"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 1집 무대 자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      }
+    ],
     "status": "available",
     "tags": [
       "SBS 김윤아의 뮤직웨이브"
@@ -31843,6 +33233,75 @@
     "dateBasis": "article-published"
   },
   {
+    "id": "20060319-seeya-inkigayo",
+    "date": "2006-03-19",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · SBS 인기가요 · 여인의 향기",
+    "program": "SBS 인기가요",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS · 387회 출연 안내·다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006462"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 팬 보관자료 목록",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      }
+    ],
+    "status": "documented",
+    "tags": [
+      "SBS 인기가요"
+    ],
+    "note": "",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "episode": 387
+  },
+  {
+    "id": "20060316-seeya-mcount",
+    "date": "2006-03-16",
+    "addedAt": "2026-09-19",
+    "updatedAt": "2026-09-19",
+    "title": "씨야 · Mnet 엠카운트다운 · 구두 / 여인의 향기",
+    "program": "Mnet 엠카운트다운",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [
+      "구두",
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야 갤러리 · 팬 보관자료 목록",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "tags": [
+      "Mnet 엠카운트다운"
+    ],
+    "note": "날짜는 팬 보관자료 표기 기준으로 잠정입니다.",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast"
+  },
+  {
     "id": "20060312-inkigayo-debut",
     "date": "2006-03-12",
     "addedAt": "2026-09-06",
@@ -31878,8 +33337,13 @@
       {
         "label": "공식 무대 영상",
         "url": "https://www.youtube.com/watch?v=fFA8uMG8QVE"
+      },
+      {
+        "label": "SBS · 386회 공식 출연 안내·다시보기",
+        "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006461"
       }
-    ]
+    ],
+    "updatedAt": "2026-09-19"
   },
   {
     "id": "v485-news-608d5da3ebeb",
