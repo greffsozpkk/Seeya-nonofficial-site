@@ -146,6 +146,12 @@
     "description": "팬페이지에서 만난 씨야 캐릭터 일러스트를 모았습니다. 기록실, 모의고사, 무대와 일상 속 작은 씨야를 원본 비율로 크게 감상해보세요."
   },
   {
+    "key": "fans",
+    "path": "/gallery/fans/",
+    "title": "팬이 담은 씨야 · 팬 사진 갤러리 | SEEYA ARCHIVE",
+    "description": "팬의 시선으로 간직한 씨야의 무대와 일상. 팬들이 공개한 Instagram 사진 게시물과 원본 링크를 만나보세요."
+  },
+  {
     "key": "archive",
     "path": "/archive/",
     "title": "씨야 활동 기록 검색 · 디지털 아카이브 | SEEYA ARCHIVE",

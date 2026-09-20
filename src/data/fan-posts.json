@@ -1,0 +1,10 @@
+{
+  "accounts": [{"handle":"seeya_tree.weathered","name":"계절을 견딘 나무"}],
+  "posts": [
+    {"id":"DdWi60Vmks6","account":"seeya_tree.weathered","postedOn":"2026-09-16","label":"남규리 · 음악방송 방문 사진"},
+    {"id":"DdEe3aGPK3b","account":"seeya_tree.weathered","postedOn":"2026-09-09","label":"씨야 · 콘서트 흑백 사진"},
+    {"id":"Dc-wanjGvuU","account":"seeya_tree.weathered","postedOn":"2026-09-07","label":"이보람 · 무대 사진"},
+    {"id":"Dc-jcp7Gvrz","account":"seeya_tree.weathered","postedOn":"2026-09-07","label":"김연지 · 무대 사진"},
+    {"id":"Dc6Dx9QGt6D","account":"seeya_tree.weathered","postedOn":"2026-09-05","label":"남규리 · 서울 콘서트 사진"}
+  ]
+}
