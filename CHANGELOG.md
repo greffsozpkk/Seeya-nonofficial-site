@@ -1,5 +1,115 @@
 # SEEYA ARCHIVE 변경 기록
 
+## v4.127 — 씨야박물관 대조·귤멍 Ep.63 (2026-09-20)
+
+- 1,045 → 1,067건. 신규 22건, 기존 4건 링크 보완. 신규 분류: {"concert": 2, "music-show": 7, "variety": 3, "official": 2, "milestone": 1, "interview": 5, "event": 1, "radio": 1}.
+- 기존 ID·날짜·곡·멤버·모든 출처 보존. 같은 출연의 다른 곡·수상 소감·대기실 클립은 기존 카드에 연결.
+- 귤멍 Ep.63: 공식 채널 UC_naRJKw5Isgpv5nF8yNXLw의 게시 시각 2026-09-19T18:00:14-07:00은 한국 시각 2026-09-20 10:00:14. 실버버튼 언박싱과 구독자 Q&A 기록 추가.
+- 한국가요제: KBS 공식 모음 설명의 2008-11-20 방송일을 채택. 팬 영상 설명의 11월 29일과 구분. 공식 영상의 14:42로 연결.
+- 체험! 삶의 현장 파충류 편: 영상 화면은 KBS1 ‘13(일)’로, 기존 2007-08-12 단체 출연과 구분. 원 방송 연월 미확인으로 대표 출처인 KBS 회고 영상의 한국 게시일 2021-02-11을 표시. 원 방송일로 간주하지 않음.
+- 2008-01-17 엠카 사랑은 이별을 데리고 오다: 날짜 표기된 다른 보관 영상과 대조한 잠정 날짜. 날짜 미상 13건은 dateBasis=video-published/dateStatus=unknown; 영상 게시 연도를 원 방송연도로 간주하지 않음.
+- 새 영상 93개라는 뜻이 아님. 채널 공개 목록 93개 중 처리 결과: {"기존 등록": 40, "신규 등록": 21, "기존 카드에 영상 추가": 4, "보류": 28}. 게시 시각은 한국 시간으로 변환. 비공개·삭제·아직 공개되지 않은 영상은 조사 범위 밖.
+- 날짜를 확정한 출연은 카드 추가 출처의 당시 보도/SBS·KBS 공식 영상으로 근거를 남김. 남은 식별·중복 문제는 아래 목록으로 이어서 조사.
+- 소스 디자인 변경 없음. UPLOAD에는 누적 소스·필요 이미지·archive.json을 포함하며 생성 HTML과 자동 뉴스·사진·방문자 데이터를 제외.
+
+### 씨야박물관 공개 영상 대조 목록
+
+| 영상 | 처리 | 연결 기록 / 남은 확인 |
+|---|---|---|
+| [씨야 구두 (규리 멘트) IN 슬더슬 무비 콘서트](https://www.youtube.com/watch?v=_QrmB9sz8WY) | 신규 등록 | 20090308-seeya-sadder-movie-concert |
+| [07.07.11 씨야 보이는 라디오 In 안재욱 & 차태현의 Mr라디오](https://www.youtube.com/watch?v=33wUg2Kuo6E) | 기존 등록 | v483-radio-001 |
+| [08.12.04 씨야 보이는 라디오 In 슈키라](https://www.youtube.com/watch?v=kxW5_QUIrfY) | 기존 등록 | v483-radio-002 |
+| [씨야(규리) 모놀로그 인터뷰 feat 3집](https://www.youtube.com/watch?v=hEPkg-lkbio) | 기존 등록 | v487-history-023 |
+| [씨야(연지) 모놀로그 인터뷰 feat 3집](https://www.youtube.com/watch?v=1rE9vw5BtGo) | 기존 등록 | v487-history-023 |
+| [씨야(규리) 집으로 돌아오는 길 한소절 feat 슈키라](https://www.youtube.com/watch?v=PIs13SDW0sE) | 보류 | 기존 슈키라 출연과의 회차 대조 필요 |
+| [씨야(보람) 모놀로그 인터뷰 feat 3집](https://www.youtube.com/watch?v=hNUOUK1Y91U) | 기존 등록 | v487-history-023 |
+| [씨야 구두 무반주 한소절 feat 짧음주의](https://www.youtube.com/watch?v=wM79rXkXj4E) | 기존 등록 | 20060924-seeya-funfun |
+| [씨야 멤버들 인생에서 가장 결정적인 노래는? (2.5집 별밤에서)](https://www.youtube.com/watch?v=nB13cfYOLfo) | 기존 등록 | museum-seeya-starrynight |
+| [씨야(연지) 비의 노래 직캠 IN 광주 챔피언스필드](https://www.youtube.com/watch?v=y4WM47V60EY) | 기존 등록 | 20180519-yeonji-boram-kia |
+| [씨야 구두 리허설 (엠카)](https://www.youtube.com/watch?v=9nSEQ7UQvp8) | 신규 등록 | 20200406-seeya-mcount-shoes-rehearsal |
+| [씨야 늘 지금처럼 (안재욱&차태현의 mr라디오)](https://www.youtube.com/watch?v=GUqRR_4KC2g) | 기존 등록 | v483-radio-001 |
+| [씨야 사랑의 인사 (대전 한빛 주간 콘서트)](https://www.youtube.com/watch?v=qO3K2K0GW_A) | 기존 등록 | museum-hanbit |
+| [씨야(보람) 티비 로펌 솔로몬 feat 똑부러지는 막내](https://www.youtube.com/watch?v=6i4-sJ3e9nc) | 기존 등록 | museum-boram-solomon |
+| [씨야 핫걸 뮤뱅 직캠 feat 가니의상](https://www.youtube.com/watch?v=HTDFr8KeP6I) | 보류 | Hot Girl 뮤직뱅크 직캠의 회차·기존 무대 대조 필요 |
+| [씨야 그래도 좋아 IN 서울가요대상](https://www.youtube.com/watch?v=ZFMwtm3ziGE) | 기존 등록 | 20080131-seoul-music-awards-bonsang |
+| [씨야 12년전 멤버들이 각자 이루고 싶은꿈은?](https://www.youtube.com/watch?v=v_OWRjH-eJQ) | 신규 등록 | 20200401-seeya-dream-interview |
+| [씨야(규리) 그사람 직캠](https://www.youtube.com/watch?v=V1Z8clsU1vw) | 보류 | 그 사람 직캠의 행사·날짜 확인 필요 |
+| [씨야 핫걸 컴백( 뮤직뱅크 대기실)](https://www.youtube.com/watch?v=f9vA874K4mM) | 기존 카드에 영상 추가 | v480-stage-035 |
+| [씨야가 경호원들에게 궁금한점은? IN 연예가중계](https://www.youtube.com/watch?v=NzHVyKMmiPI) | 기존 등록 | museum-bodyguard |
+| [씨야(연지) 가수의 꿈은 언제 부터 라는 질문에 (YTN 스타초대석)](https://www.youtube.com/watch?v=Lkt6I3t_AiY) | 신규 등록 | 20200328-yeonji-ytn-star |
+| [씨야(규리) 설특집 가요계 톱스타 쉘위댄스](https://www.youtube.com/watch?v=Evej65E_3EU) | 기존 등록 | 20090127-gyuri-shallwedance |
+| [씨야 동요 이어부르기 (한밤의 TV연예)](https://www.youtube.com/watch?v=U0IYPDCvksM) | 기존 등록 | museum-hanbam |
+| [씨야 가니 IN 소유진의 FM인기가요](https://www.youtube.com/watch?v=W4Tf7fjJg3M) | 기존 등록 | v483-radio-006 |
+| [씨야 빅4 콘서트 화보 촬영 (연예가중계)](https://www.youtube.com/watch?v=w7qt2_tR-EM) | 기존 등록 | 20070630-seeya-big4-making |
+| [씨야 일일 명예민원봉사실장 위촉장 feat 엉망진창 졸귀](https://www.youtube.com/watch?v=MzeIp8e3ypg) | 기존 등록 | 20080303-seeya-tax-service |
+| [씨야 엠넷 인터뷰 feat 신화창조 출신 이보람](https://www.youtube.com/watch?v=hDKzK1g3_zQ) | 기존 등록 | museum-mnet-interview |
+| [씨야 (보람 & 연지) 가장 무서워하는것은? IN 고사 선상파티](https://www.youtube.com/watch?v=s1PNx7GPbjw) | 기존 등록 | v482-event-013 |
+| [씨야 사랑하기 때문에 feat SG워너비 (한일 우정콘서트)](https://www.youtube.com/watch?v=DZ3OnfC62T0) | 신규 등록 | 20071024-seeya-kumamoto-friendship |
+| [씨야 결혼할까요 뮤직비디오 촬영현장](https://www.youtube.com/watch?v=g4A79QYDWds) | 기존 등록 | museum-marry-making |
+| [씨야 골든디스크 디지털 음원 본상 In 2007](https://www.youtube.com/watch?v=-Cp6OEu5TzA) | 기존 등록 | 20071214-golden-disc-digital-bonsang |
+| [씨야 붉은 노을 리허설 feat 가사모름주의](https://www.youtube.com/watch?v=_Db38HOSfDY) | 신규 등록 | 20200322-seeya-sunset-rehearsal |
+| [씨야 (규리) 사랑가 뮤비 촬영 현장](https://www.youtube.com/watch?v=WHHkPBnM9Mk) | 신규 등록 | 20200322-gyuri-sg-love-mv-making |
+| [씨야 단콘 이후 인터뷰 (와스타매거진)](https://www.youtube.com/watch?v=42t7HuQJEEQ) | 기존 등록 | museum-wastar-concert |
+| [씨야 마담B살롱 토크 (미방송분)](https://www.youtube.com/watch?v=b7CXgs_YfRc) | 기존 등록 | 20081123-seeya-madamb |
+| [씨야 그 사람 (국악버전)](https://www.youtube.com/watch?v=V79bEaACxa4) | 신규 등록 | 20081120-seeya-korea-song-festival |
+| [씨야 그래도 좋아 feat 바보 의상](https://www.youtube.com/watch?v=XQe6Vme4i0E) | 기존 등록 | 20080419-seeya-gyeongbuk |
+| [씨야(규리직캠) 슬픈발걸음 리허설 (레전드엠카무대)](https://www.youtube.com/watch?v=fk6KILOOjOs) | 신규 등록 | 20200320-seeya-mcount-sad-rehearsal |
+| [씨야(연지) 항마력 테스트 음성 2탄](https://www.youtube.com/watch?v=0185tsd8wCE) | 보류 | 짧은 음성 편집물로 원 출연 식별 불가 |
+| [씨야 헬로우쳇 (미사노활동) 후반](https://www.youtube.com/watch?v=cNdbh_COkv4) | 기존 등록 | 20060808-seeya-hellochat |
+| [씨야 헬로우쳇 (미사노활동) 전반](https://www.youtube.com/watch?v=xnyLLKsv5Lg) | 기존 등록 | 20060808-seeya-hellochat |
+| [씨야 사랑이 간다 (단독콘서트)](https://www.youtube.com/watch?v=IDq_gamxSoA) | 보류 | 첫 단독 콘서트의 도시·회차 미상, 기존 3개 공연과 대조 필요 |
+| [07.08.16 결혼할까요 (엠카)](https://www.youtube.com/watch?v=hkP26XJfSVs) | 기존 등록 | 20070816-seeya-mcount |
+| [씨야 팬싸인회 현장 (2집)](https://www.youtube.com/watch?v=6eI--fEA_f4) | 기존 등록 | museum-fansign-second |
+| [씨야 팬싸인회 현장 (1집)](https://www.youtube.com/watch?v=jNyrf-qPzFA) | 기존 등록 | museum-fansign-first |
+| [씨야 좋을텐데 김윤아의 마담B의 살롱](https://www.youtube.com/watch?v=U8Bvh3Wcx3Y) | 기존 등록 | 20081123-seeya-madamb |
+| [씨야(보람) 병원에 가다](https://www.youtube.com/watch?v=E3Qrp-TXpbE) | 신규 등록 | 20081128-boram-miru-musicbank |
+| [씨야 첫 단독 콘서트 feat 씨야컴백최고!!!](https://www.youtube.com/watch?v=axsXeGe-byM) | 보류 | 첫 단독 콘서트의 도시·회차 미상, 기존 공연과 대조 필요 |
+| [씨야 바보 (친친가요제)](https://www.youtube.com/watch?v=DFqJc_z7-is) | 신규 등록 | 20200317-seeya-chinchin-festival |
+| [씨야 (규리,보람) 처음 그 자리에 feat 보이는 라디오](https://www.youtube.com/watch?v=2_hanTTPLdE) | 신규 등록 | 20200317-gyuri-boram-first-place |
+| [씨야 사랑은 이별을 데리고 오다 (엠카)](https://www.youtube.com/watch?v=WnOVsFNnZTM) | 신규 등록 | 20080117-seeya-mcount-lovebreakup |
+| [씨야 뮤직웨이브 미공개 토크](https://www.youtube.com/watch?v=KS_96JQKfkk) | 보류 | 뮤직웨이브 미공개 토크, 기존 3회 출연과의 회차 대조 필요 |
+| [씨야 STAR WATCH](https://www.youtube.com/watch?v=99vvNdKDaDU) | 기존 등록 | museum-starwatch |
+| [07.10.29 씨야 칵테일 사랑](https://www.youtube.com/watch?v=2SdINvR33nU) | 기존 등록 | v487-history-014 |
+| [씨야 (보람) 핫걸 직캠](https://www.youtube.com/watch?v=pnn2WlgH3gM) | 보류 | Hot Girl 직캠의 방송·행사 식별 필요 |
+| [청소년 댄스경연 최우수상 수상자 김연지](https://www.youtube.com/watch?v=xnhECz9uA40) | 보류 | 청소년 댄스 경연 언급 클립, 실제 경연·방송 식별 필요 |
+| [씨야 얼음인형 km 쇼탱](https://www.youtube.com/watch?v=ffP7o94mAzg) | 신규 등록 | 20200311-seeya-km-musictank-ice |
+| [보람 모바일랭킹(인가)](https://www.youtube.com/watch?v=CHu3agckArQ) | 신규 등록 | 20200311-boram-inkigayo-mobile |
+| [씨야 미친 사랑의 노래 첫방](https://www.youtube.com/watch?v=Ru1i5b42JNM) | 보류 | 미친 사랑의 노래 첫 방송 표기, 기존 SBS 첫 무대와의 동일성 확인 필요 |
+| [07.12.22 씨야 슬픈발걸음 (음원버전)](https://www.youtube.com/watch?v=S7SIT91sdDs) | 기존 카드에 영상 추가 | 20071222-mbc-musiccore-sad-step |
+| [08.01.05 씨야 슬픈 발걸음 & 멘트 (사랑의 리퀘스트)](https://www.youtube.com/watch?v=2NEn0Ffus2g) | 기존 등록 | 20080105-seeya-love-request |
+| [규리가 연지 안마해주는 영상 feat 엠투엠 뮤비촬영](https://www.youtube.com/watch?v=_DK59MgZllc) | 신규 등록 | 20200310-gyuri-yeonji-m2m-making |
+| [씨야 미워요 (못말리는 결혼 미니 콘서트)](https://www.youtube.com/watch?v=sJ0cwg4525Y) | 기존 등록 | 20070507-seeya-wedding-showcase |
+| [씨야 슬픈 발걸음 (엠카 최애 영상)](https://www.youtube.com/watch?v=UhIf4d8bkKc) | 보류 | 슬픈 발걸음 엠카 회차 식별 필요 |
+| [07.03.01 씨야 미워요 엠 카운트다운](https://www.youtube.com/watch?v=R2Sf4TVhBVQ) | 기존 등록 | v487-history-008 |
+| [씨야 미워요 feat 결혼할까요 의상 & 오케스트라 합주](https://www.youtube.com/watch?v=RVnEypo1dVI) | 보류 | 미워요 오케스트라 편곡 무대의 행사·방송 식별 필요 |
+| [07.08.30 씨야 결혼할까요 엠카](https://www.youtube.com/watch?v=uMPhy9E_hHw) | 기존 등록 | 20070830-seeya-mcount |
+| [씨야 그래도 좋아 역대급 응원소리](https://www.youtube.com/watch?v=JPngNogndDQ) | 보류 | 그래도 좋아 무대의 방송·날짜 식별 필요 |
+| [규리(씨야) 체험 삶은 현장 파충류 돌보기편](https://www.youtube.com/watch?v=4fetjXdk6d4) | 신규 등록 | 20210211-gyuri-experience-reptiles |
+| [씨야 사랑의 인사 티저영상](https://www.youtube.com/watch?v=yQSxhRF61pA) | 기존 카드에 영상 추가 | 20070525-lovely-sweet-heart |
+| [규리,연지 사랑의 인사 무반주 (예능)](https://www.youtube.com/watch?v=qh-RdzII074) | 보류 | 무반주 예능 짧은 클립의 원 방송 식별 필요 |
+| [규리 여인의 향기 창법 변화 2006/2020](https://www.youtube.com/watch?v=LQsMEbQVDmI) | 보류 | 2006/2020 비교 편집물, 새로운 출연으로 세지 않음 |
+| [씨야폰 처음받았을때의 씨야 반응](https://www.youtube.com/watch?v=3Sfz1UcmBTI) | 신규 등록 | 20200307-seeya-phone-reaction |
+| [보람 항마력 테스트 음성](https://www.youtube.com/watch?v=LJnzTwhfzS4) | 보류 | 짧은 음성 편집물로 원 출연 식별 불가 |
+| [씨야 서울가요대상 본상 feat 보람이가 꼭 하고싶었던말은](https://www.youtube.com/watch?v=QSPE7tASsjE) | 기존 카드에 영상 추가 | 20080131-seoul-music-awards-bonsang |
+| [연지 항마력 테스트 음성](https://www.youtube.com/watch?v=oTTNPJacLMU) | 보류 | 짧은 음성 편집물로 원 출연 식별 불가 |
+| [씨야 얼굴공개 & 첫인터뷰](https://www.youtube.com/watch?v=VFX3pkyAfcA) | 보류 | 기존 데뷔 인터뷰·팬 자료와의 원 출처 대조 필요 |
+| [규리 금연송](https://www.youtube.com/watch?v=HwTtVpD0uts) | 신규 등록 | 20080831-gyuri-inkigayo-nosmoking |
+| [씨야 의리녀 이보람 feat 은혁](https://www.youtube.com/watch?v=a5EHmCU7bBY) | 보류 | 은혁과의 라디오 대화, 기존 슈키라와 회차 대조 필요 |
+| [차에서 수다떠는 씨야](https://www.youtube.com/watch?v=69QCmtJ9AzE) | 보류 | 차 안 대화 클립의 원 프로그램 식별 필요 |
+| [씨야 보이는 라디오 (서경석의 뮤직쇼)](https://www.youtube.com/watch?v=-sBEvFr5Rs0) | 기존 등록 | v483-radio-004 |
+| [미스리플리 보람(씨야)](https://www.youtube.com/watch?v=QTOy2cyIgNc) | 보류 | 제목만으로 미스 리플리 실제 출연을 판단할 수 없음 |
+| [씨야 밥퍼스](https://www.youtube.com/watch?v=afKjPTLXcWI) | 신규 등록 | 20080221-seeya-bobpers |
+| [씨야 BIG4 포스터촬영](https://www.youtube.com/watch?v=WfZk0PSHXHM) | 보류 | BIG4 포스터 현장, 기존 2007 제작 현장과 연도 대조 필요 |
+| [씨야 인기가요 사랑의인사 뮤티즌송 with 왕소라](https://www.youtube.com/watch?v=_l3_aLmC94k) | 보류 | 사랑의 인사 뮤티즌송 수상일 추가 확인 필요 |
+| [씨야 생명을 위협하는 스타의 24시 하지마](https://www.youtube.com/watch?v=TlXeknibVOo) | 보류 | 스타 24시·STAR WATCH 기존 출연과의 중복 대조 필요 |
+| [씨야 하나의 꽃](https://www.youtube.com/watch?v=e0EcdevRMmw) | 보류 | 하나의 꽃이라는 제목만으로 원 출연 식별 불가 |
+| [씨야 스쿨오브락 휘문고편 (2007)](https://www.youtube.com/watch?v=VEiJReLCEKA) | 기존 등록 | v487-history-020 |
+| [씨야 스쿨오브락 여수고편 (2006)](https://www.youtube.com/watch?v=fI8ESH_lGsA) | 기존 등록 | v487-history-019 |
+| [씨야 사랑의 인사 1위 (엠카)](https://www.youtube.com/watch?v=vOA_l2z5GWg) | 신규 등록 | 20070705-seeya-mcount-lovegreeting-win |
+| [Seeya 미워요 행사중 feat 연지 마이크 고장](https://www.youtube.com/watch?v=Mm65y5fWbk8) | 보류 | 짧은 미워요 행사 영상의 행사·날짜 식별 필요 |
+| [연지 라이브방송 feat 지킬앤하이드급 표정변화](https://www.youtube.com/watch?v=VnMTqjR07p0) | 보류 | 짧은 라이브 반응 편집물의 원 출연 식별 필요 |
+| [씨야 행사2](https://www.youtube.com/watch?v=1PI0yoMndng) | 보류 | 씨야 행사2 영상의 행사명·날짜 식별 필요 |
+
 ## v4.126 — 기차 말머리 자료 대조: 45건 추가·15건 보완 (2026-09-19)
 
 - 아카이브 1,000 → 1,045건: 음악방송·무대 16, 공연 1, 예능 9, 라디오 18, 인스타그램 라이브 1건 추가. 페이지당 9개, 총 117페이지.
