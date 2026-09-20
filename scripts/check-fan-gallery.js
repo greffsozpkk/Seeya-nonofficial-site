@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict');
 const {prepare,pageSlice,cards,pagination}=require('../src/shared/fan-gallery');
 const data=require('../src/data/fan-posts.json');
-const posts=prepare(data);assert.equal(posts.length,5);
+const posts=prepare(data);assert.equal(posts.length,data.posts.length);assert(posts.length>0);
 const fixture=Array.from({length:13},(_,i)=>({...posts[0],id:'sample'+i}));
 assert.equal(pageSlice(fixture,1).items.length,6);
 assert.equal(pageSlice(fixture,2).items.length,6);
