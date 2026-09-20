@@ -1,0 +1,339 @@
+{
+  "title": "씨야 모의고사",
+  "level": "상",
+  "points": 4,
+  "questions": [
+    {
+      "id": "h01",
+      "type": "choice",
+      "prompt": "다음 중 두 앨범 모두 2008년에 발매된 조합은 무엇일까요?",
+      "choices": [
+        "The First Mind · Lovely Sweet Heart",
+        "California Dream · Brilliant Change",
+        "Brilliant Change · Rebloom",
+        "Rebloom · See You Again"
+      ],
+      "answer": 1,
+      "explanation": "California Dream과 Brilliant Change는 모두 2008년에 발매되었습니다.",
+      "source": "https://music.bugs.co.kr/album/100005"
+    },
+    {
+      "id": "h02",
+      "type": "choice",
+      "prompt": "「구두Ⅱ」라는 부제가 붙은 곡은 무엇일까요?",
+      "choices": [
+        "슬픈 발걸음",
+        "그 사람",
+        "미워요",
+        "그래도 좋아"
+      ],
+      "answer": 0,
+      "explanation": "「슬픈 발걸음」은 「구두Ⅱ」라는 부제로도 알려져 있습니다.",
+      "source": "https://music.bugs.co.kr/album/203741"
+    },
+    {
+      "id": "h03",
+      "type": "choice",
+      "prompt": "「그 사람 (구두Ⅲ)」이 처음 수록된 정규 앨범은 무엇일까요?",
+      "choices": [
+        "The First Mind",
+        "Lovely Sweet Heart",
+        "Brilliant Change",
+        "First, Again"
+      ],
+      "answer": 2,
+      "explanation": "「그 사람 (구두Ⅲ)」은 정규 3집 Brilliant Change 수록곡입니다.",
+      "source": "https://open.spotify.com/album/5oLFtuiqV44VmUVPbyQf1W"
+    },
+    {
+      "id": "h04",
+      "type": "choice",
+      "prompt": "씨야의 「사랑의 인사」에 샘플링된 동명의 클래식 곡을 작곡한 사람은 누구일까요?",
+      "choices": [
+        "쇼팽",
+        "모차르트",
+        "비발디",
+        "엘가"
+      ],
+      "answer": 3,
+      "explanation": "엘가의 동명 작품 「사랑의 인사」를 샘플링했습니다.",
+      "source": "https://music.bugs.co.kr/album/8026965"
+    },
+    {
+      "id": "h05",
+      "type": "choice",
+      "prompt": "「여인의 향기」의 작곡가는 누구일까요?",
+      "choices": [
+        "조영수",
+        "김도훈",
+        "류재현",
+        "이민수"
+      ],
+      "answer": 0,
+      "explanation": "「여인의 향기」는 조영수가 작곡하고 안영민이 작사했습니다.",
+      "source": "https://music.bugs.co.kr/album/8016131"
+    },
+    {
+      "id": "h06",
+      "type": "choice",
+      "prompt": "「구두」의 작사와 작곡을 맡은 사람은 누구일까요?",
+      "choices": [
+        "안영민",
+        "류재현",
+        "김도훈",
+        "박근태"
+      ],
+      "answer": 1,
+      "explanation": "바이브의 류재현이 작사와 작곡을 맡았습니다.",
+      "source": "https://music.bugs.co.kr/album/8016131"
+    },
+    {
+      "id": "h07",
+      "type": "choice",
+      "prompt": "씨야가 정규 1집에서 리메이크한 「Promise U」의 원곡 가수는 누구일까요?",
+      "choices": [
+        "SG워너비",
+        "브라운 아이즈",
+        "바이브",
+        "플라이 투 더 스카이"
+      ],
+      "answer": 2,
+      "explanation": "바이브의 1집 수록곡을 씨야가 리메이크했습니다.",
+      "source": "https://music.bugs.co.kr/album/8016131"
+    },
+    {
+      "id": "h08",
+      "type": "choice",
+      "prompt": "정규 1집 「사랑하기 때문에」에 피처링으로 참여한 그룹은 누구일까요?",
+      "choices": [
+        "바이브",
+        "노을",
+        "브라운 아이즈",
+        "SG워너비"
+      ],
+      "answer": 3,
+      "explanation": "「사랑하기 때문에」에는 SG워너비가 함께했습니다.",
+      "source": "https://music.bugs.co.kr/album/8016131"
+    },
+    {
+      "id": "h09",
+      "type": "choice",
+      "prompt": "2009년 「여성시대」 활동에 씨야·다비치와 함께 참여한 티아라 멤버는 누구일까요?",
+      "choices": [
+        "지연",
+        "효민",
+        "은정",
+        "소연"
+      ],
+      "answer": 0,
+      "explanation": "「여성시대」 활동에는 티아라의 지연이 참여했습니다.",
+      "source": "https://enews.imbc.com/News/RetrieveNewsInfo/6852"
+    },
+    {
+      "id": "h10",
+      "type": "choice",
+      "prompt": "씨야·다비치·블랙펄의 프로젝트 음반 《COLOR PINK》의 타이틀곡은 무엇일까요?",
+      "choices": [
+        "여성시대",
+        "Blue Moon",
+        "원더우먼",
+        "The Day"
+      ],
+      "answer": 1,
+      "explanation": "세 그룹이 함께 부른 타이틀곡은 「Blue Moon」입니다.",
+      "source": "https://www.genie.co.kr/detail/albumInfo?axnm=59753834"
+    },
+    {
+      "id": "h11",
+      "type": "choice",
+      "prompt": "다음 중 「가니」의 피처링 명단에 없는 사람은 누구일까요?",
+      "choices": [
+        "김용준",
+        "황정음",
+        "김진호",
+        "Mario"
+      ],
+      "answer": 2,
+      "explanation": "「가니」에는 김용준, 황정음, Mario가 피처링으로 표기되어 있습니다.",
+      "source": "https://www.genie.co.kr/detail/songInfo?xgnm=68371013"
+    },
+    {
+      "id": "h12",
+      "type": "choice",
+      "prompt": "「그 놈 목소리」의 작곡가는 누구일까요?",
+      "choices": [
+        "조영수",
+        "김도훈",
+        "류재현",
+        "이민수"
+      ],
+      "answer": 3,
+      "explanation": "「그 놈 목소리」는 이민수가 작곡한 곡입니다.",
+      "source": "https://music.bugs.co.kr/album/203741"
+    },
+    {
+      "id": "h13",
+      "type": "choice",
+      "prompt": "다음 중 미니앨범 《Rebloom》에 수록되지 않은 곡은 무엇일까요?",
+      "choices": [
+        "얼음인형",
+        "앗차!",
+        "눈물의 여왕",
+        "바람핀다 믿었니"
+      ],
+      "answer": 0,
+      "explanation": "「얼음인형」은 정규 2집 수록곡입니다. 나머지 세 곡은 Rebloom에 수록되어 있습니다.",
+      "source": "https://music.bugs.co.kr/album/203741"
+    },
+    {
+      "id": "h14",
+      "type": "choice",
+      "prompt": "2010년 「원더우먼」 프로젝트에 참여한 티아라 멤버 두 명은 누구일까요?",
+      "choices": [
+        "지연 · 소연",
+        "효민 · 은정",
+        "큐리 · 보람",
+        "은정 · 지연"
+      ],
+      "answer": 1,
+      "explanation": "「원더우먼」에는 티아라의 효민과 은정이 참여했습니다.",
+      "source": "https://enews.imbc.com/News/RetrieveNewsInfo/6852"
+    },
+    {
+      "id": "h15",
+      "type": "choice",
+      "prompt": "《슈가맨3》 씨야 편에서 「사랑의 인사」를 2020년 버전으로 선보인 가수는 누구일까요?",
+      "choices": [
+        "윤하",
+        "정승환",
+        "적재",
+        "폴킴"
+      ],
+      "answer": 2,
+      "explanation": "씨야의 슈가송 「사랑의 인사」를 적재가 새롭게 선보였습니다.",
+      "source": "https://www.osen.co.kr/article/G1111314118"
+    },
+    {
+      "id": "h16",
+      "type": "choice",
+      "prompt": "영화 《고死: 피의 중간고사》에서 남규리가 연기한 인물은 누구일까요?",
+      "choices": [
+        "신지현",
+        "한유라",
+        "윤새봄",
+        "강이나"
+      ],
+      "answer": 3,
+      "explanation": "남규리는 여고생 강이나 역을 맡았습니다.",
+      "source": "https://host.cine21.com/news/view/?idx=0&mag_id=52523"
+    },
+    {
+      "id": "h17",
+      "type": "choice",
+      "prompt": "2019년 《마리 앙투아네트》에서 김연지가 맡은 역할은 무엇일까요?",
+      "choices": [
+        "마그리드 아르노",
+        "마리 앙투아네트",
+        "콘스탄체 베버",
+        "마담 랑발"
+      ],
+      "answer": 0,
+      "explanation": "김연지는 마그리드 아르노 역으로 출연했습니다.",
+      "source": "https://ticket.melon.com/performance/popup/casting_calendar.htm?prodId=203723"
+    },
+    {
+      "id": "h18",
+      "type": "choice",
+      "prompt": "다음 중 이보람과 함께한 가야G 멤버가 아닌 사람은 누구일까요?",
+      "choices": [
+        "정지소",
+        "권진아",
+        "소연",
+        "HYNN(박혜원)"
+      ],
+      "answer": 1,
+      "explanation": "가야G는 이보람, 소연, HYNN(박혜원), 정지소로 구성되었습니다. 권진아는 4FIRE 멤버입니다.",
+      "source": "https://enews.imbc.com/News/RetrieveNewsInfo/353873"
+    },
+    {
+      "id": "h19",
+      "type": "choice",
+      "prompt": "《First, Again》에 인스트루멘털 트랙으로도 수록된 두 곡의 조합은 무엇일까요?",
+      "choices": [
+        "봄처럼 그댄 · 우리",
+        "Stay · 잔향",
+        "Stay · 그럼에도, 우린",
+        "우리 · 그럼에도, 우린"
+      ],
+      "answer": 2,
+      "explanation": "10번 트랙은 Stay Inst., 11번 트랙은 그럼에도, 우린 Inst. (To My Fan)입니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "h20",
+      "type": "choice",
+      "prompt": "다음 중 「Stay」의 작곡 크레디트에 없는 사람은 누구일까요?",
+      "choices": [
+        "박근태",
+        "김도훈",
+        "강지원",
+        "조영수"
+      ],
+      "answer": 3,
+      "explanation": "「Stay」의 작곡가는 박근태, 김도훈, 강지원입니다.",
+      "source": "https://music.bugs.co.kr/track/6464992"
+    },
+    {
+      "id": "h21",
+      "type": "text",
+      "prompt": "정규 1집 《The First Mind》의 마지막 트랙 제목을 적어주세요.",
+      "answer": "내 잘못입니다",
+      "aliases": [],
+      "explanation": "1집의 12번 트랙은 「내 잘못입니다」입니다.",
+      "source": "https://music.bugs.co.kr/album/8016131"
+    },
+    {
+      "id": "h22",
+      "type": "text",
+      "prompt": "정규 2집 《Lovely Sweet Heart》에서 「사랑의 인사」, 「결혼할까요」 다음에 나오는 3번 트랙은 무엇일까요?",
+      "answer": "너는 내 남자",
+      "aliases": [],
+      "explanation": "2집의 3번 트랙은 「너는 내 남자」입니다.",
+      "source": "https://music.bugs.co.kr/album/8026965"
+    },
+    {
+      "id": "h23",
+      "type": "text",
+      "prompt": "정규 3집 수록곡 「집으로 돌아오는길」에 피처링으로 참여한 SG워너비 멤버는 누구일까요?",
+      "answer": "김진호",
+      "aliases": [
+        "SG워너비 김진호",
+        "김진호(SG워너비)",
+        "SG워너비(김진호)"
+      ],
+      "explanation": "「집으로 돌아오는길」에는 SG워너비의 김진호가 참여했습니다.",
+      "source": "https://open.spotify.com/album/5oLFtuiqV44VmUVPbyQf1W"
+    },
+    {
+      "id": "h24",
+      "type": "text",
+      "prompt": "김연지가 《슈가맨3》에서 소개한, 직접 작사·작곡한 신곡의 제목은 무엇일까요?",
+      "answer": "바람이 불면",
+      "aliases": [],
+      "explanation": "김연지는 방송에서 자작곡 「바람이 불면」을 소개했습니다.",
+      "source": "https://isplus.com/article/view/isp202002220007"
+    },
+    {
+      "id": "h25",
+      "type": "text",
+      "prompt": "《First, Again》 수록곡 중 남규리·김연지·이보람 세 사람 모두 작사와 작곡에 이름을 올렸으며, 별도의 Live Ver.도 수록된 곡은 무엇일까요?",
+      "answer": "우리",
+      "aliases": [
+        "우리 Live Ver.",
+        "우리 (Live Ver.)"
+      ],
+      "explanation": "「우리」는 세 멤버가 함께 작사·작곡했습니다. 앨범에는 Live Ver.도 실려 있습니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    }
+  ]
+}
