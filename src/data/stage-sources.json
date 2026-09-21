@@ -583,5 +583,35 @@
     "scope": "single",
     "category": "broadcast",
     "basis": "공식 개별 클립 제목에 출연자와 해당 곡이 명시됨. 같은 회차의 다른 곡은 배정하지 않음."
+  },
+  {
+    "archiveId": "20260920-gyuri-gwangju-charity",
+    "url": "https://www.youtube.com/watch?v=qFqV6u-IJiA",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "2026-09-20 한마음 대축제 곡별 직캠 제목과 재생목록 확인"
+  },
+  {
+    "archiveId": "20260920-gyuri-gwangju-charity",
+    "url": "https://www.youtube.com/watch?v=wNw53OiikfY",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "2026-09-20 한마음 대축제 곡별 직캠 제목과 재생목록 확인"
+  },
+  {
+    "archiveId": "20260920-gyuri-gwangju-charity",
+    "url": "https://www.youtube.com/watch?v=5m_809VmJpA",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "2026-09-20 한마음 대축제 곡별 직캠 제목과 재생목록 확인"
   }
 ]

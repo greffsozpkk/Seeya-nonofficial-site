@@ -34,11 +34,46 @@
       {
         "label": "YES24 · THE FAN 지역별 공연 안내",
         "url": "https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"
+      },
+      {
+        "label": "씨야엔터테인먼트 · 콘서트 사연 모집",
+        "url": "https://www.instagram.com/p/Dda3PYnvGLz/"
       }
     ],
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-21",
     "dateStatus": "confirmed",
     "dateBasis": "event"
+  },
+  {
+    "id": "20261025-boram-worldmom-seocho",
+    "date": "2026-10-25",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "이보람 · 세상을 바꾸는 여자들 서초 공연 예정",
+    "program": "세상을 바꾸는 여자들 · 서초",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "세상을 바꾸는 여자들 · 공식 10월 일정 포스터",
+      "url": "https://www.instagram.com/p/Ddig1oqEXCY/"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [
+      "2026",
+      "예정",
+      "세상을 바꾸는 여자들 · 서초"
+    ],
+    "note": "주최 측이 공개한 10월 일정표에 이보람의 10월 25일 서초 공연이 안내됐습니다.\n공연 장소와 시간은 추가 안내를 기다리고 있습니다.",
+    "eventState": "scheduled",
+    "venue": "서울 서초"
   },
   {
     "id": "20261017-the-fan-suwon",
@@ -75,9 +110,13 @@
       {
         "label": "YES24 · THE FAN 지역별 공연 안내",
         "url": "https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"
+      },
+      {
+        "label": "씨야엔터테인먼트 · 콘서트 사연 모집",
+        "url": "https://www.instagram.com/p/Dda3PYnvGLz/"
       }
     ],
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-21",
     "dateStatus": "confirmed",
     "dateBasis": "event"
   },
@@ -116,9 +155,13 @@
       {
         "label": "YES24 · THE FAN 지역별 공연 안내",
         "url": "https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"
+      },
+      {
+        "label": "씨야엔터테인먼트 · 콘서트 사연 모집",
+        "url": "https://www.instagram.com/p/Dda3PYnvGLz/"
       }
     ],
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-21",
     "dateStatus": "confirmed",
     "dateBasis": "event"
   },
@@ -157,9 +200,13 @@
       {
         "label": "YES24 · THE FAN 지역별 공연 안내",
         "url": "https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530"
+      },
+      {
+        "label": "씨야엔터테인먼트 · 콘서트 사연 모집",
+        "url": "https://www.instagram.com/p/Dda3PYnvGLz/"
       }
     ],
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-09-21",
     "dateStatus": "confirmed",
     "dateBasis": "event"
   },
@@ -238,6 +285,216 @@
     "dateStatus": "confirmed"
   },
   {
+    "id": "20260927-gyuri-mbc-noon-dj",
+    "date": "2026-09-27",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 정오의 희망곡 스페셜 DJ 예정 · 게스트 최유정",
+    "program": "정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "정오의 희망곡 · 공식 주간 편성",
+      "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "예정",
+      "정오의 희망곡 김신영입니다"
+    ],
+    "note": "9월 27일 낮 12시 MBC FM4U 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다.\n게스트는 최유정입니다.",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20260926-gyuri-mbc-noon-dj",
+    "date": "2026-09-26",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 정오의 희망곡 스페셜 DJ 예정 · 게스트 나비",
+    "program": "정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "정오의 희망곡 · 공식 주간 편성",
+      "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "예정",
+      "정오의 희망곡 김신영입니다"
+    ],
+    "note": "9월 26일 낮 12시 MBC FM4U 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다.\n게스트는 나비입니다.",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20260925-gyuri-mbc-noon-dj",
+    "date": "2026-09-25",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 정오의 희망곡 스페셜 DJ 예정",
+    "program": "정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "정오의 희망곡 · 공식 주간 편성",
+      "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "예정",
+      "정오의 희망곡 김신영입니다"
+    ],
+    "note": "9월 25일 낮 12시 MBC FM4U 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다.",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20260925-yeonji-mbc-2pdate",
+    "date": "2026-09-25",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "김연지 · 두시의 데이트 · 추석엔 라이브지 출연 예정",
+    "program": "두시의 데이트 안영미입니다",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "두시의 데이트 · 공식 주간 편성",
+      "url": "https://www.instagram.com/p/DdgcSUoH5lW/"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "예정",
+      "두시의 데이트 안영미입니다"
+    ],
+    "note": "9월 25일 오후 2시 MBC FM4U 두시의 데이트에 김연지가 정동하와 함께 출연할 예정입니다.\n추석 특집 라이브 코너이며 보이는 라디오로 안내됐습니다.",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20260924-gyuri-mbc-noon-dj",
+    "date": "2026-09-24",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 정오의 희망곡 스페셜 DJ 예정 · 게스트 정모",
+    "program": "정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "정오의 희망곡 · 공식 주간 편성",
+      "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "예정",
+      "정오의 희망곡 김신영입니다"
+    ],
+    "note": "9월 24일 낮 12시 MBC FM4U 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다.\n게스트는 정모입니다.",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20260923-gyuri-mbc-noon-dj",
+    "date": "2026-09-23",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 정오의 희망곡 스페셜 DJ 예정 · 게스트 소란",
+    "program": "정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "정오의 희망곡 · 공식 주간 편성",
+      "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "예정",
+      "정오의 희망곡 김신영입니다"
+    ],
+    "note": "9월 23일 낮 12시 MBC FM4U 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다.\n게스트는 소란입니다. 보이는 라디오로 안내됐습니다.",
+    "eventState": "scheduled"
+  },
+  {
+    "id": "20260922-gyuri-mbc-noon-dj",
+    "date": "2026-09-22",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 정오의 희망곡 스페셜 DJ 예정",
+    "program": "정오의 희망곡 김신영입니다",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "정오의 희망곡 · 공식 주간 편성",
+      "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "예정",
+      "정오의 희망곡 김신영입니다"
+    ],
+    "note": "9월 22일 낮 12시 MBC FM4U 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다.",
+    "eventState": "scheduled"
+  },
+  {
     "id": "20260921-woosuk-festival",
     "date": "2026-09-21",
     "addedAt": "2026-09-16",
@@ -262,7 +519,7 @@
       "예정",
       "2026 우석대학교 대동제 · 청요: 청춘의 LEVEL을 밝히다"
     ],
-    "note": "9월 21~22일 전주캠퍼스 농구장 주무대에서 열리는 ‘2026 청요: 청춘의 LEVEL을 밝히다’ 축제입니다. 씨야는 1일차인 9월 21일 출연 예정입니다.",
+    "note": "9월 21일 우석대학교 전주캠퍼스 대동제 청요에 씨야가 출연할 예정입니다.\n총학생회가 공개한 타임테이블에서 씨야 무대는 오후 9시~9시 30분으로 안내됐습니다.\n공연 장소는 전주캠퍼스 농구장 주무대이며, 현장 진행에 따라 시간은 달라질 수 있습니다.",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "eventState": "scheduled",
@@ -275,16 +532,20 @@
       {
         "label": "씨야 갤러리 · 총학생회 라인업 캡처",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8433"
+      },
+      {
+        "label": "우석대학교 총학생회 · 타임테이블 공유",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8558"
       }
     ],
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-09-21"
   },
   {
     "id": "20260921-gyuri-mbc-noon-dj",
     "date": "2026-09-21",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
-    "title": "남규리 · MBC 정오의 희망곡 스페셜 DJ 예정",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 정오의 희망곡 스페셜 DJ · 첫 방송",
     "program": "정오의 희망곡 김신영입니다",
     "type": "radio",
     "members": [
@@ -294,58 +555,140 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "MBC RADIO · 스페셜 DJ 공식 라이브 안내",
+      "label": "MBC RADIO · 9월 21일 1·2부 공식 영상",
       "url": "https://www.youtube.com/watch?v=pOqhfoHhW9A"
     },
-    "additionalSources": [],
-    "status": "documented",
-    "eventState": "scheduled",
+    "additionalSources": [
+      {
+        "label": "IDOL RADIO UNIVERSE · In A Minute과 함께한 공식 전체 방송",
+        "url": "https://www.youtube.com/watch?v=a2cecHZ64tE"
+      },
+      {
+        "label": "정오의 희망곡 · 9월 21일 현장 사진",
+        "url": "https://www.instagram.com/p/DdicUJnia99/"
+      },
+      {
+        "label": "정오의 희망곡 · 9월 21~27일 공식 주간 편성",
+        "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+      }
+    ],
+    "status": "available",
+    "eventState": "completed",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "예정",
       "라디오",
       "스페셜 DJ"
     ],
-    "note": "9월 21일 낮 12시 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다."
+    "note": "9월 21일 낮 12시 MBC FM4U 정오의 희망곡에서 스페셜 DJ를 맡았습니다.\n이날 게스트는 In A Minute입니다. 1·2부 공식 영상과 게스트가 함께한 전체 방송 영상을 볼 수 있습니다.\n스페셜 DJ 일정은 9월 27일까지 이어집니다."
+  },
+  {
+    "id": "20260921-boram-kyoungseo-duet",
+    "date": "2026-09-21",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "이보람 · 경서와 함께한 별이 떨어질 때",
+    "program": "경서 공식 · 별이 떨어질 때 듀엣",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "별이 떨어질 때"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "경서 공식 · 듀엣 릴스",
+      "url": "https://www.instagram.com/p/DdiyiU8vB2r/",
+      "publishedDate": "2026-09-21"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026",
+      "경서 공식 · 별이 떨어질 때 듀엣"
+    ],
+    "note": "이보람과 경서가 함께 부른 별이 떨어질 때 듀엣 영상입니다.\n날짜는 릴스가 공개된 날입니다.",
+    "publishedDate": "2026-09-21"
   },
   {
     "id": "20260920-gyuri-gwangju-charity",
     "date": "2026-09-20",
     "addedAt": "2026-09-18",
-    "title": "남규리 · 어깨동무 연예인봉사단 자선공연 출연 예정",
+    "title": "남규리 · 한마음 대축제 자선공연",
     "program": "한마음 대축제 · 어깨동무 연예인봉사단 자선공연",
     "type": "event",
     "members": [
       "남규리"
     ],
-    "songs": [],
+    "songs": [
+      "사랑의 인사",
+      "미친 사랑의 노래",
+      "기댈 곳",
+      "깊은 밤을 날아서",
+      "결혼할까요"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "9월 18일 공유된 변경 포스터 · 공식 원문 확인 전",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8548"
+      "label": "Hot Issue · 한마음 대축제 5곡 직캠 재생목록",
+      "url": "https://www.youtube.com/playlist?list=PLVueUxApK8ng"
     },
     "additionalSources": [
       {
-        "label": "9월 17일 공유된 이전 포스터 · 시간 상이",
+        "label": "행사 포스터 · 갤러리 공유",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8548"
+      },
+      {
+        "label": "이전 행사 포스터 · 갤러리 공유",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8528"
+      },
+      {
+        "label": "Hot Issue · 사랑의 인사 직캠",
+        "url": "https://www.youtube.com/watch?v=qFqV6u-IJiA"
+      },
+      {
+        "label": "Hot Issue · 미친 사랑의 노래 직캠",
+        "url": "https://www.youtube.com/watch?v=wNw53OiikfY"
+      },
+      {
+        "label": "Hot Issue · 기댈 곳 직캠",
+        "url": "https://www.youtube.com/watch?v=BrtZl-qSVRY"
+      },
+      {
+        "label": "Hot Issue · 깊은 밤을 날아서 직캠",
+        "url": "https://www.youtube.com/watch?v=QO7t5MaGVl4"
+      },
+      {
+        "label": "Hot Issue · 결혼할까요 직캠",
+        "url": "https://www.youtube.com/watch?v=5m_809VmJpA"
+      },
+      {
+        "label": "신호등TV · 남규리 무대 전체 직캠",
+        "url": "https://www.youtube.com/watch?v=zbczj65sDyE"
+      },
+      {
+        "label": "한마음 대축제 · 현장 중계 영상",
+        "url": "https://www.youtube.com/watch?v=UeyqTRkneGw"
       }
     ],
-    "status": "documented",
-    "eventState": "scheduled",
+    "status": "available",
+    "eventState": "completed",
     "tags": [
       "2026",
-      "예정",
       "광주",
-      "자선공연"
+      "자선공연",
+      "라이브"
     ],
-    "note": "9월 20일 광주교육대학교 제1운동장에서 열리는 행사에 남규리가 출연할 예정입니다. 새 포스터는 낮 12시 시작으로 안내하지만 이전 포스터의 오후 7시와 달라, 방문 전 최종 시간 확인이 필요합니다. 일정은 잠정입니다.",
-    "dateStatus": "tentative",
+    "note": "9월 20일 광주교육대학교 제1운동장에서 열린 어깨동무 연예인봉사단 자선공연입니다.\n남규리가 사랑의 인사, 미친 사랑의 노래, 기댈 곳, 깊은 밤을 날아서, 결혼할까요를 불렀습니다.\n곡별 직캠 재생목록과 현장 전체 영상을 함께 볼 수 있습니다.",
+    "dateStatus": "confirmed",
     "dateBasis": "event",
     "venue": "광주교육대학교 제1운동장",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-09-21"
   },
   {
     "id": "20260920-gyuri-gyulmung-ep63",
@@ -376,6 +719,104 @@
     "dateBasis": "video-published",
     "publishedDate": "2026-09-20",
     "episode": 63
+  },
+  {
+    "id": "20260920-yeonji-huhmax-song",
+    "date": "2026-09-20",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "김연지 · 허맥스와 함께한 노래",
+    "program": "허맥스·김연지 · 노래 듀엣",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "허맥스·김연지 · 공동 게시 릴스",
+      "url": "https://www.instagram.com/p/DdgNsiCP127/",
+      "publishedDate": "2026-09-20"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026",
+      "허맥스·김연지 · 노래 듀엣"
+    ],
+    "note": "김연지와 허맥스가 다시 만나 여자 키로 부른 노래 듀엣 영상입니다.\n날짜는 릴스가 공개된 날입니다.",
+    "publishedDate": "2026-09-20"
+  },
+  {
+    "id": "20260920-gyuri-sportschosun-silver",
+    "date": "2026-09-20",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 10만 구독자와 첫 영상 촬영 비하인드 보도",
+    "program": "스포츠조선",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스포츠조선 · 기사 원문",
+      "url": "https://www.sportschosun.com/entertainment/2026-09-20/202609200100136590008892"
+    },
+    "additionalSources": [
+      {
+        "label": "관련 공식 영상",
+        "url": "https://www.youtube.com/watch?v=PQuBCS74HxM"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published",
+    "tags": [
+      "2026",
+      "스포츠조선"
+    ],
+    "note": "귤멍 실버버튼 언박싱 영상에서 밝힌 첫 촬영 경험과 구독자 10만 명 달성 소감을 소개한 기사입니다."
+  },
+  {
+    "id": "20260920-gyuri-starnews-silver",
+    "date": "2026-09-20",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 유튜브 시작 1년 만의 10만 구독자 달성 보도",
+    "program": "스타뉴스",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스타뉴스 · 기사 원문",
+      "url": "https://www.starnewskorea.com/star/2026/09/20/2026092019054431583"
+    },
+    "additionalSources": [
+      {
+        "label": "관련 공식 영상",
+        "url": "https://www.youtube.com/watch?v=PQuBCS74HxM"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published",
+    "tags": [
+      "2026",
+      "스타뉴스"
+    ],
+    "note": "개인 채널 귤멍의 성장과 실버버튼을 받은 소감, 구독자에게 전한 감사 인사를 소개한 기사입니다."
   },
   {
     "id": "20260919-daegu-national-song-festival",
@@ -435,6 +876,39 @@
     "updatedAt": "2026-09-20"
   },
   {
+    "id": "20260919-gyuri-tvreport-interview",
+    "date": "2026-09-19",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "남규리 · 하지영 인터뷰와 별명 가만히에 관한 보도",
+    "program": "TV리포트",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "TV리포트 · 기사 원문",
+      "url": "https://tvreport.co.kr/entertainment/article/1076830/"
+    },
+    "additionalSources": [
+      {
+        "label": "관련 공식 영상",
+        "url": "https://www.youtube.com/watch?v=3gsDYH3nZCA"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published",
+    "tags": [
+      "2026",
+      "TV리포트"
+    ],
+    "note": "하지영과의 인터뷰에서 전한 지난 활동과 개인 채널을 시작한 뒤의 변화를 소개한 기사입니다."
+  },
+  {
     "id": "20260918-boram-daegu-vlog",
     "date": "2026-09-18",
     "addedAt": "2026-09-18",
@@ -465,6 +939,99 @@
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
     "publishedDate": "2026-09-18"
+  },
+  {
+    "id": "20260918-yeonji-voicejaekook-story",
+    "date": "2026-09-18",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "김연지 · 자신의 이야기를 노래에 담은 이유",
+    "program": "목소리는 오재국 · 솔직리얼TALK",
+    "type": "interview",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "목소리는 오재국 · 공식 인터뷰",
+      "url": "https://www.youtube.com/watch?v=mFeQVrZ1xEs",
+      "publishedDate": "2026-09-18"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026",
+      "목소리는 오재국 · 솔직리얼TALK"
+    ],
+    "note": "자신의 이야기를 노래에 담는 과정과 노래를 통해 전하고 싶은 마음을 이야기한 인터뷰입니다.\n날짜는 영상 공개일입니다.",
+    "publishedDate": "2026-09-18"
+  },
+  {
+    "id": "20260918-seeya-dk-daegu-vlog",
+    "date": "2026-09-18",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "씨야 · DK의 THE FAN 대구 콘서트 게스트 비하인드",
+    "program": "행복한대규 · 씨야 콘서트 가는 길",
+    "type": "official",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "행복한대규 · DK 공식 VLOG",
+      "url": "https://www.youtube.com/watch?v=aKTA8kR_NG8",
+      "publishedDate": "2026-09-18"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026",
+      "행복한대규 · 씨야 콘서트 가는 길"
+    ],
+    "note": "9월 12일 씨야 대구 콘서트에 게스트로 함께한 DK의 브이로그입니다.\n공연장으로 향하는 길의 이야기와 게스트 무대를 마친 뒤 소감을 담았습니다.\n날짜는 9월 18일 영상 공개일입니다.",
+    "publishedDate": "2026-09-18",
+    "recordedDate": "2026-09-12"
+  },
+  {
+    "id": "20260918-seeya-thefan-messages",
+    "date": "2026-09-18",
+    "addedAt": "2026-09-21",
+    "updatedAt": "2026-09-21",
+    "title": "씨야 · THE FAN 콘서트 사연 모집",
+    "program": "씨야엔터테인먼트 · 마음을 대신 전해드릴게요",
+    "type": "official",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "씨야엔터테인먼트 · 공식 사연 모집 안내",
+      "url": "https://www.instagram.com/p/Dda3PYnvGLz/"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "post-published",
+    "tags": [
+      "2026",
+      "씨야엔터테인먼트 · 마음을 대신 전해드릴게요"
+    ],
+    "note": "콘서트에 함께 오는 소중한 사람에게 전하고 싶은 메시지를 모집하는 안내입니다.\n공식 게시물에 참석하는 콘서트 지역과 메시지를 댓글로 남기면 씨야가 사연을 소개합니다."
   },
   {
     "id": "20260917-gyuri-yeonji-sbs12n",
@@ -770,11 +1337,15 @@
         "label": "보람씨야 · 대구 콘서트 비하인드 VLOG",
         "url": "https://www.youtube.com/watch?v=dW8vBqXwWGE",
         "publishedDate": "2026-09-18"
+      },
+      {
+        "label": "행복한대규 · DK 게스트 비하인드",
+        "url": "https://www.youtube.com/watch?v=aKTA8kR_NG8"
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-09-21"
   },
   {
     "id": "v492-lpokioFRzfs",

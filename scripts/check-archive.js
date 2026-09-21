@@ -25,7 +25,11 @@ for(const x of rows){
 const state={query:'',year:'all',member:'all',type:'all',sort:'newest',page:1};
 const sbs12=rows.filter(r=>r.id==='20260917-gyuri-yeonji-sbs12n');assert.equal(sbs12.length,1);assert.equal(sbs12[0].eventState,'completed');assert(!sbs12[0].title.includes('예정'));assert.equal(sbs12[0].songs.length,3);
 assert.equal(rows.find(r=>r.id==='20260929-gyuri-ena-kpopup-24').eventState,'scheduled','Recording is not a completed broadcast');
-assert.equal(rows.find(r=>r.id==='20260920-gyuri-gwangju-charity').dateStatus,'tentative');
+const charity=rows.find(r=>r.id==='20260920-gyuri-gwangju-charity');
+assert.equal(charity.dateStatus,'confirmed');assert.equal(charity.eventState,'completed');
+assert.equal(charity.songs.length,5);assert(charity.source.url.includes('PLVueUxApK8ng'));
+assert.equal(rows.find(r=>r.id==='20260921-gyuri-mbc-noon-dj').eventState,'completed');
+for(let day=22;day<=27;day++)assert.equal(rows.find(r=>r.id===`202609${day}-gyuri-mbc-noon-dj`).eventState,'scheduled');
 assert(archiveDateLabel({date:'2021-02-22',dateBasis:'post-published'}).includes('게시글 작성일'));
 for(const sort of ['newest','oldest','added'])for(let page=1;page<=Math.ceil(rows.length/9);page++){
  const html=archiveView(rows,{...state,sort,page}).grid;

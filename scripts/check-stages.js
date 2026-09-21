@@ -8,6 +8,8 @@ for(const s of songs){assert(routes.some(r=>r.path===songPath(s)&&r.songId===s.i
 for(const m of mappings){const row=byId.get(m.archiveId);assert(row,'Unknown archive reference');assert(['broadcast','concert','live'].includes(m.category));assert(['single','multi','compilation'].includes(m.scope));assert(videoId(m.url));assert([row.source,...(row.additionalSources||[])].some(s=>s?.url===m.url),'Must reference an existing source');for(const id of m.songIds)assert(songs.some(s=>s.id===id));}
 assert.equal(songByTitle('그놈 목소리').id,'his-voice');assert.equal(songByTitle('sTaY').id,'stay');assert.equal(songByTitle('사랑의 인사 2026'),undefined,'Different editions must not merge automatically');
 const stay=performances(archive,'stay',cutoff),spring=performances(archive,'like-spring',cutoff);
+const charity=performances(archive,'love-greeting',cutoff).find(r=>r.id==='20260920-gyuri-gwangju-charity');
+assert.deepEqual(charity.clips.map(c=>videoId(c.url)),['qFqV6u-IJiA'],'A playlist must not mix other songs into Love Greeting');
 const green=performances(archive,'love-greeting',cutoff).find(r=>r.id==='v491-green');
 const sbs12=performances(archive,'love-greeting',cutoff).find(r=>r.id==='20260917-gyuri-yeonji-sbs12n');
 assert.deepEqual(sbs12.clips.map(c=>videoId(c.url)),['zWtgqg1RoQA'],'Radio solo songs must not appear under Love Greeting');
