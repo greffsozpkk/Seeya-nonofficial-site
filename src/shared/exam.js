@@ -1,6 +1,6 @@
 'use strict';
 const data=require('../data/exam-hard.json');
-const banks=[require('../data/exam-memory.json'),require('../data/exam-reunion.json'),data];
+const banks=[require('../data/exam-reunion.json'),require('../data/exam-memory.json'),data];
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const normalize=s=>String(s??'').normalize('NFKC').toLocaleLowerCase('en').replace(/\s+/g,'').trim();
 function correct(q,value){

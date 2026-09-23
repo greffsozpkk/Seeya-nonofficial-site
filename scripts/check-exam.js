@@ -34,7 +34,7 @@ for(const bank of banks){
  assert(!paper.includes('정답:')&&!paper.includes('근거 자료'));
  for(const q of bank.questions)assert(paper.includes(q.prompt.replace(/&/g,'&amp;')));
 }
-assert(correct(banks[0].questions[21],'女神'));assert(correct(banks[0].questions[22],'초롱'));assert(correct(banks[1].questions[24],'우리 LIVE VER.'));assert(!correct(data.questions[24],'우리'));
+assert(correct(banks.find(b=>b.key==='memory').questions[21],'女神'));assert(correct(banks.find(b=>b.key==='memory').questions[22],'초롱'));assert(correct(banks.find(b=>b.key==='reunion').questions[24],'우리 LIVE VER.'));assert(!correct(data.questions[24],'우리'));
 const route=JSON.parse(read('src/data/exam-preview-route.json')),file=route.path.slice(1)+'index.html',html=read(file);
 for(const bank of banks)assert(html.includes('data-area="'+bank.key+'"')&&html.includes(bank.area));
 assert(html.includes('noindex,nofollow,noarchive,nosnippet'));assert(!html.includes('googletagmanager')&&!html.includes('/assets/analytics.js'));assert(html.includes('no-referrer'));assert(!read('sitemap.xml').includes(route.path));assert(!read('build-manifest.json').includes(route.path));assert(!read('src/data/routes.json').includes(route.path));
