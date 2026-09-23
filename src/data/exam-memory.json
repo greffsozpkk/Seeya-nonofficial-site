@@ -1,0 +1,344 @@
+{
+  "key": "memory",
+  "title": "씨야 모의고사",
+  "area": "기억 탐구",
+  "level": "중",
+  "period": "2006–2011",
+  "points": 4,
+  "questions": [
+    {
+      "id": "m01",
+      "type": "choice",
+      "prompt": "씨야의 데뷔 앨범은 무엇일까요?",
+      "choices": [
+        "Lovely Sweet Heart",
+        "The First Mind",
+        "Brilliant Change",
+        "California Dream"
+      ],
+      "answer": 1,
+      "explanation": "2006년 발매한 데뷔 앨범은 The First Mind입니다.",
+      "source": "https://music.bugs.co.kr/album/8016131"
+    },
+    {
+      "id": "m02",
+      "type": "choice",
+      "prompt": "씨야의 데뷔 타이틀곡은 무엇일까요?",
+      "choices": [
+        "구두",
+        "사랑의 인사",
+        "여인의 향기",
+        "결혼할까요"
+      ],
+      "answer": 2,
+      "explanation": "정규 1집의 타이틀곡은 「여인의 향기」입니다.",
+      "source": "https://music.bugs.co.kr/album/8016131"
+    },
+    {
+      "id": "m03",
+      "type": "choice",
+      "prompt": "씨야의 정규 2집 이름은 무엇일까요?",
+      "choices": [
+        "Lovely Sweet Heart",
+        "California Dream",
+        "Rebloom",
+        "See You Again"
+      ],
+      "answer": 0,
+      "explanation": "2007년 발매한 정규 2집은 Lovely Sweet Heart입니다.",
+      "source": "https://music.bugs.co.kr/album/8026965"
+    },
+    {
+      "id": "m04",
+      "type": "choice",
+      "prompt": "정규 2집의 타이틀곡은 무엇일까요?",
+      "choices": [
+        "가니",
+        "그 놈 목소리",
+        "내겐 너무 멋진 그대",
+        "사랑의 인사"
+      ],
+      "answer": 3,
+      "explanation": "정규 2집 타이틀곡은 「사랑의 인사」입니다.",
+      "source": "https://music.bugs.co.kr/album/8026965"
+    },
+    {
+      "id": "m05",
+      "type": "choice",
+      "prompt": "Brilliant Change는 씨야의 몇 번째 정규 앨범일까요?",
+      "choices": [
+        "1집",
+        "2집",
+        "3집",
+        "4집"
+      ],
+      "answer": 2,
+      "explanation": "Brilliant Change는 2008년에 발매한 정규 3집입니다.",
+      "source": "https://open.spotify.com/album/5oLFtuiqV44VmUVPbyQf1W"
+    },
+    {
+      "id": "m06",
+      "type": "choice",
+      "prompt": "미니앨범 Rebloom의 타이틀곡은 무엇일까요?",
+      "choices": [
+        "Hot Girl",
+        "그 놈 목소리",
+        "여성시대",
+        "원더우먼"
+      ],
+      "answer": 1,
+      "explanation": "Rebloom의 타이틀곡은 「그 놈 목소리」입니다.",
+      "source": "https://music.bugs.co.kr/album/203741"
+    },
+    {
+      "id": "m07",
+      "type": "choice",
+      "prompt": "See You Again이 발매된 해는 언제일까요?",
+      "choices": [
+        "2008년",
+        "2009년",
+        "2010년",
+        "2011년"
+      ],
+      "answer": 3,
+      "explanation": "See You Again은 2011년에 발매되었습니다.",
+      "source": "https://www.youtube.com/watch?v=Yax4nGDtkW4"
+    },
+    {
+      "id": "m08",
+      "type": "choice",
+      "prompt": "「구두Ⅱ」라는 부제가 붙은 곡은 무엇일까요?",
+      "choices": [
+        "슬픈 발걸음",
+        "그 사람",
+        "미워요",
+        "그래도 좋아"
+      ],
+      "answer": 0,
+      "explanation": "「슬픈 발걸음」에는 「구두Ⅱ」라는 부제가 붙습니다.",
+      "source": "https://music.bugs.co.kr/album/100005"
+    },
+    {
+      "id": "m09",
+      "type": "choice",
+      "prompt": "「미친 사랑의 노래」는 어떤 드라마의 OST일까요?",
+      "choices": [
+        "풀하우스",
+        "투명인간 최장수",
+        "49일",
+        "천국의 계단"
+      ],
+      "answer": 1,
+      "explanation": "「미친 사랑의 노래」는 드라마 「투명인간 최장수」 OST입니다.",
+      "source": "https://music.bugs.co.kr/album/100005"
+    },
+    {
+      "id": "m10",
+      "type": "choice",
+      "prompt": "California Dream에도 수록된 이보람의 「처음 그 자리에」는 원래 어떤 드라마의 OST일까요?",
+      "choices": [
+        "궁",
+        "마이걸",
+        "풀하우스",
+        "파리의 연인"
+      ],
+      "answer": 2,
+      "explanation": "이보람의 「처음 그 자리에」는 「풀하우스」 OST입니다.",
+      "source": "https://music.bugs.co.kr/album/100005"
+    },
+    {
+      "id": "m11",
+      "type": "choice",
+      "prompt": "남규리의 「깊은 밤을 날아서」는 어떤 영화의 OST일까요?",
+      "choices": [
+        "못말리는 결혼",
+        "미녀는 괴로워",
+        "클래식",
+        "과속스캔들"
+      ],
+      "answer": 0,
+      "explanation": "남규리는 영화 「못말리는 결혼」 OST로 「깊은 밤을 날아서」를 불렀습니다.",
+      "source": "https://music.bugs.co.kr/album/100005"
+    },
+    {
+      "id": "m12",
+      "type": "choice",
+      "prompt": "다음 중 California Dream에 수록된 곡은 무엇일까요?",
+      "choices": [
+        "얼음인형",
+        "눈물의 여왕",
+        "바람핀다 믿었니",
+        "미워요"
+      ],
+      "answer": 3,
+      "explanation": "「미워요」는 California Dream 수록곡입니다.",
+      "source": "https://music.bugs.co.kr/album/100005"
+    },
+    {
+      "id": "m13",
+      "type": "choice",
+      "prompt": "「The Day」의 가창에 참여한 씨야 멤버는 누구일까요?",
+      "choices": [
+        "남규리",
+        "김연지",
+        "이보람",
+        "세 멤버 모두"
+      ],
+      "answer": 1,
+      "explanation": "「The Day」에는 씨야의 김연지가 가창자로 참여했습니다.",
+      "source": "https://music.bugs.co.kr/album/100005"
+    },
+    {
+      "id": "m14",
+      "type": "choice",
+      "prompt": "남규리가 주연으로 출연한 2008년 공포 영화는 무엇일까요?",
+      "choices": [
+        "여고괴담 두 번째 이야기",
+        "장화, 홍련",
+        "고死: 피의 중간고사",
+        "화이트: 저주의 멜로디"
+      ],
+      "answer": 2,
+      "explanation": "남규리는 「고死: 피의 중간고사」에서 강이나를 연기했습니다.",
+      "source": "https://host.cine21.com/news/view/?idx=0&mag_id=52523"
+    },
+    {
+      "id": "m15",
+      "type": "choice",
+      "prompt": "드라마 「49일」에서 남규리가 연기한 인물은 누구일까요?",
+      "choices": [
+        "신지현",
+        "송이경",
+        "신인정",
+        "강현채"
+      ],
+      "answer": 0,
+      "explanation": "남규리는 「49일」에서 신지현 역을 맡았습니다.",
+      "source": "https://programs.sbs.co.kr/programTemplate/amp/vod/49days/22000264991"
+    },
+    {
+      "id": "m16",
+      "type": "choice",
+      "prompt": "다음 중 Rebloom에 수록되지 않은 곡은 무엇일까요?",
+      "choices": [
+        "앗차!",
+        "눈물의 여왕",
+        "바람핀다 믿었니",
+        "얼음인형"
+      ],
+      "answer": 3,
+      "explanation": "「얼음인형」은 정규 2집 수록곡입니다.",
+      "source": "https://music.bugs.co.kr/album/203741"
+    },
+    {
+      "id": "m17",
+      "type": "choice",
+      "prompt": "California Dream의 재킷 촬영이 진행된 두 도시는 어디일까요?",
+      "choices": [
+        "뉴욕 · 보스턴",
+        "LA · 라스베이거스",
+        "런던 · 파리",
+        "도쿄 · 오사카"
+      ],
+      "answer": 1,
+      "explanation": "California Dream의 재킷은 LA와 라스베이거스에서 촬영했습니다.",
+      "source": "https://music.bugs.co.kr/album/100005"
+    },
+    {
+      "id": "m18",
+      "type": "choice",
+      "prompt": "정규 1집에 수록된, 꽃 이름을 제목으로 한 곡은 무엇일까요?",
+      "choices": [
+        "해바라기",
+        "들국화",
+        "접시꽃",
+        "수선화"
+      ],
+      "answer": 2,
+      "explanation": "「접시꽃」은 정규 1집의 4번 트랙입니다.",
+      "source": "https://music.bugs.co.kr/album/8016131"
+    },
+    {
+      "id": "m19",
+      "type": "choice",
+      "prompt": "정규 2집 Lovely Sweet Heart에는 모두 몇 곡이 수록되어 있을까요?",
+      "choices": [
+        "10곡",
+        "11곡",
+        "12곡",
+        "13곡"
+      ],
+      "answer": 3,
+      "explanation": "Lovely Sweet Heart는 총 13곡으로 구성됩니다.",
+      "source": "https://music.bugs.co.kr/album/8026965"
+    },
+    {
+      "id": "m20",
+      "type": "choice",
+      "prompt": "다음 중 앨범 발매 순서가 올바른 것은 무엇일까요?",
+      "choices": [
+        "California Dream → Rebloom → See You Again",
+        "Rebloom → California Dream → See You Again",
+        "See You Again → California Dream → Rebloom",
+        "California Dream → See You Again → Rebloom"
+      ],
+      "answer": 0,
+      "explanation": "California Dream(2008), Rebloom(2009), See You Again(2011) 순서입니다.",
+      "source": "https://music.bugs.co.kr/album/100005"
+    },
+    {
+      "id": "m21",
+      "type": "text",
+      "prompt": "씨야가 2006년 3월 12일 첫 방송 데뷔 무대를 선보인 음악 프로그램의 이름을 적어주세요.",
+      "answer": "SBS 인기가요",
+      "aliases": [
+        "인기가요"
+      ],
+      "explanation": "씨야는 2006년 3월 12일 SBS 「인기가요」에서 첫 방송 무대를 선보였습니다.",
+      "source": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0500&key=20060310.22035155435"
+    },
+    {
+      "id": "m22",
+      "type": "text",
+      "prompt": "씨야가 2007년에 개최한 첫 단독 콘서트의 이름을 적어주세요.",
+      "answer": "여신",
+      "aliases": [
+        "女神",
+        "女神"
+      ],
+      "explanation": "씨야의 첫 단독 콘서트는 「여신(女神)」입니다.",
+      "source": "https://www.nocutnews.co.kr/news/4113602"
+    },
+    {
+      "id": "m23",
+      "type": "text",
+      "prompt": "드라마 「인생은 아름다워」에서 남규리가 연기한 막내딸의 이름을 적어주세요.",
+      "answer": "양초롱",
+      "aliases": [
+        "초롱"
+      ],
+      "explanation": "남규리는 양초롱 역으로 출연했습니다.",
+      "source": "https://www.nocutnews.co.kr/news/4178913"
+    },
+    {
+      "id": "m24",
+      "type": "text",
+      "prompt": "Rebloom에서 「그 놈 목소리」 바로 다음에 수록된 곡의 제목을 적어주세요.",
+      "answer": "앗차!",
+      "aliases": [
+        "앗차"
+      ],
+      "explanation": "Rebloom의 2번 트랙은 「앗차!」입니다.",
+      "source": "https://music.bugs.co.kr/album/203741"
+    },
+    {
+      "id": "m25",
+      "type": "text",
+      "prompt": "2011년 See You Again의 타이틀곡 제목을 모두 적어주세요.",
+      "answer": "내겐 너무 멋진 그대",
+      "aliases": [],
+      "explanation": "See You Again의 타이틀곡은 「내겐 너무 멋진 그대」입니다.",
+      "source": "https://www.youtube.com/watch?v=Yax4nGDtkW4"
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "key": "reunion",
+  "title": "씨야 모의고사",
+  "area": "재회 탐구",
+  "level": "하",
+  "period": "2026",
+  "points": 4,
+  "questions": [
+    {
+      "id": "r01",
+      "type": "choice",
+      "prompt": "2026년은 씨야의 데뷔 몇 주년일까요?",
+      "choices": [
+        "10주년",
+        "15주년",
+        "20주년",
+        "25주년"
+      ],
+      "answer": 2,
+      "explanation": "씨야는 2006년에 데뷔하여 2026년에 20주년을 맞았습니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r02",
+      "type": "choice",
+      "prompt": "씨야가 2026년에 발매한 정규 앨범의 이름은 무엇일까요?",
+      "choices": [
+        "First, Again",
+        "First Love",
+        "Again Spring",
+        "Our First Day"
+      ],
+      "answer": 0,
+      "explanation": "2026년 발매한 정규 앨범은 First, Again입니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r03",
+      "type": "choice",
+      "prompt": "First, Again은 씨야의 몇 번째 정규 앨범일까요?",
+      "choices": [
+        "2집",
+        "3집",
+        "5집",
+        "4집"
+      ],
+      "answer": 3,
+      "explanation": "First, Again은 씨야의 정규 4집입니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r04",
+      "type": "choice",
+      "prompt": "2026년 3월 열린 씨야 재결합 기념 팬미팅의 이름은 무엇일까요?",
+      "choices": [
+        "THE FAN",
+        "RE:BLOOM",
+        "LUX",
+        "SPARKLE"
+      ],
+      "answer": 1,
+      "explanation": "재결합 기념 팬미팅의 이름은 RE:BLOOM입니다.",
+      "source": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02197606645388568"
+    },
+    {
+      "id": "r05",
+      "type": "choice",
+      "prompt": "First, Again의 타이틀곡은 무엇일까요?",
+      "choices": [
+        "Promise U",
+        "Hot Girl",
+        "Stay",
+        "Blue Moon"
+      ],
+      "answer": 2,
+      "explanation": "정규 4집의 타이틀곡은 「Stay」입니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r06",
+      "type": "choice",
+      "prompt": "4집 발매 당시 타이틀곡과 함께 소개된 곡은 무엇일까요?",
+      "choices": [
+        "계절은 돌고 돌아",
+        "봄처럼 그댄",
+        "안돼요",
+        "잔향"
+      ],
+      "answer": 1,
+      "explanation": "「봄처럼 그댄」은 타이틀곡 「Stay」와 함께 소개된 곡입니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r07",
+      "type": "choice",
+      "prompt": "First, Again의 발매일은 언제일까요?",
+      "choices": [
+        "2026년 3월 14일",
+        "2026년 4월 14일",
+        "2026년 6월 14일",
+        "2026년 5월 14일"
+      ],
+      "answer": 3,
+      "explanation": "First, Again은 2026년 5월 14일 발매되었습니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r08",
+      "type": "choice",
+      "prompt": "2026년 씨야가 대표곡 메들리를 선보인 딩고뮤직 콘텐츠는 무엇일까요?",
+      "choices": [
+        "비긴어게인",
+        "더 시즌즈",
+        "킬링보이스",
+        "피크닉 라이브 소풍"
+      ],
+      "answer": 2,
+      "explanation": "씨야는 딩고뮤직 「킬링보이스」에서 대표곡 메들리를 선보였습니다.",
+      "source": "https://www.bntnews.co.kr/article/view/bnt202605200099"
+    },
+    {
+      "id": "r09",
+      "type": "choice",
+      "prompt": "2026년 씨야엔터테인먼트의 대표를 맡은 멤버는 누구일까요?",
+      "choices": [
+        "남규리",
+        "김연지",
+        "이보람",
+        "세 멤버가 번갈아 맡는다"
+      ],
+      "answer": 0,
+      "explanation": "남규리가 씨야엔터테인먼트의 대표를 맡았습니다.",
+      "source": "https://v.daum.net/v/20260530060353704"
+    },
+    {
+      "id": "r10",
+      "type": "choice",
+      "prompt": "2011년 그룹 활동 종료 후 2026년 재결합까지 약 몇 년이 흘렀을까요?",
+      "choices": [
+        "5년",
+        "10년",
+        "15년",
+        "20년"
+      ],
+      "answer": 2,
+      "explanation": "2011년에서 2026년까지 약 15년이 흘렀습니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r11",
+      "type": "choice",
+      "prompt": "다음 중 First, Again에 수록되지 않은 곡은 무엇일까요?",
+      "choices": [
+        "잔향",
+        "안돼요",
+        "끝내 꺾이지 않는 것",
+        "그래도 좋아"
+      ],
+      "answer": 3,
+      "explanation": "「그래도 좋아」는 First, Again의 수록곡이 아닙니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r12",
+      "type": "choice",
+      "prompt": "인스트루멘털을 포함한 First, Again의 전체 트랙 수는 몇 개일까요?",
+      "choices": [
+        "9개",
+        "11개",
+        "13개",
+        "15개"
+      ],
+      "answer": 1,
+      "explanation": "First, Again은 인스트루멘털 2곡을 포함해 총 11트랙입니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r13",
+      "type": "choice",
+      "prompt": "다음 영어 제목의 곡 중 First, Again에 수록된 곡은 무엇일까요?",
+      "choices": [
+        "I Believe",
+        "Classic",
+        "Summer Dream",
+        "The Day"
+      ],
+      "answer": 0,
+      "explanation": "「I Believe」는 First, Again에 수록되어 있습니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r14",
+      "type": "choice",
+      "prompt": "씨야의 2026년 전국투어 콘서트 이름은 무엇일까요?",
+      "choices": [
+        "THE VOICE",
+        "THE MEMORY",
+        "THE FAN",
+        "THE FIRST"
+      ],
+      "answer": 2,
+      "explanation": "2026년 전국투어 콘서트의 이름은 THE FAN입니다.",
+      "source": "https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17950&order=1"
+    },
+    {
+      "id": "r15",
+      "type": "choice",
+      "prompt": "2026년 THE FAN 전국투어의 첫 공연 도시는 어디일까요?",
+      "choices": [
+        "부산",
+        "대구",
+        "인천",
+        "서울"
+      ],
+      "answer": 3,
+      "explanation": "THE FAN 전국투어는 서울에서 시작했습니다.",
+      "source": "https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17950&order=1"
+    },
+    {
+      "id": "r16",
+      "type": "choice",
+      "prompt": "THE FAN 서울 공연이 열린 장소는 어디일까요?",
+      "choices": [
+        "올림픽홀",
+        "경희대학교 평화의 전당",
+        "장충체육관",
+        "세종문화회관 대극장"
+      ],
+      "answer": 1,
+      "explanation": "서울 공연은 경희대학교 평화의 전당에서 열렸습니다.",
+      "source": "https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17950&order=1"
+    },
+    {
+      "id": "r17",
+      "type": "choice",
+      "prompt": "2026년 9월 남규리의 귤멍 채널 Q&A 영상과 함께 공개된 유튜브 기념품은 무엇일까요?",
+      "choices": [
+        "실버버튼",
+        "골드버튼",
+        "다이아몬드버튼",
+        "레드 다이아몬드버튼"
+      ],
+      "answer": 0,
+      "explanation": "귤멍 채널의 Q&A 영상에는 실버버튼이 함께 공개되었습니다.",
+      "source": "https://www.youtube.com/watch?v=PQuBCS74HxM"
+    },
+    {
+      "id": "r18",
+      "type": "choice",
+      "prompt": "이보람이 2026년 5월 부산에서 개최한 단독 콘서트의 이름은 무엇일까요?",
+      "choices": [
+        "LUX",
+        "THE FAN",
+        "Still singing",
+        "SPARKLE"
+      ],
+      "answer": 3,
+      "explanation": "이보람의 2026년 5월 부산 단독 콘서트는 SPARKLE입니다.",
+      "source": "https://ticket.interpark.com/OtherSite/Ticket/Ticket_GoodsInfo.asp?Ca=01003&GroupCode=26004739"
+    },
+    {
+      "id": "r19",
+      "type": "choice",
+      "prompt": "남규리가 2026년 9월 스페셜 DJ를 맡은 라디오 프로그램은 무엇일까요?",
+      "choices": [
+        "두시탈출 컬투쇼",
+        "배성재의 텐",
+        "볼륨을 높여요",
+        "정오의 희망곡"
+      ],
+      "answer": 3,
+      "explanation": "남규리는 2026년 9월 「정오의 희망곡」 스페셜 DJ를 맡았습니다.",
+      "source": "https://www.youtube.com/watch?v=pOqhfoHhW9A"
+    },
+    {
+      "id": "r20",
+      "type": "choice",
+      "prompt": "THE FAN 서울 공연은 며칠 동안 열렸을까요?",
+      "choices": [
+        "하루",
+        "이틀",
+        "사흘",
+        "나흘"
+      ],
+      "answer": 1,
+      "explanation": "THE FAN 서울 공연은 이틀 동안 열렸습니다.",
+      "source": "https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17950&order=1"
+    },
+    {
+      "id": "r21",
+      "type": "text",
+      "prompt": "2026년 3월 30일 공개된 씨야의 재결합 선공개곡 제목을 적어주세요.",
+      "answer": "그럼에도, 우린",
+      "aliases": [
+        "그럼에도 우린"
+      ],
+      "explanation": "재결합 선공개곡은 「그럼에도, 우린」입니다.",
+      "source": "https://www.youtube.com/watch?v=dmsw-tEenZ0"
+    },
+    {
+      "id": "r22",
+      "type": "text",
+      "prompt": "4집 수록곡 제목 「계절은 ____」의 빈칸을 채워주세요.",
+      "answer": "돌고 돌아",
+      "aliases": [
+        "계절은 돌고 돌아"
+      ],
+      "explanation": "곡의 전체 제목은 「계절은 돌고 돌아」입니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r23",
+      "type": "text",
+      "prompt": "4집 마지막 트랙 「그럼에도, 우린 Inst. (____)」의 괄호 안 영문을 적어주세요.",
+      "answer": "To My Fan",
+      "aliases": [],
+      "explanation": "마지막 트랙은 「그럼에도, 우린 Inst. (To My Fan)」입니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r24",
+      "type": "text",
+      "prompt": "4집 수록곡 제목 「끝내 ○○○ 않는 것」의 빈칸을 채워주세요.",
+      "answer": "꺾이지",
+      "aliases": [
+        "끝내 꺾이지 않는 것"
+      ],
+      "explanation": "곡의 전체 제목은 「끝내 꺾이지 않는 것」입니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    },
+    {
+      "id": "r25",
+      "type": "text",
+      "prompt": "First, Again에서 세 멤버 모두 작사·작곡에 참여했으며 Live Ver.로 수록된 곡의 제목을 적어주세요.",
+      "answer": "우리",
+      "aliases": [
+        "우리 Live Ver.",
+        "우리 (Live Ver.)"
+      ],
+      "explanation": "「우리 (Live Ver.)」에는 남규리·김연지·이보람이 모두 작사·작곡에 참여했습니다.",
+      "source": "https://music.bugs.co.kr/album/4147431"
+    }
+  ]
+}
