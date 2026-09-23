@@ -163,16 +163,16 @@
     {
       "id": "m12",
       "type": "choice",
-      "prompt": "다음 중 California Dream에 수록된 곡은 무엇일까요?",
+      "prompt": "씨야가 데뷔 후 첫 음악방송 1위를 기록한 날짜와 프로그램의 조합은 무엇일까요?",
       "choices": [
-        "얼음인형",
-        "눈물의 여왕",
-        "바람핀다 믿었니",
-        "미워요"
+        "2006년 3월 12일 · SBS 인기가요",
+        "2006년 4월 23일 · SBS 인기가요",
+        "2006년 3월 12일 · Mnet 엠카운트다운",
+        "2006년 4월 23일 · Mnet 엠카운트다운"
       ],
-      "answer": 3,
-      "explanation": "「미워요」는 California Dream 수록곡입니다.",
-      "source": "https://music.bugs.co.kr/album/100005"
+      "answer": 1,
+      "explanation": "씨야는 2006년 4월 23일 SBS 「인기가요」에서 「여인의 향기」로 첫 음악방송 1위인 뮤티즌상을 받았습니다. 3월 12일은 첫 방송 데뷔일입니다.",
+      "source": "https://sports.khan.co.kr/article/200604242153023"
     },
     {
       "id": "m13",
@@ -261,16 +261,16 @@
     {
       "id": "m19",
       "type": "choice",
-      "prompt": "정규 2집 Lovely Sweet Heart에는 모두 몇 곡이 수록되어 있을까요?",
+      "prompt": "2007년 7월 6일 「윤도현의 러브레터」에서 씨야가 「사랑의 인사」와 함께 선보인 커버곡은 무엇일까요?",
       "choices": [
-        "10곡",
-        "11곡",
-        "12곡",
-        "13곡"
+        "행복한 나를",
+        "사랑스러워",
+        "페스티벌",
+        "너를 사랑해"
       ],
-      "answer": 3,
-      "explanation": "Lovely Sweet Heart는 총 13곡으로 구성됩니다.",
-      "source": "https://music.bugs.co.kr/album/8026965"
+      "answer": 2,
+      "explanation": "씨야는 「윤도현의 러브레터」 254회에서 「사랑의 인사」와 「페스티벌」을 불렀습니다. KBS 공식 무대 모음의 곡목과 방송일 안내에서 확인할 수 있으며, 「페스티벌」은 33분 10초부터 이어집니다.",
+      "source": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=1990s"
     },
     {
       "id": "m20",

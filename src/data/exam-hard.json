@@ -107,16 +107,16 @@
     {
       "id": "h08",
       "type": "choice",
-      "prompt": "다음 중 두 곡 모두 California Dream에 수록된 조합은 무엇일까요?",
+      "prompt": "2020년 2월 21일 「슈가맨3」 공식 ‘히트곡 메들리’ 리허설 풀캠에서 씨야가 부른 세 곡의 순서는 무엇일까요?",
       "choices": [
-        "얼음인형 · 너는 내 남자",
-        "앗차! · 눈물의 여왕",
-        "Classic · 연가",
-        "잔향 · 안돼요"
+        "구두 → 결혼할까요 → 미친 사랑의 노래",
+        "미친 사랑의 노래 → 구두 → 결혼할까요",
+        "결혼할까요 → 미친 사랑의 노래 → 구두",
+        "결혼할까요 → 구두 → 미친 사랑의 노래"
       ],
       "answer": 2,
-      "explanation": "「Classic」과 「연가」는 모두 California Dream 수록곡입니다.",
-      "source": "https://music.bugs.co.kr/album/100005"
+      "explanation": "해당 리허설 풀캠의 순서는 「결혼할까요」 → 「미친 사랑의 노래」 → 「구두」입니다. 다른 무대가 함께 묶인 편집 영상이 아닌, JTBC가 공개한 7분 15초 길이의 세 곡 메들리를 기준으로 합니다.",
+      "source": "https://tv.jtbc.co.kr/vod/pr10011122/pm10056338/vo10354871/view?site_preference=normal"
     },
     {
       "id": "h09",
@@ -135,16 +135,16 @@
     {
       "id": "h10",
       "type": "choice",
-      "prompt": "다음 중 정규 2집 Lovely Sweet Heart에 수록되지 않은 곡은 무엇일까요?",
+      "prompt": "2020년 2월 21일 「슈가맨3」에서 씨야가 녹음할 때 가장 힘들었다고 회상한 곡은 무엇일까요?",
       "choices": [
-        "Summer Dream",
-        "감동을 주세요",
-        "순애보",
-        "유죄"
+        "사랑의 인사",
+        "미친 사랑의 노래",
+        "미워요",
+        "구두"
       ],
       "answer": 3,
-      "explanation": "「유죄」는 정규 1집 수록곡입니다.",
-      "source": "https://music.bugs.co.kr/album/8026965"
+      "explanation": "이날 씨야는 「구두」를 녹음하던 때의 어려움을 이야기했습니다. 고음이 많은 곡을 반복해서 녹음했던 일화로, 당시 방송에서 회상한 내용을 묻는 문제입니다.",
+      "source": "https://mvod.jtbc.co.kr/player/clip/vo10354832"
     },
     {
       "id": "h11",
