@@ -438,8 +438,8 @@
     "id": "20260923-gyuri-mbc-noon-dj",
     "date": "2026-09-23",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21",
-    "title": "남규리 · 정오의 희망곡 스페셜 DJ 예정 · 게스트 소란",
+    "updatedAt": "2026-09-24",
+    "title": "남규리 · 정오의 희망곡 스페셜 DJ · 게스트 소란",
     "program": "정오의 희망곡 김신영입니다",
     "type": "radio",
     "members": [
@@ -449,27 +449,71 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "정오의 희망곡 · 공식 주간 편성",
-      "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+      "label": "MBC RADIO · 남규리·소란 보이는 라디오",
+      "url": "https://www.youtube.com/watch?v=9vr-bu2vrv8"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "정오의 희망곡 Instagram · 공식 현장 사진",
+        "url": "https://www.instagram.com/p/DdnwOVWSsb2/"
+      },
+      {
+        "label": "MBC · 공식 다시보기",
+        "url": "https://playvod.imbc.com/Vod/VodPlay?broadcastId=1001919103512100000"
+      },
+      {
+        "label": "정오의 희망곡 · 공식 주간 편성",
+        "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+      }
+    ],
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "예정",
       "정오의 희망곡 김신영입니다"
     ],
-    "note": "9월 23일 낮 12시 MBC FM4U 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다.\n게스트는 소란입니다. 보이는 라디오로 안내됐습니다.",
-    "eventState": "scheduled"
+    "note": "9월 23일 MBC FM4U 정오의 희망곡에 남규리가 스페셜 DJ로 함께했습니다.\n라이브 온 에어 코너의 게스트는 소란입니다.\n남규리와 소란이 함께한 보이는 라디오와 공식 현장 사진을 연결했습니다.",
+    "eventState": "completed",
+    "publishedDate": "2026-09-23"
+  },
+  {
+    "id": "20260923-boram-btn-dream-22",
+    "date": "2026-09-23",
+    "addedAt": "2026-09-24",
+    "title": "이보람 · 한밤의 꿈 이보람입니다 22회",
+    "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "BTN라디오 · 22회 보이는 라디오",
+      "url": "https://www.youtube.com/watch?v=cy5YGx7i39k"
+    },
+    "status": "available",
+    "tags": [
+      "2026",
+      "활동 기록"
+    ],
+    "note": "9월 23일 밤 9시 이보람이 진행한 BTN라디오 한밤의 꿈 22회입니다.\nBTN라디오 공식 채널의 보이는 라디오로 다시 볼 수 있습니다.",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "publishedDate": "2026-09-23",
+    "episode": 22,
+    "additionalSources": [],
+    "updatedAt": "2026-09-24",
+    "eventState": "completed"
   },
   {
     "id": "20260922-gyuri-mbc-noon-dj",
     "date": "2026-09-22",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21",
-    "title": "남규리 · 정오의 희망곡 스페셜 DJ 예정",
+    "updatedAt": "2026-09-24",
+    "title": "남규리 · 정오의 희망곡 스페셜 DJ · 노 뮤직 노 라이프",
     "program": "정오의 희망곡 김신영입니다",
     "type": "radio",
     "members": [
@@ -479,26 +523,31 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "정오의 희망곡 · 공식 주간 편성",
-      "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+      "label": "MBC 공식 팟캐스트 · 9월 22일 다시듣기",
+      "url": "https://podcasts.apple.com/kr/podcast/9-22-%ED%99%94-%EB%85%B8-%EB%AE%A4%EC%A7%81-%EB%85%B8-%EB%9D%BC%EC%9D%B4%ED%94%84-with-%EC%8A%A4%ED%8E%98%EC%85%9C-dj-%EB%82%A8%EA%B7%9C%EB%A6%AC/id389707636?i=1000791054130"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "정오의 희망곡 · 공식 주간 편성",
+        "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+      }
+    ],
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "예정",
       "정오의 희망곡 김신영입니다"
     ],
-    "note": "9월 22일 낮 12시 MBC FM4U 정오의 희망곡에 남규리가 스페셜 DJ로 함께할 예정입니다.",
-    "eventState": "scheduled"
+    "note": "9월 22일 MBC FM4U 정오의 희망곡을 남규리가 스페셜 DJ로 진행했습니다.\n노 뮤직 노 라이프 회차로, MBC가 제공하는 공식 팟캐스트에서 다시 들을 수 있습니다.",
+    "eventState": "completed",
+    "publishedDate": "2026-09-22"
   },
   {
     "id": "20260921-woosuk-festival",
     "date": "2026-09-21",
     "addedAt": "2026-09-16",
-    "title": "씨야 · 우석대학교 대동제 청요 출연 예정",
+    "title": "씨야 · 우석대학교 대동제 청요",
     "program": "2026 우석대학교 대동제 · 청요: 청춘의 LEVEL을 밝히다",
     "type": "event",
     "members": [
@@ -506,25 +555,38 @@
       "김연지",
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "사랑의 인사",
+      "미친 사랑의 노래",
+      "Stay",
+      "봄처럼 그댄",
+      "한 페이지가 될 수 있게"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "우석대학교 · 대동제 공식 개최 안내",
-      "url": "https://www.woosuk.ac.kr/main/?menu=187&mode=view&no=364550&pno=1"
+      "label": "제리제이 Jerry.j · 우석대 전체 팬 직캠",
+      "url": "https://www.youtube.com/watch?v=EqsLBqQ0jtQ"
     },
-    "status": "documented",
+    "status": "available",
     "tags": [
       "2026",
-      "예정",
       "2026 우석대학교 대동제 · 청요: 청춘의 LEVEL을 밝히다"
     ],
-    "note": "9월 21일 우석대학교 전주캠퍼스 대동제 청요에 씨야가 출연할 예정입니다.\n총학생회가 공개한 타임테이블에서 씨야 무대는 오후 9시~9시 30분으로 안내됐습니다.\n공연 장소는 전주캠퍼스 농구장 주무대이며, 현장 진행에 따라 시간은 달라질 수 있습니다.",
+    "note": "9월 21일 우석대학교 전주캠퍼스 대동제 청요에 씨야 세 멤버가 출연했습니다.\n사랑의 인사, 미친 사랑의 노래, Stay, 봄처럼 그댄과 DAY6의 한 페이지가 될 수 있게를 불렀습니다.\n전체 팬 직캠과 김연지가 공연 후 공개한 사진을 함께 볼 수 있습니다.",
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "eventState": "scheduled",
+    "eventState": "completed",
     "venue": "우석대학교 전주캠퍼스 농구장 주무대",
     "additionalSources": [
+      {
+        "label": "김연지 Instagram · 전주 공연 후 사진",
+        "url": "https://www.instagram.com/p/DdjaEvICZcJ/"
+      },
+      {
+        "label": "우석대학교 · 대동제 공식 개최 안내",
+        "url": "https://www.woosuk.ac.kr/main/?menu=187&mode=view&no=364550&pno=1"
+      },
       {
         "label": "우석대학교 · 행사 기간·장소 안내",
         "url": "https://www.woosuk.ac.kr/web/?menu=171&mode=view&no=364309"
@@ -538,7 +600,7 @@
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8558"
       }
     ],
-    "updatedAt": "2026-09-21"
+    "updatedAt": "2026-09-24"
   },
   {
     "id": "20260921-gyuri-mbc-noon-dj",

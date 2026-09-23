@@ -613,5 +613,18 @@
     "scope": "single",
     "category": "live",
     "basis": "2026-09-20 한마음 대축제 곡별 직캠 제목과 재생목록 확인"
+  },
+  {
+    "archiveId": "20260921-woosuk-festival",
+    "url": "https://www.youtube.com/watch?v=EqsLBqQ0jtQ",
+    "songIds": [
+      "love-greeting",
+      "crazy-love-song",
+      "stay",
+      "like-spring"
+    ],
+    "scope": "multi",
+    "category": "live",
+    "basis": "제리제이 Jerry.j의 260921 우석대학교 축제 전체 직캠 설명의 곡별 구간: 사랑의 인사 00:05, 미친 사랑의 노래 05:26, STAY 11:39, 봄처럼 그댄 17:48."
   }
 ]
