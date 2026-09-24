@@ -21,3 +21,8 @@
 /* v4.137: subject selection */
 .exam-page .exam-area-heading{font-size:21px;margin:0 0 18px}.exam-areas{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-bottom:24px}.exam-page .exam-areas button{display:flex;flex-direction:column;align-items:center;gap:7px;min-width:0;padding:16px 8px;color:#6d4356;background:#fff;border:1px solid #dec0ce;border-radius:8px}.exam-page .exam-areas button[aria-pressed=true]{background:#f5dfeb;border:2px solid #9b5270;padding:15px 7px;color:#57283e}.exam-areas strong{font-size:17px;white-space:nowrap}.exam-areas span,.exam-areas small{font-size:12px}.exam-area-summary p{font-size:15px;min-height:58px}.exam-paper-top>span{overflow-wrap:anywhere}
 @media(max-width:390px){.exam-areas{gap:6px}.exam-areas strong{font-size:15px}.exam-areas span,.exam-areas small{font-size:11px}}
+
+/* v4.141: multiple-answer instructions remain visible on paper and cards. */
+.exam-page .exam-multiple-help{font:13px/1.6 Arial,'Gowun Dodum',sans-serif;color:#704154;margin:5px 0 12px}
+.exam-paper .exam-option input[type=checkbox]+.exam-option-number{border-radius:3px}
+@media print{.exam-page .exam-print-question .exam-multiple-help{font-size:8pt;color:#222}}

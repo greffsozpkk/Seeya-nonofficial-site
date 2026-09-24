@@ -261,30 +261,30 @@
     {
       "id": "h19",
       "type": "choice",
-      "prompt": "다음 중 「Stay」의 작곡 크레디트에 없는 사람은 누구일까요?",
+      "prompt": "2016년 7월 31일 「복면가왕」에서 김연지가 3라운드에 부른 곡은 무엇일까요?",
       "choices": [
-        "조영수",
-        "박근태",
-        "김도훈",
-        "강지원"
+        "헤어지는 중입니다",
+        "어떤가요",
+        "그립고 그립고 그립다",
+        "잘 부탁드립니다"
       ],
       "answer": 0,
-      "explanation": "「Stay」의 작곡가는 박근태, 김도훈, 강지원입니다.",
-      "source": "https://music.bugs.co.kr/album/4147431"
+      "explanation": "김연지는 이날 3라운드에서 「헤어지는 중입니다」를 불렀습니다.",
+      "source": "https://www.youtube.com/watch?v=4nOFSFZO6PI"
     },
     {
       "id": "h20",
       "type": "choice",
-      "prompt": "First, Again에서 JC지은이 작곡에 참여한 두 곡의 조합은 무엇일까요?",
+      "prompt": "김연지가 「미스트롯2」 마스터 오디션에서 올하트를 받은 곡은 무엇일까요?",
       "choices": [
-        "Stay · 봄처럼 그댄",
-        "안돼요 · 잔향",
-        "I Believe · 끝내 꺾이지 않는 것",
-        "계절은 돌고 돌아 · 그럼에도, 우린"
+        "타인",
+        "여인의 눈물",
+        "10분 내로",
+        "천상재회"
       ],
-      "answer": 2,
-      "explanation": "JC지은은 「I Believe」와 「끝내 꺾이지 않는 것」의 작곡에 참여했습니다.",
-      "source": "https://music.bugs.co.kr/album/4147431"
+      "answer": 0,
+      "explanation": "김연지는 「미스트롯2」 마스터 오디션에서 「타인」을 불러 올하트를 받았습니다. 공식 올하트 모음 영상의 43분 11초부터 해당 무대를 볼 수 있습니다.",
+      "source": "https://www.youtube.com/watch?v=A-WL17b4aB4&t=2591s"
     },
     {
       "id": "h21",
@@ -327,11 +327,15 @@
     {
       "id": "h25",
       "type": "text",
-      "prompt": "First, Again 수록곡 중 씨야 멤버 가운데 남규리만 작사에 참여한 곡의 제목을 적어주세요.",
-      "answer": "I Believe",
-      "aliases": [],
-      "explanation": "「I Believe」의 작사 크레디트에 씨야 멤버 중에서는 남규리만 이름을 올렸습니다.",
-      "source": "https://music.bugs.co.kr/album/4147431"
+      "prompt": "2019년 7월 7일 「복면가왕」에서 이보람이 3연승에 성공한 가왕 방어전의 곡 제목을 적어주세요.",
+      "answer": "Lie",
+      "aliases": [
+        "라이",
+        "Lie (라이)",
+        "라이 (Lie)"
+      ],
+      "explanation": "이보람은 105대 가왕전에서 「Lie」를 선곡해 3연승에 성공했습니다.",
+      "source": "https://enews.imbc.com/News/RetrieveNewsInfo/263027"
     }
   ]
 }

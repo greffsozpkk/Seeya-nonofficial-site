@@ -135,16 +135,16 @@
     {
       "id": "r10",
       "type": "choice",
-      "prompt": "2011년 그룹 활동 종료 후 2026년 재결합까지 약 몇 년이 흘렀을까요?",
+      "prompt": "2026년 이보람이 진행하는 BTN라디오 프로그램의 이름은 무엇일까요?",
       "choices": [
-        "5년",
-        "10년",
-        "15년",
-        "20년"
+        "한밤의 꿈 이보람입니다",
+        "별이 빛나는 밤에",
+        "밤을 잊은 그대에게",
+        "볼륨을 높여요"
       ],
-      "answer": 2,
-      "explanation": "2011년에서 2026년까지 약 15년이 흘렀습니다.",
-      "source": "https://music.bugs.co.kr/album/4147431"
+      "answer": 0,
+      "explanation": "이보람은 BTN라디오 「한밤의 꿈 이보람입니다」의 DJ로 청취자들과 만나고 있습니다.",
+      "source": "https://www.youtube.com/watch?v=cy5YGx7i39k"
     },
     {
       "id": "r11",
@@ -233,15 +233,15 @@
     {
       "id": "r17",
       "type": "choice",
-      "prompt": "2026년 9월 남규리의 귤멍 채널 Q&A 영상과 함께 공개된 유튜브 기념품은 무엇일까요?",
+      "prompt": "2026년 9월 「남규리의 귤멍」 Ep.63 구독자 Q&A 영상에서 언박싱한 물건은 무엇일까요?",
       "choices": [
         "실버버튼",
-        "골드버튼",
-        "다이아몬드버튼",
-        "레드 다이아몬드버튼"
+        "한돈 삼겹살 선물 세트",
+        "콘서트 기념 포토북",
+        "팬들이 보낸 손편지 상자"
       ],
       "answer": 0,
-      "explanation": "귤멍 채널의 Q&A 영상에는 실버버튼이 함께 공개되었습니다.",
+      "explanation": "Ep.63은 채널 구독자 10만 명을 기념한 실버버튼 언박싱과 구독자 Q&A 영상입니다.",
       "source": "https://www.youtube.com/watch?v=PQuBCS74HxM"
     },
     {
@@ -275,16 +275,16 @@
     {
       "id": "r20",
       "type": "choice",
-      "prompt": "THE FAN 서울 공연은 며칠 동안 열렸을까요?",
+      "prompt": "2026년 9월 21일 우석대 대동제에서 씨야가 마지막으로 선보인 커버곡은 무엇일까요?",
       "choices": [
-        "하루",
-        "이틀",
-        "사흘",
-        "나흘"
+        "한 페이지가 될 수 있게",
+        "예뻤어",
+        "행복했던 날들이었다",
+        "Welcome to the Show"
       ],
-      "answer": 1,
-      "explanation": "THE FAN 서울 공연은 이틀 동안 열렸습니다.",
-      "source": "https://m.ticket.yes24.com/Notice/Detail.aspx?bid=17950&order=1"
+      "answer": 0,
+      "explanation": "우석대 대동제 무대는 「사랑의 인사」, 「미친 사랑의 노래」, 「Stay」, 「봄처럼 그댄」에 이어 「한 페이지가 될 수 있게」로 마무리됐습니다.",
+      "source": "https://www.youtube.com/watch?v=EqsLBqQ0jtQ&t=1364s"
     },
     {
       "id": "r21",

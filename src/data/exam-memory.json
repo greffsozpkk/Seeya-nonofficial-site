@@ -9,86 +9,95 @@
     {
       "id": "m01",
       "type": "choice",
-      "prompt": "씨야의 데뷔 앨범은 무엇일까요?",
+      "prompt": "앨범과 타이틀곡이 올바르게 연결된 것을 모두 고르세요.",
       "choices": [
-        "Lovely Sweet Heart",
-        "The First Mind",
-        "Brilliant Change",
-        "California Dream"
+        "The First Mind — 여인의 향기",
+        "Lovely Sweet Heart — 사랑의 인사",
+        "Brilliant Change — 그 놈 목소리",
+        "Rebloom — Hot Girl"
       ],
-      "answer": 1,
-      "explanation": "2006년 발매한 데뷔 앨범은 The First Mind입니다.",
-      "source": "https://music.bugs.co.kr/album/8016131"
+      "answer": [
+        0,
+        1
+      ],
+      "explanation": "The First Mind의 타이틀곡은 「여인의 향기」, Lovely Sweet Heart는 「사랑의 인사」입니다. Brilliant Change는 「Hot Girl」, Rebloom은 「그 놈 목소리」이므로 나머지 두 연결은 틀렸습니다.",
+      "source": "https://music.bugs.co.kr/album/8016131",
+      "multiple": true,
+      "additionalSources": [
+        "https://music.bugs.co.kr/album/8026965",
+        "https://open.spotify.com/album/5oLFtuiqV44VmUVPbyQf1W",
+        "https://music.bugs.co.kr/album/203741"
+      ]
     },
     {
       "id": "m02",
       "type": "choice",
-      "prompt": "씨야의 데뷔 타이틀곡은 무엇일까요?",
+      "prompt": "데뷔 당시 소개된 그룹명 SeeYa의 뜻에 해당하는 영문 표현은 무엇일까요?",
       "choices": [
-        "구두",
-        "사랑의 인사",
-        "여인의 향기",
-        "결혼할까요"
+        "See You Always",
+        "Sing Your Anthem",
+        "Stay Young Again",
+        "Share Your Art"
       ],
-      "answer": 2,
-      "explanation": "정규 1집의 타이틀곡은 「여인의 향기」입니다.",
-      "source": "https://music.bugs.co.kr/album/8016131"
+      "answer": 0,
+      "explanation": "데뷔 당시 인터뷰에서 SeeYa는 See You Always, 즉 언제나 팬들과 함께하겠다는 뜻으로 소개됐습니다.",
+      "source": "https://news.nate.com/view/20060307n05279"
     },
     {
       "id": "m03",
       "type": "choice",
-      "prompt": "씨야의 정규 2집 이름은 무엇일까요?",
+      "prompt": "씨야가 「미친 사랑의 노래」로 2006년 MKMF에서 수상한 부문은 무엇일까요?",
       "choices": [
-        "Lovely Sweet Heart",
-        "California Dream",
-        "Rebloom",
-        "See You Again"
+        "최우수 OST상",
+        "최우수 댄스음악상",
+        "최우수 록음악상",
+        "뮤직비디오 작품상"
       ],
       "answer": 0,
-      "explanation": "2007년 발매한 정규 2집은 Lovely Sweet Heart입니다.",
-      "source": "https://music.bugs.co.kr/album/8026965"
+      "explanation": "씨야는 2006년 MKMF에서 「미친 사랑의 노래」로 최우수 OST상을 받았습니다.",
+      "source": "https://www.osen.co.kr/article/G0611260007"
     },
     {
       "id": "m04",
       "type": "choice",
-      "prompt": "정규 2집의 타이틀곡은 무엇일까요?",
+      "prompt": "씨야의 2007년 첫 단독 콘서트가 열린 공연장은 어디일까요?",
       "choices": [
-        "가니",
-        "그 놈 목소리",
-        "내겐 너무 멋진 그대",
-        "사랑의 인사"
+        "멜론 악스홀",
+        "올림픽홀",
+        "세종문화회관 대극장",
+        "경희대학교 평화의전당"
       ],
-      "answer": 3,
-      "explanation": "정규 2집 타이틀곡은 「사랑의 인사」입니다.",
-      "source": "https://music.bugs.co.kr/album/8026965"
+      "answer": 0,
+      "explanation": "첫 단독 콘서트는 2007년 11월 24일 서울 광장동 멜론 악스홀에서 열렸습니다.",
+      "source": "https://www.nocutnews.co.kr/news/4113602"
     },
     {
       "id": "m05",
       "type": "choice",
-      "prompt": "Brilliant Change는 씨야의 몇 번째 정규 앨범일까요?",
+      "prompt": "씨야가 2008년 「Hot Girl」 활동에서 전면에 내세운 음악 스타일은 무엇일까요?",
       "choices": [
-        "1집",
-        "2집",
-        "3집",
-        "4집"
+        "일렉트로 하우스",
+        "어쿠스틱 포크",
+        "재즈 스윙",
+        "국악 발라드"
       ],
-      "answer": 2,
-      "explanation": "Brilliant Change는 2008년에 발매한 정규 3집입니다.",
-      "source": "https://open.spotify.com/album/5oLFtuiqV44VmUVPbyQf1W"
+      "answer": 0,
+      "explanation": "「Hot Girl」은 일렉트로 하우스 스타일의 곡으로, 씨야는 3집 활동에서 음악과 무대의 변화를 선보였습니다.",
+      "source": "https://sports.khan.co.kr/article/200809292056186"
     },
     {
       "id": "m06",
       "type": "choice",
-      "prompt": "미니앨범 Rebloom의 타이틀곡은 무엇일까요?",
+      "prompt": "데뷔 멤버 세 사람을 나이가 많은 순서대로 나열한 것은 무엇일까요?",
       "choices": [
-        "Hot Girl",
-        "그 놈 목소리",
-        "여성시대",
-        "원더우먼"
+        "남규리 → 김연지 → 이보람",
+        "김연지 → 남규리 → 이보람",
+        "남규리 → 이보람 → 김연지",
+        "이보람 → 김연지 → 남규리"
       ],
-      "answer": 1,
-      "explanation": "Rebloom의 타이틀곡은 「그 놈 목소리」입니다.",
-      "source": "https://music.bugs.co.kr/album/203741"
+      "answer": 0,
+      "explanation": "데뷔 당시 소개된 나이 순서는 남규리, 김연지, 이보람입니다.",
+      "source": "https://news.nate.com/view/20060307n05279"
     },
     {
       "id": "m07",
@@ -177,16 +186,16 @@
     {
       "id": "m13",
       "type": "choice",
-      "prompt": "「The Day」의 가창에 참여한 씨야 멤버는 누구일까요?",
+      "prompt": "이보람이 2011년 뮤지컬 배우로 데뷔한 작품은 무엇일까요?",
       "choices": [
-        "남규리",
-        "김연지",
-        "이보람",
-        "세 멤버 모두"
+        "폴링 포 이브",
+        "드림하이",
+        "그리스",
+        "맘마미아!"
       ],
-      "answer": 1,
-      "explanation": "「The Day」에는 씨야의 김연지가 가창자로 참여했습니다.",
-      "source": "https://music.bugs.co.kr/album/100005"
+      "answer": 0,
+      "explanation": "이보람은 2011년 뮤지컬 「폴링 포 이브」에서 이브 역을 맡으며 뮤지컬 무대에 데뷔했습니다.",
+      "source": "https://mobile.newsis.com/view/NISX20110718_0008703271"
     },
     {
       "id": "m14",
