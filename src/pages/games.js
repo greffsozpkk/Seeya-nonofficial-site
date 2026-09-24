@@ -22,9 +22,9 @@ module.exports=()=>W(`<section class="game-hub">
       <div class="game-card-copy">
         <span class="game-card-kicker">02 · SEEYA EXAM</span>
         <h2 id="game-exam-title">씨야 모의고사</h2>
-        <p id="game-exam-description">씨야에 대해 얼마나 알고 있나요?<br>팬심을 확인할 새로운 시험을 준비합니다.</p>
-        <div class="game-card-details"><span class="game-status" id="game-exam-status">업데이트 예정</span></div>
-        <span class="game-card-link">안내 보기 <span aria-hidden="true">→</span></span>
+        <p id="game-exam-description">씨야에 대해 얼마나 알고 있나요?<br>재회·기억·종합 탐구에 도전해보세요.</p>
+        <div class="game-card-details"><span class="game-status" id="game-exam-status">3개 영역 · 영역별 25문제</span></div>
+        <span class="game-card-link">모의고사 풀기 <span aria-hidden="true">→</span></span>
       </div>
     </a>
   </div>

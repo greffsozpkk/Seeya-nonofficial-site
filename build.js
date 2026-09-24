@@ -64,7 +64,7 @@ for(const route of [...routes,previewRoute]){
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:key==='letter'?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+route.path),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
  if(key==='fans'){vars.pageHead+=`<link rel="stylesheet" href="${fanCss}">`;vars.scripts+=`\n<script defer src="${fanJs}"></script>`;}
- if(key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
+ if(key==='exam'||key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
  let output=template.replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in vars))throw new Error('Unknown template key '+key);return vars[key];});
  if(route.unlisted){
   output=output.replace(/(<meta name="(?:robots|googlebot)" content=")[^"]+/g,'$1noindex,nofollow,noarchive,nosnippet');

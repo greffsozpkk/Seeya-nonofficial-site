@@ -242,7 +242,7 @@
     "key": "games",
     "path": "/game/",
     "title": "SEEYA PLAY · 씨야와 함께하는 팬 놀이터 | SEEYA ARCHIVE",
-    "description": "씨야와 함께하는 팬 놀이터 SEEYA PLAY. 가사 보고 제목 맞히기에 도전해보세요. 씨야 모의고사는 업데이트 예정입니다."
+    "description": "씨야와 함께하는 팬 놀이터 SEEYA PLAY. 가사 보고 제목 맞히기와 재회·기억·종합 탐구 씨야 모의고사에 도전해보세요."
   },
   {
     "key": "quiz",
@@ -253,8 +253,8 @@
   {
     "key": "exam",
     "path": "/game/exam/",
-    "title": "씨야 모의고사 · 업데이트 예정 | SEEYA ARCHIVE",
-    "description": "씨야 모의고사를 준비하고 있습니다. 문제와 시험 안내가 차례로 추가될 예정이며, 지금은 가사 보고 제목 맞히기에 도전할 수 있습니다."
+    "title": "씨야 모의고사 · 재회·기억·종합 탐구 | SEEYA ARCHIVE",
+    "description": "씨야의 음악과 활동을 얼마나 기억하고 있나요? 재회·기억·종합 탐구 중 선택해 영역별 25문제에 도전하세요. 시험지형·카드형 풀이, 성적표와 시험지 인쇄를 제공합니다."
   },
   {
     "key": "news",
