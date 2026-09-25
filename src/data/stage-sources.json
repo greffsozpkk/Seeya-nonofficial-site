@@ -626,5 +626,55 @@
     "scope": "multi",
     "category": "live",
     "basis": "제리제이 Jerry.j의 260921 우석대학교 축제 전체 직캠 설명의 곡별 구간: 사랑의 인사 00:05, 미친 사랑의 노래 05:26, STAY 11:39, 봄처럼 그댄 17:48."
+  },
+  {
+    "archiveId": "20260925-yeonji-mbc-2pdate",
+    "url": "https://www.youtube.com/watch?v=4BByjzA3ldA",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "multi",
+    "category": "broadcast",
+    "basis": "MBC RADIO 공식 260925 라이브 영상: 노래 00:00, 사랑의 인사 04:38. 사랑의 인사 모아보기에만 연결."
+  },
+  {
+    "archiveId": "v4145-M-97dYACT8U",
+    "url": "https://www.youtube.com/watch?v=M-97dYACT8U",
+    "songIds": [
+      "ice-doll"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "보람씨야 공식 단일 곡 커버 영상 제목 확인"
+  },
+  {
+    "archiveId": "v4145-w4DHifb4nCE",
+    "url": "https://www.youtube.com/watch?v=w4DHifb4nCE",
+    "songIds": [
+      "wonderful-you"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "보람씨야 공식 단일 곡 커버 영상 제목 확인"
+  },
+  {
+    "archiveId": "v4145-B77V1wfmhqw",
+    "url": "https://www.youtube.com/watch?v=B77V1wfmhqw",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "보람씨야 공식 단일 곡 커버 영상 제목 확인"
+  },
+  {
+    "archiveId": "v4145-sIkd5n4Nppw",
+    "url": "https://www.youtube.com/watch?v=sIkd5n4Nppw",
+    "songIds": [
+      "scent-of-a-woman"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "보람씨야 공식 단일 곡 커버 영상 제목 확인"
   }
 ]
