@@ -1,0 +1,164 @@
+{
+  "pausedOn": "2026-09-25",
+  "reason": "원문은 열리지만 Instagram 외부 삽입 화면에서 오류가 확인되어 갤러리 표시를 보류합니다. 계정 설정이 원인인지는 확정되지 않았습니다.",
+  "restoreWhen": "외부 삽입 화면이 정상 표시되는지 재확인한 후 accounts와 posts를 fan-posts.json으로 되돌립니다. 게시물 ID 중복을 검사하고, 복구한 항목은 이 보관 목록에서 제거합니다.",
+  "accounts": [
+    {
+      "handle": "leeboram_ing",
+      "name": "leeboram_ing"
+    },
+    {
+      "handle": "seeya060312",
+      "name": "seeya060312"
+    }
+  ],
+  "posts": [
+    {
+      "id": "DdspGS4zR07",
+      "account": "leeboram_ing",
+      "postedOn": "2026-09-25",
+      "label": "씨야",
+      "kind": "reel"
+    },
+    {
+      "id": "DdsOpHvPGVr",
+      "account": "leeboram_ing",
+      "postedOn": "2026-09-25",
+      "label": "씨야",
+      "kind": "reel"
+    },
+    {
+      "id": "DdsiupHvLav",
+      "account": "seeya060312",
+      "postedOn": "2026-09-25",
+      "label": "남규리",
+      "kind": "post"
+    },
+    {
+      "id": "DdqqrgnvUux",
+      "account": "leeboram_ing",
+      "postedOn": "2026-09-24",
+      "label": "씨야",
+      "kind": "reel"
+    },
+    {
+      "id": "Ddp1JRuDwfV",
+      "account": "seeya060312",
+      "postedOn": "2026-09-24",
+      "label": "남규리",
+      "kind": "post"
+    },
+    {
+      "id": "DdnbonOyCb3",
+      "account": "leeboram_ing",
+      "postedOn": "2026-09-23",
+      "label": "씨야",
+      "kind": "reel"
+    },
+    {
+      "id": "DdmJIkZyYh0",
+      "account": "leeboram_ing",
+      "postedOn": "2026-09-23",
+      "label": "씨야",
+      "kind": "reel"
+    },
+    {
+      "id": "DdmyCwXzV6E",
+      "account": "seeya060312",
+      "postedOn": "2026-09-23",
+      "label": "남규리",
+      "kind": "reel"
+    },
+    {
+      "id": "Ddmu-OETHiA",
+      "account": "seeya060312",
+      "postedOn": "2026-09-23",
+      "label": "남규리",
+      "kind": "reel"
+    },
+    {
+      "id": "Ddmtn_LTgff",
+      "account": "seeya060312",
+      "postedOn": "2026-09-23",
+      "label": "남규리",
+      "kind": "reel"
+    },
+    {
+      "id": "DdnxcSDjxzL",
+      "account": "seeya060312",
+      "postedOn": "2026-09-23",
+      "label": "이보람",
+      "kind": "post"
+    },
+    {
+      "id": "DdmtVnUzJ2K",
+      "account": "seeya060312",
+      "postedOn": "2026-09-23",
+      "label": "씨야",
+      "kind": "reel"
+    },
+    {
+      "id": "DdlYtsXPZFg",
+      "account": "leeboram_ing",
+      "postedOn": "2026-09-22",
+      "label": "이보람",
+      "kind": "reel"
+    },
+    {
+      "id": "Ddk68WdPhXJ",
+      "account": "leeboram_ing",
+      "postedOn": "2026-09-22",
+      "label": "이보람",
+      "kind": "reel"
+    },
+    {
+      "id": "DdlnvK4Tcf0",
+      "account": "seeya060312",
+      "postedOn": "2026-09-22",
+      "label": "남규리",
+      "kind": "reel"
+    },
+    {
+      "id": "DdlYcgSyUom",
+      "account": "seeya060312",
+      "postedOn": "2026-09-22",
+      "label": "남규리",
+      "kind": "reel"
+    },
+    {
+      "id": "DdiQX3APGhA",
+      "account": "leeboram_ing",
+      "postedOn": "2026-09-21",
+      "label": "씨야",
+      "kind": "reel"
+    },
+    {
+      "id": "DdgyzoZy5SM",
+      "account": "leeboram_ing",
+      "postedOn": "2026-09-20",
+      "label": "남규리 · 이보람",
+      "kind": "reel"
+    },
+    {
+      "id": "DX8DokUPIvS",
+      "account": "leeboram_ing",
+      "postedOn": "2026-05-05",
+      "label": "이보람",
+      "kind": "reel"
+    },
+    {
+      "id": "DVz6CKCj9EY",
+      "account": "leeboram_ing",
+      "postedOn": "2026-03-13",
+      "label": "이보람",
+      "kind": "reel"
+    },
+    {
+      "id": "DVx8eftj0Mf",
+      "account": "seeya060312",
+      "postedOn": "2026-03-12",
+      "label": "씨야",
+      "kind": "post"
+    }
+  ]
+}

@@ -41,16 +41,8 @@
       "name": "terry.seo_93"
     },
     {
-      "handle": "leeboram_ing",
-      "name": "leeboram_ing"
-    },
-    {
       "handle": "cup_soohans",
       "name": "cup_soohans"
-    },
-    {
-      "handle": "seeya060312",
-      "name": "seeya060312"
     },
     {
       "handle": "mena299",
@@ -67,32 +59,11 @@
   ],
   "posts": [
     {
-      "id": "DdspGS4zR07",
-      "account": "leeboram_ing",
-      "postedOn": "2026-09-25",
-      "label": "씨야",
-      "kind": "reel"
-    },
-    {
-      "id": "DdsOpHvPGVr",
-      "account": "leeboram_ing",
-      "postedOn": "2026-09-25",
-      "label": "씨야",
-      "kind": "reel"
-    },
-    {
       "id": "DdtPK8NSyGa",
       "account": "ramirang_",
       "postedOn": "2026-09-25",
       "label": "씨야",
       "kind": "reel"
-    },
-    {
-      "id": "DdsiupHvLav",
-      "account": "seeya060312",
-      "postedOn": "2026-09-25",
-      "label": "남규리",
-      "kind": "post"
     },
     {
       "id": "DdrJh-avsKw",
@@ -109,24 +80,10 @@
       "kind": "post"
     },
     {
-      "id": "DdqqrgnvUux",
-      "account": "leeboram_ing",
-      "postedOn": "2026-09-24",
-      "label": "씨야",
-      "kind": "reel"
-    },
-    {
       "id": "DdqJYsRIBns",
       "account": "ramirang_",
       "postedOn": "2026-09-24",
       "label": "씨야",
-      "kind": "post"
-    },
-    {
-      "id": "Ddp1JRuDwfV",
-      "account": "seeya060312",
-      "postedOn": "2026-09-24",
-      "label": "남규리",
       "kind": "post"
     },
     {
@@ -151,20 +108,6 @@
       "kind": "reel"
     },
     {
-      "id": "DdnbonOyCb3",
-      "account": "leeboram_ing",
-      "postedOn": "2026-09-23",
-      "label": "씨야",
-      "kind": "reel"
-    },
-    {
-      "id": "DdmJIkZyYh0",
-      "account": "leeboram_ing",
-      "postedOn": "2026-09-23",
-      "label": "씨야",
-      "kind": "reel"
-    },
-    {
       "id": "DdogyZxEkVz",
       "account": "ramirang_",
       "postedOn": "2026-09-23",
@@ -186,41 +129,6 @@
       "kind": "reel"
     },
     {
-      "id": "DdmyCwXzV6E",
-      "account": "seeya060312",
-      "postedOn": "2026-09-23",
-      "label": "남규리",
-      "kind": "reel"
-    },
-    {
-      "id": "Ddmu-OETHiA",
-      "account": "seeya060312",
-      "postedOn": "2026-09-23",
-      "label": "남규리",
-      "kind": "reel"
-    },
-    {
-      "id": "Ddmtn_LTgff",
-      "account": "seeya060312",
-      "postedOn": "2026-09-23",
-      "label": "남규리",
-      "kind": "reel"
-    },
-    {
-      "id": "DdnxcSDjxzL",
-      "account": "seeya060312",
-      "postedOn": "2026-09-23",
-      "label": "이보람",
-      "kind": "post"
-    },
-    {
-      "id": "DdmtVnUzJ2K",
-      "account": "seeya060312",
-      "postedOn": "2026-09-23",
-      "label": "씨야",
-      "kind": "reel"
-    },
-    {
       "id": "DdlpAFAAd_S",
       "account": "_jerry.j_ramficial",
       "postedOn": "2026-09-22",
@@ -239,20 +147,6 @@
       "account": "rora_yeonji",
       "postedOn": "2026-09-22",
       "label": "김연지",
-      "kind": "reel"
-    },
-    {
-      "id": "DdlYtsXPZFg",
-      "account": "leeboram_ing",
-      "postedOn": "2026-09-22",
-      "label": "이보람",
-      "kind": "reel"
-    },
-    {
-      "id": "Ddk68WdPhXJ",
-      "account": "leeboram_ing",
-      "postedOn": "2026-09-22",
-      "label": "이보람",
       "kind": "reel"
     },
     {
@@ -284,20 +178,6 @@
       "kind": "reel"
     },
     {
-      "id": "DdlnvK4Tcf0",
-      "account": "seeya060312",
-      "postedOn": "2026-09-22",
-      "label": "남규리",
-      "kind": "reel"
-    },
-    {
-      "id": "DdlYcgSyUom",
-      "account": "seeya060312",
-      "postedOn": "2026-09-22",
-      "label": "남규리",
-      "kind": "reel"
-    },
-    {
       "id": "DdijBaXTAAT",
       "account": "seeya_tree.weathered",
       "postedOn": "2026-09-21",
@@ -319,13 +199,6 @@
       "kind": "post"
     },
     {
-      "id": "DdiQX3APGhA",
-      "account": "leeboram_ing",
-      "postedOn": "2026-09-21",
-      "label": "씨야",
-      "kind": "reel"
-    },
-    {
       "id": "DdehVH8kl_M",
       "account": "zenix_5071",
       "postedOn": "2026-09-20",
@@ -338,13 +211,6 @@
       "postedOn": "2026-09-20",
       "label": "씨야",
       "kind": "post"
-    },
-    {
-      "id": "DdgyzoZy5SM",
-      "account": "leeboram_ing",
-      "postedOn": "2026-09-20",
-      "label": "남규리 · 이보람",
-      "kind": "reel"
     },
     {
       "id": "DdgLR_ikfLQ",
@@ -1089,31 +955,10 @@
       "kind": "post"
     },
     {
-      "id": "DX8DokUPIvS",
-      "account": "leeboram_ing",
-      "postedOn": "2026-05-05",
-      "label": "이보람",
-      "kind": "reel"
-    },
-    {
       "id": "DW_siXBEZ9g",
       "account": "cup_soohans",
       "postedOn": "2026-04-11",
       "label": "이보람",
-      "kind": "post"
-    },
-    {
-      "id": "DVz6CKCj9EY",
-      "account": "leeboram_ing",
-      "postedOn": "2026-03-13",
-      "label": "이보람",
-      "kind": "reel"
-    },
-    {
-      "id": "DVx8eftj0Mf",
-      "account": "seeya060312",
-      "postedOn": "2026-03-12",
-      "label": "씨야",
       "kind": "post"
     }
   ]
