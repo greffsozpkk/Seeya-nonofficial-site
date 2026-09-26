@@ -8,6 +8,23 @@ assert(correct(data.questions[20],'  내 잘못 입니다  '));assert(correct(da
 const orders=shuffledChoices(()=>0.25);orders.forEach((a,i)=>{if(data.questions[i].type==='choice')assert.deepEqual([...a].sort(),[0,1,2,3]);});
 const printed=printQuestions();assert.equal((printed.match(/exam-print-question/g)||[]).length,25);assert(!printed.includes('근거 자료')&&!printed.includes('정답:'));
 const {sheets,level,report}=require('../src/shared/exam-layout');
+// Check exported report content against grading for all areas, including blanks.
+const {reportImage}=require('../src/client/exam-export');
+for(const bank of banks){
+ for(const filled of [false,true]){
+  const labels=[],answers=filled?Object.fromEntries(bank.questions.map(q=>[q.id,q.answer])):{};
+  const context={scale(){},fillRect(){},strokeRect(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},fillText(t){labels.push(t);},measureText(t){return {width:t.length*14};}};
+  const canvas={getContext:()=>context,toDataURL:()=> 'data:image/png;test'};
+  global.document={createElement:()=>canvas};
+  try{assert.equal(reportImage(answers,'검토자',bank),'data:image/png;test');}finally{delete global.document;}
+  assert.equal(canvas.width,1400);assert.equal(canvas.height,1900);
+  assert(labels.includes(bank.area)&&labels.includes('검토자'));
+  assert(labels.includes(filled?'100 / 100':'0 / 100'));
+  assert.equal(labels.filter(t=>t==='O').length,filled?25:0);
+  assert.equal(labels.filter(t=>t==='—').length,filled?0:25);
+  assert(labels.includes(filled?'정답 25 · 오답 0 · 미응답 0':'정답 0 · 오답 0 · 미응답 25'));
+ }
+}
 assert.deepEqual(sheets.flat(2),Array.from({length:25},(_,i)=>i));
 assert.equal((printed.match(/class="exam-paper"/g)||[]).length,3);
 assert.deepEqual([0,39,40,59,60,79,80,89,90,100].map(level),[5,5,4,4,3,3,2,2,1,1]);

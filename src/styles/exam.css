@@ -29,3 +29,7 @@
 
 /* Preserve lyric question line breaks on screen, review and printed papers. */
 .exam-q-title,.exam-review-item summary>span:last-child,.exam-print-question h3{white-space:pre-line}
+
+/* v4.148: report exports use a single local, high-resolution image. */
+.exam-save-help{text-align:center}.exam-image-preview{max-width:760px;margin:20px auto;padding:18px;border:1px solid #dec0ce;background:#fff9fc;border-radius:8px}.exam-image-preview summary{cursor:pointer}.exam-image-preview img{display:block;width:100%;height:auto;margin-top:16px}.exam-image-download{display:inline-block;color:#713e54;text-decoration:underline;padding:10px 0}.exam-saved-report{display:block;width:100%;height:auto}
+@media print{.exam-print.exam-report-print{margin:0!important;padding:0!important;break-inside:avoid}.exam-report-print .exam-saved-report{width:186mm;height:265mm;max-width:100%;object-fit:contain;object-position:top center;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
