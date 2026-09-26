@@ -163,30 +163,30 @@
     {
       "id": "r12",
       "type": "choice",
-      "prompt": "인스트루멘털을 포함한 First, Again의 전체 트랙 수는 몇 개일까요?",
+      "prompt": "「Stay」의 다음 빈칸에 들어가는 단어는 무엇일까요?\n\nstay in the (　　　)",
       "choices": [
-        "9개",
-        "11개",
-        "13개",
-        "15개"
+        "moonlight",
+        "twilight",
+        "sunlight",
+        "starlight"
       ],
       "answer": 1,
-      "explanation": "First, Again은 인스트루멘털 2곡을 포함해 총 11트랙입니다.",
-      "source": "https://music.bugs.co.kr/album/4147431"
+      "explanation": "반복되는 후렴에 사용된 단어를 고르는 문제입니다.",
+      "source": "https://music.bugs.co.kr/track/6464992"
     },
     {
       "id": "r13",
       "type": "choice",
-      "prompt": "다음 영어 제목의 곡 중 First, Again에 수록된 곡은 무엇일까요?",
+      "prompt": "「I Believe」의 다음 빈칸에 들어가는 말은 무엇일까요?\n\n나는 나를 (　　　)",
       "choices": [
-        "I Believe",
-        "Classic",
-        "Summer Dream",
-        "The Day"
+        "잊지 않아",
+        "탓하지 않아",
+        "놓지 않아",
+        "숨기지 않아"
       ],
-      "answer": 0,
-      "explanation": "「I Believe」는 First, Again에 수록되어 있습니다.",
-      "source": "https://music.bugs.co.kr/album/4147431"
+      "answer": 2,
+      "explanation": "후렴에 실제로 사용된 표현을 고르는 문제입니다.",
+      "source": "https://music.bugs.co.kr/track/6464995"
     },
     {
       "id": "r14",

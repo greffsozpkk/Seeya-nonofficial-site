@@ -228,16 +228,16 @@
     {
       "id": "m16",
       "type": "choice",
-      "prompt": "다음 중 Rebloom에 수록되지 않은 곡은 무엇일까요?",
+      "prompt": "「결혼할까요」의 빈칸 ㄱ·ㄴ을 올바르게 연결한 것은 무엇일까요?\n\n한 (ㄱ)에 (ㄴ)이 내릴때까지",
       "choices": [
-        "앗차!",
-        "눈물의 여왕",
-        "바람핀다 믿었니",
-        "얼음인형"
+        "겨울날 — 비",
+        "여름날 — 눈",
+        "여름날 — 비",
+        "겨울날 — 눈"
       ],
-      "answer": 3,
-      "explanation": "「얼음인형」은 정규 2집 수록곡입니다.",
-      "source": "https://music.bugs.co.kr/album/203741"
+      "answer": 1,
+      "explanation": "가사에 등장하는 계절과 날씨를 순서대로 연결한 조합입니다.",
+      "source": "https://music.bugs.co.kr/track/80331365"
     },
     {
       "id": "m17",
@@ -284,16 +284,16 @@
     {
       "id": "m20",
       "type": "choice",
-      "prompt": "다음 중 앨범 발매 순서가 올바른 것은 무엇일까요?",
+      "prompt": "「사랑의 인사」에서 다음 가사 구절들이 처음 등장하는 순서로 올바른 것은 무엇일까요?\n\nㄱ. 버릇처럼 말했죠\nㄴ. 그댄 어디 있나요\nㄷ. 우산없이 나와 함께 걸었죠",
       "choices": [
-        "California Dream → Rebloom → See You Again",
-        "Rebloom → California Dream → See You Again",
-        "See You Again → California Dream → Rebloom",
-        "California Dream → See You Again → Rebloom"
+        "ㄱ → ㄷ → ㄴ",
+        "ㄷ → ㄴ → ㄱ",
+        "ㄴ → ㄱ → ㄷ",
+        "ㄷ → ㄱ → ㄴ"
       ],
-      "answer": 0,
-      "explanation": "California Dream(2008), Rebloom(2009), See You Again(2011) 순서입니다.",
-      "source": "https://music.bugs.co.kr/album/100005"
+      "answer": 3,
+      "explanation": "처음 등장하는 순서는 ㄷ → ㄱ → ㄴ입니다. 이후 반복되는 부분은 순서에 다시 포함하지 않습니다.",
+      "source": "https://music.bugs.co.kr/track/80331364"
     },
     {
       "id": "m21",

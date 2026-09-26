@@ -26,3 +26,6 @@
 .exam-page .exam-multiple-help{font:13px/1.6 Arial,'Gowun Dodum',sans-serif;color:#704154;margin:5px 0 12px}
 .exam-paper .exam-option input[type=checkbox]+.exam-option-number{border-radius:3px}
 @media print{.exam-page .exam-print-question .exam-multiple-help{font-size:8pt;color:#222}}
+
+/* Preserve lyric question line breaks on screen, review and printed papers. */
+.exam-q-title,.exam-review-item summary>span:last-child,.exam-print-question h3{white-space:pre-line}
