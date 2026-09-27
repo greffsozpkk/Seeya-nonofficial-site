@@ -1,5 +1,9 @@
 function initStages(){
  const root=document.querySelector('[data-stage-browser]');if(!root)return;
+ const tabs=[...document.querySelectorAll('[data-song-tab]')],panels=[...document.querySelectorAll('[data-song-panel]')];
+ function showPanel(){if(!tabs.length)return;const view=new URLSearchParams(location.search).get('view')==='story'||location.hash==='#song-stories'?'story':'stages';tabs.forEach(t=>{if(t.dataset.songTab===view)t.setAttribute('aria-current','page');else t.removeAttribute('aria-current');});panels.forEach(p=>p.hidden=p.dataset.songPanel!==view);}
+ tabs.forEach(t=>t.addEventListener('click',e=>{if(e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;e.preventDefault();const url=new URL(location.href);url.hash='';url.searchParams.delete('view');if(t.dataset.songTab==='story')url.searchParams.set('view','story');if(url.href!==location.href)history.pushState(null,'',url);showPanel();}));
+ window.addEventListener('hashchange',showPanel);showPanel();
  const catalog=root.dataset.stageBrowser==='catalog',items=[...root.querySelectorAll('[data-stage-item]')],grid=items[0]?.parentElement;
  const form=root.querySelector('form'),pager=root.querySelector('.stage-pagination'),status=root.querySelector('.stage-result');
  const size=Number(root.dataset.pageSize),defaultSort=catalog?'release':'newest';
@@ -22,6 +26,6 @@ function initStages(){
  form.addEventListener('input',e=>{if(e.target.type==='search'){state.q=e.target.value;state.page=1;render();}});
  form.addEventListener('change',e=>{if(e.target.tagName==='SELECT'){state[e.target.name]=e.target.value;state.page=1;render(true);}});
  root.addEventListener('click',e=>{const type=e.target.closest('[data-stage-type]'),page=e.target.closest('[data-stage-page]'),reset=e.target.closest('[data-stage-reset]');if(type){state.type=type.dataset.stageType;state.page=1;render(true);}if(page){state.page=Number(page.dataset.stagePage);render(true);status.tabIndex=-1;status.focus({preventScroll:true});root.scrollIntoView({block:'start',behavior:'auto'});}if(reset){state={...defaults};for(const f of form.elements)if(f.name)f.value=state[f.name];render(true);}});
- window.addEventListener('popstate',()=>{fromURL();render();});fromURL();render();
+ window.addEventListener('popstate',()=>{fromURL();render();showPanel();});fromURL();render();
 }
 module.exports={initStages};

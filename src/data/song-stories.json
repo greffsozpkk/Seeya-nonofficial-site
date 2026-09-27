@@ -1,0 +1,39 @@
+[
+  {
+    "id": "love-greeting-elgar", "songId": "love-greeting", "kind": "곡의 탄생",
+    "title": "클래식 선율과 만난 사랑의 인사",
+    "paragraphs": ["2집의 타이틀곡 ‘사랑의 인사’는 엘가의 동명 작품을 샘플링했습니다. 김도훈이 작곡한 곡에 클래식 선율과 어쿠스틱한 편곡이 어우러집니다.", "앨범 소개에서는 앞선 히트곡들과 다른 창법도 감상 포인트로 짚습니다. 익숙한 전주를 다시 들으며 세 사람의 목소리가 어떻게 이어지는지 따라가 보세요."],
+    "sources": [{"label": "벅스 · Lovely Sweet Heart 앨범 소개", "url": "https://music.bugs.co.kr/album/8026965"}]
+  },
+  {
+    "id": "love-greeting-mv", "songId": "love-greeting", "kind": "뮤직비디오",
+    "title": "전생과 현생을 잇는 이야기",
+    "paragraphs": ["‘사랑의 인사’ 뮤직비디오에는 이요원과 조현재가 출연합니다. 앨범 소개는 두 배우가 전생과 현생을 오가는 운명적인 사랑을 그린다고 설명합니다.", "무대 위 세 사람의 노래와 함께, 한 편의 드라마로 풀어낸 곡의 모습도 돌아볼 수 있습니다."],
+    "sources": [{"label": "벅스 · 앨범 소개에서 읽기", "url": "https://music.bugs.co.kr/album/8026965"}]
+  },
+  {
+    "id": "stay-chill-house", "songId": "stay", "kind": "곡의 탄생",
+    "title": "새로운 리듬 위에 놓인 세 목소리",
+    "paragraphs": ["4집 ‘First, Again’의 타이틀곡 ‘Stay’는 칠하우스 기반의 일렉트로닉 댄스곡입니다. 박근태·김도훈·강지원이 작곡에 참여했습니다.", "앨범 소개는 씨야의 새로운 음악적 방향을 이 곡의 특징으로 꼽습니다. 오랜만에 함께 선 무대에서 세 사람이 선보이는 리듬과 퍼포먼스도 감상해 보세요."],
+    "sources": [{"label": "벅스 · First, Again 앨범 소개", "url": "https://music.bugs.co.kr/album/4147431"}]
+  },
+  {
+    "id": "stay-mv-behind", "songId": "stay", "kind": "촬영 뒷이야기",
+    "title": "아이키와 함께한 Stay 촬영장",
+    "paragraphs": ["남규리의 귤멍 47회에는 ‘Stay’ 뮤직비디오 촬영 현장이 담겼습니다. 아이키와 함께한 촬영과 밤을 지나 이어진 현장의 모습을 볼 수 있습니다.", "남규리는 촬영 뒷이야기와 함께 이 곡을 밤 드라이브에 어울리는 노래로 소개했습니다. 완성된 무대와 촬영장의 분위기를 나란히 만나보세요."],
+    "archiveId": "v4145-Ud_KJY1I1vQ",
+    "sources": [{"label": "남규리의 귤멍 · Ep.47 영상 보기", "url": "https://www.youtube.com/watch?v=Ud_KJY1I1vQ"}, {"label": "텐아시아 · 촬영 뒷이야기 기사", "url": "https://www.tenasia.co.kr/article/2026051715754"}]
+  },
+  {
+    "id": "nevertheless-writing", "songId": "nevertheless-us", "kind": "멤버들의 이야기",
+    "title": "세 사람이 함께 써 내려간 재회",
+    "paragraphs": ["‘그럼에도, 우린’에는 남규리·김연지·이보람이 함께 쓴 가사가 담겼습니다. 재회 인터뷰에서 멤버들은 오랜 시간을 지나 다시 함께 노래하게 된 마음을 전했습니다.", "김연지는 녹음 중 세 사람의 목소리가 다시 모이는 것을 듣고 눈물이 났다고 이야기했습니다. 세 멤버가 직접 전한 녹음 당시의 마음을 인터뷰에서 읽어볼 수 있습니다."],
+    "sources": [{"label": "아시아경제 · 씨야 재회 인터뷰", "url": "https://www.asiae.co.kr/article/2026032717013643353"}]
+  },
+  {
+    "id": "spring-arrangement", "songId": "like-spring", "kind": "곡의 탄생",
+    "title": "미디엄 팝에 담은 따뜻한 화음",
+    "paragraphs": ["‘봄처럼 그댄’은 4집에 수록된 미디엄 팝 곡입니다. 박근태·김도훈·강지원이 작곡에 참여했고, 앨범 소개에서는 따뜻한 분위기와 세 멤버의 하모니를 강조합니다.", "기타·베이스·피아노 연주 위에서 이어지는 목소리를 들어보세요. 같은 앨범의 ‘Stay’와는 또 다른 씨야의 분위기를 만날 수 있습니다."],
+    "sources": [{"label": "벅스 · First, Again 앨범 소개와 크레딧", "url": "https://music.bugs.co.kr/album/4147431"}]
+  }
+]

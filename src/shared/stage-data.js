@@ -1,5 +1,8 @@
 const songs=require('../data/stage-songs.json');
 const mappings=require('../data/stage-sources.json');
+const stories=require('../data/song-stories.json');
+const storiesFor=id=>stories.filter(s=>s.songId===id);
+function videoPlatform(url){try{const u=new URL(url);if(u.protocol!=='https:')return '';if(videoId(url))return 'YouTube';if(['instagram.com','www.instagram.com'].includes(u.hostname)&&/^\/(?:[\w.]+\/)?reel\/[\w-]+\/?$/.test(u.pathname))return 'Instagram';}catch(_){}return '';}
 const normalize=s=>String(s).trim().toLowerCase().replace(/\s+/g,'');
 const songByTitle=title=>songs.find(s=>[s.name,...s.aliases].some(x=>normalize(x)===normalize(title)));
 const songPath=s=>'/music/stages/'+s.id+'/';
@@ -12,11 +15,11 @@ function performances(archive,songId,cutoff){
   const row=rows.get(mapping.archiveId);
   if(!row||row.hidden||row.eventState==='scheduled'||(row.date&&row.date>cutoff))continue;
   const source=[row.source,...(row.additionalSources||[])].find(x=>x?.url===mapping.url);
-  if(!source||!videoId(source.url))continue;
+  if(!source||!videoPlatform(source.url))continue;
   if(!grouped.has(row.id))grouped.set(row.id,{...row,category:mapping.category,clips:[]});
   const event=grouped.get(row.id);
   if(!event.clips.some(x=>x.url===source.url))event.clips.push({...source,scope:mapping.scope});
  }
  return [...grouped.values()].sort((a,b)=>String(b.date).localeCompare(String(a.date))||a.id.localeCompare(b.id));
 }
-module.exports={songs,mappings,songByTitle,songPath,videoId,performances};
+module.exports={songs,mappings,stories,storiesFor,songByTitle,songPath,videoId,videoPlatform,performances};

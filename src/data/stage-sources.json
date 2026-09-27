@@ -676,5 +676,77 @@
     "scope": "single",
     "category": "live",
     "basis": "보람씨야 공식 단일 곡 커버 영상 제목 확인"
+  },
+  {
+    "archiveId": "20260921-woosuk-festival",
+    "url": "https://www.instagram.com/ramirang_/reel/DdtPK8NSyGa/",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "게시자 캡션에서 260921 우석대학교 축제 및 미친 사랑의 노래 확인",
+    "checkedOn": "2026-09-27"
+  },
+  {
+    "archiveId": "20260921-woosuk-festival",
+    "url": "https://www.instagram.com/ramirang_/reel/DdnVqr1OFjV/",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "게시자 캡션에서 260921 우석대학교 축제 및 사랑의 인사 확인",
+    "checkedOn": "2026-09-27"
+  },
+  {
+    "archiveId": "20260919-daegu-national-song-festival",
+    "url": "https://www.youtube.com/watch?v=BFCMsthBBy4",
+    "songIds": [
+      "love-greeting",
+      "crazy-love-song",
+      "stay",
+      "like-spring"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "게시자 영상 설명의 4곡 타임스탬프와 기존 행사 기록 대조",
+    "checkedOn": "2026-09-27"
+  },
+  {
+    "archiveId": "20260919-daegu-national-song-festival",
+    "url": "https://www.youtube.com/watch?v=AE1PViJLNr4",
+    "songIds": [
+      "love-greeting",
+      "crazy-love-song",
+      "stay",
+      "like-spring"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "게시자 영상 설명의 4곡 타임스탬프와 기존 행사 기록 대조",
+    "checkedOn": "2026-09-27"
+  },
+  {
+    "archiveId": "v4145-v94ggr3izUk",
+    "url": "https://www.youtube.com/watch?v=q3--9xMqPew",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "남규리의 귤멍 공식 영상 제목: 허용별귤 - 미친 사랑의 노래",
+    "checkedOn": "2026-09-27"
+  },
+  {
+    "archiveId": "20260921-woosuk-festival",
+    "url": "https://www.instagram.com/dream_afr_10/reel/DdkmKVyvyzf/",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "원문 캡션의 2026.09.21 우석대학교 행사일 및 곡명 확인",
+    "checkedOn": "2026-09-27"
   }
 ]

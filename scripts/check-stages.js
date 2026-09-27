@@ -1,11 +1,11 @@
 const assert=require('node:assert/strict');
 const archive=require('../data/archive.json'),routes=require('../src/data/routes.json');
-const {songs,mappings,songPath,songByTitle,performances,videoId}=require('../src/shared/stage-data');
+const {songs,mappings,songPath,songByTitle,performances,videoId,videoPlatform,stories}=require('../src/shared/stage-data');
 const cutoff=require('../src/data/site.json').snapshotDate.slice(0,10);
 const byId=new Map(archive.map(x=>[x.id,x]));
 assert.equal(new Set(songs.map(s=>s.id)).size,songs.length);
 for(const s of songs){assert(routes.some(r=>r.path===songPath(s)&&r.songId===s.id));assert(performances(archive,s.id,cutoff).length>0,s.id+' requires a performance');}
-for(const m of mappings){const row=byId.get(m.archiveId);assert(row,'Unknown archive reference');assert(['broadcast','concert','live'].includes(m.category));assert(['single','multi','compilation'].includes(m.scope));assert(videoId(m.url));assert([row.source,...(row.additionalSources||[])].some(s=>s?.url===m.url),'Must reference an existing source');for(const id of m.songIds)assert(songs.some(s=>s.id===id));}
+for(const m of mappings){const row=byId.get(m.archiveId);assert(row,'Unknown archive reference');assert(['broadcast','concert','live'].includes(m.category));assert(['single','multi','compilation','excerpt'].includes(m.scope));assert(videoPlatform(m.url));assert([row.source,...(row.additionalSources||[])].some(s=>s?.url===m.url),'Must reference an existing source');for(const id of m.songIds)assert(songs.some(s=>s.id===id));}
 assert.equal(songByTitle('그놈 목소리').id,'his-voice');assert.equal(songByTitle('sTaY').id,'stay');assert.equal(songByTitle('사랑의 인사 2026'),undefined,'Different editions must not merge automatically');
 const stay=performances(archive,'stay',cutoff),spring=performances(archive,'like-spring',cutoff);
 const charity=performances(archive,'love-greeting',cutoff).find(r=>r.id==='20260920-gyuri-gwangju-charity');
@@ -20,3 +20,14 @@ const picnic=stay.find(r=>r.id==='v475-sheet2-row74');assert.equal(picnic.clips.
 for(const replacement of [{eventState:'scheduled'},{date:'2099-01-01'},{source:{},additionalSources:[]}])assert(!performances(archive.map(r=>r.id===picnic.id?{...r,...replacement}:r),'stay',cutoff).some(r=>r.id===picnic.id));
 const {getFilteredArchive}=require('../src/shared/views');assert.deepEqual(getFilteredArchive(archive,{query:'',year:'all',member:'all',type:'all',sort:'newest',record:picnic.id}).map(r=>r.id),[picnic.id]);
 console.log(`PASS: ${songs.length} songs, ${mappings.length} source mappings; route coverage, explicit aliases, per-song source isolation, event deduplication, scheduled/missing-source exclusion, exact archive links.`);
+
+assert.equal(videoPlatform('https://www.instagram.com/ramirang_/reel/DdtPK8NSyGa/'),'Instagram');
+assert(!mappings.some(m=>m.url.includes('DdvUjJyTHzr')),'A fan edit hashtag must not override the full performance song list');
+for(const url of ['https://instagram.com/p/photo/','https://evil.example/reel/x/','http://www.youtube.com/watch?v=q3--9xMqPew'])assert.equal(videoPlatform(url),'');
+assert.equal(new Set(stories.map(s=>s.id)).size,stories.length);
+for(const story of stories){assert(songs.some(s=>s.id===story.songId));assert(story.paragraphs.length&&story.sources.length);if(story.archiveId)assert(byId.has(story.archiveId));for(const source of story.sources)assert.equal(new URL(source.url).protocol,'https:');}
+const woosuk=performances(archive,'love-greeting',cutoff).find(r=>r.id==='20260921-woosuk-festival');
+assert(woosuk.clips.some(c=>c.url.includes('DdnVqr1OFjV')));assert(!woosuk.clips.some(c=>c.url.includes('DdtPK8NSyGa')));
+const render=require('../src/pages/song');const love=render({songId:'love-greeting'},archive),shoes=render({songId:'shoes'},archive);
+assert(love.includes('data-song-tab="story"')&&love.includes('클래식 선율과 만난 사랑의 인사'));assert(!shoes.includes('data-song-tab="story"'));
+assert(!love.includes('/vi//'));console.log(`PASS: ${stories.length} sourced song stories, Instagram clip isolation, HTTPS media allowlist, static story rendering.`);
