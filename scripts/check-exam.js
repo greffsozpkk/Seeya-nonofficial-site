@@ -53,6 +53,16 @@ for(const bank of banks){
 }
 assert(correct(banks.find(b=>b.key==='memory').questions[21],'女神'));assert(correct(banks.find(b=>b.key==='memory').questions[22],'초롱'));assert(correct(banks.find(b=>b.key==='reunion').questions[24],'우리 LIVE VER.'));assert(!correct(data.questions[24],'우리'));
 const memory=banks.find(b=>b.key==='memory'),multi=memory.questions[0];
+// Both title tracks must earn the full four points; unrelated album tracks must not.
+const doubleTitle=memory.questions.find(q=>q.id==='m25');
+assert(doubleTitle.prompt.includes('더블 타이틀곡 중 한 곡'));
+for(const answer of ['내겐 너무 멋진 그대','내겐너무멋진그대','The Last','  tHe LaSt  ','더 라스트']){
+ assert(correct(doubleTitle,answer));assert.equal(grade({m25:answer},memory).score,4);
+}
+for(const answer of ['', ' ', 'Last', 'See You Again', '여인의 향기']){
+ assert(!correct(doubleTitle,answer));assert.equal(grade({m25:answer},memory).score,0);
+}
+assert(doubleTitle.answerDisplay.includes('내겐 너무 멋진 그대')&&doubleTitle.answerDisplay.includes('The Last'));
 assert(multi.multiple);assert.deepEqual(multi.answer,[0,1]);
 for(let mask=0;mask<16;mask++){
  const selection=[0,1,2,3].filter(i=>mask&(1<<i)),r=grade({[multi.id]:selection},memory);

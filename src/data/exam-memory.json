@@ -343,11 +343,12 @@
     {
       "id": "m25",
       "type": "text",
-      "prompt": "2011년 See You Again의 타이틀곡 제목을 모두 적어주세요.",
+      "prompt": "2011년 「See You Again」의 더블 타이틀곡 중 한 곡의 제목을 적어주세요.",
       "answer": "내겐 너무 멋진 그대",
-      "aliases": [],
-      "explanation": "See You Again의 타이틀곡은 「내겐 너무 멋진 그대」입니다.",
-      "source": "https://www.youtube.com/watch?v=Yax4nGDtkW4"
+      "aliases": ["The Last", "더 라스트"],
+      "answerDisplay": "내겐 너무 멋진 그대 또는 The Last (둘 중 한 곡)",
+      "explanation": "「See You Again」의 더블 타이틀곡은 「내겐 너무 멋진 그대」와 「The Last」입니다. 두 곡 중 한 곡을 적으면 정답입니다.",
+      "source": "https://music.bugs.co.kr/album/259909"
     }
   ]
 }
