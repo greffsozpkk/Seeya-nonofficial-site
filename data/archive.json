@@ -325,6 +325,45 @@
     "venue": "서울어린이대공원 숲속의무대"
   },
   {
+    "id": "20261002-seeya-yeongwol-garden",
+    "date": "2026-10-02",
+    "addedAt": "2026-09-28",
+    "updatedAt": "2026-09-28",
+    "title": "씨야 · 대한민국 영월 정원산업박람회 개막 축하콘서트 출연 예정",
+    "program": "대한민국 영월 정원산업박람회",
+    "type": "event",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "영월 공식 · 박람회 개막식·축하콘서트 안내",
+      "url": "https://www.instagram.com/p/Ddz_QMvEyYp/"
+    },
+    "additionalSources": [
+      {
+        "label": "영월군청 · 정원 콘서트 공식 안내",
+        "url": "https://www.yw.go.kr/www/index.do"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [
+      "2026",
+      "예정",
+      "영월",
+      "정원산업박람회"
+    ],
+    "note": "10월 2일 영월 동서강정원 청령포원에서 열리는 개막 축하콘서트에 씨야가 출연할 예정입니다.\n이기찬·고유진도 함께합니다. 영월군청 안내의 콘서트 시작 시각은 오후 5시 50분이며, 씨야의 개별 무대 시작 시각과는 구분됩니다.\n박람회는 10월 2일부터 11일까지 진행됩니다.",
+    "eventState": "scheduled",
+    "venue": "영월 동서강정원 청령포원"
+  },
+  {
     "id": "20261002-jecheon-herbal-fair",
     "date": "2026-10-02",
     "addedAt": "2026-09-14",
@@ -407,38 +446,118 @@
     "id": "20260928-yeonji-suseong-busking",
     "date": "2026-09-28",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-25",
-    "title": "김연지 · 닭동가리 수성못 라이브 버스킹 출연 예정",
+    "updatedAt": "2026-09-28",
+    "title": "김연지 · 닭동가리 수성못 라이브 버스킹",
     "program": "닭동가리 라이브 버스킹",
     "type": "event",
     "members": [
       "김연지"
     ],
-    "songs": [],
+    "songs": [
+      "미친 사랑의 노래"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "닭동가리 공식 · 9월 28일 버스킹 안내",
-      "url": "https://www.instagram.com/p/DdnNY1mJWC4/"
+      "label": "juxxu_k·닭동가리 공식 공동 게시 · 미친 사랑의 노래 현장 릴스",
+      "url": "https://www.instagram.com/juxxu_k/reel/Dd1EkwLTInB/",
+      "publishedDate": "2026-09-28"
     },
     "additionalSources": [
       {
         "label": "와일드무브 공식 · 김연지 버스킹 출연 안내",
         "url": "https://www.instagram.com/p/DdoNnZyhmj6/"
+      },
+      {
+        "label": "닭동가리 공식 · 9월 28일 버스킹 안내",
+        "url": "https://www.instagram.com/p/DdnNY1mJWC4/"
+      },
+      {
+        "label": "juxxu_k·닭동가리 공식 공동 게시 · 김연지 현장 모습",
+        "url": "https://www.instagram.com/juxxu_k/reel/Dd07bq0TVh0/",
+        "publishedDate": "2026-09-28"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "tags": [
       "2026",
-      "예정",
       "버스킹",
       "대구"
     ],
-    "note": "9월 28일 오후 6시 대구 닭동가리 수성못 본점에서 열리는 라이브 버스킹에 김연지가 출연할 예정입니다.\n오후 6시는 행사 시작 시각이며, 김연지의 개별 출연 순서는 별도 안내를 확인해 주세요.",
-    "eventState": "scheduled",
+    "note": "9월 28일 대구 닭동가리 수성못 본점의 라이브 버스킹에 김연지가 출연했습니다.\n‘미친 사랑의 노래’를 부르는 현장 릴스와 공연 전 현장 모습을 볼 수 있습니다.\n주최 측의 기존 행사 안내도 함께 남겼습니다.",
+    "eventState": "completed",
     "venue": "대구 닭동가리 수성못 본점"
+  },
+  {
+    "id": "20260928-gyuri-sugeun-billiards",
+    "date": "2026-09-28",
+    "addedAt": "2026-09-28",
+    "updatedAt": "2026-09-28",
+    "title": "남규리 · 이수근채널 · 인생 첫 당구 도전",
+    "program": "이수근채널",
+    "type": "variety",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "이수근채널 · 남규리의 인생 첫 당구 도전",
+      "url": "https://www.youtube.com/watch?v=vDnG9CcbLs4",
+      "publishedDate": "2026-09-28"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026",
+      "이수근채널"
+    ],
+    "note": "남규리가 이수근채널에 출연해 당구에 도전했습니다.\n이수근이 일일 코치를 맡아 당구를 알려주고, 함께 미션을 수행합니다.",
+    "publishedDate": "2026-09-28"
+  },
+  {
+    "id": "20260928-boram-sbsplus-ghost39",
+    "date": "2026-09-28",
+    "addedAt": "2026-09-28",
+    "updatedAt": "2026-09-28",
+    "title": "이보람 · 신빨토크쇼 귀묘한 이야기2 39회 출연 예정",
+    "program": "신빨토크쇼 귀묘한 이야기2",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Plus 스플스 · 39회 공식 예고",
+      "url": "https://www.youtube.com/watch?v=IFcwnVisG1c",
+      "publishedDate": "2026-09-22"
+    },
+    "additionalSources": [
+      {
+        "label": "텐아시아 · 이보람 39회 출연·방송 내용 안내",
+        "url": "https://www.tenasia.co.kr/article/2026092883214",
+        "publishedDate": "2026-09-28"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "예정",
+      "SBS Plus",
+      "귀묘한 이야기2"
+    ],
+    "note": "9월 28일 밤 11시 30분 SBS Plus 방송에 이보람이 정성호와 함께 게스트로 출연할 예정입니다.\n‘애증’을 주제로 가수로 활동하며 느꼈던 고민과 씨야의 데뷔 20주년 전국투어에 관한 이야기를 나눕니다.",
+    "eventState": "scheduled",
+    "episode": 39
   },
   {
     "id": "20260927-yeonji-pitcheunwoo",
@@ -471,6 +590,41 @@
     ],
     "note": "김연지의 곡 노래를 담은 짧은 협업 영상입니다.\n피치은우와 와일드무브가 공동 게시했습니다.",
     "publishedDate": "2026-09-27"
+  },
+  {
+    "id": "20260927-gyuri-news1-backstage",
+    "date": "2026-09-27",
+    "addedAt": "2026-09-28",
+    "updatedAt": "2026-09-28",
+    "title": "남규리 · 음악방송 비하인드와 팬 응원을 전한 뉴스1 기사",
+    "program": "뉴스1",
+    "type": "news",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "뉴스1 · 남규리, 음악방송 비하인드 공개…팬 응원에 눈물까지",
+      "url": "https://www.news1.kr/entertain/broadcast-tv/6302489",
+      "publishedDate": "2026-09-27"
+    },
+    "additionalSources": [
+      {
+        "label": "남규리의 귤멍 · Ep.64 원본 영상",
+        "url": "https://www.youtube.com/watch?v=U8xKCKSkhhk",
+        "publishedDate": "2026-09-27"
+      }
+    ],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published",
+    "tags": [
+      "2026",
+      "뉴스1"
+    ],
+    "note": "남규리의 음악방송 비하인드 공개와 팬들의 응원을 전한 기사입니다.\n관련 영상은 남규리의 귤멍 Ep.64에서 볼 수 있습니다."
   },
   {
     "id": "20260927-gyuri-mbc-noon-dj",
@@ -511,7 +665,7 @@
     "id": "20260927-gyuri-gyulmung-64",
     "date": "2026-09-27",
     "addedAt": "2026-09-27",
-    "updatedAt": "2026-09-27",
+    "updatedAt": "2026-09-28",
     "title": "남규리 · 귤멍 Ep.64 · KoN과 함께한 음악방송 비하인드",
     "program": "남규리의 귤멍",
     "type": "official",
@@ -528,7 +682,13 @@
       "url": "https://www.youtube.com/watch?v=U8xKCKSkhhk",
       "publishedDate": "2026-09-27"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "뉴스1 · 음악방송 비하인드 관련 기사",
+        "url": "https://www.news1.kr/entertain/broadcast-tv/6302489",
+        "publishedDate": "2026-09-27"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -1037,7 +1197,7 @@
     "id": "20260921-gyuri-mbc-noon-dj",
     "date": "2026-09-21",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-09-28",
     "title": "남규리 · 정오의 희망곡 스페셜 DJ · 첫 방송",
     "program": "정오의 희망곡 김신영입니다",
     "type": "radio",
@@ -1063,6 +1223,11 @@
       {
         "label": "정오의 희망곡 · 9월 21~27일 공식 주간 편성",
         "url": "https://www.instagram.com/p/Ddf4zcakuvo/"
+      },
+      {
+        "label": "MBC RADIO · 9월 21일 방송 공식 하이라이트 (9월 28일 공개)",
+        "url": "https://www.youtube.com/watch?v=gMFepYmwpXk",
+        "publishedDate": "2026-09-28"
       }
     ],
     "status": "available",
@@ -1074,7 +1239,7 @@
       "라디오",
       "스페셜 DJ"
     ],
-    "note": "9월 21일 낮 12시 MBC FM4U 정오의 희망곡에서 스페셜 DJ를 맡았습니다.\n이날 게스트는 In A Minute입니다. 1·2부 공식 영상과 게스트가 함께한 전체 방송 영상을 볼 수 있습니다.\n스페셜 DJ 일정은 9월 27일까지 이어집니다."
+    "note": "9월 21일 낮 12시 MBC FM4U 정오의 희망곡에서 스페셜 DJ를 맡았습니다.\n이날 게스트는 In A Minute입니다. 1·2부 공식 영상과 게스트가 함께한 전체 방송 영상을 볼 수 있습니다.\n스페셜 DJ 일정은 9월 27일까지 이어집니다.\n9월 28일 공개된 공식 하이라이트에서 첫 DJ 진행과 청취자 전화 연결을 모아 볼 수 있습니다."
   },
   {
     "id": "20260921-boram-kyoungseo-duet",

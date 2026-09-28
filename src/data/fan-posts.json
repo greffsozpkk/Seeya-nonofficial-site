@@ -55,9 +55,41 @@
     {
       "handle": "boram_flowerway",
       "name": "boram_flowerway"
+    },
+    {
+      "handle": "juxxu_k",
+      "name": "juxxu_k"
     }
   ],
   "posts": [
+    {
+      "id": "Dd1EkwLTInB",
+      "account": "juxxu_k",
+      "postedOn": "2026-09-28",
+      "label": "김연지",
+      "kind": "reel"
+    },
+    {
+      "id": "Dd07bq0TVh0",
+      "account": "juxxu_k",
+      "postedOn": "2026-09-28",
+      "label": "김연지",
+      "kind": "reel"
+    },
+    {
+      "id": "Dd0tGG3Pxqg",
+      "account": "seeya_tree.weathered",
+      "postedOn": "2026-09-28",
+      "label": "남규리",
+      "kind": "reel"
+    },
+    {
+      "id": "Ddz8O2kvUMC",
+      "account": "seeya_tree.weathered",
+      "postedOn": "2026-09-28",
+      "label": "남규리",
+      "kind": "reel"
+    },
     {
       "id": "Ddu6qu4zvlO",
       "account": "dream_afr_10",

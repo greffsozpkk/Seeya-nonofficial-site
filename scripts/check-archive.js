@@ -34,6 +34,12 @@ assert.equal(rows.find(r=>r.id==='20260921-woosuk-festival').eventState,'complet
 assert.equal(rows.find(r=>r.id==='20260923-boram-btn-dream-22').episode,22);
 for(let day=26;day<=27;day++)assert.equal(rows.find(r=>r.id===`202609${day}-gyuri-mbc-noon-dj`).eventState,'completed');
 assert.equal(rows.find(r=>r.id==='20261004-gyuri-kbs-radioshow').eventState,'scheduled');
+const busking=rows.find(r=>r.id==='20260928-yeonji-suseong-busking');
+assert.equal(busking.eventState,'completed');assert(!busking.title.includes('예정'));
+assert.equal(busking.date,'2026-09-28');assert.equal(busking.dateBasis,'event');
+assert.equal(rows.find(r=>r.id==='20261002-seeya-yeongwol-garden').eventState,'scheduled');
+assert.equal(rows.find(r=>r.id==='20260928-boram-sbsplus-ghost39').eventState,'scheduled');
+assert(rows.find(r=>r.id==='20260921-gyuri-mbc-noon-dj').additionalSources.some(s=>s.url.includes('gMFepYmwpXk')&&s.publishedDate==='2026-09-28'));
 assert(archiveDateLabel({date:'2021-02-22',dateBasis:'post-published'}).includes('게시글 작성일'));
 for(const sort of ['newest','oldest','added'])for(let page=1;page<=Math.ceil(rows.length/9);page++){
  const html=archiveView(rows,{...state,sort,page}).grid;

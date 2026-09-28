@@ -748,5 +748,16 @@
     "category": "concert",
     "basis": "원문 캡션의 2026.09.21 우석대학교 행사일 및 곡명 확인",
     "checkedOn": "2026-09-27"
+  },
+  {
+    "archiveId": "20260928-yeonji-suseong-busking",
+    "url": "https://www.instagram.com/juxxu_k/reel/Dd1EkwLTInB/",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "닭동가리 공식 행사일 2026-09-28 및 주최 측·juxxu_k 공동 게시 현장 릴스의 장소·미친 사랑의 노래 캡션 확인",
+    "checkedOn": "2026-09-28"
   }
 ]

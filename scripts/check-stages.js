@@ -2,6 +2,8 @@ const assert=require('node:assert/strict');
 const archive=require('../data/archive.json'),routes=require('../src/data/routes.json');
 const {songs,mappings,songPath,songByTitle,performances,videoId,videoPlatform,stories}=require('../src/shared/stage-data');
 const cutoff=require('../src/data/site.json').snapshotDate.slice(0,10);
+const busking=performances(archive,'crazy-love-song',cutoff).find(r=>r.id==='20260928-yeonji-suseong-busking');
+assert.deepEqual(busking.clips.map(c=>c.url),['https://www.instagram.com/juxxu_k/reel/Dd1EkwLTInB/'],'Arrival and event announcement links are not performances');
 const byId=new Map(archive.map(x=>[x.id,x]));
 assert.equal(new Set(songs.map(s=>s.id)).size,songs.length);
 for(const s of songs){assert(routes.some(r=>r.path===songPath(s)&&r.songId===s.id));assert(performances(archive,s.id,cutoff).length>0,s.id+' requires a performance');}
