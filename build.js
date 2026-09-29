@@ -54,6 +54,17 @@ const examCss=asset('seeya-exam','css',read('src/styles/exam.css'));
 const examJs=asset('seeya-exam','js',bundle('src/client/exam.js'));
 const dictionaryCss=asset('dictionary','css',read('src/styles/dictionary.css'));
 const dictionaryJs=asset('dictionary','js',bundle('src/client/dictionary.js'));
+const calendarCss=asset('calendar','css',read('src/styles/calendar.css'));
+const calendarJs=asset('calendar','js',bundle('src/client/calendar.js'));
+const archiveRows=json('data/archive.json');
+const {buildEvents,buildAnniversaries}=require('./src/shared/calendar-data');
+const {calendarICS}=require('./src/shared/calendar-ics');
+const debut=archiveRows.find(row=>row.id==='20060312-inkigayo-debut');
+if(!debut)throw Error('Missing debut record for calendar');
+const calendarData={asOf:site.snapshotDate.slice(0,10),events:buildEvents(archiveRows),anniversaries:buildAnniversaries(json('src/data/members.json'),json('src/data/albums.json'),debut)};
+write('calendar/events.json',JSON.stringify(calendarData)+'\n');
+write('calendar/activities.ics',calendarICS(calendarData.events));
+write('calendar/anniversaries.ics',calendarICS(calendarData.anniversaries,'씨야 기념일'));
 const previewRoute=json('src/data/exam-preview-route.json');
 if(!/^\/preview\/seeya-exam-[a-f0-9]{16}\/$/.test(previewRoute.path)||!previewRoute.unlisted)throw new Error('Invalid exam preview route');
 const photosRaw=json('data/photos.json');
@@ -65,6 +76,7 @@ for(const route of [...routes,previewRoute]){
  const render=require('./src/pages/'+(key==='fanchant'?'music':key)+'.js');
  let content;
  if(key==='news')content=render(json('data/news.json'));
+ else if(key==='calendar')content=render(calendarData);
  else if(key==='archive')content=render(require('./src/shared/archive-data').mergeArchive(json('data/archive.json')));
  else if(key==='gallery')content=render(photos,new Date(site.snapshotDate));
  else if(key==='today'){let seed=465;const random=()=>((seed=(seed*1664525+1013904223)>>>0)/4294967296);content=render(new Date(site.snapshotDate),random,json('data/archive.json'));}
@@ -74,6 +86,7 @@ for(const route of [...routes,previewRoute]){
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
  if(key==='dictionary'){vars.pageHead+=`<link rel="stylesheet" href="${dictionaryCss}">`;vars.scripts+=`\n<script defer src="${dictionaryJs}"></script>`;}
+ if(key==='calendar'){vars.pageHead+=`<link rel="stylesheet" href="${calendarCss}">`;vars.scripts=`<script defer src="${calendarJs}"></script>`;}
  if(key==='fans'){vars.pageHead+=`<link rel="stylesheet" href="${fanCss}">`;vars.scripts+=`\n<script defer src="${fanJs}"></script>`;}
  if(key==='exam'||key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
  vars.themeColor=esc(pwa.theme_color);
@@ -89,6 +102,6 @@ for(const route of [...routes,previewRoute]){
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.filter(r=>r.key!=='letter').map(r=>'  <url><loc>'+esc(site.origin+r.path)+'</loc></url>').join('\n')+'\n</urlset>\n');
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['offline.html']},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['offline.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics']},null,2)+'\n');
 console.log(`Built ${routes.length} public pages, 1 unlisted preview and ${assets.length} cached assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

@@ -245,6 +245,12 @@
     "description": "오늘과 같은 월·일의 씨야와 멤버들의 지난 활동을 돌아보세요. 한국 날짜 기준으로 아카이브 기록을 모으고 오늘의 운세와 노래도 추천합니다."
   },
   {
+    "key": "calendar",
+    "path": "/calendar/",
+    "title": "씨야 일정 캘린더 · 공연·방송·기념일 | SEEYA ARCHIVE",
+    "description": "씨야와 남규리·김연지·이보람의 공연, 방송, 발매 일정과 기념일을 달력으로 만나고 개인 캘린더에서 구독하세요."
+  },
+  {
     "key": "games",
     "path": "/game/",
     "title": "SEEYA PLAY · 씨야와 함께하는 팬 놀이터 | SEEYA ARCHIVE",

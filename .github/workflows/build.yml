@@ -21,7 +21,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add '*.html' assets sitemap.xml manifest.webmanifest sw.js build-manifest.json
+          git add '*.html' assets calendar sitemap.xml manifest.webmanifest sw.js build-manifest.json
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'build: regenerate static pages'
           git push

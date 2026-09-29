@@ -427,7 +427,11 @@
     ],
     "note": "10월 2일 영월 동서강정원 청령포원에서 열리는 개막 축하콘서트에 씨야가 출연할 예정입니다.\n이기찬·고유진도 함께합니다. 영월군청 안내의 콘서트 시작 시각은 오후 5시 50분이며, 씨야의 개별 무대 시작 시각과는 구분됩니다.\n박람회는 10월 2일부터 11일까지 진행됩니다.",
     "eventState": "scheduled",
-    "venue": "영월 동서강정원 청령포원"
+    "venue": "영월 동서강정원 청령포원",
+    "calendar": {
+      "time": "17:50",
+      "timeLabel": "콘서트 시작 · 씨야 무대 시각 별도"
+    }
   },
   {
     "id": "20261002-jecheon-herbal-fair",
@@ -464,7 +468,12 @@
         "url": "https://www.hanbangbiofair.org/"
       }
     ],
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-09-18",
+    "calendar": {
+      "time": "19:00",
+      "endTime": "20:00",
+      "timeLabel": "콘서트 전체 시간"
+    }
   },
   {
     "id": "20260929-gyuri-ena-kpopup-24",
@@ -31267,7 +31276,11 @@
       "무대",
       "라이브"
     ],
-    "note": ""
+    "note": "",
+    "calendar": {
+      "groupId": "20091204-seeya-sketchbook30",
+      "title": "씨야 · 유희열의 스케치북 30회"
+    }
   },
   {
     "id": "20091204-seeya-sketchbook30",
@@ -31303,7 +31316,11 @@
     "note": "김연지·이보람·수미가 유희열의 스케치북 30회에서 난 남자가 있는데를 선보인 무대입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "episode": 30
+    "episode": 30,
+    "calendar": {
+      "groupId": "20091204-seeya-sketchbook30",
+      "title": "씨야 · 유희열의 스케치북 30회"
+    }
   },
   {
     "id": "v480-stage-015",
