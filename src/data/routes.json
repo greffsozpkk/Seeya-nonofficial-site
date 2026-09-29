@@ -273,5 +273,17 @@
     "path": "/letter/",
     "title": "제작자의 편지 | SEEYA ARCHIVE",
     "description": "씨야 아카이브를 찾아주신 여러분께 전하는 제작자의 편지입니다."
+  },
+  {
+    "key": "about",
+    "path": "/about/",
+    "title": "ABOUT · 제작자의 편지 | SEEYA ARCHIVE",
+    "description": "씨야 아카이브를 찾아주신 여러분께 전하는 제작자의 편지와 홈 화면 설치 안내입니다."
+  },
+  {
+    "key": "install",
+    "path": "/about/install/",
+    "title": "홈 화면에 추가 · ABOUT | SEEYA ARCHIVE",
+    "description": "SEEYA ARCHIVE를 홈 화면에 추가해 가까이 만나보세요. 아이폰·안드로이드·PC 설치 방법을 안내합니다."
   }
 ]

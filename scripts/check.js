@@ -21,3 +21,4 @@ require('./check-concerts');
 require('./check-fan-gallery');
 require('./check-exam');
 require('./check-dictionary');
+execFileSync(process.execPath,['scripts/check-pwa.js'],{cwd:root,stdio:'inherit'});

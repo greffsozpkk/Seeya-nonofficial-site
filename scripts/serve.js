@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..'),port=Number(process.argv[2]||process.env
 const preview=process.argv.slice(3).includes('--preview');
 const pageRoot=preview?require('./preview-path')(root):root;
 if(preview&&!fs.existsSync(path.join(pageRoot,'build-manifest.json')))throw new Error('Build the preview first: node build.js --preview');
-const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.svg':'image/svg+xml','.xml':'application/xml'};
+const types={'.webmanifest':'application/manifest+json; charset=utf-8','.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.svg':'image/svg+xml','.xml':'application/xml'};
 http.createServer((req,res)=>{res.setHeader('Cache-Control','no-store');let pathname;try{pathname=decodeURIComponent(new URL(req.url,'http://localhost').pathname);}catch{res.writeHead(400);return res.end();}let file=path.resolve(pageRoot,'.'+pathname);if(file!==pageRoot&&!file.startsWith(pageRoot+path.sep)){res.writeHead(403);return res.end();}try{
  if(preview&&!fs.existsSync(file)&&/^\/(?:images\/|data\/|assets\/|404\.html$|robots\.txt$)/.test(pathname)){
   const original=path.resolve(root,'.'+pathname);

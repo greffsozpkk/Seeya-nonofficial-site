@@ -1,9 +1,11 @@
+const aboutNav=require('../shared/about-nav');
 const {esc}=require('../shared/common');
 const letter=require('../data/letter.json');
 const heart='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg>';
 module.exports=function(){
  return `<div id="seeya-makers-letter">
   <section class="letter-page" aria-labelledby="letter-greeting">
+    ${aboutNav('letter')}
     <div class="letter-page-heading"><span>A LETTER FOR YOU · 제작자의 편지</span></div>
     <article class="letter-paper" aria-labelledby="letter-greeting">
       <div class="letter-tape" aria-hidden="true"></div>

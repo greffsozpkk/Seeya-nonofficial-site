@@ -43,3 +43,6 @@
 .creator-letter-link:hover{background:#f7dce7}
 .creator-letter-link svg{width:18px;height:18px;flex:none}
 @media(max-width:480px){#seeya-makers-letter{padding:12px 0}#seeya-makers-letter .letter-page{padding:27px 18px 22px}}
+
+.home-about-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:18px}.home-about-links .creator-letter-link{margin-top:0;min-width:154px;text-decoration:none;white-space:nowrap}
+@media(max-width:480px){.home-about-links{gap:8px}.home-about-links .creator-letter-link{min-width:0;padding:10px 13px;gap:7px;font-size:12px}}
