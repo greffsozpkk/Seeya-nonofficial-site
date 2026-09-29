@@ -24,7 +24,11 @@ for(const x of rows){
 }
 const state={query:'',year:'all',member:'all',type:'all',sort:'newest',page:1};
 const sbs12=rows.filter(r=>r.id==='20260917-gyuri-yeonji-sbs12n');assert.equal(sbs12.length,1);assert.equal(sbs12[0].eventState,'completed');assert(!sbs12[0].title.includes('예정'));assert.equal(sbs12[0].songs.length,3);
-assert.equal(rows.find(r=>r.id==='20260929-gyuri-ena-kpopup-24').eventState,'scheduled','Recording is not a completed broadcast');
+const ena24=rows.find(r=>r.id==='20260929-gyuri-ena-kpopup-24');
+assert.equal(ena24.eventState,'completed');
+assert.equal(ena24.date,'2026-09-29');assert.equal(ena24.recordedDate,'2026-09-16');
+assert(ena24.source.url.includes('H2GXG9xRlK8'),'Completed ENA broadcast must link the official full episode');
+for(const id of ['DQXhiJZBxX8','eNQWfc3T39U','nx2S5EZn24U'])assert(ena24.additionalSources.some(s=>s.url.includes(id)));
 const charity=rows.find(r=>r.id==='20260920-gyuri-gwangju-charity');
 assert.equal(charity.dateStatus,'confirmed');assert.equal(charity.eventState,'completed');
 assert.equal(charity.songs.length,5);assert(charity.source.url.includes('PLVueUxApK8ng'));
@@ -38,7 +42,12 @@ const busking=rows.find(r=>r.id==='20260928-yeonji-suseong-busking');
 assert.equal(busking.eventState,'completed');assert(!busking.title.includes('예정'));
 assert.equal(busking.date,'2026-09-28');assert.equal(busking.dateBasis,'event');
 assert.equal(rows.find(r=>r.id==='20261002-seeya-yeongwol-garden').eventState,'scheduled');
-assert.equal(rows.find(r=>r.id==='20260928-boram-sbsplus-ghost39').eventState,'scheduled');
+const ghost39=rows.find(r=>r.id==='20260928-boram-sbsplus-ghost39');
+assert.equal(ghost39.eventState,'completed');assert.equal(ghost39.date,'2026-09-28');
+assert.equal(ghost39.source.publishedDate,'2026-09-29','Clip publication must not replace the broadcast date');
+assert(rows.find(r=>r.id==='20260928-gyuri-double-film21').date==='2026-09-28','Use original reel date, not the later gallery repost');
+for(const id of ['20261006-boram-dst-autumn','20261228-yeonji-avahair'])assert.equal(rows.find(r=>r.id===id).eventState,'scheduled');
+assert.deepEqual(rows.find(r=>r.id==='20260929-boram-song-cover').members,['이보람'],'Credit the performer, not the original song singer');
 assert(rows.find(r=>r.id==='20260921-gyuri-mbc-noon-dj').additionalSources.some(s=>s.url.includes('gMFepYmwpXk')&&s.publishedDate==='2026-09-28'));
 assert(archiveDateLabel({date:'2021-02-22',dateBasis:'post-published'}).includes('게시글 작성일'));
 for(const sort of ['newest','oldest','added'])for(let page=1;page<=Math.ceil(rows.length/9);page++){
