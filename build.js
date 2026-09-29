@@ -44,6 +44,8 @@ const fanCss=asset('fan-gallery','css',read('src/styles/fan-gallery.css'));
 const fanJs=asset('fan-gallery','js',bundle('src/client/fan-gallery.js'));
 const examCss=asset('seeya-exam','css',read('src/styles/exam.css'));
 const examJs=asset('seeya-exam','js',bundle('src/client/exam.js'));
+const dictionaryCss=asset('dictionary','css',read('src/styles/dictionary.css'));
+const dictionaryJs=asset('dictionary','js',bundle('src/client/dictionary.js'));
 const previewRoute=json('src/data/exam-preview-route.json');
 if(!/^\/preview\/seeya-exam-[a-f0-9]{16}\/$/.test(previewRoute.path)||!previewRoute.unlisted)throw new Error('Invalid exam preview route');
 const photosRaw=json('data/photos.json');
@@ -63,6 +65,7 @@ for(const route of [...routes,previewRoute]){
  else content=render();
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:key==='letter'?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+route.path),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
+ if(key==='dictionary'){vars.pageHead+=`<link rel="stylesheet" href="${dictionaryCss}">`;vars.scripts+=`\n<script defer src="${dictionaryJs}"></script>`;}
  if(key==='fans'){vars.pageHead+=`<link rel="stylesheet" href="${fanCss}">`;vars.scripts+=`\n<script defer src="${fanJs}"></script>`;}
  if(key==='exam'||key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
  let output=template.replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in vars))throw new Error('Unknown template key '+key);return vars[key];});

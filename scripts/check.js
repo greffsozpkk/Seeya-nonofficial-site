@@ -20,3 +20,4 @@ require('./check-stages');
 require('./check-concerts');
 require('./check-fan-gallery');
 require('./check-exam');
+require('./check-dictionary');

@@ -233,6 +233,12 @@
     "description": "씨야 입문 가이드. 대표곡과 추천 앨범, 2006년 데뷔부터 2026년 재결합까지의 이야기를 만나보세요."
   },
   {
+    "key": "dictionary",
+    "path": "/guide/dictionary/",
+    "title": "씨야사전 · 대표·전무·상무와 씨야의 표현들 | SEEYA ARCHIVE",
+    "description": "남대표, 김전무, 이상무부터 귤멍과 보람씨야까지. 씨야의 표현과 사용 맥락, 관련 영상과 함께 알아둘 말을 찾아보세요."
+  },
+  {
     "key": "today",
     "path": "/today/",
     "title": "오늘 날짜의 씨야 · 과거 오늘의 기록과 추천곡 | SEEYA ARCHIVE",
