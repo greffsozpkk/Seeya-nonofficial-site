@@ -1,10 +1,10 @@
+const guideNav=require('../shared/guide-nav');
 const entries=require('../data/dictionary.json');
 const {esc}=require('../shared/common');
 const kinds={member:'멤버 사용 표현',official:'공식 이름',fan:'팬 별명·용어',activity:'방송·활동명'};
 const searchText=e=>[e.term,...e.aliases,...e.members,e.meaning,...e.context].join(' ').normalize('NFKC').toLowerCase();
 function dictionary(){return `<div class="dictionary-page">
-  <header class="dictionary-hero"><div class="eye">SEEYA DICTIONARY</div><h1>씨야사전</h1><p class="lead">알고 나면, 더 재미있는 씨야의 말들.</p><p>영상 속 익숙한 호칭부터 채널 이름까지.<br>한 표현에서 다음 이야기로 이어가 보세요.</p></header>
-  <nav class="dictionary-nav" aria-label="입문 가이드 메뉴"><a href="/guide/">입문 가이드</a><a href="/guide/dictionary/" aria-current="page">씨야사전</a></nav>
+  <header class="dictionary-hero"><div class="eye">SEEYA DICTIONARY</div><h1>씨야사전</h1><p class="lead">알고 나면, 더 재미있는 씨야의 말들.</p><p>영상 속 익숙한 호칭부터 채널 이름까지.<br>한 표현에서 다음 이야기로 이어가 보세요.</p>${guideNav('dictionary')}</header>
   <div class="dictionary-note">멤버 사용 표현·공식 이름·방송 활동명·팬 별명을 구분해 기록합니다.<br>옛 별명은 <a href="https://gall.dcinside.com/board/view/?id=seeya&amp;no=207233" target="_blank" rel="noopener noreferrer">2020년 씨야 갤러리 단어장</a>의 설명을 바탕으로 정리했습니다. 당시 팬들의 표현과 일화로 읽어주세요.</div>
   <form class="dictionary-tools" id="dictionaryTools" role="search" hidden>
     <div><label for="dictionarySearch">어떤 표현이 궁금한가요?</label><input type="search" id="dictionarySearch" placeholder="표현 또는 멤버 이름으로 찾기" autocomplete="off"></div>

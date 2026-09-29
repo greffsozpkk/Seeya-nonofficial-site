@@ -1440,3 +1440,6 @@ body.fanchant-lightbox-open{overflow:hidden}
  .archive-small-thumb{width:74px;height:74px}
  .archive-card .archive-compact-head h3{font-size:20px}
 }
+
+/* GUIDE subpage buttons share the MUSIC/GALLERY navigation style. */
+.guide-subnav a:focus-visible{outline:3px solid #93596f;outline-offset:3px}
