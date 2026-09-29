@@ -1,6 +1,7 @@
 module.exports=function installGuide(){return `<section id="install" class="install-guide" aria-labelledby="installTitle">
  <div class="install-guide-heading"><img src="/images/app/icon-192.png" width="64" height="64" alt="SEEYA ARCHIVE 앱 아이콘" loading="lazy"><div><div class="eye">SEEYA WITH YOU</div><h2 id="installTitle"><span>홈 화면에서</span> <span>씨야를 만나요</span></h2></div></div>
  <p>홈 화면에 추가하면 아이콘을 눌러 바로 방문할 수 있어요.<br>SEEYA ARCHIVE는 인터넷 연결이 필요한 비공식 팬 웹 앱입니다.</p>
+ <p>인터넷에 연결된 상태로 방문한 뒤에는, 연결이 끊겨 페이지를 열 수 없을 때 다시 연결할 수 있도록 안내해 드려요. 기록과 퀴즈를 이용하려면 인터넷 연결이 필요합니다.</p>
  <button type="button" id="pwaInstall" hidden>홈 화면에 추가</button>
  <p id="pwaStatus" role="status" aria-live="polite">사용 중인 기기에 맞는 방법으로 추가해 주세요.</p>
  <div class="install-methods">

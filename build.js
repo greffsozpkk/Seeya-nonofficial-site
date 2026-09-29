@@ -39,6 +39,12 @@ const assets=[];
 function asset(name,ext,source){const hash=crypto.createHash('sha256').update(source).digest('hex').slice(0,12);const p=`assets/${name}.${hash}.${ext}`;write(p,source);assets.push(p);return '/'+p;}
 const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css')+'\n'+read('src/styles/concerts.css')+'\n'+read('src/styles/letter.css')+'\n'+read('src/styles/pwa.css'));
 const pwaJs=asset('pwa','js',bundle('src/client/pwa.js'));
+const offlineJs=asset('offline','js',bundle('src/client/offline.js'));
+const offlineHtml=read('src/offline.html');
+const offlineHash=crypto.createHash('sha256').update(offlineHtml).digest('hex').slice(0,12);
+const offlinePaths=routes.flatMap(r=>[r.path,...(r.path==='/'?['/index.html']:[r.path.slice(0,-1),r.path+'index.html'])]);
+write('offline.html',offlineHtml);
+write('sw.js',read('src/service-worker.js').replace('__OFFLINE_HASH__',JSON.stringify(offlineHash)).replace('__PUBLIC_PATHS__',JSON.stringify(offlinePaths)));
 const quizCss=asset('lyric-quiz','css',read('src/styles/lyric-quiz.css'));
 const siteJs=asset('site','js',bundle('src/client/site.js'));
 const quizJs=asset('lyric-quiz','js',bundle('src/client/lyric-quiz.js'));
@@ -72,7 +78,7 @@ for(const route of [...routes,previewRoute]){
  if(key==='exam'||key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
  vars.themeColor=esc(pwa.theme_color);
  vars.pwaHead=route.unlisted?'':`<link rel="manifest" href="/manifest.webmanifest">\n<link rel="apple-touch-icon" sizes="180x180" href="/images/app/apple-touch-icon-180.png">\n<meta name="mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="${esc(pwa.short_name)}">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">`;
- if(!route.unlisted)vars.scripts+=`\n<script defer src="${pwaJs}"></script>`;
+ if(!route.unlisted)vars.scripts+=`\n<script defer src="${pwaJs}"></script>\n<script defer src="${offlineJs}"></script>`;
  let output=template.replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in vars))throw new Error('Unknown template key '+key);return vars[key];});
  if(route.unlisted){
   output=output.replace(/(<meta name="(?:robots|googlebot)" content=")[^"]+/g,'$1noindex,nofollow,noarchive,nosnippet');
@@ -83,6 +89,6 @@ for(const route of [...routes,previewRoute]){
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.filter(r=>r.key!=='letter').map(r=>'  <url><loc>'+esc(site.origin+r.path)+'</loc></url>').join('\n')+'\n</urlset>\n');
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest'],assets},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['offline.html']},null,2)+'\n');
 console.log(`Built ${routes.length} public pages, 1 unlisted preview and ${assets.length} cached assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

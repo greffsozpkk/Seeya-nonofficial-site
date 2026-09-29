@@ -32,7 +32,7 @@ assert(read('letter/index.html').includes('rel="canonical" href="https://seeya-f
 assert(read('sitemap.xml').includes('/about/install/'));
 const source=read('src/client/pwa.js');
 assert(!/serviceWorker|caches\.|localStorage|location\.reload/.test(source));
-assert(!fs.existsSync(path.join(root,'sw.js')));
+
 function setup({standalone=false,ios=false,guide=true}={}){
  const handlers={},clicks={},link={hidden:false},status={textContent:'manual help'},button={hidden:true,disabled:false,addEventListener:(n,f)=>clicks[n]=f};
  const mode={matches:standalone,addEventListener:(n,f)=>handlers.mode=f};
