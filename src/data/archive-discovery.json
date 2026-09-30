@@ -1,0 +1,16 @@
+{
+  "recentDays": 14,
+  "youtubePagesPerQuery": 2,
+  "youtubeQueries": ["씨야", "남규리", "김연지", "이보람"],
+  "historyStartYear": 2006,
+  "historyTerms": ["씨야", "남규리", "김연지", "이보람"],
+  "historyTopics": ["무대", "예능", "라디오", "공연", "인터뷰", "행사"],
+  "newsQueries": [
+    {"category": "씨야", "query": "\"씨야\" 가수"},
+    {"category": "씨야", "query": "\"씨야\" 공연 OR 축제 OR 방송 OR 라디오"},
+    {"category": "남규리", "query": "\"남규리\""},
+    {"category": "김연지", "query": "\"김연지\" 가수 OR 씨야 OR 뮤지컬"},
+    {"category": "이보람", "query": "\"이보람\" 가수 OR 씨야 OR 뮤지컬"}
+  ],
+  "ignoredUrls": []
+}

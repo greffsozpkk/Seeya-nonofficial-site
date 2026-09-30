@@ -1,0 +1,14 @@
+name: Discover archive records (moved to private manager)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  moved:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use the private web manager
+        run: |
+          echo 'Archive discovery now runs in your private seeya-admin repository.'
+          echo 'Open https://seeya-fanpage.com/manage/ after completing the one-time setup.'
+          echo 'No public review artifact is created by this workflow.'

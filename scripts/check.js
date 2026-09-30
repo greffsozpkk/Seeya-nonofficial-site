@@ -22,6 +22,7 @@ require('./check-fan-gallery');
 require('./check-exam');
 require('./check-dictionary');
 require('./check-calendar');
+require('./check-admin');
 execFileSync(process.execPath,['scripts/check-pwa.js'],{cwd:root,stdio:'inherit'});
 
 execFileSync(process.execPath,['scripts/check-offline.js'],{cwd:root,stdio:'inherit'});

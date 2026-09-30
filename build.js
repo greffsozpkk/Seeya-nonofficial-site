@@ -56,6 +56,9 @@ const dictionaryCss=asset('dictionary','css',read('src/styles/dictionary.css'));
 const dictionaryJs=asset('dictionary','js',bundle('src/client/dictionary.js'));
 const calendarCss=asset('calendar','css',read('src/styles/calendar.css'));
 const calendarJs=asset('calendar','js',bundle('src/client/calendar.js'));
+const adminCss=asset('archive-admin','css',read('src/admin/admin.css'));
+const adminJs=asset('archive-admin','js',read('src/admin/admin.js'));
+write('manage/index.html',read('src/admin/template.html').replace('{{adminCss}}',adminCss).replace('{{adminJs}}',adminJs));
 const archiveRows=json('data/archive.json');
 const {buildEvents,buildAnniversaries}=require('./src/shared/calendar-data');
 const {calendarICS}=require('./src/shared/calendar-ics');
@@ -102,6 +105,6 @@ for(const route of [...routes,previewRoute]){
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.filter(r=>r.key!=='letter').map(r=>'  <url><loc>'+esc(site.origin+r.path)+'</loc></url>').join('\n')+'\n</urlset>\n');
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['offline.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics']},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics']},null,2)+'\n');
 console.log(`Built ${routes.length} public pages, 1 unlisted preview and ${assets.length} cached assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

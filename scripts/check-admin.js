@@ -1,0 +1,14 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const html=read('manage/index.html'),js=read('src/admin/admin.js');
+assert(html.includes('noindex,nofollow,noarchive'));
+assert(html.includes("connect-src 'self' https://api.github.com"));
+for(const x of ['googletagmanager','visitor-count','manifest.webmanifest','<style','<script>'])assert(!html.includes(x),x);
+assert(!read('sitemap.xml').includes('/manage/'));
+assert(!read('sw.js').includes('/manage/'));
+assert(!js.includes('innerHTML=result.message'));
+assert(!/localStorage\.setItem\([^)]*token/i.test(js));
+assert(js.includes("token=''"));
+for(const match of html.matchAll(/(?:href|src)="(\/assets\/[^"\s]+)"/g))assert(fs.existsSync(path.join(root,match[1])));
+console.log('PASS admin: isolated login shell, no analytics/sitemap/cache entry, local assets and memory-only credential path.');
