@@ -1,4 +1,12 @@
-# SEEYA ARCHIVE — v4.163 HOME 정리·예정 일정 보완
+# SEEYA ARCHIVE — v4.164 HOME 게임 카드 여백 수정
+
+기존 사이트 폴더에서 Pull 후 `SEEYA_v4_164_HOME_UPLOAD.zip`을 덮어쓰고 Commit → Push하세요. v4.163 변경을 포함한 누적 업데이트입니다.
+
+솔로곡 아래 구분선과 SEEYA PLAY 카드 사이를 위쪽 멤버 솔로 구역의 시작 여백에 맞춰 PC 72px, 850px 이하 화면 52px로 조정했습니다.
+
+빌드: `node build.js`. **생성된 HTML 직접 편집 금지.** 미리보기는 기존 폴더의 `serve-local.bat`을 실행하세요. 운영 데이터와 생성 HTML은 업데이트 ZIP에서 제외합니다. 전체 ZIP은 백업용입니다.
+
+## 이전 업데이트 — v4.163
 
 ## 이번 업데이트 적용
 
