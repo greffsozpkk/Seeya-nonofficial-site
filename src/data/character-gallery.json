@@ -1,5 +1,17 @@
 [
   {
+    "id": "offline-characters",
+    "image": "/images/app/seeya-offline-characters.png",
+    "width": 1536,
+    "height": 1024,
+    "usedOn": [
+      {
+        "label": "연결 안내",
+        "path": "/offline.html"
+      }
+    ]
+  },
+  {
     "id": "members-character",
     "image": "/images/members/seeya-members-character.png",
     "width": 1536,

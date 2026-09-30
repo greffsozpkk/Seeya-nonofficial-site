@@ -44,7 +44,9 @@ function asset(name,ext,source){const hash=crypto.createHash('sha256').update(so
 const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css')+'\n'+read('src/styles/concerts.css')+'\n'+read('src/styles/letter.css')+'\n'+read('src/styles/pwa.css')+'\n'+read('src/styles/home-upcoming.css'));
 const pwaJs=asset('pwa','js',bundle('src/client/pwa.js'));
 const offlineJs=asset('offline','js',bundle('src/client/offline.js'));
-const offlineHtml=read('src/offline.html');
+// Inline the original image so the single cached fallback works without any network request.
+const offlineImage=fs.readFileSync(path.join(root,'images/app/seeya-offline-characters.png'));
+const offlineHtml=read('src/offline.html').replace('{{offlineIllustration}}','data:image/png;base64,'+offlineImage.toString('base64'));
 const offlineHash=crypto.createHash('sha256').update(offlineHtml).digest('hex').slice(0,12);
 const offlinePaths=routes.flatMap(r=>[r.path,...(r.path==='/'?['/index.html']:[r.path.slice(0,-1),r.path+'index.html'])]);
 write('offline.html',offlineHtml);
