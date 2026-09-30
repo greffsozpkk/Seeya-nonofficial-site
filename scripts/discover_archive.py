@@ -160,7 +160,7 @@ def classify(row):
         return None
     # A group mention does not establish individual attendance.
     subjects = members or ['씨야']
-    kind, label = ('article', '기사') if row['sourceKind'] == 'news' else ('other', '분류 확인')
+    kind, label = ('news', '기사') if row['sourceKind'] == 'news' else ('etc', '분류 확인')
     for key, name, words in TOPICS:
         if any(w.lower() in text.lower() for w in words):
             kind, label = key, name
