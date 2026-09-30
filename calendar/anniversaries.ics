@@ -1,0 +1,202 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//SEEYA ARCHIVE//Calendar//KO
+CALSCALE:GREGORIAN
+X-WR-CALNAME:씨야 기념일
+X-WR-TIMEZONE:Asia/Seoul
+BEGIN:VEVENT
+UID:birthday-gyuri@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20060426
+DTEND;VALUE=DATE:20060427
+RRULE:FREQ=YEARLY
+SUMMARY:남규리 생일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:남규리\n매년 기념\n매년 함께 기념하는 생일입
+ 니다.\n멤버 소개: https://seeya-fanpage.com/members/
+URL:https://seeya-fanpage.com/calendar/?event=birthday-gyuri
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-yeonji@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20061030
+DTEND;VALUE=DATE:20061031
+RRULE:FREQ=YEARLY
+SUMMARY:김연지 생일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:김연지\n매년 기념\n매년 함께 기념하는 생일입
+ 니다.\n멤버 소개: https://seeya-fanpage.com/members/
+URL:https://seeya-fanpage.com/calendar/?event=birthday-yeonji
+END:VEVENT
+BEGIN:VEVENT
+UID:birthday-boram@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20060217
+DTEND;VALUE=DATE:20060218
+RRULE:FREQ=YEARLY
+SUMMARY:이보람 생일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:이보람\n매년 기념\n매년 함께 기념하는 생일입
+ 니다.\n멤버 소개: https://seeya-fanpage.com/members/
+URL:https://seeya-fanpage.com/calendar/?event=birthday-boram
+END:VEVENT
+BEGIN:VEVENT
+UID:seeya-debut@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20070312
+DTEND;VALUE=DATE:20070313
+RRULE:FREQ=YEARLY
+SUMMARY:씨야 데뷔 기념일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:남규리 · 김연지 · 이보람\n매년 기념\n2006년 3
+ 월 12일 첫 방송 데뷔를 기념합니다.\n데뷔 기록: https://se
+ eya-fanpage.com/archive/?record=20060312-inkigayo-debut
+URL:https://seeya-fanpage.com/calendar/?event=seeya-debut
+END:VEVENT
+BEGIN:VEVENT
+UID:album-314286@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20070224
+DTEND;VALUE=DATE:20070225
+RRULE:FREQ=YEARLY
+SUMMARY:The First Mind 발매 기념일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:남규리 · 김연지 · 이보람\n매년 기념\n2006년 2
+ 월 24일 발매된 씨야 앨범입니다.\n앨범 정보: https://www.me
+ lon.com/album/detail.htm?albumId=314286
+URL:https://seeya-fanpage.com/calendar/?event=album-314286
+END:VEVENT
+BEGIN:VEVENT
+UID:album-352046@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20080525
+DTEND;VALUE=DATE:20080526
+RRULE:FREQ=YEARLY
+SUMMARY:Lovely Sweet Heart 발매 기념일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:남규리 · 김연지 · 이보람\n매년 기념\n2007년 5
+ 월 25일 발매된 씨야 앨범입니다.\n앨범 정보: https://www.me
+ lon.com/album/detail.htm?albumId=352046
+URL:https://seeya-fanpage.com/calendar/?event=album-352046
+END:VEVENT
+BEGIN:VEVENT
+UID:album-362767@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20090102
+DTEND;VALUE=DATE:20090103
+RRULE:FREQ=YEARLY
+SUMMARY:California Dream 발매 기념일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:남규리 · 김연지 · 이보람\n매년 기념\n2008년 1
+ 월 2일 발매된 씨야 앨범입니다.\n앨범 정보: https://www.mel
+ on.com/album/detail.htm?albumId=362767
+URL:https://seeya-fanpage.com/calendar/?event=album-362767
+END:VEVENT
+BEGIN:VEVENT
+UID:album-398227@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20090926
+DTEND;VALUE=DATE:20090927
+RRULE:FREQ=YEARLY
+SUMMARY:Brilliant Change 발매 기념일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:남규리 · 김연지 · 이보람\n매년 기념\n2008년 9
+ 월 26일 발매된 씨야 앨범입니다.\n앨범 정보: https://www.me
+ lon.com/album/detail.htm?albumId=398227
+URL:https://seeya-fanpage.com/calendar/?event=album-398227
+END:VEVENT
+BEGIN:VEVENT
+UID:album-703853@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20101026
+DTEND;VALUE=DATE:20101027
+RRULE:FREQ=YEARLY
+SUMMARY:Rebloom 발매 기념일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:남규리 · 김연지 · 이보람\n매년 기념\n2009년 10
+ 월 26일 발매된 씨야 앨범입니다.\n앨범 정보: https://www.me
+ lon.com/album/detail.htm?albumId=703853
+URL:https://seeya-fanpage.com/calendar/?event=album-703853
+END:VEVENT
+BEGIN:VEVENT
+UID:album-1150052@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20120121
+DTEND;VALUE=DATE:20120122
+RRULE:FREQ=YEARLY
+SUMMARY:See You Again 발매 기념일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:남규리 · 김연지 · 이보람\n매년 기념\n2011년 1
+ 월 21일 발매된 씨야 앨범입니다.\n앨범 정보: https://www.me
+ lon.com/album/detail.htm?albumId=1150052
+URL:https://seeya-fanpage.com/calendar/?event=album-1150052
+END:VEVENT
+BEGIN:VEVENT
+UID:album-13391243@seeya-fanpage.com
+DTSTAMP:20260929T150000Z
+LAST-MODIFIED:20260929T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20270514
+DTEND;VALUE=DATE:20270515
+RRULE:FREQ=YEARLY
+SUMMARY:First\, Again 발매 기념일
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:anniversary
+LOCATION:
+DESCRIPTION:남규리 · 김연지 · 이보람\n매년 기념\n2026년 5
+ 월 14일 발매된 씨야 앨범입니다.\n앨범 정보: https://www.me
+ lon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y
+URL:https://seeya-fanpage.com/calendar/?event=album-13391243
+END:VEVENT
+END:VCALENDAR
