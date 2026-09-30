@@ -2,6 +2,7 @@ const {initConcerts}=require('./concerts');
 const {initStages}=require('./stages');
 const {initCharacterGallery}=require('./character-gallery');
 const {initOnThisDay}=require('./on-this-day');
+const {initHomeUpcoming}=require('./home-upcoming');
 const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('../shared/common');
 const {newsList,galleryMoment,archiveView,getFilteredArchive:filterArchive}=require('../shared/views');
 const today=require('../pages/today');
@@ -508,6 +509,7 @@ function renderArchive(){const view=archiveView(archiveData,archiveState);for(co
 // Old bookmarked hash routes become normal page navigations; ordinary anchors are untouched.
 if(/^#\/(?:$|guide|news|music|history|members|gallery|archive|today|game\/lyrics)/.test(location.hash)){location.replace(location.hash.slice(1));}
 const page=document.body.dataset.page;
+if(page==='home')initHomeUpcoming(ARCHIVE_FALLBACK);
 if(page==='concerts'||page==='concert')initConcerts();
 if(page==='stages'||page==='song')initStages();
 if(page==='news')loadNews();

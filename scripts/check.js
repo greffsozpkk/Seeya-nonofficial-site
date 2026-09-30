@@ -14,6 +14,7 @@ assert.equal(new Set(routes.map(r=>r.path)).size,routes.length,'Route paths must
 console.log(`PASS: reproducible build, JS syntax, ${routes.length} static bodies, local links, no Instagram feed dependency.`);
 
 require('./check-archive');
+require('./check-archive-updates');
 require('./check-on-this-day');
 
 require('./check-stages');
@@ -22,6 +23,8 @@ require('./check-fan-gallery');
 require('./check-exam');
 require('./check-dictionary');
 require('./check-calendar');
+require('./check-home-upcoming');
+execFileSync(process.execPath,['scripts/check-home-upcoming-client.js'],{cwd:root,stdio:'inherit'});
 require('./check-admin');
 execFileSync(process.execPath,['scripts/check-pwa.js'],{cwd:root,stdio:'inherit'});
 

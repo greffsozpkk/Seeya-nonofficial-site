@@ -9,9 +9,13 @@ const args=process.argv.slice(2);
 if(args.some(arg=>arg!=='--preview'))throw new Error('Usage: node build.js [--preview]');
 const outputRoot=args.includes('--preview')?require('./scripts/preview-path')(root):root;
 require('./scripts/conflict-markers')(root,['src','data','scripts','build.js']);
-const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+let archiveText;
+const read=p=>p==='data/archive.json'&&archiveText!==undefined?archiveText:fs.readFileSync(path.join(root,p),'utf8');
 const json=p=>JSON.parse(read(p));
 const write=(p,s)=>{fs.mkdirSync(path.dirname(path.join(outputRoot,p)),{recursive:true});fs.writeFileSync(path.join(outputRoot,p),s);};
+const originalArchive=read('data/archive.json');
+archiveText=JSON.stringify(require('./scripts/apply-archive-updates')(JSON.parse(originalArchive)),null,2)+'\n';
+if(originalArchive!==archiveText||outputRoot!==root)write('data/archive.json',archiveText);
 const routes=json('src/data/routes.json'),site=json('src/data/site.json');
 const pwa=json('src/data/pwa.json');
 const {esc}=require('./src/shared/common');
@@ -37,7 +41,7 @@ function bundle(entry){
 }
 const assets=[];
 function asset(name,ext,source){const hash=crypto.createHash('sha256').update(source).digest('hex').slice(0,12);const p=`assets/${name}.${hash}.${ext}`;write(p,source);assets.push(p);return '/'+p;}
-const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css')+'\n'+read('src/styles/concerts.css')+'\n'+read('src/styles/letter.css')+'\n'+read('src/styles/pwa.css'));
+const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css')+'\n'+read('src/styles/concerts.css')+'\n'+read('src/styles/letter.css')+'\n'+read('src/styles/pwa.css')+'\n'+read('src/styles/home-upcoming.css'));
 const pwaJs=asset('pwa','js',bundle('src/client/pwa.js'));
 const offlineJs=asset('offline','js',bundle('src/client/offline.js'));
 const offlineHtml=read('src/offline.html');
@@ -80,6 +84,7 @@ for(const route of [...routes,previewRoute]){
  let content;
  if(key==='news')content=render(json('data/news.json'));
  else if(key==='calendar')content=render(calendarData);
+ else if(key==='home')content=render(archiveRows,new Date(site.snapshotDate));
  else if(key==='archive')content=render(require('./src/shared/archive-data').mergeArchive(json('data/archive.json')));
  else if(key==='gallery')content=render(photos,new Date(site.snapshotDate));
  else if(key==='today'){let seed=465;const random=()=>((seed=(seed*1664525+1013904223)>>>0)/4294967296);content=render(new Date(site.snapshotDate),random,json('data/archive.json'));}

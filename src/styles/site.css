@@ -629,7 +629,7 @@ main{margin-left:225px}.page{max-width:1160px;margin:auto;padding:50px 46px 90px
 
 
 
-.home-solo{padding:72px 7vw 76px;border-top:1px solid var(--line);background:#fffafd}
+.home-solo{padding:72px 7vw 76px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:#fffafd}
 .home-solo-head{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:26px}
 .home-solo-head h2{font-family:"Gowun Batang";font-size:clamp(30px,4vw,48px);margin:7px 0 0}
 .home-solo-head p{max-width:430px;color:var(--muted);font-size:12px;line-height:1.8;margin:0}
