@@ -43098,7 +43098,7 @@
     "id": "discovered-cf6f994bec5f5b23",
     "date": "2026-09-25",
     "addedAt": "2026-09-30T13:59:14.662333+00:00",
-    "updatedAt": "2026-09-30T13:59:14.662333+00:00",
+    "updatedAt": "2026-10-01T06:19:50.608816+00:00",
     "title": "꺾기에 감탄하는 리틀 주현미😍 김다현&김연지의 '여인의 눈물'♪ #트롯라디오 #TVCHOSUNMUSIC (TV CHOSUN 210114 방송 외)",
     "program": "",
     "type": "radio",
@@ -43114,7 +43114,14 @@
       "publishedDate": "2026-09-25",
       "autoDiscovery": true
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "TVCHOSUN JOY",
+        "url": "https://www.youtube.com/watch?v=7dgPj0iCPrk",
+        "publishedDate": "2026-09-25",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -43266,6 +43273,64 @@
     "tags": [],
     "note": "",
     "publishedDate": "2026-09-28",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-e1460057c086a4d0",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-01T06:19:50.608816+00:00",
+    "updatedAt": "2026-10-01T06:19:50.608816+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-06)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=v9PvePMiY5Q",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-93eddd3fdc7a38da",
+    "date": "2026-01-05",
+    "addedAt": "2026-10-01T06:19:50.608816+00:00",
+    "updatedAt": "2026-10-01T06:19:50.608816+00:00",
+    "title": "데뷔 20주년인 남규리의 그때 그 시절 예능 썰 / [이은지의 가요광장] I KBS 260105 방송",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS CoolFM",
+      "url": "https://www.youtube.com/watch?v=jdHWzSqoZuI",
+      "publishedDate": "2026-01-05",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2026-01-05",
     "autoDiscovery": true
   }
 ]
