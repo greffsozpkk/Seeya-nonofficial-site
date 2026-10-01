@@ -7868,8 +7868,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-09&event=activity-202609
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20260929-gyuri-ena-kpopup-24@seeya-fanpage.com
-DTSTAMP:20260928T150000Z
-LAST-MODIFIED:20260928T150000Z
+DTSTAMP:20260930T150000Z
+LAST-MODIFIED:20260930T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20260929
 DTEND;VALUE=DATE:20260930
@@ -7884,27 +7884,77 @@ DESCRIPTION:남규리\n시간 미정\n9월 29일 방송된 ENA 케이팝업
  ‘우리 사랑 그런 거 해요 Part.2’ 무대를 선보였습니다.
  \n9월 16일 일산 빛마루센터에서 녹화한 무대입니다.\nENA 
  공식 본편과 THE IDOL × Nikon의 가로·세로·비주얼 직캠\, 
- 남규리가 공개한 무대 사진을 함께 볼 수 있습니다.\nENA 
- K-POP 공식 · 케이팝업 차트쇼 24회 본편: https://www.youtube.c
- om/watch?v=H2GXG9xRlK8\nENA · 공식 프로그램 안내: https://ktena.c
- o.kr/bbs/board.php?bo_table=variety&wr_id=5\n남규리의 귤멍 · KoN과
-  함께한 녹화 비하인드: https://www.youtube.com/watch?v=U8xKCKSkhh
- k\nENA K POP UP · 24회 공식 라인업 티저: https://www.youtube.com/
- watch?v=4V6n2jxtoYg\nTHE IDOL × Nikon · 우리 사랑 그런 거 해요 
- Part.2 가로 직캠: https://www.youtube.com/watch?v=DQXhiJZBxX8\nTHE IDO
- L × Nikon · 우리 사랑 그런 거 해요 Part.2 세로 직캠: https:
- //www.youtube.com/watch?v=eNQWfc3T39U\nTHE IDOL × Nikon · 우리 사랑 
- 그런 거 해요 Part.2 비주얼 직캠: https://www.youtube.com/watch?v
- =nx2S5EZn24U\n남규리 공식 Instagram · KoN과 함께한 무대 사진
- : https://www.instagram.com/nam_gyuri/p/Dd25vjukyjr/\nhttps://seeya-fanpag
- e.com/archive/?record=20260929-gyuri-ena-kpopup-24
+ 남규리가 공개한 무대 사진을 함께 볼 수 있습니다.\n메
+ 이크업 담당자가 공개한 음악방송 현장 사진을 함께 연
+ 결했습니다.\nENA K-POP 공식 · 케이팝업 차트쇼 24회 본편:
+  https://www.youtube.com/watch?v=H2GXG9xRlK8\nENA · 공식 프로그램 
+ 안내: https://ktena.co.kr/bbs/board.php?bo_table=variety&wr_id=5\n남규
+ 리의 귤멍 · KoN과 함께한 녹화 비하인드: https://www.youtube
+ .com/watch?v=U8xKCKSkhhk\nENA K POP UP · 24회 공식 라인업 티저: h
+ ttps://www.youtube.com/watch?v=4V6n2jxtoYg\nTHE IDOL × Nikon · 우리 
+ 사랑 그런 거 해요 Part.2 가로 직캠: https://www.youtube.com/wat
+ ch?v=DQXhiJZBxX8\nTHE IDOL × Nikon · 우리 사랑 그런 거 해요 Par
+ t.2 세로 직캠: https://www.youtube.com/watch?v=eNQWfc3T39U\nTHE IDOL 
+ × Nikon · 우리 사랑 그런 거 해요 Part.2 비주얼 직캠: https
+ ://www.youtube.com/watch?v=nx2S5EZn24U\n남규리 공식 Instagram · KoN
+ 과 함께한 무대 사진: https://www.instagram.com/nam_gyuri/p/Dd25vju
+ kyjr/\n메이크업 담당 한수연 · 남규리 음악방송 현장 사
+ 진: https://www.instagram.com/1_hansuyeon/p/Dd3xgGpk9JG/\nhttps://seeya-f
+ anpage.com/archive/?record=20260929-gyuri-ena-kpopup-24
 URL:https://seeya-fanpage.com/calendar/?month=2026-09&event=activity-202609
  29-gyuri-ena-kpopup-24
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20260930-boram-btn-dream-23@seeya-fanpage.com
+DTSTAMP:20260930T150000Z
+LAST-MODIFIED:20260930T150000Z
+SEQUENCE:0
+DTSTART:20260930T120000Z
+DTEND:20260930T140000Z
+SUMMARY:이보람 · 한밤의 꿈 이보람입니다 23회
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:이보람\n21:00–23:00 · 방송 시간\n9월 30일 방송된
+  이보람 진행의 BTN라디오 한밤의 꿈 23회입니다.\nBTN라디
+ 오 공식 채널에서 보이는 라디오 전체 방송을 다시 볼 
+ 수 있습니다.\nBTN라디오 공식 · 23회 보이는 라디오: https
+ ://www.youtube.com/watch?v=trvkTPhlNFc\nhttps://seeya-fanpage.com/archive/
+ ?record=20260930-boram-btn-dream-23
+URL:https://seeya-fanpage.com/calendar/?month=2026-09&event=activity-202609
+ 30-boram-btn-dream-23
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20261001-gyuri-handonday@seeya-fanpage.com
+DTSTAMP:20260930T150000Z
+LAST-MODIFIED:20260930T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:남규리 · 2026 한돈데이 기념식 · 공로패 수상·삼
+ 겹살송
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:그랜드 하얏트 서울
+DESCRIPTION:남규리\n시간 미정\n10월 1일 그랜드 하얏트 서울
+ 에서 열린 한돈데이 기념식에 참석했습니다.\n한돈 소비
+  활성화에 기여한 공로로 공로패를 받았으며\, 삼겹살송
+  축하 무대를 선보였습니다.\n사진기자 정상윤 · 삼겹살
+ 송 현장 라이브: https://www.youtube.com/watch?v=3y72soA7AGE\n사진
+ 기자 정상윤 · 공로패 수상 영상: https://www.youtube.com/watch
+ ?v=AfwutI_5UWU\n뉴스1 · 공로패 수상 현장 사진: https://www.new
+ s1.kr/photos/8136343\n연합뉴스 · 한돈데이 기념식 보도: https
+ ://www.yna.co.kr/view/AKR20261001114600030\nhttps://seeya-fanpage.com/arch
+ ive/?record=20261001-gyuri-handonday
+URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
+ 01-gyuri-handonday
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-20261002-seeya-yeongwol-garden@seeya-fanpage.com
-DTSTAMP:20260927T150000Z
-LAST-MODIFIED:20260927T150000Z
+DTSTAMP:20260930T150000Z
+LAST-MODIFIED:20260930T150000Z
 SEQUENCE:0
 DTSTART:20261002T085000Z
 SUMMARY:씨야 · 대한민국 영월 정원산업박람회 개막 축하
@@ -7919,11 +7969,15 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n17:50 · 콘서트 시작
  정입니다.\n이기찬·고유진도 함께합니다. 영월군청 안
  내의 콘서트 시작 시각은 오후 5시 50분이며\, 씨야의 개
  별 무대 시작 시각과는 구분됩니다.\n박람회는 10월 2일
- 부터 11일까지 진행됩니다.\n영월 공식 · 박람회 개막식
- ·축하콘서트 안내: https://www.instagram.com/p/Ddz_QMvEyYp/\n영월
- 군청 · 정원 콘서트 공식 안내: https://www.yw.go.kr/www/index.d
- o\nhttps://seeya-fanpage.com/archive/?record=20261002-seeya-yeongwol-garde
- n
+ 부터 11일까지 진행됩니다.\n10월 1일 달달영월 공식 게시
+ 물은 개막식 시작을 오후 4시로 안내했습니다. 개막식 
+ 시각과 축하콘서트·씨야 개별 무대 시각은 구분해 주세
+ 요.\n영월 공식 · 박람회 개막식·축하콘서트 안내: https:
+ //www.instagram.com/p/Ddz_QMvEyYp/\n영월군청 · 정원 콘서트 공
+ 식 안내: https://www.yw.go.kr/www/index.do\n달달영월 공식 · 10
+ 월 2일 개막식·출연진 안내: https://www.instagram.com/p/Dd8uh9fE
+ 4js/\nhttps://seeya-fanpage.com/archive/?record=20261002-seeya-yeongwol-ga
+ rden
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  02-seeya-yeongwol-garden
 END:VEVENT
@@ -8008,8 +8062,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261004-the-fan-goyang@seeya-fanpage.com
-DTSTAMP:20260929T150000Z
-LAST-MODIFIED:20260929T150000Z
+DTSTAMP:20260930T150000Z
+LAST-MODIFIED:20260930T150000Z
 SEQUENCE:1
 DTSTART:20261004T070000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · GOYANG
@@ -8023,13 +8077,16 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n16:00 · 공연 시작\n
  비스 또는 무료 사이즈업을 받을 수 있는 제휴 이벤트가
   안내됐습니다. 참여 매장별 혜택은 공식 안내에서 확인
  할 수 있습니다.\n공연 시작: 오후 4시. YES24 공식 예매 안
- 내 기준입니다.\nYES24 · 고양 공식 예매: https://m.ticket.yes2
- 4.com/Perf/Detail/PerfInfo.aspx?IdPerf=59301\nYES24 · THE FAN 지역별 
- 공연 안내: https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=154
- 56&id=1530\n씨야엔터테인먼트 · 콘서트 사연 모집: https://w
- ww.instagram.com/p/Dda3PYnvGLz/\n씨야엔터테인먼트 · 고양 공연
-  티켓 제휴 매장 안내: https://www.instagram.com/p/Ddi6qZCGkuW/\nht
- tps://seeya-fanpage.com/archive/?record=20261004-the-fan-goyang
+ 내 기준입니다.\n공식 게스트 스케줄에 안내된 특별 게
+ 스트는 임한별입니다.\nYES24 · 고양 공식 예매: https://m.ti
+ cket.yes24.com/Perf/Detail/PerfInfo.aspx?IdPerf=59301\nYES24 · THE FAN 
+ 지역별 공연 안내: https://m.ticket.yes24.com/Genre/GenreBridge.aspx
+ ?genre=15456&id=1530\n씨야엔터테인먼트 · 콘서트 사연 모집:
+  https://www.instagram.com/p/Dda3PYnvGLz/\n씨야엔터테인먼트 · 고
+ 양 공연 티켓 제휴 매장 안내: https://www.instagram.com/p/Ddi6qZ
+ CGkuW/\n씨야엔터테인먼트 공식 · 지역별 게스트 스케줄: 
+ https://www.instagram.com/seeya_ent_official/p/Dbmf-AGvcA8/\nhttps://seeya
+ -fanpage.com/archive/?record=20261004-the-fan-goyang
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  04-the-fan-goyang
 END:VEVENT
@@ -8063,8 +8120,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261010-the-fan-cheongju@seeya-fanpage.com
-DTSTAMP:20260929T150000Z
-LAST-MODIFIED:20260929T150000Z
+DTSTAMP:20260930T150000Z
+LAST-MODIFIED:20260930T150000Z
 SEQUENCE:1
 DTSTART:20261010T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · CHEONGJU
@@ -8075,20 +8132,23 @@ LOCATION:청주대학교 석우문화체육관
 DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n
  씨야 데뷔 20주년 전국투어 THE FAN의 청주 공연 예정입니
  다.\n공연 시작: 오후 6시. YES24 공식 예매 안내 기준입니
- 다.\nYES24 · 청주 공식 예매: https://m.ticket.yes24.com/Perf/Detai
- l/PerfInfo.aspx?IdPerf=59218\nYES24 · THE FAN 지역별 공연 안내: ht
- tps://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530\n씨
- 야엔터테인먼트 · 콘서트 사연 모집: https://www.instagram.co
- m/p/Dda3PYnvGLz/\nYES24 · 청주 공연 시간 안내: https://ticket.yes
- 24.com/Perf/59218\nhttps://seeya-fanpage.com/archive/?record=20261010-the-
- fan-cheongju
+ 다.\n공식 게스트 스케줄에 안내된 특별 게스트는 신용
+ 재입니다.\nYES24 · 청주 공식 예매: https://m.ticket.yes24.com/P
+ erf/Detail/PerfInfo.aspx?IdPerf=59218\nYES24 · THE FAN 지역별 공연 
+ 안내: https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1
+ 530\n씨야엔터테인먼트 · 콘서트 사연 모집: https://www.inst
+ agram.com/p/Dda3PYnvGLz/\nYES24 · 청주 공연 시간 안내: https://ti
+ cket.yes24.com/Perf/59218\n씨야엔터테인먼트 공식 · 지역별 
+ 게스트 스케줄: https://www.instagram.com/seeya_ent_official/p/Dbmf-A
+ GvcA8/\nhttps://seeya-fanpage.com/archive/?record=20261010-the-fan-cheongj
+ u
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  10-the-fan-cheongju
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261017-the-fan-suwon@seeya-fanpage.com
-DTSTAMP:20260929T150000Z
-LAST-MODIFIED:20260929T150000Z
+DTSTAMP:20260930T150000Z
+LAST-MODIFIED:20260930T150000Z
 SEQUENCE:1
 DTSTART:20261017T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · SUWON
@@ -8099,19 +8159,21 @@ LOCATION:경희대학교 국제캠퍼스 선승관
 DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n
  씨야 데뷔 20주년 전국투어 THE FAN의 수원 공연 예정입니
  다.\n공연 시작: 오후 6시. YES24 공식 예매 안내 기준입니
- 다.\nYES24 · 수원 공식 예매: https://m.ticket.yes24.com/Perf/Detai
- l/PerfInfo.aspx?IdPerf=59236\nYES24 · THE FAN 지역별 공연 안내: ht
- tps://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530\n씨
- 야엔터테인먼트 · 콘서트 사연 모집: https://www.instagram.co
- m/p/Dda3PYnvGLz/\nhttps://seeya-fanpage.com/archive/?record=20261017-the-f
- an-suwon
+ 다.\n공식 게스트 스케줄에 안내된 특별 게스트는 유승
+ 우입니다.\nYES24 · 수원 공식 예매: https://m.ticket.yes24.com/P
+ erf/Detail/PerfInfo.aspx?IdPerf=59236\nYES24 · THE FAN 지역별 공연 
+ 안내: https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1
+ 530\n씨야엔터테인먼트 · 콘서트 사연 모집: https://www.inst
+ agram.com/p/Dda3PYnvGLz/\n씨야엔터테인먼트 공식 · 지역별 게
+ 스트 스케줄: https://www.instagram.com/seeya_ent_official/p/Dbmf-AGvc
+ A8/\nhttps://seeya-fanpage.com/archive/?record=20261017-the-fan-suwon
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  17-the-fan-suwon
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261031-the-fan-incheon@seeya-fanpage.com
-DTSTAMP:20260929T150000Z
-LAST-MODIFIED:20260929T150000Z
+DTSTAMP:20260930T150000Z
+LAST-MODIFIED:20260930T150000Z
 SEQUENCE:1
 DTSTART:20261031T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · INCHEON
@@ -8122,13 +8184,15 @@ LOCATION:인천남동체육관
 DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n
  씨야 데뷔 20주년 전국투어 THE FAN의 인천 공연 예정입니
  다.\n공연 시작: 오후 6시. YES24 공식 예매 안내 기준입니
- 다.\nYES24 · 인천 공식 예매: https://m.ticket.yes24.com/Perf/Detai
- l/PerfInfo.aspx?IdPerf=59365\nYES24 · THE FAN 지역별 공연 안내: ht
- tps://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530\n씨
- 야엔터테인먼트 · 콘서트 사연 모집: https://www.instagram.co
- m/p/Dda3PYnvGLz/\nYES24 · 인천 공연 시간 안내: https://ticket.yes
- 24.com/Perf/59365\nhttps://seeya-fanpage.com/archive/?record=20261031-the-
- fan-incheon
+ 다.\n공식 게스트 스케줄에 안내된 특별 게스트는 허각
+ 입니다.\nYES24 · 인천 공식 예매: https://m.ticket.yes24.com/Perf
+ /Detail/PerfInfo.aspx?IdPerf=59365\nYES24 · THE FAN 지역별 공연 안
+ 내: https://m.ticket.yes24.com/Genre/GenreBridge.aspx?genre=15456&id=1530
+ \n씨야엔터테인먼트 · 콘서트 사연 모집: https://www.instagr
+ am.com/p/Dda3PYnvGLz/\nYES24 · 인천 공연 시간 안내: https://ticke
+ t.yes24.com/Perf/59365\n씨야엔터테인먼트 공식 · 지역별 게
+ 스트 스케줄: https://www.instagram.com/seeya_ent_official/p/Dbmf-AGvc
+ A8/\nhttps://seeya-fanpage.com/archive/?record=20261031-the-fan-incheon
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  31-the-fan-incheon
 END:VEVENT
