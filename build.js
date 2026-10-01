@@ -14,8 +14,12 @@ const read=p=>p==='data/archive.json'&&archiveText!==undefined?archiveText:fs.re
 const json=p=>JSON.parse(read(p));
 const write=(p,s)=>{fs.mkdirSync(path.dirname(path.join(outputRoot,p)),{recursive:true});fs.writeFileSync(path.join(outputRoot,p),s);};
 const originalArchive=read('data/archive.json');
-archiveText=JSON.stringify(require('./scripts/apply-archive-updates')(JSON.parse(originalArchive)),null,2)+'\n';
+const logPath='data/archive-update-log.json';
+const oldLog=fs.existsSync(path.join(root,logPath))?JSON.parse(read(logPath)):[];
+const imported=require('./scripts/apply-archive-content').applyContent(require('./scripts/apply-archive-updates')(JSON.parse(originalArchive)),oldLog);
+archiveText=JSON.stringify(imported.rows,null,2)+'\n';
 if(originalArchive!==archiveText||outputRoot!==root)write('data/archive.json',archiveText);
+if(JSON.stringify(oldLog)!==JSON.stringify(imported.applied)||outputRoot!==root)write(logPath,JSON.stringify(imported.applied,null,2)+'\n');
 const routes=json('src/data/routes.json'),site=json('src/data/site.json');
 const pwa=json('src/data/pwa.json');
 const {esc}=require('./src/shared/common');

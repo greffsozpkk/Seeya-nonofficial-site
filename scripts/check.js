@@ -15,6 +15,7 @@ console.log(`PASS: reproducible build, JS syntax, ${routes.length} static bodies
 
 require('./check-archive');
 require('./check-archive-updates');
+require('./check-archive-content');
 require('./check-on-this-day');
 
 require('./check-stages');

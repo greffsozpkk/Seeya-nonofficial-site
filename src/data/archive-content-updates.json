@@ -1,0 +1,255 @@
+[
+  {
+    "id": "archive-2026-10-01",
+    "checkedAt": "2026-10-01",
+    "additions": [
+      {
+        "id": "20261001-gyuri-handonday",
+        "date": "2026-10-01",
+        "addedAt": "2026-10-01",
+        "updatedAt": "2026-10-01",
+        "title": "남규리 · 2026 한돈데이 기념식 · 공로패 수상·삼겹살송",
+        "program": "2026 한돈데이 기념식",
+        "type": "event",
+        "members": [
+          "남규리"
+        ],
+        "songs": [
+          "삼겹살송"
+        ],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "사진기자 정상윤 · 삼겹살송 현장 라이브",
+          "url": "https://www.youtube.com/watch?v=3y72soA7AGE",
+          "publishedDate": "2026-10-01"
+        },
+        "additionalSources": [
+          {
+            "label": "사진기자 정상윤 · 공로패 수상 영상",
+            "url": "https://www.youtube.com/watch?v=AfwutI_5UWU",
+            "publishedDate": "2026-10-01"
+          },
+          {
+            "label": "뉴스1 · 공로패 수상 현장 사진",
+            "url": "https://www.news1.kr/photos/8136343",
+            "publishedDate": "2026-10-01"
+          },
+          {
+            "label": "연합뉴스 · 한돈데이 기념식 보도",
+            "url": "https://www.yna.co.kr/view/AKR20261001114600030",
+            "publishedDate": "2026-10-01"
+          }
+        ],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "event",
+        "tags": [
+          "2026",
+          "한돈데이",
+          "공로패",
+          "삼겹살송"
+        ],
+        "note": "10월 1일 그랜드 하얏트 서울에서 열린 한돈데이 기념식에 참석했습니다.\n한돈 소비 활성화에 기여한 공로로 공로패를 받았으며, 삼겹살송 축하 무대를 선보였습니다.",
+        "eventState": "completed",
+        "venue": "그랜드 하얏트 서울"
+      },
+      {
+        "id": "20260930-boram-btn-dream-23",
+        "date": "2026-09-30",
+        "addedAt": "2026-10-01",
+        "updatedAt": "2026-10-01",
+        "title": "이보람 · 한밤의 꿈 이보람입니다 23회",
+        "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
+        "type": "radio",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "BTN라디오 공식 · 23회 보이는 라디오",
+          "url": "https://www.youtube.com/watch?v=trvkTPhlNFc",
+          "publishedDate": "2026-09-30"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "broadcast",
+        "tags": [
+          "2026",
+          "활동 기록"
+        ],
+        "note": "9월 30일 방송된 이보람 진행의 BTN라디오 한밤의 꿈 23회입니다.\nBTN라디오 공식 채널에서 보이는 라디오 전체 방송을 다시 볼 수 있습니다.",
+        "eventState": "completed",
+        "episode": 23,
+        "publishedDate": "2026-09-30",
+        "calendar": {
+          "time": "21:00",
+          "endTime": "23:00",
+          "timeLabel": "방송 시간"
+        }
+      },
+      {
+        "id": "20261001-boram-oasis-cover",
+        "date": "2026-10-01",
+        "addedAt": "2026-10-01",
+        "updatedAt": "2026-10-01",
+        "title": "이보람 · 정동하 「오아시스」 커버",
+        "program": "뮤직원컴퍼니 · 이보람 공식 Instagram",
+        "type": "official",
+        "members": [
+          "이보람"
+        ],
+        "songs": [
+          "오아시스"
+        ],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "뮤직원컴퍼니·이보람 · 오아시스 커버 릴스",
+          "url": "https://www.instagram.com/music1company/reel/Dd75SqeEz8W/",
+          "publishedDate": "2026-10-01"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "video-published",
+        "tags": [
+          "2026",
+          "커버",
+          "오아시스"
+        ],
+        "note": "이보람이 정동하의 ‘오아시스’를 부른 커버 릴스입니다.\n뮤직원컴퍼니와 이보람 공식 계정의 공동 게시물로 10월 1일 공개됐습니다.",
+        "publishedDate": "2026-10-01"
+      },
+      {
+        "id": "20260930-yeonji-official-photos",
+        "date": "2026-09-30",
+        "addedAt": "2026-10-01",
+        "updatedAt": "2026-10-01",
+        "title": "김연지 · 공식 Instagram 사진 모음",
+        "program": "김연지 공식 Instagram",
+        "type": "official",
+        "members": [
+          "김연지"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "김연지 공식 Instagram · 사진 게시물",
+          "url": "https://www.instagram.com/rorakim0927/p/Dd6fke3iSUg/",
+          "publishedDate": "2026-09-30"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "tags": [
+          "2026",
+          "공식 사진",
+          "Instagram"
+        ],
+        "note": "김연지가 공식 계정에 공개한 사진 모음입니다.\n사진은 원본 게시물에서 이어 볼 수 있습니다.",
+        "publishedDate": "2026-09-30"
+      }
+    ],
+    "updates": [
+      {
+        "id": "v475-sheet2-row62",
+        "sources": [
+          {
+            "label": "KBS CoolFM 공식 · 명수 밤바다 공개방송 비하인드",
+            "url": "https://www.youtube.com/watch?v=jovOqBtGnfk",
+            "publishedDate": "2026-09-30"
+          }
+        ],
+        "noteAppend": "9월 30일 공개된 KBS CoolFM 비하인드 영상에서 씨야의 현장 모습도 볼 수 있습니다."
+      },
+      {
+        "id": "20260929-gyuri-ena-kpopup-24",
+        "sources": [
+          {
+            "label": "메이크업 담당 한수연 · 남규리 음악방송 현장 사진",
+            "url": "https://www.instagram.com/1_hansuyeon/p/Dd3xgGpk9JG/"
+          }
+        ],
+        "noteAppend": "메이크업 담당자가 공개한 음악방송 현장 사진을 함께 연결했습니다."
+      },
+      {
+        "id": "20260929-boram-song-cover",
+        "sources": [
+          {
+            "label": "이보람·김연지 공식 Instagram · 노래 커버 릴스",
+            "url": "https://www.instagram.com/dlqhfka0217/reel/Dd3mkNIBW7N/",
+            "publishedDate": "2026-09-29"
+          }
+        ]
+      },
+      {
+        "id": "20261215-boram-six-season",
+        "sources": [
+          {
+            "label": "이보람 공식 Instagram · 식스 시모어 사진",
+            "url": "https://www.instagram.com/dlqhfka0217/p/Dd5x1klEwSs/",
+            "publishedDate": "2026-09-30"
+          }
+        ],
+        "noteAppend": "이보람이 공개한 식스 시모어 사진을 원본 게시물에서 볼 수 있습니다."
+      },
+      {
+        "id": "20261002-seeya-yeongwol-garden",
+        "sources": [
+          {
+            "label": "달달영월 공식 · 10월 2일 개막식·출연진 안내",
+            "url": "https://www.instagram.com/p/Dd8uh9fE4js/",
+            "publishedDate": "2026-10-01"
+          }
+        ],
+        "noteAppend": "10월 1일 달달영월 공식 게시물은 개막식 시작을 오후 4시로 안내했습니다. 개막식 시각과 축하콘서트·씨야 개별 무대 시각은 구분해 주세요."
+      },
+      {
+        "id": "20261004-the-fan-goyang",
+        "sources": [
+          {
+            "label": "씨야엔터테인먼트 공식 · 지역별 게스트 스케줄",
+            "url": "https://www.instagram.com/seeya_ent_official/p/Dbmf-AGvcA8/"
+          }
+        ],
+        "noteAppend": "공식 게스트 스케줄에 안내된 특별 게스트는 임한별입니다."
+      },
+      {
+        "id": "20261010-the-fan-cheongju",
+        "sources": [
+          {
+            "label": "씨야엔터테인먼트 공식 · 지역별 게스트 스케줄",
+            "url": "https://www.instagram.com/seeya_ent_official/p/Dbmf-AGvcA8/"
+          }
+        ],
+        "noteAppend": "공식 게스트 스케줄에 안내된 특별 게스트는 신용재입니다."
+      },
+      {
+        "id": "20261017-the-fan-suwon",
+        "sources": [
+          {
+            "label": "씨야엔터테인먼트 공식 · 지역별 게스트 스케줄",
+            "url": "https://www.instagram.com/seeya_ent_official/p/Dbmf-AGvcA8/"
+          }
+        ],
+        "noteAppend": "공식 게스트 스케줄에 안내된 특별 게스트는 유승우입니다."
+      },
+      {
+        "id": "20261031-the-fan-incheon",
+        "sources": [
+          {
+            "label": "씨야엔터테인먼트 공식 · 지역별 게스트 스케줄",
+            "url": "https://www.instagram.com/seeya_ent_official/p/Dbmf-AGvcA8/"
+          }
+        ],
+        "noteAppend": "공식 게스트 스케줄에 안내된 특별 게스트는 허각입니다."
+      }
+    ]
+  }
+]
