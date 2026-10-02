@@ -7014,9 +7014,49 @@
         "label": "공연1분 · 이보람 단독 콘서트",
         "url": "https://www.youtube.com/watch?v=tUjFXoNScAE",
         "publishedDate": "2026-04-01"
+      },
+      {
+        "label": "꽁 · 콘서트 끝인사와 함께 씨야 정규앨범 홍보하는 이보람",
+        "url": "https://www.youtube.com/watch?v=eP3vzVDeLUk",
+        "publishedDate": "2026-05-02"
+      },
+      {
+        "label": "유튜브매니한 · 이보람 - BANG BANG 댄스람 2탄 (SPARKLE 부산콘서트)",
+        "url": "https://www.youtube.com/watch?v=Pt4AWaGFVbM",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "유튜브매니한 · 이보람 - 너의키스를(SPARKLE 부산콘서트)",
+        "url": "https://www.youtube.com/watch?v=0kA3AZPQpyc",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "유튜브매니한 · 이보람 SPARKLE 부산 콘서트 - 핫걸티셔츠를 본 상무님의 반응🤣",
+        "url": "https://www.youtube.com/watch?v=phbG8nuCCP0",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "유튜브매니한 · 이보람 - BANG BANG 댄스람 1탄 (SPARKLE 부산콘서트)",
+        "url": "https://www.youtube.com/watch?v=RyhvggXV8Nc",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "제리제이 Jerry.j · 이보람(Lee Bo Ram) 콘서트 앵콜 직캠, 260502 이보람 단독 콘서트 : SPARKLE - 부산",
+        "url": "https://www.youtube.com/watch?v=m4fUxj29iZA",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "람보사랑 · [콘서트] 마🫵😍👏 살아있네 아이도르 이보람👍#bangbang 댄스",
+        "url": "https://www.youtube.com/watch?v=aN407M2i4Xg",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "꽁 · [260502 이보람 부산 콘서트] Blue Moon+Wonder Woman +그 놈 목소리",
+        "url": "https://www.youtube.com/watch?v=BiXdrqGUHb0",
+        "publishedDate": "2026-05-03"
       }
     ],
-    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v488-audit-038",
@@ -7039,6 +7079,11 @@
       {
         "label": "익산 서동축제 공식 안내",
         "url": "https://seodong.iksan.go.kr/main/inner.php?sMenu=A3000"
+      },
+      {
+        "label": "콘서트 직촬 · 260501 익산 서동축제 씨야 이보람 사랑의 인사",
+        "url": "https://www.youtube.com/watch?v=qAMNBgKaNZU",
+        "publishedDate": "2026-05-01"
       }
     ],
     "status": "available",
@@ -7049,7 +7094,8 @@
     "note": "익산 서동축제 개막 축하공연 출연입니다. 행사 날짜는 잠정입니다.",
     "dateStatus": "tentative",
     "dateBasis": "event",
-    "publishedDate": "2026-05-02"
+    "publishedDate": "2026-05-02",
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v488-audit-001",
@@ -7172,8 +7218,19 @@
       {
         "label": "MBC",
         "url": "https://playvod.imbc.com/Vod/VodPlay?broadcastId=1001919103451100000"
+      },
+      {
+        "label": "Mhz 므흐즈: MBC RADIO · 15년 만에 씨야 재결합, 먼저 제안한 사람은?",
+        "url": "https://www.youtube.com/watch?v=vvQFgkIgY6g",
+        "publishedDate": "2026-04-20"
+      },
+      {
+        "label": "Mhz 므흐즈: MBC RADIO · [하이라이트] 불화설 루머 뚫고! 15년 만에 재결합한 씨야✨ |",
+        "url": "https://www.youtube.com/watch?v=jKEZt9iRnXk",
+        "publishedDate": "2026-04-20"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "20260419-gyuri-love-greeting-2026",
@@ -7214,9 +7271,19 @@
         "label": "남규리의 귤멍 · 사랑의 인사 2026 티저 3",
         "url": "https://www.youtube.com/watch?v=UdgmRKp8A-M",
         "publishedDate": "2026-04-18"
+      },
+      {
+        "label": "남규리 Nam Gyu Ri · 남규리 - 사랑의 인사 2026 Teaser 2",
+        "url": "https://www.youtube.com/watch?v=aaMHWLCX15s",
+        "publishedDate": "2026-04-17"
+      },
+      {
+        "label": "SEEYA Official · #남규리 의 사랑의 인사 2026 with",
+        "url": "https://www.youtube.com/watch?v=QOxBzlWPFlc",
+        "publishedDate": "2026-04-20"
       }
     ],
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v4145-ctLA9ECbcoo",
@@ -7308,8 +7375,14 @@
       {
         "label": "JTBC News",
         "url": "https://www.youtube.com/watch?v=laNPFmayKhc"
+      },
+      {
+        "label": "JTBC News · [인터뷰] 그룹 '씨야' 15년 만에 완전체 재결합…팬들 향한 20년의 진심 / JTBC 뉴스룸",
+        "url": "https://www.youtube.com/watch?v=PIlWBr2bmtk",
+        "publishedDate": "2026-04-12"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v487-2026-010",
@@ -7328,7 +7401,13 @@
       "label": "MK스포츠 현장 사진",
       "url": "https://www.mk.co.kr/news/entertain/12021299"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "버거형 · 남규리도 줄서야 하는 남자...",
+        "url": "https://www.youtube.com/watch?v=8ZtOd4HjC6E",
+        "publishedDate": "2026-04-21"
+      }
+    ],
     "status": "documented",
     "tags": [
       "2026",
@@ -7336,7 +7415,8 @@
     ],
     "note": "4월 11일 포천에서 진행한 남규리의 버거형 콘텐츠 촬영입니다.",
     "dateStatus": "confirmed",
-    "dateBasis": "recording"
+    "dateBasis": "recording",
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v487-2026-006",
@@ -7423,7 +7503,18 @@
       "label": "땅콩크림샌드 · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=h5C7G_Qf5MQ"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "유튜브매니한 · 씨야 이보람님 부산 공연중 갑자기 니킥을???🤣",
+        "url": "https://www.youtube.com/watch?v=gJ5YRL3od38",
+        "publishedDate": "2026-04-12"
+      },
+      {
+        "label": "꽃길보라미 · 2026.04.08 이보람 -LIE(무반주)",
+        "url": "https://www.youtube.com/watch?v=Z79VsuywmYo",
+        "publishedDate": "2026-04-12"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -7433,7 +7524,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-04-17",
-    "venue": "부산"
+    "venue": "부산",
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v487-2026-002",
@@ -7454,7 +7546,13 @@
       "label": "유튜브하지영",
       "url": "https://www.youtube.com/watch?v=WJHC15dtMRc"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "유튜브하지영 · 남규리 \"소개팅 나갔는데 전남친 지인이었다😱?!\"",
+        "url": "https://www.youtube.com/watch?v=Dka82Y6_10A",
+        "publishedDate": "2026-04-10"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -7463,7 +7561,8 @@
     "note": "날짜는 영상 공개일이며 촬영일은 미상입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
-    "publishedDate": "2026-04-08"
+    "publishedDate": "2026-04-08",
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v4145-evYuFOqyJys",
@@ -7672,6 +7771,11 @@
         "label": "꽃길보라미 · 2026.04.01 이보람-lie(무반주)",
         "url": "https://www.youtube.com/watch?v=y-9tkFM_g_s",
         "publishedDate": "2026-04-08"
+      },
+      {
+        "label": "꽃길보라미 · 2026.04.01 이보람-그런일은(무반주)",
+        "url": "https://www.youtube.com/watch?v=RM4SP2LmX-A",
+        "publishedDate": "2026-04-10"
       }
     ],
     "status": "available",
@@ -7684,7 +7788,7 @@
     "dateBasis": "event",
     "publishedDate": "2026-04-08",
     "venue": "원주",
-    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "20260330-seeya-yonhap-interview",
@@ -7774,9 +7878,14 @@
         "label": "THE IDOL × Nikon · [4K] 씨야(SeeYa) 「사랑의 인사」 가로 직캠 | SEEYA 첫 팬미팅 [RE:BLOOM]",
         "url": "https://www.youtube.com/watch?v=63sCks2FLBI",
         "publishedDate": "2026-04-03"
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야 재결합 첫 팬미팅 '씨야 - 미친 사랑의 노래'",
+        "url": "https://www.youtube.com/watch?v=IQnWX1YLDsQ",
+        "publishedDate": "2026-04-14"
       }
     ],
-    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "20260330-nevertheless-we",
