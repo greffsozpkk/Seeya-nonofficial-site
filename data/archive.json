@@ -45330,7 +45330,7 @@
     "id": "discovered-53369e3fb69a76b5",
     "date": "2022-12-03",
     "addedAt": "2026-10-02T16:06:18.417707+00:00",
-    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:08:55.456331+00:00",
     "title": "이보람 · 먼슬리디글 × 보람씨야 클립 모음",
     "program": "먼슬리디글 × 보람씨야",
     "type": "variety",
@@ -45345,7 +45345,53 @@
       "url": "https://www.youtube.com/watch?v=H4yVYIN4HtU",
       "publishedDate": "2022-12-03"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "디글 :Diggle · 씨야 이보람 1분 즉문즉답 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=sZ-8Ccwv8r8",
+        "publishedDate": "2022-12-06"
+      },
+      {
+        "label": "디글 :Diggle · 근데 이제 전 세계 게임 덕후들 속 뒤집어지는 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=I8OnrdQ4wbc",
+        "publishedDate": "2022-12-17"
+      },
+      {
+        "label": "디글 :Diggle · 과몰입 유발 커플 논쟁 주제 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=_luVFvWf6mY",
+        "publishedDate": "2022-12-18"
+      },
+      {
+        "label": "디글 :Diggle · 야구팬이라면 99%는 공감하는 영상 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=SBDGEcSaVWQ",
+        "publishedDate": "2022-12-24"
+      },
+      {
+        "label": "디글 :Diggle · 야구장 덕후 VS 머글 구별법 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=SaZpIkIAZMA",
+        "publishedDate": "2022-12-25"
+      },
+      {
+        "label": "디글 :Diggle · 이보람도 못 피한 2000년대 패션 암흑기 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=BM24ouexa08",
+        "publishedDate": "2022-12-27"
+      },
+      {
+        "label": "디글 :Diggle · 이보람 목소리 어디까지 내려가는 거예요?↘️ #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=c77XBym1K54",
+        "publishedDate": "2022-12-28"
+      },
+      {
+        "label": "디글 :Diggle · 갑작스럽게 부탁했는데.. 이게 되네? #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=1Z04HgBJpvE",
+        "publishedDate": "2022-12-29"
+      },
+      {
+        "label": "디글 :Diggle · 중요한 건 타이밍이지🙆‍♀️ 이보람의 커플 싸움 대처법 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=qi7WqaGTvUA",
+        "publishedDate": "2022-12-30"
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -45438,7 +45484,7 @@
     "id": "discovered-e98d25eb9821ca14",
     "date": "2026-03-19",
     "addedAt": "2026-10-02T16:06:18.417707+00:00",
-    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:08:55.456331+00:00",
     "title": "이보람 · 세상을 바꾸는 여자들 여수 공연",
     "program": "세상을 바꾸는 여자들",
     "type": "event",
@@ -45453,7 +45499,13 @@
       "url": "https://www.youtube.com/watch?v=ja7QK5PO6k8",
       "publishedDate": "2026-03-22"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.03.19 이보람-그런일은(무반주)",
+        "url": "https://www.youtube.com/watch?v=jLoQT0rto_I",
+        "publishedDate": "2026-03-23"
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
