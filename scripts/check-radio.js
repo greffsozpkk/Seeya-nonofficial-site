@@ -14,15 +14,31 @@ assert.equal(resolveRadio([{...seed,title:'관리자 변경'}],[review],'2026-10
 assert.equal(videoId('https://youtube.com.evil.test/watch?v=trvkTPhlNFc'),'');
 const testRows=[{id:'a',date:'2026-09-30',title:'첫 방송',program:'BTN',members:['이보람'],videoId:'trvkTPhlNFc',kind:'replay',channel:'BTN',source:'BTN'}, {id:'b',date:'2026-09-17',title:'다음 방송',program:'SBS',members:['남규리','김연지'],videoId:'rWE6SSVs3BA',kind:'full',channel:'SBS',source:'SBS'}];
 assert.equal(filterRadio(testRows,{member:'씨야'}).length,0);assert.equal(filterRadio(testRows,{member:'남규리'})[0].id,'b');assert.equal(filterRadio(testRows,{query:'btn'})[0].id,'a');assert.equal(filterRadio(testRows,{sort:'oldest'})[0].id,'b');
-let writes=0;const nodes={};function element(){return {handlers:{},dataset:{},textContent:'',value:'',innerHTML:'',addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},scrollIntoView(){}};}
-for(const id of ['radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus'])nodes[id]=element();
+
+let writes=0,cues=0,pauses=0,plays=0,interval,options;
+const nodes={};function element(){return {handlers:{},dataset:{},textContent:'',value:'',innerHTML:'',disabled:true,checked:false,addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},scrollIntoView(){},focus(){}};}
+for(const id of ['radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer'])nodes[id]=element();
 nodes.radioData.textContent=JSON.stringify(testRows);Object.defineProperty(nodes.radioPlayer,'src',{set(){writes++;}});
 const members=['전체','씨야','남규리','김연지','이보람'].map(m=>({...element(),dataset:{radioMember:m}}));
-vm.runInNewContext(read('src/client/radio.js'),{require:()=>require('../src/shared/radio'),document:{getElementById:id=>nodes[id],querySelectorAll:()=>members}});
-nodes.radioSearch.value='SBS';nodes.radioSearch.handlers.input();members[1].handlers.click();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();assert.equal(writes,0,'Filters must not reload player');
+let currentVideo=testRows[0].videoId,time=100,playerState=2,rate=1,persisted='';
+const fake={getVideoData:()=>({video_id:currentVideo}),getCurrentTime:()=>time,getDuration:()=>200,getPlayerState:()=>playerState,getAvailablePlaybackRates:()=>[.5,1,1.5,2],getPlaybackRate:()=>rate,setPlaybackRate:n=>rate=n,playVideo(){plays++;playerState=1;},pauseVideo(){pauses++;playerState=2;},seekTo(n){time=n;},cueVideoById({videoId,startSeconds}){cues++;currentVideo=videoId;time=startSeconds;playerState=5;}};
+const document={hidden:false,getElementById:id=>nodes[id],querySelectorAll:()=>members,querySelector:()=>element(),addEventListener(){},head:{appendChild(){}},createElement:()=>element()};
+const window={YT:{Player:function(id,config){options=config;return fake;}},addEventListener(){}};
+const context={require:()=>require('../src/shared/radio'),document,window,location:{origin:'http://localhost:8000'},URL,URLSearchParams,localStorage:{getItem:()=>null,setItem:(k,v)=>persisted=v},setTimeout:()=>1,clearTimeout(){},setInterval:fn=>interval=fn};
+vm.runInNewContext(read('src/client/radio.js'),{...context});assert.equal(writes,1);options.events.onReady({target:fake});
+assert.equal(nodes.radioPlay.disabled,false);assert.equal(nodes.radioDuration.textContent,'3:20');
+nodes.radioSearch.value='SBS';nodes.radioSearch.handlers.input();members[1].handlers.click();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();assert.equal(writes,1);assert.equal(cues,0);assert.equal(pauses,0,'Filters must not pause/reload player');
+nodes.radioPlay.handlers.click();assert.equal(plays,1);interval();assert.equal(nodes.radioElapsed.textContent,'1:40');nodes.radioPlay.handlers.click();assert.equal(pauses,1);
+nodes.radioForward.handlers.click();assert.equal(time,115);nodes.radioBack.handlers.click();assert.equal(time,100);nodes.radioSeek.value='999';nodes.radioSeek.handlers.change();assert.equal(time,200);nodes.radioRestart.handlers.click();assert.equal(time,0);
+nodes.radioSpeed.value='1.5';nodes.radioSpeed.handlers.change();assert.equal(rate,1.5);
+nodes.radioSave.handlers.click();assert.deepEqual(JSON.parse(persisted).saved,['a']);nodes.radioSavedOnly.checked=true;nodes.radioSavedOnly.handlers.change();
 const select=id=>nodes.radioList.handlers.click({target:{closest:()=>({dataset:{radioId:id}})}});
-select('a');assert.equal(writes,0);select('b');assert.equal(writes,1);select('b');select('invalid');assert.equal(writes,1,'Same/invalid selection must not restart');
-assert(nodes.radioCurrent.innerHTML.includes('rWE6SSVs3BA'));assert(nodes.radioSelectionStatus.textContent.includes('다음 방송'));
-const html=read('radio/test/index.html');assert.equal((html.match(/<iframe /g)||[]).length,1);assert(html.includes('referrerpolicy="strict-origin-when-cross-origin"'));assert(!html.includes('autoplay=1'));assert(html.includes('noindex,follow'));assert(!read('sitemap.xml').includes('/radio/test/'));assert(read('about/install/index.html').includes('/radio/test/'));assert(!read('src/client/radio.js').match(/visibilitychange|setInterval|playVideo|localStorage/));
-if(current.length)assert.equal(new URL(html.match(/id="radioPlayer" src="([^"]+)/)[1]).search,'?rel=0');
-console.log('PASS radio: archive joins, source vetting, future/hidden exclusion, dedup, filters preserve iframe, selection-only reload, PWA test entry.');
+select('a');assert.equal(cues,0);select('b');assert.equal(cues,1);assert.equal(writes,1,'One persistent iframe');select('b');select('invalid');assert.equal(cues,1);assert(nodes.radioCurrent.innerHTML.includes('다음 방송'));
+options.events.onError();assert.equal(nodes.radioPlay.disabled,true);assert(nodes.radioSelectionStatus.textContent.includes('YouTube'));assert(nodes.radioOriginal.href.includes('rWE6SSVs3BA'));select('a');assert.equal(nodes.radioPlay.disabled,false);
+playerState=0;options.events.onStateChange({data:0});assert.equal(plays,1,'No automatic next playback');assert.equal(JSON.parse(persisted).positions.a.time,0);
+// Denied or corrupt storage must never prevent the player from connecting.
+context.localStorage={getItem(){throw Error('blocked');},setItem(){throw Error('blocked');}};vm.runInNewContext(read('src/client/radio.js'),{...context});nodes.radioSave.handlers.click();assert(nodes.radioSelectionStatus.textContent.includes('이번 화면'));
+context.localStorage={getItem:()=>'{invalid',setItem(){}};vm.runInNewContext(read('src/client/radio.js'),{...context});
+const html=read('radio/test/index.html');assert.equal((html.match(/<iframe /g)||[]).length,1);assert(html.includes('referrerpolicy="strict-origin-when-cross-origin"'));assert(!html.includes('autoplay=1'));assert(html.includes('noindex,follow'));assert(!read('sitemap.xml').includes('/radio/test/'));assert(read('about/install/index.html').includes('/radio/test/'));assert(!read('src/client/radio.js').includes('loadVideoById'));
+if(current.length)assert(html.includes('enablejsapi=1'));
+console.log('PASS radio: archive joins, single iframe, filter continuity, transport, favorites/storage fallback, error recovery, no automatic next playback.');
