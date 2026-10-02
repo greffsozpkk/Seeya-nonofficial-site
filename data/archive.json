@@ -749,7 +749,7 @@
     "id": "20260928-yeonji-suseong-busking",
     "date": "2026-09-28",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-29",
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00",
     "title": "김연지 · 닭동가리 수성못 라이브 버스킹",
     "program": "닭동가리 라이브 버스킹",
     "type": "event",
@@ -784,6 +784,31 @@
         "label": "와일드무브·김연지 공식 공동 게시 · 대구 버스킹 후기·사진",
         "url": "https://www.instagram.com/p/Dd3AYQJASiV/",
         "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "거햄 · 씨야 김연지 대구버스킹 김연지 - 노래 In 닭동가리 본점",
+        "url": "https://www.youtube.com/watch?v=VFIipZAAUIo",
+        "publishedDate": "2026-09-28"
+      },
+      {
+        "label": "거햄 · 씨야 김연지 대구버스킹 씨야 - 구두(무반주 Ver)",
+        "url": "https://www.youtube.com/watch?v=bTInkS24EDg",
+        "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "거햄 · 씨야 김연지 대구버스킹 씨야 - 미친 사랑의 노래 (무반주 Ver)",
+        "url": "https://www.youtube.com/watch?v=Fe5mMx8ArRw",
+        "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "김시우 · 260928 김연지 노래 직캠",
+        "url": "https://www.youtube.com/watch?v=4eshMJW5jv0",
+        "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "박성민 · 김연지-대구 버스킹 후 퇴근길",
+        "url": "https://www.youtube.com/watch?v=llpzJz1zFbs",
+        "publishedDate": "2026-09-29"
       }
     ],
     "status": "available",
@@ -802,7 +827,7 @@
     "id": "20260928-gyuri-sugeun-billiards",
     "date": "2026-09-28",
     "addedAt": "2026-09-28",
-    "updatedAt": "2026-09-28",
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00",
     "title": "남규리 · 이수근채널 · 인생 첫 당구 도전",
     "program": "이수근채널",
     "type": "variety",
@@ -817,7 +842,28 @@
       "url": "https://www.youtube.com/watch?v=vDnG9CcbLs4",
       "publishedDate": "2026-09-28"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "이수근채널 · 신난 초보 남규리에 점점 지쳐가는😩 이수근",
+        "url": "https://www.youtube.com/watch?v=3liaG6nYUKs",
+        "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "이수근채널 · 가요계 대선배(?) 강변가요제 출신 이수근",
+        "url": "https://www.youtube.com/watch?v=Lhv3pbvWkTo",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "label": "이수근채널 · 당구 초보 남규리의 당구 잘 쳐보이는 법",
+        "url": "https://www.youtube.com/watch?v=5XNuTzrGZnQ",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "label": "이수근채널 · 그냥 당구가 재밌는 천진난만한 남규리💖",
+        "url": "https://www.youtube.com/watch?v=wupfWAflxWU",
+        "publishedDate": "2026-10-01"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -864,7 +910,7 @@
     "id": "20260928-boram-sbsplus-ghost39",
     "date": "2026-09-28",
     "addedAt": "2026-09-28",
-    "updatedAt": "2026-09-29",
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00",
     "title": "이보람 · 신빨토크쇼 귀묘한 이야기2 39회",
     "program": "신빨토크쇼 귀묘한 이야기2",
     "type": "variety",
@@ -904,6 +950,16 @@
         "label": "SBS Plus 스플스 · 39회 공식 방송 클립 (개명을 반복한 남자의 사연)",
         "url": "https://www.youtube.com/watch?v=Vmv4M9i7-l0",
         "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "신빨토크쇼 귀묘한 이야기 · 씨야 이보람 결혼 못 하나 했는데 충격 예언! 연예계 인연 없다?",
+        "url": "https://www.youtube.com/watch?v=HpGLrLEVLUU",
+        "publishedDate": "2026-10-02"
+      },
+      {
+        "label": "SBS Plus 스플스 · 씨야 이보람의 애증",
+        "url": "https://www.youtube.com/watch?v=se8PTJKey-c",
+        "publishedDate": "2026-10-02"
       }
     ],
     "status": "available",
@@ -1621,9 +1677,19 @@
         "label": "람보사랑 · 와우^^🫣👍 이런다고👏😆",
         "url": "https://www.youtube.com/watch?v=bryU4PbrLHc",
         "publishedDate": "2026-09-24"
+      },
+      {
+        "label": "람보사랑 · 컴온🖐️ 소리질러😍",
+        "url": "https://www.youtube.com/watch?v=utMC1ztBwnI",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "label": "람보사랑 · 스마일 찰칵📸 기분 좋은 미소",
+        "url": "https://www.youtube.com/watch?v=UZrwCWRrYws",
+        "publishedDate": "2026-09-30"
       }
     ],
-    "updatedAt": "2026-10-02T15:47:03.624207+00:00"
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00"
   },
   {
     "id": "20260921-gyuri-mbc-noon-dj",
@@ -1903,6 +1969,11 @@
         "label": "람보사랑 · 남규리(씨야) 광주 한마음 대축제 260920 (휴대폰 촬영)",
         "url": "https://www.youtube.com/watch?v=fHnWBEjJNA0",
         "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "람보사랑 · #기댈곳 좋아하는 색, 노래, 그리고 🍊",
+        "url": "https://www.youtube.com/watch?v=BqBhefQ2T48",
+        "publishedDate": "2026-09-29"
       }
     ],
     "status": "available",
@@ -1917,7 +1988,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "venue": "광주교육대학교 제1운동장",
-    "updatedAt": "2026-10-02T15:58:40.763371+00:00"
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00"
   },
   {
     "id": "20260919-gyuri-tvreport-interview",
@@ -3786,10 +3857,25 @@
         "label": "감미로운 음악생활 · 씨야 - 미워요 (260830 씨야 단독콘서트 'THE FAN' 서울) 2일차",
         "url": "https://www.youtube.com/watch?v=ABXpzoDyer0",
         "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/전국투어콘서트/서울] 게스트_김기태 (2026.08.29)",
+        "url": "https://www.youtube.com/watch?v=Y6swsu_2xf0",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 남규리 솔로곡 신곡 한소절 - 우리 사랑, 그런거 해요 (260830 씨야 단독콘서트 'THE FAN' 서울) 2일차",
+        "url": "https://www.youtube.com/watch?v=HJqyEfQYlc0",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "람보사랑 · #sg워너비",
+        "url": "https://www.youtube.com/watch?v=v5MYfWd1cB0",
+        "publishedDate": "2026-10-01"
       }
     ],
     "endDate": "2026-08-30",
-    "updatedAt": "2026-10-02T15:58:40.763371+00:00"
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00"
   },
   {
     "id": "v492-sVhd4C_aeKM",
@@ -4103,6 +4189,16 @@
       {
         "label": "이보람 공식 인스타그램 · 소풍 비하인드",
         "url": "https://www.instagram.com/p/Ddaay0Ik1da/"
+      },
+      {
+        "label": "강북문화재단 · 씨야 - 봄처럼 그댄 (원곡: 씨야) l 피크닉 라이브 소풍",
+        "url": "https://www.youtube.com/watch?v=exDhARrM4Pg",
+        "publishedDate": "2026-10-02"
+      },
+      {
+        "label": "강북문화재단 · 씨야 -사랑의 인사 (원곡: 씨야) l 피크닉 라이브 소풍",
+        "url": "https://www.youtube.com/watch?v=v_RwxsctzrQ",
+        "publishedDate": "2026-10-02"
       }
     ],
     "status": "available",
@@ -4115,7 +4211,7 @@
     "episode": 150,
     "recordedDate": "2026-08-24",
     "publishedDate": "2026-09-12",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00"
   },
   {
     "id": "v488-audit-048",
@@ -44871,7 +44967,7 @@
     "id": "20261001-boram-oasis-cover",
     "date": "2026-10-01",
     "addedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00",
     "title": "이보람 · 정동하 「오아시스」 커버",
     "program": "뮤직원컴퍼니 · 이보람 공식 Instagram",
     "type": "official",
@@ -44888,7 +44984,13 @@
       "url": "https://www.instagram.com/music1company/reel/Dd75SqeEz8W/",
       "publishedDate": "2026-10-01"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "정동하 Jung Dong Ha · 🏝️오아시스 by 이보람 of 씨야",
+        "url": "https://www.youtube.com/watch?v=PTHcXHTUmmU",
+        "publishedDate": "2026-10-01"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
