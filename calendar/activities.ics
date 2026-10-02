@@ -6848,6 +6848,25 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-01&event=activity-v487-2
  026-001
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-discovered-93eddd3fdc7a38da@seeya-fanpage.com
+DTSTAMP:20261002T150000Z
+LAST-MODIFIED:20261002T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260105
+DTEND;VALUE=DATE:20260106
+SUMMARY:데뷔 20주년인 남규리의 그때 그 시절 예능 썰 / [이
+ 은지의 가요광장] I KBS 260105 방송
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:남규리\n시간 미정\nKBS CoolFM: https://www.youtube.com/w
+ atch?v=jdHWzSqoZuI\nhttps://seeya-fanpage.com/archive/?record=discovered-9
+ 3eddd3fdc7a38da
+URL:https://seeya-fanpage.com/calendar/?month=2026-01&event=activity-discov
+ ered-93eddd3fdc7a38da
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v488-audit-031@seeya-fanpage.com
 DTSTAMP:20260911T150000Z
 LAST-MODIFIED:20260911T150000Z
