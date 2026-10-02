@@ -16610,7 +16610,18 @@
       "label": "MBCentertainment",
       "url": "https://www.youtube.com/watch?v=EqKu1ul6aDY"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "MBCentertainment · [놀면 뭐하니?] ✨ 깊이 있는 목소리 사걸육수 ✨ 이보람X정지소X흰X소연 4명의 목소리를 담아낼 완벽한 팀명! 🤩, MBC 220625 방송",
+        "url": "https://www.youtube.com/watch?v=FgNZliFCT-g",
+        "publishedDate": "2022-06-25"
+      },
+      {
+        "label": "엠뚜루마뚜루 : MBC 공식 종합 채널 · [놀면 뭐하니?] 이보람+정지소+박혜원+소연 = 음원차트 기강 잡으러 온 보컬 어벤져스⚔ ㅣ#WSG워너비",
+        "url": "https://www.youtube.com/watch?v=wzNrrUBVmNk",
+        "publishedDate": "2022-06-27"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -16618,7 +16629,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v491-hangout-2022-06-18",
@@ -16814,7 +16826,7 @@
     "id": "20220528-boram-hangout",
     "date": "2022-05-28",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00",
     "title": "이보람 · 놀면 뭐하니? · WSG워너비 이성경 정체 공개",
     "program": "MBC 놀면 뭐하니?",
     "type": "variety",
@@ -16829,7 +16841,13 @@
       "url": "https://www.youtube.com/watch?v=4LOX-hnrTVc",
       "publishedDate": "2022-05-28"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "엠뚜루마뚜루 : MBC 공식 종합 채널 · [놀면 뭐하니?] 레전드 그룹 씨야 이보람의 美친 가창력 다시보기! WSG워너비 오디션 노래 모음집ㅣ#이보람",
+        "url": "https://www.youtube.com/watch?v=PohH2HLwOFY",
+        "publishedDate": "2022-06-08"
+      }
+    ],
     "status": "available",
     "tags": [
       "예능",
@@ -19464,6 +19482,11 @@
       {
         "label": "미스&미스터트롯",
         "url": "https://www.youtube.com/watch?v=IllQVfXCrRY"
+      },
+      {
+        "label": "TVCHOSUN JOY · [미스트롯2] 씨야(See Ya) 메인보컬 김연지의 트롯 도전! '타인'",
+        "url": "https://www.youtube.com/watch?v=7h06-DVQwPM",
+        "publishedDate": "2020-12-21"
       }
     ],
     "status": "available",
@@ -19473,7 +19496,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20201125-reunion-project-cancelled",
@@ -21817,6 +21841,11 @@
       {
         "label": "KBS Kpop",
         "url": "https://www.youtube.com/watch?v=lOvBRahMvtQ"
+      },
+      {
+        "label": "KBS StarTV: 인물사전 · [소장각👍",
+        "url": "https://www.youtube.com/watch?v=gpuyj0Wv8Uc",
+        "publishedDate": "2020-07-03"
       }
     ],
     "status": "available",
@@ -21826,7 +21855,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v4145-WeMuc0cFk0I",
@@ -22066,9 +22096,29 @@
         "label": "JTBC · 씨야 무대와 근황 토크 모음",
         "url": "https://www.youtube.com/watch?v=u_JQMyOicoE",
         "publishedDate": "2023-07-12"
+      },
+      {
+        "label": "JTBC Entertainment · (요즘 느낌 보컬) 이보람(Lee Boram), 너튜브에서 숨겨왔던 가창력 大 방출↗ 슈가맨3(SUGARMAN3) 12회",
+        "url": "https://www.youtube.com/watch?v=WP7efG4EcWw",
+        "publishedDate": "2020-02-21"
+      },
+      {
+        "label": "JTBC Entertainment · [스페셜] ※눈물 주의※ 레전드 걸그룹 씨야(See Ya)의 완전체 귀환 기념 '히트곡 모음.zip' 슈가맨3(SUGARMAN3)",
+        "url": "https://www.youtube.com/watch?v=MsRnknymiaY",
+        "publishedDate": "2020-02-21"
+      },
+      {
+        "label": "JTBC Entertainment · [슈가송] 그 시절 우리가 사랑했던 씨야(See Ya)의 '사랑의 인사'♪ (엉엉 ㅠ_ㅠ) 슈가맨3(SUGARMAN3) 12회",
+        "url": "https://www.youtube.com/watch?v=uYp15-zFr4M",
+        "publishedDate": "2020-02-21"
+      },
+      {
+        "label": "JTBC Entertainment · [#확끌립] 완전체 씨야(See Ya) 슈가맨 출연 1주년 기념 1000만뷰 돌파한 히트곡 무대 다시보기",
+        "url": "https://www.youtube.com/watch?v=3waX9oATJQI",
+        "publishedDate": "2021-02-25"
       }
     ],
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20200120-yeonji-musical-awards",
@@ -24887,7 +24937,18 @@
       "label": "tvN Joy",
       "url": "https://www.youtube.com/watch?v=AZfWUGQmiwc"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "tvN Joy · lifebar 뭐든지 가족먼저, 가장이어야만 했던 남규리의 눈물 180510 EP.70",
+        "url": "https://www.youtube.com/watch?v=rz6I7cVPxOM",
+        "publishedDate": "2018-05-11"
+      },
+      {
+        "label": "디글 클래식 :Diggle Classic · [티비냥] 걱정될 정도로 눈 돌아간(ㄷㄷ) 엄청난 몰입에 남규리 무서워진 이규한 |",
+        "url": "https://www.youtube.com/watch?v=WodjvnpoLaQ",
+        "publishedDate": "2019-08-03"
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
@@ -24895,7 +24956,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v490-album-739773",
@@ -26554,7 +26616,13 @@
       "label": "KBS Kpop",
       "url": "https://www.youtube.com/watch?v=tm-8G4KsS4o"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS StarTV: 인물사전 · [소장각👍",
+        "url": "https://www.youtube.com/watch?v=SO7TdgbFAJQ",
+        "publishedDate": "2020-07-07"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
@@ -26565,7 +26633,8 @@
     "publishedDate": "2016-12-23",
     "collaborators": [
       "황치열"
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v490-album-540431",
@@ -36923,9 +36992,14 @@
         "label": "씨야박물관 · 팬 보관 영상",
         "url": "https://www.youtube.com/watch?v=-Cp6OEu5TzA",
         "publishedDate": "2020-03-22"
+      },
+      {
+        "label": "May be · 씨야-결혼할까요,슬픈발걸음(2007 골든디스크)",
+        "url": "https://www.youtube.com/watch?v=ZJiuCBWHptQ",
+        "publishedDate": "2015-08-23"
       }
     ],
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v487-history-017",
@@ -37905,13 +37979,20 @@
       "label": "공식 무대 영상",
       "url": "https://www.youtube.com/watch?v=fFA8uMG8QVE"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "메론민트 · [HD 720p] 070826 씨야 (SeeYA) ㅡ 결혼할까요",
+        "url": "https://www.youtube.com/watch?v=VrF22KD7dMA",
+        "publishedDate": "2019-03-30"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
       "라이브"
     ],
-    "note": ""
+    "note": "",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20070820-seeya-radio-donggo",
@@ -38171,6 +38252,11 @@
       {
         "label": "씨야 갤러리 · 예능 보관자료 목록",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+      },
+      {
+        "label": "올끌 (All of MBClassic) · [황금어장 라디오스타] \"너 연기 너무 부담스럽다..\" '남규리&김영철' 편",
+        "url": "https://www.youtube.com/watch?v=NLPoVQ9sv9w",
+        "publishedDate": "2019-10-13"
       }
     ],
     "status": "available",
@@ -38179,7 +38265,7 @@
     ],
     "note": "",
     "publishedDate": "2012-04-24",
-    "updatedAt": "2026-09-19"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20070808-seeya-radio-kiss",
@@ -38725,13 +38811,20 @@
       "label": "공식 무대 모음 · 해당 구간",
       "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=1719s"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS StarTV: 인물사전 · [소장각👍",
+        "url": "https://www.youtube.com/watch?v=vTQV7hjNnMk",
+        "publishedDate": "2020-07-06"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
       "라이브"
     ],
-    "note": ""
+    "note": "",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20070705-seeya-mcount-lovegreeting-win",
@@ -41102,13 +41195,25 @@
       "label": "공식 영상",
       "url": "https://www.youtube.com/watch?v=MFcGfbaEDkM"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "머시룸 · 씨야 - 구두｜See Ya - Shoes｜텔레콘서트 자유 20060811",
+        "url": "https://www.youtube.com/watch?v=bQ1ANwzN9eE",
+        "publishedDate": "2019-05-10"
+      },
+      {
+        "label": "머시룸 · 씨야 - 미친 사랑의 노래, See Ya - Crazy Love Song, 텔레콘서트 자유 20060811",
+        "url": "https://www.youtube.com/watch?v=lrbJHQ7R1m4",
+        "publishedDate": "2019-05-10"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대"
     ],
     "note": "",
-    "publishedDate": "2018-04-13"
+    "publishedDate": "2018-04-13",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20060808-seeya-hellochat",
@@ -42322,9 +42427,14 @@
       {
         "label": "SBS · 391회 공식 출연 안내·다시보기",
         "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006466"
+      },
+      {
+        "label": "스내치[SNATCH] · 씨야(SeeYa) 인기가요 여인의향기 1위(약 40일만에 최단기간,당시기준) 무대소감",
+        "url": "https://www.youtube.com/watch?v=87CCrr7txrQ",
+        "publishedDate": "2020-03-02"
       }
     ],
-    "updatedAt": "2026-09-19"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v480-stage-027",
@@ -42874,9 +42984,14 @@
       {
         "label": "SBS · 386회 공식 출연 안내·다시보기",
         "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006461"
+      },
+      {
+        "label": "김준형 · 씨야(SeeYa) - 여인의 향기 [SBS 인기가요 060312]",
+        "url": "https://www.youtube.com/watch?v=rFCNRIpPukY",
+        "publishedDate": "2014-08-03"
       }
     ],
-    "updatedAt": "2026-09-19"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v485-news-608d5da3ebeb",
