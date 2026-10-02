@@ -604,9 +604,21 @@
       {
         "label": "제천한방천연물산업박람회 공식 홈페이지",
         "url": "https://www.hanbangbiofair.org/"
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=A9pOD6AQYaU",
+        "publishedDate": "2026-10-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "트롯천리가요여행TV",
+        "url": "https://www.youtube.com/watch?v=IA_sg6ol_wU",
+        "publishedDate": "2026-10-02",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-10-02T14:02:42.301414+00:00",
     "calendar": {
       "time": "19:00",
       "endTime": "20:00",
