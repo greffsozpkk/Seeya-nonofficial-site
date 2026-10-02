@@ -45298,5 +45298,219 @@
     ],
     "note": "김연지가 공식 계정에 공개한 사진 모음입니다.\n사진은 원본 게시물에서 이어 볼 수 있습니다.",
     "publishedDate": "2026-09-30"
+  },
+  {
+    "id": "discovered-7c078b92881180b2",
+    "date": "2022-08-18",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "김연지 · 상상 라이브 커버",
+    "program": "김연지 Official",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=Vtbod5RDRog",
+      "publishedDate": "2022-08-18"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "김연지가 부른 드라마 「이상한 변호사 우영우」 OST 「상상」 라이브 커버입니다.\n공식 채널 영상 공개일 기준입니다.",
+    "publishedDate": "2022-08-18"
+  },
+  {
+    "id": "discovered-53369e3fb69a76b5",
+    "date": "2022-12-03",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람 · 먼슬리디글 × 보람씨야 클립 모음",
+    "program": "먼슬리디글 × 보람씨야",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "디글 :Diggle · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=H4yVYIN4HtU",
+      "publishedDate": "2022-12-03"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "디글과 보람씨야의 협업으로 공개된 이보람의 인터뷰·일상·예능 클립을 모았습니다.\n첫 영상 공개일 기준이며, 관련 클립은 추가 링크에서 볼 수 있습니다.",
+    "publishedDate": "2022-12-03"
+  },
+  {
+    "id": "discovered-bbed965481c16f33",
+    "date": "2023-02-10",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람 · GOT7 영재의 친한친구 · 너의 모든 순간",
+    "program": "MBC GOT7 영재의 친한친구",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=mgyNRauQdMQ",
+      "publishedDate": "2023-02-10"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [],
+    "note": "이보람이 성시경의 「너의 모든 순간」을 부른 라디오 라이브입니다.\nMBC 공식 영상에 표시된 방송일 기준입니다."
+  },
+  {
+    "id": "discovered-80e90ff790c91c77",
+    "date": "2025-06-14",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "김연지·이보람 · 병문안 브이로그",
+    "program": "김연지 Official",
+    "type": "official",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=a2Q-Psdhi4I",
+      "publishedDate": "2025-06-14"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "이보람이 김연지의 병문안을 와 함께 시간을 보낸 모습이 담긴 브이로그입니다.\n김연지 공식 채널 공개일 기준입니다.",
+    "publishedDate": "2025-06-14"
+  },
+  {
+    "id": "discovered-e9c41ffc3602d455",
+    "date": "2026-02-10",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람 · 두시만세 · Golden 즉석 라이브",
+    "program": "MBC 박준형·박영진의 2시만세",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=oFcWXGP5YYM",
+      "publishedDate": "2026-02-10"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "이보람이 라디오에서 선보인 「Golden」 즉석 라이브 클립입니다.\nMBC 공식 영상 공개일 기준입니다.",
+    "publishedDate": "2026-02-10"
+  },
+  {
+    "id": "discovered-e98d25eb9821ca14",
+    "date": "2026-03-19",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람 · 세상을 바꾸는 여자들 여수 공연",
+    "program": "세상을 바꾸는 여자들",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "꽃길보라미 · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=ja7QK5PO6k8",
+      "publishedDate": "2026-03-22"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [],
+    "note": "여수 공연에서 이보람이 무반주로 부른 「바보」와 「그런 일은」 직캠입니다.\n영상 제목·설명에 표시된 공연일 기준입니다."
+  },
+  {
+    "id": "discovered-b9fde119d3f21a6c",
+    "date": "2026-03-20",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람 · 세상을 바꾸는 여자들 춘천 공연",
+    "program": "세상을 바꾸는 여자들",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "꽃길보라미 · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=gh7YnBN1ONU",
+      "publishedDate": "2026-03-25"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [],
+    "note": "춘천 공연에서 이보람이 무반주로 부른 「Golden」 직캠입니다.\n영상 제목·설명에 표시된 공연일 기준입니다."
+  },
+  {
+    "id": "discovered-550c4ef1170305df",
+    "date": "2026-10-02",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람·HYNN 박혜원 · 3일 후 듀엣",
+    "program": "박혜원HYNN × 보람씨야",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "박혜원HYNN · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=KlH3zRHLpRw",
+      "publishedDate": "2026-10-02"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "이보람과 HYNN(박혜원)이 함께 부른 「3일 후」 듀엣 클립입니다.\n두 채널의 공동작업 영상 공개일 기준입니다.",
+    "publishedDate": "2026-10-02"
   }
 ]
