@@ -527,7 +527,7 @@
     "id": "20261002-seeya-yeongwol-garden",
     "date": "2026-10-02",
     "addedAt": "2026-09-28",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-02T16:02:20.017759+00:00",
     "title": "씨야 · 대한민국 영월 정원산업박람회 개막 축하콘서트 출연 예정",
     "program": "대한민국 영월 정원산업박람회",
     "type": "event",
@@ -552,6 +552,11 @@
         "label": "달달영월 공식 · 10월 2일 개막식·출연진 안내",
         "url": "https://www.instagram.com/p/Dd8uh9fE4js/",
         "publishedDate": "2026-10-01"
+      },
+      {
+        "label": "람보사랑 · 씨야 영월 정원 산업 박람회 직캠 261002",
+        "url": "https://www.youtube.com/watch?v=zZBE5szvTtc",
+        "publishedDate": "2026-10-02"
       }
     ],
     "status": "documented",
@@ -749,7 +754,7 @@
     "id": "20260928-yeonji-suseong-busking",
     "date": "2026-09-28",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-29",
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00",
     "title": "김연지 · 닭동가리 수성못 라이브 버스킹",
     "program": "닭동가리 라이브 버스킹",
     "type": "event",
@@ -784,6 +789,31 @@
         "label": "와일드무브·김연지 공식 공동 게시 · 대구 버스킹 후기·사진",
         "url": "https://www.instagram.com/p/Dd3AYQJASiV/",
         "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "거햄 · 씨야 김연지 대구버스킹 김연지 - 노래 In 닭동가리 본점",
+        "url": "https://www.youtube.com/watch?v=VFIipZAAUIo",
+        "publishedDate": "2026-09-28"
+      },
+      {
+        "label": "거햄 · 씨야 김연지 대구버스킹 씨야 - 구두(무반주 Ver)",
+        "url": "https://www.youtube.com/watch?v=bTInkS24EDg",
+        "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "거햄 · 씨야 김연지 대구버스킹 씨야 - 미친 사랑의 노래 (무반주 Ver)",
+        "url": "https://www.youtube.com/watch?v=Fe5mMx8ArRw",
+        "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "김시우 · 260928 김연지 노래 직캠",
+        "url": "https://www.youtube.com/watch?v=4eshMJW5jv0",
+        "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "박성민 · 김연지-대구 버스킹 후 퇴근길",
+        "url": "https://www.youtube.com/watch?v=llpzJz1zFbs",
+        "publishedDate": "2026-09-29"
       }
     ],
     "status": "available",
@@ -802,7 +832,7 @@
     "id": "20260928-gyuri-sugeun-billiards",
     "date": "2026-09-28",
     "addedAt": "2026-09-28",
-    "updatedAt": "2026-09-28",
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00",
     "title": "남규리 · 이수근채널 · 인생 첫 당구 도전",
     "program": "이수근채널",
     "type": "variety",
@@ -817,7 +847,28 @@
       "url": "https://www.youtube.com/watch?v=vDnG9CcbLs4",
       "publishedDate": "2026-09-28"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "이수근채널 · 신난 초보 남규리에 점점 지쳐가는😩 이수근",
+        "url": "https://www.youtube.com/watch?v=3liaG6nYUKs",
+        "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "이수근채널 · 가요계 대선배(?) 강변가요제 출신 이수근",
+        "url": "https://www.youtube.com/watch?v=Lhv3pbvWkTo",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "label": "이수근채널 · 당구 초보 남규리의 당구 잘 쳐보이는 법",
+        "url": "https://www.youtube.com/watch?v=5XNuTzrGZnQ",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "label": "이수근채널 · 그냥 당구가 재밌는 천진난만한 남규리💖",
+        "url": "https://www.youtube.com/watch?v=wupfWAflxWU",
+        "publishedDate": "2026-10-01"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -864,7 +915,7 @@
     "id": "20260928-boram-sbsplus-ghost39",
     "date": "2026-09-28",
     "addedAt": "2026-09-28",
-    "updatedAt": "2026-09-29",
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00",
     "title": "이보람 · 신빨토크쇼 귀묘한 이야기2 39회",
     "program": "신빨토크쇼 귀묘한 이야기2",
     "type": "variety",
@@ -904,6 +955,16 @@
         "label": "SBS Plus 스플스 · 39회 공식 방송 클립 (개명을 반복한 남자의 사연)",
         "url": "https://www.youtube.com/watch?v=Vmv4M9i7-l0",
         "publishedDate": "2026-09-29"
+      },
+      {
+        "label": "신빨토크쇼 귀묘한 이야기 · 씨야 이보람 결혼 못 하나 했는데 충격 예언! 연예계 인연 없다?",
+        "url": "https://www.youtube.com/watch?v=HpGLrLEVLUU",
+        "publishedDate": "2026-10-02"
+      },
+      {
+        "label": "SBS Plus 스플스 · 씨야 이보람의 애증",
+        "url": "https://www.youtube.com/watch?v=se8PTJKey-c",
+        "publishedDate": "2026-10-02"
       }
     ],
     "status": "available",
@@ -1176,7 +1237,7 @@
     "id": "20260925-yeonji-acting-challenge",
     "date": "2026-09-25",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-25",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00",
     "title": "김연지 · 윤후와 함께한 연기 챌린지",
     "program": "와일드무브 · 연기 챌린지",
     "type": "official",
@@ -1191,7 +1252,13 @@
       "url": "https://www.instagram.com/reel/Dds5QJuBAzW/",
       "publishedDate": "2026-09-25"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "연지곤지 · 연기는 모르겠고 그냥 귀여운 김연지 연기챌린지",
+        "url": "https://www.youtube.com/watch?v=sc4jTAjI0tA",
+        "publishedDate": "2026-09-26"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -1240,7 +1307,7 @@
     "id": "20260924-yeonji-bad-challenge",
     "date": "2026-09-24",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-25",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00",
     "title": "김연지 · 배드 챌린지",
     "program": "와일드무브 · 배드 챌린지",
     "type": "official",
@@ -1255,7 +1322,13 @@
       "url": "https://www.instagram.com/reel/DdqYWN5hu3u/",
       "publishedDate": "2026-09-24"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "연지곤지 · 당황스럽고 귀엽고 생각보다 잘 춰서 놀란 김연지 배드 챌린지",
+        "url": "https://www.youtube.com/watch?v=c-vaWuaFGiM",
+        "publishedDate": "2026-09-24"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -1596,9 +1669,44 @@
         "url": "https://www.youtube.com/watch?v=QIVhZy91dkg",
         "publishedDate": "2026-09-25",
         "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑 · 귤리버🍊(규리+걸리버) 잔망 ㅋㅋㅋ",
+        "url": "https://www.youtube.com/watch?v=nf_np0M9TKg",
+        "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "람보사랑 · 멘트가 꼬였나요 ㅋㅋ 모든것의 정의 가위바위보😁😝",
+        "url": "https://www.youtube.com/watch?v=UzDDyDQrFXg",
+        "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "🐿람보바라기 · 이보람 우석대학교 대동제 퇴근길👋🏻",
+        "url": "https://www.youtube.com/watch?v=7fs1qciBtoI",
+        "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "2 75 · stay 우석대학교 축제 seeya 이보람주의!",
+        "url": "https://www.youtube.com/watch?v=KvDm_Jpbibc",
+        "publishedDate": "2026-09-23"
+      },
+      {
+        "label": "람보사랑 · 와우^^🫣👍 이런다고👏😆",
+        "url": "https://www.youtube.com/watch?v=bryU4PbrLHc",
+        "publishedDate": "2026-09-24"
+      },
+      {
+        "label": "람보사랑 · 컴온🖐️ 소리질러😍",
+        "url": "https://www.youtube.com/watch?v=utMC1ztBwnI",
+        "publishedDate": "2026-09-30"
+      },
+      {
+        "label": "람보사랑 · 스마일 찰칵📸 기분 좋은 미소",
+        "url": "https://www.youtube.com/watch?v=UZrwCWRrYws",
+        "publishedDate": "2026-09-30"
       }
     ],
-    "updatedAt": "2026-09-30T13:59:14.662333+00:00"
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00"
   },
   {
     "id": "20260921-gyuri-mbc-noon-dj",
@@ -1652,7 +1760,7 @@
     "id": "20260921-boram-kyoungseo-duet",
     "date": "2026-09-21",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00",
     "title": "이보람 · 경서와 함께한 별이 떨어질 때",
     "program": "경서 공식 · 별이 떨어질 때 듀엣",
     "type": "music-show",
@@ -1669,7 +1777,13 @@
       "url": "https://www.instagram.com/p/DdiyiU8vB2r/",
       "publishedDate": "2026-09-21"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "경서 · #별이_떨어질_때",
+        "url": "https://www.youtube.com/watch?v=wNc9VDZfspY",
+        "publishedDate": "2026-09-21"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -1684,7 +1798,7 @@
     "id": "20260920-yeonji-huhmax-song",
     "date": "2026-09-20",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00",
     "title": "김연지 · 허맥스와 함께한 노래",
     "program": "허맥스·김연지 · 노래 듀엣",
     "type": "music-show",
@@ -1701,7 +1815,13 @@
       "url": "https://www.instagram.com/p/DdgNsiCP127/",
       "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "허맥스 · 김연지님과 함께부른 ‘노래’",
+        "url": "https://www.youtube.com/watch?v=f2oGZLwpuCg",
+        "publishedDate": "2026-09-29"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -1867,6 +1987,16 @@
       {
         "label": "한마음 대축제 · 현장 중계 영상",
         "url": "https://www.youtube.com/watch?v=UeyqTRkneGw"
+      },
+      {
+        "label": "람보사랑 · 남규리(씨야) 광주 한마음 대축제 260920 (휴대폰 촬영)",
+        "url": "https://www.youtube.com/watch?v=fHnWBEjJNA0",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "람보사랑 · #기댈곳 좋아하는 색, 노래, 그리고 🍊",
+        "url": "https://www.youtube.com/watch?v=BqBhefQ2T48",
+        "publishedDate": "2026-09-29"
       }
     ],
     "status": "available",
@@ -1881,7 +2011,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "venue": "광주교육대학교 제1운동장",
-    "updatedAt": "2026-09-21"
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00"
   },
   {
     "id": "20260919-gyuri-tvreport-interview",
@@ -2013,7 +2143,7 @@
     "id": "20260918-yeonji-voicejaekook-story",
     "date": "2026-09-18",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00",
     "title": "김연지 · 자신의 이야기를 노래에 담은 이유",
     "program": "목소리는 오재국 · 솔직리얼TALK",
     "type": "interview",
@@ -2028,7 +2158,23 @@
       "url": "https://www.youtube.com/watch?v=mFeQVrZ1xEs",
       "publishedDate": "2026-09-18"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "목소리는 오재국 · 김연지는 무대 전 몇 분이나 목을 풀까?｜프로 가수의 실제 루틴",
+        "url": "https://www.youtube.com/watch?v=U5mhUK2QqhY",
+        "publishedDate": "2026-09-25"
+      },
+      {
+        "label": "목소리는 오재국 · 김연지가 노래할 때는 근력 운동을 빼는 이유",
+        "url": "https://www.youtube.com/watch?v=m0UNwCeQj6Q",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "목소리는 오재국 · 김연지가 자신의 이야기를 직접 노래로 쓴",
+        "url": "https://www.youtube.com/watch?v=pXHbzUCNcAY",
+        "publishedDate": "2026-09-29"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -2476,11 +2622,71 @@
         "label": "SEEYA Official · 대구 콘서트 스케치·추석 인사",
         "url": "https://www.youtube.com/watch?v=Ip9XvKCeEkA",
         "publishedDate": "2026-09-25"
+      },
+      {
+        "label": "거햄 · 씨야 20주년 전국콘서트 대구콘 \"Hot Gril\" 260912",
+        "url": "https://www.youtube.com/watch?v=oExH1glvoEw",
+        "publishedDate": "2026-09-13"
+      },
+      {
+        "label": "제리제이 Jerry.j · 춤 바람 난 씨야 | 260912 씨야 20주년 전국 투어 콘서트 in 대구 | 씨야클럽",
+        "url": "https://www.youtube.com/watch?v=B-7RXw9wjWk",
+        "publishedDate": "2026-09-13"
+      },
+      {
+        "label": "냥펀치 · 20260912 씨야 20주년 대구 콘서트 남규리 직캠 - 그럼에도 우린",
+        "url": "https://www.youtube.com/watch?v=OvWpYkTR3lQ",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "냥펀치 · 20260912 씨야 20주년 대구 콘서트 남규리 직캠 - 구두III",
+        "url": "https://www.youtube.com/watch?v=xSDJnyHq7xs",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "냥펀치 · 20260912 씨야 20주년 대구 콘서트 남규리 직캠 - 슬픈 발걸음 (구두 II)",
+        "url": "https://www.youtube.com/watch?v=t1kB8JK0tEQ",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "냥펀치 · 20260912 씨야 20주년 대구 콘서트 남규리 직캠 - 구두",
+        "url": "https://www.youtube.com/watch?v=vjtG160YC2w",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "김연지 팬채널 · 씨야 20주년 전국 투어 콘서트 THE FAN 대구_ 혼자서 가보기",
+        "url": "https://www.youtube.com/watch?v=qu_377cVK9k",
+        "publishedDate": "2026-09-13"
+      },
+      {
+        "label": "온음 · [씨야20주년 대구] 🇸 🇪 🇪 🇾 🇦 / 🅢🅣🅐🅨 / 남규리",
+        "url": "https://www.youtube.com/watch?v=LaAVPG6nwWQ",
+        "publishedDate": "2026-09-14"
+      },
+      {
+        "label": "온음 · [씨야20주년 대구] 봄처럼 그댄 | 남규리",
+        "url": "https://www.youtube.com/watch?v=rnLHhhVyOZU",
+        "publishedDate": "2026-09-19"
+      },
+      {
+        "label": "린스튜브(๑˘ ³˘)ᰍᩚ · #씨야",
+        "url": "https://www.youtube.com/watch?v=LIDmr0KU95I",
+        "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "린스튜브(๑˘ ³˘)ᰍᩚ · 3시간반동안 너무 조아따😊👋🏻💗✨ 다음에 또 가야지~~~🙌🏻",
+        "url": "https://www.youtube.com/watch?v=PY4Ua6WCam8",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "김연지 팬채널 · 내 카메라에 찍혀서 보게 된",
+        "url": "https://www.youtube.com/watch?v=TYgXMNWLR4M",
+        "publishedDate": "2026-09-28"
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-10-02T16:05:03.756593+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -2626,6 +2832,16 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%8A%A4%EC%BC%80%EC%A4%84%ED%91%9C%27%21A13%3AF13"
+      },
+      {
+        "label": "김연지 팬채널 · 26.9.10. 축하무대. 신곡 [노래]",
+        "url": "https://www.youtube.com/watch?v=64zt6v2ZuGc",
+        "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "kyunphg · 저질 음향을 뚫고 나오는 김연지의 보컬 - 박카스 영화제 축하무대",
+        "url": "https://www.youtube.com/watch?v=XfnOf_Z52EQ",
+        "publishedDate": "2026-09-10"
       }
     ],
     "status": "available",
@@ -2635,7 +2851,7 @@
     ],
     "note": "김연지가 제13회 박카스 29초 영화제 시상식에서 선보인 축하무대입니다.",
     "venue": "한국경제신문사 다산홀",
-    "updatedAt": "2026-09-13"
+    "updatedAt": "2026-10-02T15:36:46.138974+00:00"
   },
   {
     "id": "v475-sheet1-row11",
@@ -2845,7 +3061,13 @@
       "url": "https://www.youtube.com/watch?v=2FBZ9Vib3Lw",
       "publishedDate": "2026-09-06"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "동원대학교 실용음악과 공식 채널 · 남규리 뮤직비디오 촬영 현장 비하인드",
+        "url": "https://www.youtube.com/watch?v=P0ge8dyD_UQ",
+        "publishedDate": "2026-09-11"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -2855,7 +3077,8 @@
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
     "publishedDate": "2026-09-06",
-    "episode": 61
+    "episode": 61,
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v475-sheet1-row8",
@@ -3075,8 +3298,159 @@
       {
         "label": "ㄱㅇㅇ",
         "url": "https://www.youtube.com/watch?v=rcAWYmSx-CE"
+      },
+      {
+        "label": "유튜봬 · 260905 씨야 눈물의 퇴장 부산콘서트",
+        "url": "https://www.youtube.com/watch?v=f8esxtciHUk",
+        "publishedDate": "2026-09-05"
+      },
+      {
+        "label": "유튜봬 · 260905 씨야 20주년 부산콘서트ㅡ그래도 좋아 (원곡ver)",
+        "url": "https://www.youtube.com/watch?v=IhDvLxhlYZY",
+        "publishedDate": "2026-09-05"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 이보람(F) 슬픈발걸음(구두Ⅱ) 직캠",
+        "url": "https://www.youtube.com/watch?v=wuvoiU9ExHY",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 스테이 응원 직캠",
+        "url": "https://www.youtube.com/watch?v=p3w6SFsOOX8",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 미사노 직캠",
+        "url": "https://www.youtube.com/watch?v=NYGA7WJoHZQ",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 미사노 직캠",
+        "url": "https://www.youtube.com/watch?v=EyEriLWxebY",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 여인의향기 직캠",
+        "url": "https://www.youtube.com/watch?v=GrfoGzmb-pI",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 스테이 직캠",
+        "url": "https://www.youtube.com/watch?v=UYsBWYSR1sc",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 미사노 직캠",
+        "url": "https://www.youtube.com/watch?v=-QCl4zdwSPs",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 남규리(F) 슬픈발걸음(구두Ⅱ) 직캠",
+        "url": "https://www.youtube.com/watch?v=YsAbrc4VzFg",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 남규리(F) 안돼요 직캠",
+        "url": "https://www.youtube.com/watch?v=NzUetDfygPU",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 여인의향기 직캠",
+        "url": "https://www.youtube.com/watch?v=l23juMuOZtg",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 남규리 퇴근길 직캠",
+        "url": "https://www.youtube.com/watch?v=wENVIamsUdQ",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 김연지(F) 안돼요 직캠",
+        "url": "https://www.youtube.com/watch?v=CMFkmk828L8",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "ㄱㅇㅇ · 260905 [부산] 2026 씨야 20주년 전국 투어 콘서트 : THE FAN / 여인의 향기 / KBS부산홀",
+        "url": "https://www.youtube.com/watch?v=p7QBqArs4Ik",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 게스트 순순희 붉은노을 직캠",
+        "url": "https://www.youtube.com/watch?v=R3I86vmQANE",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 안돼요 직캠",
+        "url": "https://www.youtube.com/watch?v=JQSLSlcp0b4",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 남규리(F) 슬픈발걸음(구두Ⅱ) 직캠",
+        "url": "https://www.youtube.com/watch?v=mREYEnn8lm4",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · [4K]260905 씨야 부산 콘서트 IBelieve 직캠",
+        "url": "https://www.youtube.com/watch?v=W0v8D5-_KK8",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "투카로그 · 260905 이보람 앵콜 직캠",
+        "url": "https://www.youtube.com/watch?v=1jvl_NJeWgU",
+        "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "투카로그 · 260905 남규리 이보람 꽁냥 직캠",
+        "url": "https://www.youtube.com/watch?v=EWgWnC_G_vI",
+        "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "투카로그 · 260905 김연지 앵콜 직캠",
+        "url": "https://www.youtube.com/watch?v=Mrfb1IwxkGg",
+        "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "투카로그 · 260905 남규리 그래도좋아 씨야 부산 콘서트 직캠",
+        "url": "https://www.youtube.com/watch?v=OVuyuTnHpV8",
+        "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "투카로그 · 260905 김연지 그래도좋아 씨야 부산 콘서트 직캠",
+        "url": "https://www.youtube.com/watch?v=LERl4N7h5jk",
+        "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "꽁 · 그 사람 보람 focus",
+        "url": "https://www.youtube.com/watch?v=JbvtjMH75Z4",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/전국투어콘서트/부산] 부산, 살아있네_여술이야",
+        "url": "https://www.youtube.com/watch?v=QZMV3ybmpDc",
+        "publishedDate": "2026-09-07"
+      },
+      {
+        "label": "제리제이 Jerry.j · 콘서트에서도 이어지는 미사노 드라마 | 씨야 - 미친 사랑의 노래 | 씨야 20주년 전국 투어 콘서트 in 부산",
+        "url": "https://www.youtube.com/watch?v=pPnqms-YPNU",
+        "publishedDate": "2026-09-08"
+      },
+      {
+        "label": "람보사랑 · (부산콘 260905) 달려갑니다 딱!!! 기다리쇼",
+        "url": "https://www.youtube.com/watch?v=SehVfjzOO2A",
+        "publishedDate": "2026-09-21"
+      },
+      {
+        "label": "람보사랑 · (부산콘 260905) 신나서 날아가는 막냉이 보람👍😆",
+        "url": "https://www.youtube.com/watch?v=d_JIdF4em58",
+        "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "람보사랑 · 나는 너를 믿어",
+        "url": "https://www.youtube.com/watch?v=MJSzclQZGZY",
+        "publishedDate": "2026-09-30"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v475-sheet1-row5",
@@ -3224,9 +3598,515 @@
       {
         "label": "햄햄햄",
         "url": "https://www.youtube.com/watch?v=6iaakC-HNbU"
+      },
+      {
+        "label": "콘서트 직촬 · 260829 씨야 20주년 전국 투어 콘서트 THEFAN - 서울 씨야Seeya 그 놈 목소리",
+        "url": "https://www.youtube.com/watch?v=Ye8BWrWrrjc",
+        "publishedDate": "2026-08-29"
+      },
+      {
+        "label": "콘서트 직촬 · 260829 씨야 20주년 전국 투어 콘서트 THEFAN - 서울 씨야 seeya 미친 사랑의 노래",
+        "url": "https://www.youtube.com/watch?v=aUgrSPiQGrc",
+        "publishedDate": "2026-08-29"
+      },
+      {
+        "label": "콘서트 직촬 · 260829 씨야 20주년 전국 투어 콘서트 THEFAN 서울 씨야 Seeya - Stay",
+        "url": "https://www.youtube.com/watch?v=WisU1NZP30Q",
+        "publishedDate": "2026-08-29"
+      },
+      {
+        "label": "DodongFancam도동직캠 · [4K]씨야 SEEYA - 그럼에도 우린 (Fancam│2026.08.29 경희대 평화의전당 2026 씨야 20주년 전국 투어 콘서트 : THE FAN)",
+        "url": "https://www.youtube.com/watch?v=odBfzf4nWmk",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "서동렬 · 20260829 씨야 콘서트! 씨야 - 사랑의 인사 LIVE",
+        "url": "https://www.youtube.com/watch?v=kamGuV3-d3A",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "DodongFancam도동직캠 · [4K]씨야 SEEYA - 구두 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+        "url": "https://www.youtube.com/watch?v=lfzqNs5rt74",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "DodongFancam도동직캠 · [4K]씨야 SEEYA - 여인의향기 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+        "url": "https://www.youtube.com/watch?v=-Q2TckgxZdY",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "투카로그 · [4K]260829 씨야 서울 콘서트 그럼에도우린 앵콜 직캠",
+        "url": "https://www.youtube.com/watch?v=DeamQEYalwQ",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "타갓 · 260829 씨야 - 우리(2026 씨야 콘서트 The Fan in 서울)",
+        "url": "https://www.youtube.com/watch?v=lp2dlQ5NOlQ",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "RainTiger · [4k]구두-씨야(20260829 씨야20주년콘서트 The fan)",
+        "url": "https://www.youtube.com/watch?v=H7J_TyQDFGQ",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "DodongFancam도동직캠 · [4K]씨야 SEEYA - 미친사랑의노래 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+        "url": "https://www.youtube.com/watch?v=Qo4F9YKHoTE",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "타갓 · 260829 씨야 - 그럼에도 우린(2026 씨야 콘서트 The Fan in 서울 앵콜)",
+        "url": "https://www.youtube.com/watch?v=OJLvi34BDjI",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "투카로그 · [4K]260829 씨야 서울 콘서트 미워요 직캠",
+        "url": "https://www.youtube.com/watch?v=WqW260B4alM",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "Serendipity0202 · 260830 씨야 콘서트 - 남규리 Break Dance",
+        "url": "https://www.youtube.com/watch?v=jYXs8LYpMEk",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "투카로그 · [4K]260829 씨야 서울 콘서트 그놈목소리 직캠",
+        "url": "https://www.youtube.com/watch?v=AjIjxB1hquc",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "DodongFancam도동직캠 · [4K]씨야 SEEYA - Stay Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+        "url": "https://www.youtube.com/watch?v=lcAtwe3PDA8",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "타갓 · 260829 씨야 - 그 놈 목소리(2026 씨야 콘서트 The Fan in 서울)",
+        "url": "https://www.youtube.com/watch?v=CnkCezubxU8",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "투카로그 · [4K]260829 씨야 서울 콘서트 미워요 직캠",
+        "url": "https://www.youtube.com/watch?v=loNybbaoJnw",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "콘서트 직촬 · 260829",
+        "url": "https://www.youtube.com/watch?v=Kl88EVj5aZI",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "늦덕보람 · 내겐 너무 멋진 그대 - 씨야 (남규리, 김연지, 이보람) | THE FAN 서울 콘서트 (26.08.30)",
+        "url": "https://www.youtube.com/watch?v=BV0QlRYfU5g",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "DodongFancam도동직캠 · [4K]씨야 SEEYA - 계절은 돌고 돌아 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+        "url": "https://www.youtube.com/watch?v=5NHQjIoadto",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "JicCam H. · [4K]260830 씨야 (SeeYA) - 20주년 콘서트 사랑의인사 남규리 세로직캠 by.JicCam H",
+        "url": "https://www.youtube.com/watch?v=04T4eoh8kjU",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "Full of Troves · 20260830 씨야 (SEEYA) - 미워요 @ 20주년 전국 투어 콘서트 : THE FAN - 서울",
+        "url": "https://www.youtube.com/watch?v=NHBBaxlg5OU",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "Full of Troves · 20260830 씨야 (SEEYA) - 구두 @ 20주년 전국 투어 콘서트 : THE FAN - 서울",
+        "url": "https://www.youtube.com/watch?v=xg0WrLFWAic",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · [4K]260830 씨야 서울 콘서트 남규리 파트 미워요 직캠",
+        "url": "https://www.youtube.com/watch?v=CYg3Vu5sNWk",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "Full of Troves · 20260830 씨야 (SEEYA) - 여인의 향기 @ 20주년 전국 투어 콘서트 : THE FAN - 서울",
+        "url": "https://www.youtube.com/watch?v=K1_-NqSswIM",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · [4K]260830 씨야 서울 콘서트 이보람(F) 댄스 직캠",
+        "url": "https://www.youtube.com/watch?v=i2oC2oJqBWA",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · [4K]260829 씨야 콘서트 김기태 그날들 직캠",
+        "url": "https://www.youtube.com/watch?v=30YE-K8uwW0",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 29 여인의 향기 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=8-h7jOBlDKE",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "칡 · 260830 씨야(SEEYA) 20주년 콘서트 THE FAN 이보람-빛의반대편에서 직캠",
+        "url": "https://www.youtube.com/watch?v=48PFkAkaW6g",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · [4K]260829 씨야 콘서트 김기태 인연 직캠",
+        "url": "https://www.youtube.com/watch?v=fHsUEmH-Eh8",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · 260830 씨야 콘서트 이진성 가을안부 직캠",
+        "url": "https://www.youtube.com/watch?v=gyMQ0-H60vE",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · [4K]260830 씨야 서울 콘서트 이보람(F)결혼할까요 직캠",
+        "url": "https://www.youtube.com/watch?v=8-Fbc3YLTF0",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · [4K]260830 씨야 서울 콘서트 핫걸 직캠",
+        "url": "https://www.youtube.com/watch?v=xBfC4ZfiBsQ",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · [4K]260830 씨야 서울 콘서트 앵콜 라라라 직캠",
+        "url": "https://www.youtube.com/watch?v=8Lwte6Dwdfo",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · [4K]260830 씨야 서울 콘서트 남규리(F) 댄스 직캠",
+        "url": "https://www.youtube.com/watch?v=I4RSzAsmm9o",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "DodongFancam도동직캠 · [4K]씨야 SEEYA - 안돼요 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+        "url": "https://www.youtube.com/watch?v=AkYPQGlXMw0",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야(SEEYA) 개인 솔로 곡 직캠, 260830 씨야 20주년 전국 투어 콘서트 : The Fan",
+        "url": "https://www.youtube.com/watch?v=wJwUORURzh8",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 29 내겐 너무 멋진 그대 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=3gVP3z3Hx34",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "DodongFancam도동직캠 · [4K]씨야 SEEYA - 우리 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+        "url": "https://www.youtube.com/watch?v=WCnPZsFWVB4",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "DodongFancam도동직캠 · [4K]씨야 SEEYA - 잔향 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+        "url": "https://www.youtube.com/watch?v=-IZThtAE7Q8",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "투카로그 · [4K]260830 씨야 서울 콘서트 댄스 직캠",
+        "url": "https://www.youtube.com/watch?v=op404FqT3Ts",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 29 계절은 돌고 돌아 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=N_timT6DrMI",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 30 내겐 너무 멋진 그대 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=cccoXzxFEuE",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 29 그 놈 목소리 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=bH1f0R5aVBk",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "타갓 · 260830 김연지 - 노래 일부(씨야 콘서트 The Fan in 서울)",
+        "url": "https://www.youtube.com/watch?v=T5frb43Q2GQ",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 30 우리 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=vvTkoBlOcLc",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 30 봄처럼 그댄 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=YARxeNJevFc",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 30 그럼에도 우린 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=cu5PnRP-Vko",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 29 우리 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=dQiemZVbnoQ",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 30 미친 사랑의 노래 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=Wg464ZmfPCc",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 30 잔향 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=EpcTkfHetws",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "서동렬 · 20260829 씨야 콘서트! 씨야 - 그놈 목소리 LIVE",
+        "url": "https://www.youtube.com/watch?v=O2Pqj68ZWRU",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 30 계절은 돌고 돌아 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=Qn-TlAP2_jI",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 30 예술이야 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=aqtto44sdwQ",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "햄햄햄 · 2026 08 29 그럼에도 우린 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "url": "https://www.youtube.com/watch?v=77WEyF5c6Bw",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "늦덕보람 · [신곡] 노래 - 김연지 | 씨야 전국 투어 콘서트: THE FAN (서울: 26.08.30) | 8.29 발매",
+        "url": "https://www.youtube.com/watch?v=Mtcmv2zd_NY",
+        "publishedDate": "2026-09-03"
+      },
+      {
+        "label": "늦덕보람 · 봄처럼 그댄 - 씨야 (남규리, 김연지, 이보람) | 전국 투어 콘서트: THE FAN (서울: 26.08.30)",
+        "url": "https://www.youtube.com/watch?v=0LBx_r_z5DA",
+        "publishedDate": "2026-09-05"
+      },
+      {
+        "label": "MYaesPANDA · 260829: 씨야(SEEYA)-구두(김연지 직캠) / THE FAN Concert in Seoul",
+        "url": "https://www.youtube.com/watch?v=5TXh4CppLeE",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "늦덕보람 · [신곡] 우리 사랑 그런 거 해요 Part.1 - 남규리 | 씨야 전국 투어 콘서트: THE FAN (서울: '26.08.30) | '26.09.06 발매",
+        "url": "https://www.youtube.com/watch?v=cQyW2jv0rZ0",
+        "publishedDate": "2026-09-07"
+      },
+      {
+        "label": "냥펀치 · 20260830 씨야 데뷔 20주년 서울 콘서트 남규리 - stay",
+        "url": "https://www.youtube.com/watch?v=9kiDPyRFCeE",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "냥펀치 · 20260830 씨야 데뷔 20주년 서울 콘서트 김연지 - I Believe",
+        "url": "https://www.youtube.com/watch?v=Y-dvjgj3sCs",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "냥펀치 · 20260830 씨야 데뷔 20주년 서울 콘서트 남규리 직캠 - 미친 사랑의 노래",
+        "url": "https://www.youtube.com/watch?v=tBaMS-UFJU4",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "냥펀치 · 20260830 씨야 데뷔 20주년 서울 콘서트 남규리 직캠 - 안돼요",
+        "url": "https://www.youtube.com/watch?v=COc8iG2N7Jc",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "냥펀치 · 20260830 씨야 데뷔 20주년 서울 콘서트 남규리 - I Believe",
+        "url": "https://www.youtube.com/watch?v=EXNheFJHMho",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "냥펀치 · 20260830 씨야 데뷔 20주년 서울 콘서트 남규리 직캠 - 그럼에도 우린",
+        "url": "https://www.youtube.com/watch?v=xc3CCwHneaI",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 - 계절은 돌고 돌아 (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+        "url": "https://www.youtube.com/watch?v=gzREIVyybZk",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 20주년 축하 케익 (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+        "url": "https://www.youtube.com/watch?v=0s_Kbe98NTQ",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 남규리 - 마이귤잭슨 댄스 (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+        "url": "https://www.youtube.com/watch?v=b4KPJdIDcHc",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 - 그래도 좋아 (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+        "url": "https://www.youtube.com/watch?v=a41Mj9c54mQ",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/전국투어콘서트/서울] 게스트_김용준 (2026.08.30)",
+        "url": "https://www.youtube.com/watch?v=CDHyBKweUaM",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 - 봄처럼 그댄 (260830 씨야 단독콘서트 'THE FAN' 서울) 2일차",
+        "url": "https://www.youtube.com/watch?v=EH5yI0CiUkw",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 - 인사 (260830 씨야 단독콘서트 'THE FAN' 서울) 2일차",
+        "url": "https://www.youtube.com/watch?v=_YvfVlWmN30",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 - Stay (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+        "url": "https://www.youtube.com/watch?v=-x4uu2wFNpA",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 - 내겐 너무 멋진 그대 (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+        "url": "https://www.youtube.com/watch?v=aOkVYoQF5u8",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 김연지 솔로곡 신곡 한소절 (260830 씨야 단독콘서트 'THE FAN' 서울) 2일차",
+        "url": "https://www.youtube.com/watch?v=f_QojmyBVpA",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 - I Believe (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+        "url": "https://www.youtube.com/watch?v=h33N3mSNOKs",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 - Hot girl (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+        "url": "https://www.youtube.com/watch?v=-Qi0M770Gio",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 씨야 - 미워요 (260830 씨야 단독콘서트 'THE FAN' 서울) 2일차",
+        "url": "https://www.youtube.com/watch?v=ABXpzoDyer0",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/전국투어콘서트/서울] 게스트_김기태 (2026.08.29)",
+        "url": "https://www.youtube.com/watch?v=Y6swsu_2xf0",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "감미로운 음악생활 · 남규리 솔로곡 신곡 한소절 - 우리 사랑, 그런거 해요 (260830 씨야 단독콘서트 'THE FAN' 서울) 2일차",
+        "url": "https://www.youtube.com/watch?v=HJqyEfQYlc0",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "람보사랑 · #sg워너비",
+        "url": "https://www.youtube.com/watch?v=v5MYfWd1cB0",
+        "publishedDate": "2026-10-01"
+      },
+      {
+        "label": "투카로그 · [4K]20주년 씨야 서울 콘서트",
+        "url": "https://www.youtube.com/watch?v=q9rT6Ipc8ys",
+        "publishedDate": "2026-08-29"
+      },
+      {
+        "label": "🐿람보바라기 · 남규리와 함께 하는 그 놈 목소리",
+        "url": "https://www.youtube.com/watch?v=nXMmzoHpBEg",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "너에게기대어 · [4K]260830 씨야(See Ya) 내겐 너무 멋진 그대",
+        "url": "https://www.youtube.com/watch?v=KsubkjfmqYc",
+        "publishedDate": "2026-08-30"
+      },
+      {
+        "label": "너에게기대어 · [4K]260830 씨야(See Ya) 라라라(원곡 가수:SG워너비)",
+        "url": "https://www.youtube.com/watch?v=o1jYBL6nSbg",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "너에게기대어 · [4K]260830 씨야(See Ya) 미친 사랑의 노래",
+        "url": "https://www.youtube.com/watch?v=K9vISZBo8F0",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "꽁 · 얘네 또 꽁냥꽁냥해! 🤣",
+        "url": "https://www.youtube.com/watch?v=UBQ5YhlprLE",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "꽁 · 이젠 울지 않고 부를 수 있는 노래",
+        "url": "https://www.youtube.com/watch?v=7rF-30gSKI4",
+        "publishedDate": "2026-08-31"
+      },
+      {
+        "label": "꽁 · 김연지 자작곡 노래 😭",
+        "url": "https://www.youtube.com/watch?v=2uHZNrk4gEU",
+        "publishedDate": "2026-09-01"
+      },
+      {
+        "label": "땅콩크림샌드 · [이보람/전국투어콘서트/서울] 씨야클럽 댄스 메들리_뛰어뛰어",
+        "url": "https://www.youtube.com/watch?v=Q_ARDA-zqPw",
+        "publishedDate": "2026-09-03"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/직캠] 안돼요_씨야 20주년 전국투어 콘서트 in 서울",
+        "url": "https://www.youtube.com/watch?v=2A5I8sehUiM",
+        "publishedDate": "2026-09-05"
+      },
+      {
+        "label": "시카리오TV · 씨야20주년서울콘서트",
+        "url": "https://www.youtube.com/watch?v=KC6gIr4n5GM",
+        "publishedDate": "2026-09-05"
+      },
+      {
+        "label": "시카리오TV · 씨야20주년서울콘서트",
+        "url": "https://www.youtube.com/watch?v=QI_IP1uK7Mw",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "시카리오TV · 씨야20주년서울콘서트",
+        "url": "https://www.youtube.com/watch?v=3W5gJ_7me58",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/전국투어콘서트/서울] 이보람_빛의 반대편에서",
+        "url": "https://www.youtube.com/watch?v=6rAmeZDIER0",
+        "publishedDate": "2026-09-07"
+      },
+      {
+        "label": "시카리오TV · 씨야20주년서울콘서트",
+        "url": "https://www.youtube.com/watch?v=epd-C6zAs_0",
+        "publishedDate": "2026-09-07"
+      },
+      {
+        "label": "시카리오TV · 씨야20주년서울콘서트",
+        "url": "https://www.youtube.com/watch?v=-dnW9ATKr1E",
+        "publishedDate": "2026-09-08"
+      },
+      {
+        "label": "시카리오TV · 씨야20주년서울콘서트",
+        "url": "https://www.youtube.com/watch?v=Oymncr-CuZ4",
+        "publishedDate": "2026-09-17"
+      },
+      {
+        "label": "보람비타 · 김용준이 부르는 ‘내가 너를’🎤",
+        "url": "https://www.youtube.com/watch?v=J9xMlOKtVoQ",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/전국투어콘서트/서울] 내맘대로 브이로그 in 경희대 평화의 전당",
+        "url": "https://www.youtube.com/watch?v=1szbTOgZSNI",
+        "publishedDate": "2026-09-27"
       }
     ],
-    "endDate": "2026-08-30"
+    "endDate": "2026-08-30",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v492-sVhd4C_aeKM",
@@ -3359,8 +4239,19 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A76%3AF76"
+      },
+      {
+        "label": "JDK · 260827 KWDA 2026 - 씨야 : Stay 스테이 남규리 직캠",
+        "url": "https://www.youtube.com/watch?v=UDRoJbm1dSY",
+        "publishedDate": "2026-08-28"
+      },
+      {
+        "label": "오프 영상업로드YCH · Stay - 씨야(SEEYA) 2026 KWDA 시상식 케이 월드 드림 어워즈 [260827]",
+        "url": "https://www.youtube.com/watch?v=bnwUbsaHAS4",
+        "publishedDate": "2026-08-28"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v488-audit-011",
@@ -3529,6 +4420,21 @@
       {
         "label": "이보람 공식 인스타그램 · 소풍 비하인드",
         "url": "https://www.instagram.com/p/Ddaay0Ik1da/"
+      },
+      {
+        "label": "강북문화재단 · 씨야 - 봄처럼 그댄 (원곡: 씨야) l 피크닉 라이브 소풍",
+        "url": "https://www.youtube.com/watch?v=exDhARrM4Pg",
+        "publishedDate": "2026-10-02"
+      },
+      {
+        "label": "강북문화재단 · 씨야 -사랑의 인사 (원곡: 씨야) l 피크닉 라이브 소풍",
+        "url": "https://www.youtube.com/watch?v=v_RwxsctzrQ",
+        "publishedDate": "2026-10-02"
+      },
+      {
+        "label": "강북문화재단 · 씨야 - stay (원곡: 씨야) l 피크닉 라이브 소풍",
+        "url": "https://www.youtube.com/watch?v=kNuqufOaBW8",
+        "publishedDate": "2026-10-02"
       }
     ],
     "status": "available",
@@ -3541,7 +4447,7 @@
     "episode": 150,
     "recordedDate": "2026-08-24",
     "publishedDate": "2026-09-12",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-10-02T16:02:20.017759+00:00"
   },
   {
     "id": "v488-audit-048",
@@ -3891,6 +4797,11 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A26%3AF26"
+      },
+      {
+        "label": "람보사랑 · 씨야(SEE YA) I’M KPOP 밀레니엄 콘서트(익산) 260808 직캠",
+        "url": "https://www.youtube.com/watch?v=HgVFZJs-k9k",
+        "publishedDate": "2026-09-27"
       }
     ],
     "status": "available",
@@ -3899,7 +4810,8 @@
       "일정 기록"
     ],
     "note": "",
-    "venue": "익산 원광대학교 문화체육관"
+    "venue": "익산 원광대학교 문화체육관",
+    "updatedAt": "2026-10-02T15:58:40.763371+00:00"
   },
   {
     "id": "v475-sheet2-row63",
@@ -4202,8 +5114,14 @@
       {
         "label": "iMBC연예",
         "url": "https://enews.imbc.com/News/ViewAmp/513650"
+      },
+      {
+        "label": "Mhz 므흐즈: MBC RADIO · [FULL] 라이브 온 에어🎙️이보람X흰과 함께하는 정오의 희망곡 라이브 |",
+        "url": "https://www.youtube.com/watch?v=d_NgiZyi6ZU",
+        "publishedDate": "2026-08-04"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v475-sheet2-row56",
@@ -4345,14 +5263,26 @@
       "label": "씨야 일정표",
       "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A53%3AF53"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "BAAMBC LIVE | 뱀비씨 라이브 · 씨야(SeeYa) - Stay ✨stay in the twilight✨ @2026 키마위크 다대포비치콘서트",
+        "url": "https://www.youtube.com/watch?v=8xHvh2ETk6c",
+        "publishedDate": "2026-09-14"
+      },
+      {
+        "label": "BAAMBC LIVE | 뱀비씨 라이브 · 씨야(SeeYa) - 미친 사랑의 노래 💦미친 가창력의 노래...💦 @2026 키마위크 다대포비치콘서트",
+        "url": "https://www.youtube.com/watch?v=r6pHhlmfchk",
+        "publishedDate": "2026-09-15"
+      }
+    ],
     "status": "documented",
     "tags": [
       "2026",
       "일정 기록"
     ],
     "note": "",
-    "venue": "부산 다대포해수욕장"
+    "venue": "부산 다대포해수욕장",
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00"
   },
   {
     "id": "v475-sheet2-row52",
@@ -4413,6 +5343,11 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A51%3AF51"
+      },
+      {
+        "label": "노빠꾸탁재훈 · 연락하기 시작한 씨야 멤버들",
+        "url": "https://www.youtube.com/watch?v=0mIXxAadyGw",
+        "publishedDate": "2026-07-30"
       }
     ],
     "status": "available",
@@ -4421,7 +5356,8 @@
       "variety"
     ],
     "note": "",
-    "publishedDate": "2026-07-29"
+    "publishedDate": "2026-07-29",
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v4145-_AbFDbCDAHI",
@@ -4784,14 +5720,31 @@
       "label": "팬 촬영 전체 무대",
       "url": "https://www.youtube.com/watch?v=xfY6TOljeOY"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "유튜브매니한 · 씨야 - STAY 이보람 직캠(2026송도 타임캡슐)",
+        "url": "https://www.youtube.com/watch?v=ZbmD00m2C58",
+        "publishedDate": "2026-07-12"
+      },
+      {
+        "label": "땅콩크림샌드 · [남규리/퇴근길] 2026년 타임캡슐 슈퍼콘서트 in 송도달빛축제공원",
+        "url": "https://www.youtube.com/watch?v=varHCghyhR0",
+        "publishedDate": "2026-07-13"
+      },
+      {
+        "label": "kim난나 · 씨야(남규리,김연지,이보람) 사랑의 인사 2026.7.11.",
+        "url": "https://www.youtube.com/watch?v=hNTYOX5kI9g",
+        "publishedDate": "2026-07-22"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
       "일정 기록"
     ],
     "note": "",
-    "venue": "송도달빛축제공원"
+    "venue": "송도달빛축제공원",
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v475-sheet2-row40",
@@ -5075,6 +6028,21 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A31%3AF31"
+      },
+      {
+        "label": "콜라티비(Cola TV) · 남규리 버스킹 (대구 룰리 버스킹)",
+        "url": "https://www.youtube.com/watch?v=0X2Hyoz7kxg",
+        "publishedDate": "2026-06-28"
+      },
+      {
+        "label": "강남매TV · [26.6.28] 대구 롤리커피 씨야 남규리 공연#해운대연인들#대구공연",
+        "url": "https://www.youtube.com/watch?v=1GXukV3Xt6c",
+        "publishedDate": "2026-06-29"
+      },
+      {
+        "label": "무대인사매니아 · 20260628씨야남규리 이동하는장면",
+        "url": "https://www.youtube.com/watch?v=OPwW4tbKf-E",
+        "publishedDate": "2026-07-24"
       }
     ],
     "status": "available",
@@ -5084,7 +6052,7 @@
     ],
     "note": "6월 28일 대구에서 진행한 남규리의 롤리버스킹입니다.",
     "venue": "롤리커피 가창점",
-    "updatedAt": "2026-09-13"
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v4145-dKVDn4pUiLc",
@@ -5347,6 +6315,11 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A34%3AF34"
+      },
+      {
+        "label": "람보사랑 · 씨야(SEE YA) 김포아라마린페스티벌 직캠 260620 어쿠스틱버전",
+        "url": "https://www.youtube.com/watch?v=3M_oZN3Hq2s",
+        "publishedDate": "2026-09-27"
       }
     ],
     "status": "documented",
@@ -5355,7 +6328,8 @@
       "일정 기록"
     ],
     "note": "김포 아리마린 페스티벌 출연입니다. SK BTV 싱투유 방송 일정은 7월 3일입니다.",
-    "venue": "마린스테이지"
+    "venue": "마린스테이지",
+    "updatedAt": "2026-10-02T15:58:40.763371+00:00"
   },
   {
     "id": "v475-sheet2-row23",
@@ -5467,8 +6441,19 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A20%3AF20"
+      },
+      {
+        "label": "Mnet K-POP · 'COMEBACK' SEEYA (씨야) - Stay",
+        "url": "https://www.youtube.com/watch?v=DzVxR_ALqV0",
+        "publishedDate": "2026-06-18"
+      },
+      {
+        "label": "🐿람보바라기 · 이보람 4K 직캠 |",
+        "url": "https://www.youtube.com/watch?v=2fTEnl0mILc",
+        "publishedDate": "2026-06-19"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v488-audit-006",
@@ -5524,6 +6509,56 @@
       {
         "label": "제이의 방",
         "url": "https://www.youtube.com/watch?v=fQhztPll5jY"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야 남규리가수 출근길하는장면",
+        "url": "https://www.youtube.com/watch?v=yh3XwzrDxZ0",
+        "publishedDate": "2026-06-17"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야남규리-미친사랑의 노래 뒤란콘서트",
+        "url": "https://www.youtube.com/watch?v=MJUPOdId9VM",
+        "publishedDate": "2026-06-19"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야이보람-미친사랑의 노래 뒤란콘서트",
+        "url": "https://www.youtube.com/watch?v=ac42bALQHrM",
+        "publishedDate": "2026-06-21"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야김연지-사랑의인사 뒤란콘서트",
+        "url": "https://www.youtube.com/watch?v=CaZRqdxgBNI",
+        "publishedDate": "2026-06-22"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야이보람-결혼할까요 뒤란콘서트",
+        "url": "https://www.youtube.com/watch?v=hxkZDFXgClU",
+        "publishedDate": "2026-07-15"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - Stay | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=aem8V7gzKOg",
+        "publishedDate": "2026-08-21"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - 미친 사랑의 노래(Crazy Love Song) | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=q7sojQdDRt8",
+        "publishedDate": "2026-08-21"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - 봄처럼 그댄(You, Like Spring) | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=vH8QBCYO0Yc",
+        "publishedDate": "2026-08-21"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - 결혼할까요(Shall We Marry) | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=9EA7eCtaZds",
+        "publishedDate": "2026-08-21"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - 사랑의 인사(Lovely Sweet Heart) | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=W33nIvIOkz0",
+        "publishedDate": "2026-08-21"
       }
     ],
     "status": "available",
@@ -5532,7 +6567,8 @@
       "일정 기록"
     ],
     "note": "6월 17일 녹화한 뒤란 무대입니다. 인터뷰는 8월 21일 방송됐습니다.",
-    "venue": "울산문화예술회관 야외공연장"
+    "venue": "울산문화예술회관 야외공연장",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v475-sheet2-row17",
@@ -5625,6 +6661,11 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A39%3AF39"
+      },
+      {
+        "label": "경상도남자 서울여자 · 씨야 이보람 : 강남 피크닉 콘서트",
+        "url": "https://www.youtube.com/watch?v=el52Z66HJMk",
+        "publishedDate": "2026-06-18"
       }
     ],
     "status": "documented",
@@ -5633,7 +6674,8 @@
       "일정 기록"
     ],
     "note": "강남 피크닉 콘서트 출연입니다. SBS 방송 일정은 7월 10일입니다.",
-    "venue": "한강공원 신사잠원지구 다목적운동장"
+    "venue": "한강공원 신사잠원지구 다목적운동장",
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v475-sheet2-row14",
@@ -5879,8 +6921,24 @@
       {
         "label": "KBS 레전드 케이팝",
         "url": "https://www.youtube.com/watch?v=whTAN8EeeB8"
+      },
+      {
+        "label": "KBS 레전드 케이팝 · 씨야 - 사랑의 인사 [열린 음악회/Open Concert] | KBS 260607 방송",
+        "url": "https://www.youtube.com/watch?v=7nKwMVlEvYg",
+        "publishedDate": "2026-06-07"
+      },
+      {
+        "label": "KBS 한국방송 · 다시 뭉치길 정말 잘했어😍 목소리 궁합 100점 만점 씨야 라이브",
+        "url": "https://www.youtube.com/watch?v=MJCWiDRM-qA",
+        "publishedDate": "2026-06-08"
+      },
+      {
+        "label": "KBS WORLD TV · SeeYa(씨야) - 미친 사랑의 노래 [Open Concert 열린음악회] KBS KOREA 260607",
+        "url": "https://www.youtube.com/watch?v=Oc6VHKr9MKo",
+        "publishedDate": "2026-06-15"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v475-sheet2-row7",
@@ -5979,6 +7037,11 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A6%3AF6"
+      },
+      {
+        "label": "KBS CoolFM · 씨야, 뮤비 주인공에 아이키 섭외한 이유 / [가비의 슈퍼라디오] I KBS 260605 방송",
+        "url": "https://www.youtube.com/watch?v=GJBbAp9AbGI",
+        "publishedDate": "2026-06-05"
       }
     ],
     "status": "available",
@@ -5986,7 +7049,8 @@
       "2026",
       "일정 기록"
     ],
-    "note": ""
+    "note": "",
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "20260605-seeya-powerfm-environment",
@@ -6143,7 +7207,20 @@
       "2026",
       "완전체"
     ],
-    "note": "씨야 완전체로 성남을 찾은 TV CHOSUN 방송입니다."
+    "note": "씨야 완전체로 성남을 찾은 TV CHOSUN 방송입니다.",
+    "additionalSources": [
+      {
+        "label": "TVCHOSUN LIFE · [#백반기행] 15년 만에 컴백한 환상의 하모니 씨야! 남규리, 이보람, 김연지 한 사람도 빠짐없이 다 잘 먹는 그룹 탄생? (TV CHOSUN 260531 방송)",
+        "url": "https://www.youtube.com/watch?v=8-F71B_u754",
+        "publishedDate": "2026-06-01"
+      },
+      {
+        "label": "TVCHOSUN - TV조선 · Again 2007 🎶씨야",
+        "url": "https://www.youtube.com/watch?v=U-nCjh3XWa8",
+        "publishedDate": "2026-07-08"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "20260530-seeya-immortal-songs",
@@ -6180,8 +7257,19 @@
       {
         "label": "KBS 레전드 케이팝",
         "url": "https://www.youtube.com/watch?v=lRZJ7ax22mw"
+      },
+      {
+        "label": "KBS 한국방송 · 아기다리고기다리던 씨야 완전체 무대 🤩 찰떡 헤메코에 완벽한 화음까지 제대로 ‘보여줄게’",
+        "url": "https://www.youtube.com/watch?v=aPjv9qVoQ7g",
+        "publishedDate": "2026-05-31"
+      },
+      {
+        "label": "KBS 한국방송 · 씨야가 장갑을 한 쪽만 착용한 이유",
+        "url": "https://www.youtube.com/watch?v=CHIdihkUiJI",
+        "publishedDate": "2026-05-31"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "20260529-kbs-the-seasons-stay",
@@ -6215,7 +7303,30 @@
       "완전체"
     ],
     "note": "재결합 후 KBS 음악 토크쇼 출연. 신곡 ‘Stay’와 대표곡 ‘사랑의 인사’를 선보였다.",
-    "stageKind": "라이브 음악프로그램"
+    "stageKind": "라이브 음악프로그램",
+    "additionalSources": [
+      {
+        "label": "KBS Kpop · 씨야 (SEEYA) - 사랑의 인사 [더 시즌즈-성시경의 고막남친] | KBS 260529 방송",
+        "url": "https://www.youtube.com/watch?v=0w_viJPsbOk",
+        "publishedDate": "2026-05-30"
+      },
+      {
+        "label": "KBS 한국방송 · 세월이 이렇게 흘렀는데 비주얼과 가창력 실화임? 😱 레전드 여성 보컬 그룹 씨야의 귀환",
+        "url": "https://www.youtube.com/watch?v=Sid-_FTuO4c",
+        "publishedDate": "2026-05-30"
+      },
+      {
+        "label": "KBS Kpop · 이보람 - 처음 그 자리에 (드라마 ＜풀하우스＞ OST) [더 시즌즈-성시경의 고막남친] | KBS 260529 방송",
+        "url": "https://www.youtube.com/watch?v=zWTxdwT2Gqo",
+        "publishedDate": "2026-05-30"
+      },
+      {
+        "label": "KBS WORLD Latino · SEEYA - Lovely Sweet Heart (The Seasons) | KBS WORLD TV 260612",
+        "url": "https://www.youtube.com/watch?v=WKW7zRWpkO8",
+        "publishedDate": "2026-06-16"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v474-stage-research-031",
@@ -6248,7 +7359,38 @@
       "label": "스튜디오 드리밍 [Dreaming]",
       "url": "https://www.youtube.com/watch?v=_RENYXAj3us"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · [선공개] 씨야와 SG워너비가 함께했던 숨겨진 명곡 '사랑하기 때문에 (With 먼데이 키즈)' | 먼키의 발자국 Live Clip",
+        "url": "https://www.youtube.com/watch?v=nNEXQIrYQWE",
+        "publishedDate": "2026-05-22"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 씨야의 메인보컬 김연지의 미친 가창력 ‘구두’ 라이브",
+        "url": "https://www.youtube.com/watch?v=wMMUiwwvSKs",
+        "publishedDate": "2026-05-29"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 남규리가 새롭게 소화한 ‘사랑의 인사 (2026)’",
+        "url": "https://www.youtube.com/watch?v=hkhJOjWU8pQ",
+        "publishedDate": "2026-05-30"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 여전한 클래스! 씨야의 데뷔곡 '여인의 향기' | 먼키의 발자국 Live Clip",
+        "url": "https://www.youtube.com/watch?v=Inm6NKDhcrw",
+        "publishedDate": "2026-06-01"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 씨야 노래 중 가장 극락이라는 보컬 파트",
+        "url": "https://www.youtube.com/watch?v=bh40JUOBdW0",
+        "publishedDate": "2026-06-03"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 역대급 환상의 화음으로 부른 씨야 라이브 모음 | 먼키의 발자국 Live Clip",
+        "url": "https://www.youtube.com/watch?v=VZcFQv8efTA",
+        "publishedDate": "2026-08-06"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
@@ -6259,7 +7401,8 @@
     "publishedDate": "2026-05-28",
     "collaborators": [
       "먼데이 키즈"
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v488-audit-005",
@@ -6329,8 +7472,34 @@
       {
         "label": "tvN STORY 티비엔 스토리 · 공식 영상",
         "url": "https://www.youtube.com/watch?v=8F9nFxTEPGc"
+      },
+      {
+        "label": "tvN STORY 티비엔 스토리 · 15년 만에 다시 뭉친",
+        "url": "https://www.youtube.com/watch?v=b8Qocg-vkfI",
+        "publishedDate": "2026-05-19"
+      },
+      {
+        "label": "디글 :Diggle · 1위 가수 씨야의 당시 금전 상황",
+        "url": "https://www.youtube.com/watch?v=BzSUvno6WAA",
+        "publishedDate": "2026-05-26"
+      },
+      {
+        "label": "tvN STORY 티비엔 스토리 · 1위였지만 돈은 없었어요💦 이제야 털어놓는 씨야의 해체와 불화설의 진실💥",
+        "url": "https://www.youtube.com/watch?v=XwnCKsqCNm4",
+        "publishedDate": "2026-05-26"
+      },
+      {
+        "label": "디글 클래식 :Diggle Classic · [#남겨서뭐하게] 씨야의 역대급 통목살 고추장구이 먹방🔥 15년 만에 다시 모일 수 있었던 재결합 비하인드까지🥲",
+        "url": "https://www.youtube.com/watch?v=D3s4uxd6sBg",
+        "publishedDate": "2026-05-26"
+      },
+      {
+        "label": "디글 클래식 :Diggle Classic · 얼굴 없는 가수가 될 뻔한 씨야?!",
+        "url": "https://www.youtube.com/watch?v=-wcs92h9Gps",
+        "publishedDate": "2026-05-26"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:21:52.177930+00:00"
   },
   {
     "id": "v4145-qMxYWkAXPXU",
@@ -6533,8 +7702,14 @@
       {
         "label": "뉴스엔(다음)",
         "url": "https://v.daum.net/v/GSff7enQWF?f=p"
+      },
+      {
+        "label": "KBS CoolFM · 세기의 대결 씨야 VS 효리수 / [박명수의 라디오쇼] | KBS 260518 방송",
+        "url": "https://www.youtube.com/watch?v=nezg6nWf9Sk",
+        "publishedDate": "2026-05-20"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:21:52.177930+00:00"
   },
   {
     "id": "v487-2026-007",
@@ -6563,6 +7738,21 @@
       {
         "label": "팬 촬영 무대",
         "url": "https://www.youtube.com/watch?v=uRwc_YV6200"
+      },
+      {
+        "label": "오늘도 씨야 · 260517 연세대 축제 리즈시절은 바로 오늘, 씨야가 돌아왔다",
+        "url": "https://www.youtube.com/watch?v=UoE8KrUWu_s",
+        "publishedDate": "2026-05-19"
+      },
+      {
+        "label": "오늘도 씨야 · 이거 진짜 실화냐 연세대 축제에서 씨야 완전체가 부르는 여성시대",
+        "url": "https://www.youtube.com/watch?v=vmckrCamsHM",
+        "publishedDate": "2026-05-22"
+      },
+      {
+        "label": "히지니의 덕질생활 · 260517 씨야 남규리 Stay 직캠",
+        "url": "https://www.youtube.com/watch?v=Xu-6cRrJEdw",
+        "publishedDate": "2026-05-29"
       }
     ],
     "status": "available",
@@ -6573,7 +7763,8 @@
     "note": "행사 날짜는 잠정입니다.",
     "dateStatus": "tentative",
     "dateBasis": "event",
-    "publishedDate": "2026-05-17"
+    "publishedDate": "2026-05-17",
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v4145-Ud_KJY1I1vQ",
@@ -6631,6 +7822,26 @@
       {
         "label": "성주군 공식 행사 프로그램",
         "url": "https://sj.go.kr/sjlife/page.do?mnu_uid=4493"
+      },
+      {
+        "label": "REC 축제직캠 · 이보람 (Lee Bo Ram) (씨야) - 결혼할까요 [4K] 라이브 무대! 20260516 / 2026성주참외축제 2일차 메인 무대!",
+        "url": "https://www.youtube.com/watch?v=yCb8T_EFahI",
+        "publishedDate": "2026-05-19"
+      },
+      {
+        "label": "REC 축제직캠 · 이보람 (Lee Bo Ram) (씨야) - 원더우먼 + 여성시대 [4K] 라이브 풀버전! 20260516 / 2026 성주참외축제 2일차 메인무대!",
+        "url": "https://www.youtube.com/watch?v=tpP8m0b4poY",
+        "publishedDate": "2026-05-20"
+      },
+      {
+        "label": "REC 축제직캠 · 이보람 (Lee Bo Ram) (씨야) - 당신을 위하여 [4K] 라이브! (원곡 : 더 크로스) 20260520 / 2026성주참외축제 2일차 무대!",
+        "url": "https://www.youtube.com/watch?v=2PpCS4G1OHw",
+        "publishedDate": "2026-05-20"
+      },
+      {
+        "label": "REC 축제직캠 · 이보람 (Lee Bo Ram) (씨야) - 사랑의 인사 [4K] 라이브 풀버전 (재 업로드) / 2026 성주참외축제 2일차 무대",
+        "url": "https://www.youtube.com/watch?v=28YoeJhJT74",
+        "publishedDate": "2026-05-20"
       }
     ],
     "status": "available",
@@ -6641,7 +7852,8 @@
     "note": "5월 16일 생명의 빛과 사랑 음악회 출연입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "publishedDate": "2026-05-20"
+    "publishedDate": "2026-05-20",
+    "updatedAt": "2026-10-02T15:21:52.177930+00:00"
   },
   {
     "id": "v487-2026-003",
@@ -6702,6 +7914,11 @@
       {
         "label": "🐿람보바라기 · 비공식 영상",
         "url": "https://www.youtube.com/watch?v=865kJn1zBeY"
+      },
+      {
+        "label": "유튜브매니한 · 씨야 더현대서울 팝업 방문 20260520",
+        "url": "https://www.youtube.com/watch?v=f7yeHaHBYrU",
+        "publishedDate": "2026-05-23"
       }
     ],
     "status": "documented",
@@ -6713,7 +7930,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "endDate": "2026-05-20",
-    "venue": "더현대 서울"
+    "venue": "더현대 서울",
+    "updatedAt": "2026-10-02T15:21:52.177930+00:00"
   },
   {
     "id": "20260514-first-again",
@@ -6766,7 +7984,15 @@
     "titleTracks": [
       "Stay",
       "봄처럼 그댄"
-    ]
+    ],
+    "additionalSources": [
+      {
+        "label": "SEEYA Official · 씨야 SEEYA - Stay Official MV (SEEYA Ver.)",
+        "url": "https://www.youtube.com/watch?v=I1zhkwIuZ0A",
+        "publishedDate": "2026-05-17"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:21:52.177930+00:00"
   },
   {
     "id": "v488-audit-003",
@@ -6944,7 +8170,20 @@
       "2026",
       "솔로"
     ],
-    "note": "만나서 안광입니다 특집 출연. 씨야 재결합 이야기를 다룬 MBC 공식 회차입니다."
+    "note": "만나서 안광입니다 특집 출연. 씨야 재결합 이야기를 다룬 MBC 공식 회차입니다.",
+    "additionalSources": [
+      {
+        "label": "MBCentertainment · [라디오스타] 세계 최고 번지부터 애벌레 먹방까지?🐛 남규리의 광기 서린 예능 시절, MBC 260506 방송",
+        "url": "https://www.youtube.com/watch?v=kgX7a53fyS4",
+        "publishedDate": "2026-05-06"
+      },
+      {
+        "label": "픽잇 :Pick it · [라디오스타] ＂왜 이제야 만났을까＂ 씨야 15년 만의 재결합 비하인드 썰 MBC260506방송",
+        "url": "https://www.youtube.com/watch?v=lKBk2og-_J0",
+        "publishedDate": "2026-05-07"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:21:52.177930+00:00"
   },
   {
     "id": "v488-audit-045",
@@ -6998,7 +8237,80 @@
       "솔로"
     ],
     "note": "이보람의 부산 단독 콘서트입니다.",
-    "venue": "영화의전당 하늘연극장"
+    "venue": "영화의전당 하늘연극장",
+    "additionalSources": [
+      {
+        "label": "꽁 · 4미터 짜리 부산 콘서트 홍보 현수막 등장!",
+        "url": "https://www.youtube.com/watch?v=Rlkelbg_fnI",
+        "publishedDate": "2026-03-22"
+      },
+      {
+        "label": "🐿람보바라기 · 2026.05.02(토) 오후6시🔸️이보람 단독 콘서트: SPARKLE -부산",
+        "url": "https://www.youtube.com/watch?v=6rma1tsxX9I",
+        "publishedDate": "2026-03-27"
+      },
+      {
+        "label": "공연1분 · 이보람 단독 콘서트",
+        "url": "https://www.youtube.com/watch?v=tUjFXoNScAE",
+        "publishedDate": "2026-04-01"
+      },
+      {
+        "label": "꽁 · 콘서트 끝인사와 함께 씨야 정규앨범 홍보하는 이보람",
+        "url": "https://www.youtube.com/watch?v=eP3vzVDeLUk",
+        "publishedDate": "2026-05-02"
+      },
+      {
+        "label": "유튜브매니한 · 이보람 - BANG BANG 댄스람 2탄 (SPARKLE 부산콘서트)",
+        "url": "https://www.youtube.com/watch?v=Pt4AWaGFVbM",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "유튜브매니한 · 이보람 - 너의키스를(SPARKLE 부산콘서트)",
+        "url": "https://www.youtube.com/watch?v=0kA3AZPQpyc",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "유튜브매니한 · 이보람 SPARKLE 부산 콘서트 - 핫걸티셔츠를 본 상무님의 반응🤣",
+        "url": "https://www.youtube.com/watch?v=phbG8nuCCP0",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "유튜브매니한 · 이보람 - BANG BANG 댄스람 1탄 (SPARKLE 부산콘서트)",
+        "url": "https://www.youtube.com/watch?v=RyhvggXV8Nc",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "제리제이 Jerry.j · 이보람(Lee Bo Ram) 콘서트 앵콜 직캠, 260502 이보람 단독 콘서트 : SPARKLE - 부산",
+        "url": "https://www.youtube.com/watch?v=m4fUxj29iZA",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "람보사랑 · [콘서트] 마🫵😍👏 살아있네 아이도르 이보람👍#bangbang 댄스",
+        "url": "https://www.youtube.com/watch?v=aN407M2i4Xg",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "꽁 · [260502 이보람 부산 콘서트] Blue Moon+Wonder Woman +그 놈 목소리",
+        "url": "https://www.youtube.com/watch?v=BiXdrqGUHb0",
+        "publishedDate": "2026-05-03"
+      },
+      {
+        "label": "🐿람보바라기 · 잘 생겼다 이.보.람 혼자 외쳤다😅 | 질풍가도",
+        "url": "https://www.youtube.com/watch?v=oq9w0nYpHyE",
+        "publishedDate": "2026-05-04"
+      },
+      {
+        "label": "꽁 · [260502 이보람 부산 콘서트] 퇴근길",
+        "url": "https://www.youtube.com/watch?v=HhYdOv7O8ME",
+        "publishedDate": "2026-05-05"
+      },
+      {
+        "label": "유튜브매니한 · 이보람 - 질풍가도(SPARKLE 부산콘서트)",
+        "url": "https://www.youtube.com/watch?v=ItGfLBQs2Sc",
+        "publishedDate": "2026-05-05"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:21:52.177930+00:00"
   },
   {
     "id": "v488-audit-038",
@@ -7021,6 +8333,11 @@
       {
         "label": "익산 서동축제 공식 안내",
         "url": "https://seodong.iksan.go.kr/main/inner.php?sMenu=A3000"
+      },
+      {
+        "label": "콘서트 직촬 · 260501 익산 서동축제 씨야 이보람 사랑의 인사",
+        "url": "https://www.youtube.com/watch?v=qAMNBgKaNZU",
+        "publishedDate": "2026-05-01"
       }
     ],
     "status": "available",
@@ -7031,7 +8348,8 @@
     "note": "익산 서동축제 개막 축하공연 출연입니다. 행사 날짜는 잠정입니다.",
     "dateStatus": "tentative",
     "dateBasis": "event",
-    "publishedDate": "2026-05-02"
+    "publishedDate": "2026-05-02",
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v488-audit-001",
@@ -7154,8 +8472,19 @@
       {
         "label": "MBC",
         "url": "https://playvod.imbc.com/Vod/VodPlay?broadcastId=1001919103451100000"
+      },
+      {
+        "label": "Mhz 므흐즈: MBC RADIO · 15년 만에 씨야 재결합, 먼저 제안한 사람은?",
+        "url": "https://www.youtube.com/watch?v=vvQFgkIgY6g",
+        "publishedDate": "2026-04-20"
+      },
+      {
+        "label": "Mhz 므흐즈: MBC RADIO · [하이라이트] 불화설 루머 뚫고! 15년 만에 재결합한 씨야✨ |",
+        "url": "https://www.youtube.com/watch?v=jKEZt9iRnXk",
+        "publishedDate": "2026-04-20"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "20260419-gyuri-love-greeting-2026",
@@ -7196,9 +8525,19 @@
         "label": "남규리의 귤멍 · 사랑의 인사 2026 티저 3",
         "url": "https://www.youtube.com/watch?v=UdgmRKp8A-M",
         "publishedDate": "2026-04-18"
+      },
+      {
+        "label": "남규리 Nam Gyu Ri · 남규리 - 사랑의 인사 2026 Teaser 2",
+        "url": "https://www.youtube.com/watch?v=aaMHWLCX15s",
+        "publishedDate": "2026-04-17"
+      },
+      {
+        "label": "SEEYA Official · #남규리 의 사랑의 인사 2026 with",
+        "url": "https://www.youtube.com/watch?v=QOxBzlWPFlc",
+        "publishedDate": "2026-04-20"
       }
     ],
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v4145-ctLA9ECbcoo",
@@ -7290,8 +8629,14 @@
       {
         "label": "JTBC News",
         "url": "https://www.youtube.com/watch?v=laNPFmayKhc"
+      },
+      {
+        "label": "JTBC News · [인터뷰] 그룹 '씨야' 15년 만에 완전체 재결합…팬들 향한 20년의 진심 / JTBC 뉴스룸",
+        "url": "https://www.youtube.com/watch?v=PIlWBr2bmtk",
+        "publishedDate": "2026-04-12"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v487-2026-010",
@@ -7310,7 +8655,13 @@
       "label": "MK스포츠 현장 사진",
       "url": "https://www.mk.co.kr/news/entertain/12021299"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "버거형 · 남규리도 줄서야 하는 남자...",
+        "url": "https://www.youtube.com/watch?v=8ZtOd4HjC6E",
+        "publishedDate": "2026-04-21"
+      }
+    ],
     "status": "documented",
     "tags": [
       "2026",
@@ -7318,7 +8669,8 @@
     ],
     "note": "4월 11일 포천에서 진행한 남규리의 버거형 콘텐츠 촬영입니다.",
     "dateStatus": "confirmed",
-    "dateBasis": "recording"
+    "dateBasis": "recording",
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v487-2026-006",
@@ -7405,7 +8757,18 @@
       "label": "땅콩크림샌드 · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=h5C7G_Qf5MQ"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "유튜브매니한 · 씨야 이보람님 부산 공연중 갑자기 니킥을???🤣",
+        "url": "https://www.youtube.com/watch?v=gJ5YRL3od38",
+        "publishedDate": "2026-04-12"
+      },
+      {
+        "label": "꽃길보라미 · 2026.04.08 이보람 -LIE(무반주)",
+        "url": "https://www.youtube.com/watch?v=Z79VsuywmYo",
+        "publishedDate": "2026-04-12"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -7415,7 +8778,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-04-17",
-    "venue": "부산"
+    "venue": "부산",
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v487-2026-002",
@@ -7436,7 +8800,13 @@
       "label": "유튜브하지영",
       "url": "https://www.youtube.com/watch?v=WJHC15dtMRc"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "유튜브하지영 · 남규리 \"소개팅 나갔는데 전남친 지인이었다😱?!\"",
+        "url": "https://www.youtube.com/watch?v=Dka82Y6_10A",
+        "publishedDate": "2026-04-10"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -7445,7 +8815,8 @@
     "note": "날짜는 영상 공개일이며 촬영일은 미상입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
-    "publishedDate": "2026-04-08"
+    "publishedDate": "2026-04-08",
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "v4145-evYuFOqyJys",
@@ -7532,6 +8903,11 @@
         "label": "갤러리 · 두 주 출연 자료 글",
         "url": "https://gall.dcinside.com/board/view/?id=seeya&no=187459",
         "publishedDate": "2020-03-16"
+      },
+      {
+        "label": "SBS 옛날 예능 - 빽능 · 너무 달달해서 이 썩을 것 같아요,,,",
+        "url": "https://www.youtube.com/watch?v=u9JgR3d6o6M",
+        "publishedDate": "2026-04-03"
       }
     ],
     "status": "available",
@@ -7540,7 +8916,7 @@
     ],
     "note": "남규리가 출연한 러브 체인지 38·39회 모음 영상입니다. 원방송일 미상으로 영상 게시일을 표시합니다.",
     "publishedDate": "2026-04-03",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-036",
@@ -7608,8 +8984,24 @@
       {
         "label": "SBS 4월 2일 방송 기록",
         "url": "https://podcasts.apple.com/kr/podcast/id419024758?i=1000758803126"
+      },
+      {
+        "label": "SBS Radio 에라오 · [LIVE] 씨야(SeeYa) - 사랑의 인사ㅣ두시탈출 컬투쇼",
+        "url": "https://www.youtube.com/watch?v=NC5uSxRT1fw",
+        "publishedDate": "2026-04-02"
+      },
+      {
+        "label": "SBS Radio 에라오 · [집방캠][4K] 씨야(See Ya) - 그럼에도, 우린 LIVE | 두시탈출 컬투쇼 | 260402",
+        "url": "https://www.youtube.com/watch?v=fQkEojdFwNQ",
+        "publishedDate": "2026-04-02"
+      },
+      {
+        "label": "SBS Radio 에라오 · 씨야의 웃픈 데뷔썰😂ㅣ두시탈출 컬투쇼",
+        "url": "https://www.youtube.com/watch?v=HVnrVEDHNAs",
+        "publishedDate": "2026-04-03"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-029",
@@ -7628,7 +9020,18 @@
       "label": "땅콩크림샌드 · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=-s6u3zlf6vw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.04.01 이보람-lie(무반주)",
+        "url": "https://www.youtube.com/watch?v=y-9tkFM_g_s",
+        "publishedDate": "2026-04-08"
+      },
+      {
+        "label": "꽃길보라미 · 2026.04.01 이보람-그런일은(무반주)",
+        "url": "https://www.youtube.com/watch?v=RM4SP2LmX-A",
+        "publishedDate": "2026-04-10"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -7638,7 +9041,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-04-08",
-    "venue": "원주"
+    "venue": "원주",
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "20260330-seeya-yonhap-interview",
@@ -7718,8 +9122,24 @@
       {
         "label": "그래도 좋아 · 현장 직캠 (정아선)",
         "url": "https://www.youtube.com/watch?v=QKNH-IrU78U"
+      },
+      {
+        "label": "정아선 · 씨야 - 미친 사랑의 노래 [260330 20주년 팬미팅]",
+        "url": "https://www.youtube.com/watch?v=bcjNO7IZMKQ",
+        "publishedDate": "2026-03-31"
+      },
+      {
+        "label": "THE IDOL × Nikon · [4K] 씨야(SeeYa) 「사랑의 인사」 가로 직캠 | SEEYA 첫 팬미팅 [RE:BLOOM]",
+        "url": "https://www.youtube.com/watch?v=63sCks2FLBI",
+        "publishedDate": "2026-04-03"
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야 재결합 첫 팬미팅 '씨야 - 미친 사랑의 노래'",
+        "url": "https://www.youtube.com/watch?v=IQnWX1YLDsQ",
+        "publishedDate": "2026-04-14"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:19:25.324955+00:00"
   },
   {
     "id": "20260330-nevertheless-we",
@@ -7762,7 +9182,15 @@
     "collaborators": [],
     "titleTracks": [
       "그럼에도, 우린"
-    ]
+    ],
+    "additionalSources": [
+      {
+        "label": "SEEYA Official · 씨야 SEEYA - 그럼에도 우린 Official MV",
+        "url": "https://www.youtube.com/watch?v=dmsw-tEenZ0",
+        "publishedDate": "2026-03-30"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-044",
@@ -7819,7 +9247,35 @@
       "2026",
       "완전체"
     ],
-    "note": "남규리의 집에 멤버들이 모여 데뷔 20주년과 활동 당시 이야기를 나눈 방송입니다."
+    "note": "남규리의 집에 멤버들이 모여 데뷔 20주년과 활동 당시 이야기를 나눈 방송입니다.",
+    "additionalSources": [
+      {
+        "label": "SBS Entertainment · [3월 29일 예고] ‘씨야’ 남규리, 이보람×김연지와 미처 하지 못한 20년 전 이야기",
+        "url": "https://www.youtube.com/watch?v=ZAu4PqzNDQA",
+        "publishedDate": "2026-03-22"
+      },
+      {
+        "label": "SBS Entertainment · “피부밖에 못한... ” 이보람×남규리, 메이크업 없이 데뷔 무대 치른 일화!",
+        "url": "https://www.youtube.com/watch?v=r0FGCxBoZ2c",
+        "publishedDate": "2026-03-29"
+      },
+      {
+        "label": "SBS Entertainment · [#습콕📌] 🎉(경)15년 만에 씨야 완전체 재결합(축)🎉 남규리X김연지X이보람의 솔직 심정 토크🎤",
+        "url": "https://www.youtube.com/watch?v=eNgu5XqplM8",
+        "publishedDate": "2026-03-30"
+      },
+      {
+        "label": "SBS Entertainment · 아침부터 삼겹살 먹는 게 동안 유지 비결",
+        "url": "https://www.youtube.com/watch?v=M9l4lXb8N5k",
+        "publishedDate": "2026-03-30"
+      },
+      {
+        "label": "SBS · [#습집🗂] 기다려준 팬들을 위해 돌아온 씨야🥹 20년 전 데뷔 무대부터 재결합까지의 이야기 | 미운 우리 새끼 | SBS",
+        "url": "https://www.youtube.com/watch?v=dX8EnaI2ZFo",
+        "publishedDate": "2026-03-30"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-028",
@@ -7867,7 +9323,13 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=bqbFGF1FdYY"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.03.22 이보람-LIE(무반주)",
+        "url": "https://www.youtube.com/watch?v=ghzwdCsDMDc",
+        "publishedDate": "2026-03-29"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -7877,7 +9339,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-03-23",
-    "venue": "순천"
+    "venue": "순천",
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v4145-HQQl-3OPp0U",
@@ -8048,7 +9511,13 @@
       "label": "소울직캠로그 · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=kTpKCqxLkTw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.03.11 이보람-연 (무반주)",
+        "url": "https://www.youtube.com/watch?v=bC8V4vjmDKQ",
+        "publishedDate": "2026-03-17"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8058,7 +9527,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-03-12",
-    "venue": "군산"
+    "venue": "군산",
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v4145-dfZxJIH4cCI",
@@ -8257,7 +9727,13 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=4x9iAhzKoZ8"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.02.14 이보람-미친 사랑의 노래(무반주)",
+        "url": "https://www.youtube.com/watch?v=fKzepBzS1a4",
+        "publishedDate": "2026-03-14"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8267,7 +9743,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-02-15",
-    "venue": "서산"
+    "venue": "서산",
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-020",
@@ -8522,7 +9999,13 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=Kt2gfsuHp7w"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.21 이보람-당신을 위하여(양주를위하여)",
+        "url": "https://www.youtube.com/watch?v=ZBiVJNS6g8U",
+        "publishedDate": "2026-02-24"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8532,7 +10015,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-22",
-    "venue": "양주"
+    "venue": "양주",
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v4145-g2YE1HfEDv0",
@@ -8643,7 +10127,43 @@
       "label": "Ksh Cam · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=lhZHpfEOWvU"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.08 이보람-당신을 위하여(대구를 위하여)",
+        "url": "https://www.youtube.com/watch?v=WHsm_JT-4Cs",
+        "publishedDate": "2026-01-26"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 대구공연 '사랑의 인사'",
+        "url": "https://www.youtube.com/watch?v=A25CuCtYR20",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 '여인의 향기'#대구공연#공연직캠",
+        "url": "https://www.youtube.com/watch?v=zrJ8QENuZf4",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 '여성시대'#대구공연#공연직캠",
+        "url": "https://www.youtube.com/watch?v=nFDt-xgfVRI",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 대구공연 '사랑의 인사'",
+        "url": "https://www.youtube.com/watch?v=gVyxLWPYwaA",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 대구공연 '처음 그자리에'#공연직캠",
+        "url": "https://www.youtube.com/watch?v=8SSXPNKEOR8",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 '원더우먼'#대구공연#공연직캠",
+        "url": "https://www.youtube.com/watch?v=nb9PG3Z1KPM",
+        "publishedDate": "2026-02-11"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8653,7 +10173,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-09",
-    "venue": ""
+    "venue": "",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v488-audit-014",
@@ -8672,7 +10193,13 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=-kB-QxB5QHw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.07 이보람-그런 일은(무반주)",
+        "url": "https://www.youtube.com/watch?v=uogbMHZhljQ",
+        "publishedDate": "2026-01-26"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8682,7 +10209,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-08",
-    "venue": "청주"
+    "venue": "청주",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v488-audit-031",
@@ -8758,7 +10286,13 @@
       "label": "람보사랑 · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=tLCxGteaccw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.04 이보람-미치게 그리워서(무반주)",
+        "url": "https://www.youtube.com/watch?v=NExpkvs1O54",
+        "publishedDate": "2026-01-13"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8768,7 +10302,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-05",
-    "venue": "세종"
+    "venue": "세종",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v487-2026-001",
@@ -8815,7 +10350,18 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=ZZOuA2qUI8g"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.03 이보람-don't cry (무반주)",
+        "url": "https://www.youtube.com/watch?v=obVN1zeLD64",
+        "publishedDate": "2026-01-12"
+      },
+      {
+        "label": "꽃길보라미 · 2026.01.03 이보람-유죄(무반주)",
+        "url": "https://www.youtube.com/watch?v=MdeKUFQHMQM",
+        "publishedDate": "2026-01-12"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8825,7 +10371,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-03",
-    "venue": "성남"
+    "venue": "성남",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v491-change-jinju",
@@ -9861,7 +11408,7 @@
     "id": "20251005-gyuri-gyulmung-ep15",
     "date": "2025-10-05",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-25",
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00",
     "title": "남규리 · 귤멍 Ep.15 · 추석 송편 만들기",
     "program": "남규리의 귤멍 Ep.15",
     "type": "official",
@@ -9876,7 +11423,13 @@
       "url": "https://www.youtube.com/watch?v=KNOasVMSYrU",
       "publishedDate": "2025-10-05"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "계절을견딘나무 · 좌충우돌. 남규리의 송편 만들기",
+        "url": "https://www.youtube.com/watch?v=bbcqWez74vM",
+        "publishedDate": "2026-09-25"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -11987,6 +13540,11 @@
         "label": "KBS · 잊지 말아요 가로 직캠",
         "url": "https://www.youtube.com/watch?v=HiYUYi92og4",
         "publishedDate": "2024-08-24"
+      },
+      {
+        "label": "김연지 Official · [VLOG] 김연지, 불후의 명곡 레전드 도전💛 | 왕중왕전 브이로그👑 (feat. DK 오빠)",
+        "url": "https://www.youtube.com/watch?v=r99O8h-lY40",
+        "publishedDate": "2025-04-29"
       }
     ],
     "status": "available",
@@ -11997,7 +13555,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v491-album-20665772",
@@ -12524,7 +14082,18 @@
       "label": "SBS Entertainment",
       "url": "https://www.youtube.com/watch?v=nnzrfxXrBkY"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "SBS · [선공개] '깜짝 고백' 씨야 남규리, 다시 노래할 수 있게 해준 한 사람 공개!",
+        "url": "https://www.youtube.com/watch?v=3giuZxLLNCQ",
+        "publishedDate": "2024-04-16"
+      },
+      {
+        "label": "SBS Entertainment · “이상한 얘기 자꾸 하잖아!!” 전현무, ‘맑눈광’ 남규리 몰이에 당황↗",
+        "url": "https://www.youtube.com/watch?v=-_tx4Xv9cug",
+        "publishedDate": "2024-04-16"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -12532,7 +14101,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v4145-if9HWsWUsDY",
@@ -12757,6 +14327,11 @@
         "url": "https://www.youtube.com/watch?v=9_A6jAJE5Pc",
         "publishedDate": "2024-03-09",
         "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j · 진심을 다해 노래하는 이보람의 표정 | SG워너비 ‘죄와 벌’ 부르며 울컥 | 불후의 명곡2 전설을 노래하다 | 이보람×안성훈 - 죄와 벌",
+        "url": "https://www.youtube.com/watch?v=6TTeoMvEy_k",
+        "publishedDate": "2024-03-10"
       }
     ],
     "status": "available",
@@ -12767,7 +14342,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-02T05:58:52.107410+00:00"
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v4145-Fr_7Lo_u8mI",
@@ -14656,7 +16231,13 @@
       "label": "엠뚜루마뚜루 : MBC 공식 종합 채널",
       "url": "https://www.youtube.com/watch?v=BZDU10mfFHI"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "MBCentertainment · [놀면 뭐하니?] 교생 선생님 실사판(?) 이보람 선생님의 등장 🌟 ＂교생들아 기 죽지 마라♬ 당당하게 외쳐라!♬＂, MBC 230415 방송",
+        "url": "https://www.youtube.com/watch?v=Wh6Pr3-EMjY",
+        "publishedDate": "2023-04-15"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -14664,7 +16245,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v4145-o7iYsuxWLz0",
@@ -14717,7 +16299,13 @@
       "label": "스튜디오 피넛버터 - Studio Peanut Butter",
       "url": "https://www.youtube.com/watch?v=DDtjY67zDNM"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "스튜디오 피넛버터 - Studio Peanut Butter · 1인 3역 폼 지리는 김연지(씨야)ㄷㄷ",
+        "url": "https://www.youtube.com/watch?v=s37YgmeluYk",
+        "publishedDate": "2023-04-10"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -14726,7 +16314,8 @@
     "note": "날짜는 영상 공개일이며 실제 촬영·진행일은 미상입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
-    "publishedDate": "2023-04-07"
+    "publishedDate": "2023-04-07",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v491-daegaya",
@@ -15358,7 +16947,7 @@
     "id": "20221128-boram-freedoctor81",
     "date": "2022-11-28",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00",
     "title": "이보람 · 프리한 닥터M 81회",
     "program": "tvN 프리한 닥터M",
     "type": "variety",
@@ -15378,6 +16967,11 @@
         "label": "tvN · 이보람 편 하이라이트",
         "url": "https://www.youtube.com/watch?v=W8C1hEJhP6E",
         "publishedDate": "2022-11-29"
+      },
+      {
+        "label": "디글 :Diggle · [#프리한닥터M] 가야G 활동 전 힘들었던 이보람의 10년 공백기, 가수의 꿈까지 고민했던 지난 시간들",
+        "url": "https://www.youtube.com/watch?v=whmZq3olitQ",
+        "publishedDate": "2023-03-24"
       }
     ],
     "status": "available",
@@ -15953,6 +17547,11 @@
         "label": "KBS · Forever 공식 무대",
         "url": "https://www.youtube.com/watch?v=bdmQkgMosp0",
         "publishedDate": "2022-09-17"
+      },
+      {
+        "label": "KBS 레전드 케이팝 · 이보람의 꿀 보이스🍯 ♬SEE YA 명곡 메들리♬ 찬또의 학창 시절 추억 소환 [불후의 명곡2 전설을 노래하다/Immortal Songs 2] | KBS 220917 방송",
+        "url": "https://www.youtube.com/watch?v=Cnfo5rtSZRs",
+        "publishedDate": "2022-09-17"
       }
     ],
     "status": "documented",
@@ -15963,7 +17562,7 @@
     "note": "날짜는 공식 방송 음반 공개일입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "release",
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v4145-2ShLQvkT9QI",
@@ -16610,7 +18209,23 @@
       "label": "MBCentertainment",
       "url": "https://www.youtube.com/watch?v=EqKu1ul6aDY"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "MBCentertainment · [놀면 뭐하니?] ✨ 깊이 있는 목소리 사걸육수 ✨ 이보람X정지소X흰X소연 4명의 목소리를 담아낼 완벽한 팀명! 🤩, MBC 220625 방송",
+        "url": "https://www.youtube.com/watch?v=FgNZliFCT-g",
+        "publishedDate": "2022-06-25"
+      },
+      {
+        "label": "엠뚜루마뚜루 : MBC 공식 종합 채널 · [놀면 뭐하니?] 이보람+정지소+박혜원+소연 = 음원차트 기강 잡으러 온 보컬 어벤져스⚔ ㅣ#WSG워너비",
+        "url": "https://www.youtube.com/watch?v=wzNrrUBVmNk",
+        "publishedDate": "2022-06-27"
+      },
+      {
+        "label": "엠뚜루마뚜루 : MBC 공식 종합 채널 · 그그그 노래 이보람 완전 찰떡 [댓모아]",
+        "url": "https://www.youtube.com/watch?v=ltGhtBfnaEY",
+        "publishedDate": "2022-07-03"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -16618,7 +18233,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v491-hangout-2022-06-18",
@@ -16637,7 +18253,13 @@
       "label": "MBCentertainment",
       "url": "https://www.youtube.com/watch?v=k1zEcM1N1yU"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "TV-People · 【로켓피플】 정지소🤍이보람, 첫 만남부터 씨야 결혼할까요 듀엣💕, 그리고 같은 노래 선택한 날까지💝! 엠마성경 감동 서사 모음💧｜놀면 뭐하니?｜TVPP｜MBC 220618 방송",
+        "url": "https://www.youtube.com/watch?v=BucawYZJ7PQ",
+        "publishedDate": "2022-07-13"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -16645,7 +18267,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v491-cover-tg2IuFVhUps",
@@ -16814,7 +18437,7 @@
     "id": "20220528-boram-hangout",
     "date": "2022-05-28",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00",
     "title": "이보람 · 놀면 뭐하니? · WSG워너비 이성경 정체 공개",
     "program": "MBC 놀면 뭐하니?",
     "type": "variety",
@@ -16829,7 +18452,13 @@
       "url": "https://www.youtube.com/watch?v=4LOX-hnrTVc",
       "publishedDate": "2022-05-28"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "엠뚜루마뚜루 : MBC 공식 종합 채널 · [놀면 뭐하니?] 레전드 그룹 씨야 이보람의 美친 가창력 다시보기! WSG워너비 오디션 노래 모음집ㅣ#이보람",
+        "url": "https://www.youtube.com/watch?v=PohH2HLwOFY",
+        "publishedDate": "2022-06-08"
+      }
+    ],
     "status": "available",
     "tags": [
       "예능",
@@ -19464,6 +21093,11 @@
       {
         "label": "미스&미스터트롯",
         "url": "https://www.youtube.com/watch?v=IllQVfXCrRY"
+      },
+      {
+        "label": "TVCHOSUN JOY · [미스트롯2] 씨야(See Ya) 메인보컬 김연지의 트롯 도전! '타인'",
+        "url": "https://www.youtube.com/watch?v=7h06-DVQwPM",
+        "publishedDate": "2020-12-21"
       }
     ],
     "status": "available",
@@ -19473,7 +21107,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20201125-reunion-project-cancelled",
@@ -21817,6 +23452,11 @@
       {
         "label": "KBS Kpop",
         "url": "https://www.youtube.com/watch?v=lOvBRahMvtQ"
+      },
+      {
+        "label": "KBS StarTV: 인물사전 · [소장각👍",
+        "url": "https://www.youtube.com/watch?v=gpuyj0Wv8Uc",
+        "publishedDate": "2020-07-03"
       }
     ],
     "status": "available",
@@ -21826,7 +23466,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v4145-WeMuc0cFk0I",
@@ -22066,9 +23707,29 @@
         "label": "JTBC · 씨야 무대와 근황 토크 모음",
         "url": "https://www.youtube.com/watch?v=u_JQMyOicoE",
         "publishedDate": "2023-07-12"
+      },
+      {
+        "label": "JTBC Entertainment · (요즘 느낌 보컬) 이보람(Lee Boram), 너튜브에서 숨겨왔던 가창력 大 방출↗ 슈가맨3(SUGARMAN3) 12회",
+        "url": "https://www.youtube.com/watch?v=WP7efG4EcWw",
+        "publishedDate": "2020-02-21"
+      },
+      {
+        "label": "JTBC Entertainment · [스페셜] ※눈물 주의※ 레전드 걸그룹 씨야(See Ya)의 완전체 귀환 기념 '히트곡 모음.zip' 슈가맨3(SUGARMAN3)",
+        "url": "https://www.youtube.com/watch?v=MsRnknymiaY",
+        "publishedDate": "2020-02-21"
+      },
+      {
+        "label": "JTBC Entertainment · [슈가송] 그 시절 우리가 사랑했던 씨야(See Ya)의 '사랑의 인사'♪ (엉엉 ㅠ_ㅠ) 슈가맨3(SUGARMAN3) 12회",
+        "url": "https://www.youtube.com/watch?v=uYp15-zFr4M",
+        "publishedDate": "2020-02-21"
+      },
+      {
+        "label": "JTBC Entertainment · [#확끌립] 완전체 씨야(See Ya) 슈가맨 출연 1주년 기념 1000만뷰 돌파한 히트곡 무대 다시보기",
+        "url": "https://www.youtube.com/watch?v=3waX9oATJQI",
+        "publishedDate": "2021-02-25"
       }
     ],
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20200120-yeonji-musical-awards",
@@ -24887,7 +26548,18 @@
       "label": "tvN Joy",
       "url": "https://www.youtube.com/watch?v=AZfWUGQmiwc"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "tvN Joy · lifebar 뭐든지 가족먼저, 가장이어야만 했던 남규리의 눈물 180510 EP.70",
+        "url": "https://www.youtube.com/watch?v=rz6I7cVPxOM",
+        "publishedDate": "2018-05-11"
+      },
+      {
+        "label": "디글 클래식 :Diggle Classic · [티비냥] 걱정될 정도로 눈 돌아간(ㄷㄷ) 엄청난 몰입에 남규리 무서워진 이규한 |",
+        "url": "https://www.youtube.com/watch?v=WodjvnpoLaQ",
+        "publishedDate": "2019-08-03"
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
@@ -24895,7 +26567,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v490-album-739773",
@@ -26554,7 +28227,13 @@
       "label": "KBS Kpop",
       "url": "https://www.youtube.com/watch?v=tm-8G4KsS4o"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS StarTV: 인물사전 · [소장각👍",
+        "url": "https://www.youtube.com/watch?v=SO7TdgbFAJQ",
+        "publishedDate": "2020-07-07"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
@@ -26565,7 +28244,8 @@
     "publishedDate": "2016-12-23",
     "collaborators": [
       "황치열"
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v490-album-540431",
@@ -36923,9 +38603,14 @@
         "label": "씨야박물관 · 팬 보관 영상",
         "url": "https://www.youtube.com/watch?v=-Cp6OEu5TzA",
         "publishedDate": "2020-03-22"
+      },
+      {
+        "label": "May be · 씨야-결혼할까요,슬픈발걸음(2007 골든디스크)",
+        "url": "https://www.youtube.com/watch?v=ZJiuCBWHptQ",
+        "publishedDate": "2015-08-23"
       }
     ],
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v487-history-017",
@@ -37905,13 +39590,20 @@
       "label": "공식 무대 영상",
       "url": "https://www.youtube.com/watch?v=fFA8uMG8QVE"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "메론민트 · [HD 720p] 070826 씨야 (SeeYA) ㅡ 결혼할까요",
+        "url": "https://www.youtube.com/watch?v=VrF22KD7dMA",
+        "publishedDate": "2019-03-30"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
       "라이브"
     ],
-    "note": ""
+    "note": "",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20070820-seeya-radio-donggo",
@@ -38171,6 +39863,11 @@
       {
         "label": "씨야 갤러리 · 예능 보관자료 목록",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5166"
+      },
+      {
+        "label": "올끌 (All of MBClassic) · [황금어장 라디오스타] \"너 연기 너무 부담스럽다..\" '남규리&김영철' 편",
+        "url": "https://www.youtube.com/watch?v=NLPoVQ9sv9w",
+        "publishedDate": "2019-10-13"
       }
     ],
     "status": "available",
@@ -38179,7 +39876,7 @@
     ],
     "note": "",
     "publishedDate": "2012-04-24",
-    "updatedAt": "2026-09-19"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20070808-seeya-radio-kiss",
@@ -38725,13 +40422,20 @@
       "label": "공식 무대 모음 · 해당 구간",
       "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=1719s"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS StarTV: 인물사전 · [소장각👍",
+        "url": "https://www.youtube.com/watch?v=vTQV7hjNnMk",
+        "publishedDate": "2020-07-06"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
       "라이브"
     ],
-    "note": ""
+    "note": "",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20070705-seeya-mcount-lovegreeting-win",
@@ -41102,13 +42806,25 @@
       "label": "공식 영상",
       "url": "https://www.youtube.com/watch?v=MFcGfbaEDkM"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "머시룸 · 씨야 - 구두｜See Ya - Shoes｜텔레콘서트 자유 20060811",
+        "url": "https://www.youtube.com/watch?v=bQ1ANwzN9eE",
+        "publishedDate": "2019-05-10"
+      },
+      {
+        "label": "머시룸 · 씨야 - 미친 사랑의 노래, See Ya - Crazy Love Song, 텔레콘서트 자유 20060811",
+        "url": "https://www.youtube.com/watch?v=lrbJHQ7R1m4",
+        "publishedDate": "2019-05-10"
+      }
+    ],
     "status": "available",
     "tags": [
       "무대"
     ],
     "note": "",
-    "publishedDate": "2018-04-13"
+    "publishedDate": "2018-04-13",
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "20060808-seeya-hellochat",
@@ -42322,9 +44038,14 @@
       {
         "label": "SBS · 391회 공식 출연 안내·다시보기",
         "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006466"
+      },
+      {
+        "label": "스내치[SNATCH] · 씨야(SeeYa) 인기가요 여인의향기 1위(약 40일만에 최단기간,당시기준) 무대소감",
+        "url": "https://www.youtube.com/watch?v=87CCrr7txrQ",
+        "publishedDate": "2020-03-02"
       }
     ],
-    "updatedAt": "2026-09-19"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v480-stage-027",
@@ -42396,6 +44117,11 @@
       {
         "label": "씨야 갤러리 · 1집 무대 자료 목록",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      },
+      {
+        "label": "Again 가요톱10 : KBS KPOP Classic · 씨야(See ya ) - Promise U [윤도현의 러브레터] | KBS 20060414 방송",
+        "url": "https://www.youtube.com/watch?v=eCk7xwAIDDQ",
+        "publishedDate": "2026-08-04"
       }
     ],
     "status": "available",
@@ -42404,7 +44130,7 @@
       "라이브"
     ],
     "note": "",
-    "updatedAt": "2026-09-19"
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v487-history-021",
@@ -42874,9 +44600,14 @@
       {
         "label": "SBS · 386회 공식 출연 안내·다시보기",
         "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006461"
+      },
+      {
+        "label": "김준형 · 씨야(SeeYa) - 여인의 향기 [SBS 인기가요 060312]",
+        "url": "https://www.youtube.com/watch?v=rFCNRIpPukY",
+        "publishedDate": "2014-08-03"
       }
     ],
-    "updatedAt": "2026-09-19"
+    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
   },
   {
     "id": "v485-news-608d5da3ebeb",
@@ -43170,7 +44901,7 @@
     "id": "discovered-cf6f994bec5f5b23",
     "date": "2026-09-25",
     "addedAt": "2026-09-30T13:59:14.662333+00:00",
-    "updatedAt": "2026-10-01T06:19:50.608816+00:00",
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00",
     "title": "꺾기에 감탄하는 리틀 주현미😍 김다현&김연지의 '여인의 눈물'♪ #트롯라디오 #TVCHOSUNMUSIC (TV CHOSUN 210114 방송 외)",
     "program": "",
     "type": "radio",
@@ -43192,6 +44923,11 @@
         "url": "https://www.youtube.com/watch?v=7dgPj0iCPrk",
         "publishedDate": "2026-09-25",
         "autoDiscovery": true
+      },
+      {
+        "label": "TVCHOSUN MUSIC · 𝗩𝗢𝗜𝗖𝗘 𝗠𝗜𝗫🎚️| 꺾기에 감탄하는 리틀 주현미😍 김다현&김연지의 '여인의 눈물'♪",
+        "url": "https://www.youtube.com/watch?v=MORrE9RtnQ8",
+        "publishedDate": "2026-09-24"
       }
     ],
     "status": "documented",
@@ -43497,7 +45233,7 @@
     "id": "20261001-boram-oasis-cover",
     "date": "2026-10-01",
     "addedAt": "2026-10-01",
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-02T16:00:52.417749+00:00",
     "title": "이보람 · 정동하 「오아시스」 커버",
     "program": "뮤직원컴퍼니 · 이보람 공식 Instagram",
     "type": "official",
@@ -43514,7 +45250,13 @@
       "url": "https://www.instagram.com/music1company/reel/Dd75SqeEz8W/",
       "publishedDate": "2026-10-01"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "정동하 Jung Dong Ha · 🏝️오아시스 by 이보람 of 씨야",
+        "url": "https://www.youtube.com/watch?v=PTHcXHTUmmU",
+        "publishedDate": "2026-10-01"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -43556,5 +45298,300 @@
     ],
     "note": "김연지가 공식 계정에 공개한 사진 모음입니다.\n사진은 원본 게시물에서 이어 볼 수 있습니다.",
     "publishedDate": "2026-09-30"
+  },
+  {
+    "id": "discovered-7c078b92881180b2",
+    "date": "2022-08-18",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "김연지 · 상상 라이브 커버",
+    "program": "김연지 Official",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=Vtbod5RDRog",
+      "publishedDate": "2022-08-18"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "김연지가 부른 드라마 「이상한 변호사 우영우」 OST 「상상」 라이브 커버입니다.\n공식 채널 영상 공개일 기준입니다.",
+    "publishedDate": "2022-08-18"
+  },
+  {
+    "id": "discovered-53369e3fb69a76b5",
+    "date": "2022-12-03",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:08:55.456331+00:00",
+    "title": "이보람 · 먼슬리디글 × 보람씨야 클립 모음",
+    "program": "먼슬리디글 × 보람씨야",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "디글 :Diggle · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=H4yVYIN4HtU",
+      "publishedDate": "2022-12-03"
+    },
+    "additionalSources": [
+      {
+        "label": "디글 :Diggle · 씨야 이보람 1분 즉문즉답 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=sZ-8Ccwv8r8",
+        "publishedDate": "2022-12-06"
+      },
+      {
+        "label": "디글 :Diggle · 근데 이제 전 세계 게임 덕후들 속 뒤집어지는 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=I8OnrdQ4wbc",
+        "publishedDate": "2022-12-17"
+      },
+      {
+        "label": "디글 :Diggle · 과몰입 유발 커플 논쟁 주제 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=_luVFvWf6mY",
+        "publishedDate": "2022-12-18"
+      },
+      {
+        "label": "디글 :Diggle · 야구팬이라면 99%는 공감하는 영상 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=SBDGEcSaVWQ",
+        "publishedDate": "2022-12-24"
+      },
+      {
+        "label": "디글 :Diggle · 야구장 덕후 VS 머글 구별법 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=SaZpIkIAZMA",
+        "publishedDate": "2022-12-25"
+      },
+      {
+        "label": "디글 :Diggle · 이보람도 못 피한 2000년대 패션 암흑기 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=BM24ouexa08",
+        "publishedDate": "2022-12-27"
+      },
+      {
+        "label": "디글 :Diggle · 이보람 목소리 어디까지 내려가는 거예요?↘️ #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=c77XBym1K54",
+        "publishedDate": "2022-12-28"
+      },
+      {
+        "label": "디글 :Diggle · 갑작스럽게 부탁했는데.. 이게 되네? #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=1Z04HgBJpvE",
+        "publishedDate": "2022-12-29"
+      },
+      {
+        "label": "디글 :Diggle · 중요한 건 타이밍이지🙆‍♀️ 이보람의 커플 싸움 대처법 #먼슬리디글 #보람씨야",
+        "url": "https://www.youtube.com/watch?v=qi7WqaGTvUA",
+        "publishedDate": "2022-12-30"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "디글과 보람씨야의 협업으로 공개된 이보람의 인터뷰·일상·예능 클립을 모았습니다.\n첫 영상 공개일 기준이며, 관련 클립은 추가 링크에서 볼 수 있습니다.",
+    "publishedDate": "2022-12-03"
+  },
+  {
+    "id": "discovered-bbed965481c16f33",
+    "date": "2023-02-10",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람 · GOT7 영재의 친한친구 · 너의 모든 순간",
+    "program": "MBC GOT7 영재의 친한친구",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=mgyNRauQdMQ",
+      "publishedDate": "2023-02-10"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [],
+    "note": "이보람이 성시경의 「너의 모든 순간」을 부른 라디오 라이브입니다.\nMBC 공식 영상에 표시된 방송일 기준입니다."
+  },
+  {
+    "id": "discovered-80e90ff790c91c77",
+    "date": "2025-06-14",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "김연지·이보람 · 병문안 브이로그",
+    "program": "김연지 Official",
+    "type": "official",
+    "members": [
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 Official · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=a2Q-Psdhi4I",
+      "publishedDate": "2025-06-14"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "이보람이 김연지의 병문안을 와 함께 시간을 보낸 모습이 담긴 브이로그입니다.\n김연지 공식 채널 공개일 기준입니다.",
+    "publishedDate": "2025-06-14"
+  },
+  {
+    "id": "discovered-e9c41ffc3602d455",
+    "date": "2026-02-10",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람 · 두시만세 · Golden 즉석 라이브",
+    "program": "MBC 박준형·박영진의 2시만세",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=oFcWXGP5YYM",
+      "publishedDate": "2026-02-10"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "이보람이 라디오에서 선보인 「Golden」 즉석 라이브 클립입니다.\nMBC 공식 영상 공개일 기준입니다.",
+    "publishedDate": "2026-02-10"
+  },
+  {
+    "id": "discovered-e98d25eb9821ca14",
+    "date": "2026-03-19",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:08:55.456331+00:00",
+    "title": "이보람 · 세상을 바꾸는 여자들 여수 공연",
+    "program": "세상을 바꾸는 여자들",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "꽃길보라미 · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=ja7QK5PO6k8",
+      "publishedDate": "2026-03-22"
+    },
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.03.19 이보람-그런일은(무반주)",
+        "url": "https://www.youtube.com/watch?v=jLoQT0rto_I",
+        "publishedDate": "2026-03-23"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [],
+    "note": "여수 공연에서 이보람이 무반주로 부른 「바보」와 「그런 일은」 직캠입니다.\n영상 제목·설명에 표시된 공연일 기준입니다."
+  },
+  {
+    "id": "discovered-b9fde119d3f21a6c",
+    "date": "2026-03-20",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람 · 세상을 바꾸는 여자들 춘천 공연",
+    "program": "세상을 바꾸는 여자들",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "꽃길보라미 · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=gh7YnBN1ONU",
+      "publishedDate": "2026-03-25"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [],
+    "note": "춘천 공연에서 이보람이 무반주로 부른 「Golden」 직캠입니다.\n영상 제목·설명에 표시된 공연일 기준입니다."
+  },
+  {
+    "id": "discovered-550c4ef1170305df",
+    "date": "2026-10-02",
+    "addedAt": "2026-10-02T16:06:18.417707+00:00",
+    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
+    "title": "이보람·HYNN 박혜원 · 3일 후 듀엣",
+    "program": "박혜원HYNN × 보람씨야",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "박혜원HYNN · 원본 영상",
+      "url": "https://www.youtube.com/watch?v=KlH3zRHLpRw",
+      "publishedDate": "2026-10-02"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "이보람과 HYNN(박혜원)이 함께 부른 「3일 후」 듀엣 클립입니다.\n두 채널의 공동작업 영상 공개일 기준입니다.",
+    "publishedDate": "2026-10-02"
+  },
+  {
+    "id": "discovered-b7c3357c102b35e9",
+    "date": "2026-09-30",
+    "addedAt": "2026-10-02T16:30:11.209702+00:00",
+    "updatedAt": "2026-10-02T16:30:11.209702+00:00",
+    "title": "#이보람 #씨야 괴산 빨간맛 페스티벌 직캠 260523",
+    "program": "",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "람보사랑",
+      "url": "https://www.youtube.com/watch?v=MJdWSrbzTdQ",
+      "publishedDate": "2026-09-30",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2026-09-30",
+    "autoDiscovery": true
   }
 ]
