@@ -682,9 +682,15 @@
       {
         "label": "메이크업 담당 한수연 · 남규리 음악방송 현장 사진",
         "url": "https://www.instagram.com/1_hansuyeon/p/Dd3xgGpk9JG/"
+      },
+      {
+        "label": "ENA K-POP",
+        "url": "https://www.youtube.com/watch?v=YMRvsqIF7QM",
+        "publishedDate": "2026-10-02",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-02T05:58:52.107410+00:00",
     "dateStatus": "confirmed"
   },
   {
@@ -12727,6 +12733,18 @@
       {
         "label": "KBS · 죄와 벌 가로 직캠",
         "url": "https://www.youtube.com/watch?v=Gx1ew1-TNCA"
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=8itc4d7UOWg",
+        "publishedDate": "2024-03-09",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=9_A6jAJE5Pc",
+        "publishedDate": "2024-03-09",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -12737,7 +12755,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-10-02T05:58:52.107410+00:00"
   },
   {
     "id": "v4145-Fr_7Lo_u8mI",
