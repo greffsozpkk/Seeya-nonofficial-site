@@ -1,6 +1,6 @@
 'use strict';
 const assert=require('node:assert/strict');
-const {applyContent,sourceKey}=require('./apply-archive-content');
+const {applyContent,sourceKey,correctRecord}=require('./apply-archive-content');
 const batches=require('../src/data/archive-content-updates.json');
 const batch=batches[0],first=batch.additions[0];
 const fixture=batch.updates.map(p=>({id:p.id,date:'2006-01-01',note:'운영자가 작성한 설명',source:{url:'https://example.org/'+p.id},custom:'preserve'}));
@@ -21,3 +21,13 @@ assert.equal(sourceKey('https://www.instagram.com/name/reel/ABC/?utm_source=test
 assert.equal(sourceKey('https://youtube.com/shorts/ABC?si=x'),sourceKey('https://youtu.be/ABC'));
 assert(!applyContent([]).rows.some(r=>r.id===batch.updates[0].id),'Do not recreate deleted supplement targets');
 console.log('PASS: archive content import, URL deduplication, preserved edits/deletions, one-time ledger.');
+const original={id:'date-review',date:'2020-02-29',dateBasis:'video-published',publishedDate:'2020-02-29',note:'keep',source:{url:'https://youtu.be/-sBEvFr5Rs0'}};
+const correction={sourceUrl:'https://www.youtube.com/watch?v=-sBEvFr5Rs0',expected:{date:'2020-02-29',dateBasis:'video-published'},values:{date:'2008-12-19',dateBasis:'broadcast',dateStatus:'tentative'}};
+const fixed=correctRecord(original,correction,'2026-10-03');
+assert.equal(fixed.date,'2008-12-19');assert.equal(fixed.publishedDate,'2020-02-29');assert.equal(fixed.note,'keep');assert.equal(original.date,'2020-02-29');
+assert.deepEqual(correctRecord(fixed,correction,'2026-10-03'),fixed);
+for(const changes of [{date:'2008-12-20'},{dateBasis:'broadcast'},{hidden:true},{source:{url:'https://example.com/changed'}}]){
+ const edited={...original,...changes};assert.deepEqual(correctRecord(edited,correction,'2026-10-03'),edited,'Preserve manager changes and unrelated sources');
+}
+assert.throws(()=>correctRecord(original,{...correction,values:{id:'changed'}},'2026-10-03'),/Unsupported/);
+console.log('PASS: guarded broadcast-date correction, publication date preservation and repeat application.');

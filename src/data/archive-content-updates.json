@@ -251,5 +251,104 @@
         "noteAppend": "공식 게스트 스케줄에 안내된 특별 게스트는 허각입니다."
       }
     ]
+  },
+  {
+    "id": "radio-history-2026-10-03",
+    "checkedAt": "2026-10-03",
+    "additions": [],
+    "updates": [
+      {
+        "id": "v483-radio-004",
+        "correction": {
+          "sourceUrl": "https://www.youtube.com/watch?v=-sBEvFr5Rs0",
+          "expected": {
+            "date": "2020-02-29",
+            "dateBasis": "video-published",
+            "note": "방송일 미상으로 영상 게시일을 표시합니다."
+          },
+          "values": {
+            "date": "2008-12-19",
+            "dateBasis": "broadcast",
+            "dateStatus": "tentative",
+            "note": "서경석의 뮤직쇼 2부 번개 초대석에 출연한 씨야의 보이는 라디오입니다. 팬 보관 파일 목록의 2008년 12월 19일 표기와 영상 속 코너 소개를 대조한 잠정 방송일입니다."
+          }
+        },
+        "evidence": [
+          {
+            "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5156",
+            "basis": "본문 파일 목록 [08.12.19]-서경석의_뮤직쇼_번개_초대석.avi. YouTube 영상 2:51 이후 같은 코너 소개. 공식 회차표 미확인으로 tentative 유지."
+          }
+        ]
+      },
+      {
+        "id": "discovered-e1460057c086a4d0",
+        "correction": {
+          "sourceUrl": "https://www.youtube.com/watch?v=v9PvePMiY5Q",
+          "expected": {
+            "date": "2012-07-25",
+            "dateBasis": "video-published",
+            "note": ""
+          },
+          "values": {
+            "date": "2012-07-06",
+            "dateBasis": "broadcast",
+            "dateStatus": "tentative",
+            "program": "SBS 녹색희망",
+            "note": "남규리가 내레이션에 참여한 SBS 환경개선 프로젝트입니다. 영상 제목에 적힌 2012년 7월 6일을 잠정 방송일로 표시합니다. 설명란에는 7월 1일도 표기되어 있어 날짜는 추가 확인이 필요합니다."
+          }
+        },
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=v9PvePMiY5Q",
+            "basis": "제목 2012-07-06, 실제 게시일 2012-07-25. 설명란 2012-07-01과 불일치하므로 확정 날짜로 취급하지 않음."
+          }
+        ]
+      },
+      {
+        "id": "discovered-93eddd3fdc7a38da",
+        "correction": {
+          "sourceUrl": "https://www.youtube.com/watch?v=jdHWzSqoZuI",
+          "expected": {
+            "date": "2026-01-05",
+            "dateBasis": "video-published",
+            "program": ""
+          },
+          "values": {
+            "dateBasis": "broadcast",
+            "program": "이은지의 가요광장"
+          }
+        },
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=jdHWzSqoZuI",
+            "basis": "KBS 공식 제목의 KBS 260105 방송 확인. 날짜 값은 유지하고 기준만 방송일로 수정. 같은 날 전체본이 있어 RADIO 중복 추가 안 함."
+          }
+        ]
+      },
+      {
+        "id": "v483-radio-005",
+        "correction": {
+          "sourceUrl": "https://www.youtube.com/watch?v=q7uiiomUUxs",
+          "expected": {
+            "members": [],
+            "program": "볼륨을 높여요"
+          },
+          "values": {
+            "members": [
+              "남규리",
+              "김연지",
+              "이보람"
+            ],
+            "program": "메이비의 볼륨을 높여요"
+          }
+        },
+        "evidence": [
+          {
+            "url": "https://www.youtube.com/watch?v=q7uiiomUUxs",
+            "basis": "5:27 프로그램 소개, 8:38 이후 세 멤버 인사. 2집 활동기이나 정확한 방송일을 확인하지 못해 영상 게시일 유지."
+          }
+        ]
+      }
+    ]
   }
 ]

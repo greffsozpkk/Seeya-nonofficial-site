@@ -1,7 +1,7 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
-const {resolveRadio,filterRadio,videoId,paginateRadio,pagination,PAGE_SIZE}=require('../src/shared/radio');
+const {resolveRadio,filterRadio,videoId,paginateRadio,pagination,PAGE_SIZE,cards,selection}=require('../src/shared/radio');
 const reviews=require('../src/data/radio-pilot.json'),rows=JSON.parse(read('data/archive.json'));
 const current=resolveRadio(rows,reviews,'2026-10-02');
 assert(current.length>9&&current.length<=reviews.length);assert(new Set(current.map(r=>r.videoId)).size===current.length);
@@ -10,6 +10,14 @@ const review={...reviews.find(r=>r.youtubeId==='trvkTPhlNFc'),recordId:'fixture'
 for(const patch of [{hidden:true},{status:'scheduled'},{eventState:'cancelled'},{date:'2026-10-03'},{type:'article'},{source:{url:'https://example.com'}}])assert.equal(resolveRadio([{...seed,...patch}],[review],'2026-10-02').length,0);
 assert.equal(resolveRadio([seed],[{...review,channelStatus:'unchecked'}],'2026-10-02').length,0);
 assert.equal(resolveRadio([seed],[review,review],'2026-10-02').length,1);
+const fan=resolveRadio([{...seed,dateBasis:'video-published'}],[{...review,channelStatus:'fan-channel-checked'}],'2026-10-02')[0];
+assert(fan);assert(cards([fan],fan.id).includes('팬 보관 영상'));assert(selection(fan).includes('영상 게시일'));
+assert(selection({...fan,dateBasis:'broadcast',dateStatus:'tentative'}).includes('방송일 · 잠정'));
+const twoSources={...seed,additionalSources:[{url:'https://youtube.com/watch?v=rWE6SSVs3BA'}]};
+assert.equal(resolveRadio([twoSources],[review,{...review,youtubeId:'rWE6SSVs3BA'}],'2026-10-02').length,1,'One representative video per archive record');
+assert(current.some(r=>r.date.startsWith('2006-'))&&current.some(r=>r.date.startsWith('2025-')),'Older broadcasts must reach the public list');
+assert(current.some(r=>r.channelStatus==='fan-channel-checked'));
+assert.equal(new Set(current.map(r=>r.id)).size,current.length);
 assert.equal(resolveRadio([{...seed,title:'관리자 변경'}],[review],'2026-10-02')[0].title,'관리자 변경');
 assert.equal(videoId('https://youtube.com.evil.test/watch?v=trvkTPhlNFc'),'');
 const testRows=[{id:'a',date:'2026-09-30',title:'첫 방송',program:'BTN',members:['이보람'],videoId:'trvkTPhlNFc',kind:'replay',channel:'BTN',source:'BTN'}, {id:'b',date:'2026-09-17',title:'다음 방송',program:'SBS',members:['남규리','김연지'],videoId:'rWE6SSVs3BA',kind:'full',channel:'SBS',source:'SBS'}];

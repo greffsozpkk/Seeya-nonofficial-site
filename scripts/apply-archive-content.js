@@ -27,6 +27,17 @@ function extend(row,links,note,checkedAt){
  if(additional.length===(row.additionalSources||[]).length&&nextNote===row.note)return row;
  return {...row,additionalSources:additional,...(nextNote!==undefined?{note:nextNote}:{}),updatedAt:[row.updatedAt||row.addedAt||checkedAt,checkedAt].sort().at(-1)};
 }
+// Apply researched corrections only while the reviewed fields and source still match.
+// Later edits in the web manager must win over a cumulative update package.
+function correctRecord(row,correction,checkedAt){
+ if(!correction||row.hidden||row.status==='hidden')return row;
+ const allowed=new Set(['date','dateBasis','dateStatus','publishedDate','program','members','note']);
+ if(!correction.sourceUrl||!sources(row).some(s=>sourceKey(s.url)===sourceKey(correction.sourceUrl)))return row;
+ if(!Object.entries(correction.expected||{}).every(([key,value])=>JSON.stringify(row[key])===JSON.stringify(value)))return row;
+ if(Object.keys(correction.values||{}).some(key=>!allowed.has(key)))throw new Error('Unsupported archive correction field');
+ if(Object.entries(correction.values||{}).every(([key,value])=>JSON.stringify(row[key])===JSON.stringify(value)))return row;
+ return {...row,...correction.values,updatedAt:[row.updatedAt||row.addedAt||checkedAt,checkedAt].sort().at(-1)};
+}
 function applyContent(rows,applied=[]){
  let result=rows.slice();const completed=new Set(applied);
  for(const batch of batches){
@@ -42,10 +53,10 @@ function applyContent(rows,applied=[]){
   for(const patch of batch.updates){
    const found=result.find(r=>r.id===patch.id);
    if(!found)continue; // A manager may have intentionally removed this record.
-   result=result.map(r=>r===found?extend(r,patch.sources,patch.noteAppend,batch.checkedAt):r);
+   result=result.map(r=>r===found?extend(correctRecord(r,patch.correction,batch.checkedAt),patch.sources,patch.noteAppend,batch.checkedAt):r);
   }
   completed.add(batch.id);
  }
  return {rows:result,applied:[...completed]};
 }
-module.exports={applyContent,sourceKey};
+module.exports={applyContent,sourceKey,correctRecord};
