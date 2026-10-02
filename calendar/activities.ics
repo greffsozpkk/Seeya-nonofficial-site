@@ -5739,6 +5739,26 @@ URL:https://seeya-fanpage.com/calendar/?month=2023-02&event=activity-v491-i
  mmortal-2023-02-04
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-discovered-bbed965481c16f33@seeya-fanpage.com
+DTSTAMP:20261002T160618Z
+LAST-MODIFIED:20261002T160618Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20230210
+DTEND;VALUE=DATE:20230211
+SUMMARY:이보람 · GOT7 영재의 친한친구 · 너의 모든 순간
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n이보람이 성시경의 「너의 
+ 모든 순간」을 부른 라디오 라이브입니다.\nMBC 공식 영
+ 상에 표시된 방송일 기준입니다.\nMhz 므흐즈: MBC RADIO · 
+ 원본 영상: https://www.youtube.com/watch?v=mgyNRauQdMQ\nhttps://seeya-
+ fanpage.com/archive/?record=discovered-bbed965481c16f33
+URL:https://seeya-fanpage.com/calendar/?month=2023-02&event=activity-discov
+ ered-bbed965481c16f33
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v491-album-4084635@seeya-fanpage.com
 DTSTAMP:20260912T150000Z
 LAST-MODIFIED:20260912T150000Z
@@ -6844,6 +6864,46 @@ DESCRIPTION:남규리\n시간 미정\nKBS CoolFM · 공식 영상: https://
  cord=v488-audit-031
 URL:https://seeya-fanpage.com/calendar/?month=2026-01&event=activity-v488-a
  udit-031
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-discovered-e98d25eb9821ca14@seeya-fanpage.com
+DTSTAMP:20261002T160618Z
+LAST-MODIFIED:20261002T160618Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260319
+DTEND;VALUE=DATE:20260320
+SUMMARY:이보람 · 세상을 바꾸는 여자들 여수 공연
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n여수 공연에서 이보람이 무
+ 반주로 부른 「바보」와 「그런 일은」 직캠입니다.\n영
+ 상 제목·설명에 표시된 공연일 기준입니다.\n꽃길보라
+ 미 · 원본 영상: https://www.youtube.com/watch?v=ja7QK5PO6k8\nhttps:/
+ /seeya-fanpage.com/archive/?record=discovered-e98d25eb9821ca14
+URL:https://seeya-fanpage.com/calendar/?month=2026-03&event=activity-discov
+ ered-e98d25eb9821ca14
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-discovered-b9fde119d3f21a6c@seeya-fanpage.com
+DTSTAMP:20261002T160618Z
+LAST-MODIFIED:20261002T160618Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260320
+DTEND;VALUE=DATE:20260321
+SUMMARY:이보람 · 세상을 바꾸는 여자들 춘천 공연
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n춘천 공연에서 이보람이 무
+ 반주로 부른 「Golden」 직캠입니다.\n영상 제목·설명에 
+ 표시된 공연일 기준입니다.\n꽃길보라미 · 원본 영상: ht
+ tps://www.youtube.com/watch?v=gh7YnBN1ONU\nhttps://seeya-fanpage.com/archi
+ ve/?record=discovered-b9fde119d3f21a6c
+URL:https://seeya-fanpage.com/calendar/?month=2026-03&event=activity-discov
+ ered-b9fde119d3f21a6c
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v487-2026-010@seeya-fanpage.com
