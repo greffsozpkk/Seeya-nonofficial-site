@@ -1,12 +1,12 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
-const {resolveRadio,filterRadio,videoId}=require('../src/shared/radio');
+const {resolveRadio,filterRadio,videoId,paginateRadio,pagination,PAGE_SIZE}=require('../src/shared/radio');
 const reviews=require('../src/data/radio-pilot.json'),rows=JSON.parse(read('data/archive.json'));
 const current=resolveRadio(rows,reviews,'2026-10-02');
-assert(current.length<=3);assert(new Set(current.map(r=>r.videoId)).size===current.length);
+assert(current.length>9&&current.length<=reviews.length);assert(new Set(current.map(r=>r.videoId)).size===current.length);
 const seed={id:'fixture',date:'2026-09-30',type:'radio',title:'방송',members:['이보람'],source:{label:'공식',url:'https://youtube.com/watch?v=trvkTPhlNFc'}};
-const review={...reviews[0],recordId:'fixture'};
+const review={...reviews.find(r=>r.youtubeId==='trvkTPhlNFc'),recordId:'fixture'};
 for(const patch of [{hidden:true},{status:'scheduled'},{eventState:'cancelled'},{date:'2026-10-03'},{type:'article'},{source:{url:'https://example.com'}}])assert.equal(resolveRadio([{...seed,...patch}],[review],'2026-10-02').length,0);
 assert.equal(resolveRadio([seed],[{...review,channelStatus:'unchecked'}],'2026-10-02').length,0);
 assert.equal(resolveRadio([seed],[review,review],'2026-10-02').length,1);
@@ -17,7 +17,7 @@ assert.equal(filterRadio(testRows,{member:'씨야'}).length,0);assert.equal(filt
 
 let writes=0,cues=0,pauses=0,plays=0,interval,options;
 const nodes={};function element(){return {handlers:{},dataset:{},textContent:'',value:'',innerHTML:'',disabled:true,checked:false,addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},scrollIntoView(){},focus(){}};}
-for(const id of ['radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer'])nodes[id]=element();
+for(const id of ['radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer','radioPagination'])nodes[id]=element();
 nodes.radioData.textContent=JSON.stringify(testRows);Object.defineProperty(nodes.radioPlayer,'src',{set(){writes++;}});
 const members=['전체','씨야','남규리','김연지','이보람'].map(m=>({...element(),dataset:{radioMember:m}}));
 let currentVideo=testRows[0].videoId,time=100,playerState=2,rate=1,persisted='';
@@ -39,6 +39,23 @@ playerState=0;options.events.onStateChange({data:0});assert.equal(plays,1,'No au
 // Denied or corrupt storage must never prevent the player from connecting.
 context.localStorage={getItem(){throw Error('blocked');},setItem(){throw Error('blocked');}};vm.runInNewContext(read('src/client/radio.js'),{...context});nodes.radioSave.handlers.click();assert(nodes.radioSelectionStatus.textContent.includes('이번 화면'));
 context.localStorage={getItem:()=>'{invalid',setItem(){}};vm.runInNewContext(read('src/client/radio.js'),{...context});
-const html=read('radio/test/index.html');assert.equal((html.match(/<iframe /g)||[]).length,1);assert(html.includes('referrerpolicy="strict-origin-when-cross-origin"'));assert(!html.includes('autoplay=1'));assert(html.includes('noindex,follow'));assert(!read('sitemap.xml').includes('/radio/test/'));assert(read('about/install/index.html').includes('/radio/test/'));assert(!read('src/client/radio.js').includes('loadVideoById'));
+const html=read('radio/index.html');assert.equal((html.match(/<iframe /g)||[]).length,1);assert(html.includes('referrerpolicy="strict-origin-when-cross-origin"'));assert(!html.includes('autoplay=1'));assert(!html.includes('noindex,follow'));assert(read('radio/test/index.html').includes('noindex,follow'));assert(read('sitemap.xml').includes('<loc>https://seeya-fanpage.com/radio/</loc>'));assert(!read('sitemap.xml').includes('/radio/test/'));assert(read('about/install/index.html').includes('/radio/'));assert(!read('src/client/radio.js').includes('loadVideoById'));
 if(current.length)assert(html.includes('enablejsapi=1'));
 console.log('PASS radio: archive joins, single iframe, filter continuity, transport, favorites/storage fallback, error recovery, no automatic next playback.');
+
+const many=Array.from({length:25},(_,i)=>({...testRows[0],id:'row'+i}));
+assert.equal(PAGE_SIZE,9);assert.equal(paginateRadio(many,1).items.length,9);assert.equal(paginateRadio(many,2).items[0].id,'row9');assert.equal(paginateRadio(many,99).items.length,7);assert.equal(paginateRadio([],5).page,1);assert.equal(pagination(1,1),'');assert(pagination(2,3).includes('aria-current="page"'));
+// Paging changes only library rows, never transport or iframe.
+context.localStorage={getItem:()=>null,setItem(){}};nodes.radioData.textContent=JSON.stringify(many);nodes.radioSavedOnly.checked=false;currentVideo=many[0].videoId;
+vm.runInNewContext(read('src/client/radio.js'),{...context});options.events.onReady({target:fake});
+const oldWrites=writes,oldCues=cues,oldPauses=pauses;
+nodes.radioPagination.handlers.click({target:{closest:()=>({dataset:{radioPage:'2'}})}});
+assert(nodes.radioCount.textContent.includes('2 / 3'));assert(nodes.radioList.innerHTML.includes('data-radio-id="row17"'));assert.equal(writes,oldWrites);assert.equal(cues,oldCues);assert.equal(pauses,oldPauses);
+nodes.radioSearch.value='없는 방송';nodes.radioSearch.handlers.input();assert(nodes.radioCount.textContent.includes('0개 · 1 / 1'));assert.equal(nodes.radioPagination.innerHTML,'');
+nodes.radioSearch.value='';nodes.radioSearch.handlers.input();assert(nodes.radioCount.textContent.includes('1 / 3'));
+assert.equal((html.match(/class="radio-item /g)||[]).length,9);
+assert(read('index.html').includes('class="home-radio"'));
+for(const path of ['index.html','music/index.html','members/index.html'])assert.equal((read(path).match(/href="\/radio\/">RADIO<\/a>/g)||[]).length,3);
+console.log('PASS radio public route/home/navigation, 9-item paging, boundaries/filter reset and uninterrupted player.');
+
+

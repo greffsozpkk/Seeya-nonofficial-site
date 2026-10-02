@@ -298,5 +298,12 @@
     "title": "라디오 모아듣기 · 재생 테스트 | SEEYA ARCHIVE",
     "description": "씨야와 멤버들의 공식 라디오 영상 3개로 재생과 모바일 사용을 확인하는 테스트 페이지입니다.",
     "noindex": true
+  },
+  {
+    "key": "radio",
+    "path": "/radio/",
+    "title": "씨야 라디오 모아듣기 | SEEYA ARCHIVE",
+    "description": "씨야와 남규리·김연지·이보람의 라디오 영상. 방송을 검색하고 골라 들어보세요.",
+    "noindex": false
   }
 ]

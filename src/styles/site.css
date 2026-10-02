@@ -1443,3 +1443,6 @@ body.fanchant-lightbox-open{overflow:hidden}
 
 /* GUIDE subpage buttons share the MUSIC/GALLERY navigation style. */
 .guide-subnav a:focus-visible{outline:3px solid #93596f;outline-offset:3px}
+
+/* v4.169 HOME radio entry, existing menu order retained. */
+.home-radio{display:flex;align-items:center;justify-content:space-between;gap:24px;margin:72px 0;padding:32px 36px;border:1px solid var(--line);background:#f9eef4}.home-radio>div>span{font-size:10px;letter-spacing:.16em;color:#a25679}.home-radio h2{font-size:28px;margin:12px 0}.home-radio p{font-size:14px;line-height:1.9;color:#79616e;margin:0}.home-radio>a{flex:none;display:inline-flex;gap:18px;align-items:center;min-height:46px;padding:12px 18px;border:1px solid #ddbacd;border-radius:24px;background:white;font-size:13px;color:#874464}.home-radio a:focus-visible{outline:2px solid #873856;outline-offset:3px}@media(max-width:850px){.home-radio{margin:52px 0;padding:26px 22px;flex-direction:column;align-items:flex-start}.home-radio h2{font-size:26px}}

@@ -1,13 +1,13 @@
 'use strict';
-const {filterRadio,cards,selection,clock}=require('../shared/radio');
+const {filterRadio,cards,selection,clock,paginateRadio,pagination}=require('../shared/radio');
 const byId=id=>document.getElementById(id),rows=JSON.parse(byId('radioData').textContent);
 const iframe=byId('radioPlayer'),list=byId('radioList'),search=byId('radioSearch'),sort=byId('radioSort'),seek=byId('radioSeek'),play=byId('radioPlay'),speed=byId('radioSpeed');
 const key='seeya-radio-v1';let saved=[],positions={},last='';
 try{const value=JSON.parse(localStorage.getItem(key)||'{}');saved=Array.isArray(value.saved)?value.saved.filter(id=>rows.some(r=>r.id===id)):[];last=typeof value.last==='string'?value.last:'';for(const row of rows){const p=value.positions?.[row.id];if(p&&p.videoId===row.videoId&&Number.isFinite(p.time)&&p.time>=0&&p.time<86400)positions[row.id]=p;}}catch{}
-let selected=rows.find(r=>r.id===last)||rows[0],state={member:'전체',query:'',sort:'newest'},api=null,ready=false,failed=false,dragging=false,lastPersist=0,rateSignature='';
+let selected=rows.find(r=>r.id===last)||rows[0],state={member:'전체',query:'',sort:'newest',page:1},api=null,ready=false,failed=false,dragging=false,lastPersist=0,rateSignature='';
 function say(message){byId('radioSelectionStatus').textContent=message;}
 function persist(){try{localStorage.setItem(key,JSON.stringify({saved,last:selected?.id,positions}));return true;}catch{return false;}}
-function renderList(){let visible=filterRadio(rows,state);if(byId('radioSavedOnly').checked)visible=visible.filter(r=>saved.includes(r.id));list.innerHTML=cards(visible,selected?.id,saved);byId('radioCount').textContent=visible.length+'개 영상';}
+function renderList(){let visible=filterRadio(rows,state);if(byId('radioSavedOnly').checked)visible=visible.filter(r=>saved.includes(r.id));const paging=paginateRadio(visible,state.page);state.page=paging.page;list.innerHTML=cards(paging.items,selected?.id,saved);byId('radioPagination').innerHTML=pagination(paging.page,paging.total);byId('radioCount').textContent='총 '+visible.length+'개 · '+paging.page+' / '+paging.total+' 페이지';}
 function saveButton(){const active=saved.includes(selected?.id);byId('radioSave').textContent=active?'♥ 저장됨':'♡ 저장';byId('radioSave').setAttribute('aria-pressed',String(active));}
 function showSelection(){if(!selected)return;byId('radioCurrent').innerHTML=selection(selected);byId('radioOriginal').href='https://www.youtube.com/watch?v='+selected.videoId;byId('radioArchive').href='/archive/?record='+encodeURIComponent(selected.id);byId('radioBottomTitle').textContent=selected.title;iframe.title=selected.title;saveButton();renderList();}
 function playerURL(row){const u=new URL('https://www.youtube.com/embed/'+row.videoId);u.search=new URLSearchParams({rel:'0',enablejsapi:'1',playsinline:'1',origin:location.origin,start:String(Math.floor(positions[row.id]?.time||0))}).toString();return u.href;}
@@ -33,10 +33,11 @@ function choose(row){
  say(positions[row.id]?.time?'지난 위치 '+clock(positions[row.id].time)+'부터 준비했습니다. 재생을 눌러주세요.':'방송을 선택했습니다. 재생을 눌러주세요.');
  document.querySelector('.radio-player-panel').scrollIntoView({block:'start',behavior:'auto'});
 }
-search.addEventListener('input',()=>{state.query=search.value;renderList();});sort.addEventListener('change',()=>{state.sort=sort.value;renderList();});
-byId('radioSavedOnly').addEventListener('change',renderList);
+search.addEventListener('input',()=>{state.query=search.value;state.page=1;renderList();});sort.addEventListener('change',()=>{state.sort=sort.value;state.page=1;renderList();});
+byId('radioSavedOnly').addEventListener('change',()=>{state.page=1;renderList();});
 byId('radioSave').addEventListener('click',()=>{if(!selected)return;saved=saved.includes(selected.id)?saved.filter(id=>id!==selected.id):[...saved,selected.id];const ok=persist();saveButton();renderList();say(ok?(saved.includes(selected.id)?'이 브라우저에 방송을 저장했습니다.':'저장 목록에서 뺐습니다.'):'브라우저 저장을 사용할 수 없어 이번 화면에서만 유지됩니다.');});
-document.querySelectorAll('[data-radio-member]').forEach(button=>button.addEventListener('click',()=>{state.member=button.dataset.radioMember;document.querySelectorAll('[data-radio-member]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));renderList();}));
+document.querySelectorAll('[data-radio-member]').forEach(button=>button.addEventListener('click',()=>{state.member=button.dataset.radioMember;state.page=1;document.querySelectorAll('[data-radio-member]').forEach(b=>b.setAttribute('aria-pressed',String(b===button)));renderList();}));
+byId('radioPagination').addEventListener('click',event=>{const button=event.target.closest('[data-radio-page]');if(!button||button.disabled)return;state.page=Number(button.dataset.radioPage);renderList();document.querySelector('.radio-library').scrollIntoView({block:'start',behavior:'auto'});});
 list.addEventListener('click',event=>{const button=event.target.closest('[data-radio-id]');if(button)choose(rows.find(r=>r.id===button.dataset.radioId));});
 play.addEventListener('click',toggle);byId('radioBack').addEventListener('click',()=>jump(Number(api?.getCurrentTime()||0)-15));byId('radioForward').addEventListener('click',()=>jump(Number(api?.getCurrentTime()||0)+15));byId('radioRestart').addEventListener('click',()=>jump(0));
 seek.addEventListener('input',()=>{dragging=true;byId('radioElapsed').textContent=clock(seek.value);});seek.addEventListener('change',()=>{jump(Number(seek.value));dragging=false;});seek.addEventListener('blur',()=>{dragging=false;});

@@ -107,6 +107,8 @@ ${homeUpcoming(rows,now)}
   </section>
 
 
+<section class="home-radio" aria-labelledby="homeRadioTitle"><div><span>THE VOICES WE KEEP</span><h2 id="homeRadioTitle">씨야 라디오</h2><p>일상 곁에 두고 듣는, 세 사람의 목소리.<br>함께했던 방송을 골라 들어보세요.</p></div><a href="/radio/">라디오 모아듣기 <span aria-hidden="true">→</span></a></section>
+
 <section class="home-game"><div class="home-game-copy"><div class="eye">SEEYA · FAN GAME</div><h2>SEEYA PLAY</h2><p>씨야와 함께하는 팬 놀이터<br>가사 보고 제목 맞히기부터 씨야 모의고사까지.<br>씨야와 함께한 기억을 펼쳐보세요.</p><a class="home-game-go" href="/game/">게임 선택하기 →</a></div><div class="home-game-art" aria-hidden="true"><strong>씨야와 함께한<br>기억을 펼쳐보세요.</strong></div></section>
 
 <section class="home-official">

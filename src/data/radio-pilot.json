@@ -1,13 +1,47 @@
 [
   {
-    "recordId": "20260930-boram-btn-dream-23",
-    "youtubeId": "trvkTPhlNFc",
+    "recordId": "20260925-yeonji-mbc-2pdate",
+    "youtubeId": "4BByjzA3ldA",
+    "kind": "clip",
+    "channel": "Mhz 므흐즈: MBC RADIO",
+    "channelUrl": "https://www.youtube.com/@radiombc",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[ALLIVE] 김연지 - 노래 + 사랑의 인사 | #MBCRADIO #두시의데이트 #안영미 #김연지 | MBC 260925 방송"
+  },
+  {
+    "recordId": "20260923-gyuri-mbc-noon-dj",
+    "youtubeId": "9vr-bu2vrv8",
+    "kind": "full",
+    "channel": "Mhz 므흐즈: MBC RADIO",
+    "channelUrl": "https://www.youtube.com/@radiombc",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[FULL] 라이브 온 에어🎙️스페셜 DJ 남규리X소란과 함께하는 정오의 희망곡 라이브 | #MBCRADIO #정오의희망곡김신영입니다 #소란 | MBC 260923 방송"
+  },
+  {
+    "recordId": "20260923-boram-btn-dream-22",
+    "youtubeId": "cy5YGx7i39k",
     "kind": "replay",
     "channel": "BTN라디오",
     "channelUrl": "https://www.youtube.com/@btnradio",
     "channelStatus": "official-channel-checked",
     "checkedAt": "2026-10-02",
-    "basis": "공식 채널의 보이는라디오 2026.09.30 (23회) 게시물. 전체 편성분과 동일하다는 뜻은 아님."
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.09.23 (22회)"
+  },
+  {
+    "recordId": "20260921-gyuri-mbc-noon-dj",
+    "youtubeId": "pOqhfoHhW9A",
+    "kind": "part",
+    "channel": "Mhz 므흐즈: MBC RADIO",
+    "channelUrl": "https://www.youtube.com/@radiombc",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[FULL] 설레는 정오의 시작💓 스페셜 DJ 남규리와 함께하는 정희 라이브(1-2부) | #MBCRADIO #정오의희망곡김신영입니다 #남규리 #씨야 | MBC 260921 방송"
   },
   {
     "recordId": "20260917-gyuri-yeonji-sbs12n",
@@ -17,16 +51,348 @@
     "channelUrl": "https://www.youtube.com/@SBS_Radio",
     "channelStatus": "official-channel-checked",
     "checkedAt": "2026-10-02",
-    "basis": "공식 영상 제목 [FULL] 및 260917 방송 표기."
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[FULL] 돌아온 '씨야'호~!✌️ 씨야 김연지, 남규리 보는 라디오 | 12시엔 주현영 | 260917"
   },
   {
-    "recordId": "20260925-yeonji-mbc-2pdate",
-    "youtubeId": "4BByjzA3ldA",
+    "recordId": "20260916-boram-btn-dream-21",
+    "youtubeId": "wOk2eLE8DSU",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.09.16 (21회)"
+  },
+  {
+    "recordId": "v475-sheet1-row11",
+    "youtubeId": "Wo9mB9oqXI4",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.09.09 (20회)"
+  },
+  {
+    "recordId": "v488-audit-032",
+    "youtubeId": "bcBNHuag0Lg",
+    "kind": "replay",
+    "channel": "Arirang Radio | K-Pop, K-Culture & News from Korea",
+    "channelUrl": "https://www.youtube.com/@arirangradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "meet you UP with Lee Boram (이보람)"
+  },
+  {
+    "recordId": "v475-sheet1-row4",
+    "youtubeId": "Ztg5fl6L0Pk",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "가을에도 람디와 함께해요~ 한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.09.02 (19회)"
+  },
+  {
+    "recordId": "v475-sheet2-row71",
+    "youtubeId": "_LptMSAbVpE",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃 with #최예림 / 보이는라디오 2026.08.19 (17회)"
+  },
+  {
+    "recordId": "v488-audit-010",
+    "youtubeId": "DC3LXQRkJGc",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.08.12 (16회)"
+  },
+  {
+    "recordId": "v475-sheet2-row63",
+    "youtubeId": "G4dgxlwjxrQ",
+    "kind": "clip",
+    "channel": "SBS Radio 에라오",
+    "channelUrl": "https://www.youtube.com/@SBS_Radio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 이보람(LEE BO RAM) - 빛의 반대편에서 | 두시탈출 컬투쇼"
+  },
+  {
+    "recordId": "v488-audit-009",
+    "youtubeId": "2ouMNMLh0nw",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[축100일🎂] 한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.08.05 (15회)"
+  },
+  {
+    "recordId": "20260804-boram-noon-radio",
+    "youtubeId": "gyzBkqs65xY",
     "kind": "clip",
     "channel": "Mhz 므흐즈: MBC RADIO",
     "channelUrl": "https://www.youtube.com/@radiombc",
     "channelStatus": "official-channel-checked",
     "checkedAt": "2026-10-02",
-    "basis": "공식 ALLIVE 영상: 노래 + 사랑의 인사 두 곡의 라이브 클립."
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[ALLIVE] 이보람 - 빛의 반대편에서 | #MBCRADIO #정오의희망곡김신영입니다 #이보람 #씨야 #빛의반대편에서 #라이브 #무대 | MBC 260804 방송"
+  },
+  {
+    "recordId": "v475-sheet2-row52",
+    "youtubeId": "e7CdOtvcXJI",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.07.29 (14회)"
+  },
+  {
+    "recordId": "v475-sheet2-row48",
+    "youtubeId": "0uTrSsWueec",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.07.22 (13회)"
+  },
+  {
+    "recordId": "v475-sheet2-row44",
+    "youtubeId": "_jN31dq25H0",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.07.15 (12회)"
+  },
+  {
+    "recordId": "v475-sheet2-row36",
+    "youtubeId": "yDuupn5URFY",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃with #이서안  / 보이는라디오 2026.07.08 (11회)"
+  },
+  {
+    "recordId": "v488-audit-008",
+    "youtubeId": "Hk-2d7U6Owk",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃  / 보이는라디오 2026.07.01 (10회)"
+  },
+  {
+    "recordId": "v488-audit-007",
+    "youtubeId": "UGv72GrhMnM",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.06.24 (9회)"
+  },
+  {
+    "recordId": "v488-audit-006",
+    "youtubeId": "ddPzbH1XQSs",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.06.17 (8회)"
+  },
+  {
+    "recordId": "v475-sheet2-row10",
+    "youtubeId": "S7YEZpgWZlg",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃  / 보이는라디오 2026.06.10 (7회)"
+  },
+  {
+    "recordId": "v475-sheet2-row6",
+    "youtubeId": "66v48EHb4U4",
+    "kind": "full",
+    "channel": "KBS CoolFM",
+    "channelUrl": "https://www.youtube.com/@KBS_CoolFM",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "슈퍼라디오 음악 페스티벌, 슈첼라 with 씨야 full ver. / [가비의 슈퍼라디오] I KBS 260605 방송"
+  },
+  {
+    "recordId": "20260605-seeya-powerfm-environment",
+    "youtubeId": "F9tSskeH9yE",
+    "kind": "replay",
+    "channel": "SBS Radio 에라오",
+    "channelUrl": "https://www.youtube.com/@SBS_Radio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "🔴On-Air 🎉김영철의 파워FM 공개방송🎉환경공단과 함께하는 철파엠 환경의날 특집 공개방송 \"순환을 할거야\"🌳"
+  },
+  {
+    "recordId": "v475-sheet2-row5",
+    "youtubeId": "e2NuE5q4pRw",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃  / 보이는라디오 2026.06.03 (6회)"
+  },
+  {
+    "recordId": "v488-audit-005",
+    "youtubeId": "i5gz3bxsov4",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.05.27 (5회)"
+  },
+  {
+    "recordId": "v488-audit-004",
+    "youtubeId": "ZOzw_d--xmU",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃 #씨야 정규 앨범 First, Again 리뷰  / 보이는라디오 2026.05.20 (4회)"
+  },
+  {
+    "recordId": "20260518-seeya-radio-show",
+    "youtubeId": "zOGyQe3sdxQ",
+    "kind": "full",
+    "channel": "KBS CoolFM",
+    "channelUrl": "https://www.youtube.com/@KBS_CoolFM",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "박명수의 휘낭시에 with 씨야(See YA) full ver. / [박명수의 라디오쇼] | KBS 260518 방송"
+  },
+  {
+    "recordId": "v488-audit-003",
+    "youtubeId": "YGIZkTZDkXw",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 한밤의 꿈 이보람입니다🌃  / 보이는라디오 2026.05.13 (3회)"
+  },
+  {
+    "recordId": "v488-audit-002",
+    "youtubeId": "kyY4WvdwLBE",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "람디와 함께하는 두번째 시간💗 한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.05.06 (2회) #이보람 #한밤의꿈 #라디오"
+  },
+  {
+    "recordId": "v488-audit-001",
+    "youtubeId": "bmBdrkMB7n8",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[LIVE] 첫방송🎙️ 한밤의 꿈 이보람입니다🌃  / 보이는라디오 2026.04.29 (1회)"
+  },
+  {
+    "recordId": "20260420-seeya-noon-radio",
+    "youtubeId": "uq4wMNZfGYk",
+    "kind": "full",
+    "channel": "Mhz 므흐즈: MBC RADIO",
+    "channelUrl": "https://www.youtube.com/@radiombc",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[FULL] 라이브 온 에어🎙️씨야(See Ya)와 함께하는 정오의 희망곡 라이브 | #MBCRADIO #정오의희망곡김신영입니다 #씨야 #SeeYa | MBC 260420 방송"
+  },
+  {
+    "recordId": "20260402-seeya-cultwo",
+    "youtubeId": "ghw-gqpjAD8",
+    "kind": "full",
+    "channel": "SBS Radio 에라오",
+    "channelUrl": "https://www.youtube.com/@SBS_Radio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[FULL] \"이날을 위해 15년을 기다렸습니다.”😍 씨야 보는 라디오ㅣ두시탈출 컬투쇼ㅣ260402"
+  },
+  {
+    "recordId": "v488-audit-031",
+    "youtubeId": "NWyOi58qPmM",
+    "kind": "full",
+    "channel": "KBS CoolFM",
+    "channelUrl": "https://www.youtube.com/@KBS_CoolFM",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "가광 초대석, 누구세요? with 남규리 full ver. / [이은지의 가요광장] I KBS 260105 방송"
+  },
+  {
+    "recordId": "v487-2026-001",
+    "youtubeId": "ZngxXq7apqA",
+    "kind": "full",
+    "channel": "SBS Radio 에라오",
+    "channelUrl": "https://www.youtube.com/@SBS_Radio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "[FULL] 14년 만에 다시 음악 활동을 시작한 🎵남규리(Nam Gyu ri)🎵 보는 라디오 | 두시탈출 컬투쇼 | 260104"
+  },
+  {
+    "recordId": "20260930-boram-btn-dream-23",
+    "youtubeId": "trvkTPhlNFc",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "YouTube 공개 oEmbed 제목·채널 확인. 재생/이용 권한 보증 아님.",
+    "sourceTitle": "9월의 마지막 수요일 밤~ 한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.09.30 (23회)"
   }
 ]
