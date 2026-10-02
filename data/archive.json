@@ -5467,8 +5467,14 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A20%3AF20"
+      },
+      {
+        "label": "Mnet K-POP · 'COMEBACK' SEEYA (씨야) - Stay",
+        "url": "https://www.youtube.com/watch?v=DzVxR_ALqV0",
+        "publishedDate": "2026-06-18"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v488-audit-006",
@@ -5524,6 +5530,16 @@
       {
         "label": "제이의 방",
         "url": "https://www.youtube.com/watch?v=fQhztPll5jY"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야 남규리가수 출근길하는장면",
+        "url": "https://www.youtube.com/watch?v=yh3XwzrDxZ0",
+        "publishedDate": "2026-06-17"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야남규리-미친사랑의 노래 뒤란콘서트",
+        "url": "https://www.youtube.com/watch?v=MJUPOdId9VM",
+        "publishedDate": "2026-06-19"
       }
     ],
     "status": "available",
@@ -5532,7 +5548,8 @@
       "일정 기록"
     ],
     "note": "6월 17일 녹화한 뒤란 무대입니다. 인터뷰는 8월 21일 방송됐습니다.",
-    "venue": "울산문화예술회관 야외공연장"
+    "venue": "울산문화예술회관 야외공연장",
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v475-sheet2-row17",
@@ -5625,6 +5642,11 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A39%3AF39"
+      },
+      {
+        "label": "경상도남자 서울여자 · 씨야 이보람 : 강남 피크닉 콘서트",
+        "url": "https://www.youtube.com/watch?v=el52Z66HJMk",
+        "publishedDate": "2026-06-18"
       }
     ],
     "status": "documented",
@@ -5633,7 +5655,8 @@
       "일정 기록"
     ],
     "note": "강남 피크닉 콘서트 출연입니다. SBS 방송 일정은 7월 10일입니다.",
-    "venue": "한강공원 신사잠원지구 다목적운동장"
+    "venue": "한강공원 신사잠원지구 다목적운동장",
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v475-sheet2-row14",
@@ -5879,8 +5902,24 @@
       {
         "label": "KBS 레전드 케이팝",
         "url": "https://www.youtube.com/watch?v=whTAN8EeeB8"
+      },
+      {
+        "label": "KBS 레전드 케이팝 · 씨야 - 사랑의 인사 [열린 음악회/Open Concert] | KBS 260607 방송",
+        "url": "https://www.youtube.com/watch?v=7nKwMVlEvYg",
+        "publishedDate": "2026-06-07"
+      },
+      {
+        "label": "KBS 한국방송 · 다시 뭉치길 정말 잘했어😍 목소리 궁합 100점 만점 씨야 라이브",
+        "url": "https://www.youtube.com/watch?v=MJCWiDRM-qA",
+        "publishedDate": "2026-06-08"
+      },
+      {
+        "label": "KBS WORLD TV · SeeYa(씨야) - 미친 사랑의 노래 [Open Concert 열린음악회] KBS KOREA 260607",
+        "url": "https://www.youtube.com/watch?v=Oc6VHKr9MKo",
+        "publishedDate": "2026-06-15"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v475-sheet2-row7",
@@ -5979,6 +6018,11 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A6%3AF6"
+      },
+      {
+        "label": "KBS CoolFM · 씨야, 뮤비 주인공에 아이키 섭외한 이유 / [가비의 슈퍼라디오] I KBS 260605 방송",
+        "url": "https://www.youtube.com/watch?v=GJBbAp9AbGI",
+        "publishedDate": "2026-06-05"
       }
     ],
     "status": "available",
@@ -5986,7 +6030,8 @@
       "2026",
       "일정 기록"
     ],
-    "note": ""
+    "note": "",
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "20260605-seeya-powerfm-environment",
@@ -6143,7 +6188,15 @@
       "2026",
       "완전체"
     ],
-    "note": "씨야 완전체로 성남을 찾은 TV CHOSUN 방송입니다."
+    "note": "씨야 완전체로 성남을 찾은 TV CHOSUN 방송입니다.",
+    "additionalSources": [
+      {
+        "label": "TVCHOSUN LIFE · [#백반기행] 15년 만에 컴백한 환상의 하모니 씨야! 남규리, 이보람, 김연지 한 사람도 빠짐없이 다 잘 먹는 그룹 탄생? (TV CHOSUN 260531 방송)",
+        "url": "https://www.youtube.com/watch?v=8-F71B_u754",
+        "publishedDate": "2026-06-01"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "20260530-seeya-immortal-songs",
@@ -6180,8 +6233,19 @@
       {
         "label": "KBS 레전드 케이팝",
         "url": "https://www.youtube.com/watch?v=lRZJ7ax22mw"
+      },
+      {
+        "label": "KBS 한국방송 · 아기다리고기다리던 씨야 완전체 무대 🤩 찰떡 헤메코에 완벽한 화음까지 제대로 ‘보여줄게’",
+        "url": "https://www.youtube.com/watch?v=aPjv9qVoQ7g",
+        "publishedDate": "2026-05-31"
+      },
+      {
+        "label": "KBS 한국방송 · 씨야가 장갑을 한 쪽만 착용한 이유",
+        "url": "https://www.youtube.com/watch?v=CHIdihkUiJI",
+        "publishedDate": "2026-05-31"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "20260529-kbs-the-seasons-stay",
@@ -6215,7 +6279,30 @@
       "완전체"
     ],
     "note": "재결합 후 KBS 음악 토크쇼 출연. 신곡 ‘Stay’와 대표곡 ‘사랑의 인사’를 선보였다.",
-    "stageKind": "라이브 음악프로그램"
+    "stageKind": "라이브 음악프로그램",
+    "additionalSources": [
+      {
+        "label": "KBS Kpop · 씨야 (SEEYA) - 사랑의 인사 [더 시즌즈-성시경의 고막남친] | KBS 260529 방송",
+        "url": "https://www.youtube.com/watch?v=0w_viJPsbOk",
+        "publishedDate": "2026-05-30"
+      },
+      {
+        "label": "KBS 한국방송 · 세월이 이렇게 흘렀는데 비주얼과 가창력 실화임? 😱 레전드 여성 보컬 그룹 씨야의 귀환",
+        "url": "https://www.youtube.com/watch?v=Sid-_FTuO4c",
+        "publishedDate": "2026-05-30"
+      },
+      {
+        "label": "KBS Kpop · 이보람 - 처음 그 자리에 (드라마 ＜풀하우스＞ OST) [더 시즌즈-성시경의 고막남친] | KBS 260529 방송",
+        "url": "https://www.youtube.com/watch?v=zWTxdwT2Gqo",
+        "publishedDate": "2026-05-30"
+      },
+      {
+        "label": "KBS WORLD Latino · SEEYA - Lovely Sweet Heart (The Seasons) | KBS WORLD TV 260612",
+        "url": "https://www.youtube.com/watch?v=WKW7zRWpkO8",
+        "publishedDate": "2026-06-16"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v474-stage-research-031",
@@ -6253,6 +6340,26 @@
         "label": "스튜디오 드리밍 [Dreaming] · [선공개] 씨야와 SG워너비가 함께했던 숨겨진 명곡 '사랑하기 때문에 (With 먼데이 키즈)' | 먼키의 발자국 Live Clip",
         "url": "https://www.youtube.com/watch?v=nNEXQIrYQWE",
         "publishedDate": "2026-05-22"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 씨야의 메인보컬 김연지의 미친 가창력 ‘구두’ 라이브",
+        "url": "https://www.youtube.com/watch?v=wMMUiwwvSKs",
+        "publishedDate": "2026-05-29"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 남규리가 새롭게 소화한 ‘사랑의 인사 (2026)’",
+        "url": "https://www.youtube.com/watch?v=hkhJOjWU8pQ",
+        "publishedDate": "2026-05-30"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 여전한 클래스! 씨야의 데뷔곡 '여인의 향기' | 먼키의 발자국 Live Clip",
+        "url": "https://www.youtube.com/watch?v=Inm6NKDhcrw",
+        "publishedDate": "2026-06-01"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 씨야 노래 중 가장 극락이라는 보컬 파트",
+        "url": "https://www.youtube.com/watch?v=bh40JUOBdW0",
+        "publishedDate": "2026-06-03"
       }
     ],
     "status": "available",
@@ -6266,7 +6373,7 @@
     "collaborators": [
       "먼데이 키즈"
     ],
-    "updatedAt": "2026-10-02T15:21:52.177930+00:00"
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v488-audit-005",
@@ -6612,6 +6719,11 @@
         "label": "오늘도 씨야 · 이거 진짜 실화냐 연세대 축제에서 씨야 완전체가 부르는 여성시대",
         "url": "https://www.youtube.com/watch?v=vmckrCamsHM",
         "publishedDate": "2026-05-22"
+      },
+      {
+        "label": "히지니의 덕질생활 · 260517 씨야 남규리 Stay 직캠",
+        "url": "https://www.youtube.com/watch?v=Xu-6cRrJEdw",
+        "publishedDate": "2026-05-29"
       }
     ],
     "status": "available",
@@ -6623,7 +6735,7 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-05-17",
-    "updatedAt": "2026-10-02T15:21:52.177930+00:00"
+    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
   },
   {
     "id": "v4145-Ud_KJY1I1vQ",
