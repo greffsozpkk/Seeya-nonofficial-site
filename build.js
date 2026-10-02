@@ -56,6 +56,7 @@ const offlinePaths=routes.flatMap(r=>[r.path,...(r.path==='/'?['/index.html']:[r
 write('offline.html',offlineHtml);
 write('sw.js',read('src/service-worker.js').replace('__OFFLINE_HASH__',JSON.stringify(offlineHash)).replace('__PUBLIC_PATHS__',JSON.stringify(offlinePaths)));
 const quizCss=asset('lyric-quiz','css',read('src/styles/lyric-quiz.css'));
+const mobileMenuJs=asset('mobile-menu','js',read('src/client/mobile-menu.js'));
 const siteJs=asset('site','js',bundle('src/client/site.js'));
 const quizJs=asset('lyric-quiz','js',bundle('src/client/lyric-quiz.js'));
 const fanCss=asset('fan-gallery','css',read('src/styles/fan-gallery.css'));
@@ -107,6 +108,7 @@ for(const route of [...routes,previewRoute]){
  if(key==='calendar'){vars.pageHead+=`<link rel="stylesheet" href="${calendarCss}">`;vars.scripts=`<script defer src="${calendarJs}"></script>`;}
  if(key==='fans'){vars.pageHead+=`<link rel="stylesheet" href="${fanCss}">`;vars.scripts+=`\n<script defer src="${fanJs}"></script>`;}
  if(key==='exam'||key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
+ vars.scripts+=`\n<script defer src="${mobileMenuJs}"></script>`;
  vars.themeColor=esc(pwa.theme_color);
  vars.pwaHead=route.unlisted?'':`<link rel="manifest" href="/manifest.webmanifest">\n<link rel="apple-touch-icon" sizes="180x180" href="/images/app/apple-touch-icon-180.png">\n<meta name="mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="${esc(pwa.short_name)}">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">`;
  if(!route.unlisted)vars.scripts+=`\n<script defer src="${pwaJs}"></script>\n<script defer src="${offlineJs}"></script>`;

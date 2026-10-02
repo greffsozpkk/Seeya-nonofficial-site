@@ -55,7 +55,7 @@ nodes.radioSearch.value='없는 방송';nodes.radioSearch.handlers.input();asser
 nodes.radioSearch.value='';nodes.radioSearch.handlers.input();assert(nodes.radioCount.textContent.includes('1 / 3'));
 assert.equal((html.match(/class="radio-item /g)||[]).length,9);
 assert(read('index.html').includes('class="home-radio"'));
-for(const path of ['index.html','music/index.html','members/index.html'])assert.equal((read(path).match(/href="\/radio\/">RADIO<\/a>/g)||[]).length,3);
+for(const path of ['index.html','music/index.html','members/index.html'])assert.equal((read(path).match(/href="\/radio\/">RADIO<\/a>/g)||[]).length,2);
 console.log('PASS radio public route/home/navigation, 9-item paging, boundaries/filter reset and uninterrupted player.');
 
 
