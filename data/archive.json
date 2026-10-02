@@ -6998,7 +6998,25 @@
       "솔로"
     ],
     "note": "이보람의 부산 단독 콘서트입니다.",
-    "venue": "영화의전당 하늘연극장"
+    "venue": "영화의전당 하늘연극장",
+    "additionalSources": [
+      {
+        "label": "꽁 · 4미터 짜리 부산 콘서트 홍보 현수막 등장!",
+        "url": "https://www.youtube.com/watch?v=Rlkelbg_fnI",
+        "publishedDate": "2026-03-22"
+      },
+      {
+        "label": "🐿람보바라기 · 2026.05.02(토) 오후6시🔸️이보람 단독 콘서트: SPARKLE -부산",
+        "url": "https://www.youtube.com/watch?v=6rma1tsxX9I",
+        "publishedDate": "2026-03-27"
+      },
+      {
+        "label": "공연1분 · 이보람 단독 콘서트",
+        "url": "https://www.youtube.com/watch?v=tUjFXoNScAE",
+        "publishedDate": "2026-04-01"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-038",
@@ -7532,6 +7550,11 @@
         "label": "갤러리 · 두 주 출연 자료 글",
         "url": "https://gall.dcinside.com/board/view/?id=seeya&no=187459",
         "publishedDate": "2020-03-16"
+      },
+      {
+        "label": "SBS 옛날 예능 - 빽능 · 너무 달달해서 이 썩을 것 같아요,,,",
+        "url": "https://www.youtube.com/watch?v=u9JgR3d6o6M",
+        "publishedDate": "2026-04-03"
       }
     ],
     "status": "available",
@@ -7540,7 +7563,7 @@
     ],
     "note": "남규리가 출연한 러브 체인지 38·39회 모음 영상입니다. 원방송일 미상으로 영상 게시일을 표시합니다.",
     "publishedDate": "2026-04-03",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-036",
@@ -7608,8 +7631,24 @@
       {
         "label": "SBS 4월 2일 방송 기록",
         "url": "https://podcasts.apple.com/kr/podcast/id419024758?i=1000758803126"
+      },
+      {
+        "label": "SBS Radio 에라오 · [LIVE] 씨야(SeeYa) - 사랑의 인사ㅣ두시탈출 컬투쇼",
+        "url": "https://www.youtube.com/watch?v=NC5uSxRT1fw",
+        "publishedDate": "2026-04-02"
+      },
+      {
+        "label": "SBS Radio 에라오 · [집방캠][4K] 씨야(See Ya) - 그럼에도, 우린 LIVE | 두시탈출 컬투쇼 | 260402",
+        "url": "https://www.youtube.com/watch?v=fQkEojdFwNQ",
+        "publishedDate": "2026-04-02"
+      },
+      {
+        "label": "SBS Radio 에라오 · 씨야의 웃픈 데뷔썰😂ㅣ두시탈출 컬투쇼",
+        "url": "https://www.youtube.com/watch?v=HVnrVEDHNAs",
+        "publishedDate": "2026-04-03"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-029",
@@ -7628,7 +7667,13 @@
       "label": "땅콩크림샌드 · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=-s6u3zlf6vw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.04.01 이보람-lie(무반주)",
+        "url": "https://www.youtube.com/watch?v=y-9tkFM_g_s",
+        "publishedDate": "2026-04-08"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -7638,7 +7683,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-04-08",
-    "venue": "원주"
+    "venue": "원주",
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "20260330-seeya-yonhap-interview",
@@ -7718,8 +7764,19 @@
       {
         "label": "그래도 좋아 · 현장 직캠 (정아선)",
         "url": "https://www.youtube.com/watch?v=QKNH-IrU78U"
+      },
+      {
+        "label": "정아선 · 씨야 - 미친 사랑의 노래 [260330 20주년 팬미팅]",
+        "url": "https://www.youtube.com/watch?v=bcjNO7IZMKQ",
+        "publishedDate": "2026-03-31"
+      },
+      {
+        "label": "THE IDOL × Nikon · [4K] 씨야(SeeYa) 「사랑의 인사」 가로 직캠 | SEEYA 첫 팬미팅 [RE:BLOOM]",
+        "url": "https://www.youtube.com/watch?v=63sCks2FLBI",
+        "publishedDate": "2026-04-03"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "20260330-nevertheless-we",
@@ -7762,7 +7819,15 @@
     "collaborators": [],
     "titleTracks": [
       "그럼에도, 우린"
-    ]
+    ],
+    "additionalSources": [
+      {
+        "label": "SEEYA Official · 씨야 SEEYA - 그럼에도 우린 Official MV",
+        "url": "https://www.youtube.com/watch?v=dmsw-tEenZ0",
+        "publishedDate": "2026-03-30"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-044",
@@ -7819,7 +7884,35 @@
       "2026",
       "완전체"
     ],
-    "note": "남규리의 집에 멤버들이 모여 데뷔 20주년과 활동 당시 이야기를 나눈 방송입니다."
+    "note": "남규리의 집에 멤버들이 모여 데뷔 20주년과 활동 당시 이야기를 나눈 방송입니다.",
+    "additionalSources": [
+      {
+        "label": "SBS Entertainment · [3월 29일 예고] ‘씨야’ 남규리, 이보람×김연지와 미처 하지 못한 20년 전 이야기",
+        "url": "https://www.youtube.com/watch?v=ZAu4PqzNDQA",
+        "publishedDate": "2026-03-22"
+      },
+      {
+        "label": "SBS Entertainment · “피부밖에 못한... ” 이보람×남규리, 메이크업 없이 데뷔 무대 치른 일화!",
+        "url": "https://www.youtube.com/watch?v=r0FGCxBoZ2c",
+        "publishedDate": "2026-03-29"
+      },
+      {
+        "label": "SBS Entertainment · [#습콕📌] 🎉(경)15년 만에 씨야 완전체 재결합(축)🎉 남규리X김연지X이보람의 솔직 심정 토크🎤",
+        "url": "https://www.youtube.com/watch?v=eNgu5XqplM8",
+        "publishedDate": "2026-03-30"
+      },
+      {
+        "label": "SBS Entertainment · 아침부터 삼겹살 먹는 게 동안 유지 비결",
+        "url": "https://www.youtube.com/watch?v=M9l4lXb8N5k",
+        "publishedDate": "2026-03-30"
+      },
+      {
+        "label": "SBS · [#습집🗂] 기다려준 팬들을 위해 돌아온 씨야🥹 20년 전 데뷔 무대부터 재결합까지의 이야기 | 미운 우리 새끼 | SBS",
+        "url": "https://www.youtube.com/watch?v=dX8EnaI2ZFo",
+        "publishedDate": "2026-03-30"
+      }
+    ],
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-028",
@@ -7867,7 +7960,13 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=bqbFGF1FdYY"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.03.22 이보람-LIE(무반주)",
+        "url": "https://www.youtube.com/watch?v=ghzwdCsDMDc",
+        "publishedDate": "2026-03-29"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -7877,7 +7976,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-03-23",
-    "venue": "순천"
+    "venue": "순천",
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v4145-HQQl-3OPp0U",
@@ -8048,7 +8148,13 @@
       "label": "소울직캠로그 · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=kTpKCqxLkTw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.03.11 이보람-연 (무반주)",
+        "url": "https://www.youtube.com/watch?v=bC8V4vjmDKQ",
+        "publishedDate": "2026-03-17"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8058,7 +8164,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-03-12",
-    "venue": "군산"
+    "venue": "군산",
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v4145-dfZxJIH4cCI",
@@ -8257,7 +8364,13 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=4x9iAhzKoZ8"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.02.14 이보람-미친 사랑의 노래(무반주)",
+        "url": "https://www.youtube.com/watch?v=fKzepBzS1a4",
+        "publishedDate": "2026-03-14"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8267,7 +8380,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-02-15",
-    "venue": "서산"
+    "venue": "서산",
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v488-audit-020",
@@ -8522,7 +8636,13 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=Kt2gfsuHp7w"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.21 이보람-당신을 위하여(양주를위하여)",
+        "url": "https://www.youtube.com/watch?v=ZBiVJNS6g8U",
+        "publishedDate": "2026-02-24"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8532,7 +8652,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-22",
-    "venue": "양주"
+    "venue": "양주",
+    "updatedAt": "2026-10-02T15:16:27.988171+00:00"
   },
   {
     "id": "v4145-g2YE1HfEDv0",
