@@ -45564,5 +45564,34 @@
     "tags": [],
     "note": "이보람과 HYNN(박혜원)이 함께 부른 「3일 후」 듀엣 클립입니다.\n두 채널의 공동작업 영상 공개일 기준입니다.",
     "publishedDate": "2026-10-02"
+  },
+  {
+    "id": "discovered-b7c3357c102b35e9",
+    "date": "2026-09-30",
+    "addedAt": "2026-10-02T16:30:11.209702+00:00",
+    "updatedAt": "2026-10-02T16:30:11.209702+00:00",
+    "title": "#이보람 #씨야 괴산 빨간맛 페스티벌 직캠 260523",
+    "program": "",
+    "type": "event",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "람보사랑",
+      "url": "https://www.youtube.com/watch?v=MJdWSrbzTdQ",
+      "publishedDate": "2026-09-30",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2026-09-30",
+    "autoDiscovery": true
   }
 ]
