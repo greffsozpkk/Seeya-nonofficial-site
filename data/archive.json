@@ -1596,9 +1596,34 @@
         "url": "https://www.youtube.com/watch?v=QIVhZy91dkg",
         "publishedDate": "2026-09-25",
         "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑 · 귤리버🍊(규리+걸리버) 잔망 ㅋㅋㅋ",
+        "url": "https://www.youtube.com/watch?v=nf_np0M9TKg",
+        "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "람보사랑 · 멘트가 꼬였나요 ㅋㅋ 모든것의 정의 가위바위보😁😝",
+        "url": "https://www.youtube.com/watch?v=UzDDyDQrFXg",
+        "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "🐿람보바라기 · 이보람 우석대학교 대동제 퇴근길👋🏻",
+        "url": "https://www.youtube.com/watch?v=7fs1qciBtoI",
+        "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "2 75 · stay 우석대학교 축제 seeya 이보람주의!",
+        "url": "https://www.youtube.com/watch?v=KvDm_Jpbibc",
+        "publishedDate": "2026-09-23"
+      },
+      {
+        "label": "람보사랑 · 와우^^🫣👍 이런다고👏😆",
+        "url": "https://www.youtube.com/watch?v=bryU4PbrLHc",
+        "publishedDate": "2026-09-24"
       }
     ],
-    "updatedAt": "2026-09-30T13:59:14.662333+00:00"
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00"
   },
   {
     "id": "20260921-gyuri-mbc-noon-dj",
@@ -1652,7 +1677,7 @@
     "id": "20260921-boram-kyoungseo-duet",
     "date": "2026-09-21",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00",
     "title": "이보람 · 경서와 함께한 별이 떨어질 때",
     "program": "경서 공식 · 별이 떨어질 때 듀엣",
     "type": "music-show",
@@ -1669,7 +1694,13 @@
       "url": "https://www.instagram.com/p/DdiyiU8vB2r/",
       "publishedDate": "2026-09-21"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "경서 · #별이_떨어질_때",
+        "url": "https://www.youtube.com/watch?v=wNc9VDZfspY",
+        "publishedDate": "2026-09-21"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -3190,9 +3221,24 @@
         "label": "투카로그 · 260905 남규리 이보람 꽁냥 직캠",
         "url": "https://www.youtube.com/watch?v=EWgWnC_G_vI",
         "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "투카로그 · 260905 김연지 앵콜 직캠",
+        "url": "https://www.youtube.com/watch?v=Mrfb1IwxkGg",
+        "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "투카로그 · 260905 남규리 그래도좋아 씨야 부산 콘서트 직캠",
+        "url": "https://www.youtube.com/watch?v=OVuyuTnHpV8",
+        "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "투카로그 · 260905 김연지 그래도좋아 씨야 부산 콘서트 직캠",
+        "url": "https://www.youtube.com/watch?v=LERl4N7h5jk",
+        "publishedDate": "2026-09-10"
       }
     ],
-    "updatedAt": "2026-10-02T15:36:46.138974+00:00"
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00"
   },
   {
     "id": "v475-sheet1-row5",
@@ -3640,10 +3686,20 @@
         "label": "늦덕보람 · [신곡] 우리 사랑 그런 거 해요 Part.1 - 남규리 | 씨야 전국 투어 콘서트: THE FAN (서울: '26.08.30) | '26.09.06 발매",
         "url": "https://www.youtube.com/watch?v=cQyW2jv0rZ0",
         "publishedDate": "2026-09-07"
+      },
+      {
+        "label": "냥펀치 · 20260830 씨야 데뷔 20주년 서울 콘서트 남규리 - stay",
+        "url": "https://www.youtube.com/watch?v=9kiDPyRFCeE",
+        "publishedDate": "2026-09-26"
+      },
+      {
+        "label": "냥펀치 · 20260830 씨야 데뷔 20주년 서울 콘서트 김연지 - I Believe",
+        "url": "https://www.youtube.com/watch?v=Y-dvjgj3sCs",
+        "publishedDate": "2026-09-26"
       }
     ],
     "endDate": "2026-08-30",
-    "updatedAt": "2026-10-02T15:36:46.138974+00:00"
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00"
   },
   {
     "id": "v492-sVhd4C_aeKM",
@@ -4779,14 +4835,26 @@
       "label": "씨야 일정표",
       "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A53%3AF53"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "BAAMBC LIVE | 뱀비씨 라이브 · 씨야(SeeYa) - Stay ✨stay in the twilight✨ @2026 키마위크 다대포비치콘서트",
+        "url": "https://www.youtube.com/watch?v=8xHvh2ETk6c",
+        "publishedDate": "2026-09-14"
+      },
+      {
+        "label": "BAAMBC LIVE | 뱀비씨 라이브 · 씨야(SeeYa) - 미친 사랑의 노래 💦미친 가창력의 노래...💦 @2026 키마위크 다대포비치콘서트",
+        "url": "https://www.youtube.com/watch?v=r6pHhlmfchk",
+        "publishedDate": "2026-09-15"
+      }
+    ],
     "status": "documented",
     "tags": [
       "2026",
       "일정 기록"
     ],
     "note": "",
-    "venue": "부산 다대포해수욕장"
+    "venue": "부산 다대포해수욕장",
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00"
   },
   {
     "id": "v475-sheet2-row52",
@@ -10881,7 +10949,7 @@
     "id": "20251005-gyuri-gyulmung-ep15",
     "date": "2025-10-05",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-25",
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00",
     "title": "남규리 · 귤멍 Ep.15 · 추석 송편 만들기",
     "program": "남규리의 귤멍 Ep.15",
     "type": "official",
@@ -10896,7 +10964,13 @@
       "url": "https://www.youtube.com/watch?v=KNOasVMSYrU",
       "publishedDate": "2025-10-05"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "계절을견딘나무 · 좌충우돌. 남규리의 송편 만들기",
+        "url": "https://www.youtube.com/watch?v=bbcqWez74vM",
+        "publishedDate": "2026-09-25"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -44363,7 +44437,7 @@
     "id": "discovered-cf6f994bec5f5b23",
     "date": "2026-09-25",
     "addedAt": "2026-09-30T13:59:14.662333+00:00",
-    "updatedAt": "2026-10-01T06:19:50.608816+00:00",
+    "updatedAt": "2026-10-02T15:47:03.624207+00:00",
     "title": "꺾기에 감탄하는 리틀 주현미😍 김다현&김연지의 '여인의 눈물'♪ #트롯라디오 #TVCHOSUNMUSIC (TV CHOSUN 210114 방송 외)",
     "program": "",
     "type": "radio",
@@ -44385,6 +44459,11 @@
         "url": "https://www.youtube.com/watch?v=7dgPj0iCPrk",
         "publishedDate": "2026-09-25",
         "autoDiscovery": true
+      },
+      {
+        "label": "TVCHOSUN MUSIC · 𝗩𝗢𝗜𝗖𝗘 𝗠𝗜𝗫🎚️| 꺾기에 감탄하는 리틀 주현미😍 김다현&김연지의 '여인의 눈물'♪",
+        "url": "https://www.youtube.com/watch?v=MORrE9RtnQ8",
+        "publishedDate": "2026-09-24"
       }
     ],
     "status": "documented",
