@@ -8643,7 +8643,43 @@
       "label": "Ksh Cam · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=lhZHpfEOWvU"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.08 이보람-당신을 위하여(대구를 위하여)",
+        "url": "https://www.youtube.com/watch?v=WHsm_JT-4Cs",
+        "publishedDate": "2026-01-26"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 대구공연 '사랑의 인사'",
+        "url": "https://www.youtube.com/watch?v=A25CuCtYR20",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 '여인의 향기'#대구공연#공연직캠",
+        "url": "https://www.youtube.com/watch?v=zrJ8QENuZf4",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 '여성시대'#대구공연#공연직캠",
+        "url": "https://www.youtube.com/watch?v=nFDt-xgfVRI",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 대구공연 '사랑의 인사'",
+        "url": "https://www.youtube.com/watch?v=gVyxLWPYwaA",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 대구공연 '처음 그자리에'#공연직캠",
+        "url": "https://www.youtube.com/watch?v=8SSXPNKEOR8",
+        "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "강남매TV · [2026.1.8] 씨야 이보람 '원더우먼'#대구공연#공연직캠",
+        "url": "https://www.youtube.com/watch?v=nb9PG3Z1KPM",
+        "publishedDate": "2026-02-11"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8653,7 +8689,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-09",
-    "venue": ""
+    "venue": "",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v488-audit-014",
@@ -8672,7 +8709,13 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=-kB-QxB5QHw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.07 이보람-그런 일은(무반주)",
+        "url": "https://www.youtube.com/watch?v=uogbMHZhljQ",
+        "publishedDate": "2026-01-26"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8682,7 +8725,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-08",
-    "venue": "청주"
+    "venue": "청주",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v488-audit-031",
@@ -8758,7 +8802,13 @@
       "label": "람보사랑 · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=tLCxGteaccw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.04 이보람-미치게 그리워서(무반주)",
+        "url": "https://www.youtube.com/watch?v=NExpkvs1O54",
+        "publishedDate": "2026-01-13"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8768,7 +8818,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-05",
-    "venue": "세종"
+    "venue": "세종",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v487-2026-001",
@@ -8815,7 +8866,18 @@
       "label": "제리제이 Jerry.j · 비공식 영상",
       "url": "https://www.youtube.com/watch?v=ZZOuA2qUI8g"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽃길보라미 · 2026.01.03 이보람-don't cry (무반주)",
+        "url": "https://www.youtube.com/watch?v=obVN1zeLD64",
+        "publishedDate": "2026-01-12"
+      },
+      {
+        "label": "꽃길보라미 · 2026.01.03 이보람-유죄(무반주)",
+        "url": "https://www.youtube.com/watch?v=MdeKUFQHMQM",
+        "publishedDate": "2026-01-12"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -8825,7 +8887,8 @@
     "dateStatus": "tentative",
     "dateBasis": "event",
     "publishedDate": "2026-01-03",
-    "venue": "성남"
+    "venue": "성남",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v491-change-jinju",
@@ -12524,7 +12587,18 @@
       "label": "SBS Entertainment",
       "url": "https://www.youtube.com/watch?v=nnzrfxXrBkY"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "SBS · [선공개] '깜짝 고백' 씨야 남규리, 다시 노래할 수 있게 해준 한 사람 공개!",
+        "url": "https://www.youtube.com/watch?v=3giuZxLLNCQ",
+        "publishedDate": "2024-04-16"
+      },
+      {
+        "label": "SBS Entertainment · “이상한 얘기 자꾸 하잖아!!” 전현무, ‘맑눈광’ 남규리 몰이에 당황↗",
+        "url": "https://www.youtube.com/watch?v=-_tx4Xv9cug",
+        "publishedDate": "2024-04-16"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -12532,7 +12606,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v4145-if9HWsWUsDY",
@@ -12757,6 +12832,11 @@
         "url": "https://www.youtube.com/watch?v=9_A6jAJE5Pc",
         "publishedDate": "2024-03-09",
         "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j · 진심을 다해 노래하는 이보람의 표정 | SG워너비 ‘죄와 벌’ 부르며 울컥 | 불후의 명곡2 전설을 노래하다 | 이보람×안성훈 - 죄와 벌",
+        "url": "https://www.youtube.com/watch?v=6TTeoMvEy_k",
+        "publishedDate": "2024-03-10"
       }
     ],
     "status": "available",
@@ -12767,7 +12847,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-02T05:58:52.107410+00:00"
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v4145-Fr_7Lo_u8mI",
@@ -14656,7 +14736,13 @@
       "label": "엠뚜루마뚜루 : MBC 공식 종합 채널",
       "url": "https://www.youtube.com/watch?v=BZDU10mfFHI"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "MBCentertainment · [놀면 뭐하니?] 교생 선생님 실사판(?) 이보람 선생님의 등장 🌟 ＂교생들아 기 죽지 마라♬ 당당하게 외쳐라!♬＂, MBC 230415 방송",
+        "url": "https://www.youtube.com/watch?v=Wh6Pr3-EMjY",
+        "publishedDate": "2023-04-15"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -14664,7 +14750,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v4145-o7iYsuxWLz0",
@@ -14717,7 +14804,13 @@
       "label": "스튜디오 피넛버터 - Studio Peanut Butter",
       "url": "https://www.youtube.com/watch?v=DDtjY67zDNM"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "스튜디오 피넛버터 - Studio Peanut Butter · 1인 3역 폼 지리는 김연지(씨야)ㄷㄷ",
+        "url": "https://www.youtube.com/watch?v=s37YgmeluYk",
+        "publishedDate": "2023-04-10"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -14726,7 +14819,8 @@
     "note": "날짜는 영상 공개일이며 실제 촬영·진행일은 미상입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
-    "publishedDate": "2023-04-07"
+    "publishedDate": "2023-04-07",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v491-daegaya",
@@ -15358,7 +15452,7 @@
     "id": "20221128-boram-freedoctor81",
     "date": "2022-11-28",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00",
     "title": "이보람 · 프리한 닥터M 81회",
     "program": "tvN 프리한 닥터M",
     "type": "variety",
@@ -15378,6 +15472,11 @@
         "label": "tvN · 이보람 편 하이라이트",
         "url": "https://www.youtube.com/watch?v=W8C1hEJhP6E",
         "publishedDate": "2022-11-29"
+      },
+      {
+        "label": "디글 :Diggle · [#프리한닥터M] 가야G 활동 전 힘들었던 이보람의 10년 공백기, 가수의 꿈까지 고민했던 지난 시간들",
+        "url": "https://www.youtube.com/watch?v=whmZq3olitQ",
+        "publishedDate": "2023-03-24"
       }
     ],
     "status": "available",
@@ -15953,6 +16052,11 @@
         "label": "KBS · Forever 공식 무대",
         "url": "https://www.youtube.com/watch?v=bdmQkgMosp0",
         "publishedDate": "2022-09-17"
+      },
+      {
+        "label": "KBS 레전드 케이팝 · 이보람의 꿀 보이스🍯 ♬SEE YA 명곡 메들리♬ 찬또의 학창 시절 추억 소환 [불후의 명곡2 전설을 노래하다/Immortal Songs 2] | KBS 220917 방송",
+        "url": "https://www.youtube.com/watch?v=Cnfo5rtSZRs",
+        "publishedDate": "2022-09-17"
       }
     ],
     "status": "documented",
@@ -15963,7 +16067,7 @@
     "note": "날짜는 공식 방송 음반 공개일입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "release",
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v4145-2ShLQvkT9QI",
@@ -16620,6 +16724,11 @@
         "label": "엠뚜루마뚜루 : MBC 공식 종합 채널 · [놀면 뭐하니?] 이보람+정지소+박혜원+소연 = 음원차트 기강 잡으러 온 보컬 어벤져스⚔ ㅣ#WSG워너비",
         "url": "https://www.youtube.com/watch?v=wzNrrUBVmNk",
         "publishedDate": "2022-06-27"
+      },
+      {
+        "label": "엠뚜루마뚜루 : MBC 공식 종합 채널 · 그그그 노래 이보람 완전 찰떡 [댓모아]",
+        "url": "https://www.youtube.com/watch?v=ltGhtBfnaEY",
+        "publishedDate": "2022-07-03"
       }
     ],
     "status": "available",
@@ -16630,7 +16739,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v491-hangout-2022-06-18",
@@ -16649,7 +16758,13 @@
       "label": "MBCentertainment",
       "url": "https://www.youtube.com/watch?v=k1zEcM1N1yU"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "TV-People · 【로켓피플】 정지소🤍이보람, 첫 만남부터 씨야 결혼할까요 듀엣💕, 그리고 같은 노래 선택한 날까지💝! 엠마성경 감동 서사 모음💧｜놀면 뭐하니?｜TVPP｜MBC 220618 방송",
+        "url": "https://www.youtube.com/watch?v=BucawYZJ7PQ",
+        "publishedDate": "2022-07-13"
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -16657,7 +16772,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
   },
   {
     "id": "v491-cover-tg2IuFVhUps",
