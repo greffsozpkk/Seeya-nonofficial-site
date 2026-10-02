@@ -3224,9 +3224,25 @@
       {
         "label": "햄햄햄",
         "url": "https://www.youtube.com/watch?v=6iaakC-HNbU"
+      },
+      {
+        "label": "콘서트 직촬 · 260829 씨야 20주년 전국 투어 콘서트 THEFAN - 서울 씨야Seeya 그 놈 목소리",
+        "url": "https://www.youtube.com/watch?v=Ye8BWrWrrjc",
+        "publishedDate": "2026-08-29"
+      },
+      {
+        "label": "콘서트 직촬 · 260829 씨야 20주년 전국 투어 콘서트 THEFAN - 서울 씨야 seeya 미친 사랑의 노래",
+        "url": "https://www.youtube.com/watch?v=aUgrSPiQGrc",
+        "publishedDate": "2026-08-29"
+      },
+      {
+        "label": "콘서트 직촬 · 260829 씨야 20주년 전국 투어 콘서트 THEFAN 서울 씨야 Seeya - Stay",
+        "url": "https://www.youtube.com/watch?v=WisU1NZP30Q",
+        "publishedDate": "2026-08-29"
       }
     ],
-    "endDate": "2026-08-30"
+    "endDate": "2026-08-30",
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v492-sVhd4C_aeKM",
@@ -3359,8 +3375,19 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A76%3AF76"
+      },
+      {
+        "label": "JDK · 260827 KWDA 2026 - 씨야 : Stay 스테이 남규리 직캠",
+        "url": "https://www.youtube.com/watch?v=UDRoJbm1dSY",
+        "publishedDate": "2026-08-28"
+      },
+      {
+        "label": "오프 영상업로드YCH · Stay - 씨야(SEEYA) 2026 KWDA 시상식 케이 월드 드림 어워즈 [260827]",
+        "url": "https://www.youtube.com/watch?v=bnwUbsaHAS4",
+        "publishedDate": "2026-08-28"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v488-audit-011",
@@ -4202,8 +4229,14 @@
       {
         "label": "iMBC연예",
         "url": "https://enews.imbc.com/News/ViewAmp/513650"
+      },
+      {
+        "label": "Mhz 므흐즈: MBC RADIO · [FULL] 라이브 온 에어🎙️이보람X흰과 함께하는 정오의 희망곡 라이브 |",
+        "url": "https://www.youtube.com/watch?v=d_NgiZyi6ZU",
+        "publishedDate": "2026-08-04"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v475-sheet2-row56",
@@ -4413,6 +4446,11 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A51%3AF51"
+      },
+      {
+        "label": "노빠꾸탁재훈 · 연락하기 시작한 씨야 멤버들",
+        "url": "https://www.youtube.com/watch?v=0mIXxAadyGw",
+        "publishedDate": "2026-07-30"
       }
     ],
     "status": "available",
@@ -4421,7 +4459,8 @@
       "variety"
     ],
     "note": "",
-    "publishedDate": "2026-07-29"
+    "publishedDate": "2026-07-29",
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v4145-_AbFDbCDAHI",
@@ -4784,14 +4823,31 @@
       "label": "팬 촬영 전체 무대",
       "url": "https://www.youtube.com/watch?v=xfY6TOljeOY"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "유튜브매니한 · 씨야 - STAY 이보람 직캠(2026송도 타임캡슐)",
+        "url": "https://www.youtube.com/watch?v=ZbmD00m2C58",
+        "publishedDate": "2026-07-12"
+      },
+      {
+        "label": "땅콩크림샌드 · [남규리/퇴근길] 2026년 타임캡슐 슈퍼콘서트 in 송도달빛축제공원",
+        "url": "https://www.youtube.com/watch?v=varHCghyhR0",
+        "publishedDate": "2026-07-13"
+      },
+      {
+        "label": "kim난나 · 씨야(남규리,김연지,이보람) 사랑의 인사 2026.7.11.",
+        "url": "https://www.youtube.com/watch?v=hNTYOX5kI9g",
+        "publishedDate": "2026-07-22"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
       "일정 기록"
     ],
     "note": "",
-    "venue": "송도달빛축제공원"
+    "venue": "송도달빛축제공원",
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v475-sheet2-row40",
@@ -5075,6 +5131,21 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A31%3AF31"
+      },
+      {
+        "label": "콜라티비(Cola TV) · 남규리 버스킹 (대구 룰리 버스킹)",
+        "url": "https://www.youtube.com/watch?v=0X2Hyoz7kxg",
+        "publishedDate": "2026-06-28"
+      },
+      {
+        "label": "강남매TV · [26.6.28] 대구 롤리커피 씨야 남규리 공연#해운대연인들#대구공연",
+        "url": "https://www.youtube.com/watch?v=1GXukV3Xt6c",
+        "publishedDate": "2026-06-29"
+      },
+      {
+        "label": "무대인사매니아 · 20260628씨야남규리 이동하는장면",
+        "url": "https://www.youtube.com/watch?v=OPwW4tbKf-E",
+        "publishedDate": "2026-07-24"
       }
     ],
     "status": "available",
@@ -5084,7 +5155,7 @@
     ],
     "note": "6월 28일 대구에서 진행한 남규리의 롤리버스킹입니다.",
     "venue": "롤리커피 가창점",
-    "updatedAt": "2026-09-13"
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v4145-dKVDn4pUiLc",
@@ -5472,9 +5543,14 @@
         "label": "Mnet K-POP · 'COMEBACK' SEEYA (씨야) - Stay",
         "url": "https://www.youtube.com/watch?v=DzVxR_ALqV0",
         "publishedDate": "2026-06-18"
+      },
+      {
+        "label": "🐿람보바라기 · 이보람 4K 직캠 |",
+        "url": "https://www.youtube.com/watch?v=2fTEnl0mILc",
+        "publishedDate": "2026-06-19"
       }
     ],
-    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v488-audit-006",
@@ -5540,6 +5616,21 @@
         "label": "무대인사매니아 · 20260617씨야남규리-미친사랑의 노래 뒤란콘서트",
         "url": "https://www.youtube.com/watch?v=MJUPOdId9VM",
         "publishedDate": "2026-06-19"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야이보람-미친사랑의 노래 뒤란콘서트",
+        "url": "https://www.youtube.com/watch?v=ac42bALQHrM",
+        "publishedDate": "2026-06-21"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야김연지-사랑의인사 뒤란콘서트",
+        "url": "https://www.youtube.com/watch?v=CaZRqdxgBNI",
+        "publishedDate": "2026-06-22"
+      },
+      {
+        "label": "무대인사매니아 · 20260617씨야이보람-결혼할까요 뒤란콘서트",
+        "url": "https://www.youtube.com/watch?v=hxkZDFXgClU",
+        "publishedDate": "2026-07-15"
       }
     ],
     "status": "available",
@@ -5549,7 +5640,7 @@
     ],
     "note": "6월 17일 녹화한 뒤란 무대입니다. 인터뷰는 8월 21일 방송됐습니다.",
     "venue": "울산문화예술회관 야외공연장",
-    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v475-sheet2-row17",
@@ -6194,9 +6285,14 @@
         "label": "TVCHOSUN LIFE · [#백반기행] 15년 만에 컴백한 환상의 하모니 씨야! 남규리, 이보람, 김연지 한 사람도 빠짐없이 다 잘 먹는 그룹 탄생? (TV CHOSUN 260531 방송)",
         "url": "https://www.youtube.com/watch?v=8-F71B_u754",
         "publishedDate": "2026-06-01"
+      },
+      {
+        "label": "TVCHOSUN - TV조선 · Again 2007 🎶씨야",
+        "url": "https://www.youtube.com/watch?v=U-nCjh3XWa8",
+        "publishedDate": "2026-07-08"
       }
     ],
-    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "20260530-seeya-immortal-songs",
@@ -6360,6 +6456,11 @@
         "label": "스튜디오 드리밍 [Dreaming] · 씨야 노래 중 가장 극락이라는 보컬 파트",
         "url": "https://www.youtube.com/watch?v=bh40JUOBdW0",
         "publishedDate": "2026-06-03"
+      },
+      {
+        "label": "스튜디오 드리밍 [Dreaming] · 역대급 환상의 화음으로 부른 씨야 라이브 모음 | 먼키의 발자국 Live Clip",
+        "url": "https://www.youtube.com/watch?v=VZcFQv8efTA",
+        "publishedDate": "2026-08-06"
       }
     ],
     "status": "available",
@@ -6373,7 +6474,7 @@
     "collaborators": [
       "먼데이 키즈"
     ],
-    "updatedAt": "2026-10-02T15:24:21.358150+00:00"
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v488-audit-005",
@@ -43077,6 +43178,11 @@
       {
         "label": "씨야 갤러리 · 1집 무대 자료 목록",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      },
+      {
+        "label": "Again 가요톱10 : KBS KPOP Classic · 씨야(See ya ) - Promise U [윤도현의 러브레터] | KBS 20060414 방송",
+        "url": "https://www.youtube.com/watch?v=eCk7xwAIDDQ",
+        "publishedDate": "2026-08-04"
       }
     ],
     "status": "available",
@@ -43085,7 +43191,7 @@
       "라이브"
     ],
     "note": "",
-    "updatedAt": "2026-09-19"
+    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
   },
   {
     "id": "v487-history-021",
