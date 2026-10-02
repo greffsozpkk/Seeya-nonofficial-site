@@ -6,4 +6,5 @@ module.exports=function(){return `<section class="about-install-page">
  <h1>늘 가까이, 씨야</h1>
  <p>다시 찾아오는 길이 조금 더 편해지도록.<br>홈 화면에 씨야 아카이브를 놓아보세요.</p>
  ${installGuide()}
+ <p><a href="/radio/test/">라디오 모아듣기 · 재생 테스트 →</a></p>
  </section>`;};

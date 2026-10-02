@@ -1,0 +1,32 @@
+[
+  {
+    "recordId": "20260930-boram-btn-dream-23",
+    "youtubeId": "trvkTPhlNFc",
+    "kind": "replay",
+    "channel": "BTN라디오",
+    "channelUrl": "https://www.youtube.com/@btnradio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "공식 채널의 보이는라디오 2026.09.30 (23회) 게시물. 전체 편성분과 동일하다는 뜻은 아님."
+  },
+  {
+    "recordId": "20260917-gyuri-yeonji-sbs12n",
+    "youtubeId": "rWE6SSVs3BA",
+    "kind": "full",
+    "channel": "SBS Radio 에라오",
+    "channelUrl": "https://www.youtube.com/@SBS_Radio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "공식 영상 제목 [FULL] 및 260917 방송 표기."
+  },
+  {
+    "recordId": "20260925-yeonji-mbc-2pdate",
+    "youtubeId": "4BByjzA3ldA",
+    "kind": "clip",
+    "channel": "Mhz 므흐즈: MBC RADIO",
+    "channelUrl": "https://www.youtube.com/@radiombc",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-02",
+    "basis": "공식 ALLIVE 영상: 노래 + 사랑의 인사 두 곡의 라이브 클립."
+  }
+]

@@ -291,5 +291,12 @@
     "path": "/about/install/",
     "title": "홈 화면에 추가 · ABOUT | SEEYA ARCHIVE",
     "description": "SEEYA ARCHIVE를 홈 화면에 추가해 가까이 만나보세요. 아이폰·안드로이드·PC 설치 방법을 안내합니다."
+  },
+  {
+    "key": "radio",
+    "path": "/radio/test/",
+    "title": "라디오 모아듣기 · 재생 테스트 | SEEYA ARCHIVE",
+    "description": "씨야와 멤버들의 공식 라디오 영상 3개로 재생과 모바일 사용을 확인하는 테스트 페이지입니다.",
+    "noindex": true
   }
 ]

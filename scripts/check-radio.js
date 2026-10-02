@@ -1,0 +1,28 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
+const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const {resolveRadio,filterRadio,videoId}=require('../src/shared/radio');
+const reviews=require('../src/data/radio-pilot.json'),rows=JSON.parse(read('data/archive.json'));
+const current=resolveRadio(rows,reviews,'2026-10-02');
+assert(current.length<=3);assert(new Set(current.map(r=>r.videoId)).size===current.length);
+const seed={id:'fixture',date:'2026-09-30',type:'radio',title:'방송',members:['이보람'],source:{label:'공식',url:'https://youtube.com/watch?v=trvkTPhlNFc'}};
+const review={...reviews[0],recordId:'fixture'};
+for(const patch of [{hidden:true},{status:'scheduled'},{eventState:'cancelled'},{date:'2026-10-03'},{type:'article'},{source:{url:'https://example.com'}}])assert.equal(resolveRadio([{...seed,...patch}],[review],'2026-10-02').length,0);
+assert.equal(resolveRadio([seed],[{...review,channelStatus:'unchecked'}],'2026-10-02').length,0);
+assert.equal(resolveRadio([seed],[review,review],'2026-10-02').length,1);
+assert.equal(resolveRadio([{...seed,title:'관리자 변경'}],[review],'2026-10-02')[0].title,'관리자 변경');
+assert.equal(videoId('https://youtube.com.evil.test/watch?v=trvkTPhlNFc'),'');
+const testRows=[{id:'a',date:'2026-09-30',title:'첫 방송',program:'BTN',members:['이보람'],videoId:'trvkTPhlNFc',kind:'replay',channel:'BTN',source:'BTN'}, {id:'b',date:'2026-09-17',title:'다음 방송',program:'SBS',members:['남규리','김연지'],videoId:'rWE6SSVs3BA',kind:'full',channel:'SBS',source:'SBS'}];
+assert.equal(filterRadio(testRows,{member:'씨야'}).length,0);assert.equal(filterRadio(testRows,{member:'남규리'})[0].id,'b');assert.equal(filterRadio(testRows,{query:'btn'})[0].id,'a');assert.equal(filterRadio(testRows,{sort:'oldest'})[0].id,'b');
+let writes=0;const nodes={};function element(){return {handlers:{},dataset:{},textContent:'',value:'',innerHTML:'',addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},scrollIntoView(){}};}
+for(const id of ['radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus'])nodes[id]=element();
+nodes.radioData.textContent=JSON.stringify(testRows);Object.defineProperty(nodes.radioPlayer,'src',{set(){writes++;}});
+const members=['전체','씨야','남규리','김연지','이보람'].map(m=>({...element(),dataset:{radioMember:m}}));
+vm.runInNewContext(read('src/client/radio.js'),{require:()=>require('../src/shared/radio'),document:{getElementById:id=>nodes[id],querySelectorAll:()=>members}});
+nodes.radioSearch.value='SBS';nodes.radioSearch.handlers.input();members[1].handlers.click();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();assert.equal(writes,0,'Filters must not reload player');
+const select=id=>nodes.radioList.handlers.click({target:{closest:()=>({dataset:{radioId:id}})}});
+select('a');assert.equal(writes,0);select('b');assert.equal(writes,1);select('b');select('invalid');assert.equal(writes,1,'Same/invalid selection must not restart');
+assert(nodes.radioCurrent.innerHTML.includes('rWE6SSVs3BA'));assert(nodes.radioSelectionStatus.textContent.includes('다음 방송'));
+const html=read('radio/test/index.html');assert.equal((html.match(/<iframe /g)||[]).length,1);assert(html.includes('referrerpolicy="strict-origin-when-cross-origin"'));assert(!html.includes('autoplay=1'));assert(html.includes('noindex,follow'));assert(!read('sitemap.xml').includes('/radio/test/'));assert(read('about/install/index.html').includes('/radio/test/'));assert(!read('src/client/radio.js').match(/visibilitychange|setInterval|playVideo|localStorage/));
+if(current.length)assert.equal(new URL(html.match(/id="radioPlayer" src="([^"]+)/)[1]).search,'?rel=0');
+console.log('PASS radio: archive joins, source vetting, future/hidden exclusion, dedup, filters preserve iframe, selection-only reload, PWA test entry.');
