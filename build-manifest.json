@@ -1,5 +1,5 @@
 {
-  "version": "4.166",
+  "version": "4.167",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -47,6 +47,7 @@
     "letter/index.html",
     "about/index.html",
     "about/install/index.html",
+    "radio/test/index.html",
     "sitemap.xml",
     "manifest.webmanifest",
     "sw.js"
@@ -56,7 +57,7 @@
     "assets/pwa.4c8d4bbee1b1.js",
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.0a5ddc2cbbfb.css",
-    "assets/site.738e18ebc539.js",
+    "assets/site.82fc43b8150e.js",
     "assets/lyric-quiz.cd5889581fa7.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.4f0fbbd29ab2.js",
@@ -66,6 +67,8 @@
     "assets/dictionary.623c0f99a425.js",
     "assets/calendar.3d9427047da9.css",
     "assets/calendar.f429fe4f3917.js",
+    "assets/radio.0eab14cf3de3.css",
+    "assets/radio.b3713fa66af3.js",
     "assets/archive-admin.fac431dec039.css",
     "assets/archive-admin.41d6dd7f7b26.js"
   ],
