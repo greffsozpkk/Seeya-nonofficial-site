@@ -6867,8 +6867,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-01&event=activity-v488-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-discovered-e98d25eb9821ca14@seeya-fanpage.com
-DTSTAMP:20261002T160618Z
-LAST-MODIFIED:20261002T160618Z
+DTSTAMP:20261002T160855Z
+LAST-MODIFIED:20261002T160855Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20260319
 DTEND;VALUE=DATE:20260320
@@ -6880,8 +6880,10 @@ LOCATION:
 DESCRIPTION:이보람\n시간 미정\n여수 공연에서 이보람이 무
  반주로 부른 「바보」와 「그런 일은」 직캠입니다.\n영
  상 제목·설명에 표시된 공연일 기준입니다.\n꽃길보라
- 미 · 원본 영상: https://www.youtube.com/watch?v=ja7QK5PO6k8\nhttps:/
- /seeya-fanpage.com/archive/?record=discovered-e98d25eb9821ca14
+ 미 · 원본 영상: https://www.youtube.com/watch?v=ja7QK5PO6k8\n꽃길
+ 보라미 · 2026.03.19 이보람-그런일은(무반주): https://www.you
+ tube.com/watch?v=jLoQT0rto_I\nhttps://seeya-fanpage.com/archive/?record=di
+ scovered-e98d25eb9821ca14
 URL:https://seeya-fanpage.com/calendar/?month=2026-03&event=activity-discov
  ered-e98d25eb9821ca14
 END:VEVENT
