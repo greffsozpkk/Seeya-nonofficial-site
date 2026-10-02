@@ -1237,7 +1237,7 @@
     "id": "20260925-yeonji-acting-challenge",
     "date": "2026-09-25",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-25",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00",
     "title": "김연지 · 윤후와 함께한 연기 챌린지",
     "program": "와일드무브 · 연기 챌린지",
     "type": "official",
@@ -1252,7 +1252,13 @@
       "url": "https://www.instagram.com/reel/Dds5QJuBAzW/",
       "publishedDate": "2026-09-25"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "연지곤지 · 연기는 모르겠고 그냥 귀여운 김연지 연기챌린지",
+        "url": "https://www.youtube.com/watch?v=sc4jTAjI0tA",
+        "publishedDate": "2026-09-26"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -1301,7 +1307,7 @@
     "id": "20260924-yeonji-bad-challenge",
     "date": "2026-09-24",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-25",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00",
     "title": "김연지 · 배드 챌린지",
     "program": "와일드무브 · 배드 챌린지",
     "type": "official",
@@ -1316,7 +1322,13 @@
       "url": "https://www.instagram.com/reel/DdqYWN5hu3u/",
       "publishedDate": "2026-09-24"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "연지곤지 · 당황스럽고 귀엽고 생각보다 잘 춰서 놀란 김연지 배드 챌린지",
+        "url": "https://www.youtube.com/watch?v=c-vaWuaFGiM",
+        "publishedDate": "2026-09-24"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -1786,7 +1798,7 @@
     "id": "20260920-yeonji-huhmax-song",
     "date": "2026-09-20",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00",
     "title": "김연지 · 허맥스와 함께한 노래",
     "program": "허맥스·김연지 · 노래 듀엣",
     "type": "music-show",
@@ -1803,7 +1815,13 @@
       "url": "https://www.instagram.com/p/DdgNsiCP127/",
       "publishedDate": "2026-09-20"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "허맥스 · 김연지님과 함께부른 ‘노래’",
+        "url": "https://www.youtube.com/watch?v=f2oGZLwpuCg",
+        "publishedDate": "2026-09-29"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -2125,7 +2143,7 @@
     "id": "20260918-yeonji-voicejaekook-story",
     "date": "2026-09-18",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-09-21",
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00",
     "title": "김연지 · 자신의 이야기를 노래에 담은 이유",
     "program": "목소리는 오재국 · 솔직리얼TALK",
     "type": "interview",
@@ -2140,7 +2158,23 @@
       "url": "https://www.youtube.com/watch?v=mFeQVrZ1xEs",
       "publishedDate": "2026-09-18"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "목소리는 오재국 · 김연지는 무대 전 몇 분이나 목을 풀까?｜프로 가수의 실제 루틴",
+        "url": "https://www.youtube.com/watch?v=U5mhUK2QqhY",
+        "publishedDate": "2026-09-25"
+      },
+      {
+        "label": "목소리는 오재국 · 김연지가 노래할 때는 근력 운동을 빼는 이유",
+        "url": "https://www.youtube.com/watch?v=m0UNwCeQj6Q",
+        "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "목소리는 오재국 · 김연지가 자신의 이야기를 직접 노래로 쓴",
+        "url": "https://www.youtube.com/watch?v=pXHbzUCNcAY",
+        "publishedDate": "2026-09-29"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -2967,7 +3001,13 @@
       "url": "https://www.youtube.com/watch?v=2FBZ9Vib3Lw",
       "publishedDate": "2026-09-06"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "동원대학교 실용음악과 공식 채널 · 남규리 뮤직비디오 촬영 현장 비하인드",
+        "url": "https://www.youtube.com/watch?v=P0ge8dyD_UQ",
+        "publishedDate": "2026-09-11"
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -2977,7 +3017,8 @@
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
     "publishedDate": "2026-09-06",
-    "episode": 61
+    "episode": 61,
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v475-sheet1-row8",
@@ -3317,9 +3358,39 @@
         "label": "투카로그 · 260905 김연지 그래도좋아 씨야 부산 콘서트 직캠",
         "url": "https://www.youtube.com/watch?v=LERl4N7h5jk",
         "publishedDate": "2026-09-10"
+      },
+      {
+        "label": "꽁 · 그 사람 보람 focus",
+        "url": "https://www.youtube.com/watch?v=JbvtjMH75Z4",
+        "publishedDate": "2026-09-06"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/전국투어콘서트/부산] 부산, 살아있네_여술이야",
+        "url": "https://www.youtube.com/watch?v=QZMV3ybmpDc",
+        "publishedDate": "2026-09-07"
+      },
+      {
+        "label": "제리제이 Jerry.j · 콘서트에서도 이어지는 미사노 드라마 | 씨야 - 미친 사랑의 노래 | 씨야 20주년 전국 투어 콘서트 in 부산",
+        "url": "https://www.youtube.com/watch?v=pPnqms-YPNU",
+        "publishedDate": "2026-09-08"
+      },
+      {
+        "label": "람보사랑 · (부산콘 260905) 달려갑니다 딱!!! 기다리쇼",
+        "url": "https://www.youtube.com/watch?v=SehVfjzOO2A",
+        "publishedDate": "2026-09-21"
+      },
+      {
+        "label": "람보사랑 · (부산콘 260905) 신나서 날아가는 막냉이 보람👍😆",
+        "url": "https://www.youtube.com/watch?v=d_JIdF4em58",
+        "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "람보사랑 · 나는 너를 믿어",
+        "url": "https://www.youtube.com/watch?v=MJSzclQZGZY",
+        "publishedDate": "2026-09-30"
       }
     ],
-    "updatedAt": "2026-10-02T15:47:03.624207+00:00"
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v475-sheet1-row5",
@@ -3967,10 +4038,15 @@
         "label": "보람비타 · 김용준이 부르는 ‘내가 너를’🎤",
         "url": "https://www.youtube.com/watch?v=J9xMlOKtVoQ",
         "publishedDate": "2026-09-27"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/전국투어콘서트/서울] 내맘대로 브이로그 in 경희대 평화의 전당",
+        "url": "https://www.youtube.com/watch?v=1szbTOgZSNI",
+        "publishedDate": "2026-09-27"
       }
     ],
     "endDate": "2026-08-30",
-    "updatedAt": "2026-10-02T16:02:20.017759+00:00"
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v492-sVhd4C_aeKM",
@@ -6398,6 +6474,31 @@
         "label": "무대인사매니아 · 20260617씨야이보람-결혼할까요 뒤란콘서트",
         "url": "https://www.youtube.com/watch?v=hxkZDFXgClU",
         "publishedDate": "2026-07-15"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - Stay | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=aem8V7gzKOg",
+        "publishedDate": "2026-08-21"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - 미친 사랑의 노래(Crazy Love Song) | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=q7sojQdDRt8",
+        "publishedDate": "2026-08-21"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - 봄처럼 그댄(You, Like Spring) | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=vH8QBCYO0Yc",
+        "publishedDate": "2026-08-21"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - 결혼할까요(Shall We Marry) | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=9EA7eCtaZds",
+        "publishedDate": "2026-08-21"
+      },
+      {
+        "label": "열린예술무대 뒤란 · [열린예술무대 뒤란] 씨야(SeeYa) - 사랑의 인사(Lovely Sweet Heart) | ubc 260821 방송",
+        "url": "https://www.youtube.com/watch?v=W33nIvIOkz0",
+        "publishedDate": "2026-08-21"
       }
     ],
     "status": "available",
@@ -6407,7 +6508,7 @@
     ],
     "note": "6월 17일 녹화한 뒤란 무대입니다. 인터뷰는 8월 21일 방송됐습니다.",
     "venue": "울산문화예술회관 야외공연장",
-    "updatedAt": "2026-10-02T15:26:10.101152+00:00"
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v475-sheet2-row17",
@@ -13379,6 +13480,11 @@
         "label": "KBS · 잊지 말아요 가로 직캠",
         "url": "https://www.youtube.com/watch?v=HiYUYi92og4",
         "publishedDate": "2024-08-24"
+      },
+      {
+        "label": "김연지 Official · [VLOG] 김연지, 불후의 명곡 레전드 도전💛 | 왕중왕전 브이로그👑 (feat. DK 오빠)",
+        "url": "https://www.youtube.com/watch?v=r99O8h-lY40",
+        "publishedDate": "2025-04-29"
       }
     ],
     "status": "available",
@@ -13389,7 +13495,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-10-02T16:03:35.636842+00:00"
   },
   {
     "id": "v491-album-20665772",
