@@ -621,9 +621,21 @@
         "url": "https://www.youtube.com/watch?v=IA_sg6ol_wU",
         "publishedDate": "2026-10-02",
         "autoDiscovery": true
+      },
+      {
+        "label": "트롯가요여행 TV",
+        "url": "https://www.youtube.com/watch?v=heZFChqZJz4",
+        "publishedDate": "2026-10-03",
+        "autoDiscovery": true
+      },
+      {
+        "label": "트롯천리가요여행TV",
+        "url": "https://www.youtube.com/watch?v=4E96AiXzCcs",
+        "publishedDate": "2026-10-03",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-02T14:02:42.301414+00:00",
+    "updatedAt": "2026-10-03T05:34:49.303819+00:00",
     "calendar": {
       "time": "19:00",
       "endTime": "20:00",
@@ -15167,6 +15179,12 @@
       {
         "label": "KBS 레전드 케이팝 · 세로 직캠",
         "url": "https://www.youtube.com/watch?v=KZXhvQGLVVg"
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=4TpOnKOggxM",
+        "publishedDate": "2023-09-16",
+        "autoDiscovery": true
       }
     ],
     "note": "‘기억의 노래’ 특집에서 백예빈과 함께 엄정화의 ‘Festival’을 부른 무대입니다.",
@@ -15181,7 +15199,8 @@
     "album": "",
     "thumbnail": "",
     "status": "available",
-    "dateStatus": "confirmed"
+    "dateStatus": "confirmed",
+    "updatedAt": "2026-10-03T05:34:49.303819+00:00"
   },
   {
     "id": "v491-sunset2023",
@@ -45598,6 +45617,35 @@
     "tags": [],
     "note": "",
     "publishedDate": "2026-09-30",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-0629951a6840de91",
+    "date": "2026-10-03",
+    "addedAt": "2026-10-03T05:34:49.303819+00:00",
+    "updatedAt": "2026-10-03T05:34:49.303819+00:00",
+    "title": "씨야(SEEYA) 이보람(Lee Bo Ram) 세로직캠 Full Ver, 261002 제천한방천연물산업박람회",
+    "program": "",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "제리제이 Jerry.j",
+      "url": "https://www.youtube.com/watch?v=nlgwD8ULSRU",
+      "publishedDate": "2026-10-03",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2026-10-03",
     "autoDiscovery": true
   }
 ]
