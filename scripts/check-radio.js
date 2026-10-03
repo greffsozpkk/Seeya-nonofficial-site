@@ -25,7 +25,7 @@ assert.equal(filterRadio(testRows,{member:'씨야'}).length,0);assert.equal(filt
 
 let writes=0,cues=0,pauses=0,plays=0,interval,options;
 const nodes={};function element(){return {handlers:{},dataset:{},textContent:'',value:'',innerHTML:'',disabled:true,checked:false,addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},scrollIntoView(){},focus(){}};}
-for(const id of ['radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer','radioPagination'])nodes[id]=element();
+for(const id of ['radioContinuous','radioNext','radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer','radioPagination'])nodes[id]=element();
 nodes.radioData.textContent=JSON.stringify(testRows);Object.defineProperty(nodes.radioPlayer,'src',{set(){writes++;}});
 const members=['전체','씨야','남규리','김연지','이보람'].map(m=>({...element(),dataset:{radioMember:m}}));
 let currentVideo=testRows[0].videoId,time=100,playerState=2,rate=1,persisted='';
@@ -47,7 +47,7 @@ playerState=0;options.events.onStateChange({data:0});assert.equal(plays,1,'No au
 // Denied or corrupt storage must never prevent the player from connecting.
 context.localStorage={getItem(){throw Error('blocked');},setItem(){throw Error('blocked');}};vm.runInNewContext(read('src/client/radio.js'),{...context});nodes.radioSave.handlers.click();assert(nodes.radioSelectionStatus.textContent.includes('이번 화면'));
 context.localStorage={getItem:()=>'{invalid',setItem(){}};vm.runInNewContext(read('src/client/radio.js'),{...context});
-const html=read('radio/index.html');assert.equal((html.match(/<iframe /g)||[]).length,1);assert(html.includes('referrerpolicy="strict-origin-when-cross-origin"'));assert(!html.includes('autoplay=1'));assert(!html.includes('noindex,follow'));assert(read('radio/test/index.html').includes('noindex,follow'));assert(read('sitemap.xml').includes('<loc>https://seeya-fanpage.com/radio/</loc>'));assert(!read('sitemap.xml').includes('/radio/test/'));assert(read('about/install/index.html').includes('/radio/'));assert(!read('src/client/radio.js').includes('loadVideoById'));
+const html=read('radio/index.html');assert.equal((html.match(/<iframe /g)||[]).length,1);assert(html.includes('referrerpolicy="strict-origin-when-cross-origin"'));assert(!html.includes('autoplay=1'));assert(!html.includes('noindex,follow'));assert(read('radio/test/index.html').includes('noindex,follow'));assert(read('sitemap.xml').includes('<loc>https://seeya-fanpage.com/radio/</loc>'));assert(!read('sitemap.xml').includes('/radio/test/'));assert(read('about/install/index.html').includes('/radio/'));assert(read('src/client/radio.js').includes('loadVideoById'));assert(html.includes('id="radioContinuous"'));
 if(current.length)assert(html.includes('enablejsapi=1'));
 console.log('PASS radio: archive joins, single iframe, filter continuity, transport, favorites/storage fallback, error recovery, no automatic next playback.');
 
@@ -67,3 +67,32 @@ for(const path of ['index.html','music/index.html','members/index.html'])assert.
 console.log('PASS radio public route/home/navigation, 9-item paging, boundaries/filter reset and uninterrupted player.');
 
 
+
+// Realistic event sequencing: queue boundaries, skipped failures, and blocked autoplay.
+const queued=Array.from({length:12},(_,i)=>({...testRows[0],id:'queue'+i,videoId:'testvideo'+String(i).padStart(2,'0'),date:'2020-01-'+String(i+1).padStart(2,'0'),title:'방송 '+i}));
+let loads=[],timerId=0;const timers=new Map();
+fake.loadVideoById=({videoId,startSeconds})=>{loads.push({videoId,startSeconds});currentVideo=videoId;time=startSeconds;playerState=3;};
+context.setTimeout=fn=>{const id=++timerId;timers.set(id,fn);return id;};context.clearTimeout=id=>timers.delete(id);
+function bootQueue(){
+ timers.clear();loads=[];nodes.radioData.textContent=JSON.stringify(queued);nodes.radioSavedOnly.checked=false;nodes.radioSearch.value='';nodes.radioSort.value='newest';context.localStorage={getItem:()=>null,setItem(){}};
+ currentVideo=queued[0].videoId;playerState=2;time=0;vm.runInNewContext(read('src/client/radio.js'),{...context});options.events.onReady({target:fake});
+}
+function enable(){nodes.radioContinuous.checked=true;nodes.radioContinuous.handlers.change();}
+function playing(){playerState=1;options.events.onStateChange({data:1});}
+function ended(){playerState=0;options.events.onStateChange({data:0});}
+function drain(){const jobs=[...timers.values()];timers.clear();jobs.forEach(fn=>fn());}
+bootQueue();assert.equal(nodes.radioContinuous.checked,false);enable();assert.equal(loads.length,0,'Enabling does not start playback');
+nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();select('queue8');playing();ended();
+assert.equal(loads.length,1);assert.equal(loads[0].videoId,queued[9].videoId);assert.equal(loads[0].startSeconds,0);assert(nodes.radioCount.textContent.includes('2 / 2'),'Advance crosses page boundary');
+options.events.onStateChange({data:0});assert.equal(loads.length,1,'Ignore duplicate ended while next video loads');
+playing();ended();assert.equal(loads.at(-1).videoId,queued[10].videoId);
+options.events.onError({data:150});assert(nodes.radioSelectionStatus.textContent.includes('건너뛰고'));drain();assert.equal(loads.at(-1).videoId,queued[11].videoId);
+playing();ended();const count=loads.length;assert(nodes.radioSelectionStatus.textContent.includes('마쳤습니다'));ended();assert.equal(loads.length,count,'No wrapping or endless retry');
+bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();enable();playing();ended();options.events.onError({data:100});nodes.radioContinuous.checked=false;nodes.radioContinuous.handlers.change();drain();assert.equal(loads.length,1,'Turning off cancels pending skip');
+bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();enable();playing();ended();options.events.onAutoplayBlocked();ended();assert.equal(loads.length,1,'Blocked autoplay does not skip remaining queue');playing();ended();assert.equal(loads.length,2,'User resume restores opt-in continuation');
+bootQueue();enable();playing();nodes.radioSearch.value='방송 11';nodes.radioSearch.handlers.input();ended();assert.equal(loads.length,0,'Do not jump when current item is filtered out');
+bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();enable();playing();options.events.onError({data:153});drain();assert.equal(loads.length,0,'Global player configuration errors do not drain queue');
+bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();enable();playing();ended();options.events.onError({data:101});select('queue5');drain();assert.equal(loads.length,1,'Manual selection cancels delayed skip');
+bootQueue();select('queue11');enable();playing();ended();assert.equal(loads[0].videoId,queued[10].videoId,'Newest-first order honored');
+bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();nodes.radioSave.handlers.click();select('queue2');nodes.radioSave.handlers.click();select('queue0');nodes.radioSavedOnly.checked=true;nodes.radioSavedOnly.handlers.change();enable();playing();ended();assert.equal(loads[0].videoId,queued[2].videoId,'Saved-only queue honored');
+console.log('PASS continuous radio: opt-in, queue ordering/filtering, page boundaries, zero start, errors/cancellation, blocked autoplay, final stop.');
