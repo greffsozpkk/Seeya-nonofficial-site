@@ -17,6 +17,7 @@ require('./check-archive');
 require('./check-archive-updates');
 require('./check-archive-content');
 require('./check-radio');
+require('./check-podcasts');
 require('./check-on-this-day');
 
 require('./check-stages');

@@ -24,17 +24,18 @@ const testRows=[{id:'a',date:'2026-09-30',title:'첫 방송',program:'BTN',membe
 assert.equal(filterRadio(testRows,{member:'씨야'}).length,0);assert.equal(filterRadio(testRows,{member:'남규리'})[0].id,'b');assert.equal(filterRadio(testRows,{query:'btn'})[0].id,'a');assert.equal(filterRadio(testRows,{sort:'oldest'})[0].id,'b');
 
 let writes=0,cues=0,pauses=0,plays=0,interval,options;
-const nodes={};function element(){return {handlers:{},dataset:{},textContent:'',value:'',innerHTML:'',disabled:true,checked:false,addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},scrollIntoView(){},focus(){}};}
-for(const id of ['radioContinuous','radioNext','radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer','radioPagination'])nodes[id]=element();
+const nodes={};function element(){return {handlers:{},parentElement:{},dataset:{},textContent:'',value:'',innerHTML:'',disabled:true,checked:false,addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},scrollIntoView(){},focus(){}};}
+for(const id of ['radioMedia','radioTransport','radioNextManual','radioPodcastReload','radioFormat','radioContinuous','radioNext','radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer','radioPagination'])nodes[id]=element();
 nodes.radioData.textContent=JSON.stringify(testRows);Object.defineProperty(nodes.radioPlayer,'src',{set(){writes++;}});
 const members=['전체','씨야','남규리','김연지','이보람'].map(m=>({...element(),dataset:{radioMember:m}}));
 let currentVideo=testRows[0].videoId,time=100,playerState=2,rate=1,persisted='';
 const fake={getVideoData:()=>({video_id:currentVideo}),getCurrentTime:()=>time,getDuration:()=>200,getPlayerState:()=>playerState,getAvailablePlaybackRates:()=>[.5,1,1.5,2],getPlaybackRate:()=>rate,setPlaybackRate:n=>rate=n,playVideo(){plays++;playerState=1;},pauseVideo(){pauses++;playerState=2;},seekTo(n){time=n;},cueVideoById({videoId,startSeconds}){cues++;currentVideo=videoId;time=startSeconds;playerState=5;}};
 const document={hidden:false,getElementById:id=>nodes[id],querySelectorAll:()=>members,querySelector:()=>element(),addEventListener(){},head:{appendChild(){}},createElement:()=>element()};
 const window={YT:{Player:function(id,config){options=config;return fake;}},addEventListener(){}};
-const context={require:()=>require('../src/shared/radio'),document,window,location:{origin:'http://localhost:8000'},URL,URLSearchParams,localStorage:{getItem:()=>null,setItem:(k,v)=>persisted=v},setTimeout:()=>1,clearTimeout(){},setInterval:fn=>interval=fn};
+const context={require:ref=>require(ref.includes('radio-podcasts')?'../src/shared/radio-podcasts':'../src/shared/radio'),document,window,location:{origin:'http://localhost:8000'},URL,URLSearchParams,localStorage:{getItem:()=>null,setItem:(k,v)=>persisted=v},setTimeout:()=>1,clearTimeout(){},setInterval:fn=>interval=fn};
 vm.runInNewContext(read('src/client/radio.js'),{...context});assert.equal(writes,1);options.events.onReady({target:fake});
 assert.equal(nodes.radioPlay.disabled,false);assert.equal(nodes.radioDuration.textContent,'3:20');
+const videoData=fake.getVideoData;fake.getVideoData=()=>undefined;assert.doesNotThrow(()=>{options.events.onReady({target:fake});options.events.onStateChange({data:3});interval();});fake.getVideoData=videoData;
 nodes.radioSearch.value='SBS';nodes.radioSearch.handlers.input();members[1].handlers.click();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();assert.equal(writes,1);assert.equal(cues,0);assert.equal(pauses,0,'Filters must not pause/reload player');
 nodes.radioPlay.handlers.click();assert.equal(plays,1);interval();assert.equal(nodes.radioElapsed.textContent,'1:40');nodes.radioPlay.handlers.click();assert.equal(pauses,1);
 nodes.radioForward.handlers.click();assert.equal(time,115);nodes.radioBack.handlers.click();assert.equal(time,100);nodes.radioSeek.value='999';nodes.radioSeek.handlers.change();assert.equal(time,200);nodes.radioRestart.handlers.click();assert.equal(time,0);
@@ -96,3 +97,47 @@ bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();ena
 bootQueue();select('queue11');enable();playing();ended();assert.equal(loads[0].videoId,queued[10].videoId,'Newest-first order honored');
 bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();nodes.radioSave.handlers.click();select('queue2');nodes.radioSave.handlers.click();select('queue0');nodes.radioSavedOnly.checked=true;nodes.radioSavedOnly.handlers.change();enable();playing();ended();assert.equal(loads[0].videoId,queued[2].videoId,'Saved-only queue honored');
 console.log('PASS continuous radio: opt-in, queue ordering/filtering, page boundaries, zero start, errors/cancellation, blocked autoplay, final stop.');
+
+
+// Unified controls: mock only the provider boundary, exercise real page state.
+const podcast={id:'podcast',date:'2020-01-02',title:'팟캐스트 방송',program:'MBC',members:['남규리'],provider:'spotify',episodeId:'6ERTE9z7hVWHAoIfJXnSCt',kind:'podcast',channel:'MBC',url:'https://open.spotify.com/episode/6ERTE9z7hVWHAoIfJXnSCt'};
+assert.equal(filterRadio([testRows[0],podcast],{format:'podcast'}).length,1);
+assert.equal(filterRadio([testRows[0],podcast],{format:'video'})[0].id,'a');
+assert(cards([podcast],podcast.id).includes('팟캐스트 · Spotify'));
+let destroyed=0,removed=0,podEvents,podOptions,podState=2,podTime=0,podPlays=0;
+fake.destroy=()=>{destroyed++;};
+nodes.radioMedia.replaceChildren=()=>{removed++;};nodes.radioMedia.appendChild=el=>{nodes.radioPlayer=el;};
+const podApi={...fake,getVideoData:()=>({video_id:podcast.episodeId}),getCurrentTime:()=>podTime,getDuration:()=>100,getPlayerState:()=>podState,playVideo(){podPlays++;podState=1;},pauseVideo(){podState=2;},seekTo(n){podTime=n;},destroy(){destroyed++;}};
+const baseRequire=context.require;context.require=ref=>ref==='./spotify-radio'?(element,row,events,opts)=>{podEvents=events;podOptions=opts;return podApi;}:baseRequire(ref);
+bootQueue();nodes.radioData.textContent=JSON.stringify([queued[0],podcast,queued[2]]);
+vm.runInNewContext(read('src/client/radio.js'),{...context});options.events.onReady({target:fake});
+nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();enable();playing();
+const stale=options.events;ended();assert.equal(podOptions.autoplay,true,'YouTube ending advances to podcast');
+assert.equal(destroyed,1);assert.equal(removed,1);assert.equal(nodes.radioContinuous.disabled,false);assert.equal(nodes.radioContinuous.checked,true);assert.equal(nodes.radioTransport.hidden,false);
+const snapshot=nodes.radioSelectionStatus.textContent;stale.onError({data:150});stale.onStateChange({data:0});stale.onReady({target:fake});assert.equal(nodes.radioSelectionStatus.textContent,snapshot);
+podEvents.onReady({target:podApi});assert.equal(nodes.radioPlay.disabled,false);nodes.radioPlay.handlers.click();assert.equal(podPlays,1);podEvents.onStateChange({data:1});nodes.radioForward.handlers.click();assert.equal(podTime,15);nodes.radioBack.handlers.click();assert.equal(podTime,0);
+nodes.radioSeek.value='40';nodes.radioSeek.handlers.change();assert.equal(podTime,40);nodes.radioPlay.handlers.click();assert.equal(podState,2);nodes.radioRestart.handlers.click();assert.equal(podTime,0);
+nodes.radioSearch.value='MBC';nodes.radioSearch.handlers.input();nodes.radioFormat.value='podcast';nodes.radioFormat.handlers.change();assert.equal(removed,1,'Filters do not recreate player');
+nodes.radioFormat.value='all';nodes.radioFormat.handlers.change();nodes.radioSearch.value='';nodes.radioSearch.handlers.input();
+podState=1;podEvents.onStateChange({data:1});const stalePod=podEvents;podState=0;podTime=100;podEvents.onStateChange({data:0});assert.equal(removed,2);options.events.onReady({target:fake});assert.equal(loads.at(-1).videoId,queued[2].videoId,'Podcast ending advances to YouTube');
+const before=nodes.radioSelectionStatus.textContent;stalePod.onError();stalePod.onStateChange({data:0});assert.equal(nodes.radioSelectionStatus.textContent,before);
+select('podcast');podEvents.onReady({target:podApi});nodes.radioPodcastReload.handlers.click();assert.equal(nodes.radioPlay.disabled,true,'Retry waits for new provider readiness');
+context.localStorage={getItem:()=>JSON.stringify({last:'podcast'}),setItem(){}};
+const beforeOptions=options;vm.runInNewContext(read('src/client/radio.js'),{...context});assert.equal(options,beforeOptions);assert.equal(nodes.radioTransport.hidden,false);assert.equal(podOptions.autoplay,false,'Restoration never starts playback');
+const library=require('../src/shared/radio-library')(rows,'2026-10-03');assert.equal(library.filter(r=>r.provider==='spotify').length,4);assert.equal(new Set(library.map(r=>r.id)).size,library.length);
+const libraryData=JSON.parse(html.match(/id="radioData">([\s\S]*?)<\/script>/)[1]);assert(libraryData.some(r=>r.provider==='spotify'));assert(!html.includes('유튜브 영상만'));
+// Test the real Spotify adapter against documented messages, including milliseconds,
+// paused-near-end, final completion, duplicate callbacks, teardown during SDK loading.
+const spotifyListeners={},calls=[];let adapterEvents=[],adapterReady;
+const controller={addListener:(name,fn)=>spotifyListeners[name]=fn,resume:()=>calls.push('resume'),pause:()=>calls.push('pause'),seek:n=>calls.push(n),destroy:()=>calls.push('destroy'),loadEntity:(...a)=>calls.push(a)};
+const sandbox={module:{exports:{}},window:{},document:{createElement:()=>({}),head:{appendChild(){}}}};
+vm.runInNewContext(read('src/client/spotify-radio.js'),sandbox);
+const actual=sandbox.module.exports({},podcast,{onReady:e=>adapterReady=e.target,onStateChange:e=>adapterEvents.push(e.data),onProgress(){},onError(){throw Error('Unexpected SDK error');}},{autoplay:true,start:20});
+sandbox.window.onSpotifyIframeApiReady({createController:(el,opts,cb)=>{assert.equal(opts.url,podcast.url+'?t=20');cb(controller);}});
+spotifyListeners.ready();assert.equal(adapterReady,actual);assert(calls.includes('resume'));
+function update(position,isPaused=false,isBuffering=false,playingURI='spotify:episode:'+podcast.episodeId){spotifyListeners.playback_update({data:{playingURI,position,duration:100500,isPaused,isBuffering}});}
+update(15000);assert.equal(actual.getCurrentTime(),15);assert.equal(actual.getDuration(),100.5);assert.equal(actual.getPlayerState(),1);
+actual.seekTo(30.7);assert.equal(calls.at(-1),30);actual.pauseVideo();assert.equal(calls.at(-1),'pause');
+update(100400,true);assert.equal(actual.getPlayerState(),2,'Pause near end is not completion');update(100500,false);assert.equal(adapterEvents.at(-1),0);const n=adapterEvents.length;update(100500,false);assert.equal(adapterEvents.length,n);
+update(0,false,false,'spotify:episode:unrelated');assert.equal(actual.getCurrentTime(),100.5);actual.destroy();update(20000);assert.equal(actual.getCurrentTime(),100.5,'Destroyed callbacks ignored');
+console.log('PASS shared YouTube/podcast controls, mixed autoplay, stale callbacks, source validation and Spotify event adapter.');

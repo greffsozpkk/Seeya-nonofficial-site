@@ -67,6 +67,8 @@ const dictionaryCss=asset('dictionary','css',read('src/styles/dictionary.css'));
 const dictionaryJs=asset('dictionary','js',bundle('src/client/dictionary.js'));
 const calendarCss=asset('calendar','css',read('src/styles/calendar.css'));
 const calendarJs=asset('calendar','js',bundle('src/client/calendar.js'));
+const podcastCss=asset('podcasts','css',read('src/styles/podcasts.css'));
+const podcastJs=asset('podcasts','js',bundle('src/client/podcasts.js'));
 const radioCss=asset('radio','css',read('src/styles/radio.css'));
 const radioJs=asset('radio','js',bundle('src/client/radio.js'));
 const adminCss=asset('archive-admin','css',read('src/admin/admin.css'));
@@ -93,7 +95,7 @@ for(const route of [...routes,previewRoute]){
  let content;
  if(key==='news')content=render(json('data/news.json'));
  else if(key==='calendar')content=render(calendarData);
- else if(key==='radio')content=render(archiveRows,site.snapshotDate);
+ else if(key==='radio'||key==='podcasts')content=render(archiveRows,site.snapshotDate);
  else if(key==='home')content=render(archiveRows,new Date(site.snapshotDate));
  else if(key==='archive')content=render(require('./src/shared/archive-data').mergeArchive(json('data/archive.json')));
  else if(key==='gallery')content=render(photos,new Date(site.snapshotDate));
@@ -104,6 +106,7 @@ for(const route of [...routes,previewRoute]){
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
+ if(key==='podcasts'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}"><link rel="stylesheet" href="${podcastCss}">`;vars.scripts=`<script defer src="${podcastJs}"></script>`;}
  if(key==='dictionary'){vars.pageHead+=`<link rel="stylesheet" href="${dictionaryCss}">`;vars.scripts+=`\n<script defer src="${dictionaryJs}"></script>`;}
  if(key==='calendar'){vars.pageHead+=`<link rel="stylesheet" href="${calendarCss}">`;vars.scripts=`<script defer src="${calendarJs}"></script>`;}
  if(key==='fans'){vars.pageHead+=`<link rel="stylesheet" href="${fanCss}">`;vars.scripts+=`\n<script defer src="${fanJs}"></script>`;}
