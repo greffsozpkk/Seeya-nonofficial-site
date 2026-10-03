@@ -25,14 +25,14 @@ assert.equal(filterRadio(testRows,{member:'씨야'}).length,0);assert.equal(filt
 
 let writes=0,cues=0,pauses=0,plays=0,interval,options;
 const nodes={};function element(){return {handlers:{},parentElement:{},dataset:{},textContent:'',value:'',innerHTML:'',disabled:true,checked:false,addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},scrollIntoView(){},focus(){}};}
-for(const id of ['radioPreviousManual','radioMedia','radioTransport','radioNextManual','radioPodcastReload','radioFormat','radioContinuous','radioNext','radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer','radioPagination'])nodes[id]=element();
+for(const id of ['radioShuffle','radioRepeatOne','radioPreviousManual','radioMedia','radioTransport','radioNextManual','radioPodcastReload','radioFormat','radioContinuous','radioNext','radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer','radioPagination'])nodes[id]=element();
 nodes.radioData.textContent=JSON.stringify(testRows);Object.defineProperty(nodes.radioPlayer,'src',{set(){writes++;}});
 const members=['전체','씨야','남규리','김연지','이보람'].map(m=>({...element(),dataset:{radioMember:m}}));
 let currentVideo=testRows[0].videoId,time=100,playerState=2,rate=1,persisted='';
 const fake={getVideoData:()=>({video_id:currentVideo}),getCurrentTime:()=>time,getDuration:()=>200,getPlayerState:()=>playerState,getAvailablePlaybackRates:()=>[.5,1,1.5,2],getPlaybackRate:()=>rate,setPlaybackRate:n=>rate=n,playVideo(){plays++;playerState=1;},pauseVideo(){pauses++;playerState=2;},seekTo(n){time=n;},cueVideoById({videoId,startSeconds}){cues++;currentVideo=videoId;time=startSeconds;playerState=5;}};
 const document={hidden:false,getElementById:id=>nodes[id],querySelectorAll:()=>members,querySelector:()=>element(),addEventListener(){},head:{appendChild(){}},createElement:()=>element()};
 const window={YT:{Player:function(id,config){options=config;return fake;}},addEventListener(){}};
-const context={require:ref=>require(ref.includes('radio-podcasts')?'../src/shared/radio-podcasts':'../src/shared/radio'),document,window,location:{origin:'http://localhost:8000'},URL,URLSearchParams,localStorage:{getItem:()=>null,setItem:(k,v)=>persisted=v},setTimeout:()=>1,clearTimeout(){},setInterval:fn=>interval=fn};
+const context={require:ref=>require(ref.includes('radio-order')?'../src/shared/radio-order':ref.includes('radio-podcasts')?'../src/shared/radio-podcasts':'../src/shared/radio'),document,window,location:{origin:'http://localhost:8000'},URL,URLSearchParams,localStorage:{getItem:()=>null,setItem:(k,v)=>persisted=v},setTimeout:()=>1,clearTimeout(){},setInterval:fn=>interval=fn};
 vm.runInNewContext(read('src/client/radio.js'),{...context});assert.equal(writes,1);options.events.onReady({target:fake});
 assert.equal(nodes.radioPlay.disabled,false);assert.equal(nodes.radioDuration.textContent,'3:20');
 const videoData=fake.getVideoData;fake.getVideoData=()=>undefined;assert.doesNotThrow(()=>{options.events.onReady({target:fake});options.events.onStateChange({data:3});interval();});fake.getVideoData=videoData;
@@ -109,6 +109,18 @@ assert(html.includes('이전 목록 듣기')&&html.includes('다음 목록 듣�
 console.log('PASS continuous radio: opt-in, queue ordering/filtering, page boundaries, zero start, errors/cancellation, blocked autoplay, final stop.');
 
 
+// Shuffle covers the entire filtered library once, independent of pagination.
+const makeOrder=require('../src/shared/radio-order');const order=makeOrder(['a','b','c','d'],'b',()=>0);assert.equal(order[0],'b');assert.equal(new Set(order).size,4);assert.equal(order.length,4);
+bootQueue();nodes.radioShuffle.handlers.click();assert.equal(nodes.radioContinuous.checked,true);assert.equal(loads.length,0,'Enabling shuffle does not interrupt playback');
+const visited=new Set([currentVideo]);for(let i=1;i<queued.length;i++){playing();ended();assert(!visited.has(currentVideo),'No repeated items within shuffled pass');visited.add(currentVideo);}assert.equal(visited.size,12);const finished=loads.length;playing();ended();assert.equal(loads.length,finished,'Stop after one complete pass');
+bootQueue();nodes.radioShuffle.handlers.click();nodes.radioNextManual.handlers.click();const randomSecond=currentVideo;nodes.radioPreviousManual.handlers.click();assert.equal(currentVideo,queued[0].videoId);nodes.radioNextManual.handlers.click();assert.equal(currentVideo,randomSecond,'Previous/next follow stable random order');
+bootQueue();nodes.radioShuffle.handlers.click();nodes.radioSearch.value='방송 11';nodes.radioSearch.handlers.input();playing();ended();assert.equal(loads.length,0,'Excluded current item must not start another item');
+bootQueue();nodes.radioRepeatOne.handlers.click();assert.equal(nodes.radioContinuous.checked,true);playing();ended();assert.equal(loads.at(-1).videoId,queued[0].videoId);assert.equal(loads.at(-1).startSeconds,0);playing();ended();assert.equal(loads.length,2);nodes.radioShuffle.handlers.click();playing();ended();assert.equal(currentVideo,queued[0].videoId,'Repeat has priority over shuffle');
+nodes.radioNextManual.handlers.click();const repeated=currentVideo;playing();ended();assert.equal(currentVideo,repeated,'Manual move changes repeated item');nodes.radioRepeatOne.handlers.click();playing();ended();assert.notEqual(currentVideo,repeated,'Turning off repeat resumes shuffle');
+bootQueue();nodes.radioRepeatOne.handlers.click();playing();options.events.onError({data:150});drain();assert.equal(loads.length,0,'Do not endlessly repeat failed media');
+bootQueue();nodes.radioRepeatOne.handlers.click();nodes.radioContinuous.checked=false;nodes.radioContinuous.handlers.change();playing();ended();assert.equal(loads.length,0,'Master off disables repetition');
+assert(html.includes('id="radioShuffle"')&&html.includes('id="radioRepeatOne"'));
+console.log('PASS random full-list pass, stable back/forward, filter boundaries, repeat priority, cancellation and failed media.');
 // Unified controls: mock only the provider boundary, exercise real page state.
 const podcast={id:'podcast',date:'2020-01-02',title:'팟캐스트 방송',program:'MBC',members:['남규리'],provider:'spotify',episodeId:'6ERTE9z7hVWHAoIfJXnSCt',kind:'podcast',channel:'MBC',url:'https://open.spotify.com/episode/6ERTE9z7hVWHAoIfJXnSCt'};
 assert.equal(filterRadio([testRows[0],podcast],{format:'podcast'}).length,1);
@@ -151,3 +163,4 @@ actual.seekTo(30.7);assert.equal(calls.at(-1),30);actual.pauseVideo();assert.equ
 update(100400,true);assert.equal(actual.getPlayerState(),2,'Pause near end is not completion');update(100500,false);assert.equal(adapterEvents.at(-1),0);const n=adapterEvents.length;update(100500,false);assert.equal(adapterEvents.length,n);
 update(0,false,false,'spotify:episode:unrelated');assert.equal(actual.getCurrentTime(),100.5);actual.destroy();update(20000);assert.equal(actual.getCurrentTime(),100.5,'Destroyed callbacks ignored');
 console.log('PASS shared YouTube/podcast controls, mixed autoplay, stale callbacks, source validation and Spotify event adapter.');
+

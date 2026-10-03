@@ -6,3 +6,15 @@
 .radio-continuous{margin-top:20px;padding:12px 14px;background:#faf0f5;border:1px solid #eddae4;border-radius:10px}.radio-continuous label{display:flex;align-items:center;gap:9px;min-height:32px;color:#79415c;font-size:13px;cursor:pointer}.radio-continuous input{width:18px;height:18px;accent-color:#873856;flex:none}.radio-continuous #radioNext{margin:5px 0 0;color:#795d6d;font-size:11px;line-height:1.7;overflow-wrap:anywhere}
 
 .radio-podcast{margin-bottom:22px}.radio-podcast iframe{display:block;width:100%;min-width:290px;height:250px;border:0;border-radius:12px;background:#faf6f8}.radio-common-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.radio-common-actions button{font:inherit;font-size:12px;border:1px solid #e4d5df;border-radius:9px;background:#fff;color:#834663;min-height:42px;padding:9px 12px;cursor:pointer}.radio-common-actions button[aria-pressed=true]{background:#f5e7ee}.radio-format{display:flex;align-items:center;gap:12px;margin:10px 0 18px;font-size:12px;color:#795d6d}.radio-format select{font:inherit;font-size:14px;padding:9px 12px;border:1px solid #e4d5df;border-radius:9px;background:#fff;color:#604553;min-height:42px}.radio-continuous:has(input:disabled){background:#f8f4f6}.radio-continuous input:disabled{cursor:default}@media(max-width:380px){.radio-page{padding-left:12px;padding-right:12px}.radio-player-panel{padding:12px}}
+
+.radio-modes{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.radio-modes button{font:inherit;font-size:12px;border:1px solid #e4d5df;border-radius:9px;background:#fff;color:#834663;min-height:42px;padding:9px 15px;cursor:pointer}.radio-modes button[aria-pressed=true]{background:#f2d5e3;border-color:#c87ca1;color:#71334f;font-weight:700}
+
+/* Compact secondary controls: two aligned rows, including podcast reload. */
+.radio-compact-controls{display:grid;gap:6px}
+.radio-compact-controls .radio-options,.radio-compact-controls .radio-common-actions{display:flex;flex-wrap:nowrap;gap:6px;margin:0}
+.radio-compact-controls .radio-modes{display:contents}
+.radio-compact-controls button,.radio-compact-controls select{box-sizing:border-box;min-width:0;min-height:42px;padding:8px 4px;font-size:12px;line-height:1.3;border-radius:8px;white-space:nowrap}
+.radio-compact-controls .radio-options>label,.radio-compact-controls .radio-options>button,.radio-compact-controls .radio-common-actions>button,.radio-compact-controls .radio-modes>button{flex:1 1 0;min-width:0}
+.radio-compact-controls .radio-options select{width:100%;height:100%}
+.radio-compact-controls+.radio-continuous{margin-top:12px}
+@media(max-width:380px){.radio-compact-controls button,.radio-compact-controls select{font-size:11px}}

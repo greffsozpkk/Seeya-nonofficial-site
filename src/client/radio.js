@@ -9,12 +9,20 @@ const key='seeya-radio-v1';let saved=[],positions={},last='';
 try{const value=JSON.parse(localStorage.getItem(key)||'{}');saved=Array.isArray(value.saved)?value.saved.filter(id=>rows.some(r=>r.id===id)):[];last=typeof value.last==='string'?value.last:'';for(const row of rows){const p=value.positions?.[row.id];if(p&&p.videoId===mediaId(row)&&Number.isFinite(p.time)&&p.time>=0&&p.time<86400)positions[row.id]=p;}}catch{}
 let selected=rows.find(r=>r.id===last)||rows[0],state={member:'전체',query:'',sort:'newest',format:'all',page:1},api=null,ready=false,failed=false,dragging=false,lastPersist=0,rateSignature='';
 const continuous=byId('radioContinuous');continuous.checked=false;let autoActive=false,advanceTimer=null,handledEnd='';
+let shuffle=false,repeatOne=false,shuffleSignature='',shuffleIds=[];
 function cancelAdvance(){clearTimeout(advanceTimer);advanceTimer=null;}
 function visibleRows(){const visible=filterRadio(rows,state);return byId('radioSavedOnly').checked?visible.filter(r=>saved.includes(r.id)):visible;}
-function nextRow(){const visible=visibleRows(),index=visible.findIndex(r=>r.id===selected?.id);return index<0?null:visible[index+1]||null;}
-function nextLabel(){const visible=visibleRows(),index=visible.findIndex(r=>r.id===selected?.id);byId('radioPreviousManual').disabled=index<=0;byId('radioNextManual').disabled=index<0||index>=visible.length-1;const next=nextRow();byId('radioNext').textContent=!continuous.checked?'현재 목록 순서대로 이어집니다.':next?'다음 방송 · '+next.date+' · '+(next.program||next.title):'현재 목록에서 다음 방송이 없어 이 방송에서 마칩니다.';}
+function playbackRows(){
+ const visible=visibleRows();if(!shuffle)return visible;
+ const signature=JSON.stringify(visible.map(r=>r.id).sort());
+ if(signature!==shuffleSignature){shuffleSignature=signature;shuffleIds=require('../shared/radio-order')(visible.map(r=>r.id),selected?.id);}
+ const index=new Map(visible.map(r=>[r.id,r]));return shuffleIds.map(id=>index.get(id)).filter(Boolean);
+}
+function nextRow(){const visible=playbackRows(),index=visible.findIndex(r=>r.id===selected?.id);return index<0?null:visible[index+1]||null;}
+function nextLabel(){const visible=playbackRows(),index=visible.findIndex(r=>r.id===selected?.id);byId('radioPreviousManual').disabled=index<=0;byId('radioNextManual').disabled=index<0||index>=visible.length-1;const next=nextRow();byId('radioNext').textContent=repeatOne?'한 편 반복 · 현재 방송이 끝나면 처음부터 다시 재생합니다.':!continuous.checked?(shuffle?'랜덤 순서 준비 · 연속재생을 켜면 이어집니다.':'현재 목록 순서대로 이어집니다.'):next?(shuffle?'랜덤 다음 · ':'다음 방송 · ')+next.date+' · '+(next.program||next.title):'현재 목록에서 다음 방송이 없어 이 방송에서 마칩니다.';}
 function advance(){
  if(!continuous.checked||!autoActive||!ready)return;
+ if(repeatOne&&!failed){choose(selected,{autoplay:true,restart:true});return;}
  const next=nextRow();if(!next){autoActive=false;say('목록의 연속재생을 마쳤습니다.');return;}
  choose(next,{autoplay:true});
 }
@@ -39,8 +47,8 @@ function sync(){
 }
 function toggle(){if(!ready||failed)return;if(api.getPlayerState()===1)api.pauseVideo();else api.playVideo();}
 function jump(time){if(!ready||failed)return;const duration=Number(api.getDuration());if(duration>0){api.seekTo(Math.max(0,Math.min(duration,time)),true);}}
-function choose(row,{autoplay=false}={}){
- if(!row||row.id===selected?.id)return;
+function choose(row,{autoplay=false,restart=false}={}){
+ if(!row||(!restart&&row.id===selected?.id))return;
  const previousPodcast=isPodcast(selected);cancelAdvance();remember();selected=row;failed=false;autoActive=autoplay;handledEnd='';
  if(autoplay)state.page=Math.floor(visibleRows().findIndex(r=>r.id===row.id)/PAGE_SIZE)+1;
  resetProgress();showSelection();persist();
@@ -50,9 +58,13 @@ function choose(row,{autoplay=false}={}){
  else if(ready){api.pauseVideo();setControls(true);if(autoplay)api.loadVideoById({videoId:row.videoId,startSeconds:0});else api.cueVideoById({videoId:row.videoId,startSeconds:positions[row.id]?.time||0});}else {startYouTube=autoplay;iframe.src=playerURL(row);}
  if(!autoplay)document.querySelector('.radio-player-panel').scrollIntoView({block:'start',behavior:'auto'});
 }
-continuous.addEventListener('change',()=>{cancelAdvance();autoActive=continuous.checked&&ready&&api?.getPlayerState()===1;nextLabel();say(continuous.checked?'연속재생을 켰습니다. 방송이 끝나면 현재 목록의 다음 방송으로 이어집니다.':'연속재생을 껐습니다. 현재 방송은 계속 재생됩니다.');});
+function showModes(){byId('radioShuffle').setAttribute('aria-pressed',String(shuffle));byId('radioRepeatOne').setAttribute('aria-pressed',String(repeatOne));nextLabel();}
+function enableMode(){cancelAdvance();continuous.checked=true;autoActive=ready&&api?.getPlayerState()===1;}
+byId('radioShuffle').addEventListener('click',()=>{shuffle=!shuffle;shuffleSignature='';if(shuffle)enableMode();showModes();say(shuffle?'랜덤 재생을 켰습니다. 현재 목록 전체를 한 번씩 섞어 이어 듣습니다.':'랜덤 재생을 끄고 목록 순서로 돌아갑니다.');});
+byId('radioRepeatOne').addEventListener('click',()=>{repeatOne=!repeatOne;if(repeatOne)enableMode();showModes();say(repeatOne?'한 편 반복을 켰습니다. 현재 방송이 끝나면 처음부터 다시 재생합니다.':'한 편 반복을 껐습니다. 다음 방송부터 설정한 순서로 이어집니다.');});
+continuous.addEventListener('change',()=>{cancelAdvance();if(!continuous.checked){repeatOne=false;showModes();}autoActive=continuous.checked&&ready&&api?.getPlayerState()===1;nextLabel();say(continuous.checked?'연속재생을 켰습니다. 방송이 끝나면 현재 목록의 다음 방송으로 이어집니다.':'연속재생을 껐습니다. 현재 방송은 계속 재생됩니다.');});
 byId('radioFormat').addEventListener('change',()=>{state.format=byId('radioFormat').value;state.page=1;renderList();});
-function listenAdjacent(direction){const visible=visibleRows(),index=visible.findIndex(r=>r.id===selected?.id);if(index<0)return;const row=visible[index+direction];if(row)choose(row,{autoplay:true});}
+function listenAdjacent(direction){const visible=playbackRows(),index=visible.findIndex(r=>r.id===selected?.id);if(index<0)return;const row=visible[index+direction];if(row)choose(row,{autoplay:true});}
 byId('radioPreviousManual').addEventListener('click',()=>listenAdjacent(-1));
 byId('radioNextManual').addEventListener('click',()=>listenAdjacent(1));
 byId('radioPodcastReload').addEventListener('click',()=>{if(isPodcast(selected)){mountPodcast();say('플레이어를 다시 불러왔습니다. 재생 버튼을 눌러주세요.');}});
@@ -96,7 +108,7 @@ function init(){if(api||!selected||isPodcast(selected))return;const token=genera
   const id=api?.getVideoData?.()?.video_id;if(id&&id!==selected?.videoId)return;
   failed=true;setControls(false);byId('radioBottomStatus').textContent='원본에서 확인해 주세요';
   cancelAdvance();
-  if(continuous.checked&&autoActive&&[2,5,100,101,150].includes(event?.data)&&nextRow()){
+  if(!repeatOne&&continuous.checked&&autoActive&&[2,5,100,101,150].includes(event?.data)&&nextRow()){
    say('재생할 수 없는 영상을 건너뛰고 다음 방송으로 이어집니다.');
    const failedId=selected.id;advanceTimer=setTimeout(()=>{advanceTimer=null;if(selected?.id===failedId)advance();},1200);
   }else{autoActive=false;say('이 영상을 여기서 재생할 수 없습니다. YouTube에서 열기로 확인해 주세요.');}
