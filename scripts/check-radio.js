@@ -25,7 +25,7 @@ assert.equal(filterRadio(testRows,{member:'씨야'}).length,0);assert.equal(filt
 
 let writes=0,cues=0,pauses=0,plays=0,interval,options;
 const nodes={};function element(){return {handlers:{},parentElement:{},dataset:{},textContent:'',value:'',innerHTML:'',disabled:true,checked:false,addEventListener(type,fn){this.handlers[type]=fn;},setAttribute(){},scrollIntoView(){},focus(){}};}
-for(const id of ['radioMedia','radioTransport','radioNextManual','radioPodcastReload','radioFormat','radioContinuous','radioNext','radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer','radioPagination'])nodes[id]=element();
+for(const id of ['radioPreviousManual','radioMedia','radioTransport','radioNextManual','radioPodcastReload','radioFormat','radioContinuous','radioNext','radioData','radioPlayer','radioList','radioSearch','radioSort','radioCount','radioCurrent','radioSelectionStatus','radioSeek','radioPlay','radioSpeed','radioSave','radioBack','radioForward','radioRestart','radioSavedOnly','radioOriginal','radioArchive','radioBottomTitle','radioBottomStatus','radioElapsed','radioDuration','radioToPlayer','radioPagination'])nodes[id]=element();
 nodes.radioData.textContent=JSON.stringify(testRows);Object.defineProperty(nodes.radioPlayer,'src',{set(){writes++;}});
 const members=['전체','씨야','남규리','김연지','이보람'].map(m=>({...element(),dataset:{radioMember:m}}));
 let currentVideo=testRows[0].videoId,time=100,playerState=2,rate=1,persisted='';
@@ -96,6 +96,16 @@ bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();ena
 bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();enable();playing();ended();options.events.onError({data:101});select('queue5');drain();assert.equal(loads.length,1,'Manual selection cancels delayed skip');
 bootQueue();select('queue11');enable();playing();ended();assert.equal(loads[0].videoId,queued[10].videoId,'Newest-first order honored');
 bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();nodes.radioSave.handlers.click();select('queue2');nodes.radioSave.handlers.click();select('queue0');nodes.radioSavedOnly.checked=true;nodes.radioSavedOnly.handlers.change();enable();playing();ended();assert.equal(loads[0].videoId,queued[2].videoId,'Saved-only queue honored');
+// Previous/next buttons follow the active list, play immediately and cross pages.
+bootQueue();nodes.radioSort.value='oldest';nodes.radioSort.handlers.change();
+assert.equal(nodes.radioPreviousManual.disabled,true);nodes.radioPreviousManual.handlers.click();assert.equal(loads.length,0);
+nodes.radioNextManual.handlers.click();assert.equal(loads.at(-1).videoId,queued[1].videoId);assert.equal(nodes.radioContinuous.checked,false,'Manual listening does not enable continuous mode');
+nodes.radioPreviousManual.handlers.click();assert.equal(loads.at(-1).videoId,queued[0].videoId);
+select('queue8');nodes.radioNextManual.handlers.click();assert(nodes.radioCount.textContent.includes('2 / 2'));nodes.radioPreviousManual.handlers.click();assert(nodes.radioCount.textContent.includes('1 / 2'));
+select('queue11');assert.equal(nodes.radioNextManual.disabled,true);const endLoads=loads.length;nodes.radioNextManual.handlers.click();assert.equal(loads.length,endLoads);
+nodes.radioSearch.value='방송 3';nodes.radioSearch.handlers.input();assert.equal(nodes.radioPreviousManual.disabled,true);assert.equal(nodes.radioNextManual.disabled,true);nodes.radioPreviousManual.handlers.click();assert.equal(loads.length,endLoads);
+nodes.radioSearch.value='';nodes.radioSearch.handlers.input();nodes.radioSort.value='newest';nodes.radioSort.handlers.change();nodes.radioNextManual.handlers.click();assert.equal(loads.at(-1).videoId,queued[10].videoId);
+assert(html.includes('이전 목록 듣기')&&html.includes('다음 목록 듣기'));assert(!html.includes('다음 방송 선택'));
 console.log('PASS continuous radio: opt-in, queue ordering/filtering, page boundaries, zero start, errors/cancellation, blocked autoplay, final stop.');
 
 

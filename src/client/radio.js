@@ -12,7 +12,7 @@ const continuous=byId('radioContinuous');continuous.checked=false;let autoActive
 function cancelAdvance(){clearTimeout(advanceTimer);advanceTimer=null;}
 function visibleRows(){const visible=filterRadio(rows,state);return byId('radioSavedOnly').checked?visible.filter(r=>saved.includes(r.id)):visible;}
 function nextRow(){const visible=visibleRows(),index=visible.findIndex(r=>r.id===selected?.id);return index<0?null:visible[index+1]||null;}
-function nextLabel(){const visible=visibleRows(),index=visible.findIndex(r=>r.id===selected?.id);byId('radioNextManual').disabled=index<0||index>=visible.length-1;const next=nextRow();byId('radioNext').textContent=!continuous.checked?'현재 목록 순서대로 이어집니다.':next?'다음 방송 · '+next.date+' · '+(next.program||next.title):'현재 목록에서 다음 방송이 없어 이 방송에서 마칩니다.';}
+function nextLabel(){const visible=visibleRows(),index=visible.findIndex(r=>r.id===selected?.id);byId('radioPreviousManual').disabled=index<=0;byId('radioNextManual').disabled=index<0||index>=visible.length-1;const next=nextRow();byId('radioNext').textContent=!continuous.checked?'현재 목록 순서대로 이어집니다.':next?'다음 방송 · '+next.date+' · '+(next.program||next.title):'현재 목록에서 다음 방송이 없어 이 방송에서 마칩니다.';}
 function advance(){
  if(!continuous.checked||!autoActive||!ready)return;
  const next=nextRow();if(!next){autoActive=false;say('목록의 연속재생을 마쳤습니다.');return;}
@@ -44,15 +44,17 @@ function choose(row,{autoplay=false}={}){
  const previousPodcast=isPodcast(selected);cancelAdvance();remember();selected=row;failed=false;autoActive=autoplay;handledEnd='';
  if(autoplay)state.page=Math.floor(visibleRows().findIndex(r=>r.id===row.id)/PAGE_SIZE)+1;
  resetProgress();showSelection();persist();
- say(autoplay?'다음 방송을 재생합니다.':positions[row.id]?.time?'지난 위치 '+clock(positions[row.id].time)+'부터 준비했습니다. 재생을 눌러주세요.':'방송을 선택했습니다. 재생을 눌러주세요.');
+ say(autoplay?'선택한 방송을 재생합니다.':positions[row.id]?.time?'지난 위치 '+clock(positions[row.id].time)+'부터 준비했습니다. 재생을 눌러주세요.':'방송을 선택했습니다. 재생을 눌러주세요.');
  if(isPodcast(row)){mountPodcast(autoplay);}
  else if(previousPodcast){mountYouTube(autoplay);}
- else if(ready){api.pauseVideo();setControls(true);if(autoplay)api.loadVideoById({videoId:row.videoId,startSeconds:0});else api.cueVideoById({videoId:row.videoId,startSeconds:positions[row.id]?.time||0});}else iframe.src=playerURL(row);
+ else if(ready){api.pauseVideo();setControls(true);if(autoplay)api.loadVideoById({videoId:row.videoId,startSeconds:0});else api.cueVideoById({videoId:row.videoId,startSeconds:positions[row.id]?.time||0});}else {startYouTube=autoplay;iframe.src=playerURL(row);}
  if(!autoplay)document.querySelector('.radio-player-panel').scrollIntoView({block:'start',behavior:'auto'});
 }
 continuous.addEventListener('change',()=>{cancelAdvance();autoActive=continuous.checked&&ready&&api?.getPlayerState()===1;nextLabel();say(continuous.checked?'연속재생을 켰습니다. 방송이 끝나면 현재 목록의 다음 방송으로 이어집니다.':'연속재생을 껐습니다. 현재 방송은 계속 재생됩니다.');});
 byId('radioFormat').addEventListener('change',()=>{state.format=byId('radioFormat').value;state.page=1;renderList();});
-byId('radioNextManual').addEventListener('click',()=>{const visible=visibleRows(),index=visible.findIndex(r=>r.id===selected?.id);if(index>=0&&visible[index+1]){choose(visible[index+1]);state.page=Math.floor((index+1)/PAGE_SIZE)+1;renderList();}});
+function listenAdjacent(direction){const visible=visibleRows(),index=visible.findIndex(r=>r.id===selected?.id);if(index<0)return;const row=visible[index+direction];if(row)choose(row,{autoplay:true});}
+byId('radioPreviousManual').addEventListener('click',()=>listenAdjacent(-1));
+byId('radioNextManual').addEventListener('click',()=>listenAdjacent(1));
 byId('radioPodcastReload').addEventListener('click',()=>{if(isPodcast(selected)){mountPodcast();say('플레이어를 다시 불러왔습니다. 재생 버튼을 눌러주세요.');}});
 search.addEventListener('input',()=>{state.query=search.value;state.page=1;renderList();});sort.addEventListener('change',()=>{state.sort=sort.value;state.page=1;renderList();});
 byId('radioSavedOnly').addEventListener('change',()=>{state.page=1;renderList();});
@@ -74,7 +76,7 @@ function mountPodcast(autoplay=false){
  teardown();const token=generation;byId('radioMedia').className='radio-podcast';const target=document.createElement('div');byId('radioMedia').appendChild(target);
  const alive=()=>token===generation&&isPodcast(selected);
  const events={
-  onReady(event){if(!alive())return;api=event.target;ready=true;clearTimeout(timeout);setControls(true);say(autoplay?'다음 방송을 재생합니다.':'재생 버튼을 눌러 들어보세요.');sync();if(autoplay)timeout=setTimeout(()=>{if(alive()&&api.getPlayerState()!==1){autoActive=false;say('자동 재생이 시작되지 않았습니다. 재생 버튼을 눌러 이어 들어주세요.');}},12000);},
+  onReady(event){if(!alive())return;api=event.target;ready=true;clearTimeout(timeout);setControls(true);say(autoplay?'선택한 방송을 재생합니다.':'재생 버튼을 눌러 들어보세요.');sync();if(autoplay)timeout=setTimeout(()=>{if(alive()&&api.getPlayerState()!==1){autoActive=false;say('자동 재생이 시작되지 않았습니다. 재생 버튼을 눌러 이어 들어주세요.');}},12000);},
   onProgress(){if(alive())sync();},
   onStateChange(event){if(!alive())return;if(event.data===1){clearTimeout(timeout);handledEnd='';autoActive=continuous.checked;say('재생 중');}else if(event.data===2){remember();say('일시정지');}else if(event.data===0){if(handledEnd===selected.id)return;handledEnd=selected.id;remember();if(continuous.checked&&autoActive){advance();return;}say('방송이 끝났습니다. 다른 방송을 골라주세요.');}sync();},
   onError(){if(!alive())return;clearTimeout(timeout);failed=true;autoActive=false;setControls(false);say('팟캐스트를 연결하지 못했습니다. 다시 불러오거나 Spotify에서 열기를 이용해 주세요.');}
