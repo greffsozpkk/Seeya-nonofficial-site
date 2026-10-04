@@ -14344,6 +14344,12 @@
         "label": "제리제이 Jerry.j · 진심을 다해 노래하는 이보람의 표정 | SG워너비 ‘죄와 벌’ 부르며 울컥 | 불후의 명곡2 전설을 노래하다 | 이보람×안성훈 - 죄와 벌",
         "url": "https://www.youtube.com/watch?v=6TTeoMvEy_k",
         "publishedDate": "2024-03-10"
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=DgzWmurFtns",
+        "publishedDate": "2024-03-09",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -14354,7 +14360,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
+    "updatedAt": "2026-10-04T06:10:17.407213+00:00"
   },
   {
     "id": "v4145-Fr_7Lo_u8mI",
