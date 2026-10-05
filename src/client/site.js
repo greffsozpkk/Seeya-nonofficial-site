@@ -152,12 +152,10 @@ async function loadNews(category="씨야",bind=true){
   if(label)label.textContent=`${category==="씨야"?"SEEYA":category} · LATEST NEWS`;
 
   const data=await getNewsData();
+  if(category!==currentNewsCategory)return;
   const items=require('../shared/news-filter').filterNews(data[category],category).sort((a,b)=>new Date(b.pubDate)-new Date(a.pubDate));
   renderNews(items);
-  if(updated && data.updatedAt){
-    const d=new Date(data.categoryUpdatedAt?.[category]||data.updatedAt);
-    updated.textContent=`UPDATED · ${d.toLocaleString("ko-KR",{month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit"})}`;
-  }
+  if(updated)updated.textContent=require('../shared/news-status').newsStatus(data,category);
 }
 function showCard(n){
   let t=tarot[n];
@@ -519,7 +517,7 @@ if(page==='gallery'){
  openCharacterCollection();window.addEventListener('hashchange',openCharacterCollection);
  galleryItems=normalizePhotos(PHOTOS_FALLBACK);loadGallery();
 }
-if(page==='archive'){archiveData=ARCHIVE_FALLBACK;const id=new URLSearchParams(location.search).get('record');const selected=archiveData.find(x=>x.id===id);if(selected){archiveState.record=id;archiveState.query=selected.title;const input=document.getElementById('archiveSearch');if(input)input.value=selected.title;}renderArchive();loadArchive();}
+if(page==='archive'){archiveData=ARCHIVE_FALLBACK;let id=new URLSearchParams(location.search).get('record');const alias=archiveData.find(x=>x.id===id);if(alias?.mergedInto)id=alias.mergedInto;const selected=archiveData.find(x=>x.id===id);if(selected){archiveState.record=id;archiveState.query=selected.title;const input=document.getElementById('archiveSearch');if(input)input.value=selected.title;}renderArchive();loadArchive();}
 if(page==='quiz')window.initLyricQuiz();
 if(page==='today'){initOnThisDay(ARCHIVE_FALLBACK);const block=document.querySelector('.today-fortune');if(block){const holder=document.createElement('div');holder.innerHTML=today();block.replaceWith(holder.querySelector('.today-fortune'));}}
 

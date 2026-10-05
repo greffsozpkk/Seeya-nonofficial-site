@@ -129,5 +129,23 @@
     "release": "2026-05-14",
     "cover": "https://image.bugsm.co.kr/album/images/500/41474/4147431.jpg",
     "albumUrl": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+  },
+  {
+    "id": "cotton-candy",
+    "name": "솜사탕",
+    "aliases": [],
+    "album": "Brilliant Change",
+    "release": "2008-09-26",
+    "cover": "https://coverartarchive.org/release/dc732f97-ca67-4325-b575-54cebd35a969/front-500",
+    "albumUrl": "https://www.melon.com/album/detail.htm?albumId=398227"
+  },
+  {
+    "id": "fool",
+    "name": "바보",
+    "aliases": [],
+    "album": "바보 (All Star 2집 Vol.4)",
+    "release": "2008-03-20",
+    "cover": "https://image.bugsm.co.kr/album/images/200/1512/151202.jpg?version=20220721020858",
+    "albumUrl": "https://music.bugs.co.kr/album/151202"
   }
 ]

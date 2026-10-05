@@ -31,7 +31,7 @@ function extend(row,links,note,checkedAt){
 // Later edits in the web manager must win over a cumulative update package.
 function correctRecord(row,correction,checkedAt){
  if(!correction||row.hidden||row.status==='hidden')return row;
- const allowed=new Set(['date','dateBasis','dateStatus','publishedDate','program','members','note']);
+ const allowed=new Set(['date','dateBasis','dateStatus','publishedDate','program','members','note','title','eventState','status','songs','tags','calendar','venue']);
  if(!correction.sourceUrl||!sources(row).some(s=>sourceKey(s.url)===sourceKey(correction.sourceUrl)))return row;
  if(!Object.entries(correction.expected||{}).every(([key,value])=>JSON.stringify(row[key])===JSON.stringify(value)))return row;
  if(Object.keys(correction.values||{}).some(key=>!allowed.has(key)))throw new Error('Unsupported archive correction field');
@@ -45,7 +45,7 @@ function applyContent(rows,applied=[]){
   for(const record of batch.additions){
    const keySet=new Set(sources(record).map(s=>sourceKey(s.url)));
    let matches=result.filter(r=>r.id===record.id);
-   if(!matches.length)matches=result.filter(r=>sources(r).some(s=>keySet.has(sourceKey(s.url))));
+   if(!matches.length&&!batch.separateOccurrences?.includes(record.id))matches=result.filter(r=>sources(r).some(s=>keySet.has(sourceKey(s.url))));
    if(matches.length>1)throw new Error('Ambiguous archive import: '+record.id);
    if(matches.length){const found=matches[0];result=result.map(r=>r===found?extend(r,sources(record),null,batch.checkedAt):r);}
    else result.push(JSON.parse(JSON.stringify(record)));
@@ -54,6 +54,14 @@ function applyContent(rows,applied=[]){
    const found=result.find(r=>r.id===patch.id);
    if(!found)continue; // A manager may have intentionally removed this record.
    result=result.map(r=>r===found?extend(correctRecord(r,patch.correction,batch.checkedAt),patch.sources,patch.noteAppend,batch.checkedAt):r);
+  }
+  for(const merge of batch.merges||[]){
+   const child=result.find(r=>r.id===merge.id),parent=result.find(r=>r.id===merge.targetId);
+   if(!child||!parent||child.hidden||parent.hidden||child.autoDiscovery!==true)continue;
+   if(!Object.entries(merge.expected).every(([k,v])=>JSON.stringify(child[k])===JSON.stringify(v)))continue;
+   if(!sources(parent).some(s=>sourceKey(s.url)===sourceKey(merge.parentSource)))continue;
+   const combined=extend(parent,sources(child),null,batch.checkedAt);
+   result=result.map(r=>r===parent?combined:r===child?{...child,hidden:true,mergedInto:parent.id,updatedAt:batch.checkedAt}:r);
   }
   completed.add(batch.id);
  }

@@ -12,7 +12,7 @@ function resolveRadio(archive,reviews,today){
  });
 }
 const kindLabel=kind=>({podcast:'공식 팟캐스트',full:'전체본 · 채널 표기',replay:'방송 다시보기',clip:'라이브 클립',part:'방송 일부 · 1–2부',excerpt:'방송 일부',talk:'토크 클립'}[kind]||'영상');
-const dateLabel=r=>(r.dateBasis==='broadcast'?'방송일':r.dateBasis==='video-published'?'영상 게시일':r.dateBasis==='schedule'?'일정표 기준':'기록일')+(r.dateStatus==='tentative'?' · 잠정':'');
+const dateLabel=r=>(r.dateBasis==='broadcast'?'방송일':r.dateBasis==='recording'?'녹화일':r.dateBasis==='video-published'?'영상 게시일':r.dateBasis==='schedule'?'일정표 기준':'기록일')+(r.dateStatus==='tentative'?' · 잠정':'');
 const channelLabel=r=>r.provider==='spotify'?'공식 팟캐스트':r.channelStatus==='fan-channel-checked'?'팬 보관 영상':'방송사·제작 채널';
 function filterRadio(rows,{member='전체',query='',sort='newest',format='all'}={}){
  const q=query.trim().toLocaleLowerCase();return rows.filter(r=>(format==='all'||(format==='podcast'?r.provider==='spotify':r.provider!=='spotify'))&&(member==='전체'||(member==='씨야'?(r.members.includes('씨야')||['남규리','김연지','이보람'].every(m=>r.members.includes(m))):r.members.includes(member)))&&(!q||[r.title,r.program,r.channel,...r.members].join(' ').toLocaleLowerCase().includes(q))).sort((a,b)=>(sort==='oldest'?1:-1)*a.date.localeCompare(b.date)||a.id.localeCompare(b.id));

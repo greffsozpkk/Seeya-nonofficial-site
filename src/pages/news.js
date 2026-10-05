@@ -15,7 +15,7 @@ function news(data){data={...data,"씨야":require('../shared/news-filter').filt
 
 <div class="news-meta">
   <span id="newsLabel">SEEYA · LATEST NEWS</span>
-  <span id="newsUpdated"></span>
+  <span id="newsUpdated">${esc(require('../shared/news-status').newsStatus(data,'씨야'))}</span>
 </div>
 
 <div id="newsBox">${newsList((data["씨야"]||[]).slice().sort((a,b)=>new Date(b.pubDate)-new Date(a.pubDate)))}</div>

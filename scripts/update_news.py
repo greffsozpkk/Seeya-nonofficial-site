@@ -12,11 +12,15 @@ QUERIES = {
     "김연지": ['"씨야" "김연지"', '"김연지" "가수"', '"김연지" (신곡 OR 앨범 OR OST OR 뮤지컬)'],
     "이보람": ['"씨야 이보람"', '"이보람" 가수', '"이보람" 골때녀 OR 신곡 OR 앨범']
 }
+# A short, name-only search catches stories without album/singer keywords and
+# avoids Google's 100-result relevance cap hiding recent articles in 60 days.
+for _category in QUERIES:
+    QUERIES[_category].insert(0, '"'+_category+'" when:7d')
 OUT = Path("data/news.json")
 
 def fetch(q):
     url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({
-        "q": q + " when:60d", "hl":"ko", "gl":"KR", "ceid":"KR:ko"
+        "q": q if 'when:' in q else q + " when:60d", "hl":"ko", "gl":"KR", "ceid":"KR:ko"
     })
     req = urllib.request.Request(url, headers={"User-Agent":"Mozilla/5.0 SEEYA-Archive-NewsBot/1.0"})
     with urllib.request.urlopen(req, timeout=20) as r:
@@ -48,14 +52,23 @@ def collect(previous, fetcher=fetch, now=None):
     data = dict(previous)
     updated = dict(previous.get('categoryUpdatedAt', {}))
     successful = 0
+    pool, checks = [], {}
     for category, queries in QUERIES.items():
-        merged = []
+        passed = 0
         for q in queries:
             try:
-                merged.extend(parse(fetcher(q)))
+                pool.extend(parse(fetcher(q)))
+                passed += 1
             except Exception as e:
-                print(category, q, e)
-        fresh = [x for x in merged if relevant_news(x, category)]
+                print(category, q, type(e).__name__)
+        checks[category] = {'queries': len(queries), 'succeeded': passed}
+    content_updated = dict(previous.get('categoryContentUpdatedAt', {}))
+    def signature(items):
+        return [(x.get('title'), x.get('link'), x.get('pubDate')) for x in items]
+    for category, queries in QUERIES.items():
+        # Reuse discovered articles across categories, with the same strict
+        # artist/byline filter. A member query can also find a group headline.
+        fresh = [x for x in pool if relevant_news(x, category)]
         old = [x for x in previous.get(category, []) if relevant_news(x, category)]
         if fresh:
             successful += 1
@@ -75,8 +88,17 @@ def collect(previous, fetcher=fetch, now=None):
                 seen.add(key)
                 clean.append(item)
         data[category] = clean[:5]
+        changed = signature(data[category]) != signature(previous.get(category, []))
+        if changed:
+            content_updated[category] = now
+        checks[category].update(accepted=len(fresh), changed=changed,
+            status='error' if not checks[category]['succeeded'] else
+                   'partial' if checks[category]['succeeded'] < checks[category]['queries'] else
+                   'empty' if not fresh else 'changed' if changed else 'unchanged')
     data['lastCheckedAt'] = now
     data['categoryUpdatedAt'] = updated
+    data['categoryContentUpdatedAt'] = content_updated
+    data['categoryStatus'] = checks
     if successful:
         data['updatedAt'] = now
     return data, successful
@@ -87,7 +109,7 @@ def main():
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
     # The workflow still builds and deploys preserved data, then reports the outage.
-    return 0 if successful else 2
+    return 0 if any(s['succeeded'] for s in data['categoryStatus'].values()) else 2
 
 if __name__ == '__main__':
     raise SystemExit(main())

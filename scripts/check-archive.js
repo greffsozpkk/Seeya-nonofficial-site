@@ -37,11 +37,11 @@ for(let day=22;day<=25;day++)assert.equal(rows.find(r=>r.id===`202609${day}-gyur
 assert.equal(rows.find(r=>r.id==='20260921-woosuk-festival').eventState,'completed');
 assert.equal(rows.find(r=>r.id==='20260923-boram-btn-dream-22').episode,22);
 for(let day=26;day<=27;day++)assert.equal(rows.find(r=>r.id===`202609${day}-gyuri-mbc-noon-dj`).eventState,'completed');
-assert.equal(rows.find(r=>r.id==='20261004-gyuri-kbs-radioshow').eventState,'scheduled');
+assert.equal(rows.find(r=>r.id==='20261004-gyuri-kbs-radioshow').eventState,'completed');
 const busking=rows.find(r=>r.id==='20260928-yeonji-suseong-busking');
 assert.equal(busking.eventState,'completed');assert(!busking.title.includes('예정'));
 assert.equal(busking.date,'2026-09-28');assert.equal(busking.dateBasis,'event');
-assert.equal(rows.find(r=>r.id==='20261002-seeya-yeongwol-garden').eventState,'scheduled');
+assert.equal(rows.find(r=>r.id==='20261002-seeya-yeongwol-garden').eventState,'completed');
 const ghost39=rows.find(r=>r.id==='20260928-boram-sbsplus-ghost39');
 assert.equal(ghost39.eventState,'completed');assert.equal(ghost39.date,'2026-09-28');
 assert.equal(ghost39.source.publishedDate,'2026-09-29','Clip publication must not replace the broadcast date');
@@ -50,13 +50,14 @@ for(const id of ['20261006-boram-dst-autumn','20261228-yeonji-avahair'])assert.e
 assert.deepEqual(rows.find(r=>r.id==='20260929-boram-song-cover').members,['이보람'],'Credit the performer, not the original song singer');
 assert(rows.find(r=>r.id==='20260921-gyuri-mbc-noon-dj').additionalSources.some(s=>s.url.includes('gMFepYmwpXk')&&s.publishedDate==='2026-09-28'));
 assert(archiveDateLabel({date:'2021-02-22',dateBasis:'post-published'}).includes('게시글 작성일'));
-for(const sort of ['newest','oldest','added'])for(let page=1;page<=Math.ceil(rows.length/9);page++){
+const visible=rows.filter(r=>!r.hidden&&!r.mergedInto);
+for(const sort of ['newest','oldest','added'])for(let page=1;page<=Math.ceil(visible.length/9);page++){
  const html=archiveView(rows,{...state,sort,page}).grid;
  assert(!html.includes('undefined'));assert(!html.includes('>null<'));
- assert.equal((html.match(/<article class="archive-card"/g)||[]).length,Math.min(9,rows.length-(page-1)*9),'Keep nine records per page');
+ assert.equal((html.match(/<article class="archive-card"/g)||[]).length,Math.min(9,visible.length-(page-1)*9),'Keep nine records per page');
 }
 // Every source must remain reachable after collapsing the long card body.
-for(const record of rows){
+for(const record of visible){
  const html=archiveView(rows,{...state,record:record.id}).grid;
  assert(html.includes('<details class="archive-details">'),'Native disclosure must work without JavaScript');
  for(const source of [record.source,...(record.additionalSources||[])]){

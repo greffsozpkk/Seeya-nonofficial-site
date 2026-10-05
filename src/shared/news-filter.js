@@ -8,7 +8,7 @@ function relevantNews(item,category){
   const text=(headline+' '+description.replace(byline,'')).toLowerCase();
   if(category==='씨야')return headline.includes('씨야')||/\bseeya\b/i.test(headline);
   // A name appearing only in a reporter credit or RSS description is insufficient.
-  return headline.includes(category)&&policy.artistContext.some(term=>text.includes(term.toLowerCase()));
+  return headline.includes(category)&&[...policy.artistContext,...(policy.memberContext?.[category]||[])].some(term=>text.includes(term.toLowerCase()));
 }
 function filterNews(items,category){return (Array.isArray(items)?items:[]).filter(item=>relevantNews(item,category));}
 module.exports={filterNews,relevantNews};

@@ -312,5 +312,19 @@
     "title": "팟캐스트 재생 테스트 · 씨야 라디오 | SEEYA ARCHIVE",
     "description": "남규리의 정오의 희망곡 4개 회차를 Apple Podcasts 공식 플레이어로 들어보세요.",
     "noindex": true
+  },
+  {
+    "key": "song",
+    "songId": "cotton-candy",
+    "path": "/music/stages/cotton-candy/",
+    "title": "솜사탕 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 솜사탕의 공연과 라이브 기록을 모았습니다."
+  },
+  {
+    "key": "song",
+    "songId": "fool",
+    "path": "/music/stages/fool/",
+    "title": "바보 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
+    "description": "씨야 바보의 공연과 라이브 기록을 모았습니다."
   }
 ]

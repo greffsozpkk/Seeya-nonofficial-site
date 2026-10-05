@@ -7,7 +7,7 @@ const fixture=batch.updates.map(p=>({id:p.id,date:'2006-01-01',note:'운영자�
 fixture.push({id:'user-record',date:'2026-10-01',note:'keep'});
 const before=JSON.stringify(fixture),result=applyContent(fixture);
 assert.equal(JSON.stringify(fixture),before,'Must not mutate input');
-assert.equal(result.rows.length,fixture.length+batch.additions.length);
+assert.equal(result.rows.length,fixture.length+batches.reduce((n,b)=>n+b.additions.length,0));
 assert.deepEqual(applyContent(result.rows,result.applied),result,'Ledger makes import idempotent');
 assert.deepEqual(applyContent(result.rows).rows,result.rows,'Sources and notes must not duplicate');
 for(const patch of batch.updates){const row=result.rows.find(r=>r.id===patch.id);assert.equal(row.date,'2006-01-01');assert.equal(row.custom,'preserve');assert(row.note.startsWith('운영자가 작성한 설명'));}
@@ -31,3 +31,25 @@ for(const changes of [{date:'2008-12-20'},{dateBasis:'broadcast'},{hidden:true},
 }
 assert.throws(()=>correctRecord(original,{...correction,values:{id:'changed'}},'2026-10-03'),/Unsupported/);
 console.log('PASS: guarded broadcast-date correction, publication date preservation and repeat application.');
+const scheduled={id:'completed-review',title:'공연',eventState:'scheduled',calendar:{time:'18:00'},source:{url:'https://example.com/event'}};
+for(const [field,value] of [['eventState','completed'],['calendar',{time:'18:50'}]]){
+ const patch={sourceUrl:scheduled.source.url,expected:{[field]:scheduled[field]},values:{[field]:value}};
+ assert.deepEqual(correctRecord(scheduled,patch,'2026-10-05')[field],value);
+ const managerEdit={...scheduled,[field]:field==='eventState'?'cancelled':{time:'19:00'}};
+ assert.deepEqual(correctRecord(managerEdit,patch,'2026-10-05'),managerEdit,'Later schedule edits take precedence');
+}
+
+const review=batches.find(b=>b.id==='archive-2026-10-05-review');
+for(const m of review.merges){
+ const child={id:m.id,autoDiscovery:true,...m.expected},parent={id:m.targetId,source:{url:m.parentSource},note:'keep'};
+ const mergeResult=applyContent([child,parent]);
+ const merged=mergeResult.rows.find(r=>r.id===m.id),target=mergeResult.rows.find(r=>r.id===m.targetId);
+ assert.equal(merged.mergedInto,m.targetId);assert.equal(merged.hidden,true);
+ assert(target.additionalSources.some(s=>sourceKey(s.url)===sourceKey(child.source.url)));
+ assert(!applyContent([child]).rows.find(r=>r.id===m.id).hidden,'Do not hide without surviving parent');
+ const edited={...child,title:'Later manager edit'};
+ assert(!applyContent([edited,parent]).rows.find(r=>r.id===m.id).hidden,'Preserve later edits');
+}
+assert.equal(review.additions.length,8);
+assert.equal(new Set(review.additions.map(r=>r.date+' '+r.calendar.time)).size,8);
+console.log('PASS: reviewed clip merges preserve IDs, sources, edits and deleted parents; eight distinct SIX performances.');

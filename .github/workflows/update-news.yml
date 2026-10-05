@@ -22,6 +22,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Test news collection and filtering
+        run: python -m unittest discover -s scripts -p 'test_news*.py'
       - name: Refresh news while retaining cache on failure
         id: refresh
         continue-on-error: true

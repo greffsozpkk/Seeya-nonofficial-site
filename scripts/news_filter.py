@@ -19,4 +19,5 @@ def relevant_news(item, category):
     if category == '씨야':
         return '씨야' in title or re.search(r'\bseeya\b', title, re.I) is not None
     text = (title + ' ' + description).lower()
-    return category in title and any(term.lower() in text for term in POLICY['artistContext'])
+    context = POLICY['artistContext'] + POLICY.get('memberContext', {}).get(category, [])
+    return category in title and any(term.lower() in text for term in context)

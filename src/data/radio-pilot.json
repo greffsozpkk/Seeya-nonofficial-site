@@ -867,5 +867,16 @@
     "checkedAt": "2026-10-03",
     "basis": "YouTube 공개 제목·업로더 확인. 기록당 대표 영상 한 개를 연결하며 전체본 표기가 없는 영상은 전체본으로 단정하지 않음.",
     "sourceTitle": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-06)"
+  },
+  {
+    "recordId": "20261005-gyuri-sbs-ten-recording",
+    "youtubeId": "Tjaa9aegm0k",
+    "kind": "excerpt",
+    "channel": "SBS Radio 에라오",
+    "channelUrl": "https://www.youtube.com/@SBS_Radio",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-10-05",
+    "basis": "SBS 공식 라이브 제목·설명에서 261005 생녹방 및 대강결정 with 남규리 확인. 다른 코너 포함.",
+    "sourceTitle": "배성재의 텐 261005 월요일 라이브"
   }
 ]

@@ -176,12 +176,17 @@ def classify(row):
 
 
 def related_records(row, archive):
+    from archive_match import recommendations
+    strong=recommendations(row,archive)
+    if strong:return strong
     title = clean(row['title']).lower()
     words = set(re.findall(r'[가-힣a-z0-9]{2,}', title)) - set(MEMBERS) - {
         '씨야', 'seeya', '공식', '영상', '출연', '예정', '예고', '무대', '가수',
         '음악', '방송', '근황', '소식', '공개', '컴백', '활동', '멤버', '발표', '기념', '신곡'}
     scored = []
     for record in archive:
+        if record.get('hidden') or record.get('mergedInto'):
+            continue
         if '씨야' not in row['members'] and not set(row['members']).intersection(record.get('members', [])):
             continue
         other = set(re.findall(r'[가-힣a-z0-9]{2,}', (record['title'] + ' ' + record.get('program', '')).lower()))

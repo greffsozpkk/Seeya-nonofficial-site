@@ -6,6 +6,9 @@ from news_filter import relevant_news, POLICY
 
 ROOT = Path(__file__).resolve().parents[1]
 CASES = [
+    ('남규리', '남규리, 오직 팬들만을 위해 만든 미발매 자작곡 깜짝 공개', '', True),
+    ('김연지', '정치 현안 논란 - 김연지 기자', '', False),
+    ('이보람', '이보람 귀묘한 하루 공개', '', True),
     ('김연지', '씨야 김연지, 새 싱글 노래 발매', '', True),
     ('김연지', '김연지, 뮤지컬 무대 복귀', '', True),
     ('김연지', '김연지 대표, 기업 투자 발표', '', False),

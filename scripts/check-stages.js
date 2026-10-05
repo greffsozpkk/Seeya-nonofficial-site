@@ -33,3 +33,9 @@ assert(woosuk.clips.some(c=>c.url.includes('DdnVqr1OFjV')));assert(!woosuk.clips
 const render=require('../src/pages/song');const love=render({songId:'love-greeting'},archive),shoes=render({songId:'shoes'},archive);
 assert(love.includes('data-song-tab="story"')&&love.includes('클래식 선율과 만난 사랑의 인사'));assert(!shoes.includes('data-song-tab="story"'));
 assert(!love.includes('/vi//'));console.log(`PASS: ${stories.length} sourced song stories, Instagram clip isolation, HTTPS media allowlist, static story rendering.`);
+const goyangFool=performances(archive,'fool',cutoff).find(r=>r.id==='20261004-the-fan-goyang');
+assert(goyangFool.clips.some(c=>videoId(c.url)==='si3VEPvpr9A'));
+assert(!goyangFool.clips.some(c=>['sSQloydNONo','V0T_q1nsyqU','QY-F5iSN8aM'].includes(videoId(c.url))),'Other songs and departures are not Fool performances');
+const cotton=performances(archive,'cotton-candy',cutoff).find(r=>r.id==='20261004-the-fan-goyang');
+assert.equal(cotton.clips.length,2);
+assert(cotton.clips.every(c=>c.url.includes('instagram.com')));

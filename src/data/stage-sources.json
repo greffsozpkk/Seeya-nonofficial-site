@@ -759,5 +759,169 @@
     "category": "concert",
     "basis": "닭동가리 공식 행사일 2026-09-28 및 주최 측·juxxu_k 공동 게시 현장 릴스의 장소·미친 사랑의 노래 캡션 확인",
     "checkedOn": "2026-09-28"
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.youtube.com/watch?v=si3VEPvpr9A",
+    "songIds": [
+      "fool"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "영상 제목의 261004 고양 공연 및 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.youtube.com/watch?v=Q-IDyS30-44",
+    "songIds": [
+      "fool"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "영상 제목의 261004 고양 공연 및 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.youtube.com/watch?v=QY-F5iSN8aM",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "영상 제목의 261004 고양 공연 및 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.youtube.com/watch?v=sSQloydNONo",
+    "songIds": [
+      "hot-girl"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "영상 제목의 261004 고양 공연 및 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261002-jecheon-herbal-fair",
+    "url": "https://www.youtube.com/watch?v=A9pOD6AQYaU",
+    "songIds": [
+      "love-greeting",
+      "crazy-love-song",
+      "like-spring",
+      "stay",
+      "marry-me"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "영상 설명의 공연일 및 곡별 타임스탬프 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261002-jecheon-herbal-fair",
+    "url": "https://www.youtube.com/watch?v=nlgwD8ULSRU",
+    "songIds": [
+      "love-greeting",
+      "crazy-love-song",
+      "like-spring",
+      "stay",
+      "marry-me"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "영상 설명의 공연일 및 곡별 타임스탬프 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261002-seeya-yeongwol-garden",
+    "url": "https://www.youtube.com/watch?v=zZBE5szvTtc",
+    "songIds": [
+      "love-greeting",
+      "crazy-love-song",
+      "stay"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "영상 설명의 공연일 및 곡별 타임스탬프 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeG0t2zBSvU/",
+    "songIds": [
+      "cotton-candy"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "게시자 원문에 명시된 행사 날짜와 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.instagram.com/gyuljam0426/reel/DeE0O3KP3qY/",
+    "songIds": [
+      "cotton-candy"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "게시자 원문에 명시된 행사 날짜와 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.instagram.com/cup_soohans/reel/DeGGPltTg5v/",
+    "songIds": [
+      "hot-girl"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "게시자 원문에 명시된 행사 날짜와 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261002-jecheon-herbal-fair",
+    "url": "https://www.instagram.com/dream_afr_10/reel/DeBkDehxj8_/",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "게시자 원문에 명시된 행사 날짜와 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261002-jecheon-herbal-fair",
+    "url": "https://www.instagram.com/dream_afr_10/reel/DeABnAavFZr/",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "게시자 원문에 명시된 행사 날짜와 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261002-jecheon-herbal-fair",
+    "url": "https://www.instagram.com/dream_afr_10/reel/Dd__lNLvSAH/",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "게시자 원문에 명시된 행사 날짜와 곡명 확인",
+    "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261002-seeya-yeongwol-garden",
+    "url": "https://www.instagram.com/nam_hee0928/reel/Dd_zweWz_RA/",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "게시자 원문에 명시된 행사 날짜와 곡명 확인",
+    "checkedOn": "2026-10-05"
   }
 ]
