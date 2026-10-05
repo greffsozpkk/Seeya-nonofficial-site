@@ -417,9 +417,27 @@
       {
         "label": "씨야엔터테인먼트 공식 · 지역별 게스트 스케줄",
         "url": "https://www.instagram.com/seeya_ent_official/p/Dbmf-AGvcA8/"
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=si3VEPvpr9A",
+        "publishedDate": "2026-10-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=QY-F5iSN8aM",
+        "publishedDate": "2026-10-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "히야호",
+        "url": "https://www.youtube.com/watch?v=Q-IDyS30-44",
+        "publishedDate": "2026-10-05",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-05T06:01:52.788230+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -22599,6 +22617,12 @@
       {
         "label": "KBS · 그대 떠난 뒤 선공개",
         "url": "https://www.youtube.com/watch?v=kgxCNeTS6lI"
+      },
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=VqK2tMGqs7E",
+        "publishedDate": "2020-03-28",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -22609,7 +22633,7 @@
     "note": "날짜는 공식 방송 음반 공개일입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "release",
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-10-05T06:01:52.788230+00:00"
   },
   {
     "id": "20200328-yeonji-ytn-star",
@@ -45652,6 +45676,66 @@
     "tags": [],
     "note": "",
     "publishedDate": "2026-10-03",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-420fb97f3680c434",
+    "date": "2026-10-05",
+    "addedAt": "2026-10-05T06:01:52.788230+00:00",
+    "updatedAt": "2026-10-05T06:01:52.788230+00:00",
+    "title": "SEEYA - HOTGIRL 20261004 #고양콘서트 #씨야 #이보람",
+    "program": "",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "유튜브매니한",
+      "url": "https://www.youtube.com/watch?v=sSQloydNONo",
+      "publishedDate": "2026-10-05",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2026-10-05",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-54528c2dbda3fe42",
+    "date": "2026-10-05",
+    "addedAt": "2026-10-05T06:01:52.788230+00:00",
+    "updatedAt": "2026-10-05T06:01:52.788230+00:00",
+    "title": "씨야 고양콘서트 퇴근길 20261004 #씨야 #남규리 #김연지 #이보람",
+    "program": "",
+    "type": "concert",
+    "members": [
+      "김연지",
+      "남규리",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "유튜브매니한",
+      "url": "https://www.youtube.com/watch?v=V0T_q1nsyqU",
+      "publishedDate": "2026-10-05",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2026-10-05",
     "autoDiscovery": true
   }
 ]
