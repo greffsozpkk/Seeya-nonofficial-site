@@ -6,6 +6,15 @@ def rss(title):
     return ('<rss><channel><item><title>'+title+'</title><link>https://example.com/new</link><pubDate>Wed, 09 Sep 2026 12:00:00 GMT</pubDate></item></channel></rss>').encode()
 
 class UpdateTests(unittest.TestCase):
+    def test_similar_business_name_removed_from_cache_even_during_outage(self):
+        previous={**OLD,'씨야':[
+            {'title':'씨야드 카페, 블루리본 선정','link':'https://example.com/cafe'},
+            {'title':'씨야의 20주년 전국투어','link':'https://example.com/concert'}]}
+        def fail(q):raise OSError('simulated outage')
+        for fetcher in [fail,lambda q:rss('씨야드 카페, 가수 공연 안내')]:
+            data,_=collect(previous,fetcher,'2026-10-07T01:00:00Z')
+            self.assertEqual([x['link'] for x in data['씨야']],['https://example.com/concert'])
+            self.assertEqual(data['김연지'],OLD['김연지'])
     def test_name_only_query_and_cross_category_discovery(self):
         def fetch(q):
             return rss('씨야 남규리, 미발매 자작곡 공개') if q=='"남규리" when:7d' else b'<rss><channel/></rss>'
