@@ -147,13 +147,13 @@
       "description": "이보람, '씨야와 결혼 중 고르라면?' 고민 1도 없어 미디어파인"
     }
   ],
-  "updatedAt": "2026-10-06T00:05:17.447391+00:00",
-  "lastCheckedAt": "2026-10-06T00:05:17.447391+00:00",
+  "updatedAt": "2026-10-06T06:24:53.148317+00:00",
+  "lastCheckedAt": "2026-10-06T06:24:53.148317+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-06T00:05:17.447391+00:00",
-    "남규리": "2026-10-06T00:05:17.447391+00:00",
-    "김연지": "2026-10-06T00:05:17.447391+00:00",
-    "이보람": "2026-10-06T00:05:17.447391+00:00"
+    "씨야": "2026-10-06T06:24:53.148317+00:00",
+    "남규리": "2026-10-06T06:24:53.148317+00:00",
+    "김연지": "2026-10-06T06:24:53.148317+00:00",
+    "이보람": "2026-10-06T06:24:53.148317+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-06T00:05:17.447391+00:00",
@@ -164,28 +164,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 173,
-      "changed": true,
-      "status": "changed"
+      "accepted": 165,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 154,
-      "changed": true,
-      "status": "changed"
+      "accepted": 152,
+      "changed": false,
+      "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 18,
+      "accepted": 19,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 97,
+      "accepted": 83,
       "changed": false,
       "status": "unchanged"
     }
