@@ -38,11 +38,11 @@
   ],
   "남규리": [
     {
-      "title": "남규리, 오직 팬들만을 위해 만든 미발매 자작곡 깜짝 공개 - sports.khan.co.kr",
-      "source": "sports.khan.co.kr",
+      "title": "남규리, 오직 팬들만을 위해 만든 미발매 자작곡 깜짝 공개 - 스포츠경향",
+      "source": "스포츠경향",
       "pubDate": "2026-10-04T18:46:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBHUS1NN0t5SVFyQk41MUo3TnMyUTRQOF9wR2dfVUlZZG93dktvbGV1c1BKQnd3N0xuMHRkU040bFNNRmRaU1V6SGZ3Nnc2ZEJsd2xOUDdTLVV0RzNiZ2VjUWlUa9IBY0FVX3lxTFBHUS1NN0t5SVFyQk41MUo3TnMyUTRQOF9wR2dfVUlZZG93dktvbGV1c1BKQnd3N0xuMHRkU040bFNNRmRaU1V6SGZ3Nnc2ZEJsd2xOUDdTLVV0RzNiZ2VjUWlUaw?oc=5",
-      "description": "남규리, 오직 팬들만을 위해 만든 미발매 자작곡 깜짝 공개 sports.khan.co.kr"
+      "description": "남규리, 오직 팬들만을 위해 만든 미발매 자작곡 깜짝 공개 스포츠경향"
     },
     {
       "title": "남규리, 20년 지기 팬 위한 자작곡 깜짝 공개 - bntnews.co.kr",
@@ -147,26 +147,26 @@
       "description": "이보람 “아이 넷 낳는게 꿈, 씨야 계약운보다 혼인신고 선택”(귀묘한이야기2)[결정적장면] 뉴스엔"
     }
   ],
-  "updatedAt": "2026-10-06T15:33:43.325142+00:00",
-  "lastCheckedAt": "2026-10-06T15:33:43.325142+00:00",
+  "updatedAt": "2026-10-06T15:55:32.043373+00:00",
+  "lastCheckedAt": "2026-10-06T15:55:32.043373+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-06T15:33:43.325142+00:00",
-    "남규리": "2026-10-06T15:33:43.325142+00:00",
-    "김연지": "2026-10-06T15:33:43.325142+00:00",
-    "이보람": "2026-10-06T15:33:43.325142+00:00"
+    "씨야": "2026-10-06T15:55:32.043373+00:00",
+    "남규리": "2026-10-06T15:55:32.043373+00:00",
+    "김연지": "2026-10-06T15:55:32.043373+00:00",
+    "이보람": "2026-10-06T15:55:32.043373+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-06T15:33:43.325142+00:00",
-    "남규리": "2026-10-06T15:33:43.325142+00:00",
+    "남규리": "2026-10-06T15:55:32.043373+00:00",
     "이보람": "2026-10-06T14:19:21.716949+00:00"
   },
   "categoryStatus": {
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 168,
-      "changed": true,
-      "status": "changed"
+      "accepted": 167,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
