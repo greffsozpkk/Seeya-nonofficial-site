@@ -71,6 +71,11 @@ const podcastCss=asset('podcasts','css',read('src/styles/podcasts.css'));
 const podcastJs=asset('podcasts','js',bundle('src/client/podcasts.js'));
 const radioCss=asset('radio','css',read('src/styles/radio.css'));
 const radioJs=asset('radio','js',bundle('src/client/radio.js'));
+const mapCss=asset('seeya-map','css',read('src/styles/seeya-map.css'));
+const mapJs=asset('seeya-map','js',bundle('src/client/seeya-map.js'));
+const leafletJs=asset('leaflet','js',read('src/vendor/leaflet/leaflet.js'));
+// Custom div markers and zoom buttons do not use Leaflet's optional image assets.
+const leafletCss=asset('leaflet','css',read('src/vendor/leaflet/leaflet.css').replace(/url\(images\/[^)]+\)/g,'none'));
 const adminCss=asset('archive-admin','css',read('src/admin/admin.css'));
 const adminJs=asset('archive-admin','js',read('src/admin/admin.js'));
 write('manage/index.html',read('src/admin/template.html').replace('{{adminCss}}',adminCss).replace('{{adminJs}}',adminJs));
@@ -84,16 +89,19 @@ write('calendar/events.json',JSON.stringify(calendarData)+'\n');
 write('calendar/activities.ics',calendarICS(calendarData.events));
 write('calendar/anniversaries.ics',calendarICS(calendarData.anniversaries,'씨야 기념일'));
 const previewRoute=json('src/data/exam-preview-route.json');
+const mapPreviewRoute=json('src/data/map-preview-route.json');
+if(!/^\/preview\/seeya-map-[a-f0-9]{16}\/$/.test(mapPreviewRoute.path)||!mapPreviewRoute.unlisted)throw new Error('Invalid map preview route');
 if(!/^\/preview\/seeya-exam-[a-f0-9]{16}\/$/.test(previewRoute.path)||!previewRoute.unlisted)throw new Error('Invalid exam preview route');
 const photosRaw=json('data/photos.json');
 const photos=(Array.isArray(photosRaw)?photosRaw:photosRaw.photos||[]).filter(x=>x&&x.hidden!==true).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||Number(a.order||999)-Number(b.order||999));
 const template=read('src/template.html');
 const files=[];
-for(const route of [...routes,previewRoute]){
+for(const route of [...routes,previewRoute,mapPreviewRoute]){
  const key=route.key;
  const render=require('./src/pages/'+(key==='fanchant'?'music':key)+'.js');
  let content;
  if(key==='news')content=render(json('data/news.json'));
+ else if(key==='map-preview')content=render(archiveRows);
  else if(key==='calendar')content=render(calendarData);
  else if(key==='radio'||key==='podcasts')content=render(archiveRows,site.snapshotDate);
  else if(key==='home')content=render(archiveRows,new Date(site.snapshotDate));
@@ -106,16 +114,17 @@ for(const route of [...routes,previewRoute]){
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
+ if(key==='map-preview'){vars.pageHead=`<link rel="stylesheet" href="${leafletCss}"><link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${leafletJs}"></script><script defer src="${mapJs}"></script>`;}
  if(key==='podcasts'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}"><link rel="stylesheet" href="${podcastCss}">`;vars.scripts=`<script defer src="${podcastJs}"></script>`;}
  if(key==='dictionary'){vars.pageHead+=`<link rel="stylesheet" href="${dictionaryCss}">`;vars.scripts+=`\n<script defer src="${dictionaryJs}"></script>`;}
  if(key==='calendar'){vars.pageHead+=`<link rel="stylesheet" href="${calendarCss}">`;vars.scripts=`<script defer src="${calendarJs}"></script>`;}
  if(key==='fans'){vars.pageHead+=`<link rel="stylesheet" href="${fanCss}">`;vars.scripts+=`\n<script defer src="${fanJs}"></script>`;}
  if(key==='exam'||key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
- vars.scripts+=`\n<script defer src="${mobileMenuJs}"></script>`;
+ if(key!=='map-preview')vars.scripts+=`\n<script defer src="${mobileMenuJs}"></script>`;
  vars.themeColor=esc(pwa.theme_color);
  vars.pwaHead=route.unlisted?'':`<link rel="manifest" href="/manifest.webmanifest">\n<link rel="apple-touch-icon" sizes="180x180" href="/images/app/apple-touch-icon-180.png">\n<meta name="mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="${esc(pwa.short_name)}">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">`;
  if(!route.unlisted)vars.scripts+=`\n<script defer src="${pwaJs}"></script>\n<script defer src="${offlineJs}"></script>`;
- let output=template.replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in vars))throw new Error('Unknown template key '+key);return vars[key];});
+ let output=(key==='map-preview'?read('src/map-preview-template.html'):template).replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in vars))throw new Error('Unknown template key '+key);return vars[key];});
  if(route.noindex)output=output.replace(/(<meta name="(?:robots|googlebot)" content=")[^"]+/g,'$1noindex,follow');
  if(route.unlisted){
   output=output.replace(/(<meta name="(?:robots|googlebot)" content=")[^"]+/g,'$1noindex,nofollow,noarchive,nosnippet');
@@ -126,6 +135,6 @@ for(const route of [...routes,previewRoute]){
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.filter(r=>r.key!=='letter'&&!r.noindex).map(r=>'  <url><loc>'+esc(site.origin+r.path)+'</loc></url>').join('\n')+'\n</urlset>\n');
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics']},null,2)+'\n');
-console.log(`Built ${routes.length} public pages, 1 unlisted preview and ${assets.length} cached assets.`);
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',mapPreviewRoute.path.slice(1)+'index.html']},null,2)+'\n');
+console.log(`Built ${routes.length} public pages, 2 unlisted previews and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

@@ -1,3 +1,20 @@
+# SEEYA ARCHIVE v4.178 — 씨야 대동여지도 테스트
+
+누적 업데이트: `SEEYA_v4_178_MAP_PREVIEW_UPLOAD.zip`. **4.177 수정 통합본까지 포함**합니다. 사이트 저장소에서 먼저 Fetch/Pull origin 후 기존 폴더에 덮어쓰고 Commit → Push하세요. 생성 HTML과 운영 `data/`는 덮어쓰지 않으며 배포 시 생성합니다. 전체 ZIP은 백업용입니다.
+
+**배포 후 테스트 주소:** https://seeya-fanpage.com/preview/seeya-map-7f2c9a6e41b803d5/
+
+로컬은 `serve-local.bat`을 실행하고 표시된 주소 뒤에 `/preview/seeya-map-7f2c9a6e41b803d5/`를 붙입니다. 빌드는 `node build.js`, 검사는 `node scripts/check.js`. **생성된 HTML 직접 편집 금지.** 공개 메뉴에는 아직 연결하지 않았습니다. 주소로 접근하는 테스트 페이지이며 비밀번호 보호는 아닙니다.
+
+- 서울·부산·대구·고양·청주·수원·인천 THE FAN 공연장 7곳을 사용합니다. 왼쪽 장소와 지도 핀을 눌러 상세 내용을 확인합니다. 수원 공연은 실제 소재지가 용인시입니다.
+- PC는 좌측 목록/우측 지도, 모바일은 하단 지도·목록 전환. 검색·멤버·지역·종류·정렬, 핀 묶음 확대, 현재 지도 영역 검색, 주소 복사·길찾기·관련 기록 연결을 제공합니다. 공연장 사진은 확보하지 않아 도시명 티켓 그래픽으로 표시합니다.
+- 날짜·시간·공연명·기록 출처는 `data/archive.json`의 기존 ID로 빌드 때 연결하며, 장소 좌표·주소는 `src/data/map-places.json`에서 관리합니다. 공연장 자체가 변경되면 장소 연결과 좌표도 함께 검토하세요. 주소·좌표의 개별 출처는 데이터와 장소 상세 안에 있습니다.
+- 지도: [Leaflet 1.9.4](https://leafletjs.com/download.html)와 [OpenStreetMap](https://www.openstreetmap.org/copyright). 라이선스는 `src/vendor/leaflet/LICENSE`. [OSM 공개 타일 이용 정책](https://operations.osmfoundation.org/policies/tiles/)에 따라 출처·Referer·기본 HTTP 캐시를 유지하고 대량 다운로드/선행 수집/오프라인 저장을 하지 않습니다. 지도 공급자 장애 시 목록·주소·외부 길찾기를 사용할 수 있습니다. 정식 공개 전 이용량에 맞는 공급자를 다시 검토하세요.
+- 패스포트·방문 인증·개인 사진 저장은 이번에 추가하지 않았습니다. 실제 휴대폰/PWA는 배포 후 지도 이동·핀 선택·지도/목록 전환을 확인해 주세요.
+- 4.177의 별도 비공개 관리 저장소 수정은 여전히 `SEEYA_v4_177_ADMIN_UPDATE.zip`을 관리 저장소에 적용해야 합니다. 이 사이트 ZIP으로 관리 저장소까지 바뀌지는 않습니다.
+
+---
+
 # SEEYA ARCHIVE v4.177 — 기록·일정·뉴스·관리자 수정 통합본
 
 아직 적용하지 않은 4.177을 대신하는 수정본입니다. 4.176 라디오 버튼 배치와 앞서 준비한 고양 공연·팬 앨범·일정 업데이트를 모두 포함합니다.

@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "checkedAt": "2026-10-06",
+  "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  "places": [
+    {"id":"khu-grand-peace-palace","recordId":"20260829-the-fan-seoul","city":"서울","region":"서울","address":"서울특별시 동대문구 경희대로 26","coordinates":[37.5986587,127.0527803],"coordinateSource":"https://www.openstreetmap.org/way/261207462","addressSource":"https://www.openstreetmap.org/way/261207462","note":"경희대학교 서울캠퍼스 안에 있는 공연장입니다."},
+    {"id":"kbs-busan-hall","recordId":"20260905-the-fan-busan","city":"부산","region":"부산","address":"부산광역시 수영구 수영로 429","coordinates":[35.1451260,129.1088362],"coordinateSource":"https://www.openstreetmap.org/node/2362916220","addressSource":"https://www.openstreetmap.org/node/2362916220","venueSource":"https://kbsarena.com/intro/viewBusanLocalHall.do"},
+    {"id":"exco-west","recordId":"20260912-the-fan-daegu","city":"대구","region":"대구","address":"대구광역시 북구 엑스코로 10","coordinates":[35.9068632,128.6132786],"coordinateSource":"https://www.openstreetmap.org/way/774541399","addressSource":"https://micekorea.or.kr/kor/download/KMA_Memberdirectory_2023.pdf","note":"서관 5층 컨벤션홀 공연 기록입니다. 핀은 엑스코 시설 위치를 가리킵니다."},
+    {"id":"kintex-second","recordId":"20261004-the-fan-goyang","city":"고양","region":"경기","address":"경기도 고양시 일산서구 킨텍스로 217-59","coordinates":[37.6647381,126.7418699],"coordinateSource":"https://www.openstreetmap.org/relation/6921083","addressSource":"https://conference.kmac.co.kr/_conference/about/location","note":"제2전시장 10홀 공연 기록입니다. 핀은 제2전시장 위치이며 개별 입장 게이트를 뜻하지 않습니다."},
+    {"id":"cju-seokwoo","recordId":"20261010-the-fan-cheongju","city":"청주","region":"충북","address":"충청북도 청주시 청원구 대성로 298","coordinates":[36.6624148,127.5026733],"coordinateSource":"https://www.openstreetmap.org/way/432974300","addressSource":"https://www.cju.ac.kr/iacf/contents.do?key=7766"},
+    {"id":"khu-seonseung","recordId":"20261017-the-fan-suwon","city":"수원","region":"경기","locality":"용인시 기흥구","address":"경기도 용인시 기흥구 덕영대로 1732","coordinates":[37.2427822,127.0801097],"coordinateSource":"https://www.openstreetmap.org/way/585696506","addressSource":"https://www.khu.ac.kr/kor/user/mapManager/view.do?menuNo=200357","note":"공연명은 ‘수원’이며, 실제 공연장은 용인시 기흥구의 경희대학교 국제캠퍼스에 있습니다."},
+    {"id":"namdong-gymnasium","recordId":"20261031-the-fan-incheon","city":"인천","region":"인천","address":"인천광역시 남동구 소래로 500","coordinates":[37.4346148,126.7338532],"coordinateSource":"https://www.openstreetmap.org/way/314798783","addressSource":"https://www.yeonsu.go.kr/etc/bbs/SearchView.asp?bbs_code=board_1&seq=114923"}
+  ]
+}
