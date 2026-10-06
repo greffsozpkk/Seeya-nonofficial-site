@@ -1,6 +1,6 @@
 {
-  "version": 2,
-  "checkedAt": "2026-10-06",
+  "version": 3,
+  "checkedAt": "2026-10-07",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -819,6 +819,562 @@
         126.4127468
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=NX4hvOAqF4TE"
+    },
+    {
+      "id": "fingers-hotdog",
+      "name": "핑거스핫도그",
+      "city": "제주",
+      "region": "제주",
+      "address": "제주특별자치도 제주시 한경면 일주서로 4525 1층",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-12",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 제주 여행 Ep.16에서 들른 곳입니다.\n공식 영상 설명에 방문 장소와 주소가 소개되어 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=60dNYPs5RJ4"
+      },
+      "coordinates": [
+        33.3647398,
+        126.199307
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=Xe4VFJPfE158",
+      "addressSource": "https://naver.me/GTn7aOdb",
+      "recordId": "v4145-60dNYPs5RJ4"
+    },
+    {
+      "id": "pongdang-ramyeon",
+      "name": "퐁당라면",
+      "city": "제주",
+      "region": "제주",
+      "address": "제주특별자치도 제주시 한경면 일주서로 4533-3",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-12",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 제주 여행 Ep.16에서 들른 곳입니다.\n공식 영상 설명에 방문 장소와 주소가 소개되어 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=60dNYPs5RJ4"
+      },
+      "coordinates": [
+        33.3649286,
+        126.1998178
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=sq65RbGOGV53",
+      "addressSource": "https://naver.me/Ix7qzUYK",
+      "recordId": "v4145-60dNYPs5RJ4"
+    },
+    {
+      "id": "eq-table",
+      "name": "이큐테이블 한림협재금능해수욕장점",
+      "city": "제주",
+      "region": "제주",
+      "address": "제주특별자치도 제주시 한림읍 금능남1길 6-1",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-12",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 제주 여행 Ep.16에서 들른 곳입니다.\n공식 영상 설명에 방문 장소와 주소가 소개되어 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=60dNYPs5RJ4"
+      },
+      "coordinates": [
+        33.3852526,
+        126.2298923
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=fRWRbpU6jxso",
+      "addressSource": "https://naver.me/FHu0tZM4",
+      "recordId": "v4145-60dNYPs5RJ4"
+    },
+    {
+      "id": "chunmihyang",
+      "name": "춘미향음식점",
+      "city": "서귀포",
+      "region": "제주",
+      "address": "제주특별자치도 서귀포시 안덕면 산방로 378",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-26",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 제주 여행 Ep.18에서 들른 곳입니다.\n공식 영상 설명에 방문 장소와 주소가 소개되어 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=jVCa6jPn3JA"
+      },
+      "coordinates": [
+        33.2314367,
+        126.2964929
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=O9HQt8GQR6af",
+      "addressSource": "https://naver.me/x7rdhIMK",
+      "recordId": "v4145-jVCa6jPn3JA"
+    },
+    {
+      "id": "jeopjjak",
+      "name": "제주접짝뼈국",
+      "city": "제주",
+      "region": "제주",
+      "address": "제주특별자치도 제주시 한경면 두신로 145",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-26",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 제주 여행 Ep.18에서 들른 곳입니다.\n공식 영상 설명에 방문 장소와 주소가 소개되어 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=jVCa6jPn3JA"
+      },
+      "coordinates": [
+        33.3554172,
+        126.1860985
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=Z5lCwEl3JBno",
+      "addressSource": "https://naver.me/xnhjBIYI",
+      "recordId": "v4145-jVCa6jPn3JA"
+    },
+    {
+      "id": "dufore-jeju",
+      "name": "듀포레 제주",
+      "city": "제주",
+      "region": "제주",
+      "address": "제주특별자치도 제주시 서해안로 579",
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-26",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 제주 여행 Ep.18에서 들른 곳입니다.\n공식 영상 설명에 방문 장소와 주소가 소개되어 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=jVCa6jPn3JA"
+      },
+      "coordinates": [
+        33.5185278,
+        126.5000943
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=RvgEjrrc4qLR",
+      "addressSource": "https://naver.me/56D6je9U",
+      "recordId": "v4145-jVCa6jPn3JA"
+    },
+    {
+      "id": "geumak-noodles",
+      "name": "금악퐁낭국수",
+      "city": "제주",
+      "region": "제주",
+      "address": "제주특별자치도 제주시 한림읍 금악로1길 2",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-19",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 제주 여행 Ep.17에서 들른 곳입니다.\n공식 영상 설명에 방문 장소와 주소가 소개되어 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=pmhw1lyc0M4"
+      },
+      "coordinates": [
+        33.3590296,
+        126.296535
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=46srtdH4ZUgQ",
+      "addressSource": "https://naver.me/FpM7xu0P",
+      "recordId": "v4145-pmhw1lyc0M4"
+    },
+    {
+      "id": "innisfree-jeju",
+      "name": "이니스프리 제주하우스",
+      "city": "서귀포",
+      "region": "제주",
+      "address": "제주특별자치도 서귀포시 안덕면 신화역사로 23",
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-19",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 제주 여행 Ep.17에서 들른 곳입니다.\n공식 영상 설명에 방문 장소와 주소가 소개되어 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=pmhw1lyc0M4"
+      },
+      "coordinates": [
+        33.3067025,
+        126.290889
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=VSu2PtXh0ZTK",
+      "addressSource": "https://naver.me/5YwdeDff",
+      "recordId": "v4145-pmhw1lyc0M4"
+    },
+    {
+      "id": "mippeun-bakery",
+      "name": "미쁜제과",
+      "city": "서귀포",
+      "region": "제주",
+      "address": "제주특별자치도 서귀포시 대정읍 도원남로 16",
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-19",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 제주 여행 Ep.17에서 들른 곳입니다.\n공식 영상 설명에 방문 장소와 주소가 소개되어 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=pmhw1lyc0M4"
+      },
+      "coordinates": [
+        33.2691404,
+        126.1800996
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=36NKU7lLTAYF",
+      "addressSource": "https://naver.me/G2Vw8JbA",
+      "recordId": "v4145-pmhw1lyc0M4"
+    },
+    {
+      "id": "joyang-bangjik",
+      "name": "조양방직",
+      "city": "강화",
+      "region": "인천",
+      "address": "인천광역시 강화군 강화읍 향나무길5번길 12",
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-08-03",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 강화도 나들이 중 들른 카페입니다.\n귤멍 Ep.06의 4분 32초부터 조양방직 이야기가 이어집니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=UHwGZGI-nyE"
+      },
+      "coordinates": [
+        37.7470848,
+        126.4803594
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=PE5iinrvDGIc",
+      "addressSource": "https://www.diningcode.com/profile.php?rid=PE5iinrvDGIc",
+      "recordId": "v4145-UHwGZGI-nyE",
+      "evidence": [
+        {
+          "label": "카페 장면부터 보기",
+          "url": "https://www.youtube.com/watch?v=UHwGZGI-nyE&t=272s"
+        }
+      ]
+    },
+    {
+      "id": "rully-gachang",
+      "name": "룰리커피 가창점",
+      "city": "대구",
+      "region": "대구",
+      "address": "대구광역시 달성군 가창면 우록길 76",
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "공연"
+      ],
+      "date": "2026-06-28",
+      "dateBasis": "공연일",
+      "story": "2026년 6월 28일 남규리가 Rully Busking Series.01에 출연한 장소입니다.\n룰리커피가 공연 종료 소식과 현장 이야기를 소개했습니다.",
+      "source": {
+        "label": "룰리커피 · 공연 종료 소식",
+        "url": "https://www.newswire.co.kr/newsRead.php?no=1037581"
+      },
+      "coordinates": [
+        35.7298072,
+        128.6574285
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=8Vjvy7yfReUE",
+      "addressSource": "https://www.diningcode.com/profile.php?rid=8Vjvy7yfReUE",
+      "evidence": [
+        {
+          "label": "룰리커피 · 행사 안내",
+          "url": "https://rullycoffee.com/art"
+        }
+      ]
+    },
+    {
+      "id": "about-project-jamsil",
+      "name": "어바웃 프로젝트 라운지 잠실",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 송파구 올림픽로 300 롯데월드타워 1층 다이버홀",
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "팬 행사"
+      ],
+      "date": "2026-01-18",
+      "dateBasis": "영상 게시일",
+      "story": "2025년 12월 남규리가 팬들을 초대해 음식을 대접한 ‘귤식당’ 행사 장소입니다.\n팬들과 사진을 찍고 노래하며 보낸 하루가 귤멍 Ep.30에 담겼습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=frUkQQcK6iQ"
+      },
+      "coordinates": [
+        37.5125018,
+        127.1025403
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=ze39N4BHFUEK",
+      "addressSource": "https://www.diningcode.com/profile.php?rid=ze39N4BHFUEK",
+      "recordId": "v4145-frUkQQcK6iQ",
+      "visitMonth": "2025-12",
+      "note": "귤식당은 당시 열린 팬 행사 이름이며 상설 식당 이름이 아닙니다. 날짜는 행사 영상 게시일입니다.",
+      "evidence": [
+        {
+          "label": "귤식당 행사 · 장소 보도",
+          "url": "https://tvreport.co.kr/entertainment/article/988740/"
+        }
+      ]
+    },
+    {
+      "id": "geum-oreum",
+      "name": "금오름",
+      "city": "제주",
+      "region": "제주",
+      "address": "제주특별자치도 제주시 한림읍 금악리 산 1-1",
+      "category": "여행·자연",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-19",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 제주 여행 Ep.17에서 소개한 오름입니다.\n영상 설명의 방문 목록에서 금오름을 확인할 수 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=pmhw1lyc0M4"
+      },
+      "coordinates": [
+        33.3529941,
+        126.3139406
+      ],
+      "coordinateSource": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000019460",
+      "addressSource": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000019460",
+      "recordId": "v4145-pmhw1lyc0M4",
+      "locationPrecision": "area",
+      "note": "핀은 오름의 대표 위치입니다. 영상 속 촬영 지점이나 등산로 입구를 가리키지는 않습니다."
+    },
+    {
+      "id": "isidore-farm",
+      "name": "성이시돌목장",
+      "city": "제주",
+      "region": "제주",
+      "address": "제주특별자치도 제주시 한림읍 산록남로 53",
+      "category": "여행·자연",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-19",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 제주 여행 Ep.17에 나온 목장입니다.\n공식 영상 설명에서 금오름 다음 방문 장소로 소개되었습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=pmhw1lyc0M4"
+      },
+      "coordinates": [
+        33.3459727,
+        126.3215552
+      ],
+      "coordinateSource": "https://visitjeju.net/kr/detail/view?contentsid=CNTS_200000000008053",
+      "addressSource": "https://visitjeju.net/kr/detail/view?contentsid=CNTS_200000000008053",
+      "recordId": "v4145-pmhw1lyc0M4",
+      "locationPrecision": "area",
+      "note": "핀은 목장 대표 위치입니다. 관람 가능한 구역과 방문 안내는 관광지 안내를 확인해 주세요."
+    },
+    {
+      "id": "sinchang-coast",
+      "name": "신창풍차해안도로",
+      "city": "제주",
+      "region": "제주",
+      "address": "제주특별자치도 제주시 한경면 신창리 해안도로 일대",
+      "category": "여행·자연",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-10-12",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 제주 여행 Ep.16 방문 목록에 소개된 해안도로입니다.\n바다와 풍차가 이어지는 여행 장소로 기록합니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=60dNYPs5RJ4"
+      },
+      "coordinates": [
+        33.34607941,
+        126.1793416
+      ],
+      "coordinateSource": "https://qad.purpleo.kr/article/4936",
+      "addressSource": "https://naver.me/xFruIHYA",
+      "recordId": "v4145-60dNYPs5RJ4",
+      "locationPrecision": "area",
+      "note": "긴 해안도로 구간의 대표 위치입니다. 핀은 영상 속 정확한 촬영 지점이나 주차장 입구를 뜻하지 않습니다."
+    },
+    {
+      "id": "ulsan-art-museum",
+      "name": "울산시립미술관",
+      "city": "울산",
+      "region": "울산",
+      "address": "울산광역시 중구 미술관길 72",
+      "category": "문화공간",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-07-26",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 귤멍 Ep.56 울산 여행에서 전시를 관람한 미술관입니다.\n영상에 소개된 전시는 ‘가장 완벽한 환영’입니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=WsyxwPl55wQ"
+      },
+      "coordinates": [
+        35.5577778694247,
+        129.320773491925
+      ],
+      "coordinateSource": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.do?mId=001002005000000000&unqId=153",
+      "addressSource": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.do?mId=001002005000000000&unqId=153",
+      "recordId": "v4145-WsyxwPl55wQ",
+      "note": "영상 속 전시 기간은 2026년 7월 2일~10월 5일로 종료되었습니다. 현재 전시는 미술관 안내를 확인해 주세요."
+    },
+    {
+      "id": "dongmyo-area",
+      "name": "동묘 벼룩시장 일대",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 종로구 숭인동 102-8 일대",
+      "category": "쇼핑",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-08-24",
+      "dateBasis": "영상 게시일",
+      "story": "남규리의 귤멍 Ep.09에 담긴 동묘 나들이 장소입니다.\n뮤직비디오를 준비하며 둘러본 동묘 지역을 하나의 장소로 묶었습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=D2g3gaQdqVI"
+      },
+      "coordinates": [
+        37.5732541699,
+        127.0177144794
+      ],
+      "coordinateSource": "https://yoonoo.kr/travel/detail.php?contentid=2765213&page=387",
+      "addressSource": "https://yoonoo.kr/travel/detail.php?contentid=2765213&page=387",
+      "recordId": "v4145-D2g3gaQdqVI",
+      "locationPrecision": "area",
+      "note": "동묘 지역의 대표 위치이며 개별 방문 매장은 특정하지 않았습니다.",
+      "evidence": [
+        {
+          "label": "서울관광재단 · 동묘 벼룩시장 안내",
+          "url": "https://korean.visitseoul.net/area/동묘-벼룩시장-KR/KOP009646"
+        }
+      ]
+    },
+    {
+      "id": "apgujeong-haru",
+      "name": "압구정 하루",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 강남구 언주로172길 56 1층",
+      "category": "식당",
+      "members": [
+        "이보람"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2022-09-20",
+      "dateBasis": "영상 게시일",
+      "story": "이보람의 촬영·일상 브이로그에 소개된 식당입니다.\n보람씨야 공식 영상 제목에 압구정 하루와 카레돈가스가 함께 등장합니다.",
+      "source": {
+        "label": "보람씨야 · 공식 영상",
+        "url": "https://www.youtube.com/watch?v=DEEQmmrQLgs"
+      },
+      "coordinates": [
+        37.5268197,
+        127.0382274
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=GFUh46HsF9tM",
+      "addressSource": "https://www.diningcode.com/profile.php?rid=GFUh46HsF9tM",
+      "recordId": "v4145-DEEQmmrQLgs"
     }
   ],
   "researchQueue": [
@@ -831,13 +1387,83 @@
     {
       "name": "울산 불고기 방문 식당",
       "member": "남규리",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8393",
-      "reason": "질문 게시글만으로 상호와 방문 근거가 불충분."
+      "url": "https://www.youtube.com/watch?v=WsyxwPl55wQ&t=511s",
+      "reason": "귤멍 Ep.56의 08:31 식사 장면 후보. 상호·지점 확인 전 지도 보류."
     },
     {
       "name": "남겨서 뭐하게 44회 휴게소",
       "member": "남규리",
       "reason": "방송 원문에서 휴게소 및 매장 지점 추가 대조 필요."
+    },
+    {
+      "name": "도산정육 본점",
+      "member": "김연지",
+      "reason": "멤버 방문·추천 원문과 해당 지점 대조 필요.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
+    },
+    {
+      "name": "중문별장",
+      "member": "이보람",
+      "reason": "공식 영상 원문과 지점 주소 대조 필요.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
+    },
+    {
+      "name": "카페07",
+      "member": "이보람",
+      "reason": "생일 팬 행사 후보. 동일 상호 지점과 개최 원문 확인 필요. 멤버 방문으로 단정하지 않음.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
+    },
+    {
+      "name": "금돼지식당",
+      "member": "이보람",
+      "reason": "방문 근거 원문 확인 필요.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
+    },
+    {
+      "name": "공간양",
+      "member": "남규리",
+      "reason": "방문 근거와 정확한 상호·지점 확인 필요.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
+    },
+    {
+      "name": "유지카페",
+      "member": "김연지",
+      "reason": "방문 근거와 정확한 상호·지점 확인 필요.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
+    },
+    {
+      "name": "우리는 정육가든",
+      "member": "씨야",
+      "reason": "상호와 멤버 방문 원문 확인 필요.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
+    },
+    {
+      "name": "익커피",
+      "member": "이보람",
+      "reason": "팬 행사·폐업 기록 원문과 정확한 지점 확인 필요. 현재 방문 장소로 표시하지 않음.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
+    },
+    {
+      "name": "생일 서프라이즈 카페",
+      "member": "남규리",
+      "reason": "2026년 5월 후보. 상호 미확인.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
+    },
+    {
+      "name": "꽃카페",
+      "member": "김연지",
+      "reason": "공개 영상·상호·주소 미확인.",
+      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
+      "checkedAt": "2026-10-07"
     }
   ]
 }

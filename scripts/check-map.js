@@ -4,7 +4,7 @@ const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p
 const config=json('src/data/map-places.json'),route=json('src/data/map-preview-route.json'),archive=json('data/archive.json');
 const shared=require('../src/shared/seeya-map'),{resolvePlaces,filterPlaces,cards,detail,groupPins}=shared;
 const allRows=resolvePlaces(config,archive),concertConfig={...config,places:config.places.filter(p=>!p.name)},rows=resolvePlaces(concertConfig,archive),html=read(route.path.slice(1)+'index.html');
-assert.equal(config.places.length,28);assert.equal(allRows.length,28);assert.equal(new Set(allRows.map(p=>p.id)).size,28);assert.equal(rows.length,7);assert.equal(new Set(rows.map(p=>p.id)).size,7);
+assert.equal(config.places.length,46);assert.equal(allRows.length,46);assert.equal(new Set(allRows.map(p=>p.id)).size,46);assert.equal(rows.length,7);assert.equal(new Set(rows.map(p=>p.id)).size,7);
 assert.deepEqual(rows.map(p=>p.recordId).sort(),json('src/data/concerts.json').find(t=>t.id==='the-fan-2026').events.map(e=>e.id).sort());
 for(const p of rows){assert(p.coordinates[0]>33&&p.coordinates[0]<39);assert(p.coordinates[1]>124&&p.coordinates[1]<131);assert(p.addressSource&&p.coordinateSource&&p.checkedAt);assert.equal(p.date,archive.find(r=>r.id===p.recordId).date);assert(html.includes(p.name));}
 assert.equal(resolvePlaces(concertConfig,archive.filter(r=>r.id!==rows[0].recordId)).length,6);
@@ -31,9 +31,9 @@ const {promoStatus}=shared;
 for(const p of allRows){assert(p.addressSource&&p.coordinateSource&&p.source.url&&p.dateBasis);assert(p.coordinates.every(Number.isFinite));assert(html.includes(p.name));assert(detail(p).includes(p.source.url.replaceAll('&','&amp;')));}
 assert.equal(filterPlaces(allRows,{relation:'콘서트 혜택'}).length,11);
 assert.equal(filterPlaces(allRows,{relation:'사진·사인'}).length,1);
-assert.equal(filterPlaces(allRows,{category:'카페'}).length,6);
+assert.equal(filterPlaces(allRows,{category:'카페'}).length,12);
 assert.equal(filterPlaces(allRows,{member:'씨야'}).length,21);
-assert.equal(filterPlaces(allRows,{member:'이보람'}).length,21);
+assert.equal(filterPlaces(allRows,{member:'이보람'}).length,22);
 assert(!filterPlaces(allRows,{member:'씨야'}).some(p=>p.id==='maboklim'));
 const ohji=allRows.find(p=>p.id==='ohji'),thai=allRows.find(p=>p.id==='thailicious');
 assert.equal(promoStatus(thai,'2026-10-05T00:00:00+09:00'),'혜택 종료');
@@ -41,6 +41,20 @@ assert.equal(promoStatus(ohji,'2026-10-10T23:59:59+09:00'),'혜택 기간');
 assert.equal(promoStatus(ohji,'2026-10-11T01:00:01+09:00'),'혜택 종료');
 assert.equal(promoStatus(ohji,'2026-10-05T23:59:59+09:00'),'혜택 예정');
 assert(!detail(allRows.find(p=>p.id==='maboklim')).includes('20주년 콘서트 기록관'));
-assert.equal(filterPlaces(allRows,{category:'식당',region:'서울'}).length,3);
+assert.equal(filterPlaces(allRows,{category:'식당',region:'서울'}).length,4);
 assert.equal(resolvePlaces(config,archive.filter(r=>r.id!=='v4145-NIeNbStvYa0')).find(p=>p.id==='maboklim').recordId,null);
-console.log('PASS: map preview isolation, 28 verified places and seven archive-linked venues, filters, clustering, escaping and library-failure fallback.');
+console.log('PASS: map preview isolation, 46 verified places and seven archive-linked venues, filters, clustering, escaping and library-failure fallback.');
+
+assert.equal(filterPlaces(allRows,{region:'제주'}).length,12);
+assert.equal(filterPlaces(allRows,{category:'여행·자연'}).length,3);
+assert.equal(filterPlaces(allRows,{category:'문화공간'})[0].id,'ulsan-art-museum');
+assert.equal(filterPlaces(allRows,{category:'쇼핑'})[0].id,'dongmyo-area');
+assert.equal(filterPlaces(allRows,{relation:'팬 행사'})[0].id,'about-project-jamsil');
+for(const p of allRows.filter(p=>p.locationPrecision==='area')){assert(detail(p).includes('지역 지도'));assert(!detail(p).includes('link/to/'));assert(detail(p).includes('대표 위치'));}
+assert.equal(allRows.find(p=>p.id==='dufore-jeju').coordinates[0],33.5185278);
+assert.equal(allRows.find(p=>p.id==='about-project-jamsil').dateBasis,'영상 게시일');
+assert.equal(allRows.find(p=>p.id==='rully-gachang').dateBasis,'공연일');
+for(const p of config.researchQueue)assert(!allRows.some(r=>r.name===p.name));
+for(const category of ['문화공간','여행·자연','쇼핑'])assert(html.includes('data-category="'+category+'"'));
+assert(!html.includes('leadSource'));
+console.log('PASS: new place categories, representative area links, publication dates, correct Jeju branch and unpublished research queue.');
