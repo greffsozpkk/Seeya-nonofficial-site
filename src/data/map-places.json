@@ -1,14 +1,843 @@
 {
-  "version": 1,
+  "version": 2,
   "checkedAt": "2026-10-06",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
-    {"id":"khu-grand-peace-palace","recordId":"20260829-the-fan-seoul","city":"서울","region":"서울","address":"서울특별시 동대문구 경희대로 26","coordinates":[37.5986587,127.0527803],"coordinateSource":"https://www.openstreetmap.org/way/261207462","addressSource":"https://www.openstreetmap.org/way/261207462","note":"경희대학교 서울캠퍼스 안에 있는 공연장입니다."},
-    {"id":"kbs-busan-hall","recordId":"20260905-the-fan-busan","city":"부산","region":"부산","address":"부산광역시 수영구 수영로 429","coordinates":[35.1451260,129.1088362],"coordinateSource":"https://www.openstreetmap.org/node/2362916220","addressSource":"https://www.openstreetmap.org/node/2362916220","venueSource":"https://kbsarena.com/intro/viewBusanLocalHall.do"},
-    {"id":"exco-west","recordId":"20260912-the-fan-daegu","city":"대구","region":"대구","address":"대구광역시 북구 엑스코로 10","coordinates":[35.9068632,128.6132786],"coordinateSource":"https://www.openstreetmap.org/way/774541399","addressSource":"https://micekorea.or.kr/kor/download/KMA_Memberdirectory_2023.pdf","note":"서관 5층 컨벤션홀 공연 기록입니다. 핀은 엑스코 시설 위치를 가리킵니다."},
-    {"id":"kintex-second","recordId":"20261004-the-fan-goyang","city":"고양","region":"경기","address":"경기도 고양시 일산서구 킨텍스로 217-59","coordinates":[37.6647381,126.7418699],"coordinateSource":"https://www.openstreetmap.org/relation/6921083","addressSource":"https://conference.kmac.co.kr/_conference/about/location","note":"제2전시장 10홀 공연 기록입니다. 핀은 제2전시장 위치이며 개별 입장 게이트를 뜻하지 않습니다."},
-    {"id":"cju-seokwoo","recordId":"20261010-the-fan-cheongju","city":"청주","region":"충북","address":"충청북도 청주시 청원구 대성로 298","coordinates":[36.6624148,127.5026733],"coordinateSource":"https://www.openstreetmap.org/way/432974300","addressSource":"https://www.cju.ac.kr/iacf/contents.do?key=7766"},
-    {"id":"khu-seonseung","recordId":"20261017-the-fan-suwon","city":"수원","region":"경기","locality":"용인시 기흥구","address":"경기도 용인시 기흥구 덕영대로 1732","coordinates":[37.2427822,127.0801097],"coordinateSource":"https://www.openstreetmap.org/way/585696506","addressSource":"https://www.khu.ac.kr/kor/user/mapManager/view.do?menuNo=200357","note":"공연명은 ‘수원’이며, 실제 공연장은 용인시 기흥구의 경희대학교 국제캠퍼스에 있습니다."},
-    {"id":"namdong-gymnasium","recordId":"20261031-the-fan-incheon","city":"인천","region":"인천","address":"인천광역시 남동구 소래로 500","coordinates":[37.4346148,126.7338532],"coordinateSource":"https://www.openstreetmap.org/way/314798783","addressSource":"https://www.yeonsu.go.kr/etc/bbs/SearchView.asp?bbs_code=board_1&seq=114923"}
+    {
+      "id": "khu-grand-peace-palace",
+      "recordId": "20260829-the-fan-seoul",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 동대문구 경희대로 26",
+      "coordinates": [
+        37.5986587,
+        127.0527803
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/261207462",
+      "addressSource": "https://www.openstreetmap.org/way/261207462",
+      "note": "경희대학교 서울캠퍼스 안에 있는 공연장입니다."
+    },
+    {
+      "id": "kbs-busan-hall",
+      "recordId": "20260905-the-fan-busan",
+      "city": "부산",
+      "region": "부산",
+      "address": "부산광역시 수영구 수영로 429",
+      "coordinates": [
+        35.145126,
+        129.1088362
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/node/2362916220",
+      "addressSource": "https://www.openstreetmap.org/node/2362916220",
+      "venueSource": "https://kbsarena.com/intro/viewBusanLocalHall.do"
+    },
+    {
+      "id": "exco-west",
+      "recordId": "20260912-the-fan-daegu",
+      "city": "대구",
+      "region": "대구",
+      "address": "대구광역시 북구 엑스코로 10",
+      "coordinates": [
+        35.9068632,
+        128.6132786
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/774541399",
+      "addressSource": "https://micekorea.or.kr/kor/download/KMA_Memberdirectory_2023.pdf",
+      "note": "서관 5층 컨벤션홀 공연 기록입니다. 핀은 엑스코 시설 위치를 가리킵니다."
+    },
+    {
+      "id": "kintex-second",
+      "recordId": "20261004-the-fan-goyang",
+      "city": "고양",
+      "region": "경기",
+      "address": "경기도 고양시 일산서구 킨텍스로 217-59",
+      "coordinates": [
+        37.6647381,
+        126.7418699
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/relation/6921083",
+      "addressSource": "https://conference.kmac.co.kr/_conference/about/location",
+      "note": "제2전시장 10홀 공연 기록입니다. 핀은 제2전시장 위치이며 개별 입장 게이트를 뜻하지 않습니다."
+    },
+    {
+      "id": "cju-seokwoo",
+      "recordId": "20261010-the-fan-cheongju",
+      "city": "청주",
+      "region": "충북",
+      "address": "충청북도 청주시 청원구 대성로 298",
+      "coordinates": [
+        36.6624148,
+        127.5026733
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/432974300",
+      "addressSource": "https://www.cju.ac.kr/iacf/contents.do?key=7766"
+    },
+    {
+      "id": "khu-seonseung",
+      "recordId": "20261017-the-fan-suwon",
+      "city": "수원",
+      "region": "경기",
+      "locality": "용인시 기흥구",
+      "address": "경기도 용인시 기흥구 덕영대로 1732",
+      "coordinates": [
+        37.2427822,
+        127.0801097
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/585696506",
+      "addressSource": "https://www.khu.ac.kr/kor/user/mapManager/view.do?menuNo=200357",
+      "note": "공연명은 ‘수원’이며, 실제 공연장은 용인시 기흥구의 경희대학교 국제캠퍼스에 있습니다."
+    },
+    {
+      "id": "namdong-gymnasium",
+      "recordId": "20261031-the-fan-incheon",
+      "city": "인천",
+      "region": "인천",
+      "address": "인천광역시 남동구 소래로 500",
+      "coordinates": [
+        37.4346148,
+        126.7338532
+      ],
+      "coordinateSource": "https://www.openstreetmap.org/way/314798783",
+      "addressSource": "https://www.yeonsu.go.kr/etc/bbs/SearchView.asp?bbs_code=board_1&seq=114923"
+    },
+    {
+      "id": "aengdu",
+      "name": "앵두나무집",
+      "city": "성남",
+      "region": "경기",
+      "address": "경기도 성남시 수정구 옛골로 50",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "방송 방문"
+      ],
+      "date": "2026-05-31",
+      "dateBasis": "방송일",
+      "story": "씨야 세 멤버가 「식객 허영만의 백반기행」 350회 성남 편에서 방문한 식당입니다.\n방송에 소개된 메뉴는 묵무침·묵사발·된장찌개입니다.",
+      "source": {
+        "label": "TV CHOSUN · 350회 식당 안내",
+        "url": "https://broadcast.tvchosun.com/broadcast/program/3/C201900033/bbs/8663/C201900033_7/713792.cstv"
+      },
+      "addressSource": "https://broadcast.tvchosun.com/broadcast/program/3/C201900033/bbs/8663/C201900033_7/713792.cstv",
+      "coordinates": [
+        37.4250742,
+        127.066493
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=BKnNOPLm10pN",
+      "note": "방송사 안내 주소는 옛골로 50이며 일부 매장 지도에는 옛골로 58로 표기되어 있습니다. 출발 전 매장 안내를 확인해 주세요."
+    },
+    {
+      "id": "baekhap",
+      "name": "백합식당",
+      "city": "성남",
+      "region": "경기",
+      "address": "경기도 성남시 수정구 산성대로 503 1층 1호",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "방송 방문"
+      ],
+      "date": "2026-05-31",
+      "dateBasis": "방송일",
+      "story": "씨야 세 멤버가 「식객 허영만의 백반기행」 350회 성남 편에서 방문한 식당입니다.\n방송에 소개된 메뉴는 백합찜·갑오징어 샤부샤부입니다.",
+      "source": {
+        "label": "TV CHOSUN · 350회 식당 안내",
+        "url": "https://broadcast.tvchosun.com/broadcast/program/3/C201900033/bbs/8663/C201900033_7/713792.cstv"
+      },
+      "addressSource": "https://broadcast.tvchosun.com/broadcast/program/3/C201900033/bbs/8663/C201900033_7/713792.cstv",
+      "coordinates": [
+        37.4563333,
+        127.1624058
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=SNYyywZv2OvR"
+    },
+    {
+      "id": "chowon",
+      "name": "초원갈매기살",
+      "city": "성남",
+      "region": "경기",
+      "address": "경기도 성남시 중원구 성남대로997번길 51-18 1층",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "방송 방문"
+      ],
+      "date": "2026-05-31",
+      "dateBasis": "방송일",
+      "story": "씨야 세 멤버가 「식객 허영만의 백반기행」 350회 성남 편에서 방문한 식당입니다.\n방송에 소개된 메뉴는 생갈매기살·양념갈매기살입니다.",
+      "source": {
+        "label": "TV CHOSUN · 350회 식당 안내",
+        "url": "https://broadcast.tvchosun.com/broadcast/program/3/C201900033/bbs/8663/C201900033_7/713792.cstv"
+      },
+      "addressSource": "https://broadcast.tvchosun.com/broadcast/program/3/C201900033/bbs/8663/C201900033_7/713792.cstv",
+      "coordinates": [
+        37.4170594,
+        127.1261437
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=MQvRmR9wMTzW"
+    },
+    {
+      "id": "byeongang",
+      "name": "압구정변강쇠떡볶이",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 강남구 도산대로46길 21 한진로즈힐아파트 101동 상가 117호",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-11-09",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 위자월과 함께한 귤멍 Ep.20 떡볶이 투어에 등장합니다.\n공식 영상 설명에서 매장명과 주소를 확인할 수 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 떡볶이 투어",
+        "url": "https://www.youtube.com/watch?v=NIeNbStvYa0"
+      },
+      "addressSource": "https://www.youtube.com/watch?v=NIeNbStvYa0",
+      "recordId": "v4145-NIeNbStvYa0",
+      "coordinates": [
+        37.5209795,
+        127.0372481
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=iRC6XTNh9tDu"
+    },
+    {
+      "id": "maboklim",
+      "name": "마복림할머니집",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 중구 다산로35길 5",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-11-09",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 위자월과 함께한 귤멍 Ep.20 떡볶이 투어에 등장합니다.\n공식 영상 설명에서 매장명과 주소를 확인할 수 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 떡볶이 투어",
+        "url": "https://www.youtube.com/watch?v=NIeNbStvYa0"
+      },
+      "addressSource": "https://www.youtube.com/watch?v=NIeNbStvYa0",
+      "recordId": "v4145-NIeNbStvYa0",
+      "coordinates": [
+        37.5633128,
+        127.0151253
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=KqVwpKJ07lC2"
+    },
+    {
+      "id": "yupdduk",
+      "name": "동대문엽기떡볶이 본점 홀매장",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 중구 퇴계로75길 15 금호빌딩 1층",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2025-11-09",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 위자월과 함께한 귤멍 Ep.20 떡볶이 투어에 등장합니다.\n공식 영상 설명에서 매장명과 주소를 확인할 수 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 떡볶이 투어",
+        "url": "https://www.youtube.com/watch?v=NIeNbStvYa0"
+      },
+      "addressSource": "https://www.youtube.com/watch?v=NIeNbStvYa0",
+      "recordId": "v4145-NIeNbStvYa0",
+      "coordinates": [
+        37.5671017,
+        127.0173439
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=zzJcK8ooQWSJ"
+    },
+    {
+      "id": "mother",
+      "name": "마더커피 강문점",
+      "city": "강릉",
+      "region": "강원",
+      "address": "강원특별자치도 강릉시 창해로350번길 21 2층",
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-01-11",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 귤멍 Ep.29에서 소개한 강릉 커피 투어 장소입니다.\n공식 영상 설명에 매장명과 주소가 실려 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 강릉 커피 투어",
+        "url": "https://www.youtube.com/watch?v=RaK_jf5PwRc"
+      },
+      "addressSource": "https://www.youtube.com/watch?v=RaK_jf5PwRc",
+      "recordId": "v488-audit-041",
+      "coordinates": [
+        37.7958864,
+        128.917586
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=toOOQKQFrJ40"
+    },
+    {
+      "id": "choding",
+      "name": "쵸딩 초당옥수수 푸딩 카페",
+      "city": "강릉",
+      "region": "강원",
+      "address": "강원특별자치도 강릉시 초당순두부길 40 1층",
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-01-11",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 귤멍 Ep.29에서 소개한 강릉 커피 투어 장소입니다.\n공식 영상 설명에 매장명과 주소가 실려 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 강릉 커피 투어",
+        "url": "https://www.youtube.com/watch?v=RaK_jf5PwRc"
+      },
+      "addressSource": "https://www.youtube.com/watch?v=RaK_jf5PwRc",
+      "recordId": "v488-audit-041",
+      "coordinates": [
+        37.7878034,
+        128.9128133
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=u3Xl1kvhjsDl"
+    },
+    {
+      "id": "ijinri",
+      "name": "카페 이진리",
+      "city": "강릉",
+      "region": "강원",
+      "address": "강원특별자치도 강릉시 임영로 234",
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-01-11",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 귤멍 Ep.29에서 소개한 강릉 커피 투어 장소입니다.\n공식 영상 설명에 매장명과 주소가 실려 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 · 강릉 커피 투어",
+        "url": "https://www.youtube.com/watch?v=RaK_jf5PwRc"
+      },
+      "addressSource": "https://www.youtube.com/watch?v=RaK_jf5PwRc",
+      "recordId": "v488-audit-041",
+      "coordinates": [
+        37.762023,
+        128.8925757
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=Or4HoMNul43c"
+    },
+    {
+      "id": "grandma-sister",
+      "name": "외할머니 여동생 레스토랑",
+      "city": "고양",
+      "region": "경기",
+      "address": "경기도 고양시 일산서구 한류월드로 300 원마운트 1층 1186호",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-04",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 고양 콘서트 콜라보 매장입니다.\n콘서트를 찾아온 팬들을 위한 혜택이 진행되었습니다.",
+      "source": {
+        "label": "씨야 공식 · 고양 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "addressSource": "https://www.instagram.com/p/Ddi6qZCGkuW/",
+      "relatedRecordId": "20261004-the-fan-goyang",
+      "promotion": {
+        "start": "2026-10-04",
+        "end": "2026-10-04",
+        "benefit": "음료 1잔 서비스 또는 무료 사이즈업. 매장별 적용 내용은 원문 안내 기준입니다.",
+        "condition": "공연 당일 콘서트 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "coordinates": [
+        37.6645540616023,
+        126.75452662586598
+      ],
+      "coordinateSource": "https://www.tabling.co.kr/place/68ecb32e36ac0da802903500"
+    },
+    {
+      "id": "gogichanggo",
+      "name": "더고기창고 원마운트점",
+      "city": "고양",
+      "region": "경기",
+      "address": "경기도 고양시 일산서구 한류월드로 300 1170·1171호",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-04",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 고양 콘서트 콜라보 매장입니다.\n콘서트를 찾아온 팬들을 위한 혜택이 진행되었습니다.",
+      "source": {
+        "label": "씨야 공식 · 고양 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "addressSource": "https://www.instagram.com/p/Ddi6qZCGkuW/",
+      "relatedRecordId": "20261004-the-fan-goyang",
+      "promotion": {
+        "start": "2026-10-04",
+        "end": "2026-10-04",
+        "benefit": "음료 1잔 서비스 또는 무료 사이즈업. 매장별 적용 내용은 원문 안내 기준입니다.",
+        "condition": "공연 당일 콘서트 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "coordinates": [
+        37.6635666,
+        126.7538096
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=6bX08o0F1Jvx"
+    },
+    {
+      "id": "dowon",
+      "name": "도원반점 킨텍스원시티점",
+      "city": "고양",
+      "region": "경기",
+      "address": "경기도 고양시 일산동구 월드고양로 19 상가동-2동 216·217·218호",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-04",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 고양 콘서트 콜라보 매장입니다.\n콘서트를 찾아온 팬들을 위한 혜택이 진행되었습니다.",
+      "source": {
+        "label": "씨야 공식 · 고양 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "addressSource": "https://www.instagram.com/p/Ddi6qZCGkuW/",
+      "relatedRecordId": "20261004-the-fan-goyang",
+      "promotion": {
+        "start": "2026-10-04",
+        "end": "2026-10-04",
+        "benefit": "음료 1잔 서비스 또는 무료 사이즈업. 매장별 적용 내용은 원문 안내 기준입니다.",
+        "condition": "공연 당일 콘서트 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "coordinates": [
+        37.6632093,
+        126.7484754
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=NrnnCJBAd91f"
+    },
+    {
+      "id": "kitsuki",
+      "name": "키츠키 일산 밤리단길점",
+      "city": "고양",
+      "region": "경기",
+      "address": "경기도 고양시 일산동구 산두로 159 1층",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-04",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 고양 콘서트 콜라보 매장입니다.\n콘서트를 찾아온 팬들을 위한 혜택이 진행되었습니다.",
+      "source": {
+        "label": "씨야 공식 · 고양 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "addressSource": "https://www.instagram.com/p/Ddi6qZCGkuW/",
+      "relatedRecordId": "20261004-the-fan-goyang",
+      "promotion": {
+        "start": "2026-10-04",
+        "end": "2026-10-04",
+        "benefit": "음료 1잔 서비스 또는 무료 사이즈업. 매장별 적용 내용은 원문 안내 기준입니다.",
+        "condition": "공연 당일 콘서트 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "coordinates": [
+        37.6716269,
+        126.7841973
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=MfnuBdp7ucn4"
+    },
+    {
+      "id": "hibi",
+      "name": "히비하레바레",
+      "city": "고양",
+      "region": "경기",
+      "address": "경기도 고양시 일산서구 호수로838번길 8-7 1층",
+      "category": "카페",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-04",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 고양 콘서트 콜라보 매장입니다.\n콘서트를 찾아온 팬들을 위한 혜택이 진행되었습니다.",
+      "source": {
+        "label": "씨야 공식 · 고양 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "addressSource": "https://www.instagram.com/p/Ddi6qZCGkuW/",
+      "relatedRecordId": "20261004-the-fan-goyang",
+      "promotion": {
+        "start": "2026-10-04",
+        "end": "2026-10-04",
+        "benefit": "음료 1잔 서비스 또는 무료 사이즈업. 매장별 적용 내용은 원문 안내 기준입니다.",
+        "condition": "공연 당일 콘서트 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+      },
+      "coordinates": [
+        37.6701164,
+        126.750374
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=AQn9VeXyWoG7"
+    },
+    {
+      "id": "thailicious",
+      "name": "타이리셔스 현대백화점 킨텍스점",
+      "city": "고양",
+      "region": "경기",
+      "address": "경기도 고양시 일산서구 호수로 817 현대백화점 킨텍스점 8층",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-04",
+      "dateBasis": "혜택 적용일",
+      "story": "매장 공식 계정에서 씨야 20주년 콘서트 관람객 대상 전 메뉴 10% 할인을 안내했습니다.",
+      "source": {
+        "label": "타이리셔스 · 공식 할인 안내",
+        "url": "https://www.instagram.com/p/Dd8iPlXn7gV/"
+      },
+      "addressSource": "https://www.instagram.com/p/Dd8iPlXn7gV/",
+      "relatedRecordId": "20261004-the-fan-goyang",
+      "promotion": {
+        "start": "2026-10-04",
+        "end": "2026-10-04",
+        "benefit": "전 메뉴 10% 할인",
+        "condition": "결제 전 콘서트 티켓 또는 관람 내역 제시. 중복 할인 등 세부 조건은 매장 안내 기준.",
+        "sourceUrl": "https://www.instagram.com/p/Dd8iPlXn7gV/"
+      },
+      "coordinates": [
+        37.6686009,
+        126.7511375
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=xdkx6PbxuqfA"
+    },
+    {
+      "id": "elephant",
+      "name": "엘리펀트 테라스",
+      "city": "청주",
+      "region": "충북",
+      "address": "충청북도 청주시 흥덕구 직지대로753번길 44 1층 102호",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-10",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 청주 콘서트 콜라보 매장입니다.",
+      "source": {
+        "label": "씨야 공식 · 청주 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      "addressSource": "https://www.instagram.com/p/DeJbs1QmoQQ/",
+      "relatedRecordId": "20261010-the-fan-cheongju",
+      "promotion": {
+        "start": "2026-10-10",
+        "end": "2026-10-10",
+        "benefit": "테이블당 음료 1잔 또는 계란튀김 중 선택",
+        "condition": "콘서트 당일 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      "coordinates": [
+        36.6460743,
+        127.4760624
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=0CyL2yNHqmDc"
+    },
+    {
+      "id": "pyeonbaek",
+      "name": "편백사부 청주율량점",
+      "city": "청주",
+      "region": "충북",
+      "address": "충청북도 청주시 청원구 1순환로 114 1층",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-10",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 청주 콘서트 콜라보 매장입니다.",
+      "source": {
+        "label": "씨야 공식 · 청주 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      "addressSource": "https://www.instagram.com/p/DeJbs1QmoQQ/",
+      "relatedRecordId": "20261010-the-fan-cheongju",
+      "promotion": {
+        "start": "2026-10-10",
+        "end": "2026-10-10",
+        "benefit": "요거트 아이스크림·유자샤베트·음료 중 선택",
+        "condition": "콘서트 당일 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      "coordinates": [
+        36.6641368,
+        127.4999608
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=RgHzUKXswv6f"
+    },
+    {
+      "id": "dalma",
+      "name": "달마설렁탕숯불갈비 율량점",
+      "city": "청주",
+      "region": "충북",
+      "address": "충청북도 청주시 청원구 1순환로 142 1층 103·104·105호",
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-10",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 청주 콘서트 콜라보 매장입니다.",
+      "source": {
+        "label": "씨야 공식 · 청주 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      "addressSource": "https://www.instagram.com/p/DeJbs1QmoQQ/",
+      "relatedRecordId": "20261010-the-fan-cheongju",
+      "promotion": {
+        "start": "2026-10-10",
+        "end": "2026-10-10",
+        "benefit": "테이블당 콜라 1잔 무료 제공",
+        "condition": "콘서트 당일 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      "coordinates": [
+        36.6644396,
+        127.4968709
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=h9gcVxqksmxn"
+    },
+    {
+      "id": "stonefalls",
+      "name": "스톤폴스",
+      "city": "청주",
+      "region": "충북",
+      "address": "충청북도 청주시 청원구 1순환로1896번길 19-33",
+      "category": "카페",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-10",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 청주 콘서트 콜라보 매장입니다.",
+      "source": {
+        "label": "씨야 공식 · 청주 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      "addressSource": "https://www.instagram.com/p/DeJbs1QmoQQ/",
+      "relatedRecordId": "20261010-the-fan-cheongju",
+      "promotion": {
+        "start": "2026-10-10",
+        "end": "2026-10-10",
+        "benefit": "음료 구매 금액 10% 할인",
+        "condition": "콘서트 당일 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      "coordinates": [
+        36.6603004,
+        127.5141799
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=dG23L3mK8z85"
+    },
+    {
+      "id": "ohji",
+      "name": "오지",
+      "city": "청주",
+      "region": "충북",
+      "address": "충청북도 청주시 상당구 수암로36번길 13",
+      "category": "카페",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택",
+        "촬영지"
+      ],
+      "date": "2026-10-06",
+      "dateBasis": "혜택 시작일",
+      "story": "씨야 엔터테인먼트가 안내한 THE FAN 청주 콘서트 콜라보 매장입니다.\n남규리 출연 드라마 「너는 나의 봄」 촬영지이며, 매장 계정이 공식 게시글 댓글로 촬영지와 할인 연장을 안내했습니다.",
+      "source": {
+        "label": "씨야 공식 · 청주 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      "addressSource": "https://www.instagram.com/p/DeJbs1QmoQQ/",
+      "relatedRecordId": "20261010-the-fan-cheongju",
+      "promotion": {
+        "start": "2026-10-06",
+        "end": "2026-10-10",
+        "benefit": "결제 금액 20% 할인",
+        "condition": "콘서트 티켓 지참. 10월 6일부터 청주 공연 당일 영업 종료(다음 날 새벽 1시)까지.",
+        "sourceUrl": "https://www.instagram.com/p/DeJbs1QmoQQ/c/18079037348442654/",
+        "endsAt": "2026-10-11T01:00:00+09:00"
+      },
+      "coordinates": [
+        36.6458465,
+        127.4946529
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=URQdVCR7rjzv",
+      "evidence": [
+        {
+          "label": "오지 매장 · 촬영지 및 할인 기간 안내",
+          "url": "https://www.instagram.com/p/DeJbs1QmoQQ/c/18079037348442654/"
+        }
+      ]
+    },
+    {
+      "id": "seohae",
+      "name": "서해회식당",
+      "city": "군산",
+      "region": "전북",
+      "address": "전북특별자치도 군산시 옥도면 선유북길 93",
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "사진·사인"
+      ],
+      "date": "2021-09-16",
+      "dateBasis": "후기 게시일",
+      "story": "2021년 방문 후기에 남규리의 사진이 걸려 있는 식당으로 소개되었습니다.\n이 기록은 방문객 후기 기준이며 멤버의 실제 방문일은 확인되지 않았습니다.",
+      "source": {
+        "label": "방문 후기 · 매장 내부 사진",
+        "url": "https://ppqzm-i.tistory.com/115"
+      },
+      "addressSource": "https://ppqzm-i.tistory.com/115",
+      "note": "현재 사진·사인의 전시 여부는 매장에 확인해 주세요. 멤버 추천 맛집으로 확인된 기록은 아닙니다.",
+      "coordinates": [
+        35.8127621,
+        126.4127468
+      ],
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=NX4hvOAqF4TE"
+    }
+  ],
+  "researchQueue": [
+    {
+      "name": "정돈",
+      "member": "이보람",
+      "url": "https://www.youtube.com/watch?v=EdjxuH4Z5aY",
+      "reason": "공식 영상의 매장 방문은 확인. 방문 지점이 확정되지 않아 지도 보류."
+    },
+    {
+      "name": "울산 불고기 방문 식당",
+      "member": "남규리",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=8393",
+      "reason": "질문 게시글만으로 상호와 방문 근거가 불충분."
+    },
+    {
+      "name": "남겨서 뭐하게 44회 휴게소",
+      "member": "남규리",
+      "reason": "방송 원문에서 휴게소 및 매장 지점 추가 대조 필요."
+    }
   ]
 }

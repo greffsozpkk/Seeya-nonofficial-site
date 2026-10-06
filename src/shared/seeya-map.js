@@ -1,29 +1,37 @@
 'use strict';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const link=(url,label)=>/^https?:\/\//.test(url||'')?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`:'';
 function resolvePlaces(config,archive){
  const byId=new Map(archive.map(row=>[row.id,row]));
  return config.places.flatMap(place=>{
   const row=byId.get(place.recordId);
-  // Deleted or merged records are excluded; archive dates and names are resolved at build time.
-  if(!row||row.hidden||row.mergedInto)return [];
+  // Concert metadata stays joined to the archive. Other places retain their own identity.
+  if(!place.name&&(!row||row.hidden||row.mergedInto))return [];
   if(!Array.isArray(place.coordinates)||place.coordinates.length!==2||!place.coordinates.every(Number.isFinite))throw Error('Invalid place coordinates: '+place.id);
-  return [{...place,name:row.venue,title:row.title,date:row.date,time:row.calendar?.time||'',eventState:row.eventState||'',members:row.members||[],category:'공연장',source:row.source,checkedAt:config.checkedAt}];
+  if(place.name)return [{...place,recordId:row&&!row.hidden&&!row.mergedInto?row.id:null,checkedAt:config.checkedAt}];
+  return [{...place,name:row.venue,title:row.title,date:row.date,dateBasis:'공연일',time:row.calendar?.time||'',eventState:row.eventState||'',members:row.members||[],group:'씨야',category:'공연장',relations:['공연'],source:row.source,checkedAt:config.checkedAt}];
  });
 }
-function filterPlaces(rows,{query='',member='전체',region='전체',category='전체',bounds=null,sort='tour'}={}){
+function filterPlaces(rows,{query='',member='전체',region='전체',category='전체',relation='전체',bounds=null,sort='tour'}={}){
  const words=query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean);
- return rows.filter(p=>words.every(w=>[p.name,p.city,p.locality,p.address,p.title,...p.members].join(' ').toLocaleLowerCase().includes(w))&&(member==='전체'||member==='씨야'||p.members.includes(member))&&(region==='전체'||p.region===region)&&(category==='전체'||p.category===category)&&(!bounds||(p.coordinates[0]>=bounds.south&&p.coordinates[0]<=bounds.north&&p.coordinates[1]>=bounds.west&&p.coordinates[1]<=bounds.east))).sort((a,b)=>sort==='name'?a.name.localeCompare(b.name,'ko'):sort==='newest'?b.date.localeCompare(a.date):a.date.localeCompare(b.date));
+ return rows.filter(p=>words.every(w=>[p.name,p.city,p.locality,p.address,p.title,p.story,...p.members,...p.relations].join(' ').toLocaleLowerCase().includes(w))&&(member==='전체'||(member==='씨야'?p.group==='씨야':p.members.includes(member)))&&(region==='전체'||p.region===region)&&(category==='전체'||p.category===category)&&(relation==='전체'||p.relations.includes(relation))&&(!bounds||(p.coordinates[0]>=bounds.south&&p.coordinates[0]<=bounds.north&&p.coordinates[1]>=bounds.west&&p.coordinates[1]<=bounds.east))).sort((a,b)=>sort==='name'?a.name.localeCompare(b.name,'ko'):sort==='newest'?b.date.localeCompare(a.date):a.date.localeCompare(b.date));
 }
-function badge(p){return p.eventState==='cancelled'?'공연 취소':p.eventState==='scheduled'?'공연 예정':'공연 기록';}
-function cards(rows,selected){return rows.map((p,i)=>`<li><button type="button" class="map-place-card ${p.id===selected?'is-selected':''}" data-place="${esc(p.id)}" aria-pressed="${p.id===selected}"><span class="map-ticket map-ticket-${i%4}" aria-hidden="true"><small>THE FAN</small><strong>${esc(p.city)}</strong><span>20TH ANNIVERSARY</span></span><span class="map-card-copy"><strong>${esc(p.name)}</strong><span class="map-location">⌖ ${esc(p.locality||p.address.split(' ').slice(0,2).join(' '))}</span><span class="map-card-meta"><span class="map-tag">공연장</span><time>${esc(p.date.replaceAll('-','.'))}</time></span></span><span class="map-card-arrow" aria-hidden="true">›</span></button></li>`).join('');}
-function detail(p){
- const directions='https://map.kakao.com/link/to/'+encodeURIComponent(p.name)+','+p.coordinates.join(',');
- return `<button type="button" id="mapBack" class="map-back">← 장소 목록</button><div class="map-detail-cover"><span>SEEYA · 20TH ANNIVERSARY TOUR</span><strong>THE FAN</strong><span>${esc(p.city)} · ${esc(p.date.replaceAll('-','.'))}</span></div><span class="map-tag">공연장 · ${badge(p)}</span><h2 id="mapDetailTitle" tabindex="-1">${esc(p.name)}</h2><p class="map-story">씨야 20주년 전국 투어 ‘THE FAN’ ${esc(p.city)} 공연이 연결된 장소입니다.</p><dl><dt>공연</dt><dd>${esc(p.date)}${p.time?' · '+esc(p.time):''}<br>씨야 · 남규리 · 김연지 · 이보람</dd><dt>주소</dt><dd id="mapAddress">${esc(p.address)}</dd></dl><div class="map-detail-actions"><button id="mapCopy" type="button">주소 복사</button><a href="${esc(directions)}" target="_blank" rel="noopener">길찾기 ↗</a></div><p id="mapCopyStatus" class="map-small" role="status"></p>${p.note?'<p class="map-place-note">'+esc(p.note)+'</p>':''}<div class="map-record-links"><a href="/archive/?record=${encodeURIComponent(p.recordId)}" target="_blank" rel="noopener">공연 아카이브 보기 ↗</a>${p.source?.url&&/^https?:\/\//.test(p.source.url)?`<a href="${esc(p.source.url)}" target="_blank" rel="noopener">${esc(p.source.label||'기록 출처')} ↗</a>`:''}<a href="/archive/concerts/the-fan-2026/" target="_blank" rel="noopener">20주년 콘서트 기록관 ↗</a></div><details class="map-evidence"><summary>장소 정보 출처</summary><a href="${esc(p.addressSource)}" target="_blank" rel="noopener">주소 확인 자료 ↗</a><a href="${esc(p.coordinateSource)}" target="_blank" rel="noopener">OpenStreetMap 시설 위치 ↗</a><p>위치 확인 ${esc(p.checkedAt)} · 건물·시설 단위의 위치입니다. 입장 시간과 출입구는 공연 안내를 확인해 주세요.</p></details>`;
+function promoStatus(p,now=p.checkedAt+'T12:00:00+09:00'){
+ if(!p.promotion)return '';
+ const t=new Date(now).getTime(),start=new Date(p.promotion.start+'T00:00:00+09:00').getTime(),end=new Date(p.promotion.endsAt||p.promotion.end+'T23:59:59+09:00').getTime();
+ return t<start?'혜택 예정':t>end?'혜택 종료':'혜택 기간';
 }
-// Screen-space grouping only; no extra clustering plugin or additional map requests.
+function badge(p,now){return p.promotion?promoStatus(p,now):p.category==='공연장'?(p.eventState==='cancelled'?'공연 취소':p.eventState==='scheduled'?'공연 예정':'공연 기록'):p.relations.join(' · ');}
+const tone=p=>p.category==='공연장'?'venue':p.category==='카페'?'cafe':'food';
+function cards(rows,selected,now){return rows.map(p=>`<li><button type="button" class="map-place-card ${p.id===selected?'is-selected':''}" data-place="${esc(p.id)}" aria-pressed="${p.id===selected}"><span class="map-ticket map-ticket-${tone(p)}" aria-hidden="true"><small>${p.category==='공연장'?'THE FAN':p.category==='카페'?'COFFEE':'TABLE'}</small><strong>${esc(p.city)}</strong><span>${esc(p.category)}</span></span><span class="map-card-copy"><strong>${esc(p.name)}</strong><span class="map-location">⌖ ${esc(p.locality||p.address.split(' ').slice(0,2).join(' '))}</span><span class="map-card-meta"><span class="map-tag map-tag-${tone(p)}">${esc(p.category)}</span><span class="map-card-status">${esc(badge(p,now))}</span></span><span class="map-card-date">${esc(p.date.replaceAll('-','.'))} · ${esc(p.dateBasis)}</span></span><span class="map-card-arrow" aria-hidden="true">›</span></button></li>`).join('');}
+function detail(p,now){
+ const concert=p.category==='공연장',directions='https://map.kakao.com/link/to/'+encodeURIComponent(p.name)+','+p.coordinates.join(','),record=p.relatedRecordId||p.recordId;
+ const promotion=p.promotion?`<section class="map-promotion ${promoStatus(p,now)==='혜택 종료'?'is-ended':''}"><strong>${esc(promoStatus(p,now))}</strong><p>${esc(p.promotion.benefit)}</p><p>${esc(p.promotion.start)}${p.promotion.end!==p.promotion.start?' ~ '+esc(p.promotion.end):''}${p.promotion.endsAt?' · 10월 11일 새벽 1시 종료':''}</p><p>${esc(p.promotion.condition)}</p>${link(p.promotion.sourceUrl,'혜택 원문 확인')}</section>`:'';
+ return `<button type="button" id="mapBack" class="map-back">← 장소 목록</button><div class="map-detail-cover map-cover-${tone(p)}"><span>${concert?'SEEYA · 20TH ANNIVERSARY TOUR':esc(p.category+' · '+p.relations.join(' / '))}</span><strong>${concert?'THE FAN':esc(p.city)}</strong><span>${esc(p.city)} · ${esc(p.date.replaceAll('-','.'))} ${esc(p.dateBasis)}</span></div><span class="map-tag map-tag-${tone(p)}">${esc(badge(p,now))}</span><h2 id="mapDetailTitle" tabindex="-1">${esc(p.name)}</h2><p class="map-story">${esc(p.story||`씨야 20주년 전국 투어 ‘THE FAN’ ${p.city} 공연이 연결된 장소입니다.`).replace(/\n/g,'<br>')}</p><dl><dt>${concert?'공연':'관련 멤버'}</dt><dd>${concert?esc(p.date)+(p.time?' · '+esc(p.time):'')+'<br>':''}${esc(p.members.join(' · '))}</dd><dt>주소</dt><dd id="mapAddress">${esc(p.address)}</dd></dl><div class="map-detail-actions"><button id="mapCopy" type="button">주소 복사</button><a href="${esc(directions)}" target="_blank" rel="noopener">길찾기 ↗</a></div><p id="mapCopyStatus" class="map-small" role="status"></p>${promotion}${p.note?'<p class="map-place-note">'+esc(p.note)+'</p>':''}<div class="map-record-links">${record?`<a href="/archive/?record=${encodeURIComponent(record)}" target="_blank" rel="noopener">관련 아카이브 보기 ↗</a>`:''}${link(p.source?.url,p.source?.label||'기록 출처')}${(p.evidence||[]).map(e=>link(e.url,e.label)).join('')}${concert?'<a href="/archive/concerts/the-fan-2026/" target="_blank" rel="noopener">20주년 콘서트 기록관 ↗</a>':''}</div><details class="map-evidence"><summary>장소 정보 출처</summary>${link(p.addressSource,'주소 확인 자료')}${link(p.coordinateSource,'지도 위치 확인 자료')}<p>자료 확인 ${esc(p.checkedAt)} · 건물·매장 단위의 위치입니다. ${concert?'입장 시간과 출입구는 공연 안내를 확인해 주세요.':'영업 시간·이전·휴무 여부는 방문 전 매장 안내를 확인해 주세요.'}</p></details>`;
+}
 function groupPins(rows,project,radius=44){
  const groups=[];
  for(const p of rows){const point=project(p.coordinates);const g=groups.find(g=>Math.hypot(point.x-g.x,point.y-g.y)<radius);if(g)g.items.push(p);else groups.push({x:point.x,y:point.y,items:[p]});}
  return groups;
 }
-module.exports={resolvePlaces,filterPlaces,cards,detail,groupPins,esc};
+module.exports={resolvePlaces,filterPlaces,cards,detail,groupPins,esc,promoStatus,tone};

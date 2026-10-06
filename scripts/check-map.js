@@ -3,13 +3,13 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('n
 const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8'),json=p=>JSON.parse(read(p));
 const config=json('src/data/map-places.json'),route=json('src/data/map-preview-route.json'),archive=json('data/archive.json');
 const shared=require('../src/shared/seeya-map'),{resolvePlaces,filterPlaces,cards,detail,groupPins}=shared;
-const rows=resolvePlaces(config,archive),html=read(route.path.slice(1)+'index.html');
-assert.equal(config.places.length,7);assert.equal(rows.length,7);assert.equal(new Set(rows.map(p=>p.id)).size,7);
+const allRows=resolvePlaces(config,archive),concertConfig={...config,places:config.places.filter(p=>!p.name)},rows=resolvePlaces(concertConfig,archive),html=read(route.path.slice(1)+'index.html');
+assert.equal(config.places.length,28);assert.equal(allRows.length,28);assert.equal(new Set(allRows.map(p=>p.id)).size,28);assert.equal(rows.length,7);assert.equal(new Set(rows.map(p=>p.id)).size,7);
 assert.deepEqual(rows.map(p=>p.recordId).sort(),json('src/data/concerts.json').find(t=>t.id==='the-fan-2026').events.map(e=>e.id).sort());
 for(const p of rows){assert(p.coordinates[0]>33&&p.coordinates[0]<39);assert(p.coordinates[1]>124&&p.coordinates[1]<131);assert(p.addressSource&&p.coordinateSource&&p.checkedAt);assert.equal(p.date,archive.find(r=>r.id===p.recordId).date);assert(html.includes(p.name));}
-assert.equal(resolvePlaces(config,archive.filter(r=>r.id!==rows[0].recordId)).length,6);
-assert.equal(resolvePlaces(config,archive.map(r=>r.id===rows[0].recordId?{...r,hidden:true}:r)).length,6);
-const changed=archive.map(r=>r.id===rows[0].recordId?{...r,date:'2026-08-30'}:r);assert.equal(resolvePlaces(config,changed)[0].date,'2026-08-30');
+assert.equal(resolvePlaces(concertConfig,archive.filter(r=>r.id!==rows[0].recordId)).length,6);
+assert.equal(resolvePlaces(concertConfig,archive.map(r=>r.id===rows[0].recordId?{...r,hidden:true}:r)).length,6);
+const changed=archive.map(r=>r.id===rows[0].recordId?{...r,date:'2026-08-30'}:r);assert.equal(resolvePlaces(concertConfig,changed)[0].date,'2026-08-30');
 assert.equal(filterPlaces(rows,{query:'수원'})[0].locality,'용인시 기흥구');assert.equal(filterPlaces(rows,{query:'용인 선승관'}).length,1);
 assert.equal(filterPlaces(rows,{region:'경기'}).length,2);assert.equal(filterPlaces(rows,{member:'남규리'}).length,7);assert.equal(filterPlaces(rows,{query:'없는장소'}).length,0);
 assert.equal(filterPlaces(rows,{bounds:{south:35,north:35.2,west:129,east:129.2}})[0].city,'부산');
@@ -27,4 +27,20 @@ assert.equal(workspace.dataset.view,'list');assert.equal(get('mapError').hidden,
 get('mapSearch').handlers.input({target:{value:'수원'}});assert(get('mapList').innerHTML.includes('선승관'));assert(!get('mapList').innerHTML.includes('KBS홀'));
 get('mapSearch').handlers.input({target:{value:'없는장소'}});assert.equal(get('mapEmpty').hidden,false);
 get('mapReset').onclick();assert.equal(get('mapEmpty').hidden,true);assert(get('mapCount').innerHTML.includes('7'));
-console.log('PASS: map preview isolation, seven archive-linked venues, filters, clustering, escaping and library-failure fallback.');
+const {promoStatus}=shared;
+for(const p of allRows){assert(p.addressSource&&p.coordinateSource&&p.source.url&&p.dateBasis);assert(p.coordinates.every(Number.isFinite));assert(html.includes(p.name));assert(detail(p).includes(p.source.url.replaceAll('&','&amp;')));}
+assert.equal(filterPlaces(allRows,{relation:'콘서트 혜택'}).length,11);
+assert.equal(filterPlaces(allRows,{relation:'사진·사인'}).length,1);
+assert.equal(filterPlaces(allRows,{category:'카페'}).length,6);
+assert.equal(filterPlaces(allRows,{member:'씨야'}).length,21);
+assert.equal(filterPlaces(allRows,{member:'이보람'}).length,21);
+assert(!filterPlaces(allRows,{member:'씨야'}).some(p=>p.id==='maboklim'));
+const ohji=allRows.find(p=>p.id==='ohji'),thai=allRows.find(p=>p.id==='thailicious');
+assert.equal(promoStatus(thai,'2026-10-05T00:00:00+09:00'),'혜택 종료');
+assert.equal(promoStatus(ohji,'2026-10-10T23:59:59+09:00'),'혜택 기간');
+assert.equal(promoStatus(ohji,'2026-10-11T01:00:01+09:00'),'혜택 종료');
+assert.equal(promoStatus(ohji,'2026-10-05T23:59:59+09:00'),'혜택 예정');
+assert(!detail(allRows.find(p=>p.id==='maboklim')).includes('20주년 콘서트 기록관'));
+assert.equal(filterPlaces(allRows,{category:'식당',region:'서울'}).length,3);
+assert.equal(resolvePlaces(config,archive.filter(r=>r.id!=='v4145-NIeNbStvYa0')).find(p=>p.id==='maboklim').recordId,null);
+console.log('PASS: map preview isolation, 28 verified places and seven archive-linked venues, filters, clustering, escaping and library-failure fallback.');

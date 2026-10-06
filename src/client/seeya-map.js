@@ -1,8 +1,8 @@
 'use strict';
-const {filterPlaces,cards,detail,groupPins,esc}=require('../shared/seeya-map');
+const {filterPlaces,cards,detail,groupPins,esc,tone}=require('../shared/seeya-map');
 const data=JSON.parse(document.getElementById('mapData').textContent);
 const $=id=>document.getElementById(id),workspace=document.querySelector('.map-workspace');
-const state={query:'',member:'전체',region:'전체',category:'전체',sort:'tour',bounds:null};
+const state={query:'',member:'전체',region:'전체',category:'전체',relation:'전체',sort:'tour',bounds:null};
 let selected=null,map=null,pins=null,rows=data.places,tileTimer;
 function view(which){workspace.dataset.view=which;document.querySelectorAll('[data-map-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mapView===which)));if(which==='map'&&map)requestAnimationFrame(()=>map.invalidateSize());}
 function closeDetail(focus=false){const previous=selected;selected=null;$('mapBrowse').hidden=false;$('mapDetail').hidden=true;$('mapSelectedMobile').hidden=true;$('mapHint').textContent='장소를 선택하면 씨야와의 이야기와 방문 정보를 볼 수 있어요.';renderList();renderPins();if(focus)document.querySelector('[data-place="'+previous+'"]')?.focus();}
@@ -12,7 +12,7 @@ async function copyAddress(p){
 }
 function selectPlace(id,{pan=true}={}){
  const p=rows.find(x=>x.id===id);if(!p)return;
- selected=id;$('mapBrowse').hidden=true;$('mapDetail').hidden=false;$('mapDetail').innerHTML=detail(p);$('mapBack').onclick=()=>closeDetail(true);$('mapCopy').onclick=()=>copyAddress(p);
+ selected=id;$('mapBrowse').hidden=true;$('mapDetail').hidden=false;$('mapDetail').innerHTML=detail(p,new Date());$('mapBack').onclick=()=>closeDetail(true);$('mapCopy').onclick=()=>copyAddress(p);
  $('mapHint').textContent=p.name+' · '+p.date;$('mapSelectedMobile').textContent=p.city+' · '+p.name+'　상세 보기 ›';$('mapSelectedMobile').hidden=false;
  document.querySelector('.map-sidebar').scrollTop=0;
  if(window.matchMedia('(max-width: 760px)').matches)view('list');
@@ -20,7 +20,7 @@ function selectPlace(id,{pan=true}={}){
  if(map&&pan)map.setView(p.coordinates,Math.max(map.getZoom(),12));
 }
 function renderList(){
- $('mapList').innerHTML=cards(rows,selected);$('mapEmpty').hidden=rows.length>0;
+ $('mapList').innerHTML=cards(rows,selected,new Date());$('mapEmpty').hidden=rows.length>0;
  $('mapCount').innerHTML=(state.bounds?'이 지역 장소':'전체 장소')+' <em>'+rows.length+'</em>';$('mapMobileCount').textContent=rows.length;$('mapClearArea').hidden=!state.bounds;
 }
 function renderPins(){
@@ -29,17 +29,18 @@ function renderPins(){
  for(const group of groups){
   const many=group.items.length>1,p=group.items[0],active=group.items.some(p=>p.id===selected);
   const center=many?[group.items.reduce((n,p)=>n+p.coordinates[0],0)/group.items.length,group.items.reduce((n,p)=>n+p.coordinates[1],0)/group.items.length]:p.coordinates;
-  const label=many?group.items.map(p=>p.city).join(' · ')+' 공연장 '+group.items.length+'곳 확대':p.name+' 상세 보기';
-  const marker=L.marker(center,{title:label,alt:label,keyboard:true,icon:L.divIcon({className:'map-pin-wrap',html:`<span class="${many?'map-cluster':'map-pin'} ${active?'is-active':''}">${many?group.items.length:'♥'}</span>`,iconSize:[42,48],iconAnchor:[21,42]})}).addTo(pins);
+  const label=many?group.items.map(p=>p.city).join(' · ')+' 장소 '+group.items.length+'곳 확대':p.name+' 상세 보기';
+  const marker=L.marker(center,{title:label,alt:label,keyboard:true,icon:L.divIcon({className:'map-pin-wrap',html:`<span class="${many?'map-cluster':'map-pin map-pin-'+tone(p)} ${active?'is-active':''}">${many?group.items.length:'♥'}</span>`,iconSize:[42,48],iconAnchor:[21,42]})}).addTo(pins);
   marker.getElement()?.setAttribute('aria-label',label);
   marker.on('click',()=>{if(many)map.fitBounds(group.items.map(p=>p.coordinates),{padding:[65,65],maxZoom:13});else selectPlace(p.id);});
-  marker.bindTooltip(many?group.items.length+'곳의 공연장':esc(p.city+' · '+p.name),{direction:'top',offset:[0,-32]});
+  marker.bindTooltip(many?group.items.length+'곳의 장소':esc(p.city+' · '+p.name),{direction:'top',offset:[0,-32]});
  }
 }
 function filter(){rows=filterPlaces(data.places,state);if(selected&&!rows.some(p=>p.id===selected))closeDetail();renderList();renderPins();}
-function reset(){Object.assign(state,{query:'',member:'전체',region:'전체',category:'전체',bounds:null,sort:'tour'});$('mapSearch').value='';$('mapRegion').value='전체';$('mapSort').value='tour';document.querySelectorAll('[data-member],[data-category]').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.member||b.dataset.category)==='전체')));filter();}
+function reset(){Object.assign(state,{query:'',member:'전체',region:'전체',category:'전체',relation:'전체',bounds:null,sort:'tour'});$('mapSearch').value='';$('mapRegion').value='전체';$('mapRelation').value='전체';$('mapSort').value='tour';document.querySelectorAll('[data-member],[data-category]').forEach(b=>b.setAttribute('aria-pressed',String((b.dataset.member||b.dataset.category)==='전체')));filter();}
 $('mapSearch').addEventListener('input',e=>{state.query=e.target.value;state.bounds=null;filter();});
 $('mapRegion').addEventListener('change',e=>{state.region=e.target.value;state.bounds=null;filter();if(map&&rows.length)map.fitBounds(rows.map(p=>p.coordinates),{padding:[70,70],maxZoom:10});});
+$('mapRelation').addEventListener('change',e=>{state.relation=e.target.value;state.bounds=null;filter();});
 $('mapSort').addEventListener('change',e=>{state.sort=e.target.value;filter();});
 document.querySelectorAll('[data-member],[data-category]').forEach(b=>b.addEventListener('click',()=>{const key=b.dataset.member?'member':'category';state[key]=b.dataset[key];document.querySelectorAll('[data-'+key+']').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));filter();}));
 $('mapList').addEventListener('click',e=>{const b=e.target.closest('[data-place]');if(b)selectPlace(b.dataset.place);});
