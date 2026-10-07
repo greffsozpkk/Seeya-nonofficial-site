@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "checkedAt": "2026-10-07",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
@@ -129,7 +129,15 @@
         127.066493
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=BKnNOPLm10pN",
-      "note": "방송사 안내 주소는 옛골로 50이며 일부 매장 지도에는 옛골로 58로 표기되어 있습니다. 출발 전 매장 안내를 확인해 주세요."
+      "note": "방송사 안내 주소는 옛골로 50이며 일부 매장 지도에는 옛골로 58로 표기되어 있습니다. 출발 전 매장 안내를 확인해 주세요.",
+      "researchRefs": [
+        "A14"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=8-F71B_u754&t=761s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "baekhap",
@@ -159,7 +167,15 @@
         37.4563333,
         127.1624058
       ],
-      "coordinateSource": "https://www.diningcode.com/profile.php?rid=SNYyywZv2OvR"
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=SNYyywZv2OvR",
+      "researchRefs": [
+        "A15"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=8-F71B_u754&t=1683s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "chowon",
@@ -189,7 +205,15 @@
         37.4170594,
         127.1261437
       ],
-      "coordinateSource": "https://www.diningcode.com/profile.php?rid=MQvRmR9wMTzW"
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=MQvRmR9wMTzW",
+      "researchRefs": [
+        "A16"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=8-F71B_u754&t=2790s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "byeongang",
@@ -218,7 +242,15 @@
         37.5209795,
         127.0372481
       ],
-      "coordinateSource": "https://www.diningcode.com/profile.php?rid=iRC6XTNh9tDu"
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=iRC6XTNh9tDu",
+      "researchRefs": [
+        "A01"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=NIeNbStvYa0&t=441s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "maboklim",
@@ -247,7 +279,15 @@
         37.5633128,
         127.0151253
       ],
-      "coordinateSource": "https://www.diningcode.com/profile.php?rid=KqVwpKJ07lC2"
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=KqVwpKJ07lC2",
+      "researchRefs": [
+        "A02"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=NIeNbStvYa0&t=579s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "yupdduk",
@@ -276,7 +316,15 @@
         37.5671017,
         127.0173439
       ],
-      "coordinateSource": "https://www.diningcode.com/profile.php?rid=zzJcK8ooQWSJ"
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=zzJcK8ooQWSJ",
+      "researchRefs": [
+        "A03"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=NIeNbStvYa0&t=776s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "mother",
@@ -305,7 +353,15 @@
         37.7958864,
         128.917586
       ],
-      "coordinateSource": "https://www.diningcode.com/profile.php?rid=toOOQKQFrJ40"
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=toOOQKQFrJ40",
+      "researchRefs": [
+        "A10"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=RaK_jf5PwRc&t=130s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "choding",
@@ -334,7 +390,15 @@
         37.7878034,
         128.9128133
       ],
-      "coordinateSource": "https://www.diningcode.com/profile.php?rid=u3Xl1kvhjsDl"
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=u3Xl1kvhjsDl",
+      "researchRefs": [
+        "A11"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=RaK_jf5PwRc&t=277s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "ijinri",
@@ -363,7 +427,15 @@
         37.762023,
         128.8925757
       ],
-      "coordinateSource": "https://www.diningcode.com/profile.php?rid=Or4HoMNul43c"
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=Or4HoMNul43c",
+      "researchRefs": [
+        "A12"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=RaK_jf5PwRc&t=451s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "grandma-sister",
@@ -847,7 +919,15 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=Xe4VFJPfE158",
       "addressSource": "https://naver.me/GTn7aOdb",
-      "recordId": "v4145-60dNYPs5RJ4"
+      "recordId": "v4145-60dNYPs5RJ4",
+      "researchRefs": [
+        "A04"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=60dNYPs5RJ4&t=206s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "pongdang-ramyeon",
@@ -876,7 +956,15 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=sq65RbGOGV53",
       "addressSource": "https://naver.me/Ix7qzUYK",
-      "recordId": "v4145-60dNYPs5RJ4"
+      "recordId": "v4145-60dNYPs5RJ4",
+      "researchRefs": [
+        "A05"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=60dNYPs5RJ4&t=430s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "eq-table",
@@ -905,7 +993,15 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=fRWRbpU6jxso",
       "addressSource": "https://naver.me/FHu0tZM4",
-      "recordId": "v4145-60dNYPs5RJ4"
+      "recordId": "v4145-60dNYPs5RJ4",
+      "researchRefs": [
+        "A06"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=60dNYPs5RJ4&t=870s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "chunmihyang",
@@ -934,7 +1030,15 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=O9HQt8GQR6af",
       "addressSource": "https://naver.me/x7rdhIMK",
-      "recordId": "v4145-jVCa6jPn3JA"
+      "recordId": "v4145-jVCa6jPn3JA",
+      "researchRefs": [
+        "A07"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=jVCa6jPn3JA&t=425s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "jeopjjak",
@@ -963,7 +1067,15 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=Z5lCwEl3JBno",
       "addressSource": "https://naver.me/xnhjBIYI",
-      "recordId": "v4145-jVCa6jPn3JA"
+      "recordId": "v4145-jVCa6jPn3JA",
+      "researchRefs": [
+        "A08"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=jVCa6jPn3JA&t=574s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "dufore-jeju",
@@ -992,7 +1104,15 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=RvgEjrrc4qLR",
       "addressSource": "https://naver.me/56D6je9U",
-      "recordId": "v4145-jVCa6jPn3JA"
+      "recordId": "v4145-jVCa6jPn3JA",
+      "researchRefs": [
+        "A09"
+      ],
+      "researchVideoCue": {
+        "url": "https://www.youtube.com/watch?v=jVCa6jPn3JA&t=1191s",
+        "status": "workbook-timestamp",
+        "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
+      }
     },
     {
       "id": "geumak-noodles",
@@ -1021,7 +1141,10 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=46srtdH4ZUgQ",
       "addressSource": "https://naver.me/FpM7xu0P",
-      "recordId": "v4145-pmhw1lyc0M4"
+      "recordId": "v4145-pmhw1lyc0M4",
+      "researchRefs": [
+        "B01"
+      ]
     },
     {
       "id": "innisfree-jeju",
@@ -1050,7 +1173,10 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=VSu2PtXh0ZTK",
       "addressSource": "https://naver.me/5YwdeDff",
-      "recordId": "v4145-pmhw1lyc0M4"
+      "recordId": "v4145-pmhw1lyc0M4",
+      "researchRefs": [
+        "B02"
+      ]
     },
     {
       "id": "mippeun-bakery",
@@ -1079,7 +1205,10 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=36NKU7lLTAYF",
       "addressSource": "https://naver.me/G2Vw8JbA",
-      "recordId": "v4145-pmhw1lyc0M4"
+      "recordId": "v4145-pmhw1lyc0M4",
+      "researchRefs": [
+        "B03"
+      ]
     },
     {
       "id": "joyang-bangjik",
@@ -1114,6 +1243,9 @@
           "label": "카페 장면부터 보기",
           "url": "https://www.youtube.com/watch?v=UHwGZGI-nyE&t=272s"
         }
+      ],
+      "researchRefs": [
+        "B04"
       ]
     },
     {
@@ -1148,6 +1280,9 @@
           "label": "룰리커피 · 행사 안내",
           "url": "https://rullycoffee.com/art"
         }
+      ],
+      "researchRefs": [
+        "P01"
       ]
     },
     {
@@ -1185,6 +1320,9 @@
           "label": "귤식당 행사 · 장소 보도",
           "url": "https://tvreport.co.kr/entertainment/article/988740/"
         }
+      ],
+      "researchRefs": [
+        "P02"
       ]
     },
     {
@@ -1216,7 +1354,10 @@
       "addressSource": "https://www.visitjeju.net/kr/detail/view?contentsid=CNTS_000000000019460",
       "recordId": "v4145-pmhw1lyc0M4",
       "locationPrecision": "area",
-      "note": "핀은 오름의 대표 위치입니다. 영상 속 촬영 지점이나 등산로 입구를 가리키지는 않습니다."
+      "note": "핀은 오름의 대표 위치입니다. 영상 속 촬영 지점이나 등산로 입구를 가리키지는 않습니다.",
+      "researchRefs": [
+        "P07"
+      ]
     },
     {
       "id": "isidore-farm",
@@ -1247,7 +1388,10 @@
       "addressSource": "https://visitjeju.net/kr/detail/view?contentsid=CNTS_200000000008053",
       "recordId": "v4145-pmhw1lyc0M4",
       "locationPrecision": "area",
-      "note": "핀은 목장 대표 위치입니다. 관람 가능한 구역과 방문 안내는 관광지 안내를 확인해 주세요."
+      "note": "핀은 목장 대표 위치입니다. 관람 가능한 구역과 방문 안내는 관광지 안내를 확인해 주세요.",
+      "researchRefs": [
+        "P08"
+      ]
     },
     {
       "id": "sinchang-coast",
@@ -1278,7 +1422,10 @@
       "addressSource": "https://naver.me/xFruIHYA",
       "recordId": "v4145-60dNYPs5RJ4",
       "locationPrecision": "area",
-      "note": "긴 해안도로 구간의 대표 위치입니다. 핀은 영상 속 정확한 촬영 지점이나 주차장 입구를 뜻하지 않습니다."
+      "note": "긴 해안도로 구간의 대표 위치입니다. 핀은 영상 속 정확한 촬영 지점이나 주차장 입구를 뜻하지 않습니다.",
+      "researchRefs": [
+        "P09"
+      ]
     },
     {
       "id": "ulsan-art-museum",
@@ -1308,7 +1455,10 @@
       "coordinateSource": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.do?mId=001002005000000000&unqId=153",
       "addressSource": "https://www.ulsan.go.kr/tour/kor/unit/attrctn/view.do?mId=001002005000000000&unqId=153",
       "recordId": "v4145-WsyxwPl55wQ",
-      "note": "영상 속 전시 기간은 2026년 7월 2일~10월 5일로 종료되었습니다. 현재 전시는 미술관 안내를 확인해 주세요."
+      "note": "영상 속 전시 기간은 2026년 7월 2일~10월 5일로 종료되었습니다. 현재 전시는 미술관 안내를 확인해 주세요.",
+      "researchRefs": [
+        "P04"
+      ]
     },
     {
       "id": "dongmyo-area",
@@ -1345,6 +1495,9 @@
           "label": "서울관광재단 · 동묘 벼룩시장 안내",
           "url": "https://korean.visitseoul.net/area/동묘-벼룩시장-KR/KOP009646"
         }
+      ],
+      "researchRefs": [
+        "P05"
       ]
     },
     {
@@ -1374,7 +1527,903 @@
       ],
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=GFUh46HsF9tM",
       "addressSource": "https://www.diningcode.com/profile.php?rid=GFUh46HsF9tM",
-      "recordId": "v4145-DEEQmmrQLgs"
+      "recordId": "v4145-DEEQmmrQLgs",
+      "researchRefs": [
+        "P06"
+      ]
+    },
+    {
+      "id": "jungmun-byeoljang",
+      "name": "중문별장",
+      "members": [
+        "이보람"
+      ],
+      "city": "서귀포",
+      "region": "제주",
+      "category": "카페",
+      "date": "2026-07-29",
+      "dateBasis": "영상 게시일",
+      "address": "제주특별자치도 서귀포시 천제연로 337",
+      "coordinates": [
+        33.2523395,
+        126.4402143
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=_AbFDbCDAHI&t=649s"
+      },
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=aau0XTjEz4x2",
+      "addressSource": "https://www.diningcode.com/profile.php?rid=aau0XTjEz4x2",
+      "story": "제주 여행 중 커피 오마카세를 즐긴 카페입니다. 보람씨야 제주 호캉스 1부에서 장소 이름과 체험 장면을 볼 수 있습니다.",
+      "relations": [
+        "영상 방문"
+      ],
+      "evidence": [
+        {
+          "label": "보람씨야 제주 여행 1부",
+          "url": "https://www.youtube.com/watch?v=_AbFDbCDAHI"
+        }
+      ],
+      "note": "",
+      "researchRefs": [
+        "A13"
+      ]
+    },
+    {
+      "id": "dosan-butcher",
+      "name": "도산정육 본점",
+      "members": [
+        "김연지"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "식당",
+      "date": "2024-09-06",
+      "dateBasis": "매장 게시일",
+      "address": "서울특별시 강남구 선릉로155길 12 1층",
+      "coordinates": [
+        37.525474,
+        127.0388523
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.instagram.com/p/C_j0vdFyaa4/"
+      },
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=rh6hMEn6kzvY",
+      "addressSource": "https://www.diningcode.com/profile.php?rid=rh6hMEn6kzvY",
+      "story": "매장 공식 계정이 김연지의 방문 사진과 감사 인사를 공개한 곳입니다. 도산정육 본점 방문 기록으로 연결합니다.",
+      "relations": [
+        "방문 사진"
+      ],
+      "evidence": [],
+      "note": "게시물 공개일 기준입니다. 도산정육 블랙 등 다른 지점과 구분합니다.",
+      "researchRefs": [
+        "B05"
+      ]
+    },
+    {
+      "id": "yoozzy",
+      "name": "유지카페",
+      "members": [
+        "김연지"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "카페",
+      "date": "2025-07-28",
+      "dateBasis": "게시물 공개일",
+      "address": "서울특별시 광진구 뚝섬로 461 롯데캐슬리버파크시그니처 상가 6동 1층 605호",
+      "coordinates": [
+        37.5373521,
+        127.0616657
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.instagram.com/p/DMp6Hk-NB9N/"
+      },
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=qlt3SNwg5t0S",
+      "addressSource": "https://www.instagram.com/_yoozzy_/p/DHxRK29pTmq/",
+      "story": "김연지가 라이브 방송·미니 라디오를 진행하고, 장소를 제공해 준 에반에게 감사 인사를 남긴 카페입니다.",
+      "relations": [
+        "촬영지"
+      ],
+      "evidence": [
+        {
+          "label": "카페 공식 계정",
+          "url": "https://www.instagram.com/_yoozzy_/"
+        }
+      ],
+      "note": "",
+      "researchRefs": [
+        "L03"
+      ]
+    },
+    {
+      "id": "gonggan-yang",
+      "name": "공간양",
+      "members": [
+        "남규리"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "식당",
+      "date": "2024-07-27",
+      "dateBasis": "매장 게시일",
+      "address": "서울특별시 용산구 대사관로31길 7-2 2층",
+      "coordinates": [
+        37.5339528,
+        127.0057889
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.instagram.com/p/C96qju-vlGe/"
+      },
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=oO0ml779KaTy",
+      "addressSource": "https://www.diningcode.com/profile.php?rid=oO0ml779KaTy",
+      "story": "공간양 공식 계정에 남규리의 방문을 반기는 게시물이 남아 있는 한남동 양고기 식당입니다.",
+      "relations": [
+        "방문 사진"
+      ],
+      "evidence": [
+        {
+          "label": "매장 공식 계정",
+          "url": "https://www.instagram.com/gonggan_yang/"
+        }
+      ],
+      "note": "",
+      "researchRefs": [
+        "L02"
+      ]
+    },
+    {
+      "id": "woorineun-suseong",
+      "name": "우리는 정육가든 수성구점",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "city": "대구",
+      "region": "대구",
+      "category": "식당",
+      "date": "2026-09-14",
+      "dateBasis": "매장 게시일",
+      "address": "대구광역시 수성구 동대구로 175 1·2층",
+      "coordinates": [
+        35.8460169,
+        128.6241533
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.instagram.com/p/DdP1wNekvfU/"
+      },
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=SiczoCGWJeyK",
+      "addressSource": "https://www.diningcode.com/profile.php?rid=SiczoCGWJeyK",
+      "story": "씨야 세 멤버의 방문 사진과 감사 인사를 매장 계정이 공개했습니다. 수성구 황금동 매장에 연결된 기록입니다.",
+      "relations": [
+        "방문 사진"
+      ],
+      "evidence": [],
+      "note": "실제 식사 날짜가 아닌 매장 게시일입니다. 사진·사인의 현재 전시 여부는 별도로 확인되지 않았습니다.",
+      "group": "씨야",
+      "researchRefs": [
+        "L04"
+      ]
+    },
+    {
+      "id": "ikcoffee-historic",
+      "name": "익커피 홍대점 · 과거 행사",
+      "members": [
+        "이보람"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "카페",
+      "date": "2024-02-15",
+      "dateBasis": "팬 행사 시작일",
+      "address": "서울특별시 마포구 신촌로 20 1층 (당시 주소)",
+      "coordinates": [
+        37.55787558217745,
+        126.92845853975459
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.instagram.com/p/C1tEK2vrKOF/"
+      },
+      "coordinateSource": "https://cafe.ambitstock.com/yeonnam/cafe/%EC%9D%B5%EC%BB%A4%ED%94%BC%20%ED%99%8D%EB%8C%80%EC%A0%90/",
+      "addressSource": "https://www.instagram.com/ikcoffee_/reel/DK86IWAzL4r/",
+      "story": "2024년 2월 15일부터 18일까지 이보람 생일을 축하하는 팬 카페 행사가 열린 장소입니다.",
+      "relations": [
+        "팬 행사"
+      ],
+      "evidence": [
+        {
+          "label": "매장 영업 종료 공지",
+          "url": "https://www.instagram.com/ikcoffee_/p/DbAAp4LTO5C/"
+        }
+      ],
+      "note": "매장 공지에 따르면 2026년 7월 20일 영업을 종료했습니다. 현재 방문 가능한 카페가 아닌 과거 팬 행사 기록이며, 멤버의 직접 방문을 뜻하지 않습니다.",
+      "operatingStatus": "closed",
+      "closedAt": "2026-07-20",
+      "researchRefs": [
+        "N23"
+      ]
+    },
+    {
+      "id": "edls",
+      "name": "이들스 EDLS",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "문화공간",
+      "date": "2026-03-30",
+      "dateBasis": "팬미팅일",
+      "address": "서울특별시 종로구 삼일대로 428 낙원상가 중2층",
+      "coordinates": [
+        37.572763525385795,
+        126.98790250801225
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02197606645388568"
+      },
+      "coordinateSource": "https://polle.com/place/4jSkFT/",
+      "addressSource": "https://www.filmmakers.co.kr/locationBank/21877881",
+      "story": "씨야의 완전체 팬미팅 ‘RE:BLOOM’이 열린 낙원상가의 복합문화공간입니다. 다시 만난 세 멤버와 팬들이 함께한 2026년 3월의 기록을 연결합니다.",
+      "relations": [
+        "팬 행사"
+      ],
+      "evidence": [],
+      "note": "",
+      "group": "씨야",
+      "recordId": "20260330-rebloom-fanmeeting",
+      "researchRefs": [
+        "N01"
+      ]
+    },
+    {
+      "id": "express-bus-terminal-fan-ad",
+      "name": "고속터미널역 · 20주년 팬 광고",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "문화공간",
+      "date": "2026-03-12",
+      "dateBasis": "방문일",
+      "address": "서울특별시 서초구 고속터미널역 지하 광고 구역",
+      "coordinates": [
+        37.5050371,
+        127.0049222
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.mk.co.kr/news/entertain/11987327"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/node/3431313912",
+      "addressSource": "https://www.openstreetmap.org/node/3431313912",
+      "story": "씨야가 데뷔 20주년 당일 팬들이 준비한 광고판을 직접 찾아 인증 사진을 남긴 역입니다.",
+      "relations": [
+        "팬 행사",
+        "방문 사진"
+      ],
+      "evidence": [],
+      "note": "2026년 3월의 광고 방문 기록입니다. 핀은 역의 대표 위치이며 B11 광고판의 정확한 위치나 현재 광고 존치를 뜻하지 않습니다.",
+      "group": "씨야",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "N02"
+      ]
+    },
+    {
+      "id": "haeundae-busking",
+      "name": "해운대해수욕장 · 버스킹",
+      "members": [
+        "남규리"
+      ],
+      "city": "부산",
+      "region": "부산",
+      "category": "여행·자연",
+      "date": "2026-05-22",
+      "dateBasis": "공연일",
+      "address": "부산광역시 해운대구 해운대해수욕장 이벤트광장 일대",
+      "coordinates": [
+        35.1591818,
+        129.1590295
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02896246645451872"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/node/4943685023",
+      "addressSource": "https://www.openstreetmap.org/node/4943685023",
+      "story": "남규리가 2026년 5월 22일 오후 6시 30분 첫 버스킹으로 관객들을 만난 해변입니다. 이후 귤멍 채널에도 준비 과정과 현장이 공개됐습니다.",
+      "relations": [
+        "공연",
+        "영상 방문"
+      ],
+      "evidence": [
+        {
+          "label": "귤멍 버스킹 영상",
+          "url": "https://www.youtube.com/watch?v=c8NnJNnkvt0"
+        },
+        {
+          "label": "귤멍 후속 영상",
+          "url": "https://www.youtube.com/watch?v=17gUWdAZWEA"
+        }
+      ],
+      "note": "해변 대표 위치입니다. 공연 당시의 임시 무대 위치와는 차이가 있을 수 있습니다.",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "N03"
+      ]
+    },
+    {
+      "id": "gwangalli",
+      "name": "광안리해변",
+      "members": [
+        "남규리"
+      ],
+      "city": "부산",
+      "region": "부산",
+      "category": "여행·자연",
+      "date": "2026-05-31",
+      "dateBasis": "영상 게시일",
+      "address": "부산광역시 수영구 광안리해변 일대",
+      "coordinates": [
+        35.1508879,
+        129.1167806
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=b8d3lpKFLrE"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/way/107642460",
+      "addressSource": "https://www.openstreetmap.org/way/107642460",
+      "story": "이보람의 부산 콘서트를 응원하러 간 남규리가 밤바다를 산책한 곳입니다. 귤멍 부산 출장 브이로그 속 장면과 연결합니다.",
+      "relations": [
+        "영상 방문"
+      ],
+      "evidence": [
+        {
+          "label": "광안리 산책 보도",
+          "url": "https://v.daum.net/v/20260601075017924"
+        }
+      ],
+      "note": "",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "N04"
+      ]
+    },
+    {
+      "id": "gukje-market",
+      "name": "국제시장",
+      "members": [
+        "남규리"
+      ],
+      "city": "부산",
+      "region": "부산",
+      "category": "쇼핑",
+      "date": "2026-06-21",
+      "dateBasis": "영상 게시일",
+      "address": "부산광역시 중구 신창동4가 국제시장 일대",
+      "coordinates": [
+        35.1011643,
+        129.0281925
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=ytKnBh5tA30"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/way/500548799",
+      "addressSource": "https://www.openstreetmap.org/way/500548799",
+      "story": "남규리가 부산 먹거리 여행을 즐긴 국제시장입니다. 귤멍의 국제시장·깡통시장 브이로그에 등장합니다.",
+      "relations": [
+        "영상 방문"
+      ],
+      "evidence": [],
+      "note": "시장 구역의 대표 위치입니다. 영상 속 개별 먹거리 매장을 지정한 핀은 아닙니다.",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "N05"
+      ]
+    },
+    {
+      "id": "bupyeong-market",
+      "name": "부평깡통시장",
+      "members": [
+        "남규리"
+      ],
+      "city": "부산",
+      "region": "부산",
+      "category": "쇼핑",
+      "date": "2026-06-21",
+      "dateBasis": "영상 게시일",
+      "address": "부산광역시 중구 부평1길 48",
+      "coordinates": [
+        35.1015921962,
+        129.0260517037
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=ytKnBh5tA30"
+      },
+      "coordinateSource": "https://data.visitkorea.or.kr/linkedview/1878218",
+      "addressSource": "https://data.visitkorea.or.kr/linkedview/1878218",
+      "story": "국제시장과 함께 둘러본 부산 먹거리 여행의 또 다른 장소입니다. 가까이 있지만 국제시장과는 구분되는 시장입니다.",
+      "relations": [
+        "영상 방문"
+      ],
+      "evidence": [],
+      "note": "시장 전체의 대표 위치이며 특정 점포의 방문·추천 표시가 아닙니다.",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "N06"
+      ]
+    },
+    {
+      "id": "gocheok-skydome",
+      "name": "고척스카이돔",
+      "members": [
+        "남규리"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "문화공간",
+      "date": "2026-04-05",
+      "dateBasis": "시구일",
+      "address": "서울특별시 구로구 경인로 430",
+      "coordinates": [
+        37.4981936,
+        126.8670731
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.mk.co.kr/news/hot-issues/12014666"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/way/258637347",
+      "addressSource": "https://www.openstreetmap.org/way/258637347",
+      "story": "남규리가 2026년 4월 5일 시구에 나선 야구장입니다. 귤멍에는 시구 준비와 현장 비하인드도 남아 있습니다.",
+      "relations": [
+        "행사",
+        "영상 방문"
+      ],
+      "evidence": [
+        {
+          "label": "귤멍 시구 브이로그",
+          "url": "https://www.youtube.com/watch?v=ctLA9ECbcoo"
+        }
+      ],
+      "note": "",
+      "recordId": "20260405-gyuri-first-pitch",
+      "researchRefs": [
+        "N07"
+      ]
+    },
+    {
+      "id": "avenue-of-stars",
+      "name": "홍콩 스타의 거리 · 이소룡 동상",
+      "members": [
+        "남규리"
+      ],
+      "city": "홍콩",
+      "region": "홍콩",
+      "category": "문화공간",
+      "date": "2026-02-01",
+      "dateBasis": "영상 게시일",
+      "address": "Avenue of Stars, Tsim Sha Tsui, Kowloon, Hong Kong",
+      "coordinates": [
+        22.2955486,
+        114.1763956
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=5CD4IThQet0"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/node/4623637241",
+      "addressSource": "https://maps.apple.com/place?place-id=IE48A9C940CE439A4",
+      "story": "남규리가 혼자 떠난 홍콩 여행에서 이소룡 동상을 찾아 포즈를 따라 한 장소입니다. 귤멍 32회의 여행 이야기를 연결합니다.",
+      "relations": [
+        "영상 방문"
+      ],
+      "evidence": [
+        {
+          "label": "영상 속 방문 장면 보도",
+          "url": "https://sports.donga.com/ent/article/all/20260201/133273565/1"
+        }
+      ],
+      "note": "",
+      "country": "HK",
+      "researchRefs": [
+        "N10"
+      ],
+      "locality": "홍콩 침사추이"
+    },
+    {
+      "id": "cheonjiyeon",
+      "name": "천지연폭포",
+      "members": [
+        "이보람"
+      ],
+      "city": "서귀포",
+      "region": "제주",
+      "category": "여행·자연",
+      "date": "2026-08-05",
+      "dateBasis": "영상 게시일",
+      "address": "제주특별자치도 서귀포시 천지연폭포 일대",
+      "coordinates": [
+        33.2469271,
+        126.5545282
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=05rfQa2tRYw"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/node/3739756340",
+      "addressSource": "https://www.openstreetmap.org/node/3739756340",
+      "story": "제주 호캉스 2부에서 이보람이 산책한 폭포입니다. 숙소에서 쉬는 일상과 천지연 산책을 담은 보람씨야 영상으로 이어집니다.",
+      "relations": [
+        "영상 방문"
+      ],
+      "evidence": [],
+      "note": "",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "N15"
+      ]
+    },
+    {
+      "id": "yeonjuam",
+      "name": "관악산 연주암",
+      "members": [
+        "남규리"
+      ],
+      "city": "과천",
+      "region": "경기",
+      "category": "문화공간",
+      "date": "2026-03-22",
+      "dateBasis": "영상 게시일",
+      "address": "경기도 과천시 관악산 연주암",
+      "coordinates": [
+        37.441703,
+        126.9653262
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=HQQl-3OPp0U"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/node/3444469693",
+      "addressSource": "https://www.openstreetmap.org/node/3444469693",
+      "story": "남규리가 관악산 산행 중 들러 컵라면으로 쉬어 간 사찰입니다. 같은 날 연주대까지 오른 귤멍 산행 기록과 연결합니다.",
+      "relations": [
+        "영상 방문"
+      ],
+      "evidence": [
+        {
+          "label": "연주암·연주대 산행 보도",
+          "url": "https://v.daum.net/v/20260322170144508"
+        }
+      ],
+      "note": "",
+      "locationPrecision": "area"
+    },
+    {
+      "id": "yeonjudae",
+      "name": "관악산 연주대",
+      "members": [
+        "남규리"
+      ],
+      "city": "과천",
+      "region": "경기",
+      "category": "여행·자연",
+      "date": "2026-03-22",
+      "dateBasis": "영상 게시일",
+      "address": "경기도 과천시 관악산 연주대 일대",
+      "coordinates": [
+        37.4447713,
+        126.9645611
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=HQQl-3OPp0U"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/node/3445797247",
+      "addressSource": "https://www.openstreetmap.org/node/3445797247",
+      "story": "남규리가 관악산 산행 끝에 도착한 연주대입니다. 정상에서 만난 산객들과 사진을 찍으며 산행을 마무리한 영상 기록입니다.",
+      "relations": [
+        "영상 방문"
+      ],
+      "evidence": [
+        {
+          "label": "연주대 도착 장면 보도",
+          "url": "https://v.daum.net/v/20260322170144508"
+        }
+      ],
+      "note": "산 정상 구역의 대표 위치입니다. 산행 경로·기상·탐방 안내를 확인해 주세요.",
+      "locationPrecision": "area"
+    },
+    {
+      "id": "dcube-historic",
+      "name": "디큐브아트센터 · 당시 명칭",
+      "members": [
+        "김연지"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "공연장",
+      "date": "2019-08-29",
+      "dateBasis": "프레스콜일",
+      "address": "서울특별시 구로구 경인로 662 디큐브시티 7층",
+      "coordinates": [
+        37.5081311,
+        126.8883838
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=QR0CJ2fLo_M"
+      },
+      "coordinateSource": "https://findby.co.kr/details/08209-115303000028-st-652b6c7e8c641f9e38a64d09",
+      "addressSource": "https://findby.co.kr/details/08209-115303000028-st-652b6c7e8c641f9e38a64d09",
+      "story": "김연지가 마그리드 아르노 역으로 뮤지컬에 데뷔한 ‘마리 앙투아네트’의 공연장입니다. 2019년 8월 29일 프레스콜 영상과 연결합니다.",
+      "relations": [
+        "공연"
+      ],
+      "evidence": [],
+      "note": "2019년 공연 당시 명칭입니다. 시설 대표 위치를 표시하며 현재 공연 편성은 별도입니다.",
+      "recordId": "v490-marie-press",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "N16"
+      ]
+    },
+    {
+      "id": "seongam-hall",
+      "name": "성암아트홀",
+      "members": [
+        "남규리"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "공연장",
+      "date": "2024-06-09",
+      "dateBasis": "팬미팅일",
+      "address": "서울특별시 강남구 선릉로111길 6 성암아트센터 3·4층",
+      "coordinates": [
+        37.5111063,
+        127.0430362
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.newsis.com/view/NISX20240527_0002749684"
+      },
+      "coordinateSource": "https://intrip.kr/tourisms/1273",
+      "addressSource": "https://seongam-arthall.com/",
+      "story": "남규리의 첫 팬미팅 ‘LUX’가 열린 공연장입니다. 2024년 6월 9일 팬들과 만난 기록을 연결합니다.",
+      "relations": [
+        "팬 행사"
+      ],
+      "evidence": [],
+      "note": "현재 공연장 안내 명칭은 GB성암아트홀입니다.",
+      "recordId": "v491-lux",
+      "researchRefs": [
+        "N17"
+      ]
+    },
+    {
+      "id": "smtown-theater-historic",
+      "name": "SMTOWN THEATER 코엑스아티움 · 당시 명칭",
+      "members": [
+        "김연지"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "공연장",
+      "date": "2019-12-28",
+      "dateBasis": "공연일",
+      "address": "서울특별시 강남구 영동대로 513 코엑스아티움 일대",
+      "coordinates": [
+        37.5099949,
+        127.0614918
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.tenasia.co.kr/article/2019111175634"
+      },
+      "coordinateSource": "https://qbh.purpleo.kr/article/44264",
+      "addressSource": "https://qbh.purpleo.kr/article/44264",
+      "story": "김연지의 단독 콘서트 ‘HUG’가 2019년 12월 28~29일 열린 곳입니다. 당시 SMTOWN THEATER 공연 기록을 연결합니다.",
+      "relations": [
+        "공연"
+      ],
+      "evidence": [],
+      "note": "공연 당시 시설명입니다. 현재 같은 이름의 시설이 운영되거나 당시 전시가 남아 있다는 뜻은 아닙니다.",
+      "recordId": "v490-hug2019",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "N18"
+      ]
+    },
+    {
+      "id": "sh-art-hall",
+      "name": "SH아트홀",
+      "members": [
+        "이보람",
+        "남규리"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "공연장",
+      "date": "2019-09-07",
+      "dateBasis": "공연일",
+      "address": "서울특별시 종로구 동숭길 25",
+      "coordinates": [
+        37.57990114,
+        127.0035688
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.stagepick.co.kr/performances/detail/9A3LtlLnZSl3YDk8"
+      },
+      "coordinateSource": "https://qab.purpleo.kr/article/8559",
+      "addressSource": "https://qab.purpleo.kr/article/8559",
+      "story": "이보람의 첫 단독 콘서트 ‘보람하다’가 2019년 9월 7~8일 열린 대학로 공연장입니다. 남규리의 게스트 출연 기록도 함께 볼 수 있습니다.",
+      "relations": [
+        "공연"
+      ],
+      "evidence": [],
+      "note": "",
+      "recordId": "v490-boramhada",
+      "researchRefs": [
+        "N19"
+      ]
+    },
+    {
+      "id": "bongsan-gaon",
+      "name": "봉산문화회관 가온홀",
+      "members": [
+        "김연지"
+      ],
+      "city": "대구",
+      "region": "대구",
+      "category": "공연장",
+      "date": "2017-07-22",
+      "dateBasis": "공연일",
+      "address": "대구광역시 중구 봉산문화길 77",
+      "coordinates": [
+        35.8634,
+        128.5965698
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=1Lc1EhKFqC4"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/way/246782642",
+      "addressSource": "https://www.openstreetmap.org/way/246782642",
+      "story": "2017년 7월 22일 김연지 단독 콘서트가 열린 대구 공연장입니다. 당시 공연 영상과 기존 아카이브 기록을 연결합니다.",
+      "relations": [
+        "공연"
+      ],
+      "evidence": [],
+      "note": "",
+      "recordId": "v490-daegu2017",
+      "researchRefs": [
+        "N20"
+      ]
+    },
+    {
+      "id": "sungshin-unjeong",
+      "name": "성신여대 운정그린캠퍼스 대강당",
+      "members": [
+        "이보람",
+        "김연지"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "공연장",
+      "date": "2025-12-06",
+      "dateBasis": "공연일",
+      "address": "서울특별시 강북구 도봉로76가길 55 성신여자대학교 운정그린캠퍼스",
+      "coordinates": [
+        37.6314389,
+        127.0273277
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://enews.imbc.com/News/RetrieveNewsInfo/487996"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/way/475332792",
+      "addressSource": "https://www.openstreetmap.org/way/475332792",
+      "story": "이보람의 ‘Still Singing’ 콘서트가 2025년 12월 6~7일 열린 곳입니다. 공연과 김연지의 게스트 출연 기록을 함께 연결합니다.",
+      "relations": [
+        "공연"
+      ],
+      "evidence": [],
+      "note": "캠퍼스 대표 위치입니다. 공연장 출입은 각 행사 안내를 따라 주세요.",
+      "recordId": "v491-still-singing",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "N21"
+      ]
+    },
+    {
+      "id": "busan-cinema-haneul",
+      "name": "영화의전당 하늘연극장",
+      "members": [
+        "이보람"
+      ],
+      "city": "부산",
+      "region": "부산",
+      "category": "공연장",
+      "date": "2026-05-02",
+      "dateBasis": "공연일",
+      "address": "부산광역시 해운대구 수영강변대로 120",
+      "coordinates": [
+        35.1712188,
+        129.1266587
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://ticket.interpark.com/OtherSite/Ticket/Ticket_GoodsInfo.asp?Ca=01003&GroupCode=26004739"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/node/5478364332",
+      "addressSource": "https://www.openstreetmap.org/node/5478364332",
+      "story": "2026년 5월 2일 이보람의 ‘SPARKLE’ 부산 공연이 열린 곳입니다. 남규리가 응원하러 간 부산 출장 브이로그도 함께 볼 수 있습니다.",
+      "relations": [
+        "공연"
+      ],
+      "evidence": [
+        {
+          "label": "남규리의 부산 출장 브이로그",
+          "url": "https://www.youtube.com/watch?v=b8d3lpKFLrE"
+        }
+      ],
+      "note": "",
+      "recordId": "20260502-boram-sparkle-busan",
+      "researchRefs": [
+        "N22"
+      ]
+    },
+    {
+      "id": "music-station-1939",
+      "name": "음악역1939 야외무대",
+      "members": [
+        "이보람"
+      ],
+      "city": "가평",
+      "region": "경기",
+      "category": "공연장",
+      "date": "2026-05-09",
+      "dateBasis": "공연일",
+      "address": "경기도 가평군 가평읍 석봉로 100",
+      "coordinates": [
+        37.8241479,
+        127.513278
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://music1939.gp.go.kr/board-view.php?code=gallery&page=1&sq=4158"
+      },
+      "coordinateSource": "https://www.openstreetmap.org/way/1124907118",
+      "addressSource": "https://www.openstreetmap.org/way/1124907118",
+      "story": "2026년 5월 9일 G-SL 스프링 콘서트에 이보람이 출연한 장소입니다. 음악역1939 공식 행사 사진으로 현장 기록을 볼 수 있습니다.",
+      "relations": [
+        "공연"
+      ],
+      "evidence": [],
+      "note": "",
+      "recordId": "v487-2026-008",
+      "locationPrecision": "area",
+      "researchRefs": [
+        "U03"
+      ]
     }
   ],
   "researchQueue": [
@@ -1382,7 +2431,10 @@
       "name": "정돈",
       "member": "이보람",
       "url": "https://www.youtube.com/watch?v=EdjxuH4Z5aY",
-      "reason": "공식 영상의 매장 방문은 확인. 방문 지점이 확정되지 않아 지도 보류."
+      "reason": "공식 영상의 매장 방문은 확인. 방문 지점이 확정되지 않아 지도 보류.",
+      "researchRefs": [
+        "R25"
+      ]
     },
     {
       "name": "울산 불고기 방문 식당",
@@ -1396,74 +2448,1600 @@
       "reason": "방송 원문에서 휴게소 및 매장 지점 추가 대조 필요."
     },
     {
-      "name": "도산정육 본점",
-      "member": "김연지",
-      "reason": "멤버 방문·추천 원문과 해당 지점 대조 필요.",
-      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
-    },
-    {
-      "name": "중문별장",
-      "member": "이보람",
-      "reason": "공식 영상 원문과 지점 주소 대조 필요.",
-      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
-    },
-    {
       "name": "카페07",
       "member": "이보람",
       "reason": "생일 팬 행사 후보. 동일 상호 지점과 개최 원문 확인 필요. 멤버 방문으로 단정하지 않음.",
       "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "P03"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=25BsWaybLWU"
+      ]
     },
     {
       "name": "금돼지식당",
       "member": "이보람",
       "reason": "방문 근거 원문 확인 필요.",
       "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
-    },
-    {
-      "name": "공간양",
-      "member": "남규리",
-      "reason": "방문 근거와 정확한 상호·지점 확인 필요.",
-      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
-    },
-    {
-      "name": "유지카페",
-      "member": "김연지",
-      "reason": "방문 근거와 정확한 상호·지점 확인 필요.",
-      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
-    },
-    {
-      "name": "우리는 정육가든",
-      "member": "씨야",
-      "reason": "상호와 멤버 방문 원문 확인 필요.",
-      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
-    },
-    {
-      "name": "익커피",
-      "member": "이보람",
-      "reason": "팬 행사·폐업 기록 원문과 정확한 지점 확인 필요. 현재 방문 장소로 표시하지 않음.",
-      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "L01"
+      ],
+      "sources": [
+        "https://www.kbsm.net/news/view.php?idx=243811"
+      ]
     },
     {
       "name": "생일 서프라이즈 카페",
       "member": "남규리",
       "reason": "2026년 5월 후보. 상호 미확인.",
       "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q09"
+      ],
+      "sources": [
+        "https://v.daum.net/v/Zp8c6Sb0lu"
+      ]
     },
     {
       "name": "꽃카페",
       "member": "김연지",
       "reason": "공개 영상·상호·주소 미확인.",
       "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07"
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q11"
+      ],
+      "sources": [
+        "https://gall.dcinside.com/board/view/?id=seeya&no=234381&t=cv"
+      ]
+    },
+    {
+      "name": "콤콤오락실",
+      "member": "남규리",
+      "reason": "SBS 원본 화면과 매장·현재 영업 대조",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "N08"
+      ],
+      "sources": [
+        "https://lulusreviews.tistory.com/m/13935"
+      ]
+    },
+    {
+      "name": "Y3복싱클럽 압구정본점",
+      "member": "남규리",
+      "reason": "당시/현재 지점 대조; 일반 방문 조건 확인",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "N09"
+      ],
+      "sources": [
+        "https://lulusreviews.tistory.com/7720"
+      ]
+    },
+    {
+      "name": "용인휴게소",
+      "member": "남규리",
+      "reason": "상·하행 방향을 확인한 뒤 핀 등록",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "N11"
+      ],
+      "sources": [
+        "https://enter.etoday.co.kr/news/view/297750"
+      ]
+    },
+    {
+      "name": "카페 두운리",
+      "member": "남규리",
+      "reason": "곡명·촬영일·매장 원문 확보 전 공개 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "N12"
+      ],
+      "sources": [
+        "https://m.liveanywhere.me/ko/accommodations/27294",
+        "https://33m2.co.kr/room/detail/35019"
+      ]
+    },
+    {
+      "name": "건대입구역(김연지 생일 광고)",
+      "member": "김연지",
+      "reason": "연도·광고 위치·게재 기간·본인 방문 미확인",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "N13"
+      ],
+      "sources": [
+        "https://www.planmedia.co.kr/Portfolio"
+      ]
+    },
+    {
+      "name": "제주신라호텔",
+      "member": "이보람",
+      "reason": "공식 호캉스 영상은 확인했으나 숙소 상호를 직접 대조하지 못해 호텔 위치는 보류. 영상 속 중문별장·천지연폭포는 별도로 반영.",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "N14"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=_AbFDbCDAHI",
+        "https://www.youtube.com/watch?v=05rfQa2tRYw"
+      ]
+    },
+    {
+      "name": "광주한옥마을(정확한 촬영 공간 미상)",
+      "member": "씨야",
+      "reason": "광주광역시 아님. 특정 건물·개방 조건 확인 전 핀 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "N24"
+      ],
+      "sources": [
+        "https://enter.etoday.co.kr/news/view/297750"
+      ]
+    },
+    {
+      "name": "아띠랑스플뢰르",
+      "member": "씨야",
+      "reason": "멤버 직접 방문 근거 없음. 업장 제작 원문 대조 필요",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "N25"
+      ],
+      "sources": [
+        "https://dinoma.tistory.com/m/9545"
+      ]
+    },
+    {
+      "name": "합천영상테마파크",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D01"
+      ],
+      "sources": [
+        "https://alienbeing.tistory.com/2184"
+      ]
+    },
+    {
+      "name": "공세리성당",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D02"
+      ],
+      "sources": [
+        "https://alienbeing.tistory.com/2184"
+      ]
+    },
+    {
+      "name": "운보의 집",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D03"
+      ],
+      "sources": [
+        "https://alienbeing.tistory.com/2184"
+      ]
+    },
+    {
+      "name": "순천드라마촬영장",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D04"
+      ],
+      "sources": [
+        "https://alienbeing.tistory.com/2184"
+      ]
+    },
+    {
+      "name": "불란지 펜션 세트 터·산이수동 방파제 일대",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지; 세트 철거 주장 재확인, 역사 카드만 검토",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D05"
+      ],
+      "sources": [
+        "https://commatv.tistory.com/28"
+      ]
+    },
+    {
+      "name": "라온프라이빗타운",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D06"
+      ],
+      "sources": [
+        "https://commatv.tistory.com/28"
+      ]
+    },
+    {
+      "name": "라온골프클럽",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D07"
+      ],
+      "sources": [
+        "https://commatv.tistory.com/28"
+      ]
+    },
+    {
+      "name": "더마파크(자료 표기 라온더마파크)",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D08"
+      ],
+      "sources": [
+        "https://commatv.tistory.com/28"
+      ]
+    },
+    {
+      "name": "수자네식당 세트(차귀도 일대 자료)",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D09"
+      ],
+      "sources": [
+        "https://commatv.tistory.com/28"
+      ]
+    },
+    {
+      "name": "카페 만덕본가(촬영 음식 공급 후보)",
+      "member": "남규리(출연작 연관 후보)",
+      "reason": "촬영 음식 공급 주장. 멤버 방문·직접 촬영 근거 없음. 현재 정보 및 원문 대조",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "D10"
+      ],
+      "sources": [
+        "https://commatv.tistory.com/28"
+      ]
+    },
+    {
+      "name": "김유정역 일대(레일바이크 지점 미확정)",
+      "member": "남규리",
+      "reason": "옛역 방문과 강촌레일파크 탑승은 별개. SBS 1128회 원본 확인",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "U01"
+      ],
+      "sources": [
+        "https://www.filecast.co.kr/www/contents/view/18034812/1/"
+      ]
+    },
+    {
+      "name": "의암호 카누(업체·승선장 미확정)",
+      "member": "남규리",
+      "reason": "의암호 여부·업체·승선장 원본 대조. 물레길 업체 임의 연결 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "U02"
+      ],
+      "sources": [
+        "https://www.filecast.co.kr/www/contents/view/18034812/1/"
+      ]
+    },
+    {
+      "name": "SBS 등촌동 공개홀",
+      "member": "씨야",
+      "reason": "각 회차 실제 생방송 장소·건물 현황 확인. 일반 방송 스튜디오 제외의 기념 예외",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "U04"
+      ],
+      "sources": [
+        "https://commatv.tistory.com/28"
+      ]
+    },
+    {
+      "name": "용인운전면허시험장",
+      "member": "남규리(씨야 전원 여부 미확인)",
+      "reason": "남규리 기록만 재인용 확인. 세 멤버 같은 날 취득 주장은 미확인. 현재 시험장과 당시 장소 대조",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "U05"
+      ],
+      "sources": [
+        "https://i-ruru.com/category/일상다반사?page=20"
+      ]
+    },
+    {
+      "name": "대전과학기술대학교",
+      "member": "이보람",
+      "reason": "주최 포스터·라인업·실제 출연·학내 무대 위치 확인. 캘린더 자동 등록 아님",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "U06"
+      ],
+      "sources": [
+        "https://commatv.tistory.com/28"
+      ]
+    },
+    {
+      "name": "경희대학교 국제캠퍼스(모교 후보)",
+      "member": "김연지",
+      "reason": "서울캠퍼스 평화의전당에 모교 표시 금지. 당시 학과 캠퍼스 이력 최종 대조",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "U07"
+      ],
+      "sources": [
+        "https://www.yna.co.kr/view/AKR20130819185700004",
+        "https://www.khupmm.ac.kr/학과소개-about"
+      ]
+    },
+    {
+      "name": "서울예술대학교",
+      "member": "이보람",
+      "reason": "프로필 연도·학위 표기에 오류 가능. 공식 학력 및 재학 당시 캠퍼스 확인",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "U08"
+      ],
+      "sources": [
+        "https://ridibooks.com/author/60363"
+      ]
+    },
+    {
+      "name": "지역·지점 미상 · 온센",
+      "member": "이보람",
+      "reason": "제목·URL 확보 수준. 식사 장면·지점 미확인. 2차 목록은 최초 2022-01-14, 재업로드 2022-09-20을 구분",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "C02"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=EWxFYLtGRXc"
+      ]
+    },
+    {
+      "name": "제주 · 이름 미상 고깃집",
+      "member": "이보람",
+      "reason": "상호·지점 미확인",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "C03"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=_AbFDbCDAHI&t=828s"
+      ]
+    },
+    {
+      "name": "제주 · 이름 미상 망고빙수 카페",
+      "member": "이보람",
+      "reason": "상호 미확인. 자동 자막의 ‘오늘 카페’를 상호로 확정하지 않음",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "C04"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=05rfQa2tRYw&t=126s"
+      ]
+    },
+    {
+      "name": "부산 · 이름 미상 브런치 식당",
+      "member": "김연지",
+      "reason": "상호·정확한 위치 미확인. 영상 설명상 여행은 2023년 6월",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "C05"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=p9M3n_ayuOw&t=285s"
+      ]
+    },
+    {
+      "name": "부산 · 이름 미상 밀면집",
+      "member": "남규리",
+      "reason": "상호 미확인. 기존 ‘부산 출장 영상’ 단서를 식사 구간으로 구체화; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "C06"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=b8d3lpKFLrE&t=84s"
+      ]
+    },
+    {
+      "name": "부산 · 이름 미상 횟집",
+      "member": "남규리",
+      "reason": "상호 미확인. 뒤이어 광안리 산책을 했다는 이유로 지점 확정 불가; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "C07"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=b8d3lpKFLrE&t=689s"
+      ]
+    },
+    {
+      "name": "대구 · 이름 미상 막창집",
+      "member": "남규리",
+      "reason": "상호 미확인. 룰리커피 공연 장소와 식사 장소를 합치지 않음; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "C08"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=POheFIIwsqo&t=965s"
+      ]
+    },
+    {
+      "name": "서울 한남동 · 이름 미상 감자탕집",
+      "member": "씨야 세 멤버",
+      "reason": "기사에 상호 없음. 영상·상호 연결 및 실제 주문 상세 확인 필요",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "C10"
+      ],
+      "sources": [
+        "https://sports.khan.co.kr/article/202606160740003"
+      ]
+    },
+    {
+      "name": "강원 춘천 · 이름 미상 닭갈비집",
+      "member": "남규리",
+      "reason": "공식 검색 결과 수준. 본문·방송일·상호·주소·식사 장면 미확인; 1127회 대신 1128회(2024-05-03) 가능성; SBS 공식 회차·상호 확인",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "C11"
+      ],
+      "sources": [
+        "https://programs.sbs.co.kr/culture/theworld/vod/55119/22000527911"
+      ]
+    },
+    {
+      "name": "석모도 글램핑장",
+      "member": "남규리",
+      "reason": "캠핑장 상호·지점 확인; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q01"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=UHwGZGI-nyE"
+      ]
+    },
+    {
+      "name": "부산 케이크 공방",
+      "member": "남규리",
+      "reason": "공방 이름·주소·체험 판매 여부; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q02"
+      ],
+      "sources": [
+        "https://sports.khan.co.kr/article/202605311414003"
+      ]
+    },
+    {
+      "name": "홍콩 치파오 대여점",
+      "member": "남규리",
+      "reason": "상호·지점 확인. 유명 대여점으로 추정 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q03"
+      ],
+      "sources": [
+        "https://sports.donga.com/ent/article/all/20260201/133273565/1"
+      ]
+    },
+    {
+      "name": "대형 서점",
+      "member": "남규리",
+      "reason": "서점명·지점 확인. 교보문고 추정 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q04"
+      ],
+      "sources": [
+        "https://enews.imbc.com/News/RetrieveNewsInfo/502948"
+      ]
+    },
+    {
+      "name": "테라리움 공방",
+      "member": "이보람",
+      "reason": "원본 URL·업장명·주소 확인. 치후 공방 연결 근거 없음",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q05"
+      ],
+      "sources": [
+        "https://tubemon.io/channel/UCz11CPccQ2AnizJrdp58Bog"
+      ]
+    },
+    {
+      "name": "백그라운드 라이브 술집",
+      "member": "씨야",
+      "reason": "상호·촬영 지점; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q06"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=7AnevPm_sho"
+      ]
+    },
+    {
+      "name": "울산 언양불고기집",
+      "member": "남규리",
+      "reason": "상호·간판·메뉴판 대조",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q07"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=WsyxwPl55wQ&t=511s"
+      ]
+    },
+    {
+      "name": "울산 바다·자갈 해변",
+      "member": "남규리",
+      "reason": "정확한 해변 확인. 울산 유명 해변 임의 연결 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q08"
+      ],
+      "sources": [
+        "https://www.youtube.com/watch?v=WsyxwPl55wQ&t=554s"
+      ]
+    },
+    {
+      "name": "나트랑 여행의 개별 장소",
+      "member": "이보람",
+      "reason": "원본 영상·숙소·점포명 확인",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "Q10"
+      ],
+      "sources": [
+        "https://namu.moe/w/보람씨야"
+      ]
+    },
+    {
+      "name": "그럼에도 우린 MV 돌산·채석장",
+      "member": "씨야",
+      "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "R15"
+      ]
+    },
+    {
+      "name": "대구 도로변 버스킹 장소",
+      "member": "남규리",
+      "reason": "동성로 추정 금지. 기존 룰리커피 가창점 버스킹과 같은 공연인지 먼저 대조",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "R16"
+      ]
+    },
+    {
+      "name": "포천 바베큐 글램핑장",
+      "member": "남규리",
+      "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "R21"
+      ]
+    },
+    {
+      "name": "오락실(사격·인형뽑기)",
+      "member": "남규리",
+      "reason": "기존 콤콤오락실과 동일 업체인지 미확인; 병합 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "R24"
+      ]
+    },
+    {
+      "name": "아우어 베이커리(지점 미상)",
+      "member": "이보람",
+      "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "R26"
+      ]
+    },
+    {
+      "name": "세상을 바꾸는 여자들 공연장",
+      "member": "이보람",
+      "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "R27"
+      ]
+    },
+    {
+      "name": "THE FAN 제주 공연장",
+      "member": "씨야",
+      "reason": "공식 공연장 발표 전 지도 핀 및 좌표 생성 금지",
+      "checkedAt": "2026-10-07",
+      "researchRefs": [
+        "R28"
+      ]
     }
-  ]
+  ],
+  "researchReview": {
+    "checkedAt": "2026-10-07",
+    "workbook": "seeya-map-place-research-2026-10-07.xlsx",
+    "candidateCount": 73,
+    "leadCount": 32,
+    "rows": [
+      {
+        "id": "A01",
+        "name": "압구정변강쇠떡볶이",
+        "sources": [
+          "https://www.youtube.com/watch?v=NIeNbStvYa0&t=441s"
+        ],
+        "status": "existing",
+        "placeId": "byeongang"
+      },
+      {
+        "id": "A02",
+        "name": "마복림할머니집",
+        "sources": [
+          "https://www.youtube.com/watch?v=NIeNbStvYa0&t=579s"
+        ],
+        "status": "existing",
+        "placeId": "maboklim"
+      },
+      {
+        "id": "A03",
+        "name": "동대문엽기떡볶이 본점 홀매장",
+        "sources": [
+          "https://www.youtube.com/watch?v=NIeNbStvYa0&t=776s"
+        ],
+        "status": "existing",
+        "placeId": "yupdduk"
+      },
+      {
+        "id": "A04",
+        "name": "핑거스핫도그",
+        "sources": [
+          "https://www.youtube.com/watch?v=60dNYPs5RJ4&t=206s"
+        ],
+        "status": "existing",
+        "placeId": "fingers-hotdog"
+      },
+      {
+        "id": "A05",
+        "name": "퐁당라면",
+        "sources": [
+          "https://www.youtube.com/watch?v=60dNYPs5RJ4&t=430s"
+        ],
+        "status": "existing",
+        "placeId": "pongdang-ramyeon"
+      },
+      {
+        "id": "A06",
+        "name": "이큐테이블 흑돼지 한림협재금능해수욕장점",
+        "sources": [
+          "https://www.youtube.com/watch?v=60dNYPs5RJ4&t=870s"
+        ],
+        "status": "existing",
+        "placeId": "eq-table"
+      },
+      {
+        "id": "A07",
+        "name": "춘미향음식점",
+        "sources": [
+          "https://www.youtube.com/watch?v=jVCa6jPn3JA&t=425s"
+        ],
+        "status": "existing",
+        "placeId": "chunmihyang"
+      },
+      {
+        "id": "A08",
+        "name": "제주접짝뼈국",
+        "sources": [
+          "https://www.youtube.com/watch?v=jVCa6jPn3JA&t=574s"
+        ],
+        "status": "existing",
+        "placeId": "jeopjjak"
+      },
+      {
+        "id": "A09",
+        "name": "듀포레",
+        "sources": [
+          "https://www.youtube.com/watch?v=jVCa6jPn3JA&t=1191s"
+        ],
+        "status": "existing",
+        "placeId": "dufore-jeju"
+      },
+      {
+        "id": "A10",
+        "name": "마더커피",
+        "sources": [
+          "https://www.youtube.com/watch?v=RaK_jf5PwRc&t=130s"
+        ],
+        "status": "existing",
+        "placeId": "mother"
+      },
+      {
+        "id": "A11",
+        "name": "쵸딩카페",
+        "sources": [
+          "https://www.youtube.com/watch?v=RaK_jf5PwRc&t=277s"
+        ],
+        "status": "existing",
+        "placeId": "choding"
+      },
+      {
+        "id": "A12",
+        "name": "이진리카페",
+        "sources": [
+          "https://www.youtube.com/watch?v=RaK_jf5PwRc&t=451s"
+        ],
+        "status": "existing",
+        "placeId": "ijinri"
+      },
+      {
+        "id": "A13",
+        "name": "중문별장",
+        "sources": [
+          "https://www.youtube.com/watch?v=_AbFDbCDAHI&t=649s"
+        ],
+        "status": "added",
+        "placeId": "jungmun-byeoljang"
+      },
+      {
+        "id": "A14",
+        "name": "앵두나무집",
+        "sources": [
+          "https://www.youtube.com/watch?v=8-F71B_u754&t=761s"
+        ],
+        "status": "existing",
+        "placeId": "aengdu"
+      },
+      {
+        "id": "A15",
+        "name": "백합식당",
+        "sources": [
+          "https://www.youtube.com/watch?v=8-F71B_u754&t=1683s",
+          "https://www.youtube.com/watch?v=8-F71B_u754&t=2110s"
+        ],
+        "status": "existing",
+        "placeId": "baekhap"
+      },
+      {
+        "id": "A16",
+        "name": "초원갈매기살",
+        "sources": [
+          "https://www.youtube.com/watch?v=8-F71B_u754&t=2790s",
+          "https://www.youtube.com/watch?v=8-F71B_u754&t=3132s"
+        ],
+        "status": "existing",
+        "placeId": "chowon"
+      },
+      {
+        "id": "B01",
+        "name": "금악퐁낭국수",
+        "sources": [
+          "https://www.youtube.com/watch?v=pmhw1lyc0M4",
+          "https://naver.me/FpM7xu0P"
+        ],
+        "status": "existing",
+        "placeId": "geumak-noodles"
+      },
+      {
+        "id": "B02",
+        "name": "이니스프리 제주하우스",
+        "sources": [
+          "https://www.youtube.com/watch?v=pmhw1lyc0M4",
+          "https://naver.me/5YwdeDff"
+        ],
+        "status": "existing",
+        "placeId": "innisfree-jeju"
+      },
+      {
+        "id": "B03",
+        "name": "미쁜제과",
+        "sources": [
+          "https://www.youtube.com/watch?v=pmhw1lyc0M4",
+          "https://naver.me/G2Vw8JbA"
+        ],
+        "status": "existing",
+        "placeId": "mippeun-bakery"
+      },
+      {
+        "id": "B04",
+        "name": "조양방직",
+        "sources": [
+          "https://www.youtube.com/watch?v=UHwGZGI-nyE&t=272s",
+          "https://www.ganghwa.go.kr/open_content/tour/tour/tourInfoDetail.do?tour_seq=271"
+        ],
+        "status": "existing",
+        "placeId": "joyang-bangjik"
+      },
+      {
+        "id": "B05",
+        "name": "도산정육 본점",
+        "sources": [
+          "https://www.instagram.com/p/C_j0vdFyaa4/"
+        ],
+        "status": "added",
+        "placeId": "dosan-butcher"
+      },
+      {
+        "id": "P01",
+        "name": "룰리커피 가창점",
+        "sources": [
+          "https://www.rullycoffee.com/art"
+        ],
+        "status": "existing",
+        "placeId": "rully-gachang"
+      },
+      {
+        "id": "P02",
+        "name": "어바웃 프로젝트 라운지",
+        "sources": [
+          "https://tvreport.co.kr/entertainment/article/988740/"
+        ],
+        "status": "existing",
+        "placeId": "about-project-jamsil"
+      },
+      {
+        "id": "P03",
+        "name": "카페07",
+        "sources": [
+          "https://www.youtube.com/watch?v=25BsWaybLWU"
+        ],
+        "status": "pending",
+        "reason": "주소·간판·본인 등장 대조"
+      },
+      {
+        "id": "P04",
+        "name": "울산시립미술관",
+        "sources": [
+          "https://www.youtube.com/watch?v=WsyxwPl55wQ",
+          "https://sports.khan.co.kr/article/202607261935003"
+        ],
+        "status": "existing",
+        "placeId": "ulsan-art-museum"
+      },
+      {
+        "id": "P05",
+        "name": "동묘 빈티지 쇼핑 일대",
+        "sources": [
+          "https://isplus.com/article/view/isp202508240067"
+        ],
+        "status": "existing",
+        "placeId": "dongmyo-area"
+      },
+      {
+        "id": "P06",
+        "name": "하루(압구정)",
+        "sources": [
+          "https://www.youtube.com/watch?v=DEEQmmrQLgs"
+        ],
+        "status": "existing",
+        "placeId": "apgujeong-haru"
+      },
+      {
+        "id": "P07",
+        "name": "금오름",
+        "sources": [
+          "https://www.youtube.com/watch?v=pmhw1lyc0M4",
+          "https://www.osen.co.kr/article/G1112679122"
+        ],
+        "status": "existing",
+        "placeId": "geum-oreum"
+      },
+      {
+        "id": "P08",
+        "name": "성이시돌목장",
+        "sources": [
+          "https://www.youtube.com/watch?v=pmhw1lyc0M4",
+          "https://www.osen.co.kr/article/G1112679122"
+        ],
+        "status": "existing",
+        "placeId": "isidore-farm"
+      },
+      {
+        "id": "P09",
+        "name": "신창풍차해안도로",
+        "sources": [
+          "https://www.youtube.com/watch?v=60dNYPs5RJ4",
+          "https://www.shinailbo.co.kr/news/articleView.html?idxno=2130597"
+        ],
+        "status": "existing",
+        "placeId": "sinchang-coast"
+      },
+      {
+        "id": "N01",
+        "name": "이들스(EDLS)",
+        "sources": [
+          "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02197606645388568"
+        ],
+        "status": "added",
+        "placeId": "edls"
+      },
+      {
+        "id": "N02",
+        "name": "고속터미널역 B11 광고 구역",
+        "sources": [
+          "https://www.mk.co.kr/news/entertain/11987327",
+          "https://gall.dcinside.com/board/view/?id=seeya&no=233300&page=1"
+        ],
+        "status": "added",
+        "placeId": "express-bus-terminal-fan-ad"
+      },
+      {
+        "id": "N03",
+        "name": "해운대해수욕장 이벤트광장",
+        "sources": [
+          "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02896246645451872"
+        ],
+        "status": "added",
+        "placeId": "haeundae-busking"
+      },
+      {
+        "id": "N04",
+        "name": "광안리 해변",
+        "sources": [
+          "https://sports.khan.co.kr/article/202605311414003",
+          "https://www.youtube.com/watch?v=b8d3lpKFLrE"
+        ],
+        "status": "added",
+        "placeId": "gwangalli"
+      },
+      {
+        "id": "N05",
+        "name": "국제시장",
+        "sources": [
+          "https://www.osen.co.kr/article/G1112825900",
+          "https://www.youtube.com/watch?v=ytKnBh5tA30"
+        ],
+        "status": "added",
+        "placeId": "gukje-market"
+      },
+      {
+        "id": "N06",
+        "name": "부평깡통시장",
+        "sources": [
+          "https://www.osen.co.kr/article/G1112825900",
+          "https://www.youtube.com/watch?v=ytKnBh5tA30"
+        ],
+        "status": "added",
+        "placeId": "bupyeong-market"
+      },
+      {
+        "id": "N07",
+        "name": "고척스카이돔",
+        "sources": [
+          "https://www.chosun.com/entertainments/entertain_photo/2026/04/05/HAZWGOJXMFRTSNJVGIYDKYZSME/",
+          "https://sports.khan.co.kr/article/202604121249003"
+        ],
+        "status": "added",
+        "placeId": "gocheok-skydome"
+      },
+      {
+        "id": "N08",
+        "name": "콤콤오락실",
+        "sources": [
+          "https://lulusreviews.tistory.com/m/13935"
+        ],
+        "status": "pending",
+        "reason": "SBS 원본 화면과 매장·현재 영업 대조"
+      },
+      {
+        "id": "N09",
+        "name": "Y3복싱클럽 압구정본점",
+        "sources": [
+          "https://lulusreviews.tistory.com/7720"
+        ],
+        "status": "pending",
+        "reason": "당시/현재 지점 대조; 일반 방문 조건 확인"
+      },
+      {
+        "id": "N10",
+        "name": "홍콩 스타의 거리(이소룡 동상 구역)",
+        "sources": [
+          "https://sports.donga.com/ent/article/all/20260201/133273565/1"
+        ],
+        "status": "added",
+        "placeId": "avenue-of-stars"
+      },
+      {
+        "id": "N11",
+        "name": "용인휴게소",
+        "sources": [
+          "https://enter.etoday.co.kr/news/view/297750"
+        ],
+        "status": "pending",
+        "reason": "상·하행 방향을 확인한 뒤 핀 등록"
+      },
+      {
+        "id": "N12",
+        "name": "카페 두운리",
+        "sources": [
+          "https://m.liveanywhere.me/ko/accommodations/27294",
+          "https://33m2.co.kr/room/detail/35019"
+        ],
+        "status": "pending",
+        "reason": "곡명·촬영일·매장 원문 확보 전 공개 금지"
+      },
+      {
+        "id": "N13",
+        "name": "건대입구역(김연지 생일 광고)",
+        "sources": [
+          "https://www.planmedia.co.kr/Portfolio"
+        ],
+        "status": "pending",
+        "reason": "연도·광고 위치·게재 기간·본인 방문 미확인"
+      },
+      {
+        "id": "N14",
+        "name": "제주신라호텔",
+        "sources": [
+          "https://www.youtube.com/watch?v=_AbFDbCDAHI",
+          "https://www.youtube.com/watch?v=05rfQa2tRYw"
+        ],
+        "status": "pending",
+        "reason": "공식 호캉스 영상은 확인했으나 숙소 상호를 직접 대조하지 못해 호텔 위치는 보류. 영상 속 중문별장·천지연폭포는 별도로 반영."
+      },
+      {
+        "id": "N15",
+        "name": "천지연폭포",
+        "sources": [
+          "https://youtube-rank.com/board/bbs/board.php?bo_table=youtube&wr_id=11171"
+        ],
+        "status": "added",
+        "placeId": "cheonjiyeon"
+      },
+      {
+        "id": "N16",
+        "name": "디큐브아트센터(당시 명칭)",
+        "sources": [
+          "https://sports.donga.com/ent/article/all/20190613/95971403/1",
+          "https://www.playdb.co.kr/PlayDB/PlaydbDetail.asp?sReqPlayNo=144125"
+        ],
+        "status": "added",
+        "placeId": "dcube-historic"
+      },
+      {
+        "id": "N17",
+        "name": "성암아트홀",
+        "sources": [
+          "https://www.newsis.com/view/NISX20240527_0002749684"
+        ],
+        "status": "added",
+        "placeId": "seongam-hall"
+      },
+      {
+        "id": "N18",
+        "name": "SMTOWN THEATER 코엑스 아티움(당시 명칭)",
+        "sources": [
+          "https://www.tenasia.co.kr/article/2019111175634",
+          "https://www.stagepick.co.kr/performances/detail/m9HS3pKn2Ob2FlKp"
+        ],
+        "status": "added",
+        "placeId": "smtown-theater-historic"
+      },
+      {
+        "id": "N19",
+        "name": "SH아트홀",
+        "sources": [
+          "https://www.stagepick.co.kr/artists/detail/9N2WOj8F9M5zF5PY",
+          "https://www.stagepick.co.kr/performances/detail/9A3LtlLnZSl3YDk8"
+        ],
+        "status": "added",
+        "placeId": "sh-art-hall"
+      },
+      {
+        "id": "N20",
+        "name": "봉산문화회관 가온홀",
+        "sources": [
+          "https://www.stagepick.co.kr/artists/detail/gTopFj4XzeOKOUXg"
+        ],
+        "status": "added",
+        "placeId": "bongsan-gaon"
+      },
+      {
+        "id": "N21",
+        "name": "성신여대 운정그린캠퍼스 대강당",
+        "sources": [
+          "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01111926642333576",
+          "https://enews.imbc.com/News/RetrieveNewsInfo/487996"
+        ],
+        "status": "added",
+        "placeId": "sungshin-unjeong"
+      },
+      {
+        "id": "N22",
+        "name": "영화의전당 하늘연극장",
+        "sources": [
+          "https://www.tenasia.co.kr/article/2026041369704",
+          "https://sports.khan.co.kr/article/202605311414003"
+        ],
+        "status": "added",
+        "placeId": "busan-cinema-haneul"
+      },
+      {
+        "id": "N23",
+        "name": "익커피(과거 행사)",
+        "sources": [
+          "https://www.instagram.com/p/C1tEK2vrKOF/",
+          "https://www.threads.com/@ikcoffee_/post/DbAAvZQCWEk/"
+        ],
+        "status": "added",
+        "placeId": "ikcoffee-historic"
+      },
+      {
+        "id": "N24",
+        "name": "광주한옥마을(정확한 촬영 공간 미상)",
+        "sources": [
+          "https://enter.etoday.co.kr/news/view/297750"
+        ],
+        "status": "pending",
+        "reason": "광주광역시 아님. 특정 건물·개방 조건 확인 전 핀 금지"
+      },
+      {
+        "id": "N25",
+        "name": "아띠랑스플뢰르",
+        "sources": [
+          "https://dinoma.tistory.com/m/9545"
+        ],
+        "status": "pending",
+        "reason": "멤버 직접 방문 근거 없음. 업장 제작 원문 대조 필요"
+      },
+      {
+        "id": "D01",
+        "name": "합천영상테마파크",
+        "sources": [
+          "https://alienbeing.tistory.com/2184"
+        ],
+        "status": "pending",
+        "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지"
+      },
+      {
+        "id": "D02",
+        "name": "공세리성당",
+        "sources": [
+          "https://alienbeing.tistory.com/2184"
+        ],
+        "status": "pending",
+        "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지"
+      },
+      {
+        "id": "D03",
+        "name": "운보의 집",
+        "sources": [
+          "https://alienbeing.tistory.com/2184"
+        ],
+        "status": "pending",
+        "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지"
+      },
+      {
+        "id": "D04",
+        "name": "순천드라마촬영장",
+        "sources": [
+          "https://alienbeing.tistory.com/2184"
+        ],
+        "status": "pending",
+        "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지"
+      },
+      {
+        "id": "D05",
+        "name": "불란지 펜션 세트 터·산이수동 방파제 일대",
+        "sources": [
+          "https://commatv.tistory.com/28"
+        ],
+        "status": "pending",
+        "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지; 세트 철거 주장 재확인, 역사 카드만 검토"
+      },
+      {
+        "id": "D06",
+        "name": "라온프라이빗타운",
+        "sources": [
+          "https://commatv.tistory.com/28"
+        ],
+        "status": "pending",
+        "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지"
+      },
+      {
+        "id": "D07",
+        "name": "라온골프클럽",
+        "sources": [
+          "https://commatv.tistory.com/28"
+        ],
+        "status": "pending",
+        "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지"
+      },
+      {
+        "id": "D08",
+        "name": "더마파크(자료 표기 라온더마파크)",
+        "sources": [
+          "https://commatv.tistory.com/28"
+        ],
+        "status": "pending",
+        "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지"
+      },
+      {
+        "id": "D09",
+        "name": "수자네식당 세트(차귀도 일대 자료)",
+        "sources": [
+          "https://commatv.tistory.com/28"
+        ],
+        "status": "pending",
+        "reason": "작품 전체 촬영지 소개만 확인. 남규리 등장 회차·장면·현장 정보 확인 전 공개 핀 금지"
+      },
+      {
+        "id": "D10",
+        "name": "카페 만덕본가(촬영 음식 공급 후보)",
+        "sources": [
+          "https://commatv.tistory.com/28"
+        ],
+        "status": "pending",
+        "reason": "촬영 음식 공급 주장. 멤버 방문·직접 촬영 근거 없음. 현재 정보 및 원문 대조"
+      },
+      {
+        "id": "U01",
+        "name": "김유정역 일대(레일바이크 지점 미확정)",
+        "sources": [
+          "https://www.filecast.co.kr/www/contents/view/18034812/1/"
+        ],
+        "status": "pending",
+        "reason": "옛역 방문과 강촌레일파크 탑승은 별개. SBS 1128회 원본 확인"
+      },
+      {
+        "id": "U02",
+        "name": "의암호 카누(업체·승선장 미확정)",
+        "sources": [
+          "https://www.filecast.co.kr/www/contents/view/18034812/1/"
+        ],
+        "status": "pending",
+        "reason": "의암호 여부·업체·승선장 원본 대조. 물레길 업체 임의 연결 금지"
+      },
+      {
+        "id": "U03",
+        "name": "음악역1939 야외무대",
+        "sources": [
+          "https://music1939.gp.go.kr/board.php?code=event&month=5&year=2026",
+          "https://music1939.gp.go.kr/board-view.php?code=gallery&page=1&sq=4158"
+        ],
+        "status": "added",
+        "placeId": "music-station-1939"
+      },
+      {
+        "id": "U04",
+        "name": "SBS 등촌동 공개홀",
+        "sources": [
+          "https://commatv.tistory.com/28"
+        ],
+        "status": "pending",
+        "reason": "각 회차 실제 생방송 장소·건물 현황 확인. 일반 방송 스튜디오 제외의 기념 예외"
+      },
+      {
+        "id": "U05",
+        "name": "용인운전면허시험장",
+        "sources": [
+          "https://i-ruru.com/category/일상다반사?page=20"
+        ],
+        "status": "pending",
+        "reason": "남규리 기록만 재인용 확인. 세 멤버 같은 날 취득 주장은 미확인. 현재 시험장과 당시 장소 대조"
+      },
+      {
+        "id": "U06",
+        "name": "대전과학기술대학교",
+        "sources": [
+          "https://commatv.tistory.com/28"
+        ],
+        "status": "pending",
+        "reason": "주최 포스터·라인업·실제 출연·학내 무대 위치 확인. 캘린더 자동 등록 아님"
+      },
+      {
+        "id": "U07",
+        "name": "경희대학교 국제캠퍼스(모교 후보)",
+        "sources": [
+          "https://www.yna.co.kr/view/AKR20130819185700004",
+          "https://www.khupmm.ac.kr/학과소개-about"
+        ],
+        "status": "pending",
+        "reason": "서울캠퍼스 평화의전당에 모교 표시 금지. 당시 학과 캠퍼스 이력 최종 대조"
+      },
+      {
+        "id": "U08",
+        "name": "서울예술대학교",
+        "sources": [
+          "https://ridibooks.com/author/60363"
+        ],
+        "status": "pending",
+        "reason": "프로필 연도·학위 표기에 오류 가능. 공식 학력 및 재학 당시 캠퍼스 확인"
+      },
+      {
+        "id": "C02",
+        "name": "지역·지점 미상 · 온센",
+        "sources": [
+          "https://www.youtube.com/watch?v=EWxFYLtGRXc"
+        ],
+        "status": "pending",
+        "reason": "제목·URL 확보 수준. 식사 장면·지점 미확인. 2차 목록은 최초 2022-01-14, 재업로드 2022-09-20을 구분"
+      },
+      {
+        "id": "C03",
+        "name": "제주 · 이름 미상 고깃집",
+        "sources": [
+          "https://www.youtube.com/watch?v=_AbFDbCDAHI&t=828s"
+        ],
+        "status": "pending",
+        "reason": "상호·지점 미확인"
+      },
+      {
+        "id": "C04",
+        "name": "제주 · 이름 미상 망고빙수 카페",
+        "sources": [
+          "https://www.youtube.com/watch?v=05rfQa2tRYw&t=126s"
+        ],
+        "status": "pending",
+        "reason": "상호 미확인. 자동 자막의 ‘오늘 카페’를 상호로 확정하지 않음"
+      },
+      {
+        "id": "C05",
+        "name": "부산 · 이름 미상 브런치 식당",
+        "sources": [
+          "https://www.youtube.com/watch?v=p9M3n_ayuOw&t=285s"
+        ],
+        "status": "pending",
+        "reason": "상호·정확한 위치 미확인. 영상 설명상 여행은 2023년 6월"
+      },
+      {
+        "id": "C06",
+        "name": "부산 · 이름 미상 밀면집",
+        "sources": [
+          "https://www.youtube.com/watch?v=b8d3lpKFLrE&t=84s"
+        ],
+        "status": "pending",
+        "reason": "상호 미확인. 기존 ‘부산 출장 영상’ 단서를 식사 구간으로 구체화; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "C07",
+        "name": "부산 · 이름 미상 횟집",
+        "sources": [
+          "https://www.youtube.com/watch?v=b8d3lpKFLrE&t=689s"
+        ],
+        "status": "pending",
+        "reason": "상호 미확인. 뒤이어 광안리 산책을 했다는 이유로 지점 확정 불가; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "C08",
+        "name": "대구 · 이름 미상 막창집",
+        "sources": [
+          "https://www.youtube.com/watch?v=POheFIIwsqo&t=965s"
+        ],
+        "status": "pending",
+        "reason": "상호 미확인. 룰리커피 공연 장소와 식사 장소를 합치지 않음; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "C10",
+        "name": "서울 한남동 · 이름 미상 감자탕집",
+        "sources": [
+          "https://sports.khan.co.kr/article/202606160740003"
+        ],
+        "status": "pending",
+        "reason": "기사에 상호 없음. 영상·상호 연결 및 실제 주문 상세 확인 필요"
+      },
+      {
+        "id": "C11",
+        "name": "강원 춘천 · 이름 미상 닭갈비집",
+        "sources": [
+          "https://programs.sbs.co.kr/culture/theworld/vod/55119/22000527911"
+        ],
+        "status": "pending",
+        "reason": "공식 검색 결과 수준. 본문·방송일·상호·주소·식사 장면 미확인; 1127회 대신 1128회(2024-05-03) 가능성; SBS 공식 회차·상호 확인"
+      },
+      {
+        "id": "L01",
+        "name": "이보람 · 금돼지식당",
+        "sources": [
+          "https://www.kbsm.net/news/view.php?idx=243811"
+        ],
+        "status": "pending",
+        "reason": "원래 인스타 게시물 또는 읽을 수 있는 당시 기사·사진, 정확한 지점"
+      },
+      {
+        "id": "L02",
+        "name": "남규리 · 공간양",
+        "sources": [
+          "https://www.instagram.com/p/C96qju-vlGe/"
+        ],
+        "status": "added",
+        "placeId": "gonggan-yang"
+      },
+      {
+        "id": "L03",
+        "name": "김연지 · 유지카페",
+        "sources": [
+          "https://www.instagram.com/p/DMp6Hk-NB9N/"
+        ],
+        "status": "added",
+        "placeId": "yoozzy"
+      },
+      {
+        "id": "L04",
+        "name": "씨야 · 우리는 정육가든",
+        "sources": [
+          "https://www.instagram.com/p/DdP1wNekvfU/"
+        ],
+        "status": "added",
+        "placeId": "woorineun-suseong"
+      },
+      {
+        "id": "Q01",
+        "name": "석모도 글램핑장",
+        "sources": [
+          "https://www.youtube.com/watch?v=UHwGZGI-nyE"
+        ],
+        "status": "pending",
+        "reason": "캠핑장 상호·지점 확인; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "Q02",
+        "name": "부산 케이크 공방",
+        "sources": [
+          "https://sports.khan.co.kr/article/202605311414003"
+        ],
+        "status": "pending",
+        "reason": "공방 이름·주소·체험 판매 여부; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "Q03",
+        "name": "홍콩 치파오 대여점",
+        "sources": [
+          "https://sports.donga.com/ent/article/all/20260201/133273565/1"
+        ],
+        "status": "pending",
+        "reason": "상호·지점 확인. 유명 대여점으로 추정 금지"
+      },
+      {
+        "id": "Q04",
+        "name": "대형 서점",
+        "sources": [
+          "https://enews.imbc.com/News/RetrieveNewsInfo/502948"
+        ],
+        "status": "pending",
+        "reason": "서점명·지점 확인. 교보문고 추정 금지"
+      },
+      {
+        "id": "Q05",
+        "name": "테라리움 공방",
+        "sources": [
+          "https://tubemon.io/channel/UCz11CPccQ2AnizJrdp58Bog"
+        ],
+        "status": "pending",
+        "reason": "원본 URL·업장명·주소 확인. 치후 공방 연결 근거 없음"
+      },
+      {
+        "id": "Q06",
+        "name": "백그라운드 라이브 술집",
+        "sources": [
+          "https://www.youtube.com/watch?v=7AnevPm_sho"
+        ],
+        "status": "pending",
+        "reason": "상호·촬영 지점; 상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "Q07",
+        "name": "울산 언양불고기집",
+        "sources": [
+          "https://www.youtube.com/watch?v=WsyxwPl55wQ&t=511s"
+        ],
+        "status": "pending",
+        "reason": "상호·간판·메뉴판 대조"
+      },
+      {
+        "id": "Q08",
+        "name": "울산 바다·자갈 해변",
+        "sources": [
+          "https://www.youtube.com/watch?v=WsyxwPl55wQ&t=554s"
+        ],
+        "status": "pending",
+        "reason": "정확한 해변 확인. 울산 유명 해변 임의 연결 금지"
+      },
+      {
+        "id": "Q09",
+        "name": "2026 생일 서프라이즈 카페",
+        "sources": [
+          "https://v.daum.net/v/Zp8c6Sb0lu"
+        ],
+        "status": "pending",
+        "reason": "상호·행사일"
+      },
+      {
+        "id": "Q10",
+        "name": "나트랑 여행의 개별 장소",
+        "sources": [
+          "https://namu.moe/w/보람씨야"
+        ],
+        "status": "pending",
+        "reason": "원본 영상·숙소·점포명 확인"
+      },
+      {
+        "id": "Q11",
+        "name": "꽃카페·2026 생일카페",
+        "sources": [
+          "https://gall.dcinside.com/board/view/?id=seeya&no=234381&t=cv"
+        ],
+        "status": "pending",
+        "reason": "행사 주최 원문·상호·날짜. 예정과 실제 방문 구분"
+      },
+      {
+        "id": "R15",
+        "name": "그럼에도 우린 MV 돌산·채석장",
+        "sources": [],
+        "status": "pending",
+        "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "R16",
+        "name": "대구 도로변 버스킹 장소",
+        "sources": [],
+        "status": "pending",
+        "reason": "동성로 추정 금지. 기존 룰리커피 가창점 버스킹과 같은 공연인지 먼저 대조"
+      },
+      {
+        "id": "R21",
+        "name": "포천 바베큐 글램핑장",
+        "sources": [],
+        "status": "pending",
+        "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "R24",
+        "name": "오락실(사격·인형뽑기)",
+        "sources": [],
+        "status": "pending",
+        "reason": "기존 콤콤오락실과 동일 업체인지 미확인; 병합 금지"
+      },
+      {
+        "id": "R25",
+        "name": "돈가스 정돈(지점 미상)",
+        "sources": [],
+        "status": "pending",
+        "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "R26",
+        "name": "아우어 베이커리(지점 미상)",
+        "sources": [],
+        "status": "pending",
+        "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "R27",
+        "name": "세상을 바꾸는 여자들 공연장",
+        "sources": [],
+        "status": "pending",
+        "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+      },
+      {
+        "id": "R28",
+        "name": "THE FAN 제주 공연장",
+        "sources": [],
+        "status": "pending",
+        "reason": "공식 공연장 발표 전 지도 핀 및 좌표 생성 금지"
+      }
+    ]
+  }
 }
