@@ -147,13 +147,13 @@
       "description": "이보람 “아이 넷 낳는게 꿈, 씨야 계약운보다 혼인신고 선택”(귀묘한이야기2)[결정적장면] 뉴스엔"
     }
   ],
-  "updatedAt": "2026-10-07T06:04:01.182191+00:00",
-  "lastCheckedAt": "2026-10-07T06:04:01.182191+00:00",
+  "updatedAt": "2026-10-07T06:19:01.755314+00:00",
+  "lastCheckedAt": "2026-10-07T06:19:01.755314+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-07T06:04:01.182191+00:00",
-    "남규리": "2026-10-07T06:04:01.182191+00:00",
-    "김연지": "2026-10-07T06:04:01.182191+00:00",
-    "이보람": "2026-10-07T06:04:01.182191+00:00"
+    "씨야": "2026-10-07T06:19:01.755314+00:00",
+    "남규리": "2026-10-07T06:19:01.755314+00:00",
+    "김연지": "2026-10-07T06:19:01.755314+00:00",
+    "이보람": "2026-10-07T06:19:01.755314+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-07T06:04:01.182191+00:00",
@@ -165,23 +165,23 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 174,
-      "changed": true,
-      "status": "changed"
+      "accepted": 177,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 149,
-      "changed": true,
-      "status": "changed"
+      "accepted": 151,
+      "changed": false,
+      "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 23,
-      "changed": true,
-      "status": "changed"
+      "accepted": 25,
+      "changed": false,
+      "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
