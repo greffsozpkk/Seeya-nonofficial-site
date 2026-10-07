@@ -137,7 +137,8 @@
         "url": "https://www.youtube.com/watch?v=8-F71B_u754&t=761s",
         "status": "workbook-timestamp",
         "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
-      }
+      },
+      "recordId": "20260531-seeya-baekban"
     },
     {
       "id": "baekhap",
@@ -175,7 +176,8 @@
         "url": "https://www.youtube.com/watch?v=8-F71B_u754&t=1683s",
         "status": "workbook-timestamp",
         "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
-      }
+      },
+      "recordId": "20260531-seeya-baekban"
     },
     {
       "id": "chowon",
@@ -213,7 +215,8 @@
         "url": "https://www.youtube.com/watch?v=8-F71B_u754&t=2790s",
         "status": "workbook-timestamp",
         "note": "원본 영상에 연결된 추가 탐색 시점. 자동 방문일 보정에 사용하지 않음."
-      }
+      },
+      "recordId": "20260531-seeya-baekban"
     },
     {
       "id": "byeongang",
@@ -890,7 +893,8 @@
         35.8127621,
         126.4127468
       ],
-      "coordinateSource": "https://www.diningcode.com/profile.php?rid=NX4hvOAqF4TE"
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=NX4hvOAqF4TE",
+      "archiveExclusion": "방문 사진·사인 전시를 소개한 블로그만 확인되어 실제 방문 시점과 원본을 특정할 수 없음. 블로그 게시일을 멤버 방문일로 사용하지 않음."
     },
     {
       "id": "fingers-hotdog",
@@ -1283,7 +1287,8 @@
       ],
       "researchRefs": [
         "P01"
-      ]
+      ],
+      "recordId": "v475-sheet2-row31"
     },
     {
       "id": "about-project-jamsil",
@@ -1567,7 +1572,8 @@
       "note": "",
       "researchRefs": [
         "A13"
-      ]
+      ],
+      "recordId": "v4145-_AbFDbCDAHI"
     },
     {
       "id": "dosan-butcher",
@@ -1599,7 +1605,8 @@
       "note": "게시물 공개일 기준입니다. 도산정육 블랙 등 다른 지점과 구분합니다.",
       "researchRefs": [
         "B05"
-      ]
+      ],
+      "recordId": "20240906-yeonji-dosan-photo"
     },
     {
       "id": "yoozzy",
@@ -1636,7 +1643,8 @@
       "note": "",
       "researchRefs": [
         "L03"
-      ]
+      ],
+      "recordId": "20250728-yeonji-yoozzy-live"
     },
     {
       "id": "gonggan-yang",
@@ -1673,7 +1681,8 @@
       "note": "",
       "researchRefs": [
         "L02"
-      ]
+      ],
+      "recordId": "20240727-gyuri-gonggan-photo"
     },
     {
       "id": "woorineun-suseong",
@@ -1708,7 +1717,8 @@
       "group": "씨야",
       "researchRefs": [
         "L04"
-      ]
+      ],
+      "recordId": "20260914-seeya-woorineun-photo"
     },
     {
       "id": "ikcoffee-historic",
@@ -1747,7 +1757,8 @@
       "closedAt": "2026-07-20",
       "researchRefs": [
         "N23"
-      ]
+      ],
+      "recordId": "20240215-boram-birthday-fancafe"
     },
     {
       "id": "edls",
@@ -1820,7 +1831,8 @@
       "locationPrecision": "area",
       "researchRefs": [
         "N02"
-      ]
+      ],
+      "recordId": "20260312-reunion-announced"
     },
     {
       "id": "haeundae-busking",
@@ -1863,7 +1875,8 @@
       "locationPrecision": "area",
       "researchRefs": [
         "N03"
-      ]
+      ],
+      "recordId": "v4145-c8NnJNnkvt0"
     },
     {
       "id": "gwangalli",
@@ -1901,7 +1914,8 @@
       "locationPrecision": "area",
       "researchRefs": [
         "N04"
-      ]
+      ],
+      "recordId": "v4145-b8d3lpKFLrE"
     },
     {
       "id": "gukje-market",
@@ -1934,7 +1948,8 @@
       "locationPrecision": "area",
       "researchRefs": [
         "N05"
-      ]
+      ],
+      "recordId": "v488-audit-046"
     },
     {
       "id": "bupyeong-market",
@@ -1967,7 +1982,8 @@
       "locationPrecision": "area",
       "researchRefs": [
         "N06"
-      ]
+      ],
+      "recordId": "v488-audit-046"
     },
     {
       "id": "gocheok-skydome",
@@ -2045,7 +2061,8 @@
       "researchRefs": [
         "N10"
       ],
-      "locality": "홍콩 침사추이"
+      "locality": "홍콩 침사추이",
+      "recordId": "v4145-5CD4IThQet0"
     },
     {
       "id": "cheonjiyeon",
@@ -2078,7 +2095,8 @@
       "locationPrecision": "area",
       "researchRefs": [
         "N15"
-      ]
+      ],
+      "recordId": "v4145-05rfQa2tRYw"
     },
     {
       "id": "yeonjuam",
@@ -2113,7 +2131,8 @@
         }
       ],
       "note": "",
-      "locationPrecision": "area"
+      "locationPrecision": "area",
+      "recordId": "v4145-HQQl-3OPp0U"
     },
     {
       "id": "yeonjudae",
@@ -2148,7 +2167,8 @@
         }
       ],
       "note": "산 정상 구역의 대표 위치입니다. 산행 경로·기상·탐방 안내를 확인해 주세요.",
-      "locationPrecision": "area"
+      "locationPrecision": "area",
+      "recordId": "v4145-HQQl-3OPp0U"
     },
     {
       "id": "dcube-historic",
@@ -2493,7 +2513,8 @@
       ],
       "researchRefs": [
         "L01"
-      ]
+      ],
+      "recordId": "20190120-boram-geumdwaeji-photo"
     },
     {
       "id": "ict-valley-floria",
@@ -2557,7 +2578,8 @@
       ],
       "researchRefs": [
         "U01"
-      ]
+      ],
+      "recordId": "20240503-gyuri-sbs-chuncheon"
     },
     {
       "id": "uiam-lake",
@@ -2589,7 +2611,8 @@
         "U02"
       ],
       "locationPrecision": "area",
-      "note": "호수의 대표 위치입니다. 방송에 나온 카누 업체와 승선장은 아직 확인되지 않았습니다."
+      "note": "호수의 대표 위치입니다. 방송에 나온 카누 업체와 승선장은 아직 확인되지 않았습니다.",
+      "recordId": "20240503-gyuri-sbs-chuncheon"
     }
   ],
   "researchQueue": [
@@ -4168,6 +4191,392 @@
         "sources": [],
         "status": "pending",
         "reason": "공식 공연장 발표 전 지도 핀 및 좌표 생성 금지"
+      }
+    ]
+  },
+  "archiveAudit": {
+    "checkedAt": "2026-10-08",
+    "rows": [
+      {
+        "placeId": "khu-grand-peace-palace",
+        "recordId": "20260829-the-fan-seoul",
+        "status": "existing"
+      },
+      {
+        "placeId": "kbs-busan-hall",
+        "recordId": "20260905-the-fan-busan",
+        "status": "existing"
+      },
+      {
+        "placeId": "exco-west",
+        "recordId": "20260912-the-fan-daegu",
+        "status": "existing"
+      },
+      {
+        "placeId": "kintex-second",
+        "recordId": "20261004-the-fan-goyang",
+        "status": "existing"
+      },
+      {
+        "placeId": "cju-seokwoo",
+        "recordId": "20261010-the-fan-cheongju",
+        "status": "existing"
+      },
+      {
+        "placeId": "khu-seonseung",
+        "recordId": "20261017-the-fan-suwon",
+        "status": "existing"
+      },
+      {
+        "placeId": "namdong-gymnasium",
+        "recordId": "20261031-the-fan-incheon",
+        "status": "existing"
+      },
+      {
+        "placeId": "aengdu",
+        "recordId": "20260531-seeya-baekban",
+        "status": "linked"
+      },
+      {
+        "placeId": "baekhap",
+        "recordId": "20260531-seeya-baekban",
+        "status": "linked"
+      },
+      {
+        "placeId": "chowon",
+        "recordId": "20260531-seeya-baekban",
+        "status": "linked"
+      },
+      {
+        "placeId": "byeongang",
+        "recordId": "v4145-NIeNbStvYa0",
+        "status": "existing"
+      },
+      {
+        "placeId": "maboklim",
+        "recordId": "v4145-NIeNbStvYa0",
+        "status": "existing"
+      },
+      {
+        "placeId": "yupdduk",
+        "recordId": "v4145-NIeNbStvYa0",
+        "status": "existing"
+      },
+      {
+        "placeId": "mother",
+        "recordId": "v488-audit-041",
+        "status": "existing"
+      },
+      {
+        "placeId": "choding",
+        "recordId": "v488-audit-041",
+        "status": "existing"
+      },
+      {
+        "placeId": "ijinri",
+        "recordId": "v488-audit-041",
+        "status": "existing"
+      },
+      {
+        "placeId": "grandma-sister",
+        "recordId": "20261004-the-fan-goyang",
+        "status": "existing"
+      },
+      {
+        "placeId": "gogichanggo",
+        "recordId": "20261004-the-fan-goyang",
+        "status": "existing"
+      },
+      {
+        "placeId": "dowon",
+        "recordId": "20261004-the-fan-goyang",
+        "status": "existing"
+      },
+      {
+        "placeId": "kitsuki",
+        "recordId": "20261004-the-fan-goyang",
+        "status": "existing"
+      },
+      {
+        "placeId": "hibi",
+        "recordId": "20261004-the-fan-goyang",
+        "status": "existing"
+      },
+      {
+        "placeId": "thailicious",
+        "recordId": "20261004-the-fan-goyang",
+        "status": "existing"
+      },
+      {
+        "placeId": "elephant",
+        "recordId": "20261010-the-fan-cheongju",
+        "status": "existing"
+      },
+      {
+        "placeId": "pyeonbaek",
+        "recordId": "20261010-the-fan-cheongju",
+        "status": "existing"
+      },
+      {
+        "placeId": "dalma",
+        "recordId": "20261010-the-fan-cheongju",
+        "status": "existing"
+      },
+      {
+        "placeId": "stonefalls",
+        "recordId": "20261010-the-fan-cheongju",
+        "status": "existing"
+      },
+      {
+        "placeId": "ohji",
+        "recordId": "20261010-the-fan-cheongju",
+        "status": "existing"
+      },
+      {
+        "placeId": "seohae",
+        "recordId": null,
+        "status": "map-only",
+        "reason": "방문 사진·사인 전시를 소개한 블로그만 확인되어 실제 방문 시점과 원본을 특정할 수 없음. 블로그 게시일을 멤버 방문일로 사용하지 않음."
+      },
+      {
+        "placeId": "fingers-hotdog",
+        "recordId": "v4145-60dNYPs5RJ4",
+        "status": "existing"
+      },
+      {
+        "placeId": "pongdang-ramyeon",
+        "recordId": "v4145-60dNYPs5RJ4",
+        "status": "existing"
+      },
+      {
+        "placeId": "eq-table",
+        "recordId": "v4145-60dNYPs5RJ4",
+        "status": "existing"
+      },
+      {
+        "placeId": "chunmihyang",
+        "recordId": "v4145-jVCa6jPn3JA",
+        "status": "existing"
+      },
+      {
+        "placeId": "jeopjjak",
+        "recordId": "v4145-jVCa6jPn3JA",
+        "status": "existing"
+      },
+      {
+        "placeId": "dufore-jeju",
+        "recordId": "v4145-jVCa6jPn3JA",
+        "status": "existing"
+      },
+      {
+        "placeId": "geumak-noodles",
+        "recordId": "v4145-pmhw1lyc0M4",
+        "status": "existing"
+      },
+      {
+        "placeId": "innisfree-jeju",
+        "recordId": "v4145-pmhw1lyc0M4",
+        "status": "existing"
+      },
+      {
+        "placeId": "mippeun-bakery",
+        "recordId": "v4145-pmhw1lyc0M4",
+        "status": "existing"
+      },
+      {
+        "placeId": "joyang-bangjik",
+        "recordId": "v4145-UHwGZGI-nyE",
+        "status": "existing"
+      },
+      {
+        "placeId": "rully-gachang",
+        "recordId": "v475-sheet2-row31",
+        "status": "linked"
+      },
+      {
+        "placeId": "about-project-jamsil",
+        "recordId": "v4145-frUkQQcK6iQ",
+        "status": "existing"
+      },
+      {
+        "placeId": "geum-oreum",
+        "recordId": "v4145-pmhw1lyc0M4",
+        "status": "existing"
+      },
+      {
+        "placeId": "isidore-farm",
+        "recordId": "v4145-pmhw1lyc0M4",
+        "status": "existing"
+      },
+      {
+        "placeId": "sinchang-coast",
+        "recordId": "v4145-60dNYPs5RJ4",
+        "status": "existing"
+      },
+      {
+        "placeId": "ulsan-art-museum",
+        "recordId": "v4145-WsyxwPl55wQ",
+        "status": "existing"
+      },
+      {
+        "placeId": "dongmyo-area",
+        "recordId": "v4145-D2g3gaQdqVI",
+        "status": "existing"
+      },
+      {
+        "placeId": "apgujeong-haru",
+        "recordId": "v4145-DEEQmmrQLgs",
+        "status": "existing"
+      },
+      {
+        "placeId": "jungmun-byeoljang",
+        "recordId": "v4145-_AbFDbCDAHI",
+        "status": "linked"
+      },
+      {
+        "placeId": "dosan-butcher",
+        "recordId": "20240906-yeonji-dosan-photo",
+        "status": "added"
+      },
+      {
+        "placeId": "yoozzy",
+        "recordId": "20250728-yeonji-yoozzy-live",
+        "status": "added"
+      },
+      {
+        "placeId": "gonggan-yang",
+        "recordId": "20240727-gyuri-gonggan-photo",
+        "status": "added"
+      },
+      {
+        "placeId": "woorineun-suseong",
+        "recordId": "20260914-seeya-woorineun-photo",
+        "status": "added"
+      },
+      {
+        "placeId": "ikcoffee-historic",
+        "recordId": "20240215-boram-birthday-fancafe",
+        "status": "added"
+      },
+      {
+        "placeId": "edls",
+        "recordId": "20260330-rebloom-fanmeeting",
+        "status": "existing"
+      },
+      {
+        "placeId": "express-bus-terminal-fan-ad",
+        "recordId": "20260312-reunion-announced",
+        "status": "linked"
+      },
+      {
+        "placeId": "haeundae-busking",
+        "recordId": "v4145-c8NnJNnkvt0",
+        "status": "linked"
+      },
+      {
+        "placeId": "gwangalli",
+        "recordId": "v4145-b8d3lpKFLrE",
+        "status": "linked"
+      },
+      {
+        "placeId": "gukje-market",
+        "recordId": "v488-audit-046",
+        "status": "linked"
+      },
+      {
+        "placeId": "bupyeong-market",
+        "recordId": "v488-audit-046",
+        "status": "linked"
+      },
+      {
+        "placeId": "gocheok-skydome",
+        "recordId": "20260405-gyuri-first-pitch",
+        "status": "existing"
+      },
+      {
+        "placeId": "avenue-of-stars",
+        "recordId": "v4145-5CD4IThQet0",
+        "status": "linked"
+      },
+      {
+        "placeId": "cheonjiyeon",
+        "recordId": "v4145-05rfQa2tRYw",
+        "status": "linked"
+      },
+      {
+        "placeId": "yeonjuam",
+        "recordId": "v4145-HQQl-3OPp0U",
+        "status": "linked"
+      },
+      {
+        "placeId": "yeonjudae",
+        "recordId": "v4145-HQQl-3OPp0U",
+        "status": "linked"
+      },
+      {
+        "placeId": "dcube-historic",
+        "recordId": "v490-marie-press",
+        "status": "existing"
+      },
+      {
+        "placeId": "seongam-hall",
+        "recordId": "v491-lux",
+        "status": "existing"
+      },
+      {
+        "placeId": "smtown-theater-historic",
+        "recordId": "v490-hug2019",
+        "status": "existing"
+      },
+      {
+        "placeId": "sh-art-hall",
+        "recordId": "v490-boramhada",
+        "status": "existing"
+      },
+      {
+        "placeId": "bongsan-gaon",
+        "recordId": "v490-daegu2017",
+        "status": "existing"
+      },
+      {
+        "placeId": "sungshin-unjeong",
+        "recordId": "v491-still-singing",
+        "status": "existing"
+      },
+      {
+        "placeId": "busan-cinema-haneul",
+        "recordId": "20260502-boram-sparkle-busan",
+        "status": "existing"
+      },
+      {
+        "placeId": "music-station-1939",
+        "recordId": "v487-2026-008",
+        "status": "existing"
+      },
+      {
+        "placeId": "hannam-gamjatang",
+        "recordId": "v475-sheet2-row17",
+        "status": "existing"
+      },
+      {
+        "placeId": "geumdwaeji-sikdang",
+        "recordId": "20190120-boram-geumdwaeji-photo",
+        "status": "added"
+      },
+      {
+        "placeId": "ict-valley-floria",
+        "recordId": "20261009-boram-worldmom-yongin",
+        "status": "existing"
+      },
+      {
+        "placeId": "old-kim-you-jeong-station",
+        "recordId": "20240503-gyuri-sbs-chuncheon",
+        "status": "added"
+      },
+      {
+        "placeId": "uiam-lake",
+        "recordId": "20240503-gyuri-sbs-chuncheon",
+        "status": "added"
       }
     ]
   }

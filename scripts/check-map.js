@@ -75,3 +75,34 @@ assert.equal(allRows.find(p=>p.id==='geumdwaeji-sikdang').dateBasis,'SNS 게시�
 assert(cards([allRows.find(p=>p.id==='ict-valley-floria')]).includes('공연 예정'));
 assert(!detail(allRows.find(p=>p.id==='uiam-lake')).includes('link/to/'));
 assert.equal(review.filter(r=>r.status==='pending').length,50);
+
+// Every map place must have an archive disposition; multiple locations may share one broadcast.
+assert.equal(config.archiveAudit.rows.length, config.places.length);
+assert.equal(new Set(config.archiveAudit.rows.map(r=>r.placeId)).size,config.places.length);
+for(const p of config.places){
+ const audit=config.archiveAudit.rows.find(r=>r.placeId===p.id);
+ assert(audit,'Missing archive audit: '+p.id);
+ const id=p.relatedRecordId||p.recordId;
+ assert.equal(audit.recordId,id||null);
+ if(id) assert(archive.some(r=>r.id===id),'Unresolved archive record: '+p.id);
+ else assert(p.archiveExclusion&&audit.status==='map-only','Unexplained archive omission: '+p.id);
+}
+assert.equal(config.archiveAudit.rows.filter(r=>r.status==='map-only').length,1);
+const station=allRows.find(p=>p.id==='old-kim-you-jeong-station'),lake=allRows.find(p=>p.id==='uiam-lake');
+assert.equal(station.recordId,lake.recordId);
+const trip=archive.find(r=>r.id===station.recordId);
+assert.equal(trip.date,'2024-05-03');assert.equal(trip.dateBasis,'broadcast');
+assert(trip.note.includes('김유정역')&&trip.note.includes('의암호'));
+assert(detail(station).includes('/archive/?record='+trip.id));
+assert(!html.includes('archiveAudit'));assert(!html.includes('archiveExclusion'));
+const batch=json('src/data/archive-content-updates.json').find(b=>b.id==='archive-2026-10-08-map-reverse-audit');
+assert.equal(batch.additions.length,7);
+for(const r of batch.additions){
+ assert(archive.some(a=>a.id===r.id));
+ if(r.source.url.includes('instagram.com')&&!r.title.includes('팬 카페'))assert.equal(r.dateBasis,'post-published');
+}
+const fan=archive.find(r=>r.id==='20240215-boram-birthday-fancafe');
+assert.equal(fan.calendar.enabled,false);assert(fan.note.includes('직접 참석을 뜻하지'));
+const rully=archive.find(r=>r.id==='v475-sheet2-row31');assert.equal(rully.venue,'룰리커피 가창점');
+assert.equal(rully.date,'2026-06-28');assert.equal(rully.dateBasis,'event');
+console.log('PASS: all 76 map archive dispositions, single Chuncheon broadcast, seven additions and evidence date distinctions.');

@@ -1853,5 +1853,429 @@
       "20261225-boram-six-2030",
       "20261227-boram-six-1500"
     ]
+  },
+  {
+    "id": "archive-2026-10-08-map-reverse-audit",
+    "checkedAt": "2026-10-08",
+    "additions": [
+      {
+        "id": "20240503-gyuri-sbs-chuncheon",
+        "date": "2024-05-03",
+        "addedAt": "2026-10-08",
+        "updatedAt": "2026-10-08",
+        "title": "남규리 · 세상에서 가장 아름다운 여행 1127회 · 춘천",
+        "program": "세상에서 가장 아름다운 여행 1127회",
+        "type": "variety",
+        "members": [
+          "남규리"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "SBS · 1127회 공식 다시보기",
+          "url": "https://programs.sbs.co.kr/culture/theworld/vod/55119/22000527911"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "broadcast",
+        "venue": "옛 김유정역",
+        "tags": [
+          "2024",
+          "방송 방문"
+        ],
+        "note": "남규리가 춘천을 여행한 SBS 방송입니다.\n옛 김유정역의 객차와 대합실을 둘러보고, 의암호에서는 삼악산을 배경으로 카누를 타며 노래했습니다.\n2024년 5월 3일 방송일 기준입니다.",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20240906-yeonji-dosan-photo",
+        "date": "2024-09-06",
+        "addedAt": "2026-10-08",
+        "updatedAt": "2026-10-08",
+        "title": "김연지 · 도산정육 본점 방문 사진",
+        "program": "",
+        "type": "etc",
+        "members": [
+          "김연지"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "도산정육 · 김연지 방문 게시물",
+          "url": "https://www.instagram.com/p/C_j0vdFyaa4/"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "venue": "도산정육 본점",
+        "tags": [
+          "2024",
+          "방문 사진"
+        ],
+        "note": "도산정육 매장 계정에서 김연지의 방문 사진과 감사 인사를 공개했습니다.\n날짜는 매장 게시일이며 실제 방문일은 확인되지 않았습니다.",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20250728-yeonji-yoozzy-live",
+        "date": "2025-07-28",
+        "addedAt": "2026-10-08",
+        "updatedAt": "2026-10-08",
+        "title": "김연지 · 유지카페 라이브 방송·미니 라디오 후기",
+        "program": "",
+        "type": "etc",
+        "members": [
+          "김연지"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "김연지 · 라이브 방송 후기",
+          "url": "https://www.instagram.com/p/DMp6Hk-NB9N/"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "venue": "유지카페",
+        "tags": [
+          "2025",
+          "촬영지"
+        ],
+        "note": "김연지가 유지카페에서 진행한 라이브 방송·미니 라디오의 후기를 남겼습니다.\n장소를 제공한 에반에게 감사 인사를 전했습니다.\n날짜는 후기 게시일 기준입니다.",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20240727-gyuri-gonggan-photo",
+        "date": "2024-07-27",
+        "addedAt": "2026-10-08",
+        "updatedAt": "2026-10-08",
+        "title": "남규리 · 공간양 방문 사진",
+        "program": "",
+        "type": "etc",
+        "members": [
+          "남규리"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "공간양 · 남규리 방문 게시물",
+          "url": "https://www.instagram.com/p/C96qju-vlGe/"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "venue": "공간양",
+        "tags": [
+          "2024",
+          "방문 사진"
+        ],
+        "note": "공간양 매장 계정에서 남규리의 방문을 반기는 게시물을 공개했습니다.\n날짜는 매장 게시일이며 실제 방문일은 확인되지 않았습니다.",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20260914-seeya-woorineun-photo",
+        "date": "2026-09-14",
+        "addedAt": "2026-10-08",
+        "updatedAt": "2026-10-08",
+        "title": "씨야 · 우리는 정육가든 수성구점 방문 사진",
+        "program": "",
+        "type": "etc",
+        "members": [
+          "남규리",
+          "김연지",
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "우리는 정육가든 · 씨야 방문 사진",
+          "url": "https://www.instagram.com/p/DdP1wNekvfU/"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "venue": "우리는 정육가든 수성구점",
+        "tags": [
+          "2026",
+          "방문 사진"
+        ],
+        "note": "우리는 정육가든 수성구점에서 씨야 세 멤버의 방문 사진과 감사 인사를 공개했습니다.\n2026년 9월 14일은 매장 게시일이며 실제 식사 날짜와 구분합니다.",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20240215-boram-birthday-fancafe",
+        "date": "2024-02-15",
+        "addedAt": "2026-10-08",
+        "updatedAt": "2026-10-08",
+        "title": "이보람 생일 기념 팬 카페 · 익커피 홍대점",
+        "program": "이보람 생일 팬 카페",
+        "type": "etc",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "팬 생일 카페 · 행사 안내",
+          "url": "https://www.instagram.com/p/C1tEK2vrKOF/"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "event",
+        "venue": "익커피 홍대점 · 과거 행사",
+        "tags": [
+          "2024",
+          "팬 행사"
+        ],
+        "note": "2024년 2월 15일부터 18일까지 익커피 홍대점에서 열린 이보람 생일 기념 팬 행사입니다.\n팬들이 마련한 축하 행사이며 이보람의 직접 참석을 뜻하지 않습니다.",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20190120-boram-geumdwaeji-photo",
+        "date": "2019-01-20",
+        "addedAt": "2026-10-08",
+        "updatedAt": "2026-10-08",
+        "title": "이보람 · 금돼지식당 방문 사진",
+        "program": "",
+        "type": "etc",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "경북신문 · 이보람 SNS 사진 소개",
+          "url": "https://www.kbsm.net/news/view.php?idx=243811",
+          "publishedDate": "2019-06-02"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "venue": "금돼지식당",
+        "tags": [
+          "2019",
+          "방문 사진"
+        ],
+        "note": "이보람이 금돼지식당에서 찍은 사진을 SNS에 남겼습니다.\n2019년 6월 2일 기사에서 같은 해 1월 20일 게시물과 매장 해시태그를 소개했습니다.\n날짜는 기사에서 확인한 SNS 게시일이며 실제 식사 날짜와 다를 수 있습니다.",
+        "calendar": {
+          "enabled": false
+        }
+      }
+    ],
+    "updates": [
+      {
+        "id": "20260531-seeya-baekban",
+        "sources": [
+          {
+            "label": "TV CHOSUN · 350회 식당 안내",
+            "url": "https://broadcast.tvchosun.com/broadcast/program/3/C201900033/bbs/8663/C201900033_7/713792.cstv"
+          },
+          {
+            "label": "TV CHOSUN · 350회 식당 안내",
+            "url": "https://broadcast.tvchosun.com/broadcast/program/3/C201900033/bbs/8663/C201900033_7/713792.cstv"
+          },
+          {
+            "label": "TV CHOSUN · 350회 식당 안내",
+            "url": "https://broadcast.tvchosun.com/broadcast/program/3/C201900033/bbs/8663/C201900033_7/713792.cstv"
+          }
+        ],
+        "noteAppend": "성남 방문 장소는 앵두나무집·백합식당·초원갈매기살입니다.\n묵 요리, 백합·갑오징어 요리, 갈매기살을 소개했습니다."
+      },
+      {
+        "id": "v4145-_AbFDbCDAHI",
+        "sources": [
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.youtube.com/watch?v=_AbFDbCDAHI&t=649s"
+          }
+        ],
+        "noteAppend": "제주 여행 중 중문별장을 방문한 장면이 포함되어 있습니다."
+      },
+      {
+        "id": "v4145-b8d3lpKFLrE",
+        "sources": [
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.youtube.com/watch?v=b8d3lpKFLrE"
+          }
+        ],
+        "noteAppend": "부산 출장과 이보람 콘서트 방문을 담은 영상으로, 광안리해변에서의 장면이 포함되어 있습니다."
+      },
+      {
+        "id": "v488-audit-046",
+        "sources": [
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.youtube.com/watch?v=ytKnBh5tA30"
+          },
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.youtube.com/watch?v=ytKnBh5tA30"
+          }
+        ],
+        "noteAppend": "부산 국제시장과 부평깡통시장을 돌아보며 콘서트를 홍보한 영상입니다."
+      },
+      {
+        "id": "v4145-5CD4IThQet0",
+        "sources": [
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.youtube.com/watch?v=5CD4IThQet0"
+          }
+        ],
+        "noteAppend": "홍콩 스타의 거리와 이소룡 동상 앞 방문 장면이 포함되어 있습니다."
+      },
+      {
+        "id": "v4145-05rfQa2tRYw",
+        "sources": [
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.youtube.com/watch?v=05rfQa2tRYw"
+          }
+        ],
+        "noteAppend": "제주 여행 중 천지연폭포 방문 장면이 포함되어 있습니다."
+      },
+      {
+        "id": "v4145-HQQl-3OPp0U",
+        "sources": [
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.youtube.com/watch?v=HQQl-3OPp0U"
+          },
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.youtube.com/watch?v=HQQl-3OPp0U"
+          }
+        ],
+        "noteAppend": "관악산 산행 중 연주암과 연주대를 찾았습니다."
+      },
+      {
+        "id": "v4145-c8NnJNnkvt0",
+        "sources": [
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02896246645451872"
+          }
+        ],
+        "noteAppend": "영상에 담긴 해운대해수욕장 버스킹은 2026년 5월 22일 오후 6시 30분에 진행됐습니다.\n카드 날짜는 영상 공개일을 유지합니다."
+      },
+      {
+        "id": "20260312-reunion-announced",
+        "sources": [
+          {
+            "label": "관련 기록 원문",
+            "url": "https://www.mk.co.kr/news/entertain/11987327"
+          }
+        ],
+        "noteAppend": "데뷔 20주년인 2026년 3월 12일, 세 멤버가 고속터미널역의 팬 광고를 함께 찾아 기념사진을 남겼습니다."
+      },
+      {
+        "id": "v475-sheet2-row31",
+        "sources": [
+          {
+            "label": "룰리커피 · 버스킹 개최 결과 보도자료",
+            "url": "https://www.newswire.co.kr/newsRead.php?no=1037581"
+          }
+        ],
+        "noteAppend": "",
+        "correction": {
+          "sourceUrl": "https://www.youtube.com/watch?v=xBmjJGAYa7A",
+          "expected": {
+            "title": "남규리 · 대구 롤리버스킹",
+            "program": "남규리 롤리버스킹",
+            "venue": "롤리커피 가창점",
+            "dateBasis": "schedule",
+            "note": "6월 28일 대구에서 진행한 남규리의 롤리버스킹입니다."
+          },
+          "values": {
+            "title": "남규리 · 대구 룰리버스킹",
+            "program": "남규리 룰리버스킹",
+            "venue": "룰리커피 가창점",
+            "dateBasis": "event",
+            "note": "2026년 6월 28일 룰리커피 가창점에서 진행한 남규리의 룰리버스킹입니다.\n매장 주최 보도자료와 현장 영상을 함께 연결합니다."
+          }
+        }
+      },
+      {
+        "id": "20261004-the-fan-goyang",
+        "sources": [
+          {
+            "label": "외할머니 여동생 레스토랑 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+          },
+          {
+            "label": "더고기창고 원마운트점 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+          },
+          {
+            "label": "도원반점 킨텍스원시티점 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+          },
+          {
+            "label": "키츠키 일산 밤리단길점 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+          },
+          {
+            "label": "히비하레바레 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/Ddi6qZCGkuW/"
+          },
+          {
+            "label": "타이리셔스 현대백화점 킨텍스점 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/Dd8iPlXn7gV/"
+          }
+        ],
+        "noteAppend": "공연 당시 관람객 혜택 참여 매장: 외할머니 여동생 레스토랑·더고기창고 원마운트점·도원반점 킨텍스원시티점·키츠키 일산 밤리단길점·히비하레바레·타이리셔스 현대백화점 킨텍스점.\n멤버 방문 기록이 아닌 티켓 소지자 대상 혜택 안내입니다. 적용 기간과 조건은 각 안내 원문을 확인해 주세요."
+      },
+      {
+        "id": "20261010-the-fan-cheongju",
+        "sources": [
+          {
+            "label": "엘리펀트 테라스 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+          },
+          {
+            "label": "편백사부 청주율량점 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+          },
+          {
+            "label": "달마설렁탕숯불갈비 율량점 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+          },
+          {
+            "label": "스톤폴스 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+          },
+          {
+            "label": "오지 · 관람객 혜택 안내",
+            "url": "https://www.instagram.com/p/DeJbs1QmoQQ/c/18079037348442654/"
+          }
+        ],
+        "noteAppend": "공연 관람객 혜택 참여 매장: 엘리펀트 테라스·편백사부 청주율량점·달마설렁탕숯불갈비 율량점·스톤폴스·오지.\n멤버 방문 기록이 아닌 티켓 소지자 대상 혜택 안내입니다. 적용 기간과 조건은 각 안내 원문을 확인해 주세요."
+      }
+    ]
   }
 ]

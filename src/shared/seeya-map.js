@@ -3,7 +3,7 @@ const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;
 const link=(url,label)=>/^https?:\/\//.test(url||'')?`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)} ↗</a>`:'';
 function resolvePlaces(config,archive){
  const byId=new Map(archive.map(row=>[row.id,row]));
- return config.places.flatMap(place=>{
+ return config.places.flatMap(({archiveExclusion,...place})=>{
   const row=byId.get(place.recordId);
   // Concert metadata stays joined to the archive. Other places retain their own identity.
   if(!place.name&&(!row||row.hidden||row.mergedInto))return [];
