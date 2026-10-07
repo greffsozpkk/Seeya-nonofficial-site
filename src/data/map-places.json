@@ -2424,6 +2424,172 @@
       "researchRefs": [
         "U03"
       ]
+    },
+    {
+      "id": "hannam-gamjatang",
+      "name": "한남동감자탕 본점",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "식당",
+      "date": "2026-06-16",
+      "dateBasis": "영상 게시일",
+      "address": "서울특별시 용산구 대사관로 73 1층",
+      "coordinates": [
+        37.5335499,
+        127.0061771
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.youtube.com/watch?v=yjANRRS1t5w&t=883s"
+      },
+      "addressSource": "https://www.tabling.co.kr/restaurant/6637",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=zOC1dHqy1drF",
+      "story": "씨야가 아카라카 무대를 마친 뒤 함께 감자탕과 볶음밥을 먹은 곳입니다.\n스튜디오 수제 ‘간절한입’ 씨야 편에서 남규리의 10년 단골 맛집으로 소개되었습니다. 날짜는 방문일이 아닌 영상 공개일입니다.",
+      "relations": [
+        "영상 방문"
+      ],
+      "researchRefs": [
+        "C10"
+      ],
+      "group": "씨야",
+      "recordId": "v475-sheet2-row17",
+      "evidence": [
+        {
+          "label": "영상 속 식당·방문 구간 대조",
+          "url": "https://gajagoapp.com/channel/스튜디오-수제"
+        }
+      ]
+    },
+    {
+      "id": "geumdwaeji-sikdang",
+      "name": "금돼지식당",
+      "members": [
+        "이보람"
+      ],
+      "city": "서울",
+      "region": "서울",
+      "category": "식당",
+      "date": "2019-01-20",
+      "dateBasis": "SNS 게시일 · 기사 확인",
+      "address": "서울특별시 중구 다산로 149",
+      "coordinates": [
+        37.55705,
+        127.01165
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://www.kbsm.net/news/view.php?idx=243811"
+      },
+      "addressSource": "https://guide.michelin.com/kr/ko/seoul-capital-area/kr-seoul/restaurant/geumdwaeji-sikdang",
+      "coordinateSource": "https://guide.michelin.com/kr/ko/seoul-capital-area/kr-seoul/restaurant/geumdwaeji-sikdang",
+      "story": "이보람이 금돼지식당에서 찍은 사진을 SNS에 남긴 기록입니다.\n2019년 6월 2일 기사에서 같은 해 1월 20일 게시물과 매장 해시태그를 인용했습니다. 표기 날짜는 SNS 게시일이며 실제 식사 날짜와 다를 수 있습니다.",
+      "relations": [
+        "방문 사진"
+      ],
+      "researchRefs": [
+        "L01"
+      ]
+    },
+    {
+      "id": "ict-valley-floria",
+      "name": "ICT밸리컨벤션 플로리아홀",
+      "members": [
+        "이보람"
+      ],
+      "city": "용인",
+      "region": "경기",
+      "category": "공연장",
+      "date": "2026-10-09",
+      "dateBasis": "공연 예정일",
+      "address": "경기도 용인시 기흥구 기흥로 58-1 A동 B1 플로리아홀",
+      "coordinates": [
+        37.280228777533445,
+        127.11936204753891
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://newworldmom.co.kr/apply?event_id=296"
+      },
+      "addressSource": "https://www.ictconvention.co.kr/location/",
+      "coordinateSource": "https://www.ictconvention.co.kr/location/",
+      "story": "이보람이 출연 예정인 ‘세상을 바꾸는 여자들’ 용인 행사장입니다.\n2026년 10월 9일 오후 6시 50분 행사 시작이며 무료 사전 신청이 필요합니다. 후원사 홍보 시간이 포함되고, 이보람의 개별 무대 시각은 행사 시작 시각과 다를 수 있습니다.",
+      "relations": [
+        "공연"
+      ],
+      "researchRefs": [
+        "R27"
+      ],
+      "recordId": "20261009-boram-worldmom-yongin",
+      "eventState": "scheduled",
+      "time": "18:50",
+      "note": "공연 예정 기록입니다. 실제 출연 완료를 뜻하지 않습니다."
+    },
+    {
+      "id": "old-kim-you-jeong-station",
+      "name": "옛 김유정역",
+      "members": [
+        "남규리"
+      ],
+      "city": "춘천",
+      "region": "강원",
+      "category": "문화공간",
+      "date": "2024-05-03",
+      "dateBasis": "방송일",
+      "address": "강원특별자치도 춘천시 신동면 김유정로 1435",
+      "coordinates": [
+        37.819447,
+        127.716414
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://programs.sbs.co.kr/culture/theworld/vod/55119/22000527911"
+      },
+      "addressSource": "https://www.chuncheon.go.kr/tour/destination/all-tour/detail/?tourId=220",
+      "coordinateSource": "https://www.chuncheon.go.kr/tour/destination/all-tour/detail/?tourId=220",
+      "story": "남규리가 SBS ‘세상에서 가장 아름다운 여행’ 1127회에서 찾은 춘천의 옛 기차역입니다.\n옛 경춘선 객차와 대합실을 둘러보는 여행이 소개되었습니다. 현재 열차가 다니는 신역사와 구분한 옛 역사 위치입니다.",
+      "relations": [
+        "방송 방문"
+      ],
+      "researchRefs": [
+        "U01"
+      ]
+    },
+    {
+      "id": "uiam-lake",
+      "name": "의암호",
+      "members": [
+        "남규리"
+      ],
+      "city": "춘천",
+      "region": "강원",
+      "category": "여행·자연",
+      "date": "2024-05-03",
+      "dateBasis": "방송일",
+      "address": "강원특별자치도 춘천시 의암호 일대",
+      "coordinates": [
+        37.8780071,
+        127.7000523
+      ],
+      "source": {
+        "label": "관련 기록 원문",
+        "url": "https://programs.sbs.co.kr/culture/theworld/vod/55119/22000527911"
+      },
+      "addressSource": "https://www.chuncheon.go.kr/tour/destination/ai-tour/tour-news/?bbsId=BBSMSTR_000000000742&flag=view&nttId=997",
+      "coordinateSource": "https://www.openstreetmap.org/relation/10691655",
+      "story": "남규리가 SBS ‘세상에서 가장 아름다운 여행’ 1127회에서 카누를 타며 노래한 춘천의 호수입니다.\n공식 방송 소개에 의암호와 삼악산을 배경으로 한 장면이 명시되어 있습니다.",
+      "relations": [
+        "방송 방문"
+      ],
+      "researchRefs": [
+        "U02"
+      ],
+      "locationPrecision": "area",
+      "note": "호수의 대표 위치입니다. 방송에 나온 카누 업체와 승선장은 아직 확인되지 않았습니다."
     }
   ],
   "researchQueue": [
@@ -2450,7 +2616,7 @@
     {
       "name": "카페07",
       "member": "이보람",
-      "reason": "생일 팬 행사 후보. 동일 상호 지점과 개최 원문 확인 필요. 멤버 방문으로 단정하지 않음.",
+      "reason": "팬 채널 땅콩크림샌드 영상 제목에서 2025-02-15 카페07 생일카페 퇴근길 기록 확인(게시일 2025-02-23). 공식 채널 영상이 아님. 지점·주소를 확인할 행사 포스터 또는 매장 원문 필요.",
       "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
       "checkedAt": "2026-10-07",
       "researchRefs": [
@@ -2458,19 +2624,6 @@
       ],
       "sources": [
         "https://www.youtube.com/watch?v=25BsWaybLWU"
-      ]
-    },
-    {
-      "name": "금돼지식당",
-      "member": "이보람",
-      "reason": "방문 근거 원문 확인 필요.",
-      "leadSource": "사용자 제공 성지순례 추가 조사 문서 (2026-09-15)",
-      "checkedAt": "2026-10-07",
-      "researchRefs": [
-        "L01"
-      ],
-      "sources": [
-        "https://www.kbsm.net/news/view.php?idx=243811"
       ]
     },
     {
@@ -2502,19 +2655,20 @@
     {
       "name": "콤콤오락실",
       "member": "남규리",
-      "reason": "SBS 원본 화면과 매장·현재 영업 대조",
+      "reason": "방송 리뷰에 2026-03-29 미운 우리 새끼 488회, 경리단길 콤콤오락실(회나무로 3)로 기재. 매장 공식 홈페이지의 미디어·지점 안내 링크는 404. SBS 원본 간판과 지점 대조가 남아 있음.",
       "checkedAt": "2026-10-07",
       "researchRefs": [
         "N08"
       ],
       "sources": [
-        "https://lulusreviews.tistory.com/m/13935"
+        "https://lulusreviews.tistory.com/m/13935",
+        "http://comcomplay.com/"
       ]
     },
     {
       "name": "Y3복싱클럽 압구정본점",
       "member": "남규리",
-      "reason": "당시/현재 지점 대조; 일반 방문 조건 확인",
+      "reason": "2021-04-06 온앤오프 39회 리뷰에서 최경호 관장과 Y3 압구정본점(논현로 865)을 특정. 원 방송 간판·지점 자료 및 현재 운영 확인 필요. 당시 안내된 공식 도메인은 현재 연결되지 않음.",
       "checkedAt": "2026-10-07",
       "researchRefs": [
         "N09"
@@ -2526,13 +2680,14 @@
     {
       "name": "용인휴게소",
       "member": "남규리",
-      "reason": "상·하행 방향을 확인한 뒤 핀 등록",
+      "reason": "방송 식당 정리 자료에서 2026-05-25 남겨서 뭐하게 44회 씨야 편을 용인휴게소 강릉방향(주북로94번길 30-1)으로 특정. 원 방송의 방향 표기 또는 운영사 촬영 확인을 추가 대조해야 함.",
       "checkedAt": "2026-10-07",
       "researchRefs": [
         "N11"
       ],
       "sources": [
-        "https://enter.etoday.co.kr/news/view/297750"
+        "https://enter.etoday.co.kr/news/view/297750",
+        "https://aridong.tistory.com/5028"
       ]
     },
     {
@@ -2718,30 +2873,6 @@
       ]
     },
     {
-      "name": "김유정역 일대(레일바이크 지점 미확정)",
-      "member": "남규리",
-      "reason": "옛역 방문과 강촌레일파크 탑승은 별개. SBS 1128회 원본 확인",
-      "checkedAt": "2026-10-07",
-      "researchRefs": [
-        "U01"
-      ],
-      "sources": [
-        "https://www.filecast.co.kr/www/contents/view/18034812/1/"
-      ]
-    },
-    {
-      "name": "의암호 카누(업체·승선장 미확정)",
-      "member": "남규리",
-      "reason": "의암호 여부·업체·승선장 원본 대조. 물레길 업체 임의 연결 금지",
-      "checkedAt": "2026-10-07",
-      "researchRefs": [
-        "U02"
-      ],
-      "sources": [
-        "https://www.filecast.co.kr/www/contents/view/18034812/1/"
-      ]
-    },
-    {
       "name": "SBS 등촌동 공개홀",
       "member": "씨야",
       "reason": "각 회차 실제 생방송 장소·건물 현황 확인. 일반 방송 스튜디오 제외의 기념 예외",
@@ -2793,7 +2924,7 @@
     {
       "name": "서울예술대학교",
       "member": "이보람",
-      "reason": "프로필 연도·학위 표기에 오류 가능. 공식 학력 및 재학 당시 캠퍼스 확인",
+      "reason": "리디 저자 소개에서 씨야 이보람 본인임은 확인. 2005년 학사 표기는 별도 검증 필요하며 학력·재학 캠퍼스 근거로 사용하지 않음.",
       "checkedAt": "2026-10-07",
       "researchRefs": [
         "U08"
@@ -2887,21 +3018,9 @@
       ]
     },
     {
-      "name": "서울 한남동 · 이름 미상 감자탕집",
-      "member": "씨야 세 멤버",
-      "reason": "기사에 상호 없음. 영상·상호 연결 및 실제 주문 상세 확인 필요",
-      "checkedAt": "2026-10-07",
-      "researchRefs": [
-        "C10"
-      ],
-      "sources": [
-        "https://sports.khan.co.kr/article/202606160740003"
-      ]
-    },
-    {
       "name": "강원 춘천 · 이름 미상 닭갈비집",
       "member": "남규리",
-      "reason": "공식 검색 결과 수준. 본문·방송일·상호·주소·식사 장면 미확인; 1127회 대신 1128회(2024-05-03) 가능성; SBS 공식 회차·상호 확인",
+      "reason": "SBS 공식 본문에서 1127회(2024-05-03), 남규리 춘천 여행과 닭갈비 식사 확인. 1128회는 신성 편이므로 기존 후보 메모의 회차 추정 수정. 식당명·주소는 공식 설명에 없어 장면 대조 필요.",
       "checkedAt": "2026-10-07",
       "researchRefs": [
         "C11"
@@ -3061,15 +3180,6 @@
       "checkedAt": "2026-10-07",
       "researchRefs": [
         "R26"
-      ]
-    },
-    {
-      "name": "세상을 바꾸는 여자들 공연장",
-      "member": "이보람",
-      "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류",
-      "checkedAt": "2026-10-07",
-      "researchRefs": [
-        "R27"
       ]
     },
     {
@@ -3308,7 +3418,7 @@
           "https://www.youtube.com/watch?v=25BsWaybLWU"
         ],
         "status": "pending",
-        "reason": "주소·간판·본인 등장 대조"
+        "reason": "팬 채널 땅콩크림샌드 영상 제목에서 2025-02-15 카페07 생일카페 퇴근길 기록 확인(게시일 2025-02-23). 공식 채널 영상이 아님. 지점·주소를 확인할 행사 포스터 또는 매장 원문 필요."
       },
       {
         "id": "P04",
@@ -3440,10 +3550,11 @@
         "id": "N08",
         "name": "콤콤오락실",
         "sources": [
-          "https://lulusreviews.tistory.com/m/13935"
+          "https://lulusreviews.tistory.com/m/13935",
+          "http://comcomplay.com/"
         ],
         "status": "pending",
-        "reason": "SBS 원본 화면과 매장·현재 영업 대조"
+        "reason": "방송 리뷰에 2026-03-29 미운 우리 새끼 488회, 경리단길 콤콤오락실(회나무로 3)로 기재. 매장 공식 홈페이지의 미디어·지점 안내 링크는 404. SBS 원본 간판과 지점 대조가 남아 있음."
       },
       {
         "id": "N09",
@@ -3452,7 +3563,7 @@
           "https://lulusreviews.tistory.com/7720"
         ],
         "status": "pending",
-        "reason": "당시/현재 지점 대조; 일반 방문 조건 확인"
+        "reason": "2021-04-06 온앤오프 39회 리뷰에서 최경호 관장과 Y3 압구정본점(논현로 865)을 특정. 원 방송 간판·지점 자료 및 현재 운영 확인 필요. 당시 안내된 공식 도메인은 현재 연결되지 않음."
       },
       {
         "id": "N10",
@@ -3467,10 +3578,11 @@
         "id": "N11",
         "name": "용인휴게소",
         "sources": [
-          "https://enter.etoday.co.kr/news/view/297750"
+          "https://enter.etoday.co.kr/news/view/297750",
+          "https://aridong.tistory.com/5028"
         ],
         "status": "pending",
-        "reason": "상·하행 방향을 확인한 뒤 핀 등록"
+        "reason": "방송 식당 정리 자료에서 2026-05-25 남겨서 뭐하게 44회 씨야 편을 용인휴게소 강릉방향(주북로94번길 30-1)으로 특정. 원 방송의 방향 표기 또는 운영사 촬영 확인을 추가 대조해야 함."
       },
       {
         "id": "N12",
@@ -3700,19 +3812,25 @@
         "id": "U01",
         "name": "김유정역 일대(레일바이크 지점 미확정)",
         "sources": [
-          "https://www.filecast.co.kr/www/contents/view/18034812/1/"
+          "https://www.filecast.co.kr/www/contents/view/18034812/1/",
+          "https://programs.sbs.co.kr/culture/theworld/vod/55119/22000527911",
+          "https://www.chuncheon.go.kr/tour/destination/all-tour/detail/?tourId=220"
         ],
-        "status": "pending",
-        "reason": "옛역 방문과 강촌레일파크 탑승은 별개. SBS 1128회 원본 확인"
+        "status": "added",
+        "reason": "추가 조사로 방문·행사 근거와 장소 위치 확인.",
+        "placeId": "old-kim-you-jeong-station"
       },
       {
         "id": "U02",
         "name": "의암호 카누(업체·승선장 미확정)",
         "sources": [
-          "https://www.filecast.co.kr/www/contents/view/18034812/1/"
+          "https://www.filecast.co.kr/www/contents/view/18034812/1/",
+          "https://programs.sbs.co.kr/culture/theworld/vod/55119/22000527911",
+          "https://www.chuncheon.go.kr/tour/destination/ai-tour/tour-news/?bbsId=BBSMSTR_000000000742&flag=view&nttId=997"
         ],
-        "status": "pending",
-        "reason": "의암호 여부·업체·승선장 원본 대조. 물레길 업체 임의 연결 금지"
+        "status": "added",
+        "reason": "추가 조사로 방문·행사 근거와 위치 확인. 의암호는 업체 미확정 상태에서 지역만 표시.",
+        "placeId": "uiam-lake"
       },
       {
         "id": "U03",
@@ -3768,7 +3886,7 @@
           "https://ridibooks.com/author/60363"
         ],
         "status": "pending",
-        "reason": "프로필 연도·학위 표기에 오류 가능. 공식 학력 및 재학 당시 캠퍼스 확인"
+        "reason": "리디 저자 소개에서 씨야 이보람 본인임은 확인. 2005년 학사 표기는 별도 검증 필요하며 학력·재학 캠퍼스 근거로 사용하지 않음."
       },
       {
         "id": "C02",
@@ -3837,10 +3955,13 @@
         "id": "C10",
         "name": "서울 한남동 · 이름 미상 감자탕집",
         "sources": [
-          "https://sports.khan.co.kr/article/202606160740003"
+          "https://sports.khan.co.kr/article/202606160740003",
+          "https://www.youtube.com/watch?v=yjANRRS1t5w&t=883s",
+          "https://www.tabling.co.kr/restaurant/6637"
         ],
-        "status": "pending",
-        "reason": "기사에 상호 없음. 영상·상호 연결 및 실제 주문 상세 확인 필요"
+        "status": "added",
+        "reason": "추가 조사로 방문·행사 근거와 장소 위치 확인.",
+        "placeId": "hannam-gamjatang"
       },
       {
         "id": "C11",
@@ -3849,16 +3970,18 @@
           "https://programs.sbs.co.kr/culture/theworld/vod/55119/22000527911"
         ],
         "status": "pending",
-        "reason": "공식 검색 결과 수준. 본문·방송일·상호·주소·식사 장면 미확인; 1127회 대신 1128회(2024-05-03) 가능성; SBS 공식 회차·상호 확인"
+        "reason": "SBS 공식 본문에서 1127회(2024-05-03), 남규리 춘천 여행과 닭갈비 식사 확인. 1128회는 신성 편이므로 기존 후보 메모의 회차 추정 수정. 식당명·주소는 공식 설명에 없어 장면 대조 필요."
       },
       {
         "id": "L01",
         "name": "이보람 · 금돼지식당",
         "sources": [
-          "https://www.kbsm.net/news/view.php?idx=243811"
+          "https://www.kbsm.net/news/view.php?idx=243811",
+          "https://guide.michelin.com/kr/ko/seoul-capital-area/kr-seoul/restaurant/geumdwaeji-sikdang"
         ],
-        "status": "pending",
-        "reason": "원래 인스타 게시물 또는 읽을 수 있는 당시 기사·사진, 정확한 지점"
+        "status": "added",
+        "reason": "추가 조사로 방문·행사 근거와 장소 위치 확인.",
+        "placeId": "geumdwaeji-sikdang"
       },
       {
         "id": "L02",
@@ -4031,9 +4154,13 @@
       {
         "id": "R27",
         "name": "세상을 바꾸는 여자들 공연장",
-        "sources": [],
-        "status": "pending",
-        "reason": "상호·지점·원본 영상·타임스탬프 확인 전 공개 보류"
+        "sources": [
+          "https://newworldmom.co.kr/apply?event_id=296",
+          "https://www.ictconvention.co.kr/location/"
+        ],
+        "status": "added",
+        "reason": "추가 조사로 방문·행사 근거와 장소 위치 확인.",
+        "placeId": "ict-valley-floria"
       },
       {
         "id": "R28",
