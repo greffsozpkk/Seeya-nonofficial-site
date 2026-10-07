@@ -328,7 +328,7 @@
     "id": "20261006-boram-dst-autumn",
     "date": "2026-10-06",
     "addedAt": "2026-09-29",
-    "updatedAt": "2026-09-30",
+    "updatedAt": "2026-10-07T06:17:27.684454+00:00",
     "title": "이보람 · 대전과학기술대학교 제8회 가을문화제 출연 예정",
     "program": "대전과학기술대학교 제8회 가을문화제",
     "type": "event",
@@ -347,6 +347,24 @@
       {
         "label": "씨야 갤러리 · 대전과기대 공식 계정 시간 안내 캡처",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9131"
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=w0o8uE0FDsA",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=pDJ7i3JEDRY",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=44eWzvwBkHs",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -585,9 +603,57 @@
         "url": "https://www.youtube.com/watch?v=_qVAZl8itxc",
         "publishedDate": "2026-10-06",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=TBbfNkvVORE",
+        "publishedDate": "2026-10-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=6iEcOQvN9A4",
+        "publishedDate": "2026-10-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=7klowYH8aEM",
+        "publishedDate": "2026-10-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "칡",
+        "url": "https://www.youtube.com/watch?v=ouxVw3Lhxbc",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=p6PmDMMGr8U",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "칡",
+        "url": "https://www.youtube.com/watch?v=YTWZ5BVvFNw",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "칡",
+        "url": "https://www.youtube.com/watch?v=JpJu7D1rBKo",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=_YNDEh48xJs",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-06T06:40:34.588234+00:00",
+    "updatedAt": "2026-10-07T06:17:27.684454+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
