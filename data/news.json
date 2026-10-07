@@ -147,13 +147,13 @@
       "description": "이보람, 씨야 대신 결혼 선택 “멤버들아 미안해” 스포츠경향"
     }
   ],
-  "updatedAt": "2026-10-07T13:28:44.421270+00:00",
-  "lastCheckedAt": "2026-10-07T13:28:44.421270+00:00",
+  "updatedAt": "2026-10-07T14:29:12.803058+00:00",
+  "lastCheckedAt": "2026-10-07T14:29:12.803058+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-07T13:28:44.421270+00:00",
-    "남규리": "2026-10-07T13:28:44.421270+00:00",
-    "김연지": "2026-10-07T13:28:44.421270+00:00",
-    "이보람": "2026-10-07T13:28:44.421270+00:00"
+    "씨야": "2026-10-07T14:29:12.803058+00:00",
+    "남규리": "2026-10-07T14:29:12.803058+00:00",
+    "김연지": "2026-10-07T14:29:12.803058+00:00",
+    "이보람": "2026-10-07T14:29:12.803058+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-07T13:28:44.421270+00:00",
@@ -165,14 +165,14 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 182,
-      "changed": true,
-      "status": "changed"
+      "accepted": 181,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 154,
+      "accepted": 156,
       "changed": false,
       "status": "unchanged"
     },
@@ -186,9 +186,9 @@
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 86,
-      "changed": true,
-      "status": "changed"
+      "accepted": 84,
+      "changed": false,
+      "status": "unchanged"
     }
   }
 }
