@@ -46,7 +46,12 @@ const ghost39=rows.find(r=>r.id==='20260928-boram-sbsplus-ghost39');
 assert.equal(ghost39.eventState,'completed');assert.equal(ghost39.date,'2026-09-28');
 assert.equal(ghost39.source.publishedDate,'2026-09-29','Clip publication must not replace the broadcast date');
 assert(rows.find(r=>r.id==='20260928-gyuri-double-film21').date==='2026-09-28','Use original reel date, not the later gallery repost');
-for(const id of ['20261006-boram-dst-autumn','20261228-yeonji-avahair'])assert.equal(rows.find(r=>r.id===id).eventState,'scheduled');
+// Live event records may progress from announced to completed, changed or cancelled.
+for(const id of ['20261006-boram-dst-autumn','20261228-yeonji-avahair']){
+ const event=rows.find(r=>r.id===id);assert(event);
+ assert(['scheduled','completed','changed','cancelled'].includes(event.eventState));
+ if(event.eventState==='completed')assert(!event.title.includes('출연 예정'));
+}
 assert.deepEqual(rows.find(r=>r.id==='20260929-boram-song-cover').members,['이보람'],'Credit the performer, not the original song singer');
 assert(rows.find(r=>r.id==='20260921-gyuri-mbc-noon-dj').additionalSources.some(s=>s.url.includes('gMFepYmwpXk')&&s.publishedDate==='2026-09-28'));
 assert(archiveDateLabel({date:'2021-02-22',dateBasis:'post-published'}).includes('게시글 작성일'));

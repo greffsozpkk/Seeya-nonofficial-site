@@ -923,5 +923,16 @@
     "category": "concert",
     "basis": "게시자 원문에 명시된 행사 날짜와 곡명 확인",
     "checkedOn": "2026-10-05"
+  },
+  {
+    "archiveId": "20261006-boram-dst-autumn",
+    "url": "https://www.youtube.com/watch?v=44eWzvwBkHs",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "제리제이 원본 영상 제목의 261006 행사일과 설명 00:05 사랑의 인사 타임스탬프 확인",
+    "checkedOn": "2026-10-08"
   }
 ]
