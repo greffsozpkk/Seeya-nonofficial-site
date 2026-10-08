@@ -3402,9 +3402,16 @@
       {
         "label": "스포츠경향 · 핸드볼 데뷔전 보도",
         "url": "https://sports.khan.co.kr/article/202609101840003"
+      },
+      {
+        "label": "SBS 골때녀 공식 · 231회 발라드림 vs 액셔니스타 핸드볼 전체 경기",
+        "url": "https://www.youtube.com/watch?v=nb5Be44SNlo",
+        "publishedDate": "2026-09-21"
       }
     ],
-    "updatedAt": "2026-09-13"
+    "updatedAt": "2026-10-08",
+    "dateBasis": "broadcast",
+    "dateStatus": "confirmed"
   },
   {
     "id": "v488-audit-034",
@@ -47032,6 +47039,200 @@
     ],
     "note": "김연지의 생일을 기념해 팬들이 준비하는 카페 행사입니다.\n주최 측이 안내한 일정은 10월 30일 금요일부터 31일 토요일까지입니다.\n김연지의 출연·방문 일정이 아닌 팬 주최 행사입니다. 장소와 운영 시간은 주최 측 후속 공지를 참고해 주세요.",
     "eventState": "scheduled",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261019-seeya-immortal-wax-recording",
+    "date": "2026-10-19",
+    "addedAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화 예정",
+    "program": "KBS2 · 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 공식 · 아티스트 왁스 명곡 판정단 모집",
+      "url": "https://program.kbs.co.kr/2tv/enter/satfreedom/pc/board.html?smenu=9c116f&m_seq=114"
+    },
+    "additionalSources": [
+      {
+        "label": "아이즈 · 왁스 편 씨야 출연 보도",
+        "url": "https://www.mt.co.kr/entertainment/2026/10/08/2026100817567268294",
+        "publishedDate": "2026-10-08"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "recording",
+    "tags": [
+      "2026",
+      "불후의 명곡",
+      "왁스",
+      "녹화",
+      "예정"
+    ],
+    "note": "씨야가 KBS2 「불후의 명곡」 ‘아티스트 왁스’ 편에 출연합니다.\n10월 19일 오전 11시 40분부터 KBS 신관 공개홀에서 진행되는 1부 녹화입니다.\n명곡 판정단 신청은 10월 15일 자정까지입니다. 방청 입장 시간은 KBS 공식 안내를 확인해 주세요.\n카드 날짜는 녹화일입니다. 11월 방송 예정이며 정확한 방송일은 별도 공지를 기다리고 있습니다.",
+    "eventState": "scheduled",
+    "venue": "KBS 신관 공개홀",
+    "calendar": {
+      "time": "11:40",
+      "timeLabel": "녹화 시작"
+    }
+  },
+  {
+    "id": "20261010-yeonji-for-rest-live",
+    "date": "2026-10-10",
+    "addedAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "title": "김연지 · 숲세권 라이브 「노래」 공개 예정",
+    "program": "숲세권 라이브 For:Rest LIVE",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "숲세권 라이브 공식 · 김연지 티저·공개 일정",
+      "url": "https://www.instagram.com/p/DeOBYdwq9cQ/"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "tags": [
+      "2026",
+      "숲세권 라이브",
+      "공개 예정"
+    ],
+    "note": "김연지가 숲세권 라이브에서 직접 쓴 자신의 이야기 「노래」를 들려줍니다.\n10월 10일 토요일 오후 8시, 유튜브 ‘숲세권 라이브 For:Rest LIVE’에서 공개 예정입니다.\n날짜와 시간은 영상 공개 일정이며 현장 공연·촬영 일정이 아닙니다.",
+    "eventState": "scheduled",
+    "calendar": {
+      "type": "broadcast",
+      "time": "20:00",
+      "timeLabel": "영상 공개"
+    }
+  },
+  {
+    "id": "20261025-seeya-hyundai-asan-family",
+    "date": "2026-10-25",
+    "addedAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당 예정",
+    "program": "현대자동차 아산공장 30주년 · 조합원 가족 한마당",
+    "type": "event",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "주최 측 행사 포스터 · 갤러리 보관",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9495",
+      "publishedDate": "2026-10-08"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [
+      "2026",
+      "아산",
+      "조합원 가족 행사",
+      "예정"
+    ],
+    "note": "현대자동차 아산공장 30주년을 기념하는 조합원 가족 한마당의 씨야 출연이 행사 포스터에 안내됐습니다.\n10월 25일 일요일, 사택 운동장에서 열립니다.\n오전 9시는 전체 행사 시작 시각이며 씨야의 개별 무대 시각은 별도입니다.\n조합원·가족 대상 행사로, 일반 관람 가능 여부는 주최 측 안내를 확인해 주세요.",
+    "eventState": "scheduled",
+    "venue": "현대자동차 아산공장 사택 운동장",
+    "calendar": {
+      "time": "09:00",
+      "timeLabel": "전체 행사 시작"
+    }
+  },
+  {
+    "id": "20261008-boram-kyoungseo-beyond-light",
+    "date": "2026-10-08",
+    "addedAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "title": "이보람 × 경서 · 「빛의 반대편에서」",
+    "program": "보람씨야 · Shorts",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "빛의 반대편에서"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야 공식 · 빛의 반대편에서 with 경서",
+      "url": "https://www.youtube.com/watch?v=dT48xQRbqrc",
+      "publishedDate": "2026-10-08"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026"
+    ],
+    "note": "이보람과 경서가 함께 부르는 「빛의 반대편에서」 짧은 영상입니다.\n이보람 공식 유튜브 ‘보람씨야’에서 공개했습니다.\n날짜는 영상 공개일이며 촬영일과는 구분됩니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261007-boram-kick-a-goal235-intro",
+    "date": "2026-10-07",
+    "addedAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "title": "이보람 · 골 때리는 그녀들 235회 · 신입 선수 소개 화면",
+    "program": "SBS · 골 때리는 그녀들",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS 공식 · 235회 다시보기",
+      "url": "https://programs.sbs.co.kr/enter/kickagoal/vod/68129/22000637800"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 이보람 소개 장면 캡처",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9482",
+        "publishedDate": "2026-10-08"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "FC발라드림",
+      "소개 화면"
+    ],
+    "note": "「골 때리는 그녀들」 235회의 신입 선수 소개 화면에 FC발라드림 이보람이 포함됐습니다.\n이 회차의 본 경기는 액셔니스타와 구척장신의 경기입니다. 이보람의 경기 출전 기록과는 구분해 소개 화면을 기록했습니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": false
     }
