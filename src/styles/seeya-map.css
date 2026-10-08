@@ -207,3 +207,11 @@ body[data-page="map"] #app,body[data-page="map-preview"] #app{min-width:0}
  body[data-page="map"],body[data-page="map-preview"]{overflow:hidden}
  .map-workspace .map-heading p{font-size:16px}
 }
+
+/* v5.0: records share a venue pin; activity details stay joined to archive data. */
+.map-workspace .map-activities{margin:24px 0;border-top:1px solid #e7ccd6;padding-top:18px}
+.map-workspace .map-activities h3{font-size:17px;margin:0 0 10px}.map-workspace .map-activities h3 span{color:#a64269}
+.map-workspace .map-activities ul{list-style:none;padding:0;margin:0}.map-workspace .map-activities li{padding:14px 0;border-bottom:1px solid #eadbe1}
+.map-workspace .map-activity-date{display:block;font-size:12px;color:#785467;margin-bottom:6px}
+.map-workspace .map-activity-title{display:block;font-size:15px;line-height:1.6;font-weight:600;color:#472d3b;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.map-workspace .map-activities p{font-size:12px;color:#695460;line-height:1.6;margin:6px 0}.map-workspace .map-activities li div a{font-size:12px;color:#8c3c5c;display:inline-block;padding:6px 0}

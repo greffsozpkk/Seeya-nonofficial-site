@@ -1462,3 +1462,5 @@ body.fanchant-lightbox-open{overflow:hidden}
  .mobile-menu-close{display:block;width:100%;min-height:44px;border:1px solid #e4c7d6;border-radius:10px;background:#f6e8f0;color:#814b66;font:inherit;font-size:13px;cursor:pointer}
  .mobile-compact :focus-visible{outline:2px solid #934d70;outline-offset:2px;border-radius:3px}
 }
+
+.archive-map-link{display:inline-block;margin:4px 6px;padding:5px 10px;border:1px solid #d6a4b8;border-radius:8px;color:#833a59;background:#fff4f8;font-size:13px;text-decoration:underline;text-underline-offset:3px}

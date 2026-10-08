@@ -1,3 +1,4 @@
+const {placeIdsForRecord}=require('./map-archive');
 const {concertForRecord,concertPath}=require('./concert-data');
 const {songByTitle,songPath}=require('./stage-data');
 const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('./common');
@@ -122,7 +123,7 @@ function archiveView(archiveData,archiveState){
     const badges=`${x.eventState==="scheduled"?'<span class="archive-compact-state">UPCOMING · 예정</span>':""}${state?`<span class="archive-compact-state">${state}</span>`:""}`;
     const field=(label,value)=>value?`<div class="archive-info-row"><dt>${label}</dt><dd>${value}</dd></div>`:'';
     const albumInfo=x.type==="album"?field('유형',esc(x.releaseType||''))+field('수록',x.trackCount?`${esc(x.trackCount)}곡`:'')+field('장르',esc(x.genre||'')):'';
-    const info=albumInfo+field('장소',esc(x.venue||''))+field('수상',esc(x.awardCategory||''))+field('함께',esc(collaborators))+field('타이틀곡',titleTracks?`<ul class="archive-title-track">${titleTracks}</ul>`:'')+field('관련곡',relatedSongs?`<ul class="archive-related-song">${relatedSongs}</ul>`:'')+field('기획',esc(x.agency||''));
+    const info=albumInfo+field('장소',esc(x.venue||'')+placeIdsForRecord(x).map((id,i)=>` <a class="archive-map-link" href="/map/?place=${encodeURIComponent(id)}">지도에서 보기${i?' '+(i+1):''}</a>`).join(''))+field('수상',esc(x.awardCategory||''))+field('함께',esc(collaborators))+field('타이틀곡',titleTracks?`<ul class="archive-title-track">${titleTracks}</ul>`:'')+field('관련곡',relatedSongs?`<ul class="archive-related-song">${relatedSongs}</ul>`:'')+field('기획',esc(x.agency||''));
     return `<article class="archive-card" data-record-id="${esc(x.id)}">
       <div class="archive-compact-head">
         <div class="archive-date">${archiveDateLabel(x)}</div>

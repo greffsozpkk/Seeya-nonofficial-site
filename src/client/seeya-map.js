@@ -115,10 +115,17 @@ mountKakaoMap(data.mapProvider,{
   $('mapArea').onclick=()=>{const b=map.getBounds();state.bounds={south:b.getSouth(),north:b.getNorth(),west:b.getWest(),east:b.getEast()};filter();};
   const observer=new ResizeObserver(()=>map.invalidateSize());observer.observe($('seeyaMap'));
   paintScreen();
+  if(selected){const p=rows.find(p=>p.id===selected);if(p&&isDomestic(p.coordinates))map.setView(p.coordinates,12,{animate:false});}
  },
- onError(){mapFailure();if(!map)navigate({view:'list',origin:'list'},{replace:true});}
+ onError(){mapFailure();if(!map&&!selected)navigate({view:'list',origin:'list'},{replace:true});}
 });
 filter();
 
 paintScreen();
 mobile.addEventListener?.('change',()=>{const canvas=document.querySelector('.map-canvas-panel');if(canvas)canvas.inert=mobile.matches&&screen.view==='detail';});
+
+// A link from an archive record opens the exact venue, including with a failed map SDK.
+if(typeof location!=='undefined'&&typeof URLSearchParams!=='undefined'){
+ const requested=new URLSearchParams(location.search).get('place');
+ if(requested&&rows.some(p=>p.id===requested)){navigate({view:'list',origin:'list'},{replace:true});selectPlace(requested,{from:'list'});}
+}

@@ -60,3 +60,13 @@ function renderAutomatic(report){
  $('auto-history').innerHTML=(report.actions||[]).slice(0,100).map(a=>`<div class="checks-item"><b>${esc({already:'이미 등록된 자료',linked:'출처 연결',added:'새 기록'}[a.kind]||a.kind)}</b> · ${esc(a.candidateTitle||a.title)}<br>${esc(a.reason)}<br>${link(location.origin+'/archive/?record='+encodeURIComponent(a.recordId),'사이트 기록')} · ${link(a.url,'출처')}</div>`).join('')||'<p>이번에는 자동 반영한 자료가 없습니다.</p>';
  $('auto-history-link').innerHTML=report.requestId?link(`https://github.com/${repository}/blob/${encodeURIComponent(branch)}/state/automatic/${encodeURIComponent(report.requestId)}.json`,'전체 처리 기록 · 비공개 저장소'):'';
 }
+
+$('map-coverage-refresh').onclick=async()=>{
+ const target=$('map-coverage-result'),button=$('map-coverage-refresh');button.disabled=true;target.textContent='지도 연결 상태를 확인하고 있어요.';
+ try{
+  const response=await fetch('/map/coverage.json',{cache:'no-store',credentials:'omit'});if(!response.ok)throw Error();
+  const report=await response.json(),s=report.summary;
+  const groups=new Map();for(const row of report.rows.filter(r=>r.status!=='linked')){if(!groups.has(row.venue))groups.set(row.venue,[]);groups.get(row.venue).push(row);}
+  target.innerHTML=`<p>장소가 적힌 기록 ${esc(s.records)}건 중 <b>${esc(s.linked)}건 연결</b> · 위치 확인 대기 ${esc(s.pending)}건 · 새로 확인할 기록 ${esc(s.unreviewed)}건</p><p>이름이 확인된 장소 ${esc(s.venues)}종류를 대조했습니다. 장소가 적히지 않은 기록은 포함하지 않습니다.</p>`+[...groups].sort((a,b)=>Number(b[1][0].status==='unreviewed')-Number(a[1][0].status==='unreviewed')).map(([venue,rows])=>`<details><summary>${esc(venue)} · ${rows.length}건${rows[0].status==='unreviewed'?' · 새 장소':''}</summary><p>${esc(rows[0].reason)}</p><ul>${rows.map(row=>`<li><a href="/archive/?record=${encodeURIComponent(row.recordId)}" target="_blank" rel="noopener">${esc(row.title)}</a></li>`).join('')}</ul></details>`).join('');
+ }catch{target.textContent='지도 연결 상태를 불러오지 못했어요. 최신 버전 배포 후 다시 눌러 주세요.';}finally{button.disabled=false;}
+};

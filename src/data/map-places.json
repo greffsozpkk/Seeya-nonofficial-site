@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "checkedAt": "2026-10-07",
+  "version": 5,
+  "checkedAt": "2026-10-09",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -2613,6 +2613,1054 @@
       "locationPrecision": "area",
       "note": "호수의 대표 위치입니다. 방송에 나온 카누 업체와 승선장은 아직 확인되지 않았습니다.",
       "recordId": "20240503-gyuri-sbs-chuncheon"
+    },
+    {
+      "id": "eltower",
+      "name": "엘타워",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 서초구",
+      "address": "서울특별시 서초구 엘타워",
+      "coordinates": [
+        37.4823773,
+        127.035617
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/175354717",
+      "coordinateSource": "https://www.openstreetmap.org/way/175354717",
+      "archiveOnly": true,
+      "recordId": "20261228-yeonji-avahair",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "hongik-daehakro",
+      "name": "홍익대 대학로 아트센터 대극장",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 종로구",
+      "address": "서울특별시 종로구 대학로 57",
+      "coordinates": [
+        37.5765909,
+        127.0016042
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/node/13805210387",
+      "coordinateSource": "https://www.openstreetmap.org/node/13805210387",
+      "archiveOnly": true,
+      "recordId": "20261227-boram-six-1500",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "songdo-convensia",
+      "name": "송도컨벤시아",
+      "region": "인천",
+      "city": "인천",
+      "locality": "인천광역시 연수구",
+      "address": "인천광역시 연수구 센트럴로 123",
+      "coordinates": [
+        37.3887756,
+        126.646738
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/228781845",
+      "coordinateSource": "https://www.openstreetmap.org/way/228781845",
+      "archiveOnly": true,
+      "recordId": "20261025-boram-worldmom-seocho",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "dst-campus",
+      "name": "대전과학기술대학교",
+      "region": "대전",
+      "city": "대전",
+      "locality": "대전광역시 서구",
+      "address": "대전광역시 서구 혜천로 100",
+      "coordinates": [
+        36.3019893,
+        127.3753571
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/817306596",
+      "coordinateSource": "https://www.openstreetmap.org/way/817306596",
+      "archiveOnly": true,
+      "recordId": "20261006-boram-dst-autumn",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "cheongnyeongpo-garden",
+      "name": "동서강정원 청령포원",
+      "region": "강원",
+      "city": "영월",
+      "locality": "강원특별자치도 영월군",
+      "address": "강원특별자치도 영월군 동서강정원 청령포원",
+      "coordinates": [
+        37.1900375,
+        128.4451383
+      ],
+      "category": "여행·자연",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/1546374788",
+      "coordinateSource": "https://www.openstreetmap.org/way/1546374788",
+      "archiveOnly": true,
+      "recordId": "20261002-seeya-yeongwol-garden",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요."
+    },
+    {
+      "id": "woosuk-jeonju",
+      "name": "우석대학교 전주캠퍼스",
+      "region": "전북",
+      "city": "완주",
+      "locality": "전북특별자치도 완주군",
+      "address": "전북특별자치도 완주군 삼례읍 삼례로 443",
+      "coordinates": [
+        35.9121128,
+        127.0659136
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.woosuk.ac.kr/main/?menu=74",
+      "coordinateSource": "https://www.openstreetmap.org/relation/7223261",
+      "archiveOnly": true,
+      "recordId": "20260921-woosuk-festival",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "gnue-campus",
+      "name": "광주교육대학교",
+      "region": "광주",
+      "city": "광주",
+      "locality": "광주 북구",
+      "address": "광주 북구 광주교육대학교",
+      "coordinates": [
+        35.1647119,
+        126.9263797
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/105568793",
+      "coordinateSource": "https://www.openstreetmap.org/way/105568793",
+      "archiveOnly": true,
+      "recordId": "20260920-gyuri-gwangju-charity",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "hankyung-dasan",
+      "name": "한국경제신문사 다산홀",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 중구",
+      "address": "서울특별시 중구 한국경제신문사 다산홀",
+      "coordinates": [
+        37.5601858,
+        126.967097
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/1431248899",
+      "coordinateSource": "https://www.openstreetmap.org/way/1431248899",
+      "archiveOnly": true,
+      "recordId": "v475-sheet1-row13",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "wonkwang-campus",
+      "name": "원광대학교",
+      "region": "전북",
+      "city": "익산",
+      "locality": "전북특별자치도 익산시",
+      "address": "전북특별자치도 익산시 익산대로 460",
+      "coordinates": [
+        35.968779,
+        126.9591018
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/relation/20397322",
+      "coordinateSource": "https://www.openstreetmap.org/relation/20397322",
+      "archiveOnly": true,
+      "recordId": "v475-sheet2-row64",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "yeosu-expo",
+      "name": "여수세계박람회장",
+      "region": "전남",
+      "city": "여수",
+      "locality": "여수시",
+      "address": "여수시 여수세계박람회장",
+      "coordinates": [
+        34.7486768,
+        127.7472043
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/529495025",
+      "coordinateSource": "https://www.openstreetmap.org/way/529495025",
+      "archiveOnly": true,
+      "recordId": "v475-sheet2-row62",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "dadaepo-beach",
+      "name": "다대포해수욕장",
+      "region": "부산",
+      "city": "부산",
+      "locality": "부산광역시 사하구",
+      "address": "부산광역시 사하구 다대포해수욕장",
+      "coordinates": [
+        35.0472221,
+        128.9616805
+      ],
+      "category": "여행·자연",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/474959825",
+      "coordinateSource": "https://www.openstreetmap.org/way/474959825",
+      "archiveOnly": true,
+      "recordId": "v475-sheet2-row53",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요."
+    },
+    {
+      "id": "donghae-arts",
+      "name": "동해문화예술회관",
+      "region": "강원",
+      "city": "동해",
+      "locality": "강원특별자치도 동해시",
+      "address": "강원특별자치도 동해시 동해문화예술회관",
+      "coordinates": [
+        37.5263717,
+        129.1154404
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/node/4640871757",
+      "coordinateSource": "https://www.openstreetmap.org/node/4640871757",
+      "archiveOnly": true,
+      "recordId": "v475-sheet2-row40",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "conrad-seoul",
+      "name": "콘래드 서울",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 영등포구",
+      "address": "서울특별시 영등포구 국제금융로 10",
+      "coordinates": [
+        37.5253892,
+        126.9266335
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/500362301",
+      "coordinateSource": "https://www.openstreetmap.org/way/500362301",
+      "archiveOnly": true,
+      "recordId": "v475-sheet2-row37",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "ulsan-arts",
+      "name": "울산문화예술회관",
+      "region": "울산",
+      "city": "울산",
+      "locality": "울산광역시 남구",
+      "address": "울산광역시 남구 울산문화예술회관",
+      "coordinates": [
+        35.5429632,
+        129.3269595
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/node/368874057",
+      "coordinateSource": "https://www.openstreetmap.org/node/368874057",
+      "archiveOnly": true,
+      "recordId": "v475-sheet2-row19",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "jamwon-hangang",
+      "name": "잠원한강공원",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 강남구",
+      "address": "서울특별시 강남구 잠원한강공원",
+      "coordinates": [
+        37.5250679,
+        127.0159854
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/981963451",
+      "coordinateSource": "https://www.openstreetmap.org/way/981963451",
+      "archiveOnly": true,
+      "recordId": "v475-sheet2-row16",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "kia-champions",
+      "name": "광주 기아 챔피언스 필드",
+      "region": "광주",
+      "city": "광주",
+      "locality": "광주 북구",
+      "address": "광주 북구 서림로 10",
+      "coordinates": [
+        35.1680715,
+        126.8882664
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/1011694975",
+      "coordinateSource": "https://www.openstreetmap.org/way/1011694975",
+      "archiveOnly": true,
+      "recordId": "v475-sheet2-row14",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "hyundai-seoul",
+      "name": "더현대 서울",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 영등포구",
+      "address": "서울특별시 영등포구 여의대로 108",
+      "coordinates": [
+        37.5259638,
+        126.9284184
+      ],
+      "category": "쇼핑",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/874639191",
+      "coordinateSource": "https://www.openstreetmap.org/way/874639191",
+      "archiveOnly": true,
+      "recordId": "v487-2026-013",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요."
+    },
+    {
+      "id": "national-theater",
+      "name": "국립극장",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 중구",
+      "address": "서울특별시 중구 국립극장",
+      "coordinates": [
+        37.5528577,
+        126.9999139
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/486317493",
+      "coordinateSource": "https://www.openstreetmap.org/way/486317493",
+      "archiveOnly": true,
+      "recordId": "v491-lesmis2024",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "korea-hwajeong",
+      "name": "고려대학교 화정체육관",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 성북구",
+      "address": "서울특별시 성북구 고려대로17길 145",
+      "coordinates": [
+        37.5925388,
+        127.0249008
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/172672467",
+      "coordinateSource": "https://www.openstreetmap.org/way/172672467",
+      "archiveOnly": true,
+      "recordId": "v491-medium",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "gyeonggi-arts",
+      "name": "경기아트센터",
+      "region": "경기",
+      "city": "수원",
+      "locality": "경기도 수원시",
+      "address": "경기도 수원시 경기아트센터",
+      "coordinates": [
+        37.2613835,
+        127.0371234
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/574939332",
+      "coordinateSource": "https://www.openstreetmap.org/way/574939332",
+      "archiveOnly": true,
+      "recordId": "v491-ballad-suwon",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "chunma-arts",
+      "name": "천마아트센터",
+      "region": "경북",
+      "city": "경산",
+      "locality": "경상북도 경산시",
+      "address": "경상북도 경산시 천마아트센터",
+      "coordinates": [
+        35.8322237,
+        128.7530754
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/153003650",
+      "coordinateSource": "https://www.openstreetmap.org/way/153003650",
+      "archiveOnly": true,
+      "recordId": "v491-ballad-daegu",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "olympic-hall",
+      "name": "올림픽공원 올림픽홀",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 송파구",
+      "address": "서울특별시 송파구 올림픽로 424",
+      "coordinates": [
+        37.514747,
+        127.1275894
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/75956846",
+      "coordinateSource": "https://www.openstreetmap.org/way/75956846",
+      "archiveOnly": true,
+      "recordId": "v491-ballad-seoul",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "sejong-center",
+      "name": "세종문화회관",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 종로구",
+      "address": "서울특별시 종로구 세종대로 175",
+      "coordinates": [
+        37.5726106,
+        126.9756026
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/543729863",
+      "coordinateSource": "https://www.openstreetmap.org/way/543729863",
+      "archiveOnly": true,
+      "recordId": "v491-mozart2020",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "blue-square",
+      "name": "블루스퀘어",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 용산구",
+      "address": "서울특별시 용산구 블루스퀘어",
+      "coordinates": [
+        37.5409038,
+        127.0025813
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/474385279",
+      "coordinateSource": "https://www.openstreetmap.org/way/474385279",
+      "archiveOnly": true,
+      "recordId": "20200120-yeonji-musical-awards",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "dongduk-campus",
+      "name": "동덕여자대학교",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 성북구",
+      "address": "서울특별시 성북구 동덕여자대학교",
+      "coordinates": [
+        37.6064518,
+        127.0419322
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/649380298",
+      "coordinateSource": "https://www.openstreetmap.org/way/649380298",
+      "archiveOnly": true,
+      "recordId": "v490-godoflive",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "mbc-sangam",
+      "name": "상암 MBC",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 마포구",
+      "address": "서울특별시 마포구 상암 MBC",
+      "coordinates": [
+        37.5810603,
+        126.8905176
+      ],
+      "category": "방송시설",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/691116428",
+      "coordinateSource": "https://www.openstreetmap.org/way/691116428",
+      "archiveOnly": true,
+      "recordId": "v4145-VX4z0syPoWw",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "uiryeong-school",
+      "name": "의령중학교",
+      "region": "경남",
+      "city": "의령",
+      "locality": "경상남도 의령군",
+      "address": "경상남도 의령군 의령중학교",
+      "coordinates": [
+        35.3241228,
+        128.2658046
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/843950990",
+      "coordinateSource": "https://www.openstreetmap.org/way/843950990",
+      "archiveOnly": true,
+      "recordId": "v490-dreamhigh",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "kimdaejung-center",
+      "name": "김대중컨벤션센터",
+      "region": "광주",
+      "city": "광주",
+      "locality": "광주 서구",
+      "address": "광주 서구 김대중컨벤션센터",
+      "coordinates": [
+        35.1469535,
+        126.8404134
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/1247511724",
+      "coordinateSource": "https://www.openstreetmap.org/way/1247511724",
+      "archiveOnly": true,
+      "recordId": "v490-gwangju2016",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "busan-cityhall",
+      "name": "부산광역시청",
+      "region": "부산",
+      "city": "부산",
+      "locality": "부산광역시 연제구",
+      "address": "부산광역시 연제구 부산광역시청",
+      "coordinates": [
+        35.1799421,
+        129.0752054
+      ],
+      "category": "문화공간",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/468977727",
+      "coordinateSource": "https://www.openstreetmap.org/way/468977727",
+      "archiveOnly": true,
+      "recordId": "v490-bcm",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요."
+    },
+    {
+      "id": "jamsil-baseball",
+      "name": "잠실야구장",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 송파구",
+      "address": "서울특별시 송파구 잠실야구장",
+      "coordinates": [
+        37.5121831,
+        127.0726803
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/relation/6114542",
+      "coordinateSource": "https://www.openstreetmap.org/relation/6114542",
+      "archiveOnly": true,
+      "recordId": "v482-event-010",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "sbs-mokdong",
+      "name": "SBS 목동 방송센터",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 양천구",
+      "address": "서울특별시 양천구 목동서로 161",
+      "coordinates": [
+        37.5289111,
+        126.873831
+      ],
+      "category": "방송시설",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/node/5421162898",
+      "coordinateSource": "https://www.openstreetmap.org/node/5421162898",
+      "archiveOnly": true,
+      "recordId": "v482-event-011",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "jamsil-gym",
+      "name": "잠실 실내체육관",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 송파구",
+      "address": "서울특별시 송파구 잠실 실내체육관",
+      "coordinates": [
+        37.5161737,
+        127.0759534
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/76296795",
+      "coordinateSource": "https://www.openstreetmap.org/way/76296795",
+      "archiveOnly": true,
+      "recordId": "20071117-mkmf-female-group",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "kumamoto-castle",
+      "name": "구마모토성",
+      "region": "일본",
+      "city": "구마모토",
+      "locality": "熊本県 熊本市",
+      "address": "熊本県 熊本市 구마모토성",
+      "coordinates": [
+        32.8052691,
+        130.7054642
+      ],
+      "category": "문화공간",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "JP",
+      "addressSource": "https://www.openstreetmap.org/way/375062710",
+      "coordinateSource": "https://www.openstreetmap.org/way/375062710",
+      "archiveOnly": true,
+      "recordId": "20071024-seeya-kumamoto-friendship",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요."
+    },
+    {
+      "id": "changwon-gym",
+      "name": "창원체육관",
+      "region": "경남",
+      "city": "창원",
+      "locality": "경상남도 창원시 성산구",
+      "address": "경상남도 창원시 성산구 창원체육관",
+      "coordinates": [
+        35.2326993,
+        128.6662694
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/415918635",
+      "coordinateSource": "https://www.openstreetmap.org/way/415918635",
+      "archiveOnly": true,
+      "recordId": "v482-event-014",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "hammerstein-ballroom",
+      "name": "맨해튼 센터 해머스타인 볼룸",
+      "region": "미국",
+      "city": "뉴욕",
+      "locality": "New York",
+      "address": "New York West 34th Street 311",
+      "coordinates": [
+        40.7529437,
+        -73.9941199
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "US",
+      "addressSource": "https://www.openstreetmap.org/way/287686136",
+      "coordinateSource": "https://www.openstreetmap.org/way/287686136",
+      "archiveOnly": true,
+      "recordId": "20070804-cj-korea-big4-newyork",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "kspo-dome",
+      "name": "올림픽공원 체조경기장 · KSPO DOME",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 송파구",
+      "address": "서울특별시 송파구 올림픽공원 체조경기장 · KSPO DOME",
+      "coordinates": [
+        37.5192242,
+        127.1274696
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/75956855",
+      "coordinateSource": "https://www.openstreetmap.org/way/75956855",
+      "archiveOnly": true,
+      "recordId": "20070722-summer-big4",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "lotte-hotel-seoul",
+      "name": "롯데호텔 서울",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 중구",
+      "address": "서울특별시 중구 을지로 30",
+      "coordinates": [
+        37.5652278,
+        126.9806285
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/117914845",
+      "coordinateSource": "https://www.openstreetmap.org/way/117914845",
+      "archiveOnly": true,
+      "recordId": "v482-event-002",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "coex",
+      "name": "코엑스",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 강남구",
+      "address": "서울특별시 강남구 코엑스",
+      "coordinates": [
+        37.5118733,
+        127.0591105
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/74013220",
+      "coordinateSource": "https://www.openstreetmap.org/way/74013220",
+      "archiveOnly": true,
+      "recordId": "20061223-big4-christmas",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "olympic-main-stadium",
+      "name": "잠실 올림픽주경기장",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 송파구",
+      "address": "서울특별시 송파구 올림픽로 25",
+      "coordinates": [
+        37.5158632,
+        127.0727891
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://stadium.seoul.go.kr/reserve/jamsil",
+      "coordinateSource": "https://www.openstreetmap.org/relation/6114540",
+      "archiveOnly": true,
+      "recordId": "20060527-seeya-iconcert",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "sbs-deungchon",
+      "name": "SBS 등촌동 공개홀",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 강서구",
+      "address": "서울특별시 강서구 양천로 442",
+      "coordinates": [
+        37.5631719,
+        126.8501768
+      ],
+      "category": "방송시설",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/472254434",
+      "coordinateSource": "https://www.openstreetmap.org/way/472254434",
+      "archiveOnly": true,
+      "recordId": "20060312-inkigayo-debut",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "grand-hyatt-seoul",
+      "name": "그랜드 하얏트 서울",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 용산구",
+      "address": "서울특별시 용산구 그랜드 하얏트 서울",
+      "coordinates": [
+        37.5395783,
+        126.9976508
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/228802390",
+      "coordinateSource": "https://www.openstreetmap.org/way/228802390",
+      "archiveOnly": true,
+      "recordId": "20261001-gyuri-handonday",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "kbs-new-building",
+      "name": "KBS 신관",
+      "region": "서울",
+      "city": "서울",
+      "locality": "서울특별시 영등포구",
+      "address": "서울특별시 영등포구 KBS 신관",
+      "coordinates": [
+        37.5263214,
+        126.915675
+      ],
+      "category": "방송시설",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "building",
+      "country": "KR",
+      "addressSource": "https://www.openstreetmap.org/way/682331449",
+      "coordinateSource": "https://www.openstreetmap.org/way/682331449",
+      "archiveOnly": true,
+      "recordId": "20261019-seeya-immortal-wax-recording",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": " 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "dakdonggari-suseong",
+      "name": "닭동가리 수성못 본점",
+      "region": "대구",
+      "city": "대구",
+      "address": "대구광역시 수성구 용학로 115 1동",
+      "coordinates": [
+        35.825098,
+        128.6224347
+      ],
+      "category": "식당",
+      "relations": [
+        "버스킹"
+      ],
+      "addressSource": "https://www.daangn.com/kr/local-profile/닭동가리-본점-u9kti6nx32t2/",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=aojkNeNnCXgo",
+      "archiveOnly": true,
+      "recordId": "20260928-yeonji-suseong-busking",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요."
+    },
+    {
+      "id": "jecheon-hanbang-expo",
+      "name": "제천한방엑스포공원",
+      "region": "충북",
+      "city": "제천",
+      "address": "충청북도 제천시 한방엑스포로 19 일대",
+      "coordinates": [
+        37.14373393,
+        128.1597627
+      ],
+      "category": "공연장",
+      "relations": [
+        "활동 기록"
+      ],
+      "locationPrecision": "area",
+      "addressSource": "https://www.jc-mall.com/home/jc/03_location_01.php",
+      "coordinateSource": "https://www.jc-mall.com/home/jc/03_location_01.php",
+      "archiveOnly": true,
+      "recordId": "20261002-jecheon-herbal-fair",
+      "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
+      "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
     }
   ],
   "researchQueue": [
@@ -2896,18 +3944,6 @@
       ]
     },
     {
-      "name": "SBS 등촌동 공개홀",
-      "member": "씨야",
-      "reason": "각 회차 실제 생방송 장소·건물 현황 확인. 일반 방송 스튜디오 제외의 기념 예외",
-      "checkedAt": "2026-10-07",
-      "researchRefs": [
-        "U04"
-      ],
-      "sources": [
-        "https://commatv.tistory.com/28"
-      ]
-    },
-    {
       "name": "용인운전면허시험장",
       "member": "남규리(씨야 전원 여부 미확인)",
       "reason": "남규리 기록만 재인용 확인. 세 멤버 같은 날 취득 주장은 미확인. 현재 시험장과 당시 장소 대조",
@@ -2917,18 +3953,6 @@
       ],
       "sources": [
         "https://i-ruru.com/category/일상다반사?page=20"
-      ]
-    },
-    {
-      "name": "대전과학기술대학교",
-      "member": "이보람",
-      "reason": "주최 포스터·라인업·실제 출연·학내 무대 위치 확인. 캘린더 자동 등록 아님",
-      "checkedAt": "2026-10-07",
-      "researchRefs": [
-        "U06"
-      ],
-      "sources": [
-        "https://commatv.tistory.com/28"
       ]
     },
     {
@@ -3871,8 +4895,9 @@
         "sources": [
           "https://commatv.tistory.com/28"
         ],
-        "status": "pending",
-        "reason": "각 회차 실제 생방송 장소·건물 현황 확인. 일반 방송 스튜디오 제외의 기념 예외"
+        "status": "confirmed",
+        "reason": "기존 아카이브 활동 기록과 시설 위치를 확인해 지도에 연결했습니다.",
+        "placeId": "sbs-deungchon"
       },
       {
         "id": "U05",
@@ -3889,8 +4914,9 @@
         "sources": [
           "https://commatv.tistory.com/28"
         ],
-        "status": "pending",
-        "reason": "주최 포스터·라인업·실제 출연·학내 무대 위치 확인. 캘린더 자동 등록 아님"
+        "status": "confirmed",
+        "reason": "기존 아카이브 활동 기록과 시설 위치를 확인해 지도에 연결했습니다.",
+        "placeId": "dst-campus"
       },
       {
         "id": "U07",
@@ -4195,7 +5221,7 @@
     ]
   },
   "archiveAudit": {
-    "checkedAt": "2026-10-08",
+    "checkedAt": "2026-10-09",
     "rows": [
       {
         "placeId": "khu-grand-peace-palace",
@@ -4577,6 +5603,226 @@
         "placeId": "uiam-lake",
         "recordId": "20240503-gyuri-sbs-chuncheon",
         "status": "added"
+      },
+      {
+        "placeId": "eltower",
+        "recordId": "20261228-yeonji-avahair",
+        "status": "existing"
+      },
+      {
+        "placeId": "hongik-daehakro",
+        "recordId": "20261227-boram-six-1500",
+        "status": "existing"
+      },
+      {
+        "placeId": "songdo-convensia",
+        "recordId": "20261025-boram-worldmom-seocho",
+        "status": "existing"
+      },
+      {
+        "placeId": "dst-campus",
+        "recordId": "20261006-boram-dst-autumn",
+        "status": "existing"
+      },
+      {
+        "placeId": "cheongnyeongpo-garden",
+        "recordId": "20261002-seeya-yeongwol-garden",
+        "status": "existing"
+      },
+      {
+        "placeId": "woosuk-jeonju",
+        "recordId": "20260921-woosuk-festival",
+        "status": "existing"
+      },
+      {
+        "placeId": "gnue-campus",
+        "recordId": "20260920-gyuri-gwangju-charity",
+        "status": "existing"
+      },
+      {
+        "placeId": "hankyung-dasan",
+        "recordId": "v475-sheet1-row13",
+        "status": "existing"
+      },
+      {
+        "placeId": "wonkwang-campus",
+        "recordId": "v475-sheet2-row64",
+        "status": "existing"
+      },
+      {
+        "placeId": "yeosu-expo",
+        "recordId": "v475-sheet2-row62",
+        "status": "existing"
+      },
+      {
+        "placeId": "dadaepo-beach",
+        "recordId": "v475-sheet2-row53",
+        "status": "existing"
+      },
+      {
+        "placeId": "donghae-arts",
+        "recordId": "v475-sheet2-row40",
+        "status": "existing"
+      },
+      {
+        "placeId": "conrad-seoul",
+        "recordId": "v475-sheet2-row37",
+        "status": "existing"
+      },
+      {
+        "placeId": "ulsan-arts",
+        "recordId": "v475-sheet2-row19",
+        "status": "existing"
+      },
+      {
+        "placeId": "jamwon-hangang",
+        "recordId": "v475-sheet2-row16",
+        "status": "existing"
+      },
+      {
+        "placeId": "kia-champions",
+        "recordId": "v475-sheet2-row14",
+        "status": "existing"
+      },
+      {
+        "placeId": "hyundai-seoul",
+        "recordId": "v487-2026-013",
+        "status": "existing"
+      },
+      {
+        "placeId": "national-theater",
+        "recordId": "v491-lesmis2024",
+        "status": "existing"
+      },
+      {
+        "placeId": "korea-hwajeong",
+        "recordId": "v491-medium",
+        "status": "existing"
+      },
+      {
+        "placeId": "gyeonggi-arts",
+        "recordId": "v491-ballad-suwon",
+        "status": "existing"
+      },
+      {
+        "placeId": "chunma-arts",
+        "recordId": "v491-ballad-daegu",
+        "status": "existing"
+      },
+      {
+        "placeId": "olympic-hall",
+        "recordId": "v491-ballad-seoul",
+        "status": "existing"
+      },
+      {
+        "placeId": "sejong-center",
+        "recordId": "v491-mozart2020",
+        "status": "existing"
+      },
+      {
+        "placeId": "blue-square",
+        "recordId": "20200120-yeonji-musical-awards",
+        "status": "existing"
+      },
+      {
+        "placeId": "dongduk-campus",
+        "recordId": "v490-godoflive",
+        "status": "existing"
+      },
+      {
+        "placeId": "mbc-sangam",
+        "recordId": "v4145-VX4z0syPoWw",
+        "status": "existing"
+      },
+      {
+        "placeId": "uiryeong-school",
+        "recordId": "v490-dreamhigh",
+        "status": "existing"
+      },
+      {
+        "placeId": "kimdaejung-center",
+        "recordId": "v490-gwangju2016",
+        "status": "existing"
+      },
+      {
+        "placeId": "busan-cityhall",
+        "recordId": "v490-bcm",
+        "status": "existing"
+      },
+      {
+        "placeId": "jamsil-baseball",
+        "recordId": "v482-event-010",
+        "status": "existing"
+      },
+      {
+        "placeId": "sbs-mokdong",
+        "recordId": "v482-event-011",
+        "status": "existing"
+      },
+      {
+        "placeId": "jamsil-gym",
+        "recordId": "20071117-mkmf-female-group",
+        "status": "existing"
+      },
+      {
+        "placeId": "kumamoto-castle",
+        "recordId": "20071024-seeya-kumamoto-friendship",
+        "status": "existing"
+      },
+      {
+        "placeId": "changwon-gym",
+        "recordId": "v482-event-014",
+        "status": "existing"
+      },
+      {
+        "placeId": "hammerstein-ballroom",
+        "recordId": "20070804-cj-korea-big4-newyork",
+        "status": "existing"
+      },
+      {
+        "placeId": "kspo-dome",
+        "recordId": "20070722-summer-big4",
+        "status": "existing"
+      },
+      {
+        "placeId": "lotte-hotel-seoul",
+        "recordId": "v482-event-002",
+        "status": "existing"
+      },
+      {
+        "placeId": "coex",
+        "recordId": "20061223-big4-christmas",
+        "status": "existing"
+      },
+      {
+        "placeId": "olympic-main-stadium",
+        "recordId": "20060527-seeya-iconcert",
+        "status": "existing"
+      },
+      {
+        "placeId": "sbs-deungchon",
+        "recordId": "20060312-inkigayo-debut",
+        "status": "existing"
+      },
+      {
+        "placeId": "grand-hyatt-seoul",
+        "recordId": "20261001-gyuri-handonday",
+        "status": "existing"
+      },
+      {
+        "placeId": "kbs-new-building",
+        "recordId": "20261019-seeya-immortal-wax-recording",
+        "status": "existing"
+      },
+      {
+        "placeId": "dakdonggari-suseong",
+        "recordId": "20260928-yeonji-suseong-busking",
+        "status": "existing"
+      },
+      {
+        "placeId": "jecheon-hanbang-expo",
+        "recordId": "20261002-jecheon-herbal-fair",
+        "status": "existing"
       }
     ]
   }

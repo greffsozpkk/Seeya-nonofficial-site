@@ -4,7 +4,7 @@ const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p
 const config=json('src/data/map-places.json'),route=json('src/data/map-preview-route.json'),archive=json('data/archive.json');
 const shared=require('../src/shared/seeya-map'),{resolvePlaces,filterPlaces,cards,detail,groupPins}=shared;
 const allRows=resolvePlaces(config,archive),concertConfig={...config,places:config.places.filter(p=>!p.name)},rows=resolvePlaces(concertConfig,archive),html=read(route.path.slice(1)+'index.html');
-assert.equal(config.places.length,76);assert.equal(allRows.length,76);assert.equal(new Set(allRows.map(p=>p.id)).size,76);assert.equal(rows.length,7);assert.equal(new Set(rows.map(p=>p.id)).size,7);
+assert(config.places.length>=120);assert.equal(allRows.length,config.places.length);assert.equal(new Set(allRows.map(p=>p.id)).size,config.places.length);assert.equal(rows.length,7);assert.equal(new Set(rows.map(p=>p.id)).size,7);
 assert.deepEqual(rows.map(p=>p.recordId).sort(),json('src/data/concerts.json').find(t=>t.id==='the-fan-2026').events.map(e=>e.id).sort());
 for(const p of rows){assert(p.coordinates[0]>33&&p.coordinates[0]<39);assert(p.coordinates[1]>124&&p.coordinates[1]<131);assert(p.addressSource&&p.coordinateSource&&p.checkedAt);assert.equal(p.date,archive.find(r=>r.id===p.recordId).date);assert(html.includes(p.name));}
 assert.equal(resolvePlaces(concertConfig,archive.filter(r=>r.id!==rows[0].recordId)).length,6);
@@ -29,11 +29,11 @@ get('mapSearch').handlers.input({target:{value:'없는장소'}});assert.equal(ge
 get('mapReset').onclick();assert.equal(get('mapEmpty').hidden,true);assert(get('mapCount').innerHTML.includes('7'));
 const {promoStatus}=shared;
 for(const p of allRows){assert(p.addressSource&&p.coordinateSource&&p.source.url&&p.dateBasis);assert(p.coordinates.every(Number.isFinite));assert(html.includes(p.name));assert(detail(p).includes(p.source.url.replaceAll('&','&amp;')));}
-assert.equal(filterPlaces(allRows,{relation:'콘서트 혜택'}).length,11);
-assert.equal(filterPlaces(allRows,{relation:'사진·사인'}).length,1);
-assert.equal(filterPlaces(allRows,{category:'카페'}).length,15);
-assert.equal(filterPlaces(allRows,{member:'씨야'}).length,25);
-assert.equal(filterPlaces(allRows,{member:'이보람'}).length,35);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'콘서트 혜택'}).length,11);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'사진·사인'}).length,1);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'카페'}).length,15);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'씨야'}).length,25);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'이보람'}).length,35);
 assert(!filterPlaces(allRows,{member:'씨야'}).some(p=>p.id==='maboklim'));
 const ohji=allRows.find(p=>p.id==='ohji'),thai=allRows.find(p=>p.id==='thailicious');
 assert.equal(promoStatus(thai,'2026-10-05T00:00:00+09:00'),'혜택 종료');
@@ -41,16 +41,16 @@ assert.equal(promoStatus(ohji,'2026-10-10T23:59:59+09:00'),'혜택 기간');
 assert.equal(promoStatus(ohji,'2026-10-11T01:00:01+09:00'),'혜택 종료');
 assert.equal(promoStatus(ohji,'2026-10-05T23:59:59+09:00'),'혜택 예정');
 assert(!detail(allRows.find(p=>p.id==='maboklim')).includes('20주년 콘서트 기록관'));
-assert.equal(filterPlaces(allRows,{category:'식당',region:'서울'}).length,8);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'식당',region:'서울'}).length,8);
 assert.equal(resolvePlaces(config,archive.filter(r=>r.id!=='v4145-NIeNbStvYa0')).find(p=>p.id==='maboklim').recordId,null);
-console.log('PASS: map preview isolation, 76 verified places and seven tour venues, filters, clustering, escaping and library-failure fallback.');
+console.log('PASS: map preview isolation, verified places and seven tour venues, filters, clustering, escaping and library-failure fallback.');
 
-assert.equal(filterPlaces(allRows,{region:'제주'}).length,14);
-assert.equal(filterPlaces(allRows,{category:'여행·자연'}).length,8);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{region:'제주'}).length,14);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'여행·자연'}).length,8);
 assert(filterPlaces(allRows,{category:'문화공간'}).some(p=>p.id==='ulsan-art-museum'));
-assert.equal(filterPlaces(allRows,{category:'쇼핑'})[0].id,'dongmyo-area');
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'쇼핑'})[0].id,'dongmyo-area');
 assert(filterPlaces(allRows,{relation:'팬 행사'}).some(p=>p.id==='about-project-jamsil'));
-for(const p of allRows.filter(p=>p.locationPrecision==='area')){assert(detail(p).includes('지역 지도'));assert(!detail(p).includes('link/to/'));assert(detail(p).includes('대표 위치'));}
+for(const p of allRows.filter(p=>p.locationPrecision==='area'&&(!p.country||p.country==='KR'))){assert(detail(p).includes('지역 지도'));assert(!detail(p).includes('link/to/'));assert(detail(p).includes('대표 위치'));}
 assert.equal(allRows.find(p=>p.id==='dufore-jeju').coordinates[0],33.5185278);
 assert.equal(allRows.find(p=>p.id==='about-project-jamsil').dateBasis,'영상 게시일');
 assert.equal(allRows.find(p=>p.id==='rully-gachang').dateBasis,'공연일');
@@ -74,7 +74,7 @@ assert.equal(allRows.find(p=>p.id==='old-kim-you-jeong-station').coordinates[0],
 assert.equal(allRows.find(p=>p.id==='geumdwaeji-sikdang').dateBasis,'SNS 게시일 · 기사 확인');
 assert(cards([allRows.find(p=>p.id==='ict-valley-floria')]).includes('공연 예정'));
 assert(!detail(allRows.find(p=>p.id==='uiam-lake')).includes('link/to/'));
-assert.equal(review.filter(r=>r.status==='pending').length,50);
+assert.equal(review.filter(r=>r.status==='pending').length,48);
 
 // Every map place must have an archive disposition; multiple locations may share one broadcast.
 assert.equal(config.archiveAudit.rows.length, config.places.length);
@@ -105,7 +105,7 @@ const fan=archive.find(r=>r.id==='20240215-boram-birthday-fancafe');
 assert.equal(fan.calendar.enabled,false);assert(fan.note.includes('직접 참석을 뜻하지'));
 const rully=archive.find(r=>r.id==='v475-sheet2-row31');assert.equal(rully.venue,'룰리커피 가창점');
 assert.equal(rully.date,'2026-06-28');assert.equal(rully.dateBasis,'event');
-console.log('PASS: all 76 map archive dispositions, single Chuncheon broadcast, seven additions and evidence date distinctions.');
+console.log('PASS: all map archive dispositions, single Chuncheon broadcast, seven additions and evidence date distinctions.');
 
 // Public map uses the shared navigation, while the previous preview stays unlisted.
 const publicMap=read('map/index.html');

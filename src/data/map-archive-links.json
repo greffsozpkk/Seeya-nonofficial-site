@@ -1,0 +1,285 @@
+{
+  "venues": {
+    "인천남동체육관": "namdong-gymnasium",
+    "경희대학교 국제캠퍼스 선승관": "khu-seonseung",
+    "청주대학교 석우문화체육관": "cju-seokwoo",
+    "킨텍스 제2전시장 10홀": "kintex-second",
+    "대구 엑스코 5층 컨벤션홀": "exco-west",
+    "부산 KBS홀": "kbs-busan-hall",
+    "경희대학교 평화의 전당": "khu-grand-peace-palace",
+    "경희대학교 평화의전당": "khu-grand-peace-palace",
+    "룰리커피 가창점": "rully-gachang",
+    "음악역1939 야외무대": "music-station-1939",
+    "영화의전당 하늘연극장": "busan-cinema-haneul",
+    "고척스카이돔": "gocheok-skydome",
+    "서울 종로구 이들스(EDLS)": "edls",
+    "성신여자대학교 운정그린캠퍼스 대강당": "sungshin-unjeong",
+    "성암아트홀": "seongam-hall",
+    "SMTOWN THEATER 코엑스아티움": "smtown-theater-historic",
+    "대학로 SH아트홀": "sh-art-hall",
+    "디큐브아트센터": "dcube-historic",
+    "봉산문화회관 가온홀": "bongsan-gaon",
+    "ICT밸리컨벤션 B1 플로리아홀": "ict-valley-floria",
+    "옛 김유정역": "old-kim-you-jeong-station",
+    "도산정육 본점": "dosan-butcher",
+    "유지카페": "yoozzy",
+    "공간양": "gonggan-yang",
+    "우리는 정육가든 수성구점": "woorineun-suseong",
+    "익커피 홍대점 · 과거 행사": "ikcoffee-historic",
+    "금돼지식당": "geumdwaeji-sikdang",
+    "양재 엘타워": "eltower",
+    "홍익대 대학로 아트센터 대극장": "hongik-daehakro",
+    "송도컨벤시아 프리미어볼룸 A룸 (센트럴로 123)": "songdo-convensia",
+    "대전과학기술대학교 중앙광장": "dst-campus",
+    "영월 동서강정원 청령포원": "cheongnyeongpo-garden",
+    "우석대학교 전주캠퍼스 농구장 주무대": "woosuk-jeonju",
+    "광주교육대학교 제1운동장": "gnue-campus",
+    "한국경제신문사 다산홀": "hankyung-dasan",
+    "익산 원광대학교 문화체육관": "wonkwang-campus",
+    "여수 엑스포 광장": "yeosu-expo",
+    "부산 다대포해수욕장": "dadaepo-beach",
+    "동해문화예술회관 야외 공연장": "donghae-arts",
+    "콘래드 서울 3층 그랜드볼룸": "conrad-seoul",
+    "울산문화예술회관 야외공연장": "ulsan-arts",
+    "한강공원 신사잠원지구 다목적운동장": "jamwon-hangang",
+    "기아 챔피언스 필드": "kia-champions",
+    "더현대 서울": "hyundai-seoul",
+    "국립극장 해오름극장": "national-theater",
+    "고려대학교 화정체육관": "korea-hwajeong",
+    "경기아트센터 대극장": "gyeonggi-arts",
+    "천마아트센터": "chunma-arts",
+    "올림픽공원 올림픽홀": "olympic-hall",
+    "세종문화회관 대극장": "sejong-center",
+    "블루스퀘어 인터파크홀": "blue-square",
+    "동덕여자대학교 백주년기념관": "dongduk-campus",
+    "상암 MBC 특설무대": "mbc-sangam",
+    "의령중학교 체육관": "uiryeong-school",
+    "김대중컨벤션센터 다목적홀": "kimdaejung-center",
+    "부산시청": "busan-cityhall",
+    "서울 잠실야구장": "jamsil-baseball",
+    "서울 목동 SBS홀": "sbs-mokdong",
+    "서울 잠실 실내체육관": "jamsil-gym",
+    "일본 구마모토성": "kumamoto-castle",
+    "창원실내체육관": "changwon-gym",
+    "미국 뉴욕 맨해튼 센터 해머스타인 볼룸": "hammerstein-ballroom",
+    "서울 올림픽공원 체조경기장": "kspo-dome",
+    "서울 소공동 롯데호텔 에메랄드룸": "lotte-hotel-seoul",
+    "서울 코엑스 대서양홀": "coex",
+    "서울 올림픽주경기장": "olympic-main-stadium",
+    "SBS 등촌동 공개홀": "sbs-deungchon",
+    "그랜드 하얏트 서울": "grand-hyatt-seoul",
+    "KBS 신관 공개홀": "kbs-new-building",
+    "대구 닭동가리 수성못 본점": "dakdonggari-suseong",
+    "제천한방엑스포공원 한방무대(주무대)": "jecheon-hanbang-expo",
+    "서울 올림픽공원 올림픽홀": "olympic-hall",
+    "엘타워": "eltower",
+    "송도컨벤시아": "songdo-convensia",
+    "대전과학기술대학교": "dst-campus",
+    "동서강정원 청령포원": "cheongnyeongpo-garden",
+    "우석대학교 전주캠퍼스": "woosuk-jeonju",
+    "광주교육대학교": "gnue-campus",
+    "원광대학교": "wonkwang-campus",
+    "여수세계박람회장": "yeosu-expo",
+    "다대포해수욕장": "dadaepo-beach",
+    "동해문화예술회관": "donghae-arts",
+    "콘래드 서울": "conrad-seoul",
+    "울산문화예술회관": "ulsan-arts",
+    "잠원한강공원": "jamwon-hangang",
+    "광주 기아 챔피언스 필드": "kia-champions",
+    "국립극장": "national-theater",
+    "경기아트센터": "gyeonggi-arts",
+    "세종문화회관": "sejong-center",
+    "블루스퀘어": "blue-square",
+    "동덕여자대학교": "dongduk-campus",
+    "상암 MBC": "mbc-sangam",
+    "의령중학교": "uiryeong-school",
+    "김대중컨벤션센터": "kimdaejung-center",
+    "부산광역시청": "busan-cityhall",
+    "잠실야구장": "jamsil-baseball",
+    "SBS 목동 방송센터": "sbs-mokdong",
+    "잠실 실내체육관": "jamsil-gym",
+    "구마모토성": "kumamoto-castle",
+    "창원체육관": "changwon-gym",
+    "맨해튼 센터 해머스타인 볼룸": "hammerstein-ballroom",
+    "올림픽공원 체조경기장 · KSPO DOME": "kspo-dome",
+    "롯데호텔 서울": "lotte-hotel-seoul",
+    "코엑스": "coex",
+    "잠실 올림픽주경기장": "olympic-main-stadium",
+    "KBS 신관": "kbs-new-building",
+    "닭동가리 수성못 본점": "dakdonggari-suseong",
+    "제천한방엑스포공원": "jecheon-hanbang-expo",
+    "우석대 전주캠퍼스": "woosuk-jeonju",
+    "홍익대학교 대학로 아트센터 대극장": "hongik-daehakro",
+    "대전과기대 중앙광장": "dst-campus",
+    "잠실종합운동장 올림픽주경기장": "olympic-main-stadium"
+  },
+  "records": {
+    "20260829-the-fan-seoul": [
+      "khu-grand-peace-palace"
+    ],
+    "20260905-the-fan-busan": [
+      "kbs-busan-hall"
+    ],
+    "20260912-the-fan-daegu": [
+      "exco-west"
+    ],
+    "20261004-the-fan-goyang": [
+      "kintex-second",
+      "grandma-sister",
+      "gogichanggo",
+      "dowon",
+      "kitsuki",
+      "hibi",
+      "thailicious"
+    ],
+    "20261010-the-fan-cheongju": [
+      "cju-seokwoo",
+      "elephant",
+      "pyeonbaek",
+      "dalma",
+      "stonefalls",
+      "ohji"
+    ],
+    "20261017-the-fan-suwon": [
+      "khu-seonseung"
+    ],
+    "20261031-the-fan-incheon": [
+      "namdong-gymnasium"
+    ],
+    "20260531-seeya-baekban": [
+      "aengdu",
+      "baekhap",
+      "chowon"
+    ],
+    "v4145-NIeNbStvYa0": [
+      "byeongang",
+      "maboklim",
+      "yupdduk"
+    ],
+    "v488-audit-041": [
+      "mother",
+      "choding",
+      "ijinri"
+    ],
+    "v4145-60dNYPs5RJ4": [
+      "fingers-hotdog",
+      "pongdang-ramyeon",
+      "eq-table",
+      "sinchang-coast"
+    ],
+    "v4145-jVCa6jPn3JA": [
+      "chunmihyang",
+      "jeopjjak",
+      "dufore-jeju"
+    ],
+    "v4145-pmhw1lyc0M4": [
+      "geumak-noodles",
+      "innisfree-jeju",
+      "mippeun-bakery",
+      "geum-oreum",
+      "isidore-farm"
+    ],
+    "v4145-UHwGZGI-nyE": [
+      "joyang-bangjik"
+    ],
+    "v475-sheet2-row31": [
+      "rully-gachang"
+    ],
+    "v4145-frUkQQcK6iQ": [
+      "about-project-jamsil"
+    ],
+    "v4145-WsyxwPl55wQ": [
+      "ulsan-art-museum"
+    ],
+    "v4145-D2g3gaQdqVI": [
+      "dongmyo-area"
+    ],
+    "v4145-DEEQmmrQLgs": [
+      "apgujeong-haru"
+    ],
+    "v4145-_AbFDbCDAHI": [
+      "jungmun-byeoljang"
+    ],
+    "20240906-yeonji-dosan-photo": [
+      "dosan-butcher"
+    ],
+    "20250728-yeonji-yoozzy-live": [
+      "yoozzy"
+    ],
+    "20240727-gyuri-gonggan-photo": [
+      "gonggan-yang"
+    ],
+    "20260914-seeya-woorineun-photo": [
+      "woorineun-suseong"
+    ],
+    "20240215-boram-birthday-fancafe": [
+      "ikcoffee-historic"
+    ],
+    "20260330-rebloom-fanmeeting": [
+      "edls"
+    ],
+    "20260312-reunion-announced": [
+      "express-bus-terminal-fan-ad"
+    ],
+    "v4145-c8NnJNnkvt0": [
+      "haeundae-busking"
+    ],
+    "v4145-b8d3lpKFLrE": [
+      "gwangalli"
+    ],
+    "v488-audit-046": [
+      "gukje-market",
+      "bupyeong-market"
+    ],
+    "20260405-gyuri-first-pitch": [
+      "gocheok-skydome"
+    ],
+    "v4145-5CD4IThQet0": [
+      "avenue-of-stars"
+    ],
+    "v4145-05rfQa2tRYw": [
+      "cheonjiyeon"
+    ],
+    "v4145-HQQl-3OPp0U": [
+      "yeonjuam",
+      "yeonjudae"
+    ],
+    "v490-marie-press": [
+      "dcube-historic"
+    ],
+    "v491-lux": [
+      "seongam-hall"
+    ],
+    "v490-hug2019": [
+      "smtown-theater-historic"
+    ],
+    "v490-boramhada": [
+      "sh-art-hall"
+    ],
+    "v490-daegu2017": [
+      "bongsan-gaon"
+    ],
+    "v491-still-singing": [
+      "sungshin-unjeong"
+    ],
+    "20260502-boram-sparkle-busan": [
+      "busan-cinema-haneul"
+    ],
+    "v487-2026-008": [
+      "music-station-1939"
+    ],
+    "v475-sheet2-row17": [
+      "hannam-gamjatang"
+    ],
+    "20190120-boram-geumdwaeji-photo": [
+      "geumdwaeji-sikdang"
+    ],
+    "20261009-boram-worldmom-yongin": [
+      "ict-valley-floria"
+    ],
+    "20240503-gyuri-sbs-chuncheon": [
+      "old-kim-you-jeong-station",
+      "uiam-lake"
+    ]
+  }
+}

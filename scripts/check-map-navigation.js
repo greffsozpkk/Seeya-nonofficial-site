@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
 const shared=require('../src/shared/seeya-map');
 const places=shared.resolvePlaces(require('../src/data/map-places.json'),require('../data/archive.json'));
-function fixture(isMobile=true,historyAllowed=true){
+function fixture(isMobile=true,historyAllowed=true,search=""){
  const elements=new Map(),listeners={},mapEvents={},markers=[];
  const el=id=>{if(!elements.has(id))elements.set(id,{hidden:false,textContent:'',innerHTML:'',scrollTop:0,dataset:{},attrs:{},handlers:{},setAttribute(k,v){this.attrs[k]=v;},addEventListener(k,fn){this.handlers[k]=fn;},focus(){focused=id;}});return elements.get(id);};
  let focused='',position=[36,127.8],zoom=7,moves=0;
@@ -15,7 +15,7 @@ function fixture(isMobile=true,historyAllowed=true){
  const adapter={isDomestic:require('../src/client/kakao-map').isDomestic,mountKakaoMap(config,{onReady}){onReady(map);}};
  const document={getElementById:el,querySelectorAll:s=>s==='[data-map-view]'?tabs:[],querySelector:s=>s==='.map-workspace'?work:s==='.map-sidebar'?sidebar:s==='.map-canvas-panel'?canvas:s.startsWith('[data-place=')?el(s):null,addEventListener(k,fn){listeners[k]=fn;}};
  el('mapData').textContent=JSON.stringify({places,tileUrl:'https://example.test/{z}/{x}/{y}'});
- const context=vm.createContext({require:name=>name==='./kakao-map'?adapter:shared,document,window:{history,matchMedia:()=>media,addEventListener(k,fn){listeners[k]=fn;}},ResizeObserver:class{observe(){}},requestAnimationFrame:fn=>fn(),setTimeout(){},clearTimeout(){},navigator:{}});
+ const context=vm.createContext({require:name=>name==='./kakao-map'?adapter:shared,document,window:{history,matchMedia:()=>media,addEventListener(k,fn){listeners[k]=fn;}},ResizeObserver:class{observe(){}},requestAnimationFrame:fn=>fn(),setTimeout(){},clearTimeout(){},navigator:{},location:{search},URLSearchParams});
  vm.runInContext(fs.readFileSync(require.resolve('../src/client/seeya-map.js'),'utf8'),context);
  return {el,work,sidebar,canvas,history,media,listeners,mapEvents,position:()=>JSON.stringify(position),moves:()=>moves,focused:()=>focused,
   pin(id){const name=places.find(p=>p.id===id).name;markers.find(m=>m.label===name+' 장소 선택').onClick();},
@@ -35,9 +35,12 @@ t.pin(first);t.el('mapSelectedClose').onclick();assert.equal(t.el('mapSelectedMo
 t.pin(first);t.mapEvents.click();assert.equal(t.el('mapSelectedMobile').hidden,true);
 t.pin(first);t.el('tab-list').onclick();t.sidebar.scrollTop=1200;t.list(second);
 assert.equal(t.el('mapBack').textContent,'← 장소 목록');t.el('mapBack').onclick();assert.equal(t.work.dataset.view,'list');assert.equal(t.sidebar.scrollTop,1200);assert(t.focused().includes(second),'Focus must return to the clicked list row, not an older map selection');
-t.el('mapSearch').handlers.input({target:{value:'김유정'}});t.el('tab-map').onclick();assert.equal(t.work.dataset.view,'map');assert(t.el('mapList').innerHTML.includes('김유정역'));assert.equal(t.el('mapSelectedMobile').hidden,true,'Filtering out the selected item must clear its preview');
+t.el('mapSearch').handlers.input({target:{value:'닭동가리'}});t.el('tab-map').onclick();assert.equal(t.work.dataset.view,'map');assert(t.el('mapList').innerHTML.includes('닭동가리'));assert.equal(t.el('mapSelectedMobile').hidden,true,'Filtering out the selected item must clear its preview');
 t.el('mapArea').onclick();assert.equal(t.work.dataset.view,'map','Search in this area must remain on the map');
 t.el('mapSearchOpen').onclick();assert.equal(t.work.dataset.view,'list');assert.equal(t.focused(),'mapSearch');
 const desktop=fixture(false);desktop.pin(first);assert.equal(desktop.work.dataset.view,'detail');assert.equal(desktop.canvas.inert,false);desktop.el('mapBack').onclick();assert.equal(desktop.el('mapBrowse').hidden,false);
 const fallback=fixture(true,false);fallback.pin(first);fallback.el('mapSelectedOpen').onclick();fallback.el('mapBack').onclick();assert.equal(fallback.work.dataset.view,'map');
 console.log('PASS: mobile pin/summary/detail/back, native history, map position, list scroll/focus, handle drag, filters and desktop/history fallback.');
+
+const direct=fixture(true,true,"?place=hongik-daehakro");assert.equal(direct.work.dataset.view,"detail");assert(direct.el("mapDetail").innerHTML.includes("이곳의 씨야 기록"));direct.el("mapBack").onclick();assert.equal(direct.work.dataset.view,"list");
+const unknown=fixture(true,true,"?place=does-not-exist");assert.equal(unknown.work.dataset.view,"map");
