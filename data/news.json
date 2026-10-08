@@ -1,6 +1,13 @@
 {
   "씨야": [
     {
+      "title": "씨야→서제이, 왁스 명곡 재해석…\\'불후의 명곡\\' 출격 - 티브이데일리",
+      "source": "티브이데일리",
+      "pubDate": "2026-10-08T10:25:58+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFAzdS0tVUdKME5sU25ZTWVXRUpFMmRkaWJGNGpQWEJad3NvNlBCemtseHhCWDVibHBxSlREbUhSS0R0UFZ6a0U2a29rWlNhVWU3eVFXTzdMbFkyUkxSeWhyeXZlN1J0RTJiN2tv?oc=5",
+      "description": "씨야→서제이, 왁스 명곡 재해석…\\'불후의 명곡\\' 출격 티브이데일리"
+    },
+    {
       "title": "씨야 이보람, 대전 무대 앞 셀카…20주년 투어 속 변함없는 미소 - TopStarNews",
       "source": "TopStarNews",
       "pubDate": "2026-10-06T13:53:03+00:00",
@@ -27,13 +34,6 @@
       "pubDate": "2026-10-02T04:47:58+00:00",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB4RzBqT1VnMXctV2h3Tlg4REMxalFoaDI5SVBlQkxwQ2JPeVpBMFdpNl9DS1FORjBmekJtM09venJuUUp5NUF6ZWpBQ0RiemVGeGFkQTVoRFU?oc=5",
       "description": "남규리, 대기실서 씨야 명곡 부르자…KoN, 바이올린 합류 ‘소름 돋는 즉석 라이브’ 스포츠서울"
-    },
-    {
-      "title": "이보람, 씨야 대신 결혼 선택 “멤버들아 미안해” - 스포츠경향",
-      "source": "스포츠경향",
-      "pubDate": "2026-09-29T07:00:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1DOVNfMEptU2RCWEJfUUYzejlSNzVQNWt4Z1I5NVB4TGN1R0kzbG1td3NLVzZQUFFRcXZVaVFIaVJieG93RmtXRzRPS3ozR3JNRWw0aHYyVXhJY2J1S2fSAWNBVV95cUxOcFkwRllveUJIUzgzNXNIeUd2blk5ZE5ZdGFEbUFDbEVSOVoyNmhPeXpiYjFiTnpHZlU4cG9mbWRJNWZydXd5REljeWxqV2g5aWZRQkY0SEhRcHJON3l0bXhSMDA?oc=5",
-      "description": "이보람, 씨야 대신 결혼 선택 “멤버들아 미안해” 스포츠경향"
     }
   ],
   "남규리": [
@@ -147,16 +147,16 @@
       "description": "이보람, 씨야 대신 결혼 선택 “멤버들아 미안해” 스포츠경향"
     }
   ],
-  "updatedAt": "2026-10-08T06:28:09.757542+00:00",
-  "lastCheckedAt": "2026-10-08T06:28:09.757542+00:00",
+  "updatedAt": "2026-10-08T13:34:36.526153+00:00",
+  "lastCheckedAt": "2026-10-08T13:34:36.526153+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-08T06:28:09.757542+00:00",
-    "남규리": "2026-10-08T06:28:09.757542+00:00",
-    "김연지": "2026-10-08T06:28:09.757542+00:00",
-    "이보람": "2026-10-08T06:28:09.757542+00:00"
+    "씨야": "2026-10-08T13:34:36.526153+00:00",
+    "남규리": "2026-10-08T13:34:36.526153+00:00",
+    "김연지": "2026-10-08T13:34:36.526153+00:00",
+    "이보람": "2026-10-08T13:34:36.526153+00:00"
   },
   "categoryContentUpdatedAt": {
-    "씨야": "2026-10-07T13:28:44.421270+00:00",
+    "씨야": "2026-10-08T13:34:36.526153+00:00",
     "남규리": "2026-10-07T06:04:01.182191+00:00",
     "이보람": "2026-10-07T13:28:44.421270+00:00",
     "김연지": "2026-10-08T06:28:09.757542+00:00"
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 188,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 190,
+      "changed": true,
+      "status": "changed"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 153,
+      "accepted": 148,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 31,
-      "changed": true,
-      "status": "changed"
+      "accepted": 30,
+      "changed": false,
+      "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 90,
+      "accepted": 91,
       "changed": false,
       "status": "unchanged"
     }
