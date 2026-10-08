@@ -326,5 +326,11 @@
     "path": "/music/stages/fool/",
     "title": "바보 · 씨야 무대 모아보기 | SEEYA ARCHIVE",
     "description": "씨야 바보의 공연과 라이브 기록을 모았습니다."
+  },
+  {
+    "key": "map",
+    "path": "/map/",
+    "title": "씨야 대동여지도 · 걸어서 씨야 속으로 | SEEYA ARCHIVE",
+    "description": "걸어서 씨야 속으로. 씨야와 멤버들의 방문·여행·공연·팬 행사 장소를 지도에서 만나보세요."
   }
 ]

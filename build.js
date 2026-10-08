@@ -98,7 +98,7 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  const render=require('./src/pages/'+(key==='fanchant'?'music':key)+'.js');
  let content;
  if(key==='news')content=render(json('data/news.json'));
- else if(key==='map-preview')content=render(archiveRows);
+ else if((key==='map'||key==='map-preview'))content=render(archiveRows);
  else if(key==='calendar')content=render(calendarData);
  else if(key==='radio'||key==='podcasts')content=render(archiveRows,site.snapshotDate);
  else if(key==='home')content=render(archiveRows,new Date(site.snapshotDate));
@@ -111,17 +111,17 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
- if(key==='map-preview'){vars.pageHead=`<link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${mapJs}"></script>`;}
+ if((key==='map'||key==='map-preview')){vars.pageHead=`<link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${mapJs}"></script>`;}
  if(key==='podcasts'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}"><link rel="stylesheet" href="${podcastCss}">`;vars.scripts=`<script defer src="${podcastJs}"></script>`;}
  if(key==='dictionary'){vars.pageHead+=`<link rel="stylesheet" href="${dictionaryCss}">`;vars.scripts+=`\n<script defer src="${dictionaryJs}"></script>`;}
  if(key==='calendar'){vars.pageHead+=`<link rel="stylesheet" href="${calendarCss}">`;vars.scripts=`<script defer src="${calendarJs}"></script>`;}
  if(key==='fans'){vars.pageHead+=`<link rel="stylesheet" href="${fanCss}">`;vars.scripts+=`\n<script defer src="${fanJs}"></script>`;}
  if(key==='exam'||key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
- if(key!=='map-preview')vars.scripts+=`\n<script defer src="${mobileMenuJs}"></script>`;
+ vars.scripts+=`\n<script defer src="${mobileMenuJs}"></script>`;
  vars.themeColor=esc(pwa.theme_color);
  vars.pwaHead=route.unlisted?'':`<link rel="manifest" href="/manifest.webmanifest">\n<link rel="apple-touch-icon" sizes="180x180" href="/images/app/apple-touch-icon-180-v2.png">\n<meta name="mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="${esc(pwa.short_name)}">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">`;
  if(!route.unlisted)vars.scripts+=`\n<script defer src="${pwaJs}"></script>\n<script defer src="${offlineJs}"></script>`;
- let output=(key==='map-preview'?read('src/map-preview-template.html'):template).replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in vars))throw new Error('Unknown template key '+key);return vars[key];});
+ let output=template.replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in vars))throw new Error('Unknown template key '+key);return vars[key];});
  if(route.noindex)output=output.replace(/(<meta name="(?:robots|googlebot)" content=")[^"]+/g,'$1noindex,follow');
  if(route.unlisted){
   output=output.replace(/(<meta name="(?:robots|googlebot)" content=")[^"]+/g,'$1noindex,nofollow,noarchive,nosnippet');

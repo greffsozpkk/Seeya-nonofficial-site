@@ -4,7 +4,7 @@ const {mountKakaoMap,isDomestic}=require('./kakao-map');
 const data=JSON.parse(document.getElementById('mapData').textContent);
 const $=id=>document.getElementById(id),workspace=document.querySelector('.map-workspace');
 const state={query:'',member:'전체',region:'전체',category:'전체',relation:'전체',sort:'tour',bounds:null};
-const mobile=window.matchMedia('(max-width: 760px)'),sidebar=document.querySelector('.map-sidebar');
+const mobile=window.matchMedia('(max-width: 850px)'),sidebar=document.querySelector('.map-sidebar');
 let selected=null,map=null,rows=data.places;
 let screen={view:'map',selected:null,origin:'map',listScroll:0},steps=[screen],step=0;
 const historyToken='seeya-map-'+Date.now();

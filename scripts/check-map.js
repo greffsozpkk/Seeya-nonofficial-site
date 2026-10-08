@@ -60,7 +60,7 @@ assert(!html.includes('leadSource'));
 console.log('PASS: new place categories, representative area links, publication dates, correct Jeju branch and unpublished research queue.');
 
 // Ordinary performance venues must never inherit the 20th-anniversary tour branding.
-for(const p of allRows.filter(p=>p.category==='공연장'&&!p.tourVenue)) {assert(!detail(p).includes('20주년 콘서트 기록관'));assert(!detail(p).includes('THE FAN'));assert(cards([p]).includes('STAGE'));}
+for(const p of allRows.filter(p=>p.category==='공연장'&&!p.tourVenue)) {assert(!detail(p).includes('20주년 콘서트 기록관'));assert(!detail(p).includes('THE FAN'));assert(cards([p]).includes(p.name));assert(!cards([p]).includes('map-ticket'));}
 const closed=allRows.find(p=>p.id==='ikcoffee-historic');assert(detail(closed).includes('옛 위치 보기'));assert(!detail(closed).includes('link/to/'));assert(cards([closed]).includes('영업 종료'));
 const hk=allRows.find(p=>p.id==='avenue-of-stars');assert(detail(hk).includes('google.com/maps/search/'));assert(!detail(hk).includes('map.kakao.com'));assert(filterPlaces(allRows,{region:'홍콩'}).length===1);
 const review=config.researchReview.rows;assert.equal(review.length,105);assert.equal(new Set(review.map(r=>r.id)).size,105);
@@ -106,3 +106,16 @@ assert.equal(fan.calendar.enabled,false);assert(fan.note.includes('직접 참석
 const rully=archive.find(r=>r.id==='v475-sheet2-row31');assert.equal(rully.venue,'룰리커피 가창점');
 assert.equal(rully.date,'2026-06-28');assert.equal(rully.dateBasis,'event');
 console.log('PASS: all 76 map archive dispositions, single Chuncheon broadcast, seven additions and evidence date distinctions.');
+
+// Public map uses the shared navigation, while the previous preview stays unlisted.
+const publicMap=read('map/index.html');
+assert(publicMap.includes('씨야 대동여지도 <span aria-hidden="true">📍</span>'));
+assert(publicMap.includes('걸어서 씨야 속으로'));
+assert(!publicMap.includes('map-ticket'));
+assert(publicMap.includes('class="mobile mobile-compact"'));
+assert(publicMap.includes('class="brand logo-brand"'));
+assert(publicMap.includes('rel="canonical" href="https://seeya-fanpage.com/map/"'));
+assert(read('sitemap.xml').includes('https://seeya-fanpage.com/map/'));
+assert.equal((read('src/template.html').match(/href="\/map\/"/g)||[]).length,3);
+assert.equal(JSON.parse(publicMap.match(/id="mapData">(.*?)<\/script>/s)[1]).places.length,allRows.length);
+console.log('PASS: public map, shared navigation, subtitle and photo-free place cards.');
