@@ -332,14 +332,22 @@
     "id": "20261006-boram-dst-autumn",
     "date": "2026-10-06",
     "addedAt": "2026-09-29",
-    "updatedAt": "2026-10-07T06:17:27.684454+00:00",
-    "title": "이보람 · 대전과학기술대학교 제8회 가을문화제 출연 예정",
+    "updatedAt": "2026-10-08T06:26:56.862505+00:00",
+    "title": "이보람 · 대전과학기술대학교 제8회 가을문화제",
     "program": "대전과학기술대학교 제8회 가을문화제",
     "type": "event",
     "members": [
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "사랑의 인사",
+      "처음 그 자리에",
+      "지금 술 한잔했어",
+      "그때 그 순간 그대로",
+      "빛의 반대편에서",
+      "원더우먼",
+      "여성시대"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
@@ -369,24 +377,52 @@
         "url": "https://www.youtube.com/watch?v=44eWzvwBkHs",
         "publishedDate": "2026-10-07",
         "autoDiscovery": true
+      },
+      {
+        "label": "이보람 공식 · 대전과학기술대학교 공연 후기",
+        "url": "https://www.instagram.com/p/DeJzG9ezx7-/",
+        "publishedDate": "2026-10-06"
+      },
+      {
+        "label": "데굴",
+        "url": "https://www.youtube.com/watch?v=SfHGY4AIH4s",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "처키아빠",
+        "url": "https://www.youtube.com/watch?v=PKrYaeFGbqY",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=Qv0V_odFl4M",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "데굴",
+        "url": "https://www.youtube.com/watch?v=opFDQerHMII",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "tags": [
       "2026",
-      "예정",
       "대학 축제",
       "대전"
     ],
-    "note": "10월 6일 대전과학기술대학교 중앙광장에서 열리는 제8회 가을문화제에 이보람의 축하공연이 예정돼 있습니다.\n포스터의 오전 10시~오후 11시는 행사 전체 운영 시간입니다.\n이보람의 개별 무대 시작 시각은 별도 안내를 확인해 주세요.\n대학 공식 계정 답변에 따르면 이벤트와 공연은 오후 6시 30분 이후 진행되며 현장 상황에 따라 변동될 수 있습니다.",
-    "eventState": "scheduled",
+    "note": "10월 6일 대전과학기술대학교 중앙광장에서 열린 제8회 가을문화제의 이보람 축하공연입니다.\n「사랑의 인사」, 「처음 그 자리에」, 「지금 술 한잔했어」, 「그때 그 순간 그대로」, 「빛의 반대편에서」, 「원더우먼」, 「여성시대」 무대를 선보였습니다.\n현장 직캠과 이보람이 남긴 공연 후기 사진을 함께 볼 수 있습니다.\n오후 6시 30분은 행사 측 이벤트·공연 시작 안내 시각이며 이보람의 개별 무대 시작 시각과는 구분됩니다.",
+    "eventState": "completed",
     "venue": "대전과학기술대학교 중앙광장",
     "calendar": {
       "time": "18:30",
       "timeLabel": "이벤트·공연 시작 기준 · 이보람 무대 시각 별도",
-      "sequence": 1
+      "sequence": 2
     },
     "appliedUpdates": [
       "schedule-2026-09-30-20261006-boram-dst-autumn"
@@ -659,9 +695,44 @@
       {
         "label": "타이리셔스 현대백화점 킨텍스점 · 관람객 혜택 안내",
         "url": "https://www.instagram.com/p/Dd8iPlXn7gV/"
+      },
+      {
+        "label": "이보람 공식 · 고양 콘서트 후기 사진",
+        "url": "https://www.instagram.com/p/DeI9wt3E7xb/",
+        "publishedDate": "2026-10-06"
+      },
+      {
+        "label": "칡",
+        "url": "https://www.youtube.com/watch?v=9WCw4yUM9D0",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=OFq9Gt9Mzc4",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=A7rX35VTQC8",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=tVk6i2XcWhQ",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=Jq65S6ED-ZM",
+        "publishedDate": "2026-10-08",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-08",
+    "updatedAt": "2026-10-08T06:26:56.862505+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -46167,10 +46238,10 @@
   },
   {
     "id": "20261005-gyuri-sbs-ten-recording",
-    "date": "2026-10-05",
+    "date": "2026-10-06",
     "addedAt": "2026-10-05",
-    "updatedAt": "2026-10-06T06:40:34.588234+00:00",
-    "title": "남규리 · 배성재의 텐 · 대강 결정해드립니다 생녹방",
+    "updatedAt": "2026-10-08",
+    "title": "남규리 · 배성재의 텐 · 대강 결정해드립니다",
     "program": "SBS 파워FM · 배성재의 텐",
     "type": "radio",
     "members": [
@@ -46206,15 +46277,24 @@
         "url": "https://www.youtube.com/watch?v=Acoxfhef0PA",
         "publishedDate": "2026-10-05",
         "autoDiscovery": true
+      },
+      {
+        "label": "배성재의 텐 공식 · 남규리 출연 사진",
+        "url": "https://www.instagram.com/p/DeKCpzLPcqe/"
+      },
+      {
+        "label": "SBS 공식 팟캐스트 · 10월 6일 남규리 출연분",
+        "url": "https://podcasts.apple.com/kr/podcast/id1096961355?i=1000793656654",
+        "publishedDate": "2026-10-06"
       }
     ],
     "status": "available",
     "dateStatus": "confirmed",
-    "dateBasis": "recording",
+    "dateBasis": "broadcast",
     "tags": [
       "2026"
     ],
-    "note": "남규리가 ‘대강 결정해드립니다’의 쇼핑 고민 코너에 단독 게스트로 함께한 생녹방입니다.\n10월 5일은 유튜브 생녹방 날짜이며 라디오 본방송 날짜와 구분합니다.\n연결된 월요일 라이브에는 정예인의 ‘티끌논쟁’ 방송도 함께 포함됩니다.",
+    "note": "남규리가 ‘대강 결정해드립니다’의 쇼핑 고민 코너에 단독 게스트로 함께했습니다.\n10월 5일 생녹방 후, 10월 6일 라디오로 방송됐습니다. 카드 날짜는 SBS 공식 팟캐스트에서 확인한 본방송일입니다.\n유튜브 월요일 라이브에는 정예인의 ‘티끌논쟁’ 녹화도 함께 포함됩니다. 남규리 출연분만 들으려면 공식 팟캐스트 회차를 열어주세요.",
     "eventState": "completed"
   },
   {
@@ -46842,6 +46922,116 @@
       "방문 사진"
     ],
     "note": "이보람이 금돼지식당에서 찍은 사진을 SNS에 남겼습니다.\n2019년 6월 2일 기사에서 같은 해 1월 20일 게시물과 매장 해시태그를 소개했습니다.\n날짜는 기사에서 확인한 SNS 게시일이며 실제 식사 날짜와 다를 수 있습니다.",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261007-boram-btn-dream-24",
+    "date": "2026-10-07",
+    "addedAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "title": "이보람 · 한밤의 꿈 이보람입니다 24회",
+    "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "BTN라디오 공식 · 24회 보이는 라디오",
+      "url": "https://www.youtube.com/watch?v=Mk9cBXaLL_M",
+      "publishedDate": "2026-10-07"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 방송 당일 라디오 사진",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9468",
+        "publishedDate": "2026-10-07"
+      }
+    ],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026"
+    ],
+    "note": "10월 7일 밤 9시, 이보람이 진행한 BTN라디오 「한밤의 꿈」 24회입니다.\n‘찬 바람이 부는 밤’을 함께한 보이는 라디오로, BTN라디오 공식 채널에서 전체 방송을 다시 볼 수 있습니다.",
+    "eventState": "completed",
+    "episode": 24,
+    "publishedDate": "2026-10-07",
+    "calendar": {
+      "time": "21:00",
+      "endTime": "23:00",
+      "timeLabel": "방송 시간"
+    }
+  },
+  {
+    "id": "20261006-gyuri-the-fan-special",
+    "date": "2026-10-06",
+    "addedAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "title": "남규리 · 팬송 「The Fan(별)」 스페셜 클립",
+    "program": "남규리의 귤멍 · Special Clip",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "The Fan(별)"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 · 나의 별이 되어준 귤별이들에게",
+      "url": "https://www.youtube.com/watch?v=1cK268hTM8Y",
+      "publishedDate": "2026-10-06"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026"
+    ],
+    "note": "남규리가 팬들에게 전하는 「The Fan(별)」 스페셜 클립입니다.\n귤멍 Ep.65에서 소개한 팬송을 별도 영상으로 공개했습니다.\n날짜는 스페셜 클립 공개일입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261030-yeonji-birthday-fancafe",
+    "date": "2026-10-30",
+    "addedAt": "2026-10-08",
+    "updatedAt": "2026-10-08",
+    "title": "김연지 생일 기념 팬 카페 · 10월 30–31일 예정",
+    "program": "김연지 생일 팬 카페",
+    "type": "etc",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "생일 카페 주최 측 · 10월 30–31일 일정 공지",
+      "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7220"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [
+      "2026",
+      "팬 행사",
+      "생일 카페",
+      "예정"
+    ],
+    "note": "김연지의 생일을 기념해 팬들이 준비하는 카페 행사입니다.\n주최 측이 안내한 일정은 10월 30일 금요일부터 31일 토요일까지입니다.\n김연지의 출연·방문 일정이 아닌 팬 주최 행사입니다. 장소와 운영 시간은 주최 측 후속 공지를 참고해 주세요.",
+    "eventState": "scheduled",
     "calendar": {
       "enabled": false
     }
