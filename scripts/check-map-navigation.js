@@ -11,14 +11,14 @@ function fixture(isMobile=true,historyAllowed=true){
  const historyEntries=[null];let cursor=0;
  const history={state:null,replaceState(s){if(!historyAllowed)throw Error('History disabled');this.state=s;historyEntries[cursor]=s;},pushState(s){historyEntries.splice(++cursor);historyEntries.push(s);this.state=s;},back(){if(cursor){this.state=historyEntries[--cursor];listeners.popstate({state:this.state});}},forward(){if(cursor+1<historyEntries.length){this.state=historyEntries[++cursor];listeners.popstate({state:this.state});}}};
  const map={setView(p,z){position=p;zoom=z;moves++;return this;},getZoom:()=>zoom,fitBounds(){moves++;},latLngToContainerPoint:c=>({x:c[0]*10000,y:c[1]*10000}),invalidateSize(){},on(k,fn){mapEvents[k]=fn;return this;},getBounds:()=>({getSouth:()=>30,getNorth:()=>40,getWest:()=>120,getEast:()=>140}),attributionControl:{setPrefix(){}}};
- const layer={addTo(){return this;},clearLayers(){markers.length=0;}};
- const L={map:()=>map,layerGroup:()=>layer,divIcon:x=>x,control:{zoom:()=>({addTo(){}})},tileLayer:()=>({on(){return this;},addTo(){}}),marker:(coords,options)=>{const marker={options,events:{},addTo(){markers.push(this);return this;},getElement:()=>({setAttribute(){}}),on(k,fn){this.events[k]=fn;},bindTooltip(){}};return marker;}};
+ map.clearPins=()=>{markers.length=0;};map.addPin=options=>markers.push(options);
+ const adapter={isDomestic:require('../src/client/kakao-map').isDomestic,mountKakaoMap(config,{onReady}){onReady(map);}};
  const document={getElementById:el,querySelectorAll:s=>s==='[data-map-view]'?tabs:[],querySelector:s=>s==='.map-workspace'?work:s==='.map-sidebar'?sidebar:s==='.map-canvas-panel'?canvas:s.startsWith('[data-place=')?el(s):null,addEventListener(k,fn){listeners[k]=fn;}};
  el('mapData').textContent=JSON.stringify({places,tileUrl:'https://example.test/{z}/{x}/{y}'});
- const context=vm.createContext({require:()=>shared,document,window:{history,matchMedia:()=>media,addEventListener(k,fn){listeners[k]=fn;}},L,ResizeObserver:class{observe(){}},requestAnimationFrame:fn=>fn(),setTimeout(){},clearTimeout(){},navigator:{}});
+ const context=vm.createContext({require:name=>name==='./kakao-map'?adapter:shared,document,window:{history,matchMedia:()=>media,addEventListener(k,fn){listeners[k]=fn;}},ResizeObserver:class{observe(){}},requestAnimationFrame:fn=>fn(),setTimeout(){},clearTimeout(){},navigator:{}});
  vm.runInContext(fs.readFileSync(require.resolve('../src/client/seeya-map.js'),'utf8'),context);
  return {el,work,sidebar,canvas,history,media,listeners,mapEvents,position:()=>JSON.stringify(position),moves:()=>moves,focused:()=>focused,
-  pin(id){const name=places.find(p=>p.id===id).name;markers.find(m=>m.options.title===name+' 장소 선택').events.click();},
+  pin(id){const name=places.find(p=>p.id===id).name;markers.find(m=>m.label===name+' 장소 선택').onClick();},
   list(id){el('mapList').handlers.click({target:{closest:()=>({dataset:{place:id}})}});}};
 }
 const t=fixture();

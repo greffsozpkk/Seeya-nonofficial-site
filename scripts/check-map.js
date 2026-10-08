@@ -22,7 +22,7 @@ for(const m of html.matchAll(/(?:href|src)="(\/[^"#?]+)[^\"]*"/g)){let p=path.jo
 const elements=new Map(),get=id=>{if(!elements.has(id))elements.set(id,{hidden:false,textContent:'',innerHTML:'',dataset:{},handlers:{},addEventListener(name,fn){this.handlers[name]=fn;},setAttribute(){},focus(){}});return elements.get(id);};
 get('mapData').textContent=JSON.stringify({places:rows,tileUrl:config.tileUrl});
 const workspace={dataset:{view:'map'}},doc={getElementById:get,querySelectorAll:()=>[],querySelector:s=>s==='.map-workspace'?workspace:null,addEventListener(){}};
-vm.runInNewContext(read('src/client/seeya-map.js'),{require:()=>shared,document:doc,window:{matchMedia:()=>({matches:true})},clearTimeout(){},setTimeout(){},navigator:{}});
+vm.runInNewContext(read('src/client/seeya-map.js'),{require:name=>name==='./kakao-map'?{isDomestic:require('../src/client/kakao-map').isDomestic,mountKakaoMap(config,{onError}){onError();}}:shared,document:doc,window:{matchMedia:()=>({matches:true})},clearTimeout(){},setTimeout(){},navigator:{}});
 assert.equal(workspace.dataset.view,'list');assert.equal(get('mapError').hidden,false);assert(get('mapError').textContent.includes('목록'));
 get('mapSearch').handlers.input({target:{value:'수원'}});assert(get('mapList').innerHTML.includes('선승관'));assert(!get('mapList').innerHTML.includes('KBS홀'));
 get('mapSearch').handlers.input({target:{value:'없는장소'}});assert.equal(get('mapEmpty').hidden,false);

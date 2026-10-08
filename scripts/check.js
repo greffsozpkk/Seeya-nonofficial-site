@@ -24,6 +24,7 @@ require('./check-stages');
 require('./check-concerts');
 require('./check-map');
 require('./check-map-navigation');
+require('./check-kakao-map');
 require('./check-fan-gallery');
 require('./check-exam');
 require('./check-dictionary');

@@ -51,3 +51,9 @@
 
 /* Culture, travel and shopping retain distinct map/list colors. */
 .map-ticket-culture,.map-cover-culture{background:linear-gradient(140deg,#f1edfa,#e2d8f2);color:#6b4c91}.map-tag-culture{background:#ece3f6;color:#65428d}.map-pin-culture,.map-legend i.culture{background:#8b6eaf}.map-ticket-nature,.map-cover-nature{background:linear-gradient(140deg,#e9f5fb,#cce6f0);color:#2b6685}.map-tag-nature{background:#e0f0f6;color:#2c607a}.map-pin-nature,.map-legend i.nature{background:#438ead}.map-ticket-shopping,.map-cover-shopping{background:linear-gradient(140deg,#fff0eb,#f3d4c8);color:#925c48}.map-tag-shopping{background:#f9e8df;color:#8b513d}.map-pin-shopping,.map-legend i.shopping{background:#c47b59}.map-legend{max-width:360px;gap:8px 12px}.map-legend>span{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}.map-legend i{display:inline-block;flex-shrink:0}
+
+/* Kakao owns the base map, controls and copyright. Keep pins as accessible buttons. */
+.map-kakao-pin{display:flex;align-items:center;justify-content:center;min-width:44px;min-height:48px;padding:0;border:0;background:transparent;box-shadow:none;cursor:pointer;overflow:visible}.map-kakao-pin:focus-visible{outline:3px solid #843254;outline-offset:4px;border-radius:9px}
+
+.map-top-tools{right:64px}
+@media(max-width:760px){.map-search-open,.map-top-tools{right:54px}}

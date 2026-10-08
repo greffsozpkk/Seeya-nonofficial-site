@@ -1,3 +1,30 @@
+# SEEYA ARCHIVE v4.188 — 카카오맵 전환
+
+**누적 업데이트:** `SEEYA_v4_188_KAKAO_MAP_UPLOAD.zip`. 4.187까지 포함합니다. GitHub Desktop에서 Fetch/Pull origin 후 기존 사이트 폴더에 덮어쓰고 Commit → Push하세요. 운영 `data/`·`state/`와 생성 HTML은 덮어쓰지 않습니다. 전체 ZIP은 백업용입니다.
+
+- 씨야 대동여지도의 바탕 지도를 카카오맵으로 변경했습니다. 기존 미공개 테스트 주소 `/preview/seeya-map-7f2c9a6e41b803d5/`를 유지합니다. 공개 메뉴와 사이트맵에는 추가하지 않습니다.
+- 기존 장소 76개·멤버/종류/지역 검색·상세 출처·모바일 하단 요약 및 뒤로 가기를 보존합니다. 국내 지도에는 75개를 표시하고 홍콩 1개는 목록/상세 및 외부 지도 링크로 제공합니다.
+- 지도 스크립트는 이 페이지에서만 1회 불러옵니다. 검색·필터·마커 조작은 저장된 장소 데이터로 처리하며 카카오 장소 검색·주소 변환 API는 호출하지 않습니다. 지도 연결 실패 시에도 목록·주소·외부 길찾기를 이용할 수 있습니다.
+- 사용자 제공 JavaScript 키는 `src/data/map-provider.json`에서 관리합니다. 브라우저에서 쓰는 공개용 키이며 REST/Admin 키를 넣으면 안 됩니다. 카카오디벨로퍼스에서 `https://seeya-fanpage.com`, 로컬 확인용 `http://127.0.0.1:8188`을 이 키의 JavaScript SDK 도메인으로 등록하세요. 다른 포트로 미리보기를 열면 해당 주소도 등록해야 합니다.
+- 무료 쿼터 앱을 사용하고 **유료 API는 켜지 마세요.** 앱의 과금 설정은 사이트 코드가 변경하지 않습니다. 한도 초과 시 지도 요청이 제한될 수 있으며 GitHub 제한이 과금을 막아주는 구조가 아닙니다. 사용량은 카카오디벨로퍼스 통계에서 확인합니다.
+- 빌드: `node build.js`. 검사: `node scripts/check.js`. **생성된 HTML 직접 편집 금지.** 로컬 미리보기 `serve-local.bat`은 실행 화면에 표시된 주소를 사용하며 도메인 등록도 그 주소와 일치해야 합니다.
+
+## 기존 지도 방식 복구 기록 — v4.187
+
+복구 기준 백업: `SEEYA_v4_187_APP_ICON_ARCHIVE_FULL_BACKUP.zip`(2026-10-08). 기존 방식은 Leaflet + OpenStreetMap 표준 타일이며 주소는 `https://tile.openstreetmap.org/{z}/{x}/{y}.png`입니다. 키 없이 사용했고 기존 모바일 지도/목록/상세 흐름을 지원합니다. 현재 페이지에서는 이 방식을 함께 실행하거나 자동 전환하지 않습니다.
+
+사용량 문제로 되돌릴 때는 **이전 전체 ZIP을 현재 사이트에 덮어쓰지 마세요.** 이후 추가한 아카이브·장소·일정이 사라질 수 있습니다. 현재 데이터를 보존한 상태에서 지도 코드만 복원합니다.
+
+1. 현재 소스를 먼저 백업합니다. `data/`, `state/`, `src/data/map-places.json`과 최신 콘텐츠 데이터는 유지합니다.
+2. 4.187 백업에서 `src/client/seeya-map.js`, `src/pages/map-preview.js`, `src/styles/seeya-map.css`, `scripts/check-map.js`, `scripts/check-map-navigation.js`, `src/vendor/leaflet/`를 복구합니다. 이후 지도 UI 변경이 있으면 해당 부분은 비교해서 병합합니다.
+3. 현재 `build.js`에 4.187의 지도 전용 Leaflet JS/CSS 생성 3줄과 `map-preview`의 CSS·스크립트 연결 구문만 복구합니다. `build.js` 전체를 예전 파일로 덮어쓰지 않습니다. `src/data/map-places.json`의 `tileUrl`은 유지되어 있습니다.
+4. `scripts/check.js`의 `require('./check-kakao-map');`를 제거합니다. 카카오 전용 `src/client/kakao-map.js`와 `src/data/map-provider.json`은 더 이상 참조하지 않도록 정리합니다.
+5. `node build.js`와 `node scripts/check.js`를 실행하고 모바일 핀/상세/뒤로 가기, 국내·해외 위치, 지도 출처 표시를 확인한 뒤 배포합니다. OpenStreetMap도 무제한 상용 타일 서버가 아니므로 당시의 타일 이용 정책을 재확인하세요.
+
+공식 문서: [카카오 지도 SDK](https://apis.map.kakao.com/web/documentation/), [무료 쿼터·이용 정책](https://developers.kakao.com/docs/ko/kakaomap/common), [OpenStreetMap 타일 정책](https://operations.osmfoundation.org/policies/tiles/).
+
+---
+
 # SEEYA ARCHIVE v4.187 — 앱 아이콘·아카이브 업데이트
 
 **누적 업데이트:** `SEEYA_v4_187_APP_ICON_ARCHIVE_UPLOAD.zip`. 4.186까지 포함합니다. GitHub Desktop에서 Fetch/Pull origin 후 기존 사이트 폴더에 덮어쓰고 Commit → Push하세요. 운영 `data/`·`state/`와 생성 HTML은 덮어쓰지 않습니다. 전체 ZIP은 백업용입니다.

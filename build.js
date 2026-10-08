@@ -73,9 +73,6 @@ const radioCss=asset('radio','css',read('src/styles/radio.css'));
 const radioJs=asset('radio','js',bundle('src/client/radio.js'));
 const mapCss=asset('seeya-map','css',read('src/styles/seeya-map.css'));
 const mapJs=asset('seeya-map','js',bundle('src/client/seeya-map.js'));
-const leafletJs=asset('leaflet','js',read('src/vendor/leaflet/leaflet.js'));
-// Custom div markers and zoom buttons do not use Leaflet's optional image assets.
-const leafletCss=asset('leaflet','css',read('src/vendor/leaflet/leaflet.css').replace(/url\(images\/[^)]+\)/g,'none'));
 const adminCss=asset('archive-admin','css',read('src/admin/admin.css'));
 const adminJs=asset('archive-admin','js',read('src/admin/admin.js'));
 write('manage/index.html',read('src/admin/template.html').replace('{{adminCss}}',adminCss).replace('{{adminJs}}',adminJs));
@@ -114,7 +111,7 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
- if(key==='map-preview'){vars.pageHead=`<link rel="stylesheet" href="${leafletCss}"><link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${leafletJs}"></script><script defer src="${mapJs}"></script>`;}
+ if(key==='map-preview'){vars.pageHead=`<link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${mapJs}"></script>`;}
  if(key==='podcasts'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}"><link rel="stylesheet" href="${podcastCss}">`;vars.scripts=`<script defer src="${podcastJs}"></script>`;}
  if(key==='dictionary'){vars.pageHead+=`<link rel="stylesheet" href="${dictionaryCss}">`;vars.scripts+=`\n<script defer src="${dictionaryJs}"></script>`;}
  if(key==='calendar'){vars.pageHead+=`<link rel="stylesheet" href="${calendarCss}">`;vars.scripts=`<script defer src="${calendarJs}"></script>`;}
