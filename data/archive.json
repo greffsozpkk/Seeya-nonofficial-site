@@ -332,7 +332,7 @@
     "id": "20261006-boram-dst-autumn",
     "date": "2026-10-06",
     "addedAt": "2026-09-29",
-    "updatedAt": "2026-10-08",
+    "updatedAt": "2026-10-08T06:26:56.862505+00:00",
     "title": "이보람 · 대전과학기술대학교 제8회 가을문화제",
     "program": "대전과학기술대학교 제8회 가을문화제",
     "type": "event",
@@ -382,6 +382,30 @@
         "label": "이보람 공식 · 대전과학기술대학교 공연 후기",
         "url": "https://www.instagram.com/p/DeJzG9ezx7-/",
         "publishedDate": "2026-10-06"
+      },
+      {
+        "label": "데굴",
+        "url": "https://www.youtube.com/watch?v=SfHGY4AIH4s",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "처키아빠",
+        "url": "https://www.youtube.com/watch?v=PKrYaeFGbqY",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=Qv0V_odFl4M",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "데굴",
+        "url": "https://www.youtube.com/watch?v=opFDQerHMII",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -676,9 +700,39 @@
         "label": "이보람 공식 · 고양 콘서트 후기 사진",
         "url": "https://www.instagram.com/p/DeI9wt3E7xb/",
         "publishedDate": "2026-10-06"
+      },
+      {
+        "label": "칡",
+        "url": "https://www.youtube.com/watch?v=9WCw4yUM9D0",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=OFq9Gt9Mzc4",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=A7rX35VTQC8",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=tVk6i2XcWhQ",
+        "publishedDate": "2026-10-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=Jq65S6ED-ZM",
+        "publishedDate": "2026-10-08",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-08",
+    "updatedAt": "2026-10-08T06:26:56.862505+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
