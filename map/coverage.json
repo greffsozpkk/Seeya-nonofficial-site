@@ -1,0 +1,1236 @@
+{
+  "summary": {
+    "records": 141,
+    "venues": 127,
+    "linked": 85,
+    "pending": 56,
+    "unreviewed": 0
+  },
+  "rows": [
+    {
+      "recordId": "20261228-yeonji-avahair",
+      "title": "김연지 · 에이바헤어 송년회 AVA VIP AFFAIR 출연 예정",
+      "venue": "양재 엘타워",
+      "placeIds": [
+        "eltower"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261215-boram-six-season",
+      "title": "이보람 · 식스 더 뮤지컬 · 시모어 역 출연 예정",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · INCHEON",
+      "venue": "인천남동체육관",
+      "placeIds": [
+        "namdong-gymnasium"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "title": "이보람 · 세상을 바꾸는 여자들 송도 공연 예정",
+      "venue": "송도컨벤시아 프리미어볼룸 A룸 (센트럴로 123)",
+      "placeIds": [
+        "songdo-convensia"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261017-the-fan-suwon",
+      "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · SUWON",
+      "venue": "경희대학교 국제캠퍼스 선승관",
+      "placeIds": [
+        "khu-seonseung"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · CHEONGJU",
+      "venue": "청주대학교 석우문화체육관",
+      "placeIds": [
+        "cju-seokwoo",
+        "elephant",
+        "pyeonbaek",
+        "dalma",
+        "stonefalls",
+        "ohji"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261006-boram-dst-autumn",
+      "title": "이보람 · 대전과학기술대학교 제8회 가을문화제",
+      "venue": "대전과학기술대학교 중앙광장",
+      "placeIds": [
+        "dst-campus"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261004-the-fan-goyang",
+      "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · GOYANG",
+      "venue": "킨텍스 제2전시장 10홀",
+      "placeIds": [
+        "kintex-second",
+        "grandma-sister",
+        "gogichanggo",
+        "dowon",
+        "kitsuki",
+        "hibi",
+        "thailicious"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261003-boram-artforrest-six",
+      "title": "이보람 · 아트포레스트페스티벌 · 뮤지컬 식스",
+      "venue": "서울어린이대공원 숲속의무대",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "20261002-seeya-yeongwol-garden",
+      "title": "씨야 · 대한민국 영월 정원산업박람회 개막 축하콘서트",
+      "venue": "영월 동서강정원 청령포원",
+      "placeIds": [
+        "cheongnyeongpo-garden"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261002-jecheon-herbal-fair",
+      "title": "씨야 · 2026 제천한방천연물산업박람회 개막축하콘서트",
+      "venue": "제천한방엑스포공원 한방무대(주무대)",
+      "placeIds": [
+        "jecheon-hanbang-expo"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20260929-gyuri-ena-kpopup-24",
+      "title": "남규리 · ENA 케이팝업 차트쇼 24회 · 우리 사랑 그런 거 해요 Part.2",
+      "venue": "일산 빛마루센터",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "20260928-yeonji-suseong-busking",
+      "title": "김연지 · 닭동가리 수성못 라이브 버스킹",
+      "venue": "대구 닭동가리 수성못 본점",
+      "placeIds": [
+        "dakdonggari-suseong"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20260921-woosuk-festival",
+      "title": "씨야 · 우석대학교 대동제 청요",
+      "venue": "우석대학교 전주캠퍼스 농구장 주무대",
+      "placeIds": [
+        "woosuk-jeonju"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20260920-gyuri-gwangju-charity",
+      "title": "남규리 · 한마음 대축제 자선공연",
+      "venue": "광주교육대학교 제1운동장",
+      "placeIds": [
+        "gnue-campus"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20260919-daegu-national-song-festival",
+      "title": "씨야 · 2026 대구전국가요제 축하공연",
+      "venue": "대구 두류공원 코오롱 야외음악당",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "20260912-the-fan-daegu",
+      "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · DAEGU",
+      "venue": "대구 엑스코 5층 컨벤션홀",
+      "placeIds": [
+        "exco-west"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet1-row13",
+      "title": "김연지 · 제 13회 박카스 29초 영화제 시상식",
+      "venue": "한국경제신문사 다산홀",
+      "placeIds": [
+        "hankyung-dasan"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · BUSAN",
+      "venue": "부산 KBS홀",
+      "placeIds": [
+        "kbs-busan-hall"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · SEOUL",
+      "venue": "경희대학교 평화의 전당",
+      "placeIds": [
+        "khu-grand-peace-palace"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20260827-kwda-listener-choice",
+      "title": "2026 K-WORLD DREAM AWARDS · 리스너 초이스상",
+      "venue": "경기 고양시 킨텍스",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "제1·제2전시장 중 실제 행사장을 확인한 뒤 기존 핀에 연결합니다."
+    },
+    {
+      "recordId": "v475-sheet2-row74",
+      "title": "씨야 · 피크닉 라이브 소풍 150회",
+      "venue": "국립 4.19 민주묘지 주차장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v475-sheet2-row64",
+      "title": "씨야 · I'm KPOP 밀레니엄 '난 가끔 눈물을 흘린다'",
+      "venue": "익산 원광대학교 문화체육관",
+      "placeIds": [
+        "wonkwang-campus"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet2-row62",
+      "title": "씨야 · 명수 밤바다",
+      "venue": "여수 엑스포 광장",
+      "placeIds": [
+        "yeosu-expo"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet2-row54",
+      "title": "이보람 · 2026 의성 청년 워터 페스티벌",
+      "venue": "안계면 위천 생태공원",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v475-sheet2-row53",
+      "title": "씨야 · 다대포 비치 콘서트(다비콘)",
+      "venue": "부산 다대포해수욕장",
+      "placeIds": [
+        "dadaepo-beach"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet2-row49",
+      "title": "씨야 · 한강 낙동강 발원지 축제",
+      "venue": "태백 문화광장 메인무대",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v475-sheet2-row42",
+      "title": "씨야 · 인천 타임캡슐 콘서트 출연",
+      "venue": "송도달빛축제공원",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v475-sheet2-row40",
+      "title": "이보람 · 우리 함께 노래 할래요 공연",
+      "venue": "동해문화예술회관 야외 공연장",
+      "placeIds": [
+        "donghae-arts"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet2-row37",
+      "title": "남규리 · E스포츠 세션 2026 K 포럽",
+      "venue": "콘래드 서울 3층 그랜드볼룸",
+      "placeIds": [
+        "conrad-seoul"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet2-row35",
+      "title": "김연지 · 제 12회 한국발성교정 학술대회",
+      "venue": "더 러버사이드호텔 6층 몽블랑홀",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "title": "남규리 · 대구 룰리버스킹",
+      "venue": "룰리커피 가창점",
+      "placeIds": [
+        "rully-gachang"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet2-row24",
+      "title": "씨야 · 2026년 김포 아리마린 페스티벌",
+      "venue": "마린스테이지",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v475-sheet2-row19",
+      "title": "씨야 · 뒤란 행사",
+      "venue": "울산문화예술회관 야외공연장",
+      "placeIds": [
+        "ulsan-arts"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet2-row16",
+      "title": "씨야 · 2026 강남 피크닉 콘서트",
+      "venue": "한강공원 신사잠원지구 다목적운동장",
+      "placeIds": [
+        "jamwon-hangang"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet2-row14",
+      "title": "이보람 · 기아타이거즈 vs 두산베어스 시구",
+      "venue": "기아 챔피언스 필드",
+      "placeIds": [
+        "kia-champions"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v475-sheet2-row7",
+      "title": "씨야 · 제3회 옥천암 수변 호국 음악회",
+      "venue": "홍제폭포 주차장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v487-2026-013",
+      "title": "씨야 · First, Again 더현대 서울 팝업스토어",
+      "venue": "더현대 서울",
+      "placeIds": [
+        "hyundai-seoul"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v487-2026-008",
+      "title": "이보람 · 가평 G-SL 스프링 콘서트",
+      "venue": "음악역1939 야외무대",
+      "placeIds": [
+        "music-station-1939"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20260502-boram-sparkle-busan",
+      "title": "이보람 단독 콘서트 · SPARKLE 부산",
+      "venue": "영화의전당 하늘연극장",
+      "placeIds": [
+        "busan-cinema-haneul"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v488-audit-030",
+      "title": "이보람 · 세상을 바꾸는 여자들 부산",
+      "venue": "부산",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "20260405-gyuri-first-pitch",
+      "title": "남규리 · 키움 히어로즈 홈경기 시구",
+      "venue": "고척스카이돔",
+      "placeIds": [
+        "gocheok-skydome"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v488-audit-029",
+      "title": "이보람 · 세상을 바꾸는 여자들 원주",
+      "venue": "원주",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "20260330-rebloom-fanmeeting",
+      "title": "씨야 재결합 기념 첫 팬미팅 · RE:BLOOM",
+      "venue": "서울 종로구 이들스(EDLS)",
+      "placeIds": [
+        "edls"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v488-audit-028",
+      "title": "이보람 · 세상을 바꾸는 여자들 충주",
+      "venue": "충주",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-027",
+      "title": "이보람 · 세상을 바꾸는 여자들 순천",
+      "venue": "순천",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-026",
+      "title": "이보람 · 세상을 바꾸는 여자들 전주",
+      "venue": "전주",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-025",
+      "title": "이보람 · 세상을 바꾸는 여자들 안산",
+      "venue": "안산",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-024",
+      "title": "이보람 · 세상을 바꾸는 여자들 군산",
+      "venue": "군산",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-023",
+      "title": "이보람 · 세상을 바꾸는 여자들 평택",
+      "venue": "평택",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-022",
+      "title": "이보람 · 세상을 바꾸는 여자들 광명",
+      "venue": "광명",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-021",
+      "title": "이보람 · 세상을 바꾸는 여자들 서산",
+      "venue": "서산",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-020",
+      "title": "이보람 · 세상을 바꾸는 여자들 광주",
+      "venue": "광주",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-019",
+      "title": "이보람 · 세상을 바꾸는 여자들 인천",
+      "venue": "인천",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-018",
+      "title": "이보람 · 세상을 바꾸는 여자들 강동",
+      "venue": "강동",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-017",
+      "title": "이보람 · 세상을 바꾸는 여자들 일산",
+      "venue": "일산",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-016",
+      "title": "이보람 · 세상을 바꾸는 여자들 양주",
+      "venue": "양주",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-014",
+      "title": "이보람 · 세상을 바꾸는 여자들 청주",
+      "venue": "청주",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-013",
+      "title": "이보람 · 세상을 바꾸는 여자들 세종",
+      "venue": "세종",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v488-audit-012",
+      "title": "이보람 · 세상을 바꾸는 여자들 성남",
+      "venue": "성남",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "현재 기록에는 지역명만 있어 실제 행사장을 특정할 수 없습니다."
+    },
+    {
+      "recordId": "v491-navy2025",
+      "title": "이보람 — 해군 송년음악회",
+      "venue": "계룡문화예술의전당",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v491-still-singing",
+      "title": "이보람 단독 콘서트 — Still Singing",
+      "venue": "성신여자대학교 운정그린캠퍼스 대강당",
+      "placeIds": [
+        "sungshin-unjeong"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v491-lesmis2024",
+      "title": "남규리 — 연극 레 미제라블",
+      "venue": "국립극장 해오름극장",
+      "placeIds": [
+        "national-theater"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v491-lux",
+      "title": "남규리 첫 팬미팅 — LUX",
+      "venue": "성암아트홀",
+      "placeIds": [
+        "seongam-hall"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v491-bom",
+      "title": "김연지 — 봄서트",
+      "venue": "연천수레울아트홀 대공연장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v491-medium",
+      "title": "김연지 — 미디엄템포 콘서트",
+      "venue": "고려대학교 화정체육관",
+      "placeIds": [
+        "korea-hwajeong"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v491-damda",
+      "title": "김연지 — 담다 닮다",
+      "venue": "건국대학교 새천년관 대공연장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v491-ballad-busan",
+      "title": "김연지 — 오늘, 발라드 콘서트 in 부산",
+      "venue": "부산 KBS홀",
+      "placeIds": [
+        "kbs-busan-hall"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v491-ballad-suwon",
+      "title": "김연지 — 오늘, 발라드 콘서트 in 수원",
+      "venue": "경기아트센터 대극장",
+      "placeIds": [
+        "gyeonggi-arts"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v491-ballad-daegu",
+      "title": "김연지 — 오늘, 발라드 콘서트 in 대구",
+      "venue": "천마아트센터",
+      "placeIds": [
+        "chunma-arts"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v491-ballad-seoul",
+      "title": "김연지 — 오늘, 발라드 콘서트 in 서울",
+      "venue": "올림픽공원 올림픽홀",
+      "placeIds": [
+        "olympic-hall"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v491-green",
+      "title": "김연지 — 서원밸리 자선 그린콘서트",
+      "venue": "서원밸리CC",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v491-uiseong",
+      "title": "이보람 — 의성 송년음악회",
+      "venue": "의성문화회관",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v491-marie2021",
+      "title": "김연지 — 뮤지컬 마리 앙투아네트",
+      "venue": "샤롯데씨어터",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v491-mozart2020",
+      "title": "김연지 — 뮤지컬 모차르트!",
+      "venue": "세종문화회관 대극장",
+      "placeIds": [
+        "sejong-center"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20200120-yeonji-musical-awards",
+      "title": "김연지·장은아 · 제4회 한국뮤지컬어워즈 축하공연",
+      "venue": "블루스퀘어 인터파크홀",
+      "placeIds": [
+        "blue-square"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-hug2019",
+      "title": "김연지 단독 콘서트 HUG",
+      "venue": "SMTOWN THEATER 코엑스아티움",
+      "placeIds": [
+        "smtown-theater-historic"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-boramhada",
+      "title": "이보람 첫 단독 콘서트 보람하다 — 남규리 게스트",
+      "venue": "대학로 SH아트홀",
+      "placeIds": [
+        "sh-art-hall"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-marie-press",
+      "title": "김연지 — 마리 앙투아네트 프레스콜",
+      "venue": "디큐브아트센터",
+      "placeIds": [
+        "dcube-historic"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-marie-season",
+      "title": "김연지 — 뮤지컬 마리 앙투아네트, 마그리드 역",
+      "venue": "디큐브아트센터",
+      "placeIds": [
+        "dcube-historic"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-miryang",
+      "title": "김연지 — 제18회 밀양아리랑가요제 축하무대",
+      "venue": "밀양 삼문동 야외공연장 특설무대",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v490-godoflive",
+      "title": "김연지·임한별 — God of Live",
+      "venue": "동덕여자대학교 백주년기념관",
+      "placeIds": [
+        "dongduk-campus"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v4145-VX4z0syPoWw",
+      "title": "김연지 · DMC 페스티벌 복면가왕 더 위너",
+      "venue": "상암 MBC 특설무대",
+      "placeIds": [
+        "mbc-sangam"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20180525-gyuri-dejavu-screening",
+      "title": "남규리 · 데자뷰 언론시사회·기자간담회",
+      "venue": "CGV 용산아이파크몰",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v490-dejavu-press",
+      "title": "남규리 — 데자뷰 제작보고회",
+      "venue": "롯데시네마 건대입구",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v490-daegu2017",
+      "title": "김연지 첫 단독 콘서트 in 대구",
+      "venue": "봉산문화회관 가온홀",
+      "placeIds": [
+        "bongsan-gaon"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-dreamhigh",
+      "title": "김연지 — 드림하이 콘서트 in 의령",
+      "venue": "의령중학교 체육관",
+      "placeIds": [
+        "uiryeong-school"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-fourcolors",
+      "title": "김연지 — 사색동화 콘서트",
+      "venue": "경희대학교 평화의전당",
+      "placeIds": [
+        "khu-grand-peace-palace"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-gwangju2016",
+      "title": "알리·김연지 콘서트 — 이보람 게스트",
+      "venue": "김대중컨벤션센터 다목적홀",
+      "placeIds": [
+        "kimdaejung-center"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-bcm",
+      "title": "남규리 — 부산콘텐츠마켓 자원봉사단 발대식",
+      "venue": "부산시청",
+      "placeIds": [
+        "busan-cityhall"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v490-biff2013",
+      "title": "남규리 — 제18회 부산국제영화제 개막식",
+      "venue": "영화의전당",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v482-event-010",
+      "title": "남규리 · LG 트윈스 대 삼성 라이온즈 경기 시구",
+      "venue": "서울 잠실야구장",
+      "placeIds": [
+        "jamsil-baseball"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v482-event-011",
+      "title": "남규리 · SBS 49일 제작발표회",
+      "venue": "서울 목동 SBS홀",
+      "placeIds": [
+        "sbs-mokdong"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v482-event-015",
+      "title": "씨야 · 2009 푸른세대를 위한 열린음악회",
+      "venue": "의정부체육관",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v482-event-009",
+      "title": "씨야 · 2009 태화강 물축제 개막 축하공연",
+      "venue": "울산 태화강 둔치 특설무대",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v482-event-012",
+      "title": "남규리 · 보브 팬사인회",
+      "venue": "인천국제공항 출국장 3층 신세계백화점",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "당시 매장의 터미널·정확한 위치를 확인합니다."
+    },
+    {
+      "recordId": "20090308-seeya-sadder-movie-concert",
+      "title": "씨야 · 슬픔보다 더 슬픈 이야기 무비콘서트 · 구두",
+      "venue": "서울 올림픽공원 올림픽홀",
+      "placeIds": [
+        "olympic-hall"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v482-event-013",
+      "title": "씨야 · 고사: 피의 중간고사 · 선상 호러파티",
+      "venue": "한강시민공원 잠원지구 선상 레스토랑",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "당시 시설 명칭과 현재 위치의 대응을 추가 확인합니다."
+    },
+    {
+      "recordId": "v482-event-006",
+      "title": "씨야 · 오크밸리 Summer Festival",
+      "venue": "오크밸리",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "20080131-seoul-music-awards-bonsang",
+      "title": "제17회 하이원 서울가요대상 본상",
+      "venue": "강원랜드 하이원호텔 컨퍼런스홀",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "당시 시설 명칭과 현재 위치의 대응을 추가 확인합니다."
+    },
+    {
+      "recordId": "v482-event-005",
+      "title": "씨야 · 제1회 대한민국 동영상 UCC 대상 · 축하공연",
+      "venue": "어린이대공원 돔 아트홀",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "당시 시설 명칭과 현재 위치의 대응을 추가 확인합니다."
+    },
+    {
+      "recordId": "20071215-first-concert-busan",
+      "title": "씨야 1st Concert – 女神 · BUSAN",
+      "venue": "부산 KBS홀",
+      "placeIds": [
+        "kbs-busan-hall"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20071208-first-concert-daegu",
+      "title": "씨야 1st Concert – 女神 · DAEGU",
+      "venue": "대구 시민회관 대극장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "당시 시설 명칭과 현재 위치의 대응을 추가 확인합니다."
+    },
+    {
+      "recordId": "20071123-first-concert-seoul",
+      "title": "씨야 1st Concert – 女神 · SEOUL",
+      "venue": "서울 멜론 악스홀",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "당시 시설 명칭과 현재 위치의 대응을 추가 확인합니다."
+    },
+    {
+      "recordId": "20071117-mkmf-female-group",
+      "title": "2007 MKMF 여자그룹상",
+      "venue": "서울 잠실 실내체육관",
+      "placeIds": [
+        "jamsil-gym"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20071024-seeya-kumamoto-friendship",
+      "title": "씨야 · 한·일 우정의 콘서트 · 사랑하기 때문에",
+      "venue": "일본 구마모토성",
+      "placeIds": [
+        "kumamoto-castle"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v482-event-001",
+      "title": "씨야 · 정보통신윤리 홍보대사 위촉식",
+      "venue": "정보통신윤리위원회 e클린 홀",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "당시 시설 명칭과 현재 위치의 대응을 추가 확인합니다."
+    },
+    {
+      "recordId": "v482-event-007",
+      "title": "씨야 · 제6회 전국평생학습축제 개막 축하무대",
+      "venue": "창원종합운동장 만남의 광장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "v482-event-014",
+      "title": "씨야 · 경남 e-스포츠대회 · 축하공연",
+      "venue": "창원실내체육관",
+      "placeIds": [
+        "changwon-gym"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20070811-cj-korea-big4-lasvegas",
+      "title": "CJ Korea Big4 Concert · LAS VEGAS",
+      "venue": "미국 라스베이거스 시저스 팰리스 더 콜로세움",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "20070804-cj-korea-big4-newyork",
+      "title": "CJ Korea Big4 Concert · NEW YORK",
+      "venue": "미국 뉴욕 맨해튼 센터 해머스타인 볼룸",
+      "placeIds": [
+        "hammerstein-ballroom"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20070722-summer-big4",
+      "title": "2007 Summer Big4 Concert · Fantastic Star",
+      "venue": "서울 올림픽공원 체조경기장",
+      "placeIds": [
+        "kspo-dome"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v482-event-002",
+      "title": "씨야 · 저작권 홍보대사 위촉식",
+      "venue": "서울 소공동 롯데호텔 에메랄드룸",
+      "placeIds": [
+        "lotte-hotel-seoul"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v482-event-003",
+      "title": "씨야 · 2007 경희사이버 페스티벌",
+      "venue": "경희대학교 노천극장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "20061229-sbs-gayo-rookie",
+      "title": "2006 SBS 가요대전 신인상",
+      "venue": "일산 킨텍스",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "제1·제2전시장 중 실제 행사장을 확인한 뒤 기존 핀에 연결합니다."
+    },
+    {
+      "recordId": "20061223-big4-christmas",
+      "title": "제2회 빅4 콘서트 · Christmas",
+      "venue": "서울 코엑스 대서양홀",
+      "placeIds": [
+        "coex"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20061214-golden-disc-rookie",
+      "title": "2006 골든디스크상 신인상",
+      "venue": "서울 올림픽공원 올림픽홀",
+      "placeIds": [
+        "olympic-hall"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20061201-seoul-music-awards-rookie",
+      "title": "제16회 서울가요대상 신인상",
+      "venue": "일산 킨텍스",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "제1·제2전시장 중 실제 행사장을 확인한 뒤 기존 핀에 연결합니다."
+    },
+    {
+      "recordId": "20061125-mkmf-best-ost",
+      "title": "2006 MKMF 최우수 OST상",
+      "venue": "서울 올림픽공원 체조경기장",
+      "placeIds": [
+        "kspo-dome"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "v482-event-008",
+      "title": "씨야 · 익산대학 비전21 · 시민과 함께 하는 축제",
+      "venue": "국립 익산대학",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "당시 시설 명칭과 현재 위치의 대응을 추가 확인합니다."
+    },
+    {
+      "recordId": "20060527-seeya-iconcert",
+      "title": "씨야 · 사랑한다 대한민국 2006 아이-콘서트 · 구두 / 사랑하기 때문에",
+      "venue": "서울 올림픽주경기장",
+      "placeIds": [
+        "olympic-main-stadium"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20060312-inkigayo-debut",
+      "title": "SBS 인기가요 공식 데뷔 무대",
+      "venue": "SBS 등촌동 공개홀",
+      "placeIds": [
+        "sbs-deungchon"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261001-gyuri-handonday",
+      "title": "남규리 · 2026 한돈데이 기념식 · 공로패 수상·삼겹살송",
+      "venue": "그랜드 하얏트 서울",
+      "placeIds": [
+        "grand-hyatt-seoul"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "title": "이보람 · 세상을 바꾸는 여자들 용인 공연 예정",
+      "venue": "ICT밸리컨벤션 B1 플로리아홀",
+      "placeIds": [
+        "ict-valley-floria"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261216-boram-six-2000",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 16일 20:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261217-boram-six-2000",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 17일 20:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261219-boram-six-1700",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 19일 17:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261219-boram-six-2030",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 19일 20:30 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261222-boram-six-2000",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 22일 20:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261225-boram-six-1700",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 25일 17:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261225-boram-six-2030",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 25일 20:30 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261227-boram-six-1500",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 27일 15:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20240503-gyuri-sbs-chuncheon",
+      "title": "남규리 · 세상에서 가장 아름다운 여행 1127회 · 춘천",
+      "venue": "옛 김유정역",
+      "placeIds": [
+        "old-kim-you-jeong-station",
+        "uiam-lake"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20240906-yeonji-dosan-photo",
+      "title": "김연지 · 도산정육 본점 방문 사진",
+      "venue": "도산정육 본점",
+      "placeIds": [
+        "dosan-butcher"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20250728-yeonji-yoozzy-live",
+      "title": "김연지 · 유지카페 라이브 방송·미니 라디오 후기",
+      "venue": "유지카페",
+      "placeIds": [
+        "yoozzy"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20240727-gyuri-gonggan-photo",
+      "title": "남규리 · 공간양 방문 사진",
+      "venue": "공간양",
+      "placeIds": [
+        "gonggan-yang"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20260914-seeya-woorineun-photo",
+      "title": "씨야 · 우리는 정육가든 수성구점 방문 사진",
+      "venue": "우리는 정육가든 수성구점",
+      "placeIds": [
+        "woorineun-suseong"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20240215-boram-birthday-fancafe",
+      "title": "이보람 생일 기념 팬 카페 · 익커피 홍대점",
+      "venue": "익커피 홍대점 · 과거 행사",
+      "placeIds": [
+        "ikcoffee-historic"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20190120-boram-geumdwaeji-photo",
+      "title": "이보람 · 금돼지식당 방문 사진",
+      "venue": "금돼지식당",
+      "placeIds": [
+        "geumdwaeji-sikdang"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261019-seeya-immortal-wax-recording",
+      "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화 예정",
+      "venue": "KBS 신관 공개홀",
+      "placeIds": [
+        "kbs-new-building"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당 예정",
+      "venue": "현대자동차 아산공장 사택 운동장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    }
+  ]
+}

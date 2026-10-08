@@ -2,7 +2,7 @@
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow,noarchive"><meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src 'self' https://api.github.com; img-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
-<title>씨야 아카이브 관리</title><link rel="stylesheet" href="/assets/archive-admin.fac431dec039.css"><script defer src="/assets/archive-admin.8033479ff15d.js"></script></head>
+<title>씨야 아카이브 관리</title><link rel="stylesheet" href="/assets/archive-admin.fac431dec039.css"><script defer src="/assets/archive-admin.e382e083ae26.js"></script></head>
 <body><header><a class="brand" href="/">SEEYA <span>ARCHIVE</span></a><span class="private">관리자 전용</span></header>
 <main><section id="login" class="login panel"><p class="eyebrow">ARCHIVE DESK</p><h1>씨야의 기록을<br>한 장씩 모으는 곳.</h1><p>중복과 연결할 출처는 자동으로 정리하고,<br>확인이 필요한 내용만 살펴보세요.</p>
 <form id="login-form"><label>비공개 관리 저장소<input id="repository" required placeholder="greffsozpkk/seeya-admin" autocomplete="off" spellcheck="false"></label>
@@ -13,6 +13,7 @@
 <section id="desk" hidden><div class="heading"><div><p class="eyebrow">ARCHIVE DESK</p><h1>새로 발견한 기록</h1><p id="identity" class="muted"></p></div><button id="logout" class="quiet">로그아웃</button></div>
 <div class="summary panel"><div><span class="muted">남은 후보 · 보류 포함</span><strong id="pending">0<span>건</span></strong></div><div><span class="muted">사이트에 쌓인 기록</span><strong id="archived">0<span>건</span></strong></div><div class="last-check"><span id="checked">아직 수집하지 않았습니다.</span><div class="actions"><button id="collect">새 기록 찾기</button><button id="refresh" class="quiet">목록 새로고침</button></div></div></div>
 <section class="panel auto-panel"><h2>자동 정리·사이트 반영</h2><p>같은 링크는 제외하고, 실제 날짜·행사/방송·멤버가 일치하면 기존 대표 기록에 출처를 연결합니다. 연결이 불확실한 공연 영상은 새 카드로 자동 등록하지 않습니다.</p><button id="organize" class="primary">쌓인 후보 자동 정리</button><p class="muted">새 기록을 수집할 때도 자동 실행합니다. 이 버튼은 추가 검색 없이 현재 목록 전체를 다시 판단하고 사이트에 저장합니다.</p><p id="auto-counts" aria-live="polite">아직 자동 정리를 실행하지 않았습니다.</p><details><summary>최근 자동 처리 내역</summary><div id="auto-history"></div><p id="auto-history-link"></p></details></section>
+<details class="panel map-coverage"><summary>지도 연결 확인</summary><p>배포된 아카이브의 장소 연결 상태입니다. 이미 등록한 장소의 새 기록은 자동으로 묶입니다. 새 장소와 위치 확인이 필요한 기록은 아래에 남습니다.</p><button type="button" id="map-coverage-refresh">연결 상태 불러오기</button><div id="map-coverage-result" aria-live="polite"></div></details>
 <p class="hint">자동으로 확정하기 어려운 자료만 아래에 남습니다. 보류 항목도 삭제하지 않으며, 필터를 바꾸면 확인하고 반영할 수 있습니다. 공연 영상은 기존 기록에 연결할 대상을 먼저 확인해 주세요. 실제 활동일을 모르는 자료는 게시일과 구분해 표시합니다.</p>
 <section id="job" class="panel job" hidden aria-live="polite"></section>
 <div class="filters"><input id="search" type="search" aria-label="기록 검색" placeholder="제목·방송·행사 검색"><select id="member" aria-label="멤버"><option value="">모든 멤버</option><option>씨야</option><option>남규리</option><option>김연지</option><option>이보람</option></select><select id="source" aria-label="출처"><option value="">모든 출처</option><option value="youtube">유튜브</option><option value="news">기사</option></select></div>
