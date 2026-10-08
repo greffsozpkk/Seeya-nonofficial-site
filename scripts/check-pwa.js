@@ -5,10 +5,12 @@ const manifest=JSON.parse(read('manifest.webmanifest'));
 assert.deepEqual(manifest,JSON.parse(read('src/data/pwa.json')));
 assert.equal(manifest.id,'/');assert.equal(manifest.scope,'/');assert.equal(manifest.display,'standalone');
 assert.equal(new URL(manifest.start_url,'https://seeya-fanpage.com').pathname,'/');
-for(const icon of [...manifest.icons,{src:'/images/app/apple-touch-icon-180.png',sizes:'180x180'}]){
+for(const icon of [...manifest.icons,{src:'/images/app/apple-touch-icon-180-v2.png',sizes:'180x180'}]){
  const bytes=fs.readFileSync(path.join(root,icon.src.slice(1)));
  assert.equal(bytes.subarray(1,4).toString(),'PNG');
  assert.equal(`${bytes.readUInt32BE(16)}x${bytes.readUInt32BE(20)}`,icon.sizes,icon.src);
+ require('./check-icon-pixels')(bytes,icon.src);
+ assert.deepEqual(bytes,fs.readFileSync(path.join(root,icon.src.slice(1).replace('-v2.png','.png'))),'Legacy icon must also be repaired');
 }
 assert(manifest.icons.some(icon=>icon.purpose==='maskable'));
 for(const shortcut of manifest.shortcuts)assert(fs.existsSync(path.join(root,shortcut.url.slice(1),'index.html')));
@@ -16,6 +18,7 @@ const build=JSON.parse(read('build-manifest.json'));
 for(const file of build.files.filter(p=>p.endsWith('.html'))){
  const html=read(file);
  assert.equal((html.match(/rel="manifest"/g)||[]).length,1,file);
+ assert(html.includes('href="/images/app/apple-touch-icon-180-v2.png"'),file+' updated Apple icon');
  assert.equal((html.match(/name="theme-color"/g)||[]).length,1,file);
  assert(html.includes(`name="theme-color" content="${manifest.theme_color}"`));
  assert(html.includes('href="/about/">ABOUT</a>'),file);
