@@ -28,7 +28,7 @@ for(const file of build.files.filter(p=>p.endsWith('.html'))){
  assert.equal((html.match(/name="theme-color"/g)||[]).length,1,file);
  assert(html.includes(`name="theme-color" content="${manifest.theme_color}"`));
  assert(html.includes('href="/about/">ABOUT</a>'),file);
- assert(/src="\/assets\/pwa\.[a-f0-9]+\.js"/.test(html),file);
+ if(file!=='passport/test/index.html')assert(/src="\/assets\/pwa\.[a-f0-9]+\.js"/.test(html),file);
 }
 const preview=JSON.parse(read('src/data/exam-preview-route.json'));
 const privateHtml=read(preview.path.slice(1)+'index.html');

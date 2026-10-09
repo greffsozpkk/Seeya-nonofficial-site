@@ -13,7 +13,12 @@ assert.equal(gallery.filter(x=>x.image==='/images/app/seeya-offline-characters.p
 assert.deepEqual(gallery.find(x=>x.id==='offline-characters').usedOn,[{label:'연결 안내',path:'/offline.html'}]);assert(build.auxiliary.includes('offline.html'));
 assert(!/skipWaiting\(|clients\.claim\(/.test(worker));assert(!/__OFFLINE_HASH__|__PUBLIC_PATHS__/.test(worker));
 assert(!/<(?:link|iframe)\b|src="https?:/.test(fallback));assert(fallback.includes('noindex,nofollow'));
-for(const file of build.files.filter(p=>p.endsWith('.html')))assert(/src="\/assets\/offline\.[a-f0-9]+\.js"/.test(read(file)),file);
+for(const file of build.files.filter(p=>p.endsWith('.html'))){
+ if(file==='passport/test/index.html'){
+  assert(!/src="\/assets\/offline\./.test(read(file)));
+  assert(read('src/client/passport.js').includes("register('/passport/sw.js'"),'Passport owns its offline shell');
+ }else assert(/src="\/assets\/offline\.[a-f0-9]+\.js"/.test(read(file)),file);
+}
 const preview=JSON.parse(read('src/data/exam-preview-route.json')).path;
 assert(!/src="\/assets\/offline\./.test(read(preview.slice(1)+'index.html')));
 assert(!read('sitemap.xml').includes('/offline.html'));

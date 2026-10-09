@@ -73,6 +73,8 @@ const radioCss=asset('radio','css',read('src/styles/radio.css'));
 const radioJs=asset('radio','js',bundle('src/client/radio.js'));
 const mapCss=asset('seeya-map','css',read('src/styles/seeya-map.css'));
 const mapJs=asset('seeya-map','js',bundle('src/client/seeya-map.js'));
+const passportCss=asset('passport','css',read('src/styles/passport.css'));
+const passportJs=asset('passport','js',bundle('src/client/passport.js'));
 const adminCss=asset('archive-admin','css',read('src/admin/admin.css'));
 const adminJs=asset('archive-admin','js',read('src/admin/admin.js'));
 write('manage/index.html',read('src/admin/template.html').replace('{{adminCss}}',adminCss).replace('{{adminJs}}',adminJs));
@@ -89,6 +91,8 @@ const calendarData={asOf:site.snapshotDate.slice(0,10),events:buildEvents(archiv
 write('calendar/events.json',JSON.stringify(calendarData)+'\n');
 write('calendar/activities.ics',calendarICS(calendarData.events));
 write('calendar/anniversaries.ics',calendarICS(calendarData.anniversaries,'씨야 기념일'));
+const mapPlaces=require('./src/shared/seeya-map').resolvePlaces(json('src/data/map-places.json'),archiveRows);
+const passportCatalog=require('./src/shared/passport-catalog')(archiveRows,calendarData.events,mapPlaces,json('src/data/concerts.json').find(c=>c.id==='the-fan-2026'),site.snapshotDate);
 const previewRoute=json('src/data/exam-preview-route.json');
 const mapPreviewRoute=json('src/data/map-preview-route.json');
 if(!/^\/preview\/seeya-map-[a-f0-9]{16}\/$/.test(mapPreviewRoute.path)||!mapPreviewRoute.unlisted)throw new Error('Invalid map preview route');
@@ -104,6 +108,7 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  if(key==='news')content=render(json('data/news.json'));
  else if((key==='map'||key==='map-preview'))content=render(archiveRows);
  else if(key==='calendar')content=render(calendarData);
+ else if(key==='passport')content=render(passportCatalog);
  else if(key==='radio'||key==='podcasts')content=render(archiveRows,site.snapshotDate);
  else if(key==='home')content=render(archiveRows,new Date(site.snapshotDate));
  else if(key==='archive')content=render(require('./src/shared/archive-data').mergeArchive(json('data/archive.json')));
@@ -114,6 +119,7 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  else content=render();
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
+ if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}">`;vars.scripts=`<script defer src="${passportJs}"></script>`;}
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
  if((key==='map'||key==='map-preview')){vars.pageHead=`<link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${mapJs}"></script>`;}
  if(key==='podcasts'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}"><link rel="stylesheet" href="${podcastCss}">`;vars.scripts=`<script defer src="${podcastJs}"></script>`;}
@@ -124,9 +130,10 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  vars.scripts+=`\n<script defer src="${mobileMenuJs}"></script>`;
  vars.themeColor=esc(pwa.theme_color);
  vars.pwaHead=route.unlisted?'':`<link rel="icon" type="image/png" sizes="192x192" href="/images/app/favicon-192.png">\n<link rel="manifest" href="/manifest.webmanifest">\n<link rel="apple-touch-icon" sizes="180x180" href="/images/app/apple-touch-icon-180-v2.png">\n<meta name="mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="${esc(pwa.short_name)}">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">`;
- if(!route.unlisted)vars.scripts+=`\n<script defer src="${pwaJs}"></script>\n<script defer src="${offlineJs}"></script>`;
+ if(!route.unlisted&&key!=='passport')vars.scripts+=`\n<script defer src="${pwaJs}"></script>\n<script defer src="${offlineJs}"></script>`;
  let output=template.replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in vars))throw new Error('Unknown template key '+key);return vars[key];});
  if(route.noindex)output=output.replace(/(<meta name="(?:robots|googlebot)" content=")[^"]+/g,'$1noindex,follow');
+ if(key==='passport')output=output.replace(/<script\b[^>]*src="(?:https:\/\/www\.googletagmanager\.com\/[^\"]*|\/assets\/(?:analytics|visitor-count)\.js)"[^>]*><\/script>\s*/g,'');
  if(route.unlisted){
   output=output.replace(/(<meta name="(?:robots|googlebot)" content=")[^"]+/g,'$1noindex,nofollow,noarchive,nosnippet');
   output=output.replace(/<script\b[^>]*src="(?:https:\/\/www\.googletagmanager\.com\/[^\"]*|\/assets\/(?:analytics|visitor-count)\.js)"[^>]*><\/script>\s*/g,'');
@@ -134,8 +141,12 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  const file=route.path.slice(1)+'index.html';write(file,'<!-- Generated by node build.js. DO NOT EDIT. -->\n'+output);if(!route.unlisted)files.push(file);
 }
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.filter(r=>r.key!=='letter'&&!r.noindex).map(r=>'  <url><loc>'+esc(site.origin+r.path)+'</loc></url>').join('\n')+'\n</urlset>\n');
+write('passport/index.html',read('src/passport-redirect.html'));
+const passportFiles=['/passport/test/',siteCss,passportCss,passportJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png','/images/app/apple-touch-icon-180-v2.png'];
+const passportDigest=crypto.createHash('sha256').update(fs.readFileSync(path.join(outputRoot,'passport/test/index.html'))).update(read('src/passport-worker.js')).digest('hex').slice(0,12);
+write('passport/sw.js',read('src/passport-worker.js').replace('__PASSPORT_CACHE__',JSON.stringify('seeya-passport-shell-'+passportDigest)).replace('__PASSPORT_FILES__',JSON.stringify(passportFiles)));
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',mapPreviewRoute.path.slice(1)+'index.html']},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',mapPreviewRoute.path.slice(1)+'index.html']},null,2)+'\n');
 console.log(`Built ${routes.length} public pages, 2 unlisted previews and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

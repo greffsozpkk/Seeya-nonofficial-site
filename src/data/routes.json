@@ -332,5 +332,12 @@
     "path": "/map/",
     "title": "씨야 대동여지도 · 걸어서 씨야 속으로 | SEEYA ARCHIVE",
     "description": "걸어서 씨야 속으로. 씨야와 멤버들의 방문·여행·공연·팬 행사 장소를 지도에서 만나보세요."
+  },
+  {
+    "key": "passport",
+    "path": "/passport/test/",
+    "title": "위듀 패스포트 테스트 · 나의 씨야 수첩 | SEEYA ARCHIVE",
+    "description": "씨야와 함께한 공연과 장소, 팬 행사와 추억을 개인 수첩에 남겨보세요.",
+    "noindex": true
   }
 ]
