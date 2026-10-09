@@ -1,0 +1,20 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),P=require('../src/shared/passport'),X=require('../src/shared/passport-extra'),S=require('../src/client/passport-share'),QR=require('../src/vendor/qrcodegen');
+const entry={entryId:'test-50500001',kind:'concert',status:'done',title:'서울 공연',date:'2026-08-30',members:['seeya'],eventId:'activity-20260829-the-fan-seoul',archiveId:'20260829-the-fan-seoul',songs:['shoes','shoes','scent-of-a-woman'],links:[{url:'https://www.youtube.com/watch?v=ENQ1O79MD54',label:'내 영상'}],note:'PRIVATE NOTE',seat:'PRIVATE SEAT',companions:'PRIVATE NAME',createdAt:'2026-09-01T00:00:00Z',updatedAt:'2026-09-01T00:00:00Z'};
+const saved=P.entry(entry),old=P.entry({...entry,songs:undefined,links:undefined});assert.deepEqual(saved.songs,['shoes','scent-of-a-woman']);assert.deepEqual(old.songs,[]);assert.deepEqual(old.links,[]);
+const state=P.validate({...P.empty(),profile:{since:'2006',nickname:'SECRET NICK',favMember:'boram',favSong:'구두'},entries:[saved]});
+assert.deepEqual(P.validate(JSON.parse(JSON.stringify(state))),state);assert.equal(P.merge(state,state).entries.length,1);
+for(const url of ['javascript:alert(1)','http://x.com','data:text/html,x','https://user:pass@example.com'])assert.throws(()=>P.entry({...entry,links:[{url,label:''}]}));
+assert.throws(()=>P.entry({...entry,songs:'invalid'}));assert.throws(()=>P.entry({...entry,links:Array(9).fill({url:'https://x.com'})}));
+assert.equal(X.youtube('https://youtu.be/ENQ1O79MD54'),'ENQ1O79MD54');assert.equal(X.youtube('https://youtube.com.evil.test/watch?v=ENQ1O79MD54'),'');
+const tour29={eventId:'activity-20260829-the-fan-seoul',archiveId:entry.archiveId,date:'2026-08-29'},tour30={...tour29,eventId:tour29.eventId+'-20260830',date:'2026-08-30'};
+assert.equal(X.tourEntries(tour29,[saved]).length,0);assert.equal(X.tourEntries(tour30,[saved]).length,1);assert.equal(X.tourEntries(tour30,[{...saved,status:'planned'}]).length,0);
+assert.deepEqual(X.songs([saved,{...saved,status:'planned',songs:['another']}]),saved.songs);
+assert.deepEqual(X.firstSongs(saved,[saved,{...saved,entryId:'prior-123456',date:'2026-08-29',songs:['shoes']}]),['scent-of-a-woman']);
+const share=X.publicSummary(state),raw=JSON.stringify(share);for(const hidden of ['PRIVATE','SECRET','https://','내 영상','companions','note','seat'])assert(!raw.includes(hidden),hidden);assert.equal(X.publicSummary(state,true).n,'SECRET NICK');
+const clean=X.checkSummary({...share,note:'evil',r:share.r.map(r=>({...r,secret:'bad'}))});assert(!JSON.stringify(clean).includes('evil'));assert.throws(()=>X.checkSummary({...share,r:Array(81).fill(share.r[0])}));
+async function main(){const token=await S.encode(share);assert.deepEqual(await S.decode(token),share);await assert.rejects(()=>S.decode('x'.repeat(2500)));await assert.rejects(()=>S.decode('not-valid'));const huge=await S.encode({padding:'x'.repeat(70000)});await assert.rejects(()=>S.decode(huge));
+ const qr=QR.QrCode.encodeText('https://seeya-fanpage.com/passport/test/#view='+token,QR.QrCode.Ecc.MEDIUM);assert(qr.size>=21);assert(qr.getModule(0,0));
+ const client=fs.readFileSync(require('node:path').join(__dirname,'../src/client/passport.js'),'utf8');assert(!client.includes('WEDU'));assert(client.includes("if(location.hash.startsWith('#view=')){viewShare"));
+ console.log('PASS passport extras: independent Seoul dates/legacy links, songs/FIRST, backups, safe URLs, privacy whitelist, compressed share round-trip/bounds and QR generation.');}
+main().catch(e=>{console.error(e);process.exitCode=1;});

@@ -130,6 +130,11 @@
       {
         "label": "GALLERY",
         "path": "/gallery/"
+      },
+      {
+        "label": "WITH YOU PASSPORT · 테스트",
+        "path": "/passport/test/",
+        "unlisted": true
       }
     ]
   },
@@ -142,6 +147,11 @@
       {
         "label": "TODAY",
         "path": "/today/"
+      },
+      {
+        "label": "WITH YOU PASSPORT · 테스트",
+        "path": "/passport/test/",
+        "unlisted": true
       }
     ]
   },

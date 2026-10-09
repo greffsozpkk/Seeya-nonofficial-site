@@ -28,16 +28,16 @@ assert(P.duplicate(sample,{...sample,entryId:'another-id'}));assert(!P.duplicate
 let data=null,fail=false;const adapter={getItem:()=>data,setItem:(k,v)=>{if(fail)throw Object.assign(Error('full'),{name:'QuotaExceededError'});data=v;}};
 const store=P.storage(adapter);store.save(current);const saved=data;fail=true;assert.throws(()=>store.save(incoming));assert.equal(data,saved);assert.deepEqual(store.get(),current);fail=false;data='changed in another tab';assert.throws(()=>store.save(incoming),/다른 창/);assert.equal(data,'changed in another tab');assert.throws(()=>P.storage(adapter));
 const html=read('passport/test/index.html');assert(!html.includes('googletagmanager'));assert(!html.includes('/assets/analytics.js'));assert(!html.includes('/assets/visitor-count.js'));assert(html.includes('noindex,follow'));assert(!read('sitemap.xml').includes('/passport/test/'));
-const catalog=JSON.parse(html.match(/id="passportCatalog">([\s\S]*?)<\/script>/)[1]);assert.equal(catalog.tour.length,7);for(const t of catalog.tour)assert(catalog.events.some(e=>e.id===t.eventId));for(const e of catalog.events)if(e.placeId)assert(catalog.places.some(p=>p.id===e.placeId));assert(catalog.events.some(e=>e.endDate!==e.date));
+const catalog=JSON.parse(html.match(/id="passportCatalog">([\s\S]*?)<\/script>/)[1]);assert.equal(catalog.tour.length,8);for(const t of catalog.tour)assert(catalog.events.some(e=>e.id===t.eventId));for(const e of catalog.events)if(e.placeId)assert(catalog.places.some(p=>p.id===e.placeId));assert(catalog.events.some(e=>e.endDate!==e.date));
 for(const file of ['src/shared/calendar-view.js','src/shared/seeya-map.js','src/template.html','src/offline.html'])assert(!read(file).includes('/passport/'),file+' must not expose the test page');
 assert(!read('src/pages/passport.js').includes('href="#'));assert(!read('src/client/passport.js').includes('href="#'),'Hash links must account for the shared base URL');
 assert(read('passport/index.html').includes('/passport/test/'));
 const build=JSON.parse(read('build-manifest.json'));for(const file of build.files.filter(p=>p.endsWith('.html')&&p!=='passport/test/index.html'))assert(!/href="[^"]*\/passport\//.test(read(file)),file+' exposes passport');
 for(const city of ['서울','부산']){const t=catalog.tour.find(t=>t.label===city),e=catalog.events.find(e=>e.id===t.eventId);assert(e);assert(e.archiveId);}
-const seoul=catalog.tour.find(t=>t.label==='서울');assert.deepEqual(seoul.dates,['2026-08-29','2026-08-30']);
-assert.deepEqual(seoul.eventIds.map(id=>catalog.events.find(e=>e.id===id).date),seoul.dates);
+const seoul=catalog.tour.filter(t=>t.label==='서울');assert.deepEqual(seoul.map(t=>t.date),['2026-08-29','2026-08-30']);
+assert.equal(new Set(seoul.map(t=>t.eventId)).size,2);
 assert.equal(new Set(catalog.events.map(e=>e.id)).size,catalog.events.length);
-assert.equal(new Set(seoul.eventIds.map(id=>catalog.events.find(e=>e.id===id).archiveId)).size,1);
+assert.equal(new Set(seoul.map(t=>t.archiveId)).size,1);
 // Offline worker: complete installation, private data never cached, network failure opens the saved shell.
 async function offline(){
  const handlers={},items=new Map(),cache={put:async(k,v)=>items.set(k,v),match:async k=>items.get(k)},names=['unrelated','seeya-passport-shell-old'],deleted=[];let offline=false,claimed=0;

@@ -23,7 +23,9 @@ module.exports=function buildPassportCatalog(archive,calendar,places,collection,
    const session={...event,id:event.id+'-'+day.replaceAll('-',''),date:day,endDate:day,time:'',calendar:false};
    events.push(session);return session.id;
   });
-  tour.push({label:item.label,eventId:event.id,eventIds,dates});
+  for(const id of eventIds){const session=events.find(e=>e.id===id);tour.push({label:item.label,eventId:id,archiveId:session.archiveId,date:session.date,venue:session.venue});}
+  if(eventIds.length>1)event.endDate=event.date;
  }
- return {asOf,places:places.map(p=>({id:p.id,name:p.name,address:p.address})),events:events.sort((a,b)=>b.date.localeCompare(a.date)),tour};
+ const stage=require('../data/stage-songs.json'),daily=require('../data/today-songs.json');const songMap=new Map(stage.map(s=>[s.name,{id:s.id,title:s.name,album:s.album}]));for(const s of daily)if(!songMap.has(s.song))songMap.set(s.song,{id:'song-'+encodeURIComponent(s.song),title:s.song,album:s.album});
+ return {asOf,songs:[...songMap.values()],characters:require('../data/character-gallery.json').filter(x=>['today','gallery'].includes(x.id)).map(x=>({id:x.id,image:x.image})),places:places.map(p=>({id:p.id,name:p.name,address:p.address})),events:events.sort((a,b)=>b.date.localeCompare(a.date)),tour};
 };

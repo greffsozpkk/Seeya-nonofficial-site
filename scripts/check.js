@@ -39,3 +39,4 @@ execFileSync(process.execPath,['scripts/check-pwa.js'],{cwd:root,stdio:'inherit'
 execFileSync(process.execPath,['scripts/check-offline.js'],{cwd:root,stdio:'inherit'});
 
 execFileSync(process.execPath,['scripts/check-passport.js'],{cwd:root,stdio:'inherit'});
+execFileSync(process.execPath,['scripts/check-passport-extra.js'],{cwd:root,stdio:'inherit'});
