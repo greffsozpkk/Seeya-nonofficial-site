@@ -10,6 +10,16 @@ assert(!P.esc(sample.note).includes('<script>'));
 assert.throws(()=>P.entry({...sample,date:'2099-01-01'}),/미래 날짜/);
 assert.throws(()=>P.profile(null),/신분 카드/);
 assert.throws(()=>P.profile({since:'2099'}),/입덕일/);
+for(const since of ['2005','2006-02','2006-03-11'])assert.throws(()=>P.profile({since}),/데뷔일/);
+for(const since of ['2006','2006-03','2006-03-12'])assert.equal(P.profile({since}).since,since);
+for(const [day,status] of [['2026-10-09','done'],['2026-10-10','planned'],['2026-10-11','planned'],['2025','done'],['2026','planned']])assert.equal(P.defaultStatus(day,'2026-10-10'),status);
+let legacy=JSON.stringify({...P.empty(),profile:{since:'2005'},entries:[sample]});
+const legacyStore=P.storage({getItem:()=>legacy,setItem:(k,v)=>legacy=v});
+assert.equal(legacyStore.get().entries.length,1);assert.throws(()=>legacyStore.save(legacyStore.get()),/데뷔일/);
+legacyStore.save({...legacyStore.get(),profile:{since:'2006-03-12'}});assert.equal(legacyStore.get().entries.length,1);
+const seoulEntry={...sample,date:'2026-08-30',archiveId:'20260829-the-fan-seoul',eventId:'old-event'};
+assert(P.duplicate(seoulEntry,{...seoulEntry,eventId:'new-session'}));
+assert(!P.duplicate(seoulEntry,{...seoulEntry,date:'2026-08-29'}));
 const current=P.validate({...P.empty(),entries:[sample]}),incoming=P.validate({...P.empty(),entries:[{...sample,title:'changed'},{...sample,entryId:'test-98765432',date:'2006-03'}]});
 assert.deepEqual(P.review(current,incoming),{added:1,conflicts:1,suspected:0});
 const merged=P.merge(current,incoming);assert.equal(merged.entries[0].title,sample.title);assert.equal(P.merge(merged,incoming).entries.length,2);assert.equal(P.merge(current,incoming,true).entries[0].title,'changed');
@@ -24,6 +34,10 @@ assert(!read('src/pages/passport.js').includes('href="#'));assert(!read('src/cli
 assert(read('passport/index.html').includes('/passport/test/'));
 const build=JSON.parse(read('build-manifest.json'));for(const file of build.files.filter(p=>p.endsWith('.html')&&p!=='passport/test/index.html'))assert(!/href="[^"]*\/passport\//.test(read(file)),file+' exposes passport');
 for(const city of ['서울','부산']){const t=catalog.tour.find(t=>t.label===city),e=catalog.events.find(e=>e.id===t.eventId);assert(e);assert(e.archiveId);}
+const seoul=catalog.tour.find(t=>t.label==='서울');assert.deepEqual(seoul.dates,['2026-08-29','2026-08-30']);
+assert.deepEqual(seoul.eventIds.map(id=>catalog.events.find(e=>e.id===id).date),seoul.dates);
+assert.equal(new Set(catalog.events.map(e=>e.id)).size,catalog.events.length);
+assert.equal(new Set(seoul.eventIds.map(id=>catalog.events.find(e=>e.id===id).archiveId)).size,1);
 // Offline worker: complete installation, private data never cached, network failure opens the saved shell.
 async function offline(){
  const handlers={},items=new Map(),cache={put:async(k,v)=>items.set(k,v),match:async k=>items.get(k)},names=['unrelated','seeya-passport-shell-old'],deleted=[];let offline=false,claimed=0;

@@ -15,7 +15,15 @@ module.exports=function buildPassportCatalog(archive,calendar,places,collection,
    event={id:'activity-'+record.id,type:'performance',title:record.title,date:record.date,endDate:record.endDate||record.date,time:record.calendar?.time||'',venue:record.venue||'',members:members(record.members),archiveId:record.id,placeId:placeId(record),calendar:false};
    events.push(event);
   }
-  tour.push({label:item.label,eventId:event.id});
+  event.city=item.label;
+  const dates=item.passportDates||[event.date];
+  const eventIds=dates.map(day=>{
+   if(day===event.date)return event.id;
+   if(day<event.date||day>event.endDate)throw Error('Tour session is outside recorded dates: '+item.id);
+   const session={...event,id:event.id+'-'+day.replaceAll('-',''),date:day,endDate:day,time:'',calendar:false};
+   events.push(session);return session.id;
+  });
+  tour.push({label:item.label,eventId:event.id,eventIds,dates});
  }
  return {asOf,places:places.map(p=>({id:p.id,name:p.name,address:p.address})),events:events.sort((a,b)=>b.date.localeCompare(a.date)),tour};
 };
