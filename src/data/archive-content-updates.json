@@ -2715,5 +2715,80 @@
         }
       }
     ]
+  },
+  {
+    "id": "archive-2026-10-09-backstage-and-live-sources",
+    "checkedAt": "2026-10-09",
+    "additions": [
+      {
+        "id": "20261009-gyuri-musicshow-backstage",
+        "date": "2026-10-09",
+        "addedAt": "2026-10-09",
+        "updatedAt": "2026-10-09",
+        "title": "남규리 · 음악방송 백스테이지 사진",
+        "program": "남규리 공식 인스타그램",
+        "type": "official",
+        "members": [
+          "남규리"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "남규리 공식 · 음악방송 백스테이지",
+          "url": "https://www.instagram.com/p/DeQgMWwE3NC/",
+          "publishedDate": "2026-10-09"
+        },
+        "additionalSources": [
+          {
+            "label": "씨야 갤러리 · 10월 9일 공식 게시물 공유",
+            "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9526",
+            "publishedDate": "2026-10-09"
+          }
+        ],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "tags": [
+          "2026",
+          "백스테이지"
+        ],
+        "note": "남규리가 공식 인스타그램에 공개한 음악방송 백스테이지 사진입니다.\n카드 날짜는 게시일이며, 사진 속 촬영일과 방송명은 별도로 확인되지 않았습니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": false
+        }
+      }
+    ],
+    "updates": [
+      {
+        "id": "20261006-boram-dst-autumn",
+        "sources": [
+          {
+            "label": "🐿람보바라기",
+            "url": "https://www.youtube.com/watch?v=bgnIyzUiYOg",
+            "publishedDate": "2026-10-08",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "20261004-the-fan-goyang",
+        "sources": [
+          {
+            "label": "람보사랑",
+            "url": "https://www.youtube.com/watch?v=x__7JOp0_c4",
+            "publishedDate": "2026-10-08",
+            "autoDiscovery": true
+          },
+          {
+            "label": "유튜브매니한",
+            "url": "https://www.youtube.com/watch?v=_B5jpB-yp3o",
+            "publishedDate": "2026-10-09",
+            "autoDiscovery": true
+          }
+        ]
+      }
+    ]
   }
 ]

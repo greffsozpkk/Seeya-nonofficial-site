@@ -68,9 +68,6 @@
 .map-workspace #mapError{position:absolute;top:85px;left:22px;right:22px;z-index:600;margin:0;background:#fff8f1f5;border:1px solid #ecccbc;border-radius:10px;padding:15px;color:#7b453a;font-size:13px;line-height:1.7}
 .map-workspace .map-mobile-tabs{display:none}
 .map-workspace .map-back{border:0;background:transparent;color:var(--pink-dark);padding:2px 0 18px;font-size:13px}
-.map-workspace .map-detail-cover{background:radial-gradient(ellipse at top,#fffaf3,#efdce4);height:178px;border-radius:12px;margin-bottom:24px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;color:#924f70;border:1px solid #ebd7df}
-.map-workspace .map-detail-cover strong{font-family:Georgia,serif;font-size:40px;letter-spacing:5px;font-weight:400}
-.map-workspace .map-detail-cover span{font-size:10px;letter-spacing:1.5px}
 .map-workspace #mapDetail h2{font-size:25px;line-height:1.45;letter-spacing:-.6px;margin:12px 0 14px;word-break:keep-all}
 .map-workspace #mapDetail h2:focus{outline:none}
 .map-workspace .map-story{line-height:1.8;color:#626173;font-size:14px;margin-bottom:25px}
@@ -140,7 +137,6 @@
 .map-workspace .map-selected-cta span{padding-left:5px}
 .map-workspace #mapSelectedClose{position:absolute;right:6px;top:7px;width:40px;height:40px;border:0;background:transparent;font-size:25px;color:#7b6972}
 .map-workspace[data-view=map][data-selected=true] .leaflet-control-zoom{margin-bottom:225px!important}
-.map-workspace .map-detail-cover{height:140px;margin-bottom:16px}
 .map-workspace .map-filter-row{gap:8px}
 .map-workspace .map-filter-row button{padding:8px 10px}
 .map-workspace #mapError{left:13px;right:13px;top:123px;font-size:12px;padding:10px}
@@ -172,7 +168,6 @@
 .map-workspace .map-promotion.is-ended{background:#f0eceb;border-color:#d5cbcb}
 .map-workspace .map-promotion.is-ended>strong{color:#6c6066}
 .map-workspace .map-record-links{overflow-wrap:anywhere}
-.map-workspace .map-detail-cover>span{line-height:1.8;text-align:center}
 .map-workspace .map-filter-row{align-items:flex-start}
 .map-workspace .map-legend{flex-wrap:wrap;white-space:normal}
 .map-workspace .map-cover-culture{background:linear-gradient(140deg,#f1edfa,#e2d8f2);color:#6b4c91}
@@ -215,3 +210,11 @@ body[data-page="map"] #app,body[data-page="map-preview"] #app{min-width:0}
 .map-workspace .map-activity-date{display:block;font-size:12px;color:#785467;margin-bottom:6px}
 .map-workspace .map-activity-title{display:block;font-size:15px;line-height:1.6;font-weight:600;color:#472d3b;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
 .map-workspace .map-activities p{font-size:12px;color:#695460;line-height:1.6;margin:6px 0}.map-workspace .map-activities li div a{font-size:12px;color:#8c3c5c;display:inline-block;padding:6px 0}
+
+/* v5.1: place details use a compact text header instead of a synthetic cover. */
+.map-workspace .map-place-heading{padding:4px 0 20px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+.map-workspace .map-place-meta{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.map-workspace .map-place-region{font-size:13px;color:#685762}
+.map-workspace .map-place-heading #mapDetailTitle{margin:12px 0 8px;font-size:25px;line-height:1.45}
+.map-workspace .map-place-date{margin:0;color:#776874;font-size:12px;line-height:1.7}
+@media(max-width:850px){.map-workspace .map-place-heading{padding-top:0;padding-bottom:16px;margin-bottom:16px}.map-workspace .map-place-heading #mapDetailTitle{font-size:23px}}
