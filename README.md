@@ -1,3 +1,15 @@
+# SEEYA ARCHIVE v5.2 — 검색·브라우저 전용 아이콘
+
+**누적 업데이트:** `SEEYA_v5_2_FAVICON_UPLOAD.zip`. v5.1의 기록·지도 수정도 포함합니다. GitHub Desktop에서 Fetch/Pull origin 후 기존 폴더에 덮어쓰고 Commit → Push하세요. 운영 데이터와 생성 HTML은 포함하지 않으며, 전체 ZIP은 백업용입니다.
+
+- 검색용 `rel="icon"` 누락을 수정했습니다. 공개 페이지 모두 동일한 `/images/app/favicon-192.png`를 명시하고 `/favicon.ico`도 제공합니다.
+- 검색용 아이콘은 흰 원을 빼고 분홍 단색 바탕에 SEEYA 로고와 기존 ARCHIVE 문구·구분선을 함께 사용합니다. v5.2 재발행본에서 ARCHIVE 표기를 복원했습니다. 투명 모서리·흰 띠를 넣지 않습니다. 원본은 `images/app/favicon-source.svg`입니다.
+- 홈 화면 앱 아이콘은 기존 가장자리 보정본을 유지합니다. 검색 서비스가 그리는 원형 배경·외부 테두리는 사이트에서 제어할 수 없습니다.
+- 업로드 직후 Google 검색 아이콘이 바뀌지는 않을 수 있습니다. Search Console에서 홈페이지 URL 검사의 색인 생성을 요청할 수 있으며, 재수집·처리에 며칠~몇 주가 걸릴 수 있습니다. 아이콘 URL은 앞으로 안정적으로 유지합니다.
+- 실행: `node build.js`. 검사: `node scripts/check.js`. **생성된 HTML 직접 편집 금지.**
+
+---
+
 # SEEYA ARCHIVE v5.1 — 기록 업데이트·장소 상세 정리
 
 **적용 파일:** `SEEYA_v5_1_ARCHIVE_MAP_UPLOAD.zip` — v5.0까지 포함한 누적 업데이트입니다. GitHub Desktop에서 Fetch/Pull origin 후 기존 사이트 폴더에 덮어쓰고 Commit → Push하세요. 운영 `data/`·`state/` 및 생성 HTML은 포함하지 않습니다. 전체 ZIP은 백업용입니다.
