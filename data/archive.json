@@ -748,9 +748,15 @@
         "url": "https://www.youtube.com/watch?v=_B5jpB-yp3o",
         "publishedDate": "2026-10-09",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=3pE-RoVSEfQ",
+        "publishedDate": "2026-10-09",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-09T06:28:07.104370+00:00",
+    "updatedAt": "2026-10-10T06:11:48.657544+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -29644,7 +29650,7 @@
     "id": "20150401-gyuri-invisible12",
     "date": "2015-04-01",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-10-10T06:11:48.657544+00:00",
     "title": "남규리 · 투명인간 12회 · 호텔리어 체험 2부",
     "program": "KBS 투명인간",
     "type": "variety",
@@ -29667,6 +29673,12 @@
       {
         "label": "스타뉴스 · 최종회 방송 및 회차별 방송일",
         "url": "https://www.starnewskorea.com/broadcast-show/2015/04/02/2015040123040351036"
+      },
+      {
+        "label": "KBS Entertain",
+        "url": "https://www.youtube.com/watch?v=czCc-V_VfQc",
+        "publishedDate": "2015-04-02",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -46356,7 +46368,7 @@
     "id": "20261009-boram-worldmom-yongin",
     "date": "2026-10-09",
     "addedAt": "2026-10-05",
-    "updatedAt": "2026-10-05",
+    "updatedAt": "2026-10-10T06:11:48.657544+00:00",
     "title": "이보람 · 세상을 바꾸는 여자들 용인 공연 예정",
     "program": "세상을 바꾸는 여자들 · 용인",
     "type": "event",
@@ -46370,7 +46382,56 @@
       "label": "세상을 바꾸는 여자들 · 용인 공식 신청 안내",
       "url": "https://newworldmom.co.kr/apply?event_id=296"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=jsnYmimutog",
+        "publishedDate": "2026-10-09",
+        "autoDiscovery": true
+      },
+      {
+        "label": "남수지",
+        "url": "https://www.youtube.com/watch?v=iO1HNz0Etnk",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "남수지",
+        "url": "https://www.youtube.com/watch?v=s_iYtXZ0zJ4",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "남수지",
+        "url": "https://www.youtube.com/watch?v=LEYuUB9yE-w",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=LKi12k1SpP4",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "남수지",
+        "url": "https://www.youtube.com/watch?v=eXaa05ONQuA",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "남수지",
+        "url": "https://www.youtube.com/watch?v=bqOwt89cKBc",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "남수지",
+        "url": "https://www.youtube.com/watch?v=sY5ko-1R22U",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
