@@ -52,11 +52,11 @@
       "description": "남규리, 오직 팬들만을 위해 만든 미발매 자작곡 깜짝 공개 스포츠경향"
     },
     {
-      "title": "남규리, 20년 지기 팬 위한 자작곡 깜짝 공개 - www.bntnews.co.kr",
-      "source": "www.bntnews.co.kr",
+      "title": "남규리, 20년 지기 팬 위한 자작곡 깜짝 공개 - BNT뉴스",
+      "source": "BNT뉴스",
       "pubDate": "2026-10-04T07:22:20+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE84aldQUUJING9hWWttZEV0Zi14MW1pZVZmNFJNRVRJYVY3VmZRV0x4VWp2ejVBZ1hQM2JFTnBSQzBFMTFyTTJPZi1oaUczTkI4SE8xME1zWnFqWjNkM2JFNV9QRFh5eDN4?oc=5",
-      "description": "남규리, 20년 지기 팬 위한 자작곡 깜짝 공개 www.bntnews.co.kr"
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LWi1ycHpBaVF0RENFMUptNnBxWmtoeFpXenRTQ0ZPa1FWZUhvcVJDRy1Ec3p2WHZLSXI3enNCN2FQZ1VvbC1OZGFLei1BeG41QmdKSlRDcEc4ekRsMUNReHlFTHk?oc=5",
+      "description": "남규리, 20년 지기 팬 위한 자작곡 깜짝 공개 BNT뉴스"
     },
     {
       "title": "남규리 “휠체어 타고 항상 보러와” 20년 팬 위한 자작 팬송 공개(귤멍) - 뉴스엔",
@@ -147,17 +147,17 @@
       "description": "이보람, 씨야 대신 결혼 선택 “멤버들아 미안해” 스포츠경향"
     }
   ],
-  "updatedAt": "2026-10-10T06:13:34.873886+00:00",
-  "lastCheckedAt": "2026-10-10T06:13:34.873886+00:00",
+  "updatedAt": "2026-10-10T12:36:04.729690+00:00",
+  "lastCheckedAt": "2026-10-10T12:36:04.729690+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-10T06:13:34.873886+00:00",
-    "남규리": "2026-10-10T06:13:34.873886+00:00",
-    "김연지": "2026-10-10T06:13:34.873886+00:00",
-    "이보람": "2026-10-10T06:13:34.873886+00:00"
+    "씨야": "2026-10-10T12:36:04.729690+00:00",
+    "남규리": "2026-10-10T12:36:04.729690+00:00",
+    "김연지": "2026-10-10T12:36:04.729690+00:00",
+    "이보람": "2026-10-10T12:36:04.729690+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-09T06:12:56.464479+00:00",
-    "남규리": "2026-10-09T06:12:56.464479+00:00",
+    "남규리": "2026-10-10T12:36:04.729690+00:00",
     "이보람": "2026-10-07T13:28:44.421270+00:00",
     "김연지": "2026-10-08T06:28:09.757542+00:00"
   },
@@ -165,7 +165,7 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 202,
+      "accepted": 200,
       "changed": false,
       "status": "unchanged"
     },
@@ -173,20 +173,20 @@
       "queries": 3,
       "succeeded": 3,
       "accepted": 145,
-      "changed": false,
-      "status": "unchanged"
+      "changed": true,
+      "status": "changed"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 33,
+      "accepted": 30,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 92,
+      "accepted": 93,
       "changed": false,
       "status": "unchanged"
     }
