@@ -29,7 +29,21 @@ let data=null,fail=false;const adapter={getItem:()=>data,setItem:(k,v)=>{if(fail
 const store=P.storage(adapter);store.save(current);const saved=data;fail=true;assert.throws(()=>store.save(incoming));assert.equal(data,saved);assert.deepEqual(store.get(),current);fail=false;data='changed in another tab';assert.throws(()=>store.save(incoming),/다른 창/);assert.equal(data,'changed in another tab');assert.throws(()=>P.storage(adapter));
 const html=read('passport/test/index.html');assert(!html.includes('googletagmanager'));assert(!html.includes('/assets/analytics.js'));assert(!html.includes('/assets/visitor-count.js'));assert(html.includes('noindex,follow'));assert(!read('sitemap.xml').includes('/passport/test/'));
 const catalog=JSON.parse(html.match(/id="passportCatalog">([\s\S]*?)<\/script>/)[1]);assert.equal(catalog.tour.length,8);for(const t of catalog.tour)assert(catalog.events.some(e=>e.id===t.eventId));for(const e of catalog.events)if(e.placeId)assert(catalog.places.some(p=>p.id===e.placeId));assert(catalog.events.some(e=>e.endDate!==e.date));
-for(const file of ['src/shared/calendar-view.js','src/shared/seeya-map.js','src/template.html','src/offline.html'])assert(!read(file).includes('/passport/'),file+' must not expose the test page');
+// The map and passport must use the same resolved places, including archive-only venues.
+const map=require('../src/shared/seeya-map'),places=map.resolvePlaces(JSON.parse(read('src/data/map-places.json')),JSON.parse(read('data/archive.json')));
+assert.deepEqual(catalog.places.map(p=>p.id),places.map(p=>p.id));
+for(const p of places){
+ const linked=catalog.places.find(x=>x.id===p.id);
+ assert.equal(linked.name,p.name);assert.equal(linked.address,p.address);assert.equal(linked.category,p.category||'');
+ assert(map.detail(p).includes('href="/passport/test/#new?place='+encodeURIComponent(p.id)+'"'));
+ assert(linked.members.every(m=>['seeya','gyuri','yeonji','boram'].includes(m)));
+}
+const station=catalog.places.find(p=>p.id==='old-kim-you-jeong-station');assert(station);assert.deepEqual(station.members,['gyuri']);
+const visit=P.entry({...sample,kind:'visit',title:station.name+' 방문',date:'2026-10-01',eventId:'',archiveId:'',placeId:station.id,snapshot:{place:station.name,address:station.address}});
+assert.equal(P.validate({...P.empty(),entries:[visit]}).entries[0].snapshot.address,station.address);
+assert(P.duplicate(visit,{...visit,entryId:'other-visit'}));assert(!P.duplicate(visit,{...visit,date:'2026-10-02'}));
+assert.equal(P.merge(P.empty(),P.validate({...P.empty(),entries:[visit]})).entries[0].placeId,station.id);
+for(const file of ['src/shared/calendar-view.js','src/template.html','src/offline.html'])assert(!read(file).includes('/passport/'),file+' must not expose the test page');
 assert(!read('src/pages/passport.js').includes('href="#'));assert(!read('src/client/passport.js').includes('href="#'),'Hash links must account for the shared base URL');
 assert(read('passport/index.html').includes('/passport/test/'));
 const build=JSON.parse(read('build-manifest.json'));for(const file of build.files.filter(p=>p.endsWith('.html')&&p!=='passport/test/index.html'))assert(!/href="[^"]*\/passport\//.test(read(file)),file+' exposes passport');

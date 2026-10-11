@@ -70,3 +70,16 @@
 .passport-page .pp-identity>div{min-width:0}.passport-page .pp-identity strong{font-size:clamp(20px,2vw,25px);overflow-wrap:anywhere}
 .pp-edit-tools select[name=mottoFont]{width:100%;min-height:44px;font-size:14px}
 #ppFontStatus:empty{display:none}
+
+/* Multiple personal layers and explicit record selection. */
+.pp-maker-box .pp-actions{margin:10px 0;gap:6px}
+.pp-maker-box .pp-actions button{font-size:12px;padding:8px 12px}
+.pp-maker-box select{margin-bottom:8px}
+.pp-record-choices{max-height:250px;overflow:auto;margin-top:12px;border:1px solid #edd6df;border-radius:9px;padding:6px}
+.pp-record-choices label{display:flex;align-items:start;gap:10px;font-size:13px;padding:10px;line-height:1.5;cursor:pointer}
+.pp-record-choices input{flex-shrink:0;margin-top:4px}
+.pp-record-choices span,.pp-picked-records span{min-width:0;overflow-wrap:anywhere}
+.pp-record-choices small{display:block;color:#79616f;font-size:11px;margin-top:4px}
+.pp-picked-records{list-style:none;padding:0;margin:0}
+.pp-picked-records li{display:grid;grid-template-columns:minmax(0,1fr) 36px 36px 36px;align-items:center;gap:4px;font-size:12px;border-bottom:1px solid #eddae3;padding:8px 0}
+.pp-picked-records button{padding:4px;min-height:40px}

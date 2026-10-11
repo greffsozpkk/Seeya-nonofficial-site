@@ -60,5 +60,33 @@ for(const name of ['GowunDodum-Regular','GowunBatang-Regular','NanumPenScript-Re
  assert(fs.readFileSync(path.join(dir,name+'-OFL.txt'),'utf8').includes('SIL OPEN FONT LICENSE'));
 }
 calls.length=0;R.draw(canvas,{...state,profile:{...state.profile,since:'2006-03-12'}},catalog,{...opts,type:'profile'},null,logo);
-assert(JSON.stringify(calls).includes('팬 된 지 '));
+assert(JSON.stringify(calls).includes('년차 씨야 덕후'));
 console.log('PASS homepage logo identity/aspect/layering, four phrase fonts, packaged WOFF2 licenses and fan-year wording.');
+
+// Image selection never mutates saved records, and each personal layer is independent.
+const extra={...entry,entryId:'second-record',title:'SECOND RECORD',date:'2026-09-10'},saved={...state,entries:[entry,extra]},before=JSON.stringify(saved);
+assert.deepEqual(R.chosenEntries(saved,{recordIds:[extra.entryId,entry.entryId,extra.entryId,'missing']}),[extra,entry]);
+assert.deepEqual(R.chosenEntries(saved,{type:'review',month:'2026-10',recordIds:[extra.entryId,entry.entryId]}),[entry]);
+const photo2={width:600,height:600},phrases=[{...opts,motto:'FIRST PHRASE',mottoSize:150,mottoFont:'pen'},{...opts,motto:'SECOND PHRASE',mottoSize:66,mottoFont:'batang'}];
+calls.length=0;R.draw(canvas,saved,catalog,{...opts,type:'records',recordIds:[extra.entryId],photos:[{...opts,image:photo},{...opts,image:photo2,photoX:75}],mottos:phrases},null,logo);
+assert.deepEqual(calls.filter(c=>c[0]==='drawImage').map(c=>c[1]),[photo,photo2,logo]);
+assert(calls.findIndex(c=>c[0]==='drawImage'&&c[1]===photo2)<calls.findIndex(c=>c[0]==='fillText'));
+for(const phrase of phrases)assert(calls.some(c=>c[0]==='fillText'&&c[1]===phrase.motto));
+assert(calls.some(c=>c[0]==='fillText'&&c[1]==='SECOND RECORD'));
+assert(!JSON.stringify(calls).includes(entry.title));assert(!JSON.stringify(calls).includes('PRIVATE_'));
+assert.equal(JSON.stringify(saved),before);
+assert.deepEqual(R.size('profile','iphone',{showRecords:true}),[1080,1920]);
+for(const type of ['home','lock']){
+ calls.length=0;R.draw(canvas,state,catalog,{...opts,type,showTour:false,mottos:[],photos:[]},null,logo);
+ assert(!calls.some(c=>c[0]==='arc'),'Hidden tour must remove every stamp');
+ assert(!calls.some(c=>c[0]==='fillText'&&/TOUR STAMPS|NEXT/.test(c[1])));
+ calls.length=0;R.draw(canvas,state,catalog,{...opts,type,showTour:true},null,logo);
+ assert(calls.some(c=>c[0]==='arc'));
+}
+for(const h of [1080,1920,2339])for(const y of [0,100]){
+ const m=R.mottoLayout(g,{...opts,motto:'긴 문구 '.repeat(25),mottoSize:150,mottoY:y},h);
+ assert.equal(m.font,150);assert(m.y-m.font>=0);assert(m.y+(m.lines.length-1)*m.lineHeight<h-50);
+}
+calls.length=0;R.draw(canvas,state,catalog,{...opts,type:'review',showRecords:false,mottos:[]},null,logo);
+assert(!calls.some(c=>c[0]==='fillText'&&c[1].includes(entry.title)));
+console.log('PASS independent photo/text layers, selected record order/month/privacy, hidden tour/records, 150px bounds and expanded card.');

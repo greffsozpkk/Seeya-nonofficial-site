@@ -218,3 +218,5 @@ body[data-page="map"] #app,body[data-page="map-preview"] #app{min-width:0}
 .map-workspace .map-place-heading #mapDetailTitle{margin:12px 0 8px;font-size:25px;line-height:1.45}
 .map-workspace .map-place-date{margin:0;color:#776874;font-size:12px;line-height:1.7}
 @media(max-width:850px){.map-workspace .map-place-heading{padding-top:0;padding-bottom:16px;margin-bottom:16px}.map-workspace .map-place-heading #mapDetailTitle{font-size:23px}}
+
+.map-passport-action{margin:12px 0 20px;padding:14px;border:1px solid #e9bdce;border-radius:12px;background:#fff3f7}.map-passport-action a{display:block;color:#963358;font-size:14px;font-weight:600;padding:8px 0;text-decoration:none;min-height:44px;box-sizing:border-box}.map-passport-action small{display:block;font-size:11px;line-height:1.6;color:#795d6a}

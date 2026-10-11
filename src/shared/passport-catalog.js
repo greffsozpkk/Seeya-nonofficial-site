@@ -27,5 +27,5 @@ module.exports=function buildPassportCatalog(archive,calendar,places,collection,
   if(eventIds.length>1)event.endDate=event.date;
  }
  const stage=require('../data/stage-songs.json'),daily=require('../data/today-songs.json');const songMap=new Map(stage.map(s=>[s.name,{id:s.id,title:s.name,album:s.album}]));for(const s of daily)if(!songMap.has(s.song))songMap.set(s.song,{id:'song-'+encodeURIComponent(s.song),title:s.song,album:s.album});
- return {asOf,goods:require('../data/passport-goods.json'),songs:[...songMap.values()],places:places.map(p=>({id:p.id,name:p.name,address:p.address})),events:events.sort((a,b)=>b.date.localeCompare(a.date)),tour};
+ return {asOf,goods:require('../data/passport-goods.json'),songs:[...songMap.values()],places:places.map(p=>({id:p.id,name:p.name,address:p.address,category:p.category||'',city:p.city||'',members:members(p.members||[]),operatingStatus:p.operatingStatus||'',locationPrecision:p.locationPrecision||''})),events:events.sort((a,b)=>b.date.localeCompare(a.date)),tour};
 };
