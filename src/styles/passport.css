@@ -42,3 +42,25 @@
 .pp-maker-box legend{padding:0 6px}
 @media(min-width:851px){.pp-maker-layout .pp-canvas-wrap{position:sticky;top:30px}}
 @media(max-width:480px){.pp-maker-box .pp-form-grid{grid-template-columns:1fr}.pp-maker-box{padding:12px!important}.pp-maker-layout .pp-canvas-wrap{padding:12px}}
+
+/* Direct manipulation tools are DOM overlays, never part of the saved PNG. */
+.pp-edit-stage{position:relative;display:inline-block;vertical-align:top;overflow:hidden;max-width:100%;background:repeating-conic-gradient(#eee 0% 25%,#fff 0% 50%) 0/16px 16px}
+.pp-edit-stage canvas{display:block!important;margin:0!important;max-height:520px!important;width:auto!important;max-width:100%!important;object-fit:contain}
+.passport-page .pp-selection{position:absolute;border:2px solid #be346b;box-sizing:border-box;touch-action:none;cursor:move;outline-offset:-5px;min-width:8px;min-height:8px;background:transparent}
+.passport-page .pp-selection[aria-label^="문구"]{min-height:24px;min-width:32px}
+.passport-page .pp-resize{position:absolute;width:24px;height:24px;min-height:24px;padding:0;border:2px solid #a82d5e;border-radius:50%;background:#fff;touch-action:none;z-index:2}
+.pp-resize-nw{left:-12px;top:-12px;cursor:nwse-resize}.pp-resize-ne{right:-12px;top:-12px;cursor:nesw-resize}.pp-resize-sw{left:-12px;bottom:-12px;cursor:nesw-resize}.pp-resize-se{right:-12px;bottom:-12px;cursor:nwse-resize}
+.pp-edit-tools{text-align:left;background:#fff;border:1px solid #ead5df;border-radius:12px;padding:12px;margin-top:14px;width:100%;box-sizing:border-box}
+.pp-edit-modes{display:flex;gap:6px}.passport-page .pp-edit-modes button{flex:1;min-height:44px;padding:7px}
+.pp-edit-modes [aria-pressed=true]{background:#a83760;color:white;border-color:#a83760}
+.passport-page .pp-edit-modes button[aria-pressed=true],.passport-page .pp-edit-modes button[aria-pressed=true]:hover{background:#a83760;color:#fff;border-color:#a83760}
+.pp-edit-tools .pp-help{margin:8px 0 0}.pp-edit-tools .pp-field{margin-top:10px;font-size:12px}
+.pp-edit-tools .pp-font-size{display:flex;align-items:center;gap:7px;flex-wrap:wrap}.pp-edit-tools .pp-font-size input{width:65px;min-height:44px;text-align:center}.pp-edit-tools .pp-font-size button{min-width:44px;min-height:44px;padding:5px}
+.pp-edit-tools .pp-actions{gap:6px;margin:8px 0 0}.pp-edit-tools .pp-actions button{min-height:40px;font-size:12px;padding:7px 12px}
+.pp-maker-layout .pp-canvas-wrap{min-width:0;height:max-content}
+.pp-edit-stage canvas{max-height:min(520px,calc(100svh - 280px))!important;border-radius:0!important}
+#ppPhotoTools{display:grid;grid-template-columns:1fr 1fr;gap:8px}#ppPhotoTools .pp-actions{grid-column:1/-1}
+.pp-edit-tools .pp-slider input{min-height:28px;height:28px;margin:2px 0}.pp-edit-tools .pp-slider span{display:block}
+.pp-edit-tools .pp-slider{gap:3px}.pp-edit-tools .pp-actions button{min-height:36px}
+@media(max-width:850px){.pp-maker-layout .pp-canvas-wrap{position:static}.pp-edit-stage canvas{max-height:40vh!important;max-height:40svh!important}.pp-maker-layout{gap:18px}.pp-maker-layout .pp-canvas-wrap{padding:12px}.pp-edit-tools{margin-top:10px}.pp-maker .pp-template-tabs{flex-wrap:wrap;overflow:visible}}
+@media(max-width:480px){.pp-edit-tools .pp-font-size{display:grid;grid-template-columns:minmax(0,1fr) 44px 58px 44px;gap:4px}.pp-edit-tools .pp-font-size input{width:100%;min-width:0}.pp-edit-tools .pp-font-size>span:nth-of-type(2){display:none}.pp-edit-tools .pp-font-size>span:first-child{font-size:11px}}
