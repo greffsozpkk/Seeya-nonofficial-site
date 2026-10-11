@@ -1,0 +1,92 @@
+[
+  {
+    "id": "official-lightstick-2026",
+    "name": "씨야 공식 응원봉",
+    "collection": "공식 응원봉",
+    "source": {
+      "label": "KPOP STORE · 공식 응원봉 판매 안내",
+      "url": "https://kpopstore.co.kr/article/공지사항/1/35339/"
+    },
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "first-again-popup-01",
+    "name": "랜덤 트레이딩 포토카드 세트",
+    "collection": "First, Again 팝업",
+    "source": {
+      "label": "사운드웨이브 · 팝업 MD 상품 안내",
+      "url": "https://www.sound-wave.co.kr/product/detail.html?product_no=26365"
+    },
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "first-again-popup-02",
+    "name": "폴라로이드 데코 세트",
+    "collection": "First, Again 팝업",
+    "source": {
+      "label": "사운드웨이브 · 팝업 MD 상품 안내",
+      "url": "https://www.sound-wave.co.kr/product/detail.html?product_no=26364"
+    },
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "first-again-popup-03",
+    "name": "명함 케이스",
+    "collection": "First, Again 팝업",
+    "source": {
+      "label": "사운드웨이브 · 팝업 MD 상품 안내",
+      "url": "https://www.sound-wave.co.kr/product/detail.html?product_no=26363"
+    },
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "first-again-popup-04",
+    "name": "마그네틱 카드 홀더",
+    "collection": "First, Again 팝업",
+    "source": {
+      "label": "사운드웨이브 · 팝업 MD 상품 안내",
+      "url": "https://www.sound-wave.co.kr/product/detail.html?product_no=26362"
+    },
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "first-again-popup-05",
+    "name": "사원증 홀더 세트",
+    "collection": "First, Again 팝업",
+    "source": {
+      "label": "사운드웨이브 · 팝업 MD 상품 안내",
+      "url": "https://www.sound-wave.co.kr/product/detail.html?product_no=26361"
+    },
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "first-again-popup-06",
+    "name": "텀블러",
+    "collection": "First, Again 팝업",
+    "source": {
+      "label": "사운드웨이브 · 팝업 MD 상품 안내",
+      "url": "https://www.sound-wave.co.kr/product/detail.html?product_no=26360"
+    },
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "first-again-popup-07",
+    "name": "에코백",
+    "collection": "First, Again 팝업",
+    "source": {
+      "label": "사운드웨이브 · 팝업 MD 상품 안내",
+      "url": "https://www.sound-wave.co.kr/product/detail.html?product_no=26359"
+    },
+    "checkedAt": "2026-10-11"
+  },
+  {
+    "id": "first-again-popup-08",
+    "name": "티셔츠",
+    "collection": "First, Again 팝업",
+    "source": {
+      "label": "사운드웨이브 · 팝업 MD 상품 안내",
+      "url": "https://www.sound-wave.co.kr/product/detail.html?product_no=26358"
+    },
+    "checkedAt": "2026-10-11"
+  }
+]
