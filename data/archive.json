@@ -275,7 +275,18 @@
       "김연지",
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "그 놈 목소리",
+      "Loving You",
+      "I Wish",
+      "솜사탕",
+      "미친 사랑의 노래",
+      "결혼할까요",
+      "사랑의 인사",
+      "봄처럼 그댄",
+      "그럼에도, 우린",
+      "Stay"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
@@ -288,12 +299,11 @@
       "전국투어",
       "THE FAN",
       "20주년",
-      "청주",
-      "예정"
+      "청주"
     ],
-    "note": "씨야 데뷔 20주년 전국투어 THE FAN의 청주 공연 예정입니다.\n공연 시작: 오후 6시. YES24 공식 예매 안내 기준입니다.\n공식 게스트 스케줄에 안내된 특별 게스트는 신용재입니다.\n공연 관람객 혜택 참여 매장: 엘리펀트 테라스·편백사부 청주율량점·달마설렁탕숯불갈비 율량점·스톤폴스·오지.\n멤버 방문 기록이 아닌 티켓 소지자 대상 혜택 안내입니다. 적용 기간과 조건은 각 안내 원문을 확인해 주세요.",
+    "note": "2026년 10월 10일 오후 6시, 청주대학교 석우문화체육관에서 열린 씨야 데뷔 20주년 전국투어 THE FAN 청주 공연입니다.\n공식 게스트 스케줄에 안내된 특별 게스트는 신용재입니다.\n그 놈 목소리·미친 사랑의 노래·사랑의 인사·Stay 등 현장 무대와 남규리의 Loving You, 김연지의 I Wish, 이보람의 솜사탕 팬 직캠을 함께 모았습니다.\n연결한 영상에는 곡 일부를 담은 클립이 포함되어 있으며, 아래 관련 곡은 확인된 영상 기준으로 전체 공연 순서표는 아닙니다.\n당시 관람객 혜택 참여 매장: 엘리펀트 테라스·편백사부 청주율량점·달마설렁탕숯불갈비 율량점·스톤폴스·오지. 멤버 방문 기록과 구분되는 티켓 소지자 대상 혜택입니다.",
     "venue": "청주대학교 석우문화체육관",
-    "eventState": "scheduled",
+    "eventState": "completed",
     "additionalSources": [
       {
         "label": "YES24 · THE FAN 지역별 공연 안내",
@@ -314,15 +324,70 @@
       {
         "label": "엘리펀트 테라스 · 관람객 혜택 안내",
         "url": "https://www.instagram.com/p/DeJbs1QmoQQ/"
+      },
+      {
+        "label": "🐿람보바라기 · 그 놈 목소리 · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=NUQx9Fn4EuM",
+        "publishedDate": "2026-10-10"
+      },
+      {
+        "label": "칡 · Loving You · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=V3DxQcYJ4eQ",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "칡 · I Wish · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=_Z62Y6LBBhc",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "칡 · 솜사탕 · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=ZbSC5nEjs1I",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "박성민 · 미친 사랑의 노래 · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=IeGo_eSgeeI",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "박성민 · 결혼할까요 · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=VCNj6bnjmUw",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "박성민 · 사랑의 인사 · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=0HTyaOEPTX8",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "박성민 · 봄처럼 그댄 · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=ET_1a6BXrtk",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "박성민 · 그럼에도, 우린 · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=Un7H1yh8H9g",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "박성민 · Stay · 청주 공연 팬 직캠",
+        "url": "https://www.youtube.com/watch?v=CHHNvbH65jY",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "남규리의 귤멍 Ep.66 · 영상 설명의 청주 공연 후기",
+        "url": "https://www.youtube.com/watch?v=vjH-71Nliko",
+        "publishedDate": "2026-10-11"
       }
     ],
-    "updatedAt": "2026-10-08",
+    "updatedAt": "2026-10-11",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
       "time": "18:00",
       "timeLabel": "공연 시작",
-      "sequence": 1
+      "sequence": 2
     },
     "appliedUpdates": [
       "schedule-2026-09-30-20261010-the-fan-cheongju"
@@ -47351,6 +47416,41 @@
     ],
     "note": "남규리가 공식 인스타그램에 공개한 음악방송 백스테이지 사진입니다.\n카드 날짜는 게시일이며, 사진 속 촬영일과 방송명은 별도로 확인되지 않았습니다.",
     "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261011-gyuri-gyulmung66",
+    "date": "2026-10-11",
+    "addedAt": "2026-10-11",
+    "updatedAt": "2026-10-11",
+    "title": "남규리 · 귤멍 Ep.66 · 바쁜 남대표의 요즘 근황",
+    "program": "남규리의 귤멍",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 · Ep.66 바쁘다 바빠! 남대표 남규리의 요즘 근황 🐷♥️ with 돼지",
+      "url": "https://www.youtube.com/watch?v=vjH-71Nliko",
+      "publishedDate": "2026-10-11"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "eventState": "completed",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-11",
+    "episode": 66,
+    "tags": [
+      "2026",
+      "남규리의 귤멍"
+    ],
+    "note": "남규리의 바쁜 근황과 일상 관리 이야기를 담은 귤멍 66번째 영상입니다.\n10월 11일 오전 10시에 공개됐으며, 영상 설명에서 전날 청주 콘서트에 함께한 팬들에게 인사를 전했습니다.\n날짜는 영상 공개일 기준입니다.",
     "calendar": {
       "enabled": false
     }
