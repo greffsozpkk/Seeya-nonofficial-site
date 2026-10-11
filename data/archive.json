@@ -285,7 +285,14 @@
       "사랑의 인사",
       "봄처럼 그댄",
       "그럼에도, 우린",
-      "Stay"
+      "Stay",
+      "구두",
+      "끝내 꺾이지 않는 것",
+      "미워요",
+      "바보",
+      "돌아와",
+      "잘못된 만남",
+      "예술이야"
     ],
     "album": "",
     "thumbnail": "",
@@ -301,7 +308,7 @@
       "20주년",
       "청주"
     ],
-    "note": "2026년 10월 10일 오후 6시, 청주대학교 석우문화체육관에서 열린 씨야 데뷔 20주년 전국투어 THE FAN 청주 공연입니다.\n공식 게스트 스케줄에 안내된 특별 게스트는 신용재입니다.\n그 놈 목소리·미친 사랑의 노래·사랑의 인사·Stay 등 현장 무대와 남규리의 Loving You, 김연지의 I Wish, 이보람의 솜사탕 팬 직캠을 함께 모았습니다.\n연결한 영상에는 곡 일부를 담은 클립이 포함되어 있으며, 아래 관련 곡은 확인된 영상 기준으로 전체 공연 순서표는 아닙니다.\n당시 관람객 혜택 참여 매장: 엘리펀트 테라스·편백사부 청주율량점·달마설렁탕숯불갈비 율량점·스톤폴스·오지. 멤버 방문 기록과 구분되는 티켓 소지자 대상 혜택입니다.",
+    "note": "2026년 10월 10일 오후 6시, 청주대학교 석우문화체육관에서 열린 씨야 데뷔 20주년 전국투어 THE FAN 청주 공연입니다.\n공식 게스트 스케줄에 안내된 특별 게스트는 신용재입니다.\n그 놈 목소리·미친 사랑의 노래·사랑의 인사·Stay 등 현장 무대와 남규리의 Loving You, 김연지의 I Wish, 이보람의 솜사탕 팬 직캠을 함께 모았습니다.\n연결한 영상에는 곡 일부를 담은 클립이 포함되어 있으며, 아래 관련 곡은 확인된 영상 기준으로 전체 공연 순서표는 아닙니다.\n당시 관람객 혜택 참여 매장: 엘리펀트 테라스·편백사부 청주율량점·달마설렁탕숯불갈비 율량점·스톤폴스·오지. 멤버 방문 기록과 구분되는 티켓 소지자 대상 혜택입니다.\n추가 공개된 「구두」, 「끝내 꺾이지 않는 것」, 「미워요」, 「바보」, 「돌아와 + 잘못된 만남」, 「예술이야」 팬 영상과 현장 사진도 함께 연결했습니다.",
     "venue": "청주대학교 석우문화체육관",
     "eventState": "completed",
     "additionalSources": [
@@ -439,9 +446,124 @@
         "url": "https://www.youtube.com/watch?v=WGeCX8VGweY",
         "publishedDate": "2026-10-11",
         "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야(SEEYA) 솜사탕, Loving You, I Wish 솔로 Ver, 261010 씨야 20주년 전국 투어 콘서트 in 청주",
+        "url": "https://www.youtube.com/watch?v=FnAnjLUo6j4",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "🐿람보바라기 · 씨야(SeeYa)「STAY」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+        "url": "https://www.youtube.com/watch?v=Hpw0O4IjpVM",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "🐿람보바라기 · 씨야(SeeYa)「돌아와+잘못된 만남」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+        "url": "https://www.youtube.com/watch?v=jcZLzEgJ-wc",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "🐿람보바라기 · 씨야(SeeYa)「솜사탕, I Wish, Loving You」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+        "url": "https://www.youtube.com/watch?v=QQHg-u8uVh8",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "남규리 공식 · 청주 콘서트 인사",
+        "url": "https://www.instagram.com/nam_gyuri/reel/DeRzaYLRqWM/",
+        "publishedDate": "2026-10-10"
+      },
+      {
+        "label": "제리제이 · 팬 영상",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeWRzhlBye1/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "제리제이 · 팬 영상",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeVkoSrB49l/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "제리제이 · 팬 영상",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeVTVPTyjZ1/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "제리제이 · 팬 영상",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeUaHmKyR0y/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeW-TbFSHe_/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeWiClnPbqG/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeWMsNYv2Mn/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeWFZKpvWK3/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeWCVbAPkNt/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeV-VgqStwc/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "로라연지 · 팬 사진",
+        "url": "https://www.instagram.com/rora_yeonji/p/DeVzOdVEobK/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "로라연지 · 팬 사진",
+        "url": "https://www.instagram.com/rora_yeonji/p/DeVxy4WErGc/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "로라연지 · 팬 사진",
+        "url": "https://www.instagram.com/rora_yeonji/p/DeVuH0VkosC/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "로라연지 · 팬 사진",
+        "url": "https://www.instagram.com/rora_yeonji/p/DeVXgAUEu9P/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "ramirang_ · 팬 영상",
+        "url": "https://www.instagram.com/ramirang_/reel/DeUZqumSpYH/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "ramirang_ · 팬 영상",
+        "url": "https://www.instagram.com/ramirang_/reel/DeOG0UwuK-U/",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "label": "dream_afr_10 · 팬 영상",
+        "url": "https://www.instagram.com/dream_afr_10/reel/DeW5UaMvHCz/",
+        "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "dream_afr_10 · 팬 영상",
+        "url": "https://www.instagram.com/dream_afr_10/reel/DeWAjQ0RgDv/",
+        "publishedDate": "2026-10-11"
       }
     ],
-    "updatedAt": "2026-10-11T06:09:16.452230+00:00",
+    "updatedAt": "2026-10-12",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -457,7 +579,7 @@
     "id": "20261006-boram-dst-autumn",
     "date": "2026-10-06",
     "addedAt": "2026-09-29",
-    "updatedAt": "2026-10-09T06:28:07.104370+00:00",
+    "updatedAt": "2026-10-12",
     "title": "이보람 · 대전과학기술대학교 제8회 가을문화제",
     "program": "대전과학기술대학교 제8회 가을문화제",
     "type": "event",
@@ -537,6 +659,16 @@
         "url": "https://www.youtube.com/watch?v=bgnIyzUiYOg",
         "publishedDate": "2026-10-08",
         "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 · 팬 영상",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeMFm5BSIfR/",
+        "publishedDate": "2026-10-07"
+      },
+      {
+        "label": "제리제이 · 팬 사진",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/p/DeKEARvS0qe/",
+        "publishedDate": "2026-10-07"
       }
     ],
     "status": "available",
@@ -879,9 +1011,59 @@
         "url": "https://www.youtube.com/watch?v=3pE-RoVSEfQ",
         "publishedDate": "2026-10-09",
         "autoDiscovery": true
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeMYZGFPtnN/",
+        "publishedDate": "2026-10-07"
+      },
+      {
+        "label": "로라연지 · 팬 사진",
+        "url": "https://www.instagram.com/rora_yeonji/p/DeMPVdNlDOk/",
+        "publishedDate": "2026-10-07"
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeMHisYPvjy/",
+        "publishedDate": "2026-10-07"
+      },
+      {
+        "label": "로라연지 · 팬 사진",
+        "url": "https://www.instagram.com/rora_yeonji/p/DeHNuxOlHiO/",
+        "publishedDate": "2026-10-05"
+      },
+      {
+        "label": "로라연지 · 팬 사진",
+        "url": "https://www.instagram.com/rora_yeonji/p/DeGPXqWkutP/",
+        "publishedDate": "2026-10-05"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DePwOUZzBlJ/",
+        "publishedDate": "2026-10-09"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeNLd3oT78E/",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeL3HpxRi2h/",
+        "publishedDate": "2026-10-07"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeKmsHnzYTP/",
+        "publishedDate": "2026-10-07"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeIDylPz5mn/",
+        "publishedDate": "2026-10-06"
       }
     ],
-    "updatedAt": "2026-10-10T06:11:48.657544+00:00",
+    "updatedAt": "2026-10-12",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1221,9 +1403,14 @@
         "url": "https://www.youtube.com/watch?v=QmjtpfSI-_w",
         "publishedDate": "2026-10-04",
         "autoDiscovery": true
+      },
+      {
+        "label": "계절을 견딘 나무 · 팬 사진",
+        "url": "https://www.instagram.com/seeya_tree.weathered/p/DeK9FlUEilW/",
+        "publishedDate": "2026-10-07"
       }
     ],
-    "updatedAt": "2026-10-06T06:40:34.588234+00:00",
+    "updatedAt": "2026-10-12",
     "calendar": {
       "time": "19:00",
       "endTime": "20:00",
@@ -4742,10 +4929,15 @@
       {
         "label": "8월 30일 서울 공연 사진 · @mena299",
         "url": "https://www.instagram.com/mena299/p/DeBiBN2lOH2/"
+      },
+      {
+        "label": "김미나 · 팬 사진",
+        "url": "https://www.instagram.com/mena299/p/DeLyB22iQIF/",
+        "publishedDate": "2026-10-07"
       }
     ],
     "endDate": "2026-08-30",
-    "updatedAt": "2026-10-05"
+    "updatedAt": "2026-10-12"
   },
   {
     "id": "v492-sVhd4C_aeKM",
@@ -46517,19 +46709,29 @@
     "id": "20261009-boram-worldmom-yongin",
     "date": "2026-10-09",
     "addedAt": "2026-10-05",
-    "updatedAt": "2026-10-11T06:09:16.452230+00:00",
-    "title": "이보람 · 세상을 바꾸는 여자들 용인 공연 예정",
+    "updatedAt": "2026-10-12",
+    "title": "이보람 · 세상을 바꾸는 여자들 용인 공연",
     "program": "세상을 바꾸는 여자들 · 용인",
     "type": "event",
     "members": [
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "사랑의 인사",
+      "처음 그 자리에",
+      "지금 술 한잔했어",
+      "그때 그 순간 그대로",
+      "빛의 반대편에서",
+      "미친 사랑의 노래",
+      "원더우먼",
+      "여성시대"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "세상을 바꾸는 여자들 · 용인 공식 신청 안내",
-      "url": "https://newworldmom.co.kr/apply?event_id=296"
+      "label": "제리제이 Jerry.j · 씨야(SEEYA) 이보람(Lee Bo Ram) 직캠 Full Ver, 261009 용인 세상을 바꾸는 여자들",
+      "url": "https://www.youtube.com/watch?v=LKi12k1SpP4",
+      "publishedDate": "2026-10-10"
     },
     "additionalSources": [
       {
@@ -46585,21 +46787,55 @@
         "url": "https://www.youtube.com/watch?v=N1THd1zTeis",
         "publishedDate": "2026-10-10",
         "autoDiscovery": true
+      },
+      {
+        "label": "계절을 견딘 나무 · 팬 사진",
+        "url": "https://www.instagram.com/seeya_tree.weathered/p/DeR73vMGpSD/",
+        "publishedDate": "2026-10-10"
+      },
+      {
+        "label": "제리제이 · 팬 영상",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeR2RpGyMUw/",
+        "publishedDate": "2026-10-10"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeSY8aETfAa/",
+        "publishedDate": "2026-10-10"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeSVmidT1wf/",
+        "publishedDate": "2026-10-10"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeSVYpyT9R7/",
+        "publishedDate": "2026-10-10"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeRxyQ5xzga/",
+        "publishedDate": "2026-10-10"
+      },
+      {
+        "label": "세상을 바꾸는 여자들 · 용인 공식 신청 안내",
+        "url": "https://newworldmom.co.kr/apply?event_id=296"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "tags": [
       "2026"
     ],
-    "note": "이보람이 함께하는 세상을 바꾸는 여자들 용인 행사입니다.\n행사 시작: 오후 6시 50분.\n장소: ICT밸리컨벤션 지하 1층 플로리아홀.\n무료 사전 신청 행사이며 후원사 홍보 시간이 포함됩니다. 출연자의 개별 무대 시작 시각과 행사 시작 시각은 다를 수 있습니다.",
-    "eventState": "scheduled",
+    "note": "10월 9일 ICT밸리컨벤션 지하 1층 플로리아홀에서 열린 이보람의 「세상을 바꾸는 여자들」 용인 공연입니다.\n「사랑의 인사」, 「처음 그 자리에」, 「지금 술 한잔했어」, 「그때 그 순간 그대로」, 「빛의 반대편에서」, 「원더우먼」, 「여성시대」와 토크·무반주 신청곡을 선보였습니다.\n팬이 촬영한 전체 공연 영상과 현장 사진·짧은 영상을 함께 모았습니다. 무반주 곡은 일부 발췌이며 전체 공연 순서표와 구분합니다.\n오후 6시 50분은 공식 행사 시작 안내 시각입니다.",
+    "eventState": "completed",
     "venue": "ICT밸리컨벤션 B1 플로리아홀",
     "calendar": {
       "time": "18:50",
       "timeLabel": "공식 행사 시작",
-      "sequence": 0
+      "sequence": 1
     }
   },
   {
@@ -47171,7 +47407,7 @@
     "id": "20261007-boram-btn-dream-24",
     "date": "2026-10-07",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-08",
+    "updatedAt": "2026-10-12",
     "title": "이보람 · 한밤의 꿈 이보람입니다 24회",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
@@ -47190,6 +47426,16 @@
       {
         "label": "씨야 갤러리 · 방송 당일 라디오 사진",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9468",
+        "publishedDate": "2026-10-07"
+      },
+      {
+        "label": "제리제이 · 팬 영상",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DePuGkZSYYd/",
+        "publishedDate": "2026-10-09"
+      },
+      {
+        "label": "ramirang_ · 팬 사진",
+        "url": "https://www.instagram.com/ramirang_/p/DeMlZNykv41/",
         "publishedDate": "2026-10-07"
       }
     ],
@@ -47326,8 +47572,8 @@
     "id": "20261010-yeonji-for-rest-live",
     "date": "2026-10-10",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-08",
-    "title": "김연지 · 숲세권 라이브 「노래」 공개 예정",
+    "updatedAt": "2026-10-12",
+    "title": "김연지 · 숲세권 라이브 「노래」",
     "program": "숲세권 라이브 For:Rest LIVE",
     "type": "music-show",
     "members": [
@@ -47339,24 +47585,36 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "숲세권 라이브 공식 · 김연지 티저·공개 일정",
-      "url": "https://www.instagram.com/p/DeOBYdwq9cQ/"
+      "label": "숲세권 라이브 (For:Rest LIVE) · 목소리를 되찾은 김연지의 진짜 이야기 | 김연지 (Kim Yeon Ji) - 노래ㅣ숲세권 라이브 (For:Rest LIVE)",
+      "url": "https://www.youtube.com/watch?v=JIpU0HXvc_E",
+      "publishedDate": "2026-10-10"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "숲세권 라이브 공식 · 노래 라이브 릴스",
+        "url": "https://www.instagram.com/for_rest_live/reel/DeT7tjGKOe1/",
+        "publishedDate": "2026-10-10"
+      },
+      {
+        "label": "숲세권 라이브 공식 · 김연지 티저·공개 일정",
+        "url": "https://www.instagram.com/p/DeOBYdwq9cQ/"
+      }
+    ],
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "release",
     "tags": [
       "2026",
       "숲세권 라이브",
-      "공개 예정"
+      "노래"
     ],
-    "note": "김연지가 숲세권 라이브에서 직접 쓴 자신의 이야기 「노래」를 들려줍니다.\n10월 10일 토요일 오후 8시, 유튜브 ‘숲세권 라이브 For:Rest LIVE’에서 공개 예정입니다.\n날짜와 시간은 영상 공개 일정이며 현장 공연·촬영 일정이 아닙니다.",
-    "eventState": "scheduled",
+    "note": "10월 10일 오후 8시 공개된 김연지의 숲세권 라이브입니다.\n직접 작사·작곡에 참여한 「노래」 라이브와 곡에 관한 이야기를 들려줍니다.\n공식 유튜브 전체 영상과 인스타그램 짧은 영상을 함께 볼 수 있습니다. 날짜는 촬영일이 아닌 영상 공개일입니다.\n공식 영상에서는 10월 17일 자정까지 감상 댓글을 통한 사인 폴라로이드 증정 이벤트도 안내하고 있습니다.",
+    "eventState": "completed",
     "calendar": {
       "type": "broadcast",
       "time": "20:00",
-      "timeLabel": "영상 공개"
+      "timeLabel": "영상 공개",
+      "sequence": 1
     }
   },
   {
@@ -47602,5 +47860,42 @@
     "note": "",
     "publishedDate": "2016-11-19",
     "autoDiscovery": true
+  },
+  {
+    "id": "20261011-yeonji-song-studio-live",
+    "date": "2026-10-11",
+    "addedAt": "2026-10-12",
+    "updatedAt": "2026-10-12",
+    "title": "김연지 · 「노래」 작업실 라이브",
+    "program": "와일드무브 · 작업실 Live",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "와일드무브·김연지 공식 · 노래 작업실 라이브",
+      "url": "https://www.instagram.com/wildmove_official/reel/DeWSWwjMtZk/",
+      "publishedDate": "2026-10-11"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-11",
+    "tags": [
+      "2026",
+      "노래",
+      "라이브"
+    ],
+    "note": "와일드무브와 김연지 공식 계정에 공개된 「노래」 작업실 라이브입니다.\n날짜는 영상 게시일이며 작업실 촬영일은 별도로 공개되지 않았습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
   }
 ]
