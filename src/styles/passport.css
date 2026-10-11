@@ -72,6 +72,24 @@
 #ppFontStatus:empty{display:none}
 
 /* Multiple personal layers and explicit record selection. */
+/* Larger display-only canvas, with scrolling instead of shrinking tall artwork. */
+.pp-maker-layout{grid-template-columns:minmax(0,1.4fr) minmax(280px,1fr);gap:24px}
+.pp-maker-layout .pp-canvas-wrap{padding:10px}
+.pp-preview-scroll{width:100%;max-height:72vh;max-height:72svh;overflow:auto;padding:12px;box-sizing:border-box;overscroll-behavior:contain;text-align:left;border:1px solid #ead5df;border-radius:10px;background:#eee8ec}
+.pp-preview-scroll .pp-edit-stage{display:block;max-width:none;flex-shrink:0;margin:0 auto}
+.pp-preview-scroll .pp-edit-stage canvas{max-width:none!important;max-height:none!important;width:100%!important;object-fit:fill}
+.pp-zoom-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:10px;text-align:left}
+.pp-zoom-bar label{display:flex;gap:8px;align-items:center;font-size:13px}
+.pp-zoom-bar select{width:auto;min-height:44px}.pp-zoom-bar button{min-height:44px}
+dialog.pp-editor-dialog{position:fixed;inset:0;width:calc(100vw - 24px);height:calc(100dvh - 24px);max-width:none;max-height:none;margin:auto;padding:0;border:1px solid #decad3;border-radius:14px;background:#fcf8f5;box-sizing:border-box;color:#30252d;overflow:hidden}
+.pp-editor-dialog::backdrop{background:#241521b3}
+.pp-big-header{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 20px;border-bottom:1px solid #ead5df;background:#fff;min-height:68px;box-sizing:border-box}
+.pp-big-header h2{font-size:19px;margin:0}.pp-big-header button{min-height:44px}
+.pp-big-body{height:calc(100% - 70px);overflow:auto;padding:20px;box-sizing:border-box}
+.pp-editor-dialog .pp-maker-layout{grid-template-columns:minmax(0,1.8fr) minmax(300px,1fr)}
+.pp-editor-dialog .pp-preview-scroll{max-height:62vh;max-height:62svh}
+.pp-editor-dialog .pp-canvas-wrap{position:sticky;top:0}
+@media(max-width:850px){.pp-maker-layout,.pp-editor-dialog .pp-maker-layout{grid-template-columns:minmax(0,1fr)}.pp-maker-layout .pp-canvas-wrap{padding:0}.pp-preview-scroll{max-height:65svh}.pp-editor-dialog .pp-canvas-wrap{position:static}dialog.pp-editor-dialog{width:100%;height:100dvh;border:0;border-radius:0}.pp-big-header{padding:8px 12px}.pp-big-header h2{font-size:16px}.pp-big-body{padding:12px}.pp-editor-dialog .pp-preview-scroll{max-height:60svh}}
 .pp-maker-box .pp-actions{margin:10px 0;gap:6px}
 .pp-maker-box .pp-actions button{font-size:12px;padding:8px 12px}
 .pp-maker-box select{margin-bottom:8px}
