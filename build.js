@@ -76,7 +76,10 @@ const mapJs=asset('seeya-map','js',bundle('src/client/seeya-map.js'));
 const passportFonts=[['Passport Dodum','GowunDodum-Regular'],['Passport Batang','GowunBatang-Regular'],['Passport Pen','NanumPenScript-Regular']].map(([family,name])=>({family,url:asset(name,'woff2',fs.readFileSync(path.join(root,'src/vendor/passport-fonts',name+'.woff2')))}));
 const passportFontCss=passportFonts.map(f=>`@font-face{font-family:"${f.family}";src:url("${f.url}") format("woff2");font-style:normal;font-weight:400;font-display:swap}`).join('\n');
 const passportCss=asset('passport','css',passportFontCss+'\n'+read('src/styles/passport.css'));
-const passportJs=asset('passport','js',bundle('src/client/passport.js'));
+const passportBundle=bundle('src/client/passport.js');
+const passportJs=asset('passport','js',passportBundle);
+// Compile public and retained test entry points from the same editor source.
+const diaryJs=asset('diary','js',passportBundle.replaceAll('/passport/test/','/diary/').replaceAll('/passport/sw.js','/diary/sw.js'));
 const adminCss=asset('archive-admin','css',read('src/admin/admin.css'));
 const adminJs=asset('archive-admin','js',read('src/admin/admin.js'));
 write('manage/index.html',read('src/admin/template.html').replace('{{adminCss}}',adminCss).replace('{{adminJs}}',adminJs));
@@ -95,6 +98,9 @@ write('calendar/activities.ics',calendarICS(calendarData.events));
 write('calendar/anniversaries.ics',calendarICS(calendarData.anniversaries,'씨야 기념일'));
 const mapPlaces=require('./src/shared/seeya-map').resolvePlaces(json('src/data/map-places.json'),archiveRows);
 const passportCatalog=require('./src/shared/passport-catalog')(archiveRows,[...calendarData.events,...calendarData.anniversaries],mapPlaces,json('src/data/concerts.json').find(c=>c.id==='the-fan-2026'),site.snapshotDate);
+const examBanks=require('./src/shared/exam').banks;
+if(!examBanks.every(b=>b.questions.length===examBanks[0].questions.length&&b.points===examBanks[0].points))throw Error('Diary play presets need area-specific question counts');
+passportCatalog.playFormats={lyrics:{total:10,maxScore:10},exam:{total:examBanks[0].questions.length,maxScore:examBanks[0].questions.length*examBanks[0].points}};
 const previewRoute=json('src/data/exam-preview-route.json');
 const mapPreviewRoute=json('src/data/map-preview-route.json');
 if(!/^\/preview\/seeya-map-[a-f0-9]{16}\/$/.test(mapPreviewRoute.path)||!mapPreviewRoute.unlisted)throw new Error('Invalid map preview route');
@@ -110,7 +116,7 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  if(key==='news')content=render(json('data/news.json'));
  else if((key==='map'||key==='map-preview'))content=render(archiveRows);
  else if(key==='calendar')content=render(calendarData);
- else if(key==='passport')content=render(passportCatalog);
+ else if(key==='passport')content=render(passportCatalog).replaceAll('/passport/test/',route.path);
  else if(key==='radio'||key==='podcasts')content=render(archiveRows,site.snapshotDate);
  else if(key==='home')content=render(archiveRows,new Date(site.snapshotDate));
  else if(key==='archive')content=render(require('./src/shared/archive-data').mergeArchive(json('data/archive.json')));
@@ -121,7 +127,7 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  else content=render();
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
- if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}">`;vars.scripts=`<script defer src="${passportJs}"></script>`;}
+ if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}">`;vars.scripts=`<script defer src="${route.path==='/diary/'?diaryJs:passportJs}"></script>`;}
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
  if((key==='map'||key==='map-preview')){vars.pageHead=`<link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${mapJs}"></script>`;}
  if(key==='podcasts'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}"><link rel="stylesheet" href="${podcastCss}">`;vars.scripts=`<script defer src="${podcastJs}"></script>`;}
@@ -147,8 +153,12 @@ write('passport/index.html',read('src/passport-redirect.html'));
 const passportFiles=[...passportFonts.map(f=>f.url),'/passport/test/',siteCss,passportCss,passportJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png','/images/app/apple-touch-icon-180-v2.png'];
 const passportDigest=crypto.createHash('sha256').update(fs.readFileSync(path.join(outputRoot,'passport/test/index.html'))).update(read('src/passport-worker.js')).digest('hex').slice(0,12);
 write('passport/sw.js',read('src/passport-worker.js').replace('__PASSPORT_CACHE__',JSON.stringify('seeya-passport-shell-'+passportDigest)).replace('__PASSPORT_FILES__',JSON.stringify(passportFiles)));
+const diaryFiles=passportFiles.map(p=>p==='/passport/test/'?'/diary/':p===passportJs?diaryJs:p);
+const diaryWorker=read('src/passport-worker.js').replaceAll('/passport/test/','/diary/').replaceAll('/passport/test','/diary').replaceAll('seeya-passport-shell-','seeya-diary-shell-');
+const diaryDigest=crypto.createHash('sha256').update(fs.readFileSync(path.join(outputRoot,'diary/index.html'))).update(diaryWorker).digest('hex').slice(0,12);
+write('diary/sw.js',diaryWorker.replace('__PASSPORT_CACHE__',JSON.stringify('seeya-diary-shell-'+diaryDigest)).replace('__PASSPORT_FILES__',JSON.stringify(diaryFiles)));
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',mapPreviewRoute.path.slice(1)+'index.html']},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',mapPreviewRoute.path.slice(1)+'index.html']},null,2)+'\n');
 console.log(`Built ${routes.length} public pages, 2 unlisted previews and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

@@ -57,7 +57,7 @@ function draw(canvas,state,catalog,opts,photo,logo){
  if(type==='ticket')ticket(g,state.entries.find(e=>e.entryId===opts.entry),state,opts,H,c,logo);
  else {
   let y=wallpaper?(opts.showRecords?300:type==='lock'?H*.44:H*.62):100;
-  drawLogo(g,logo,76,y-44,230);text(g,'PASSPORT'+(opts.nickname&&state.profile.nickname?' · '+state.profile.nickname:''),346,y,24,650,32,1);y+=90;
+  drawLogo(g,logo,76,y-44,230);text(g,'DIARY'+(opts.nickname&&state.profile.nickname?' · '+state.profile.nickname:''),346,y,24,650,32,1);y+=90;
   if(wallpaper&&opts.showTour!==false){text(g,'THE FAN · TOUR STAMPS',76,y,28,920,40);y+=85;catalog.tour.forEach((t,i)=>{const x=160+(i%4)*250,cy=y+Math.floor(i/4)*175,done=X.tourEntries(t,state.entries).length>0;g.save();g.shadowBlur=0;g.beginPath();g.arc(x,cy,64,0,Math.PI*2);g.strokeStyle=c.accent;g.fillStyle=done?'#a13259':c.bg;g.setLineDash(done?[]:[6,7]);g.fill();g.stroke();g.restore();g.fillStyle=done?'#fff':c.fg;g.textAlign='center';text(g,t.label,x,cy+5,28,150,35,1);text(g,t.date.slice(5).replace('-','.'),x,cy-28,18,150,25,1);g.textAlign='left';});g.fillStyle=c.fg;y+=310;const next=catalog.tour.filter(t=>t.date>=P.today()).sort((a,b)=>a.date.localeCompare(b.date))[0];if(next)text(g,`NEXT · ${next.label} ${next.date} · D-${Math.round((Date.parse(next.date)-Date.parse(P.today()))/86400000)}`,76,y,26,920,40);}
   else if(type==='profile'){
    text(g,opts.nickname?state.profile.nickname||'WITH YOU':'WITH YOU',76,235,64,920,82);

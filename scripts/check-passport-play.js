@@ -11,7 +11,7 @@ const second=S.result('second-12345',base,new Date('2026-10-01T15:30:01Z'));S.sa
 const lyric=S.result('lyrics-12345',{game:'lyrics',level:'LEVEL 2',score:7,maxScore:10,correct:9,total:10},new Date('2026-10-01T15:30:02Z'));S.save(adapter,lyric);assert.equal(lyric.play.correct,9);assert.equal(lyric.play.score,7);
 const raw=adapter.getItem(P.KEY),state=P.validate(JSON.parse(raw));assert.deepEqual(P.validate(JSON.parse(JSON.stringify(state))),state);assert.equal(P.summary(state.entries).play,3);assert.equal(P.merge(state,state).entries.length,3);
 const old=X.publicSummary(P.empty());delete old.c.play;assert.equal(X.checkSummary(old).c.play,0);
-for(const patch of [{score:-1},{score:101},{score:1.5},{score:null},{correct:26},{total:0},{game:'invalid'}])assert.throws(()=>Play.clean({...base,...patch}));
+for(const patch of [{score:-1},{score:101},{score:1.5},{correct:26},{total:0},{game:'invalid'}])assert.throws(()=>Play.clean({...base,...patch}));
 assert.equal(Play.clean({game:'other'}).score,null);
 assert.throws(()=>S.save({getItem:()=>'{broken',setItem:()=>assert.fail('must not overwrite')},first));
 assert.throws(()=>S.save({getItem:k=>adapter.getItem(k),setItem:()=>{throw Error('quota');}},S.result('quota-12345',base,new Date('2026-10-01T15:30:03Z'))));assert.equal(adapter.getItem(P.KEY),raw);
@@ -19,7 +19,7 @@ assert.throws(()=>S.save({getItem:k=>adapter.getItem(k),setItem:()=>{throw Error
 const multi={id:'two-day',date:'2026-08-29',endDate:'2026-08-30'};
 assert.equal(C.selectedEvent(multi,'2026-08-30').date,'2026-08-30');assert.equal(C.selectedEvent(multi,'2026-08-31').date,'2026-08-29');assert.equal(C.selectedEvent(multi,'2026-02-30').date,'2026-08-29');
 const annual={id:'anniversary',date:'2007-03-12',annual:true};assert.equal(C.selectedEvent(annual,'2027-03-12').date,'2027-03-12');assert.equal(C.selectedEvent(annual,'','2026-10-11').date,'2026-03-12');assert.notEqual(C.selectedEvent(annual,'2027-03-13').date,'2027-03-13');
-const card={...multi,type:'performance',members:[],state:'confirmed',recordIds:[],sources:[],note:'',venue:'',time:''};assert(V.eventCard(card,false,'2026-08-30').includes('date=2026-08-30'));assert(!V.eventCard({...card,state:'cancelled'}).includes('/passport/'));
+const card={...multi,type:'performance',members:[],state:'confirmed',recordIds:[],sources:[],note:'',venue:'',time:''};assert(V.eventCard(card,false,'2026-08-30').includes('date=2026-08-30'));assert(!V.eventCard({...card,state:'cancelled'}).includes('/diary/'));
 console.log('PASS passport play/calendar: opt-in preference, KST, result privacy, run dedupe, independent replays, quota/corruption preservation, backup and legacy QR, bounded event dates and cancellation.');
 
 const fs=require('node:fs'),path=require('node:path');

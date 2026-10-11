@@ -336,8 +336,14 @@
   {
     "key": "passport",
     "path": "/passport/test/",
-    "title": "위듀 패스포트 테스트 · 나의 씨야 수첩 | SEEYA ARCHIVE",
+    "title": "씨야 다이어리 테스트 | SEEYA ARCHIVE",
     "description": "씨야와 함께한 공연과 장소, 팬 행사와 추억을 개인 수첩에 남겨보세요.",
     "noindex": true
+  },
+  {
+    "key": "passport",
+    "path": "/diary/",
+    "title": "씨야 다이어리 · 나의 씨야 기록 | SEEYA ARCHIVE",
+    "description": "공연 관람과 장소 방문, 굿즈와 씨야 플레이 결과를 나만의 다이어리에 모아보세요."
   }
 ]

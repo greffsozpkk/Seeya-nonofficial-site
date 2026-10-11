@@ -35,7 +35,7 @@ assert.deepEqual(catalog.places.map(p=>p.id),places.map(p=>p.id));
 for(const p of places){
  const linked=catalog.places.find(x=>x.id===p.id);
  assert.equal(linked.name,p.name);assert.equal(linked.address,p.address);assert.equal(linked.category,p.category||'');
- assert(map.detail(p).includes('href="/passport/test/#new?place='+encodeURIComponent(p.id)+'"'));
+ assert(map.detail(p).includes('href="/diary/#new?place='+encodeURIComponent(p.id)+'"'));
  assert(linked.members.every(m=>['seeya','gyuri','yeonji','boram'].includes(m)));
 }
 const station=catalog.places.find(p=>p.id==='old-kim-you-jeong-station');assert(station);assert.deepEqual(station.members,['gyuri']);
@@ -45,7 +45,7 @@ assert(P.duplicate(visit,{...visit,entryId:'other-visit'}));assert(!P.duplicate(
 assert.equal(P.merge(P.empty(),P.validate({...P.empty(),entries:[visit]})).entries[0].placeId,station.id);
 for(const file of ['src/template.html','src/offline.html'])assert(!read(file).includes('/passport/'),file+' must not expose the test page');
 assert(!read('src/pages/passport.js').includes('href="#'));assert(!read('src/client/passport.js').includes('href="#'),'Hash links must account for the shared base URL');
-assert(read('passport/index.html').includes('/passport/test/'));
+assert(read('passport/index.html').includes('/diary/'));
 const build=JSON.parse(read('build-manifest.json'));for(const file of build.files.filter(p=>p.endsWith('.html')&&!['passport/test/index.html','calendar/index.html'].includes(p)))assert(!/href="[^"]*\/passport\//.test(read(file)),file+' exposes passport');
 for(const city of ['서울','부산']){const t=catalog.tour.find(t=>t.label===city),e=catalog.events.find(e=>e.id===t.eventId);assert(e);assert(e.archiveId);}
 const seoul=catalog.tour.filter(t=>t.label==='서울');assert.deepEqual(seoul.map(t=>t.date),['2026-08-29','2026-08-30']);

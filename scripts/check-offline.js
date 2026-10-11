@@ -14,7 +14,7 @@ assert.deepEqual(gallery.find(x=>x.id==='offline-characters').usedOn,[{label:'ì—
 assert(!/skipWaiting\(|clients\.claim\(/.test(worker));assert(!/__OFFLINE_HASH__|__PUBLIC_PATHS__/.test(worker));
 assert(!/<(?:link|iframe)\b|src="https?:/.test(fallback));assert(fallback.includes('noindex,nofollow'));
 for(const file of build.files.filter(p=>p.endsWith('.html'))){
- if(file==='passport/test/index.html'){
+ if(['passport/test/index.html','diary/index.html'].includes(file)){
   assert(!/src="\/assets\/offline\./.test(read(file)));
   assert(read('src/client/passport.js').includes("register('/passport/sw.js'"),'Passport owns its offline shell');
  }else assert(/src="\/assets\/offline\.[a-f0-9]+\.js"/.test(read(file)),file);
