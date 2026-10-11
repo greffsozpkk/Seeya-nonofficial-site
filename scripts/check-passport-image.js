@@ -36,3 +36,29 @@ calls.length=0;R.draw(canvas,{...state,entries:[entry,prior]},catalog,{...opts,t
 assert(!JSON.stringify(calls).includes('OUTSIDE_MONTH'));
 assert(JSON.stringify(calls).includes('이달의 나'));
 console.log('PASS direct editor: drag bounds, fixed-corner resizing, text position, combined profile and monthly scope.');
+
+const fs=require('node:fs'),path=require('node:path'),brand=require('../src/data/passport-brand.json');
+const template=fs.readFileSync(path.join(__dirname,'../src/template.html'),'utf8');
+assert(template.includes(brand.logo),'Passport must use the exact homepage logo');
+const logo={width:850,height:207};
+for(const type of ['profile','review','ticket','lock','home']){
+ calls.length=0;R.draw(canvas,state,catalog,{...opts,type},photo,logo);
+ const logos=calls.filter(c=>c[0]==='drawImage'&&c[1]===logo);
+ assert.equal(logos.length,1);assert(Math.abs(logos[0][4]/logos[0][5]-850/207)<1e-9);
+ assert(calls.findIndex(c=>c[0]==='drawImage'&&c[1]===photo)<calls.indexOf(logos[0]));
+ assert(!calls.some(c=>c[0]==='fillText'&&c[1]==='SEEYA'),'Heading uses logo, not plain text');
+}
+const textFonts=[];g.fillText=(...a)=>{calls.push(['fillText',...a]);textFonts.push([a[0],g.font]);};
+for(const id of Object.keys(R.FONTS)){
+ textFonts.length=0;R.draw(canvas,state,catalog,{...opts,mottoFont:id},null,logo);
+ assert(textFonts.some(([text,font])=>text===opts.motto&&font.includes(R.fontFamily(id))));
+}
+assert.equal(R.fontFamily('unknown'),R.fontFamily('basic'));
+for(const name of ['GowunDodum-Regular','GowunBatang-Regular','NanumPenScript-Regular']){
+ const dir=path.join(__dirname,'../src/vendor/passport-fonts');
+ assert.equal(fs.readFileSync(path.join(dir,name+'.woff2')).subarray(0,4).toString(),'wOF2');
+ assert(fs.readFileSync(path.join(dir,name+'-OFL.txt'),'utf8').includes('SIL OPEN FONT LICENSE'));
+}
+calls.length=0;R.draw(canvas,{...state,profile:{...state.profile,since:'2006-03-12'}},catalog,{...opts,type:'profile'},null,logo);
+assert(JSON.stringify(calls).includes('팬 된 지 '));
+console.log('PASS homepage logo identity/aspect/layering, four phrase fonts, packaged WOFF2 licenses and fan-year wording.');

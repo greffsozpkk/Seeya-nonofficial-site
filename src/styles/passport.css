@@ -64,3 +64,9 @@
 .pp-edit-tools .pp-slider{gap:3px}.pp-edit-tools .pp-actions button{min-height:36px}
 @media(max-width:850px){.pp-maker-layout .pp-canvas-wrap{position:static}.pp-edit-stage canvas{max-height:40vh!important;max-height:40svh!important}.pp-maker-layout{gap:18px}.pp-maker-layout .pp-canvas-wrap{padding:12px}.pp-edit-tools{margin-top:10px}.pp-maker .pp-template-tabs{flex-wrap:wrap;overflow:visible}}
 @media(max-width:480px){.pp-edit-tools .pp-font-size{display:grid;grid-template-columns:minmax(0,1fr) 44px 58px 44px;gap:4px}.pp-edit-tools .pp-font-size input{width:100%;min-width:0}.pp-edit-tools .pp-font-size>span:nth-of-type(2){display:none}.pp-edit-tools .pp-font-size>span:first-child{font-size:11px}}
+
+/* Main-site logo keeps its original proportions on the identity card. */
+.passport-page .pp-identity-logo{display:block;width:74px;height:auto;object-fit:contain;flex:0 0 74px;max-width:30%}
+.passport-page .pp-identity>div{min-width:0}.passport-page .pp-identity strong{font-size:clamp(20px,2vw,25px);overflow-wrap:anywhere}
+.pp-edit-tools select[name=mottoFont]{width:100%;min-height:44px;font-size:14px}
+#ppFontStatus:empty{display:none}

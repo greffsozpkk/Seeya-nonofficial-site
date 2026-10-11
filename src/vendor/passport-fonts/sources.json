@@ -1,0 +1,50 @@
+[
+  {
+    "file": "GowunDodum-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gowundodum/GowunDodum-Regular.ttf",
+    "sha256": "a6e457933227483a11758fd0947bc74422a106d46f0bf057fdaa5af94a30067d"
+  },
+  {
+    "file": "GowunDodum-Regular-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gowundodum/OFL.txt",
+    "sha256": "a7c73f9521cd646bbdfb6684c99a62311bbd7bce11898dc11ef0b3c69eda1aca"
+  },
+  {
+    "file": "GowunBatang-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gowunbatang/GowunBatang-Regular.ttf",
+    "sha256": "466c593e7147412e748af4856d5ad14709b5a860bdf62b9c2546f2c5874e9849"
+  },
+  {
+    "file": "GowunBatang-Regular-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gowunbatang/OFL.txt",
+    "sha256": "49a57cc769fa9affd6eefb9070a61e3d3f6b757c97cafb15848bc6d1c81acc78"
+  },
+  {
+    "file": "NanumPenScript-Regular.ttf",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/nanumpenscript/NanumPenScript-Regular.ttf",
+    "sha256": "6f0d1ab29c7894010dc88831fb7a0a51edb79136e450344183de5b1a8b52bd43"
+  },
+  {
+    "file": "NanumPenScript-Regular-OFL.txt",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/nanumpenscript/OFL.txt",
+    "sha256": "eeacf16032901d0ed0456876ec77b8f0fda6b3fecec7d972f8543eb602e6c30f"
+  },
+  {
+    "file": "GowunBatang-Regular.woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gowunbatang/GowunBatang-Regular.ttf",
+    "conversion": "lossless WOFF2 encoding; full character set retained",
+    "sha256": "d66f8f3914dc8fa44d2feec2239c97e5631456043328ee7ebc48aaa69d3fa0fc"
+  },
+  {
+    "file": "GowunDodum-Regular.woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/gowundodum/GowunDodum-Regular.ttf",
+    "conversion": "lossless WOFF2 encoding; full character set retained",
+    "sha256": "385f1f238065a04e2559942ef0a2d37457fecb158d2e8b564a04f5c1838c6a85"
+  },
+  {
+    "file": "NanumPenScript-Regular.woff2",
+    "source": "https://raw.githubusercontent.com/google/fonts/main/ofl/nanumpenscript/NanumPenScript-Regular.ttf",
+    "conversion": "lossless WOFF2 encoding; full character set retained",
+    "sha256": "d083eb8197a241db0db2ee8ab3049abb9a7dfc498f179a15d8084554c9f319ac"
+  }
+]

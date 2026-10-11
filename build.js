@@ -73,7 +73,9 @@ const radioCss=asset('radio','css',read('src/styles/radio.css'));
 const radioJs=asset('radio','js',bundle('src/client/radio.js'));
 const mapCss=asset('seeya-map','css',read('src/styles/seeya-map.css'));
 const mapJs=asset('seeya-map','js',bundle('src/client/seeya-map.js'));
-const passportCss=asset('passport','css',read('src/styles/passport.css'));
+const passportFonts=[['Passport Dodum','GowunDodum-Regular'],['Passport Batang','GowunBatang-Regular'],['Passport Pen','NanumPenScript-Regular']].map(([family,name])=>({family,url:asset(name,'woff2',fs.readFileSync(path.join(root,'src/vendor/passport-fonts',name+'.woff2')))}));
+const passportFontCss=passportFonts.map(f=>`@font-face{font-family:"${f.family}";src:url("${f.url}") format("woff2");font-style:normal;font-weight:400;font-display:swap}`).join('\n');
+const passportCss=asset('passport','css',passportFontCss+'\n'+read('src/styles/passport.css'));
 const passportJs=asset('passport','js',bundle('src/client/passport.js'));
 const adminCss=asset('archive-admin','css',read('src/admin/admin.css'));
 const adminJs=asset('archive-admin','js',read('src/admin/admin.js'));
@@ -142,7 +144,7 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
 }
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.filter(r=>r.key!=='letter'&&!r.noindex).map(r=>'  <url><loc>'+esc(site.origin+r.path)+'</loc></url>').join('\n')+'\n</urlset>\n');
 write('passport/index.html',read('src/passport-redirect.html'));
-const passportFiles=['/passport/test/',siteCss,passportCss,passportJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png','/images/app/apple-touch-icon-180-v2.png'];
+const passportFiles=[...passportFonts.map(f=>f.url),'/passport/test/',siteCss,passportCss,passportJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png','/images/app/apple-touch-icon-180-v2.png'];
 const passportDigest=crypto.createHash('sha256').update(fs.readFileSync(path.join(outputRoot,'passport/test/index.html'))).update(read('src/passport-worker.js')).digest('hex').slice(0,12);
 write('passport/sw.js',read('src/passport-worker.js').replace('__PASSPORT_CACHE__',JSON.stringify('seeya-passport-shell-'+passportDigest)).replace('__PASSPORT_FILES__',JSON.stringify(passportFiles)));
 // Keep previously published hashed assets: cached HTML may still reference them.
