@@ -379,9 +379,69 @@
         "label": "남규리의 귤멍 Ep.66 · 영상 설명의 청주 공연 후기",
         "url": "https://www.youtube.com/watch?v=vjH-71Nliko",
         "publishedDate": "2026-10-11"
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=NWx-TZk9bCA",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=Oj66Fb84m6M",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=T1J8BxNr7Ns",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=jKRuWTAUopo",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=nftf7-muLWg",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=xl1OTnpaI0Q",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "나의 대전 나의 시티즌",
+        "url": "https://www.youtube.com/watch?v=1L7kyuUEhl8",
+        "publishedDate": "2026-10-11",
+        "autoDiscovery": true
+      },
+      {
+        "label": "나의 대전 나의 시티즌",
+        "url": "https://www.youtube.com/watch?v=00YBjRzLZGg",
+        "publishedDate": "2026-10-11",
+        "autoDiscovery": true
+      },
+      {
+        "label": "나의 대전 나의 시티즌",
+        "url": "https://www.youtube.com/watch?v=b7v2f0WHdYw",
+        "publishedDate": "2026-10-11",
+        "autoDiscovery": true
+      },
+      {
+        "label": "나의 대전 나의 시티즌",
+        "url": "https://www.youtube.com/watch?v=WGeCX8VGweY",
+        "publishedDate": "2026-10-11",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-11T06:09:16.452230+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -3222,11 +3282,35 @@
         "label": "김연지 팬채널 · 내 카메라에 찍혀서 보게 된",
         "url": "https://www.youtube.com/watch?v=TYgXMNWLR4M",
         "publishedDate": "2026-09-28"
+      },
+      {
+        "label": "꽁",
+        "url": "https://www.youtube.com/watch?v=YVgxw8YmBYI",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "꽁",
+        "url": "https://www.youtube.com/watch?v=wT5SB5KcSnc",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "꽁",
+        "url": "https://www.youtube.com/watch?v=epOKDbf99pE",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "꽁",
+        "url": "https://www.youtube.com/watch?v=NOBlEMyn6bQ",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-10-02T16:05:03.756593+00:00"
+    "updatedAt": "2026-10-11T06:09:16.452230+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -46433,7 +46517,7 @@
     "id": "20261009-boram-worldmom-yongin",
     "date": "2026-10-09",
     "addedAt": "2026-10-05",
-    "updatedAt": "2026-10-10T06:11:48.657544+00:00",
+    "updatedAt": "2026-10-11T06:09:16.452230+00:00",
     "title": "이보람 · 세상을 바꾸는 여자들 용인 공연 예정",
     "program": "세상을 바꾸는 여자들 · 용인",
     "type": "event",
@@ -46493,6 +46577,12 @@
       {
         "label": "남수지",
         "url": "https://www.youtube.com/watch?v=sY5ko-1R22U",
+        "publishedDate": "2026-10-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "남수지",
+        "url": "https://www.youtube.com/watch?v=N1THd1zTeis",
         "publishedDate": "2026-10-10",
         "autoDiscovery": true
       }
@@ -47454,5 +47544,63 @@
     "calendar": {
       "enabled": false
     }
+  },
+  {
+    "id": "discovered-1f2298a1bff8e9b2",
+    "date": "2016-11-05",
+    "addedAt": "2026-10-11T06:09:16.452230+00:00",
+    "updatedAt": "2026-10-11T06:09:16.452230+00:00",
+    "title": "Kim Yeonji - Sad Gift | 김연지 - 슬픈 선물 [Immortal Songs 2 / 2016.11.05]",
+    "program": "",
+    "type": "variety",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS WORLD TV",
+      "url": "https://www.youtube.com/watch?v=mkcRM6WKteg",
+      "publishedDate": "2016-11-05",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2016-11-05",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-b10b35b057bb17af",
+    "date": "2016-11-19",
+    "addedAt": "2026-10-11T06:09:16.452230+00:00",
+    "updatedAt": "2026-10-11T06:09:16.452230+00:00",
+    "title": "Kim Yeonji - Rusty Railroad | 김연지 - 녹슬은 기찻길 [Immortal Songs 2 / 2016.11.19]",
+    "program": "",
+    "type": "variety",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS WORLD TV",
+      "url": "https://www.youtube.com/watch?v=p9gMRB1OXok",
+      "publishedDate": "2016-11-19",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2016-11-19",
+    "autoDiscovery": true
   }
 ]
