@@ -1,4 +1,5 @@
 'use strict';
+const Play=require('./passport-play');
 const P=require('./passport'),X=require('./passport-extra');
 const COLORS={ink:{label:'검은색',bg:'#19171c',fg:'#fff9fc',accent:'#efb8cd'},pink:{label:'핑크',bg:'#f7dce7',fg:'#34232d',accent:'#973358'},cream:{label:'크림',bg:'#fcf4e8',fg:'#352e27',accent:'#88583c'},white:{label:'흰색',bg:'#ffffff',fg:'#29232c',accent:'#963858'},gyuri:{label:'남규리 · 로즈',bg:'#d6487f',fg:'#ffffff',accent:'#fff2b5'},yeonji:{label:'김연지 · 바이올렛',bg:'#6b5bd1',fg:'#ffffff',accent:'#eddbff'},boram:{label:'이보람 · 틸',bg:'#2f8f7a',fg:'#ffffff',accent:'#d8fff4'}};
 const FONTS={basic:{label:'기본 고딕',family:'Arial, "Malgun Gothic", sans-serif'},dodum:{label:'고운돋움',family:'"Passport Dodum", sans-serif'},batang:{label:'고운바탕',family:'"Passport Batang", serif'},pen:{label:'나눔손글씨 펜',family:'"Passport Pen", cursive'}};
@@ -26,7 +27,7 @@ function ticket(g,e,state,opts,H,c,logo){
  g.save();g.shadowBlur=0;g.fillStyle=bg;g.globalAlpha=.9;g.fillRect(50,2060,980,760);g.restore();
  g.fillStyle=accent;text(g,e?P.KINDS[e.kind]:'나의 기록',88,2140,26,900,38,1);
  g.fillStyle=fg;text(g,e?.title||'기록을 선택해 주세요',88,2230,56,904,76,3);
- text(g,e?.kind==='goods'?'나의 굿즈 컬렉션':e?.snapshot?.place||'나의 기억 속 한 장면',88,2510,30,900,42,2);
+ text(g,e?.kind==='play'?Play.summary(e.play):e?.kind==='goods'?'나의 굿즈 컬렉션':e?.snapshot?.place||'나의 기억 속 한 장면',88,2510,30,900,42,2);
  g.strokeStyle=accent;g.setLineDash([10,10]);g.beginPath();g.moveTo(64,2640);g.lineTo(1016,2640);g.stroke();g.setLineDash([]);
  text(g,e?P.dateLabel(e.date)+(e.time?' · '+e.time:''):'WITH YOU',88,2720,35,900,48,1);
  const detail=opts.nickname?state.profile.nickname||'WITH YOU':'WITH YOU';

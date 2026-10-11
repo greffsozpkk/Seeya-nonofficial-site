@@ -1464,3 +1464,5 @@ body.fanchant-lightbox-open{overflow:hidden}
 }
 
 .archive-map-link{display:inline-block;margin:4px 6px;padding:5px 10px;border:1px solid #d6a4b8;border-radius:8px;color:#833a59;background:#fff4f8;font-size:13px;text-decoration:underline;text-underline-offset:3px}
+
+.play-passport{margin:20px 0;padding:18px;border:1px solid #e8c4d2;border-radius:12px;background:#fff5f9;color:#553447;font-family:Arial,"Malgun Gothic",sans-serif;text-align:left;font-size:14px;line-height:1.7}.play-passport label{display:flex;align-items:flex-start;gap:9px;font-weight:600}.play-passport input[type=checkbox]{width:18px;height:18px;flex:none;margin-top:3px;accent-color:#a94c71}.play-passport p{font-size:12px;line-height:1.7;margin:8px 0;color:#725361}.play-passport button,.play-passport a{display:inline-block;font:inherit;padding:10px 14px;border:1px solid #d9a6ba;background:white;border-radius:8px;color:#873653;margin:5px 8px 0 0;text-decoration:none;cursor:pointer}.play-passport button:disabled{opacity:.65;cursor:default}@media print{.play-passport{display:none!important}}

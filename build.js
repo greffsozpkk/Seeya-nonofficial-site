@@ -94,7 +94,7 @@ write('calendar/events.json',JSON.stringify(calendarData)+'\n');
 write('calendar/activities.ics',calendarICS(calendarData.events));
 write('calendar/anniversaries.ics',calendarICS(calendarData.anniversaries,'씨야 기념일'));
 const mapPlaces=require('./src/shared/seeya-map').resolvePlaces(json('src/data/map-places.json'),archiveRows);
-const passportCatalog=require('./src/shared/passport-catalog')(archiveRows,calendarData.events,mapPlaces,json('src/data/concerts.json').find(c=>c.id==='the-fan-2026'),site.snapshotDate);
+const passportCatalog=require('./src/shared/passport-catalog')(archiveRows,[...calendarData.events,...calendarData.anniversaries],mapPlaces,json('src/data/concerts.json').find(c=>c.id==='the-fan-2026'),site.snapshotDate);
 const previewRoute=json('src/data/exam-preview-route.json');
 const mapPreviewRoute=json('src/data/map-preview-route.json');
 if(!/^\/preview\/seeya-map-[a-f0-9]{16}\/$/.test(mapPreviewRoute.path)||!mapPreviewRoute.unlisted)throw new Error('Invalid map preview route');

@@ -17,3 +17,5 @@
 .cal-day.is-today .cal-day-num{background:#864760;color:#fff}
 .cal-event summary>time{font-weight:600}
 @media(max-width:600px){.cal-event summary{flex-wrap:wrap}.cal-event summary>time{flex-basis:100%;font-size:12px}.cal-event{padding-left:9px}.cal-meta,.cal-time{font-size:12px}.cal-legend{gap:7px;font-size:12px}.cal-legend>span{padding:3px 6px}}
+
+.cal-passport{display:inline-block;margin:12px 10px 0 0;padding:10px 14px;border:1px solid #d8a4ba;border-radius:9px;background:#fff2f7;color:#853955;text-decoration:none;font-size:13px}

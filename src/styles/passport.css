@@ -83,3 +83,5 @@
 .pp-picked-records{list-style:none;padding:0;margin:0}
 .pp-picked-records li{display:grid;grid-template-columns:minmax(0,1fr) 36px 36px 36px;align-items:center;gap:4px;font-size:12px;border-bottom:1px solid #eddae3;padding:8px 0}
 .pp-picked-records button{padding:4px;min-height:40px}
+
+.pp-play-fields{border:1px solid #e9c6d4;border-radius:10px;padding:18px}.pp-play-fields>.pp-field,.pp-play-fields>.pp-date-fields{margin:12px 0}.pp-play-fields .pp-date-fields{grid-template-columns:repeat(2,minmax(0,1fr))}.pp-record[data-kind=play]{border-color:#ba9dcc;background:#faf4ff}

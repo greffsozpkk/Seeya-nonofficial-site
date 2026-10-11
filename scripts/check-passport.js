@@ -43,10 +43,10 @@ const visit=P.entry({...sample,kind:'visit',title:station.name+' 방문',date:'2
 assert.equal(P.validate({...P.empty(),entries:[visit]}).entries[0].snapshot.address,station.address);
 assert(P.duplicate(visit,{...visit,entryId:'other-visit'}));assert(!P.duplicate(visit,{...visit,date:'2026-10-02'}));
 assert.equal(P.merge(P.empty(),P.validate({...P.empty(),entries:[visit]})).entries[0].placeId,station.id);
-for(const file of ['src/shared/calendar-view.js','src/template.html','src/offline.html'])assert(!read(file).includes('/passport/'),file+' must not expose the test page');
+for(const file of ['src/template.html','src/offline.html'])assert(!read(file).includes('/passport/'),file+' must not expose the test page');
 assert(!read('src/pages/passport.js').includes('href="#'));assert(!read('src/client/passport.js').includes('href="#'),'Hash links must account for the shared base URL');
 assert(read('passport/index.html').includes('/passport/test/'));
-const build=JSON.parse(read('build-manifest.json'));for(const file of build.files.filter(p=>p.endsWith('.html')&&p!=='passport/test/index.html'))assert(!/href="[^"]*\/passport\//.test(read(file)),file+' exposes passport');
+const build=JSON.parse(read('build-manifest.json'));for(const file of build.files.filter(p=>p.endsWith('.html')&&!['passport/test/index.html','calendar/index.html'].includes(p)))assert(!/href="[^"]*\/passport\//.test(read(file)),file+' exposes passport');
 for(const city of ['서울','부산']){const t=catalog.tour.find(t=>t.label===city),e=catalog.events.find(e=>e.id===t.eventId);assert(e);assert(e.archiveId);}
 const seoul=catalog.tour.filter(t=>t.label==='서울');assert.deepEqual(seoul.map(t=>t.date),['2026-08-29','2026-08-30']);
 assert.equal(new Set(seoul.map(t=>t.eventId)).size,2);

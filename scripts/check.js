@@ -42,3 +42,5 @@ execFileSync(process.execPath,['scripts/check-passport.js'],{cwd:root,stdio:'inh
 execFileSync(process.execPath,['scripts/check-passport-extra.js'],{cwd:root,stdio:'inherit'});
 execFileSync(process.execPath,['scripts/check-passport-goods.js'],{cwd:root,stdio:'inherit'});
 execFileSync(process.execPath,['scripts/check-passport-image.js'],{cwd:root,stdio:'inherit'});
+
+execFileSync(process.execPath,['scripts/check-passport-play.js'],{cwd:root,stdio:'inherit'});

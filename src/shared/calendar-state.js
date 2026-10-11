@@ -11,7 +11,7 @@ function selectionFromURL(search,events,today){
  const target=events.find(e=>e.id===state.event);
  if(target){
   if(target.annual)state.anniversaries=true;
-  const day=target.annual?month.slice(0,4)+target.date.slice(4):target.date;
+  const requested=q.get('day'),day=target.annual?month.slice(0,4)+target.date.slice(4):exactDate(requested)&&requested>=target.date&&requested<=(target.endDate||target.date)?requested:target.date;
   if(exactDate(day)){state.day=day;state.month=day.slice(0,7);state.member='all';state.type='all';}
  }else state.event='';
  return state;
