@@ -148,7 +148,7 @@
     }
   ],
   "updatedAt": "2026-10-11T11:15:41.512944+00:00",
-  "lastCheckedAt": "2026-10-11T11:15:41.512944+00:00",
+  "lastCheckedAt": "2026-10-11T12:16:50.017883+00:00",
   "categoryUpdatedAt": {
     "씨야": "2026-10-11T11:15:41.512944+00:00",
     "남규리": "2026-10-11T11:15:41.512944+00:00",
@@ -164,31 +164,31 @@
   "categoryStatus": {
     "씨야": {
       "queries": 3,
-      "succeeded": 3,
-      "accepted": 198,
+      "succeeded": 0,
+      "accepted": 0,
       "changed": false,
-      "status": "unchanged"
+      "status": "error"
     },
     "남규리": {
       "queries": 3,
-      "succeeded": 3,
-      "accepted": 145,
+      "succeeded": 0,
+      "accepted": 0,
       "changed": false,
-      "status": "unchanged"
+      "status": "error"
     },
     "김연지": {
       "queries": 4,
-      "succeeded": 4,
-      "accepted": 30,
+      "succeeded": 0,
+      "accepted": 0,
       "changed": false,
-      "status": "unchanged"
+      "status": "error"
     },
     "이보람": {
       "queries": 4,
-      "succeeded": 4,
-      "accepted": 92,
+      "succeeded": 0,
+      "accepted": 0,
       "changed": false,
-      "status": "unchanged"
+      "status": "error"
     }
   }
 }
