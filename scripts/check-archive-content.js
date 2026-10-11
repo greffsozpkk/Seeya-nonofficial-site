@@ -53,3 +53,16 @@ for(const m of review.merges){
 assert.equal(review.additions.length,8);
 assert.equal(new Set(review.additions.map(r=>r.date+' '+r.calendar.time)).size,8);
 console.log('PASS: reviewed clip merges preserve IDs, sources, edits and deleted parents; eight distinct SIX performances.');
+
+// A completed event can lead with the actual recording, retaining its announcement.
+const latest=batches.find(b=>b.id==='archive-2026-10-12-fans-and-live');
+for(const patch of latest.updates.filter(p=>p.correction?.values.source)){
+ const fixture={id:patch.id,...patch.correction.expected};
+ const earlier=batches.filter(b=>b.id!==latest.id).map(b=>b.id);
+ const updated=applyContent([fixture],earlier).rows.find(r=>r.id===fixture.id);
+ assert.equal(updated.source.url,patch.correction.values.source.url);
+ assert(updated.additionalSources.some(s=>sourceKey(s.url)===sourceKey(fixture.source.url)),'Preserve original announcement');
+ const edited={...fixture,source:{label:'Manager choice',url:'https://example.org/newer'}};
+ assert.deepEqual(applyContent([edited],earlier).rows.find(r=>r.id===fixture.id).source,edited.source,'Keep manager-selected primary source');
+}
+console.log('PASS: completed event recording promotion retains announcement and newer manager choice.');

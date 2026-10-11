@@ -1014,5 +1014,215 @@
     "scope": "excerpt",
     "category": "concert",
     "basis": "2026-10-11 확인: 업로더의 청주 공연 영상 제목·설명에 명시된 곡. 팬 직캠이며 전체 공연 영상이 아님."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=NWx-TZk9bCA",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=Oj66Fb84m6M",
+    "songIds": [
+      "shoes"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=jKRuWTAUopo",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=xl1OTnpaI0Q",
+    "songIds": [
+      "fool"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=1L7kyuUEhl8",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=00YBjRzLZGg",
+    "songIds": [
+      "fool"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=b7v2f0WHdYw",
+    "songIds": [
+      "fool"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=WGeCX8VGweY",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=Hpw0O4IjpVM",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=FnAnjLUo6j4",
+    "songIds": [
+      "cotton-candy"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=QQHg-u8uVh8",
+    "songIds": [
+      "cotton-candy"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261009-boram-worldmom-yongin",
+    "url": "https://www.youtube.com/watch?v=jsnYmimutog",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "compilation",
+    "category": "live",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261009-boram-worldmom-yongin",
+    "url": "https://www.youtube.com/watch?v=LKi12k1SpP4",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "compilation",
+    "category": "live",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261009-boram-worldmom-yongin",
+    "url": "https://www.instagram.com/cup_soohans/reel/DeSVYpyT9R7/",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeVkoSrB49l/",
+    "songIds": [
+      "cotton-candy"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeVTVPTyjZ1/",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.instagram.com/rora_yeonji/reel/DeW-TbFSHe_/",
+    "songIds": [
+      "his-voice"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.instagram.com/rora_yeonji/reel/DeWFZKpvWK3/",
+    "songIds": [
+      "his-voice"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.instagram.com/cup_soohans/reel/DeNLd3oT78E/",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.instagram.com/cup_soohans/reel/DeL3HpxRi2h/",
+    "songIds": [
+      "wonderful-you"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.instagram.com/cup_soohans/reel/DeIDylPz5mn/",
+    "songIds": [
+      "his-voice"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
   }
 ]
