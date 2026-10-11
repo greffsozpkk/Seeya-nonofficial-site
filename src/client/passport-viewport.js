@@ -7,7 +7,7 @@ module.exports=function viewport(app,canvas){
  bar.innerHTML='<button type="button" data-expand>크게 편집 ↗</button><label>화면 확대 <select aria-label="미리보기 확대"><option value="1">폭 맞춤</option><option value="fit">전체 보기</option><option value="1.5">150%</option><option value="2">200%</option><option value="3">300%</option></select></label>';
  const area=document.createElement('div');area.className='pp-preview-scroll';area.tabIndex=0;area.setAttribute('aria-label','이미지 편집 미리보기 · 확대 시 스크롤로 이동');
  stage.before(bar,area);area.append(stage);
- const hint=document.createElement('p');hint.className='pp-help';hint.textContent='확대하면 미리보기 안을 스크롤해 이동할 수 있어요. 사진·문구 이동을 마치면 ‘완료’를 눌러 화면을 이동하세요.';area.after(hint);
+ const hint=document.createElement('p');hint.className='pp-help';hint.textContent='확대하면 미리보기 안을 스크롤해 이동할 수 있어요. 요소 이동을 마치면 ‘완료’를 눌러 화면을 이동하세요.';area.after(hint);
  const dialog=document.createElement('dialog');dialog.className='pp-editor-dialog passport-page';dialog.setAttribute('aria-labelledby','ppBigEditorTitle');
  dialog.innerHTML='<header class="pp-big-header"><h2 id="ppBigEditorTitle">이미지 크게 편집</h2><button type="button" data-collapse>편집 화면 닫기</button></header><div class="pp-big-body"></div>';
  app.append(dialog);

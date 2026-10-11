@@ -10,4 +10,5 @@ function resizePhoto(v,r,corner,dx,dy,h){
  const cx=r.x+r.width/2+sx*(width-r.width)/2,cy=r.y+r.height/2+sy*(height-r.height)/2;
  return {photoSize:v.photoSize*ratio,photoX:clamp(cx/1080*100,0,100),photoY:clamp(cy/h*100,0,100)};
 }
-module.exports={movePhoto,moveMotto,resizePhoto};
+function moveBlock(kind,b,dx,dy){return {[kind+'X']:clamp((b.x-20+dx)/Math.max(1,b.travelX)*100,0,100),[kind+'Y']:clamp((b.y-20+dy)/Math.max(1,b.travelY)*100,0,100)};}
+module.exports={moveBlock,movePhoto,moveMotto,resizePhoto};

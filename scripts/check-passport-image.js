@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),R=require('../src/shared/passport-ima
 const entry=P.entry({entryId:'image-test-508',kind:'concert',status:'done',title:'씨야 20주년 전국 투어 콘서트 · 청주',date:'2026-10-10',time:'18:00',members:['seeya'],seat:'PRIVATE_SEAT',note:'PRIVATE_NOTE',companions:'PRIVATE_FRIEND',snapshot:{place:'청주대학교 석우문화체육관'},createdAt:'2026-10-11T01:00:00Z',updatedAt:'2026-10-11T01:00:00Z'});
 const state={...P.empty(),profile:{...P.profile(),nickname:'PRIVATE_NAME'},entries:[entry]};
 const calls=[],g={measureText:s=>({width:String(s).length*20})};
-for(const name of ['scale','fillRect','drawImage','save','restore','fillText','strokeRect','beginPath','moveTo','lineTo','stroke','setLineDash','arc','fill'])g[name]=(...a)=>calls.push([name,...a]);
+for(const name of ['translate','scale','fillRect','drawImage','save','restore','fillText','strokeRect','beginPath','moveTo','lineTo','stroke','setLineDash','arc','fill'])g[name]=(...a)=>calls.push([name,...a]);
 const canvas={getContext:()=>g},catalog={tour:[{label:'서울',date:'2026-08-29',eventId:'seoul'},{label:'서울',date:'2026-08-30',eventId:'seoul-day2'}]},photo={width:800,height:1200};
 const opts={type:'ticket',color:'cream',device:'iphone',entry:entry.entryId,motto:'함께한 기억',mottoSize:28,mottoX:0,mottoY:92,photoX:50,photoY:42,photoSize:75,photoOpacity:75,period:'month',month:'2026-10',nickname:false,seat:false};
 for(const type of ['profile','lock','home','ticket','review','stats'])for(const color of Object.keys(R.COLORS)){calls.length=0;const dim=R.draw(canvas,state,catalog,{...opts,type,color},photo);assert.deepEqual([canvas.width,canvas.height],[dim.width,dim.height]);const image=calls.findIndex(c=>c[0]==='drawImage'),background=calls.findIndex(c=>c[0]==='fillRect'),firstText=calls.findIndex(c=>c[0]==='fillText');assert(background<image&&image<firstText,'Photo must precede every text layer');assert.equal(calls.filter(c=>c[0]==='drawImage').length,1);assert(!JSON.stringify(calls).includes('PRIVATE_'));}
@@ -90,3 +90,23 @@ for(const h of [1080,1920,2339])for(const y of [0,100]){
 calls.length=0;R.draw(canvas,state,catalog,{...opts,type:'review',showRecords:false,mottos:[]},null,logo);
 assert(!calls.some(c=>c[0]==='fillText'&&c[1].includes(entry.title)));
 console.log('PASS independent photo/text layers, selected record order/month/privacy, hidden tour/records, 150px bounds and expanded card.');
+
+// Group movement uses the exact transform exported to PNG, independent of preview zoom.
+for(const type of ['lock','home','profile','review','records']){
+ const opt={...opts,type,showRecords:true,showTour:true,recordIds:[entry.entryId]};
+ const H=R.size(type,'iphone',opt)[1]/R.size(type,'iphone',opt)[0]*1080;
+ for(const kind of ['tour','records']){
+  const before=R.blockLayout(kind,state,catalog,opt,H);if(!before)continue;
+  const delta=D.moveBlock(kind,before,12,-24),after=R.blockLayout(kind,state,catalog,{...opt,...delta},H);
+  assert(Math.abs(after.x-before.x-12)<1e-8);assert(Math.abs(after.y-before.y+24)<1e-8);
+  calls.length=0;R.draw(canvas,state,catalog,{...opt,...delta},null);
+  assert(calls.some(c=>c[0]==='translate'&&Math.abs(c[1]-(after.x-after.baseX))<1e-8&&Math.abs(c[2]-(after.y-after.baseY))<1e-8),'PNG must use moved group geometry');
+  for(const n of [-99999,99999]){const b=R.blockLayout(kind,state,catalog,{...opt,...D.moveBlock(kind,before,n,n)},H);assert(b.x>=20&&b.x+b.width<=1060);assert(b.y>=20&&b.y+b.height<=H-80+1e-8);}
+  assert.deepEqual(R.blockLayout(kind,state,catalog,opt,H),before,'Default position remains reproducible');
+ }
+}
+assert.equal(R.blockLayout('tour',state,catalog,{...opts,type:'lock',showTour:false},2339),null);
+assert.equal(R.blockLayout('records',state,catalog,{...opts,type:'profile',showRecords:false},1080),null);
+assert.equal(R.blockLayout('records',state,catalog,{...opts,type:'ticket',showRecords:true},3240),null);
+assert(!fs.readFileSync(path.join(__dirname,'../src/pages/passport.js'),'utf8').includes('>플레이 기록</a>'));
+console.log('PASS movable tour/record blocks: independent transforms, PNG coordinates, bounds, default positions and visibility.');

@@ -51,7 +51,7 @@
 .passport-page .pp-resize{position:absolute;width:24px;height:24px;min-height:24px;padding:0;border:2px solid #a82d5e;border-radius:50%;background:#fff;touch-action:none;z-index:2}
 .pp-resize-nw{left:-12px;top:-12px;cursor:nwse-resize}.pp-resize-ne{right:-12px;top:-12px;cursor:nesw-resize}.pp-resize-sw{left:-12px;bottom:-12px;cursor:nesw-resize}.pp-resize-se{right:-12px;bottom:-12px;cursor:nwse-resize}
 .pp-edit-tools{text-align:left;background:#fff;border:1px solid #ead5df;border-radius:12px;padding:12px;margin-top:14px;width:100%;box-sizing:border-box}
-.pp-edit-modes{display:flex;gap:6px}.passport-page .pp-edit-modes button{flex:1;min-height:44px;padding:7px}
+.pp-edit-modes{display:flex;flex-wrap:wrap;gap:6px}.passport-page .pp-edit-modes button{flex:1;min-height:44px;padding:7px}
 .pp-edit-modes [aria-pressed=true]{background:#a83760;color:white;border-color:#a83760}
 .passport-page .pp-edit-modes button[aria-pressed=true],.passport-page .pp-edit-modes button[aria-pressed=true]:hover{background:#a83760;color:#fff;border-color:#a83760}
 .pp-edit-tools .pp-help{margin:8px 0 0}.pp-edit-tools .pp-field{margin-top:10px;font-size:12px}

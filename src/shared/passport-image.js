@@ -16,6 +16,18 @@ function mottoLayout(g,opts,h){
  const travelX=Math.max(0,952-width),travelY=Math.max(0,h-110-height-top);
  return {font,lines,width,height,travelX,travelY,x:64+travelX*clamp(opts.mottoX,0,100)/100,y:top+travelY*clamp(opts.mottoY,0,100)/100,lineHeight:font*1.35};
 }
+// Shared bounds keep preview selection, dragging and PNG output in the same coordinates.
+function blockLayout(kind,state,catalog,opts,H){
+ const wallpaper=['lock','home'].includes(opts.type),tour=kind==='tour';
+ if(tour?(!wallpaper||opts.showTour===false):(opts.type==='ticket'||!opts.showRecords&&opts.type!=='records'))return null;
+ const baseY=tour?(opts.showRecords?300:opts.type==='lock'?H*.44:H*.62)+90-36:(opts.type==='profile'?960:opts.type==='review'?970:opts.type==='records'?340:opts.showTour===false?540:960)-30;
+ const count=chosenEntries(state,opts).length;
+ const height=tour?443:count?180+(count-1)*(opts.type==='records'?205:110):140;
+ const width=960,travelX=1080-width-40,travelY=Math.max(0,H-height-100);
+ const resolve=(v,base,travel)=>v===undefined||v===null||v===''?Math.max(20,Math.min(20+travel,base)):20+travel*clamp(v,0,100)/100;
+ const x=resolve(opts[kind+'X'],60,travelX),y=resolve(opts[kind+'Y'],baseY,travelY);
+ return {x,y,width,height,baseX:60,baseY,travelX,travelY};
+}
 // A narrow keepsake ticket: photo-led, scalloped ends, compact record details.
 function ticket(g,e,state,opts,H,c,logo){
  const {fg,accent,bg}=c;
@@ -58,7 +70,7 @@ function draw(canvas,state,catalog,opts,photo,logo){
  else {
   let y=wallpaper?(opts.showRecords?300:type==='lock'?H*.44:H*.62):100;
   drawLogo(g,logo,76,y-44,230);text(g,'DIARY'+(opts.nickname&&state.profile.nickname?' · '+state.profile.nickname:''),346,y,24,650,32,1);y+=90;
-  if(wallpaper&&opts.showTour!==false){text(g,'THE FAN · TOUR STAMPS',76,y,28,920,40);y+=85;catalog.tour.forEach((t,i)=>{const x=160+(i%4)*250,cy=y+Math.floor(i/4)*175,done=X.tourEntries(t,state.entries).length>0;g.save();g.shadowBlur=0;g.beginPath();g.arc(x,cy,64,0,Math.PI*2);g.strokeStyle=c.accent;g.fillStyle=done?'#a13259':c.bg;g.setLineDash(done?[]:[6,7]);g.fill();g.stroke();g.restore();g.fillStyle=done?'#fff':c.fg;g.textAlign='center';text(g,t.label,x,cy+5,28,150,35,1);text(g,t.date.slice(5).replace('-','.'),x,cy-28,18,150,25,1);g.textAlign='left';});g.fillStyle=c.fg;y+=310;const next=catalog.tour.filter(t=>t.date>=P.today()).sort((a,b)=>a.date.localeCompare(b.date))[0];if(next)text(g,`NEXT · ${next.label} ${next.date} · D-${Math.round((Date.parse(next.date)-Date.parse(P.today()))/86400000)}`,76,y,26,920,40);}
+  if(wallpaper&&opts.showTour!==false){const b=blockLayout('tour',state,catalog,opts,H);g.save();g.translate(b.x-b.baseX,b.y-b.baseY);text(g,'THE FAN · TOUR STAMPS',76,y,28,920,40);y+=85;catalog.tour.forEach((t,i)=>{const x=160+(i%4)*250,cy=y+Math.floor(i/4)*175,done=X.tourEntries(t,state.entries).length>0;g.save();g.shadowBlur=0;g.beginPath();g.arc(x,cy,64,0,Math.PI*2);g.strokeStyle=c.accent;g.fillStyle=done?'#a13259':c.bg;g.setLineDash(done?[]:[6,7]);g.fill();g.stroke();g.restore();g.fillStyle=done?'#fff':c.fg;g.textAlign='center';text(g,t.label,x,cy+5,28,150,35,1);text(g,t.date.slice(5).replace('-','.'),x,cy-28,18,150,25,1);g.textAlign='left';});g.fillStyle=c.fg;y+=310;const next=catalog.tour.filter(t=>t.date>=P.today()).sort((a,b)=>a.date.localeCompare(b.date))[0];if(next)text(g,`NEXT · ${next.label} ${next.date} · D-${Math.round((Date.parse(next.date)-Date.parse(P.today()))/86400000)}`,76,y,26,920,40);g.restore();}
   else if(type==='profile'){
    text(g,opts.nickname?state.profile.nickname||'WITH YOU':'WITH YOU',76,235,64,920,82);
    g.fillStyle=c.accent;text(g,years?years+'년차 씨야 덕후':'우리의 첫 페이지',76,322,38,920,52);
@@ -74,7 +86,7 @@ function draw(canvas,state,catalog,opts,photo,logo){
  }
  if(type!=='ticket'&&(opts.showRecords||type==='records')){
   const rows=chosenEntries(state,opts),y=type==='profile'?960:type==='review'?970:type==='records'?340:opts.showTour===false?540:960;
-  recordList(g,rows,y,c,type==='records');
+  const b=blockLayout('records',state,catalog,opts,H);g.save();g.translate(b.x-b.baseX,b.y-b.baseY);recordList(g,rows,y,c,type==='records');g.restore();
  }
  const phrases=Array.isArray(opts.mottos)?opts.mottos:[opts];
  for(const phrase of phrases){const m=mottoLayout(g,phrase,H);g.fillStyle=c.fg;g.font=`400 ${m.font}px ${fontFamily(phrase.mottoFont)}`;m.lines.forEach((line,i)=>g.fillText(line,m.x,m.y+i*m.lineHeight));}
@@ -92,4 +104,4 @@ function recordList(g,rows,y,c,standalone){
  const gap=standalone?205:110;
  for(const e of rows){g.fillStyle=c.accent;text(g,P.dateLabel(e.date)+' · '+(P.completed(e)?'나의 기록':'예정'),76,y,22,920,30,1);g.fillStyle=c.fg;text(g,e.title,76,y+40,30,920,38,2);y+=gap;}
 }
-module.exports={chosenEntries,FONTS,fontFamily,COLORS,size,photoRect,mottoLayout,draw};
+module.exports={blockLayout,chosenEntries,FONTS,fontFamily,COLORS,size,photoRect,mottoLayout,draw};
