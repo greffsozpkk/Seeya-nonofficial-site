@@ -1,3 +1,13 @@
+# SEEYA ARCHIVE v5.6 — 귤멍·청주 공연 업데이트
+
+**누적 업데이트:** `SEEYA_v5_6_ARCHIVE_UPLOAD.zip`. GitHub Desktop에서 Fetch/Pull origin을 마친 뒤 기존 폴더에 덮어쓰고 Commit → Push하세요. 전체 ZIP은 백업용입니다. 운영 데이터와 생성 HTML을 덮어쓰지 않고 빌드 시 새 기록과 확인된 출처를 반영합니다.
+
+남규리 귤멍 Ep.66을 추가하고 청주 공연 완료·팬 직캠 10개·곡별 무대 8곡을 반영했습니다. 날짜는 공연일(10/10)과 영상 게시일(10/11 등)을 구분합니다. 콘서트 기록관·캘린더·지도는 같은 기록에 연결됩니다. 패스포트는 `/passport/test/`를 유지하며 기존 v5.5 변경도 포함합니다.
+
+실행: `node build.js`. 확인: `node scripts/check.js`. **생성된 HTML 직접 편집 금지.** 미리보기는 기존 `serve-local.bat`를 사용합니다.
+
+---
+
 # SEEYA ARCHIVE v5.5 — WITH YOU 패스포트 디자인·추가 기능
 
 **누적 업데이트:** `SEEYA_v5_5_PASSPORT_UPLOAD.zip`. GitHub Desktop에서 Fetch/Pull origin을 먼저 마친 뒤 기존 폴더에 덮어쓰고 Commit → Push하세요. 운영 `data/`·`state/`와 생성 HTML은 덮어쓰지 않습니다. 전체 ZIP은 백업용입니다.

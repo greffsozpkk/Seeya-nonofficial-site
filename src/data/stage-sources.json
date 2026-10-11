@@ -934,5 +934,85 @@
     "category": "concert",
     "basis": "제리제이 원본 영상 제목의 261006 행사일과 설명 00:05 사랑의 인사 타임스탬프 확인",
     "checkedOn": "2026-10-08"
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=NUQx9Fn4EuM",
+    "songIds": [
+      "his-voice"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-11 확인: 업로더의 청주 공연 영상 제목·설명에 명시된 곡. 팬 직캠이며 전체 공연 영상이 아님."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=ZbSC5nEjs1I",
+    "songIds": [
+      "cotton-candy"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-11 확인: 업로더의 청주 공연 영상 제목·설명에 명시된 곡. 팬 직캠이며 전체 공연 영상이 아님."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=IeGo_eSgeeI",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-11 확인: 업로더의 청주 공연 영상 제목·설명에 명시된 곡. 팬 직캠이며 전체 공연 영상이 아님."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=VCNj6bnjmUw",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-11 확인: 업로더의 청주 공연 영상 제목·설명에 명시된 곡. 팬 직캠이며 전체 공연 영상이 아님."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=0HTyaOEPTX8",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-11 확인: 업로더의 청주 공연 영상 제목·설명에 명시된 곡. 팬 직캠이며 전체 공연 영상이 아님."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=ET_1a6BXrtk",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-11 확인: 업로더의 청주 공연 영상 제목·설명에 명시된 곡. 팬 직캠이며 전체 공연 영상이 아님."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=Un7H1yh8H9g",
+    "songIds": [
+      "nevertheless-us"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-11 확인: 업로더의 청주 공연 영상 제목·설명에 명시된 곡. 팬 직캠이며 전체 공연 영상이 아님."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=CHHNvbH65jY",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-11 확인: 업로더의 청주 공연 영상 제목·설명에 명시된 곡. 팬 직캠이며 전체 공연 영상이 아님."
   }
 ]
