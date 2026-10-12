@@ -110,3 +110,21 @@ assert.equal(R.blockLayout('records',state,catalog,{...opts,type:'profile',showR
 assert.equal(R.blockLayout('records',state,catalog,{...opts,type:'ticket',showRecords:true},3240),null);
 assert(!fs.readFileSync(path.join(__dirname,'../src/pages/passport.js'),'utf8').includes('>플레이 기록</a>'));
 console.log('PASS movable tour/record blocks: independent transforms, PNG coordinates, bounds, default positions and visibility.');
+
+// Eight selected records must survive selection and rendering without clipping.
+const eightState={...state,entries:Array.from({length:9},(_,i)=>({...entry,entryId:'eight-record-'+i,title:'EIGHT_RECORD_'+i}))};
+const eightIds=eightState.entries.map(e=>e.entryId);
+assert.equal(R.chosenEntries(eightState,{recordIds:eightIds}).length,8);
+assert.deepEqual(R.chosenEntries(eightState,{recordIds:eightIds.slice(0,8).reverse()}).map(e=>e.entryId),eightIds.slice(0,8).reverse());
+for(const type of ['profile','review','records','lock','home']){
+ const v={...opts,type,showRecords:true,recordIds:eightIds,motto:'',mottos:[]};
+ calls.length=0;R.draw(canvas,eightState,catalog,v,null,logo);
+ const output=calls.filter(c=>c[0]==='fillText').map(c=>c[1]);
+ for(let i=0;i<8;i++)assert(output.includes('EIGHT_RECORD_'+i),type+' missing record '+i);
+ assert(!output.includes('EIGHT_RECORD_8'));
+ const H=canvas.height/canvas.width*1080;
+ for(const position of [undefined,0,100]){const box=R.blockLayout('records',eightState,catalog,{...v,recordsY:position},H);assert(box.y>=20&&box.y+box.height<=H-80+1e-8,type+' bounds');}
+ const normal=R.blockLayout('records',eightState,catalog,v,H);
+ if(type==='records')assert(normal.y>=300,'Eight rows must not move into the heading');
+}
+console.log('PASS eight-record images: selection cap/order, all eight titles, exclusion of ninth, template bounds and heading clearance.');

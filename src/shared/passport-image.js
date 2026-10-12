@@ -22,7 +22,7 @@ function blockLayout(kind,state,catalog,opts,H){
  if(tour?(!wallpaper||opts.showTour===false):(opts.type==='ticket'||!opts.showRecords&&opts.type!=='records'))return null;
  const baseY=tour?(opts.showRecords?300:opts.type==='lock'?H*.44:H*.62)+90-36:(opts.type==='profile'?960:opts.type==='review'?970:opts.type==='records'?340:opts.showTour===false?540:960)-30;
  const count=chosenEntries(state,opts).length;
- const height=tour?443:count?180+(count-1)*(opts.type==='records'?205:110):140;
+ const height=tour?443:count?180+(count-1)*recordGap(count,opts.type==='records'):140;
  const width=960,travelX=1080-width-40,travelY=Math.max(0,H-height-100);
  const resolve=(v,base,travel)=>v===undefined||v===null||v===''?Math.max(20,Math.min(20+travel,base)):20+travel*clamp(v,0,100)/100;
  const x=resolve(opts[kind+'X'],60,travelX),y=resolve(opts[kind+'Y'],baseY,travelY);
@@ -95,13 +95,14 @@ function draw(canvas,state,catalog,opts,photo,logo){
  return {width:w,height:h};
 }
 function chosenEntries(state,opts){
- const ids=[...new Set(Array.isArray(opts.recordIds)?opts.recordIds:[])].slice(0,6);
+ const ids=[...new Set(Array.isArray(opts.recordIds)?opts.recordIds:[])].slice(0,8);
  return ids.map(id=>state.entries.find(e=>e.entryId===id)).filter(e=>e&&(opts.type!=='review'||e.date.startsWith(opts.month||P.today().slice(0,7))));
 }
+function recordGap(count,standalone){return standalone?(count>6?180:205):110;}
 function recordList(g,rows,y,c,standalone){
  g.fillStyle=c.accent;text(g,'MY RECORDS · '+rows.length,76,y,24,920,35,1);y+=65;
  if(!rows.length){g.fillStyle=c.fg;text(g,'담고 싶은 기록을 선택해 주세요',76,y,28,920,40,1);return;}
- const gap=standalone?205:110;
+ const gap=recordGap(rows.length,standalone);
  for(const e of rows){g.fillStyle=c.accent;text(g,P.dateLabel(e.date)+' · '+(P.completed(e)?'나의 기록':'예정'),76,y,22,920,30,1);g.fillStyle=c.fg;text(g,e.title,76,y+40,30,920,38,2);y+=gap;}
 }
 module.exports={blockLayout,chosenEntries,FONTS,fontFamily,COLORS,size,photoRect,mottoLayout,draw};

@@ -13,6 +13,7 @@ assert.deepEqual(playFormats.lyrics,{total:10,maxScore:10});
 for(const b of banks)assert.deepEqual(playFormats.exam,{total:b.questions.length,maxScore:b.points*b.questions.length});
 for(const [game,preset] of Object.entries(playFormats)){const p=P.clean({game,...preset});assert.equal(p.score,null);assert.equal(p.correct,null);assert.equal(p.total,preset.total);assert.throws(()=>P.clean({...p,score:p.maxScore+1}));assert.throws(()=>P.clean({...p,correct:p.total+1}));}
 assert.throws(()=>P.clean({game:'other',score:2}));assert.throws(()=>P.clean({game:'other',correct:2}));
+for(const file of ['.github/workflows/build.yml','.github/workflows/update-news.yml']){const commit=read(file).split('\n').find(line=>line.includes('git add '));for(const output of ['diary/sw.js','passport/sw.js'])assert(commit.includes(output),file+' must publish '+output);}
 async function offline(){
  const handlers={},items=new Map(),deleted=[],cache={put:async(k,v)=>items.set(k,v),match:async k=>items.get(k)};let down=false;
  const context={URL,Request:class{constructor(url){this.url=url;}},Response:{error:()=>({error:true})},fetch:async req=>{if(down)throw Error('offline');return {ok:true,url:req.url};},caches:{open:async()=>cache,keys:async()=>['seeya-diary-shell-old','seeya-passport-shell-test','unrelated'],delete:async n=>deleted.push(n)},self:{location:{origin:'https://seeya-fanpage.com'},clients:{claim:async()=>{}},addEventListener:(k,f)=>handlers[k]=f}};
