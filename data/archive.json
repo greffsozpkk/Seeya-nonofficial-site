@@ -633,9 +633,21 @@
         "url": "https://www.youtube.com/watch?v=Byq7NDqyyZ8",
         "publishedDate": "2026-10-12",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=Dva5GMKsIW4",
+        "publishedDate": "2026-10-12",
+        "autoDiscovery": true
+      },
+      {
+        "label": "스타로그 (STAR LOG)",
+        "url": "https://www.youtube.com/watch?v=ZmYcwqPizMo",
+        "publishedDate": "2026-10-12",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-12T06:17:36.490065+00:00",
+    "updatedAt": "2026-10-13T06:58:02.195722+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1157,9 +1169,15 @@
         "url": "https://www.youtube.com/watch?v=CKTG1sIG3dY",
         "publishedDate": "2026-10-11",
         "autoDiscovery": true
+      },
+      {
+        "label": "꽁",
+        "url": "https://www.youtube.com/watch?v=rwO3xW8yAr0",
+        "publishedDate": "2026-10-13",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-12T06:17:36.490065+00:00",
+    "updatedAt": "2026-10-13T06:58:02.195722+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1277,7 +1295,7 @@
     "id": "20261002-seeya-yeongwol-garden",
     "date": "2026-10-02",
     "addedAt": "2026-09-28",
-    "updatedAt": "2026-10-12T06:17:36.490065+00:00",
+    "updatedAt": "2026-10-13T06:58:02.195722+00:00",
     "title": "씨야 · 대한민국 영월 정원산업박람회 개막 축하콘서트",
     "program": "대한민국 영월 정원산업박람회",
     "type": "event",
@@ -1344,6 +1362,24 @@
       {
         "label": "땅콩크림샌드",
         "url": "https://www.youtube.com/watch?v=nMD5pS99XQ8",
+        "publishedDate": "2026-10-12",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=OPpAfmgO8fg",
+        "publishedDate": "2026-10-12",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=UH1qzwaLY3w",
+        "publishedDate": "2026-10-12",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=173QnYKtP8s",
         "publishedDate": "2026-10-12",
         "autoDiscovery": true
       }
