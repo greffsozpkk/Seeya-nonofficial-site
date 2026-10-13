@@ -645,6 +645,66 @@
         "url": "https://www.youtube.com/watch?v=ZmYcwqPizMo",
         "publishedDate": "2026-10-12",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기 · 씨야(SeeYa)「그사람」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+        "url": "https://www.youtube.com/watch?v=Jpu9BTSzD1w",
+        "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "🐿람보바라기 · 씨야(SeeYa)「잔향」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+        "url": "https://www.youtube.com/watch?v=DLMC4T7uinE",
+        "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "🐿람보바라기 · 씨야(SeeYa)「이브의 경고+슬퍼지려 하기전」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+        "url": "https://www.youtube.com/watch?v=vL2yvsSrbLg",
+        "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "일간스포츠 · 청주 공연 성료와 전국투어 매진 소식",
+        "url": "https://isplus.com/article/view/isp202610130118",
+        "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "제리제이 · 팬 영상",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeYl_Ksh1If/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "로라연지 · 팬 사진",
+        "url": "https://www.instagram.com/rora_yeonji/p/Debt4jJFP_O/",
+        "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeZZvJbPO5u/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "로라연지 · 팬 영상",
+        "url": "https://www.instagram.com/rora_yeonji/reel/DeYz2N5vK_T/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "ramirang_ · 팬 영상",
+        "url": "https://www.instagram.com/ramirang_/reel/DebEUQ9OArz/",
+        "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "ramirang_ · 팬 영상",
+        "url": "https://www.instagram.com/ramirang_/reel/DeYI2r_SQ1C/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "gyuljam0426 · 팬 영상",
+        "url": "https://www.instagram.com/gyuljam0426/reel/DebOXQmTBt1/",
+        "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "gyuljam0426 · 팬 사진",
+        "url": "https://www.instagram.com/gyuljam0426/p/DeXhugPkzzB/",
+        "publishedDate": "2026-10-12"
       }
     ],
     "updatedAt": "2026-10-13T06:58:02.195722+00:00",
@@ -663,7 +723,7 @@
     "id": "20261006-boram-dst-autumn",
     "date": "2026-10-06",
     "addedAt": "2026-09-29",
-    "updatedAt": "2026-10-12",
+    "updatedAt": "2026-10-13",
     "title": "이보람 · 대전과학기술대학교 제8회 가을문화제",
     "program": "대전과학기술대학교 제8회 가을문화제",
     "type": "event",
@@ -753,6 +813,11 @@
         "label": "제리제이 · 팬 사진",
         "url": "https://www.instagram.com/_jerry.j_ramficial/p/DeKEARvS0qe/",
         "publishedDate": "2026-10-07"
+      },
+      {
+        "label": "제리제이 · 팬 사진",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/p/DebUROHEiyG/",
+        "publishedDate": "2026-10-13"
       }
     ],
     "status": "available",
@@ -1175,6 +1240,11 @@
         "url": "https://www.youtube.com/watch?v=rwO3xW8yAr0",
         "publishedDate": "2026-10-13",
         "autoDiscovery": true
+      },
+      {
+        "label": "nam_hee0928 · 팬 영상",
+        "url": "https://www.instagram.com/nam_hee0928/reel/DeZBgmKygun/",
+        "publishedDate": "2026-10-12"
       }
     ],
     "updatedAt": "2026-10-13T06:58:02.195722+00:00",
@@ -2641,9 +2711,14 @@
         "label": "람보사랑 · 스마일 찰칵📸 기분 좋은 미소",
         "url": "https://www.youtube.com/watch?v=UZrwCWRrYws",
         "publishedDate": "2026-09-30"
+      },
+      {
+        "label": "ramirang_ · 팬 사진",
+        "url": "https://www.instagram.com/ramirang_/p/Ddx7u8xIHHE/",
+        "publishedDate": "2026-09-27"
       }
     ],
-    "updatedAt": "2026-10-02T16:00:52.417749+00:00"
+    "updatedAt": "2026-10-13"
   },
   {
     "id": "20260921-gyuri-mbc-noon-dj",
@@ -5084,10 +5159,20 @@
         "label": "김미나 · 팬 사진",
         "url": "https://www.instagram.com/mena299/p/DeLyB22iQIF/",
         "publishedDate": "2026-10-07"
+      },
+      {
+        "label": "김미나 · 팬 사진",
+        "url": "https://www.instagram.com/mena299/p/DebhO4qCS0H/",
+        "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "김미나 · 팬 사진",
+        "url": "https://www.instagram.com/mena299/p/DebgxN-iSWS/",
+        "publishedDate": "2026-10-13"
       }
     ],
     "endDate": "2026-08-30",
-    "updatedAt": "2026-10-12"
+    "updatedAt": "2026-10-13"
   },
   {
     "id": "v492-sVhd4C_aeKM",
@@ -46859,7 +46944,7 @@
     "id": "20261009-boram-worldmom-yongin",
     "date": "2026-10-09",
     "addedAt": "2026-10-05",
-    "updatedAt": "2026-10-12",
+    "updatedAt": "2026-10-13",
     "title": "이보람 · 세상을 바꾸는 여자들 용인 공연",
     "program": "세상을 바꾸는 여자들 · 용인",
     "type": "event",
@@ -46971,6 +47056,51 @@
       {
         "label": "세상을 바꾸는 여자들 · 용인 공식 신청 안내",
         "url": "https://newworldmom.co.kr/apply?event_id=296"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DebAPGTR9Ij/",
+        "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeYbpQXRUBU/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeYY1ELx0_i/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeYYZIax-Gf/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeYRweVxahv/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeYQOxDxNYV/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeYQGANRqR1/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "cup_soohans · 팬 영상",
+        "url": "https://www.instagram.com/cup_soohans/reel/DeYP3Jrxk_e/",
+        "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "boram_flowerway · 팬 사진",
+        "url": "https://www.instagram.com/boram_flowerway/p/DeXbCUIE3w1/",
+        "publishedDate": "2026-10-12"
       }
     ],
     "status": "available",
@@ -47771,7 +47901,7 @@
     "id": "20261025-seeya-hyundai-asan-family",
     "date": "2026-10-25",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-08",
+    "updatedAt": "2026-10-13",
     "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당 예정",
     "program": "현대자동차 아산공장 30주년 · 조합원 가족 한마당",
     "type": "event",
@@ -47788,7 +47918,13 @@
       "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9495",
       "publishedDate": "2026-10-08"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "주최 측 행사 세부 계획 · 갤러리 보관",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9682",
+        "publishedDate": "2026-10-12"
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
@@ -47798,12 +47934,13 @@
       "조합원 가족 행사",
       "예정"
     ],
-    "note": "현대자동차 아산공장 30주년을 기념하는 조합원 가족 한마당의 씨야 출연이 행사 포스터에 안내됐습니다.\n10월 25일 일요일, 사택 운동장에서 열립니다.\n오전 9시는 전체 행사 시작 시각이며 씨야의 개별 무대 시각은 별도입니다.\n조합원·가족 대상 행사로, 일반 관람 가능 여부는 주최 측 안내를 확인해 주세요.",
+    "note": "현대자동차 아산공장 조합원 가족 한마당의 씨야 초대공연이 안내됐습니다.\n10월 25일 사택 운동장에서 열리며, 전체 행사 시간은 오전 10시부터 오후 5시까지입니다. 집결은 오전 9시 30분입니다.\n초대가수 공연·폐회식 구간은 오후 3시 10분부터 4시 30분까지이며 씨야와 DJ BLISS가 안내돼 있습니다. 씨야의 개별 무대 시작 시각과는 구분합니다.\n참가 대상은 아산공장 조합원과 조합원 가족입니다. 일반 공개 공연으로 안내된 행사는 아닙니다.",
     "eventState": "scheduled",
     "venue": "현대자동차 아산공장 사택 운동장",
     "calendar": {
-      "time": "09:00",
-      "timeLabel": "전체 행사 시작"
+      "time": "10:00",
+      "timeLabel": "전체 행사 시작",
+      "sequence": 1
     }
   },
   {
@@ -47922,7 +48059,7 @@
     "id": "20261011-gyuri-gyulmung66",
     "date": "2026-10-11",
     "addedAt": "2026-10-11",
-    "updatedAt": "2026-10-11",
+    "updatedAt": "2026-10-13",
     "title": "남규리 · 귤멍 Ep.66 · 바쁜 남대표의 요즘 근황",
     "program": "남규리의 귤멍",
     "type": "official",
@@ -47937,7 +48074,13 @@
       "url": "https://www.youtube.com/watch?v=vjH-71Nliko",
       "publishedDate": "2026-10-11"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "MK스포츠 · 광고·라디오·공연 근황 보도",
+        "url": "https://m.mk.co.kr/amp/12173177",
+        "publishedDate": "2026-10-11"
+      }
+    ],
     "status": "available",
     "eventState": "completed",
     "dateStatus": "confirmed",
@@ -48043,6 +48186,81 @@
       "라이브"
     ],
     "note": "와일드무브와 김연지 공식 계정에 공개된 「노래」 작업실 라이브입니다.\n날짜는 영상 게시일이며 작업실 촬영일은 별도로 공개되지 않았습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261012-yeonji-oasis-cover",
+    "date": "2026-10-12",
+    "addedAt": "2026-10-13",
+    "updatedAt": "2026-10-13",
+    "title": "김연지 · 정동하 「오아시스」 커버",
+    "program": "정동하 공식 YouTube",
+    "type": "music-show",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "오아시스"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "정동하 공식 · 오아시스 by 김연지 of 씨야",
+      "url": "https://www.youtube.com/watch?v=BWAtK6C9jWE",
+      "publishedDate": "2026-10-12"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-12",
+    "tags": [
+      "2026",
+      "오아시스",
+      "커버"
+    ],
+    "note": "정동하 공식 채널에 공개된 김연지의 「오아시스」 커버 짧은 영상입니다.\n날짜는 한국 시간 기준 영상 게시일입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261013-seeya-tour-isplus",
+    "date": "2026-10-13",
+    "addedAt": "2026-10-13",
+    "updatedAt": "2026-10-13",
+    "title": "씨야 · THE FAN 청주 공연 성료와 전국투어 매진 소식",
+    "program": "일간스포츠",
+    "type": "news",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "일간스포츠 · 20주년 투어 매진 소식",
+      "url": "https://isplus.com/article/view/isp202610130118",
+      "publishedDate": "2026-10-13"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published",
+    "publishedDate": "2026-10-13",
+    "tags": [
+      "2026",
+      "THE FAN",
+      "전국투어",
+      "기사"
+    ],
+    "note": "청주 공연까지 이어진 씨야 20주년 전국투어의 매진 소식과 공연 구성을 다룬 기사입니다.\n남은 공연은 10월 17일 수원, 10월 31일 인천으로 안내됐습니다.",
     "eventState": "completed",
     "calendar": {
       "enabled": false
