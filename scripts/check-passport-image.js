@@ -128,3 +128,19 @@ for(const type of ['profile','review','records','lock','home']){
  if(type==='records')assert(normal.y>=300,'Eight rows must not move into the heading');
 }
 console.log('PASS eight-record images: selection cap/order, all eight titles, exclusion of ninth, template bounds and heading clearance.');
+// The permanent brand can move, but never disappears when optional layers are removed.
+for(const type of ['profile','review','records','ticket','lock','home']){
+ const v={...opts,type,mottos:[],photos:[],showTour:false,showRecords:false,nickname:false};
+ const [w,h]=R.size(type,'iphone',v),H=h/w*1080;
+ const before=R.blockLayout('brand',state,catalog,v,H);
+ const moved={...v,...D.moveBlock('brand',before,24,36)};
+ const after=R.blockLayout('brand',state,catalog,moved,H);
+ assert(Math.abs(after.x-before.x-24)<1e-8);assert(Math.abs(after.y-before.y-36)<1e-8);
+ calls.length=0;R.draw(canvas,state,catalog,moved,null,logo);
+ assert.equal(calls.filter(c=>c[0]==='drawImage'&&c[1]===logo).length,1,'Permanent brand must remain');
+ assert(calls.some(c=>c[0]==='translate'&&Math.abs(c[1]-24)<1e-8&&Math.abs(c[2]-36)<1e-8),'PNG uses brand position');
+ if(type!=='ticket')assert(calls.some(c=>c[0]==='fillText'&&c[1]==='DIARY'));
+ for(const n of [-99999,99999]){const b=R.blockLayout('brand',state,catalog,{...v,...D.moveBlock('brand',before,n,n)},H);assert(b.x>=20&&b.x+b.width<=1060);assert(b.y>=20&&b.y+b.height<=H-80+1e-8);}
+ assert.deepEqual(R.blockLayout('brand',state,catalog,v,H),before);
+}
+console.log('PASS permanent movable diary brand: all templates, exact PNG transforms, bounds, reset and optional-layer independence.');
