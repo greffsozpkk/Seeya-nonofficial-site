@@ -27,5 +27,15 @@ module.exports=()=>W(`<section class="game-hub">
         <span class="game-card-link">모의고사 풀기 <span aria-hidden="true">→</span></span>
       </div>
     </a>
+    <a class="game-card game-card-worldcup" href="/game/worldcup/" aria-labelledby="game-worldcup-title" aria-describedby="game-worldcup-description game-worldcup-status">
+      <div class="game-card-art game-card-art-worldcup"><img src="/images/game/seeya-worldcup.png" alt="분홍색과 파란색 무대 사이에서 선택을 고민하는 씨야 캐릭터 일러스트" width="1672" height="941" loading="lazy"></div>
+      <div class="game-card-copy">
+        <span class="game-card-kicker">03 · SEEYA WORLD CUP</span>
+        <h2 id="game-worldcup-title">이상형 월드컵</h2>
+        <p id="game-worldcup-description">고르는 순간마다 발견하는 나의 취향.<br>씨야와 함께할 새로운 게임을 기다려주세요.</p>
+        <div class="game-card-details"><span class="game-status" id="game-worldcup-status">준비중</span></div>
+        <span class="game-card-link">준비중 안내 보기 <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
   </div>
 </section>`);

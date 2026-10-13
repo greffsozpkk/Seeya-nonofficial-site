@@ -269,6 +269,13 @@
     "description": "씨야의 음악과 활동을 얼마나 기억하고 있나요? 재회·기억·종합 탐구 중 선택해 영역별 25문제에 도전하세요. 시험지형·카드형 풀이, 성적표와 시험지 인쇄를 제공합니다."
   },
   {
+    "key": "worldcup",
+    "path": "/game/worldcup/",
+    "title": "이상형 월드컵 · 준비중 | SEEYA PLAY",
+    "description": "씨야와 함께하는 이상형 월드컵을 준비하고 있습니다. 기다리는 동안 가사 퀴즈와 씨야 모의고사를 즐겨보세요.",
+    "noindex": true
+  },
+  {
     "key": "news",
     "path": "/news/",
     "title": "씨야 SeeYa 최신 뉴스 | SEEYA ARCHIVE",

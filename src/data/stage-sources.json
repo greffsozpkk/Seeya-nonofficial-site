@@ -1224,5 +1224,55 @@
     "scope": "excerpt",
     "category": "concert",
     "basis": "2026-10-12 확인: 게시자가 명시한 행사와 곡명 기준. 팬 촬영 자료이며 짧은 발췌 영상은 전체 공연과 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=Byq7NDqyyZ8",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-13 확인: 공개 영상 제목·게시자가 명시한 행사와 곡명으로 연결. 팬 영상이며 무반주 신청곡·릴스는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeYl_Ksh1If/",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-13 확인: 공개 영상 제목·게시자가 명시한 행사와 곡명으로 연결. 팬 영상이며 무반주 신청곡·릴스는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261009-boram-worldmom-yongin",
+    "url": "https://www.instagram.com/cup_soohans/reel/DeYRweVxahv/",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-13 확인: 공개 영상 제목·게시자가 명시한 행사와 곡명으로 연결. 팬 영상이며 무반주 신청곡·릴스는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261009-boram-worldmom-yongin",
+    "url": "https://www.instagram.com/cup_soohans/reel/DeYQGANRqR1/",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-13 확인: 공개 영상 제목·게시자가 명시한 행사와 곡명으로 연결. 팬 영상이며 무반주 신청곡·릴스는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.instagram.com/gyuljam0426/reel/DebOXQmTBt1/",
+    "songIds": [
+      "scent-of-a-woman"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-13 확인: 공개 영상 제목·게시자가 명시한 행사와 곡명으로 연결. 팬 영상이며 무반주 신청곡·릴스는 발췌로 구분."
   }
 ]

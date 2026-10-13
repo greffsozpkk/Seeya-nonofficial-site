@@ -1,5 +1,21 @@
 [
   {
+    "id": "worldcup",
+    "image": "/images/game/seeya-worldcup.png",
+    "width": 1672,
+    "height": 941,
+    "usedOn": [
+      {
+        "label": "SEEYA PLAY",
+        "path": "/game/"
+      },
+      {
+        "label": "이상형 월드컵",
+        "path": "/game/worldcup/"
+      }
+    ]
+  },
+  {
     "id": "offline-characters",
     "image": "/images/app/seeya-offline-characters.png",
     "width": 1536,
