@@ -33,7 +33,7 @@ assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'콘서트
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'사진·사인'}).length,1);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'카페'}).length,19);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'씨야'}).length,25);
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'이보람'}).length,35);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'이보람'}).length,36);
 assert(!filterPlaces(allRows,{member:'씨야'}).some(p=>p.id==='maboklim'));
 const ohji=allRows.find(p=>p.id==='ohji'),thai=allRows.find(p=>p.id==='thailicious');
 assert.equal(promoStatus(thai,'2026-10-05T00:00:00+09:00'),'혜택 종료');

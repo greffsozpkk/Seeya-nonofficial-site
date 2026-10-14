@@ -3831,6 +3831,44 @@
       "operatingStatus": "unconfirmed",
       "historical": true,
       "coordinateNote": "같은 도로명주소 건물의 좌표. 현재 다른 업장을 유하제과로 표기하지 않음."
+    },
+    {
+      "id": "misukine-unnam",
+      "name": "미숙이네",
+      "city": "인천",
+      "region": "인천",
+      "address": "인천광역시 영종구 운중로48번길 105 가동 1층",
+      "coordinates": [
+        37.4862228,
+        126.5408187
+      ],
+      "category": "식당",
+      "members": [
+        "이보람"
+      ],
+      "group": "",
+      "relations": [
+        "멤버 추천"
+      ],
+      "date": "2026-10-14",
+      "dateBasis": "방송일",
+      "story": "이보람이 「한밤의 꿈」 25회에서 인천 맛집으로 소개한 생갈비 식당입니다.\n방송을 들은 팬의 제보를 바탕으로 연결했습니다.",
+      "source": {
+        "label": "BTN라디오 공식 · 한밤의 꿈 25회",
+        "url": "https://www.youtube.com/watch?v=2UrtOOGIWLw"
+      },
+      "addressSource": "https://polle.com/place/1YA9I2/",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=ab6uBC0UOyd6",
+      "recordId": "20261014-boram-btn-dream-25",
+      "evidence": [],
+      "note": "날짜는 방문일이 아닌 추천 방송일입니다. 추천 내용은 청취자 제보 기준입니다.",
+      "recommendationEvidence": {
+        "type": "listener-report",
+        "reportedAt": "2026-10-14",
+        "broadcastDate": "2026-10-14",
+        "episode": 25,
+        "independentlyVerified": false
+      }
     }
   ],
   "researchQueue": [
@@ -4422,6 +4460,48 @@
       "url": "https://www.youtube.com/watch?v=vjH-71Nliko",
       "reason": "귤멍 Ep.66 관련 보도의 광주 떡갈비 단서. 공식 영상 설명에는 상호·주소가 없어 특정 식당으로 연결하지 않음.",
       "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "스시보",
+      "reason": "청취자 제보: 2026-10-14 한밤의 꿈 25회에서 인천 오마카세 식당으로 소개. 스시보라는 상호·업종이 유사한 후보이나 제보자가 정확한 상호를 기억하지 못해 동일 매장으로 확정하지 않음.",
+      "candidates": [
+        {
+          "name": "스시보라",
+          "address": "인천광역시 영종구 영종대로196번길 15-25 지하1층 B132호",
+          "url": "https://www.diningcode.com/profile.php?rid=UUggoNa9L4TC"
+        }
+      ],
+      "member": "이보람",
+      "url": "https://www.youtube.com/watch?v=2UrtOOGIWLw",
+      "recordId": "20261014-boram-btn-dream-25",
+      "checkedAt": "2026-10-14",
+      "leadSource": "한밤의 꿈 25회 청취자 제보"
+    },
+    {
+      "name": "도깨비호떡",
+      "reason": "청취자 제보: 2026-10-14 한밤의 꿈 25회에서 인천 맛집으로 소개. 영종·논현·검단 등 동명 매장이 있어 지점 확인 전 지도 핀 보류. 방송에서 영종도를 말했다는 근거는 없음.",
+      "candidates": [
+        {
+          "name": "도깨비호떡 영종",
+          "address": "인천광역시 영종구 하늘별빛로 75 1층 104호",
+          "url": "https://www.diningcode.com/profile.php?rid=mK3UStbJGeyg"
+        },
+        {
+          "name": "도깨비호떡 논현",
+          "address": "인천광역시 남동구 논고개로 118 1층 106호",
+          "url": "https://cafe.ayo.pe.kr/snack/dcfbedbc4b21413c6f4de0999505be76"
+        },
+        {
+          "name": "도깨비호떡 검단",
+          "address": "인천광역시 검단구 이음1로 154 715동 102호",
+          "url": "https://onkorea.co.kr/igeomdan/yrZTF2a4uJRx"
+        }
+      ],
+      "member": "이보람",
+      "url": "https://www.youtube.com/watch?v=2UrtOOGIWLw",
+      "recordId": "20261014-boram-btn-dream-25",
+      "checkedAt": "2026-10-14",
+      "leadSource": "한밤의 꿈 25회 청취자 제보"
     }
   ],
   "researchReview": {
@@ -6033,6 +6113,11 @@
         "placeId": "yuha-apgujeong-historic",
         "recordId": "20200618-seeya-cafe-pilgrimage",
         "status": "new"
+      },
+      {
+        "placeId": "misukine-unnam",
+        "recordId": "20261014-boram-btn-dream-25",
+        "status": "existing"
       }
     ]
   }

@@ -116,7 +116,9 @@
     "블랙랩": "blacklab",
     "스튜디오 콘크리트": "studio-concrete-historic",
     "캔디드샷 커피앤브레드": "candydeshot-cafe-historic",
-    "유하제과 압구정점": "yuha-apgujeong-historic"
+    "유하제과 압구정점": "yuha-apgujeong-historic",
+    "미숙이네 생갈비": "misukine-unnam",
+    "미숙이네 운남동": "misukine-unnam"
   },
   "records": {
     "20260829-the-fan-seoul": [
@@ -292,6 +294,9 @@
       "studio-concrete-historic",
       "candydeshot-cafe-historic",
       "yuha-apgujeong-historic"
+    ],
+    "20261014-boram-btn-dream-25": [
+      "misukine-unnam"
     ]
   }
 }

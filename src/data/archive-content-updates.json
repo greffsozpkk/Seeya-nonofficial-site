@@ -3963,5 +3963,25 @@
         ]
       }
     ]
+  },
+  {
+    "id": "archive-2026-10-14-incheon-radio-food",
+    "checkedAt": "2026-10-14",
+    "additions": [],
+    "updates": [
+      {
+        "id": "20261014-boram-btn-dream-25",
+        "sources": [],
+        "correction": {
+          "sourceUrl": "https://www.youtube.com/watch?v=2UrtOOGIWLw",
+          "expected": {
+            "note": "10월 14일 밤 9시, 이보람이 진행한 BTN라디오 「한밤의 꿈」 25회입니다.\n공식 채널의 보이는 라디오 영상으로 방송을 다시 볼 수 있습니다."
+          },
+          "values": {
+            "note": "10월 14일 밤 9시, 이보람이 진행한 BTN라디오 「한밤의 꿈」 25회입니다.\n공식 채널의 보이는 라디오 영상으로 방송을 다시 볼 수 있습니다.\n인천 맛집으로 미숙이네 생갈비·도깨비호떡과 오마카세 식당을 소개했습니다(청취자 제보).\n미숙이네는 씨야 지도에서도 찾아볼 수 있습니다."
+          }
+        }
+      }
+    ]
   }
 ]
