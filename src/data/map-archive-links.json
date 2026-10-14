@@ -111,7 +111,12 @@
     "우석대 전주캠퍼스": "woosuk-jeonju",
     "홍익대학교 대학로 아트센터 대극장": "hongik-daehakro",
     "대전과기대 중앙광장": "dst-campus",
-    "잠실종합운동장 올림픽주경기장": "olympic-main-stadium"
+    "잠실종합운동장 올림픽주경기장": "olympic-main-stadium",
+    "정식카페": "jungsik-cafe-historic",
+    "블랙랩": "blacklab",
+    "스튜디오 콘크리트": "studio-concrete-historic",
+    "캔디드샷 커피앤브레드": "candydeshot-cafe-historic",
+    "유하제과 압구정점": "yuha-apgujeong-historic"
   },
   "records": {
     "20260829-the-fan-seoul": [
@@ -280,6 +285,13 @@
     "20240503-gyuri-sbs-chuncheon": [
       "old-kim-you-jeong-station",
       "uiam-lake"
+    ],
+    "20200618-seeya-cafe-pilgrimage": [
+      "jungsik-cafe-historic",
+      "blacklab",
+      "studio-concrete-historic",
+      "candydeshot-cafe-historic",
+      "yuha-apgujeong-historic"
     ]
   }
 }

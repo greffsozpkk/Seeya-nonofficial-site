@@ -1274,5 +1274,55 @@
     "scope": "excerpt",
     "category": "concert",
     "basis": "2026-10-13 확인: 공개 영상 제목·게시자가 명시한 행사와 곡명으로 연결. 팬 영상이며 무반주 신청곡·릴스는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=-X63BGTttGM",
+    "songIds": [
+      "scent-of-a-woman"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-14 확인: 업로더가 명시한 청주 공연·곡명에 따라 10월 10일 공연에 연결. 팬 직캠이며 Shorts는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=n9GLtu0xX7c",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-14 확인: 업로더가 명시한 청주 공연·곡명에 따라 10월 10일 공연에 연결. 팬 직캠이며 Shorts는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=9k7_5rDWKic",
+    "songIds": [
+      "hot-girl"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-14 확인: 업로더가 명시한 청주 공연·곡명에 따라 10월 10일 공연에 연결. 팬 직캠이며 Shorts는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=WkkaEQB5Dg0",
+    "songIds": [
+      "sad-footsteps"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-14 확인: 업로더가 명시한 청주 공연·곡명에 따라 10월 10일 공연에 연결. 팬 직캠이며 Shorts는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=eQ0KOxJL1kg",
+    "songIds": [
+      "shoes"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-14 확인: 업로더가 명시한 청주 공연·곡명에 따라 10월 10일 공연에 연결. 팬 직캠이며 Shorts는 발췌로 구분."
   }
 ]

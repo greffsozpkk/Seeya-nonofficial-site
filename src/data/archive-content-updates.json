@@ -3761,5 +3761,207 @@
         ]
       }
     ]
+  },
+  {
+    "id": "archive-2026-10-14-pilgrimage",
+    "checkedAt": "2026-10-14",
+    "additions": [
+      {
+        "id": "20261014-yeonji-beyond-light-cover",
+        "date": "2026-10-14",
+        "addedAt": "2026-10-14",
+        "updatedAt": "2026-10-14",
+        "title": "김연지 · 이보람 「빛의 반대편에서」 커버",
+        "program": "보람씨야",
+        "type": "music-show",
+        "members": [
+          "김연지"
+        ],
+        "songs": [
+          "빛의 반대편에서"
+        ],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "보람씨야 공식 · 빛의 반대편에서 by 김연지",
+          "url": "https://www.youtube.com/watch?v=4YuwjlXda4s"
+        },
+        "additionalSources": [
+          {
+            "label": "이보람 공식 Instagram · 김연지 커버",
+            "url": "https://www.instagram.com/p/DeeAzBzBYMK/",
+            "publishedDate": "2026-10-14"
+          }
+        ],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "video-published",
+        "publishedDate": "2026-10-14",
+        "tags": [
+          "2026"
+        ],
+        "note": "김연지가 부른 이보람의 「빛의 반대편에서」 커버 영상입니다.\n10월 14일 보람씨야 공식 YouTube와 이보람 인스타그램에 공개됐습니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20261014-boram-btn-dream-25",
+        "date": "2026-10-14",
+        "addedAt": "2026-10-14",
+        "updatedAt": "2026-10-14",
+        "title": "이보람 · 한밤의 꿈 이보람입니다 25회",
+        "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
+        "type": "radio",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "BTN라디오 공식 · 25회 보이는 라디오",
+          "url": "https://www.youtube.com/watch?v=2UrtOOGIWLw"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "broadcast",
+        "publishedDate": "2026-10-14",
+        "tags": [
+          "2026"
+        ],
+        "note": "10월 14일 밤 9시, 이보람이 진행한 BTN라디오 「한밤의 꿈」 25회입니다.\n공식 채널의 보이는 라디오 영상으로 방송을 다시 볼 수 있습니다.",
+        "eventState": "completed",
+        "calendar": {
+          "time": "21:00",
+          "endTime": "23:00",
+          "timeLabel": "방송 시간"
+        },
+        "episode": 25
+      },
+      {
+        "id": "20261014-gyuri-dance-practice",
+        "date": "2026-10-14",
+        "addedAt": "2026-10-14",
+        "updatedAt": "2026-10-14",
+        "title": "남규리 · 춤 연습 영상",
+        "program": "남규리 Instagram",
+        "type": "official",
+        "members": [
+          "남규리"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "남규리 공식 Instagram · 춤 연습",
+          "url": "https://www.instagram.com/reel/DedoDDWT2gI/"
+        },
+        "additionalSources": [
+          {
+            "label": "씨야 갤러리 · 10월 14일 영상 소개",
+            "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9774",
+            "publishedDate": "2026-10-14"
+          }
+        ],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "publishedDate": "2026-10-14",
+        "tags": [
+          "2026"
+        ],
+        "note": "남규리가 인스타그램에 공유한 춤 연습 영상입니다.\n10월 14일 씨야 갤러리에도 소개됐으며, 날짜는 해당 소개글 게시일 기준입니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20200618-seeya-cafe-pilgrimage",
+        "date": "2020-06-18",
+        "addedAt": "2026-10-14",
+        "updatedAt": "2026-10-14",
+        "title": "남규리·김연지 · 카페 방문 사진과 SNS 모음",
+        "program": "씨야 갤러리 · 성지순례 자료",
+        "type": "other",
+        "members": [
+          "남규리",
+          "김연지"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "씨야 갤러리 · 성지순례 카페 모음",
+          "url": "https://gall.dcinside.com/board/view/?id=seeya&no=200477"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "publishedDate": "2020-06-18",
+        "tags": [
+          "2020",
+          "SNS",
+          "카페",
+          "성지순례"
+        ],
+        "note": "남규리의 정식카페·블랙랩·스튜디오 콘크리트 사진과 김연지의 캔디드샷·유하제과 SNS를 모은 자료입니다.\n2020년 6월 18일 게시된 모음이며, 모든 장소를 같은 날 방문했다는 뜻은 아닙니다.\n지도의 각 장소에서 옛 위치와 영업 상태를 구분해 볼 수 있습니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": false
+        }
+      }
+    ],
+    "updates": [
+      {
+        "id": "20261010-the-fan-cheongju",
+        "sources": [
+          {
+            "label": "🐿람보바라기 · 씨야(SeeYa)「여인의 향기」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+            "url": "https://www.youtube.com/watch?v=-X63BGTttGM",
+            "publishedDate": "2026-10-14"
+          },
+          {
+            "label": "🐿람보바라기 · 씨야(SeeYa)「봄처럼 그댄」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+            "url": "https://www.youtube.com/watch?v=n9GLtu0xX7c",
+            "publishedDate": "2026-10-14"
+          },
+          {
+            "label": "🐿람보바라기 · 씨야(SeeYa)「Hot Girl」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+            "url": "https://www.youtube.com/watch?v=9k7_5rDWKic",
+            "publishedDate": "2026-10-14"
+          },
+          {
+            "label": "🐿람보바라기 · 씨야(SeeYa)「슬픈 발걸음(구두II)」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+            "url": "https://www.youtube.com/watch?v=WkkaEQB5Dg0",
+            "publishedDate": "2026-10-14"
+          },
+          {
+            "label": "🐿람보바라기 · 씨야(SeeYa)「구두」직캠 Full Ver | 261010 씨야 20주년 콘서트 The Fan in 청주",
+            "url": "https://www.youtube.com/watch?v=eQ0KOxJL1kg",
+            "publishedDate": "2026-10-13"
+          },
+          {
+            "label": "제리제이 Jerry.j · 씨야 - 미워요 | 씨야 20주년 전국 투어 콘서트 in 청주",
+            "url": "https://www.youtube.com/watch?v=EzjCPFStVB4",
+            "publishedDate": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "id": "20260802-boram-light-opposite",
+        "sources": [
+          {
+            "label": "GENIE MUSIC 공식 · 빛의 반대편에서 무반주 한 소절",
+            "url": "https://www.youtube.com/watch?v=YzEZhjRRoqE",
+            "publishedDate": "2026-08-04"
+          }
+        ]
+      }
+    ]
   }
 ]

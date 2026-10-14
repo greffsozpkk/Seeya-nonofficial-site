@@ -31,7 +31,7 @@ const {promoStatus}=shared;
 for(const p of allRows){assert(p.addressSource&&p.coordinateSource&&p.source.url&&p.dateBasis);assert(p.coordinates.every(Number.isFinite));assert(html.includes(p.name));assert(detail(p).includes(p.source.url.replaceAll('&','&amp;')));}
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'콘서트 혜택'}).length,11);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'사진·사인'}).length,1);
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'카페'}).length,15);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'카페'}).length,19);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'씨야'}).length,25);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'이보람'}).length,35);
 assert(!filterPlaces(allRows,{member:'씨야'}).some(p=>p.id==='maboklim'));
@@ -119,3 +119,13 @@ assert(read('sitemap.xml').includes('https://seeya-fanpage.com/map/'));
 assert.equal((read('src/template.html').match(/href="\/map\/"/g)||[]).length,3);
 assert.equal(JSON.parse(publicMap.match(/id="mapData">(.*?)<\/script>/s)[1]).places.length,allRows.length);
 console.log('PASS: public map, shared navigation, subtitle and photo-free place cards.');
+
+// Historical cafes retain old locations without advertising current businesses or routing there.
+for (const id of ['jungsik-cafe-historic','studio-concrete-historic','candydeshot-cafe-historic','yuha-apgujeong-historic']) {
+ const p=allRows.find(x=>x.id===id);assert(p);assert(p.historical);assert(detail(p).includes('옛 위치 보기'));assert(!detail(p).includes('link/to/'));assert.equal(p.dateBasis,'자료 모음 게시일 · 방문일 미상');
+ assert(p.records.some(r=>r.id==='20200618-seeya-cafe-pilgrimage'));
+}
+assert(cards([allRows.find(p=>p.id==='candydeshot-cafe-historic')]).includes('영업 확인 필요'));
+assert(cards([allRows.find(p=>p.id==='jungsik-cafe-historic')]).includes('영업 종료'));
+assert(detail(allRows.find(p=>p.id==='blacklab')).includes('link/to/'));
+console.log('PASS: pilgrimage evidence dates, shared archive connection and historical location labels.');

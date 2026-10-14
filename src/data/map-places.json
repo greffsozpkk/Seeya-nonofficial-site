@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-10-09",
+  "checkedAt": "2026-10-14",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -3661,6 +3661,176 @@
       "recordId": "20261002-jecheon-herbal-fair",
       "story": "이 장소에 남아 있는 씨야와 멤버들의 활동 기록입니다. 아래에서 활동별 날짜와 자료를 볼 수 있어요.",
       "note": "지도는 시설·지역의 대표 위치를 표시합니다. 당시 행사 구역은 아래 기록의 장소 안내를 확인해 주세요. 공연·방송 기록이 상시 관람이나 시설 출입을 의미하지는 않습니다."
+    },
+    {
+      "id": "jungsik-cafe-historic",
+      "name": "정식카페 · 옛 위치",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 강남구 선릉로158길 11 1층",
+      "coordinates": [
+        37.52565832995392,
+        127.04108107901023
+      ],
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "SNS 방문"
+      ],
+      "date": "2020-06-18",
+      "dateBasis": "자료 모음 게시일 · 방문일 미상",
+      "story": "남규리가 정식카페 입구에서 찍은 사진이 성지순례 자료에 소개돼 있습니다.\n카페의 옛 위치이며 같은 건물의 정식당과는 구분합니다.",
+      "source": {
+        "label": "씨야 갤러리 · 방문 사진·SNS 모음",
+        "url": "https://gall.dcinside.com/board/view/?id=seeya&no=200477"
+      },
+      "addressSource": "https://polle.com/place/4gvoIZ/",
+      "coordinateSource": "https://polle.com/place/4gvoIZ/",
+      "recordId": "20200618-seeya-cafe-pilgrimage",
+      "evidence": [],
+      "note": "날짜는 방문 사진·SNS를 모은 글의 게시일이며 실제 방문일과는 구분합니다. 현재 장소 안내에 폐점으로 표시된 과거 장소입니다.",
+      "operatingStatus": "closed",
+      "historical": true
+    },
+    {
+      "id": "blacklab",
+      "name": "블랙랩",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 강남구 선릉로96길 5-16 지하1층",
+      "coordinates": [
+        37.5067215,
+        127.0490592
+      ],
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "SNS 방문"
+      ],
+      "date": "2020-06-18",
+      "dateBasis": "자료 모음 게시일 · 방문일 미상",
+      "story": "남규리의 블랙랩 실내 사진이 성지순례 자료에 소개돼 있습니다.\n사진 속 아이언맨 장식이 있는 거울 공간과 함께 기억할 수 있는 브런치 카페입니다.",
+      "source": {
+        "label": "씨야 갤러리 · 방문 사진·SNS 모음",
+        "url": "https://gall.dcinside.com/board/view/?id=seeya&no=200477"
+      },
+      "addressSource": "https://www.diningcode.com/profile.php?rid=xOQRsT3tVYYq",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=xOQRsT3tVYYq",
+      "recordId": "20200618-seeya-cafe-pilgrimage",
+      "evidence": [],
+      "note": "날짜는 방문 사진·SNS를 모은 글의 게시일이며 실제 방문일과는 구분합니다."
+    },
+    {
+      "id": "studio-concrete-historic",
+      "name": "스튜디오 콘크리트 · 옛 위치",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 용산구 한남대로 162",
+      "coordinates": [
+        37.5424514132642,
+        127.002516651699
+      ],
+      "category": "문화공간",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "SNS 방문"
+      ],
+      "date": "2020-06-18",
+      "dateBasis": "자료 모음 게시일 · 방문일 미상",
+      "story": "남규리의 사진에 STUDIO CONCRETE 로고가 있는 컵이 등장합니다.\n한남동의 갤러리·카페로 소개됐던 공간의 옛 위치입니다.",
+      "source": {
+        "label": "씨야 갤러리 · 방문 사진·SNS 모음",
+        "url": "https://gall.dcinside.com/board/view/?id=seeya&no=200477"
+      },
+      "addressSource": "https://culture.seoul.go.kr/culture/culture/cultureSpace/view.do?facCode=101118&menuNo=200119",
+      "coordinateSource": "https://culture.seoul.go.kr/culture/culture/cultureSpace/view.do?facCode=101118&menuNo=200119",
+      "recordId": "20200618-seeya-cafe-pilgrimage",
+      "evidence": [
+        {
+          "label": "현재 장소 안내 · 폐점 표시",
+          "url": "https://polle.com/place/4Z1tDU/"
+        }
+      ],
+      "note": "날짜는 방문 사진·SNS를 모은 글의 게시일이며 실제 방문일과는 구분합니다. 현재 장소 안내에 폐점으로 표시된 과거 장소입니다.",
+      "operatingStatus": "closed",
+      "historical": true
+    },
+    {
+      "id": "candydeshot-cafe-historic",
+      "name": "캔디드샷 커피앤브레드 · 옛 위치",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 강남구 논현로161길 39 1층 202호 (신사동 552-3)",
+      "coordinates": [
+        37.5229165,
+        127.0249462
+      ],
+      "category": "카페",
+      "members": [
+        "김연지"
+      ],
+      "group": "",
+      "relations": [
+        "SNS 방문"
+      ],
+      "date": "2020-06-18",
+      "dateBasis": "자료 모음 게시일 · 방문일 미상",
+      "story": "김연지의 인스타그램 스토리에 CANDYDESHOT 창문과 카페 공간이 소개됐습니다.\n촬영 스튜디오나 같은 건물의 다른 업장이 아닌, 당시 커피앤브레드 카페 위치입니다.",
+      "source": {
+        "label": "씨야 갤러리 · 방문 사진·SNS 모음",
+        "url": "https://gall.dcinside.com/board/view/?id=seeya&no=200477"
+      },
+      "addressSource": "https://iaudience.kbs.co.kr/broadcast/8646",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=HMJkm87pjKyH",
+      "recordId": "20200618-seeya-cafe-pilgrimage",
+      "evidence": [],
+      "note": "날짜는 방문 사진·SNS를 모은 글의 게시일이며 실제 방문일과는 구분합니다. 과거 매장 위치입니다. 현재 같은 상호의 영업 여부는 확인되지 않아 방문 전 확인이 필요합니다.",
+      "operatingStatus": "unconfirmed",
+      "historical": true,
+      "coordinateNote": "동일 주소 건물의 좌표. 현재 다른 업장의 상호를 방문 장소로 사용하지 않음."
+    },
+    {
+      "id": "yuha-apgujeong-historic",
+      "name": "유하제과 압구정점 · 옛 위치",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 강남구 선릉로157길 27-4 (신사동 657-4)",
+      "coordinates": [
+        37.5261304,
+        127.0373566
+      ],
+      "category": "카페",
+      "members": [
+        "김연지"
+      ],
+      "group": "",
+      "relations": [
+        "SNS 방문"
+      ],
+      "date": "2020-06-18",
+      "dateBasis": "자료 모음 게시일 · 방문일 미상",
+      "story": "김연지가 인스타그램 스토리에서 유하제과 마카롱과 함께 #유하제과 #마카롱맛집을 소개했습니다.\n2020년 자료에 대응하는 압구정점의 옛 위치로, 다른 지점과 구분합니다.",
+      "source": {
+        "label": "씨야 갤러리 · 방문 사진·SNS 모음",
+        "url": "https://gall.dcinside.com/board/view/?id=seeya&no=200477"
+      },
+      "addressSource": "https://kr.pinterest.com/pin/574420127476577409/",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=BarQYMqBWivU",
+      "recordId": "20200618-seeya-cafe-pilgrimage",
+      "evidence": [],
+      "note": "날짜는 방문 사진·SNS를 모은 글의 게시일이며 실제 방문일과는 구분합니다. 과거 매장 위치입니다. 현재 같은 상호의 영업 여부는 확인되지 않아 방문 전 확인이 필요합니다.",
+      "operatingStatus": "unconfirmed",
+      "historical": true,
+      "coordinateNote": "같은 도로명주소 건물의 좌표. 현재 다른 업장을 유하제과로 표기하지 않음."
     }
   ],
   "researchQueue": [
@@ -3668,10 +3838,11 @@
       "name": "정돈",
       "member": "이보람",
       "url": "https://www.youtube.com/watch?v=EdjxuH4Z5aY",
-      "reason": "공식 영상의 매장 방문은 확인. 방문 지점이 확정되지 않아 지도 보류.",
+      "reason": "공식 브이로그 04:17 이후 정돈 식사 및 안심 주문 장면과 공개 자막을 재확인. 지점명이 나오지 않아 백화점 방문 동선만으로 특정하지 않음. 지점·주소 확인 전 지도 보류.",
       "researchRefs": [
         "R25"
-      ]
+      ],
+      "checkedAt": "2026-10-14"
     },
     {
       "name": "울산 불고기 방문 식당",
@@ -4237,6 +4408,20 @@
       "researchRefs": [
         "R28"
       ]
+    },
+    {
+      "name": "맥드라이브 방문 지점",
+      "member": "이보람",
+      "url": "https://gall.dcinside.com/board/view/?id=seeya&no=200477",
+      "reason": "성지순례 글에 맥드라이브 언급은 있으나 지점명이 없어 정확한 주소·좌표를 특정할 수 없음.",
+      "checkedAt": "2026-10-14"
+    },
+    {
+      "name": "광주 떡갈비 방문 식당",
+      "member": "남규리",
+      "url": "https://www.youtube.com/watch?v=vjH-71Nliko",
+      "reason": "귤멍 Ep.66 관련 보도의 광주 떡갈비 단서. 공식 영상 설명에는 상호·주소가 없어 특정 식당으로 연결하지 않음.",
+      "checkedAt": "2026-10-14"
     }
   ],
   "researchReview": {
@@ -5221,7 +5406,7 @@
     ]
   },
   "archiveAudit": {
-    "checkedAt": "2026-10-09",
+    "checkedAt": "2026-10-14",
     "rows": [
       {
         "placeId": "khu-grand-peace-palace",
@@ -5823,6 +6008,31 @@
         "placeId": "jecheon-hanbang-expo",
         "recordId": "20261002-jecheon-herbal-fair",
         "status": "existing"
+      },
+      {
+        "placeId": "jungsik-cafe-historic",
+        "recordId": "20200618-seeya-cafe-pilgrimage",
+        "status": "new"
+      },
+      {
+        "placeId": "blacklab",
+        "recordId": "20200618-seeya-cafe-pilgrimage",
+        "status": "new"
+      },
+      {
+        "placeId": "studio-concrete-historic",
+        "recordId": "20200618-seeya-cafe-pilgrimage",
+        "status": "new"
+      },
+      {
+        "placeId": "candydeshot-cafe-historic",
+        "recordId": "20200618-seeya-cafe-pilgrimage",
+        "status": "new"
+      },
+      {
+        "placeId": "yuha-apgujeong-historic",
+        "recordId": "20200618-seeya-cafe-pilgrimage",
+        "status": "new"
       }
     ]
   }
