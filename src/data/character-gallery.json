@@ -1,5 +1,21 @@
 [
   {
+    "id": "clinic",
+    "image": "/images/game/seeya-clinic.png",
+    "width": 1536,
+    "height": 1024,
+    "usedOn": [
+      {
+        "label": "SEEYA PLAY",
+        "path": "/game/"
+      },
+      {
+        "label": "씨야 과몰입 진단소",
+        "path": "/game/clinic/"
+      }
+    ]
+  },
+  {
     "id": "worldcup",
     "image": "/images/game/seeya-worldcup.png",
     "width": 1672,

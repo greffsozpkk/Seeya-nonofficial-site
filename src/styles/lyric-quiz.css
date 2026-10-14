@@ -85,6 +85,8 @@
 .game-card-art-exam img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 35%}
 .game-card-art-worldcup{background:#f7edf2;padding:10px;box-sizing:border-box}
 .game-card-art-worldcup img{display:block;width:100%;height:100%;object-fit:contain}
+.game-card-art-clinic{background:#eee6dd}
+.game-card-art-clinic img{display:block;width:100%;height:100%;object-fit:contain}
 .game-exam-illustration.game-worldcup-illustration{background:#f7edf2}
 .game-exam-illustration{margin:0;border:1px solid var(--line);border-bottom:0;background:#eee6dd}
 .game-exam-illustration img{display:block;width:100%;height:auto}
@@ -100,7 +102,7 @@
 .game-exam-notice h2{font-family:"Gowun Batang",serif;font-size:clamp(30px,5vw,44px);margin:20px 0}
 .game-exam-notice p{color:var(--muted);font-size:14px;line-height:1.9;margin:0 0 18px;word-break:keep-all;overflow-wrap:anywhere}
 .game-primary-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:10px 18px;margin-top:12px;background:#a7647e;color:white;font-size:12px}
-@media(min-width:1000px){.game-card-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.game-card h2{font-size:28px}.game-card-copy{padding:24px}}
+@media(min-width:1000px){.game-card h2{font-size:28px}.game-card-copy{padding:24px}}
 @media(max-width:640px){.game-card-grid{grid-template-columns:1fr;gap:22px}.game-card-art{height:200px}.game-card-copy{padding:24px}.game-hub-heading{margin-bottom:28px}}
 @media(prefers-reduced-motion:reduce){.game-card{transition:none}.game-card:hover{transform:none}}
 

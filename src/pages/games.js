@@ -37,5 +37,15 @@ module.exports=()=>W(`<section class="game-hub">
         <span class="game-card-link">준비중 안내 보기 <span aria-hidden="true">→</span></span>
       </div>
     </a>
+    <a class="game-card game-card-clinic" href="/game/clinic/" aria-labelledby="game-clinic-title" aria-describedby="game-clinic-description game-clinic-status">
+      <div class="game-card-art game-card-art-clinic"><img src="/images/game/seeya-clinic.png" alt="진료실에서 함께하는 씨야 세 멤버의 캐릭터 일러스트" width="1536" height="1024" loading="lazy"></div>
+      <div class="game-card-copy">
+        <span class="game-card-kicker">04 · SEEYA FAN CHECK</span>
+        <h2 id="game-clinic-title">씨야 과몰입 진단소</h2>
+        <p id="game-clinic-description">내 일상에 씨야가 얼마나 스며들었을까?<br>1~5점으로 체크하고 나만의 진단서를 받아보세요.</p>
+        <div class="game-card-details"><span class="game-status" id="game-clinic-status">준비중</span></div>
+        <span class="game-card-link">준비중 안내 보기 <span aria-hidden="true">→</span></span>
+      </div>
+    </a>
   </div>
 </section>`);
