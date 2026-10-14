@@ -121,7 +121,7 @@
     {
       "title": "씨야 이보람, 반짝 헤어핀 스타일링…전국투어 고양 공연 대기실 셀카 - 톱스타뉴스",
       "source": "톱스타뉴스",
-      "pubDate": "2026-10-06T06:18:17+00:00",
+      "pubDate": "2026-10-06T07:00:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1wYldWZzltVmNRSzdPb0VXeGwyemtwZ3ZWVHJDTmo1ZFJGeUlXdDd5TkV6SGw1YTRKUGZFTGxNMk9xRy03NGFkbm5YZGZJSUxfcGxvMzdUdEEwVWc4Nmt1dHE5OEhHdUVXWHcyc3NwV1FxZw?oc=5",
       "description": "씨야 이보람, 반짝 헤어핀 스타일링…전국투어 고양 공연 대기실 셀카 톱스타뉴스"
     },
@@ -147,39 +147,39 @@
       "description": "이보람, 씨야 대신 결혼 선택 “멤버들아 미안해” 스포츠경향"
     }
   ],
-  "updatedAt": "2026-10-14T17:14:12.432363+00:00",
-  "lastCheckedAt": "2026-10-14T17:14:12.432363+00:00",
+  "updatedAt": "2026-10-14T21:43:33.216855+00:00",
+  "lastCheckedAt": "2026-10-14T21:43:33.216855+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-14T17:14:12.432363+00:00",
-    "남규리": "2026-10-14T17:14:12.432363+00:00",
-    "김연지": "2026-10-14T17:14:12.432363+00:00",
-    "이보람": "2026-10-14T17:14:12.432363+00:00"
+    "씨야": "2026-10-14T21:43:33.216855+00:00",
+    "남규리": "2026-10-14T21:43:33.216855+00:00",
+    "김연지": "2026-10-14T21:43:33.216855+00:00",
+    "이보람": "2026-10-14T21:43:33.216855+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-13T14:11:13.142162+00:00",
     "남규리": "2026-10-14T05:13:16.281488+00:00",
-    "이보람": "2026-10-12T15:06:58.679267+00:00",
+    "이보람": "2026-10-14T21:43:33.216855+00:00",
     "김연지": "2026-10-13T07:00:30.592493+00:00"
   },
   "categoryStatus": {
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 204,
+      "accepted": 203,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 140,
+      "accepted": 138,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 36,
+      "accepted": 35,
       "changed": false,
       "status": "unchanged"
     },
@@ -187,8 +187,8 @@
       "queries": 4,
       "succeeded": 4,
       "accepted": 80,
-      "changed": false,
-      "status": "unchanged"
+      "changed": true,
+      "status": "changed"
     }
   }
 }
