@@ -705,9 +705,15 @@
         "label": "gyuljam0426 · 팬 사진",
         "url": "https://www.instagram.com/gyuljam0426/p/DeXhugPkzzB/",
         "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "스타로그 (STAR LOG)",
+        "url": "https://www.youtube.com/watch?v=Nru0228VNuM",
+        "publishedDate": "2026-10-13",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-13T06:58:02.195722+00:00",
+    "updatedAt": "2026-10-14T05:10:50.256848+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
