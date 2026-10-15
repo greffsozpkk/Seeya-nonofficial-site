@@ -22,11 +22,11 @@
       "description": "261002 씨야 김연지 직캠 ‘봄처럼 그댄’ (SEEYA Kim Yeonji FanCam) YouTube"
     },
     {
-      "title": "씨야 김연지, “제목은 ‘노래’입니다”…작업실 라이브로 솔로곡 직접 알렸다 - 진일보",
-      "source": "진일보",
+      "title": "씨야 김연지, “제목은 ‘노래’입니다”…작업실 라이브로 솔로곡 직접 알렸다 - 진일보 | 전남일보",
+      "source": "진일보 | 전남일보",
       "pubDate": "2026-10-12T07:48:05+00:00",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9LWVcyTWZEQXVyYjc2YUdXNzQtOFdGTnhMdEoyUi16NXhiSmxMQUFacXJJYy1QTmVkNDVyams4WmlRcXRFdHY5ckprTm5FdEoxV19jU1ZvRXE4cjhuM3NhaVJLVVVjSk9qSzBfazBKRQ?oc=5",
-      "description": "씨야 김연지, “제목은 ‘노래’입니다”…작업실 라이브로 솔로곡 직접 알렸다 진일보"
+      "description": "씨야 김연지, “제목은 ‘노래’입니다”…작업실 라이브로 솔로곡 직접 알렸다 진일보 | 전남일보"
     },
     {
       "title": "씨야, 데뷔 20주년 전국투어 전석 매진 \"팬들 위한 종합선물세트\" - iMBC 연예",
@@ -82,11 +82,11 @@
       "description": "261002 씨야 김연지 직캠 ‘봄처럼 그댄’ (SEEYA Kim Yeonji FanCam) YouTube"
     },
     {
-      "title": "씨야 김연지, “제목은 ‘노래’입니다”…작업실 라이브로 솔로곡 직접 알렸다 - 진일보",
-      "source": "진일보",
+      "title": "씨야 김연지, “제목은 ‘노래’입니다”…작업실 라이브로 솔로곡 직접 알렸다 - 진일보 | 전남일보",
+      "source": "진일보 | 전남일보",
       "pubDate": "2026-10-12T07:48:05+00:00",
       "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9LWVcyTWZEQXVyYjc2YUdXNzQtOFdGTnhMdEoyUi16NXhiSmxMQUFacXJJYy1QTmVkNDVyams4WmlRcXRFdHY5ckprTm5FdEoxV19jU1ZvRXE4cjhuM3NhaVJLVVVjSk9qSzBfazBKRQ?oc=5",
-      "description": "씨야 김연지, “제목은 ‘노래’입니다”…작업실 라이브로 솔로곡 직접 알렸다 진일보"
+      "description": "씨야 김연지, “제목은 ‘노래’입니다”…작업실 라이브로 솔로곡 직접 알렸다 진일보 | 전남일보"
     },
     {
       "title": "261002 씨야 김연지 직캠 ‘STAY’ (SEEYA Kim Yeonji FanCam) - YouTube",
@@ -147,46 +147,46 @@
       "description": "이보람, 3년 안에 결혼?…무속인 발언에 ‘공개 사과’ 나선 이유 (‘귀묘한 이야기2’) MHN스포츠"
     }
   ],
-  "updatedAt": "2026-10-15T17:04:17.475054+00:00",
-  "lastCheckedAt": "2026-10-15T17:04:17.475054+00:00",
+  "updatedAt": "2026-10-15T21:26:06.212105+00:00",
+  "lastCheckedAt": "2026-10-15T21:26:06.212105+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-15T17:04:17.475054+00:00",
-    "남규리": "2026-10-15T17:04:17.475054+00:00",
-    "김연지": "2026-10-15T17:04:17.475054+00:00",
-    "이보람": "2026-10-15T17:04:17.475054+00:00"
+    "씨야": "2026-10-15T21:26:06.212105+00:00",
+    "남규리": "2026-10-15T21:26:06.212105+00:00",
+    "김연지": "2026-10-15T21:26:06.212105+00:00",
+    "이보람": "2026-10-15T21:26:06.212105+00:00"
   },
   "categoryContentUpdatedAt": {
-    "씨야": "2026-10-15T11:33:55.578860+00:00",
+    "씨야": "2026-10-15T21:26:06.212105+00:00",
     "남규리": "2026-10-14T05:13:16.281488+00:00",
     "이보람": "2026-10-15T11:33:55.578860+00:00",
-    "김연지": "2026-10-13T07:00:30.592493+00:00"
+    "김연지": "2026-10-15T21:26:06.212105+00:00"
   },
   "categoryStatus": {
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 192,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 198,
+      "changed": true,
+      "status": "changed"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 124,
+      "accepted": 127,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 27,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 34,
+      "changed": true,
+      "status": "changed"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 81,
+      "accepted": 82,
       "changed": false,
       "status": "unchanged"
     }
