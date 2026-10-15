@@ -741,9 +741,15 @@
         "label": "제리제이 Jerry.j · 씨야 - 미워요 | 씨야 20주년 전국 투어 콘서트 in 청주",
         "url": "https://www.youtube.com/watch?v=EzjCPFStVB4",
         "publishedDate": "2026-10-14"
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=ctgMJa3S0g4",
+        "publishedDate": "2026-10-13",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-14T05:10:50.256848+00:00",
+    "updatedAt": "2026-10-15T04:59:03.515232+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -759,7 +765,7 @@
     "id": "20261006-boram-dst-autumn",
     "date": "2026-10-06",
     "addedAt": "2026-09-29",
-    "updatedAt": "2026-10-13",
+    "updatedAt": "2026-10-15T04:59:03.515232+00:00",
     "title": "이보람 · 대전과학기술대학교 제8회 가을문화제",
     "program": "대전과학기술대학교 제8회 가을문화제",
     "type": "event",
@@ -854,6 +860,12 @@
         "label": "제리제이 · 팬 사진",
         "url": "https://www.instagram.com/_jerry.j_ramficial/p/DebUROHEiyG/",
         "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=taK4am0E9Sc",
+        "publishedDate": "2026-10-15",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -3754,11 +3766,17 @@
         "url": "https://www.youtube.com/watch?v=NOBlEMyn6bQ",
         "publishedDate": "2026-10-10",
         "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=LcVp_vwJxOI",
+        "publishedDate": "2026-10-15",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-10-11T06:09:16.452230+00:00"
+    "updatedAt": "2026-10-15T04:59:03.515232+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -23722,6 +23740,18 @@
         "url": "https://www.youtube.com/watch?v=VqK2tMGqs7E",
         "publishedDate": "2020-03-28",
         "autoDiscovery": true
+      },
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=Ro5cJa_sfPY",
+        "publishedDate": "2020-03-28",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=55EHoLMCMd8",
+        "publishedDate": "2020-03-28",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -23732,7 +23762,7 @@
     "note": "날짜는 공식 방송 음반 공개일입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "release",
-    "updatedAt": "2026-10-05T06:01:52.788230+00:00"
+    "updatedAt": "2026-10-15T04:59:03.515232+00:00"
   },
   {
     "id": "20200328-yeonji-ytn-star",
@@ -48456,5 +48486,63 @@
     "calendar": {
       "enabled": false
     }
+  },
+  {
+    "id": "discovered-416e137c2d4c8c09",
+    "date": "2020-09-02",
+    "addedAt": "2026-10-15T04:59:03.515232+00:00",
+    "updatedAt": "2026-10-15T04:59:03.515232+00:00",
+    "title": "[라디오스타] 유상무보다 인기 많은 아내 '주작녀' 김연지!, MBC 200902 방송",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=tAos5U-JK1A",
+      "publishedDate": "2020-09-02",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2020-09-02",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-a613b5896c386169",
+    "date": "2020-09-03",
+    "addedAt": "2026-10-15T04:59:03.515232+00:00",
+    "updatedAt": "2026-10-15T04:59:03.515232+00:00",
+    "title": "[라디오스타] 유상무의 아내 김연지의 특급 내조! 자면 死어요...ㅠ, MBC 200902 방송",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=_WIz8QI6f9k",
+      "publishedDate": "2020-09-03",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2020-09-03",
+    "autoDiscovery": true
   }
 ]
