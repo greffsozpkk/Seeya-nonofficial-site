@@ -823,8 +823,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2007-07&event=activity-v481-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v481-archive-021@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261015T150000Z
+LAST-MODIFIED:20261015T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20070801
 DTEND;VALUE=DATE:20070802
@@ -836,8 +836,9 @@ LOCATION:
 DESCRIPTION:남규리 · 김연지 · 이보람\n시간 미정\n공식 영
  상: https://www.youtube.com/watch?v=UUMVWy5DenY\n공식 영상: https://w
  ww.youtube.com/watch?v=tIiNpSJoQ6k\n방송·공연 기록: https://www.eda
- ily.co.kr/News/Read?mediaCodeNo=257&newsId=01761366583198128\nhttps://seey
- a-fanpage.com/archive/?record=v481-archive-021
+ ily.co.kr/News/Read?mediaCodeNo=257&newsId=01761366583198128\n부산MBC 
+ 뮤직월드 · 결혼할까요: https://www.youtube.com/watch?v=CgX2YsAG7
+ ok\nhttps://seeya-fanpage.com/archive/?record=v481-archive-021
 URL:https://seeya-fanpage.com/calendar/?month=2007-08&event=activity-v481-a
  rchive-021
 END:VEVENT
@@ -7665,8 +7666,10 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n시간 미정\n9월 12일
  xw8YmBYI\n꽁: https://www.youtube.com/watch?v=wT5SB5KcSnc\n꽁: https://w
  ww.youtube.com/watch?v=epOKDbf99pE\n꽁: https://www.youtube.com/watch?v=N
  OBlEMyn6bQ\n제리제이 Jerry.j: https://www.youtube.com/watch?v=LcVp_vwJ
- xOI\n제리제이 Jerry.j: https://www.youtube.com/watch?v=ciPXCrZylMM\nht
- tps://seeya-fanpage.com/archive/?record=20260912-the-fan-daegu
+ xOI\n제리제이 Jerry.j: https://www.youtube.com/watch?v=ciPXCrZylMM\n
+ 제리제이 · 대구 콘서트 예술이야 직캠: https://www.instagra
+ m.com/_jerry.j_ramficial/reel/DegOPSgBBsB/\nhttps://seeya-fanpage.com/arch
+ ive/?record=20260912-the-fan-daegu
 URL:https://seeya-fanpage.com/calendar/?month=2026-09&event=activity-202609
  12-the-fan-daegu
 END:VEVENT
@@ -8582,8 +8585,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261009-boram-worldmom-yongin@seeya-fanpage.com
-DTSTAMP:20261012T150000Z
-LAST-MODIFIED:20261012T150000Z
+DTSTAMP:20261015T150000Z
+LAST-MODIFIED:20261015T150000Z
 SEQUENCE:1
 DTSTART:20261009T095000Z
 SUMMARY:이보람 · 세상을 바꾸는 여자들 용인 공연
@@ -8628,8 +8631,10 @@ DESCRIPTION:이보람\n18:50 · 공식 행사 시작\n10월 9일 ICT밸리
  /DeYQOxDxNYV/\ncup_soohans · 팬 영상: https://www.instagram.com/cup_so
  ohans/reel/DeYQGANRqR1/\ncup_soohans · 팬 영상: https://www.instagram.
  com/cup_soohans/reel/DeYP3Jrxk_e/\nboram_flowerway · 팬 사진: https://
- www.instagram.com/boram_flowerway/p/DeXbCUIE3w1/\nhttps://seeya-fanpage.co
- m/archive/?record=20261009-boram-worldmom-yongin
+ www.instagram.com/boram_flowerway/p/DeXbCUIE3w1/\n제리제이 · 용인 
+ 세바여 공연 사진: https://www.instagram.com/_jerry.j_ramficial/p/De
+ jBY1-AbtG/\nhttps://seeya-fanpage.com/archive/?record=20261009-boram-world
+ mom-yongin
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  09-boram-worldmom-yongin
 END:VEVENT
@@ -8770,8 +8775,9 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n20
   https://www.youtube.com/watch?v=EzjCPFStVB4\n냥펀치: https://www.youtu
  be.com/watch?v=ctgMJa3S0g4\n스타로그 (STAR LOG): https://www.youtube.c
  om/watch?v=87QrseP-HYo\n🐿람보바라기: https://www.youtube.com/watch
- ?v=8hBRgjBr4zs\nhttps://seeya-fanpage.com/archive/?record=20261010-the-fan
- -cheongju
+ ?v=8hBRgjBr4zs\n제리제이 · 청주 콘서트 미워요 직캠: https:/
+ /www.instagram.com/_jerry.j_ramficial/reel/Ded4XyihVBO/\nhttps://seeya-fan
+ page.com/archive/?record=20261010-the-fan-cheongju
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  10-the-fan-cheongju
 END:VEVENT
@@ -8827,6 +8833,35 @@ DESCRIPTION:이보람\n21:00–23:00 · 방송 시간\n10월 14일 밤 9시
  n-dream-25
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  14-boram-btn-dream-25
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20261015-boram-vocational-rehab@seeya-fanpage.com
+DTSTAMP:20261015T150000Z
+LAST-MODIFIED:20261015T150000Z
+SEQUENCE:0
+DTSTART:20261015T043000Z
+DTEND:20261015T060000Z
+SUMMARY:이보람 · 제18회 장애인 직업재활의 날 기념식 축
+ 하공연
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:곤지암 도자공원 대공연장
+DESCRIPTION:이보람\n13:30–15:00\n10월 15일 경기 광주 곤지암 
+ 도자공원 대공연장에서 열린 기념식에 이보람이 축하 
+ 가수로 출연했습니다.\n행사는 11:00~15:00\, 축하공연 순서
+ 는 13:30~15:00로 안내됐으며 이보람의 개별 무대 시작 시
+ 각과는 구분합니다.\n이보람이 직접 남긴 공연 사진과 
+ 감사 인사도 함께 전해졌습니다.\n씨야 갤러리 · 이보람
+  공연 사진·공식 행사 포스터: https://gall.dcinside.com/mini/bo
+ ard/view/?id=seeya&no=9811\n부천시청 · 경기도 기념식 개최 보
+ 도자료: https://bucheon.go.kr/site/program/board/basicboard//view?board
+ typeid=27218&currentpage=1&encid=ICDTYrM8y3EtuUOME9Ed2A%3D%3D&menuid=14800
+ 2001002002&pagesize=10&searchcategory=%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C
+ \nhttps://seeya-fanpage.com/archive/?record=20261015-boram-vocational-reha
+ b
+URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
+ 15-boram-vocational-rehab
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261017-the-fan-suwon@seeya-fanpage.com

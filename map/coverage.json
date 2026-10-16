@@ -1,9 +1,9 @@
 {
   "summary": {
-    "records": 141,
-    "venues": 127,
-    "linked": 85,
-    "pending": 56,
+    "records": 143,
+    "venues": 129,
+    "linked": 86,
+    "pending": 57,
     "unreviewed": 0
   },
   "rows": [
@@ -1231,6 +1231,23 @@
       "placeIds": [],
       "status": "pending",
       "reason": "시설의 정확한 위치·주소를 추가 확인한 뒤 연결합니다."
+    },
+    {
+      "recordId": "20261016-yeonji-younghyun-ep08",
+      "title": "김연지 · 이영현의 강제 체념 EP.08",
+      "venue": "피지피지 PZPZ",
+      "placeIds": [
+        "pzpz-hongdae"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261015-boram-vocational-rehab",
+      "title": "이보람 · 제18회 장애인 직업재활의 날 기념식 축하공연",
+      "venue": "곤지암 도자공원 대공연장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "2026-10-15 이보람 행사 포스터로 경기 광주시 곤지암읍 경충대로 727 주소 확인. 공원 안 대공연장의 정확한 좌표 확인 후 연결."
     }
   ]
 }
