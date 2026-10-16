@@ -30,6 +30,10 @@ for(const changes of [{date:'2008-12-20'},{dateBasis:'broadcast'},{hidden:true},
  const edited={...original,...changes};assert.deepEqual(correctRecord(edited,correction,'2026-10-03'),edited,'Preserve manager changes and unrelated sources');
 }
 assert.throws(()=>correctRecord(original,{...correction,values:{id:'changed'}},'2026-10-03'),/Unsupported/);
+const hidePatch={sourceUrl:original.source.url,expected:{date:original.date},values:{hidden:true}};
+assert.equal(correctRecord(original,hidePatch,'2026-10-16').hidden,true);
+assert.equal(original.hidden,undefined,'Reviewed exclusion must not mutate the source');
+assert.deepEqual(correctRecord({...original,date:'2026-10-16'},hidePatch,'2026-10-16'),{...original,date:'2026-10-16'},'Do not hide a later manager correction');
 console.log('PASS: guarded broadcast-date correction, publication date preservation and repeat application.');
 const scheduled={id:'completed-review',title:'공연',eventState:'scheduled',calendar:{time:'18:00'},source:{url:'https://example.com/event'}};
 for(const [field,value] of [['eventState','completed'],['calendar',{time:'18:50'}]]){

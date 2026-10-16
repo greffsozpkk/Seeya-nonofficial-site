@@ -156,6 +156,10 @@ def classify(row):
     text = title + ' ' + desc
     members = [m for m in MEMBERS if m in text]
     group = '씨야' in text or bool(re.search(r'\bseeya\b', text, re.I))
+    # These titles identify comedian Yoo Sang-moo's spouse, not the SEEYA singer.
+    # Match the title, not generic channel descriptions mentioning other guests.
+    if not ('씨야' in title or re.search(r'\bseeya\b', title, re.I)) and '김연지' in title and '유상무' in title and re.search(r'아내|배우자|부인|주작녀', title):
+        return None
     if not group and not members:
         return None
     # A group mention does not establish individual attendance.

@@ -41,7 +41,7 @@ assert.equal(promoStatus(ohji,'2026-10-10T23:59:59+09:00'),'혜택 기간');
 assert.equal(promoStatus(ohji,'2026-10-11T01:00:01+09:00'),'혜택 종료');
 assert.equal(promoStatus(ohji,'2026-10-05T23:59:59+09:00'),'혜택 예정');
 assert(!detail(allRows.find(p=>p.id==='maboklim')).includes('20주년 콘서트 기록관'));
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'식당',region:'서울'}).length,8);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'식당',region:'서울'}).length,9);
 assert.equal(resolvePlaces(config,archive.filter(r=>r.id!=='v4145-NIeNbStvYa0')).find(p=>p.id==='maboklim').recordId,null);
 console.log('PASS: map preview isolation, verified places and seven tour venues, filters, clustering, escaping and library-failure fallback.');
 

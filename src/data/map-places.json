@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-10-14",
+  "checkedAt": "2026-10-16",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -3869,6 +3869,36 @@
         "episode": 25,
         "independentlyVerified": false
       }
+    },
+    {
+      "id": "pzpz-hongdae",
+      "name": "피지피지 PZPZ",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 마포구 와우산로17길 19-18 1층",
+      "coordinates": [
+        37.5495591,
+        126.9213204
+      ],
+      "category": "식당",
+      "members": [
+        "김연지"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-10-16",
+      "dateBasis": "영상 게시일",
+      "story": "김연지가 이영현·지세희와 함께 출연한 「이영현의 강제 체념」 8회 촬영 장소입니다.\n공식 영상 설명에 장소 제공 업체로 명시됐습니다.",
+      "source": {
+        "label": "이영현 공식 · 강제 체념 EP.08",
+        "url": "https://www.youtube.com/watch?v=eFMQ_UIEBc8"
+      },
+      "addressSource": "https://www.diningcode.com/profile.php?rid=q0WKOiafD9co",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=q0WKOiafD9co",
+      "recordId": "20261016-yeonji-younghyun-ep08",
+      "note": "날짜는 실제 방문일이 아닌 영상 공개일입니다."
     }
   ],
   "researchQueue": [
@@ -6118,6 +6148,11 @@
         "placeId": "misukine-unnam",
         "recordId": "20261014-boram-btn-dream-25",
         "status": "existing"
+      },
+      {
+        "placeId": "pzpz-hongdae",
+        "recordId": "20261016-yeonji-younghyun-ep08",
+        "status": "new"
       }
     ]
   }

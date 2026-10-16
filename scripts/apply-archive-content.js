@@ -31,7 +31,7 @@ function extend(row,links,note,checkedAt){
 // Later edits in the web manager must win over a cumulative update package.
 function correctRecord(row,correction,checkedAt){
  if(!correction||row.hidden||row.status==='hidden')return row;
- const allowed=new Set(['date','dateBasis','dateStatus','publishedDate','program','members','note','title','eventState','status','songs','tags','calendar','venue','source']);
+ const allowed=new Set(['date','dateBasis','dateStatus','publishedDate','program','members','note','title','eventState','status','songs','tags','calendar','venue','source','hidden']);
  if(!correction.sourceUrl||!sources(row).some(s=>sourceKey(s.url)===sourceKey(correction.sourceUrl)))return row;
  if(!Object.entries(correction.expected||{}).every(([key,value])=>JSON.stringify(row[key])===JSON.stringify(value)))return row;
  if(Object.keys(correction.values||{}).some(key=>!allowed.has(key)))throw new Error('Unsupported archive correction field');

@@ -63,6 +63,41 @@
   ],
   "posts": [
     {
+      "id": "DejBY1-AbtG",
+      "account": "_jerry.j_ramficial",
+      "postedOn": "2026-10-16",
+      "label": "이보람",
+      "kind": "post"
+    },
+    {
+      "id": "DegOPSgBBsB",
+      "account": "_jerry.j_ramficial",
+      "postedOn": "2026-10-15",
+      "label": "이보람",
+      "kind": "reel"
+    },
+    {
+      "id": "Ded4XyihVBO",
+      "account": "_jerry.j_ramficial",
+      "postedOn": "2026-10-14",
+      "label": "씨야",
+      "kind": "reel"
+    },
+    {
+      "id": "DedILCzjxoJ",
+      "account": "seeya_tree.weathered",
+      "postedOn": "2026-10-14",
+      "label": "씨야",
+      "kind": "post"
+    },
+    {
+      "id": "DedHnpBjzYh",
+      "account": "seeya_tree.weathered",
+      "postedOn": "2026-10-14",
+      "label": "씨야",
+      "kind": "post"
+    },
+    {
       "id": "Deb6Zpzmgfq",
       "account": "seeya_tree.weathered",
       "postedOn": "2026-10-13",

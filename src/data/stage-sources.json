@@ -1324,5 +1324,35 @@
     "scope": "single",
     "category": "concert",
     "basis": "2026-10-14 확인: 업로더가 명시한 청주 공연·곡명에 따라 10월 10일 공연에 연결. 팬 직캠이며 Shorts는 발췌로 구분."
+  },
+  {
+    "archiveId": "v481-archive-021",
+    "url": "https://www.youtube.com/watch?v=CgX2YsAG7ok",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-16 확인: 원본 제목·설명의 공연명과 곡명으로 연결. 무반주 신청곡·릴스는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261006-boram-dst-autumn",
+    "url": "https://www.youtube.com/watch?v=Q4XlRISs6SM",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-16 확인: 원본 제목·설명의 공연명과 곡명으로 연결. 무반주 신청곡·릴스는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261006-boram-dst-autumn",
+    "url": "https://www.youtube.com/watch?v=WFAnrHrLNxs",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-16 확인: 원본 제목·설명의 공연명과 곡명으로 연결. 무반주 신청곡·릴스는 발췌로 구분."
   }
 ]

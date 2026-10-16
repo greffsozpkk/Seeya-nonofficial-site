@@ -118,7 +118,8 @@
     "캔디드샷 커피앤브레드": "candydeshot-cafe-historic",
     "유하제과 압구정점": "yuha-apgujeong-historic",
     "미숙이네 생갈비": "misukine-unnam",
-    "미숙이네 운남동": "misukine-unnam"
+    "미숙이네 운남동": "misukine-unnam",
+    "피지피지 PZPZ": "pzpz-hongdae"
   },
   "records": {
     "20260829-the-fan-seoul": [
@@ -297,6 +298,9 @@
     ],
     "20261014-boram-btn-dream-25": [
       "misukine-unnam"
+    ],
+    "20261016-yeonji-younghyun-ep08": [
+      "pzpz-hongdae"
     ]
   }
 }

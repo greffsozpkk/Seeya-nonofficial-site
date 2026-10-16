@@ -3983,5 +3983,377 @@
         }
       }
     ]
+  },
+  {
+    "id": "archive-2026-10-16-activities",
+    "checkedAt": "2026-10-16",
+    "additions": [
+      {
+        "id": "20261016-yeonji-younghyun-ep08",
+        "date": "2026-10-16",
+        "addedAt": "2026-10-16",
+        "updatedAt": "2026-10-16",
+        "title": "김연지 · 이영현의 강제 체념 EP.08",
+        "program": "이영현의 강제 체념 EP.08",
+        "type": "variety",
+        "members": [
+          "김연지"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "이영현 공식 · 강제 체념 EP.08",
+          "url": "https://www.youtube.com/watch?v=eFMQ_UIEBc8",
+          "publishedDate": "2026-10-16"
+        },
+        "additionalSources": [
+          {
+            "label": "톱스타뉴스 · 김연지·지세희와 노래방 대결",
+            "url": "https://www.topstarnews.net/news/articleView.html?idxno=16248929",
+            "publishedDate": "2026-10-16"
+          }
+        ],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "video-published",
+        "publishedDate": "2026-10-16",
+        "tags": [
+          "2026"
+        ],
+        "note": "김연지가 이영현·지세희와 함께한 노래방 대결과 토크입니다.\n피지피지 PZPZ에서 피자를 먹으며 다이어트 이야기도 나눴습니다.\n날짜는 공식 영상 공개일이며 촬영일과는 구분합니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": false
+        },
+        "venue": "피지피지 PZPZ"
+      },
+      {
+        "id": "20261016-seeya-goods-meeting",
+        "date": "2026-10-16",
+        "addedAt": "2026-10-16",
+        "updatedAt": "2026-10-16",
+        "title": "씨야 · 씨야엔터 굿즈 아이템 회의",
+        "program": "(주)씨야엔터",
+        "type": "official",
+        "members": [
+          "남규리",
+          "김연지",
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "SEEYA Official · 굿즈 아이템 회의",
+          "url": "https://www.youtube.com/watch?v=rrMkSeKS4eM",
+          "publishedDate": "2026-10-16"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "video-published",
+        "publishedDate": "2026-10-16",
+        "tags": [
+          "2026"
+        ],
+        "note": "씨야 세 멤버가 굿즈 아이디어를 나누는 씨야엔터 회의 영상입니다.\n10월 16일 공식 채널에 공개됐습니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20261016-boram-paragames-cheer",
+        "date": "2026-10-16",
+        "addedAt": "2026-10-16",
+        "updatedAt": "2026-10-16",
+        "title": "이보람 · 아이치·나고야 아시안패러게임 대한민국 선수단 응원",
+        "program": "대한장애인체육회",
+        "type": "official",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "대한장애인체육회 공식 · 이보람 응원 영상",
+          "url": "https://www.instagram.com/p/DejYJPmGeVx/",
+          "publishedDate": "2026-10-16"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "publishedDate": "2026-10-16",
+        "tags": [
+          "2026"
+        ],
+        "note": "이보람이 2026 아이치·나고야 아시안패러게임에 출전하는 대한민국 선수단에 응원을 전했습니다.\n대한장애인체육회가 10월 16일 공개한 영상이며 현장 출연 일정은 아닙니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20261015-boram-vocational-rehab",
+        "date": "2026-10-15",
+        "addedAt": "2026-10-16",
+        "updatedAt": "2026-10-16",
+        "title": "이보람 · 제18회 장애인 직업재활의 날 기념식 축하공연",
+        "program": "제18회 장애인 직업재활의 날 기념식",
+        "type": "event",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "씨야 갤러리 · 이보람 공연 사진·공식 행사 포스터",
+          "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9811"
+        },
+        "additionalSources": [
+          {
+            "label": "부천시청 · 경기도 기념식 개최 보도자료",
+            "url": "https://bucheon.go.kr/site/program/board/basicboard//view?boardtypeid=27218&currentpage=1&encid=ICDTYrM8y3EtuUOME9Ed2A%3D%3D&menuid=148002001002002&pagesize=10&searchcategory=%EB%B3%B4%EB%8F%84%EC%9E%90%EB%A3%8C",
+            "publishedDate": "2026-10-16"
+          }
+        ],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "event",
+        "publishedDate": "2026-10-15",
+        "tags": [
+          "2026"
+        ],
+        "note": "10월 15일 경기 광주 곤지암 도자공원 대공연장에서 열린 기념식에 이보람이 축하 가수로 출연했습니다.\n행사는 11:00~15:00, 축하공연 순서는 13:30~15:00로 안내됐으며 이보람의 개별 무대 시작 시각과는 구분합니다.\n이보람이 직접 남긴 공연 사진과 감사 인사도 함께 전해졌습니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": true,
+          "time": "13:30",
+          "endTime": "15:00",
+          "timeNote": "축하공연 전체 시간 · 이보람 개별 시작 시각 아님"
+        },
+        "venue": "곤지암 도자공원 대공연장"
+      }
+    ],
+    "updates": [
+      {
+        "id": "20261011-gyuri-gyulmung66",
+        "sources": [
+          {
+            "label": "엑스포츠뉴스 · 남규리 귤멍 광주 여행 소개",
+            "url": "https://www.xportsnews.com/article/2208045",
+            "publishedDate": "2026-10-16"
+          }
+        ]
+      },
+      {
+        "id": "v481-archive-021",
+        "sources": [
+          {
+            "label": "부산MBC 뮤직월드 · 결혼할까요",
+            "url": "https://www.youtube.com/watch?v=CgX2YsAG7ok",
+            "publishedDate": "2020-02-22"
+          }
+        ]
+      },
+      {
+        "id": "20261009-boram-worldmom-yongin",
+        "sources": [
+          {
+            "label": "제리제이 · 용인 세바여 공연 사진",
+            "url": "https://www.instagram.com/_jerry.j_ramficial/p/DejBY1-AbtG/",
+            "publishedDate": "2026-10-16"
+          }
+        ]
+      },
+      {
+        "id": "20260912-the-fan-daegu",
+        "sources": [
+          {
+            "label": "제리제이 · 대구 콘서트 예술이야 직캠",
+            "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DegOPSgBBsB/",
+            "publishedDate": "2026-10-15"
+          }
+        ]
+      },
+      {
+        "id": "20261010-the-fan-cheongju",
+        "sources": [
+          {
+            "label": "제리제이 · 청주 콘서트 미워요 직캠",
+            "url": "https://www.instagram.com/_jerry.j_ramficial/reel/Ded4XyihVBO/",
+            "publishedDate": "2026-10-14"
+          }
+        ]
+      },
+      {
+        "id": "discovered-416e137c2d4c8c09",
+        "sources": [],
+        "correction": {
+          "sourceUrl": "https://www.youtube.com/watch?v=tAos5U-JK1A",
+          "expected": {
+            "title": "[라디오스타] 유상무보다 인기 많은 아내 '주작녀' 김연지!, MBC 200902 방송"
+          },
+          "values": {
+            "hidden": true,
+            "note": "동명이인 제외: 유상무의 배우자 김연지에 관한 영상으로 씨야 김연지의 활동이 아닙니다."
+          }
+        }
+      },
+      {
+        "id": "discovered-a613b5896c386169",
+        "sources": [],
+        "correction": {
+          "sourceUrl": "https://www.youtube.com/watch?v=_WIz8QI6f9k",
+          "expected": {
+            "title": "[라디오스타] 유상무의 아내 김연지의 특급 내조! 자면 死어요...ㅠ, MBC 200902 방송"
+          },
+          "values": {
+            "hidden": true,
+            "note": "동명이인 제외: 유상무의 배우자 김연지에 관한 영상으로 씨야 김연지의 활동이 아닙니다."
+          }
+        }
+      },
+      {
+        "id": "20261010-the-fan-cheongju",
+        "sources": [
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=ctgMJa3S0g4",
+            "publishedDate": "2026-10-13",
+            "autoDiscovery": true
+          },
+          {
+            "label": "스타로그 (STAR LOG)",
+            "url": "https://www.youtube.com/watch?v=87QrseP-HYo",
+            "publishedDate": "2026-10-15",
+            "autoDiscovery": true
+          },
+          {
+            "label": "🐿람보바라기",
+            "url": "https://www.youtube.com/watch?v=8hBRgjBr4zs",
+            "publishedDate": "2026-10-16",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "20261006-boram-dst-autumn",
+        "sources": [
+          {
+            "label": "땅콩크림샌드",
+            "url": "https://www.youtube.com/watch?v=taK4am0E9Sc",
+            "publishedDate": "2026-10-15",
+            "autoDiscovery": true
+          },
+          {
+            "label": "땅콩크림샌드",
+            "url": "https://www.youtube.com/watch?v=TMinURZOOXs",
+            "publishedDate": "2026-10-15",
+            "autoDiscovery": true
+          },
+          {
+            "label": "땅콩크림샌드",
+            "url": "https://www.youtube.com/watch?v=Q4XlRISs6SM",
+            "publishedDate": "2026-10-15",
+            "autoDiscovery": true
+          },
+          {
+            "label": "땅콩크림샌드",
+            "url": "https://www.youtube.com/watch?v=7HJQEQfu4dA",
+            "publishedDate": "2026-10-15",
+            "autoDiscovery": true
+          },
+          {
+            "label": "땅콩크림샌드",
+            "url": "https://www.youtube.com/watch?v=WFAnrHrLNxs",
+            "publishedDate": "2026-10-16",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "20260912-the-fan-daegu",
+        "sources": [
+          {
+            "label": "제리제이 Jerry.j",
+            "url": "https://www.youtube.com/watch?v=LcVp_vwJxOI",
+            "publishedDate": "2026-10-15",
+            "autoDiscovery": true
+          },
+          {
+            "label": "제리제이 Jerry.j",
+            "url": "https://www.youtube.com/watch?v=ciPXCrZylMM",
+            "publishedDate": "2026-10-15",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "20230916-boram-immortal-festival",
+        "sources": [
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=3dqRRUGPPLE",
+            "publishedDate": "2023-09-16",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v491-chin20221220",
+        "sources": [
+          {
+            "label": "문문문문",
+            "url": "https://www.youtube.com/watch?v=CqiB75vSTeE",
+            "publishedDate": "2022-12-21",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v491-misstrot-10",
+        "sources": [
+          {
+            "label": "TVCHOSUN JOY",
+            "url": "https://www.youtube.com/watch?v=GLU8prAKcxw",
+            "publishedDate": "2021-02-24",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v491-misstrot-8",
+        "sources": [
+          {
+            "label": "TVCHOSUN JOY",
+            "url": "https://www.youtube.com/watch?v=KxKQl8P7tLo",
+            "publishedDate": "2021-02-09",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v491-immortal-2020-03-28",
+        "sources": [
+          {
+            "label": "KBS Kpop",
+            "url": "https://www.youtube.com/watch?v=Ro5cJa_sfPY",
+            "publishedDate": "2020-03-28",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS Kpop",
+            "url": "https://www.youtube.com/watch?v=55EHoLMCMd8",
+            "publishedDate": "2020-03-28",
+            "autoDiscovery": true
+          }
+        ]
+      }
+    ]
   }
 ]

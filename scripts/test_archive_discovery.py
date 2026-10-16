@@ -23,6 +23,11 @@ def record(url='https://youtube.com/watch?v=abcdefghijk&t=4'):
 
 
 class DiscoveryTests(unittest.TestCase):
+    def test_known_homonym_spouse_is_not_seeya_member(self):
+        for title in ["[라디오스타] 유상무보다 인기 많은 아내 '주작녀' 김연지!", '유상무의 아내 김연지의 특급 내조']:
+            self.assertIsNone(d.classify(video(title=title)))
+        self.assertIsNotNone(d.classify(video(title='씨야 김연지, 이영현의 강제 체념 출연')))
+
     def test_video_url_variants_and_unsafe_urls(self):
         expected = 'https://www.youtube.com/watch?v=abcdefghijk'
         for url in ['https://youtu.be/abcdefghijk?si=xx', 'https://m.youtube.com/watch?v=abcdefghijk&t=2',
