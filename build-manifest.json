@@ -1,5 +1,5 @@
 {
-  "version": "5.24",
+  "version": "5.25",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -67,7 +67,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.5fb45f92ac01.js",
+    "assets/site.a2c21b103dba.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.ea047b1660bc.js",
@@ -82,7 +82,7 @@
     "assets/radio.608ef52b6a3a.css",
     "assets/radio.b9e26a2c9765.js",
     "assets/seeya-map.f13e9e87c70a.css",
-    "assets/seeya-map.02c92be50225.js",
+    "assets/seeya-map.eb0574968b65.js",
     "assets/GowunDodum-Regular.385f1f238065.woff2",
     "assets/GowunBatang-Regular.d66f8f3914dc.woff2",
     "assets/NanumPenScript-Regular.d083eb8197a2.woff2",
