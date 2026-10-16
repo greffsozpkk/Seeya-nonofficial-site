@@ -1,8 +1,8 @@
 'use strict';
-const {placeIdsForRecord}=require('./map-archive');
+const {venuePlaceIdForRecord}=require('./map-archive');
 module.exports=function buildPassportCatalog(archive,calendar,places,collection,asOf){
  const members=rows=>['남규리','김연지','이보람'].every(m=>rows.includes(m))?['seeya']:rows.map(m=>({'남규리':'gyuri','김연지':'yeonji','이보람':'boram'}[m])).filter(Boolean);
- const placeId=r=>placeIdsForRecord(r||{}).find(id=>places.some(p=>p.id===id))||'';
+ const placeId=r=>{const id=venuePlaceIdForRecord(r);return places.some(p=>p.id===id)?id:'';};
  const events=calendar.filter(e=>e.state!=='cancelled').map(e=>({id:e.id,type:e.type,title:e.title,date:e.date,endDate:e.endDate||e.date,rangeEndDate:e.endDate||e.date,annual:!!e.annual,time:e.time,venue:e.venue,members:members(e.members),archiveId:e.recordIds[0]||'',placeId:placeId(archive.find(r=>r.id===e.recordIds[0])),calendar:true}));
  const tour=[];
  for(const item of collection.events){

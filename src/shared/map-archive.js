@@ -2,6 +2,11 @@
 const registry=require('../data/map-archive-links.json');
 const normalizeVenue=value=>String(value||'').normalize('NFKC').replace(/\s+/g,' ').trim();
 const venues=new Map(Object.entries(registry.venues).map(([name,id])=>[normalizeVenue(name),id]));
+// A related recommendation or concert benefit is not the activity's venue.
+function venuePlaceIdForRecord(row){
+ if(!row||row.hidden||row.mergedInto)return '';
+ return venues.get(normalizeVenue(row.venue))||'';
+}
 function placeIdsForRecord(row){
  if(!row||row.hidden||row.mergedInto)return [];
  return [...new Set([...(registry.records[row.id]||[]),venues.get(normalizeVenue(row.venue))].filter(Boolean))];
@@ -25,4 +30,4 @@ function coverage(archive,places,pending){
  }
  return {summary:{records:rows.length,venues:new Set(rows.map(r=>normalizeVenue(r.venue))).size,linked:rows.filter(r=>r.status==='linked').length,pending:rows.filter(r=>r.status==='pending').length,unreviewed:rows.filter(r=>r.status==='unreviewed').length},rows};
 }
-module.exports={normalizeVenue,placeIdsForRecord,recordsByPlace,coverage};
+module.exports={normalizeVenue,venuePlaceIdForRecord,placeIdsForRecord,recordsByPlace,coverage};

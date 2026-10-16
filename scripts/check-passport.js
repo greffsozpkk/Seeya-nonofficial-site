@@ -48,6 +48,17 @@ assert(!read('src/pages/passport.js').includes('href="#'));assert(!read('src/cli
 assert(read('passport/index.html').includes('/diary/'));
 const build=JSON.parse(read('build-manifest.json'));for(const file of build.files.filter(p=>p.endsWith('.html')&&!['passport/test/index.html','calendar/index.html'].includes(p)))assert(!/href="[^"]*\/passport\//.test(read(file)),file+' exposes passport');
 for(const city of ['서울','부산']){const t=catalog.tour.find(t=>t.label===city),e=catalog.events.find(e=>e.id===t.eventId);assert(e);assert(e.archiveId);}
+// Recommendations remain visit choices, but must never become a radio's venue.
+const buildCatalog=require('../src/shared/passport-catalog'),mapJoin=require('../src/shared/map-archive');
+const radioRecord={id:'20261014-boram-btn-dream-25',venue:'',members:['이보람']};
+assert(mapJoin.placeIdsForRecord(radioRecord).includes('misukine-unnam'));
+const placeFixtures=[{id:'misukine-unnam',name:'미숙이네',members:['이보람']},{id:'khu-grand-peace-palace',name:'경희대학교 평화의전당',members:[]}];
+const calendarFixture={id:'radio-fixture',date:'2026-10-14',type:'broadcast',members:['이보람'],recordIds:[radioRecord.id],venue:''};
+const c=buildCatalog([radioRecord],[calendarFixture],placeFixtures,{events:[]},'2026-10-17');
+assert.equal(c.events[0].placeId,'');assert(c.places.some(p=>p.id==='misukine-unnam'));
+const actualVenue={...radioRecord,venue:'경희대학교 평화의전당'};
+assert.equal(buildCatalog([actualVenue],[calendarFixture],placeFixtures,{events:[]},'2026-10-17').events[0].placeId,'khu-grand-peace-palace','Explicit venue wins over related recommendation');
+assert.equal(mapJoin.venuePlaceIdForRecord({...actualVenue,hidden:true}),'');
 const seoul=catalog.tour.filter(t=>t.label==='서울');assert.deepEqual(seoul.map(t=>t.date),['2026-08-29','2026-08-30']);
 assert.equal(new Set(seoul.map(t=>t.eventId)).size,2);
 assert.equal(new Set(catalog.events.map(e=>e.id)).size,catalog.events.length);
