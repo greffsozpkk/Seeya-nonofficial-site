@@ -747,9 +747,21 @@
         "url": "https://www.youtube.com/watch?v=ctgMJa3S0g4",
         "publishedDate": "2026-10-13",
         "autoDiscovery": true
+      },
+      {
+        "label": "스타로그 (STAR LOG)",
+        "url": "https://www.youtube.com/watch?v=87QrseP-HYo",
+        "publishedDate": "2026-10-15",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=8hBRgjBr4zs",
+        "publishedDate": "2026-10-16",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-15T04:59:03.515232+00:00",
+    "updatedAt": "2026-10-16T04:48:49.690208+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -765,7 +777,7 @@
     "id": "20261006-boram-dst-autumn",
     "date": "2026-10-06",
     "addedAt": "2026-09-29",
-    "updatedAt": "2026-10-15T04:59:03.515232+00:00",
+    "updatedAt": "2026-10-16T04:48:49.690208+00:00",
     "title": "이보람 · 대전과학기술대학교 제8회 가을문화제",
     "program": "대전과학기술대학교 제8회 가을문화제",
     "type": "event",
@@ -865,6 +877,30 @@
         "label": "땅콩크림샌드",
         "url": "https://www.youtube.com/watch?v=taK4am0E9Sc",
         "publishedDate": "2026-10-15",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=TMinURZOOXs",
+        "publishedDate": "2026-10-15",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=Q4XlRISs6SM",
+        "publishedDate": "2026-10-15",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=7HJQEQfu4dA",
+        "publishedDate": "2026-10-15",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=WFAnrHrLNxs",
+        "publishedDate": "2026-10-16",
         "autoDiscovery": true
       }
     ],
@@ -3772,11 +3808,17 @@
         "url": "https://www.youtube.com/watch?v=LcVp_vwJxOI",
         "publishedDate": "2026-10-15",
         "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=ciPXCrZylMM",
+        "publishedDate": "2026-10-15",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-10-15T04:59:03.515232+00:00"
+    "updatedAt": "2026-10-16T04:48:49.690208+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -16326,6 +16368,12 @@
         "url": "https://www.youtube.com/watch?v=4TpOnKOggxM",
         "publishedDate": "2023-09-16",
         "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=3dqRRUGPPLE",
+        "publishedDate": "2023-09-16",
+        "autoDiscovery": true
       }
     ],
     "note": "‘기억의 노래’ 특집에서 백예빈과 함께 엄정화의 ‘Festival’을 부른 무대입니다.",
@@ -16341,7 +16389,7 @@
     "thumbnail": "",
     "status": "available",
     "dateStatus": "confirmed",
-    "updatedAt": "2026-10-03T05:34:49.303819+00:00"
+    "updatedAt": "2026-10-16T04:48:49.690208+00:00"
   },
   {
     "id": "v491-sunset2023",
@@ -18031,7 +18079,14 @@
       "label": "Mhz 므흐즈: MBC RADIO",
       "url": "https://www.youtube.com/watch?v=e_YRJcWw8no"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "문문문문",
+        "url": "https://www.youtube.com/watch?v=CqiB75vSTeE",
+        "publishedDate": "2022-12-21",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -18039,7 +18094,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-16T04:48:49.690208+00:00"
   },
   {
     "id": "v491-album-4082402",
@@ -21785,6 +21841,12 @@
       {
         "label": "미스&미스터트롯",
         "url": "https://www.youtube.com/watch?v=agF9scgEA5E"
+      },
+      {
+        "label": "TVCHOSUN JOY",
+        "url": "https://www.youtube.com/watch?v=GLU8prAKcxw",
+        "publishedDate": "2021-02-24",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -21794,7 +21856,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-16T04:48:49.690208+00:00"
   },
   {
     "id": "v4145-wKsaKuZebsM",
@@ -21942,7 +22005,14 @@
       "label": "미스&미스터트롯",
       "url": "https://www.youtube.com/watch?v=JdrpcI95Wpk"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "TVCHOSUN JOY",
+        "url": "https://www.youtube.com/watch?v=KxKQl8P7tLo",
+        "publishedDate": "2021-02-09",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -21950,7 +22020,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-16T04:48:49.690208+00:00"
   },
   {
     "id": "v4145-A7x52bJ6nRQ",
