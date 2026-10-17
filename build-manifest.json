@@ -1,5 +1,5 @@
 {
-  "version": "5.25",
+  "version": "5.26",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -57,6 +57,7 @@
     "map/index.html",
     "passport/test/index.html",
     "diary/index.html",
+    "diary/privacy/index.html",
     "sitemap.xml",
     "manifest.webmanifest",
     "sw.js"
@@ -67,7 +68,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.2ea7eb69b93c.js",
+    "assets/site.07b3df54a2f6.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.ea047b1660bc.js",
@@ -86,9 +87,9 @@
     "assets/GowunDodum-Regular.385f1f238065.woff2",
     "assets/GowunBatang-Regular.d66f8f3914dc.woff2",
     "assets/NanumPenScript-Regular.d083eb8197a2.woff2",
-    "assets/passport.02dfea7478a5.css",
-    "assets/passport.6778037ba40a.js",
-    "assets/diary.7facf7a63b29.js",
+    "assets/passport.986e895a55c7.css",
+    "assets/passport.9821d93a7d94.js",
+    "assets/diary.1818dd06da72.js",
     "assets/archive-admin.fac431dec039.css",
     "assets/archive-admin.e382e083ae26.js"
   ],
