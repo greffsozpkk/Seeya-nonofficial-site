@@ -1,3 +1,31 @@
+# SEEYA ARCHIVE v5.26 — 개인 Google Drive 백업
+
+**누적 업데이트:** `SEEYA_v5_26_DIARY_DRIVE_UPLOAD.zip`. 기존 폴더에 덮어쓰는 업데이트입니다. 전체 ZIP은 백업용입니다. 아직 Google 클라이언트 ID가 없어 실제 계정 연결은 준비 중 상태로 제공됩니다.
+
+- 다이어리 백업·복원에 선택형 Google Drive 연결, 날짜별 새 백업 저장, 최신순 백업 목록(20개씩 더 보기), 복원 전 확인을 추가했습니다. 현재 기록 유지/같은 ID 교체/프로필 가져오기는 기존 파일 복원과 같은 경로를 사용합니다.
+- 기본 설정은 클라이언트 ID가 비어 있어 ‘연결 준비 중’으로 표시합니다. 운영자가 아래 설정을 마칠 때까지 Google 요청을 보내지 않습니다. 일반 다이어리와 JSON 파일 백업·복원은 계속 사용할 수 있습니다.
+- 수동 백업만 제공합니다. 자동 저장은 기존처럼 브라우저에만 수행하고, Drive 백업은 ‘지금 백업’을 누를 때만 실행합니다. 자동 동기화·스프레드시트 내보내기는 이번 범위에 포함하지 않습니다.
+- 각 백업은 독립된 새 파일로 생성합니다. 기존 Drive 백업을 덮어쓰거나 자동 삭제하지 않고, 업로드 후 다시 읽어 내용을 검증한 뒤 성공 시각을 표시합니다. 사진·이미지 편집 초안은 포함하지 않습니다.
+- 토큰과 연결 계정은 페이지 메모리에만 두며 새로고침 후 재연결이 필요합니다. Drive 요청은 서비스 워커에 캐시하지 않습니다. 접근 거절·팝업 차단·연결 만료·용량 부족·오프라인·잘못된 백업을 안내하며 복원 확인 전에는 기존 기록을 바꾸지 않습니다.
+- `/diary/privacy/`에 실제 처리 흐름에 맞춘 개인정보 안내를 추가했습니다. 선택 연결 시 개인 메모 등 전체 기록이 본인 Drive로 전송된다는 내용을 백업 화면에도 명시합니다.
+- 검증은 로컬 로직 및 Google 응답을 대체한 임시 브라우저 테스트입니다. 실제 OAuth 계정 연결·실제 Drive 업로드·Galaxy/iPhone 설치 PWA 팝업은 클라이언트 ID 발급 후 확인해야 합니다.
+- v5.25 및 이전 누적 업데이트를 포함하며 기존 개인 기록의 저장 키는 변경하지 않습니다.
+
+### 운영자: Google 연결 설정 (최초 1회)
+
+1. [Google Cloud Console](https://console.cloud.google.com/)에서 프로젝트를 선택하거나 만듭니다. API 및 서비스의 라이브러리에서 **Google Drive API**를 사용 설정합니다. YouTube API 키는 이 기능에 사용하지 않습니다.
+2. **Google Auth Platform**의 브랜딩에 앱 이름 `SEEYA Diary`, 지원 이메일, 개발자 연락처를 입력합니다. 홈페이지는 `https://seeya-fanpage.com/diary/`, 개인정보처리방침은 `https://seeya-fanpage.com/diary/privacy/`, 승인된 도메인은 `seeya-fanpage.com`으로 등록합니다. 이 페이지들이 실제 배포된 뒤 접근되는지 확인합니다. Google이 도메인 소유 확인 등을 요구하면 해당 절차를 진행합니다.
+3. 대상은 **외부**, 처음에는 **테스트**로 두고 본인 구글 계정을 테스트 사용자로 추가합니다. 데이터 액세스에는 `https://www.googleapis.com/auth/drive.file`만 추가합니다. 전체 Drive 접근 권한이나 Sheets 권한은 필요하지 않습니다.
+4. 클라이언트에서 **웹 애플리케이션**을 만듭니다. 승인된 JavaScript 원본에 `https://seeya-fanpage.com`을 추가합니다. 로컬 테스트는 `http://localhost`와 실제 미리보기 포트(예: `http://localhost:8196`)를 추가하고 해당 localhost 주소로 접속합니다. 경로 `/diary/`는 원본 칸에 붙이지 않습니다. 팝업 토큰 방식이므로 이 기능을 위해 리디렉션 URI나 클라이언트 보안 비밀을 코드에 넣지 않습니다.
+5. 발급한 `...apps.googleusercontent.com` 형식의 **클라이언트 ID**를 `src/data/diary-drive.json`의 `clientId` 값에 넣고 빌드·배포합니다. API 키, 액세스 토큰, 클라이언트 보안 비밀을 넣지 마세요. 클라이언트 ID는 공개 설정값입니다. 최초 로컬 화면 점검은 `serve-local.bat`으로도 가능합니다.
+6. 다이어리 → 백업·복원 → Google Drive 연결 → Google 계정 선택 → ‘지금 백업’을 누릅니다. 내 Drive의 파일 생성과 백업 목록을 확인합니다. 다른 브라우저에서 같은 계정으로 연결하여 **내용 확인 → 가져오기**까지 확인하고, 기존 기록 유지/교체가 의도대로인지 점검합니다. 원래 기록은 미리 파일로 백업해 두세요.
+7. 실제 Galaxy S25 Ultra 설치 PWA, 삼성 인터넷, 일반 Chrome, 가능하면 iPhone에서 연결 팝업·복귀·백업·복원을 확인합니다. 다른 브라우저로 열면 원래 브라우저의 기록은 자동으로 옮겨지지 않습니다. 그 경우 원래 브라우저에서 JSON을 내려받고 새 브라우저에서 가져와야 합니다.
+8. 일반 팬에게 공개하려면 OAuth 대상을 **프로덕션**으로 전환하고 Google이 표시하는 브랜딩·검증 요건을 완료합니다. 테스트 상태에서는 등록한 테스트 사용자로 검증하세요. 공개가 자동 승인된다고 가정하거나 경고를 무시하도록 안내하지 않습니다.
+
+실패 안내: 팝업 차단은 해당 사이트 팝업을 허용하고 다시 ‘Google 계정 선택’을 누릅니다. origin mismatch는 위의 승인 원본과 실제 주소/포트를 확인합니다. 접근 거부는 테스트 사용자 등록·Drive API 사용 설정·drive.file 동의를 확인합니다. 탭을 새로 열거나 토큰이 만료되면 다시 연결합니다. 백업이 커서 오래 걸릴 때는 창을 닫지 말고 완료 메시지를 기다립니다. 중간 실패가 나면 백업 목록을 먼저 확인하세요(새 파일이 남아 있을 수 있습니다).
+
+참고: [Google 토큰 방식](https://developers.google.com/identity/oauth2/web/guides/use-token-model), [클라이언트 ID 설정](https://developers.google.com/identity/oauth2/web/guides/get-google-api-clientid), [Drive 최소 권한](https://developers.google.com/workspace/drive/api/guides/api-specific-auth), [파일 업로드](https://developers.google.com/workspace/drive/api/guides/manage-uploads).
+
 # SEEYA ARCHIVE v5.25 — 다이어리 배포 전 점검
 
 **누적 업데이트:** `SEEYA_v5_25_DIARY_REVIEW_UPLOAD.zip`. GitHub Desktop에서 Pull 후 기존 폴더에 덮어쓰고 Commit → Push하세요. 운영 아카이브와 개인 기록을 덮어쓰지 않습니다. 전체 ZIP은 백업용입니다.
