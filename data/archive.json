@@ -764,9 +764,15 @@
         "label": "제리제이 · 청주 콘서트 미워요 직캠",
         "url": "https://www.instagram.com/_jerry.j_ramficial/reel/Ded4XyihVBO/",
         "publishedDate": "2026-10-14"
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=Lr_qEdclB44",
+        "publishedDate": "2026-10-16",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-16T04:48:49.690208+00:00",
+    "updatedAt": "2026-10-17T04:48:42.076832+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -782,7 +788,7 @@
     "id": "20261006-boram-dst-autumn",
     "date": "2026-10-06",
     "addedAt": "2026-09-29",
-    "updatedAt": "2026-10-16T04:48:49.690208+00:00",
+    "updatedAt": "2026-10-17T04:48:42.076832+00:00",
     "title": "이보람 · 대전과학기술대학교 제8회 가을문화제",
     "program": "대전과학기술대학교 제8회 가을문화제",
     "type": "event",
@@ -906,6 +912,30 @@
         "label": "땅콩크림샌드",
         "url": "https://www.youtube.com/watch?v=WFAnrHrLNxs",
         "publishedDate": "2026-10-16",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=0jruBsP9xv8",
+        "publishedDate": "2026-10-16",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=qsrzyTd9wEY",
+        "publishedDate": "2026-10-16",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=JcGpWEoxB3o",
+        "publishedDate": "2026-10-16",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=p2rJ-N3xY68",
+        "publishedDate": "2026-10-17",
         "autoDiscovery": true
       }
     ],
@@ -1334,9 +1364,27 @@
         "label": "nam_hee0928 · 팬 영상",
         "url": "https://www.instagram.com/nam_hee0928/reel/DeZBgmKygun/",
         "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=sZO7JMjLBAg",
+        "publishedDate": "2026-10-16",
+        "autoDiscovery": true
+      },
+      {
+        "label": "꽁",
+        "url": "https://www.youtube.com/watch?v=NhhCsYpgcPE",
+        "publishedDate": "2026-10-16",
+        "autoDiscovery": true
+      },
+      {
+        "label": "꽁",
+        "url": "https://www.youtube.com/watch?v=B7if_QRi4qo",
+        "publishedDate": "2026-10-16",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-13T06:58:02.195722+00:00",
+    "updatedAt": "2026-10-17T04:48:42.076832+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -18778,6 +18826,12 @@
         "label": "KBS 레전드 케이팝 · 이보람의 꿀 보이스🍯 ♬SEE YA 명곡 메들리♬ 찬또의 학창 시절 추억 소환 [불후의 명곡2 전설을 노래하다/Immortal Songs 2] | KBS 220917 방송",
         "url": "https://www.youtube.com/watch?v=Cnfo5rtSZRs",
         "publishedDate": "2022-09-17"
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=QHHXUxONvN4",
+        "publishedDate": "2022-09-17",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -18788,7 +18842,7 @@
     "note": "날짜는 공식 방송 음반 공개일입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "release",
-    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
+    "updatedAt": "2026-10-17T04:48:42.076832+00:00"
   },
   {
     "id": "v4145-2ShLQvkT9QI",
@@ -19450,6 +19504,12 @@
         "label": "엠뚜루마뚜루 : MBC 공식 종합 채널 · 그그그 노래 이보람 완전 찰떡 [댓모아]",
         "url": "https://www.youtube.com/watch?v=ltGhtBfnaEY",
         "publishedDate": "2022-07-03"
+      },
+      {
+        "label": "MBCentertainment",
+        "url": "https://www.youtube.com/watch?v=9AKCXtyqG6k",
+        "publishedDate": "2022-06-25",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -19460,7 +19520,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-02T15:13:54.381451+00:00"
+    "updatedAt": "2026-10-17T04:48:42.076832+00:00"
   },
   {
     "id": "v491-hangout-2022-06-18",
