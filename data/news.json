@@ -147,13 +147,13 @@
       "description": "이보람, ‘식스 더 뮤지컬’ 시모어로 무대 귀환 예고 TopStarNews"
     }
   ],
-  "updatedAt": "2026-10-19T04:45:07.853911+00:00",
-  "lastCheckedAt": "2026-10-19T04:45:07.853911+00:00",
+  "updatedAt": "2026-10-19T05:06:48.672404+00:00",
+  "lastCheckedAt": "2026-10-19T05:06:48.672404+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-19T04:45:07.853911+00:00",
-    "남규리": "2026-10-19T04:45:07.853911+00:00",
-    "김연지": "2026-10-19T04:45:07.853911+00:00",
-    "이보람": "2026-10-19T04:45:07.853911+00:00"
+    "씨야": "2026-10-19T05:06:48.672404+00:00",
+    "남규리": "2026-10-19T05:06:48.672404+00:00",
+    "김연지": "2026-10-19T05:06:48.672404+00:00",
+    "이보람": "2026-10-19T05:06:48.672404+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-19T04:45:07.853911+00:00",
@@ -165,23 +165,23 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 205,
-      "changed": true,
-      "status": "changed"
+      "accepted": 206,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
       "accepted": 133,
-      "changed": true,
-      "status": "changed"
+      "changed": false,
+      "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
       "accepted": 52,
-      "changed": true,
-      "status": "changed"
+      "changed": false,
+      "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
