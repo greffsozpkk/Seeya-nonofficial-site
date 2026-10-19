@@ -381,9 +381,51 @@
         "url": "https://www.youtube.com/watch?v=JOdr1ypwmek",
         "publishedDate": "2026-10-18",
         "autoDiscovery": true
+      },
+      {
+        "label": "SPONG",
+        "url": "https://www.youtube.com/watch?v=inAMWuQS8rk",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=06ofHdA-U6E",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=Qc7hlPC80RU",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
+      },
+      {
+        "label": "감미로운 음악생활",
+        "url": "https://www.youtube.com/watch?v=rk5evS_Kilg",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
+      },
+      {
+        "label": "SPONG",
+        "url": "https://www.youtube.com/watch?v=xb6SGynqSUA",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=UfD9EWx8TI0",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=kufyJlfMh6s",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-18T04:54:39.465115+00:00",
+    "updatedAt": "2026-10-19T05:03:33.907832+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -908,9 +950,27 @@
         "url": "https://www.youtube.com/watch?v=wRp35DfFkCs",
         "publishedDate": "2026-10-17",
         "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=GioiM_psLbo",
+        "publishedDate": "2026-10-11",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=7-oz7LC3gPc",
+        "publishedDate": "2026-10-11",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=IxN5j3bz2ZY",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-18T04:54:39.465115+00:00",
+    "updatedAt": "2026-10-19T05:03:33.907832+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -4022,11 +4082,17 @@
         "url": "https://www.youtube.com/watch?v=S6c5xXQzJ1M",
         "publishedDate": "2026-10-10",
         "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=s2fYSUKJ4bk",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-10-18T04:54:39.465115+00:00"
+    "updatedAt": "2026-10-19T05:03:33.907832+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -14384,7 +14450,26 @@
       "label": "KBS 레전드 케이팝",
       "url": "https://www.youtube.com/watch?v=6_aYTp7ykHw"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=JpAV59AQs3Q",
+        "publishedDate": "2024-12-14",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=X6-4mdSYe18",
+        "publishedDate": "2024-12-14",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=l17KybBPEEE",
+        "publishedDate": "2024-12-14",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -14392,7 +14477,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-19T05:03:33.907832+00:00"
   },
   {
     "id": "v491-kia2024",
@@ -15202,6 +15288,36 @@
       {
         "label": "KBS 레전드 케이팝",
         "url": "https://www.youtube.com/watch?v=-p00sDPOtec"
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=k2E5lXWoY7E",
+        "publishedDate": "2024-06-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=0c9l0Re6ogU",
+        "publishedDate": "2024-06-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=qvVa-pZ1Dd0",
+        "publishedDate": "2024-06-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=GXv_HN7eO14",
+        "publishedDate": "2024-06-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 한국방송",
+        "url": "https://www.youtube.com/watch?v=747lUXrgGE0",
+        "publishedDate": "2024-06-02",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -15211,7 +15327,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-19T05:03:33.907832+00:00"
   },
   {
     "id": "v491-album-20645846",
@@ -15557,6 +15674,24 @@
       {
         "label": "제발 · KBS 공식 세로 직캠",
         "url": "https://www.youtube.com/watch?v=c7mIr8vp1ss"
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=vyayQhoq7Fo",
+        "publishedDate": "2024-04-13",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=rv513Ok-wmI",
+        "publishedDate": "2024-04-13",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=AkV9PIPxAKE",
+        "publishedDate": "2024-04-13",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -15566,7 +15701,8 @@
     ],
     "note": "",
     "dateBasis": "broadcast",
-    "publishedDate": "2024-04-13"
+    "publishedDate": "2024-04-13",
+    "updatedAt": "2026-10-19T05:03:33.907832+00:00"
   },
   {
     "id": "v491-bom",
@@ -15996,6 +16132,30 @@
         "url": "https://www.youtube.com/watch?v=hkVhAN8QUCk",
         "publishedDate": "2024-02-06",
         "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=NvAT9VTdDrY",
+        "publishedDate": "2024-02-03",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=LgJ62cszLXI",
+        "publishedDate": "2024-02-03",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=tN4mu6mdqEA",
+        "publishedDate": "2024-02-03",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=qjL5hdpwsAs",
+        "publishedDate": "2024-02-03",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -16006,7 +16166,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-18T04:54:39.465115+00:00"
+    "updatedAt": "2026-10-19T05:03:33.907832+00:00"
   },
   {
     "id": "v491-medium",
