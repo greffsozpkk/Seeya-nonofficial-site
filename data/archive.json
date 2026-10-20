@@ -423,9 +423,21 @@
         "url": "https://www.youtube.com/watch?v=kufyJlfMh6s",
         "publishedDate": "2026-10-18",
         "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=OYjti_l7kwI",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=Xot4oU8Tmfk",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-19T05:03:33.907832+00:00",
+    "updatedAt": "2026-10-20T05:06:03.025921+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -968,9 +980,15 @@
         "url": "https://www.youtube.com/watch?v=IxN5j3bz2ZY",
         "publishedDate": "2026-10-18",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=Smc33jetdsE",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-19T05:03:33.907832+00:00",
+    "updatedAt": "2026-10-20T05:06:03.025921+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1586,9 +1604,15 @@
         "url": "https://www.youtube.com/watch?v=Mvo6n7xxJ6A",
         "publishedDate": "2026-10-17",
         "autoDiscovery": true
+      },
+      {
+        "label": "안졍을줄게",
+        "url": "https://www.youtube.com/watch?v=TylOxk36V7Y",
+        "publishedDate": "2026-10-20",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-18T04:54:39.465115+00:00",
+    "updatedAt": "2026-10-20T05:06:03.025921+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -4088,11 +4112,17 @@
         "url": "https://www.youtube.com/watch?v=s2fYSUKJ4bk",
         "publishedDate": "2026-10-19",
         "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=zWoqQzY24Ds",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-10-19T05:03:33.907832+00:00"
+    "updatedAt": "2026-10-20T05:06:03.025921+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -48349,7 +48379,7 @@
     "id": "20261019-seeya-immortal-wax-recording",
     "date": "2026-10-19",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-08",
+    "updatedAt": "2026-10-20T05:06:03.025921+00:00",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화 예정",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -48370,6 +48400,24 @@
         "label": "아이즈 · 왁스 편 씨야 출연 보도",
         "url": "https://www.mt.co.kr/entertainment/2026/10/08/2026100817567268294",
         "publishedDate": "2026-10-08"
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=NWDbTeT_wUU",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
+      },
+      {
+        "label": "꽁",
+        "url": "https://www.youtube.com/watch?v=PnZ_8PEbcRs",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
+      },
+      {
+        "label": "출구없는남규리(aka.출남)",
+        "url": "https://www.youtube.com/watch?v=zi8vGHGwkEk",
+        "publishedDate": "2026-10-20",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
