@@ -147,13 +147,13 @@
       "description": "씨야 이보람, 반짝 헤어핀 스타일링…전국투어 고양 공연 대기실 셀카 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-10-20T04:54:31.880765+00:00",
-  "lastCheckedAt": "2026-10-20T04:54:31.880765+00:00",
+  "updatedAt": "2026-10-20T05:09:28.119415+00:00",
+  "lastCheckedAt": "2026-10-20T05:09:28.119415+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-20T04:54:31.880765+00:00",
-    "남규리": "2026-10-20T04:54:31.880765+00:00",
-    "김연지": "2026-10-20T04:54:31.880765+00:00",
-    "이보람": "2026-10-20T04:54:31.880765+00:00"
+    "씨야": "2026-10-20T05:09:28.119415+00:00",
+    "남규리": "2026-10-20T05:09:28.119415+00:00",
+    "김연지": "2026-10-20T05:09:28.119415+00:00",
+    "이보람": "2026-10-20T05:09:28.119415+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-20T04:54:31.880765+00:00",
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 204,
-      "changed": true,
-      "status": "changed"
+      "accepted": 201,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 140,
-      "changed": true,
-      "status": "changed"
+      "accepted": 138,
+      "changed": false,
+      "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 54,
-      "changed": true,
-      "status": "changed"
+      "accepted": 52,
+      "changed": false,
+      "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 101,
+      "accepted": 99,
       "changed": false,
       "status": "unchanged"
     }
