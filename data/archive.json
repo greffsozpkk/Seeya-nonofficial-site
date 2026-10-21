@@ -49463,7 +49463,7 @@
     "additionalSources": [],
     "status": "documented",
     "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateBasis": "release",
     "publishedDate": "2026-10-21",
     "tags": [
       "2026",
@@ -49474,8 +49474,9 @@
     "eventState": "scheduled",
     "calendar": {
       "enabled": true,
+      "type": "release",
       "time": "20:00",
-      "timeLabel": "공개 예정"
+      "timeLabel": "영상 최초 공개"
     }
   },
   {
@@ -49497,7 +49498,12 @@
       "url": "https://www.youtube.com/watch?v=5CrYKZx8ZJE",
       "publishedDate": "2026-10-20"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "BTN 공식 · 10월 21일 라디오 편성표",
+        "url": "https://m.btn.co.kr/btn/schedule/radio01.html?nDay=21&nMonth=10&nYear=2026"
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
@@ -49507,12 +49513,13 @@
       "BTN라디오 · 한밤의 꿈 이보람입니다",
       "예정"
     ],
-    "note": "10월 21일 오후 9시 BTN라디오 공식 채널에서 공개되는 보이는 라디오 26회입니다.\n최초 공개 대기 페이지로 연결됩니다.",
+    "note": "10월 21일 오후 9시부터 11시까지 방송되는 「한밤의 꿈 이보람입니다」 26회입니다.\n녹화된 보이는 라디오를 BTN라디오 공식 YouTube 채널에서 최초 공개합니다.",
     "eventState": "scheduled",
     "calendar": {
       "enabled": true,
       "time": "21:00",
-      "timeLabel": "방송 시작"
+      "endTime": "23:00",
+      "timeLabel": "녹화방송 · 최초 공개"
     }
   },
   {
@@ -49734,5 +49741,81 @@
       "endTime": "20:30"
     },
     "venue": "광주시청 야외음악당"
+  },
+  {
+    "id": "20261021-boram-kbs-brown-sign-2-changwon",
+    "date": "2026-10-21",
+    "addedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "title": "이보람 · 갈색표지판 이순신 승전길 2부 방송 예정",
+    "program": "KBS1 창원 · 갈색표지판",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 공식 · 10월 21일 창원방송총국 편성표",
+      "url": "https://schedule.kbs.co.kr/index.html?sname=schedule&stype=table&type=localList&search_day=20261021&area_type=20"
+    },
+    "additionalSources": [
+      {
+        "label": "KBS 공식 · 창원 1TV 실시간 보기",
+        "url": "https://onair.kbs.co.kr/index.html?sname=onair&stype=live&ch_code=11&group_code=20&ch_type=localList"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "KBS1 창원 · 갈색표지판",
+      "예정"
+    ],
+    "note": "사천·남해의 이순신 승전길을 따라가는 「갈색표지판」 2부입니다.\n10월 21일 오후 7시 30분부터 8시 30분까지 KBS1 창원 지역 채널에서 방송 예정입니다.\nKBS+에서 창원 지역 채널을 선택해 시청할 수 있습니다.",
+    "eventState": "scheduled",
+    "calendar": {
+      "enabled": true,
+      "time": "19:30",
+      "timeLabel": "방송 시작",
+      "endTime": "20:30"
+    }
+  },
+  {
+    "id": "20261021-boram-kickagoal-237-audience",
+    "date": "2026-10-21",
+    "addedAt": "2026-10-21",
+    "updatedAt": "2026-10-21",
+    "title": "이보람 · 골 때리는 그녀들 237회 관중석 등장 예정",
+    "program": "SBS · 골 때리는 그녀들",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS 공식 · 237회 예고",
+      "url": "https://programs.sbs.co.kr/enter/kickagoal/clip/67995/OC482463495"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "SBS · 골 때리는 그녀들",
+      "예정"
+    ],
+    "note": "FC스트리밍파이터와 FC원더우먼2026의 경기 회차입니다.\n팬 제보에 따르면 이보람이 관중석에 잠시 등장할 예정이며, 직접 경기에 출전하는 회차는 아닙니다.\n10월 21일 오후 9시 SBS에서 방송 예정입니다.",
+    "eventState": "scheduled",
+    "calendar": {
+      "enabled": true,
+      "time": "21:00",
+      "timeLabel": "방송 시작"
+    }
   }
 ]
