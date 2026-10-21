@@ -435,9 +435,15 @@
         "url": "https://www.youtube.com/watch?v=Xot4oU8Tmfk",
         "publishedDate": "2026-10-19",
         "autoDiscovery": true
+      },
+      {
+        "label": "칡",
+        "url": "https://www.youtube.com/watch?v=RtgFVIr4f4I",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-20T05:06:03.025921+00:00",
+    "updatedAt": "2026-10-21T05:07:39.853087+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -986,9 +992,15 @@
         "url": "https://www.youtube.com/watch?v=Smc33jetdsE",
         "publishedDate": "2026-10-19",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=g0vfOQpsvAU",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-20T05:06:03.025921+00:00",
+    "updatedAt": "2026-10-21T05:07:39.853087+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1610,9 +1622,15 @@
         "url": "https://www.youtube.com/watch?v=TylOxk36V7Y",
         "publishedDate": "2026-10-20",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=MoG0dko2uac",
+        "publishedDate": "2026-10-20",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-20T05:06:03.025921+00:00",
+    "updatedAt": "2026-10-21T05:07:39.853087+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -4118,11 +4136,29 @@
         "url": "https://www.youtube.com/watch?v=zWoqQzY24Ds",
         "publishedDate": "2026-10-19",
         "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=KmEgyvGepRM",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=TZOtz8i2Qp0",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=y_FeKF19pP8",
+        "publishedDate": "2026-10-19",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-10-20T05:06:03.025921+00:00"
+    "updatedAt": "2026-10-21T05:07:39.853087+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -6890,6 +6926,12 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A46%3AF46"
+      },
+      {
+        "label": "THE IDOL × Nikon",
+        "url": "https://www.youtube.com/watch?v=y9qKicgYJNQ",
+        "publishedDate": "2026-07-28",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -6898,7 +6940,8 @@
       "music-show"
     ],
     "note": "",
-    "publishedDate": "2026-07-31"
+    "publishedDate": "2026-07-31",
+    "updatedAt": "2026-10-21T05:07:39.853087+00:00"
   },
   {
     "id": "v4145-WsyxwPl55wQ",
