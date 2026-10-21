@@ -791,7 +791,14 @@
       "videoTitle": "[MV] 씨야 _ 바보",
       "channel": "1theK (원더케이)",
       "channelUrl": "https://www.youtube.com/@1theK",
-      "checkedAt": "2026-10-21"
+      "checkedAt": "2026-10-21",
+      "alternateAudio": {
+        "youtubeId": "uSSAV-0-Ng4",
+        "channel": "Release - Topic",
+        "channelUrl": "https://www.youtube.com/channel/UCN2w4EFC4qHwJyNHWFWa5gA",
+        "provider": "Kakao Entertainment",
+        "checkedAt": "2026-10-21"
+      }
     },
     {
       "id": "track-068",
@@ -861,9 +868,12 @@
       "songRef": "시차 (With 다비치, 블랙펄)",
       "youtubeId": "5xVPQKrZ-yI",
       "videoTitle": "시차 (With DAVICHI, Black Pearl) (시차)",
-      "channel": "SeeYa - Topic",
-      "channelUrl": "https://www.youtube.com/channel/UCcZrxE5zk2zKYmMe9lg9xKA",
-      "checkedAt": "2026-10-21"
+      "channel": "SEEYA Official",
+      "channelUrl": "https://www.youtube.com/channel/UCn6SB-9q1gNfGhx9_fFxIxg",
+      "checkedAt": "2026-10-21",
+      "originalTopicChannelUrl": "https://www.youtube.com/channel/UCcZrxE5zk2zKYmMe9lg9xKA",
+      "officialChannelEvidenceUrl": "https://www.youtube.com/watch?v=5xVPQKrZ-yI",
+      "sourceVerification": "watch-page-official-artist-channel"
     },
     {
       "id": "track-076",
@@ -882,9 +892,12 @@
       "catalogUrl": "https://music.bugs.co.kr/album/101865",
       "youtubeId": "oqNMOWPuEW0",
       "videoTitle": "가슴속에 한사람 (가슴속에 한사람)",
-      "channel": "SeeYa - Topic",
-      "channelUrl": "https://www.youtube.com/channel/UCcZrxE5zk2zKYmMe9lg9xKA",
-      "checkedAt": "2026-10-21"
+      "channel": "SEEYA Official",
+      "channelUrl": "https://www.youtube.com/channel/UCn6SB-9q1gNfGhx9_fFxIxg",
+      "checkedAt": "2026-10-21",
+      "originalTopicChannelUrl": "https://www.youtube.com/channel/UCcZrxE5zk2zKYmMe9lg9xKA",
+      "officialChannelEvidenceUrl": "https://www.youtube.com/watch?v=oqNMOWPuEW0",
+      "sourceVerification": "watch-page-official-artist-channel"
     }
   ],
   "preferredChannel": "https://www.youtube.com/channel/UCn6SB-9q1gNfGhx9_fFxIxg"
