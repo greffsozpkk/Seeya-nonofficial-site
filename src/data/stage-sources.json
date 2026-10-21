@@ -1354,5 +1354,331 @@
     "scope": "excerpt",
     "category": "live",
     "basis": "2026-10-16 확인: 원본 제목·설명의 공연명과 곡명으로 연결. 무반주 신청곡·릴스는 발췌로 구분."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=VL-JJfwH0j8",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=1eiKaeXCiEU",
+    "songIds": [
+      "marry-me",
+      "his-voice",
+      "fool"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=6KHA9UCjOTQ",
+    "songIds": [
+      "shoes"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=MpyulEqUd2c",
+    "songIds": [
+      "nevertheless-us"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=e3CaXy2eIkg",
+    "songIds": [
+      "fool"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=zcn05qSvBrI",
+    "songIds": [
+      "nevertheless-us"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=YjFWwvRz2vk",
+    "songIds": [
+      "his-voice"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=uLnqgjH5JzA",
+    "songIds": [
+      "love-greeting",
+      "wonderful-you"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=BeUcjE1_k3c",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=oFXhCkxbBC8",
+    "songIds": [
+      "crazy-love-song",
+      "stay",
+      "cotton-candy"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=UfD9EWx8TI0",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=kufyJlfMh6s",
+    "songIds": [
+      "hot-girl"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=OYjti_l7kwI",
+    "songIds": [
+      "shoes",
+      "sad-footsteps"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=7-oz7LC3gPc",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=IxN5j3bz2ZY",
+    "songIds": [
+      "nevertheless-us"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.youtube.com/watch?v=Smc33jetdsE",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.youtube.com/watch?v=Mvo6n7xxJ6A",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.youtube.com/watch?v=TylOxk36V7Y",
+    "songIds": [
+      "his-voice"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20260912-the-fan-daegu",
+    "url": "https://www.youtube.com/watch?v=S6c5xXQzJ1M",
+    "songIds": [
+      "ice-doll"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20260912-the-fan-daegu",
+    "url": "https://www.youtube.com/watch?v=s2fYSUKJ4bk",
+    "songIds": [
+      "his-voice"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20260912-the-fan-daegu",
+    "url": "https://www.youtube.com/watch?v=KmEgyvGepRM",
+    "songIds": [
+      "hot-girl"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20260912-the-fan-daegu",
+    "url": "https://www.youtube.com/watch?v=TZOtz8i2Qp0",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20260912-the-fan-daegu",
+    "url": "https://www.youtube.com/watch?v=y_FeKF19pP8",
+    "songIds": [
+      "nevertheless-us"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=rqyRhIP6S74",
+    "songIds": [
+      "nevertheless-us"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=yF8-uOZBIvQ",
+    "songIds": [
+      "wonderful-you"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=95CgjQSSybM",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=mtPiPFWLcRE",
+    "songIds": [
+      "fool"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=8Q8ApgQlOzc",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=nURDZAfKXkc",
+    "songIds": [
+      "hot-girl"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=GHIOTapGUBs",
+    "songIds": [
+      "scent-of-a-woman"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DelKT9HhYh2/",
+    "songIds": [
+      "shoes"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.instagram.com/_jerry.j_ramficial/reel/Denmtsqhf-J/",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
   }
 ]

@@ -4355,5 +4355,1133 @@
         ]
       }
     ]
+  },
+  {
+    "id": "archive-2026-10-21-integrated",
+    "checkedAt": "2026-10-21",
+    "additions": [
+      {
+        "id": "20261018-gyuri-gyulmung67",
+        "date": "2026-10-18",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "남규리 · 귤멍 EP.67 자연의 소리 ASMR",
+        "program": "남규리의 귤멍 EP.67",
+        "type": "official",
+        "members": [
+          "남규리"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "남규리의 귤멍 · EP.67 남규리 ASMR 도전! 자연의 소리로 같이 힐링해요 🌳🍃🌞",
+          "url": "https://www.youtube.com/watch?v=PzdIJOVqS7I",
+          "publishedDate": "2026-10-18"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "video-published",
+        "publishedDate": "2026-10-18",
+        "tags": [
+          "2026",
+          "남규리의 귤멍 EP.67"
+        ],
+        "note": "남규리가 자연의 소리를 담아 들려주는 ASMR 영상입니다.\n수원 콘서트를 마친 감사 인사도 영상 설명에 전했습니다.\n날짜는 영상 공개일입니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20261014-yeonji-jamgolbus-lesson",
+        "date": "2026-10-14",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "김연지 · 잠골버스 「미친 사랑의 노래」 레슨",
+        "program": "잠골버스",
+        "type": "variety",
+        "members": [
+          "김연지"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "잠골버스 · \"미친 사랑의 노래\" 씨야의 미친 레슨",
+          "url": "https://www.youtube.com/watch?v=IEttBqfX6Lo",
+          "publishedDate": "2026-10-14"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "video-published",
+        "publishedDate": "2026-10-14",
+        "tags": [
+          "2026",
+          "잠골버스"
+        ],
+        "note": "김연지가 잠골버스 영상에서 「미친 사랑의 노래」 레슨을 선보입니다.\n날짜는 영상 공개일입니다.",
+        "eventState": "completed",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20261021-boram-seongsu-vlog",
+        "date": "2026-10-21",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "이보람 · 보람씨야 성수 나들이 브이로그 공개 예정",
+        "program": "보람씨야",
+        "type": "official",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "보람씨야 · [보람씨야] 간만에 친구들이랑 성수 나들이 ☕️ | 일상 브이로그 VLOG",
+          "url": "https://www.youtube.com/watch?v=-ahH0aTmUDY",
+          "publishedDate": "2026-10-21"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "video-published",
+        "publishedDate": "2026-10-21",
+        "tags": [
+          "2026",
+          "보람씨야",
+          "예정"
+        ],
+        "note": "친구들과 함께한 성수 나들이를 담은 일상 브이로그입니다.\n10월 21일 오후 8시 공식 채널에서 최초 공개 예정입니다.\n날짜는 공개 예정일이며 실제 방문일과는 구분합니다.",
+        "eventState": "scheduled",
+        "calendar": {
+          "enabled": true,
+          "time": "20:00",
+          "timeLabel": "공개 예정"
+        }
+      },
+      {
+        "id": "20261021-boram-btn-dream-26",
+        "date": "2026-10-21",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "이보람 · 한밤의 꿈 이보람입니다 26회 방송 예정",
+        "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
+        "type": "radio",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "BTN라디오 · 한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.10.21 (26회)",
+          "url": "https://www.youtube.com/watch?v=5CrYKZx8ZJE",
+          "publishedDate": "2026-10-20"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "broadcast",
+        "publishedDate": "2026-10-20",
+        "tags": [
+          "2026",
+          "BTN라디오 · 한밤의 꿈 이보람입니다",
+          "예정"
+        ],
+        "note": "10월 21일 오후 9시 BTN라디오 공식 채널에서 공개되는 보이는 라디오 26회입니다.\n최초 공개 대기 페이지로 연결됩니다.",
+        "eventState": "scheduled",
+        "calendar": {
+          "enabled": true,
+          "time": "21:00",
+          "timeLabel": "방송 시작"
+        }
+      },
+      {
+        "id": "20261026-boram-kbs-brown-sign-1",
+        "date": "2026-10-26",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "이보람 · 우리동네 갈색표지판 1부 방송 예정",
+        "program": "KBS1 창원 · 우리동네 갈색표지판",
+        "type": "variety",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "메이저나인 공식 · LEE BO RAM 일정",
+          "url": "https://enter.major9.net/schedule/"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "broadcast",
+        "tags": [
+          "2026",
+          "KBS1 창원 · 우리동네 갈색표지판",
+          "예정"
+        ],
+        "note": "메이저나인 공식 일정에 안내된 KBS1 창원 「우리동네 갈색표지판」 1부 방송입니다.\n10월 26일 오후 7시 30분 방송 예정입니다.",
+        "eventState": "scheduled",
+        "calendar": {
+          "enabled": true,
+          "time": "19:30",
+          "timeLabel": "방송 시작"
+        }
+      },
+      {
+        "id": "20261027-boram-kbs-brown-sign-2",
+        "date": "2026-10-27",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "이보람 · 우리동네 갈색표지판 2부 방송 예정",
+        "program": "KBS1 창원 · 우리동네 갈색표지판",
+        "type": "variety",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "메이저나인 공식 · LEE BO RAM 일정",
+          "url": "https://enter.major9.net/schedule/"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "broadcast",
+        "tags": [
+          "2026",
+          "KBS1 창원 · 우리동네 갈색표지판",
+          "예정"
+        ],
+        "note": "메이저나인 공식 일정에 안내된 KBS1 창원 「우리동네 갈색표지판」 2부 방송입니다.\n10월 27일 오후 7시 30분 방송 예정입니다.",
+        "eventState": "scheduled",
+        "calendar": {
+          "enabled": true,
+          "time": "19:30",
+          "timeLabel": "방송 시작"
+        }
+      },
+      {
+        "id": "20261028-boram-btn-dream-schedule",
+        "date": "2026-10-28",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
+        "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
+        "type": "radio",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "메이저나인 공식 · LEE BO RAM 일정",
+          "url": "https://enter.major9.net/schedule/"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "broadcast",
+        "tags": [
+          "2026",
+          "BTN라디오 · 한밤의 꿈 이보람입니다",
+          "예정"
+        ],
+        "note": "메이저나인 공식 일정에 안내된 이보람의 라디오 DJ 일정입니다.\n10월 28일 오후 9시 BTN라디오 방송 예정입니다.",
+        "eventState": "scheduled",
+        "calendar": {
+          "enabled": true,
+          "time": "21:00",
+          "timeLabel": "방송 시작"
+        }
+      },
+      {
+        "id": "20261114-seeya-immortal-wax-broadcast",
+        "date": "2026-11-14",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "씨야 · 불후의 명곡 「아티스트 왁스」 방송 예정",
+        "program": "KBS2 · 불후의 명곡",
+        "type": "music-show",
+        "members": [
+          "남규리",
+          "김연지",
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "메이저나인 공식 · LEE BO RAM 일정",
+          "url": "https://enter.major9.net/schedule/"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "broadcast",
+        "tags": [
+          "2026",
+          "KBS2 · 불후의 명곡",
+          "예정"
+        ],
+        "note": "10월 19일 녹화에 참여한 씨야의 「불후의 명곡」 방송 일정입니다.\n메이저나인 공식 일정 기준 11월 14일 오후 6시 5분 방송 예정입니다.\n녹화일과 방송일을 구분해 표시합니다.",
+        "eventState": "scheduled",
+        "calendar": {
+          "enabled": true,
+          "time": "18:05",
+          "timeLabel": "방송 시작"
+        }
+      },
+      {
+        "id": "20261122-boram-worldmom-seocho",
+        "date": "2026-11-22",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "이보람 · 세상을 바꾸는 여자들 서초 공연 예정",
+        "program": "세상을 바꾸는 여자들 · 서초",
+        "type": "event",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "세바여 공식 · 서초 신청 안내",
+          "url": "https://newworldmom.co.kr/apply?event_id=420"
+        },
+        "additionalSources": [
+          {
+            "label": "세바여 공식 · 송도·서초 출연 안내",
+            "url": "https://www.instagram.com/p/Deit6kaEnH_/"
+          }
+        ],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "event",
+        "tags": [
+          "2026",
+          "세상을 바꾸는 여자들 · 서초",
+          "예정"
+        ],
+        "note": "11월 22일 오후 12시 50분, 흰물결아트센터 B1 화이트홀에서 열리는 세바여 행사에 이보람이 출연합니다.\n표시 시각은 행사 시작 시각입니다.\n무료 사전 신청 행사이며 후원사 홍보 시간이 포함됩니다.",
+        "eventState": "scheduled",
+        "calendar": {
+          "enabled": true,
+          "time": "12:50",
+          "timeLabel": "행사 시작"
+        },
+        "venue": "흰물결아트센터 B1 화이트홀"
+      },
+      {
+        "id": "20261101-boram-kia-music-festa",
+        "date": "2026-11-01",
+        "addedAt": "2026-10-21",
+        "updatedAt": "2026-10-21",
+        "title": "이보람 · 기아 People Link US 뮤직 페스타 출연 예정",
+        "program": "2026 기아 People Link US 뮤직 페스타",
+        "type": "event",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "씨야 갤러리 · 기아 광주지회 행사 포스터",
+          "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9855"
+        },
+        "additionalSources": [],
+        "status": "documented",
+        "dateStatus": "confirmed",
+        "dateBasis": "event",
+        "tags": [
+          "2026",
+          "2026 기아 People Link US 뮤직 페스타",
+          "예정"
+        ],
+        "note": "기아 임직원·가족·지역민이 함께하는 뮤직 페스타에 이보람이 출연합니다.\n11월 1일 광주시청 야외음악당에서 개최되며 전체 행사 시간은 오후 3시부터 8시 30분입니다.\n이보람의 개별 무대 시작 시각과는 구분합니다.",
+        "eventState": "scheduled",
+        "calendar": {
+          "enabled": true,
+          "time": "15:00",
+          "timeLabel": "행사 전체 시간 · 이보람 개별 출연 시각 아님",
+          "endTime": "20:30"
+        },
+        "venue": "광주시청 야외음악당"
+      }
+    ],
+    "updates": [
+      {
+        "id": "20261017-the-fan-suwon",
+        "sources": [
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=pJrUpI2nskw",
+            "publishedDate": "2026-10-17",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=ilVjVASPeRU",
+            "publishedDate": "2026-10-17",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=PrhYKeEJBMQ",
+            "publishedDate": "2026-10-17",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=VL-JJfwH0j8",
+            "publishedDate": "2026-10-17",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=5Gr-MLEYZrs",
+            "publishedDate": "2026-10-17",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=dGaax6TsNwU",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=nQVAWNNf1Rc",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "람보사랑",
+            "url": "https://www.youtube.com/watch?v=1eiKaeXCiEU",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=6KHA9UCjOTQ",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=MpyulEqUd2c",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=e3CaXy2eIkg",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=slK8YiYieH8",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=Hgs-54vyknk",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=3nNdeYQigIw",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=zcn05qSvBrI",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=YjFWwvRz2vk",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "람보사랑",
+            "url": "https://www.youtube.com/watch?v=uLnqgjH5JzA",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=BeUcjE1_k3c",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=kZEh6GfZP1Y",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "람보사랑",
+            "url": "https://www.youtube.com/watch?v=oFXhCkxbBC8",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=eecPnHWxz5s",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=JOdr1ypwmek",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "SPONG",
+            "url": "https://www.youtube.com/watch?v=inAMWuQS8rk",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=06ofHdA-U6E",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=Qc7hlPC80RU",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "감미로운 음악생활",
+            "url": "https://www.youtube.com/watch?v=rk5evS_Kilg",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "SPONG",
+            "url": "https://www.youtube.com/watch?v=xb6SGynqSUA",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=UfD9EWx8TI0",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=kufyJlfMh6s",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "람보사랑",
+            "url": "https://www.youtube.com/watch?v=OYjti_l7kwI",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "람보사랑",
+            "url": "https://www.youtube.com/watch?v=Xot4oU8Tmfk",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "칡",
+            "url": "https://www.youtube.com/watch?v=RtgFVIr4f4I",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "람보사랑 · [수원]씨야 20주년 전국투어콘서트  261017 직캠 #그놈목소리  #감동을주세요 #바보 #결혼할까요",
+            "url": "https://www.youtube.com/watch?v=1eiKaeXCiEU",
+            "publishedDate": "2026-10-18"
+          },
+          {
+            "label": "람보사랑 · [수원-구두시리즈]씨야 20주년 전국투어콘서트  261017 직캠 #슬픈발걸음 #구두 #그사람",
+            "url": "https://www.youtube.com/watch?v=OYjti_l7kwI",
+            "publishedDate": "2026-10-19"
+          },
+          {
+            "label": "람보사랑 · [수원]씨야 20주년 전국투어콘서트  261017 직캠 #사랑의인사 #내겐너무멋진그대 #끝내꺽이지않는것 #계절은돌고돌아 #미워요",
+            "url": "https://www.youtube.com/watch?v=uLnqgjH5JzA",
+            "publishedDate": "2026-10-18"
+          },
+          {
+            "label": "씨야바라기 · 씨야-그럼에도 우린(수원콘서트)",
+            "url": "https://www.youtube.com/watch?v=rqyRhIP6S74",
+            "publishedDate": "2026-10-20"
+          },
+          {
+            "label": "씨야바라기 · 씨야-내겐 너무 멋진 그대(수원콘서트)",
+            "url": "https://www.youtube.com/watch?v=yF8-uOZBIvQ",
+            "publishedDate": "2026-10-19"
+          },
+          {
+            "label": "보람비타 · 🔥 이 노래 전주 듣자마자 소름… 씨야  〈미친 사랑의 노래〉😭 / 수원콘서트 #씨야",
+            "url": "https://www.youtube.com/watch?v=95CgjQSSybM",
+            "publishedDate": "2026-10-21"
+          },
+          {
+            "label": "땅콩크림샌드 · [씨야/전국투어콘서트/수원] 바보",
+            "url": "https://www.youtube.com/watch?v=mtPiPFWLcRE",
+            "publishedDate": "2026-10-18"
+          },
+          {
+            "label": "제리제이 Jerry.j · 춤 추다가 박치기하는 씨야 | 씨야 20주년 전국 투어 콘서트 in 수원 | 씨야 - STAY",
+            "url": "https://www.youtube.com/watch?v=8Q8ApgQlOzc",
+            "publishedDate": "2026-10-18"
+          },
+          {
+            "label": "보람비타 · 이 노래를 라이브로 😭 김연지 'I Wish' / 수원콘서트#김연지 #씨야",
+            "url": "https://www.youtube.com/watch?v=Qwvi7FjXyP0",
+            "publishedDate": "2026-10-21"
+          },
+          {
+            "label": "씨야바라기 · 씨야-페스티벌(수원콘서트)",
+            "url": "https://www.youtube.com/watch?v=TOZrwlbB6CQ",
+            "publishedDate": "2026-10-21"
+          },
+          {
+            "label": "씨야바라기 · 씨야-핫걸(수원콘서트)",
+            "url": "https://www.youtube.com/watch?v=nURDZAfKXkc",
+            "publishedDate": "2026-10-18"
+          },
+          {
+            "label": "귤이 사랑 · 씨야 수원콘 예술이야~~~ 대표님 예술이야~♡",
+            "url": "https://www.youtube.com/watch?v=05-HdSMzU80",
+            "publishedDate": "2026-10-19"
+          },
+          {
+            "label": "씨야바라기 · 씨야-여인의 향기(수원콘서트)",
+            "url": "https://www.youtube.com/watch?v=GHIOTapGUBs",
+            "publishedDate": "2026-10-19"
+          },
+          {
+            "label": "냥펀치 · 2026년 10월 17일 씨야 20주년 수원 콘서트 엔딩 인사 남규리",
+            "url": "https://www.youtube.com/watch?v=pJrUpI2nskw",
+            "publishedDate": "2026-10-17"
+          },
+          {
+            "label": "제리제이 · 수원 콘서트 현장 릴스",
+            "url": "https://www.instagram.com/_jerry.j_ramficial/reel/Den-uTSh7lH/",
+            "publishedDate": "2026-10-18"
+          },
+          {
+            "label": "제리제이 · 수원 콘서트 현장 릴스",
+            "url": "https://www.instagram.com/_jerry.j_ramficial/reel/Denmtsqhf-J/",
+            "publishedDate": "2026-10-18"
+          },
+          {
+            "label": "제리제이 · 수원 콘서트 현장 릴스",
+            "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DenUEFqBjK-/",
+            "publishedDate": "2026-10-18"
+          }
+        ]
+      },
+      {
+        "id": "20261010-the-fan-cheongju",
+        "sources": [
+          {
+            "label": "🐿람보바라기",
+            "url": "https://www.youtube.com/watch?v=Lr_qEdclB44",
+            "publishedDate": "2026-10-16",
+            "autoDiscovery": true
+          },
+          {
+            "label": "🐿람보바라기",
+            "url": "https://www.youtube.com/watch?v=wRp35DfFkCs",
+            "publishedDate": "2026-10-17",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=GioiM_psLbo",
+            "publishedDate": "2026-10-11",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치",
+            "url": "https://www.youtube.com/watch?v=7-oz7LC3gPc",
+            "publishedDate": "2026-10-11",
+            "autoDiscovery": true
+          },
+          {
+            "label": "🐿람보바라기",
+            "url": "https://www.youtube.com/watch?v=IxN5j3bz2ZY",
+            "publishedDate": "2026-10-18",
+            "autoDiscovery": true
+          },
+          {
+            "label": "🐿람보바라기",
+            "url": "https://www.youtube.com/watch?v=Smc33jetdsE",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "🐿람보바라기",
+            "url": "https://www.youtube.com/watch?v=g0vfOQpsvAU",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "냥펀치 · 2026년 10월 10일 씨야 20주년 청주 콘서트  남규리 직캠  -  끝내 꺾이지 않는 것",
+            "url": "https://www.youtube.com/watch?v=GioiM_psLbo",
+            "publishedDate": "2026-10-11"
+          },
+          {
+            "label": "제리제이 · 구두 직캠",
+            "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DelKT9HhYh2/",
+            "publishedDate": "2026-10-17"
+          }
+        ]
+      },
+      {
+        "id": "20261006-boram-dst-autumn",
+        "sources": [
+          {
+            "label": "땅콩크림샌드",
+            "url": "https://www.youtube.com/watch?v=0jruBsP9xv8",
+            "publishedDate": "2026-10-16",
+            "autoDiscovery": true
+          },
+          {
+            "label": "땅콩크림샌드",
+            "url": "https://www.youtube.com/watch?v=qsrzyTd9wEY",
+            "publishedDate": "2026-10-16",
+            "autoDiscovery": true
+          },
+          {
+            "label": "땅콩크림샌드",
+            "url": "https://www.youtube.com/watch?v=JcGpWEoxB3o",
+            "publishedDate": "2026-10-16",
+            "autoDiscovery": true
+          },
+          {
+            "label": "땅콩크림샌드",
+            "url": "https://www.youtube.com/watch?v=p2rJ-N3xY68",
+            "publishedDate": "2026-10-17",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "20261004-the-fan-goyang",
+        "sources": [
+          {
+            "label": "람보사랑",
+            "url": "https://www.youtube.com/watch?v=sZO7JMjLBAg",
+            "publishedDate": "2026-10-16",
+            "autoDiscovery": true
+          },
+          {
+            "label": "꽁",
+            "url": "https://www.youtube.com/watch?v=NhhCsYpgcPE",
+            "publishedDate": "2026-10-16",
+            "autoDiscovery": true
+          },
+          {
+            "label": "꽁",
+            "url": "https://www.youtube.com/watch?v=B7if_QRi4qo",
+            "publishedDate": "2026-10-16",
+            "autoDiscovery": true
+          },
+          {
+            "label": "🐿람보바라기",
+            "url": "https://www.youtube.com/watch?v=Mvo6n7xxJ6A",
+            "publishedDate": "2026-10-17",
+            "autoDiscovery": true
+          },
+          {
+            "label": "안졍을줄게",
+            "url": "https://www.youtube.com/watch?v=TylOxk36V7Y",
+            "publishedDate": "2026-10-20",
+            "autoDiscovery": true
+          },
+          {
+            "label": "🐿람보바라기",
+            "url": "https://www.youtube.com/watch?v=MoG0dko2uac",
+            "publishedDate": "2026-10-20",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "20260912-the-fan-daegu",
+        "sources": [
+          {
+            "label": "꽁",
+            "url": "https://www.youtube.com/watch?v=S6c5xXQzJ1M",
+            "publishedDate": "2026-10-10",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=s2fYSUKJ4bk",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=zWoqQzY24Ds",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=KmEgyvGepRM",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=TZOtz8i2Qp0",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "정아선",
+            "url": "https://www.youtube.com/watch?v=y_FeKF19pP8",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v475-sheet2-row50",
+        "sources": [
+          {
+            "label": "THE IDOL × Nikon",
+            "url": "https://www.youtube.com/watch?v=y9qKicgYJNQ",
+            "publishedDate": "2026-07-28",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v491-immortal-2024-12-14",
+        "sources": [
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=JpAV59AQs3Q",
+            "publishedDate": "2024-12-14",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=X6-4mdSYe18",
+            "publishedDate": "2024-12-14",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=l17KybBPEEE",
+            "publishedDate": "2024-12-14",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v491-immortal-2024-06-01",
+        "sources": [
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=k2E5lXWoY7E",
+            "publishedDate": "2024-06-01",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=0c9l0Re6ogU",
+            "publishedDate": "2024-06-01",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=qvVa-pZ1Dd0",
+            "publishedDate": "2024-06-01",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=GXv_HN7eO14",
+            "publishedDate": "2024-06-01",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 한국방송",
+            "url": "https://www.youtube.com/watch?v=747lUXrgGE0",
+            "publishedDate": "2024-06-02",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v474-stage-research-040",
+        "sources": [
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=vyayQhoq7Fo",
+            "publishedDate": "2024-04-13",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=rv513Ok-wmI",
+            "publishedDate": "2024-04-13",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=AkV9PIPxAKE",
+            "publishedDate": "2024-04-13",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v491-immortal-2024-02-03",
+        "sources": [
+          {
+            "label": "KBS 한국방송",
+            "url": "https://www.youtube.com/watch?v=hkVhAN8QUCk",
+            "publishedDate": "2024-02-06",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=NvAT9VTdDrY",
+            "publishedDate": "2024-02-03",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=LgJ62cszLXI",
+            "publishedDate": "2024-02-03",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=tN4mu6mdqEA",
+            "publishedDate": "2024-02-03",
+            "autoDiscovery": true
+          },
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=qjL5hdpwsAs",
+            "publishedDate": "2024-02-03",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v491-immortal-2022-09-17",
+        "sources": [
+          {
+            "label": "KBS 레전드 케이팝",
+            "url": "https://www.youtube.com/watch?v=QHHXUxONvN4",
+            "publishedDate": "2022-09-17",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "v491-hangout-2022-06-25",
+        "sources": [
+          {
+            "label": "MBCentertainment",
+            "url": "https://www.youtube.com/watch?v=9AKCXtyqG6k",
+            "publishedDate": "2022-06-25",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "20261019-seeya-immortal-wax-recording",
+        "sources": [
+          {
+            "label": "유튜브매니한",
+            "url": "https://www.youtube.com/watch?v=NWDbTeT_wUU",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "꽁",
+            "url": "https://www.youtube.com/watch?v=PnZ_8PEbcRs",
+            "publishedDate": "2026-10-19",
+            "autoDiscovery": true
+          },
+          {
+            "label": "출구없는남규리(aka.출남)",
+            "url": "https://www.youtube.com/watch?v=zi8vGHGwkEk",
+            "publishedDate": "2026-10-20",
+            "autoDiscovery": true
+          }
+        ]
+      },
+      {
+        "id": "20261017-the-fan-suwon",
+        "sources": [
+          {
+            "label": "남규리의 귤멍 · 수원 콘서트 종료 감사 인사",
+            "url": "https://www.youtube.com/watch?v=PzdIJOVqS7I",
+            "publishedDate": "2026-10-18"
+          }
+        ],
+        "correction": {
+          "sourceUrl": "https://m.ticket.yes24.com/Perf/Detail/PerfInfo.aspx?IdPerf=59236",
+          "expected": {
+            "eventState": "scheduled",
+            "tags": [
+              "공연",
+              "전국투어",
+              "THE FAN",
+              "20주년",
+              "수원",
+              "예정"
+            ],
+            "note": "씨야 데뷔 20주년 전국투어 THE FAN의 수원 공연 예정입니다.\n공연 시작: 오후 6시. YES24 공식 예매 안내 기준입니다.\n공식 게스트 스케줄에 안내된 특별 게스트는 유승우입니다."
+          },
+          "values": {
+            "eventState": "completed",
+            "tags": [
+              "공연",
+              "전국투어",
+              "THE FAN",
+              "20주년",
+              "수원"
+            ],
+            "note": "10월 17일 오후 6시 경희대학교 국제캠퍼스 선승관에서 열린 씨야 20주년 전국투어 수원 공연입니다.\n특별 게스트는 유승우입니다.\n대표곡과 솔로 무대, 앵콜·퇴근길 영상을 함께 모았습니다."
+          }
+        }
+      },
+      {
+        "id": "20261019-seeya-immortal-wax-recording",
+        "sources": [
+          {
+            "label": "topstarnews(톱스타뉴스) · 씨야, 출근길에서 만난 행복한 순간들📸 팬심 가득 직캠(출근길)",
+            "url": "https://www.youtube.com/watch?v=kNSfqMGadkM",
+            "publishedDate": "2026-10-19"
+          },
+          {
+            "label": "NewsInStar · 남규리-김연지-이보람(씨야), 보자마자 울컥하는 완전체 비주얼 퇴근길 직캠(KBS '불후의 명곡-왁스 편') #남규리 #이보람 #김연지 #Seeya",
+            "url": "https://www.youtube.com/watch?v=Et5r7haQsvg",
+            "publishedDate": "2026-10-19"
+          },
+          {
+            "label": "메이저나인 공식 · LEE BO RAM 일정",
+            "url": "https://enter.major9.net/schedule/"
+          }
+        ],
+        "correction": {
+          "sourceUrl": "https://program.kbs.co.kr/2tv/enter/satfreedom/pc/board.html?smenu=9c116f&m_seq=114",
+          "expected": {
+            "eventState": "scheduled",
+            "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화 예정",
+            "status": "documented",
+            "tags": [
+              "2026",
+              "불후의 명곡",
+              "왁스",
+              "녹화",
+              "예정"
+            ],
+            "note": "씨야가 KBS2 「불후의 명곡」 ‘아티스트 왁스’ 편에 출연합니다.\n10월 19일 오전 11시 40분부터 KBS 신관 공개홀에서 진행되는 1부 녹화입니다.\n명곡 판정단 신청은 10월 15일 자정까지입니다. 방청 입장 시간은 KBS 공식 안내를 확인해 주세요.\n카드 날짜는 녹화일입니다. 11월 방송 예정이며 정확한 방송일은 별도 공지를 기다리고 있습니다."
+          },
+          "values": {
+            "eventState": "completed",
+            "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화",
+            "status": "available",
+            "tags": [
+              "2026",
+              "불후의 명곡",
+              "왁스",
+              "녹화"
+            ],
+            "note": "씨야 세 멤버가 10월 19일 KBS 신관 공개홀에서 「불후의 명곡」 ‘아티스트 왁스’ 편 녹화에 참여했습니다.\n출근길과 녹화를 마친 뒤의 퇴근길 영상을 함께 볼 수 있습니다.\n카드 날짜는 녹화일입니다. 방송은 메이저나인 공식 일정 기준 11월 14일 오후 6시 5분 예정입니다."
+          }
+        }
+      },
+      {
+        "id": "20261015-boram-vocational-rehab",
+        "sources": [
+          {
+            "label": "곤충박사채집스토리4 · 2026년 10월 15일 곤지암 도자공원 이보람 가수를 봤습니다",
+            "url": "https://www.youtube.com/watch?v=t0QKQFMN6nQ",
+            "publishedDate": "2026-10-15"
+          },
+          {
+            "label": "곤충박사채집스토리4 · 2026년 10월 15일 곤지암 도자공원 이보람 가수를 봤습니다 2",
+            "url": "https://www.youtube.com/watch?v=63TyX04mAfc",
+            "publishedDate": "2026-10-15"
+          }
+        ]
+      },
+      {
+        "id": "20261009-boram-worldmom-yongin",
+        "sources": [
+          {
+            "label": "땅콩크림샌드 · [이보람/무반주신청곡] 세상을 바꾸는 여자들 in 용인 (2026. 10. 09)",
+            "url": "https://www.youtube.com/watch?v=Jgh82_kYMUI",
+            "publishedDate": "2026-10-20"
+          }
+        ]
+      },
+      {
+        "id": "20261025-boram-worldmom-seocho",
+        "sources": [
+          {
+            "label": "메이저나인 공식 · LEE BO RAM 일정",
+            "url": "https://enter.major9.net/schedule/"
+          },
+          {
+            "label": "세바여 공식 · 송도·서초 안내",
+            "url": "https://www.instagram.com/p/Deit6kaEnH_/"
+          }
+        ],
+        "correction": {
+          "sourceUrl": "https://newworldmom.co.kr/apply?event_id=385",
+          "expected": {
+            "note": "기존 10월 25일 서초 일정에서 11월 8일 송도 일정으로 변경됐습니다.\n10월 5일 공식 신청 페이지에서 일시·장소를 재확인했습니다.\n행사 시작: 오후 2시 50분.\n무료 사전 신청 행사이며 후원사 홍보 시간이 포함됩니다. 출연자의 개별 무대 시작 시각과는 구분됩니다."
+          },
+          "values": {
+            "note": "11월 8일 송도컨벤시아 프리미어볼룸 A룸에서 열리는 세바여 행사에 이보람이 출연합니다.\n주최 측 행사 시작은 오후 2시 50분, 메이저나인 소속사 일정에 안내된 이보람 출연 시각은 오후 4시 10분입니다.\n무료 사전 신청 행사이며 후원사 홍보 시간이 포함됩니다.\n기존 10월 25일 서초 일정에서 변경된 기록이며, 새로 공지된 11월 22일 서초 공연은 별도 일정으로 등록했습니다."
+          }
+        }
+      }
+    ],
+    "separateOccurrences": [
+      "20261026-boram-kbs-brown-sign-1",
+      "20261027-boram-kbs-brown-sign-2",
+      "20261028-boram-btn-dream-schedule",
+      "20261114-seeya-immortal-wax-broadcast"
+    ]
   }
 ]
