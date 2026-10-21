@@ -11,7 +11,7 @@ function placeIdsForRecord(row){
  if(!row||row.hidden||row.mergedInto)return [];
  return [...new Set([...(registry.records[row.id]||[]),venues.get(normalizeVenue(row.venue))].filter(Boolean))];
 }
-const dateLabel=row=>({'event':'활동일','broadcast':'방송일','season':'공연 시작일','recording':'촬영일','schedule':'예정일','post-published':'게시일','video-published':'영상 게시일','article-published':'기사 게시일','published':'게시일'}[row.dateBasis]||'기록일');
+const dateLabel=row=>({'release':'공개일','event':'활동일','broadcast':'방송일','season':'공연 시작일','recording':'촬영일','schedule':'예정일','post-published':'게시일','video-published':'영상 게시일','article-published':'기사 게시일','published':'게시일'}[row.dateBasis]||'기록일');
 function recordsByPlace(archive){
  const result=new Map();
  for(const row of archive){for(const id of placeIdsForRecord(row)){

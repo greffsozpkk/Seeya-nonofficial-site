@@ -33,7 +33,7 @@ assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'콘서트
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'사진·사인'}).length,1);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'카페'}).length,19);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'씨야'}).length,25);
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'이보람'}).length,36);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'이보람'}).length,38);
 assert(!filterPlaces(allRows,{member:'씨야'}).some(p=>p.id==='maboklim'));
 const ohji=allRows.find(p=>p.id==='ohji'),thai=allRows.find(p=>p.id==='thailicious');
 assert.equal(promoStatus(thai,'2026-10-05T00:00:00+09:00'),'혜택 종료');
@@ -41,7 +41,7 @@ assert.equal(promoStatus(ohji,'2026-10-10T23:59:59+09:00'),'혜택 기간');
 assert.equal(promoStatus(ohji,'2026-10-11T01:00:01+09:00'),'혜택 종료');
 assert.equal(promoStatus(ohji,'2026-10-05T23:59:59+09:00'),'혜택 예정');
 assert(!detail(allRows.find(p=>p.id==='maboklim')).includes('20주년 콘서트 기록관'));
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'식당',region:'서울'}).length,9);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'식당',region:'서울'}).length,10);
 assert.equal(resolvePlaces(config,archive.filter(r=>r.id!=='v4145-NIeNbStvYa0')).find(p=>p.id==='maboklim').recordId,null);
 console.log('PASS: map preview isolation, verified places and seven tour venues, filters, clustering, escaping and library-failure fallback.');
 

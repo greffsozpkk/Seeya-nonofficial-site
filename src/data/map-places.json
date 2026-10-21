@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-10-16",
+  "checkedAt": "2026-10-21",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -3899,6 +3899,66 @@
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=q0WKOiafD9co",
       "recordId": "20261016-yeonji-younghyun-ep08",
       "note": "날짜는 실제 방문일이 아닌 영상 공개일입니다."
+    },
+    {
+      "id": "pipeground-seoul-forest",
+      "name": "파이프그라운드 서울숲점",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 성동구 왕십리로 83-21 지하1층 B124·B125호",
+      "coordinates": [
+        37.5438634,
+        127.044267
+      ],
+      "category": "식당",
+      "members": [
+        "이보람"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-10-21",
+      "dateBasis": "영상 게시일",
+      "story": "이보람이 친구들과 함께 옥수수 피자를 먹은 곳입니다.\n영상 1분 6초에 파이프그라운드 방문 계획을 이야기하고, 5분 32초부터 식사 장면이 나옵니다.",
+      "source": {
+        "label": "보람씨야 공식 · 성수 나들이 브이로그",
+        "url": "https://www.youtube.com/watch?v=-ahH0aTmUDY&t=332"
+      },
+      "addressSource": "https://www.tabling.co.kr/place/677cd01566de5f0698856aa5",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=XaWoPendYTpZ",
+      "recordId": "20261021-boram-seongsu-vlog",
+      "note": "날짜는 영상 공개일입니다. 실제 방문은 영상에서 수원 콘서트 전날로 소개합니다."
+    },
+    {
+      "id": "understand-avenue",
+      "name": "언더스탠드에비뉴",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 성동구 왕십리로 63",
+      "coordinates": [
+        37.5436228,
+        127.0435859
+      ],
+      "category": "문화공간",
+      "members": [
+        "이보람"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-10-21",
+      "dateBasis": "영상 게시일",
+      "story": "이보람이 성수 나들이 중 친구들과 사진을 남긴 복합문화공간입니다.\n영상 6분 12초에 UNDER STAND AVENUE 글자가 있는 파란 컨테이너 앞 촬영 장면이 나옵니다.",
+      "source": {
+        "label": "보람씨야 공식 · 성수 나들이 브이로그",
+        "url": "https://www.youtube.com/watch?v=-ahH0aTmUDY&t=372"
+      },
+      "addressSource": "https://www.tel-co.net/travel/spot/1126",
+      "coordinateSource": "https://qab.purpleo.kr/article/4855",
+      "recordId": "20261021-boram-seongsu-vlog",
+      "note": "날짜는 영상 공개일입니다. 실제 방문은 영상에서 수원 콘서트 전날로 소개합니다."
     }
   ],
   "researchQueue": [
@@ -6153,6 +6213,16 @@
         "placeId": "pzpz-hongdae",
         "recordId": "20261016-yeonji-younghyun-ep08",
         "status": "new"
+      },
+      {
+        "placeId": "pipeground-seoul-forest",
+        "recordId": "20261021-boram-seongsu-vlog",
+        "status": "existing"
+      },
+      {
+        "placeId": "understand-avenue",
+        "recordId": "20261021-boram-seongsu-vlog",
+        "status": "existing"
       }
     ]
   }
