@@ -1,16 +1,11 @@
 'use strict';
-// Only public application files are cached. Personal entries stay in browser storage.
-const CACHE="seeya-passport-shell-410b94474c6e",FILES=["/assets/GowunDodum-Regular.385f1f238065.woff2","/assets/GowunBatang-Regular.d66f8f3914dc.woff2","/assets/NanumPenScript-Regular.d083eb8197a2.woff2","/passport/test/","/assets/site.81c4859d7940.css","/assets/passport.986e895a55c7.css","/assets/passport.9821d93a7d94.js","/assets/mobile-menu.d34f2de4a9e9.js","/manifest.webmanifest","/images/app/favicon-192.png","/images/app/apple-touch-icon-180-v2.png"];
-self.addEventListener('install',event=>event.waitUntil((async()=>{
- const cache=await caches.open(CACHE);
- try{for(const file of FILES){const response=await fetch(new Request(file,{cache:'reload'}));if(!response.ok)throw Error('Passport offline preparation failed');await cache.put(file,response);}}
- catch(error){await caches.delete(CACHE);throw error;}
+// Retire only the old test shell. Never touch diary caches or browser-local personal entries.
+self.addEventListener('install',event=>event.waitUntil(self.skipWaiting()));
+self.addEventListener('activate',event=>event.waitUntil((async()=>{
+ for(const name of await caches.keys())if(name.startsWith('seeya-passport-shell-'))await caches.delete(name);
+ await self.clients.claim();await self.registration.unregister();
 })()));
-self.addEventListener('activate',event=>event.waitUntil((async()=>{for(const name of await caches.keys())if(name.startsWith('seeya-passport-shell-')&&name!==CACHE)await caches.delete(name);await self.clients.claim();})()));
 self.addEventListener('fetch',event=>{
- const req=event.request,u=new URL(req.url);if(req.method!=='GET'||u.origin!==self.location.origin)return;
- const document=req.mode==='navigate'&&['/passport/test/','/passport/test/index.html','/passport/test'].includes(u.pathname);
- if(!document&&!FILES.includes(u.pathname))return;
- event.respondWith((async()=>{const cache=await caches.open(CACHE);if(document){try{const response=await fetch(req);if(response.ok)return response;}catch{}return await cache.match('/passport/test/')||Response.error();}return await cache.match(u.pathname)||fetch(req);})());
+ const url=new URL(event.request.url);
+ if(event.request.mode==='navigate'&&url.origin===self.location.origin&&['/passport/test/','/passport/test','/passport/test/index.html'].includes(url.pathname))event.respondWith(Promise.resolve(Response.redirect(self.location.origin+'/diary/'+url.search,302)));
 });
-// No forced reload, skipWaiting, third-party cache, or personal data transport.
