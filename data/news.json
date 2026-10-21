@@ -126,11 +126,11 @@
       "description": "씨야 이보람, 야경 산책 인증…20주년 투어 속 소소한 휴식 톱스타뉴스"
     },
     {
-      "title": "씨야 이보람, 야외 무대서 전한 노래…20주년 투어 속 따뜻한 행보 - 톱스타뉴스",
-      "source": "톱스타뉴스",
+      "title": "씨야 이보람, 야외 무대서 전한 노래…20주년 투어 속 따뜻한 행보 - TopStarNews",
+      "source": "TopStarNews",
       "pubDate": "2026-10-15T08:18:21+00:00",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1xM0VlVjV0aEFxWVQ4dVNPMWQxV1J2RFNTamJ5OHEwN3JwRnR0alRpOUsxclJYV2ZsMy1rSGRmeF82a1ZZeFk2TVJhUlB0V2xnek9oNEk2R1AzM0RzMGcyWjRQa0tBejFPTGFMclN4UE5PUQ?oc=5",
-      "description": "씨야 이보람, 야외 무대서 전한 노래…20주년 투어 속 따뜻한 행보 톱스타뉴스"
+      "description": "씨야 이보람, 야외 무대서 전한 노래…20주년 투어 속 따뜻한 행보 TopStarNews"
     },
     {
       "title": "씨야 이보람, 대전 무대 앞 셀카…20주년 투어 속 변함없는 미소 - 톱스타뉴스",
@@ -147,48 +147,48 @@
       "description": "씨야 이보람, 반짝 헤어핀 스타일링…전국투어 고양 공연 대기실 셀카 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-10-21T05:09:41.023372+00:00",
-  "lastCheckedAt": "2026-10-21T05:09:41.023372+00:00",
+  "updatedAt": "2026-10-21T09:05:01.777738+00:00",
+  "lastCheckedAt": "2026-10-21T09:05:01.777738+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-21T05:09:41.023372+00:00",
-    "남규리": "2026-10-21T05:09:41.023372+00:00",
-    "김연지": "2026-10-21T05:09:41.023372+00:00",
-    "이보람": "2026-10-21T05:09:41.023372+00:00"
+    "씨야": "2026-10-21T09:05:01.777738+00:00",
+    "남규리": "2026-10-21T09:05:01.777738+00:00",
+    "김연지": "2026-10-21T09:05:01.777738+00:00",
+    "이보람": "2026-10-21T09:05:01.777738+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-21T04:53:05.111034+00:00",
     "남규리": "2026-10-21T04:53:05.111034+00:00",
-    "이보람": "2026-10-19T13:22:29.806416+00:00",
+    "이보람": "2026-10-21T09:05:01.777738+00:00",
     "김연지": "2026-10-21T04:53:05.111034+00:00"
   },
   "categoryStatus": {
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 185,
+      "accepted": 206,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 110,
+      "accepted": 141,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 48,
+      "accepted": 50,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 101,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 102,
+      "changed": true,
+      "status": "changed"
     }
   }
 }

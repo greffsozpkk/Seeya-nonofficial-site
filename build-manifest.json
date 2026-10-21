@@ -1,5 +1,5 @@
 {
-  "version": "5.26",
+  "version": "5.27",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -68,10 +68,10 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.2a8eae22ddac.js",
+    "assets/site.8029c3d89e0f.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
-    "assets/fan-gallery.ea047b1660bc.js",
+    "assets/fan-gallery.d7a7192ef0d2.js",
     "assets/seeya-exam.2db5b7708b6d.css",
     "assets/seeya-exam.7156e1844878.js",
     "assets/dictionary.00b6d50a564c.css",
