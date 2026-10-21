@@ -1319,7 +1319,6 @@ body.fanchant-lightbox-open{overflow:hidden}
 .today-visitors{display:flex;justify-content:center;align-items:baseline;gap:7px;flex-wrap:wrap;margin-top:18px;font-size:13px;color:var(--deep)}
 .today-visitors strong{font-size:18px;font-variant-numeric:tabular-nums}
 .today-visitors span{font-size:11px}
-
 /* v4.97 On this day: archive anniversaries */
 .on-this-day{margin:0 0 48px;border:1px solid var(--line);padding:clamp(22px,4vw,42px);background:#fffcfd}
 .on-this-day-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}

@@ -28,6 +28,17 @@ jobs:
         id: refresh
         continue-on-error: true
         run: python scripts/update_news.py
+      - name: Test visitor reporting
+        run: python -m unittest discover -s scripts -p 'test_visitors.py'
+      - name: Refresh visitors on pushes and news updates
+        id: visitors
+        continue-on-error: true
+        run: |
+          pip install 'google-auth>=2,<3' 'requests>=2,<3'
+          python scripts/update_visitors.py
+        env:
+          GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}
+          GA_SERVICE_ACCOUNT_JSON: ${{ secrets.GA_SERVICE_ACCOUNT_JSON }}
       - run: node build.js
       - run: node scripts/check.js
       - name: Commit news and generated files together
@@ -35,6 +46,7 @@ jobs:
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git add data/archive.json data/archive-update-log.json data/news.json '*.html' assets calendar sitemap.xml manifest.webmanifest sw.js diary/sw.js passport/sw.js build-manifest.json map/coverage.json
+          if [ -f data/visitors.json ]; then git add data/visitors.json; fi
           if git diff --cached --quiet; then exit 0; fi
           git commit -m 'chore: update news and prerendered pages'
           git push
@@ -47,3 +59,7 @@ jobs:
         run: |
           echo 'News refresh failed. Existing articles were retained and the site rebuild was requested.'
           exit 1
+      - name: Report visitor source outage
+        if: always() && steps.visitors.outcome == 'failure'
+        run: |
+          echo '::warning::Visitor refresh failed. Existing counts were retained; see Refresh visitors step.'

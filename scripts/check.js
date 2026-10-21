@@ -34,6 +34,7 @@ require('./check-home-upcoming');
 execFileSync(process.execPath,['scripts/check-home-upcoming-client.js'],{cwd:root,stdio:'inherit'});
 require('./check-admin');
 require('./check-news-status');
+execFileSync(process.execPath,['scripts/check-visitors.js'],{cwd:root,stdio:'inherit'});
 execFileSync(process.execPath,['scripts/check-pwa.js'],{cwd:root,stdio:'inherit'});
 
 execFileSync(process.execPath,['scripts/check-offline.js'],{cwd:root,stdio:'inherit'});

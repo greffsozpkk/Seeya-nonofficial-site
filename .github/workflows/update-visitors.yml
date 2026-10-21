@@ -2,7 +2,7 @@ name: Update daily visitors
 on:
   workflow_dispatch:
   schedule:
-    - cron: '43 * * * *'
+    - cron: '13,43 * * * *'
 permissions:
   contents: write
   pages: write
@@ -13,11 +13,12 @@ jobs:
   visitors:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
       - run: pip install 'google-auth>=2,<3' 'requests>=2,<3'
+      - run: python -m unittest discover -s scripts -p 'test_visitors.py'
       - run: python scripts/update_visitors.py
         env:
           GA_PROPERTY_ID: ${{ secrets.GA_PROPERTY_ID }}

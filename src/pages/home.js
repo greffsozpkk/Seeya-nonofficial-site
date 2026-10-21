@@ -130,7 +130,7 @@ ${homeUpcoming(rows,now)}
     <a class="creator-letter-link" href="/about/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>제작자의 편지</a>
     <a class="creator-letter-link" href="/about/install/"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M9 11h6m-3-3v6m-2 5h4"/></svg>홈 화면에 추가</a>
     </nav>
-    <div class="today-visitors" aria-live="polite">Today <strong id="today-visitors-count">—</strong><span id="today-visitors-status">집계 준비 중</span></div>
+    <div class="today-visitors" aria-live="polite">Today <strong id="today-visitors-count">—</strong><span id="today-visitors-status">집계 확인 중</span></div>
     <div class="creator-contact">contact. <a href="https://www.instagram.com/seeya_archive_fanpage/" target="_blank" rel="noopener noreferrer" aria-label="제작자 인스타그램으로 연락하기 (새 창)"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle class="contact-dot" cx="17.5" cy="6.5" r="1"/></svg></a></div>
   </div>
 </section>
