@@ -74,15 +74,15 @@ for(const bad of [undefined,null,0,'0,1',[0,0,1],[0,1,4],['0',1]]){assert(!corre
 assert.equal(answerText(multi,[1,0]),multi.choices[0]+' / '+multi.choices[1]);assert.equal(answerText(multi,[]),'미응답');
 assert(printQuestions(undefined,'',memory).includes('복수정답'));
 assert(require('../src/shared/exam-welcome')(memory).includes('부분 점수는 없습니다'));
-const route=JSON.parse(read('src/data/exam-preview-route.json')),file=route.path.slice(1)+'index.html',html=read(file);
+const route=JSON.parse(read('src/data/exam-preview-route.json')),file=route.path.slice(1)+'index.html',html=read('game/exam/index.html');
 for(const bank of banks)assert(html.includes('data-area="'+bank.key+'"')&&html.includes(bank.area));
-assert(html.includes('noindex,nofollow,noarchive,nosnippet'));assert(!html.includes('googletagmanager')&&!html.includes('/assets/analytics.js'));assert(html.includes('no-referrer'));assert(!read('sitemap.xml').includes(route.path));assert(!read('build-manifest.json').includes(route.path));assert(!read('src/data/routes.json').includes(route.path));
+assert(read(file).includes('location.replace("/game/exam/"'));assert(html.includes('no-referrer'));assert(!read('sitemap.xml').includes(route.path));assert(!read('src/data/routes.json').includes(route.path));
 const manifest=JSON.parse(read('build-manifest.json'));for(const f of manifest.files.filter(f=>f.endsWith('.html')))assert(!read(f).includes(route.path),f+' exposes preview');
 const publicExam=read('game/exam/index.html');
 assert(publicExam.includes('시험지형으로 시작')&&publicExam.includes('카드형으로 시작'));
-assert(publicExam.includes('data-preview="false"')&&html.includes('data-preview="true"'));
+assert(publicExam.includes('data-preview="false"'));
 assert(!publicExam.includes('PREVIEW')&&!publicExam.includes('업데이트 예정')&&!publicExam.includes('noindex'));
-assert(html.includes('SEEYA EXAM · PREVIEW'));
+assert(!html.includes('SEEYA EXAM · PREVIEW'));
 assert(publicExam.includes('https://seeya-fanpage.com/game/exam/'));
 assert(read('sitemap.xml').includes('https://seeya-fanpage.com/game/exam/'));
 for(const bank of banks)assert(publicExam.includes('data-area="'+bank.key+'"'));
@@ -93,5 +93,5 @@ assert(read('guide/index.html').includes('href="/game/exam/"'));
 assert(read('src/styles/exam.css').includes('body:is([data-page="exam"],[data-page="exam-preview"])'));
 
 for(const m of html.matchAll(/(?:href|src)="([^"#]+)"/g)){const ref=m[1];if(/^(https?:|data:)/.test(ref))continue;const p=path.join(root,ref.split('?')[0]);assert(fs.existsSync(p),'Preview missing resource '+ref);}
-const hash=s=>crypto.createHash('sha256').update(s).digest('hex');const before=hash(html);execFileSync(process.execPath,['build.js'],{cwd:root});assert.equal(hash(read(file)),before);
+const hash=s=>crypto.createHash('sha256').update(s).digest('hex');const before=hash(read(file));execFileSync(process.execPath,['build.js'],{cwd:root});assert.equal(hash(read(file)),before);
 console.log('PASS: 3 areas / 75 questions, isolated scoring, aliases, shuffled choices, 3-sheet blank print, unlisted/noindex route, public playable entry and preserved preview, reproducible preview.');

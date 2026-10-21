@@ -308,24 +308,10 @@
   },
   {
     "key": "radio",
-    "path": "/radio/test/",
-    "title": "라디오 모아듣기 · 재생 테스트 | SEEYA ARCHIVE",
-    "description": "씨야와 남규리·김연지·이보람의 라디오 영상과 공식 팟캐스트를 한곳에서 검색하고 골라 들어보세요.",
-    "noindex": true
-  },
-  {
-    "key": "radio",
     "path": "/radio/",
     "title": "씨야 라디오 모아듣기 | SEEYA ARCHIVE",
     "description": "씨야와 남규리·김연지·이보람의 라디오 영상과 공식 팟캐스트를 한곳에서 검색하고 골라 들어보세요.",
     "noindex": false
-  },
-  {
-    "key": "podcasts",
-    "path": "/radio/podcast-test/",
-    "title": "팟캐스트 재생 테스트 · 씨야 라디오 | SEEYA ARCHIVE",
-    "description": "남규리의 정오의 희망곡 4개 회차를 Apple Podcasts 공식 플레이어로 들어보세요.",
-    "noindex": true
   },
   {
     "key": "song",
@@ -346,13 +332,6 @@
     "path": "/map/",
     "title": "씨야 대동여지도 · 걸어서 씨야 속으로 | SEEYA ARCHIVE",
     "description": "걸어서 씨야 속으로. 씨야와 멤버들의 방문·여행·공연·팬 행사 장소를 지도에서 만나보세요."
-  },
-  {
-    "key": "passport",
-    "path": "/passport/test/",
-    "title": "씨야 다이어리 테스트 | SEEYA ARCHIVE",
-    "description": "씨야와 함께한 공연과 장소, 팬 행사와 추억을 개인 수첩에 남겨보세요.",
-    "noindex": true
   },
   {
     "key": "passport",

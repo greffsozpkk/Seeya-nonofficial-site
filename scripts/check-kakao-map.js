@@ -28,5 +28,5 @@ map.on('moveend zoomend',()=>{});assert(f.events.has('idle'));assert.equal(f.tim
 const root=require('node:path').resolve(__dirname,'..');const provider=JSON.parse(fs.readFileSync(root+'/src/data/map-provider.json','utf8'));
 assert.equal(provider.provider,'kakao');assert(provider.javascriptKey===''||/^[a-f0-9]{32}$/i.test(provider.javascriptKey));
 const manifest=JSON.parse(fs.readFileSync(root+'/build-manifest.json','utf8'));assert(!manifest.assets.some(p=>p.includes('leaflet')));
-const route=require('../src/data/map-preview-route.json');const html=fs.readFileSync(root+route.path+'index.html','utf8');assert(html.includes('"mapProvider"'));assert(!html.includes('tile.openstreetmap.org'));assert(!html.includes('leaflet'));
+const route=require('../src/data/map-preview-route.json');const html=fs.readFileSync(root+'/map/index.html','utf8');assert(html.includes('"mapProvider"'));assert(!html.includes('tile.openstreetmap.org'));assert(!html.includes('leaflet'));
 console.log('PASS Kakao: lazy single SDK load, key/network/timeout fallbacks, late callback, preserved center, zoom, accessible pins, overseas exclusion and no Local API calls.');

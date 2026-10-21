@@ -30,7 +30,7 @@ for(const file of build.files.filter(p=>p.endsWith('.html'))){
  assert(html.includes('href="/about/">ABOUT</a>'),file);
  if(!['passport/test/index.html','diary/index.html'].includes(file))assert(/src="\/assets\/pwa\.[a-f0-9]+\.js"/.test(html),file);
 }
-const preview=JSON.parse(read('src/data/exam-preview-route.json'));
+const preview=JSON.parse(read('src/data/worldcup-test-route.json'));
 const privateHtml=read(preview.path.slice(1)+'index.html');
 assert(!privateHtml.includes('rel="manifest"'));assert(!privateHtml.includes('data-install-link'));
 assert(!/src="\/assets\/pwa\./.test(privateHtml));

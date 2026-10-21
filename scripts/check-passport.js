@@ -27,7 +27,7 @@ assert.throws(()=>P.validate({...incoming,schemaVersion:2}));assert.throws(()=>P
 assert(P.duplicate(sample,{...sample,entryId:'another-id'}));assert(!P.duplicate(sample,{...sample,time:'18:00'}));
 let data=null,fail=false;const adapter={getItem:()=>data,setItem:(k,v)=>{if(fail)throw Object.assign(Error('full'),{name:'QuotaExceededError'});data=v;}};
 const store=P.storage(adapter);store.save(current);const saved=data;fail=true;assert.throws(()=>store.save(incoming));assert.equal(data,saved);assert.deepEqual(store.get(),current);fail=false;data='changed in another tab';assert.throws(()=>store.save(incoming),/다른 창/);assert.equal(data,'changed in another tab');assert.throws(()=>P.storage(adapter));
-const html=read('passport/test/index.html');assert(!html.includes('googletagmanager'));assert(!html.includes('/assets/analytics.js'));assert(!html.includes('/assets/visitor-count.js'));assert(html.includes('noindex,follow'));assert(!read('sitemap.xml').includes('/passport/test/'));
+const html=read('diary/index.html');assert(!html.includes('googletagmanager'));assert(!html.includes('/assets/analytics.js'));assert(!html.includes('/assets/visitor-count.js'));assert(!html.includes('noindex'));assert(read('sitemap.xml').includes('/diary/'));
 const catalog=JSON.parse(html.match(/id="passportCatalog">([\s\S]*?)<\/script>/)[1]);assert.equal(catalog.tour.length,8);for(const t of catalog.tour)assert(catalog.events.some(e=>e.id===t.eventId));for(const e of catalog.events)if(e.placeId)assert(catalog.places.some(p=>p.id===e.placeId));assert(catalog.events.some(e=>e.endDate!==e.date));
 // The map and passport must use the same resolved places, including archive-only venues.
 const map=require('../src/shared/seeya-map'),places=map.resolvePlaces(JSON.parse(read('src/data/map-places.json')),JSON.parse(read('data/archive.json')));
@@ -65,11 +65,11 @@ assert.equal(new Set(catalog.events.map(e=>e.id)).size,catalog.events.length);
 assert.equal(new Set(seoul.map(t=>t.archiveId)).size,1);
 // Offline worker: complete installation, private data never cached, network failure opens the saved shell.
 async function offline(){
- const handlers={},items=new Map(),cache={put:async(k,v)=>items.set(k,v),match:async k=>items.get(k)},names=['unrelated','seeya-passport-shell-old'],deleted=[];let offline=false,claimed=0;
+ const handlers={},items=new Map(),cache={put:async(k,v)=>items.set(k,v),match:async k=>items.get(k)},names=['unrelated','seeya-diary-shell-old'],deleted=[];let offline=false,claimed=0;
  const fetch=async req=>{if(offline)throw Error('offline');return {ok:true,url:typeof req==='string'?req:req.url};};
  const context={URL,Request:class{constructor(url){this.url=url;}},Response:{error:()=>({error:true})},fetch,caches:{open:async()=>cache,keys:async()=>names,delete:async n=>deleted.push(n)},self:{location:{origin:'https://seeya-fanpage.com'},clients:{claim:async()=>claimed++},addEventListener:(k,f)=>handlers[k]=f}};
- vm.runInNewContext(read('passport/sw.js'),context);let pending;handlers.install({waitUntil:p=>pending=p});await pending;assert(items.has('/passport/test/'));assert(![...items.keys()].some(k=>/archive\.json|manage|instagram|https:/.test(k)));handlers.activate({waitUntil:p=>pending=p});await pending;assert.deepEqual(deleted,['seeya-passport-shell-old']);assert.equal(claimed,1);
- offline=true;let response;handlers.fetch({request:{method:'GET',mode:'navigate',url:'https://seeya-fanpage.com/passport/test/?from=calendar'},respondWith:p=>response=p});assert.equal((await response).url,'/passport/test/');
+ vm.runInNewContext(read('diary/sw.js'),context);let pending;handlers.install({waitUntil:p=>pending=p});await pending;assert(items.has('/diary/'));assert(![...items.keys()].some(k=>/archive\.json|manage|instagram|https:/.test(k)));handlers.activate({waitUntil:p=>pending=p});await pending;assert.deepEqual(deleted,['seeya-diary-shell-old']);assert.equal(claimed,1);
+ offline=true;let response;handlers.fetch({request:{method:'GET',mode:'navigate',url:'https://seeya-fanpage.com/diary/?from=calendar'},respondWith:p=>response=p});assert.equal((await response).url,'/diary/');
  for(const url of ['https://seeya-fanpage.com/data/archive.json','https://seeya-fanpage.com/manage/','https://youtube.com/watch?v=x']){let called=false;handlers.fetch({request:{method:'GET',mode:'navigate',url},respondWith:()=>called=true});assert(!called,url);}
  console.log('PASS passport: partial dates, planned exclusion, import validation/idempotence, storage failure/conflict preservation, privacy, catalog links and offline shell isolation.');
 }

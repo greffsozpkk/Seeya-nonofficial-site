@@ -1,0 +1,2 @@
+'use strict';
+module.exports=target=>{if(!/^\/[a-z/]+\/$/.test(target))throw Error('Invalid redirect');return `<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>정식 페이지로 이동 · SEEYA</title><link rel="canonical" href="https://seeya-fanpage.com${target}"></head><body><p>테스트가 끝났어요. 정식 페이지에서 계속 이용해 주세요.</p><a href="${target}">정식 페이지 열기</a><script>location.replace(${JSON.stringify(target)}+location.search+location.hash);</script></body></html>`;};

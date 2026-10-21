@@ -10,9 +10,10 @@ for(const changes of [{hidden:true},{status:'scheduled'},{eventState:'cancelled'
 assert.equal(resolvePodcasts([sample],[review,review],'2026-10-03').length,1);
 assert.equal(resolvePodcasts([sample],[{...review,episodeId:'1" onload="alert(1)'}],'2026-10-03').length,0);
 const renamed=resolvePodcasts([{...sample,title:'변경한 방송명'}],[review],'2026-10-03');assert.equal(renamed[0].title,'변경한 방송명');
-const html=read('radio/podcast-test/index.html');
-assert(html.includes('noindex,follow'));assert(!read('sitemap.xml').includes('/radio/podcast-test/'));
-assert.equal((html.match(/<iframe /g)||[]).length,1);assert(html.includes('rel="manifest"'));assert(!html.includes('youtube.com/embed/'));
+const html=require('../src/pages/podcasts')(archive,'2026-10-03');
+assert(read('radio/podcast-test/index.html').includes('location.replace("/radio/"'));
+assert(!read('sitemap.xml').includes('/radio/podcast-test/'));
+assert.equal((html.match(/<iframe /g)||[]).length,1);assert(!html.includes('youtube.com/embed/'));
 assert(read('radio/index.html').includes('id="radioFormat"')); 
 // Simulate switching while playing: old frame is removed first, same selection is a no-op.
 const nodes={},events={},buttons=[];let removals=0,mounts=0;

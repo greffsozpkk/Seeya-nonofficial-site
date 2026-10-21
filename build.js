@@ -77,8 +77,8 @@ const passportFonts=[['Passport Dodum','GowunDodum-Regular'],['Passport Batang',
 const passportFontCss=passportFonts.map(f=>`@font-face{font-family:"${f.family}";src:url("${f.url}") format("woff2");font-style:normal;font-weight:400;font-display:swap}`).join('\n');
 const passportCss=asset('passport','css',passportFontCss+'\n'+read('src/styles/passport.css'));
 const passportBundle=bundle('src/client/passport.js');
-const passportJs=asset('passport','js',passportBundle);
-// Compile public and retained test entry points from the same editor source.
+// Retired test editor is no longer bundled separately.
+// Preserve the public diary and its existing personal storage key.
 const diaryJs=asset('diary','js',passportBundle.replaceAll('/passport/test/','/diary/').replaceAll('/passport/sw.js','/diary/sw.js'));
 const adminCss=asset('archive-admin','css',read('src/admin/admin.css'));
 const adminJs=asset('archive-admin','js',read('src/admin/admin.js'));
@@ -101,15 +101,15 @@ const passportCatalog=require('./src/shared/passport-catalog')(archiveRows,[...c
 const examBanks=require('./src/shared/exam').banks;
 if(!examBanks.every(b=>b.questions.length===examBanks[0].questions.length&&b.points===examBanks[0].points))throw Error('Diary play presets need area-specific question counts');
 passportCatalog.playFormats={lyrics:{total:10,maxScore:10},exam:{total:examBanks[0].questions.length,maxScore:examBanks[0].questions.length*examBanks[0].points}};
-const previewRoute=json('src/data/exam-preview-route.json');
-const mapPreviewRoute=json('src/data/map-preview-route.json');
-if(!/^\/preview\/seeya-map-[a-f0-9]{16}\/$/.test(mapPreviewRoute.path)||!mapPreviewRoute.unlisted)throw new Error('Invalid map preview route');
-if(!/^\/preview\/seeya-exam-[a-f0-9]{16}\/$/.test(previewRoute.path)||!previewRoute.unlisted)throw new Error('Invalid exam preview route');
+const worldcupRoute=json('src/data/worldcup-test-route.json');
+const retiredRoutes=json('src/data/retired-test-routes.json');
+const worldcupCss=asset('worldcup','css',read('src/styles/worldcup.css'));
+const worldcupJs=asset('worldcup','js',bundle('src/client/worldcup.js'));
 const photosRaw=json('data/photos.json');
 const photos=(Array.isArray(photosRaw)?photosRaw:photosRaw.photos||[]).filter(x=>x&&x.hidden!==true).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||Number(a.order||999)-Number(b.order||999));
 const template=read('src/template.html');
 const files=[];
-for(const route of [...routes,previewRoute,mapPreviewRoute]){
+for(const route of [...routes,worldcupRoute]){
  const key=route.key;
  const render=require('./src/pages/'+(key==='fanchant'?'music':key)+'.js');
  let content;
@@ -127,8 +127,9 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
  else content=render();
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
+ if(key==='worldcup-test'){vars.pageHead=`<meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="${worldcupCss}">`;vars.scripts=`<script defer src="${worldcupJs}"></script>`;}
  if(key==='diary-privacy')vars.pageHead+=`<link rel="stylesheet" href="${passportCss}">`;
- if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}">`;vars.scripts=`<script defer src="${route.path==='/diary/'?diaryJs:passportJs}"></script>`;}
+ if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}">`;vars.scripts=`<script defer src="${diaryJs}"></script>`;}
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
  if((key==='map'||key==='map-preview')){vars.pageHead=`<link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${mapJs}"></script>`;}
  if(key==='podcasts'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}"><link rel="stylesheet" href="${podcastCss}">`;vars.scripts=`<script defer src="${podcastJs}"></script>`;}
@@ -151,15 +152,16 @@ for(const route of [...routes,previewRoute,mapPreviewRoute]){
 }
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.filter(r=>r.key!=='letter'&&!r.noindex).map(r=>'  <url><loc>'+esc(site.origin+r.path)+'</loc></url>').join('\n')+'\n</urlset>\n');
 write('passport/index.html',read('src/passport-redirect.html'));
-const passportFiles=[...passportFonts.map(f=>f.url),'/passport/test/',siteCss,passportCss,passportJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png','/images/app/apple-touch-icon-180-v2.png'];
-const passportDigest=crypto.createHash('sha256').update(fs.readFileSync(path.join(outputRoot,'passport/test/index.html'))).update(read('src/passport-worker.js')).digest('hex').slice(0,12);
-write('passport/sw.js',read('src/passport-worker.js').replace('__PASSPORT_CACHE__',JSON.stringify('seeya-passport-shell-'+passportDigest)).replace('__PASSPORT_FILES__',JSON.stringify(passportFiles)));
-const diaryFiles=passportFiles.map(p=>p==='/passport/test/'?'/diary/':p===passportJs?diaryJs:p);
+const diaryFiles=[...passportFonts.map(f=>f.url),'/diary/',siteCss,passportCss,diaryJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png','/images/app/apple-touch-icon-180-v2.png'];
 const diaryWorker=read('src/passport-worker.js').replaceAll('/passport/test/','/diary/').replaceAll('/passport/test','/diary').replaceAll('seeya-passport-shell-','seeya-diary-shell-');
 const diaryDigest=crypto.createHash('sha256').update(fs.readFileSync(path.join(outputRoot,'diary/index.html'))).update(diaryWorker).digest('hex').slice(0,12);
 write('diary/sw.js',diaryWorker.replace('__PASSPORT_CACHE__',JSON.stringify('seeya-diary-shell-'+diaryDigest)).replace('__PASSPORT_FILES__',JSON.stringify(diaryFiles)));
+// Replace retired applications with tiny redirects, preserving bookmarks and diary hashes.
+const retiredFiles=[];
+for(const route of retiredRoutes){const file=route.from.slice(1)+'index.html';write(file,require('./src/shared/retired-route')(route.to));retiredFiles.push(file);}
+write('passport/sw.js',read('src/retired-passport-worker.js'));
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',mapPreviewRoute.path.slice(1)+'index.html']},null,2)+'\n');
-console.log(`Built ${routes.length} public pages, 2 unlisted previews and ${assets.length} versioned assets.`);
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html']},null,2)+'\n');
+console.log(`Built ${routes.length} public pages, 1 unlisted world cup preview and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

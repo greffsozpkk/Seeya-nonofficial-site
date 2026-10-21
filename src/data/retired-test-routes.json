@@ -1,0 +1,22 @@
+[
+  {
+    "from": "/radio/test/",
+    "to": "/radio/"
+  },
+  {
+    "from": "/radio/podcast-test/",
+    "to": "/radio/"
+  },
+  {
+    "from": "/passport/test/",
+    "to": "/diary/"
+  },
+  {
+    "from": "/preview/seeya-exam-e0d270d321a64ddd/",
+    "to": "/game/exam/"
+  },
+  {
+    "from": "/preview/seeya-map-7f2c9a6e41b803d5/",
+    "to": "/map/"
+  }
+]

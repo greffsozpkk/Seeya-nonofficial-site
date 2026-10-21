@@ -23,7 +23,7 @@ const card={...multi,type:'performance',members:[],state:'confirmed',recordIds:[
 console.log('PASS passport play/calendar: opt-in preference, KST, result privacy, run dedupe, independent replays, quota/corruption preservation, backup and legacy QR, bounded event dates and cancellation.');
 
 const fs=require('node:fs'),path=require('node:path');
-const html=fs.readFileSync(path.join(__dirname,'../passport/test/index.html'),'utf8'),catalog=JSON.parse(html.match(/id="passportCatalog">([\s\S]*?)<\/script>/)[1]);
+const html=fs.readFileSync(path.join(__dirname,'../diary/index.html'),'utf8'),catalog=JSON.parse(html.match(/id="passportCatalog">([\s\S]*?)<\/script>/)[1]);
 const seoul=catalog.events.find(e=>e.archiveId==='20260829-the-fan-seoul'&&e.date==='2026-08-29');
 assert.equal(C.selectedEvent(seoul,'2026-08-30').date,'2026-08-30');
 const calState=require('../src/shared/calendar-state').selectionFromURL('?month=2026-08&event=two-day&day=2026-08-30',[multi],'2026-10-11');assert.equal(calState.day,'2026-08-30');
