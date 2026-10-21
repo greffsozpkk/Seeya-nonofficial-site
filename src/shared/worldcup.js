@@ -11,4 +11,5 @@ function replay(game,ids,version){
 function choose(game,pick,ids,version){const state=replay(game,ids,version);if(!state.pair.includes(pick))throw Error('현재 대결의 곡을 선택해 주세요.');return {...game,picks:[...game.picks,pick]};}
 function recordResult(history,game,ids,version,now){const state=replay(game,ids,version);if(!state.winner)throw Error('완료되지 않은 게임');const old=Array.isArray(history)?history:[];if(old.some(r=>r.id===game.id))return old;return [...old,{id:game.id,version,size:game.size,winner:state.winner,at:now}].slice(-100);}
 function ranking(history,size,version){const rows=history.filter(r=>r.version===version&&r.size===size),counts=new Map();rows.forEach(r=>counts.set(r.winner,(counts.get(r.winner)||0)+1));let prev=-1,rank=0;return {total:rows.length,rows:[...counts].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).map(([id,wins],i)=>{if(wins!==prev)rank=i+1;prev=wins;return {id,wins,rank,percent:rows.length?wins/rows.length*100:0};})};}
-module.exports={shuffle,create,replay,choose,recordResult,ranking};
+function roundProgress(state){const label=state.round===2?'결승':state.round+'강',matches=state.round/2;return {label,matches,current:state.match+1,completed:state.match,text:label+' '+(state.match+1)+'/'+matches};}
+module.exports={shuffle,create,replay,choose,recordResult,ranking,roundProgress};
