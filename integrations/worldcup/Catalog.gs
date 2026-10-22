@@ -5,7 +5,7 @@ function validateCatalog_(data){
  var used=new Set(),text=function(x,max){return typeof x==='string'&&x.length>0&&x.length<=max;};
  data.collections.forEach(function(c){
   if(!text(c.id,80)||!/^[\w-]+$/.test(c.id)||used.has(c.id)||!text(c.version,160)||!/^[\w-]+$/.test(c.version)||!text(c.title,150))throw Error('종류 형식 오류');used.add(c.id);
-  if(!Array.isArray(c.candidates)||c.candidates.length<2||c.candidates.length>128||!Array.isArray(c.rounds)||!c.rounds.length||new Set(c.rounds).size!==c.rounds.length)throw Error('후보 수 오류');
+  if(!Array.isArray(c.candidates)||c.candidates.length<2||c.candidates.length>256||!Array.isArray(c.rounds)||!c.rounds.length||new Set(c.rounds).size!==c.rounds.length)throw Error('후보 수 오류');
   var ids=new Set();c.candidates.forEach(function(r){if(!text(r.id,99)||!/^[\w-]+$/.test(r.id)||ids.has(r.id)||!text(r.title,200)||typeof r.artist!=='string'||r.artist.length>150||typeof r.album!=='string'||r.album.length>250)throw Error('후보 형식 오류');ids.add(r.id);});
   if(c.rounds.some(function(n){return n!=='all'&&(![16,32,64].includes(n)||n>c.candidates.length);})||JSON.stringify(c).length>40000)throw Error('라운드 형식 오류');
  });return data.collections;

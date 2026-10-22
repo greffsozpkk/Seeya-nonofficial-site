@@ -39,3 +39,7 @@ async function adminView(){
  pending=click(event({wcScope:'0'}));await Promise.resolve();ui.clear();access=false;resolveRanks({total:1,rows});await pending;assert.equal(host.innerHTML,'');assert.equal(calls,2);
 }
 retries().then(adminView).then(()=>console.log('PASS automatic catalogs: source validation, new types from legacy four-type deployment, historical finishes, no fast rejection, failed refresh preservation, automatic lost-response retry, admin login gate/pagination/logout race.')).catch(e=>{console.error(e);process.exitCode=1;});
+
+const capacity=structuredClone(catalog.collections[0]);capacity.rounds=['all'];capacity.candidates=Array.from({length:256},(_,i)=>({id:'capacity-'+i,title:'곡 '+i,artist:'씨야',album:'검증'}));
+assert.equal(context.validateCatalog_({schema:1,collections:[capacity]})[0].candidates.length,256);
+assert.throws(()=>context.validateCatalog_({schema:1,collections:[{...capacity,candidates:[...capacity.candidates,{id:'capacity-256',title:'초과',artist:'씨야',album:'검증'}]}]}));

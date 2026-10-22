@@ -15,7 +15,7 @@ function createService(catalog,repo,env){
  function finish(q){scope(q);if(!validId(q.id)||typeof q.token!=='string'||!env.verify(q.id,q.token))fail('TOKEN','게임 확인 정보가 올바르지 않아요.');
   const old=repo.result(q.id);if(old){if(old.collection!==q.collection||old.version!==q.version||old.size!==q.size||old.winner!==q.winner)fail('CONFLICT','이미 처리한 결과와 다른 요청이에요.');return receipt(old,true);}
   const s=repo.session(q.id);if(!s)fail('SESSION','게임 발급 기록을 찾지 못했어요.');if(s.collection!==q.collection||s.version!==q.version||s.size!==q.size)fail('CONFLICT','게임 종류가 일치하지 않아요.');if(s.expires<=env.now())fail('EXPIRED','통계 등록 기한이 지났어요. 결과는 이 기기에 남습니다.');if(repo.paused(s.collection))fail('PAUSED','통계 집계가 잠시 중지되어 있어요. 나중에 다시 시도해 주세요.');
-  const c=catalog.find(c=>c.id===s.collection&&c.version===s.version);if(!Array.isArray(q.picks)||q.picks.length>127||!q.picks.every(x=>typeof x==='string'&&x.length<100))fail('PATH','선택 기록 형식이 올바르지 않아요.');
+  const c=catalog.find(c=>c.id===s.collection&&c.version===s.version);if(!Array.isArray(q.picks)||q.picks.length>255||!q.picks.every(x=>typeof x==='string'&&x.length<100))fail('PATH','선택 기록 형식이 올바르지 않아요.');
   let state;try{state=G.replay({...s.game,picks:q.picks},c.candidates.map(x=>x.id),c.version);}catch{fail('PATH','발급된 대진과 선택 기록이 일치하지 않아요.');}
   if(!state.winner||state.winner!==q.winner)fail('INCOMPLETE','결승까지 완료한 게임만 등록할 수 있어요.');
   const row={id:s.id,collection:s.collection,version:s.version,size:s.size,winner:state.winner,at:new Date(env.now()).toISOString(),excluded:false,reason:''};
@@ -27,7 +27,7 @@ function createService(catalog,repo,env){
   const rows=ids.map(id=>counts.get(id)||{id,wins:0,percent:0}).sort((a,b)=>b.wins-a.wins||a.id.localeCompare(b.id)).map((r,i)=>{if(r.wins!==prev)rank=i+1;prev=r.wins;return {...r,rank};});
   return {ok:true,environment:env.environment,collection:c.id,version:c.version,size:q.size,total:all.length,rows,updatedAt:new Date(env.now()).toISOString(),policy:'completed-game'};
  }
- function handle(q){if(!q||typeof q!=='object'||JSON.stringify(q).length>20000)fail('INPUT','요청 크기를 확인해 주세요.');if(q.action==='start')return start(q);if(q.action==='finish')return finish(q);if(q.action==='ranks')return ranks(q);if(q.action==='health')return {ok:true,environment:env.environment,policy:'completed-game',collections:catalog.filter(c=>c.active!==false).map(c=>({id:c.id,version:c.version,rounds:c.rounds}))};fail('ACTION','지원하지 않는 요청입니다.');}
+ function handle(q){if(!q||typeof q!=='object'||JSON.stringify(q).length>40000)fail('INPUT','요청 크기를 확인해 주세요.');if(q.action==='start')return start(q);if(q.action==='finish')return finish(q);if(q.action==='ranks')return ranks(q);if(q.action==='health')return {ok:true,environment:env.environment,policy:'completed-game',maxCandidates:256,collections:catalog.filter(c=>c.active!==false).map(c=>({id:c.id,version:c.version,rounds:c.rounds}))};fail('ACTION','지원하지 않는 요청입니다.');}
  return {handle};
 }
 module.exports={createService};

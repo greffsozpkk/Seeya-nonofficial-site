@@ -55,7 +55,7 @@ async function checkRemoteClient(){
  const storage={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},conf={endpoint:'https://script.google.com/macros/s/test_deployment/exec',environment:'test'};
  const remote=create(conf,{storage,uuid:()=> 'ui-browser-client',now:()=>now,fetch:async(u,o)=>{const q=JSON.parse(o.body);return {ok:true,type:'cors',json:async()=>service.handle(q)};}});
  nodes.worldcupApp=app;nodes.wcNotice=node();nodes.worldcupData={textContent:JSON.stringify({collections:catalog,stats:conf})};nodes.wcSyncStatus=node();
- const ctx={require:n=>n==='../shared/worldcup'?G:n==='./worldcup-stats'?{create:()=>remote}:n==='../shared/passport-play-save'?require('../src/shared/passport-play-save'):{esc:s=>String(s)},document:{getElementById:id=>nodes[id],createElement:()=>node(),head:{append(){}}},window:{YT:{Player:function(){this.destroy=()=>{};this.pauseVideo=()=>{};}},confirm:()=>true,addEventListener:(n,fn)=>listeners[n]=fn},localStorage:storage,location:{origin:'https://example.test',pathname:'/game/worldcup/test/',search:'?type=solo'},history:{replaceState(){}},crypto:{randomUUID:()=> 'ui-request-'+(++requestId)},URLSearchParams,Date,Math,Promise,setTimeout:fn=>{timers.push(fn);return 1;},clearTimeout(){},navigator:{}};
+ const ctx={require:n=>n==='../shared/worldcup-presentation'?require('../src/shared/worldcup-presentation'):n==='../shared/worldcup'?G:n==='./worldcup-stats'?{create:()=>remote}:n==='../shared/passport-play-save'?require('../src/shared/passport-play-save'):{esc:s=>String(s)},document:{getElementById:id=>nodes[id],createElement:()=>node(),head:{append(){}}},window:{YT:{Player:function(){this.destroy=()=>{};this.pauseVideo=()=>{};}},confirm:()=>true,addEventListener:(n,fn)=>listeners[n]=fn},localStorage:storage,location:{origin:'https://example.test',pathname:'/game/worldcup/test/',search:'?type=solo'},history:{replaceState(){}},crypto:{randomUUID:()=> 'ui-request-'+(++requestId)},URLSearchParams,Date,Math,Promise,setTimeout:fn=>{timers.push(fn);return 1;},clearTimeout(){},navigator:{}};
  const run=()=>vm.runInNewContext('(function(){'+fs.readFileSync(path.resolve(__dirname,'../src/client/worldcup.js'),'utf8')+'})();',ctx);run();
  const button=dataset=>({dataset,disabled:false,insertAdjacentElement(){}}),tap=async dataset=>click({target:{closest:()=>button(dataset)}});
  await tap({action:'start'});let g=JSON.parse(values.get('seeya-worldcup-test-solo-v1'));assert(g.remote&&g.initial.length===16);now+=20000;
@@ -88,3 +88,10 @@ function checkPrivateReport(){
  console.log('PASS private report: Korean labels, exact time, exclusions/duplicates, historical fallback, formula escaping, separate file, repeated refresh and source preservation.');
 }
 checkPrivateReport();checkTransport().then(checkRemoteClient).catch(e=>{console.error(e);process.exitCode=1;});
+
+// Maximum-size all-entry game must accept the final 255-choice path and deduplicate receipts.
+const cap={id:'capacity',title:'한도 검사',version:'capacity-v1',rounds:['all'],candidates:Array.from({length:256},(_,i)=>({id:'capacity-'+i,title:'곡 '+i,artist:'씨야',album:'검증'}))};
+const capService=createService([cap],repo,{environment:'test',now:()=>now,uuid:()=> 'capacity-session',random:()=>.3,hash:x=>x,sign,verify:(id,t)=>sign(id)===t});
+const capGame=capService.handle({action:'start',environment:'test',collection:cap.id,version:cap.version,size:'all',client:'capacity-client',requestId:'capacity-request'}),capFinish=finishPayload(capGame,cap,'all');
+assert.equal(capFinish.picks.length,255);assert(capService.handle(capFinish).ok);assert(capService.handle(capFinish).already);
+assert.equal(capService.handle({action:'health'}).maxCandidates,256);

@@ -15,7 +15,7 @@ function ranking(history,size,version){const rows=history.filter(r=>r.version===
 function roundProgress(state){const label=state.round===2?'결승':state.round+'강',matches=state.matches??state.round/2,completed=state.completed??state.match;return {label,matches,current:completed+1,completed,text:label+' '+(completed+1)+'/'+matches};}
 // All entrants participate. Random first-round byes complete the power-of-two bracket.
 function createAll(ids,version,id,random=Math.random){
- if(ids.length<2||ids.length>128||new Set(ids).size!==ids.length)throw Error('후보 수를 확인해 주세요.');
+ if(ids.length<2||ids.length>256||new Set(ids).size!==ids.length)throw Error('후보 수를 확인해 주세요.');
  const size=2**Math.ceil(Math.log2(ids.length)),order=shuffle(ids,random),paired=2*(ids.length-size/2),initial=order.slice(0,paired);
  for(const entrant of order.slice(paired))initial.push(entrant,null);
  return {schema:2,full:true,id,version,size,initial,picks:[]};

@@ -38,7 +38,7 @@ function context_(forceCatalog){
 }
 function json_(x){return ContentService.createTextOutput(JSON.stringify(x)).setMimeType(ContentService.MimeType.JSON);}
 function doGet(e){return dispatch_(Object.assign({},e&&e.parameter||{}, {action:(e&&e.parameter&&e.parameter.action)||'health'}),true);}
-function doPost(e){try{if(!e||!e.postData||e.postData.contents.length>20000)return json_({ok:false,code:'INPUT',message:'요청 크기가 올바르지 않습니다.'});return dispatch_(JSON.parse(e.postData.contents),false);}catch(err){return json_({ok:false,code:'INPUT',message:'요청을 읽지 못했습니다.'});}}
+function doPost(e){try{if(!e||!e.postData||e.postData.contents.length>40000)return json_({ok:false,code:'INPUT',message:'요청 크기가 올바르지 않습니다.'});return dispatch_(JSON.parse(e.postData.contents),false);}catch(err){return json_({ok:false,code:'INPUT',message:'요청을 읽지 못했습니다.'});}}
 function dispatch_(q,readOnly){
  var lock=null;
  try{

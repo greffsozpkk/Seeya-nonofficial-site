@@ -17,7 +17,7 @@ assert(!fs.readFileSync('game/index.html','utf8').includes('?type=album4'));
 console.log('PASS new worldcups: nine shared album tracks, all-only mode, twenty-six unique official-channel covers with archive provenance, generated catalog and test-only entry.');
 
 const all=catalog.find(c=>c.id==='covers-all'),extra=require('../src/data/worldcup-cover-extras.json');
-assert.equal(all.candidates.length,128);assert.deepEqual(all.rounds,[32,64,'all']);
+assert.equal(all.candidates.length,131);assert.deepEqual(all.rounds,[32,64,'all']);
 assert.deepEqual(all.candidates,[...covers.candidates,...extra]);
 assert.equal(all.candidates.filter(r=>r.artist==='남규리').length,3);
 assert(extra.some(r=>r.channel==='보람씨야')&&extra.some(r=>r.channel==='김연지 Official'));
@@ -25,5 +25,12 @@ assert(extra.every(r=>r.embedCheck==='initialized'&&r.videoTitle&&r.channelUrl&&
 const extraPending=require('../src/data/worldcup-cover-extras-pending.json');
 assert.equal(extraPending.candidates.filter(r=>r.embedError===150).length,14);
 assert(extraPending.candidates.every(r=>!all.candidates.some(c=>c.youtubeId===r.youtubeId)));
-assert(generated.collections.every(c=>c.candidates.length<=128&&JSON.stringify(c).length<=40000));
-console.log('PASS: seven independent worldcups; 26 shared broadcasts + 102 extra covers; 128 unique candidates; 14 blocked and 3 reserve videos excluded; dynamic server limits respected.');
+assert(generated.collections.every(c=>c.candidates.length<=256&&JSON.stringify(c).length<=40000));
+console.log('PASS: seven independent worldcups; 26 shared broadcasts + 105 extra covers; 131 unique candidates; 14 blocked and 3 reserve videos excluded; dynamic server limits respected.');
+
+const P=require('../src/shared/worldcup-presentation');
+assert.deepEqual(P.memberCounts(all.candidates),[{member:'남규리',count:3},{member:'김연지',count:27},{member:'이보람',count:101}]);
+assert.equal(all.candidates.filter(c=>c.shortForm).length,3);
+assert(all.candidates.filter(c=>c.shortForm).every(c=>c.videoKind.includes('짧은 커버')&&archive.some(a=>a.id===c.archiveRef)));
+for(const c of catalog){const lines=P.descriptionLines(c);assert(lines.length<=5);assert(lines.every(x=>x.length<90));}
+console.log('PASS concise introductions, dynamic member counts, three labeled short-form covers, all former 128 candidates preserved.');
