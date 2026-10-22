@@ -62,7 +62,7 @@ assert.equal(illustrated.length,10);
 assert.deepEqual(film.candidates.filter(r=>!r.image&&!r.youtubeId).map(r=>r.id),['film-03','film-04']);
 for(const r of illustrated){assert(r.image.startsWith('/images/game/filmography/'));assert(fs.existsSync(path.join(root,r.image.slice(1))));assert(r.imageWidth>0&&r.imageHeight>0);assert(r.imageAlt.includes(r.role));assert(/^https:\/\//.test(r.imageSourceUrl));assert(r.imageCredit&&r.imageKind&&r.imageCheckedAt);}
 for(const c of [mvs,film]){for(const r of c.candidates){assert(r.title&&r.album);if(r.youtubeId)assert(/^[\w-]{11}$/.test(r.youtubeId)&&r.videoTitle&&r.channel&&r.videoKind);else assert(r.sourceUrl&&r.role&&r.work);}assert(html.includes(c.title));}
-for(const count of [2,3,16,19,32,33,64,75,128])for(let seed=1;seed<=10;seed++){
+for(const count of [2,3,9,16,19,25,32,33,40,64,75,128])for(let seed=1;seed<=10;seed++){
  const pool=Array.from({length:count},(_,i)=>'entrant-'+i);let randomSeed=seed;const random=()=>((randomSeed=(randomSeed*1664525+1013904223)>>>0)/2**32);let g=G.createAll(pool,'v1','all-fixture-'+seed,random),s=G.replay(g,pool,'v1');const seen=new Set();
  assert.deepEqual([...g.initial.filter(Boolean)].sort(),[...pool].sort());
  while(!s.winner){const p=G.roundProgress(s);assert(p.current<=p.matches&&p.matches>0);s.pair.forEach(id=>{assert(pool.includes(id));seen.add(id);});g=G.choose(g,s.pair[g.picks.length%2],pool,'v1');s=G.replay(JSON.parse(JSON.stringify(g)),pool,'v1');}
