@@ -1,0 +1,734 @@
+{
+  "id": "film",
+  "title": "남규리 필모드컵",
+  "description": "영화·드라마·웹드라마·연극 속 남규리의 배역",
+  "tag": "GYURI FILMOGRAPHY",
+  "unit": "배역",
+  "pickLabel": "이 배역 선택",
+  "version": "film-20261022-v1",
+  "rounds": [
+    "all",
+    16,
+    32
+  ],
+  "scopeNote": "특별출연·단편·중국 드라마·연극을 포함한 33개 출연 항목입니다. 카이로스의 가명은 강현채 한 배역으로 묶었습니다. 속삭임은 배역명이 확인되지 않아 작품명으로 표시합니다. 예능·본인 출연·뮤직비디오는 이번 배역 목록에서 제외합니다.",
+  "candidates": [
+    {
+      "id": "film-01",
+      "title": "강이나",
+      "artist": "남규리",
+      "album": "고死: 피의 중간고사",
+      "work": "고死: 피의 중간고사",
+      "role": "강이나",
+      "year": "2008",
+      "scope": "ROLE",
+      "detail": "2008 · 영화 · 주연",
+      "channel": "",
+      "sourceUrl": "https://news.nate.com/view/20080809n06562",
+      "sources": [
+        "https://news.nate.com/view/20080809n06562",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-02",
+      "title": "캣걸",
+      "artist": "남규리",
+      "album": "슬픔보다 더 슬픈 이야기",
+      "work": "슬픔보다 더 슬픈 이야기",
+      "role": "캣걸",
+      "year": "2009",
+      "scope": "ROLE",
+      "detail": "2009 · 영화 · 특별출연",
+      "channel": "",
+      "sourceUrl": "https://ko.wikipedia.org/wiki/남규리",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/남규리",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-03",
+      "title": "미오",
+      "artist": "남규리",
+      "album": "Mr. 아이돌",
+      "work": "Mr. 아이돌",
+      "role": "미오",
+      "year": "2011",
+      "scope": "ROLE",
+      "detail": "2011 · 영화 · 특별출연",
+      "channel": "",
+      "sourceUrl": "https://www.koreafilm.co.kr/movie/mridol/mridol_6.htm",
+      "sources": [
+        "https://www.koreafilm.co.kr/movie/mridol/mridol_6.htm",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-04",
+      "title": "얼음꽃 여배우",
+      "artist": "남규리",
+      "album": "톱스타",
+      "work": "톱스타",
+      "role": "얼음꽃 여배우",
+      "year": "2013",
+      "scope": "ROLE",
+      "detail": "2013 · 영화 · 특별출연",
+      "channel": "",
+      "sourceUrl": "https://ko.wikipedia.org/wiki/남규리",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/남규리",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-05",
+      "title": "속삭임 · 배역명 미확인",
+      "artist": "남규리",
+      "album": "속삭임",
+      "work": "속삭임",
+      "role": "배역명 미확인",
+      "year": "2014",
+      "scope": "ROLE",
+      "detail": "2014 · 단편영화 · 주연·연출",
+      "channel": "ollehfilmfestival",
+      "sourceUrl": "https://www.newspim.com/news/view/20141007000171",
+      "sources": [
+        "https://www.newspim.com/news/view/20141007000171",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "eCuzyJQzzNk",
+      "videoTitle": "제 4회 olleh 국제스마트폰영화제 - 멘토스쿨_속삭임_Whispering 남규리 NAM Gyu-ri",
+      "channelUrl": "https://www.youtube.com/@ollehfilmfestival",
+      "videoKind": "작품 영상",
+      "duration": "10:13"
+    },
+    {
+      "id": "film-06",
+      "title": "시와",
+      "artist": "남규리",
+      "album": "신촌좀비만화 · 너를 봤어",
+      "work": "신촌좀비만화 · 너를 봤어",
+      "role": "시와",
+      "year": "2014",
+      "scope": "ROLE",
+      "detail": "2014 · 영화 · 주연",
+      "channel": "CJ ENM Movie",
+      "sourceUrl": "https://cine21.com/db/person/info/?person_id=68981",
+      "sources": [
+        "https://cine21.com/db/person/info/?person_id=68981",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "bTJ4Vx7wzd4",
+      "videoTitle": "'신촌좀비만화'  30초 예고편",
+      "channelUrl": "https://www.youtube.com/@CJENMMOVIE",
+      "videoKind": "예고편",
+      "duration": "0:31"
+    },
+    {
+      "id": "film-07",
+      "title": "신지민",
+      "artist": "남규리",
+      "album": "데자뷰",
+      "work": "데자뷰",
+      "role": "신지민",
+      "year": "2018",
+      "scope": "ROLE",
+      "detail": "2018 · 영화 · 주연",
+      "channel": "Storm Pictures Korea",
+      "sourceUrl": "https://cine21.com/db/person/info/?person_id=68981",
+      "sources": [
+        "https://cine21.com/db/person/info/?person_id=68981",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "Hz5rj7345tA",
+      "videoTitle": "[데자뷰] 메인 예고편",
+      "channelUrl": "https://www.youtube.com/@stormpictureskorea5021",
+      "videoKind": "예고편",
+      "duration": "1:06"
+    },
+    {
+      "id": "film-08",
+      "title": "수민",
+      "artist": "남규리",
+      "album": "질투의 역사",
+      "work": "질투의 역사",
+      "role": "수민",
+      "year": "2019",
+      "scope": "ROLE",
+      "detail": "2019 · 영화 · 주연",
+      "channel": "Storm Pictures Korea",
+      "sourceUrl": "https://cine21.com/db/person/info/?person_id=68981",
+      "sources": [
+        "https://cine21.com/db/person/info/?person_id=68981",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "uEi4WRDqMcA",
+      "videoTitle": "[질투의 역사] 메인예고편",
+      "channelUrl": "https://www.youtube.com/@stormpictureskorea5021",
+      "videoKind": "예고편",
+      "duration": "1:01"
+    },
+    {
+      "id": "film-09",
+      "title": "연수",
+      "artist": "남규리",
+      "album": "동요괴담 · 즐거운 나의 집",
+      "work": "동요괴담 · 즐거운 나의 집",
+      "role": "연수",
+      "year": "2025",
+      "scope": "ROLE",
+      "detail": "2025 · 옴니버스 · 주연",
+      "channel": "",
+      "sourceUrl": "https://sports.khan.co.kr/article/202507200743003",
+      "sources": [
+        "https://sports.khan.co.kr/article/202507200743003",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-10",
+      "title": "양초롱",
+      "artist": "남규리",
+      "album": "인생은 아름다워",
+      "work": "인생은 아름다워",
+      "role": "양초롱",
+      "year": "2010",
+      "scope": "ROLE",
+      "detail": "2010 · SBS · 조연",
+      "channel": "SBS 옛날 드라마 - 빽드",
+      "sourceUrl": "https://www.starnewskorea.com/broadcast-drama/2010/04/21/2010042113302908576",
+      "sources": [
+        "https://www.starnewskorea.com/broadcast-drama/2010/04/21/2010042113302908576",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "za-4xIpa_e4",
+      "videoTitle": "[인생은 아름다워] 악질 시누이로 변해버린 초롱이! 사운드🔇 조절 필수🙄 # 33-2",
+      "channelUrl": "https://www.youtube.com/@BBACKD",
+      "videoKind": "장면",
+      "duration": "14:31"
+    },
+    {
+      "id": "film-11",
+      "title": "신지현",
+      "artist": "남규리",
+      "album": "49일",
+      "work": "49일",
+      "role": "신지현",
+      "year": "2011",
+      "scope": "ROLE",
+      "detail": "2011 · SBS · 주연",
+      "channel": "SBS Catch",
+      "sourceUrl": "https://ko.wikipedia.org/wiki/남규리",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/남규리",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "jqQ42u9o8rw",
+      "videoTitle": "이요원, 조현재, 배수빈, 서지혜, 정일우, 남규리 주연 '49일' 《띵작테레비 / 드라마 다시보기 / 스브스캐치》",
+      "channelUrl": "https://www.youtube.com/@SBSCatch",
+      "videoKind": "장면",
+      "duration": "28:40"
+    },
+    {
+      "id": "film-12",
+      "title": "안규리",
+      "artist": "남규리",
+      "album": "피아니시모 · Never Ending Love",
+      "work": "피아니시모 · Never Ending Love",
+      "role": "안규리",
+      "year": "2011",
+      "scope": "ROLE",
+      "detail": "2011 · TrendE · 옴니버스",
+      "channel": "",
+      "sourceUrl": "https://ko.wikipedia.org/wiki/남규리",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/남규리",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-13",
+      "title": "미자",
+      "artist": "남규리",
+      "album": "드라마 스페셜 · 칼잡이 이발사",
+      "work": "드라마 스페셜 · 칼잡이 이발사",
+      "role": "미자",
+      "year": "2012",
+      "scope": "ROLE",
+      "detail": "2012 · KBS · 단막극",
+      "channel": "KBS 같이삽시다",
+      "sourceUrl": "https://www.xportsnews.com/article/242477",
+      "sources": [
+        "https://www.xportsnews.com/article/242477",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "kbCtb-21jE8",
+      "videoTitle": "[드라마스페셜] 칼잡이 이발사 | 박성웅 남규리 이철민 최승경 조재윤 조달환 KBS 2012.07.22. 방송",
+      "channelUrl": "https://www.youtube.com/@kbs-together",
+      "videoKind": "작품 영상",
+      "duration": "1:11:56"
+    },
+    {
+      "id": "film-14",
+      "title": "윤세나",
+      "artist": "남규리",
+      "album": "해운대 연인들",
+      "work": "해운대 연인들",
+      "role": "윤세나",
+      "year": "2012",
+      "scope": "ROLE",
+      "detail": "2012 · KBS · 출연",
+      "channel": "",
+      "sourceUrl": "https://ko.wikipedia.org/wiki/남규리",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/남규리",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-15",
+      "title": "배정아",
+      "artist": "남규리",
+      "album": "울랄라 부부",
+      "work": "울랄라 부부",
+      "role": "배정아",
+      "year": "2012",
+      "scope": "ROLE",
+      "detail": "2012 · KBS · 특별출연",
+      "channel": "",
+      "sourceUrl": "https://ko.wikipedia.org/wiki/남규리",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/남규리",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-16",
+      "title": "윤수민",
+      "artist": "남규리",
+      "album": "무정도시",
+      "work": "무정도시",
+      "role": "윤수민",
+      "year": "2013",
+      "scope": "ROLE",
+      "detail": "2013 · JTBC · 주연",
+      "channel": "JTBC Drama",
+      "sourceUrl": "https://ko.wikipedia.org/wiki/남규리",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/남규리",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "EsB88Yz0HlU",
+      "videoTitle": "부산조직에 잡힌 수민! 마약까지 주사 당해! - 무정도시 15회",
+      "channelUrl": "https://www.youtube.com/@JTBCdrama",
+      "videoKind": "장면",
+      "duration": "2:54"
+    },
+    {
+      "id": "film-17",
+      "title": "쉐자바오",
+      "artist": "남규리",
+      "album": "천금보모",
+      "work": "천금보모",
+      "role": "쉐자바오",
+      "year": "2014",
+      "scope": "ROLE",
+      "detail": "2014 · 중국 드라마 · 주연",
+      "channel": "",
+      "sourceUrl": "https://www.newspim.com/news/view/20141007000171",
+      "sources": [
+        "https://www.newspim.com/news/view/20141007000171",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-18",
+      "title": "강서원",
+      "artist": "남규리",
+      "album": "드라마 페스티벌 · 하우스, 메이트",
+      "work": "드라마 페스티벌 · 하우스, 메이트",
+      "role": "강서원",
+      "year": "2014",
+      "scope": "ROLE",
+      "detail": "2014 · MBC · 단막극",
+      "channel": "MBCdrama",
+      "sourceUrl": "https://enews.imbc.com/News/RetrieveNewsInfo/109078",
+      "sources": [
+        "https://enews.imbc.com/News/RetrieveNewsInfo/109078",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "ycrAwRBJ1XA",
+      "videoTitle": "[HOT] 11월 16일 방송 하우스, 메이트 예고 - 남규리, 정경호, 윤현민 출연 20141110",
+      "channelUrl": "https://www.youtube.com/@mbc_drama",
+      "videoKind": "예고편",
+      "duration": "0:46"
+    },
+    {
+      "id": "film-19",
+      "title": "민경",
+      "artist": "남규리",
+      "album": "심야식당",
+      "work": "심야식당",
+      "role": "민경",
+      "year": "2015",
+      "scope": "ROLE",
+      "detail": "2015 · SBS · 16회 특별출연",
+      "channel": "래몽래인_드라마",
+      "sourceUrl": "https://m.stoo.com/article.php?aid=18044076288",
+      "sources": [
+        "https://m.stoo.com/article.php?aid=18044076288",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "M2UpQ_cElT4",
+      "videoTitle": "남규리의 짝남은 얼장 이시언ㅋㅋ(나혼자산다 얼장의 과거)_심야식당 미공개 메이킹",
+      "channelUrl": "https://www.youtube.com/@raemongraein_drama",
+      "videoKind": "메이킹·현장",
+      "duration": "2:07"
+    },
+    {
+      "id": "film-20",
+      "title": "이나영",
+      "artist": "남규리",
+      "album": "그래, 그런거야",
+      "work": "그래, 그런거야",
+      "role": "이나영",
+      "year": "2016",
+      "scope": "ROLE",
+      "detail": "2016 · SBS · 조연",
+      "channel": "SBS 스브스 Drama",
+      "sourceUrl": "https://ko.wikipedia.org/wiki/남규리",
+      "sources": [
+        "https://ko.wikipedia.org/wiki/남규리",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "aa8wNAn3AqA",
+      "videoTitle": "불같이 싸우는 정해인·남규리 커플 ‘눈물겨운 포옹’ @그래, 그런거야 29회 20160521",
+      "channelUrl": "https://www.youtube.com/@SBSdrama.official",
+      "videoKind": "장면",
+      "duration": "2:44"
+    },
+    {
+      "id": "film-21",
+      "title": "김민서",
+      "artist": "남규리",
+      "album": "스완 - 그들의 비밀",
+      "work": "스완 - 그들의 비밀",
+      "role": "김민서",
+      "year": "2016",
+      "scope": "ROLE",
+      "detail": "2016 · 한중 합작 웹드라마",
+      "channel": "",
+      "sourceUrl": "https://news.sbs.co.kr/amp/news.amp?news_id=N1003356142",
+      "sources": [
+        "https://news.sbs.co.kr/amp/news.amp?news_id=N1003356142",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-22",
+      "title": "애나",
+      "artist": "남규리",
+      "album": "애나야 밥먹자",
+      "work": "애나야 밥먹자",
+      "role": "애나",
+      "year": "2017",
+      "scope": "ROLE",
+      "detail": "2017 · 웹드라마 · 주연",
+      "channel": "mena299",
+      "sourceUrl": "https://www.inews24.com/view/1040482",
+      "sources": [
+        "https://www.inews24.com/view/1040482",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "GnrJ1F8iJ9g",
+      "videoTitle": "2017 남규리 - 애나야 밥먹자 EP1 이상한 나라의 애나퀀",
+      "channelUrl": "https://www.youtube.com/@yjmn299",
+      "videoKind": "작품 영상",
+      "duration": "15:55"
+    },
+    {
+      "id": "film-23",
+      "title": "최연경",
+      "artist": "남규리",
+      "album": "내 뒤에 테리우스",
+      "work": "내 뒤에 테리우스",
+      "role": "최연경",
+      "year": "2018",
+      "scope": "ROLE",
+      "detail": "2018 · MBC · 특별출연",
+      "channel": "MBC WORLD",
+      "sourceUrl": "https://cine21.com/db/person/info/?person_id=68981",
+      "sources": [
+        "https://cine21.com/db/person/info/?person_id=68981",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "iwdmNf4uHis",
+      "videoTitle": "[SUB] [My Secret Terrius] EP07 So Ji-sub, secret tangent with Nam Gyu-ri #SOJISUB",
+      "channelUrl": "https://www.youtube.com/@MBC_WORLD",
+      "videoKind": "장면",
+      "duration": "3:14"
+    },
+    {
+      "id": "film-24",
+      "title": "전수영",
+      "artist": "남규리",
+      "album": "붉은 달 푸른 해",
+      "work": "붉은 달 푸른 해",
+      "role": "전수영",
+      "year": "2018–2019",
+      "scope": "ROLE",
+      "detail": "2018–2019 · MBC · 주연",
+      "channel": "MBCdrama",
+      "sourceUrl": "https://cine21.com/db/person/info/?person_id=68981",
+      "sources": [
+        "https://cine21.com/db/person/info/?person_id=68981",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "YOPOqHXgyJ8",
+      "videoTitle": "[Children of nobody] EP6,Crush a suspect,붉은 달 푸른 해 20181128",
+      "channelUrl": "https://www.youtube.com/@mbc_drama",
+      "videoKind": "장면",
+      "duration": "2:43"
+    },
+    {
+      "id": "film-25",
+      "title": "미키",
+      "artist": "남규리",
+      "album": "이몽",
+      "work": "이몽",
+      "role": "미키",
+      "year": "2019",
+      "scope": "ROLE",
+      "detail": "2019 · MBC · 주연",
+      "channel": "TV-People",
+      "sourceUrl": "https://cine21.com/db/person/info/?person_id=68981",
+      "sources": [
+        "https://cine21.com/db/person/info/?person_id=68981",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "oCI9dq33X_U",
+      "videoTitle": "[#이몽]현장스케치 브금 X 미키의 'Candle in the rain' #MBC드라마비하인드 #differentdreams",
+      "channelUrl": "https://www.youtube.com/@TVPeople",
+      "videoKind": "메이킹·현장",
+      "duration": "2:49"
+    },
+    {
+      "id": "film-26",
+      "title": "강현채",
+      "artist": "남규리",
+      "album": "카이로스",
+      "work": "카이로스",
+      "role": "강현채",
+      "year": "2020",
+      "scope": "ROLE",
+      "detail": "2020 · MBC · 주연",
+      "channel": "MBCdrama",
+      "sourceUrl": "https://cine21.com/db/person/info/?person_id=68981",
+      "sources": [
+        "https://cine21.com/db/person/info/?person_id=68981",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "aliases": [
+        "이지영",
+        "이유나"
+      ],
+      "youtubeId": "QE5cj8Or6bQ",
+      "videoTitle": "[카이로스] 나 기억하죠? 이세영에게 경고하는 남규리 MBC 201124 방송",
+      "channelUrl": "https://www.youtube.com/@mbc_drama",
+      "videoKind": "장면",
+      "duration": "2:58"
+    },
+    {
+      "id": "film-27",
+      "title": "류희선",
+      "artist": "남규리",
+      "album": "드라마 스테이지 · 더 페어",
+      "work": "드라마 스테이지 · 더 페어",
+      "role": "류희선",
+      "year": "2021",
+      "scope": "ROLE",
+      "detail": "2021 · tvN · 단막극",
+      "channel": "tvN DRAMA",
+      "sourceUrl": "https://cine21.com/db/person/info/?person_id=68981",
+      "sources": [
+        "https://cine21.com/db/person/info/?person_id=68981",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "4fS_7wnUXL0",
+      "videoTitle": "8화#하이라이트#엄마를 죽인 살인범이 딸과 행복하게 살고 있다면...#드라마스테이지2021 | dramastage2021 EP.8 | tvN 210407 방송",
+      "channelUrl": "https://www.youtube.com/@tvNDRAMA_official",
+      "videoKind": "장면",
+      "duration": "15:06"
+    },
+    {
+      "id": "film-28",
+      "title": "안가영",
+      "artist": "남규리",
+      "album": "너는 나의 봄",
+      "work": "너는 나의 봄",
+      "role": "안가영",
+      "year": "2021",
+      "scope": "ROLE",
+      "detail": "2021 · tvN · 주연",
+      "channel": "tvN DRAMA",
+      "sourceUrl": "https://cine21.com/db/person/info/?person_id=68981",
+      "sources": [
+        "https://cine21.com/db/person/info/?person_id=68981",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "RjM35VneEt4",
+      "videoTitle": "※열애 커밍아웃※ 부상당한 남규리 꽉 껴안은 패트릭! #너는나의봄 EP.15 | tvN 210823 방송",
+      "channelUrl": "https://www.youtube.com/@tvNDRAMA_official",
+      "videoKind": "장면",
+      "duration": "1:41"
+    },
+    {
+      "id": "film-29",
+      "title": "서윤희",
+      "artist": "남규리",
+      "album": "열녀박씨 계약결혼뎐",
+      "work": "열녀박씨 계약결혼뎐",
+      "role": "서윤희",
+      "year": "2023",
+      "scope": "ROLE",
+      "detail": "2023 · MBC · 특별출연",
+      "channel": "엠뚜루마뚜루 : MBC 공식 종합 채널",
+      "sourceUrl": "https://tollbit.hancinema.net/korean_Nam_Gyu-ri.php",
+      "sources": [
+        "https://tollbit.hancinema.net/korean_Nam_Gyu-ri.php",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "soz2EJOdM4I",
+      "videoTitle": "[#열녀박씨계약결혼뎐 | 9회] ＂서윤희를 죽인건 내가 아니야＂ 강 회장의 수상한 거래? 믿었던 할아버지를 잃은 태하!?MBC231222방송",
+      "channelUrl": "https://www.youtube.com/@MBC_officialchannel",
+      "videoKind": "장면",
+      "duration": "20:07"
+    },
+    {
+      "id": "film-30",
+      "title": "백영옥",
+      "artist": "남규리",
+      "album": "피타는 연애",
+      "work": "피타는 연애",
+      "role": "백영옥",
+      "year": "2024",
+      "scope": "ROLE",
+      "detail": "2024 · 드라마 · 주연",
+      "channel": "",
+      "sourceUrl": "https://tollbit.hancinema.net/korean_Nam_Gyu-ri.php",
+      "sources": [
+        "https://tollbit.hancinema.net/korean_Nam_Gyu-ri.php",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    },
+    {
+      "id": "film-31",
+      "title": "은아",
+      "artist": "남규리",
+      "album": "페이스 미",
+      "work": "페이스 미",
+      "role": "은아",
+      "year": "2024",
+      "scope": "ROLE",
+      "detail": "2024 · KBS · 특별출연",
+      "channel": "KBS Drama",
+      "sourceUrl": "https://www.namu.moe/w/페이스%20미/등장인물",
+      "sources": [
+        "https://www.namu.moe/w/페이스%20미/등장인물",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "BUt3Z-ByhIE",
+      "videoTitle": "이민기에게 진짜 컴플레인이 뭔지 보여주는 남규리＂이게 말이 되는 거예요?＂ [페이스미/Face Me] | KBS 241128 방송",
+      "channelUrl": "https://www.youtube.com/@KBSdrama",
+      "videoKind": "장면",
+      "duration": "3:37"
+    },
+    {
+      "id": "film-32",
+      "title": "이미로",
+      "artist": "남규리",
+      "album": "인간시장",
+      "work": "인간시장",
+      "role": "이미로",
+      "year": "2026",
+      "scope": "ROLE",
+      "detail": "2026 · 숏폼 드라마 · 주연",
+      "channel": "남규리의 귤멍",
+      "sourceUrl": "https://mobile.newsis.com/view/NISX20260301_0003530990",
+      "sources": [
+        "https://mobile.newsis.com/view/NISX20260301_0003530990",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22",
+      "youtubeId": "_tCxUsVAd_U",
+      "videoTitle": "Ep.36 규리야~ 뭐하니? 배우 남규리 드라마 [인간시장] 대본리딩 & 시사회 현장 전격 공개! 😍 |  남규리 힐링 브이로그 🍊",
+      "channelUrl": "https://www.youtube.com/@Gyulmung",
+      "videoKind": "메이킹·현장",
+      "duration": "13:43"
+    },
+    {
+      "id": "film-33",
+      "title": "코제트",
+      "artist": "남규리",
+      "album": "레미제라블",
+      "work": "레미제라블",
+      "role": "코제트",
+      "year": "2024",
+      "scope": "ROLE",
+      "detail": "2024 · 연극 · 출연",
+      "channel": "",
+      "sourceUrl": "https://www.joynews24.com/view/1777613",
+      "sources": [
+        "https://www.joynews24.com/view/1777613",
+        "https://namu.moe/w/남규리"
+      ],
+      "checkedAt": "2026-10-22"
+    }
+  ],
+  "pending": [
+    {
+      "title": "여고동창",
+      "reason": "캐스팅 보도는 있으나 남규리의 배역명과 완성·공개 여부를 확인하지 못했습니다.",
+      "source": "https://v.daum.net/v/20170327152750968"
+    }
+  ],
+  "excluded": [
+    {
+      "title": "친절의 신",
+      "reason": "연기 배역이 아닌 여행 프로그램 본인 출연",
+      "source": "https://www.sportschosun.com/entertainment/2017-08-10/201708110100105660007434"
+    }
+  ]
+}
