@@ -69,4 +69,22 @@ async function checkRemoteClient(){
  console.log('PASS remote client: server start to final receipt, 20-row ranking pages, manual diary dedup and shared-result isolation.');
 }
 const root=path.resolve(__dirname,'..'),adapter=fs.readFileSync(path.join(root,'integrations/worldcup/Code.gs'),'utf8');assert(adapter.includes('getScriptLock()')&&adapter.includes('SpreadsheetApp.flush()'));assert(!adapter.includes('TOKEN_SECRET='));assert(adapter.includes('function backupResults()'));assert(adapter.includes('function rebuildStatistics()'));assert(!fs.readFileSync(path.join(root,'src/client/worldcup-stats.js'),'utf8').includes('no-cors'));
-checkTransport().then(checkRemoteClient).catch(e=>{console.error(e);process.exitCode=1;});
+function checkPrivateReport(){
+ const vm=require('node:vm'),ctx={Date,Set,Number,JSON,Error};vm.createContext(ctx);vm.runInContext(fs.readFileSync(path.join(root,'integrations/worldcup/Adapter.gs'),'utf8'),ctx);
+ const catalog=[{id:'film',title:'필모드컵',version:'v1',rounds:['all',16],candidates:[{id:'a',title:'강이나',artist:'남규리',album:'고死'}]}];
+ const row=(id,over={})=>Object.assign([id,'film','v1','all','a','2026-10-22T01:02:03Z',false,''],over);
+ const raw=[row('one'),row('one'),row('two',{6:true,7:'=formula'}),row('three',{2:'old'}),row('four',{4:'unknown'}),row('five',{6:true}),row('five'),row('six',{5:'invalid'})];
+ const rows=ctx.privateReportRows_(raw,catalog);assert.equal(rows.length,8);assert.equal(rows[0][3],'강이나');assert.equal(rows[0][0].toISOString(),'2026-10-22T01:02:03.000Z');assert.equal(rows[1][6],'중복 원장 · 집계 제외');assert.equal(rows[2][7],"'=formula");assert.equal(rows[3][3],'a');assert(rows[3][6].includes('현재 순위 제외'));assert(rows[4][6].includes('현재 순위 제외'));assert.equal(rows[6][6],'집계 대상');assert.equal(rows[7][0],'날짜 확인 필요');assert.equal(rows[0].length,10);
+ // Fake Sheets exercise only: create once, repeat refresh safely, never write the source or change sharing.
+ let created=0,released=0;const writes=[],props=new Map([['ENVIRONMENT','test'],['SPREADSHEET_ID','source']]);
+ function sheet(name){return {getMaxRows:()=>1000,getFilter:()=>null,clearContents:()=>writes.push(name+':clear'),getRange:()=>({setValues:v=>{writes.push([name,v]);},setNumberFormat:()=>{},setBackground:()=>({setFontWeight:()=>{}}),setWrap:()=>{},createFilter:()=>{}}),setFrozenRows:()=>{},setColumnWidth:()=>{},setColumnWidths:()=>{}};}
+ const sheets={},book={getId:()=> 'private',getUrl:()=> 'https://example.invalid/private',setSpreadsheetTimeZone:z=>assert.equal(z,'Asia/Seoul'),getSheetByName:n=>sheets[n],insertSheet:n=>sheets[n]=sheet(n)};
+ const source={getSheetByName:n=>{assert.equal(n,'Results');return {getLastRow:()=>raw.length+1,getRange:()=>({getValues:()=>raw})};}};
+ Object.assign(ctx,{WORLDCUP_CATALOG:catalog,PropertiesService:{getScriptProperties:()=>({getProperty:k=>props.get(k),setProperty:(k,v)=>props.set(k,v)})},LockService:{getScriptLock:()=>({waitLock:()=>{},releaseLock:()=>released++})},SpreadsheetApp:{openById:id=>{if(id==='source')return source;if(id==='private')return book;throw Error('not found');},create:()=>{created++;return book;},flush:()=>{}},Utilities:{formatDate:()=> '2026-10-22 10:02:03'},Logger:{log:()=>{}}});
+ assert.equal(ctx.refreshPrivateReport(),'https://example.invalid/private');assert.equal(created,1);assert.equal(props.get('PRIVATE_REPORT_ID_test'),'private');assert.equal(props.get('PRIVATE_REPORT_ID_production'),undefined);ctx.refreshPrivateReport();assert.equal(created,1);assert.equal(released,2);assert(writes.some(x=>Array.isArray(x)&&x[0]==='완료 기록'));
+ props.set('PRIVATE_REPORT_ID_test','source');assert.throws(()=>ctx.refreshPrivateReport(),/달라야/);assert.equal(released,3);
+ props.set('PRIVATE_REPORT_ID_test','deleted');assert.throws(()=>ctx.refreshPrivateReport(),/not found/);assert.equal(created,1);assert.equal(released,4);
+ assert(!fs.readFileSync(path.join(root,'integrations/worldcup/Adapter.gs'),'utf8').includes('setSharing('));
+ console.log('PASS private report: Korean labels, exact time, exclusions/duplicates, historical fallback, formula escaping, separate file, repeated refresh and source preservation.');
+}
+checkPrivateReport();checkTransport().then(checkRemoteClient).catch(e=>{console.error(e);process.exitCode=1;});

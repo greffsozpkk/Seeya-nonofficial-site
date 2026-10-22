@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'..');
 const {audit}=require('../src/shared/worldcup-collections');
-const catalog=audit().map(c=>({id:c.id,version:c.version,rounds:c.rounds,candidates:c.candidates.map(r=>({id:r.id}))}));
+const catalog=audit().map(c=>({id:c.id,title:c.title,version:c.version,rounds:c.rounds,candidates:c.candidates.map(r=>({id:r.id,title:r.title,artist:r.artist||'씨야',album:r.work||r.album||''}))}));
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const bracket=read('src/shared/worldcup.js').replace('module.exports=','return ');
 const core=read('src/shared/worldcup-stats-core.js').replace("const G=require('./worldcup');",'const G=WorldcupBracket;').replace('module.exports=','return ');

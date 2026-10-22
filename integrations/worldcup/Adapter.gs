@@ -59,7 +59,48 @@ function dispatch_(q,readOnly){
 function cleanupExpiredSessions(){var lock=LockService.getScriptLock();lock.waitLock(10000);try{var sheet=context_().book.getSheetByName('Sessions'),n=sheet.getLastRow();if(n<2)return;var rows=sheet.getRange(2,1,n-1,9).getValues(),cutoff=Date.now()-7*86400000;for(var i=rows.length-1;i>=0;i--)if(Number(rows[i][7])<cutoff)sheet.deleteRow(i+2);}finally{lock.releaseLock();}}
 function backupResults(){var book=context_().book;book.getSheetByName('Results').copyTo(book).setName('Backup_'+Utilities.formatDate(new Date(),'Asia/Seoul','yyyyMMdd_HHmmss'));}
 function rebuildStatistics(){
- // Rankings always derive from the ledger; editing excluded/reason is effective on the next request.
+ // Rankings derive from the ledger; cached responses may take up to 60 seconds to reflect exclusions.
  var ctx=context_(),sheet=ctx.book.getSheetByName('Summary')||ctx.book.insertSheet('Summary'),rows=[['collection','version','mode','candidate','wins','total','percent','updatedAt']];
  WORLDCUP_CATALOG.forEach(function(c){c.rounds.forEach(function(size){var r=ctx.service.handle({action:'ranks',environment:PropertiesService.getScriptProperties().getProperty('ENVIRONMENT'),collection:c.id,version:c.version,size:size});r.rows.forEach(function(x){rows.push([c.id,c.version,size,x.id,x.wins,r.total,x.percent,r.updatedAt]);});});});sheet.clearContents();sheet.getRange(1,1,rows.length,8).setValues(rows);
+}
+// Owner-run snapshot only. Never dispatched by the public web app; no sharing permissions are changed.
+function privateReportRows_(raw,catalog){
+ var seen=new Set();
+ var rows=raw.map(function(r){
+  var c=catalog.find(function(c){return c.id===r[1];}),known=c&&c.version===r[2];
+  var candidate=known&&c.candidates.find(function(x){return x.id===r[4];});
+  var excluded=r[6]===true||String(r[6]).toLowerCase()==='true',date=new Date(r[5]);
+  var eligible=known&&candidate&&c.rounds.includes(r[3])&&!excluded,key=JSON.stringify([r[1],r[2],r[3],r[0]]),duplicate=eligible&&seen.has(key);
+  if(eligible)seen.add(key);
+  var text=function(v){v=String(v==null?'':v);return /^[=+@\-\t\r\n]/.test(v)?"'"+v:v;};
+  return [Number.isFinite(date.getTime())?date:'날짜 확인 필요',text(c?c.title:r[1]),r[3]==='all'?'전체 참가':text(r[3]+'강'),text(candidate?candidate.title:r[4]),text(candidate?candidate.artist:''),text(candidate?candidate.album:''),duplicate?'중복 원장 · 집계 제외':excluded?'집계 제외':eligible?'집계 대상':'과거/미확인 구성 · 현재 순위 제외',text(r[7]),text(r[0]),text(r[2])];
+ });
+ return rows.sort(function(a,b){return (b[0] instanceof Date?b[0].getTime():0)-(a[0] instanceof Date?a[0].getTime():0);});
+}
+function refreshPrivateReport(){
+ var lock=LockService.getScriptLock();lock.waitLock(10000);
+ try{
+  var props=PropertiesService.getScriptProperties(),environment=props.getProperty('ENVIRONMENT');
+  if(!['test','production'].includes(environment))throw Error('먼저 setupWorldcup을 실행해 주세요.');
+  var sourceId=props.getProperty('SPREADSHEET_ID'),source=SpreadsheetApp.openById(sourceId),ledger=source.getSheetByName('Results');
+  if(!ledger)throw Error('Results 원장이 없습니다. 원본 시트를 확인해 주세요.');
+  var raw=ledger.getLastRow()<2?[]:ledger.getRange(2,1,ledger.getLastRow()-1,8).getValues(),rows=privateReportRows_(raw,WORLDCUP_CATALOG);
+  var key='PRIVATE_REPORT_ID_'+environment,id=props.getProperty(key),book;
+  if(id===sourceId)throw Error('확인용 파일과 원본 파일은 달라야 합니다.');
+  if(id){book=SpreadsheetApp.openById(id);}else{
+   book=SpreadsheetApp.create('씨야 월드컵 · 운영자 통계 확인 · '+(environment==='test'?'테스트':'운영'));
+   props.setProperty(key,book.getId());
+  }
+  book.setSpreadsheetTimeZone('Asia/Seoul');
+  var sheet=book.getSheetByName('완료 기록')||book.insertSheet('완료 기록'),info=book.getSheetByName('읽어주세요')||book.insertSheet('읽어주세요');
+  var headers=['완료 시각 (한국)','월드컵 종류','라운드','우승자 / 우승곡','가수 · 배우','앨범 · 작품','집계 상태','제외 사유','게임 번호','후보 구성 버전'];
+  if(sheet.getMaxRows()<rows.length+1)sheet.insertRowsAfter(sheet.getMaxRows(),rows.length+1-sheet.getMaxRows());
+  if(sheet.getFilter())sheet.getFilter().remove();
+  sheet.clearContents();sheet.getRange(1,1,1,10).setValues([headers]);
+  if(rows.length){sheet.getRange(2,1,rows.length,10).setValues(rows);sheet.getRange(2,1,rows.length,1).setNumberFormat('yyyy-mm-dd hh:mm:ss');sheet.getRange(1,1,rows.length+1,10).createFilter();}
+  sheet.setFrozenRows(1);sheet.getRange(1,1,1,10).setBackground('#f4dbe6').setFontWeight('bold');sheet.setColumnWidths(1,10,180);sheet.setColumnWidth(4,240);sheet.setColumnWidth(7,270);
+  var notes=[['항목','내용'],['용도','운영자 확인용 사본입니다. 여기서 편집·삭제해도 사이트 통계는 바뀌지 않습니다.'],['마지막 새로고침 (한국)',Utilities.formatDate(new Date(),'Asia/Seoul','yyyy-MM-dd HH:mm:ss')],['환경',environment],['원장 행 수',rows.length],['갱신 방법','Apps Script에서 refreshPrivateReport를 실행하세요. 실시간 자동 갱신은 아닙니다.'],['표시 범위','서버에서 접수한 완료 결과만 표시합니다. 중도 종료·개인 기록만 저장한 게임은 없습니다.'],['집계 기준','완료한 게임 기준이며 방문자 수가 아닙니다. 종류·라운드·후보 구성 버전별로 분리됩니다.'],['개인정보','이름·이메일·익명 이용자 해시·토큰·선택 경로는 이 확인용 파일에 복사하지 않습니다.'],['공유','새 파일은 공유 설정을 변경하지 않습니다. 공유 화면에서 일반 액세스가 제한됨인지 확인해 주세요.'],['백업 아님','다시 실행하면 사본을 원장 기준으로 덮어씁니다. 원장 삭제 대비 자동 백업과 복원 기능은 아닙니다.']];
+  info.clearContents();info.getRange(1,1,notes.length,2).setValues(notes);info.setColumnWidth(1,210);info.setColumnWidth(2,700);info.getRange(1,1,notes.length,2).setWrap(true);info.setFrozenRows(1);
+  SpreadsheetApp.flush();Logger.log('운영자 확인용 시트: '+book.getUrl());return book.getUrl();
+ }finally{lock.releaseLock();}
 }
