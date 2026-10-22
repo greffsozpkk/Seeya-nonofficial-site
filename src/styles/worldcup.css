@@ -29,3 +29,11 @@
 @media(max-width:650px){.wc-role-photo img{height:250px}.wc-role-thumb img{height:140px}.wc-photo-credit{font-size:10px}}
 .wc-start .wc-stat-opt{display:flex;flex-direction:row;justify-content:flex-start;gap:9px;padding:12px 0;border:0;font-size:13px;background:transparent;box-shadow:none;text-align:left}
 .wc-sync{border:1px solid #e4becf;background:#fff1f7;border-radius:12px;padding:18px;margin:22px 0;font-size:14px;line-height:1.7}.wc-sync small{display:block;margin-top:8px}.wc-sync p{font-size:12px}.wc-outbox-row{padding:18px 0;border-bottom:1px solid #ecd6df}.wc-outbox-row strong,.wc-outbox-row span{display:block;margin-bottom:8px}.wc-table-scroll{overflow:auto}.wc-ranking table th{overflow-wrap:anywhere}.wc-ranking .wc-actions button{min-height:42px}
+
+/* Give desktop video matches more room without widening setup/results or mobile cards. */
+@media(min-width:1100px){
+ .page:has(.wc-pair .wc-video){max-width:1400px;padding-left:24px;padding-right:24px}
+ .page:has(.wc-pair .wc-video) .wc-shell{max-width:none}
+ .wc-pair:has(.wc-video){grid-template-columns:minmax(0,1fr) 32px minmax(0,1fr);gap:8px}
+ .wc-pair:has(.wc-video) .wc-contender-heading{min-height:84px;padding:16px 20px}
+}
