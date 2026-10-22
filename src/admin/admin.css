@@ -3,3 +3,6 @@
 @media(max-width:650px){input:not([type=checkbox]),select,textarea{font-size:16px}}
 
 .auto-panel{margin-bottom:22px}.auto-panel p{font-size:14px}.auto-panel details{margin-top:15px}.auto-reason{font-size:13px;color:#765366;border-left:3px solid #dbaac0;padding-left:10px}.review-filter{max-width:440px;margin-top:16px}#auto-history{max-height:380px;overflow:auto}.heading button{flex-shrink:0;white-space:nowrap}
+
+/* Aggregate statistics, separate from private archive candidates. */
+[hidden]{display:none!important}.wc-admin-table{overflow-x:auto;margin:20px 0}.wc-admin-table table{width:100%;border-collapse:collapse;min-width:540px}.wc-admin-table th,.wc-admin-table td{text-align:left;padding:12px;border-bottom:1px solid #ead7df}.wc-admin-table th{background:#fbf0f5}#worldcup-admin{margin-top:24px}#worldcup-admin .summary{gap:20px;flex-wrap:wrap}#worldcup-admin .summary strong{display:block;font-size:26px}nav[aria-label="관리 메뉴"]{margin-bottom:22px}nav[aria-label="관리 메뉴"] [aria-pressed="true"]{background:#a34f72;color:#fff}

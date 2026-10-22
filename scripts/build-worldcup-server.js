@@ -5,6 +5,6 @@ const catalog=audit().map(c=>({id:c.id,title:c.title,version:c.version,rounds:c.
 const read=p=>fs.readFileSync(path.join(root,p),'utf8');
 const bracket=read('src/shared/worldcup.js').replace('module.exports=','return ');
 const core=read('src/shared/worldcup-stats-core.js').replace("const G=require('./worldcup');",'const G=WorldcupBracket;').replace('module.exports=','return ');
-const code='// Generated from current candidate IDs. No credentials in this file.\nconst WORLDCUP_CATALOG='+JSON.stringify(catalog)+';\nconst WorldcupBracket=(function(){\n'+bracket+'\n})();\nconst WorldcupStats=(function(){\n'+core+'\n})();\n'+read('integrations/worldcup/Adapter.gs');
+const code='// Initial legacy catalog only. Current candidates are read from the site automatically.\nconst WORLDCUP_CATALOG='+JSON.stringify(catalog)+';\nconst WorldcupBracket=(function(){\n'+bracket+'\n})();\nconst WorldcupStats=(function(){\n'+core+'\n})();\n'+read('integrations/worldcup/Catalog.gs')+'\n'+read('integrations/worldcup/Adapter.gs');
 fs.writeFileSync(path.join(root,'integrations/worldcup/Code.gs'),code);
 console.log('Built Apps Script: four separate collections / test and production isolated by deployment.');

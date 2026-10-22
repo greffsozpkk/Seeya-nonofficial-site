@@ -1,4 +1,4 @@
-// Generated from current candidate IDs. No credentials in this file.
+// Initial legacy catalog only. Current candidates are read from the site automatically.
 const WORLDCUP_CATALOG=[{"id":"group","title":"씨야 노래 월드컵","version":"songs-20261021-v2","rounds":[32,64],"candidates":[{"id":"track-001","title":"여인의 향기","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-002","title":"구두","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-003","title":"사랑하기 때문에 (feat. SG 워너비)","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-004","title":"접시꽃","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-005","title":"Promise U","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-006","title":"처음부터 또다시","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-007","title":"유죄","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-008","title":"이별해보기","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-009","title":"Tearsandfears","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-010","title":"사랑했다면","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-011","title":"그냥","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-012","title":"내 잘못입니다","artist":"씨야","album":"The First Mind · 2006"},{"id":"track-013","title":"사랑의 인사","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-014","title":"결혼할까요","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-015","title":"너는 내 남자","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-016","title":"Dirty Dancing","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-017","title":"어떻게 널 잊겠니","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-018","title":"사랑아","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-019","title":"그 사람이 나를 사랑해요","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-020","title":"Summer Dream","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-021","title":"사랑이 간다","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-022","title":"감동을 주세요","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-023","title":"얼음인형","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-024","title":"순애보","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-025","title":"남","artist":"씨야","album":"Lovely Sweet Heart · 2007"},{"id":"track-026","title":"슬픈 발걸음","artist":"씨야","album":"California Dream · 2008"},{"id":"track-027","title":"그래도 좋아","artist":"씨야","album":"California Dream · 2008"},{"id":"track-028","title":"Classic","artist":"씨야","album":"California Dream · 2008"},{"id":"track-029","title":"연가","artist":"씨야","album":"California Dream · 2008"},{"id":"track-030","title":"미워요","artist":"씨야","album":"California Dream · 2008"},{"id":"track-031","title":"요즘 나는","artist":"씨야","album":"California Dream · 2008"},{"id":"track-032","title":"깊은 밤을 날아서","artist":"씨야","album":"California Dream · 2008"},{"id":"track-033","title":"처음 그 자리에","artist":"씨야","album":"California Dream · 2008"},{"id":"track-034","title":"미친 사랑의 노래","artist":"씨야","album":"California Dream · 2008"},{"id":"track-035","title":"The Day","artist":"씨야","album":"California Dream · 2008"},{"id":"track-036","title":"정","artist":"씨야","album":"California Dream · 2008"},{"id":"track-037","title":"가니 (feat. SG워너비 - 김용준, 황정음, Mario)","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-038","title":"Hot Girl","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-039","title":"Turn It Up","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-040","title":"집으로 돌아오는 길 (feat. SG워너비 - 김진호)","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-041","title":"내가 울더라도","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-042","title":"덩그러니","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-043","title":"사모곡","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-044","title":"I Wish","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-045","title":"남자는 그래요","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-046","title":"그 사람 (구두 Ⅲ)","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-047","title":"솜사탕","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-048","title":"나 없이도","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-049","title":"Loving You","artist":"씨야","album":"Brilliant Change · 2008"},{"id":"track-050","title":"그 놈 목소리","artist":"씨야","album":"Rebloom · 2009"},{"id":"track-051","title":"앗차!","artist":"씨야","album":"Rebloom · 2009"},{"id":"track-052","title":"눈물의 여왕","artist":"씨야","album":"Rebloom · 2009"},{"id":"track-053","title":"바람핀다 믿었니","artist":"씨야","album":"Rebloom · 2009"},{"id":"track-054","title":"T-Gana (티가나)","artist":"씨야","album":"Rebloom · 2009"},{"id":"track-055","title":"내겐 너무 멋진 그대","artist":"씨야","album":"See You Again · 2011"},{"id":"track-056","title":"The Last","artist":"씨야","album":"See You Again · 2011"},{"id":"track-057","title":"Stay","artist":"씨야","album":"First, Again · 2026"},{"id":"track-058","title":"계절은 돌고 돌아","artist":"씨야","album":"First, Again · 2026"},{"id":"track-059","title":"봄처럼 그댄","artist":"씨야","album":"First, Again · 2026"},{"id":"track-060","title":"I Believe","artist":"씨야","album":"First, Again · 2026"},{"id":"track-061","title":"그럼에도, 우린","artist":"씨야","album":"First, Again · 2026"},{"id":"track-062","title":"안돼요","artist":"씨야","album":"First, Again · 2026"},{"id":"track-063","title":"잔향","artist":"씨야","album":"First, Again · 2026"},{"id":"track-064","title":"끝내 꺾이지 않는 것","artist":"씨야","album":"First, Again · 2026"},{"id":"track-065","title":"우리 Live Ver.","artist":"씨야","album":"First, Again · 2026"},{"id":"track-066","title":"바보","artist":"씨야","album":"All Star 2집 Vol.4 · 2008"},{"id":"track-068","title":"여성시대","artist":"씨야","album":"여성시대 / 영원한 사랑 · 2009"},{"id":"track-070","title":"원더우먼","artist":"씨야","album":"원더우먼 · 2010"},{"id":"track-071","title":"가슴이 뭉클","artist":"씨야","album":"개인의 취향 OST Part.2 · 2010"},{"id":"track-072","title":"미쳤나봐","artist":"씨야","album":"안영민 Baby Brown · 2010"},{"id":"track-073","title":"이별이 오지 못하게","artist":"씨야","album":"TWENTYth Urban · 2010"},{"id":"track-074","title":"다 컸잖아","artist":"씨야","album":"씨야 그리고 다비치 · 2010"},{"id":"track-075","title":"시차 (With 다비치, 블랙펄)","artist":"씨야","album":"숙명 OST · 2008"},{"id":"track-076","title":"용기를 주세요","artist":"씨야","album":"쿵야 어드벤처 OST · 2007"},{"id":"fate-one-person","title":"가슴속에 한사람","artist":"씨야","album":"숙명 OST · 2008"}]},{"id":"solo","title":"멤버 솔로곡 월드컵","version":"solo-20261022-v1","rounds":[16,32],"candidates":[{"id":"solo-xHB6Pn5rNxo","title":"그 남자","artist":"남규리","album":"그 남자"},{"id":"solo-MiUAHBTO55g","title":"남자","artist":"남규리","album":"고사: 피의 중간고사 OST"},{"id":"solo-Sn7YYiXgQ6Y","title":"깊은 밤을 날아서","artist":"남규리","album":"California Dream · 못말리는 결혼 OST"},{"id":"solo-cjuv_qVAgRA","title":"HALO","artist":"남규리","album":"기적:奇跡"},{"id":"solo-siyf1bcO5Gc","title":"그래도 좋아해요","artist":"남규리","album":"그래도 좋아해요"},{"id":"solo-9klPsmjNPDw","title":"December Dream","artist":"남규리","album":"December Dream"},{"id":"solo-nN7NV5FBhBw","title":"슬픔이 찾아와서 그래","artist":"남규리","album":"슬픔이 찾아와서 그래"},{"id":"solo-5USUHmWpPcg","title":"가슴앓이","artist":"남규리","album":"기억"},{"id":"solo-Mjl8tBDX5Ik","title":"고백하는 거 맞아","artist":"남규리","album":"고백하는 거 맞아"},{"id":"solo-06MOxzzMPvI","title":"우리 사랑 그런 거 해요 Part.1","artist":"남규리","album":"우리 사랑 그런 거 해요 Part.1"},{"id":"solo-DFBk5oSn72Y","title":"우리 사랑 그런 거 해요 Part.2 (feat. KoN)","artist":"남규리","album":"우리 사랑 그런 거 해요 Part.2 (feat. KoN)"},{"id":"solo-8UAxgcnvk2E","title":"잊었니","artist":"김연지","album":"잊었니"},{"id":"solo-lOvBRahMvtQ","title":"바람이 불면","artist":"김연지","album":"바람이 불면"},{"id":"solo-_FJkNLkV82U","title":"내 맘","artist":"김연지","album":"내 맘"},{"id":"solo-JIpU0HXvc_E","title":"노래","artist":"김연지","album":"미친 사랑의 노래"},{"id":"solo-Uko7Y-Tfj-8","title":"당신은 천사와 커피를 마셔본 적이 있습니까","artist":"김연지","album":"당신은 천사와 커피를 마셔본 적이 있습니까 (청설 X 김연지)"},{"id":"solo-arm2c6NH9vg","title":"비가 오면 마음껏 울어도 되니까","artist":"김연지","album":"비가 오면 마음껏 울어도 되니까"},{"id":"solo-gwRkvYc59_s","title":"사랑의 인사","artist":"김연지","album":"사랑의 인사"},{"id":"solo-atp-TU4Xezs","title":"가슴으로 운다","artist":"김연지","album":"가슴으로 운다"},{"id":"solo-8k-YrZ5Gg2g","title":"빨간풍선","artist":"김연지","album":"빨간풍선 OST Part.1"},{"id":"solo-7h3ndp05JN0","title":"Whisky on the Rock","artist":"김연지","album":"우리들의 블루스 OST Part 1"},{"id":"solo-_lTZCnkpoyQ","title":"10년이나 버티니","artist":"김연지","album":"10년이나 버티니"},{"id":"solo-PHQbDyffSTw","title":"계절사이","artist":"김연지","album":"군주 - 가면의 주인 (MBC 수목드라마) OST - Part.5"},{"id":"solo-6yrrTYk4sMs","title":"너만 있으면 다였는데","artist":"김연지","album":"너만 있으면 다였는데.. - RBW 아티스트 다이어리 시즌2"},{"id":"solo-ppe9vyChKLs","title":"흩어지는 중","artist":"이보람","album":"흩어지는 중"},{"id":"solo-2WyOq7IMEnc","title":"처음 그 자리에","artist":"이보람","album":"풀하우스 OST"},{"id":"solo-L5Cn7BpkEeQ","title":"FREAK (Korean Version)","artist":"이보람","album":"하이에나 OST · Korean Version"},{"id":"solo-yjvTqgRzcXY","title":"빛의 반대편에서","artist":"이보람","album":"빛의 반대편에서"},{"id":"solo-7VGw30BGkyw","title":"매일 이렇게 비가 내려","artist":"이보람","album":"IONY의 오선지 : Project #01"},{"id":"solo-pwdQrpNpFyA","title":"너를 사랑하니까","artist":"이보람","album":"너를 사랑하니까"},{"id":"solo-oukYixC1ldo","title":"형 (兄)","artist":"이보람","album":"형 (兄)"},{"id":"solo-c6MlQvbbZw0","title":"한 밤의 꿈처럼","artist":"이보람","album":"한 밤의 꿈처럼"},{"id":"solo-q4jtpVDemFE","title":"사랑하니까","artist":"이보람","album":"너를 사랑하니까"},{"id":"solo-DujKGd4aA60","title":"이렇게 좋은날","artist":"이보람","album":"이렇게 좋은날"}]},{"id":"mv","title":"씨야 뮤비 월드컵","version":"mv-20261022-v1","rounds":[16,"all"],"candidates":[{"id":"mv-_8nBbgv5DJI","title":"여인의 향기","artist":"씨야","album":"뮤직비디오"},{"id":"mv-8CMqMqyeapg","title":"사랑하기 때문에","artist":"씨야","album":"뮤직비디오"},{"id":"mv-PHigJJ-Lx8Q","title":"구두","artist":"씨야","album":"뮤직비디오"},{"id":"mv-xiHuOabOH9c","title":"미친 사랑의 노래","artist":"씨야","album":"뮤직비디오"},{"id":"mv-lu1kJ25OWfg","title":"사랑의 인사","artist":"씨야","album":"뮤직비디오"},{"id":"mv-Ut_QWvPwvgA","title":"결혼할까요","artist":"씨야","album":"뮤직비디오"},{"id":"mv-_veObwyUQj8","title":"얼음인형","artist":"씨야","album":"뮤직비디오"},{"id":"mv-pvwPEdvChds","title":"슬픈 발걸음","artist":"씨야","album":"뮤직비디오"},{"id":"mv-khHra8dCxUY","title":"미워요","artist":"씨야","album":"뮤직비디오"},{"id":"mv-vEbiLplHd-M","title":"그 사람 (구두 III)","artist":"씨야","album":"뮤직비디오"},{"id":"mv-jIPUa3A9AA0","title":"Hot Girl","artist":"씨야","album":"뮤직비디오"},{"id":"mv-_esZucb02gs","title":"그 놈 목소리","artist":"씨야","album":"뮤직비디오"},{"id":"mv-Yax4nGDtkW4","title":"내겐 너무 멋진 그대","artist":"씨야","album":"뮤직비디오"},{"id":"mv-ANUSI5FfWFM","title":"바보","artist":"씨야","album":"뮤직비디오"},{"id":"mv-dmsw-tEenZ0","title":"그럼에도, 우린","artist":"씨야","album":"뮤직비디오"},{"id":"mv-RMNcT5AqLGA","title":"Stay · 드라마 버전","artist":"씨야","album":"뮤직비디오"},{"id":"mv-I1zhkwIuZ0A","title":"Stay · SEEYA 버전","artist":"씨야","album":"뮤직비디오"},{"id":"mv-JeNLPdkh6FM","title":"봄처럼 그댄","artist":"씨야","album":"뮤직비디오"},{"id":"mv-_CGekO1IRGc","title":"I Believe","artist":"씨야","album":"뮤직비디오"}]},{"id":"film","title":"남규리 필모드컵","version":"film-20261022-v1","rounds":["all",16,32],"candidates":[{"id":"film-01","title":"강이나","artist":"남규리","album":"고死: 피의 중간고사"},{"id":"film-02","title":"캣걸","artist":"남규리","album":"슬픔보다 더 슬픈 이야기"},{"id":"film-03","title":"미오","artist":"남규리","album":"Mr. 아이돌"},{"id":"film-04","title":"얼음꽃 여배우","artist":"남규리","album":"톱스타"},{"id":"film-05","title":"속삭임 · 배역명 미확인","artist":"남규리","album":"속삭임"},{"id":"film-06","title":"시와","artist":"남규리","album":"신촌좀비만화 · 너를 봤어"},{"id":"film-07","title":"신지민","artist":"남규리","album":"데자뷰"},{"id":"film-08","title":"수민","artist":"남규리","album":"질투의 역사"},{"id":"film-09","title":"연수","artist":"남규리","album":"동요괴담 · 즐거운 나의 집"},{"id":"film-10","title":"양초롱","artist":"남규리","album":"인생은 아름다워"},{"id":"film-11","title":"신지현","artist":"남규리","album":"49일"},{"id":"film-12","title":"안규리","artist":"남규리","album":"피아니시모 · Never Ending Love"},{"id":"film-13","title":"미자","artist":"남규리","album":"드라마 스페셜 · 칼잡이 이발사"},{"id":"film-14","title":"윤세나","artist":"남규리","album":"해운대 연인들"},{"id":"film-15","title":"배정아","artist":"남규리","album":"울랄라 부부"},{"id":"film-16","title":"윤수민","artist":"남규리","album":"무정도시"},{"id":"film-17","title":"쉐자바오","artist":"남규리","album":"천금보모"},{"id":"film-18","title":"강서원","artist":"남규리","album":"드라마 페스티벌 · 하우스, 메이트"},{"id":"film-19","title":"민경","artist":"남규리","album":"심야식당"},{"id":"film-20","title":"이나영","artist":"남규리","album":"그래, 그런거야"},{"id":"film-21","title":"김민서","artist":"남규리","album":"스완 - 그들의 비밀"},{"id":"film-22","title":"애나","artist":"남규리","album":"애나야 밥먹자"},{"id":"film-23","title":"최연경","artist":"남규리","album":"내 뒤에 테리우스"},{"id":"film-24","title":"전수영","artist":"남규리","album":"붉은 달 푸른 해"},{"id":"film-25","title":"미키","artist":"남규리","album":"이몽"},{"id":"film-26","title":"강현채","artist":"남규리","album":"카이로스"},{"id":"film-27","title":"류희선","artist":"남규리","album":"드라마 스테이지 · 더 페어"},{"id":"film-28","title":"안가영","artist":"남규리","album":"너는 나의 봄"},{"id":"film-29","title":"서윤희","artist":"남규리","album":"열녀박씨 계약결혼뎐"},{"id":"film-30","title":"백영옥","artist":"남규리","album":"피타는 연애"},{"id":"film-31","title":"은아","artist":"남규리","album":"페이스 미"},{"id":"film-32","title":"이미로","artist":"남규리","album":"인간시장"},{"id":"film-33","title":"코제트","artist":"남규리","album":"레미제라블"}]}];
 const WorldcupBracket=(function(){
 'use strict';
@@ -51,7 +51,7 @@ function fail(code,message){const e=new Error(message);e.code=code;throw e;}
 function createService(catalog,repo,env){
  const validId=s=>typeof s==='string'&&/^[a-zA-Z0-9_-]{8,100}$/.test(s);
  function scope(q){if(q.environment!==env.environment)fail('ENVIRONMENT','테스트와 운영 통계는 함께 사용할 수 없어요.');const c=catalog.find(c=>c.id===q.collection&&c.version===q.version);if(!c||!c.rounds.includes(q.size))fail('VERSION','후보 구성이나 라운드가 변경됐어요. 페이지를 새로 열어 주세요.');return c;}
- function start(q){const c=scope(q);if(!validId(q.client)||!validId(q.requestId))fail('INPUT','게임 시작 정보를 확인해 주세요.');if(repo.paused(c.id))fail('PAUSED','현재 이 월드컵의 전체 통계 집계가 잠시 중지되어 있어요.');
+ function start(q){const c=scope(q);if(c.active===false)fail('VERSION','목록이 갱신됐어요. 페이지를 새로 열어 주세요.');if(!validId(q.client)||!validId(q.requestId))fail('INPUT','게임 시작 정보를 확인해 주세요.');if(repo.paused(c.id))fail('PAUSED','현재 이 월드컵의 전체 통계 집계가 잠시 중지되어 있어요.');
   const client=env.hash(q.client),now=env.now(),old=repo.request(client,q.requestId);
   if(old){if(old.collection!==c.id||old.version!==c.version||old.size!==q.size)fail('CONFLICT','같은 시작 요청의 조건이 달라요.');if(old.expires<=now)fail('EXPIRED','시작 요청이 만료됐어요. 새 게임을 시작해 주세요.');return issued(old);}
   const limits=repo.usage(client,now);if(limits.hour>=10||limits.day>=60||limits.globalDay>=1000)fail('RATE_LIMIT','게임 시작 요청이 많아요. 잠시 후 다시 시도하거나 통계 없이 플레이해 주세요.');
@@ -65,7 +65,6 @@ function createService(catalog,repo,env){
   const c=catalog.find(c=>c.id===s.collection&&c.version===s.version);if(!Array.isArray(q.picks)||q.picks.length>127||!q.picks.every(x=>typeof x==='string'&&x.length<100))fail('PATH','선택 기록 형식이 올바르지 않아요.');
   let state;try{state=G.replay({...s.game,picks:q.picks},c.candidates.map(x=>x.id),c.version);}catch{fail('PATH','발급된 대진과 선택 기록이 일치하지 않아요.');}
   if(!state.winner||state.winner!==q.winner)fail('INCOMPLETE','결승까지 완료한 게임만 등록할 수 있어요.');
-  if(env.now()-s.issued<15000)fail('TOO_FAST','통계 등록을 잠시 후 다시 시도해 주세요.');
   const row={id:s.id,collection:s.collection,version:s.version,size:s.size,winner:state.winner,at:new Date(env.now()).toISOString(),excluded:false,reason:''};
   repo.addResult(row); // Append ledger first. A lost response is recovered by the lookup above.
   return receipt(row,false);
@@ -75,12 +74,51 @@ function createService(catalog,repo,env){
   const rows=ids.map(id=>counts.get(id)||{id,wins:0,percent:0}).sort((a,b)=>b.wins-a.wins||a.id.localeCompare(b.id)).map((r,i)=>{if(r.wins!==prev)rank=i+1;prev=r.wins;return {...r,rank};});
   return {ok:true,environment:env.environment,collection:c.id,version:c.version,size:q.size,total:all.length,rows,updatedAt:new Date(env.now()).toISOString(),policy:'completed-game'};
  }
- function handle(q){if(!q||typeof q!=='object'||JSON.stringify(q).length>20000)fail('INPUT','요청 크기를 확인해 주세요.');if(q.action==='start')return start(q);if(q.action==='finish')return finish(q);if(q.action==='ranks')return ranks(q);if(q.action==='health')return {ok:true,environment:env.environment,policy:'completed-game',collections:catalog.map(c=>({id:c.id,version:c.version,rounds:c.rounds}))};fail('ACTION','지원하지 않는 요청입니다.');}
+ function handle(q){if(!q||typeof q!=='object'||JSON.stringify(q).length>20000)fail('INPUT','요청 크기를 확인해 주세요.');if(q.action==='start')return start(q);if(q.action==='finish')return finish(q);if(q.action==='ranks')return ranks(q);if(q.action==='health')return {ok:true,environment:env.environment,policy:'completed-game',collections:catalog.filter(c=>c.active!==false).map(c=>({id:c.id,version:c.version,rounds:c.rounds}))};fail('ACTION','지원하지 않는 요청입니다.');}
  return {handle};
 }
 return {createService};
 
 })();
+// Only this site-controlled HTTPS resource may supply candidates. Caller input never chooses a URL.
+var WORLDCUP_CATALOG_URL='https://seeya-fanpage.com/game/worldcup/catalog.json';
+function validateCatalog_(data){
+ if(!data||data.schema!==1||!Array.isArray(data.collections)||!data.collections.length||data.collections.length>100)throw Error('목록 형식 오류');
+ var used=new Set(),text=function(x,max){return typeof x==='string'&&x.length>0&&x.length<=max;};
+ data.collections.forEach(function(c){
+  if(!text(c.id,80)||!/^[\w-]+$/.test(c.id)||used.has(c.id)||!text(c.version,160)||!/^[\w-]+$/.test(c.version)||!text(c.title,150))throw Error('종류 형식 오류');used.add(c.id);
+  if(!Array.isArray(c.candidates)||c.candidates.length<2||c.candidates.length>128||!Array.isArray(c.rounds)||!c.rounds.length||new Set(c.rounds).size!==c.rounds.length)throw Error('후보 수 오류');
+  var ids=new Set();c.candidates.forEach(function(r){if(!text(r.id,99)||!/^[\w-]+$/.test(r.id)||ids.has(r.id)||!text(r.title,200)||typeof r.artist!=='string'||r.artist.length>150||typeof r.album!=='string'||r.album.length>250)throw Error('후보 형식 오류');ids.add(r.id);});
+  if(c.rounds.some(function(n){return n!=='all'&&(![16,32,64].includes(n)||n>c.candidates.length);})||JSON.stringify(c).length>40000)throw Error('라운드 형식 오류');
+ });return data.collections;
+}
+function loadCatalog_(book,force){
+ var props=PropertiesService.getScriptProperties(),sheet=book.getSheetByName('Catalogs')||book.insertSheet('Catalogs');
+ if(!sheet.getLastRow())sheet.appendRow(['collection','version','active','definition']);
+ var rows=sheet.getLastRow()<2?[]:sheet.getRange(2,1,sheet.getLastRow()-1,4).getValues();
+ var saved=rows.map(function(r){return Object.assign(JSON.parse(r[3]),{active:r[2]===true});});
+ var checked=Number(props.getProperty('CATALOG_CHECKED_AT')||0),now=Date.now();
+ if(!force&&saved.some(function(c){return c.active;})&&now-checked<60000)return saved;
+ try{
+  var response=UrlFetchApp.fetch(WORLDCUP_CATALOG_URL,{followRedirects:false,muteHttpExceptions:true});
+  var body=response.getContentText();if(response.getResponseCode()!==200||body.length>2000000)throw Error('목록 서버 응답 오류');
+  var current=validateCatalog_(JSON.parse(body)),next=saved.map(function(c){return Object.assign({},c,{active:false});});
+  // Bootstrap games issued before automatic catalogs were introduced. Keep their IDs/versions intact.
+  WORLDCUP_CATALOG.forEach(function(c){if(!next.some(function(x){return x.id===c.id&&x.version===c.version;}))next.push(Object.assign({},c,{active:false}));});
+  current.forEach(function(c){var old=next.find(function(x){return x.id===c.id&&x.version===c.version;});
+   if(old&&JSON.stringify([old.rounds,old.candidates.map(function(r){return r.id;}).sort()])!==JSON.stringify([c.rounds,c.candidates.map(function(r){return r.id;}).sort()]))throw Error('같은 구성 버전의 후보가 변경되었습니다.');
+   if(old)Object.assign(old,c,{active:true});else next.push(Object.assign({},c,{active:true}));
+  });
+  if(next.length>500)throw Error('후보 이력 점검이 필요합니다.');
+  var values=next.map(function(c){return [c.id,c.version,c.active,JSON.stringify(c)];});
+  if(sheet.getMaxRows()<values.length+1)sheet.insertRowsAfter(sheet.getMaxRows(),values.length+1-sheet.getMaxRows());
+  sheet.getRange(2,1,values.length,4).setValues(values);SpreadsheetApp.flush();props.setProperty('CATALOG_CHECKED_AT',String(now));props.deleteProperty('CATALOG_LAST_ERROR');return next;
+ }catch(e){props.setProperty('CATALOG_LAST_ERROR',String(e.message).slice(0,300));
+  if(saved.some(function(c){return c.active;})&&now-checked<86400000)return saved;
+  throw Error('사이트의 월드컵 목록을 읽지 못했습니다. 사이트를 먼저 배포해 주세요.');
+ }
+}
+
 // Generated Code.gs includes this adapter, shared bracket rules and candidate IDs.
 // Set Script Properties: SPREADSHEET_ID, ENVIRONMENT=test (use another project/sheet for production).
 function setupWorldcup() {
@@ -98,7 +136,7 @@ function setupWorldcup() {
 }
 function bytesHex_(a){return a.map(function(b){return ('0'+((b+256)%256).toString(16)).slice(-2);}).join('');}
 function constantEqual_(a,b){if(typeof b!=='string'||a.length!==b.length)return false;var n=0;for(var i=0;i<a.length;i++)n|=a.charCodeAt(i)^b.charCodeAt(i);return n===0;}
-function context_(){
+function context_(forceCatalog){
  var props=PropertiesService.getScriptProperties(),environment=props.getProperty('ENVIRONMENT'),secret=props.getProperty('TOKEN_SECRET');
  if(!['test','production'].includes(environment)||!secret)throw Error('먼저 setupWorldcup을 실행해 주세요.');
  var book=SpreadsheetApp.openById(props.getProperty('SPREADSHEET_ID')),ss=book.getSheetByName('Sessions'),rs=book.getSheetByName('Results');
@@ -117,7 +155,7 @@ function context_(){
   addSession:function(s){if(sessions.length>=10000)throw Error('발급 기록 정리가 필요합니다.');ss.appendRow([s.id,s.client,s.requestId,s.collection,s.version,s.size,s.issued,s.expires,JSON.stringify(s.game)]);SpreadsheetApp.flush();sessions.push(s);},
   addResult:function(r){if(results.length>=50000)throw Error('통계 저장 용량 점검이 필요합니다.');rs.appendRow([r.id,r.collection,r.version,r.size,r.winner,r.at,false,'']);SpreadsheetApp.flush();results.push(r);}
  };
- return {book:book,service:WorldcupStats.createService(WORLDCUP_CATALOG,repo,{environment:environment,now:Date.now,uuid:Utilities.getUuid,random:Math.random,sign:sign,hash:function(s){return bytesHex_(Utilities.computeHmacSha256Signature('client|'+s,secret));},verify:function(id,token){return constantEqual_(sign(id),token);}})};
+ var catalog=loadCatalog_(book,forceCatalog);return {book:book,catalog:catalog,service:WorldcupStats.createService(catalog,repo,{environment:environment,now:Date.now,uuid:Utilities.getUuid,random:Math.random,sign:sign,hash:function(s){return bytesHex_(Utilities.computeHmacSha256Signature('client|'+s,secret));},verify:function(id,token){return constantEqual_(sign(id),token);}})};
 }
 function json_(x){return ContentService.createTextOutput(JSON.stringify(x)).setMimeType(ContentService.MimeType.JSON);}
 function doGet(e){return dispatch_(Object.assign({},e&&e.parameter||{}, {action:(e&&e.parameter&&e.parameter.action)||'health'}),true);}
@@ -125,14 +163,22 @@ function doPost(e){try{if(!e||!e.postData||e.postData.contents.length>20000)retu
 function dispatch_(q,readOnly){
  var lock=null;
  try{
-  if(readOnly&&!['health','ranks'].includes(q.action))return json_({ok:false,code:'ACTION',message:'조회 요청만 가능합니다.'});
+  if(readOnly&&!['health','ranks','catalog','overview'].includes(q.action))return json_({ok:false,code:'ACTION',message:'조회 요청만 가능합니다.'});
   if(typeof q.size==='string'&&/^(16|32|64)$/.test(q.size))q.size=Number(q.size);
-  if(!['start','finish','ranks','health'].includes(q.action))return json_({ok:false,code:'ACTION',message:'지원하지 않는 요청입니다.'});
+  if(!['start','finish','ranks','health','catalog','overview'].includes(q.action))return json_({ok:false,code:'ACTION',message:'지원하지 않는 요청입니다.'});
   var cache=CacheService.getScriptCache(),cacheKey=q.action==='ranks'?'ranks:'+bytesHex_(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,JSON.stringify([q.environment,q.collection,q.version,q.size]))):null;
   if(cacheKey){var cached=cache.get(cacheKey);if(cached)return json_(JSON.parse(cached));}
   // All result lookups and appends share one script lock, including lost-response retries.
   lock=LockService.getScriptLock();if(!lock.tryLock(10000))return json_({ok:false,code:'BUSY',message:'저장 요청이 겹쳤어요. 잠시 후 다시 시도해 주세요.'});
-  var response=context_().service.handle(q);
+  var ctx=context_(),response;
+  if(q.action==='catalog')response={ok:true,environment:PropertiesService.getScriptProperties().getProperty('ENVIRONMENT'),collections:ctx.catalog};
+  else if(q.action==='overview'){
+   var environment=PropertiesService.getScriptProperties().getProperty('ENVIRONMENT');if(q.environment!==environment)throw Object.assign(Error('통계 환경이 다릅니다.'),{code:'ENVIRONMENT'});
+   var scopes=[];ctx.catalog.forEach(function(c){c.rounds.forEach(function(size){var r=ctx.service.handle({action:'ranks',environment:environment,collection:c.id,version:c.version,size:size});scopes.push({collection:c.id,version:c.version,size:size,total:r.total,leader:r.rows[0]||null});});});
+   response={ok:true,environment:environment,scopes:scopes,updatedAt:new Date().toISOString()};
+  }
+  else {try{response=ctx.service.handle(q);}catch(err){if(err.code!=='VERSION')throw err;ctx=context_(true);response=ctx.service.handle(q);}}
+  if(q.action==='finish'&&response.ok){var key='ranks:'+bytesHex_(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,JSON.stringify([q.environment,q.collection,q.version,q.size])));try{cache.remove(key);}catch(ignore){}}
   if(cacheKey){try{cache.put(cacheKey,JSON.stringify(response),60);}catch(ignore){}}
   return json_(response);
  }catch(err){return json_({ok:false,code:err.code||'SERVER',message:err.code?err.message:'통계 서버를 확인하지 못했어요. 결과는 기기에 보관됩니다.'});}
@@ -144,7 +190,7 @@ function backupResults(){var book=context_().book;book.getSheetByName('Results')
 function rebuildStatistics(){
  // Rankings derive from the ledger; cached responses may take up to 60 seconds to reflect exclusions.
  var ctx=context_(),sheet=ctx.book.getSheetByName('Summary')||ctx.book.insertSheet('Summary'),rows=[['collection','version','mode','candidate','wins','total','percent','updatedAt']];
- WORLDCUP_CATALOG.forEach(function(c){c.rounds.forEach(function(size){var r=ctx.service.handle({action:'ranks',environment:PropertiesService.getScriptProperties().getProperty('ENVIRONMENT'),collection:c.id,version:c.version,size:size});r.rows.forEach(function(x){rows.push([c.id,c.version,size,x.id,x.wins,r.total,x.percent,r.updatedAt]);});});});sheet.clearContents();sheet.getRange(1,1,rows.length,8).setValues(rows);
+ ctx.catalog.forEach(function(c){c.rounds.forEach(function(size){var r=ctx.service.handle({action:'ranks',environment:PropertiesService.getScriptProperties().getProperty('ENVIRONMENT'),collection:c.id,version:c.version,size:size});r.rows.forEach(function(x){rows.push([c.id,c.version,size,x.id,x.wins,r.total,x.percent,r.updatedAt]);});});});sheet.clearContents();sheet.getRange(1,1,rows.length,8).setValues(rows);
 }
 // Owner-run snapshot only. Never dispatched by the public web app; no sharing permissions are changed.
 function privateReportRows_(raw,catalog){
@@ -167,7 +213,7 @@ function refreshPrivateReport(){
   if(!['test','production'].includes(environment))throw Error('먼저 setupWorldcup을 실행해 주세요.');
   var sourceId=props.getProperty('SPREADSHEET_ID'),source=SpreadsheetApp.openById(sourceId),ledger=source.getSheetByName('Results');
   if(!ledger)throw Error('Results 원장이 없습니다. 원본 시트를 확인해 주세요.');
-  var raw=ledger.getLastRow()<2?[]:ledger.getRange(2,1,ledger.getLastRow()-1,8).getValues(),rows=privateReportRows_(raw,WORLDCUP_CATALOG);
+  var raw=ledger.getLastRow()<2?[]:ledger.getRange(2,1,ledger.getLastRow()-1,8).getValues(),rows=privateReportRows_(raw,loadCatalog_(source,false));
   var key='PRIVATE_REPORT_ID_'+environment,id=props.getProperty(key),book;
   if(id===sourceId)throw Error('확인용 파일과 원본 파일은 달라야 합니다.');
   if(id){book=SpreadsheetApp.openById(id);}else{
@@ -182,8 +228,16 @@ function refreshPrivateReport(){
   sheet.clearContents();sheet.getRange(1,1,1,10).setValues([headers]);
   if(rows.length){sheet.getRange(2,1,rows.length,10).setValues(rows);sheet.getRange(2,1,rows.length,1).setNumberFormat('yyyy-mm-dd hh:mm:ss');sheet.getRange(1,1,rows.length+1,10).createFilter();}
   sheet.setFrozenRows(1);sheet.getRange(1,1,1,10).setBackground('#f4dbe6').setFontWeight('bold');sheet.setColumnWidths(1,10,180);sheet.setColumnWidth(4,240);sheet.setColumnWidth(7,270);
-  var notes=[['항목','내용'],['용도','운영자 확인용 사본입니다. 여기서 편집·삭제해도 사이트 통계는 바뀌지 않습니다.'],['마지막 새로고침 (한국)',Utilities.formatDate(new Date(),'Asia/Seoul','yyyy-MM-dd HH:mm:ss')],['환경',environment],['원장 행 수',rows.length],['갱신 방법','Apps Script에서 refreshPrivateReport를 실행하세요. 실시간 자동 갱신은 아닙니다.'],['표시 범위','서버에서 접수한 완료 결과만 표시합니다. 중도 종료·개인 기록만 저장한 게임은 없습니다.'],['집계 기준','완료한 게임 기준이며 방문자 수가 아닙니다. 종류·라운드·후보 구성 버전별로 분리됩니다.'],['개인정보','이름·이메일·익명 이용자 해시·토큰·선택 경로는 이 확인용 파일에 복사하지 않습니다.'],['공유','새 파일은 공유 설정을 변경하지 않습니다. 공유 화면에서 일반 액세스가 제한됨인지 확인해 주세요.'],['백업 아님','다시 실행하면 사본을 원장 기준으로 덮어씁니다. 원장 삭제 대비 자동 백업과 복원 기능은 아닙니다.']];
+  var notes=[['항목','내용'],['용도','운영자 확인용 사본입니다. 여기서 편집·삭제해도 사이트 통계는 바뀌지 않습니다.'],['마지막 새로고침 (한국)',Utilities.formatDate(new Date(),'Asia/Seoul','yyyy-MM-dd HH:mm:ss')],['환경',environment],['원장 행 수',rows.length],['갱신 방법','최초 setupWorldcupAutomation 실행 후 매시간 갱신합니다. 바로 확인하려면 refreshPrivateReport를 실행하세요.'],['표시 범위','서버에서 접수한 완료 결과만 표시합니다. 중도 종료·개인 기록만 저장한 게임은 없습니다.'],['집계 기준','완료한 게임 기준이며 방문자 수가 아닙니다. 종류·라운드·후보 구성 버전별로 분리됩니다.'],['개인정보','이름·이메일·익명 이용자 해시·토큰·선택 경로는 이 확인용 파일에 복사하지 않습니다.'],['공유','새 파일은 공유 설정을 변경하지 않습니다. 공유 화면에서 일반 액세스가 제한됨인지 확인해 주세요.'],['백업 아님','다시 실행하면 사본을 원장 기준으로 덮어씁니다. 원장 삭제 대비 자동 백업과 복원 기능은 아닙니다.']];
   info.clearContents();info.getRange(1,1,notes.length,2).setValues(notes);info.setColumnWidth(1,210);info.setColumnWidth(2,700);info.getRange(1,1,notes.length,2).setWrap(true);info.setFrozenRows(1);
   SpreadsheetApp.flush();Logger.log('운영자 확인용 시트: '+book.getUrl());return book.getUrl();
  }finally{lock.releaseLock();}
+}
+// Owner executes once after deploying the site and replacing this script.
+function setupWorldcupAutomation(){
+ setupWorldcup();
+ var url=refreshPrivateReport();
+ var triggers=ScriptApp.getProjectTriggers().filter(function(t){return t.getHandlerFunction()==='refreshPrivateReport';});
+ if(!triggers.length)ScriptApp.newTrigger('refreshPrivateReport').timeBased().everyHours(1).create();
+ Logger.log('목록 자동 연결 및 확인용 시트 매시간 갱신 설정 완료: '+url);return url;
 }

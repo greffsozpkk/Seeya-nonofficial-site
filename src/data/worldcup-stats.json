@@ -2,5 +2,5 @@
   "endpoint": "https://script.google.com/macros/s/AKfycbzedn0GTJLhWmj_-pwsIWeFqVXGn-qr0gBOIXxE5k9pV24G-SacdWZRdePFo_1XLOWBvw/exec",
   "environment": "test",
   "policy": "completed-game",
-  "timeoutMs": 15000
+  "timeoutMs": 35000
 }

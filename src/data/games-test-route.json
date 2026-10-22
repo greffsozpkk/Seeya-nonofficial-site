@@ -1,8 +1,8 @@
 {
   "key": "games-test",
   "path": "/game/test/",
-  "title": "SEEYA PLAY · 테스트",
-  "description": "월드컵 종류를 선택하고 플레이하는 비공개 테스트 화면",
+  "title": "SEEYA PLAY",
+  "description": "월드컵 종류를 선택하고 플레이하는 월드컵 화면",
   "unlisted": true,
   "noindex": true
 }

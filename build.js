@@ -81,8 +81,9 @@ const passportBundle=bundle('src/client/passport.js');
 // Preserve the public diary and its existing personal storage key.
 const diaryJs=asset('diary','js',passportBundle.replaceAll('/passport/test/','/diary/').replaceAll('/passport/sw.js','/diary/sw.js'));
 const adminCss=asset('archive-admin','css',read('src/admin/admin.css'));
-const adminJs=asset('archive-admin','js',read('src/admin/admin.js'));
-write('manage/index.html',read('src/admin/template.html').replace('{{adminCss}}',adminCss).replace('{{adminJs}}',adminJs));
+const adminJs=asset('archive-admin','js',bundle('src/admin/admin.js'));
+write('game/worldcup/catalog.json',JSON.stringify(require('./src/shared/worldcup-manifest').manifest())+'\n');
+write('manage/index.html',read('src/admin/template.html').replace('{{adminCss}}',adminCss).replace('{{adminJs}}',adminJs).replace('{{worldcupConfig}}',esc(JSON.stringify(json('src/data/worldcup-stats.json')))));
 const archiveRows=json('data/archive.json');
 const mapCoverage=require('./src/shared/map-archive').coverage(archiveRows,json('src/data/map-places.json').places,json('src/data/map-archive-pending.json'));
 write('map/coverage.json',JSON.stringify(mapCoverage,null,2)+'\n');
@@ -162,6 +163,6 @@ for(const route of retiredRoutes){const file=route.from.slice(1)+'index.html';wr
 write('passport/sw.js',read('src/retired-passport-worker.js'));
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html']},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html']},null,2)+'\n');
 console.log(`Built ${routes.length} public pages, 2 unlisted PLAY/world cup previews and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

@@ -1,0 +1,41 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const M=require('../src/shared/worldcup-manifest'),raw=require('../src/shared/worldcup-collections').audit(),catalog=M.manifest();
+assert.equal(M.version(raw[0]),M.version({...raw[0],candidates:[...raw[0].candidates].reverse()}));
+assert.notEqual(M.version(raw[0]),M.version({...raw[0],candidates:raw[0].candidates.slice(1)}));
+assert.deepEqual(JSON.parse(read('game/worldcup/catalog.json')),catalog);
+const payload=JSON.parse(read('game/worldcup/test/index.html').match(/id="worldcupData">(.*?)<\/script>/s)[1]);assert.deepEqual(payload.collections.map(c=>c.version),catalog.collections.map(c=>c.version));
+assert(!/TEST PLAY|TEST STATISTICS|테스트 집계|후보 구성 \$\{E/.test(read('src/client/worldcup.js')));
+// Catalog refresh must reject corrupted/reused definitions and preserve previous game versions.
+let now=Date.now(),body=JSON.stringify(catalog),http=200,calls=0,table=[],props=new Map();
+class Clock extends Date{static now(){return now;}}
+const sheet={getLastRow:()=>table.length,appendRow:r=>table.push(r),getMaxRows:()=>1000,getRange:(start,col,n)=>({getValues:()=>table.slice(start-1,start-1+n),setValues:rows=>{table.splice(start-1,rows.length,...rows);}})};
+const book={getSheetByName:()=>sheet,insertSheet:()=>sheet};
+const context={Date:Clock,Set,JSON,Error,Number,WORLDCUP_CATALOG:raw.map(M.describe),PropertiesService:{getScriptProperties:()=>({getProperty:k=>props.get(k),setProperty:(k,v)=>props.set(k,v),deleteProperty:k=>props.delete(k)})},SpreadsheetApp:{flush(){}},UrlFetchApp:{fetch:(url,options)=>{calls++;assert.equal(url,'https://seeya-fanpage.com/game/worldcup/catalog.json');assert.equal(options.followRedirects,false);return {getContentText:()=>body,getResponseCode:()=>http};}}};
+vm.createContext(context);vm.runInContext(read('integrations/worldcup/Catalog.gs'),context);
+let loaded=context.loadCatalog_(book,false);assert.equal(loaded.filter(x=>x.active).length,4);assert(loaded.some(x=>x.version===raw[0].version&&x.active));context.loadCatalog_(book,false);assert.equal(calls,1);
+const newer=structuredClone(catalog);newer.collections.push({...newer.collections[1],id:'new-solo',title:'새 월드컵'});body=JSON.stringify(newer);now+=61000;loaded=context.loadCatalog_(book,false);assert.equal(loaded.filter(x=>x.active).length,5);
+const changed=structuredClone(newer);changed.collections[0].version+='-next';changed.collections[0].candidates.pop();body=JSON.stringify(changed);now+=61000;loaded=context.loadCatalog_(book,false);assert(loaded.find(x=>x.version===catalog.collections[0].version).active===false);assert(loaded.find(x=>x.version.endsWith('-next')).active);
+const snapshot=JSON.stringify(table),invalid=structuredClone(changed);invalid.collections[0].candidates.pop();body=JSON.stringify(invalid);now+=61000;context.loadCatalog_(book,true);assert.equal(JSON.stringify(table),snapshot);assert(props.has('CATALOG_LAST_ERROR'));
+http=404;now+=2*86400000;assert.throws(()=>context.loadCatalog_(book,false),/목록을 읽지/);assert.equal(JSON.stringify(table),snapshot);
+for(const bad of [{schema:2,collections:[]},{schema:1,collections:[{...catalog.collections[0],candidates:[catalog.collections[0].candidates[0],catalog.collections[0].candidates[0]]}]}])assert.throws(()=>context.validateCatalog_(bad));
+// A retired catalog can finish an already issued game; it cannot issue new games.
+const G=require('../src/shared/worldcup'),{createService}=require('../src/shared/worldcup-stats-core');let sessions=[],results=[],seq=0;
+const repo={paused:()=>false,request:()=>null,usage:()=>({hour:0,day:0,globalDay:0}),session:id=>sessions.find(s=>s.id===id),result:id=>results.find(s=>s.id===id),results:()=>results,addSession:s=>sessions.push(s),addResult:r=>results.push(r)};
+const old=structuredClone(catalog.collections[1]),env={environment:'test',now:()=>now,uuid:()=> 'automatic-'+(++seq),hash:x=>x,sign:x=>x,verify:(id,t)=>id===t,random:()=>.1};
+let service=createService([old],repo,env);const q={environment:'test',collection:old.id,version:old.version,size:16};const issued=service.handle({action:'start',...q,client:'fixture-client',requestId:'fixture-request'});let g=issued.game,ids=old.candidates.map(x=>x.id);while(!G.replay(g,ids,old.version).winner)g=G.choose(g,G.replay(g,ids,old.version).pair[0],ids,old.version);
+old.active=false;service=createService([old],repo,env);const finish={action:'finish',...q,id:g.id,token:issued.token,picks:g.picks,winner:G.replay(g,ids,old.version).winner};assert(service.handle(finish).ok,'no artificial 15-second rejection');assert(service.handle(finish).already);assert.equal(results.length,1);assert.throws(()=>service.handle({action:'start',...q,client:'fixture-client',requestId:'new-request'}),e=>e.code==='VERSION');
+async function retries(){const {create}=require('../src/client/worldcup-stats');let calls=0,waits=[],values=new Map();const c=create({endpoint:'https://script.google.com/macros/s/fixture/exec',environment:'test'},{storage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},sleep:async ms=>waits.push(ms),fetch:async()=>{calls++;if(calls===1)throw Error('response lost');return {ok:true,type:'cors',json:async()=>({ok:true,environment:'test',id:g.id,winner:finish.winner,already:true,excluded:false,acceptedAt:new Date().toISOString()})};}});c.queue(old,{...g,remote:{token:g.id,expires:Date.now()+60000,environment:'test'}},finish.winner);await Promise.all([c.submitAuto(g.id),c.submitAuto(g.id)]);assert.equal(calls,2);assert.deepEqual(waits,[2500]);assert.equal(c.get(g.id).status,'saved');}
+const admin=read('src/admin/worldcup-admin.js');assert(!admin.includes('Authorization'));assert(admin.includes('canAccess()'));assert(admin.includes('ticket!==generation'));assert(read('src/admin/admin.js').includes('worldcupAdmin.clear()'));assert(read('manage/index.html').includes('id="worldcup-admin" class="panel" hidden'));assert(read('integrations/worldcup/Adapter.gs').includes('cache.remove(key)'));
+async function adminView(){
+ let access=false,calls=0,click,resolveRanks;const detail={innerHTML:'',textContent:''},host={hidden:false,innerHTML:'',addEventListener:(event,fn)=>click=fn,querySelector:selector=>selector.endsWith(' h3')?{focus(){}}:detail,replaceChildren(){this.innerHTML='';}};
+ const c={...catalog.collections[1],active:true},scope={collection:c.id,version:c.version,size:16,total:1,leader:{id:c.candidates[0].id,wins:1}},rows=c.candidates.map((r,i)=>({id:r.id,wins:i?0:1,percent:i?0:100,rank:i?2:1}));
+ const stats={call:async q=>{calls++;return q.action==='catalog'?{collections:[c]}:{scopes:[scope],updatedAt:new Date().toISOString()};},ranks:()=>new Promise(resolve=>resolveRanks=resolve)};
+ const mod={exports:{}},ctx={module:mod,require:p=>p.includes('common')?require('../src/shared/common'):{create:()=>stats},Date,JSON,Number,String,Math,Error,Set};vm.runInNewContext(admin,ctx);const ui=mod.exports.create({host,config:{environment:'test'},canAccess:()=>access});
+ await ui.load();assert.equal(calls,0);access=true;await ui.load();assert.equal(calls,2);assert(host.innerHTML.includes('전체 완료 게임'));assert(host.innerHTML.includes('1판'));assert(host.innerHTML.includes('data-wc-scope="0"'));
+ const event=dataset=>({target:{closest:()=>({dataset,hasAttribute:key=>Object.hasOwn(dataset,key.replace(/^data-/,'').replace(/-([a-z])/g,(_,l)=>l.toUpperCase()))})}});
+ let pending=click(event({wcScope:'0'}));await Promise.resolve();resolveRanks({total:1,rows});await pending;assert(detail.innerHTML.includes('1 / 2'));await click(event({wcPage:'2'}));assert(detail.innerHTML.includes('2 / 2'));
+ pending=click(event({wcScope:'0'}));await Promise.resolve();ui.clear();access=false;resolveRanks({total:1,rows});await pending;assert.equal(host.innerHTML,'');assert.equal(calls,2);
+}
+retries().then(adminView).then(()=>console.log('PASS automatic catalogs: source validation, fifth type, historical finishes, no fast rejection, failed refresh preservation, automatic lost-response retry, admin login gate/pagination/logout race.')).catch(e=>{console.error(e);process.exitCode=1;});

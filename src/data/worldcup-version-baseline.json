@@ -1,0 +1,18 @@
+{
+  "group": {
+    "version": "songs-20261021-v2",
+    "fingerprint": "songs-20261021-v2-950e1e0e8925"
+  },
+  "solo": {
+    "version": "solo-20261022-v1",
+    "fingerprint": "solo-20261022-v1-c2317b7b7102"
+  },
+  "mv": {
+    "version": "mv-20261022-v1",
+    "fingerprint": "mv-20261022-v1-d6651572815d"
+  },
+  "film": {
+    "version": "film-20261022-v1",
+    "fingerprint": "film-20261022-v1-4a665ce33300"
+  }
+}
