@@ -49,3 +49,4 @@ execFileSync(process.execPath,['scripts/check-diary.js'],{cwd:root,stdio:'inheri
 execFileSync(process.execPath,['scripts/check-diary-drive.js'],{cwd:root,stdio:'inherit'});
 
 require('./check-worldcup');
+execFileSync(process.execPath,['scripts/check-worldcup-stats.js'],{cwd:root,stdio:'inherit'});

@@ -1,0 +1,6 @@
+{
+  "endpoint": "",
+  "environment": "test",
+  "policy": "completed-game",
+  "timeoutMs": 15000
+}

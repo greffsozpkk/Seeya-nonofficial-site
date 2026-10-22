@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('fs'),path=require('path'),root=path.resolve(__dirname,'..');
+const {audit}=require('../src/shared/worldcup-collections');
+const catalog=audit().map(c=>({id:c.id,version:c.version,rounds:c.rounds,candidates:c.candidates.map(r=>({id:r.id}))}));
+const read=p=>fs.readFileSync(path.join(root,p),'utf8');
+const bracket=read('src/shared/worldcup.js').replace('module.exports=','return ');
+const core=read('src/shared/worldcup-stats-core.js').replace("const G=require('./worldcup');",'const G=WorldcupBracket;').replace('module.exports=','return ');
+const code='// Generated from current candidate IDs. No credentials in this file.\nconst WORLDCUP_CATALOG='+JSON.stringify(catalog)+';\nconst WorldcupBracket=(function(){\n'+bracket+'\n})();\nconst WorldcupStats=(function(){\n'+core+'\n})();\n'+read('integrations/worldcup/Adapter.gs');
+fs.writeFileSync(path.join(root,'integrations/worldcup/Code.gs'),code);
+console.log('Built Apps Script: four separate collections / test and production isolated by deployment.');
