@@ -1,5 +1,5 @@
 {
-  "version": "5.40",
+  "version": "5.41",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -65,7 +65,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.e9a60448e01d.js",
+    "assets/site.858f85206b4c.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.d7a7192ef0d2.js",
@@ -86,12 +86,13 @@
     "assets/NanumPenScript-Regular.d083eb8197a2.woff2",
     "assets/passport.986e895a55c7.css",
     "assets/diary.1818dd06da72.js",
-    "assets/archive-admin.fac431dec039.css",
-    "assets/archive-admin.e382e083ae26.js",
+    "assets/archive-admin.0d013d2bf36a.css",
+    "assets/archive-admin.e375f5716f35.js",
     "assets/worldcup.7c7f32e9aa3d.css",
-    "assets/worldcup.357b9c86996f.js"
+    "assets/worldcup.99851e29d0de.js"
   ],
   "auxiliary": [
+    "game/worldcup/catalog.json",
     "diary/sw.js",
     "passport/index.html",
     "passport/sw.js",
