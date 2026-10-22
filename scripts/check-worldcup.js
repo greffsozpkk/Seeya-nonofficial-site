@@ -49,7 +49,30 @@ async function checkClient(){
  await click({target:{closest:()=>({dataset:{action:'rank'}})}});assert(app.innerHTML.includes('전체 참가'));assert(app.innerHTML.includes('<b>1판</b>'));
  const withoutVideo=film.candidates.find(r=>!r.youtubeId),beforePlayers=created.length;context.location.search='?type=film&winner='+withoutVideo.id;vm.runInNewContext('(function(){'+read('src/client/worldcup.js')+'})();',context);await Promise.resolve();assert.equal(created.length,beforePlayers);assert(app.innerHTML.includes('wc-role-card'));assert(!app.innerHTML.includes('watch?v=undefined'));assert(app.innerHTML.includes('출연 정보'));assert(created.every(p=>/^[\w-]{11}$/.test(p.options.videoId)));
  await click({target:{closest:()=>({dataset:{worldcup:'mv'}})}});await click({target:{closest:()=>({dataset:{action:'start'}})}});await Promise.resolve();assert(JSON.parse(values.get('seeya-worldcup-test-mv-v1')).full);assert(app.innerHTML.includes('이 뮤비 선택'));assert.equal(values.get('seeya-worldcup-test-solo-v1'),soloBefore);assert.equal(values.get('seeya-worldcup-test-v1-results'),resultKey);
+ // One cover entry exposes two unchanged collections, with independent saved games and results.
+ const catalog=require('../src/shared/worldcup-manifest').current();
+ const coverSaved=new Map();
+ for(const c of catalog.filter(c=>['covers','covers-all'].includes(c.id))){
+  const pool=c.candidates.map(r=>r.id),key='seeya-worldcup-test-'+c.id+'-v1';
+  const saved=G.createAll(pool,c.version,'saved-'+c.id);values.set(key,JSON.stringify(saved));coverSaved.set(key,values.get(key));
+  values.set(key+'-results',JSON.stringify([{id:'win-'+c.id,version:c.version,size:c.rounds[0],winner:pool[0],at:'2026-10-23'}]));coverSaved.set(key+'-results',values.get(key+'-results'));
+ }
+ nodes.worldcupData.textContent=JSON.stringify({collections:catalog});context.location.search='';
+ vm.runInNewContext('(function(){'+read('src/client/worldcup.js')+'})();',context);
+ assert.equal((app.innerHTML.match(/data-worldcup=/g)||[]).length,6);assert(!app.innerHTML.includes('data-worldcup="covers"'));
+ await click({target:{closest:()=>({dataset:{worldcup:'covers-all'}})}});
+ assert(app.innerHTML.includes('131편')&&app.innerHTML.includes('101곡')&&app.innerHTML.includes('256강 1/3 이어하기'));
+ await click({target:{closest:()=>({dataset:{coverScope:'covers'}})}});
+ assert(app.innerHTML.includes('26편')&&app.innerHTML.includes('19곡')&&app.innerHTML.includes('32강 1/10 이어하기'));
+ assert(!app.innerHTML.includes('name="wcSize" value="64"'));
+ await click({target:{closest:()=>({dataset:{action:'rank'}})}});assert(app.innerHTML.includes('씨야 커버곡 월드컵 · 방송 무대만')&&app.innerHTML.includes('<b>1판</b>'));
+ await click({target:{closest:()=>({dataset:{action:'home'}})}});
+ await click({target:{closest:()=>({dataset:{coverScope:'covers-all'}})}});
+ await click({target:{closest:()=>({dataset:{action:'rank'}})}});assert(app.innerHTML.includes('씨야 커버곡 월드컵 · 전체')&&app.innerHTML.includes('<b>1판</b>'));
+ for(const [key,value] of coverSaved)assert.equal(values.get(key),value,'Scope switching must preserve '+key);
+ for(const c of catalog.filter(c=>['covers','covers-all'].includes(c.id))){context.location.search='?type='+c.id;vm.runInNewContext('(function(){'+read('src/client/worldcup.js')+'})();',context);assert(app.innerHTML.includes('data-cover-scope="'+c.id+'" aria-pressed="true"'));}
 }
+
 const solo=require('../src/data/worldcup-solo-songs.json');
 assert.equal(solo.candidates.length,34);assert.deepEqual(solo.rounds,[16,32]);assert.equal(new Set(solo.candidates.map(r=>r.youtubeId)).size,34);
 for(const r of solo.candidates){assert(['남규리','김연지','이보람'].includes(r.artist));assert.equal(r.scope,'SOLO');assert(/^[\w-]{11}$/.test(r.youtubeId));assert(r.videoTitle&&r.channel&&r.checkedAt);}

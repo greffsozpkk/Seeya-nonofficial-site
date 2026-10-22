@@ -9,4 +9,8 @@ function descriptionLines(data){const notes={
  covers:['방송 공식 채널의 커버 무대와 듀엣·합동 무대를 담았습니다.','같은 멤버의 같은 곡은 한 번만 포함했습니다.'],
  'covers-all':['방송·공식 채널·라이브·짧은 커버 챌린지를 담았습니다.','같은 멤버의 같은 곡은 한 번만 포함했습니다.']
 };return [...(notes[data.id]||String(data.scopeNote||'').split(/(?<=[.!?])\s+|\n/).filter(Boolean)),'새 게임의 후보와 대진은 무작위입니다.',...(data.rounds.includes('all')?['전체 참가는 모든 후보가 참여하며, 필요한 부전승은 무작위로 정합니다.']:[])];}
-module.exports={memberCounts,descriptionLines};
+function isCover(c){return ['covers','covers-all'].includes(c?.id);}
+function scopeLabel(c){return c.id==='covers'?'방송 무대만':'전체';}
+function title(c,includeScope=false){return isCover(c)?'씨야 커버곡 월드컵'+(includeScope?' · '+scopeLabel(c):''):c.title;}
+function hubCollections(list){return list.filter(c=>c.id!=='covers'||!list.some(x=>x.id==='covers-all'));}
+module.exports={memberCounts,descriptionLines,isCover,scopeLabel,title,hubCollections};
