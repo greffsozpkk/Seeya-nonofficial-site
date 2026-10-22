@@ -1,5 +1,5 @@
 'use strict';
-function collections(){return [{...require('./worldcup-catalog')(),id:'group',title:'씨야 노래 월드컵',description:'씨야 앨범 수록곡과 OST·협업곡'},require('../data/worldcup-solo-songs.json'),require('../data/worldcup-mvs.json'),require('../data/worldcup-filmography.json'),require('./worldcup-album4')(),require('../data/worldcup-covers.json')];}
+function collections(){return [{...require('./worldcup-catalog')(),id:'group',title:'씨야 노래 월드컵',description:'씨야 앨범 수록곡과 OST·협업곡'},require('../data/worldcup-solo-songs.json'),require('../data/worldcup-mvs.json'),require('../data/worldcup-filmography.json'),require('./worldcup-album4')(),require('../data/worldcup-covers.json'),require('./worldcup-all-covers')()];}
 // Duplicate IDs, media and equivalent entries are build errors, never silently assigned new IDs.
 function audit(list=collections()){
  const norm=s=>String(s||'').normalize('NFKC').toLowerCase().replace(/[^\p{L}\p{N}]/gu,'');
