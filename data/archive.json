@@ -518,9 +518,15 @@
         "label": "남규리의 귤멍 · 수원 콘서트 종료 감사 인사",
         "url": "https://www.youtube.com/watch?v=PzdIJOVqS7I",
         "publishedDate": "2026-10-18"
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=wc2MPa8_osM",
+        "publishedDate": "2026-10-21",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-21T05:07:39.853087+00:00",
+    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1080,9 +1086,15 @@
         "label": "제리제이 · 구두 직캠",
         "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DelKT9HhYh2/",
         "publishedDate": "2026-10-17"
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=F9Q_FnRC6v0",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-21T05:07:39.853087+00:00",
+    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1710,9 +1722,15 @@
         "url": "https://www.youtube.com/watch?v=MoG0dko2uac",
         "publishedDate": "2026-10-20",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=-MsOkRjoUwk",
+        "publishedDate": "2026-10-20",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-21T05:07:39.853087+00:00",
+    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -28487,7 +28505,14 @@
       "label": "뉴스인사이드",
       "url": "https://www.youtube.com/watch?v=3LgrwQv5DKg"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "mena299",
+        "url": "https://www.youtube.com/watch?v=s7QTjr-HeEo",
+        "publishedDate": "2018-04-26",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
@@ -28496,7 +28521,8 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "venue": "롯데시네마 건대입구"
+    "venue": "롯데시네마 건대입구",
+    "updatedAt": "2026-10-22T05:10:38.814425+00:00"
   },
   {
     "id": "v490-koontv-20180323",
@@ -47636,7 +47662,7 @@
     "id": "20261009-boram-worldmom-yongin",
     "date": "2026-10-09",
     "addedAt": "2026-10-05",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
     "title": "이보람 · 세상을 바꾸는 여자들 용인 공연",
     "program": "세상을 바꾸는 여자들 · 용인",
     "type": "event",
@@ -47803,6 +47829,12 @@
         "label": "땅콩크림샌드 · [이보람/무반주신청곡] 세상을 바꾸는 여자들 in 용인 (2026. 10. 09)",
         "url": "https://www.youtube.com/watch?v=Jgh82_kYMUI",
         "publishedDate": "2026-10-20"
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=Gop1lzQCHaE",
+        "publishedDate": "2026-10-22",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -49818,5 +49850,92 @@
       "time": "21:00",
       "timeLabel": "방송 시작"
     }
+  },
+  {
+    "id": "discovered-1e592e11c7fed85a",
+    "date": "2015-05-11",
+    "addedAt": "2026-10-22T05:10:38.814425+00:00",
+    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
+    "title": "[김연지] 150428 - KimYeonji - 꿈에 + 구두 + 두눈에 두볼에 가슴에 + 여인의 향기 in Power Time Radio",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "mena299",
+      "url": "https://www.youtube.com/watch?v=v64aGuaV_uM",
+      "publishedDate": "2015-05-11",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2015-05-11",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-d82a48b0f2b9e3dd",
+    "date": "2019-08-10",
+    "addedAt": "2026-10-22T05:10:38.814425+00:00",
+    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
+    "title": "쿨룩 LIVE ▷이보람 '흩어지는 중' /190808[윤정수 남창희의 미스터 라디오]",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS CoolFM",
+      "url": "https://www.youtube.com/watch?v=d7cwWkySGgQ",
+      "publishedDate": "2019-08-10",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2019-08-10",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-8e0fa5a220fb8f60",
+    "date": "2026-02-10",
+    "addedAt": "2026-10-22T05:10:38.814425+00:00",
+    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
+    "title": "[FULL] 2시만세의 특별한 초대석 (with 이보람) | #MBCRADIO #박준형박영진의2시만세 #이보람 | MBC 260210 방송",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO",
+      "url": "https://www.youtube.com/watch?v=3PHUTRqRrec",
+      "publishedDate": "2026-02-10",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2026-02-10",
+    "autoDiscovery": true
   }
 ]
