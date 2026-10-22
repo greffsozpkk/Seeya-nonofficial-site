@@ -57,6 +57,10 @@ for(const size of solo.rounds){const soloIds=solo.candidates.map(r=>r.id);let g=
 assert.throws(()=>G.create(solo.candidates.map(r=>r.id),64,solo.version,'invalid-solo-size'));
 const mvs=require('../src/data/worldcup-mvs.json'),film=require('../src/data/worldcup-filmography.json'),filmIds=film.candidates.map(r=>r.id);
 assert.equal(mvs.candidates.length,19);assert.equal(film.candidates.length,33);assert.equal(film.candidates.filter(r=>r.youtubeId).length,21);assert.equal(new Set(filmIds).size,33);assert.equal(new Set(mvs.candidates.map(r=>r.youtubeId)).size,19);
+const illustrated=film.candidates.filter(r=>r.image);
+assert.equal(illustrated.length,10);
+assert.deepEqual(film.candidates.filter(r=>!r.image&&!r.youtubeId).map(r=>r.id),['film-03','film-04']);
+for(const r of illustrated){assert(r.image.startsWith('/images/game/filmography/'));assert(fs.existsSync(path.join(root,r.image.slice(1))));assert(r.imageWidth>0&&r.imageHeight>0);assert(r.imageAlt.includes(r.role));assert(/^https:\/\//.test(r.imageSourceUrl));assert(r.imageCredit&&r.imageKind&&r.imageCheckedAt);}
 for(const c of [mvs,film]){for(const r of c.candidates){assert(r.title&&r.album);if(r.youtubeId)assert(/^[\w-]{11}$/.test(r.youtubeId)&&r.videoTitle&&r.channel&&r.videoKind);else assert(r.sourceUrl&&r.role&&r.work);}assert(html.includes(c.title));}
 for(const count of [2,3,16,19,32,33,64,75,128])for(let seed=1;seed<=10;seed++){
  const pool=Array.from({length:count},(_,i)=>'entrant-'+i);let randomSeed=seed;const random=()=>((randomSeed=(randomSeed*1664525+1013904223)>>>0)/2**32);let g=G.createAll(pool,'v1','all-fixture-'+seed,random),s=G.replay(g,pool,'v1');const seen=new Set();
