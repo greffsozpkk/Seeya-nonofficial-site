@@ -30,14 +30,16 @@
         "https://namu.moe/w/남규리"
       ],
       "checkedAt": "2026-10-22",
-      "image": "/images/game/filmography/film-01.jpg",
-      "imageWidth": 800,
-      "imageHeight": 533,
-      "imageAlt": "고死: 피의 중간고사 · 남규리 강이나 역",
-      "imageSourceUrl": "https://m.imdb.com/title/tt1438522/mediaviewer/rm2163926528/",
-      "imageCredit": "고死: 피의 중간고사 · IMDb 작품 스틸",
+      "image": "/images/game/filmography/film-01-kang-ina.jpg",
+      "imageWidth": 2724,
+      "imageHeight": 1814,
+      "imageAlt": "고死: 피의 중간고사 · 강이나 명찰을 단 남규리",
+      "imageSourceUrl": "https://host.cine21.com/movie/info/?movie_id=25181",
+      "imageCredit": "씨네21 · 고死: 피의 중간고사 작품 스틸",
       "imageKind": "작품 스틸",
-      "imageCheckedAt": "2026-10-22"
+      "imageCheckedAt": "2026-10-22",
+      "imageVerification": "영화 스틸 원본의 교복 명찰에 강이나가 명시되어 있음을 확인. 이전 윤명효 사진의 잘못된 연결을 수정.",
+      "imageOriginalUrl": "https://image.cine21.com/cine21/still/2008/0616/M0020004__IMG_1191.jpg"
     },
     {
       "id": "film-02",
