@@ -4,10 +4,10 @@ const scoringRevision='facet-mean-80-v1',axes=Object.keys(bank.axes),byId=Object
 function validAnswer(v){return v==='unknown'||(Number.isInteger(v)&&v>=1&&v<=5);}
 function create(mode,name='',id='clinic-'+Date.now(),now=new Date().toISOString()){
  const form=forms.modes[mode];if(!form?.ids?.length)throw Error('문항 구성 검토 중입니다.');
- return {runId:id,mode,displayName:String(name).replace(/[\u0000-\u001f\u007f]/g,'').trim().slice(0,24),bankRevision:bank.revision,formRevision:forms.revision,scoringRevision,questionOrder:[...form.ids],displayDirections:Object.fromEntries(form.ids.map(id=>[id,false])),answersById:{},currentIndex:0,stage:'question',updatedAt:now};
+ return {runId:id,mode,displayName:String(name).replace(/[\u0000-\u001f\u007f]/g,'').trim().slice(0,24),bankRevision:bank.revision,formRevision:form.revision||forms.revision,scoringRevision,questionOrder:[...form.ids],displayDirections:Object.fromEntries(form.ids.map(id=>[id,false])),answersById:{},currentIndex:0,stage:'question',updatedAt:now};
 }
 function restore(value){
- if(!value||value.bankRevision!==bank.revision||value.formRevision!==forms.revision||value.scoringRevision!==scoringRevision||typeof value.runId!=='string'||typeof value.displayName!=='string'||value.displayName.length>24)throw Error('이전 진행 기록을 읽을 수 없습니다.');
+ if(!value||value.bankRevision!==bank.revision||value.formRevision!==(forms.modes[value.mode]?.revision||forms.revision)||value.scoringRevision!==scoringRevision||typeof value.runId!=='string'||typeof value.displayName!=='string'||value.displayName.length>24)throw Error('이전 진행 기록을 읽을 수 없습니다.');
  const expected=forms.modes[value.mode]?.ids;if(!expected||JSON.stringify(expected)!==JSON.stringify(value.questionOrder)||!Number.isInteger(value.currentIndex)||value.currentIndex<0||value.currentIndex>=expected.length||!['question','review','result'].includes(value.stage))throw Error('이전 진행 기록을 읽을 수 없습니다.');
  if(!value.answersById||typeof value.answersById!=='object'||Array.isArray(value.answersById)||!value.displayDirections||typeof value.displayDirections!=='object')throw Error('이전 진행 기록을 읽을 수 없습니다.');
  for(const [id,v] of Object.entries(value.answersById))if(!expected.includes(id)||!validAnswer(v))throw Error('이전 진행 기록을 읽을 수 없습니다.');
