@@ -524,9 +524,27 @@
         "url": "https://www.youtube.com/watch?v=wc2MPa8_osM",
         "publishedDate": "2026-10-21",
         "autoDiscovery": true
+      },
+      {
+        "label": "칡",
+        "url": "https://www.youtube.com/watch?v=q-0KvNV-3JQ",
+        "publishedDate": "2026-10-18",
+        "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=-mUSRFlI450",
+        "publishedDate": "2026-10-22",
+        "autoDiscovery": true
+      },
+      {
+        "label": "Hot Issue🎤",
+        "url": "https://www.youtube.com/watch?v=Kr_CL0_xCSQ",
+        "publishedDate": "2026-10-22",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1112,9 +1130,15 @@
         "label": "ramirang_ · 청주 콘서트 팬 기록",
         "url": "https://www.instagram.com/ramirang_/reel/DegQZJZOlmz/",
         "publishedDate": "2026-10-15"
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=AfQ8k8xi4iM",
+        "publishedDate": "2026-10-21",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -4274,11 +4298,17 @@
         "url": "https://www.youtube.com/watch?v=y_FeKF19pP8",
         "publishedDate": "2026-10-19",
         "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=4E8275zlFy8",
+        "publishedDate": "2026-10-22",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-10-21T05:07:39.853087+00:00"
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -10017,7 +10047,14 @@
       "label": "BTN라디오 · 공식 영상",
       "url": "https://www.youtube.com/watch?v=bmBdrkMB7n8"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "BTN라디오",
+        "url": "https://www.youtube.com/watch?v=Y7kjE6fc4Ts",
+        "publishedDate": "2026-04-27",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -10027,7 +10064,8 @@
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "publishedDate": "2026-04-29",
-    "episode": 1
+    "episode": 1,
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00"
   },
   {
     "id": "v4145-esccpk5IGbY",
@@ -18173,6 +18211,12 @@
       {
         "label": "벅스 방송 음반 정보",
         "url": "https://music.bugs.co.kr/album/20555022"
+      },
+      {
+        "label": "THE K-POP2",
+        "url": "https://www.youtube.com/watch?v=fh-AQG_ITJE",
+        "publishedDate": "2023-03-25",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -18182,7 +18226,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00"
   },
   {
     "id": "v491-power20230322",
@@ -41840,6 +41885,12 @@
         "label": "부산MBC 뮤직월드 · 결혼할까요",
         "url": "https://www.youtube.com/watch?v=CgX2YsAG7ok",
         "publishedDate": "2020-02-22"
+      },
+      {
+        "label": "seeyalover",
+        "url": "https://www.youtube.com/watch?v=NLkET4ZUYtQ",
+        "publishedDate": "2022-10-19",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -41848,7 +41899,7 @@
     ],
     "note": "",
     "publishedDate": "2025-05-15",
-    "updatedAt": "2026-10-16"
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00"
   },
   {
     "id": "20070726-seeya-radio-tenten",
@@ -45074,7 +45125,7 @@
     "id": "20060709-seeya-inkigayo",
     "date": "2006-07-09",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
     "title": "씨야 · SBS 인기가요 · 구두",
     "program": "SBS 인기가요",
     "type": "music-show",
@@ -45092,7 +45143,14 @@
       "label": "SBS · 401회 출연 안내·다시보기",
       "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/gayo/22000006476"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "보람아몇씨야",
+        "url": "https://www.youtube.com/watch?v=jJypqIDNcv4",
+        "publishedDate": "2020-06-13",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "tags": [
       "SBS 인기가요"
@@ -48577,7 +48635,7 @@
     "id": "20261019-seeya-immortal-wax-recording",
     "date": "2026-10-19",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -48640,6 +48698,12 @@
         "label": "투카로그 · [4K]261019 씨야 퇴근길 끌려가는 대표님 #씨야 #남규리 #김연지 #이보람 #seeya #남대표 #김전무 #이상무 #씨야엔터 #불후의명곡 #케이팝 #kpop #shorts",
         "url": "https://www.youtube.com/watch?v=mu1F5luUyvw",
         "publishedDate": "2026-10-23"
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=SH5G_GSu_Zw",
+        "publishedDate": "2026-10-22",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -50142,5 +50206,208 @@
     "calendar": {
       "enabled": true
     }
+  },
+  {
+    "id": "discovered-6cf79889efbc0d23",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-09)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=6_uvAUteqtw",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-74795ed09a42b1e0",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-25)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=i9TY4As4wss",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-b5ca0c4e74243cbf",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-19)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=3a2auBJ77lk",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-ba7bfc84bdc4d1b7",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-12)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=L327af3Rf2M",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-ee773bc1545ee8b9",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-11)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=VvBNEM1CgIU",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-98f118417ae7d51d",
+    "date": "2012-08-07",
+    "addedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-29)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=iRsjy3hnaWI",
+      "publishedDate": "2012-08-07",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-08-07",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-58da80e48b1b7010",
+    "date": "2023-10-30",
+    "addedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "title": "[FULL] ✨이보람✨ 보컬 천재 람보와 케이팝 영재발굴단💚 | GOT7 영재의 친한친구 | MBC 231030 방송",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Mhz 므흐즈: MBC RADIO",
+      "url": "https://www.youtube.com/watch?v=AlHLh5MgkR0",
+      "publishedDate": "2023-10-30",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2023-10-30",
+    "autoDiscovery": true
   }
 ]
