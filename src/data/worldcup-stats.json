@@ -1,5 +1,5 @@
 {
-  "endpoint": "https://script.google.com/macros/s/AKfycbzedn0GTJLhWmj_-pwsIWeFqVXGn-qr0gBOIXxE5k9pV24G-SacdWZRdePFo_1XLOWBvw/exec",
+  "endpoint": "https://script.google.com/macros/s/AKfycbxD4QiAHDM-tI-ciZ8Zdn0y5Ar7o8NWwpZiBl8gHrxMLpLs95s7gib5HhEonzI6uixrLA/exec",
   "environment": "test",
   "policy": "completed-game",
   "timeoutMs": 35000
