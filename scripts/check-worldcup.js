@@ -40,6 +40,13 @@ async function checkClient(){
  await click({target:{closest:()=>({dataset:{worldcup:'solo'}})}});assert(app.innerHTML.includes('32강 2/16 이어하기'));
  let sharedUrl;context.navigator.clipboard={writeText:async v=>sharedUrl=v};await click({target:{closest:()=>({dataset:{share:sg.initial[0]}})}});assert(sharedUrl.includes('?type=solo&winner=solo-'));
  const soloBefore=values.get('seeya-worldcup-test-solo-v1');context.location.search='?type=solo&winner='+sg.initial[0];vm.runInNewContext('(function(){'+read('src/client/worldcup.js')+'})();',context);assert(app.innerHTML.includes('공유된 최종 선택'));assert.equal(values.get('seeya-worldcup-test-solo-v1'),soloBefore);assert(!values.has('seeya-worldcup-test-solo-v1-results'));assert.equal(values.get('seeya-worldcup-test-v1-results'),resultKey);
+ // Long official videos start at the selected song, including shared-result screens.
+ for(const [c,id,second] of [[solo,'solo-gwanaksan',2338],[require('../src/shared/worldcup-manifest').current().find(c=>c.id==='covers-all'),'cover-yHghWSst9ic',1933]]){
+  nodes.worldcupData.textContent=JSON.stringify({collections:[c]});context.location.search='?type='+c.id+'&winner='+id;
+  vm.runInNewContext('(function(){'+read('src/client/worldcup.js')+'})();',context);await Promise.resolve();
+  assert.equal(created.at(-1).options.videoId,'pXHDS6tqN5Q');assert.equal(created.at(-1).options.playerVars.start,second);
+  assert(app.innerHTML.includes('watch?v=pXHDS6tqN5Q&amp;t='+second+'s'));
+ }
  // Full roster / no-video cards use the same real handler without undefined players.
  nodes.worldcupData.textContent=JSON.stringify({collections:[{...data,id:'group'},solo,mvs,film]});context.location.search='?type=film';app.querySelector=s=>s.includes('wcSize')?{value:'all'}:node();
  vm.runInNewContext('(function(){'+read('src/client/worldcup.js')+'})();',context);assert(app.innerHTML.includes('남규리 필모드컵'));assert(app.innerHTML.includes('33배역 모두 참가'));assert(app.innerHTML.includes('추가 확인 중인 작품'));
@@ -74,7 +81,7 @@ async function checkClient(){
 }
 
 const solo=require('../src/data/worldcup-solo-songs.json');
-assert.equal(solo.candidates.length,34);assert.deepEqual(solo.rounds,[16,32]);assert.equal(new Set(solo.candidates.map(r=>r.youtubeId)).size,34);
+assert.equal(solo.candidates.length,35);assert.deepEqual(solo.rounds,[16,32]);assert.equal(new Set(solo.candidates.map(r=>r.youtubeId)).size,35);
 for(const r of solo.candidates){assert(['남규리','김연지','이보람'].includes(r.artist));assert.equal(r.scope,'SOLO');assert(/^[\w-]{11}$/.test(r.youtubeId));assert(r.videoTitle&&r.channel&&r.checkedAt);}
 for(const size of solo.rounds){const soloIds=solo.candidates.map(r=>r.id);let g=G.create(soloIds,size,solo.version,'solo-fixture-'+size);while(!G.replay(g,soloIds,solo.version).winner)g=G.choose(g,G.replay(g,soloIds,solo.version).pair[0],soloIds,solo.version);assert.equal(g.picks.length,size-1);assert.throws(()=>G.replay(g,ids,data.version));}
 assert.throws(()=>G.create(solo.candidates.map(r=>r.id),64,solo.version,'invalid-solo-size'));
@@ -93,6 +100,6 @@ for(const count of [2,3,9,16,19,25,32,33,40,64,75,128,131,256])for(let seed=1;se
  const corrupt={...g,initial:[...g.initial]};corrupt.initial[0]=corrupt.initial[1];assert.throws(()=>G.replay(corrupt,pool,'v1'));
 }
 const playTest=read('game/test/index.html');assert(playTest.includes('/game/worldcup/test/'));assert(playTest.includes('noindex,nofollow'));assert(!playTest.includes('googletagmanager')&&!playTest.includes('analytics.js'));assert(!read('sitemap.xml').includes('/game/test/'));assert(html.includes('멤버 솔로곡 월드컵'));assert(!read('game/index.html').includes('/game/test/'));
-Promise.all([checkRetire(),checkClient()]).then(()=>console.log('PASS worldcup: group75/solo34/mv19/film33, all-entry byes through finals, no-video cards, four isolated collections, isolated collection switching and sharing, 16/32/64 brackets, round-specific counters and resets, random 32/64 brackets, 31/63 decisions, replay/recovery, result dedup, separate local ranking, real player switching/double-click guard, isolated test and retired routes.')).catch(e=>{console.error(e);process.exitCode=1;});
+Promise.all([checkRetire(),checkClient()]).then(()=>console.log('PASS worldcup: group75/solo35/mv19/film33, all-entry byes through finals, no-video cards, four isolated collections, isolated collection switching and sharing, 16/32/64 brackets, round-specific counters and resets, random 32/64 brackets, 31/63 decisions, replay/recovery, result dedup, separate local ranking, real player switching/double-click guard, isolated test and retired routes.')).catch(e=>{console.error(e);process.exitCode=1;});
 
 assert.throws(()=>G.createAll(Array.from({length:257},(_,i)=>"limit-"+i),"limit","limit-game"));

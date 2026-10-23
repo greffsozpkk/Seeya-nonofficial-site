@@ -3,17 +3,25 @@
     "id": "cover-yHghWSst9ic",
     "title": "기댈곳",
     "artist": "남규리",
-    "album": "싱투유 · B tv 공식 라이브",
+    "album": "성시경의 부를텐데 · 2026.10.23",
     "scope": "커버 라이브",
-    "youtubeId": "yHghWSst9ic",
-    "videoTitle": "일상에 지쳐 힘들어하는 분을 위한 위로♪ 남규리(Nam Kyu Lee) '기댈곳'🎵 | ch B tv '싱투유'",
-    "channel": "싱투유",
-    "channelUrl": "https://www.youtube.com/@%EC%8B%B1%ED%88%AC%EC%9C%A0",
+    "youtubeId": "pXHDS6tqN5Q",
+    "videoTitle": "성시경의 부를텐데 l 박재정, 남규리",
+    "channel": "성시경 SUNG SI KYUNG",
+    "channelUrl": "https://www.youtube.com/channel/UCl23-Cci_SMqyGXE1T_LYUg",
     "videoKind": "공식 라이브",
     "checkedAt": "2026-10-23",
-    "duration": "4:54",
+    "duration": "42:53",
     "embedCheck": "initialized",
-    "archiveRef": "v491-singtoyou"
+    "archiveRef": "20261023-gyuri-sungsikyung-sing",
+    "previousVideo": {
+      "youtubeId": "yHghWSst9ic",
+      "channel": "싱투유",
+      "channelUrl": "https://www.youtube.com/@%EC%8B%B1%ED%88%AC%EC%9C%A0",
+      "archiveRef": "v491-singtoyou"
+    },
+    "startSeconds": 1933,
+    "detail": "기댈곳 · 32:13부터 재생 · 전체 영상 안의 라이브"
   },
   {
     "id": "cover-LVK8gtWOaBw",

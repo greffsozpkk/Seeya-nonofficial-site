@@ -1,14 +1,14 @@
 {
   "id": "solo",
   "title": "멤버 솔로곡 월드컵",
-  "description": "남규리 · 김연지 · 이보람의 솔로 발매곡과 OST",
+  "description": "남규리 · 김연지 · 이보람의 솔로곡·OST·공개 자작곡",
   "version": "solo-20261022-v1",
-  "checkedAt": "2026-10-22",
+  "checkedAt": "2026-10-23",
   "rounds": [
     16,
     32
   ],
-  "scopeNote": "솔로 발매곡·OST·정식 리메이크를 골랐어요. 음원·뮤직비디오·공식 라이브가 포함되며, 같은 곡의 여러 영상은 한 후보로 묶었습니다. 현재 선곡은 전체 솔로곡 목록은 아닙니다.",
+  "scopeNote": "솔로 발매곡·OST·정식 리메이크와 공식 영상에서 공개한 자작곡을 담았습니다. 같은 곡은 한 번만 포함합니다.",
   "candidates": [
     {
       "id": "solo-xHB6Pn5rNxo",
@@ -539,6 +539,26 @@
       "catalogUrl": "https://music.bugs.co.kr/album/875192",
       "archiveId": "v490-album-875192",
       "videoKind": "live-clip"
+    },
+    {
+      "id": "solo-gwanaksan",
+      "title": "관악산",
+      "artist": "남규리",
+      "album": "부를텐데 · 공개 자작곡",
+      "scope": "SOLO",
+      "youtubeId": "pXHDS6tqN5Q",
+      "videoTitle": "성시경의 부를텐데 l 박재정, 남규리",
+      "channel": "성시경 SUNG SI KYUNG",
+      "channelUrl": "https://www.youtube.com/channel/UCl23-Cci_SMqyGXE1T_LYUg",
+      "checkedAt": "2026-10-23",
+      "sourceType": "official-live",
+      "catalogUrl": "https://www.youtube.com/watch?v=pXHDS6tqN5Q",
+      "archiveId": "20261023-gyuri-sungsikyung-sing",
+      "videoKind": "공개 자작곡 라이브",
+      "startSeconds": 2338,
+      "duration": "42:53",
+      "detail": "관악산 · 38:58부터 재생 · 정식 음원 발매일 미확인",
+      "embedCheck": "initialized"
     }
   ]
 }
