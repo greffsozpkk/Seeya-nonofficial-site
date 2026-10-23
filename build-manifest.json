@@ -1,5 +1,5 @@
 {
-  "version": "5.52",
+  "version": "5.53",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -65,7 +65,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.2c5d63eacb95.js",
+    "assets/site.067da692d067.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.3ab499ea523f.js",
@@ -88,6 +88,8 @@
     "assets/diary.1818dd06da72.js",
     "assets/archive-admin.0d013d2bf36a.css",
     "assets/archive-admin.1c5b1c601fd9.js",
+    "assets/clinic.a4f63d9dacbd.css",
+    "assets/clinic.4e6d7d9681bf.js",
     "assets/worldcup.5db3cccf33cf.css",
     "assets/worldcup.aafb374c4848.js"
   ],
@@ -108,6 +110,7 @@
     "preview/seeya-exam-e0d270d321a64ddd/index.html",
     "preview/seeya-map-7f2c9a6e41b803d5/index.html",
     "game/worldcup/test/index.html",
-    "game/test/index.html"
+    "game/test/index.html",
+    "game/clinic/test/index.html"
   ]
 }
