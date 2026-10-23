@@ -1092,9 +1092,29 @@
         "url": "https://www.youtube.com/watch?v=F9Q_FnRC6v0",
         "publishedDate": "2026-10-18",
         "autoDiscovery": true
+      },
+      {
+        "label": "ramirang_ · 청주 콘서트 팬 기록",
+        "url": "https://www.instagram.com/ramirang_/p/Den-zQ7oB_x/",
+        "publishedDate": "2026-10-18"
+      },
+      {
+        "label": "ramirang_ · 청주 콘서트 팬 기록",
+        "url": "https://www.instagram.com/ramirang_/reel/DeleNNIORbO/",
+        "publishedDate": "2026-10-17"
+      },
+      {
+        "label": "ramirang_ · 청주 콘서트 팬 기록",
+        "url": "https://www.instagram.com/ramirang_/reel/DeifhBayjOQ/",
+        "publishedDate": "2026-10-16"
+      },
+      {
+        "label": "ramirang_ · 청주 콘서트 팬 기록",
+        "url": "https://www.instagram.com/ramirang_/reel/DegQZJZOlmz/",
+        "publishedDate": "2026-10-15"
       }
     ],
-    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
+    "updatedAt": "2026-10-23",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -30644,14 +30664,18 @@
     "id": "v490-powertime-20150428",
     "date": "2015-04-28",
     "addedAt": "2026-09-12",
-    "title": "김연지 — 잊었니 라이브",
+    "title": "김연지 · 최화정의 파워타임 · 잊었니와 즉석 라이브",
     "program": "SBS 최화정의 파워타임",
     "type": "radio",
     "members": [
       "김연지"
     ],
     "songs": [
-      "잊었니"
+      "잊었니",
+      "꿈에",
+      "구두",
+      "두눈에 두볼에 가슴에",
+      "여인의 향기"
     ],
     "album": "",
     "thumbnail": "",
@@ -30663,6 +30687,11 @@
       {
         "label": "mena299",
         "url": "https://www.youtube.com/watch?v=JkOg7QF2eAs"
+      },
+      {
+        "label": "mena299 · [김연지] 150428 - KimYeonji - 꿈에 + 구두 + 두눈에 두볼에 가슴에 + 여인의 향기 in  Power Time Radio",
+        "url": "https://www.youtube.com/watch?v=v64aGuaV_uM",
+        "publishedDate": "2015-05-11"
       }
     ],
     "status": "available",
@@ -30670,9 +30699,10 @@
       "2012~2019",
       "김연지"
     ],
-    "note": "",
+    "note": "2015년 4월 28일 「최화정의 파워타임」 출연 기록입니다.\nSBS 공식 「잊었니」 라이브와 팬이 보관한 즉석 라이브 모음을 함께 볼 수 있습니다.",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-10-23"
   },
   {
     "id": "v490-jtbc-26",
@@ -47307,8 +47337,8 @@
     "id": "discovered-e9c41ffc3602d455",
     "date": "2026-02-10",
     "addedAt": "2026-10-02T16:06:18.417707+00:00",
-    "updatedAt": "2026-10-02T16:06:18.417707+00:00",
-    "title": "이보람 · 두시만세 · Golden 즉석 라이브",
+    "updatedAt": "2026-10-23",
+    "title": "이보람 · 박준형·박영진의 2시만세 특별 초대석",
     "program": "MBC 박준형·박영진의 2시만세",
     "type": "radio",
     "members": [
@@ -47322,12 +47352,18 @@
       "url": "https://www.youtube.com/watch?v=oFcWXGP5YYM",
       "publishedDate": "2026-02-10"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "Mhz 므흐즈: MBC RADIO · [FULL] 2시만세의 특별한 초대석 (with 이보람) | #MBCRADIO #박준형박영진의2시만세 #이보람 | MBC 260210 방송",
+        "url": "https://www.youtube.com/watch?v=3PHUTRqRrec",
+        "publishedDate": "2026-02-10"
+      }
+    ],
+    "status": "available",
     "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "이보람이 라디오에서 선보인 「Golden」 즉석 라이브 클립입니다.\nMBC 공식 영상 공개일 기준입니다.",
+    "note": "2026년 2월 10일 이보람이 출연한 「박준형·박영진의 2시만세」 특별 초대석입니다.\nMBC 공식 전체 영상과 「Golden」 즉석 라이브 클립을 함께 볼 수 있습니다.",
     "publishedDate": "2026-02-10"
   },
   {
@@ -48541,7 +48577,7 @@
     "id": "20261019-seeya-immortal-wax-recording",
     "date": "2026-10-19",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-23",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -48594,6 +48630,16 @@
       {
         "label": "메이저나인 공식 · LEE BO RAM 일정",
         "url": "https://enter.major9.net/schedule/"
+      },
+      {
+        "label": "투카로그 · [4K]261019 씨야 불후의명곡 퇴근길 직캠 #남규리 #김연지 #이보람 #씨야 #seeya #kbs #불후의명곡 #케이팝 #레전드 #퇴근길 #직캠 #kpop #shorts",
+        "url": "https://www.youtube.com/watch?v=mAnyNi2CYaU",
+        "publishedDate": "2026-10-22"
+      },
+      {
+        "label": "투카로그 · [4K]261019 씨야 퇴근길 끌려가는 대표님 #씨야 #남규리 #김연지 #이보람 #seeya #남대표 #김전무 #이상무 #씨야엔터 #불후의명곡 #케이팝 #kpop #shorts",
+        "url": "https://www.youtube.com/watch?v=mu1F5luUyvw",
+        "publishedDate": "2026-10-23"
       }
     ],
     "status": "available",
@@ -49516,8 +49562,8 @@
     "id": "20261021-boram-btn-dream-26",
     "date": "2026-10-21",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
-    "title": "이보람 · 한밤의 꿈 이보람입니다 26회 방송 예정",
+    "updatedAt": "2026-10-23",
+    "title": "이보람 · 한밤의 꿈 이보람입니다 26회",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
     "members": [
@@ -49535,19 +49581,34 @@
       {
         "label": "BTN 공식 · 10월 21일 라디오 편성표",
         "url": "https://m.btn.co.kr/btn/schedule/radio01.html?nDay=21&nMonth=10&nYear=2026"
+      },
+      {
+        "label": "_jerry.j_ramficial · 한밤의 꿈 방송 클립·사진",
+        "url": "https://www.instagram.com/_jerry.j_ramficial/reel/DeylXZHBJG7/",
+        "publishedDate": "2026-10-22"
+      },
+      {
+        "label": "ramirang_ · 한밤의 꿈 방송 클립·사진",
+        "url": "https://www.instagram.com/ramirang_/reel/De0kosrO53l/",
+        "publishedDate": "2026-10-23"
+      },
+      {
+        "label": "ramirang_ · 한밤의 꿈 방송 클립·사진",
+        "url": "https://www.instagram.com/ramirang_/p/DewoSO5kqrZ/",
+        "publishedDate": "2026-10-21"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "publishedDate": "2026-10-20",
     "tags": [
       "2026",
-      "BTN라디오 · 한밤의 꿈 이보람입니다",
-      "예정"
+      "BTN라디오",
+      "한밤의 꿈"
     ],
-    "note": "10월 21일 오후 9시부터 11시까지 방송되는 「한밤의 꿈 이보람입니다」 26회입니다.\n녹화된 보이는 라디오를 BTN라디오 공식 YouTube 채널에서 최초 공개합니다.",
-    "eventState": "scheduled",
+    "note": "10월 21일 오후 9시에 최초 공개된 「한밤의 꿈 이보람입니다」 26회입니다.\n녹화방송의 공식 보이는 라디오 다시보기와 팬들이 남긴 방송 클립을 함께 볼 수 있습니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": true,
       "time": "21:00",
@@ -49779,8 +49840,8 @@
     "id": "20261021-boram-kbs-brown-sign-2-changwon",
     "date": "2026-10-21",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
-    "title": "이보람 · 갈색표지판 이순신 승전길 2부 방송 예정",
+    "updatedAt": "2026-10-23",
+    "title": "이보람 · 갈색표지판 이순신 승전길 2부",
     "program": "KBS1 창원 · 갈색표지판",
     "type": "variety",
     "members": [
@@ -49804,11 +49865,10 @@
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "KBS1 창원 · 갈색표지판",
-      "예정"
+      "KBS1 창원 · 갈색표지판"
     ],
-    "note": "사천·남해의 이순신 승전길을 따라가는 「갈색표지판」 2부입니다.\n10월 21일 오후 7시 30분부터 8시 30분까지 KBS1 창원 지역 채널에서 방송 예정입니다.\nKBS+에서 창원 지역 채널을 선택해 시청할 수 있습니다.",
-    "eventState": "scheduled",
+    "note": "사천·남해의 이순신 승전길을 따라가는 「갈색표지판」 2부입니다.\n10월 21일 오후 7시 30분부터 8시 30분까지 KBS1 창원 지역 채널에 편성된 방송입니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": true,
       "time": "19:30",
@@ -49855,7 +49915,7 @@
     "id": "discovered-1e592e11c7fed85a",
     "date": "2015-05-11",
     "addedAt": "2026-10-22T05:10:38.814425+00:00",
-    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
+    "updatedAt": "2026-10-23",
     "title": "[김연지] 150428 - KimYeonji - 꿈에 + 구두 + 두눈에 두볼에 가슴에 + 여인의 향기 in Power Time Radio",
     "program": "",
     "type": "radio",
@@ -49878,20 +49938,24 @@
     "tags": [],
     "note": "",
     "publishedDate": "2015-05-11",
-    "autoDiscovery": true
+    "autoDiscovery": true,
+    "hidden": true,
+    "mergedInto": "v490-powertime-20150428"
   },
   {
     "id": "discovered-d82a48b0f2b9e3dd",
-    "date": "2019-08-10",
+    "date": "2019-08-08",
     "addedAt": "2026-10-22T05:10:38.814425+00:00",
-    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
-    "title": "쿨룩 LIVE ▷이보람 '흩어지는 중' /190808[윤정수 남창희의 미스터 라디오]",
-    "program": "",
+    "updatedAt": "2026-10-23",
+    "title": "이보람 · 미스터 라디오 「흩어지는 중」 라이브",
+    "program": "KBS CoolFM · 윤정수·남창희의 미스터 라디오",
     "type": "radio",
     "members": [
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "흩어지는 중"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
@@ -49901,11 +49965,11 @@
       "autoDiscovery": true
     },
     "additionalSources": [],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "",
+    "note": "2019년 8월 8일 「윤정수·남창희의 미스터 라디오」에서 부른 「흩어지는 중」 라이브입니다.\nKBS 공식 영상 제목의 방송일을 적용했습니다. 영상은 8월 10일 공개됐습니다.",
     "publishedDate": "2019-08-10",
     "autoDiscovery": true
   },
@@ -49913,7 +49977,7 @@
     "id": "discovered-8e0fa5a220fb8f60",
     "date": "2026-02-10",
     "addedAt": "2026-10-22T05:10:38.814425+00:00",
-    "updatedAt": "2026-10-22T05:10:38.814425+00:00",
+    "updatedAt": "2026-10-23",
     "title": "[FULL] 2시만세의 특별한 초대석 (with 이보람) | #MBCRADIO #박준형박영진의2시만세 #이보람 | MBC 260210 방송",
     "program": "",
     "type": "radio",
@@ -49936,6 +50000,147 @@
     "tags": [],
     "note": "",
     "publishedDate": "2026-02-10",
-    "autoDiscovery": true
+    "autoDiscovery": true,
+    "hidden": true,
+    "mergedInto": "discovered-e9c41ffc3602d455"
+  },
+  {
+    "id": "20261022-gyuri-gyulmung-pick-drshin",
+    "date": "2026-10-22",
+    "addedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "title": "남규리 · 귤멍 Pick 닥터신 제품 소개",
+    "program": "남규리의 귤멍",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 · [🍊's Pick] Dr.Shin 류신 아르기닌 & 관절 6",
+      "url": "https://www.youtube.com/watch?v=7ESzhJT7lDQ",
+      "publishedDate": "2026-10-22"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-22",
+    "tags": [
+      "2026",
+      "남규리의 귤멍"
+    ],
+    "note": "남규리의 귤멍에 공개된 닥터신 제품 소개 콘텐츠입니다.\n날짜는 영상 공개일입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261022-yeonji-dahye-shoes",
+    "date": "2026-10-22",
+    "addedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "title": "김연지 · 빡다혜 「구두」 라이브 쇼츠",
+    "program": "빡다혜dahye",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "구두"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "빡다혜dahye · 노래가 이상한데..? 갑자기 난입한 씨야 메인 보컬ㄷㄷ",
+      "url": "https://www.youtube.com/watch?v=XrCSZIkhPRo",
+      "publishedDate": "2026-10-22"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-22",
+    "tags": [
+      "2026",
+      "빡다혜dahye"
+    ],
+    "note": "박다혜의 채널에 공개된 김연지의 「구두」 짧은 라이브 영상입니다.\n날짜는 영상 공개일입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261022-boram-nflying-still",
+    "date": "2026-10-22",
+    "addedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "title": "이보람 · 엔플라잉 「잔불」 커버",
+    "program": "엔플라잉 공식 Instagram",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "잔불"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "엔플라잉·이보람 공식 공동 게시물 · 잔불 커버",
+      "url": "https://www.instagram.com/reel/DeyLtFRBWi4/",
+      "publishedDate": "2026-10-22"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-22",
+    "tags": [
+      "2026",
+      "엔플라잉 공식 Instagram"
+    ],
+    "note": "이보람이 부른 엔플라잉의 「잔불」 짧은 커버 영상입니다.\n엔플라잉과 이보람의 공식 계정 공동 게시물로 공개됐습니다.\n날짜는 영상 공개일입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261020-boram-kbs-brown-sign-1-changwon",
+    "date": "2026-10-20",
+    "addedAt": "2026-10-23",
+    "updatedAt": "2026-10-23",
+    "title": "이보람 · 갈색표지판 이순신 승전길 1부",
+    "program": "KBS1 창원 · 갈색표지판",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 공식 · 갈색표지판 1회 다시보기",
+      "url": "https://vod.kbs.co.kr/kbsplus.html?type=E&id=PS-2026145405-01-000"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "publishedDate": "2026-10-20",
+    "tags": [
+      "2026",
+      "KBS1 창원 · 갈색표지판"
+    ],
+    "note": "이순신 승전길을 따라가는 「갈색표지판」 1부입니다.\nKBS 공식 다시보기의 10월 20일 방송일을 기준으로 등록했습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": true
+    }
   }
 ]

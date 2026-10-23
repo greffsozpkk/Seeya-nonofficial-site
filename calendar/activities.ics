@@ -2916,19 +2916,26 @@ URL:https://seeya-fanpage.com/calendar/?month=2015-04&event=activity-v490-j
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-powertime-20150428@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261022T150000Z
+LAST-MODIFIED:20261022T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20150428
 DTEND;VALUE=DATE:20150429
-SUMMARY:김연지 — 잊었니 라이브
+SUMMARY:김연지 · 최화정의 파워타임 · 잊었니와 즉석 라
+ 이브
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
-DESCRIPTION:김연지\n시간 미정\nSBS Radio 에라오: https://www.yout
- ube.com/watch?v=mNbm_SAKk_E\nmena299: https://www.youtube.com/watch?v=JkOg
- 7QF2eAs\nhttps://seeya-fanpage.com/archive/?record=v490-powertime-20150428
+DESCRIPTION:김연지\n시간 미정\n2015년 4월 28일 「최화정의 
+ 파워타임」 출연 기록입니다.\nSBS 공식 「잊었니」 라이
+ 브와 팬이 보관한 즉석 라이브 모음을 함께 볼 수 있습
+ 니다.\nSBS Radio 에라오: https://www.youtube.com/watch?v=mNbm_SAKk_E\
+ nmena299: https://www.youtube.com/watch?v=JkOg7QF2eAs\nmena299 · [김연
+ 지] 150428 - KimYeonji - 꿈에 + 구두 + 두눈에 두볼에 가슴에 
+ + 여인의 향기 in  Power Time Radio: https://www.youtube.com/watch?v=v
+ 64aGuaV_uM\nhttps://seeya-fanpage.com/archive/?record=v490-powertime-20150
+ 428
 URL:https://seeya-fanpage.com/calendar/?month=2015-04&event=activity-v490-p
  owertime-20150428
 END:VEVENT
@@ -4534,6 +4541,27 @@ DESCRIPTION:이보람\n발매일 · 시간 미정\n벅스 음반 정보: ht
  490-album-909796
 URL:https://seeya-fanpage.com/calendar/?month=2019-07&event=activity-v490-a
  lbum-909796
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-discovered-d82a48b0f2b9e3dd@seeya-fanpage.com
+DTSTAMP:20261022T150000Z
+LAST-MODIFIED:20261022T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20190808
+DTEND;VALUE=DATE:20190809
+SUMMARY:이보람 · 미스터 라디오 「흩어지는 중」 라이브
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n2019년 8월 8일 「윤정수·남
+ 창희의 미스터 라디오」에서 부른 「흩어지는 중」 라
+ 이브입니다.\nKBS 공식 영상 제목의 방송일을 적용했습니
+ 다. 영상은 8월 10일 공개됐습니다.\nKBS CoolFM: https://www.you
+ tube.com/watch?v=d7cwWkySGgQ\nhttps://seeya-fanpage.com/archive/?record=di
+ scovered-d82a48b0f2b9e3dd
+URL:https://seeya-fanpage.com/calendar/?month=2019-08&event=activity-discov
+ ered-d82a48b0f2b9e3dd
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-album-20274788@seeya-fanpage.com
@@ -6909,6 +6937,30 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-01&event=activity-v488-a
  udit-031
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-discovered-e9c41ffc3602d455@seeya-fanpage.com
+DTSTAMP:20261022T150000Z
+LAST-MODIFIED:20261022T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260210
+DTEND;VALUE=DATE:20260211
+SUMMARY:이보람 · 박준형·박영진의 2시만세 특별 초대석
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n2026년 2월 10일 이보람이 출
+ 연한 「박준형·박영진의 2시만세」 특별 초대석입니다.
+ \nMBC 공식 전체 영상과 「Golden」 즉석 라이브 클립을 함
+ 께 볼 수 있습니다.\nMhz 므흐즈: MBC RADIO · 원본 영상: http
+ s://www.youtube.com/watch?v=oFcWXGP5YYM\nMhz 므흐즈: MBC RADIO · [FULL
+ ] 2시만세의 특별한 초대석 (with 이보람) | #MBCRADIO #박준
+ 형박영진의2시만세 #이보람 | MBC 260210 방송: https://www.yout
+ ube.com/watch?v=3PHUTRqRrec\nhttps://seeya-fanpage.com/archive/?record=dis
+ covered-e9c41ffc3602d455
+URL:https://seeya-fanpage.com/calendar/?month=2026-02&event=activity-discov
+ ered-e9c41ffc3602d455
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-discovered-e98d25eb9821ca14@seeya-fanpage.com
 DTSTAMP:20261002T160855Z
 LAST-MODIFIED:20261002T160855Z
@@ -8673,8 +8725,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261010-the-fan-cheongju@seeya-fanpage.com
-DTSTAMP:20261022T051038Z
-LAST-MODIFIED:20261022T051038Z
+DTSTAMP:20261022T150000Z
+LAST-MODIFIED:20261022T150000Z
 SEQUENCE:2
 DTSTART:20261010T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · CHEONGJU
@@ -8817,8 +8869,14 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n20
  🐿람보바라기: https://www.youtube.com/watch?v=Smc33jetdsE\n🐿람
  보바라기: https://www.youtube.com/watch?v=g0vfOQpsvAU\n제리제이 ·
   구두 직캠: https://www.instagram.com/_jerry.j_ramficial/reel/DelKT9Hh
- Yh2/\n🐿람보바라기: https://www.youtube.com/watch?v=F9Q_FnRC6v0\nht
- tps://seeya-fanpage.com/archive/?record=20261010-the-fan-cheongju
+ Yh2/\n🐿람보바라기: https://www.youtube.com/watch?v=F9Q_FnRC6v0\nra
+ mirang_ · 청주 콘서트 팬 기록: https://www.instagram.com/ramirang
+ _/p/Den-zQ7oB_x/\nramirang_ · 청주 콘서트 팬 기록: https://www.in
+ stagram.com/ramirang_/reel/DeleNNIORbO/\nramirang_ · 청주 콘서트 팬
+  기록: https://www.instagram.com/ramirang_/reel/DeifhBayjOQ/\nramirang_ 
+ · 청주 콘서트 팬 기록: https://www.instagram.com/ramirang_/reel/D
+ egQZJZOlmz/\nhttps://seeya-fanpage.com/archive/?record=20261010-the-fan-ch
+ eongju
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  10-the-fan-cheongju
 END:VEVENT
@@ -8984,8 +9042,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261019-seeya-immortal-wax-recording@seeya-fanpage.com
-DTSTAMP:20261020T150000Z
-LAST-MODIFIED:20261020T150000Z
+DTSTAMP:20261022T150000Z
+LAST-MODIFIED:20261022T150000Z
 SEQUENCE:0
 DTSTART:20261019T024000Z
 SUMMARY:씨야 · 불후의 명곡 「아티스트 왁스」 녹화
@@ -9011,19 +9069,47 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n11:40 · 녹화 시작\n
  야)\, 보자마자 울컥하는 완전체 비주얼 퇴근길 직캠(KBS 
  '불후의 명곡-왁스 편') #남규리 #이보람 #김연지 #Seeya: ht
  tps://www.youtube.com/watch?v=Et5r7haQsvg\n메이저나인 공식 · LEE B
- O RAM 일정: https://enter.major9.net/schedule/\nhttps://seeya-fanpage.co
- m/archive/?record=20261019-seeya-immortal-wax-recording
+ O RAM 일정: https://enter.major9.net/schedule/\n투카로그 · [4K]2610
+ 19 씨야 불후의명곡 퇴근길 직캠 #남규리 #김연지 #이보
+ 람 #씨야 #seeya #kbs #불후의명곡 #케이팝 #레전드 #퇴근길 
+ #직캠 #kpop #shorts: https://www.youtube.com/watch?v=mAnyNi2CYaU\n투카
+ 로그 · [4K]261019 씨야 퇴근길 끌려가는 대표님 #씨야 #남
+ 규리 #김연지 #이보람 #seeya #남대표 #김전무 #이상무 #씨
+ 야엔터 #불후의명곡 #케이팝 #kpop #shorts: https://www.youtube.c
+ om/watch?v=mu1F5luUyvw\nhttps://seeya-fanpage.com/archive/?record=20261019
+ -seeya-immortal-wax-recording
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  19-seeya-immortal-wax-recording
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20261020-boram-kbs-brown-sign-1-changwon@seeya-fanpage.com
+DTSTAMP:20261022T150000Z
+LAST-MODIFIED:20261022T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:이보람 · 갈색표지판 이순신 승전길 1부
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n이순신 승전길을 따라가는 
+ 「갈색표지판」 1부입니다.\nKBS 공식 다시보기의 10월 20
+ 일 방송일을 기준으로 등록했습니다.\nKBS 공식 · 갈색표
+ 지판 1회 다시보기: https://vod.kbs.co.kr/kbsplus.html?type=E&id=PS-
+ 2026145405-01-000\nhttps://seeya-fanpage.com/archive/?record=20261020-bora
+ m-kbs-brown-sign-1-changwon
+URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
+ 20-boram-kbs-brown-sign-1-changwon
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-20261021-boram-kbs-brown-sign-2-changwon@seeya-fanpage.com
-DTSTAMP:20261020T150000Z
-LAST-MODIFIED:20261020T150000Z
+DTSTAMP:20261022T150000Z
+LAST-MODIFIED:20261022T150000Z
 SEQUENCE:0
 DTSTART:20261021T103000Z
 DTEND:20261021T113000Z
-SUMMARY:이보람 · 갈색표지판 이순신 승전길 2부 방송 예정
+SUMMARY:이보람 · 갈색표지판 이순신 승전길 2부
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:broadcast
@@ -9031,8 +9117,7 @@ LOCATION:
 DESCRIPTION:이보람\n19:30–20:30 · 방송 시작\n사천·남해의 
  이순신 승전길을 따라가는 「갈색표지판」 2부입니다.\n
  10월 21일 오후 7시 30분부터 8시 30분까지 KBS1 창원 지역 
- 채널에서 방송 예정입니다.\nKBS+에서 창원 지역 채널을 
- 선택해 시청할 수 있습니다.\nKBS 공식 · 10월 21일 창원방
+ 채널에 편성된 방송입니다.\nKBS 공식 · 10월 21일 창원방
  송총국 편성표: https://schedule.kbs.co.kr/index.html?sname=schedule&
  stype=table&type=localList&search_day=20261021&area_type=20\nKBS 공식 ·
   창원 1TV 실시간 보기: https://onair.kbs.co.kr/index.html?sname=ona
@@ -9068,25 +9153,29 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261021-boram-btn-dream-26@seeya-fanpage.com
-DTSTAMP:20261020T150000Z
-LAST-MODIFIED:20261020T150000Z
+DTSTAMP:20261022T150000Z
+LAST-MODIFIED:20261022T150000Z
 SEQUENCE:0
 DTSTART:20261021T120000Z
 DTEND:20261021T140000Z
-SUMMARY:이보람 · 한밤의 꿈 이보람입니다 26회 방송 예정
+SUMMARY:이보람 · 한밤의 꿈 이보람입니다 26회
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:이보람\n21:00–23:00 · 녹화방송 · 최초 공개\n10
- 월 21일 오후 9시부터 11시까지 방송되는 「한밤의 꿈 이
- 보람입니다」 26회입니다.\n녹화된 보이는 라디오를 BTN
- 라디오 공식 YouTube 채널에서 최초 공개합니다.\nBTN라디
- 오 · 한밤의 꿈 이보람입니다🌃 / 보이는라디오 2026.10.2
- 1 (26회): https://www.youtube.com/watch?v=5CrYKZx8ZJE\nBTN 공식 · 10
- 월 21일 라디오 편성표: https://m.btn.co.kr/btn/schedule/radio01.ht
- ml?nDay=21&nMonth=10&nYear=2026\nhttps://seeya-fanpage.com/archive/?record
- =20261021-boram-btn-dream-26
+ 월 21일 오후 9시에 최초 공개된 「한밤의 꿈 이보람입니
+ 다」 26회입니다.\n녹화방송의 공식 보이는 라디오 다시
+ 보기와 팬들이 남긴 방송 클립을 함께 볼 수 있습니다.\n
+ BTN라디오 · 한밤의 꿈 이보람입니다🌃 / 보이는라디오 
+ 2026.10.21 (26회): https://www.youtube.com/watch?v=5CrYKZx8ZJE\nBTN 공
+ 식 · 10월 21일 라디오 편성표: https://m.btn.co.kr/btn/schedule/r
+ adio01.html?nDay=21&nMonth=10&nYear=2026\n_jerry.j_ramficial · 한밤의 
+ 꿈 방송 클립·사진: https://www.instagram.com/_jerry.j_ramficial/re
+ el/DeylXZHBJG7/\nramirang_ · 한밤의 꿈 방송 클립·사진: https:/
+ /www.instagram.com/ramirang_/reel/De0kosrO53l/\nramirang_ · 한밤의 꿈
+  방송 클립·사진: https://www.instagram.com/ramirang_/p/DewoSO5kqrZ/
+ \nhttps://seeya-fanpage.com/archive/?record=20261021-boram-btn-dream-26
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  21-boram-btn-dream-26
 END:VEVENT

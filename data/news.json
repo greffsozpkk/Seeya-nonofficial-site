@@ -25,7 +25,7 @@
       "title": "[TD포토] 씨야 김연지 \\'긴머리 휘날리며~\\' - 티브이데일리",
       "source": "티브이데일리",
       "pubDate": "2026-10-19T01:57:21+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCUkJJMjJLUTRYN0Z6UlBjLVRiTVJQVGNBZFVGNGxUTWwxWVV2YUd2NmpBSHdUSEdEaXllMk1ERmR0Q2dPWHBDUTM1N1U5emN6endwZXVHSGF1WFc0bTQ1enN3bHBsSG95MUxJ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhTUhEeXhhQ0hQbE1tSFRCRkpvVElkUDdaREVtd2pIajREYWRVQkJJbWJjNVd0ejZYWi1vVUJkUHBkdVpPS3QzSDRoRW9sTTF6R2NvRVlMTWgxY1BEczQ3dWZQYmJnV0JUMEtnTVgtdWE?oc=5",
       "description": "[TD포토] 씨야 김연지 \\'긴머리 휘날리며~\\' 티브이데일리"
     },
     {
@@ -92,7 +92,7 @@
       "title": "[TD포토] 씨야 김연지 \\'긴머리 휘날리며~\\' - 티브이데일리",
       "source": "티브이데일리",
       "pubDate": "2026-10-19T01:57:21+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCUkJJMjJLUTRYN0Z6UlBjLVRiTVJQVGNBZFVGNGxUTWwxWVV2YUd2NmpBSHdUSEdEaXllMk1ERmR0Q2dPWHBDUTM1N1U5emN6endwZXVHSGF1WFc0bTQ1enN3bHBsSG95MUxJ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBhTUhEeXhhQ0hQbE1tSFRCRkpvVElkUDdaREVtd2pIajREYWRVQkJJbWJjNVd0ejZYWi1vVUJkUHBkdVpPS3QzSDRoRW9sTTF6R2NvRVlMTWgxY1BEczQ3dWZQYmJnV0JUMEtnTVgtdWE?oc=5",
       "description": "[TD포토] 씨야 김연지 \\'긴머리 휘날리며~\\' 티브이데일리"
     },
     {
@@ -147,46 +147,46 @@
       "description": "씨야 이보람, 대전 무대 앞 셀카…20주년 투어 속 변함없는 미소 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-10-23T04:55:15.226077+00:00",
-  "lastCheckedAt": "2026-10-23T04:55:15.226077+00:00",
+  "updatedAt": "2026-10-23T05:02:59.744985+00:00",
+  "lastCheckedAt": "2026-10-23T05:02:59.744985+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-23T04:55:15.226077+00:00",
-    "남규리": "2026-10-23T04:55:15.226077+00:00",
-    "김연지": "2026-10-23T04:55:15.226077+00:00",
-    "이보람": "2026-10-23T04:55:15.226077+00:00"
+    "씨야": "2026-10-23T05:02:59.744985+00:00",
+    "남규리": "2026-10-23T05:02:59.744985+00:00",
+    "김연지": "2026-10-23T05:02:59.744985+00:00",
+    "이보람": "2026-10-23T05:02:59.744985+00:00"
   },
   "categoryContentUpdatedAt": {
-    "씨야": "2026-10-23T04:55:15.226077+00:00",
+    "씨야": "2026-10-23T05:02:59.744985+00:00",
     "남규리": "2026-10-21T04:53:05.111034+00:00",
     "이보람": "2026-10-22T14:22:46.899615+00:00",
-    "김연지": "2026-10-23T04:55:15.226077+00:00"
+    "김연지": "2026-10-23T05:02:59.744985+00:00"
   },
   "categoryStatus": {
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 200,
+      "accepted": 183,
       "changed": true,
       "status": "changed"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 134,
+      "accepted": 128,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 52,
+      "accepted": 50,
       "changed": true,
       "status": "changed"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 103,
+      "accepted": 93,
       "changed": false,
       "status": "unchanged"
     }
