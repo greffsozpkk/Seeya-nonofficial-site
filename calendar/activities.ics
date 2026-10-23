@@ -340,8 +340,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2006-07&event=activity-v481-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20060709-seeya-inkigayo@seeya-fanpage.com
-DTSTAMP:20260918T150000Z
-LAST-MODIFIED:20260918T150000Z
+DTSTAMP:20261023T051009Z
+LAST-MODIFIED:20261023T051009Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20060709
 DTEND;VALUE=DATE:20060710
@@ -352,8 +352,9 @@ CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:남규리 · 김연지 · 이보람\n시간 미정\nSBS · 401
  회 출연 안내·다시보기: https://programs.sbs.co.kr/programTemplat
- e/amp/vod/gayo/22000006476\nhttps://seeya-fanpage.com/archive/?record=2006
- 0709-seeya-inkigayo
+ e/amp/vod/gayo/22000006476\n보람아몇씨야: https://www.youtube.com/wa
+ tch?v=jJypqIDNcv4\nhttps://seeya-fanpage.com/archive/?record=20060709-seey
+ a-inkigayo
 URL:https://seeya-fanpage.com/calendar/?month=2006-07&event=activity-200607
  09-seeya-inkigayo
 END:VEVENT
@@ -823,8 +824,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2007-07&event=activity-v481-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v481-archive-021@seeya-fanpage.com
-DTSTAMP:20261015T150000Z
-LAST-MODIFIED:20261015T150000Z
+DTSTAMP:20261023T051009Z
+LAST-MODIFIED:20261023T051009Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20070801
 DTEND;VALUE=DATE:20070802
@@ -838,7 +839,8 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n시간 미정\n공식 영
  ww.youtube.com/watch?v=tIiNpSJoQ6k\n방송·공연 기록: https://www.eda
  ily.co.kr/News/Read?mediaCodeNo=257&newsId=01761366583198128\n부산MBC 
  뮤직월드 · 결혼할까요: https://www.youtube.com/watch?v=CgX2YsAG7
- ok\nhttps://seeya-fanpage.com/archive/?record=v481-archive-021
+ ok\nseeyalover: https://www.youtube.com/watch?v=NLkET4ZUYtQ\nhttps://seeya
+ -fanpage.com/archive/?record=v481-archive-021
 URL:https://seeya-fanpage.com/calendar/?month=2007-08&event=activity-v481-a
  rchive-021
 END:VEVENT
@@ -5871,8 +5873,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2023-03&event=activity-v491-p
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-monthlystage-20230325@seeya-fanpage.com
-DTSTAMP:20260912T150000Z
-LAST-MODIFIED:20260912T150000Z
+DTSTAMP:20261023T051009Z
+LAST-MODIFIED:20261023T051009Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20230325
 DTEND;VALUE=DATE:20230326
@@ -5883,8 +5885,8 @@ CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:이보람\n시간 미정\nTHE K-POP2: https://www.youtube.com/w
  atch?v=jQwB6lt0g9g\n벅스 방송 음반 정보: https://music.bugs.co.kr/
- album/20555022\nhttps://seeya-fanpage.com/archive/?record=v491-monthlystag
- e-20230325
+ album/20555022\nTHE K-POP2: https://www.youtube.com/watch?v=fh-AQG_ITJE\nh
+ ttps://seeya-fanpage.com/archive/?record=v491-monthlystage-20230325
 URL:https://seeya-fanpage.com/calendar/?month=2023-03&event=activity-v491-m
  onthlystage-20230325
 END:VEVENT
@@ -7024,8 +7026,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-04&event=activity-v487-2
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v488-audit-001@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261023T051009Z
+LAST-MODIFIED:20261023T051009Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20260429
 DTEND;VALUE=DATE:20260430
@@ -7035,8 +7037,9 @@ TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:이보람\n시간 미정\nBTN라디오 · 공식 영상: https:
- //www.youtube.com/watch?v=bmBdrkMB7n8\nhttps://seeya-fanpage.com/archive/?
- record=v488-audit-001
+ //www.youtube.com/watch?v=bmBdrkMB7n8\nBTN라디오: https://www.youtube.c
+ om/watch?v=Y7kjE6fc4Ts\nhttps://seeya-fanpage.com/archive/?record=v488-aud
+ it-001
 URL:https://seeya-fanpage.com/calendar/?month=2026-04&event=activity-v488-a
  udit-001
 END:VEVENT
@@ -7681,8 +7684,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-09&event=activity-v475-s
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20260912-the-fan-daegu@seeya-fanpage.com
-DTSTAMP:20261021T050739Z
-LAST-MODIFIED:20261021T050739Z
+DTSTAMP:20261023T051009Z
+LAST-MODIFIED:20261023T051009Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
@@ -7742,7 +7745,8 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n시간 미정\n9월 12일
  \n정아선: https://www.youtube.com/watch?v=zWoqQzY24Ds\n정아선: https
  ://www.youtube.com/watch?v=KmEgyvGepRM\n정아선: https://www.youtube.com
  /watch?v=TZOtz8i2Qp0\n정아선: https://www.youtube.com/watch?v=y_FeKF19p
- P8\nhttps://seeya-fanpage.com/archive/?record=20260912-the-fan-daegu
+ P8\n정아선: https://www.youtube.com/watch?v=4E8275zlFy8\nhttps://seeya-
+ fanpage.com/archive/?record=20260912-the-fan-daegu
 URL:https://seeya-fanpage.com/calendar/?month=2026-09&event=activity-202609
  12-the-fan-daegu
 END:VEVENT
@@ -8725,8 +8729,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261010-the-fan-cheongju@seeya-fanpage.com
-DTSTAMP:20261022T150000Z
-LAST-MODIFIED:20261022T150000Z
+DTSTAMP:20261023T051009Z
+LAST-MODIFIED:20261023T051009Z
 SEQUENCE:2
 DTSTART:20261010T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · CHEONGJU
@@ -8875,8 +8879,8 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n20
  stagram.com/ramirang_/reel/DeleNNIORbO/\nramirang_ · 청주 콘서트 팬
   기록: https://www.instagram.com/ramirang_/reel/DeifhBayjOQ/\nramirang_ 
  · 청주 콘서트 팬 기록: https://www.instagram.com/ramirang_/reel/D
- egQZJZOlmz/\nhttps://seeya-fanpage.com/archive/?record=20261010-the-fan-ch
- eongju
+ egQZJZOlmz/\n🐿람보바라기: https://www.youtube.com/watch?v=AfQ8k8xi
+ 4iM\nhttps://seeya-fanpage.com/archive/?record=20261010-the-fan-cheongju
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  10-the-fan-cheongju
 END:VEVENT
@@ -8968,8 +8972,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261017-the-fan-suwon@seeya-fanpage.com
-DTSTAMP:20261022T051038Z
-LAST-MODIFIED:20261022T051038Z
+DTSTAMP:20261023T051009Z
+LAST-MODIFIED:20261023T051009Z
 SEQUENCE:1
 DTSTART:20261017T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · SUWON
@@ -9035,15 +9039,18 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n10
  /Denmtsqhf-J/\n제리제이 · 수원 콘서트 현장 릴스: https://www
  .instagram.com/_jerry.j_ramficial/reel/DenUEFqBjK-/\n남규리의 귤멍 
  · 수원 콘서트 종료 감사 인사: https://www.youtube.com/watch?v=
- PzdIJOVqS7I\n람보사랑: https://www.youtube.com/watch?v=wc2MPa8_osM\nht
- tps://seeya-fanpage.com/archive/?record=20261017-the-fan-suwon
+ PzdIJOVqS7I\n람보사랑: https://www.youtube.com/watch?v=wc2MPa8_osM\n
+ 칡: https://www.youtube.com/watch?v=q-0KvNV-3JQ\n람보사랑: https://ww
+ w.youtube.com/watch?v=-mUSRFlI450\nHot Issue🎤: https://www.youtube.com/
+ watch?v=Kr_CL0_xCSQ\nhttps://seeya-fanpage.com/archive/?record=20261017-th
+ e-fan-suwon
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  17-the-fan-suwon
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261019-seeya-immortal-wax-recording@seeya-fanpage.com
-DTSTAMP:20261022T150000Z
-LAST-MODIFIED:20261022T150000Z
+DTSTAMP:20261023T051009Z
+LAST-MODIFIED:20261023T051009Z
 SEQUENCE:0
 DTSTART:20261019T024000Z
 SUMMARY:씨야 · 불후의 명곡 「아티스트 왁스」 녹화
@@ -9076,8 +9083,9 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n11:40 · 녹화 시작\n
  로그 · [4K]261019 씨야 퇴근길 끌려가는 대표님 #씨야 #남
  규리 #김연지 #이보람 #seeya #남대표 #김전무 #이상무 #씨
  야엔터 #불후의명곡 #케이팝 #kpop #shorts: https://www.youtube.c
- om/watch?v=mu1F5luUyvw\nhttps://seeya-fanpage.com/archive/?record=20261019
- -seeya-immortal-wax-recording
+ om/watch?v=mu1F5luUyvw\n투카로그: https://www.youtube.com/watch?v=SH5G
+ _GSu_Zw\nhttps://seeya-fanpage.com/archive/?record=20261019-seeya-immortal
+ -wax-recording
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  19-seeya-immortal-wax-recording
 END:VEVENT
