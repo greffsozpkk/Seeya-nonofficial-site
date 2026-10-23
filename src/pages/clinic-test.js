@@ -1,0 +1,2 @@
+const {W}=require('../shared/common');
+module.exports=()=>W(`<section class="clinic-shell"><a href="/game/">← SEEYA PLAY</a><header class="clinic-intro"><p class="eye">A LITTLE MORE ABOUT YOUR LOVE</p><h1>씨야 과몰입 진단소</h1><p>어떤 방식으로 좋아하고,<br>일상에는 얼마나 스며들었을까요?</p></header><p class="clinic-note">문항·채점 검토용 화면입니다. 씨야를 좋아하는 방식을 살펴보는 팬 테스트입니다.</p><p id="clinicNotice" role="status" hidden></p><div id="clinicApp"></div><script id="clinicData" type="application/json">${JSON.stringify({revision:require('../data/clinic-bank.json').revision}).replace(/</g,'\\u003c')}</script></section>`);

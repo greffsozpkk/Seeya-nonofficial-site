@@ -103,6 +103,7 @@ const examBanks=require('./src/shared/exam').banks;
 if(!examBanks.every(b=>b.questions.length===examBanks[0].questions.length&&b.points===examBanks[0].points))throw Error('Diary play presets need area-specific question counts');
 passportCatalog.playFormats={lyrics:{total:10,maxScore:10},exam:{total:examBanks[0].questions.length,maxScore:examBanks[0].questions.length*examBanks[0].points}};
 const worldcupRoute=json('src/data/worldcup-test-route.json'),gamesTestRoute=json('src/data/games-test-route.json');
+const clinicRoute=json('src/data/clinic-test-route.json'),clinicCss=asset('clinic','css',read('src/styles/clinic.css')),clinicJs=asset('clinic','js',bundle('src/client/clinic.js'));
 const retiredRoutes=json('src/data/retired-test-routes.json');
 const worldcupCss=asset('worldcup','css',read('src/styles/worldcup.css'));
 const worldcupJs=asset('worldcup','js',bundle('src/client/worldcup.js'));
@@ -110,7 +111,7 @@ const photosRaw=json('data/photos.json');
 const photos=(Array.isArray(photosRaw)?photosRaw:photosRaw.photos||[]).filter(x=>x&&x.hidden!==true).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||Number(a.order||999)-Number(b.order||999));
 const template=read('src/template.html');
 const files=[];
-for(const route of [...routes,worldcupRoute,gamesTestRoute]){
+for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute]){
  const key=route.key;
  const render=require('./src/pages/'+(key==='fanchant'?'music':key)+'.js');
  let content;
@@ -129,6 +130,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute]){
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
  if(key==='worldcup-test'||key==='worldcup'){vars.pageHead=`<meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="${worldcupCss}">`;vars.scripts=`<script defer src="${worldcupJs}"></script>`+(key==='worldcup'?`<script defer src="${siteJs}"></script>`:'');}
+ if(key==='clinic-test'){vars.pageHead=`<link rel="stylesheet" href="${clinicCss}">`;vars.scripts=`<script defer src="${clinicJs}"></script>`;}
  if(key==='diary-privacy')vars.pageHead+=`<link rel="stylesheet" href="${passportCss}">`;
  if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}">`;vars.scripts=`<script defer src="${diaryJs}"></script>`;}
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
@@ -163,6 +165,6 @@ for(const route of retiredRoutes){const file=route.from.slice(1)+'index.html';wr
 write('passport/sw.js',read('src/retired-passport-worker.js'));
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html']},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html',clinicRoute.path.slice(1)+'index.html']},null,2)+'\n');
 console.log(`Built ${routes.length} public pages, 2 unlisted PLAY/world cup previews and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');
