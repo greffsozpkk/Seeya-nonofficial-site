@@ -1,6 +1,6 @@
 'use strict';
 // Only public application files are cached. Personal entries stay in browser storage.
-const CACHE="seeya-diary-shell-14a7397be510",FILES=["/assets/GowunDodum-Regular.385f1f238065.woff2","/assets/GowunBatang-Regular.d66f8f3914dc.woff2","/assets/NanumPenScript-Regular.d083eb8197a2.woff2","/diary/","/assets/site.81c4859d7940.css","/assets/passport.986e895a55c7.css","/assets/diary.1818dd06da72.js","/assets/mobile-menu.d34f2de4a9e9.js","/manifest.webmanifest","/images/app/favicon-192.png","/images/app/apple-touch-icon-180-v2.png"];
+const CACHE="seeya-diary-shell-4b4a7b273b23",FILES=["/assets/GowunDodum-Regular.385f1f238065.woff2","/assets/GowunBatang-Regular.d66f8f3914dc.woff2","/assets/NanumPenScript-Regular.d083eb8197a2.woff2","/diary/","/assets/site.81c4859d7940.css","/assets/passport.986e895a55c7.css","/assets/diary.1818dd06da72.js","/assets/mobile-menu.d34f2de4a9e9.js","/manifest.webmanifest","/images/app/favicon-192.png","/images/app/apple-touch-icon-180-v2.png"];
 self.addEventListener('install',event=>event.waitUntil((async()=>{
  const cache=await caches.open(CACHE);
  try{for(const file of FILES){const response=await fetch(new Request(file,{cache:'reload'}));if(!response.ok)throw Error('Passport offline preparation failed');await cache.put(file,response);}}
