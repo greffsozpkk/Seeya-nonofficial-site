@@ -271,9 +271,8 @@
   {
     "key": "worldcup",
     "path": "/game/worldcup/",
-    "title": "이상형 월드컵 · 준비중 | SEEYA PLAY",
-    "description": "씨야와 함께하는 이상형 월드컵을 준비하고 있습니다. 기다리는 동안 가사 퀴즈와 씨야 모의고사를 즐겨보세요.",
-    "noindex": true
+    "title": "이상형 월드컵 | SEEYA PLAY",
+    "description": "씨야 노래·솔로곡·뮤비·남규리 필모드컵·4집·커버곡 중 나의 최애를 고르고 우승 결과와 전체 순위를 만나보세요."
   },
   {
     "key": "clinic",

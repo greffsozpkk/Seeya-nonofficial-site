@@ -32,9 +32,9 @@ module.exports=()=>W(`<section class="game-hub">
       <div class="game-card-copy">
         <span class="game-card-kicker">03 · SEEYA WORLD CUP</span>
         <h2 id="game-worldcup-title">이상형 월드컵</h2>
-        <p id="game-worldcup-description">고르는 순간마다 발견하는 나의 취향.<br>씨야와 함께할 새로운 게임을 기다려주세요.</p>
-        <div class="game-card-details"><span class="game-status" id="game-worldcup-status">준비중</span></div>
-        <span class="game-card-link">준비중 안내 보기 <span aria-hidden="true">→</span></span>
+        <p id="game-worldcup-description">고르는 순간마다 발견하는 나의 취향.<br>노래 · 솔로곡 · 뮤비 · 필모드컵 · 4집 · 커버곡</p>
+        <div class="game-card-details"><span class="game-status" id="game-worldcup-status">6가지 월드컵</span></div>
+        <span class="game-card-link">월드컵 시작하기 <span aria-hidden="true">→</span></span>
       </div>
     </a>
     <a class="game-card game-card-clinic" href="/game/clinic/" aria-labelledby="game-clinic-title" aria-describedby="game-clinic-description game-clinic-status">

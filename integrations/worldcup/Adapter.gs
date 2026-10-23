@@ -1,28 +1,34 @@
 // Generated Code.gs includes this adapter, shared bracket rules and candidate IDs.
-// Set Script Properties: SPREADSHEET_ID, ENVIRONMENT=test (use another project/sheet for production).
-function setupWorldcup() {
+// Keep legacy ENVIRONMENT=test. Public launch uses dedicated Production_* tabs.
+// Old deployments continue to see only legacy test records.
+function defaultEnvironment_(){var p=PropertiesService.getScriptProperties();return p.getProperty('PUBLIC_WORLD_CUP_READY')==='true'?'production':p.getProperty('ENVIRONMENT');}
+function environment_(value){var e=value||defaultEnvironment_();if(!['test','production'].includes(e))throw Object.assign(Error('통계 환경을 확인해 주세요.'),{code:'ENVIRONMENT'});return e;}
+function ledgerName_(name,environment){return environment==='production'?'Production_'+name:name;}
+function setupWorldcup() { return setupEnvironment_(environment_(PropertiesService.getScriptProperties().getProperty('PUBLIC_WORLD_CUP_READY')==='true'?'production':(PropertiesService.getScriptProperties().getProperty('ENVIRONMENT')||'test'))); }
+function setupEnvironment_(environment) {
   var props=PropertiesService.getScriptProperties();
   if(!props.getProperty('ENVIRONMENT'))props.setProperty('ENVIRONMENT','test');
   if(!props.getProperty('TOKEN_SECRET'))props.setProperty('TOKEN_SECRET',Utilities.getUuid()+Utilities.getUuid()+Utilities.getUuid());
   var book=SpreadsheetApp.openById(props.getProperty('SPREADSHEET_ID'));
   [['Sessions',['id','clientHash','requestId','collection','version','mode','issued','expires','game']],['Results',['id','collection','version','mode','winner','acceptedAt','excluded','reason']]].forEach(function(spec){
-    var sheet=book.getSheetByName(spec[0])||book.insertSheet(spec[0]);
+    var sheet=book.getSheetByName(ledgerName_(spec[0],environment))||book.insertSheet(ledgerName_(spec[0],environment));
     if(sheet.getLastRow()===0){sheet.appendRow(spec[1]);sheet.setFrozenRows(1);}
     else if(JSON.stringify(sheet.getRange(1,1,1,spec[1].length).getValues()[0])!==JSON.stringify(spec[1]))throw Error('시트 열 이름이 맞지 않습니다: '+spec[0]);
   });
-  ensureNicknameColumn_(book.getSheetByName('Results'));
+  ensureNicknameColumn_(book.getSheetByName(ledgerName_('Results',environment)));
   SpreadsheetApp.flush();
-  return '준비 완료: '+props.getProperty('ENVIRONMENT');
+  return '준비 완료: '+environment;
 }
 // Add only the new trailing column; preserve all existing rows and column positions.
 function ensureNicknameColumn_(sheet){var cell=sheet.getRange(1,9),value=cell.getValue();if(value&&value!=='nickname')throw Error('Results I열을 확인해 주세요. 기존 데이터를 덮어쓰지 않았습니다.');if(!value)cell.setValue('nickname');}
 function sheetText_(value){var s=String(value||'');return /^[=+@\-\t\r\n]/.test(s)?"'"+s:s;}
 function bytesHex_(a){return a.map(function(b){return ('0'+((b+256)%256).toString(16)).slice(-2);}).join('');}
 function constantEqual_(a,b){if(typeof b!=='string'||a.length!==b.length)return false;var n=0;for(var i=0;i<a.length;i++)n|=a.charCodeAt(i)^b.charCodeAt(i);return n===0;}
-function context_(forceCatalog){
- var props=PropertiesService.getScriptProperties(),environment=props.getProperty('ENVIRONMENT'),secret=props.getProperty('TOKEN_SECRET');
+function context_(forceCatalog,requestedEnvironment){
+ var props=PropertiesService.getScriptProperties(),environment=environment_(requestedEnvironment),secret=props.getProperty('TOKEN_SECRET');
  if(!['test','production'].includes(environment)||!secret)throw Error('먼저 setupWorldcup을 실행해 주세요.');
- var book=SpreadsheetApp.openById(props.getProperty('SPREADSHEET_ID')),ss=book.getSheetByName('Sessions'),rs=book.getSheetByName('Results');
+ if(environment==='production'&&props.getProperty('PUBLIC_WORLD_CUP_READY')!=='true')throw Object.assign(Error('공개 통계 연결을 준비 중입니다.'),{code:'NOT_READY'});
+ var book=SpreadsheetApp.openById(props.getProperty('SPREADSHEET_ID')),ss=book.getSheetByName(ledgerName_('Sessions',environment)),rs=book.getSheetByName(ledgerName_('Results',environment));
  if(!ss||!rs)throw Error('통계 시트가 준비되지 않았습니다.');
  ensureNicknameColumn_(rs);
  function values(sheet,n){return sheet.getLastRow()<2?[]:sheet.getRange(2,1,sheet.getLastRow()-1,n).getValues();}
@@ -39,7 +45,7 @@ function context_(forceCatalog){
   addSession:function(s){if(sessions.length>=10000)throw Error('발급 기록 정리가 필요합니다.');ss.appendRow([s.id,s.client,s.requestId,s.collection,s.version,s.size,s.issued,s.expires,JSON.stringify(s.game)]);SpreadsheetApp.flush();sessions.push(s);},
   addResult:function(r){if(results.length>=50000)throw Error('통계 저장 용량 점검이 필요합니다.');rs.appendRow([r.id,r.collection,r.version,r.size,r.winner,r.at,false,'',sheetText_(r.nickname)]);SpreadsheetApp.flush();results.push(r);}
  };
- var catalog=loadCatalog_(book,forceCatalog);return {book:book,catalog:catalog,service:WorldcupStats.createService(catalog,repo,{environment:environment,now:Date.now,uuid:Utilities.getUuid,random:Math.random,sign:sign,hash:function(s){return bytesHex_(Utilities.computeHmacSha256Signature('client|'+s,secret));},verify:function(id,token){return constantEqual_(sign(id),token);}})};
+ var catalog=loadCatalog_(book,forceCatalog);return {book:book,environment:environment,catalog:catalog,service:WorldcupStats.createService(catalog,repo,{environment:environment,now:Date.now,uuid:Utilities.getUuid,random:Math.random,sign:sign,hash:function(s){return bytesHex_(Utilities.computeHmacSha256Signature('client|'+s,secret));},verify:function(id,token){return constantEqual_(sign(id),token);}})};
 }
 function json_(x){return ContentService.createTextOutput(JSON.stringify(x)).setMimeType(ContentService.MimeType.JSON);}
 function doGet(e){return dispatch_(Object.assign({},e&&e.parameter||{}, {action:(e&&e.parameter&&e.parameter.action)||'health'}),true);}
@@ -50,18 +56,20 @@ function dispatch_(q,readOnly){
   if(readOnly&&!['health','ranks','catalog','overview'].includes(q.action))return json_({ok:false,code:'ACTION',message:'조회 요청만 가능합니다.'});
   if(typeof q.size==='string'&&/^(16|32|64)$/.test(q.size))q.size=Number(q.size);
   if(!['start','finish','ranks','health','catalog','overview'].includes(q.action))return json_({ok:false,code:'ACTION',message:'지원하지 않는 요청입니다.'});
+  q.environment=environment_(q.environment);
   var cache=CacheService.getScriptCache(),cacheKey=q.action==='ranks'?'ranks:'+bytesHex_(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,JSON.stringify([q.environment,q.collection,q.version,q.size]))):null;
   if(cacheKey){var cached=cache.get(cacheKey);if(cached)return json_(JSON.parse(cached));}
   // All result lookups and appends share one script lock, including lost-response retries.
   lock=LockService.getScriptLock();if(!lock.tryLock(10000))return json_({ok:false,code:'BUSY',message:'저장 요청이 겹쳤어요. 잠시 후 다시 시도해 주세요.'});
-  var ctx=context_(),response;
-  if(q.action==='catalog')response={ok:true,environment:PropertiesService.getScriptProperties().getProperty('ENVIRONMENT'),collections:ctx.catalog};
+  var ctx=context_(false,q.environment),response;
+  if(q.action==='catalog')response={ok:true,environment:ctx.environment,collections:ctx.catalog};
   else if(q.action==='overview'){
-   var environment=PropertiesService.getScriptProperties().getProperty('ENVIRONMENT');if(q.environment!==environment)throw Object.assign(Error('통계 환경이 다릅니다.'),{code:'ENVIRONMENT'});
+   var environment=ctx.environment;if(q.environment!==environment)throw Object.assign(Error('통계 환경이 다릅니다.'),{code:'ENVIRONMENT'});
    var scopes=[];ctx.catalog.forEach(function(c){c.rounds.forEach(function(size){var r=ctx.service.handle({action:'ranks',environment:environment,collection:c.id,version:c.version,size:size});scopes.push({collection:c.id,version:c.version,size:size,total:r.total,leader:r.rows[0]||null});});});
    response={ok:true,environment:environment,scopes:scopes,updatedAt:new Date().toISOString()};
   }
-  else {try{response=ctx.service.handle(q);}catch(err){if(err.code!=='VERSION')throw err;ctx=context_(true);response=ctx.service.handle(q);}}
+  else {try{response=ctx.service.handle(q);}catch(err){if(err.code!=='VERSION')throw err;ctx=context_(true,q.environment);response=ctx.service.handle(q);}}
+  if(q.action==='health'){response.environmentIsolation=true;response.publicReady=PropertiesService.getScriptProperties().getProperty('PUBLIC_WORLD_CUP_READY')==='true';}
   if(q.action==='finish'&&response.ok){var key='ranks:'+bytesHex_(Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256,JSON.stringify([q.environment,q.collection,q.version,q.size])));try{cache.remove(key);}catch(ignore){}}
   if(cacheKey){try{cache.put(cacheKey,JSON.stringify(response),60);}catch(ignore){}}
   return json_(response);
@@ -69,12 +77,12 @@ function dispatch_(q,readOnly){
  finally{if(lock)lock.releaseLock();}
 }
 // Owner-only functions. No public API can call these functions or read the ledger.
-function cleanupExpiredSessions(){var lock=LockService.getScriptLock();lock.waitLock(10000);try{var sheet=context_().book.getSheetByName('Sessions'),n=sheet.getLastRow();if(n<2)return;var rows=sheet.getRange(2,1,n-1,9).getValues(),cutoff=Date.now()-7*86400000;for(var i=rows.length-1;i>=0;i--)if(Number(rows[i][7])<cutoff)sheet.deleteRow(i+2);}finally{lock.releaseLock();}}
-function backupResults(){var book=context_().book;book.getSheetByName('Results').copyTo(book).setName('Backup_'+Utilities.formatDate(new Date(),'Asia/Seoul','yyyyMMdd_HHmmss'));}
+function cleanupExpiredSessions(){var lock=LockService.getScriptLock();lock.waitLock(10000);try{var ctx=context_(),sheet=ctx.book.getSheetByName(ledgerName_('Sessions',ctx.environment)),n=sheet.getLastRow();if(n<2)return;var rows=sheet.getRange(2,1,n-1,9).getValues(),cutoff=Date.now()-7*86400000;for(var i=rows.length-1;i>=0;i--)if(Number(rows[i][7])<cutoff)sheet.deleteRow(i+2);}finally{lock.releaseLock();}}
+function backupResults(){var ctx=context_(),book=ctx.book;book.getSheetByName(ledgerName_('Results',ctx.environment)).copyTo(book).setName('Backup_'+Utilities.formatDate(new Date(),'Asia/Seoul','yyyyMMdd_HHmmss'));}
 function rebuildStatistics(){
  // Rankings derive from the ledger; cached responses may take up to 60 seconds to reflect exclusions.
- var ctx=context_(),sheet=ctx.book.getSheetByName('Summary')||ctx.book.insertSheet('Summary'),rows=[['collection','version','mode','candidate','wins','total','percent','updatedAt']];
- ctx.catalog.forEach(function(c){c.rounds.forEach(function(size){var r=ctx.service.handle({action:'ranks',environment:PropertiesService.getScriptProperties().getProperty('ENVIRONMENT'),collection:c.id,version:c.version,size:size});r.rows.forEach(function(x){rows.push([c.id,c.version,size,x.id,x.wins,r.total,x.percent,r.updatedAt]);});});});sheet.clearContents();sheet.getRange(1,1,rows.length,8).setValues(rows);
+ var ctx=context_(),sheet=ctx.book.getSheetByName(ledgerName_('Summary',ctx.environment))||ctx.book.insertSheet(ledgerName_('Summary',ctx.environment)),rows=[['collection','version','mode','candidate','wins','total','percent','updatedAt']];
+ ctx.catalog.forEach(function(c){c.rounds.forEach(function(size){var r=ctx.service.handle({action:'ranks',environment:ctx.environment,collection:c.id,version:c.version,size:size});r.rows.forEach(function(x){rows.push([c.id,c.version,size,x.id,x.wins,r.total,x.percent,r.updatedAt]);});});});sheet.clearContents();sheet.getRange(1,1,rows.length,8).setValues(rows);
 }
 // Owner-run snapshot only. Never dispatched by the public web app; no sharing permissions are changed.
 function privateReportRows_(raw,catalog){
@@ -90,12 +98,14 @@ function privateReportRows_(raw,catalog){
  });
  return rows.sort(function(a,b){return (b[0] instanceof Date?b[0].getTime():0)-(a[0] instanceof Date?a[0].getTime():0);});
 }
-function refreshPrivateReport(){
+function refreshPrivateReport(){return refreshPrivateReportFor_(defaultEnvironment_());}
+function refreshPrivateTestReport(){return refreshPrivateReportFor_('test');}
+function refreshPrivateReportFor_(requestedEnvironment){
  var lock=LockService.getScriptLock();lock.waitLock(10000);
  try{
-  var props=PropertiesService.getScriptProperties(),environment=props.getProperty('ENVIRONMENT');
+  var props=PropertiesService.getScriptProperties(),environment=environment_(requestedEnvironment);
   if(!['test','production'].includes(environment))throw Error('먼저 setupWorldcup을 실행해 주세요.');
-  var sourceId=props.getProperty('SPREADSHEET_ID'),source=SpreadsheetApp.openById(sourceId),ledger=source.getSheetByName('Results');
+  var sourceId=props.getProperty('SPREADSHEET_ID'),source=SpreadsheetApp.openById(sourceId),ledger=source.getSheetByName(ledgerName_('Results',environment));
   if(!ledger)throw Error('Results 원장이 없습니다. 원본 시트를 확인해 주세요.');
   var raw=ledger.getLastRow()<2?[]:ledger.getRange(2,1,ledger.getLastRow()-1,9).getValues(),rows=privateReportRows_(raw,loadCatalog_(source,false));
   var key='PRIVATE_REPORT_ID_'+environment,id=props.getProperty(key),book;
@@ -124,4 +134,18 @@ function setupWorldcupAutomation(){
  var triggers=ScriptApp.getProjectTriggers().filter(function(t){return t.getHandlerFunction()==='refreshPrivateReport';});
  if(!triggers.length)ScriptApp.newTrigger('refreshPrivateReport').timeBased().everyHours(1).create();
  Logger.log('목록 자동 연결 및 확인용 시트 매시간 갱신 설정 완료: '+url);return url;
+}
+
+// Owner-run once. Idempotent: never clear, rename or migrate existing ledgers.
+function setupWorldcupPublicLaunch(){
+ var lock=LockService.getScriptLock();lock.waitLock(10000);
+ try{
+  var props=PropertiesService.getScriptProperties();
+  if(props.getProperty('ENVIRONMENT')!=='test')throw Error('기존 ENVIRONMENT는 test로 유지해 주세요. 기존 기록을 변경하지 않았습니다.');
+  setupEnvironment_('test');setupEnvironment_('production');
+  props.setProperty('PUBLIC_WORLD_CUP_READY','true');
+ }finally{lock.releaseLock();}
+ var url=setupWorldcupAutomation();
+ Logger.log('공개 준비 완료. Production_Results는 공개 통계, Results는 기존 테스트 통계입니다. 기존 웹 앱을 새 버전으로 배포해 주세요.');
+ return url;
 }
