@@ -1,5 +1,6 @@
 'use strict';
 // Deterministic bracket replay keeps saved progress verifiable; it is not an anti-bot server.
+function nickname(value){return typeof value==='string'?[...value.replace(/[\u0000-\u001f\u007f-\u009f\u200b-\u200f\u202a-\u202e\u2066-\u2069]/g,'').trim()].slice(0,24).join(''):'';}
 function shuffle(ids,random=Math.random){const a=[...ids];for(let i=a.length-1;i>0;i--){const j=Math.floor(random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function create(ids,size,version,id,random=Math.random){if(![16,32,64].includes(size)||new Set(ids).size!==ids.length||ids.length<size)throw Error('후보 수를 확인해 주세요.');return {schema:1,id,version,size,initial:shuffle(ids,random).slice(0,size),picks:[]};}
 function replay(game,ids,version){
@@ -10,7 +11,7 @@ function replay(game,ids,version){
  return {round:round.length,match,pair:round.length>1?round.slice(match*2,match*2+2):[],winner:round.length===1?round[0]:null,history,done:game.picks.length,total:game.size-1};
 }
 function choose(game,pick,ids,version){const state=replay(game,ids,version);if(!state.pair.includes(pick))throw Error('현재 대결의 곡을 선택해 주세요.');return {...game,picks:[...game.picks,pick]};}
-function recordResult(history,game,ids,version,now){const state=replay(game,ids,version);if(!state.winner)throw Error('완료되지 않은 게임');const old=Array.isArray(history)?history:[];if(old.some(r=>r.id===game.id))return old;return [...old,{id:game.id,version,size:game.full?'all':game.size,winner:state.winner,at:now}].slice(-100);}
+function recordResult(history,game,ids,version,now){const state=replay(game,ids,version);if(!state.winner)throw Error('완료되지 않은 게임');const old=Array.isArray(history)?history:[];if(old.some(r=>r.id===game.id))return old;return [...old,{id:game.id,version,size:game.full?'all':game.size,winner:state.winner,at:now,nickname:nickname(game.nickname)}].slice(-100);}
 function ranking(history,size,version){const rows=history.filter(r=>r.version===version&&r.size===size),counts=new Map();rows.forEach(r=>counts.set(r.winner,(counts.get(r.winner)||0)+1));let prev=-1,rank=0;return {total:rows.length,rows:[...counts].sort((a,b)=>b[1]-a[1]||a[0].localeCompare(b[0])).map(([id,wins],i)=>{if(wins!==prev)rank=i+1;prev=wins;return {id,wins,rank,percent:rows.length?wins/rows.length*100:0};})};}
 function roundProgress(state){const label=state.round===2?'결승':state.round+'강',matches=state.matches??state.round/2,completed=state.completed??state.match;return {label,matches,current:completed+1,completed,text:label+' '+(completed+1)+'/'+matches};}
 // All entrants participate. Random first-round byes complete the power-of-two bracket.
@@ -38,4 +39,4 @@ function replayAll(game,ids,version){
  if(cursor!==game.picks.length)throw Error('종료 이후 선택');
  return {round:1,match:0,pair:[],winner:round[0],history,done:cursor,total:ids.length-1};
 }
-module.exports={shuffle,create,createAll,replay,choose,recordResult,ranking,roundProgress};
+module.exports={nickname,shuffle,create,createAll,replay,choose,recordResult,ranking,roundProgress};

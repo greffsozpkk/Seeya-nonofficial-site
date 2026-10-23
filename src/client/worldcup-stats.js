@@ -10,7 +10,7 @@ function create(config,{fetch:request=(...args)=>window.fetch(...args),storage=l
   }catch(e){if(e.name==='AbortError')throw Object.assign(Error('응답이 늦어 결과 확인을 기다리고 있어요.'),{code:'NETWORK'});throw e;}finally{clearTimeout(timer);}
  }
  function scope(c,size){return {collection:c.id,version:c.version,size};}
- async function start(c,size,requestId){return call({action:'start',...scope(c,size),client:client(),requestId});}
+ async function start(c,size,requestId,nickname){return call({action:'start',...scope(c,size),client:client(),requestId,nickname});}
  function queue(c,game,winner){if(!game.remote||game.remote.environment!==environment)return null;const id=game.id,all=read(),old=all.find(r=>r.id===id);if(old)return old;if(all.filter(r=>!['saved','excluded','expired','rejected'].includes(r.status)).length>=20)throw Error('등록 대기 결과가 20개예요. 먼저 대기 결과를 다시 등록해 주세요.');
   const row={id,...scope(c,game.full?'all':game.size),token:game.remote.token,picks:game.picks,winner,expires:game.remote.expires,status:'pending',attempts:0,nextTry:0};write([...all.filter(r=>!['saved','excluded','expired','rejected'].includes(r.status)).slice(-19),...all.filter(r=>['saved','excluded','expired','rejected'].includes(r.status)).slice(-80),row]);return row;
  }

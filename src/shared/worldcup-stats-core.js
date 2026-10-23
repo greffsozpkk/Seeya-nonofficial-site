@@ -9,6 +9,7 @@ function createService(catalog,repo,env){
   if(old){if(old.collection!==c.id||old.version!==c.version||old.size!==q.size)fail('CONFLICT','같은 시작 요청의 조건이 달라요.');if(old.expires<=now)fail('EXPIRED','시작 요청이 만료됐어요. 새 게임을 시작해 주세요.');return issued(old);}
   const limits=repo.usage(client,now);if(limits.hour>=10||limits.day>=60||limits.globalDay>=1000)fail('RATE_LIMIT','게임 시작 요청이 많아요. 잠시 후 다시 시도하거나 통계 없이 플레이해 주세요.');
   const id=env.uuid(),ids=c.candidates.map(x=>x.id),game=q.size==='all'?G.createAll(ids,c.version,id,env.random):G.create(ids,q.size,c.version,id,env.random);
+  game.nickname=G.nickname(q.nickname);
   const session={id,client,requestId:q.requestId,collection:c.id,version:c.version,size:q.size,game,issued:now,expires:now+24*60*60*1000};repo.addSession(session);return issued(session);
  }
  function issued(s){return {ok:true,environment:env.environment,game:s.game,token:env.sign(s.id),expires:s.expires,policy:'completed-game'};}
@@ -18,7 +19,7 @@ function createService(catalog,repo,env){
   const c=catalog.find(c=>c.id===s.collection&&c.version===s.version);if(!Array.isArray(q.picks)||q.picks.length>255||!q.picks.every(x=>typeof x==='string'&&x.length<100))fail('PATH','선택 기록 형식이 올바르지 않아요.');
   let state;try{state=G.replay({...s.game,picks:q.picks},c.candidates.map(x=>x.id),c.version);}catch{fail('PATH','발급된 대진과 선택 기록이 일치하지 않아요.');}
   if(!state.winner||state.winner!==q.winner)fail('INCOMPLETE','결승까지 완료한 게임만 등록할 수 있어요.');
-  const row={id:s.id,collection:s.collection,version:s.version,size:s.size,winner:state.winner,at:new Date(env.now()).toISOString(),excluded:false,reason:''};
+  const row={id:s.id,collection:s.collection,version:s.version,size:s.size,winner:state.winner,at:new Date(env.now()).toISOString(),excluded:false,reason:'',nickname:G.nickname(s.game.nickname)};
   repo.addResult(row); // Append ledger first. A lost response is recovered by the lookup above.
   return receipt(row,false);
  }
@@ -27,7 +28,7 @@ function createService(catalog,repo,env){
   const rows=ids.map(id=>counts.get(id)||{id,wins:0,percent:0}).sort((a,b)=>b.wins-a.wins||a.id.localeCompare(b.id)).map((r,i)=>{if(r.wins!==prev)rank=i+1;prev=r.wins;return {...r,rank};});
   return {ok:true,environment:env.environment,collection:c.id,version:c.version,size:q.size,total:all.length,rows,updatedAt:new Date(env.now()).toISOString(),policy:'completed-game'};
  }
- function handle(q){if(!q||typeof q!=='object'||JSON.stringify(q).length>40000)fail('INPUT','요청 크기를 확인해 주세요.');if(q.action==='start')return start(q);if(q.action==='finish')return finish(q);if(q.action==='ranks')return ranks(q);if(q.action==='health')return {ok:true,environment:env.environment,policy:'completed-game',maxCandidates:256,collections:catalog.filter(c=>c.active!==false).map(c=>({id:c.id,version:c.version,rounds:c.rounds}))};fail('ACTION','지원하지 않는 요청입니다.');}
+ function handle(q){if(!q||typeof q!=='object'||JSON.stringify(q).length>40000)fail('INPUT','요청 크기를 확인해 주세요.');if(q.action==='start')return start(q);if(q.action==='finish')return finish(q);if(q.action==='ranks')return ranks(q);if(q.action==='health')return {ok:true,environment:env.environment,policy:'completed-game',maxCandidates:256,nicknameSupport:true,collections:catalog.filter(c=>c.active!==false).map(c=>({id:c.id,version:c.version,rounds:c.rounds}))};fail('ACTION','지원하지 않는 요청입니다.');}
  return {handle};
 }
 module.exports={createService};
