@@ -63,6 +63,27 @@
   ],
   "posts": [
     {
+      "id": "De0kosrO53l",
+      "account": "ramirang_",
+      "postedOn": "2026-10-23",
+      "label": "이보람",
+      "kind": "reel"
+    },
+    {
+      "id": "DexiKE0EqPZ",
+      "account": "seeya_tree.weathered",
+      "postedOn": "2026-10-22",
+      "label": "남규리",
+      "kind": "post"
+    },
+    {
+      "id": "DeylXZHBJG7",
+      "account": "_jerry.j_ramficial",
+      "postedOn": "2026-10-22",
+      "label": "이보람",
+      "kind": "reel"
+    },
+    {
       "id": "DevHpUdD8ba",
       "account": "seeya_tree.weathered",
       "postedOn": "2026-10-21",
@@ -74,6 +95,13 @@
       "account": "seeya_tree.weathered",
       "postedOn": "2026-10-21",
       "label": "씨야",
+      "kind": "post"
+    },
+    {
+      "id": "DewoSO5kqrZ",
+      "account": "ramirang_",
+      "postedOn": "2026-10-21",
+      "label": "이보람",
       "kind": "post"
     },
     {
@@ -154,10 +182,24 @@
       "kind": "reel"
     },
     {
+      "id": "Den-zQ7oB_x",
+      "account": "ramirang_",
+      "postedOn": "2026-10-18",
+      "label": "이보람",
+      "kind": "post"
+    },
+    {
       "id": "DelKT9HhYh2",
       "account": "_jerry.j_ramficial",
       "postedOn": "2026-10-17",
       "label": "씨야",
+      "kind": "reel"
+    },
+    {
+      "id": "DeleNNIORbO",
+      "account": "ramirang_",
+      "postedOn": "2026-10-17",
+      "label": "이보람",
       "kind": "reel"
     },
     {
@@ -168,8 +210,22 @@
       "kind": "post"
     },
     {
+      "id": "DeifhBayjOQ",
+      "account": "ramirang_",
+      "postedOn": "2026-10-16",
+      "label": "이보람",
+      "kind": "reel"
+    },
+    {
       "id": "DegOPSgBBsB",
       "account": "_jerry.j_ramficial",
+      "postedOn": "2026-10-15",
+      "label": "이보람",
+      "kind": "reel"
+    },
+    {
+      "id": "DegQZJZOlmz",
+      "account": "ramirang_",
       "postedOn": "2026-10-15",
       "label": "이보람",
       "kind": "reel"

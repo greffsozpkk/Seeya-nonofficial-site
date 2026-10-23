@@ -1680,5 +1680,66 @@
     "scope": "excerpt",
     "category": "concert",
     "basis": "2026-10-21 확인: 원본 영상 제목의 공연 일자·지역·곡명을 대조했습니다. 짧은 영상은 발췌, 여러 곡은 모음으로 구분합니다."
+  },
+  {
+    "archiveId": "20261022-yeonji-dahye-shoes",
+    "url": "https://www.youtube.com/watch?v=XrCSZIkhPRo",
+    "songIds": [
+      "shoes"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-23 원본 영상 제목·설명의 곡명과 공연/방송 날짜 대조. 짧은 영상은 발췌로 표시."
+  },
+  {
+    "archiveId": "v490-powertime-20150428",
+    "url": "https://www.youtube.com/watch?v=v64aGuaV_uM",
+    "songIds": [
+      "shoes",
+      "scent-of-a-woman"
+    ],
+    "scope": "multi",
+    "category": "live",
+    "basis": "2026-10-23 원본 영상 제목·설명의 곡명과 공연/방송 날짜 대조. 짧은 영상은 발췌로 표시."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=wc2MPa8_osM",
+    "songIds": [
+      "hot-girl"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-23 원본 영상 제목·설명의 곡명과 공연/방송 날짜 대조. 짧은 영상은 발췌로 표시."
+  },
+  {
+    "archiveId": "20261004-the-fan-goyang",
+    "url": "https://www.youtube.com/watch?v=-MsOkRjoUwk",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-10-23 원본 영상 제목·설명의 곡명과 공연/방송 날짜 대조. 짧은 영상은 발췌로 표시."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.instagram.com/ramirang_/reel/DeleNNIORbO/",
+    "songIds": [
+      "wonderful-you"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-23 원본 영상 제목·설명의 곡명과 공연/방송 날짜 대조. 짧은 영상은 발췌로 표시."
+  },
+  {
+    "archiveId": "20261010-the-fan-cheongju",
+    "url": "https://www.instagram.com/ramirang_/reel/DegQZJZOlmz/",
+    "songIds": [
+      "cotton-candy"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-23 원본 영상 제목·설명의 곡명과 공연/방송 날짜 대조. 짧은 영상은 발췌로 표시."
   }
 ]
