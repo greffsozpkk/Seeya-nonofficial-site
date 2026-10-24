@@ -542,9 +542,21 @@
         "url": "https://www.youtube.com/watch?v=Kr_CL0_xCSQ",
         "publishedDate": "2026-10-22",
         "autoDiscovery": true
+      },
+      {
+        "label": "오롱이",
+        "url": "https://www.youtube.com/watch?v=VotKzIeoTyg",
+        "publishedDate": "2026-10-23",
+        "autoDiscovery": true
+      },
+      {
+        "label": "오롱이",
+        "url": "https://www.youtube.com/watch?v=17HFl_no_6I",
+        "publishedDate": "2026-10-23",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-24T04:53:19.687806+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -3251,7 +3263,7 @@
     "id": "20260921-gyuri-mbc-noon-dj",
     "date": "2026-09-21",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-28",
+    "updatedAt": "2026-10-24T04:53:19.687806+00:00",
     "title": "남규리 · 정오의 희망곡 스페셜 DJ · 첫 방송",
     "program": "정오의 희망곡 김신영입니다",
     "type": "radio",
@@ -3282,6 +3294,12 @@
         "label": "MBC RADIO · 9월 21일 방송 공식 하이라이트 (9월 28일 공개)",
         "url": "https://www.youtube.com/watch?v=gMFepYmwpXk",
         "publishedDate": "2026-09-28"
+      },
+      {
+        "label": "Mhz 므흐즈: MBC RADIO",
+        "url": "https://www.youtube.com/watch?v=dRpmQVi6VOw",
+        "publishedDate": "2026-09-21",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -11923,7 +11941,14 @@
       "label": "KBS CoolFM · 공식 영상",
       "url": "https://www.youtube.com/watch?v=NWyOi58qPmM"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "뚝딱이 PD",
+        "url": "https://www.youtube.com/watch?v=4nAnVAHXbCU",
+        "publishedDate": "2026-01-05",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -11932,7 +11957,8 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "publishedDate": "2026-01-05"
+    "publishedDate": "2026-01-05",
+    "updatedAt": "2026-10-24T04:53:19.687806+00:00"
   },
   {
     "id": "v488-audit-040",
@@ -50470,5 +50496,63 @@
     "calendar": {
       "enabled": false
     }
+  },
+  {
+    "id": "discovered-1cb59f0908a9bd70",
+    "date": "2012-04-23",
+    "addedAt": "2026-10-24T04:53:19.687806+00:00",
+    "updatedAt": "2026-10-24T04:53:19.687806+00:00",
+    "title": "The Radio Star, Nam Gyu-ri, #15, 남규리 20080723",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "MBCentertainment",
+      "url": "https://www.youtube.com/watch?v=osAMW_MMM-E",
+      "publishedDate": "2012-04-23",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-04-23",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-0a3327a27ecdc1af",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-24T04:53:19.687806+00:00",
+    "updatedAt": "2026-10-24T04:53:19.687806+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-13)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=wP3vbVE2Gro",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
   }
 ]
