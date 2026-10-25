@@ -83,6 +83,19 @@ to.answersById['BEH-01'].lock='other';assert.equal(from.answersById['BEH-01'].lo
 assert.equal(C.carryAnswers(from,C.create('max','다른 사람')),0);
 assert.equal(C.carryAnswers(from,C.create('brief',from.displayName)),20);
 assert.equal(C.carryAnswers({...from,bankRevision:'old'},C.create('max',from.displayName)),0);
+const routePaths=new Set(require('../src/data/routes.json').map(r=>r.path));
+const prescriptions=[...Object.values(I.profiles.types).map(p=>p.prescription),...Object.values(I.profiles.fallbackPrescriptions)];
+assert.equal(new Set(prescriptions.map(p=>p.medicine)).size,18);
+assert.equal(new Set(prescriptions.map(p=>p.mission)).size,18);
+for(const p of prescriptions){
+ for(const k of ['medicine','dose','mission','after'])assert(typeof p[k]==='string'&&p[k].trim());
+ assert.deepEqual(Object.keys(p.link).sort(),['href','label']);
+ assert(p.link.href.startsWith('/')&&!p.link.href.startsWith('//'));
+ const url=new URL(p.link.href,'https://seeya-fanpage.com');assert.equal(url.origin,'https://seeya-fanpage.com');assert(routePaths.has(url.pathname));
+ assert(!p.link.href.includes('/test/'));assert(p.link.label);
+}
+assert.equal(I.explain(C.score(tied)).prescription,I.profiles.fallbackPrescriptions.balanced);
+assert.equal(I.explain(C.score(C.create('brief'))).prescription,I.profiles.fallbackPrescriptions.insufficient);
 console.log('PASS clinic model: agreed 20/60/148, 16 types, canonical A/B, 60/40 independent scoring, settings domain cap, context-only items, unknown bounds/thresholds, partial saves and safe carry.');
 
 const html=fs.readFileSync('game/clinic/test/index.html','utf8');assert(html.includes('noindex,nofollow'));assert(!html.includes('analytics.js')&&!html.includes('googletagmanager'));assert(!fs.readFileSync('sitemap.xml','utf8').includes('/game/clinic/test/'));assert(fs.readFileSync('game/clinic/index.html','utf8').includes('준비중'));assert(!fs.readFileSync('game/index.html','utf8').includes('/game/clinic/test/'));
@@ -93,7 +106,7 @@ const key=mode=>'seeya-clinic-test-progress-v2'+(mode==='max'?'':'-'+mode);
 const current=mode=>JSON.parse(values.get(key(mode)));
 const app={innerHTML:'',querySelector:q=>q==='#clinicName'?{value:nickname}:q==='#clinicCarry'?{checked}:q==='.clinic-progress'?{lastElementChild:{textContent:''}}:q==='progress'?{value:0}:q==='#clinicInventorySummary'?{textContent:''}:null,scrollIntoView(){},addEventListener:(e,fn)=>handlers[e]=fn};
 const notice={textContent:'',hidden:true};
-const canvas=()=>({width:0,height:0,getContext:()=>({fillRect(){},strokeRect(){},drawImage(){},measureText:t=>({width:String(t).length*15}),fillText:t=>pngLines.push(String(t))}),toBlob:fn=>fn({type:'image/png'})});
+const canvas=()=>{const surface={width:0,height:0,toBlob:fn=>fn({type:'image/png'})};surface.getContext=()=>({font:'20px sans-serif',fillRect(){},strokeRect(){},drawImage(){},measureText(t){const size=parseFloat(this.font)||20;return{width:[...String(t)].reduce((n,c)=>n+(c.charCodeAt(0)>255?size:size*.6),0)};},fillText(t,x,y){assert(y<surface.height,'all export text fits the sized output canvas');pngLines.push(String(t));}});return surface;};
 const ctx={require:p=>p.includes('clinic-interpretation')?I:p.includes('clinic-scoring')?C:require('../src/shared/common'),document:{getElementById:id=>id==='clinicApp'?app:notice,createElement:tag=>tag==='canvas'?canvas():tag==='dialog'?(dialog={innerHTML:'',querySelector:()=>({}),showModal(){this.open=true;},close(){},remove(){}}):{click(){},remove(){}},body:{append(){}}},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},window:{confirm:()=>true,print:()=>printed=true},crypto:{randomUUID:()=> 'clinic-fixture'},Date,Intl,JSON,Number,Math,String,URL:{createObjectURL:b=>{blob=b;return 'blob:fixture';},revokeObjectURL(){}},Promise,navigator:{clipboard:{writeText:async t=>{copied=t;}}},Image:class{constructor(){this.naturalWidth=200;this.naturalHeight=100;}async decode(){}},Blob:class{constructor(parts){this.text=parts.join('');}},setTimeout:fn=>fn()};
 const load=()=>vm.runInNewContext('(function(){'+source+'})();',ctx);
 const click=dataset=>handlers.click({target:{closest:()=>({dataset})}});
@@ -134,6 +147,27 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
  assert.equal(current('brief').stage,'result');assert.equal(current('detailed').answersById['BEH-01'].lock,'unused');
  await click({action:'home'});nickname='다른 사람';await click({start:'max'});assert.equal(C.answeredCount(current('max')),0);
  await click({action:'legacy'});assert(blob.text.includes('retain exactly'));assert.equal(values.get('seeya-clinic-test-progress-v1'),'{"legacy":"retain exactly"}');
+ const examples=C.bank.types.map(t=>{
+  const state=complete('brief');
+  C.axes.forEach((axis,i)=>state.questionOrder.filter(id=>C.byId[id].axis===axis).forEach(id=>state.answersById[id]=t.code[i]===C.bank.axes[axis].left?'left':'right'));
+  return state;
+ });
+ examples.push(clone(tied));
+ const unknown=complete('brief');for(const id of unknown.questionOrder)if(C.byId[id].kind==='preference')unknown.answersById[id]='unknown';examples.push(unknown);
+ for(const state of examples){
+  state.stage='result';state.completedAt=new Date().toISOString();assert.equal(C.restore(state),state);
+  const rx=I.explain(C.score(state)).prescription;
+  values.set(key(state.mode),JSON.stringify(state));load();await click({resume:state.mode});
+  const section=app.innerHTML.match(/<section class="clinic-rx"[\s\S]*?<\/section>/)?.[0];
+  assert(section&&section.includes(rx.medicine)&&section.includes(rx.mission));
+  assert.equal((section.match(/<a /g)||[]).length,1);assert(section.includes('href="'+rx.link.href+'"'));
+  await click({action:'copy'});for(const k of ['medicine','dose','mission','after'])assert(copied.includes(rx[k]));
+  assert.equal((copied.match(/https:\/\/seeya-fanpage.com/g)||[]).length,1);
+  pngLines=[];await click({action:'png'});const drawn=pngLines.join('');
+  for(const k of ['medicine','dose','mission','after'])assert(drawn.includes(rx[k]));
+  assert(drawn.includes('seeya-fanpage.com'+rx.link.href));
+ }
+ console.log('PASS prescriptions: all 16 distinct prescriptions and two unresolved fallbacks, one relevant public link, matching HTML/copy/PNG and dynamically sized export text.');
  ctx.localStorage.getItem=()=>'{broken';load();assert(notice.textContent.includes('읽을 수'));
  ctx.localStorage.getItem=()=>null;ctx.localStorage.setItem=()=>{throw Error('quota');};load();checked=false;await click({start:'brief'});assert(app.innerHTML.includes('현재 1 / 20'));assert(notice.textContent.includes('저장하지 못'));
  console.log('PASS clinic client: all 228 responses, partial inventory/reload, completion/review, 3-mode isolation, opted-in carry/name guard, legacy backup, HTML/copy/PNG ranges, PDF action, escaping/storage errors and public isolation.');
