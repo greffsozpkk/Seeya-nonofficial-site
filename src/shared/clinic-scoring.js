@@ -31,7 +31,13 @@ function restore(value){
  for(const [id,v] of Object.entries(value.answersById))if(!expected.includes(id)||!storable(id,v))return bad();
  for(const id of expected)if(value.displayDirections[id] !== (byId[id].displayOrder?.[0]==='right'))return bad();
  if(value.stage==='result'&&!Number.isFinite(Date.parse(value.completedAt)))return bad();
- return value.scoringRevision===scoringRevision?value:{...value,previousScoringRevision:value.scoringRevision,scoringRevision};
+ let restored=value.scoringRevision===scoringRevision?value:{...value,previousScoringRevision:value.scoringRevision,scoringRevision};
+ if(value.completion!==undefined){
+  const c=value.completion,valid=plain(c)&&value.stage==='question'&&Array.isArray(c.ids)&&c.ids.length>0&&c.ids.length<=expected.length&&new Set(c.ids).size===c.ids.length&&c.ids.every(id=>expected.includes(id)&&byId[id].kind==='preference')&&Number.isInteger(c.index)&&c.index>=0&&c.index<c.ids.length&&expected[value.currentIndex]===c.ids[c.index];
+  // A broken navigation queue must not discard otherwise valid saved answers.
+  if(!valid){restored={...restored};delete restored.completion;}
+ }
+ return restored;
 }
 function carryAnswers(from,to){
  if(!from||from.bankRevision!==bank.revision||from.scoringRevision!==scoringRevision||from.displayName!==to.displayName)return 0;

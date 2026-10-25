@@ -1,6 +1,6 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-const C=require('../src/shared/clinic-scoring'),I=require('../src/shared/clinic-interpretation'),Summary=require('../src/client/clinic-summary');
+const C=require('../src/shared/clinic-scoring'),I=require('../src/shared/clinic-interpretation'),Summary=require('../src/client/clinic-summary'),Completion=require('../src/shared/clinic-completion');
 const clone=v=>JSON.parse(JSON.stringify(v));
 function response(q,high=true,pole='left'){
  if(q.kind==='inventory')return Object.fromEntries(q.items.map(i=>[i.id,high?'seeya':'other']));
@@ -165,6 +165,46 @@ for(const p of prescriptions){
 }
 assert.equal(I.explain(C.score(tied)).prescription,I.profiles.types.MRIP.prescription);
 assert.equal(I.explain(C.score(C.create('brief'))).prescription,I.profiles.fallbackPrescriptions.insufficient);
+// Completion revisits only the minimum unresolved A/B answers, never depth items.
+for(const mode of Object.keys(selected)){
+ const ready=complete(mode),originalReady=JSON.stringify(ready),readyPlan=Completion.plan(ready);
+ assert.equal(readyPlan.needed,0);assert.deepEqual(readyPlan.ids,[]);assert.equal(JSON.stringify(ready),originalReady);
+ const blank=C.create(mode),beforeBlank=JSON.stringify(blank),emptyPlan=Completion.plan(blank);
+ const expected=C.axes.reduce((sum,axis)=>sum+Math.ceil(blank.questionOrder.filter(id=>C.byId[id].axis===axis).length*.8),0);
+ assert.equal(emptyPlan.needed,expected);assert.equal(emptyPlan.ids.length,expected);assert.equal(emptyPlan.missing,expected);assert.equal(emptyPlan.unknown,0);
+ assert(emptyPlan.ids.every(id=>C.byId[id].kind==='preference'));assert.equal(new Set(emptyPlan.ids).size,expected);
+ assert.deepEqual(emptyPlan.ids,[...emptyPlan.ids].sort((a,b)=>blank.questionOrder.indexOf(a)-blank.questionOrder.indexOf(b)));
+ assert.equal(JSON.stringify(blank),beforeBlank,'planning must not mutate stored progress');
+ for(const axis of C.axes){
+  const state=complete(mode),ids=state.questionOrder.filter(id=>C.byId[id].axis===axis),required=Math.ceil(ids.length*.8),inactive=ids.slice(required-1);
+  inactive.forEach(id=>delete state.answersById[id]);state.answersById[inactive[0]]='unknown';
+  const before=JSON.stringify(state),depth=C.score(state).depthScore,plan=Completion.plan(state);
+  assert.equal(plan.needed,1);assert.equal(plan.ids.length,1);assert.equal(C.byId[plan.ids[0]].axis,axis);
+  assert.equal(plan.ids[0],inactive.length>1?inactive[1]:inactive[0],'unanswered questions take priority over a deliberate unknown');
+  assert.equal(plan.missing,inactive.length>1?1:0);assert.equal(plan.unknown,inactive.length>1?0:1);
+  const row=plan.axes.find(row=>row.axis===axis);assert(row);assert.equal(row.required,required);assert.equal(row.valid,required-1);assert.equal(row.needed,1);
+  assert.equal(JSON.stringify(state),before);
+  const answers=clone(state.answersById),order=[...state.questionOrder];Completion.start(state);
+  assert.deepEqual(state.answersById,answers);assert.deepEqual(state.questionOrder,order);assert.equal(state.stage,'question');
+  assert.equal(state.questionOrder[state.currentIndex],plan.ids[0]);assert.deepEqual(Completion.session(state),state.completion);
+  assert.deepEqual(Completion.session(C.restore(clone(state))),state.completion,'valid completion progress survives restore');
+  state.answersById[plan.ids[0]]='left';assert(Completion.session(state),'an answer must not discard its active queue before Next');
+  assert.equal(Completion.plan(state).needed,0);assert(C.score(state).typeCode);assert.equal(C.score(state).depthScore,depth);
+  Completion.clear(state);assert.equal(Completion.session(state),null);assert.equal(state.completion,undefined);
+  Completion.start(state);assert.equal(state.stage,'review');assert.equal(state.completion,undefined);
+ }
+ const unknown=complete(mode);for(const id of unknown.questionOrder)if(C.byId[id].kind==='preference')unknown.answersById[id]='unknown';
+ const unknownPlan=Completion.plan(unknown);assert.equal(unknownPlan.needed,expected);assert.equal(unknownPlan.missing,0);assert.equal(unknownPlan.unknown,expected);
+ const snapshot=clone(unknown);Completion.start(unknown);assert.deepEqual(unknown.answersById,snapshot.answersById);assert.equal(C.score(unknown).depthScore,100);
+ const session=unknown.completion,preference=session.ids[0],depthId=unknown.questionOrder.find(id=>C.byId[id].kind!=='preference');
+ for(const completion of [null,{}, {ids:[],index:0}, {ids:[preference,preference],index:0}, {ids:[depthId],index:0}, {ids:['unknown-question'],index:0}, {ids:[preference],index:1}, {ids:[preference],index:-1}, {ids:[preference],index:.5}]){
+  const broken={...unknown,completion},before=JSON.stringify(broken);assert.equal(Completion.session(broken),null);
+  const restored=C.restore(broken);assert.equal(restored.completion,undefined);assert.deepEqual(restored.answersById,unknown.answersById);
+  assert.equal(restored.runId,unknown.runId);assert.equal(restored.currentIndex,unknown.currentIndex);assert.equal(JSON.stringify(broken),before,'recovery must leave the original saved object intact');
+ }
+ assert.equal(Completion.session({...unknown,stage:'result'}),null);assert.equal(Completion.session({...unknown,currentIndex:(unknown.currentIndex+1)%unknown.questionOrder.length}),null);
+}
+console.log('PASS clinic completion model: per-mode thresholds, minimal unanswered-first queues, unknown-only answers, ready-axis exclusion, depth preservation, persisted sessions and malformed queue rejection.');
 console.log('PASS clinic model: agreed 20/60/148, 16 types, canonical A/B, 60/40 independent scoring, settings domain cap, context-only items, zero missing / unused points, representative tie resolution, stable version migration, partial saves and safe carry.');
 
 const html=fs.readFileSync('game/clinic/test/index.html','utf8');assert(html.includes('noindex,nofollow'));assert(!html.includes('analytics.js')&&!html.includes('googletagmanager'));assert(!fs.readFileSync('sitemap.xml','utf8').includes('/game/clinic/test/'));assert(fs.readFileSync('game/clinic/index.html','utf8').includes('준비중'));assert(!fs.readFileSync('game/index.html','utf8').includes('/game/clinic/test/'));
@@ -180,7 +220,7 @@ const certificate={get outerHTML(){return app.innerHTML.match(/<article id="clin
 const capture={capture:async target=>{captureCount++;assert.equal(target,certificate,'capture the actual certificate node, not a text summary');capturedHTML=target.outerHTML;if(captureGate)await captureGate;if(captureFailure)throw Error('이미지 저장 실패 검사');return {blob:{type:'image/png'},width:1600,height:3200};}};
 const summaryCapture={capture:async data=>{summaryCount++;summaryData=clone(data);if(summaryGate)await summaryGate;if(summaryFailure)throw Error('요약 이미지 저장 실패 검사');return {blob:{type:'image/png'},width:1080,height:1350};}};
 const printing={install:getCertificate=>({prepare(){assert.equal(getCertificate(),certificate);preparedHTML=getCertificate().outerHTML;if(prepareFailure)throw Error('인쇄 준비 실패 검사');}})};
-const ctx={require:p=>p==='./clinic-image'?capture:p==='./clinic-summary'?summaryCapture:p==='./clinic-print'?printing:p.includes('clinic-interpretation')?I:p.includes('clinic-scoring')?C:require('../src/shared/common'),document:{fonts:{ready:Promise.resolve()},getElementById:id=>id==='clinicApp'?app:id==='clinicCertificate'?(certificate.outerHTML?certificate:null):notice,createElement:tag=>tag==='dialog'?(dialog={innerHTML:'',setAttribute(){},querySelector:()=>({}),showModal(){this.open=true;},close(){},remove(){}}):{click(){},remove(){}},body:{append(){}}},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},window:{confirm:()=>true,print:()=>{assert(preparedHTML,'prepare page structure before opening print');printed=true;}},crypto:{randomUUID:()=> 'clinic-fixture'},Date,Intl,JSON,Number,Math,String,URL:{createObjectURL:b=>{blob=b;return 'blob:fixture';},revokeObjectURL(){}},Promise,Blob:class{constructor(parts){this.text=parts.join('');}},setTimeout:fn=>fn()};
+const ctx={require:p=>p==='./clinic-image'?capture:p==='./clinic-summary'?summaryCapture:p==='./clinic-print'?printing:p.includes('clinic-interpretation')?I:p.includes('clinic-scoring')?C:p.includes('clinic-completion')?Completion:require('../src/shared/common'),document:{fonts:{ready:Promise.resolve()},getElementById:id=>id==='clinicApp'?app:id==='clinicCertificate'?(certificate.outerHTML?certificate:null):notice,createElement:tag=>tag==='dialog'?(dialog={innerHTML:'',setAttribute(){},querySelector:()=>({}),showModal(){this.open=true;},close(){},remove(){}}):{click(){},remove(){}},body:{append(){}}},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},window:{confirm:()=>true,print:()=>{assert(preparedHTML,'prepare page structure before opening print');printed=true;}},crypto:{randomUUID:()=> 'clinic-fixture'},Date,Intl,JSON,Number,Math,String,URL:{createObjectURL:b=>{blob=b;return 'blob:fixture';},revokeObjectURL(){}},Promise,Blob:class{constructor(parts){this.text=parts.join('');}},setTimeout:fn=>fn()};
 const load=()=>vm.runInNewContext('(function(){'+source+'})();',ctx);
 const click=(dataset,button=exportButtons.find(b=>b.dataset.action===dataset.action)||{dataset})=>handlers.click({target:{closest:()=>button}});
 const change=(value,item)=>handlers.change({target:{name:item?'':'clinicAnswer',value,dataset:item?{inventoryItem:item}:{}}});
@@ -289,11 +329,61 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   await click({action:'summary'});assert.equal(summaryData.name,expected);assert(Summary.renderMarkup(summaryData).includes(expected));
   assert.equal(values.get(key('brief')),raw);
  }
+ // Shipped UI: each mode completes only deficient preference axes, with no forced choice.
+ checked=false;
+ for(const mode of ['brief','detailed','max']){
+  const fixture=complete(mode);fixture.stage='review';
+  for(const [i,axis] of ['MS','IT'].entries()){
+   const ids=fixture.questionOrder.filter(id=>C.byId[id].axis===axis),required=Math.ceil(ids.length*.8);
+   for(const id of ids.slice(required-1)){if(i===0)fixture.answersById[id]='unknown';else delete fixture.answersById[id];}
+  }
+  const baseline=clone(fixture.answersById),baselineDepth=C.score(fixture).depthScore,plan=Completion.plan(fixture);
+  assert.equal(plan.needed,2);assert.equal(plan.unknown,1);assert.equal(plan.missing,1);
+  const otherModes=Object.keys(selected).filter(m=>m!==mode).map(m=>[m,values.get(key(m))]);
+  values.set(key(mode),JSON.stringify(fixture));load();await click({resume:mode});
+  assert(app.innerHTML.includes('data-action="completion-start"'));
+  await click({action:'completion-start'});
+  assert.equal(current(mode).stage,'question');assert.deepEqual(current(mode).completion.ids,plan.ids);
+  assert.equal(current(mode).questionOrder[current(mode).currentIndex],plan.ids[0]);
+  assert(app.innerHTML.includes('data-action="completion-next"'));assert(app.innerHTML.includes('data-action="completion-review"'));
+  change('right');assert.equal(current(mode).completion.index,0,'choosing an answer must not auto-advance');
+  await click({action:'home'});await click({resume:mode});assert.equal(current(mode).completion.index,0);
+  load();await click({resume:mode});assert.equal(current(mode).completion.index,0);assert(app.innerHTML.includes('value="right" checked'));
+  await click({action:'completion-next'});assert.equal(current(mode).completion.index,1);
+  await click({action:'completion-previous'});assert.equal(current(mode).completion.index,0);assert(app.innerHTML.includes('value="right" checked'));
+  change('left');await click({action:'completion-next'});change('unknown');
+  await click({action:'completion-next'});
+  assert.equal(current(mode).stage,'review');assert.equal(current(mode).completion,undefined,'the finite queue must end rather than cycle unknown answers');
+  assert.equal(Completion.plan(current(mode)).needed,1);assert(app.innerHTML.includes('data-action="completion-start"'));
+  assert.equal(current(mode).answersById[plan.ids[1]],'unknown');assert.equal(C.score(current(mode)).depthScore,baselineDepth);
+  await click({action:'complete'});assert.equal(current(mode).stage,'result');assert.equal(C.score(current(mode)).typeCode,null);
+  assert(app.innerHTML.includes('data-action="completion-start"'),'partial results still offer a route to complete the type');
+  await click({action:'completion-start'});assert.equal(current(mode).completion.ids.length,1);
+  const finalId=current(mode).questionOrder[current(mode).currentIndex];change('left');await click({action:'completion-next'});
+  assert.equal(current(mode).stage,'review');assert.equal(Completion.plan(current(mode)).needed,0);
+  assert(!app.innerHTML.includes('data-action="completion-start"'),'no completion prompt once every axis meets its threshold');
+  await click({action:'complete'});assert(C.score(current(mode)).typeCode);assert.equal(C.score(current(mode)).depthScore,baselineDepth);
+  assert(!app.innerHTML.includes('data-action="completion-start"'));
+  const touched=new Set([...plan.ids,finalId]);
+  for(const id of fixture.questionOrder)if(!touched.has(id))assert.deepEqual(current(mode).answersById[id],baseline[id],'other answers must stay unchanged: '+id);
+  assert.deepEqual(current(mode).questionOrder,fixture.questionOrder);
+  for(const [otherMode,raw] of otherModes)assert.equal(values.get(key(otherMode)),raw,'completion must not alter another mode');
+  // Leave midway to normal review, then revisit an ordinary question without a stale queue.
+  values.set(key(mode),JSON.stringify(fixture));load();await click({resume:mode});await click({action:'completion-start'});
+  await click({action:'completion-review'});assert.equal(current(mode).stage,'review');assert.equal(current(mode).completion,undefined);
+  await click({action:'completion-start'});await click({action:'review'});assert.equal(current(mode).stage,'review');assert.equal(current(mode).completion,undefined);
+  await click({action:'completion-start'});await click({question:'0'});assert.equal(current(mode).stage,'question');assert.equal(current(mode).completion,undefined);
+  // Pressing Next without answering leaves the original missing/unknown answers intact.
+  values.set(key(mode),JSON.stringify(fixture));load();await click({resume:mode});await click({action:'completion-start'});
+  await click({action:'completion-next'});await click({action:'completion-next'});
+  assert.equal(current(mode).stage,'review');assert.deepEqual(current(mode).answersById,baseline);assert.equal(Completion.plan(current(mode)).needed,2);
+ }
+ console.log('PASS clinic completion UI: all three modes, minimum queue, explicit Next, pause/reload/back, unknown/skip, partial-result entry, ordinary-review exit, preservation and no prompt after threshold.');
  // Actual UI: permit skipped questions and a partial inventory, then export one score.
  checked=false;nickname='빈 응답 검토';await click({action:'home'});await click({start:'brief'});
  await click({action:'next'});assert.equal(current('brief').currentIndex,1);
  await click({question:String(selected.brief.ids.indexOf('BEH-01'))});change('seeya','lock');
- await click({action:'review'});assert(app.innerHTML.includes('미응답 0점으로 진단서 발급'));
+ await click({action:'review'});assert(app.innerHTML.includes('지금 답변으로 결과 보기'));
  await click({action:'complete'});assert.equal(C.restore(current('brief')).stage,'result');assert(app.innerHTML.includes('2</strong>'));
  await click({action:'png'});assert(capturedHTML.includes('2</strong>'));assert(!capturedHTML.includes('2~'));
  await click({action:'summary'});assert.equal(summaryData.model.depthDisplay,'2');assert.equal(summaryData.model.typeCode,null);

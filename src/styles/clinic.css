@@ -33,3 +33,19 @@
 .clinic-image-dialog a:focus-visible,.clinic-image-dialog button:focus-visible{outline:3px solid #9a5575;outline-offset:3px}
 @media(max-width:600px){.clinic-image-dialog{padding:18px}.clinic-image-dialog[open]{gap:14px}.clinic-image-dialog .clinic-image-actions{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:10px}.clinic-image-dialog .clinic-image-actions a,.clinic-image-dialog .clinic-image-actions button{font-size:14px;padding:12px 10px}}
 @media print{.clinic-image-dialog{display:none!important}}
+
+.clinic-completion{margin:24px 0;padding:22px 24px;background:#f9edf3;border:1px solid #e7d3dc;border-radius:14px;color:#45363e}
+.clinic-completion h3{margin:0 0 10px;font-size:20px;line-height:1.6;word-break:keep-all}
+.clinic-completion p{margin:10px 0;line-height:1.85;word-break:keep-all}
+.clinic-completion .clinic-actions{margin:20px 0 0}
+.clinic-completion .clinic-actions button{flex:1 1 220px}
+.clinic-completion-origin{color:#8f4264;font-size:13px;margin:16px 0 6px}
+.clinic-completion-list,.clinic-review-details{margin-top:18px}
+.clinic-completion-list summary,.clinic-review-details summary{padding:10px 0;cursor:pointer;color:#75465d;font-size:14px;line-height:1.7}
+.clinic-completion-list ul{padding:0;list-style:none;margin:6px 0 0}
+.clinic-completion-list li{display:flex;align-items:baseline;gap:12px;padding:10px 0;border-top:1px solid #ead6df;font-size:13px;line-height:1.7}
+.clinic-completion-list li span{min-width:42px;color:#8f4264;flex-shrink:0}
+.clinic-review-details{border-top:1px solid #e7d3dc;padding-top:8px}
+.clinic-completion-ready{background:#fcf7fa}
+@media(max-width:600px){.clinic-completion{padding:19px 16px}.clinic-completion h3{font-size:18px}.clinic-progress{flex-wrap:wrap}.clinic-completion .clinic-actions{gap:10px}.clinic-completion .clinic-actions button{width:100%;flex-basis:100%;line-height:1.6}.clinic-qnav button{padding:12px 15px}.clinic-completion-list li{gap:8px}}
+@media print{.clinic-completion{display:none!important}}
