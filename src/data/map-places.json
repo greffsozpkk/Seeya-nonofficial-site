@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-10-21",
+  "checkedAt": "2026-10-25",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -3959,6 +3959,39 @@
       "coordinateSource": "https://qab.purpleo.kr/article/4855",
       "recordId": "20261021-boram-seongsu-vlog",
       "note": "날짜는 영상 공개일입니다. 실제 방문은 영상에서 수원 콘서트 전날로 소개합니다."
+    },
+    {
+      "id": "bangsan-market",
+      "name": "방산 종합시장",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 중구 동호로37길 20 (주교동)",
+      "coordinates": [
+        37.56872339074792,
+        127.0008053125189
+      ],
+      "category": "쇼핑",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-10-25",
+      "dateBasis": "영상 게시일",
+      "story": "귤멍 EP.68에서 남규리가 길고양이 겨울집을 만들 재료를 고른 시장입니다.\n1분 2초에 시장 입구가 등장하고 박스·시트지·인조 잔디 등을 사는 장면이 이어집니다.",
+      "source": {
+        "label": "남규리의 귤멍 EP.68 · 방산시장 방문",
+        "url": "https://www.youtube.com/watch?v=6mik2QfyVCY&t=62s",
+        "publishedDate": "2026-10-25"
+      },
+      "addressSource": "https://access.visitkorea.or.kr/ms/detail.do?cotId=fd821f8c-24f6-4732-ad5a-a6d85df1070e",
+      "coordinateSource": "https://access.visitkorea.or.kr/ms/detail.do?cotId=fd821f8c-24f6-4732-ad5a-a6d85df1070e",
+      "recordId": "20261025-gyuri-gyulmung68",
+      "checkedAt": "2026-10-25",
+      "locationPrecision": "area",
+      "note": "시장 전체의 대표 위치입니다. 영상에 나온 개별 점포 위치나 고양이 집 설치 장소를 뜻하지 않습니다. 날짜는 영상 공개일입니다."
     }
   ],
   "researchQueue": [
@@ -5576,7 +5609,7 @@
     ]
   },
   "archiveAudit": {
-    "checkedAt": "2026-10-14",
+    "checkedAt": "2026-10-25",
     "rows": [
       {
         "placeId": "khu-grand-peace-palace",
@@ -6223,6 +6256,12 @@
         "placeId": "understand-avenue",
         "recordId": "20261021-boram-seongsu-vlog",
         "status": "existing"
+      },
+      {
+        "placeId": "bangsan-market",
+        "recordId": "20261025-gyuri-gyulmung68",
+        "status": "linked",
+        "reason": "공식 영상의 시장 방문과 아카이브 기록 연결"
       }
     ]
   }

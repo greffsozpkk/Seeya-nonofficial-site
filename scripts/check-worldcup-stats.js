@@ -50,12 +50,15 @@ async function checkTransport(){
 }
 async function checkRemoteClient(){
  const vm=require('node:vm'),values=new Map(),timers=[],nodes={},listeners={};let click,requestId=0;
+ // The client and fake server must share a clock when checking session expiry.
+ class TestDate extends Date{constructor(...args){super(...(args.length?args:[now]));}static now(){return now;}}
  const node=()=>({innerHTML:'',textContent:'',hidden:false,focus(){},scrollIntoView(){},setAttribute(){}});
  const app=node();app.addEventListener=(name,fn)=>click=fn;app.querySelectorAll=()=>[];app.querySelector=selector=>selector.includes('wcSize')?{value:'16'}:selector==='#wcJoinStats'?{checked:true}:node();
  const storage={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},conf={endpoint:'https://script.google.com/macros/s/test_deployment/exec',environment:'test'};
  const remote=create(conf,{storage,uuid:()=> 'ui-browser-client',now:()=>now,fetch:async(u,o)=>{const q=JSON.parse(o.body);return {ok:true,type:'cors',json:async()=>service.handle(q)};}});
  nodes.worldcupApp=app;nodes.wcNotice=node();nodes.worldcupData={textContent:JSON.stringify({collections:catalog,stats:conf})};nodes.wcSyncStatus=node();
  const ctx={require:n=>n==='../shared/worldcup-presentation'?require('../src/shared/worldcup-presentation'):n==='../shared/worldcup'?G:n==='./worldcup-stats'?{create:()=>remote}:n==='../shared/passport-play-save'?require('../src/shared/passport-play-save'):{esc:s=>String(s)},document:{getElementById:id=>nodes[id],createElement:()=>node(),head:{append(){}}},window:{YT:{Player:function(){this.destroy=()=>{};this.pauseVideo=()=>{};}},confirm:()=>true,addEventListener:(n,fn)=>listeners[n]=fn},localStorage:storage,location:{origin:'https://example.test',pathname:'/game/worldcup/test/',search:'?type=solo'},history:{replaceState(){}},crypto:{randomUUID:()=> 'ui-request-'+(++requestId)},URLSearchParams,Date,Math,Promise,setTimeout:fn=>{timers.push(fn);return 1;},clearTimeout(){},navigator:{}};
+ ctx.Date=TestDate;
  const run=()=>vm.runInNewContext('(function(){'+fs.readFileSync(path.resolve(__dirname,'../src/client/worldcup.js'),'utf8')+'})();',ctx);run();
  const button=dataset=>({dataset,disabled:false,insertAdjacentElement(){}}),tap=async dataset=>click({target:{closest:()=>button(dataset)}});
  await tap({action:'start'});let g=JSON.parse(values.get('seeya-worldcup-test-solo-v1'));assert(g.remote&&g.initial.length===16);now+=20000;

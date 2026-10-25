@@ -19,7 +19,7 @@
     const domains = groups.map(name => {
       const values = q.items.filter(i => i.group === name).map(i => answers[i.id]);
       if (values.includes('seeya')) return {name, low: 1, high: 1, known: 1};
-      if (values.some(v => !allowed.has(v)) || values.every(v => v === 'unused')) return {name, low: 0, high: 1, known: 0};
+      if (values.some(v => !allowed.has(v)) || values.every(v => v === 'unused')) return {name, low: 0, high: 0, known: 0};
       return {name, low: 0, high: 0, known: 1};
     });
     const mean = key => domains.reduce((n, d) => n + d[key], 0) / domains.length;
@@ -36,7 +36,7 @@
       const n = q.scoreValues[value];
       return {low: n, high: n, known: 1};
     }
-    return {low: 0, high: 1, known: 0};
+    return {low: 0, high: 0, known: 0};
   }
   function range(low, high) {
     const exact = Math.abs(high - low) < 1e-8;
@@ -83,16 +83,14 @@
         groups[q.scoringGroup] = (groups[q.scoringGroup] || 0) + b.known;
       }
       const max = qs.reduce((n, q) => n + q.weight, 0);
-      const ready = known + 1e-8 >= max * .8 && (name === 'emotion'
-        ? Object.values(groups).every(n => n > 0)
-        : (data.selectedForm?.activityIds || ['BEH-04', 'BEH-05', 'BEH-06']).filter(id => rows[id]?.known === 1).length >= (data.selectedForm?.minimumActivityAnswers || 2));
-      return {low, high, known, max, ready, groups, rows, display: ready ? range(low, high) : null};
+      // Unanswered / unavailable points stay at zero; the denominator stays fixed.
+      return {low, high:low, known, max, ready:true, groups, rows, display:range(low,low)};
     }
     const emotion = part('emotion'), behavior = part('behavior');
     const ready = emotion.ready && behavior.ready;
     const observed = data.questions.filter(q => answered(q, answers[q.id])).length;
     return {mode, formLabel:data.selectedForm?.label || 'MAX', typeCode, typeName, axisResults, emotion, behavior, ready,
-      total: ready ? range(emotion.low + behavior.low, emotion.high + behavior.high) : null,
+      total: range(emotion.display.low + behavior.display.low, emotion.display.low + behavior.display.low),
       answered: observed, totalQuestions: data.questions.length};
   }
   return {inventory, answered, bound, range, forForm, score};

@@ -1741,5 +1741,57 @@
     "scope": "excerpt",
     "category": "concert",
     "basis": "2026-10-23 원본 영상 제목·설명의 곡명과 공연/방송 날짜 대조. 짧은 영상은 발췌로 표시."
+  },
+  {
+    "archiveId": "20261023-yeonji-dahye-scent",
+    "url": "https://www.youtube.com/watch?v=FJIfW94nGBk",
+    "songIds": [
+      "scent-of-a-woman"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-25 원본 빡다혜 채널의 제목·설명에서 김연지와 곡명 확인. 2026-10-23 영상 공개일, 23초 라이브 발췌."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.youtube.com/watch?v=-mUSRFlI450",
+    "songIds": [
+      "like-spring",
+      "nevertheless-us"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-25 원본 영상 제목의 날짜·공연·곡명 확인. 여러 곡을 담은 영상은 모음으로 연결하며, 출처의 업로드일로 공연을 새로 만들지 않음."
+  },
+  {
+    "archiveId": "20260912-the-fan-daegu",
+    "url": "https://www.youtube.com/watch?v=4E8275zlFy8",
+    "songIds": [
+      "shoes"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-25 원본 영상 제목의 날짜·공연·곡명 확인. 여러 곡을 담은 영상은 모음으로 연결하며, 출처의 업로드일로 공연을 새로 만들지 않음."
+  },
+  {
+    "archiveId": "v481-archive-021",
+    "url": "https://www.youtube.com/watch?v=NLkET4ZUYtQ",
+    "songIds": [
+      "love-greeting",
+      "marry-me"
+    ],
+    "scope": "multi",
+    "category": "concert",
+    "basis": "2026-10-25 원본 영상 제목의 날짜·공연·곡명 확인. 여러 곡을 담은 영상은 모음으로 연결하며, 출처의 업로드일로 공연을 새로 만들지 않음."
+  },
+  {
+    "archiveId": "20060709-seeya-inkigayo",
+    "url": "https://www.youtube.com/watch?v=jJypqIDNcv4",
+    "songIds": [
+      "shoes"
+    ],
+    "scope": "single",
+    "category": "broadcast",
+    "basis": "2026-10-25 원본 영상 제목의 날짜·공연·곡명 확인. 여러 곡을 담은 영상은 모음으로 연결하며, 출처의 업로드일로 공연을 새로 만들지 않음."
   }
 ]

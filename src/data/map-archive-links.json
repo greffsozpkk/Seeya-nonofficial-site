@@ -121,7 +121,9 @@
     "미숙이네 운남동": "misukine-unnam",
     "피지피지 PZPZ": "pzpz-hongdae",
     "파이프그라운드 서울숲점": "pipeground-seoul-forest",
-    "언더스탠드에비뉴": "understand-avenue"
+    "언더스탠드에비뉴": "understand-avenue",
+    "방산 종합시장": "bangsan-market",
+    "방산시장": "bangsan-market"
   },
   "records": {
     "20260829-the-fan-seoul": [
@@ -307,6 +309,9 @@
     "20261021-boram-seongsu-vlog": [
       "pipeground-seoul-forest",
       "understand-avenue"
+    ],
+    "20261025-gyuri-gyulmung68": [
+      "bangsan-market"
     ]
   }
 }

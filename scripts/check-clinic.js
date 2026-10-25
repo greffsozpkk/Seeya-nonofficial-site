@@ -42,9 +42,9 @@ for(const [mode,count,emotionCount,behaviorCount] of [['brief',20,4,4],['detaile
  for(const q of qs.filter(q=>q.area==='emotion'))low.answersById[q.id]='5';
  assert.equal(C.score(low).depthScore,60);
  const uncertain=complete(mode);uncertain.answersById['BEH-01']=Object.fromEntries(setting.items.map(i=>[i.id,'unused']));
- assert.deepEqual(C.score(uncertain).depthRange,{low:95,high:100,exact:false});
- assert.equal(C.score(uncertain).depthScore,null);assert.equal(C.score(uncertain).depthReady,true);
- assert.equal(C.rangeText(C.score(uncertain).depthRange),'95~100');
+ assert.deepEqual(C.score(uncertain).depthRange,{low:95,high:95,exact:true});
+ assert.equal(C.score(uncertain).depthScore,95);assert.equal(C.score(uncertain).depthReady,true);
+ assert.equal(C.rangeText(C.score(uncertain).depthRange),'95');
  for(const q of qs.filter(q=>q.kind==='preference'))uncertain.answersById[q.id]='unknown';
  assert.equal(C.score(uncertain).typeCode,null);assert.equal(C.score(uncertain).possibleTypes.length,0);
  assert.deepEqual(C.score(high).axisRatios,C.score(low).axisRatios);
@@ -55,7 +55,7 @@ for(const [mode,count,emotionCount,behaviorCount] of [['brief',20,4,4],['detaile
   assert.deepEqual(I.explain({...sc,depthScore:0}),I.explain({...sc,depthScore:100}));
  }
  const irrelevant=C.create(mode);for(const q of C.bank.questions)if(!f.ids.includes(q.id))irrelevant.answersById[q.id]=response(q);
- assert.equal(C.score(irrelevant).answered,0);assert.equal(C.score(irrelevant).depthRange,null);
+ assert.equal(C.score(irrelevant).answered,0);assert.equal(C.score(irrelevant).depthScore,0);
 }
 const context=complete(),before=C.score(context).depthRange;
 context.answersById['BEH-02']=Object.fromEntries(C.byId['BEH-02'].items.map(i=>[i.id,'unused']));context.answersById['BEH-07']='no-opportunity';
@@ -66,16 +66,16 @@ assert.equal(C.engine.inventory(setting,{...other,lock:'seeya',home:'seeya',keyb
 assert.equal(C.engine.bound(C.byId['BEH-05'],'unavailable').known,0);assert.equal(C.engine.bound(C.byId['BEH-05'],'0').known,1);
 const weights=complete('brief');weights.answersById['BEH-05']='0';assert.equal(C.score(weights).depthScore,85);
 const detailed=complete('detailed');detailed.answersById['BEH-05']='0';assert.equal(C.score(detailed).depthScore,92);
-const missing=complete('brief');missing.answersById['MAX2-DEPTH-001']='unknown';assert.equal(C.score(missing).depthReady,false);
+const missing=complete('brief');missing.answersById['MAX2-DEPTH-001']='unknown';assert.equal(C.score(missing).depthReady,true);assert.equal(C.score(missing).depthScore,85);
 missing.answersById['MAX2-MS-001']='unknown';assert.equal(C.score(missing).axisRatios.MS.ready,false);
 const missingGroup=complete();for(const q of C.bank.questions.filter(q=>q.scoringGroup==='기대와 기다림'))missingGroup.answersById[q.id]='unknown';
-assert.equal(C.score(missingGroup).emotion.ready,false);
+assert.equal(C.score(missingGroup).emotion.ready,true);
 const tied=complete('detailed');for(const a of C.axes)tied.questionOrder.filter(id=>C.byId[id].axis===a).forEach((id,i)=>tied.answersById[id]=i<5?'left':'right');
 assert.equal(C.score(tied).typeCode,null);assert.equal(C.score(tied).possibleTypes.length,16);assert.equal(C.score(tied).axisRatios.MS.left,50);
 assert.equal(I.explain(C.score(tied)).meaning.length,0);
 const partial=C.create('brief');partial.answersById['BEH-01']={lock:'seeya',home:''};
 assert.equal(C.restore(partial),partial);assert.equal(C.answeredCount(partial),0);assert(!C.validAnswer('BEH-01',partial.answersById['BEH-01']));
-const good=complete();for(const patch of [{bankRevision:'old'},{formRevision:'old'},{scoringRevision:'old'},{currentIndex:999},{answersById:{'MAX2-MS-001':1}},{answersById:{'BEH-01':{noSuch:'other'}}},{questionOrder:good.questionOrder.slice(1)},{stage:'result',completedAt:'invalid'},{stage:'result',completedAt:new Date().toISOString(),answersById:{}},{displayDirections:{}}])assert.throws(()=>C.restore({...good,...patch}));
+const good=complete();for(const patch of [{bankRevision:'old'},{formRevision:'old'},{scoringRevision:'old'},{currentIndex:999},{answersById:{'MAX2-MS-001':1}},{answersById:{'BEH-01':{noSuch:'other'}}},{questionOrder:good.questionOrder.slice(1)},{stage:'result',completedAt:'invalid'},{displayDirections:{}}])assert.throws(()=>C.restore({...good,...patch}));
 assert(!C.validAnswer('BEH-05','999'));assert(!C.validAnswer('MAX2-MS-001',1));
 const from=complete('brief'),original=JSON.stringify(from),to=C.create('detailed',from.displayName);
 assert.equal(C.carryAnswers(from,to),20);assert.equal(C.answeredCount(to),20);assert.equal(JSON.stringify(from),original);
@@ -83,11 +83,26 @@ to.answersById['BEH-01'].lock='other';assert.equal(from.answersById['BEH-01'].lo
 assert.equal(C.carryAnswers(from,C.create('max','다른 사람')),0);
 assert.equal(C.carryAnswers(from,C.create('brief',from.displayName)),20);
 assert.equal(C.carryAnswers({...from,bankRevision:'old'},C.create('max',from.displayName)),0);
+// Blank, partial and unavailable answers always produce one fixed-denominator score.
+for(const mode of Object.keys(selected)){
+ const blank=C.create(mode),empty=C.score(blank);assert.equal(empty.depthScore,0);assert.equal(empty.depthReady,true);assert.equal(empty.typeCode,null);
+ blank.stage='result';blank.completedAt=new Date().toISOString();assert.equal(C.restore(blank),blank);
+ const old={...complete(mode),scoringRevision:'clinic-integrated-60-40-v2'};const before=JSON.stringify(old);const migrated=C.restore(old);
+ assert.equal(migrated.scoringRevision,C.scoringRevision);assert.equal(JSON.stringify(old),before);assert.deepEqual(migrated.answersById,old.answersById);
+ const variants=[{},Object.fromEntries(setting.items.map(i=>[i.id,'unused'])),{lock:'seeya'},Object.fromEntries(setting.items.map(i=>[i.id,'other']))];
+ for(const v of variants){const b=C.engine.bound(setting,v);assert.equal(b.low,b.high);}
+ const st=complete(mode);for(const id of st.questionOrder)if(C.byId[id].kind!=='preference')delete st.answersById[id];
+ assert.equal(C.score(st).typeCode,'MRIP');assert.equal(C.score(st).depthScore,0);
+ for(const id of st.questionOrder){const q=C.byId[id];if(q.scorePart==='emotion'||q.scorePart==='behavior')st.answersById[id]=q.kind==='inventory'?{}:'unknown';}
+ assert.equal(C.score(st).depthScore,0);
+ const scored=C.score(complete(mode));assert.equal(scored.depthScore,scored.emotion.display.low+scored.behavior.display.low);
+}
 const routePaths=new Set(require('../src/data/routes.json').map(r=>r.path));
 const prescriptions=[...Object.values(I.profiles.types).map(p=>p.prescription),...Object.values(I.profiles.fallbackPrescriptions)];
 assert.equal(new Set(prescriptions.map(p=>p.medicine)).size,18);
 assert.equal(new Set(prescriptions.map(p=>p.mission)).size,18);
 for(const p of prescriptions){
+ assert(/ (캡슐|시럽)$/.test(p.medicine));
  for(const k of ['medicine','dose','mission','after'])assert(typeof p[k]==='string'&&p[k].trim());
  assert.deepEqual(Object.keys(p.link).sort(),['href','label']);
  assert(p.link.href.startsWith('/')&&!p.link.href.startsWith('//'));
@@ -96,7 +111,7 @@ for(const p of prescriptions){
 }
 assert.equal(I.explain(C.score(tied)).prescription,I.profiles.fallbackPrescriptions.balanced);
 assert.equal(I.explain(C.score(C.create('brief'))).prescription,I.profiles.fallbackPrescriptions.insufficient);
-console.log('PASS clinic model: agreed 20/60/148, 16 types, canonical A/B, 60/40 independent scoring, settings domain cap, context-only items, unknown bounds/thresholds, partial saves and safe carry.');
+console.log('PASS clinic model: agreed 20/60/148, 16 types, canonical A/B, 60/40 independent scoring, settings domain cap, context-only items, zero missing / unused points and explicit scoring migration, partial saves and safe carry.');
 
 const html=fs.readFileSync('game/clinic/test/index.html','utf8');assert(html.includes('noindex,nofollow'));assert(!html.includes('analytics.js')&&!html.includes('googletagmanager'));assert(!fs.readFileSync('sitemap.xml','utf8').includes('/game/clinic/test/'));assert(fs.readFileSync('game/clinic/index.html','utf8').includes('준비중'));assert(!fs.readFileSync('game/index.html','utf8').includes('/game/clinic/test/'));
 // Exercise the actual shipped event handlers, including storage and all three exports.
@@ -117,17 +132,17 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
  for(const mode of ['brief','detailed','max']){
   await click({action:'home'});await click({start:mode});assert.equal(C.answeredCount(current(mode)),0);
   const count=selected[mode].ids.length;
-  await click({action:'next'});assert.equal(current(mode).currentIndex,0);assert(notice.textContent.includes('응답을'));
+  await click({action:'next'});assert.equal(current(mode).currentIndex,1);await click({action:'previous'});
   for(let i=0;i<count;i++){
    const q=C.byId[current(mode).questionOrder[i]];
    if(q.kind==='inventory'&&mode==='brief'){
-    change('seeya',q.items[0].id);await click({action:'next'});assert.equal(current(mode).currentIndex,i);
+    change('seeya',q.items[0].id);await click({action:'next'});assert.equal(current(mode).currentIndex,i+1);await click({action:'previous'});
     load();await click({resume:mode});assert(app.innerHTML.includes('value="seeya" selected'));assert(app.innerHTML.includes('미선택'));
    }
    answer(q);await click({action:'next'});
   }
   assert(app.innerHTML.includes('미응답 0문항'));await click({action:'complete'});
-  assert(app.innerHTML.includes('소리 보관인형'));assert(!app.innerHTML.includes('<img src=x'));assert(app.innerHTML.includes('&lt;img'));
+  assert(app.innerHTML.includes('소리 수집가 형'));assert(!app.innerHTML.includes('<img src=x'));assert(app.innerHTML.includes('&lt;img'));
   assert(app.innerHTML.includes('clinicCertificate'));assert(app.innerHTML.includes('나의 팬 성향 해설'));
   assert.equal((app.innerHTML.match(/class="clinic-pole-letter"/g)||[]).length,8);
   assert(!app.innerHTML.includes('두 비율은 응답의 기울기'));assert(app.innerHTML.includes('100</strong>'));
@@ -141,7 +156,7 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
  const max=values.get(key('max')),detailedBefore=values.get(key('detailed'));
  await click({action:'home'});await click({resume:'brief'});await click({question:String(selected.brief.ids.indexOf('BEH-01'))});
  setting.items.forEach(i=>change('unused',i.id));await click({action:'review'});await click({action:'complete'});
- assert(app.innerHTML.includes('95~100</strong>'));await click({action:'copy'});assert(copied.includes('95~100/100'));pngLines=[];await click({action:'png'});assert(pngLines.some(t=>t.includes('95~100 / 100')));
+ assert(app.innerHTML.includes('95</strong>'));await click({action:'copy'});assert(copied.includes('95/100'));pngLines=[];await click({action:'png'});assert(pngLines.some(t=>t.includes('95 / 100')));
  assert.equal(values.get(key('max')),max);assert.equal(values.get(key('detailed')),detailedBefore);
  await click({action:'home'});checked=true;await click({start:'detailed'});assert.equal(C.answeredCount(current('detailed')),20);assert.equal(values.get(key('max')),max);
  assert.equal(current('brief').stage,'result');assert.equal(current('detailed').answersById['BEH-01'].lock,'unused');
@@ -167,8 +182,17 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   for(const k of ['medicine','dose','mission','after'])assert(drawn.includes(rx[k]));
   assert(drawn.includes('seeya-fanpage.com'+rx.link.href));
  }
+ // Actual UI: permit skipped questions and a partial inventory, then export one score.
+ checked=false;nickname='빈 응답 검토';await click({action:'home'});await click({start:'brief'});
+ await click({action:'next'});assert.equal(current('brief').currentIndex,1);
+ await click({question:String(selected.brief.ids.indexOf('BEH-01'))});change('seeya','lock');
+ await click({action:'review'});assert(app.innerHTML.includes('미응답 0점으로 진단서 발급'));
+ await click({action:'complete'});assert.equal(C.restore(current('brief')).stage,'result');assert(app.innerHTML.includes('2</strong>'));
+ await click({action:'copy'});assert(copied.includes('과몰입 지수 2/100'));assert(!copied.includes('2~'));
+ pngLines=[];await click({action:'png'});assert(pngLines.some(t=>t==='과몰입 지수 2 / 100'));
+ load();await click({resume:'brief'});assert(app.innerHTML.includes('2</strong>'));
  console.log('PASS prescriptions: all 16 distinct prescriptions and two unresolved fallbacks, one relevant public link, matching HTML/copy/PNG and dynamically sized export text.');
  ctx.localStorage.getItem=()=>'{broken';load();assert(notice.textContent.includes('읽을 수'));
  ctx.localStorage.getItem=()=>null;ctx.localStorage.setItem=()=>{throw Error('quota');};load();checked=false;await click({start:'brief'});assert(app.innerHTML.includes('현재 1 / 20'));assert(notice.textContent.includes('저장하지 못'));
- console.log('PASS clinic client: all 228 responses, partial inventory/reload, completion/review, 3-mode isolation, opted-in carry/name guard, legacy backup, HTML/copy/PNG ranges, PDF action, escaping/storage errors and public isolation.');
+ console.log('PASS clinic client: all 228 responses, partial inventory/reload, completion/review, 3-mode isolation, opted-in carry/name guard, legacy backup, HTML/copy/PNG single scores, PDF action, escaping/storage errors and public isolation.');
 })().catch(e=>{console.error(e);process.exitCode=1;});
