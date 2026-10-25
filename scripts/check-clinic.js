@@ -144,6 +144,10 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   assert(app.innerHTML.includes('미응답 0문항'));await click({action:'complete'});
   assert(app.innerHTML.includes('소리 수집가 형'));assert(!app.innerHTML.includes('<img src=x'));assert(app.innerHTML.includes('&lt;img'));
   assert(app.innerHTML.includes('clinicCertificate'));assert(app.innerHTML.includes('나의 팬 성향 해설'));
+  const scoreSection=app.innerHTML.match(/<section class="clinic-depth"[\s\S]*?<\/section>/)?.[0];
+  assert(scoreSection?.includes('00 · 과몰입 지수')&&scoreSection.includes('100</strong>')&&scoreSection.includes('마음'));
+  assert(app.innerHTML.indexOf('00 · 과몰입 지수')<app.innerHTML.indexOf('01 · 마음이 향하는 네 방향'));
+  assert(!app.innerHTML.includes(current(mode).bankRevision)&&!app.innerHTML.includes(current(mode).formRevision)&&!app.innerHTML.includes(current(mode).scoringRevision));
   assert.equal((app.innerHTML.match(/class="clinic-pole-letter"/g)||[]).length,8);
   assert(!app.innerHTML.includes('두 비율은 응답의 기울기'));assert(app.innerHTML.includes('100</strong>'));
   assert.equal(app.innerHTML.includes('씨야를 챙기는 나의 방법'),mode!=='brief');
@@ -175,12 +179,29 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   values.set(key(state.mode),JSON.stringify(state));load();await click({resume:state.mode});
   const section=app.innerHTML.match(/<section class="clinic-rx"[\s\S]*?<\/section>/)?.[0];
   assert(section&&section.includes(rx.medicine)&&section.includes(rx.mission));
+  assert(section.includes('추천 재활 활동')&&section.includes('마음이 가는 활동만'));
+  assert(!section.includes('오늘의 미션'));
   assert.equal((section.match(/<a /g)||[]).length,1);assert(section.includes('href="'+rx.link.href+'"'));
   await click({action:'copy'});for(const k of ['medicine','dose','mission','after'])assert(copied.includes(rx[k]));
   assert.equal((copied.match(/https:\/\/seeya-fanpage.com/g)||[]).length,1);
   pngLines=[];await click({action:'png'});const drawn=pngLines.join('');
   for(const k of ['medicine','dose','mission','after'])assert(drawn.includes(rx[k]));
   assert(drawn.includes('seeya-fanpage.com'+rx.link.href));
+  for(const content of [copied,drawn]){
+   assert(content.includes('00 · 과몰입 지수')&&content.includes('01 · 마음이 향하는 네 방향')&&content.includes('02 · 나의 팬 성향 해설'));
+   assert(content.includes('추천 재활 활동')&&!content.includes('오늘의 미션'));
+   for(const revision of [state.bankRevision,state.formRevision,state.scoringRevision])assert(!content.includes(revision));
+  }
+ }
+ // Anonymous display is presentation-only; blank names remain blank in saved answers.
+ for(const inputName of ['', '   ', '씨야 팬']){
+  const anonymous={...complete('brief'),...{displayName:C.create('brief',inputName).displayName,stage:'result',completedAt:new Date().toISOString()}};
+  const raw=JSON.stringify(anonymous);values.set(key('brief'),raw);load();await click({resume:'brief'});
+  const expected=inputName.trim()||'익명의 씨야 팬';
+  assert(app.innerHTML.includes('성명 · '+expected));
+  await click({action:'copy'});assert(copied.startsWith(expected+'의 씨야 과몰입 진단서'));
+  pngLines=[];await click({action:'png'});assert(pngLines.some(t=>t.startsWith(expected+' · ')));
+  assert.equal(values.get(key('brief')),raw);
  }
  // Actual UI: permit skipped questions and a partial inventory, then export one score.
  checked=false;nickname='빈 응답 검토';await click({action:'home'});await click({start:'brief'});
