@@ -1,5 +1,5 @@
 {
-  "version": "5.61",
+  "version": "5.62",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -65,7 +65,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.4e7699b7ad29.js",
+    "assets/site.4ac0f7690b10.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.3ab499ea523f.js",
@@ -88,8 +88,8 @@
     "assets/diary.1818dd06da72.js",
     "assets/archive-admin.0d013d2bf36a.css",
     "assets/archive-admin.1c5b1c601fd9.js",
-    "assets/clinic.1a8efc87efe0.css",
-    "assets/clinic.6ce33648128e.js",
+    "assets/clinic.00e5f9875348.css",
+    "assets/clinic.cedbb8698dc3.js",
     "assets/worldcup.5db3cccf33cf.css",
     "assets/worldcup.aafb374c4848.js"
   ],
