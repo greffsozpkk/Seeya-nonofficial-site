@@ -554,9 +554,15 @@
         "url": "https://www.youtube.com/watch?v=17HFl_no_6I",
         "publishedDate": "2026-10-23",
         "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=eRupK5NZaAM",
+        "publishedDate": "2026-10-24",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-24T04:53:19.687806+00:00",
+    "updatedAt": "2026-10-25T05:04:17.996598+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1148,9 +1154,15 @@
         "url": "https://www.youtube.com/watch?v=AfQ8k8xi4iM",
         "publishedDate": "2026-10-21",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=bfE5mw7Rycg",
+        "publishedDate": "2026-10-21",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-25T05:04:17.996598+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
