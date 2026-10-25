@@ -38591,6 +38591,12 @@
       {
         "label": "공식 영상",
         "url": "https://www.youtube.com/watch?v=xltOqNUvN-I"
+      },
+      {
+        "label": "MBCentertainment",
+        "url": "https://www.youtube.com/watch?v=osAMW_MMM-E",
+        "publishedDate": "2012-04-23",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -38598,7 +38604,8 @@
       "예능"
     ],
     "note": "",
-    "publishedDate": "2012-04-23"
+    "publishedDate": "2012-04-23",
+    "updatedAt": "2026-10-25"
   },
   {
     "id": "20080712-gyuri-starfriend7",
@@ -48627,7 +48634,7 @@
     "id": "20261030-yeonji-birthday-fancafe",
     "date": "2026-10-30",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-08",
+    "updatedAt": "2026-10-25",
     "title": "김연지 생일 기념 팬 카페 · 10월 30–31일 예정",
     "program": "김연지 생일 팬 카페",
     "type": "etc",
@@ -48641,7 +48648,13 @@
       "label": "생일 카페 주최 측 · 10월 30–31일 일정 공지",
       "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7220"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "생일 카페 주최 측 · 날짜별 운영시간 안내",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10098",
+        "publishedDate": "2026-10-24"
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
@@ -48651,7 +48664,7 @@
       "생일 카페",
       "예정"
     ],
-    "note": "김연지의 생일을 기념해 팬들이 준비하는 카페 행사입니다.\n주최 측이 안내한 일정은 10월 30일 금요일부터 31일 토요일까지입니다.\n김연지의 출연·방문 일정이 아닌 팬 주최 행사입니다. 장소와 운영 시간은 주최 측 후속 공지를 참고해 주세요.",
+    "note": "김연지의 생일을 기념해 팬들이 준비하는 카페 행사입니다.\n10월 30일 금요일 11:00–22:00 (라스트오더 21:30), 31일 토요일 10:00–15:30 (라스트오더 15:00)로 안내됐습니다.\n김연지의 출연·방문 일정이 아닌 팬 주최 행사입니다. 장소와 상세 참여 안내는 주최 측 공지를 참고해 주세요.",
     "eventState": "scheduled",
     "calendar": {
       "enabled": false
@@ -49545,7 +49558,7 @@
     "id": "20261018-gyuri-gyulmung67",
     "date": "2026-10-18",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-25",
     "title": "남규리 · 귤멍 EP.67 자연의 소리 ASMR",
     "program": "남규리의 귤멍 EP.67",
     "type": "official",
@@ -49560,7 +49573,23 @@
       "url": "https://www.youtube.com/watch?v=PzdIJOVqS7I",
       "publishedDate": "2026-10-18"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "귤멍 공식 쇼츠 · 한강공원의 소리를 찾아서",
+        "url": "https://www.youtube.com/watch?v=5IGU9JCcVUs",
+        "publishedDate": "2026-10-22"
+      },
+      {
+        "label": "귤멍 공식 쇼츠 · ASMR 편집자",
+        "url": "https://www.youtube.com/watch?v=4CD3d5uGZjU",
+        "publishedDate": "2026-10-21"
+      },
+      {
+        "label": "귤멍 공식 쇼츠 · ASMR 재밌네요",
+        "url": "https://www.youtube.com/watch?v=rSforGsXP7A",
+        "publishedDate": "2026-10-21"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -50235,11 +50264,11 @@
   },
   {
     "id": "discovered-6cf79889efbc0d23",
-    "date": "2012-07-25",
+    "date": "2012-07-09",
     "addedAt": "2026-10-23T05:10:09.147818+00:00",
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-25",
     "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-09)",
-    "program": "",
+    "program": "SBS 녹색희망",
     "type": "radio",
     "members": [
       "남규리"
@@ -50255,10 +50284,10 @@
     },
     "additionalSources": [],
     "status": "documented",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "",
+    "note": "남규리가 내레이션에 참여한 SBS 라디오 환경개선 캠페인입니다.\n영상 제목의 2012-07-09을 잠정 방송일로 표시합니다. 설명란에는 7월 1일이 함께 적혀 있어 정확한 방송일은 추가 확인 중입니다.",
     "publishedDate": "2012-07-25",
     "autoDiscovery": true
   },
@@ -50266,9 +50295,9 @@
     "id": "discovered-74795ed09a42b1e0",
     "date": "2012-07-25",
     "addedAt": "2026-10-23T05:10:09.147818+00:00",
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-25",
     "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-25)",
-    "program": "",
+    "program": "SBS 녹색희망",
     "type": "radio",
     "members": [
       "남규리"
@@ -50284,20 +50313,20 @@
     },
     "additionalSources": [],
     "status": "documented",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "",
+    "note": "남규리가 내레이션에 참여한 SBS 라디오 환경개선 캠페인입니다.\n영상 제목의 2012-07-25을 잠정 방송일로 표시합니다. 설명란에는 7월 1일이 함께 적혀 있어 정확한 방송일은 추가 확인 중입니다.",
     "publishedDate": "2012-07-25",
     "autoDiscovery": true
   },
   {
     "id": "discovered-b5ca0c4e74243cbf",
-    "date": "2012-07-25",
+    "date": "2012-07-19",
     "addedAt": "2026-10-23T05:10:09.147818+00:00",
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-25",
     "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-19)",
-    "program": "",
+    "program": "SBS 녹색희망",
     "type": "radio",
     "members": [
       "남규리"
@@ -50313,20 +50342,20 @@
     },
     "additionalSources": [],
     "status": "documented",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "",
+    "note": "남규리가 내레이션에 참여한 SBS 라디오 환경개선 캠페인입니다.\n영상 제목의 2012-07-19을 잠정 방송일로 표시합니다. 설명란에는 7월 1일이 함께 적혀 있어 정확한 방송일은 추가 확인 중입니다.",
     "publishedDate": "2012-07-25",
     "autoDiscovery": true
   },
   {
     "id": "discovered-ba7bfc84bdc4d1b7",
-    "date": "2012-07-25",
+    "date": "2012-07-12",
     "addedAt": "2026-10-23T05:10:09.147818+00:00",
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-25",
     "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-12)",
-    "program": "",
+    "program": "SBS 녹색희망",
     "type": "radio",
     "members": [
       "남규리"
@@ -50342,20 +50371,20 @@
     },
     "additionalSources": [],
     "status": "documented",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "",
+    "note": "남규리가 내레이션에 참여한 SBS 라디오 환경개선 캠페인입니다.\n영상 제목의 2012-07-12을 잠정 방송일로 표시합니다. 설명란에는 7월 1일이 함께 적혀 있어 정확한 방송일은 추가 확인 중입니다.",
     "publishedDate": "2012-07-25",
     "autoDiscovery": true
   },
   {
     "id": "discovered-ee773bc1545ee8b9",
-    "date": "2012-07-25",
+    "date": "2012-07-11",
     "addedAt": "2026-10-23T05:10:09.147818+00:00",
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-25",
     "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-11)",
-    "program": "",
+    "program": "SBS 녹색희망",
     "type": "radio",
     "members": [
       "남규리"
@@ -50371,20 +50400,20 @@
     },
     "additionalSources": [],
     "status": "documented",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "",
+    "note": "남규리가 내레이션에 참여한 SBS 라디오 환경개선 캠페인입니다.\n영상 제목의 2012-07-11을 잠정 방송일로 표시합니다. 설명란에는 7월 1일이 함께 적혀 있어 정확한 방송일은 추가 확인 중입니다.",
     "publishedDate": "2012-07-25",
     "autoDiscovery": true
   },
   {
     "id": "discovered-98f118417ae7d51d",
-    "date": "2012-08-07",
+    "date": "2012-07-29",
     "addedAt": "2026-10-23T05:10:09.147818+00:00",
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-25",
     "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-29)",
-    "program": "",
+    "program": "SBS 녹색희망",
     "type": "radio",
     "members": [
       "남규리"
@@ -50400,10 +50429,10 @@
     },
     "additionalSources": [],
     "status": "documented",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "",
+    "note": "남규리가 내레이션에 참여한 SBS 라디오 환경개선 캠페인입니다.\n영상 제목의 2012-07-29을 잠정 방송일로 표시합니다. 설명란에는 7월 1일이 함께 적혀 있어 정확한 방송일은 추가 확인 중입니다.",
     "publishedDate": "2012-08-07",
     "autoDiscovery": true
   },
@@ -50411,9 +50440,9 @@
     "id": "discovered-58da80e48b1b7010",
     "date": "2023-10-30",
     "addedAt": "2026-10-23T05:10:09.147818+00:00",
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
-    "title": "[FULL] ✨이보람✨ 보컬 천재 람보와 케이팝 영재발굴단💚 | GOT7 영재의 친한친구 | MBC 231030 방송",
-    "program": "",
+    "updatedAt": "2026-10-25",
+    "title": "이보람 · GOT7 영재의 친한친구 · 케이팝 영재발굴단",
+    "program": "MBC GOT7 영재의 친한친구",
     "type": "radio",
     "members": [
       "이보람"
@@ -50428,11 +50457,11 @@
       "autoDiscovery": true
     },
     "additionalSources": [],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "",
+    "note": "2023년 10월 30일 방송된 MBC 「GOT7 영재의 친한친구」 출연분입니다.\n이보람은 공식 전체 영상 30분 36초부터 등장합니다.",
     "publishedDate": "2023-10-30",
     "autoDiscovery": true
   },
@@ -50440,7 +50469,7 @@
     "id": "20261023-gyuri-sungsikyung-sing",
     "date": "2026-10-23",
     "addedAt": "2026-10-23",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-25",
     "title": "남규리 · 성시경의 부를텐데 · 박재정과 토크·라이브",
     "program": "성시경의 부를텐데",
     "type": "official",
@@ -50479,6 +50508,11 @@
         "label": "공식 쇼츠 · 우리 사랑 그런 거 해요",
         "url": "https://www.youtube.com/watch?v=xynTltqGal4",
         "publishedDate": "2026-10-23"
+      },
+      {
+        "label": "남규리 공식 Instagram · 부를텐데 출연 사진·영상",
+        "url": "https://www.instagram.com/p/De1B8g2E-P1/",
+        "publishedDate": "2026-10-23"
       }
     ],
     "status": "available",
@@ -50501,7 +50535,7 @@
     "id": "discovered-1cb59f0908a9bd70",
     "date": "2012-04-23",
     "addedAt": "2026-10-24T04:53:19.687806+00:00",
-    "updatedAt": "2026-10-24T04:53:19.687806+00:00",
+    "updatedAt": "2026-10-25",
     "title": "The Radio Star, Nam Gyu-ri, #15, 남규리 20080723",
     "program": "",
     "type": "radio",
@@ -50524,15 +50558,17 @@
     "tags": [],
     "note": "",
     "publishedDate": "2012-04-23",
-    "autoDiscovery": true
+    "autoDiscovery": true,
+    "hidden": true,
+    "mergedInto": "v481-archive-012"
   },
   {
     "id": "discovered-0a3327a27ecdc1af",
-    "date": "2012-07-25",
+    "date": "2012-07-13",
     "addedAt": "2026-10-24T04:53:19.687806+00:00",
-    "updatedAt": "2026-10-24T04:53:19.687806+00:00",
+    "updatedAt": "2026-10-25",
     "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-13)",
-    "program": "",
+    "program": "SBS 녹색희망",
     "type": "radio",
     "members": [
       "남규리"
@@ -50548,11 +50584,82 @@
     },
     "additionalSources": [],
     "status": "documented",
-    "dateStatus": "confirmed",
-    "dateBasis": "video-published",
+    "dateStatus": "tentative",
+    "dateBasis": "broadcast",
     "tags": [],
-    "note": "",
+    "note": "남규리가 내레이션에 참여한 SBS 라디오 환경개선 캠페인입니다.\n영상 제목의 2012-07-13을 잠정 방송일로 표시합니다. 설명란에는 7월 1일이 함께 적혀 있어 정확한 방송일은 추가 확인 중입니다.",
     "publishedDate": "2012-07-25",
     "autoDiscovery": true
+  },
+  {
+    "id": "20261025-gyuri-gyulmung68",
+    "date": "2026-10-25",
+    "addedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "title": "남규리 · 귤멍 EP.68 길고양이 겨울집 만들기",
+    "program": "남규리의 귤멍 EP.68",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 EP.68 · 공식 영상",
+      "url": "https://www.youtube.com/watch?v=6mik2QfyVCY",
+      "publishedDate": "2026-10-25"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-25",
+    "tags": [
+      "2026",
+      "남규리의 귤멍 EP.68"
+    ],
+    "note": "길고양이들의 겨울나기를 위해 남규리가 직접 집을 만드는 브이로그입니다.\n방산 종합시장에서 박스·시트지·인조 잔디 등 재료를 고르고, 다이소에서 쿠션·식기·장식을 구입해 집을 꾸몄습니다.\n날짜는 영상 공개일입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    },
+    "venue": "방산 종합시장"
+  },
+  {
+    "id": "20261023-yeonji-dahye-scent",
+    "date": "2026-10-23",
+    "addedAt": "2026-10-25",
+    "updatedAt": "2026-10-25",
+    "title": "김연지 · 빡다혜 「여인의 향기」 라이브 쇼츠",
+    "program": "빡다혜dahye",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "여인의 향기"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "빡다혜dahye · 공식 영상",
+      "url": "https://www.youtube.com/watch?v=FJIfW94nGBk",
+      "publishedDate": "2026-10-23"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-23",
+    "tags": [
+      "2026",
+      "빡다혜dahye"
+    ],
+    "note": "박다혜의 채널에 공개된 김연지의 「여인의 향기」 짧은 라이브 영상입니다.\n날짜는 영상 공개일이며 전체곡 영상은 아닙니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
   }
 ]

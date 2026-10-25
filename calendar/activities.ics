@@ -1293,8 +1293,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2008-07&event=activity-200807
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v481-archive-012@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261024T150000Z
+LAST-MODIFIED:20261024T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20080723
 DTEND;VALUE=DATE:20080724
@@ -1308,8 +1308,9 @@ DESCRIPTION:남규리\n시간 미정\n공식 영상: https://www.youtube.co
  3YKQIs0\n공식 영상: https://www.youtube.com/watch?v=kiqJ9eGkXKs\n공
  식 영상: https://www.youtube.com/watch?v=6YMEB4-s4RM\n공식 영상: ht
  tps://www.youtube.com/watch?v=F8rUyGiDM4c\n공식 영상: https://www.yout
- ube.com/watch?v=xltOqNUvN-I\nhttps://seeya-fanpage.com/archive/?record=v48
- 1-archive-012
+ ube.com/watch?v=xltOqNUvN-I\nMBCentertainment: https://www.youtube.com/wat
+ ch?v=osAMW_MMM-E\nhttps://seeya-fanpage.com/archive/?record=v481-archive-0
+ 12
 URL:https://seeya-fanpage.com/calendar/?month=2008-07&event=activity-v481-a
  rchive-012
 END:VEVENT
@@ -6183,6 +6184,27 @@ DESCRIPTION:김연지\n발매일 · 시간 미정\nDK(디셈버)와 함께
  m-4091640
 URL:https://seeya-fanpage.com/calendar/?month=2023-10&event=activity-v491-a
  lbum-4091640
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-discovered-58da80e48b1b7010@seeya-fanpage.com
+DTSTAMP:20261024T150000Z
+LAST-MODIFIED:20261024T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20231030
+DTEND;VALUE=DATE:20231031
+SUMMARY:이보람 · GOT7 영재의 친한친구 · 케이팝 영재발굴
+ 단
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n2023년 10월 30일 방송된 MBC 「
+ GOT7 영재의 친한친구」 출연분입니다.\n이보람은 공식 
+ 전체 영상 30분 36초부터 등장합니다.\nMhz 므흐즈: MBC RADIO
+ : https://www.youtube.com/watch?v=AlHLh5MgkR0\nhttps://seeya-fanpage.com/a
+ rchive/?record=discovered-58da80e48b1b7010
+URL:https://seeya-fanpage.com/calendar/?month=2023-10&event=activity-discov
+ ered-58da80e48b1b7010
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-album-4093845@seeya-fanpage.com
