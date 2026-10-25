@@ -49,3 +49,12 @@
 .clinic-completion-ready{background:#fcf7fa}
 @media(max-width:600px){.clinic-completion{padding:19px 16px}.clinic-completion h3{font-size:18px}.clinic-progress{flex-wrap:wrap}.clinic-completion .clinic-actions{gap:10px}.clinic-completion .clinic-actions button{width:100%;flex-basis:100%;line-height:1.6}.clinic-qnav button{padding:12px 15px}.clinic-completion-list li{gap:8px}}
 @media print{.clinic-completion{display:none!important}}
+
+/* SETI identifies the test; the four-letter type remains the result. */
+.clinic-seti{min-width:0;color:#986579;font-family:system-ui,sans-serif}
+.clinic-seti strong{display:block;font-size:24px;line-height:1.2;font-weight:700;letter-spacing:.16em;color:#9b4168}
+.clinic-seti span{display:block;font-size:11px;line-height:1.6;letter-spacing:.02em;margin-top:5px;overflow-wrap:anywhere}
+.clinic-seti-intro{margin:0 0 16px;text-align:center}
+.clinic-seti-intro strong{font-size:30px}
+.clinic-seti-certificate{text-align:right;max-width:280px}
+@media(max-width:600px){.clinic-seti-certificate strong{font-size:21px}.clinic-seti-certificate span{font-size:10px;letter-spacing:0}}
