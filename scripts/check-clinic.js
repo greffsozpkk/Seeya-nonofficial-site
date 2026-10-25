@@ -114,17 +114,19 @@ assert.equal(I.explain(C.score(C.create('brief'))).prescription,I.profiles.fallb
 console.log('PASS clinic model: agreed 20/60/148, 16 types, canonical A/B, 60/40 independent scoring, settings domain cap, context-only items, zero missing / unused points and explicit scoring migration, partial saves and safe carry.');
 
 const html=fs.readFileSync('game/clinic/test/index.html','utf8');assert(html.includes('noindex,nofollow'));assert(!html.includes('analytics.js')&&!html.includes('googletagmanager'));assert(!fs.readFileSync('sitemap.xml','utf8').includes('/game/clinic/test/'));assert(fs.readFileSync('game/clinic/index.html','utf8').includes('준비중'));assert(!fs.readFileSync('game/index.html','utf8').includes('/game/clinic/test/'));
-// Exercise the actual shipped event handlers, including storage and all three exports.
+// Exercise the actual shipped event handlers, storage and DOM-based image/print exports.
 const source=fs.readFileSync('src/client/clinic.js','utf8'),values=new Map([['seeya-clinic-test-progress-v1','{"legacy":"retain exactly"}']]),handlers={};
-let checked=false,nickname='<img src=x onerror=x>',copied='',printed=false,dialog=null,pngLines=[],blob=null;
+let checked=false,nickname='<img src=x onerror=x>',printed=false,dialog=null,capturedHTML='',preparedHTML='',blob=null,captureFailure=false,prepareFailure=false,captureGate=null;
 const key=mode=>'seeya-clinic-test-progress-v2'+(mode==='max'?'':'-'+mode);
 const current=mode=>JSON.parse(values.get(key(mode)));
 const app={innerHTML:'',querySelector:q=>q==='#clinicName'?{value:nickname}:q==='#clinicCarry'?{checked}:q==='.clinic-progress'?{lastElementChild:{textContent:''}}:q==='progress'?{value:0}:q==='#clinicInventorySummary'?{textContent:''}:null,scrollIntoView(){},addEventListener:(e,fn)=>handlers[e]=fn};
 const notice={textContent:'',hidden:true};
-const canvas=()=>{const surface={width:0,height:0,toBlob:fn=>fn({type:'image/png'})};surface.getContext=()=>({font:'20px sans-serif',fillRect(){},strokeRect(){},drawImage(){},measureText(t){const size=parseFloat(this.font)||20;return{width:[...String(t)].reduce((n,c)=>n+(c.charCodeAt(0)>255?size:size*.6),0)};},fillText(t,x,y){assert(y<surface.height,'all export text fits the sized output canvas');pngLines.push(String(t));}});return surface;};
-const ctx={require:p=>p.includes('clinic-interpretation')?I:p.includes('clinic-scoring')?C:require('../src/shared/common'),document:{getElementById:id=>id==='clinicApp'?app:notice,createElement:tag=>tag==='canvas'?canvas():tag==='dialog'?(dialog={innerHTML:'',querySelector:()=>({}),showModal(){this.open=true;},close(){},remove(){}}):{click(){},remove(){}},body:{append(){}}},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},window:{confirm:()=>true,print:()=>printed=true},crypto:{randomUUID:()=> 'clinic-fixture'},Date,Intl,JSON,Number,Math,String,URL:{createObjectURL:b=>{blob=b;return 'blob:fixture';},revokeObjectURL(){}},Promise,navigator:{clipboard:{writeText:async t=>{copied=t;}}},Image:class{constructor(){this.naturalWidth=200;this.naturalHeight=100;}async decode(){}},Blob:class{constructor(parts){this.text=parts.join('');}},setTimeout:fn=>fn()};
+const certificate={get outerHTML(){return app.innerHTML.match(/<article id="clinicCertificate"[\s\S]*?<\/article>/)?.[0]||'';}};
+const capture={capture:async target=>{assert.equal(target,certificate,'capture the actual certificate node, not a text summary');capturedHTML=target.outerHTML;if(captureGate)await captureGate;if(captureFailure)throw Error('이미지 저장 실패 검사');return {blob:{type:'image/png'},width:1600,height:3200};}};
+const printing={install:getCertificate=>({prepare(){assert.equal(getCertificate(),certificate);preparedHTML=getCertificate().outerHTML;if(prepareFailure)throw Error('인쇄 준비 실패 검사');}})};
+const ctx={require:p=>p==='./clinic-image'?capture:p==='./clinic-print'?printing:p.includes('clinic-interpretation')?I:p.includes('clinic-scoring')?C:require('../src/shared/common'),document:{fonts:{ready:Promise.resolve()},getElementById:id=>id==='clinicApp'?app:id==='clinicCertificate'?(certificate.outerHTML?certificate:null):notice,createElement:tag=>tag==='dialog'?(dialog={innerHTML:'',querySelector:()=>({}),showModal(){this.open=true;},close(){},remove(){}}):{click(){},remove(){}},body:{append(){}}},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},window:{confirm:()=>true,print:()=>{assert(preparedHTML,'prepare page structure before opening print');printed=true;}},crypto:{randomUUID:()=> 'clinic-fixture'},Date,Intl,JSON,Number,Math,String,URL:{createObjectURL:b=>{blob=b;return 'blob:fixture';},revokeObjectURL(){}},Promise,Blob:class{constructor(parts){this.text=parts.join('');}},setTimeout:fn=>fn()};
 const load=()=>vm.runInNewContext('(function(){'+source+'})();',ctx);
-const click=dataset=>handlers.click({target:{closest:()=>({dataset})}});
+const click=(dataset,button={dataset})=>handlers.click({target:{closest:()=>button}});
 const change=(value,item)=>handlers.change({target:{name:item?'':'clinicAnswer',value,dataset:item?{inventoryItem:item}:{}}});
 const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>change(v[i.id],i.id));else change(v);};
 (async()=>{
@@ -149,18 +151,21 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   assert(app.innerHTML.indexOf('00 · 과몰입 지수')<app.innerHTML.indexOf('01 · 마음이 향하는 네 방향'));
   assert(!app.innerHTML.includes(current(mode).bankRevision)&&!app.innerHTML.includes(current(mode).formRevision)&&!app.innerHTML.includes(current(mode).scoringRevision));
   assert.equal((app.innerHTML.match(/class="clinic-pole-letter"/g)||[]).length,8);
+  assert.equal((app.innerHTML.match(/class="clinic-meter"/g)||[]).length,4);
+  assert(app.innerHTML.includes('class="eye clinic-type-eyebrow"'));
   assert(!app.innerHTML.includes('두 비율은 응답의 기울기'));assert(app.innerHTML.includes('100</strong>'));
   assert.equal(app.innerHTML.includes('씨야를 챙기는 나의 방법'),mode!=='brief');
-  await click({action:'copy'});assert(copied.includes('마음 60 / 60 · 행동 40 / 40'));assert(copied.includes(count+'문항'));
-  await click({action:'print'});assert(printed);
-  pngLines=[];await click({action:'png'});assert(dialog.open&&dialog.innerHTML.includes('PNG 내려받기'));assert(pngLines.some(t=>t.includes('100 / 100')));
+  assert(!app.innerHTML.includes('data-action="copy"')&&!app.innerHTML.includes('결과 문구 복사'));
+  printed=false;await click({action:'print'});assert(printed);assert.equal(preparedHTML,certificate.outerHTML);
+  await click({action:'png'});assert(dialog.open&&dialog.innerHTML.includes('PNG 내려받기'));assert.equal(capturedHTML,certificate.outerHTML);assert(capturedHTML.includes('100</strong>'));
+  assert(!capturedHTML.includes('data-action="png"'),'save just the certificate, not its toolbar');
   load();assert(app.innerHTML.includes('진단서 다시 보기'));await click({resume:mode});assert(app.innerHTML.includes('100</strong>'));
  }
  assert.equal(values.get('seeya-clinic-test-progress-v1'),'{"legacy":"retain exactly"}');
  const max=values.get(key('max')),detailedBefore=values.get(key('detailed'));
  await click({action:'home'});await click({resume:'brief'});await click({question:String(selected.brief.ids.indexOf('BEH-01'))});
  setting.items.forEach(i=>change('unused',i.id));await click({action:'review'});await click({action:'complete'});
- assert(app.innerHTML.includes('95</strong>'));await click({action:'copy'});assert(copied.includes('95/100'));pngLines=[];await click({action:'png'});assert(pngLines.some(t=>t.includes('95 / 100')));
+ assert(app.innerHTML.includes('95</strong>'));await click({action:'png'});assert(capturedHTML.includes('95</strong>'));
  assert.equal(values.get(key('max')),max);assert.equal(values.get(key('detailed')),detailedBefore);
  await click({action:'home'});checked=true;await click({start:'detailed'});assert.equal(C.answeredCount(current('detailed')),20);assert.equal(values.get(key('max')),max);
  assert.equal(current('brief').stage,'result');assert.equal(current('detailed').answersById['BEH-01'].lock,'unused');
@@ -182,12 +187,11 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   assert(section.includes('추천 재활 활동')&&section.includes('마음이 가는 활동만'));
   assert(!section.includes('오늘의 미션'));
   assert.equal((section.match(/<a /g)||[]).length,1);assert(section.includes('href="'+rx.link.href+'"'));
-  await click({action:'copy'});for(const k of ['medicine','dose','mission','after'])assert(copied.includes(rx[k]));
-  assert.equal((copied.match(/https:\/\/seeya-fanpage.com/g)||[]).length,1);
-  pngLines=[];await click({action:'png'});const drawn=pngLines.join('');
-  for(const k of ['medicine','dose','mission','after'])assert(drawn.includes(rx[k]));
-  assert(drawn.includes('seeya-fanpage.com'+rx.link.href));
-  for(const content of [copied,drawn]){
+  await click({action:'png'});assert.equal(capturedHTML,certificate.outerHTML);
+  await click({action:'print'});assert.equal(preparedHTML,certificate.outerHTML);
+  for(const content of [capturedHTML,preparedHTML]){
+   for(const k of ['medicine','dose','mission','after'])assert(content.includes(rx[k]));
+   assert(content.includes('href="'+rx.link.href+'"'));
    assert(content.includes('00 · 과몰입 지수')&&content.includes('01 · 마음이 향하는 네 방향')&&content.includes('02 · 나의 팬 성향 해설'));
    assert(content.includes('추천 재활 활동')&&!content.includes('오늘의 미션'));
    for(const revision of [state.bankRevision,state.formRevision,state.scoringRevision])assert(!content.includes(revision));
@@ -199,8 +203,8 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   const raw=JSON.stringify(anonymous);values.set(key('brief'),raw);load();await click({resume:'brief'});
   const expected=inputName.trim()||'익명의 씨야 팬';
   assert(app.innerHTML.includes('성명 · '+expected));
-  await click({action:'copy'});assert(copied.startsWith(expected+'의 씨야 과몰입 진단서'));
-  pngLines=[];await click({action:'png'});assert(pngLines.some(t=>t.startsWith(expected+' · ')));
+  await click({action:'png'});assert(capturedHTML.includes('성명 · '+expected));
+  await click({action:'print'});assert(preparedHTML.includes('성명 · '+expected));
   assert.equal(values.get(key('brief')),raw);
  }
  // Actual UI: permit skipped questions and a partial inventory, then export one score.
@@ -209,11 +213,19 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
  await click({question:String(selected.brief.ids.indexOf('BEH-01'))});change('seeya','lock');
  await click({action:'review'});assert(app.innerHTML.includes('미응답 0점으로 진단서 발급'));
  await click({action:'complete'});assert.equal(C.restore(current('brief')).stage,'result');assert(app.innerHTML.includes('2</strong>'));
- await click({action:'copy'});assert(copied.includes('과몰입 지수 2/100'));assert(!copied.includes('2~'));
- pngLines=[];await click({action:'png'});assert(pngLines.some(t=>t==='과몰입 지수 2 / 100'));
+ await click({action:'png'});assert(capturedHTML.includes('2</strong>'));assert(!capturedHTML.includes('2~'));
  load();await click({resume:'brief'});assert(app.innerHTML.includes('2</strong>'));
- console.log('PASS prescriptions: all 16 distinct prescriptions and two unresolved fallbacks, one relevant public link, matching HTML/copy/PNG and dynamically sized export text.');
+ // A failed or in-progress export cannot destroy answers or leave the button disabled.
+ const beforeExport=values.get(key('brief')),beforeHTML=app.innerHTML;
+ const imageButton={dataset:{action:'png'},disabled:false};let releaseCapture;
+ captureGate=new Promise(resolve=>releaseCapture=resolve);const inFlight=click(imageButton.dataset,imageButton);
+ assert.equal(imageButton.disabled,true);releaseCapture();await inFlight;assert.equal(imageButton.disabled,false);captureGate=null;
+ captureFailure=true;await click(imageButton.dataset,imageButton);assert(notice.textContent.includes('이미지 저장 실패'));assert.equal(imageButton.disabled,false);captureFailure=false;
+ const printButton={dataset:{action:'print'},disabled:false};prepareFailure=true;printed=false;await click(printButton.dataset,printButton);
+ assert(notice.textContent.includes('인쇄 준비 실패'));assert.equal(printButton.disabled,false);assert.equal(printed,false);prepareFailure=false;
+ assert.equal(values.get(key('brief')),beforeExport);assert.equal(app.innerHTML,beforeHTML);
+ console.log('PASS prescriptions: all 16 distinct prescriptions and two unresolved fallbacks, one relevant public link, exact certificate DOM passed to image/print export, anonymous names and hidden revision metadata.');
  ctx.localStorage.getItem=()=>'{broken';load();assert(notice.textContent.includes('읽을 수'));
  ctx.localStorage.getItem=()=>null;ctx.localStorage.setItem=()=>{throw Error('quota');};load();checked=false;await click({start:'brief'});assert(app.innerHTML.includes('현재 1 / 20'));assert(notice.textContent.includes('저장하지 못'));
- console.log('PASS clinic client: all 228 responses, partial inventory/reload, completion/review, 3-mode isolation, opted-in carry/name guard, legacy backup, HTML/copy/PNG single scores, PDF action, escaping/storage errors and public isolation.');
+ console.log('PASS clinic client: all 228 responses, partial inventory/reload, completion/review, 3-mode isolation, opted-in carry/name guard, legacy backup, single scores, removed copy control, PDF preparation, image/print failure recovery, escaping/storage errors and public isolation.');
 })().catch(e=>{console.error(e);process.exitCode=1;});
