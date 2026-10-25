@@ -1,5 +1,5 @@
 {
-  "version": "5.57",
+  "version": "5.59",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -65,7 +65,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.3b7da3405b7a.js",
+    "assets/site.0748f28d61a4.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.3ab499ea523f.js",
@@ -80,7 +80,7 @@
     "assets/radio.608ef52b6a3a.css",
     "assets/radio.b9e26a2c9765.js",
     "assets/seeya-map.f13e9e87c70a.css",
-    "assets/seeya-map.277862712c4e.js",
+    "assets/seeya-map.ec64c1f53471.js",
     "assets/GowunDodum-Regular.385f1f238065.woff2",
     "assets/GowunBatang-Regular.d66f8f3914dc.woff2",
     "assets/NanumPenScript-Regular.d083eb8197a2.woff2",
@@ -88,8 +88,8 @@
     "assets/diary.1818dd06da72.js",
     "assets/archive-admin.0d013d2bf36a.css",
     "assets/archive-admin.1c5b1c601fd9.js",
-    "assets/clinic.f5bfd684a05a.css",
-    "assets/clinic.9c80eb761cd5.js",
+    "assets/clinic.9deb4a2cb786.css",
+    "assets/clinic.3fe94c056675.js",
     "assets/worldcup.5db3cccf33cf.css",
     "assets/worldcup.aafb374c4848.js"
   ],

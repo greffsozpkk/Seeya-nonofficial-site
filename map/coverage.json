@@ -1,8 +1,8 @@
 {
   "summary": {
-    "records": 145,
-    "venues": 131,
-    "linked": 86,
+    "records": 146,
+    "venues": 132,
+    "linked": 87,
     "pending": 59,
     "unreviewed": 0
   },
@@ -1264,6 +1264,15 @@
       "placeIds": [],
       "status": "pending",
       "reason": "2026-10-21 기아 광주지회 행사 포스터로 광주시청 야외음악당 확인. 야외음악당의 정확한 주소·좌표 확인 후 연결."
+    },
+    {
+      "recordId": "20261025-gyuri-gyulmung68",
+      "title": "남규리 · 귤멍 EP.68 길고양이 겨울집 만들기",
+      "venue": "방산 종합시장",
+      "placeIds": [
+        "bangsan-market"
+      ],
+      "status": "linked"
     }
   ]
 }
