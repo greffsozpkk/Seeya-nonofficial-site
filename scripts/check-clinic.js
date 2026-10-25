@@ -1,6 +1,6 @@
 'use strict';
 const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
-const C=require('../src/shared/clinic-scoring'),I=require('../src/shared/clinic-interpretation');
+const C=require('../src/shared/clinic-scoring'),I=require('../src/shared/clinic-interpretation'),Summary=require('../src/client/clinic-summary');
 const clone=v=>JSON.parse(JSON.stringify(v));
 function response(q,high=true,pole='left'){
  if(q.kind==='inventory')return Object.fromEntries(q.items.map(i=>[i.id,high?'seeya':'other']));
@@ -116,17 +116,19 @@ console.log('PASS clinic model: agreed 20/60/148, 16 types, canonical A/B, 60/40
 const html=fs.readFileSync('game/clinic/test/index.html','utf8');assert(html.includes('noindex,nofollow'));assert(!html.includes('analytics.js')&&!html.includes('googletagmanager'));assert(!fs.readFileSync('sitemap.xml','utf8').includes('/game/clinic/test/'));assert(fs.readFileSync('game/clinic/index.html','utf8').includes('준비중'));assert(!fs.readFileSync('game/index.html','utf8').includes('/game/clinic/test/'));
 // Exercise the actual shipped event handlers, storage and DOM-based image/print exports.
 const source=fs.readFileSync('src/client/clinic.js','utf8'),values=new Map([['seeya-clinic-test-progress-v1','{"legacy":"retain exactly"}']]),handlers={};
-let checked=false,nickname='<img src=x onerror=x>',printed=false,dialog=null,capturedHTML='',preparedHTML='',blob=null,captureFailure=false,prepareFailure=false,captureGate=null;
+let checked=false,nickname='<img src=x onerror=x>',printed=false,dialog=null,capturedHTML='',preparedHTML='',blob=null,captureFailure=false,prepareFailure=false,captureGate=null,summaryData=null,summaryFailure=false,summaryGate=null,captureCount=0,summaryCount=0;
 const key=mode=>'seeya-clinic-test-progress-v2'+(mode==='max'?'':'-'+mode);
 const current=mode=>JSON.parse(values.get(key(mode)));
-const app={innerHTML:'',querySelector:q=>q==='#clinicName'?{value:nickname}:q==='#clinicCarry'?{checked}:q==='.clinic-progress'?{lastElementChild:{textContent:''}}:q==='progress'?{value:0}:q==='#clinicInventorySummary'?{textContent:''}:null,scrollIntoView(){},addEventListener:(e,fn)=>handlers[e]=fn};
+const exportButtons=[{dataset:{action:'png'},disabled:false},{dataset:{action:'summary'},disabled:false}];
+const app={innerHTML:'',querySelectorAll:()=>exportButtons,querySelector:q=>q==='#clinicName'?{value:nickname}:q==='#clinicCarry'?{checked}:q==='.clinic-progress'?{lastElementChild:{textContent:''}}:q==='progress'?{value:0}:q==='#clinicInventorySummary'?{textContent:''}:null,scrollIntoView(){},addEventListener:(e,fn)=>handlers[e]=fn};
 const notice={textContent:'',hidden:true};
 const certificate={get outerHTML(){return app.innerHTML.match(/<article id="clinicCertificate"[\s\S]*?<\/article>/)?.[0]||'';}};
-const capture={capture:async target=>{assert.equal(target,certificate,'capture the actual certificate node, not a text summary');capturedHTML=target.outerHTML;if(captureGate)await captureGate;if(captureFailure)throw Error('이미지 저장 실패 검사');return {blob:{type:'image/png'},width:1600,height:3200};}};
+const capture={capture:async target=>{captureCount++;assert.equal(target,certificate,'capture the actual certificate node, not a text summary');capturedHTML=target.outerHTML;if(captureGate)await captureGate;if(captureFailure)throw Error('이미지 저장 실패 검사');return {blob:{type:'image/png'},width:1600,height:3200};}};
+const summaryCapture={capture:async data=>{summaryCount++;summaryData=clone(data);if(summaryGate)await summaryGate;if(summaryFailure)throw Error('요약 이미지 저장 실패 검사');return {blob:{type:'image/png'},width:1080,height:1350};}};
 const printing={install:getCertificate=>({prepare(){assert.equal(getCertificate(),certificate);preparedHTML=getCertificate().outerHTML;if(prepareFailure)throw Error('인쇄 준비 실패 검사');}})};
-const ctx={require:p=>p==='./clinic-image'?capture:p==='./clinic-print'?printing:p.includes('clinic-interpretation')?I:p.includes('clinic-scoring')?C:require('../src/shared/common'),document:{fonts:{ready:Promise.resolve()},getElementById:id=>id==='clinicApp'?app:id==='clinicCertificate'?(certificate.outerHTML?certificate:null):notice,createElement:tag=>tag==='dialog'?(dialog={innerHTML:'',querySelector:()=>({}),showModal(){this.open=true;},close(){},remove(){}}):{click(){},remove(){}},body:{append(){}}},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},window:{confirm:()=>true,print:()=>{assert(preparedHTML,'prepare page structure before opening print');printed=true;}},crypto:{randomUUID:()=> 'clinic-fixture'},Date,Intl,JSON,Number,Math,String,URL:{createObjectURL:b=>{blob=b;return 'blob:fixture';},revokeObjectURL(){}},Promise,Blob:class{constructor(parts){this.text=parts.join('');}},setTimeout:fn=>fn()};
+const ctx={require:p=>p==='./clinic-image'?capture:p==='./clinic-summary'?summaryCapture:p==='./clinic-print'?printing:p.includes('clinic-interpretation')?I:p.includes('clinic-scoring')?C:require('../src/shared/common'),document:{fonts:{ready:Promise.resolve()},getElementById:id=>id==='clinicApp'?app:id==='clinicCertificate'?(certificate.outerHTML?certificate:null):notice,createElement:tag=>tag==='dialog'?(dialog={innerHTML:'',querySelector:()=>({}),showModal(){this.open=true;},close(){},remove(){}}):{click(){},remove(){}},body:{append(){}}},localStorage:{getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)},window:{confirm:()=>true,print:()=>{assert(preparedHTML,'prepare page structure before opening print');printed=true;}},crypto:{randomUUID:()=> 'clinic-fixture'},Date,Intl,JSON,Number,Math,String,URL:{createObjectURL:b=>{blob=b;return 'blob:fixture';},revokeObjectURL(){}},Promise,Blob:class{constructor(parts){this.text=parts.join('');}},setTimeout:fn=>fn()};
 const load=()=>vm.runInNewContext('(function(){'+source+'})();',ctx);
-const click=(dataset,button={dataset})=>handlers.click({target:{closest:()=>button}});
+const click=(dataset,button=exportButtons.find(b=>b.dataset.action===dataset.action)||{dataset})=>handlers.click({target:{closest:()=>button}});
 const change=(value,item)=>handlers.change({target:{name:item?'':'clinicAnswer',value,dataset:item?{inventoryItem:item}:{}}});
 const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>change(v[i.id],i.id));else change(v);};
 (async()=>{
@@ -148,6 +150,10 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   assert(app.innerHTML.includes('clinicCertificate'));assert(app.innerHTML.includes('나의 팬 성향 해설'));
   const scoreSection=app.innerHTML.match(/<section class="clinic-depth"[\s\S]*?<\/section>/)?.[0];
   assert(scoreSection?.includes('00 · 과몰입 지수')&&scoreSection.includes('100</strong>')&&scoreSection.includes('마음'));
+  assert(scoreSection.includes('과몰입 지수는 마음과 행동 점수를 합친 값입니다.'));
+  for(const obsolete of ['마음 60점과 행동 40점','팬 경력이나 우열','미응답·기능 미사용·판단 불가','각각 반올림','검사 길이별 점수','세 응답이 모두','2:1 선택','빠른 방향 확인용'])assert(!scoreSection.includes(obsolete),obsolete+' should not appear in the result score section');
+  const scoreText=scoreSection.match(/<div class="clinic-score">([\s\S]*?)<\/div>/)?.[1].replace(/<[^>]*>/g,' ').replace(/\s+/g,' ').trim();
+  assert.equal(scoreText,'과몰입 지수 100 / 100');
   assert(app.innerHTML.indexOf('00 · 과몰입 지수')<app.innerHTML.indexOf('01 · 마음이 향하는 네 방향'));
   assert(!app.innerHTML.includes(current(mode).bankRevision)&&!app.innerHTML.includes(current(mode).formRevision)&&!app.innerHTML.includes(current(mode).scoringRevision));
   assert.equal((app.innerHTML.match(/class="clinic-pole-letter"/g)||[]).length,8);
@@ -159,6 +165,16 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   printed=false;await click({action:'print'});assert(printed);assert.equal(preparedHTML,certificate.outerHTML);
   await click({action:'png'});assert(dialog.open&&dialog.innerHTML.includes('PNG 내려받기'));assert.equal(capturedHTML,certificate.outerHTML);assert(capturedHTML.includes('100</strong>'));
   assert(!capturedHTML.includes('data-action="png"'),'save just the certificate, not its toolbar');
+  assert(app.innerHTML.includes('data-action="summary"'));
+  const beforeSummary=values.get(key(mode));await click({action:'summary'});
+  assert(dialog.open&&dialog.innerHTML.includes('진단서 요약 이미지')&&dialog.innerHTML.includes('PNG 내려받기')&&dialog.innerHTML.includes('seeya-clinic-summary.png'));
+  assert.equal(summaryData.name,current(mode).displayName);assert.equal(summaryData.modeLabel,C.forms.modes[mode].label);
+  assert.equal(summaryData.model.typeCode,'MRIP');assert.equal(summaryData.model.depthDisplay,'100');
+  assert.deepEqual(summaryData.model.axisRatios,clone(C.score(current(mode)).axisRatios));
+  assert(summaryData.date&&summaryData.model.profile.prescription.medicine);
+  const summaryHTML=Summary.renderMarkup(summaryData);assert(!summaryHTML.includes(nickname));assert(summaryHTML.includes('&lt;img'));
+  assert(summaryHTML.includes('100</strong>')&&summaryHTML.includes('소리 수집가 형'));
+  assert.equal(values.get(key(mode)),beforeSummary);
   load();assert(app.innerHTML.includes('진단서 다시 보기'));await click({resume:mode});assert(app.innerHTML.includes('100</strong>'));
  }
  assert.equal(values.get('seeya-clinic-test-progress-v1'),'{"legacy":"retain exactly"}');
@@ -189,6 +205,16 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   assert.equal((section.match(/<a /g)||[]).length,1);assert(section.includes('href="'+rx.link.href+'"'));
   await click({action:'png'});assert.equal(capturedHTML,certificate.outerHTML);
   await click({action:'print'});assert.equal(preparedHTML,certificate.outerHTML);
+  const beforeSummary=values.get(key(state.mode));await click({action:'summary'});
+  assert.equal(summaryData.model.typeCode,C.score(state).typeCode);
+  assert.equal(summaryData.model.profile.prescription.medicine,rx.medicine);
+  assert.equal(summaryData.model.profile.prescription.dose,rx.dose);
+  const summaryHTML=Summary.renderMarkup(summaryData);
+  assert(summaryHTML.includes(rx.medicine)&&summaryHTML.includes(rx.dose));
+  assert.equal(summaryHTML.includes('class="clinic-summary-code"'),!!C.score(state).typeCode);
+  assert.equal(summaryHTML.includes('clinic-summary-pending'),!C.score(state).typeCode);
+  assert(!summaryHTML.includes(summaryData.model.profile.paragraphs[0]),'summary omits full interpretation paragraphs');
+  assert.equal(values.get(key(state.mode)),beforeSummary);
   for(const content of [capturedHTML,preparedHTML]){
    for(const k of ['medicine','dose','mission','after'])assert(content.includes(rx[k]));
    assert(content.includes('href="'+rx.link.href+'"'));
@@ -205,6 +231,7 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   assert(app.innerHTML.includes('성명 · '+expected));
   await click({action:'png'});assert(capturedHTML.includes('성명 · '+expected));
   await click({action:'print'});assert(preparedHTML.includes('성명 · '+expected));
+  await click({action:'summary'});assert.equal(summaryData.name,expected);assert(Summary.renderMarkup(summaryData).includes(expected));
   assert.equal(values.get(key('brief')),raw);
  }
  // Actual UI: permit skipped questions and a partial inventory, then export one score.
@@ -214,18 +241,23 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
  await click({action:'review'});assert(app.innerHTML.includes('미응답 0점으로 진단서 발급'));
  await click({action:'complete'});assert.equal(C.restore(current('brief')).stage,'result');assert(app.innerHTML.includes('2</strong>'));
  await click({action:'png'});assert(capturedHTML.includes('2</strong>'));assert(!capturedHTML.includes('2~'));
+ await click({action:'summary'});assert.equal(summaryData.model.depthDisplay,'2');assert.equal(summaryData.model.typeCode,null);
  load();await click({resume:'brief'});assert(app.innerHTML.includes('2</strong>'));
  // A failed or in-progress export cannot destroy answers or leave the button disabled.
  const beforeExport=values.get(key('brief')),beforeHTML=app.innerHTML;
- const imageButton={dataset:{action:'png'},disabled:false};let releaseCapture;
+ const imageButton=exportButtons[0];let releaseCapture;
  captureGate=new Promise(resolve=>releaseCapture=resolve);const inFlight=click(imageButton.dataset,imageButton);
- assert.equal(imageButton.disabled,true);releaseCapture();await inFlight;assert.equal(imageButton.disabled,false);captureGate=null;
+ assert(exportButtons.every(b=>b.disabled));const priorSummaryCount=summaryCount;await click({action:'summary'});assert.equal(summaryCount,priorSummaryCount,'do not start another capture while full export is running');releaseCapture();await inFlight;assert(exportButtons.every(b=>!b.disabled));captureGate=null;
  captureFailure=true;await click(imageButton.dataset,imageButton);assert(notice.textContent.includes('이미지 저장 실패'));assert.equal(imageButton.disabled,false);captureFailure=false;
+ const summaryButton=exportButtons[1];let releaseSummary;
+ summaryGate=new Promise(resolve=>releaseSummary=resolve);const summaryInFlight=click(summaryButton.dataset,summaryButton);
+ assert(exportButtons.every(b=>b.disabled));const priorCaptureCount=captureCount;await click({action:'png'});assert.equal(captureCount,priorCaptureCount,'do not start another capture while summary export is running');releaseSummary();await summaryInFlight;assert(exportButtons.every(b=>!b.disabled));summaryGate=null;
+ summaryFailure=true;await click(summaryButton.dataset,summaryButton);assert(notice.textContent.includes('요약 이미지 저장 실패'));assert.equal(summaryButton.disabled,false);summaryFailure=false;
  const printButton={dataset:{action:'print'},disabled:false};prepareFailure=true;printed=false;await click(printButton.dataset,printButton);
  assert(notice.textContent.includes('인쇄 준비 실패'));assert.equal(printButton.disabled,false);assert.equal(printed,false);prepareFailure=false;
  assert.equal(values.get(key('brief')),beforeExport);assert.equal(app.innerHTML,beforeHTML);
- console.log('PASS prescriptions: all 16 distinct prescriptions and two unresolved fallbacks, one relevant public link, exact certificate DOM passed to image/print export, anonymous names and hidden revision metadata.');
+ console.log('PASS prescriptions: all 16 distinct prescriptions and two unresolved fallbacks, one relevant public link, exact certificate DOM passed to image/print export, summary scores/types/prescriptions including unresolved results, anonymous names and hidden revision metadata.');
  ctx.localStorage.getItem=()=>'{broken';load();assert(notice.textContent.includes('읽을 수'));
  ctx.localStorage.getItem=()=>null;ctx.localStorage.setItem=()=>{throw Error('quota');};load();checked=false;await click({start:'brief'});assert(app.innerHTML.includes('현재 1 / 20'));assert(notice.textContent.includes('저장하지 못'));
- console.log('PASS clinic client: all 228 responses, partial inventory/reload, completion/review, 3-mode isolation, opted-in carry/name guard, legacy backup, single scores, removed copy control, PDF preparation, image/print failure recovery, escaping/storage errors and public isolation.');
+ console.log('PASS clinic client: all 228 responses, partial inventory/reload, completion/review, 3-mode isolation, opted-in carry/name guard, legacy backup, single scores, concise score labels, full/summary image controls, PDF preparation, full/summary image and print failure recovery, escaping/storage errors and public isolation.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

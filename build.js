@@ -103,7 +103,7 @@ const examBanks=require('./src/shared/exam').banks;
 if(!examBanks.every(b=>b.questions.length===examBanks[0].questions.length&&b.points===examBanks[0].points))throw Error('Diary play presets need area-specific question counts');
 passportCatalog.playFormats={lyrics:{total:10,maxScore:10},exam:{total:examBanks[0].questions.length,maxScore:examBanks[0].questions.length*examBanks[0].points}};
 const worldcupRoute=json('src/data/worldcup-test-route.json'),gamesTestRoute=json('src/data/games-test-route.json');
-const clinicRoute=json('src/data/clinic-test-route.json'),clinicCss=asset('clinic','css',read('src/styles/clinic.css')+'\n'+read('src/styles/clinic-print.css')),clinicJs=asset('clinic','js',bundle('src/client/clinic.js'));
+const clinicRoute=json('src/data/clinic-test-route.json'),clinicCss=asset('clinic','css',read('src/styles/clinic.css')+'\n'+read('src/styles/clinic-print.css')+'\n'+read('src/styles/clinic-summary.css')),clinicJs=asset('clinic','js',bundle('src/client/clinic.js'));
 const retiredRoutes=json('src/data/retired-test-routes.json');
 const worldcupCss=asset('worldcup','css',read('src/styles/worldcup.css'));
 const worldcupJs=asset('worldcup','js',bundle('src/client/worldcup.js'));

@@ -1,0 +1,45 @@
+/* A portrait sharing card has a fixed layout, independent of phone viewport. */
+.clinic-summary-host{position:fixed;left:-100000px;top:0;width:540px;height:675px;pointer-events:none}
+.clinic-summary-card{position:relative;display:block;width:540px;height:675px;max-width:none;margin:0;padding:28px;background:#fffcfa;color:#45363e;border:1px solid #e3cfd9;font-family:"Gowun Dodum",sans-serif;box-sizing:border-box;overflow:hidden;text-align:left}
+.clinic-summary-card *{box-sizing:border-box}
+.clinic-summary-card:before{content:"";position:absolute;inset:8px;border:1px solid #eee1e7;pointer-events:none}
+.clinic-summary-viewport{height:100%;width:100%;overflow:hidden}
+.clinic-summary-content{position:relative;width:100%;transform-origin:top left}
+.clinic-summary-card .clinic-summary-head{display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #e6d5de;padding-bottom:12px}
+.clinic-summary-card .clinic-summary-head img{width:76px;height:auto;display:block;max-width:none}
+.clinic-summary-card .clinic-summary-head>div{text-align:right}
+.clinic-summary-card .clinic-summary-head h2{font-family:"Gowun Batang",serif;font-size:23px;line-height:1.4;letter-spacing:.08em;margin:0;color:#45363e}
+.clinic-summary-card .clinic-summary-head small{display:block;font:8px/1.6 sans-serif;letter-spacing:.19em;color:#986579;margin-top:2px}
+.clinic-summary-card .clinic-summary-patient{display:flex;align-items:baseline;justify-content:space-between;gap:4px 14px;flex-wrap:wrap;padding:10px 0 0;font-size:10px;line-height:1.5;color:#79636e}
+.clinic-summary-card .clinic-summary-patient>div{max-width:100%;overflow-wrap:anywhere}
+.clinic-summary-card .clinic-summary-patient strong{font-size:12px;font-weight:400;color:#45363e;margin-left:6px}
+.clinic-summary-card .clinic-summary-patient>span{white-space:nowrap}
+.clinic-summary-card .clinic-summary-type{text-align:center;padding:12px 0 13px}
+.clinic-summary-card .clinic-summary-eyebrow{display:block;font-size:10px;line-height:1.5;letter-spacing:.08em;color:#8c3159}
+.clinic-summary-card .clinic-summary-code{display:block;font:750 50px/1.1 system-ui,sans-serif;letter-spacing:.055em;color:#9b4168;margin:4px 0 3px}
+.clinic-summary-card .clinic-summary-type h3{font-family:"Gowun Batang",serif;font-size:22px;line-height:1.4;font-weight:600;letter-spacing:0;margin:0;word-break:keep-all;overflow-wrap:anywhere}
+.clinic-summary-card .clinic-summary-type p{font-size:11px;line-height:1.6;margin:5px 0 0;color:#8f4a68;word-break:keep-all}
+.clinic-summary-card .clinic-summary-pending{min-height:143px;display:flex;flex-direction:column;justify-content:center}
+.clinic-summary-card .clinic-summary-pending h3{margin:12px 0 3px;font-size:24px}
+.clinic-summary-card .clinic-summary-score{display:flex;align-items:center;justify-content:space-between;gap:10px;border-block:1px solid #ead3de;padding:10px 0;margin:0 0 13px}
+.clinic-summary-card .clinic-summary-score>div{display:flex;align-items:baseline;gap:7px;white-space:nowrap}
+.clinic-summary-card .clinic-summary-score>div>span{font-size:11px}
+.clinic-summary-card .clinic-summary-score strong{font:650 29px/1.2 system-ui,sans-serif;color:#9b4168}
+.clinic-summary-card .clinic-summary-score p{font-size:10px;line-height:1.7;margin:0;color:#79636e;white-space:nowrap}
+.clinic-summary-card .clinic-summary-score i{font-style:normal;padding:0 3px;color:#bc8ca2}
+.clinic-summary-card .clinic-summary-directions h4{font-family:"Gowun Dodum",sans-serif;font-size:12px;line-height:1.5;font-weight:400;margin:0 0 10px;color:#45363e}
+.clinic-summary-card .clinic-summary-axis{margin:0 0 10px}
+.clinic-summary-card .clinic-summary-axis-labels{display:flex;justify-content:space-between;gap:8px;font-size:10px;line-height:1.5}
+.clinic-summary-card .clinic-summary-axis-labels>span:last-child{text-align:right}
+.clinic-summary-card .clinic-summary-axis-labels b{font:700 12px/1.4 system-ui,sans-serif;color:#963e64;margin-right:4px}
+.clinic-summary-card .clinic-summary-axis-labels em{font-style:normal;color:#79636e}
+.clinic-summary-card .clinic-summary-bar{height:6px;width:100%;border:1px solid #e1c4d1;border-radius:6px;background:#f1e4eb;margin-top:4px;overflow:hidden}
+.clinic-summary-card .clinic-summary-bar>span{height:100%;display:block;background:#a65076;border-radius:5px}
+.clinic-summary-card .clinic-summary-unready{background:#f4eff2;border-color:#e2d7dd}
+.clinic-summary-card .clinic-summary-unready>span{background:#d7cbd1;width:0!important}
+.clinic-summary-card .clinic-summary-rx{border:1px solid #dfb8ca;background:#fcf3f7;border-radius:10px;padding:12px 17px;margin:16px 0 0}
+.clinic-summary-card .clinic-summary-rx>span{display:block;font-size:10px;line-height:1.4;color:#856175}
+.clinic-summary-card .clinic-summary-rx h4{font-family:"Gowun Batang",serif;font-size:23px;line-height:1.4;font-weight:600;color:#8c3159;margin:5px 0 6px;letter-spacing:-.025em;word-break:keep-all}
+.clinic-summary-card .clinic-summary-rx p{font-size:11px;line-height:1.75;margin:0;word-break:keep-all;overflow-wrap:anywhere;color:#604b55}
+.clinic-summary-card .clinic-summary-foot{display:flex;justify-content:space-between;gap:12px;font-size:9px;line-height:1.5;color:#986579;margin-top:15px}
+@media print{.clinic-summary-host{display:none!important}}
