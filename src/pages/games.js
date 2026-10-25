@@ -1,4 +1,6 @@
 const {W}=require('../shared/common');
+const clinicForms=require('../data/clinic-forms.json').modes;
+const clinicChoices=`간편 ${clinicForms.brief.ids.length} · 상세 ${clinicForms.detailed.ids.length} · MAX ${clinicForms.max.ids.length}문항`;
 
 module.exports=()=>W(`<section class="game-hub">
   <header class="game-hub-heading">
@@ -42,9 +44,9 @@ module.exports=()=>W(`<section class="game-hub">
       <div class="game-card-copy">
         <span class="game-card-kicker">04 · SEEYA FAN CHECK</span>
         <h2 id="game-clinic-title">씨야 과몰입 진단소</h2>
-        <p id="game-clinic-description">내 일상에 씨야가 얼마나 스며들었을까?<br>1~5점으로 체크하고 나만의 진단서를 받아보세요.</p>
-        <div class="game-card-details"><span class="game-status" id="game-clinic-status">준비중</span></div>
-        <span class="game-card-link">준비중 안내 보기 <span aria-hidden="true">→</span></span>
+        <p id="game-clinic-description">나의 팬 성향과 과몰입 지수를 살펴보고,<br>나만의 진단서를 받아보세요.</p>
+        <div class="game-card-details"><span class="game-status" id="game-clinic-status">${clinicChoices}</span></div>
+        <span class="game-card-link">검사 시작하기 <span aria-hidden="true">→</span></span>
       </div>
     </a>
   </div>

@@ -207,14 +207,24 @@ for(const mode of Object.keys(selected)){
 console.log('PASS clinic completion model: per-mode thresholds, minimal unanswered-first queues, unknown-only answers, ready-axis exclusion, depth preservation, persisted sessions and malformed queue rejection.');
 console.log('PASS clinic model: agreed 20/60/148, 16 types, canonical A/B, 60/40 independent scoring, settings domain cap, context-only items, zero missing / unused points, representative tie resolution, stable version migration, partial saves and safe carry.');
 
-const html=fs.readFileSync('game/clinic/test/index.html','utf8');assert(html.includes('noindex,nofollow'));assert(!html.includes('analytics.js')&&!html.includes('googletagmanager'));assert(!fs.readFileSync('sitemap.xml','utf8').includes('/game/clinic/test/'));assert(fs.readFileSync('game/clinic/index.html','utf8').includes('준비중'));assert(!fs.readFileSync('game/index.html','utf8').includes('/game/clinic/test/'));
+const html=fs.readFileSync('game/clinic/test/index.html','utf8'),publicHTML=fs.readFileSync('game/clinic/index.html','utf8'),hubHTML=fs.readFileSync('game/index.html','utf8'),sitemap=fs.readFileSync('sitemap.xml','utf8');
+assert(html.includes('noindex,nofollow'));assert(!html.includes('analytics.js')&&!html.includes('googletagmanager'));assert(!sitemap.includes('/game/clinic/test/'));assert(!hubHTML.includes('/game/clinic/test/'));
+assert(html.includes('data-clinic-environment="test"'));assert(publicHTML.includes('data-clinic-environment="public"'));
+assert(!publicHTML.includes('준비중')&&!publicHTML.includes('검토용'));assert(!/<meta name="(?:robots|googlebot)" content="[^"]*noindex/.test(publicHTML));
+assert(sitemap.includes('<loc>https://seeya-fanpage.com/game/clinic/</loc>'));assert(publicHTML.includes('href="https://seeya-fanpage.com/game/clinic/"'));
+assert(publicHTML.includes('href="/manifest.webmanifest"'));assert(!html.includes('href="/manifest.webmanifest"'));
+const clinicAsset=(markup,extension)=>markup.match(new RegExp('/assets/clinic\\.[^"\\s]+\\.'+extension))?.[0];
+for(const extension of ['js','css']){const asset=clinicAsset(publicHTML,extension);assert(asset,'public clinic '+extension+' bundle');assert.equal(asset,clinicAsset(html,extension),'public/test share the same implementation');assert(fs.existsSync('.'+asset));}
+const clinicCard=hubHTML.match(/<a class="game-card game-card-clinic"[\s\S]*?<\/a>/)?.[0];
+assert(clinicCard&&clinicCard.includes('href="/game/clinic/"'));assert(!clinicCard.includes('준비중'));assert(clinicCard.includes('검사 시작하기'));
+for(const form of Object.values(selected))assert(clinicCard.includes(String(form.ids.length)),'PLAY reflects each actual form length');
 // Exercise the actual shipped event handlers, storage and DOM-based image/print exports.
 const source=fs.readFileSync('src/client/clinic.js','utf8'),values=new Map([['seeya-clinic-test-progress-v1','{"legacy":"retain exactly"}']]),handlers={};
 let checked=false,nickname='<img src=x onerror=x>',printed=false,dialog=null,capturedHTML='',preparedHTML='',blob=null,captureFailure=false,prepareFailure=false,captureGate=null,summaryData=null,summaryFailure=false,summaryGate=null,captureCount=0,summaryCount=0;
 const key=mode=>'seeya-clinic-test-progress-v2'+(mode==='max'?'':'-'+mode);
 const current=mode=>JSON.parse(values.get(key(mode)));
 const exportButtons=[{dataset:{action:'png'},disabled:false},{dataset:{action:'summary'},disabled:false}];
-const app={innerHTML:'',querySelectorAll:()=>exportButtons,querySelector:q=>q==='#clinicName'?{value:nickname}:q==='#clinicCarry'?{checked}:q==='.clinic-progress'?{lastElementChild:{textContent:''}}:q==='progress'?{value:0}:q==='#clinicInventorySummary'?{textContent:''}:null,scrollIntoView(){},addEventListener:(e,fn)=>handlers[e]=fn};
+const app={dataset:{clinicEnvironment:'test'},innerHTML:'',querySelectorAll:()=>exportButtons,querySelector:q=>q==='#clinicName'?{value:nickname}:q==='#clinicCarry'?{checked}:q==='.clinic-progress'?{lastElementChild:{textContent:''}}:q==='progress'?{value:0}:q==='#clinicInventorySummary'?{textContent:''}:null,scrollIntoView(){},addEventListener:(e,fn)=>handlers[e]=fn};
 const notice={textContent:'',hidden:true};
 const certificate={get outerHTML(){return app.innerHTML.match(/<article id="clinicCertificate"[\s\S]*?<\/article>/)?.[0]||'';}};
 const capture={capture:async target=>{captureCount++;assert.equal(target,certificate,'capture the actual certificate node, not a text summary');capturedHTML=target.outerHTML;if(captureGate)await captureGate;if(captureFailure)throw Error('이미지 저장 실패 검사');return {blob:{type:'image/png'},width:1600,height:3200};}};
@@ -402,6 +412,62 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
  assert(notice.textContent.includes('인쇄 준비 실패'));assert.equal(printButton.disabled,false);assert.equal(printed,false);prepareFailure=false;
  assert.equal(values.get(key('brief')),beforeExport);assert.equal(app.innerHTML,beforeHTML);
  console.log('PASS prescriptions: all 16 distinct prescriptions, resolved ties and insufficient-answer fallback, one relevant public link, exact certificate DOM passed to image/print export, summary scores/types/prescriptions including unresolved results, anonymous names and hidden revision metadata.');
+ // Public launch: run the shipped handlers in a separate namespace on the same browser storage.
+ const testSnapshot=new Map([...values].filter(([k])=>k.startsWith('seeya-clinic-test-')));
+ const publicKey=mode=>'seeya-clinic-progress-v1'+(mode==='max'?'':'-'+mode),publicCurrent=mode=>JSON.parse(values.get(publicKey(mode)));
+ const assertTestPreserved=()=>{for(const [k,v] of testSnapshot)assert.equal(values.get(k),v,'public flow must not alter test records: '+k);};
+ app.dataset.clinicEnvironment='public';checked=true;nickname='공개 팬';load();
+ assert(!app.innerHTML.includes('이전 검사 기록 파일로 보관'));assert(!app.innerHTML.includes('data-resume='));
+ assert(!app.innerHTML.includes('clinicCarry'),'test answers must not be available for public carry');
+ for(const mode of ['brief','detailed','max']){
+  const untouched=new Map([...values].filter(([k])=>k.startsWith('seeya-clinic-progress-v1')&&k!==publicKey(mode)));
+  checked=false;await click({action:'home'});await click({start:mode});
+  assert.equal(C.answeredCount(publicCurrent(mode)),0);assert.equal(publicCurrent(mode).displayName,'공개 팬');
+  assertTestPreserved();const first=publicCurrent(mode).questionOrder[0];change('left');await click({action:'next'});
+  await click({action:'home'});load();await click({resume:mode});
+  assert.equal(publicCurrent(mode).answersById[first],'left');assert.equal(publicCurrent(mode).currentIndex,1);
+  // A partial public certificate can enter the same finite completion flow.
+  const fixture=complete(mode);fixture.displayName=nickname;fixture.stage='review';
+  for(const [i,axis] of ['MS','IT'].entries()){
+   const ids=fixture.questionOrder.filter(id=>C.byId[id].axis===axis),required=Math.ceil(ids.length*.8);
+   for(const id of ids.slice(required-1)){if(i===0)fixture.answersById[id]='unknown';else delete fixture.answersById[id];}
+  }
+  values.set(publicKey(mode),JSON.stringify(fixture));load();await click({resume:mode});
+  assert.equal(Completion.plan(publicCurrent(mode)).needed,2);await click({action:'complete'});
+  assert.equal(C.score(publicCurrent(mode)).typeCode,null);assert(app.innerHTML.includes('data-action="completion-start"'));
+  await click({action:'completion-start'});change('left');await click({action:'completion-next'});
+  load();await click({resume:mode});assert.equal(publicCurrent(mode).completion.index,1);
+  change('left');await click({action:'completion-next'});assert.equal(publicCurrent(mode).stage,'review');
+  assert.equal(Completion.plan(publicCurrent(mode)).needed,0);await click({action:'complete'});
+  assert.equal(C.score(publicCurrent(mode)).typeCode,'MRIP');assert.equal(C.score(publicCurrent(mode)).depthScore,100);
+  for(const text of ['검토용','문항과 산식은 검토 중','준비중'])assert(!app.innerHTML.includes(text),'public result text: '+text);
+  const saved=values.get(publicKey(mode));
+  await click({action:'png'});await click({action:'print'});await click({action:'summary'});
+  for(const content of [capturedHTML,preparedHTML,Summary.renderMarkup(summaryData)]){
+   assert(content.includes('공개 팬'));assert(content.includes('MRIP'));assert(!content.includes('검토용'));
+   assert(!content.includes('completion-start'));
+  }
+  assert.equal(values.get(publicKey(mode)),saved);load();await click({resume:mode});
+  assert(app.innerHTML.includes('100</strong>'));assert(!app.innerHTML.includes('검토용'));assertTestPreserved();
+  for(const [k,v] of untouched)assert.equal(values.get(k),v,'public modes must remain independent');
+ }
+ // Explicit carry is allowed between public forms, never by reading a test form.
+ const publicBriefBefore=values.get(publicKey('brief'));await click({action:'home'});await click({resume:'brief'});await click({action:'home'});
+ checked=true;await click({start:'detailed'});assert.equal(C.answeredCount(publicCurrent('detailed')),C.answeredCount(JSON.parse(publicBriefBefore)));
+ assert.equal(values.get(publicKey('brief')),publicBriefBefore);assertTestPreserved();
+ // Missing or unexpected page configuration must use the public namespace.
+ for(const environment of [undefined,'unexpected']){
+  app.dataset=environment===undefined?undefined:{clinicEnvironment:environment};load();
+  assert(!app.innerHTML.includes('이전 검사 기록 파일로 보관'));assert(!app.innerHTML.includes('검토 중'));
+  await click({resume:'brief'});assert(app.innerHTML.includes('성명 · 공개 팬'));assert(!app.innerHTML.includes('검토용'));
+ }
+ const publicSnapshot=new Map([...values].filter(([k])=>k.startsWith('seeya-clinic-progress-v1')));
+ app.dataset={clinicEnvironment:'test'};checked=false;load();assert(app.innerHTML.includes('이전 검사 기록 파일로 보관'));
+ assert(app.innerHTML.includes('문항과 산식은 검토 중'));await click({resume:'brief'});assert(app.innerHTML.includes('검토용'));
+ await click({action:'home'});nickname='테스트 재검사';checked=true;await click({start:'max'});
+ for(const [k,v] of publicSnapshot)assert.equal(values.get(k),v,'test restart must not alter public progress');
+ assert(!app.innerHTML.includes('공개 팬'));assert(!/\bfetch\s*\(|XMLHttpRequest|sendBeacon/.test(source),'launch must not add answer transmission');
+ console.log('PASS clinic public launch: indexable public route and shared assets, test noindex, separate names/answers/progress, all-mode completion and resume, public PNG/PDF text, legacy isolation and safe default namespace.');
  ctx.localStorage.getItem=()=>'{broken';load();assert(notice.textContent.includes('읽을 수'));
  ctx.localStorage.getItem=()=>null;ctx.localStorage.setItem=()=>{throw Error('quota');};load();checked=false;await click({start:'brief'});assert(app.innerHTML.includes('현재 1 / 20'));assert(notice.textContent.includes('저장하지 못'));
  console.log('PASS clinic client: all 228 responses, partial inventory/reload, completion/review, 3-mode isolation, opted-in carry/name guard, legacy backup, single scores, concise score labels, full/summary image controls, PDF preparation, full/summary image and print failure recovery, escaping/storage errors and public isolation.');

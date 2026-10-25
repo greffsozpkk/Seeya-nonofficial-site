@@ -277,9 +277,8 @@
   {
     "key": "clinic",
     "path": "/game/clinic/",
-    "title": "씨야 과몰입 진단소 · 준비중 | SEEYA PLAY",
-    "description": "내 일상에 씨야가 얼마나 스며들었을까요? 문항마다 1~5점으로 체크하고 나만의 씨야 과몰입 진단서를 받는 팬 테스트를 준비하고 있습니다.",
-    "noindex": true
+    "title": "씨야 과몰입 진단소 | SEEYA PLAY",
+    "description": "씨야를 좋아하는 나만의 방식과 과몰입 지수를 살펴보세요. 간편·상세·MAX 검사로 팬 성향과 오늘의 처방을 확인하고 진단서를 이미지나 PDF로 간직할 수 있습니다."
   },
   {
     "key": "news",
