@@ -117,14 +117,39 @@
     }
   },
   "scoring": {
-    "revision": "MAX-integrated-fixed-weights-v1",
+    "revision": "MAX-integrated-representative-ties-v2",
     "emotionMax": 60,
     "behaviorMax": 40,
     "minimumCoverage": 0.8,
-    "missingPolicy": "fixed-weight-interval-no-zero-imputation-no-weight-redistribution",
-    "preferencePolicy": "equal-items-per-axis; valid-only ratio; 80% minimum; exact ties unassigned",
+    "missingPolicy": "fixed-weights-zero-for-missing-no-weight-redistribution",
+    "preferencePolicy": "equal-items-per-axis; 80% minimum; exact ties add 0.5 to first valid representative answer; non-ties unchanged",
     "validationStatus": "editorial-design-not-empirically-validated",
-    "noPercentiles": true
+    "noPercentiles": true,
+    "preferenceTieBreak": {
+      "bonus": 0.5,
+      "priority": {
+        "MS": [
+          "MAX2-MS-001",
+          "MAX2-MS-018",
+          "MAX2-MS-012"
+        ],
+        "RD": [
+          "MAX2-RD-001",
+          "MAX2-RD-004",
+          "MAX2-RD-017"
+        ],
+        "IT": [
+          "MAX2-IT-001",
+          "MAX2-IT-008",
+          "MAX2-IT-032"
+        ],
+        "PF": [
+          "MAX2-PF-001",
+          "MAX2-PF-017",
+          "MAX2-PF-020"
+        ]
+      }
+    }
   },
   "questions": [
     {

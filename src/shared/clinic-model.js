@@ -63,10 +63,26 @@
       const left = qs.filter(q => answers[q.id] === 'left').length;
       const right = qs.filter(q => answers[q.id] === 'right').length;
       const valid = left + right, ready = valid >= Math.ceil(qs.length * .8);
+      const rawTie = ready && left === right;
+      const policy = data.scoring?.preferenceTieBreak || {};
+      const preferred = policy.priority?.[axis] || [];
+      const candidates = [...preferred, ...qs.map(q => q.id).sort()];
+      const availableIds = new Set(qs.map(q => q.id));
+      const tieBreakQuestionId = rawTie ? candidates.find(id => availableIds.has(id) && ['left','right'].includes(answers[id])) || null : null;
+      const tieBreakSide = tieBreakQuestionId ? answers[tieBreakQuestionId] : null;
+      const tieBreakWeight = tieBreakSide ? (Number.isFinite(policy.bonus) && policy.bonus > 0 && policy.bonus < 1 ? policy.bonus : .5) : 0;
+      // Only resolve exact ties. A representative answer never overturns a majority.
+      const weightedLeft = left + (tieBreakSide === 'left' ? tieBreakWeight : 0);
+      const weightedRight = right + (tieBreakSide === 'right' ? tieBreakWeight : 0);
+      const weightTotal = weightedLeft + weightedRight;
+      const leftPercent = ready ? Math.round(weightedLeft / weightTotal * 100) : null;
       axisResults[axis] = {left, right, valid, total: qs.length, ready,
-        leftPercent: ready ? Math.round(left / valid * 100) : null,
-        rightPercent: ready ? 100 - Math.round(left / valid * 100) : null,
-        pole: ready && left !== right ? (left > right ? def.left : def.right) : null,
+        rawTie, tieResolved: !!tieBreakSide, tieBreakQuestionId, tieBreakSide, tieBreakWeight,
+        weightedLeft, weightedRight, weightTotal,
+        rawLeftPercent: ready ? Math.round(left / valid * 100) : null,
+        rawRightPercent: ready ? 100 - Math.round(left / valid * 100) : null,
+        leftPercent, rightPercent: ready ? 100 - leftPercent : null,
+        pole: ready && weightedLeft !== weightedRight ? (weightedLeft > weightedRight ? def.left : def.right) : null,
         nearBoundary: ready && Math.abs(left - right) <= 2};
     }
     const codes = Object.values(axisResults).map(a => a.pole);

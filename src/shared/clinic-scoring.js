@@ -1,6 +1,6 @@
 'use strict';
 const bank=require('../data/clinic-bank.json'), forms=require('../data/clinic-forms.json'), engine=require('./clinic-model');
-const scoringRevision='clinic-integrated-zero-missing-v3',axes=Object.keys(bank.axes),byId=Object.fromEntries(bank.questions.map(q=>[q.id,q]));
+const scoringRevision='clinic-integrated-representative-ties-v4',axes=Object.keys(bank.axes),byId=Object.fromEntries(bank.questions.map(q=>[q.id,q]));
 const data={...bank,forms:forms.modes};
 const plain=v=>v!==null&&typeof v==='object'&&!Array.isArray(v);
 const cleanName=v=>String(v).replace(/[\u0000-\u001f\u007f]/g,'').trim().slice(0,24);
@@ -24,7 +24,7 @@ function create(mode,name='',id='clinic-'+Date.now(),now=new Date().toISOString(
 }
 function restore(value){
  const bad=()=>{throw Error('이전 진행 기록을 읽을 수 없거나 문항 버전이 다릅니다.');};
- if(!plain(value)||value.bankRevision!==bank.revision||value.formRevision!==(forms.modes[value.mode]?.revision||forms.revision)||![scoringRevision,'clinic-integrated-60-40-v2'].includes(value.scoringRevision)||typeof value.runId!=='string'||!value.runId||value.runId.length>128||typeof value.displayName!=='string'||cleanName(value.displayName)!==value.displayName)return bad();
+ if(!plain(value)||value.bankRevision!==bank.revision||value.formRevision!==(forms.modes[value.mode]?.revision||forms.revision)||![scoringRevision,'clinic-integrated-zero-missing-v3','clinic-integrated-60-40-v2'].includes(value.scoringRevision)||typeof value.runId!=='string'||!value.runId||value.runId.length>128||typeof value.displayName!=='string'||cleanName(value.displayName)!==value.displayName)return bad();
  const expected=forms.modes[value.mode]?.ids;
  if(!expected||JSON.stringify(expected)!==JSON.stringify(value.questionOrder)||!Number.isInteger(value.currentIndex)||value.currentIndex<0||value.currentIndex>=expected.length||!['question','review','result'].includes(value.stage)||!Number.isFinite(Date.parse(value.updatedAt)))return bad();
  if(!plain(value.answersById)||!plain(value.displayDirections)||Object.keys(value.displayDirections).length!==expected.length)return bad();
@@ -44,7 +44,8 @@ function score(state){
  const scored=engine.score(data,state.answersById,state.mode),axisRatios={};let codes=[''];const boundaryAxes=[];
  for(const axis of axes){const row=scored.axisResults[axis],def=bank.axes[axis];
   axisRatios[axis]={ready:row.ready,left:row.leftPercent,right:row.rightPercent,pole:row.pole,nearBoundary:row.nearBoundary,
-   coverage:{valid:row.valid,total:row.total},mean:row.valid?row.right/row.valid:null};
+   tieResolved:row.tieResolved,tieBreakQuestionId:row.tieBreakQuestionId,
+   coverage:{valid:row.valid,total:row.total},mean:row.valid?row.weightedRight/row.weightTotal:null};
   if(row.ready&&!row.pole)boundaryAxes.push(axis);
   codes=row.ready?codes.flatMap(c=>(row.pole?[row.pole]:[def.left,def.right]).map(p=>c+p)):[];
  }

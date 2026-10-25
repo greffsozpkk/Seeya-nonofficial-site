@@ -71,8 +71,59 @@ missing.answersById['MAX2-MS-001']='unknown';assert.equal(C.score(missing).axisR
 const missingGroup=complete();for(const q of C.bank.questions.filter(q=>q.scoringGroup==='기대와 기다림'))missingGroup.answersById[q.id]='unknown';
 assert.equal(C.score(missingGroup).emotion.ready,true);
 const tied=complete('detailed');for(const a of C.axes)tied.questionOrder.filter(id=>C.byId[id].axis===a).forEach((id,i)=>tied.answersById[id]=i<5?'left':'right');
-assert.equal(C.score(tied).typeCode,null);assert.equal(C.score(tied).possibleTypes.length,16);assert.equal(C.score(tied).axisRatios.MS.left,50);
-assert.equal(I.explain(C.score(tied)).meaning.length,0);
+assert.equal(C.score(tied).typeCode,'MRIP');assert.deepEqual(C.score(tied).possibleTypes,['MRIP']);assert.equal(C.score(tied).axisRatios.MS.left,52);
+assert.equal(I.explain(C.score(tied)).meaning.length,4);
+// Exact ties use a stable answered representative; ordinary majorities stay untouched.
+const tiePriority={MS:['001','018','012'],RD:['001','004','017'],IT:['001','008','032'],PF:['001','017','020']};
+for(const axis of C.axes){
+ tiePriority[axis]=tiePriority[axis].map(n=>'MAX2-'+axis+'-'+n);
+ assert.deepEqual(C.bank.scoring.preferenceTieBreak.priority[axis],tiePriority[axis]);
+}
+assert.equal(C.bank.scoring.preferenceTieBreak.bonus,.5);
+function setBalancedAxis(state,axis,skipped=[],anchor=tiePriority[axis][0],side='left'){
+ const ids=state.questionOrder.filter(id=>C.byId[id].axis===axis);
+ for(const id of skipped)state.answersById[id]='unknown';
+ const active=ids.filter(id=>!skipped.includes(id));assert(active.includes(anchor));assert.equal(active.length%2,0);
+ const ordered=[anchor,...active.filter(id=>id!==anchor)];
+ ordered.forEach((id,i)=>state.answersById[id]=i<active.length/2?side:side==='left'?'right':'left');
+ return active;
+}
+for(const mode of ['detailed','max']){
+ const allTied=complete(mode);for(const axis of C.axes)setBalancedAxis(allTied,axis);
+ const before=JSON.stringify(allTied),sc=C.score(allTied);assert.equal(sc.typeCode,'MRIP');assert.equal(sc.possibleTypes.length,1);assert.equal(sc.depthScore,100);
+ assert.equal(JSON.stringify(allTied),before,'scoring must not mutate answers');
+ assert.deepEqual(C.score(C.restore(clone(allTied))),sc,'restored answers resolve the same way');
+ const mirrored=clone(allTied);for(const id of mirrored.questionOrder)if(C.byId[id].kind==='preference')mirrored.answersById[id]=mirrored.answersById[id]==='left'?'right':'left';
+ const ms=C.score(mirrored);assert.equal(ms.typeCode,'SDTF');assert.equal(ms.depthScore,sc.depthScore);
+ const reordered={...C.data,questions:C.data.questions.map(q=>q.kind==='preference'?{...q,displayOrder:[...q.displayOrder].reverse(),choices:[...q.choices].reverse()}:q),forms:{...C.data.forms,[mode]:{...C.data.forms[mode],ids:[...C.data.forms[mode].ids].reverse()}}};
+ assert.equal(C.engine.score(reordered,allTied.answersById,mode).typeCode,sc.typeCode,'display A/B or form ordering must not decide a tie');
+ for(const axis of C.axes){
+  const row=sc.axisResults[axis],ratio=sc.axisRatios[axis];
+  assert.equal(row.left,row.right);assert.equal(row.weightedLeft,row.left+.5);assert.equal(row.weightedRight,row.right);assert.equal(row.weightTotal,row.valid+.5);
+  assert.equal(row.tieResolved,true);assert.equal(row.tieBreakQuestionId,tiePriority[axis][0]);
+  assert.equal(ratio.tieResolved,true);assert.equal(ratio.tieBreakQuestionId,row.tieBreakQuestionId);
+  assert.equal(ratio.left+ratio.right,100);assert(ratio.left>50&&ratio.left<=53);
+  assert.equal(ms.axisRatios[axis].right,ratio.left);assert.equal(ms.axisRatios[axis].left,ratio.right);
+  const majority=complete(mode),ids=majority.questionOrder.filter(id=>C.byId[id].axis===axis),primary=tiePriority[axis][0];
+  majority.answersById[primary]='right';const rest=ids.filter(id=>id!==primary);rest.forEach((id,i)=>majority.answersById[id]=i<ids.length/2+1?'left':'right');
+  const mr=C.score(majority).axisResults[axis];assert.equal(mr.pole,C.bank.axes[axis].left);assert.equal(mr.tieResolved,false);assert.equal(mr.weightedLeft,mr.left);assert.equal(mr.weightedRight,mr.right);
+  assert.equal(mr.leftPercent,Math.round(mr.left/mr.valid*100),'non-tie ratio remains raw');
+  const fallback=complete(mode),priority=tiePriority[axis],other=ids.findLast(id=>!priority.includes(id));
+  setBalancedAxis(fallback,axis,[priority[0],other],priority[1],'right');
+  const fr=C.score(fallback).axisResults[axis];assert(fr.ready&&fr.tieResolved);assert.equal(fr.tieBreakQuestionId,priority[1]);assert.equal(fr.pole,C.bank.axes[axis].right);
+ }
+}
+for(const axis of C.axes){
+ const fallback=complete('max'),ids=fallback.questionOrder.filter(id=>C.byId[id].axis===axis),priority=tiePriority[axis];
+ const extra=ids.findLast(id=>!priority.includes(id)),skipped=[...priority,extra];
+ const canonical=ids.filter(id=>!skipped.includes(id)).sort()[0];setBalancedAxis(fallback,axis,skipped,canonical,'right');
+ delete fallback.answersById[priority[0]];
+ const row=C.score(fallback).axisResults[axis];assert(row.ready&&row.tieResolved);assert.equal(row.tieBreakQuestionId,canonical);assert.equal(row.pole,C.bank.axes[axis].right);
+ const insufficient=complete('detailed'),small=insufficient.questionOrder.filter(id=>C.byId[id].axis===axis);
+ setBalancedAxis(insufficient,axis,small.slice(6),small[0]);const short=C.score(insufficient);
+ assert.equal(short.axisResults[axis].ready,false);assert.equal(short.axisResults[axis].tieResolved,false);assert.equal(short.typeCode,null,'too few answers must not invent a type');
+}
+
 const partial=C.create('brief');partial.answersById['BEH-01']={lock:'seeya',home:''};
 assert.equal(C.restore(partial),partial);assert.equal(C.answeredCount(partial),0);assert(!C.validAnswer('BEH-01',partial.answersById['BEH-01']));
 const good=complete();for(const patch of [{bankRevision:'old'},{formRevision:'old'},{scoringRevision:'old'},{currentIndex:999},{answersById:{'MAX2-MS-001':1}},{answersById:{'BEH-01':{noSuch:'other'}}},{questionOrder:good.questionOrder.slice(1)},{stage:'result',completedAt:'invalid'},{displayDirections:{}}])assert.throws(()=>C.restore({...good,...patch}));
@@ -87,8 +138,11 @@ assert.equal(C.carryAnswers({...from,bankRevision:'old'},C.create('max',from.dis
 for(const mode of Object.keys(selected)){
  const blank=C.create(mode),empty=C.score(blank);assert.equal(empty.depthScore,0);assert.equal(empty.depthReady,true);assert.equal(empty.typeCode,null);
  blank.stage='result';blank.completedAt=new Date().toISOString();assert.equal(C.restore(blank),blank);
- const old={...complete(mode),scoringRevision:'clinic-integrated-60-40-v2'};const before=JSON.stringify(old);const migrated=C.restore(old);
- assert.equal(migrated.scoringRevision,C.scoringRevision);assert.equal(JSON.stringify(old),before);assert.deepEqual(migrated.answersById,old.answersById);
+ for(const revision of ['clinic-integrated-60-40-v2','clinic-integrated-zero-missing-v3']){
+  const old={...complete(mode),scoringRevision:revision};const before=JSON.stringify(old);const migrated=C.restore(old);
+  assert.equal(migrated.scoringRevision,C.scoringRevision);assert.equal(JSON.stringify(old),before);assert.deepEqual(migrated.answersById,old.answersById);assert.equal(C.score(migrated).depthScore,C.score(complete(mode)).depthScore);
+ }
+ const oldTie={...clone(tied),scoringRevision:'clinic-integrated-zero-missing-v3'};assert.equal(C.score(C.restore(oldTie)).typeCode,'MRIP');
  const variants=[{},Object.fromEntries(setting.items.map(i=>[i.id,'unused'])),{lock:'seeya'},Object.fromEntries(setting.items.map(i=>[i.id,'other']))];
  for(const v of variants){const b=C.engine.bound(setting,v);assert.equal(b.low,b.high);}
  const st=complete(mode);for(const id of st.questionOrder)if(C.byId[id].kind!=='preference')delete st.answersById[id];
@@ -109,9 +163,9 @@ for(const p of prescriptions){
  const url=new URL(p.link.href,'https://seeya-fanpage.com');assert.equal(url.origin,'https://seeya-fanpage.com');assert(routePaths.has(url.pathname));
  assert(!p.link.href.includes('/test/'));assert(p.link.label);
 }
-assert.equal(I.explain(C.score(tied)).prescription,I.profiles.fallbackPrescriptions.balanced);
+assert.equal(I.explain(C.score(tied)).prescription,I.profiles.types.MRIP.prescription);
 assert.equal(I.explain(C.score(C.create('brief'))).prescription,I.profiles.fallbackPrescriptions.insufficient);
-console.log('PASS clinic model: agreed 20/60/148, 16 types, canonical A/B, 60/40 independent scoring, settings domain cap, context-only items, zero missing / unused points and explicit scoring migration, partial saves and safe carry.');
+console.log('PASS clinic model: agreed 20/60/148, 16 types, canonical A/B, 60/40 independent scoring, settings domain cap, context-only items, zero missing / unused points, representative tie resolution, stable version migration, partial saves and safe carry.');
 
 const html=fs.readFileSync('game/clinic/test/index.html','utf8');assert(html.includes('noindex,nofollow'));assert(!html.includes('analytics.js')&&!html.includes('googletagmanager'));assert(!fs.readFileSync('sitemap.xml','utf8').includes('/game/clinic/test/'));assert(fs.readFileSync('game/clinic/index.html','utf8').includes('준비중'));assert(!fs.readFileSync('game/index.html','utf8').includes('/game/clinic/test/'));
 // Exercise the actual shipped event handlers, storage and DOM-based image/print exports.
@@ -139,6 +193,7 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
   await click({action:'next'});assert.equal(current(mode).currentIndex,1);await click({action:'previous'});
   for(let i=0;i<count;i++){
    const q=C.byId[current(mode).questionOrder[i]];
+   if(q.kind==='preference'){assert.equal(app.innerHTML.split(q.instruction).length-1,1,'one instruction per A/B question');assert(!app.innerHTML.includes('두 선택 중 더 자연스러운 쪽을 골라주세요.'));}
    if(q.kind==='inventory'&&mode==='brief'){
     change('seeya',q.items[0].id);await click({action:'next'});assert.equal(current(mode).currentIndex,i+1);await click({action:'previous'});
     load();await click({resume:mode});assert(app.innerHTML.includes('value="seeya" selected'));assert(app.innerHTML.includes('미선택'));
@@ -256,7 +311,7 @@ const answer=q=>{const v=response(q);if(q.kind==='inventory')q.items.forEach(i=>
  const printButton={dataset:{action:'print'},disabled:false};prepareFailure=true;printed=false;await click(printButton.dataset,printButton);
  assert(notice.textContent.includes('인쇄 준비 실패'));assert.equal(printButton.disabled,false);assert.equal(printed,false);prepareFailure=false;
  assert.equal(values.get(key('brief')),beforeExport);assert.equal(app.innerHTML,beforeHTML);
- console.log('PASS prescriptions: all 16 distinct prescriptions and two unresolved fallbacks, one relevant public link, exact certificate DOM passed to image/print export, summary scores/types/prescriptions including unresolved results, anonymous names and hidden revision metadata.');
+ console.log('PASS prescriptions: all 16 distinct prescriptions, resolved ties and insufficient-answer fallback, one relevant public link, exact certificate DOM passed to image/print export, summary scores/types/prescriptions including unresolved results, anonymous names and hidden revision metadata.');
  ctx.localStorage.getItem=()=>'{broken';load();assert(notice.textContent.includes('읽을 수'));
  ctx.localStorage.getItem=()=>null;ctx.localStorage.setItem=()=>{throw Error('quota');};load();checked=false;await click({start:'brief'});assert(app.innerHTML.includes('현재 1 / 20'));assert(notice.textContent.includes('저장하지 못'));
  console.log('PASS clinic client: all 228 responses, partial inventory/reload, completion/review, 3-mode isolation, opted-in carry/name guard, legacy backup, single scores, concise score labels, full/summary image controls, PDF preparation, full/summary image and print failure recovery, escaping/storage errors and public isolation.');
