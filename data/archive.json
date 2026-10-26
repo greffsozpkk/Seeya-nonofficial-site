@@ -560,9 +560,15 @@
         "url": "https://www.youtube.com/watch?v=eRupK5NZaAM",
         "publishedDate": "2026-10-24",
         "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=ihjqXay714E",
+        "publishedDate": "2026-10-25",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-25T05:04:17.996598+00:00",
+    "updatedAt": "2026-10-26T05:07:47.790697+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1160,9 +1166,15 @@
         "url": "https://www.youtube.com/watch?v=bfE5mw7Rycg",
         "publishedDate": "2026-10-21",
         "autoDiscovery": true
+      },
+      {
+        "label": "소프트 귤",
+        "url": "https://www.youtube.com/watch?v=pkkT7Zm04JY",
+        "publishedDate": "2026-10-25",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-10-25T05:04:17.996598+00:00",
+    "updatedAt": "2026-10-26T05:07:47.790697+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -12054,7 +12066,14 @@
       "label": "SBS Radio 에라오",
       "url": "https://www.youtube.com/watch?v=ZngxXq7apqA"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "뚝딱이 PD",
+        "url": "https://www.youtube.com/watch?v=iZsYNG_O2E4",
+        "publishedDate": "2026-01-05",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2026",
@@ -12063,7 +12082,8 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "publishedDate": "2026-01-04"
+    "publishedDate": "2026-01-04",
+    "updatedAt": "2026-10-26T05:07:47.790697+00:00"
   },
   {
     "id": "v488-audit-012",
@@ -48827,7 +48847,7 @@
     "id": "20261025-seeya-hyundai-asan-family",
     "date": "2026-10-25",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-13",
+    "updatedAt": "2026-10-26T05:07:47.790697+00:00",
     "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당 예정",
     "program": "현대자동차 아산공장 30주년 · 조합원 가족 한마당",
     "type": "event",
@@ -48849,6 +48869,48 @@
         "label": "주최 측 행사 세부 계획 · 갤러리 보관",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9682",
         "publishedDate": "2026-10-12"
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=kVws3Tx1I-g",
+        "publishedDate": "2026-10-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=l-kDhovVeg4",
+        "publishedDate": "2026-10-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=3k4lcdoDODM",
+        "publishedDate": "2026-10-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=LY8aU4ng550",
+        "publishedDate": "2026-10-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "처키아빠",
+        "url": "https://www.youtube.com/watch?v=f-5VbGAIMes",
+        "publishedDate": "2026-10-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=3URjHo2POWE",
+        "publishedDate": "2026-10-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=APpe0GIfxgA",
+        "publishedDate": "2026-10-26",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -50673,5 +50735,34 @@
     "calendar": {
       "enabled": false
     }
+  },
+  {
+    "id": "discovered-1947f8fc8ae548a4",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-26T05:07:47.790697+00:00",
+    "updatedAt": "2026-10-26T05:07:47.790697+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-15)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=qDpX1joTH_0",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
   }
 ]
