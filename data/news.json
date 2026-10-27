@@ -147,13 +147,13 @@
       "description": "씨야 이보람, 대전 무대 앞 셀카…20주년 투어 속 변함없는 미소 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-10-27T18:06:00.244356+00:00",
-  "lastCheckedAt": "2026-10-27T18:06:00.244356+00:00",
+  "updatedAt": "2026-10-27T22:16:57.936376+00:00",
+  "lastCheckedAt": "2026-10-27T22:16:57.936376+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-27T18:06:00.244356+00:00",
-    "남규리": "2026-10-27T18:06:00.244356+00:00",
-    "김연지": "2026-10-27T18:06:00.244356+00:00",
-    "이보람": "2026-10-27T18:06:00.244356+00:00"
+    "씨야": "2026-10-27T22:16:57.936376+00:00",
+    "남규리": "2026-10-27T22:16:57.936376+00:00",
+    "김연지": "2026-10-27T22:16:57.936376+00:00",
+    "이보람": "2026-10-27T22:16:57.936376+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-27T12:16:38.602154+00:00",
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 153,
+      "accepted": 135,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 113,
+      "accepted": 105,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 37,
+      "accepted": 31,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 81,
+      "accepted": 72,
       "changed": false,
       "status": "unchanged"
     }
