@@ -33014,7 +33014,7 @@
     "id": "20110315-gyuri-strongheart68",
     "date": "2011-03-15",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
     "title": "남규리 · 강심장 68회 · 인형의 집 2부",
     "program": "SBS 강심장",
     "type": "variety",
@@ -33038,6 +33038,12 @@
       {
         "label": "SBS · 68회 공식 다시보기",
         "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/strongheart/22000064322"
+      },
+      {
+        "label": "미우새",
+        "url": "https://www.youtube.com/watch?v=10HaQEG-UQ4",
+        "publishedDate": "2011-03-28",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -48847,7 +48853,7 @@
     "id": "20261025-seeya-hyundai-asan-family",
     "date": "2026-10-25",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-26T05:07:47.790697+00:00",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
     "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당 예정",
     "program": "현대자동차 아산공장 30주년 · 조합원 가족 한마당",
     "type": "event",
@@ -48909,6 +48915,24 @@
       {
         "label": "🐿람보바라기",
         "url": "https://www.youtube.com/watch?v=APpe0GIfxgA",
+        "publishedDate": "2026-10-26",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=ANTkvONLwbU",
+        "publishedDate": "2026-10-26",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=6yzGFseLx1Y",
+        "publishedDate": "2026-10-26",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=puopQydR79U",
         "publishedDate": "2026-10-26",
         "autoDiscovery": true
       }
@@ -50763,6 +50787,238 @@
     "tags": [],
     "note": "",
     "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-3f521aaa603ab70b",
+    "date": "2011-07-29",
+    "addedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "title": "[남규리]110726 - NamGyuri - Talk To SECTOR 7 Movie",
+    "program": "",
+    "type": "interview",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "mena299",
+      "url": "https://www.youtube.com/watch?v=K9NYpymS0Rw",
+      "publishedDate": "2011-07-29",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2011-07-29",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-2f3fe1c97fc96a1a",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-10)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=8N-7P8VM8wk",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-39f2c105e914d755",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-24)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=216gYMIf3n0",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-a6f96d8c8b98491d",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-01)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=KjIlQOObDGI",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-103189e63bbe1e0e",
+    "date": "2012-08-07",
+    "addedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-26)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=pd31LaBzhrE",
+      "publishedDate": "2012-08-07",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-08-07",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-433764f3b9a9a8e9",
+    "date": "2012-08-07",
+    "addedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-28)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=hon5JpTYdmI",
+      "publishedDate": "2012-08-07",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-08-07",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-d0a85fcd031f7732",
+    "date": "2012-08-07",
+    "addedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-27)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=YBsIYWd60fQ",
+      "publishedDate": "2012-08-07",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-08-07",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-2a0eab530d5cd526",
+    "date": "2015-04-30",
+    "addedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "title": "[김연지] 150428 - KimYeonJi - 잊었니 in Power Time Radio",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "mena299",
+      "url": "https://www.youtube.com/watch?v=MRwtS9v7m2g",
+      "publishedDate": "2015-04-30",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2015-04-30",
     "autoDiscovery": true
   }
 ]
