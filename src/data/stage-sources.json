@@ -1793,5 +1793,187 @@
     "scope": "single",
     "category": "broadcast",
     "basis": "2026-10-25 원본 영상 제목의 날짜·공연·곡명 확인. 여러 곡을 담은 영상은 모음으로 연결하며, 출처의 업로드일로 공연을 새로 만들지 않음."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=kVws3Tx1I-g",
+    "songIds": [
+      "love-greeting",
+      "crazy-love-song",
+      "like-spring",
+      "stay",
+      "marry-me"
+    ],
+    "scope": "multi",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=LY8aU4ng550",
+    "songIds": [
+      "love-greeting",
+      "crazy-love-song",
+      "like-spring",
+      "stay",
+      "marry-me"
+    ],
+    "scope": "multi",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=3URjHo2POWE",
+    "songIds": [
+      "love-greeting",
+      "crazy-love-song",
+      "like-spring",
+      "stay",
+      "marry-me"
+    ],
+    "scope": "multi",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=6yzGFseLx1Y",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=l-kDhovVeg4",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=3k4lcdoDODM",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=APpe0GIfxgA",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=df7wb92nR9w",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=ANTkvONLwbU",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=A0XXJM6NY-A",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=rLzdigJugJ8",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=d6jiS3A8Bxk",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=puopQydR79U",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-29 원본 직캠 제목·설명 및 전체본 타임스탬프의 2026-10-25 아산공장 행사·곡명 확인. 영상 공개일과 공연일을 구분하며 여러 곡은 모음, 짧은 클립은 발췌로 연결."
+  },
+  {
+    "archiveId": "20060826-kbs-7080-scent-of-a-woman",
+    "url": "https://www.youtube.com/watch?v=jq5TV8lq7rs",
+    "songIds": [
+      "scent-of-a-woman"
+    ],
+    "scope": "single",
+    "category": "broadcast",
+    "basis": "2026-10-29 901K 원본 영상 설명의 KBS 콘서트7080 20060826 방송일 및 곡명 확인. 2026-10-27 재게시 영상은 기존 방송 기록에 연결."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.instagram.com/reel/De8iSwLB4YR/",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-29 팬 원본 릴스의 게시물·공연일·곡명 확인. 전체곡이 아닌 발췌 영상이며 같은 공연 기록에 연결합니다."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.instagram.com/reel/DfBsPyOhljA/",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-10-29 팬 원본 릴스의 게시물·공연일·곡명 확인. 전체곡이 아닌 발췌 영상이며 같은 공연 기록에 연결합니다."
+  },
+  {
+    "archiveId": "20261017-the-fan-suwon",
+    "url": "https://www.instagram.com/reel/DeoGfubNPRQ/",
+    "songIds": [
+      "cotton-candy"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-10-29 팬 원본 릴스의 게시물·공연일·곡명 확인. 전체곡이 아닌 발췌 영상이며 같은 공연 기록에 연결합니다."
   }
 ]

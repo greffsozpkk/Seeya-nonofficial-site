@@ -31,9 +31,9 @@ const {promoStatus}=shared;
 for(const p of allRows){assert(p.addressSource&&p.coordinateSource&&p.source.url&&p.dateBasis);assert(p.coordinates.every(Number.isFinite));assert(html.includes(p.name));assert(detail(p).includes(p.source.url.replaceAll('&','&amp;')));}
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'콘서트 혜택'}).length,11);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'사진·사인'}).length,1);
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'카페'}).length,19);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'카페'}).length,21);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'씨야'}).length,25);
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'이보람'}).length,38);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'이보람'}).length,39);
 assert(!filterPlaces(allRows,{member:'씨야'}).some(p=>p.id==='maboklim'));
 const ohji=allRows.find(p=>p.id==='ohji'),thai=allRows.find(p=>p.id==='thailicious');
 assert.equal(promoStatus(thai,'2026-10-05T00:00:00+09:00'),'혜택 종료');

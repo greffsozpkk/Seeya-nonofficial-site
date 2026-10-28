@@ -33,6 +33,12 @@ CASES = [
     ('씨야', '씨야(SeeYa), 새 앨범 발매', '', True),
     ('씨야', '씨야출신 남규리, 근황 공개', '', True),
     ('씨야', '씨야 이보람, 대전 무대 앞 셀카', '', True),
+    ('씨야', "메타 'VR 글래스'용 디스플레이는 씨야가 공급 - KIPOST", "메타 'VR 글래스'용 디스플레이는 씨야가 공급 KIPOST", False),
+    ('씨야', 'SeeYa supplies microdisplays for VR glasses', 'KIPOST', False),
+    ('씨야', '씨야, 새 드라마 OST 공개', '', True),
+    ('씨야', '씨야의 ost가 돌아온다', '', True),
+    ('씨야', '씨야, 새 공연 소식 - KIPOST', '가수 씨야의 콘서트', True),
+    ('남규리', '남규리 대표, 디스플레이 공급 계약 - KIPOST', '', False),
     ('김연지', '김연지 대표, 씨야드 매장 확장', '', False),
 ]
 
@@ -53,10 +59,12 @@ class FilterTests(unittest.TestCase):
     def test_prerender_filters_unreviewed_cache(self):
         data={'씨야':[
             {'title':"거제 대형카페 '씨야드', 블루리본서베이 2026 선정",'link':'https://example.com/cafe'},
+            {'title':"메타 'VR 글래스'용 디스플레이는 씨야가 공급 - KIPOST",'link':'https://example.com/display'},
             {'title':'씨야의 20주년 전국투어','link':'https://example.com/concert'}]}
         script="const fs=require('fs');process.stdout.write(require('./src/pages/news')(JSON.parse(fs.readFileSync(0,'utf8'))));"
         html=subprocess.check_output(['node','-e',script],input=json.dumps(data).encode(),cwd=ROOT).decode()
         self.assertNotIn('씨야드',html)
+        self.assertNotIn('디스플레이',html)
         self.assertIn('씨야의 20주년 전국투어',html)
 
 if __name__ == '__main__':

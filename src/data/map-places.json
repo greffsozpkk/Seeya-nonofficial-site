@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-10-25",
+  "checkedAt": "2026-10-29",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -3992,6 +3992,70 @@
       "checkedAt": "2026-10-25",
       "locationPrecision": "area",
       "note": "시장 전체의 대표 위치입니다. 영상에 나온 개별 점포 위치나 고양이 집 설치 장소를 뜻하지 않습니다. 날짜는 영상 공개일입니다."
+    },
+    {
+      "id": "deluna-cafe-gallery",
+      "name": "델루나 카페&갤러리",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 마포구 와우산로21길 26, 3층",
+      "coordinates": [
+        37.552456,
+        126.9225599
+      ],
+      "category": "카페",
+      "members": [
+        "김연지"
+      ],
+      "group": "",
+      "relations": [
+        "팬 행사"
+      ],
+      "date": "2026-10-30",
+      "dateBasis": "팬 행사일",
+      "story": "2026년 10월 30–31일 김연지의 생일을 기념하는 팬 카페 행사 장소입니다.\n팬들이 준비한 가챠·인생네컷 이벤트를 진행하며, 김연지의 출연이나 방문을 안내하는 행사는 아닙니다.",
+      "source": {
+        "label": "생일 카페 주최 측 · 인생네컷 이벤트 안내",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7394",
+        "publishedDate": "2026-10-28"
+      },
+      "addressSource": "https://www.diningcode.com/profile.php?rid=6SeiUBY7QyAQ",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=6SeiUBY7QyAQ",
+      "recordId": "20261030-yeonji-birthday-fancafe",
+      "checkedAt": "2026-10-29",
+      "note": "생일 카페는 해당 날짜에 진행하는 팬 주최 행사입니다. 날짜별 운영 시간과 참여 조건은 주최 측 공지를 확인해 주세요."
+    },
+    {
+      "id": "pelican-cafe-sangsu",
+      "name": "펠리칸 카페",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 마포구 독막로14길 27",
+      "coordinates": [
+        37.54749950609009,
+        126.9224573282739
+      ],
+      "category": "카페",
+      "members": [
+        "이보람"
+      ],
+      "group": "",
+      "relations": [
+        "팬 행사"
+      ],
+      "date": "2027-02-13",
+      "dateBasis": "팬 행사 예정일",
+      "story": "2027년 2월 13–14일 이보람의 생일을 기념하는 팬 카페가 예정된 장소입니다.\n팬들이 마련한 행사이며 이보람의 출연·방문 일정과는 구분합니다.",
+      "source": {
+        "label": "생일 카페 주최 측 · 2027년 생일 카페 안내",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10185",
+        "publishedDate": "2026-10-27"
+      },
+      "addressSource": "https://www.placeview.co.kr/id/MTI2MzkxMDg4MiAg",
+      "coordinateSource": "https://www.placeview.co.kr/id/MTI2MzkxMDg4MiAg",
+      "recordId": "20270213-boram-birthday-fancafe",
+      "checkedAt": "2026-10-29",
+      "note": "예정된 팬 행사입니다. 운영 시간과 참여 방법은 주최 측 공지를 확인해 주세요."
     }
   ],
   "researchQueue": [
@@ -5609,7 +5673,7 @@
     ]
   },
   "archiveAudit": {
-    "checkedAt": "2026-10-25",
+    "checkedAt": "2026-10-29",
     "rows": [
       {
         "placeId": "khu-grand-peace-palace",
@@ -6262,6 +6326,16 @@
         "recordId": "20261025-gyuri-gyulmung68",
         "status": "linked",
         "reason": "공식 영상의 시장 방문과 아카이브 기록 연결"
+      },
+      {
+        "placeId": "deluna-cafe-gallery",
+        "recordId": "20261030-yeonji-birthday-fancafe",
+        "status": "new"
+      },
+      {
+        "placeId": "pelican-cafe-sangsu",
+        "recordId": "20270213-boram-birthday-fancafe",
+        "status": "new"
       }
     ]
   }

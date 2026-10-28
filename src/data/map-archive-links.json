@@ -123,7 +123,11 @@
     "파이프그라운드 서울숲점": "pipeground-seoul-forest",
     "언더스탠드에비뉴": "understand-avenue",
     "방산 종합시장": "bangsan-market",
-    "방산시장": "bangsan-market"
+    "방산시장": "bangsan-market",
+    "델루나 카페&갤러리": "deluna-cafe-gallery",
+    "펠리칸 카페": "pelican-cafe-sangsu",
+    "델루나카페&갤러리": "deluna-cafe-gallery",
+    "펠리칸카페": "pelican-cafe-sangsu"
   },
   "records": {
     "20260829-the-fan-seoul": [
@@ -312,6 +316,12 @@
     ],
     "20261025-gyuri-gyulmung68": [
       "bangsan-market"
+    ],
+    "20261030-yeonji-birthday-fancafe": [
+      "deluna-cafe-gallery"
+    ],
+    "20270213-boram-birthday-fancafe": [
+      "pelican-cafe-sangsu"
     ]
   }
 }
