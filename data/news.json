@@ -147,13 +147,13 @@
       "description": "[스타 영상] 남규리-김연지-이보람(씨야), 보자마자 울컥하는 완전체 비주얼 퇴근길 직캠(KBS '불후의 명곡-왁스 편') 뉴스인스타"
     }
   ],
-  "updatedAt": "2026-10-28T15:26:17.939217+00:00",
-  "lastCheckedAt": "2026-10-28T15:26:17.939217+00:00",
+  "updatedAt": "2026-10-28T22:38:03.792240+00:00",
+  "lastCheckedAt": "2026-10-28T22:38:03.792240+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-28T15:26:17.939217+00:00",
-    "남규리": "2026-10-28T15:26:17.939217+00:00",
-    "김연지": "2026-10-28T15:26:17.939217+00:00",
-    "이보람": "2026-10-28T15:26:17.939217+00:00"
+    "씨야": "2026-10-28T22:38:03.792240+00:00",
+    "남규리": "2026-10-28T22:38:03.792240+00:00",
+    "김연지": "2026-10-28T22:38:03.792240+00:00",
+    "이보람": "2026-10-28T22:38:03.792240+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-28T15:26:17.939217+00:00",
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 119,
-      "changed": true,
-      "status": "changed"
+      "accepted": 146,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 69,
+      "accepted": 116,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 26,
+      "accepted": 32,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 77,
+      "accepted": 82,
       "changed": false,
       "status": "unchanged"
     }
