@@ -8,13 +8,6 @@
       "description": "FC발라드림 vs FC아나콘다 맞대결… '씨야' 이보람·'위탄3' 조하 전격 합류 국제뉴스"
     },
     {
-      "title": "메타 'VR 글래스'용 디스플레이는 씨야가 공급 - KIPOST",
-      "source": "KIPOST",
-      "pubDate": "2026-10-27T05:42:32+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBWRWZNZENYdldKd0JWTTNfem81RVVtWGp4dGZqSnkzWE8zeWtFcnFXNnk5aEZBV2I4bnJOblRkOHZSUkNvd05OWjJJNHNydHpPNEtLcVhja3Rhd1lkdlBNWlhLWTFSdzRi?oc=5",
-      "description": "메타 'VR 글래스'용 디스플레이는 씨야가 공급 KIPOST"
-    },
-    {
       "title": "씨야 남규리 “노래 영영 못할 줄…콘서트에 설 때가 가장 안 떨려” [RE:뷰] - TV리포트",
       "source": "TV리포트",
       "pubDate": "2026-10-23T11:05:29+00:00",
@@ -34,6 +27,13 @@
       "pubDate": "2026-10-19T03:51:19+00:00",
       "link": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9fNnZ3NGdxYm1iTE4wZ0FYU0NWTkp5dHpkdlRCZ1pfeDFtdlo3VWtxVHQwamQ2Y2VWSlo3dGN1ZEsybUs5ckN5NDBVaWZEUjVaME5kLU1rTi1BMGJ0WTlBcTdJZw?oc=5",
       "description": "[스타 영상] 장한별-김기태-씨야(남규리-김연지)-왁스 KBS '불후의 명곡-왁스 편' 동반 출근길 뉴스인스타"
+    },
+    {
+      "title": "[TD포토] 씨야 김연지 \\'긴머리 휘날리며~\\' - 티브이데일리",
+      "source": "티브이데일리",
+      "pubDate": "2026-10-19T01:57:21+00:00",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCUkJJMjJLUTRYN0Z6UlBjLVRiTVJQVGNBZFVGNGxUTWwxWVV2YUd2NmpBSHdUSEdEaXllMk1ERmR0Q2dPWHBDUTM1N1U5emN6endwZXVHSGF1WFc0bTQ1enN3bHBsSG95MUxJ?oc=5",
+      "description": "[TD포토] 씨야 김연지 \\'긴머리 휘날리며~\\' 티브이데일리"
     }
   ],
   "남규리": [
@@ -147,16 +147,16 @@
       "description": "[스타 영상] 남규리-김연지-이보람(씨야), 보자마자 울컥하는 완전체 비주얼 퇴근길 직캠(KBS '불후의 명곡-왁스 편') 뉴스인스타"
     }
   ],
-  "updatedAt": "2026-10-28T12:59:31.132118+00:00",
-  "lastCheckedAt": "2026-10-28T12:59:31.132118+00:00",
+  "updatedAt": "2026-10-28T15:26:17.939217+00:00",
+  "lastCheckedAt": "2026-10-28T15:26:17.939217+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-28T12:59:31.132118+00:00",
-    "남규리": "2026-10-28T12:59:31.132118+00:00",
-    "김연지": "2026-10-28T12:59:31.132118+00:00",
-    "이보람": "2026-10-28T12:59:31.132118+00:00"
+    "씨야": "2026-10-28T15:26:17.939217+00:00",
+    "남규리": "2026-10-28T15:26:17.939217+00:00",
+    "김연지": "2026-10-28T15:26:17.939217+00:00",
+    "이보람": "2026-10-28T15:26:17.939217+00:00"
   },
   "categoryContentUpdatedAt": {
-    "씨야": "2026-10-28T12:59:31.132118+00:00",
+    "씨야": "2026-10-28T15:26:17.939217+00:00",
     "남규리": "2026-10-28T05:46:24.003495+00:00",
     "이보람": "2026-10-28T12:59:31.132118+00:00",
     "김연지": "2026-10-25T05:07:00.268591+00:00"
@@ -165,30 +165,30 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 154,
+      "accepted": 119,
       "changed": true,
       "status": "changed"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 112,
+      "accepted": 69,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 32,
+      "accepted": 26,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 87,
-      "changed": true,
-      "status": "changed"
+      "accepted": 77,
+      "changed": false,
+      "status": "unchanged"
     }
   }
 }

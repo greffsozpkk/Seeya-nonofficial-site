@@ -566,9 +566,49 @@
         "url": "https://www.youtube.com/watch?v=ihjqXay714E",
         "publishedDate": "2026-10-25",
         "autoDiscovery": true
+      },
+      {
+        "label": "ramirang_ · 수원 콘서트 「그 사람」 직캠",
+        "url": "https://www.instagram.com/p/De3PqpFud4F/",
+        "publishedDate": "2026-10-24"
+      },
+      {
+        "label": "귤잼 · 수원 콘서트 남규리 퇴근길 사진",
+        "url": "https://www.instagram.com/p/Deo7mL5HzyM/",
+        "publishedDate": "2026-10-18"
+      },
+      {
+        "label": "귤잼 · 수원 콘서트 남규리·이보람 무대 영상",
+        "url": "https://www.instagram.com/p/DeoV0RYB1iP/",
+        "publishedDate": "2026-10-18"
+      },
+      {
+        "label": "귤잼 · 수원 콘서트 남규리·이보람 무대 영상",
+        "url": "https://www.instagram.com/p/DemmXFqtAyH/",
+        "publishedDate": "2026-10-18"
+      },
+      {
+        "label": "귤잼 · 수원 콘서트 남규리 퇴근길 영상",
+        "url": "https://www.instagram.com/p/DemUXlih4YK/",
+        "publishedDate": "2026-10-17"
+      },
+      {
+        "label": "boram_flowerway · 수원 콘서트 「솜사탕」 직캠",
+        "url": "https://www.instagram.com/reel/DeoGfubNPRQ/",
+        "publishedDate": "2026-10-18"
+      },
+      {
+        "label": "로라연지 · 수원 콘서트 김연지 영상",
+        "url": "https://www.instagram.com/p/DeoGO6GPfYc/",
+        "publishedDate": "2026-10-18"
+      },
+      {
+        "label": "boram_flowerway · 수원 콘서트 이보람 영상",
+        "url": "https://www.instagram.com/p/Deo4YpLNZzH/",
+        "publishedDate": "2026-10-18"
       }
     ],
-    "updatedAt": "2026-10-26T05:07:47.790697+00:00",
+    "updatedAt": "2026-10-29",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -5797,10 +5837,30 @@
         "label": "김미나 · 팬 사진",
         "url": "https://www.instagram.com/mena299/p/DebgxN-iSWS/",
         "publishedDate": "2026-10-13"
+      },
+      {
+        "label": "김미나 · 8월 30일 서울 콘서트 이보람 사진",
+        "url": "https://www.instagram.com/p/DfCiqx7k8cl/",
+        "publishedDate": "2026-10-28"
+      },
+      {
+        "label": "김미나 · 8월 30일 서울 콘서트 김연지 사진",
+        "url": "https://www.instagram.com/p/De_8tW0k052/",
+        "publishedDate": "2026-10-27"
+      },
+      {
+        "label": "김미나 · 8월 30일 서울 콘서트 남규리 사진",
+        "url": "https://www.instagram.com/p/De6xUE2k1Yq/",
+        "publishedDate": "2026-10-25"
+      },
+      {
+        "label": "김미나 · 8월 30일 서울 콘서트 이보람 사진",
+        "url": "https://www.instagram.com/p/DerKpuOiS3K/",
+        "publishedDate": "2026-10-19"
       }
     ],
     "endDate": "2026-08-30",
-    "updatedAt": "2026-10-13"
+    "updatedAt": "2026-10-29"
   },
   {
     "id": "v492-sVhd4C_aeKM",
@@ -30795,6 +30855,12 @@
         "label": "mena299 · [김연지] 150428 - KimYeonji - 꿈에 + 구두 + 두눈에 두볼에 가슴에 + 여인의 향기 in  Power Time Radio",
         "url": "https://www.youtube.com/watch?v=v64aGuaV_uM",
         "publishedDate": "2015-05-11"
+      },
+      {
+        "label": "mena299",
+        "url": "https://www.youtube.com/watch?v=MRwtS9v7m2g",
+        "publishedDate": "2015-04-30",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -30805,7 +30871,7 @@
     "note": "2015년 4월 28일 「최화정의 파워타임」 출연 기록입니다.\nSBS 공식 「잊었니」 라이브와 팬이 보관한 즉석 라이브 모음을 함께 볼 수 있습니다.",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-23"
+    "updatedAt": "2026-10-29"
   },
   {
     "id": "v490-jtbc-26",
@@ -44673,8 +44739,14 @@
       {
         "label": "Again 가요톱10 : KBS KPOP Classic",
         "url": "https://www.youtube.com/watch?v=X_Co6PO38nk"
+      },
+      {
+        "label": "901K · 콘서트7080 「여인의 향기」 공식 무대",
+        "url": "https://www.youtube.com/watch?v=jq5TV8lq7rs",
+        "publishedDate": "2026-10-27"
       }
-    ]
+    ],
+    "updatedAt": "2026-10-29"
   },
   {
     "id": "v485-news-e935f2835e3e",
@@ -48672,7 +48744,7 @@
     "id": "20261030-yeonji-birthday-fancafe",
     "date": "2026-10-30",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-25",
+    "updatedAt": "2026-10-29",
     "title": "김연지 생일 기념 팬 카페 · 10월 30–31일 예정",
     "program": "김연지 생일 팬 카페",
     "type": "etc",
@@ -48691,6 +48763,16 @@
         "label": "생일 카페 주최 측 · 날짜별 운영시간 안내",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10098",
         "publishedDate": "2026-10-24"
+      },
+      {
+        "label": "생일 카페 주최 측 · 가챠 이벤트 안내",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7392",
+        "publishedDate": "2026-10-27"
+      },
+      {
+        "label": "생일 카페 주최 측 · 인생네컷 이벤트 안내",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7394",
+        "publishedDate": "2026-10-28"
       }
     ],
     "status": "documented",
@@ -48702,17 +48784,18 @@
       "생일 카페",
       "예정"
     ],
-    "note": "김연지의 생일을 기념해 팬들이 준비하는 카페 행사입니다.\n10월 30일 금요일 11:00–22:00 (라스트오더 21:30), 31일 토요일 10:00–15:30 (라스트오더 15:00)로 안내됐습니다.\n김연지의 출연·방문 일정이 아닌 팬 주최 행사입니다. 장소와 상세 참여 안내는 주최 측 공지를 참고해 주세요.",
+    "note": "김연지의 생일을 기념해 팬들이 준비하는 카페 행사입니다.\n장소는 서울 마포구 와우산로21길 26, 3층 델루나 카페&갤러리입니다.\n10월 30일 11:00–22:00 (라스트오더 21:30), 31일 10:00–15:30 (라스트오더 15:00)로 안내됐습니다. 가챠와 인생네컷 이벤트도 진행합니다.\n김연지의 출연·방문 일정이 아닌 팬 주최 행사입니다. 참여 조건은 주최 측 공지를 참고해 주세요.",
     "eventState": "scheduled",
     "calendar": {
       "enabled": false
-    }
+    },
+    "venue": "델루나 카페&갤러리"
   },
   {
     "id": "20261019-seeya-immortal-wax-recording",
     "date": "2026-10-19",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-23T05:10:09.147818+00:00",
+    "updatedAt": "2026-10-29",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -48781,6 +48864,31 @@
         "url": "https://www.youtube.com/watch?v=SH5G_GSu_Zw",
         "publishedDate": "2026-10-22",
         "autoDiscovery": true
+      },
+      {
+        "label": "MTN STAR · 김연지 불후의 명곡 왁스 편 출근길",
+        "url": "https://www.youtube.com/watch?v=SUh-WcuY6oI",
+        "publishedDate": "2026-10-25"
+      },
+      {
+        "label": "귤잼 · 10월 19일 불후의 명곡 녹화 남규리 퇴근길",
+        "url": "https://www.instagram.com/p/DerUgQ1PeRv/",
+        "publishedDate": "2026-10-19"
+      },
+      {
+        "label": "cup_soohans · 불후의 명곡 녹화 남규리 퇴근길",
+        "url": "https://www.instagram.com/p/DesnD-OT_II/",
+        "publishedDate": "2026-10-20"
+      },
+      {
+        "label": "cup_soohans · 남규리 퇴근길 영상",
+        "url": "https://www.instagram.com/p/DerdKxttRZD/",
+        "publishedDate": "2026-10-19"
+      },
+      {
+        "label": "cup_soohans · 10월 19일 불후의 명곡 녹화 씨야 퇴근길",
+        "url": "https://www.instagram.com/p/DerbBTlx2Ju/",
+        "publishedDate": "2026-10-19"
       }
     ],
     "status": "available",
@@ -48853,8 +48961,8 @@
     "id": "20261025-seeya-hyundai-asan-family",
     "date": "2026-10-25",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
-    "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당 예정",
+    "updatedAt": "2026-10-29",
+    "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당",
     "program": "현대자동차 아산공장 30주년 · 조합원 가족 한마당",
     "type": "event",
     "members": [
@@ -48862,13 +48970,19 @@
       "김연지",
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "사랑의 인사",
+      "미친 사랑의 노래",
+      "봄처럼 그댄",
+      "STAY",
+      "결혼할까요"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "주최 측 행사 포스터 · 갤러리 보관",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9495",
-      "publishedDate": "2026-10-08"
+      "label": "제리제이 Jerry.j · 씨야 전체 무대 직캠",
+      "url": "https://www.youtube.com/watch?v=kVws3Tx1I-g",
+      "publishedDate": "2026-10-25"
     },
     "additionalSources": [
       {
@@ -48947,24 +49061,64 @@
         "url": "https://www.youtube.com/watch?v=df7wb92nR9w",
         "publishedDate": "2026-10-27",
         "autoDiscovery": true
+      },
+      {
+        "label": "주최 측 행사 포스터 · 갤러리 보관",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9495",
+        "publishedDate": "2026-10-08"
+      },
+      {
+        "label": "땅콩크림샌드 · [남규리/직캠] 결혼할까요_현대자동차 한마당 체육대회 (2026.10.26)",
+        "url": "https://www.youtube.com/watch?v=rLzdigJugJ8",
+        "publishedDate": "2026-10-26"
+      },
+      {
+        "label": "땅콩크림샌드 · [씨야/직캠] 봄처럼 그댄_현대자동차 한마당 체육대회 (2026.10.26)",
+        "url": "https://www.youtube.com/watch?v=d6jiS3A8Bxk",
+        "publishedDate": "2026-10-26"
+      },
+      {
+        "label": "제리제이 · 「사랑의 인사」 중 관객에게 인사하는 이보람",
+        "url": "https://www.instagram.com/reel/DfBsPyOhljA/",
+        "publishedDate": "2026-10-28"
+      },
+      {
+        "label": "제리제이 · 현대자동차 아산공장 「미친 사랑의 노래」 직캠",
+        "url": "https://www.instagram.com/reel/De8iSwLB4YR/",
+        "publishedDate": "2026-10-26"
+      },
+      {
+        "label": "제리제이 · 현대자동차 아산공장 무대 인사",
+        "url": "https://www.instagram.com/p/De60-Pqy1ll/",
+        "publishedDate": "2026-10-25"
+      },
+      {
+        "label": "제리제이 · 현대자동차 아산공장 행사 퇴근길",
+        "url": "https://www.instagram.com/p/De6ghvHBoF7/",
+        "publishedDate": "2026-10-25"
+      },
+      {
+        "label": "boram_flowerway · 10월 25일 아산 행사 이보람 사진",
+        "url": "https://www.instagram.com/p/De6rZABlGKz/",
+        "publishedDate": "2026-10-25"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "tags": [
       "2026",
       "아산",
       "조합원 가족 행사",
-      "예정"
+      "완전체"
     ],
-    "note": "현대자동차 아산공장 조합원 가족 한마당의 씨야 초대공연이 안내됐습니다.\n10월 25일 사택 운동장에서 열리며, 전체 행사 시간은 오전 10시부터 오후 5시까지입니다. 집결은 오전 9시 30분입니다.\n초대가수 공연·폐회식 구간은 오후 3시 10분부터 4시 30분까지이며 씨야와 DJ BLISS가 안내돼 있습니다. 씨야의 개별 무대 시작 시각과는 구분합니다.\n참가 대상은 아산공장 조합원과 조합원 가족입니다. 일반 공개 공연으로 안내된 행사는 아닙니다.",
-    "eventState": "scheduled",
+    "note": "현대자동차 아산공장 사택 운동장에서 열린 조합원 가족 한마당의 씨야 초대공연입니다.\n「사랑의 인사」, 「미친 사랑의 노래」, 「봄처럼 그댄」, 「STAY」, 「결혼할까요」 무대를 선보였습니다.\n전체 무대와 곡별 직캠을 함께 볼 수 있습니다. 행사 참가 대상은 아산공장 조합원과 가족입니다.",
+    "eventState": "completed",
     "venue": "현대자동차 아산공장 사택 운동장",
     "calendar": {
       "time": "10:00",
       "timeLabel": "전체 행사 시작",
-      "sequence": 1
+      "sequence": 2
     }
   },
   {
@@ -49919,8 +50073,8 @@
     "id": "20261028-boram-btn-dream-schedule",
     "date": "2026-10-28",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
-    "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
+    "updatedAt": "2026-10-29",
+    "title": "이보람 · 한밤의 꿈 이보람입니다 27회",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
     "members": [
@@ -49930,8 +50084,9 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "메이저나인 공식 · LEE BO RAM 일정",
-      "url": "https://enter.major9.net/schedule/"
+      "label": "BTN라디오 공식 · 27회 보이는 라디오",
+      "url": "https://www.youtube.com/watch?v=zzAau00Xe3A",
+      "publishedDate": "2026-10-28"
     },
     "additionalSources": [
       {
@@ -49939,23 +50094,35 @@
         "url": "https://www.youtube.com/watch?v=zzAau00Xe3A",
         "publishedDate": "2026-10-28",
         "autoDiscovery": true
+      },
+      {
+        "label": "메이저나인 공식 · LEE BO RAM 일정",
+        "url": "https://enter.major9.net/schedule/"
+      },
+      {
+        "label": "ramirang_ · 10월 28일 한밤의 꿈 이보람 사진",
+        "url": "https://www.instagram.com/p/DfCnzH1EsVW/",
+        "publishedDate": "2026-10-28"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "BTN라디오 · 한밤의 꿈 이보람입니다",
-      "예정"
+      "한밤의 꿈",
+      "라디오"
     ],
-    "note": "메이저나인 공식 일정에 안내된 이보람의 라디오 DJ 일정입니다.\n10월 28일 오후 9시 BTN라디오 방송 예정입니다.",
-    "eventState": "scheduled",
+    "note": "10월 28일 밤 9시, 이보람이 진행한 BTN라디오 ‘한밤의 꿈’ 27회입니다.\nBTN라디오 공식 채널의 보이는 라디오 영상으로 방송을 다시 볼 수 있습니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": true,
       "time": "21:00",
-      "timeLabel": "방송 시작"
-    }
+      "timeLabel": "방송 시간",
+      "endTime": "23:00",
+      "sequence": 1
+    },
+    "publishedDate": "2026-10-28"
   },
   {
     "id": "20261114-seeya-immortal-wax-broadcast",
@@ -50039,7 +50206,7 @@
     "id": "20261101-boram-kia-music-festa",
     "date": "2026-11-01",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-29",
     "title": "이보람 · 기아 People Link US 뮤직 페스타 출연 예정",
     "program": "2026 기아 People Link US 뮤직 페스타",
     "type": "event",
@@ -50050,10 +50217,15 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 기아 광주지회 행사 포스터",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9855"
+      "label": "메이저나인 공식 · LEE BO RAM 일정",
+      "url": "https://enter.major9.net/schedule/"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 기아 광주지회 행사 포스터",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=9855"
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
@@ -50062,13 +50234,13 @@
       "2026 기아 People Link US 뮤직 페스타",
       "예정"
     ],
-    "note": "기아 임직원·가족·지역민이 함께하는 뮤직 페스타에 이보람이 출연합니다.\n11월 1일 광주시청 야외음악당에서 개최되며 전체 행사 시간은 오후 3시부터 8시 30분입니다.\n이보람의 개별 무대 시작 시각과는 구분합니다.",
+    "note": "기아 임직원·가족·지역민이 함께하는 뮤직 페스타에 이보람이 출연합니다.\n11월 1일 광주시청 야외음악당에서 열리며 전체 행사는 오후 3시부터 8시 30분까지입니다.\n메이저나인 공식 일정에 안내된 이보람 출연 시각은 오후 6시 50분입니다.",
     "eventState": "scheduled",
     "calendar": {
       "enabled": true,
-      "time": "15:00",
-      "timeLabel": "행사 전체 시간 · 이보람 개별 출연 시각 아님",
-      "endTime": "20:30"
+      "time": "18:50",
+      "timeLabel": "이보람 출연",
+      "sequence": 1
     },
     "venue": "광주시청 야외음악당"
   },
@@ -50076,7 +50248,7 @@
     "id": "20261021-boram-kbs-brown-sign-2-changwon",
     "date": "2026-10-21",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-10-29",
     "title": "이보람 · 갈색표지판 이순신 승전길 2부",
     "program": "KBS1 창원 · 갈색표지판",
     "type": "variety",
@@ -50087,23 +50259,27 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "KBS 공식 · 10월 21일 창원방송총국 편성표",
-      "url": "https://schedule.kbs.co.kr/index.html?sname=schedule&stype=table&type=localList&search_day=20261021&area_type=20"
+      "label": "KBS 공식 · 갈색표지판 2회 다시보기",
+      "url": "https://vod.kbs.co.kr/kbsplus.html?type=E&id=PS-2026179321-01-000"
     },
     "additionalSources": [
       {
         "label": "KBS 공식 · 창원 1TV 실시간 보기",
         "url": "https://onair.kbs.co.kr/index.html?sname=onair&stype=live&ch_code=11&group_code=20&ch_type=localList"
+      },
+      {
+        "label": "KBS 공식 · 10월 21일 창원방송총국 편성표",
+        "url": "https://schedule.kbs.co.kr/index.html?sname=schedule&stype=table&type=localList&search_day=20261021&area_type=20"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
       "KBS1 창원 · 갈색표지판"
     ],
-    "note": "사천·남해의 이순신 승전길을 따라가는 「갈색표지판」 2부입니다.\n10월 21일 오후 7시 30분부터 8시 30분까지 KBS1 창원 지역 채널에 편성된 방송입니다.",
+    "note": "사천·남해의 이순신 승전길을 따라가는 「갈색표지판」 2부입니다.\n10월 21일 오후 7시 30분부터 8시 30분까지 KBS1 창원에서 방송됐습니다.\nKBS 공식 2회 다시보기로 연결됩니다.",
     "eventState": "completed",
     "calendar": {
       "enabled": true,
@@ -51015,7 +51191,7 @@
     "id": "discovered-2a0eab530d5cd526",
     "date": "2015-04-30",
     "addedAt": "2026-10-27T05:22:20.741662+00:00",
-    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-29",
     "title": "[김연지] 150428 - KimYeonJi - 잊었니 in Power Time Radio",
     "program": "",
     "type": "radio",
@@ -51038,7 +51214,9 @@
     "tags": [],
     "note": "",
     "publishedDate": "2015-04-30",
-    "autoDiscovery": true
+    "autoDiscovery": true,
+    "hidden": true,
+    "mergedInto": "v490-powertime-20150428"
   },
   {
     "id": "discovered-02c34b0153899796",
@@ -51445,5 +51623,281 @@
     "note": "",
     "publishedDate": "2012-07-25",
     "autoDiscovery": true
+  },
+  {
+    "id": "20270213-boram-birthday-fancafe",
+    "date": "2027-02-13",
+    "addedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "title": "이보람 생일 기념 팬 카페 · 2월 13–14일 예정",
+    "program": "이보람 생일 팬 카페",
+    "type": "etc",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "생일 카페 주최 측 · 2027년 생일 카페 안내",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10185",
+      "publishedDate": "2026-10-27"
+    },
+    "additionalSources": [
+      {
+        "label": "생일 카페 주최 측 · 행사 소개",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10184",
+        "publishedDate": "2026-10-27"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [
+      "2027",
+      "팬 행사",
+      "생일 카페",
+      "예정"
+    ],
+    "note": "이보람의 생일을 기념해 팬들이 준비하는 카페 행사입니다.\n2027년 2월 13–14일, 상수역 인근 펠리칸 카페에서 열릴 예정입니다.\n이보람의 출연·방문 일정이 아닌 팬 주최 행사입니다. 운영 시간과 참여 안내는 주최 측 공지를 참고해 주세요.",
+    "eventState": "scheduled",
+    "calendar": {
+      "enabled": false
+    },
+    "venue": "펠리칸 카페"
+  },
+  {
+    "id": "20261028-boram-nephew-vlog",
+    "date": "2026-10-28",
+    "addedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "title": "이보람 · 보람씨야 조카네 집 방문 브이로그",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야 · [보람씨야] 조카네 집에 놀러 왔어요! 👶🏻 | 일상 브이로그 VLOG",
+      "url": "https://www.youtube.com/watch?v=e2-TRuJUoVM",
+      "publishedDate": "2026-10-28"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-28",
+    "tags": [
+      "2026",
+      "보람씨야"
+    ],
+    "note": "조카네 집에 놀러 간 이보람의 일상 브이로그입니다.\n날짜는 10월 28일 오후 8시 영상 공개일입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261028-gyuri-gyulmung-cute-short",
+    "date": "2026-10-28",
+    "addedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "title": "남규리 · 귤멍 「온 세상이 귀여워」 쇼츠",
+    "program": "남규리의 귤멍",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 · 온 세상이 귀여워 🥰",
+      "url": "https://www.youtube.com/watch?v=QleGsEuPEDA",
+      "publishedDate": "2026-10-28"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-28",
+    "tags": [
+      "2026",
+      "남규리의 귤멍"
+    ],
+    "note": "남규리의 귤멍 채널에 공개된 「온 세상이 귀여워」 짧은 영상입니다.\n날짜는 영상 공개일입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261027-yeonji-shinjihyun-duet",
+    "date": "2026-10-27",
+    "addedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "title": "김연지 · 신지현과 함께한 「노래」 듀엣",
+    "program": "신박한 신지현",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [
+      "노래"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "신박한 신지현 · 우리의 시대를 책임졌던 “씨야 김연지” 언니와 듀엣 ✨❤️  #노래",
+      "url": "https://www.youtube.com/watch?v=BnDIlPnj3rU",
+      "publishedDate": "2026-10-27"
+    },
+    "additionalSources": [
+      {
+        "label": "신지현·김연지 공동 게시 · 「노래」 듀엣 릴스",
+        "url": "https://www.instagram.com/p/De_fEiUM0dW/",
+        "publishedDate": "2026-10-27"
+      }
+    ],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-27",
+    "tags": [
+      "2026",
+      "신박한 신지현"
+    ],
+    "note": "신지현과 김연지가 함께 부른 「노래」의 짧은 라이브 영상입니다.\n날짜는 영상 공개일입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261028-boram-kickagoal-238",
+    "date": "2026-10-28",
+    "addedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "title": "이보람 · 골 때리는 그녀들 238회 FC발라드림 경기",
+    "program": "SBS · 골 때리는 그녀들",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS Entertainment · 민서, 빠진 공 2차 슈팅으로 연결하며 한 발 더 달아나는 추가골 득점!",
+      "url": "https://www.youtube.com/watch?v=TJ0-zmvetoQ",
+      "publishedDate": "2026-10-28"
+    },
+    "additionalSources": [
+      {
+        "label": "골 때리는 그녀들 Shooting Stars · [선공개2] FC발라드림 \"홀로\"서기",
+        "url": "https://www.youtube.com/watch?v=YFarISPwvTU",
+        "publishedDate": "2026-10-27"
+      },
+      {
+        "label": "골 때리는 그녀들 Shooting Stars · 새 멤버들과 함께 느낀 승리의 맛🎉 | 발라드림 경기 후 라커룸",
+        "url": "https://www.youtube.com/watch?v=6QE8uN8T-rE",
+        "publishedDate": "2026-10-28"
+      },
+      {
+        "label": "조이뉴스24 · FC발라드림 새 멤버 출연 안내",
+        "url": "https://m.joynews24.com/v/2019823",
+        "publishedDate": "2026-10-28"
+      }
+    ],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "SBS · 골 때리는 그녀들"
+    ],
+    "note": "FC발라드림과 FC아나콘다의 경기 회차입니다.\n이보람이 FC발라드림 멤버로 출연한 경기 영상과 경기 후 라커룸 이야기를 함께 볼 수 있습니다.\n10월 28일 오후 9시 SBS 방송입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": true,
+      "time": "21:00",
+      "timeLabel": "방송 시작"
+    },
+    "episode": 238
+  },
+  {
+    "id": "20261028-boram-haeun-cover",
+    "date": "2026-10-28",
+    "addedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "title": "이보람 · 「해가 멈춘 밤, 달이 멈춘 아침」 커버",
+    "program": "하은 · 이보람 공식 인스타그램",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [
+      "해가 멈춘 밤, 달이 멈춘 아침"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "하은·이보람 공동 게시 · 해가 멈춘 밤, 달이 멈춘 아침 커버",
+      "url": "https://www.instagram.com/p/DfCD5wHB-Eo/",
+      "publishedDate": "2026-10-28"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-28",
+    "tags": [
+      "2026",
+      "인스타그램",
+      "릴스"
+    ],
+    "note": "이보람이 하은의 「해가 멈춘 밤, 달이 멈춘 아침」을 부른 커버 릴스입니다.\n하은과 이보람 계정에 10월 28일 오후 6시 공동 공개됐습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261026-boram-six-confetti-interview",
+    "date": "2026-10-26",
+    "addedAt": "2026-10-29",
+    "updatedAt": "2026-10-29",
+    "title": "이보람 · 식스 더 뮤지컬 「INTERVIEW WITH CONFETTI」",
+    "program": "식스 더 뮤지컬",
+    "type": "interview",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 더 뮤지컬·아이엠컬처 공식 · 시모어 이보람 인터뷰",
+      "url": "https://www.instagram.com/p/De8Yhh_BW97/",
+      "publishedDate": "2026-10-26"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-26",
+    "tags": [
+      "2026",
+      "인스타그램",
+      "릴스"
+    ],
+    "note": "뮤지컬 「식스」에서 시모어 역을 맡은 이보람의 공식 인터뷰 릴스입니다.\n컨페티와 함께한 엔딩 요정 모습을 담았습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
   }
 ]

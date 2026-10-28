@@ -1,8 +1,8 @@
 {
   "summary": {
-    "records": 146,
-    "venues": 132,
-    "linked": 87,
+    "records": 148,
+    "venues": 134,
+    "linked": 89,
     "pending": 59,
     "unreviewed": 0
   },
@@ -1216,6 +1216,15 @@
       "status": "linked"
     },
     {
+      "recordId": "20261030-yeonji-birthday-fancafe",
+      "title": "김연지 생일 기념 팬 카페 · 10월 30–31일 예정",
+      "venue": "델루나 카페&갤러리",
+      "placeIds": [
+        "deluna-cafe-gallery"
+      ],
+      "status": "linked"
+    },
+    {
       "recordId": "20261019-seeya-immortal-wax-recording",
       "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화",
       "venue": "KBS 신관 공개홀",
@@ -1226,7 +1235,7 @@
     },
     {
       "recordId": "20261025-seeya-hyundai-asan-family",
-      "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당 예정",
+      "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당",
       "venue": "현대자동차 아산공장 사택 운동장",
       "placeIds": [],
       "status": "pending",
@@ -1271,6 +1280,15 @@
       "venue": "방산 종합시장",
       "placeIds": [
         "bangsan-market"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20270213-boram-birthday-fancafe",
+      "title": "이보람 생일 기념 팬 카페 · 2월 13–14일 예정",
+      "venue": "펠리칸 카페",
+      "placeIds": [
+        "pelican-cafe-sangsu"
       ],
       "status": "linked"
     }
