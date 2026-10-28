@@ -147,13 +147,13 @@
       "description": "씨야 이보람, 야외 무대서 전한 노래…20주년 투어 속 따뜻한 행보 TopStarNews"
     }
   ],
-  "updatedAt": "2026-10-28T05:46:24.003495+00:00",
-  "lastCheckedAt": "2026-10-28T05:46:24.003495+00:00",
+  "updatedAt": "2026-10-28T06:05:37.849932+00:00",
+  "lastCheckedAt": "2026-10-28T06:05:37.849932+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-28T05:46:24.003495+00:00",
-    "남규리": "2026-10-28T05:46:24.003495+00:00",
-    "김연지": "2026-10-28T05:46:24.003495+00:00",
-    "이보람": "2026-10-28T05:46:24.003495+00:00"
+    "씨야": "2026-10-28T06:05:37.849932+00:00",
+    "남규리": "2026-10-28T06:05:37.849932+00:00",
+    "김연지": "2026-10-28T06:05:37.849932+00:00",
+    "이보람": "2026-10-28T06:05:37.849932+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-28T05:46:24.003495+00:00",
@@ -165,30 +165,30 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 122,
-      "changed": true,
-      "status": "changed"
+      "accepted": 158,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 74,
-      "changed": true,
-      "status": "changed"
+      "accepted": 118,
+      "changed": false,
+      "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 28,
+      "accepted": 36,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 73,
-      "changed": true,
-      "status": "changed"
+      "accepted": 83,
+      "changed": false,
+      "status": "unchanged"
     }
   }
 }
