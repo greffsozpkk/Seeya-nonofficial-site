@@ -48853,7 +48853,7 @@
     "id": "20261025-seeya-hyundai-asan-family",
     "date": "2026-10-25",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-27T05:22:20.741662+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
     "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당 예정",
     "program": "현대자동차 아산공장 30주년 · 조합원 가족 한마당",
     "type": "event",
@@ -48934,6 +48934,18 @@
         "label": "땅콩크림샌드",
         "url": "https://www.youtube.com/watch?v=puopQydR79U",
         "publishedDate": "2026-10-26",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=A0XXJM6NY-A",
+        "publishedDate": "2026-10-27",
+        "autoDiscovery": true
+      },
+      {
+        "label": "땅콩크림샌드",
+        "url": "https://www.youtube.com/watch?v=df7wb92nR9w",
+        "publishedDate": "2026-10-27",
         "autoDiscovery": true
       }
     ],
@@ -49907,7 +49919,7 @@
     "id": "20261028-boram-btn-dream-schedule",
     "date": "2026-10-28",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-10-21",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
     "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
@@ -49921,7 +49933,14 @@
       "label": "메이저나인 공식 · LEE BO RAM 일정",
       "url": "https://enter.major9.net/schedule/"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "BTN라디오",
+        "url": "https://www.youtube.com/watch?v=zzAau00Xe3A",
+        "publishedDate": "2026-10-28",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
@@ -51019,6 +51038,412 @@
     "tags": [],
     "note": "",
     "publishedDate": "2015-04-30",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-02c34b0153899796",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-08)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=7lq14RtTvoI",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-02d52fef380f8388",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-20)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=J8Bu3y5AM8s",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-0b7670c26b26f84c",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-18)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=2n3u0pPdELo",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-2588044924c8a00a",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-22)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=wsZLLk1cMDw",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-2668481a56d0073a",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-05)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=E7sMoOyXATM",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-37b23509a3a721d5",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-07)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=pJffB1q5Ex8",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-40fd5cd0f0f26c38",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-14)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=MCT6nxelgYM",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-57ff514ce22968b0",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-23)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=nizBB4jKFXM",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-5a6ea144c6dd9f6e",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-03)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=-dG-zwQ-Ejk",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-62191a1d8cb899e6",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-04)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=1wW3ttcBal4",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-685c1df1d07a7822",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-21)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=6d57tsEtSG8",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-6a6084cb7df6447d",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-02)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=bnXOqrbZoQo",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-849ab1a77274b7fb",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-16)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=FVH2s7tc2Pg",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-8c0dae9ffe2bd13b",
+    "date": "2012-07-25",
+    "addedAt": "2026-10-28T06:00:43.354301+00:00",
+    "updatedAt": "2026-10-28T06:00:43.354301+00:00",
+    "title": "남규리[Nam Gyu-Ri] - SBS 녹색희망(2012-07-17)",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "WanSooMee",
+      "url": "https://www.youtube.com/watch?v=QiZ-0TZ8hjk",
+      "publishedDate": "2012-07-25",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2012-07-25",
     "autoDiscovery": true
   }
 ]
