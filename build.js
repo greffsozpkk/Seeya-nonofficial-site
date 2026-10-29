@@ -45,7 +45,7 @@ function bundle(entry){
 }
 const assets=[];
 function asset(name,ext,source){const hash=crypto.createHash('sha256').update(source).digest('hex').slice(0,12);const p=`assets/${name}.${hash}.${ext}`;write(p,source);assets.push(p);return '/'+p;}
-const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css')+'\n'+read('src/styles/concerts.css')+'\n'+read('src/styles/letter.css')+'\n'+read('src/styles/pwa.css')+'\n'+read('src/styles/home-upcoming.css'));
+const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css')+'\n'+read('src/styles/concerts.css')+'\n'+read('src/styles/letter.css')+'\n'+read('src/styles/pwa.css')+'\n'+read('src/styles/home-upcoming.css')+'\n'+read('src/styles/birthday-popup.css'));
 const pwaJs=asset('pwa','js',bundle('src/client/pwa.js'));
 const offlineJs=asset('offline','js',bundle('src/client/offline.js'));
 // Inline the original image so the single cached fallback works without any network request.

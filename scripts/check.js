@@ -19,6 +19,7 @@ require('./check-archive-content');
 require('./check-radio');
 require('./check-podcasts');
 require('./check-on-this-day');
+require('./check-birthday-popup');
 
 require('./check-stages');
 require('./check-concerts');

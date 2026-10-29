@@ -1,7 +1,8 @@
 const {albums,history,tarot,TODAY_SONGS,TODAY_MOODS,fanChantImages,archiveTypes,W,esc,archivePageItems,archiveSearchText,galleryCard,pickTodayMoment,newsDateParts}=require('../shared/common');
 const {newsList,galleryMoment,archiveView}=require('../shared/views');
 const {homeUpcoming}=require('../shared/home-upcoming');
-function home(rows=[],now=new Date()){return `<div class="home-aespa">
+const {birthdayPopup}=require('../shared/birthday-popup');
+function home(rows=[],now=new Date()){return `${birthdayPopup()}<div class="home-aespa">
 <section class="home-visual">
   <img src="https://pub-dc9a9c6ac2a64ba48bce426ced0ac56a.r2.dev/kpics/2026/04/1775079390478-grlcud-0.jpg" alt="씨야 남규리 김연지 이보람 단체 사진">
   <div class="home-copy">
