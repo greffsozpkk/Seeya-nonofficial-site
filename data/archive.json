@@ -12581,6 +12581,12 @@
         "url": "https://www.youtube.com/watch?v=MNMMd4vSYCA",
         "publishedDate": "2025-12-08",
         "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=2aphi9Uc4z0",
+        "publishedDate": "2026-10-29",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -12594,7 +12600,7 @@
     "dateBasis": "event",
     "endDate": "2025-12-07",
     "venue": "성신여자대학교 운정그린캠퍼스 대강당",
-    "updatedAt": "2026-09-30T13:59:14.662333+00:00"
+    "updatedAt": "2026-10-30T06:11:10.285814+00:00"
   },
   {
     "id": "v4145-6JiTQ12-tFg",
@@ -48961,7 +48967,7 @@
     "id": "20261025-seeya-hyundai-asan-family",
     "date": "2026-10-25",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-29",
+    "updatedAt": "2026-10-30T06:11:10.285814+00:00",
     "title": "씨야 · 현대자동차 아산공장 30주년 조합원 가족 한마당",
     "program": "현대자동차 아산공장 30주년 · 조합원 가족 한마당",
     "type": "event",
@@ -49101,6 +49107,12 @@
         "label": "boram_flowerway · 10월 25일 아산 행사 이보람 사진",
         "url": "https://www.instagram.com/p/De6rZABlGKz/",
         "publishedDate": "2026-10-25"
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=Mw5tIENrRRI",
+        "publishedDate": "2026-10-26",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
