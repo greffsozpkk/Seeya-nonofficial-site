@@ -127,7 +127,11 @@
     "델루나 카페&갤러리": "deluna-cafe-gallery",
     "펠리칸 카페": "pelican-cafe-sangsu",
     "델루나카페&갤러리": "deluna-cafe-gallery",
-    "펠리칸카페": "pelican-cafe-sangsu"
+    "펠리칸카페": "pelican-cafe-sangsu",
+    "국수화 남동구 본점": "guksuhwa-namdong",
+    "이당 비스트로 인천점": "idang-bistro-incheon",
+    "대패신화": "daepae-sinhwa-seochang",
+    "오묘 로스터스": "omyo-roasters-seochang"
   },
   "records": {
     "20260829-the-fan-seoul": [
@@ -160,7 +164,11 @@
       "khu-seonseung"
     ],
     "20261031-the-fan-incheon": [
-      "namdong-gymnasium"
+      "namdong-gymnasium",
+      "guksuhwa-namdong",
+      "idang-bistro-incheon",
+      "daepae-sinhwa-seochang",
+      "omyo-roasters-seochang"
     ],
     "20260531-seeya-baekban": [
       "aengdu",

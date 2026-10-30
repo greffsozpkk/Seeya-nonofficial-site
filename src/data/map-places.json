@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-10-29",
+  "checkedAt": "2026-10-31",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -4009,21 +4009,22 @@
       ],
       "group": "",
       "relations": [
-        "팬 행사"
+        "팬 행사",
+        "방문"
       ],
       "date": "2026-10-30",
-      "dateBasis": "팬 행사일",
-      "story": "2026년 10월 30–31일 김연지의 생일을 기념하는 팬 카페 행사 장소입니다.\n팬들이 준비한 가챠·인생네컷 이벤트를 진행하며, 김연지의 출연이나 방문을 안내하는 행사는 아닙니다.",
+      "dateBasis": "방문일",
+      "story": "2026년 10월 30–31일 팬들이 김연지의 생일 카페를 연 장소입니다.\n김연지는 10월 30일 이곳을 방문해 팬들과 만났으며, 카페 운영 계정이 방문 영상을 공개했습니다.",
       "source": {
-        "label": "생일 카페 주최 측 · 인생네컷 이벤트 안내",
-        "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7394",
-        "publishedDate": "2026-10-28"
+        "label": "델루나 카페&갤러리 · 김연지 생일 카페 방문 영상",
+        "url": "https://www.instagram.com/p/DfHu9YhCUNr/",
+        "publishedDate": "2026-10-30"
       },
       "addressSource": "https://www.diningcode.com/profile.php?rid=6SeiUBY7QyAQ",
       "coordinateSource": "https://www.diningcode.com/profile.php?rid=6SeiUBY7QyAQ",
       "recordId": "20261030-yeonji-birthday-fancafe",
-      "checkedAt": "2026-10-29",
-      "note": "생일 카페는 해당 날짜에 진행하는 팬 주최 행사입니다. 날짜별 운영 시간과 참여 조건은 주최 측 공지를 확인해 주세요."
+      "checkedAt": "2026-10-31",
+      "note": "팬 카페 운영은 10월 30–31일이며 확인된 김연지 방문일은 30일입니다. 31일 재방문 일정은 안내된 바 없습니다."
     },
     {
       "id": "pelican-cafe-sangsu",
@@ -4056,6 +4057,166 @@
       "recordId": "20270213-boram-birthday-fancafe",
       "checkedAt": "2026-10-29",
       "note": "예정된 팬 행사입니다. 운영 시간과 참여 방법은 주최 측 공지를 확인해 주세요."
+    },
+    {
+      "id": "guksuhwa-namdong",
+      "name": "국수화 남동구 본점",
+      "city": "인천",
+      "region": "인천",
+      "address": "인천광역시 남동구 소래로 565",
+      "coordinates": [
+        37.4403047,
+        126.7317697
+      ],
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-31",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야엔터테인먼트가 THE FAN 인천 콘서트를 찾는 팬들에게 안내한 제휴 매장입니다.\n2026년 10월 31일 공연 티켓 소지자를 위한 혜택이 안내됐습니다. 멤버의 실제 방문 여부와는 구분합니다.",
+      "source": {
+        "label": "씨야엔터테인먼트 공식 · 인천 콘서트 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DfBvdqWmpMx/",
+        "publishedDate": "2026-10-28"
+      },
+      "addressSource": "https://www.instagram.com/p/DfBvdqWmpMx/",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=1DdP9qOatAL9",
+      "relatedRecordId": "20261031-the-fan-incheon",
+      "checkedAt": "2026-10-31",
+      "promotion": {
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "benefit": "1인당 음료 1잔 무료 제공",
+        "condition": "공연 당일 콘서트 티켓 지참 + 네이버 16:30 예약 시. 예약 조건은 공식 원문과 매장에 확인해 주세요.",
+        "sourceUrl": "https://www.instagram.com/p/DfBvdqWmpMx/"
+      }
+    },
+    {
+      "id": "idang-bistro-incheon",
+      "name": "이당 비스트로 인천점",
+      "city": "인천",
+      "region": "인천",
+      "address": "인천광역시 남동구 배려터로 9-1",
+      "coordinates": [
+        37.4364532,
+        126.7234572
+      ],
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-31",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야엔터테인먼트가 THE FAN 인천 콘서트를 찾는 팬들에게 안내한 제휴 매장입니다.\n2026년 10월 31일 공연 티켓 소지자를 위한 혜택이 안내됐습니다. 멤버의 실제 방문 여부와는 구분합니다.",
+      "source": {
+        "label": "씨야엔터테인먼트 공식 · 인천 콘서트 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DfBvdqWmpMx/",
+        "publishedDate": "2026-10-28"
+      },
+      "addressSource": "https://www.instagram.com/p/DfBvdqWmpMx/",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=u6vqkckVUQLQ",
+      "relatedRecordId": "20261031-the-fan-incheon",
+      "checkedAt": "2026-10-31",
+      "promotion": {
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "benefit": "테이블당 음료 1잔 제공",
+        "condition": "공연 당일 콘서트 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/DfBvdqWmpMx/"
+      }
+    },
+    {
+      "id": "daepae-sinhwa-seochang",
+      "name": "대패신화",
+      "city": "인천",
+      "region": "인천",
+      "address": "인천광역시 남동구 서창방산로 51, 1층 113·114호",
+      "coordinates": [
+        37.4224784,
+        126.7501186
+      ],
+      "category": "식당",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-31",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야엔터테인먼트가 THE FAN 인천 콘서트를 찾는 팬들에게 안내한 제휴 매장입니다.\n2026년 10월 31일 공연 티켓 소지자를 위한 혜택이 안내됐습니다. 멤버의 실제 방문 여부와는 구분합니다.",
+      "source": {
+        "label": "씨야엔터테인먼트 공식 · 인천 콘서트 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DfBvdqWmpMx/",
+        "publishedDate": "2026-10-28"
+      },
+      "addressSource": "https://www.instagram.com/p/DfBvdqWmpMx/",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=YcvOOOC4ptbE",
+      "relatedRecordId": "20261031-the-fan-incheon",
+      "checkedAt": "2026-10-31",
+      "promotion": {
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "benefit": "테이블당 쫄면 한 그릇 제공",
+        "condition": "공연 당일 콘서트 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/DfBvdqWmpMx/"
+      }
+    },
+    {
+      "id": "omyo-roasters-seochang",
+      "name": "오묘 로스터스",
+      "city": "인천",
+      "region": "인천",
+      "address": "인천광역시 남동구 서창남순환로215번길 48, 스카이플러스2 1층 103호",
+      "coordinates": [
+        37.42615152,
+        126.74757496
+      ],
+      "category": "카페",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "group": "씨야",
+      "relations": [
+        "콘서트 혜택"
+      ],
+      "date": "2026-10-31",
+      "dateBasis": "혜택 적용일",
+      "story": "씨야엔터테인먼트가 THE FAN 인천 콘서트를 찾는 팬들에게 안내한 제휴 매장입니다.\n2026년 10월 31일 공연 티켓 소지자를 위한 혜택이 안내됐습니다. 멤버의 실제 방문 여부와는 구분합니다.",
+      "source": {
+        "label": "씨야엔터테인먼트 공식 · 인천 콘서트 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DfBvdqWmpMx/",
+        "publishedDate": "2026-10-28"
+      },
+      "addressSource": "https://www.instagram.com/p/DfBvdqWmpMx/",
+      "coordinateSource": "https://cafe.ayo.pe.kr/cafe/ca438efefe9677d2733851663f65e62e",
+      "relatedRecordId": "20261031-the-fan-incheon",
+      "checkedAt": "2026-10-31",
+      "promotion": {
+        "start": "2026-10-31",
+        "end": "2026-10-31",
+        "benefit": "아메리카노 주문 시 핸드드립 커피로 업그레이드",
+        "condition": "공연 당일 콘서트 티켓 지참",
+        "sourceUrl": "https://www.instagram.com/p/DfBvdqWmpMx/"
+      }
     }
   ],
   "researchQueue": [
@@ -5673,7 +5834,7 @@
     ]
   },
   "archiveAudit": {
-    "checkedAt": "2026-10-29",
+    "checkedAt": "2026-10-31",
     "rows": [
       {
         "placeId": "khu-grand-peace-palace",
@@ -6336,6 +6497,26 @@
         "placeId": "pelican-cafe-sangsu",
         "recordId": "20270213-boram-birthday-fancafe",
         "status": "new"
+      },
+      {
+        "placeId": "guksuhwa-namdong",
+        "recordId": "20261031-the-fan-incheon",
+        "status": "linked"
+      },
+      {
+        "placeId": "idang-bistro-incheon",
+        "recordId": "20261031-the-fan-incheon",
+        "status": "linked"
+      },
+      {
+        "placeId": "daepae-sinhwa-seochang",
+        "recordId": "20261031-the-fan-incheon",
+        "status": "linked"
+      },
+      {
+        "placeId": "omyo-roasters-seochang",
+        "recordId": "20261031-the-fan-incheon",
+        "status": "linked"
       }
     ]
   }

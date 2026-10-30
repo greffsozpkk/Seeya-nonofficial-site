@@ -1975,5 +1975,15 @@
     "scope": "excerpt",
     "category": "concert",
     "basis": "2026-10-29 팬 원본 릴스의 게시물·공연일·곡명 확인. 전체곡이 아닌 발췌 영상이며 같은 공연 기록에 연결합니다."
+  },
+  {
+    "archiveId": "20261025-seeya-hyundai-asan-family",
+    "url": "https://www.youtube.com/watch?v=Mw5tIENrRRI",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "2026-10-31 영상 제목의 261025 행사일·미친 사랑의 노래 곡명과 공식 행사 일정을 대조. 게시일 대신 기존 공연 기록에 연결."
   }
 ]
