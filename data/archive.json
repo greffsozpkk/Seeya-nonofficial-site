@@ -127,7 +127,7 @@
       "인천",
       "예정"
     ],
-    "note": "씨야 데뷔 20주년 전국투어 THE FAN의 인천 공연 예정입니다.\n공연 시작: 오후 6시. YES24 공식 예매 안내 기준입니다.\n공식 게스트 스케줄에 안내된 특별 게스트는 허각입니다.",
+    "note": "씨야 데뷔 20주년 전국투어 THE FAN의 인천 공연 예정입니다.\n공연 시작: 오후 6시. YES24 공식 예매 안내 기준입니다.\n공식 게스트 스케줄에 안내된 특별 게스트는 허각입니다.\n공식 제휴 매장은 국수화 남동구 본점, 이당 비스트로 인천점, 대패신화, 오묘 로스터스입니다. 콘서트 당일 티켓 지참 등 매장별 조건은 공식 안내를 확인해 주세요.\n팬 서포트팀은 첫 앵콜곡 「그럼에도, 우린」에 맞춰 휴대전화 플래시를 켜는 이벤트를 안내했습니다. 배부 슬로건 뒷면에서도 참여 방법을 확인할 수 있습니다.",
     "venue": "인천남동체육관",
     "eventState": "scheduled",
     "additionalSources": [
@@ -146,9 +146,19 @@
       {
         "label": "씨야엔터테인먼트 공식 · 지역별 게스트 스케줄",
         "url": "https://www.instagram.com/seeya_ent_official/p/Dbmf-AGvcA8/"
+      },
+      {
+        "label": "씨야엔터테인먼트 공식 · 인천 콘서트 제휴 매장 안내",
+        "url": "https://www.instagram.com/p/DfBvdqWmpMx/",
+        "publishedDate": "2026-10-28"
+      },
+      {
+        "label": "씨야 팬 서포트팀 · 인천 콘서트 앵콜 이벤트 안내",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10309",
+        "publishedDate": "2026-10-30"
       }
     ],
-    "updatedAt": "2026-10-01",
+    "updatedAt": "2026-10-31",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -48750,8 +48760,8 @@
     "id": "20261030-yeonji-birthday-fancafe",
     "date": "2026-10-30",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-29",
-    "title": "김연지 생일 기념 팬 카페 · 10월 30–31일 예정",
+    "updatedAt": "2026-10-31",
+    "title": "김연지 · 생일 카페 방문과 팬 만남",
     "program": "김연지 생일 팬 카페",
     "type": "etc",
     "members": [
@@ -48761,8 +48771,9 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "생일 카페 주최 측 · 10월 30–31일 일정 공지",
-      "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7220"
+      "label": "델루나 카페&갤러리 · 김연지 생일 카페 방문 영상",
+      "url": "https://www.instagram.com/p/DfHu9YhCUNr/",
+      "publishedDate": "2026-10-30"
     },
     "additionalSources": [
       {
@@ -48779,19 +48790,33 @@
         "label": "생일 카페 주최 측 · 인생네컷 이벤트 안내",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7394",
         "publishedDate": "2026-10-28"
+      },
+      {
+        "label": "생일 카페 주최 측 · 10월 30–31일 일정 공지",
+        "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7220"
+      },
+      {
+        "label": "계절을 견딘 나무 · 생일 카페 사진",
+        "url": "https://www.instagram.com/p/DfHx3bfmhe1/",
+        "publishedDate": "2026-10-30"
+      },
+      {
+        "label": "팬 방문 후기 · 생일 카페에서 만난 김연지",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10307",
+        "publishedDate": "2026-10-30"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "tags": [
       "2026",
       "팬 행사",
       "생일 카페",
-      "예정"
+      "방문"
     ],
-    "note": "김연지의 생일을 기념해 팬들이 준비하는 카페 행사입니다.\n장소는 서울 마포구 와우산로21길 26, 3층 델루나 카페&갤러리입니다.\n10월 30일 11:00–22:00 (라스트오더 21:30), 31일 10:00–15:30 (라스트오더 15:00)로 안내됐습니다. 가챠와 인생네컷 이벤트도 진행합니다.\n김연지의 출연·방문 일정이 아닌 팬 주최 행사입니다. 참여 조건은 주최 측 공지를 참고해 주세요.",
-    "eventState": "scheduled",
+    "note": "김연지가 10월 30일 자신의 생일을 기념해 팬들이 마련한 델루나 카페&갤러리에 방문해 팬들과 만났습니다.\n카페 운영 계정의 방문 영상과 팬 사진·후기를 함께 볼 수 있습니다.\n생일 카페 행사는 10월 30–31일 진행하며 가챠와 인생네컷 이벤트가 준비됐습니다. 31일 운영 시간은 10:00–15:30, 라스트오더는 15:00입니다.\n31일에도 김연지가 방문한다는 뜻은 아닙니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": false
     },
@@ -51792,7 +51817,7 @@
     "id": "20261028-boram-kickagoal-238",
     "date": "2026-10-28",
     "addedAt": "2026-10-29",
-    "updatedAt": "2026-10-29",
+    "updatedAt": "2026-10-31",
     "title": "이보람 · 골 때리는 그녀들 238회 FC발라드림 경기",
     "program": "SBS · 골 때리는 그녀들",
     "type": "variety",
@@ -51822,6 +51847,21 @@
         "label": "조이뉴스24 · FC발라드림 새 멤버 출연 안내",
         "url": "https://m.joynews24.com/v/2019823",
         "publishedDate": "2026-10-28"
+      },
+      {
+        "label": "이보람 공식 · FC발라드림 출연 소감",
+        "url": "https://www.instagram.com/p/DfEwK_QT8lZ/",
+        "publishedDate": "2026-10-29"
+      },
+      {
+        "label": "리사 공식 · FC발라드림 새 멤버 사진",
+        "url": "https://www.instagram.com/p/DfELQkSGY09/",
+        "publishedDate": "2026-10-29"
+      },
+      {
+        "label": "ramirang_ · 10월 28일 골 때리는 그녀들 클립",
+        "url": "https://www.instagram.com/reel/DfEF1NTuCnH/",
+        "publishedDate": "2026-10-29"
       }
     ],
     "status": "available",
@@ -51907,6 +51947,150 @@
       "릴스"
     ],
     "note": "뮤지컬 「식스」에서 시모어 역을 맡은 이보람의 공식 인터뷰 릴스입니다.\n컨페티와 함께한 엔딩 요정 모습을 담았습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261029-boram-napdapunch-02",
+    "date": "2026-10-29",
+    "addedAt": "2026-10-31",
+    "updatedAt": "2026-10-31",
+    "title": "이보람 · 냅다펀치 EP.02",
+    "program": "냅다펀치",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "냅다펀치 공식 · 이보람 출연 EP.02",
+      "url": "https://www.youtube.com/watch?v=vYBcO3Nv3X4",
+      "publishedDate": "2026-10-29"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-29",
+    "tags": [
+      "2026",
+      "냅다펀치"
+    ],
+    "note": "펀치의 웹 예능 「냅다펀치」 두 번째 에피소드에 이보람이 출연했습니다.\n10월 29일 공개된 공식 채널 영상으로 볼 수 있습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261029-seeya-fire-day-message",
+    "date": "2026-10-29",
+    "addedAt": "2026-10-31",
+    "updatedAt": "2026-10-31",
+    "title": "씨야 · 제64주년 소방의 날 축하 메시지",
+    "program": "인천소방TV · 제64주년 소방의 날",
+    "type": "official",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "인천소방TV 공식 · 제64주년 소방의 날 기념식 D-11",
+      "url": "https://www.youtube.com/watch?v=qA_Q66sHBPI",
+      "publishedDate": "2026-10-29"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-29",
+    "tags": [
+      "2026",
+      "인천소방TV · 제64주년 소방의 날"
+    ],
+    "note": "제64주년 소방의 날을 축하하는 씨야의 메시지가 인천소방TV 예고 영상에 담겼습니다.\n축하 영상 전체본은 11월 9일 기념식에서 공개될 예정으로 안내됐습니다. 씨야의 현장 출연·공연 일정으로 안내된 내용은 아닙니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261030-gyuri-gyulmung-cheese-cat",
+    "date": "2026-10-30",
+    "addedAt": "2026-10-31",
+    "updatedAt": "2026-10-31",
+    "title": "남규리 · 귤멍 「치즈 냥이네」 쇼츠",
+    "program": "남규리의 귤멍",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 공식 · 보고만 있어도 미소 지어지는 치즈 냥이네",
+      "url": "https://www.youtube.com/watch?v=TfdmlPWnEkQ",
+      "publishedDate": "2026-10-30"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-30",
+    "tags": [
+      "2026",
+      "남규리의 귤멍"
+    ],
+    "note": "귤멍 공식 채널에 공개된 고양이 쇼츠입니다.\n10월 30일 영상 공개일 기준 기록입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261028-yeonji-yoonminsoo-live-clips",
+    "date": "2026-10-28",
+    "addedAt": "2026-10-31",
+    "updatedAt": "2026-10-31",
+    "title": "김연지 · 윤민수 콘서트 깜짝 라이브 공개",
+    "program": "윤민수 콘서트 · 공식 현장 클립",
+    "type": "concert",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "와일드무브·김연지 공식 · 콘서트 깜짝 라이브",
+      "url": "https://www.instagram.com/reel/DfBrIKDh6UW/",
+      "publishedDate": "2026-10-28"
+    },
+    "additionalSources": [
+      {
+        "label": "와일드무브·김연지 공식 · 깜짝 무대에 오르게 된 이야기",
+        "url": "https://www.instagram.com/reel/DfBqPW6h3vl/",
+        "publishedDate": "2026-10-28"
+      }
+    ],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-10-28",
+    "tags": [
+      "2026",
+      "윤민수 콘서트 · 공식 현장 클립"
+    ],
+    "note": "윤민수의 콘서트를 관람하러 간 김연지가 무대에 올라 노래한 모습입니다.\n와일드무브와 김연지 공식 계정이 공개한 라이브와 무대에 오르게 된 이야기를 함께 볼 수 있습니다.\n날짜는 10월 28일 영상 공개일 기준입니다.",
     "eventState": "completed",
     "calendar": {
       "enabled": false

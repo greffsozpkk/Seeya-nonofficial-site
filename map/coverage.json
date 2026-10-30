@@ -30,7 +30,11 @@
       "title": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN · INCHEON",
       "venue": "인천남동체육관",
       "placeIds": [
-        "namdong-gymnasium"
+        "namdong-gymnasium",
+        "guksuhwa-namdong",
+        "idang-bistro-incheon",
+        "daepae-sinhwa-seochang",
+        "omyo-roasters-seochang"
       ],
       "status": "linked"
     },
@@ -1217,7 +1221,7 @@
     },
     {
       "recordId": "20261030-yeonji-birthday-fancafe",
-      "title": "김연지 생일 기념 팬 카페 · 10월 30–31일 예정",
+      "title": "김연지 · 생일 카페 방문과 팬 만남",
       "venue": "델루나 카페&갤러리",
       "placeIds": [
         "deluna-cafe-gallery"
