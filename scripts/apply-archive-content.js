@@ -38,6 +38,13 @@ function correctRecord(row,correction,checkedAt){
  if(Object.entries(correction.values||{}).every(([key,value])=>JSON.stringify(row[key])===JSON.stringify(value)))return row;
  return {...row,...correction.values,updatedAt:[row.updatedAt||row.addedAt||checkedAt,checkedAt].sort().at(-1)};
 }
+// Remove only explicitly reviewed automatic links; keep later manual changes.
+function removeAutomaticSources(row,urls){
+ if(!urls?.length||row.hidden||row.status==='hidden')return row;
+ const keys=new Set(urls.map(sourceKey));
+ const additional=(row.additionalSources||[]).filter(s=>!(s.autoDiscovery===true&&keys.has(sourceKey(s.url))));
+ return additional.length===(row.additionalSources||[]).length?row:{...row,additionalSources:additional};
+}
 function applyContent(rows,applied=[]){
  let result=rows.slice();const completed=new Set(applied);
  for(const batch of batches){
@@ -53,7 +60,7 @@ function applyContent(rows,applied=[]){
   for(const patch of batch.updates){
    const found=result.find(r=>r.id===patch.id);
    if(!found)continue; // A manager may have intentionally removed this record.
-   result=result.map(r=>r===found?extend(correctRecord(r,patch.correction,batch.checkedAt),patch.sources,patch.noteAppend,batch.checkedAt):r);
+   result=result.map(r=>r===found?extend(correctRecord(removeAutomaticSources(r,patch.removeAutomaticSources),patch.correction,batch.checkedAt),patch.sources,patch.noteAppend,batch.checkedAt):r);
   }
   for(const merge of batch.merges||[]){
    const child=result.find(r=>r.id===merge.id),parent=result.find(r=>r.id===merge.targetId);
@@ -67,4 +74,4 @@ function applyContent(rows,applied=[]){
  }
  return {rows:result,applied:[...completed]};
 }
-module.exports={applyContent,sourceKey,correctRecord};
+module.exports={applyContent,sourceKey,correctRecord,removeAutomaticSources};

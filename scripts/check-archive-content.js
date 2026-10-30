@@ -1,6 +1,13 @@
 'use strict';
 const assert=require('node:assert/strict');
 const {applyContent,sourceKey,correctRecord}=require('./apply-archive-content');
+const {removeAutomaticSources}=require('./apply-archive-content');
+const autoLinks={id:'reviewed-links',source:{url:'https://youtu.be/primary',autoDiscovery:true},additionalSources:[{url:'https://youtu.be/other',autoDiscovery:true},{url:'https://youtu.be/manual'},{url:'https://youtu.be/keep',autoDiscovery:true}]};
+const cleanLinks=removeAutomaticSources(autoLinks,['https://www.youtube.com/watch?v=other','https://youtu.be/manual','https://youtu.be/primary']);
+assert.deepEqual(cleanLinks.additionalSources.map(s=>s.url),['https://youtu.be/manual','https://youtu.be/keep']);
+assert.deepEqual(cleanLinks.source,autoLinks.source);
+assert.equal(autoLinks.additionalSources.length,3);
+assert.deepEqual(removeAutomaticSources({...autoLinks,hidden:true},['https://youtu.be/other']),{...autoLinks,hidden:true});
 const batches=require('../src/data/archive-content-updates.json');
 const batch=batches[0],first=batch.additions[0];
 const fixture=batch.updates.map(p=>({id:p.id,date:'2006-01-01',note:'운영자가 작성한 설명',source:{url:'https://example.org/'+p.id},custom:'preserve'}));
