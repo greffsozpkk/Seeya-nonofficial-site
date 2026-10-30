@@ -147,13 +147,13 @@
       "description": "이보람, 정교한 패스·집념 수비…팀 4강 진출 기여 (‘골때녀’) MHN스포츠"
     }
   ],
-  "updatedAt": "2026-10-30T16:55:52.969698+00:00",
-  "lastCheckedAt": "2026-10-30T16:55:52.969698+00:00",
+  "updatedAt": "2026-10-30T17:02:04.841409+00:00",
+  "lastCheckedAt": "2026-10-30T17:02:04.841409+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-10-30T16:55:52.969698+00:00",
-    "남규리": "2026-10-30T16:55:52.969698+00:00",
-    "김연지": "2026-10-30T16:55:52.969698+00:00",
-    "이보람": "2026-10-30T16:55:52.969698+00:00"
+    "씨야": "2026-10-30T17:02:04.841409+00:00",
+    "남규리": "2026-10-30T17:02:04.841409+00:00",
+    "김연지": "2026-10-30T17:02:04.841409+00:00",
+    "이보람": "2026-10-30T17:02:04.841409+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-10-29T13:06:54.610771+00:00",
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 137,
+      "accepted": 144,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 84,
+      "accepted": 103,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 28,
+      "accepted": 31,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 105,
+      "accepted": 108,
       "changed": false,
       "status": "unchanged"
     }
