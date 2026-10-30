@@ -37,5 +37,7 @@ const goyangFool=performances(archive,'fool',cutoff).find(r=>r.id==='20261004-th
 assert(goyangFool.clips.some(c=>videoId(c.url)==='si3VEPvpr9A'));
 assert(!goyangFool.clips.some(c=>['sSQloydNONo','V0T_q1nsyqU','QY-F5iSN8aM'].includes(videoId(c.url))),'Other songs and departures are not Fool performances');
 const cotton=performances(archive,'cotton-candy',cutoff).find(r=>r.id==='20261004-the-fan-goyang');
-assert.equal(cotton.clips.length,2);
-assert(cotton.clips.every(c=>c.url.includes('instagram.com')));
+const cottonMappings=mappings.filter(m=>m.archiveId===cotton.id&&m.songIds.includes('cotton-candy'));
+assert.deepEqual(new Set(cotton.clips.map(c=>c.url)),new Set(cottonMappings.map(m=>m.url)), 'All reviewed Cotton Candy sources are included without unrelated concert clips');
+assert(cotton.clips.filter(c=>c.url.includes('instagram.com')).length>=2,'Previously reviewed Instagram clips remain available');
+assert(!cotton.clips.some(c=>['sSQloydNONo','V0T_q1nsyqU','QY-F5iSN8aM'].includes(videoId(c.url))),'Other songs and departures are not Cotton Candy performances');
