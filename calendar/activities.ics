@@ -782,8 +782,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2007-07&event=activity-v480-s
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v481-archive-007@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20070707
 DTEND;VALUE=DATE:20070708
@@ -795,15 +795,22 @@ LOCATION:
 DESCRIPTION:남규리\n시간 미정\n공식 영상: https://www.youtube.co
  m/watch?v=Gk7V_nWTVyM\n공식 영상: https://www.youtube.com/watch?v=A6eo
  1XSdsXY\n공식 영상: https://www.youtube.com/watch?v=HyA00VCEtRk\n공
- 식 영상: https://www.youtube.com/watch?v=h7niAlFTvVI\nhttps://seeya-fan
- page.com/archive/?record=v481-archive-007
+ 식 영상: https://www.youtube.com/watch?v=h7niAlFTvVI\nMBCentertainment 
+ · Happiness in \\10\,000\, Kang Gi-seabb vs Nam Gyu-ri(1): https://www.yo
+ utube.com/watch?v=LqBOPg0qfLo\nMBCentertainment · Happiness in \\10\,000\
+ , Kang Gi-seabb vs Nam Gyu-ri(1): https://www.youtube.com/watch?v=qRp969Ue
+ rN0\nMBCentertainment · Happiness in \\10\,000\, Kang Gi-seabb vs Nam Gyu
+ -ri(1): https://www.youtube.com/watch?v=HUx0zJskvZQ\nMBCentertainment · H
+ appiness in \\10\,000\, Kang Gi-seabb vs Nam Gyu-ri(1): https://www.youtub
+ e.com/watch?v=jlqwZ06qom8\nhttps://seeya-fanpage.com/archive/?record=v481-
+ archive-007
 URL:https://seeya-fanpage.com/calendar/?month=2007-07&event=activity-v481-a
  rchive-007
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v481-archive-008@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20070714
 DTEND;VALUE=DATE:20070715
@@ -818,7 +825,14 @@ DESCRIPTION:남규리\n시간 미정\n공식 영상: https://www.youtube.co
  식 영상: https://www.youtube.com/watch?v=677zvMJUxhA\n공식 영상: ht
  tps://www.youtube.com/watch?v=kEWbCaao0RU\n공식 영상: https://www.yout
  ube.com/watch?v=2CpodfoTgs4\n공식 영상: https://www.youtube.com/watch?
- v=7jBUxmgeT6c\nhttps://seeya-fanpage.com/archive/?record=v481-archive-008
+ v=7jBUxmgeT6c\nMBCentertainment · Happiness in \\10\,000\, Kang Gi-seabb 
+ vs Nam Gyu-ri(2): https://www.youtube.com/watch?v=7k42AfF6B4I\nMBCentertai
+ nment · Happiness in \\10\,000\, Kang Gi-seabb vs Nam Gyu-ri(2): https://
+ www.youtube.com/watch?v=AGBc4LhAXPM\nMBCentertainment · Happiness in \\10
+ \,000\, Kang Gi-seabb vs Nam Gyu-ri(2): https://www.youtube.com/watch?v=jH
+ _0TW1V6Oc\nMBCentertainment · Happiness in \\10\,000\, Kang Gi-seabb vs N
+ am Gyu-ri(2): https://www.youtube.com/watch?v=Kur7G-JFC68\nhttps://seeya-f
+ anpage.com/archive/?record=v481-archive-008
 URL:https://seeya-fanpage.com/calendar/?month=2007-07&event=activity-v481-a
  rchive-008
 END:VEVENT
@@ -2621,6 +2635,28 @@ URL:https://seeya-fanpage.com/calendar/?month=2013-03&event=activity-v490-a
  lbum-361863
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20130602-yeonji-mondaykiz-rest@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20130602
+DTEND;VALUE=DATE:20130603
+SUMMARY:김연지 · 먼데이키즈 콘서트 「쉼표」 게스트
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n먼데이키즈 이진성과 함께
+ 한 「아파도 행복해」 게스트 무대입니다. 현장 영상 제
+ 목·설명의 공연일을 기준으로 기록했습니다.\n진성병자
+  for 먼데이 키즈 · 130602  먼데이키즈 이진성 [아파도 행
+ 복해 (feat.김연지)] 2013 먼데이키즈 콘서트 "쉼표": https://
+ www.youtube.com/watch?v=agJ7zx8CCLE\nhttps://seeya-fanpage.com/archive/?re
+ cord=20130602-yeonji-mondaykiz-rest
+URL:https://seeya-fanpage.com/calendar/?month=2013-06&event=activity-201306
+ 02-yeonji-mondaykiz-rest
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v490-album-375620@seeya-fanpage.com
 DTSTAMP:20260911T150000Z
 LAST-MODIFIED:20260911T150000Z
@@ -2764,6 +2800,30 @@ DESCRIPTION:김연지\n발매일 · 시간 미정\n벅스 음반 정보: ht
  cord=v490-album-429144
 URL:https://seeya-fanpage.com/calendar/?month=2014-05&event=activity-v490-a
  lbum-429144
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20141105-yeonji-naro-concert@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20141105
+DTEND;VALUE=DATE:20141106
+SUMMARY:김연지 · 나로센터 축하공연
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:나로센터
+DESCRIPTION:김연지\n시간 미정\n김연지가 참여한 축하공연 
+ 영상입니다. 베이지·나비와 함께한 「Let It Go」와 「Ange
+ l」을 모았습니다. 현장 영상의 제목과 설명에 명시된 
+ 공연일 기준입니다.\nmena299 · [씨야/김연지] 141105 - KimYeon
+ ji - Feat. Beige & Navi - Let it go  (Frozen OST. cover) 나로센터에
+ 서 축하공연: https://www.youtube.com/watch?v=_B2dyhWgd1s\nmena299 · 
+ [씨야/김연지] 141105 - KimYeonji - Angel (cover) 나로센터에서 
+ 축하공연: https://www.youtube.com/watch?v=RSCcjyQfY78\nhttps://seeya-f
+ anpage.com/archive/?record=20141105-yeonji-naro-concert
+URL:https://seeya-fanpage.com/calendar/?month=2014-11&event=activity-201411
+ 05-yeonji-naro-concert
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-album-466842@seeya-fanpage.com
@@ -3257,6 +3317,29 @@ DESCRIPTION:김연지\n시간 미정\n치평동사우나: https://www.youtu
  Yp3n7Cr0\nhttps://seeya-fanpage.com/archive/?record=v490-kbs-20160117
 URL:https://seeya-fanpage.com/calendar/?month=2016-01&event=activity-v490-k
  bs-20160117
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20160213-boram-charity-mic@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20160213
+DTEND;VALUE=DATE:20160214
+SUMMARY:이보람 · 파워보컬 자선마이크 콘서트
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n「그리움만 쌓이네」 무대
+ 와 출연진이 함께한 공연 영상입니다. 현장 영상 제목의
+  2016년 2월 13일을 공연일로 기록했습니다.\nJSJ · [16.02.13]
+  이보람 - 파워보컬자선마이크 콘서트 - 그리움만 쌓이
+ 네: https://www.youtube.com/watch?v=yVsvZHxjULA\nJSJ · [16.02.13] 이보
+ 람 - 파워보컬자선마이크 콘서트 - (출연진들과 함께): ht
+ tps://www.youtube.com/watch?v=0RsMY6X5K6s\nhttps://seeya-fanpage.com/archi
+ ve/?record=20160213-boram-charity-mic
+URL:https://seeya-fanpage.com/calendar/?month=2016-02&event=activity-201602
+ 13-boram-charity-mic
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v474-stage-research-038@seeya-fanpage.com
@@ -4725,9 +4808,29 @@ URL:https://seeya-fanpage.com/calendar/?month=2020-02&event=activity-v491-a
  lbum-20307775
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20200223-yeonji-sinchon-busking@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20200223
+DTEND;VALUE=DATE:20200224
+SUMMARY:김연지 · 신촌 버스킹 · 야생화
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n신촌에서 부른 「야생화」 
+ 현장 직캠입니다. 영상 제목에 명시된 2020년 2월 23일 공
+ 연입니다.\nshinlim · 200223 김연지(씨야) - 야생화 @신촌Busk
+ ing [직캠 shinlim]: https://www.youtube.com/watch?v=59ZQ1lbKVjM\nhttps:/
+ /seeya-fanpage.com/archive/?record=20200223-yeonji-sinchon-busking
+URL:https://seeya-fanpage.com/calendar/?month=2020-02&event=activity-202002
+ 23-yeonji-sinchon-busking
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v491-sketchbook-20200306@seeya-fanpage.com
-DTSTAMP:20261002T151110Z
-LAST-MODIFIED:20261002T151110Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20200306
 DTEND;VALUE=DATE:20200307
@@ -4739,8 +4842,9 @@ LOCATION:
 DESCRIPTION:김연지\n시간 미정\nKBS Kpop: https://www.youtube.com/wat
  ch?v=oIWCLgFO0so\nKBS Kpop: https://www.youtube.com/watch?v=lOvBRahMvtQ\nK
  BS StarTV: 인물사전 · [소장각👍: https://www.youtube.com/watch?v
- =gpuyj0Wv8Uc\nhttps://seeya-fanpage.com/archive/?record=v491-sketchbook-20
- 200306
+ =gpuyj0Wv8Uc\n리스펙 뮤직 『Respect Music』 · [유희열의 스케
+ 치북] 김연지 - 야생화: https://www.youtube.com/watch?v=lnTAju3Y_9s
+ \nhttps://seeya-fanpage.com/archive/?record=v491-sketchbook-20200306
 URL:https://seeya-fanpage.com/calendar/?month=2020-03&event=activity-v491-s
  ketchbook-20200306
 END:VEVENT
@@ -4866,8 +4970,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2020-12&event=activity-v491-m
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-misstrot-4@seeya-fanpage.com
-DTSTAMP:20260912T150000Z
-LAST-MODIFIED:20260912T150000Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20210107
 DTEND;VALUE=DATE:20210108
@@ -4877,8 +4981,10 @@ TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:김연지\n시간 미정\n미스&미스터트롯: https://www.y
- outube.com/watch?v=QHICHwHcz4Y\nhttps://seeya-fanpage.com/archive/?record=
- v491-misstrot-4
+ outube.com/watch?v=QHICHwHcz4Y\nTVCHOSUN JOY · [미스트롯2] 넷이 합
+ 쳐 경력 70년차인 왕년부 70년산 영지버섯의 '바람 바람 
+ 바람': https://www.youtube.com/watch?v=eDbT-SIvH3g\nhttps://seeya-fanpag
+ e.com/archive/?record=v491-misstrot-4
 URL:https://seeya-fanpage.com/calendar/?month=2021-01&event=activity-v491-m
  isstrot-4
 END:VEVENT
@@ -5549,6 +5655,53 @@ URL:https://seeya-fanpage.com/calendar/?month=2022-09&event=activity-v491-g
  ayo20220929
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20221002-boram-bohyeonsan-festival@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20221002
+DTEND;VALUE=DATE:20221003
+SUMMARY:이보람 · 영천 보현산 별빛축제
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n영천 보현산 별빛축제에서 
+ 부른 「그때 그 순간 그대로」 현장 직캠입니다. 영상 
+ 제목의 공연일 기준입니다.\n라밍보 · 이보람(LEE BO RAM) "
+ 그때 그 순간 그대로 (그그그)" [FanCam / 4K] 20221002  @영천
+ 보현산별빛축제: https://www.youtube.com/watch?v=C9dgxgmNa_I\nhttps:
+ //seeya-fanpage.com/archive/?record=20221002-boram-bohyeonsan-festival
+URL:https://seeya-fanpage.com/calendar/?month=2022-10&event=activity-202210
+ 02-boram-bohyeonsan-festival
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20221003-boram-youth-arena@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20221003
+DTEND;VALUE=DATE:20221004
+SUMMARY:이보람 · 청춘아레나 대구 · 박혜원·박진주와 합
+ 동 무대
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n박혜원·박진주와 함께한 「
+ 그때 그 순간 그대로」·「눈을 감으면」 무대 및 단체 
+ 사진 촬영 영상입니다. 두 현장 영상에 명시된 공연일을
+  대조했습니다.\nCam ECU · 이보람 \,박혜원\, 
+ 박진주 part '그때 그순간 그대로\, 눈을감으
+ 면' [4K] 221003 청춘아레나 - 대구 직캠: https://www.youtube.com/
+ watch?v=JPv8LQwHIdM\n스프 · [4k 60p] 221003 가야J (Hynn\, 박진주\,
+  이보람) - 눈을 감으면\, 단체사진 @청춘아레나: https://ww
+ w.youtube.com/watch?v=7zNTSbimS90\nhttps://seeya-fanpage.com/archive/?reco
+ rd=20221003-boram-youth-arena
+URL:https://seeya-fanpage.com/calendar/?month=2022-10&event=activity-202210
+ 03-boram-youth-arena
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v491-back20221012@seeya-fanpage.com
 DTSTAMP:20260912T150000Z
 LAST-MODIFIED:20260912T150000Z
@@ -5911,6 +6064,28 @@ URL:https://seeya-fanpage.com/calendar/?month=2023-03&event=activity-v491-c
  hin20230328
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20230412-boram-military-orchestra@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20230412
+DTEND;VALUE=DATE:20230413
+SUMMARY:이보람 · 국군교향악단 초청연주회
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n국군교향악단 초청연주회 
+ 출연 영상입니다. 「사랑의 인사」·「그때 그 순간 그
+ 대로」·「결국엔 너에게 닿아서」가 영상 제목에 수록
+ 되어 있습니다.\n럽유 · 230412 이보람 국군교향악단 초청
+ 연주회 사랑의인사 & 그때 그순간 그대로 & 결국엔 너에
+ 게 닿아서 행사직캠: https://www.youtube.com/watch?v=esRQCkpKxSE\nh
+ ttps://seeya-fanpage.com/archive/?record=20230412-boram-military-orchestra
+URL:https://seeya-fanpage.com/calendar/?month=2023-04&event=activity-202304
+ 12-boram-military-orchestra
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v491-hangout-2023-04-15@seeya-fanpage.com
 DTSTAMP:20261002T151354Z
 LAST-MODIFIED:20261002T151354Z
@@ -5949,6 +6124,27 @@ DESCRIPTION:김연지\n시간 미정\nKBS 레전드 케이팝: https://www.
  1-immortal-2023-04-22
 URL:https://seeya-fanpage.com/calendar/?month=2023-04&event=activity-v491-i
  mmortal-2023-04-22
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20230507-boram-mokpo-sunset@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20230507
+DTEND;VALUE=DATE:20230508
+SUMMARY:이보람 · 목포 노을 드론라이트쇼 노을음악회
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:목포 북항노을공원 야외무대
+DESCRIPTION:이보람\n시간 미정\n2023년 5월 7일 저녁 목포 북
+ 항노을공원 무대에 출연했습니다. 영상에는 공연과 팬
+ 과 함께한 무대·인터뷰가 담겨 있습니다.\n강피디와 함
+ 께하는 팔도여행 · 2023.5.7(일)#이보람: https://www.youtube.com
+ /watch?v=FuWrLFApOEE\nhttps://seeya-fanpage.com/archive/?record=20230507-b
+ oram-mokpo-sunset
+URL:https://seeya-fanpage.com/calendar/?month=2023-05&event=activity-202305
+ 07-boram-mokpo-sunset
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-green@seeya-fanpage.com
@@ -5990,6 +6186,27 @@ DESCRIPTION:남규리\n시간 미정\nM드로메다 스튜디오: https://w
  1-gamegyuri-1
 URL:https://seeya-fanpage.com/calendar/?month=2023-06&event=activity-v491-g
  amegyuri-1
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20230617-yeonji-jeju-today@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20230617
+DTEND;VALUE=DATE:20230618
+SUMMARY:김연지 · 제주 문화콘서트 오늘
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:한라수목원
+DESCRIPTION:김연지\n시간 미정\n한라수목원에서 열린 제주 
+ 문화콘서트 오늘의 「사랑의 인사」 무대 영상입니다. 
+ 영상 제목에 명시된 공연일 기준입니다.\nOrot Nuna · 김연
+ 지(씨야)_사랑의 인사_제주 문화콘서트 오늘 (230617) 한라
+ 수목원: https://www.youtube.com/watch?v=vUSOkLNmBhk\nhttps://seeya-fanp
+ age.com/archive/?record=20230617-yeonji-jeju-today
+URL:https://seeya-fanpage.com/calendar/?month=2023-06&event=activity-202306
+ 17-yeonji-jeju-today
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-album-4088070@seeya-fanpage.com
@@ -6168,6 +6385,29 @@ URL:https://seeya-fanpage.com/calendar/?month=2023-09&event=activity-v491-b
  allad-busan
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20230923-boram-yangju-flower@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20230923
+DTEND;VALUE=DATE:20230924
+SUMMARY:이보람 · 양주 천만송이 천일홍축제
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n양주 천만송이 천일홍축제 
+ 출연 영상과 「한 밤의 꿈처럼」 직캠을 모았습니다. 두
+  현장 영상에 명시된 공연일을 대조했습니다.\n밥하는 
+ 홍 · 이보람(2023.9.23일 양주 천일홍축제): https://www.youtube
+ .com/watch?v=Ivbmd83cEEw\n동구 · [이보람] 230923 양주 천만송이
+  천일홍축제 '한 밤의 꿈처럼' 직캠/fancam (가사/Lyrics/CC): 
+ https://www.youtube.com/watch?v=6nENmIRNnAg\nhttps://seeya-fanpage.com/arc
+ hive/?record=20230923-boram-yangju-flower
+URL:https://seeya-fanpage.com/calendar/?month=2023-09&event=activity-202309
+ 23-boram-yangju-flower
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v491-album-4091640@seeya-fanpage.com
 DTSTAMP:20260912T150000Z
 LAST-MODIFIED:20260912T150000Z
@@ -6185,6 +6425,28 @@ DESCRIPTION:김연지\n발매일 · 시간 미정\nDK(디셈버)와 함께
  m-4091640
 URL:https://seeya-fanpage.com/calendar/?month=2023-10&event=activity-v491-a
  lbum-4091640
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20231007-seeya-gangwon-music-trip@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20231007
+DTEND;VALUE=DATE:20231008
+SUMMARY:김연지·이보람 · 강원 음악 여행 「나랑\, 노랑」
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:박수근미술관
+DESCRIPTION:김연지 · 이보람\n시간 미정\n양구 박수근미술
+ 관에서 김연지·이보람이 함께한 토크와 「사랑의 인사
+ 」 무대입니다. 현장 원본 설명에 날짜·장소와 곡별 구
+ 간이 명시되어 있습니다.\n제리제이 Jerry.j · 씨야(이보
+ 람\, 김연지) 직캠 Full Ver\, 20231007 강원 음악 여행 ‘나랑
+ \, 노랑.’: https://www.youtube.com/watch?v=xHnokd3gzNI\nhttps://seeya-
+ fanpage.com/archive/?record=20231007-seeya-gangwon-music-trip
+URL:https://seeya-fanpage.com/calendar/?month=2023-10&event=activity-202310
+ 07-seeya-gangwon-music-trip
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-discovered-58da80e48b1b7010@seeya-fanpage.com
@@ -6775,6 +7037,35 @@ URL:https://seeya-fanpage.com/calendar/?month=2025-06&event=activity-v491-a
  lbum-20734762
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20250716-boram-cultwo-baseball@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20250716
+DTEND;VALUE=DATE:20250717
+SUMMARY:이보람 · 두시탈출 컬투쇼 · 야구 특집
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:이보람\n시간 미정\n스페셜 DJ 이찬원과 함께한 
+ 야구 특집입니다. 이보람은 3·4부에서 강재준·한준희와
+  출연해 야구 이야기와 응원가 라이브를 들려줬습니다. 
+ SBS 공식 보이는 라디오 전체 영상과 라이브 클립을 연결
+ 했습니다.\nSBS Radio 에라오 · [FULL] 꽉 찬 야구 사랑에 다
+ 시 돌아온 야구 특집⚾️ 스페셜 DJ 이찬원\, 유희관\, 이
+ 대은\, 강재준\, 이보람\, 한준희 해설위원 보는 라디오 |
+  두시탈출 컬투쇼 | 250716: https://www.youtube.com/watch?v=TnCE-ZdK
+ dtw\nSBS Radio 에라오 · 승리하라~ 최강기아~🐯 미친 가창
+ 력의 이보람이 부르는 기아 응원가 | 두시탈출 컬투쇼: h
+ ttps://www.youtube.com/watch?v=fDwrYblpFmk\n뚝딱이 PD · 20250716 sbs 
+ 두시탈출컬투쇼 싸인해주는 씨야 이보람 가수 영상: http
+ s://www.youtube.com/watch?v=Ut7bS_zXwqo\nhttps://seeya-fanpage.com/archive
+ /?record=20250716-boram-cultwo-baseball
+URL:https://seeya-fanpage.com/calendar/?month=2025-07&event=activity-202507
+ 16-boram-cultwo-baseball
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v491-album-4125418@seeya-fanpage.com
 DTSTAMP:20260912T150000Z
 LAST-MODIFIED:20260912T150000Z
@@ -6868,8 +7159,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2025-11&event=activity-v491-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-still-singing@seeya-fanpage.com
-DTSTAMP:20261030T061110Z
-LAST-MODIFIED:20261030T061110Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20251206
 DTEND;VALUE=DATE:20251208
@@ -6884,8 +7175,22 @@ DESCRIPTION:이보람 · 김연지\n시간 미정\n12월 6~7일 열린 이
  \n정아선: https://www.youtube.com/watch?v=VlMSK-TXdP0\nh.a.p.p.y.3.6.5:
   https://www.youtube.com/watch?v=VEXAcaMgmMg\n유튜브매니한: https://
  www.youtube.com/watch?v=MNMMd4vSYCA\n🐿람보바라기: https://www.yout
- ube.com/watch?v=2aphi9Uc4z0\nhttps://seeya-fanpage.com/archive/?record=v49
- 1-still-singing
+ ube.com/watch?v=2aphi9Uc4z0\n🐿람보바라기 · 이보람(Lee Boram) 
+ 직캠\, 251207 이보람 콘서트 'Still Singing' "나가거든": https:
+ //www.youtube.com/watch?v=ah3J0ICL0Xg\n🐿람보바라기 · 이보람(Le
+ e Boram) 직캠\, 25년 이보람 콘서트 'Still Singing' "술 한잔 
+ 해요\, 맨날 술이야\, 지금 술 한잔했어": https://www.youtube.
+ com/watch?v=YKyLEL4kZ6U\n🐿람보바라기 · 이보람(Lee Boram) 직
+ 캠\, 25년 이보람 콘서트 'Still Singing' "솔로 곡\, 씨야 곡(
+ 짧게)": https://www.youtube.com/watch?v=2PL76dFUJy8\n🐿람보바라기
+  · 이보람(Lee Boram) 직캠\, 25년 이보람 콘서트 'Still Singing
+ ' "말하는 대로\, 나는 반딧불\, 형": https://www.youtube.com/wat
+ ch?v=0B_0NOLGaOQ\n🐿람보바라기 · 이보람(Lee Boram) 직캠\, 댄
+ 스람 "위플래쉬" 2025 이보람 콘서트 'Still Singing': https://ww
+ w.youtube.com/watch?v=Q_u1dRwOKjU\n🐿람보바라기 · 이보람(Lee Bo
+ ram) 직캠\, 251207 이보람 콘서트 'Still Singing' 앵콜 "당신을
+  위하여 & 마무리 인사": https://www.youtube.com/watch?v=xiQphfq1C8
+ Q\nhttps://seeya-fanpage.com/archive/?record=v491-still-singing
 URL:https://seeya-fanpage.com/calendar/?month=2025-12&event=activity-v491-s
  till-singing
 END:VEVENT
@@ -7172,6 +7477,77 @@ DESCRIPTION:이보람\n시간 미정\nBTN라디오 · 공식 영상: https:
  record=v488-audit-004
 URL:https://seeya-fanpage.com/calendar/?month=2026-05&event=activity-v488-a
  udit-004
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-discovered-b7c3357c102b35e9@seeya-fanpage.com
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20260523
+DTEND;VALUE=DATE:20260524
+SUMMARY:이보람 · 2026 괴산 빨간맛 페스티벌 레드핫 콘서트
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:performance
+LOCATION:괴산유기농엑스포광장
+DESCRIPTION:이보람\n시간 미정\n2026년 5월 23일 괴산 빨간맛 
+ 페스티벌 레드핫 콘서트 출연입니다. 공연과 MBC충북 정
+ 오의 희망곡 최다원 아나운서와의 현장 토크를 함께 모
+ 았습니다.\n람보사랑: https://www.youtube.com/watch?v=MJdWSrbzTdQ\n
+ 인스라이프 · (공연) 이보람 : MBC충북 라디오 정오의 희
+ 망곡 최다원 아나운서 (씨야\,WSG워너비) 2026 괴산 빨간맛
+  페스티벌 - 레드핫 콘서트 @ 괴산유기농엑스포광장 (26. 
+ 5.23): https://www.youtube.com/watch?v=y-bsKlqhi4w\n인스라이프 · 이
+ 보람 : 괴산 지나치기만하고 구경 못해 아쉬워요 (최다
+ 원 아나운서\, 씨야\,WSG워너비) 2026 괴산 빨간맛 페스티
+ 벌 - 레드핫 콘서트 @ 괴산유기농엑스포광장 (26. 5.23): htt
+ ps://www.youtube.com/watch?v=xyARD-rdIjA\n인스라이프 · (공연) 이
+ 보람 : 그때 그 순간 그대로 (원곡 WSG워너비\, 가야G\, 씨
+ 야) 2026 괴산 빨간맛 페스티벌 - 레드핫 콘서트 @ 괴산유
+ 기농엑스포광장 (26. 5.23): https://www.youtube.com/watch?v=fox2axIs
+ lCo\n인스라이프 · 이보람 : 20주년 신곡 Stay 무반주 (최다
+ 원 아나운서\, 씨야\, WSG워너비) 2026 괴산 빨간맛 페스티
+ 벌 - 레드핫 콘서트 @ 괴산유기농엑스포광장 (26. 5.23): htt
+ ps://www.youtube.com/watch?v=YNd5wlwJ-qY\n인스라이프 · 이보람 고
+ 추 헤어핀 꽂았네 : 그때 그 순간 그대로 (원곡 WSG워너비
+ \, 가야G\, 씨야) 2026 괴산 빨간맛 페스티벌 - 레드핫 콘서
+ 트 @ 괴산유기농엑스포광장 (26. 5.23): https://www.youtube.com/w
+ atch?v=m38CpOPJlyU\n인스라이프 · 이보람 : 정오의 희망곡 청
+ 취자에게 하고픈 말? (최다원 아나운서\, 씨야\, WSG워너
+ 비) 2026 괴산 빨간맛 페스티벌 - 레드핫 콘서트 @ 괴산유
+ 기농엑스포광장 (26. 5.23): https://www.youtube.com/watch?v=5vkz6yZB
+ 5Vk\n인스라이프 · 이보람 : 20년된 노래 가족이 좋아해줘
+  고마워 (최다원 아나운서\, 씨야\, WSG워너비) 2026 괴산 
+ 빨간맛 페스티벌 - 레드핫 콘서트 @ 괴산유기농엑스포광
+ 장 (26. 5.23): https://www.youtube.com/watch?v=sgn9_QxMEic\n인스라이
+ 프 · WSG워너비를 통해 이보람의 씨야를 알아봐주더라구
+ 요 (최다원 아나운서\, 놀면뭐하니) 2026 괴산 빨간맛 페
+ 스티벌 - 레드핫 콘서트 @ 괴산유기농엑스포광장 (26. 5.23
+ ): https://www.youtube.com/watch?v=0wI_yr598_A\n인스라이프 · 이보
+ 람 : 그때 그 순간 그대로 (원곡 WSG워너비\, 가야G\, 씨야)
+  2026 괴산 빨간맛 페스티벌 - 레드핫 콘서트 @ 괴산유기
+ 농엑스포광장 (26. 5.23): https://www.youtube.com/watch?v=b5x5PInbPiU
+ \n인스라이프 · 이보람 : 봄처럼 그댄 무반주 (원곡 씨야
+ \, WSG워너비\, 가야G) 2026 괴산 빨간맛 페스티벌 - 레드핫 
+ 콘서트 @ 괴산유기농엑스포광장 (26. 5.23): https://www.youtube
+ .com/watch?v=gvbuV7vRbBA\n인스라이프 · 이보람 : 당신을 위하
+ 여 (원곡 더 크로스\, WSG워너비\, 가야G\, 씨야) 2026 괴산 
+ 빨간맛 페스티벌 - 레드핫 콘서트 @ 괴산유기농엑스포광
+ 장 (26. 5.23): https://www.youtube.com/watch?v=T46fKEg2ZnE\n인스라이
+ 프 · 이보람 고음 잘한다 : 당신을 위하여 (원곡 더 크로
+ 스\, WSG워너비\, 가야G\, 씨야) 2026 괴산 빨간맛 페스티벌 
+ - 레드핫 콘서트 @ 괴산유기농엑스포광장 (26. 5.23): https:/
+ /www.youtube.com/watch?v=sJPHTbfbIGY\n인스라이프 · (공연) 이보
+ 람 : 당신을 위하여 (원곡 더 크로스\, WSG워너비\, 가야G\,
+  씨야) 2026 괴산 빨간맛 페스티벌 - 레드핫 콘서트 @ 괴산
+ 유기농엑스포광장 (26. 5.23): https://www.youtube.com/watch?v=piMTm
+ J_5CVw\n인스라이프 · (공연) 이보람 : 봄처럼 그댄 무반주
+  (원곡 씨야\, WSG워너비\, 가야G) 2026 괴산 빨간맛 페스티
+ 벌 - 레드핫 콘서트 @ 괴산유기농엑스포광장 (26. 5.23): htt
+ ps://www.youtube.com/watch?v=_-igI9NNb2o\nhttps://seeya-fanpage.com/archiv
+ e/?record=discovered-b7c3357c102b35e9
+URL:https://seeya-fanpage.com/calendar/?month=2026-05&event=activity-discov
+ ered-b7c3357c102b35e9
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v487-2026-009@seeya-fanpage.com
@@ -7709,8 +8085,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-09&event=activity-v475-s
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20260912-the-fan-daegu@seeya-fanpage.com
-DTSTAMP:20261023T051009Z
-LAST-MODIFIED:20261023T051009Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20260912
 DTEND;VALUE=DATE:20260913
@@ -7770,8 +8146,15 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n시간 미정\n9월 12일
  \n정아선: https://www.youtube.com/watch?v=zWoqQzY24Ds\n정아선: https
  ://www.youtube.com/watch?v=KmEgyvGepRM\n정아선: https://www.youtube.com
  /watch?v=TZOtz8i2Qp0\n정아선: https://www.youtube.com/watch?v=y_FeKF19p
- P8\n정아선: https://www.youtube.com/watch?v=4E8275zlFy8\nhttps://seeya-
- fanpage.com/archive/?record=20260912-the-fan-daegu
+ P8\n정아선: https://www.youtube.com/watch?v=4E8275zlFy8\n땅콩크림
+ 샌드 · [씨야/전국투어콘서트/대구] 남규리_예술이야: ht
+ tps://www.youtube.com/watch?v=wgJ8Ag7YY54\n2 75 · 다시 방문하게된 
+ 대구에서_!씨야 콘서트 대구!! 관객분들을 향한 메세지!!
+ !: https://www.youtube.com/watch?v=MCA9Il-5NrM\n김냥 · 260912 씨야 - 
+ 그 놈 목소리: https://www.youtube.com/watch?v=8PNDTCjx7YE\n김냥 · 
+ 260912 씨야 콘서트 남규리 마이클잭슨 dangerous 커버: https:
+ //www.youtube.com/watch?v=OqvMSNXZv_c\nhttps://seeya-fanpage.com/archive/?
+ record=20260912-the-fan-daegu
 URL:https://seeya-fanpage.com/calendar/?month=2026-09&event=activity-202609
  12-the-fan-daegu
 END:VEVENT
@@ -8480,8 +8863,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261004-the-fan-goyang@seeya-fanpage.com
-DTSTAMP:20261022T051038Z
-LAST-MODIFIED:20261022T051038Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:1
 DTSTART:20261004T070000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · GOYANG
@@ -8585,14 +8968,131 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n16:00 · 공연 시작\n20
  ube.com/watch?v=Mvo6n7xxJ6A\n안졍을줄게: https://www.youtube.com/watc
  h?v=TylOxk36V7Y\n🐿람보바라기: https://www.youtube.com/watch?v=MoG0
  dko2uac\n🐿람보바라기: https://www.youtube.com/watch?v=-MsOkRjoUwk\
- nhttps://seeya-fanpage.com/archive/?record=20261004-the-fan-goyang
+ n의딧 · [2026 씨야 The Fan 고양콘서트] 씨야 - 사랑의 인사
+  (김연지 직캠): https://www.youtube.com/watch?v=0dMH-eFQHAw\n씨야
+ 바라기 · 씨야-미워요(고양콘서트): https://www.youtube.com/wa
+ tch?v=yKmtQEG3GVQ\n🐿람보바라기 · 고양 씨야 콘서트 퇴근
+ 길👋🏻: https://www.youtube.com/watch?v=2ws55xBn2gk\n씨야바라기 
+ · 씨야-계절은 돌고 돌아(고양콘서트): https://www.youtube.co
+ m/watch?v=PuRpwuVhRw4\nkyunphg · [4K 직캠] 고양 2026 씨야 20주년 
+ 콘서트 : THE FAN  - 내겐 너무 멋진 그대(남규리\,김연지\,
+ 이보람): https://www.youtube.com/watch?v=qDQt2LuJTpI\n의딧 · [2026 
+ 씨야 The Fan 고양 콘서트] 씨야 - 안돼요 (김연지 직캠): ht
+ tps://www.youtube.com/watch?v=qsjDrr8E9hM\n1분트롯♡ · #씨야콘서
+ 트#고양시#20주년♡: https://www.youtube.com/watch?v=6_FEqiKtrQs\nky
+ unphg · [4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN  - 
+ 사랑의 인사(남규리\,김연지\,이보람): https://www.youtube.com
+ /watch?v=gTKLbN3xPbM\n만두림 · 씨야 20주년 콘서트(고양: https
+ ://www.youtube.com/watch?v=K7kpQ0AJQwQ\n씨야바라기 · 씨야-미친
+ 사랑의 노래(고양콘서트): https://www.youtube.com/watch?v=QmFLhyf
+ hE8Q\nkyunphg · [4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE F
+ AN  - STAY(남규리\,김연지\,이보람): https://www.youtube.com/watch
+ ?v=RHBgHJ8cLDs\n의딧 · [2026 씨야 The Fan 고양 콘서트] 씨야 - 
+ 내겐 너무 멋진 그대 (김연지 직캠): https://www.youtube.com/wa
+ tch?v=mP77p8Czs8k\n김연지 팬채널 · So sweet 김연지 아로하_202
+ 6 씨야 20주년 전국 투어 콘서트 THE FAN 고양: https://www.yout
+ ube.com/watch?v=SxXuBYXoNN0\n의딧 · [2026 씨야 The Fan 고양 콘서
+ 트] 씨야 - 미워요 (김연지 직캠): https://www.youtube.com/watch?
+ v=10h23Qm06Wc\nkyunphg · [4K 직캠] 고양 2026 씨야 20주년 콘서
+ 트 : THE FAN  - 안돼요(남규리\,김연지\,이보람): https://www.y
+ outube.com/watch?v=GlTbgO15la8\n씨야바라기 · 씨야-핫걸(고양콘
+ 서트): https://www.youtube.com/watch?v=sOW4neUUnls\n🐿람보바라기 
+ · 씨야 고양 콘서트 무대 마지막 인사: https://www.youtube.co
+ m/watch?v=o00WvH5IXSU\n씨야바라기 · 씨야-stay(고양콘서트): ht
+ tps://www.youtube.com/watch?v=HmFauKuBcYY\n의딧 · [2026 씨야 The Fan 
+ 고양 콘서트] 씨야 - Stay (김연지 직캠): https://www.youtube.co
+ m/watch?v=diSIeVgHgQM\n씨야바라기 · 씨야- I believe (고양콘서
+ 트): https://www.youtube.com/watch?v=eo_HUcz0EBE\n씨야바라기 · 씨
+ 야- 핫걸(고양콘서트): https://www.youtube.com/watch?v=eTkgD-JhpI0\
+ n씨야바라기 · 씨야-여인의 향기(고양콘서트): https://www.
+ youtube.com/watch?v=VspEFDi8nz4\n람보사랑 · [고양]씨야 20주년 
+ 전국 투어 콘서트 261004 댄스메들리: https://www.youtube.com/wa
+ tch?v=Fq_BbeHLfeA\n씨야바라기 · 씨야-사랑의 인사(고양콘서
+ 트): https://www.youtube.com/watch?v=J3PWSMLoNwE\n씨야바라기 · 씨
+ 야-감동을 주세요(고양 콘서트): https://www.youtube.com/watch?v
+ =Lnrgm94wrOA\n땅콩크림샌드 · [씨야/전국투어콘서트/고양] 
+ 궁금한 퇴근길 🤔: https://www.youtube.com/watch?v=qUQayAQL7Zg\n김
+ 연지 팬채널 · 김연지 콘서트 사진_씨야 20주년 전국 투
+ 어 콘서트 : THE FAN - 고양: https://www.youtube.com/watch?v=s-pfzHYl
+ VQo\nHot Issue🎤  · 씨야🩷 바보 (10.04 고양콘서트): https://
+ www.youtube.com/watch?v=Qh9axV1cxOs\nkyunphg · [4K 직캠] 고양 2026 
+ 씨야 20주년 콘서트 : THE FAN - 그 놈 목소리(남규리\, 김연
+ 지\, 이보람): https://www.youtube.com/watch?v=4YgW8LFS4R4\nHot Issue
+ 🎤  · 씨야🩷 구두 ||| 그 사람 (The Fan 고양콘서트): https
+ ://www.youtube.com/watch?v=iU9MqsFGSZU\n의딧 · [2026 씨야 The Fan 고
+ 양 콘서트] 씨야 - 계절은 돌고 돌아 (김연지 직캠): https:
+ //www.youtube.com/watch?v=jxOfjFcRuhk\n의딧 · [2026 씨야 The Fan 고
+ 양 콘서트] 씨야 - 구두 (김연지 직캠): https://www.youtube.com
+ /watch?v=q9dsK--KxnA\nkyunphg · [4K 세로직캠] 고양 2026 씨야 20
+ 주년 콘서트 : THE FAN  - 미워요(김연지 Cut.): https://www.youtu
+ be.com/watch?v=6Af7yuEQbbg\n의딧 · [2026 씨야 The Fan 고양 콘서
+ 트] 씨야 - 미친 사랑의 노래 (김연지 직캠): https://www.yout
+ ube.com/watch?v=_3xaMiBmXEI\n연지곤지 · 씨야콘서트 고양콘 씨
+ 야 바보: https://www.youtube.com/watch?v=1ezQ0JbXdDU\n땅콩크림샌
+ 드 · [씨야/전국투어콘서트/고양] 예술이야: https://www.you
+ tube.com/watch?v=8tXCxWsLc_c\n씨야바라기 · 남규리-그녀를 만
+ 나는 곳 100m 전(고양콘서트): https://www.youtube.com/watch?v=ek16
+ ZIrjwd4\nkyunphg · [4K 직캠] 고양 2026 씨야 20주년 콘서트 : TH
+ E FAN  - 미친 사랑의 노래(남규리\,김연지\,이보람) 미사
+ 노 트렌디 편곡Ver.: https://www.youtube.com/watch?v=07W49cCsJlw\nHot
+  Issue🎤  · 씨야 🩷 감동을 주세요 (The Fan 고양콘서트): 
+ https://www.youtube.com/watch?v=qgmQ1TYI-1U\nkyunphg · [4K 직캠] 고양
+  2026 씨야 20주년 콘서트 : THE FAN  - 여인의 향기(남규리\,
+ 김연지\,이보람): https://www.youtube.com/watch?v=pHYrxw9WcGM\n씨야
+ 바라기 · 씨야-잘못된 만남(고양 콘서트): https://www.youtub
+ e.com/watch?v=LjCI24VwWjE\n만두림 · 씨야 20주년 콘서트)고양: 
+ https://www.youtube.com/watch?v=MFwSMs2Xjb4\nkyunphg · [4K 직캠] 고양
+  2026 씨야 20주년 콘서트 : THE FAN  - 끝내 꺽이지 않는 것(
+ 남규리\,김연지\,이보람): https://www.youtube.com/watch?v=qKcEsB4X
+ bqU\nkyunphg · [4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FA
+ N  - Hot Girl(남규리\,김연지\,이보람): https://www.youtube.com/wa
+ tch?v=6ELvCxCtXXg\nkyunphg · [4K 직캠] 고양 2026 씨야 20주년 콘
+ 서트 : THE FAN  - 구두 시리즈(남규리\,김연지\,이보람): htt
+ ps://www.youtube.com/watch?v=fkfu85z5C6o\n땅콩크림샌드 · [씨야/
+ 전국투어콘서트/고양] 바보: https://www.youtube.com/watch?v=qBCs
+ m9XwX50\n씨야공육공삼일이 · 씨야 띵곡 "솜사탕"🩷🩷 넘
+  좋잖아~~ 고양콘서트 람언니~: https://www.youtube.com/watch?v=V
+ l_auwEFYYQ\n땅콩크림샌드 · [씨야/전국투어콘서트/고양] 
+ 페스티벌: https://www.youtube.com/watch?v=DWmiJBeUIzg\n땅콩크림샌
+ 드 · [씨야/전국투어콘서트/고양] 마직막 인사하는 씨야
+ : https://www.youtube.com/watch?v=RrM7BaxUEY4\n땅콩크림샌드 · [씨
+ 야/전국투어콘서트/고양] 솜사탕: https://www.youtube.com/watch
+ ?v=EwQWDX5DbGM\nkyunphg · [4K 직캠] 고양 2026 씨야 20주년 콘서
+ 트 : THE FAN  - 우리(남규리\,김연지\,이보람): https://www.yout
+ ube.com/watch?v=a1ZJQ2RvD1Q\n의딧 · [2026 씨야 The Fan 고양 콘서
+ 트] 씨야 - 여인의 향기 (김연지 직캠): https://www.youtube.com
+ /watch?v=fi-WqAh61Wk\n의딧 · [2026 씨야 The Fan 고양 콘서트] 씨
+ 야 - 결혼할까요 (김연지 직캠): https://www.youtube.com/watch?v=
+ iBTo-IlfvwM\n의딧 · [2026 씨야 The Fan 고양 콘서트] 씨야 - 끝
+ 내 꺾이지 않는 것 (김연지 직캠): https://www.youtube.com/watch
+ ?v=yNhOKBBgllU\n의딧 · [2026 씨야 The Fan 고양 콘서트] 김연지
+  - 아로하: https://www.youtube.com/watch?v=e91VTsn6eBc\n보람비타 ·
+  씨야 '안돼요'｜20년이 지나도 여전히 가슴을 울리는 목
+ 소리🥹 [고양 콘서트]: https://www.youtube.com/watch?v=LfMb6yHOeSg
+ \nkyunphg · [4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN  
+ - 봄처럼 그댄(남규리\,김연지\,이보람): https://www.youtube.c
+ om/watch?v=IC7iofZCa9U\nkyunphg · [4K 직캠] 고양 2026 씨야 20주년
+  콘서트 : THE FAN  - I Believe(남규리\,김연지\,이보람) Concert
+  Ver. 가사 자막추가: https://www.youtube.com/watch?v=FiNUi0_cEJM\nky
+ unphg · [4K] 고양 씨야콘서트 이보람 X 김연지 꽁냥꽁냥: h
+ ttps://www.youtube.com/watch?v=Vob0Wid9zGE\n보람비타 · 🔥 역시 
+ 씨야는 라이브다! 슬픈 발걸음｜고양콘서트: https://www.yo
+ utube.com/watch?v=IXaw6oosMPg\n보람비타 · ❤️ 씨야의 레전드 
+ 명곡 '구두'｜고양콘서트 라이브: https://www.youtube.com/watch
+ ?v=JO9DY6V4vq4\n보람비타 · 🥹 전주부터 소름… 씨야 슬픈 
+ 발걸음｜고양콘서트: https://www.youtube.com/watch?v=BEgDaa2Zrnc\n
+ 보람비타 · ❤️ 씨야의 레전드 명곡 '구두'｜고양콘서
+ 트 라이브: https://www.youtube.com/watch?v=yVwqR9y2JHU\n투카로그 
+ · [4k] 씨야 고양 콘서트 퇴근길 직캠: https://www.youtube.com/
+ watch?v=J9fwsknE8v4\nhttps://seeya-fanpage.com/archive/?record=20261004-th
+ e-fan-goyang
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  04-the-fan-goyang
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261005-gyuri-sbs-ten-recording@seeya-fanpage.com
-DTSTAMP:20261007T150000Z
-LAST-MODIFIED:20261007T150000Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
@@ -8616,8 +9116,33 @@ DESCRIPTION:남규리\n시간 미정\n남규리가 ‘대강 결정해드
  ]: https://www.youtube.com/watch?v=Acoxfhef0PA\n배성재의 텐 공식 ·
   남규리 출연 사진: https://www.instagram.com/p/DeKCpzLPcqe/\nSBS 
  공식 팟캐스트 · 10월 6일 남규리 출연분: https://podcasts.ap
- ple.com/kr/podcast/id1096961355?i=1000793656654\nhttps://seeya-fanpage.com
- /archive/?record=20261005-gyuri-sbs-ten-recording
+ ple.com/kr/podcast/id1096961355?i=1000793656654\n🍊🌟낭나임홍규 
+ · 🍊 검소귤 vs 배졸부💰 남규리와 대강 결정해드립니
+ 다 | 배성재의 텐 × 남규리 하이라이트: https://www.youtube.c
+ om/watch?v=8ePDjm38QBI\n🍊🌟낭나임홍규 · 철권 세계 1위 무
+ 릎! 남규리에게 패배한 이유 🫠🎮: https://www.youtube.com/wa
+ tch?v=JeM8oNxgLRU\n🍊🌟낭나임홍규 · 나이 40에 엉엉 울었
+ 다 😭 씨야 콘서트 눈물바다 🍊: https://www.youtube.com/watch
+ ?v=_6PqzwmMKcU\n🍊🌟낭나임홍규 · 콘서트 끝나도 밥값은 
+ 딱 2만원만 쓰는 남규리 😇🍊: https://www.youtube.com/watch?v=
+ Rkn51m0admo\n🍊🌟낭나임홍규 · 무릎 꺾어야 5만원 💸 남
+ 규리의 짠내 폭발 식비 😇🍊: https://www.youtube.com/watch?v=m
+ nZGDe83em0\n🍊🌟낭나임홍규 · 태어나서 당구 처음인데 
+ 쓰리쿠션 성공한 남규리 🎱🍊: https://www.youtube.com/watch?v
+ =eZK3iZBbugI\n🍊🌟낭나임홍규 · 철권 프로도 당황시킨 남
+ 규리의 무근본 닥공 🤭#남규리: https://www.youtube.com/watch?v
+ =C2XMZ-7FLho\n🍊🌟낭나임홍규 · 15만원 카페트 사는데 석 
+ 달 고민한 남규리 😏#남규리: https://www.youtube.com/watch?v=aq
+ Xru3E09SQ\n🍊🌟낭나임홍규 · 검소 규리 vs 배졸부 극과 
+ 극의 소비 스타일 🤑#남규리: https://www.youtube.com/watch?v=aP
+ 3qgKvUWoI\n🍊🌟낭나임홍규 · 폰 케이스 상한선 3만원 투
+ 명 케이스만 고집함 🫠#남규리: https://www.youtube.com/watch?v
+ =i3Sb-cP_4wM\n🍊🌟낭나임홍규 · 80만원짜리 가죽 자켓 살 
+ 필요 없는 이유 🫠#남규리: https://www.youtube.com/watch?v=2jjfd
+ -BL_PQ\n🍊🌟낭나임홍규 · 가죽 자켓과 오토바이 남규리
+ 의 터프한 과거 🏍️#남규리: https://www.youtube.com/watch?v=qV
+ zgsZLlzoU\nhttps://seeya-fanpage.com/archive/?record=20261005-gyuri-sbs-te
+ n-recording
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  05-gyuri-sbs-ten-recording
 END:VEVENT
@@ -8755,8 +9280,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261010-the-fan-cheongju@seeya-fanpage.com
-DTSTAMP:20261026T050747Z
-LAST-MODIFIED:20261026T050747Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:2
 DTSTART:20261010T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · CHEONGJU
@@ -8907,8 +9432,107 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n20
  · 청주 콘서트 팬 기록: https://www.instagram.com/ramirang_/reel/D
  egQZJZOlmz/\n🐿람보바라기: https://www.youtube.com/watch?v=AfQ8k8xi
  4iM\n🐿람보바라기: https://www.youtube.com/watch?v=bfE5mw7Rycg\n소
- 프트 귤: https://www.youtube.com/watch?v=pkkT7Zm04JY\nhttps://seeya-fan
- page.com/archive/?record=20261010-the-fan-cheongju
+ 프트 귤: https://www.youtube.com/watch?v=pkkT7Zm04JY\n모찌뇨 · #씨
+ 야: https://www.youtube.com/watch?v=Qdbyc4-WD5I\n모찌뇨 · #씨야: ht
+ tps://www.youtube.com/watch?v=4bCiZMXr7UA\n모찌뇨 · 씨야 전국투
+ 어 콘서트 청주 구두2 슬픈발걸음: https://www.youtube.com/watc
+ h?v=CZHqrlBECuk\n모찌뇨 · #남규리: https://www.youtube.com/watch?v=
+ 7Jbx2mB4kkc\n모찌뇨 · #씨야: https://www.youtube.com/watch?v=r_M4buG
+ B9Hw\n모찌뇨 · #씨야: https://www.youtube.com/watch?v=lvPww6Ctz7k\n
+ 모찌뇨 · 씨야 전국 투어 콘서트 청주 여인의향기 남규
+ 리: https://www.youtube.com/watch?v=YW6ntTDikss\n씨야바라기 · 씨
+ 야-바보(청주콘서트): https://www.youtube.com/watch?v=zNPbo-xR3c4\n
+ 🐿람보바라기 · 씨야 청주 콘서트 퇴근길👋🏻: https://
+ www.youtube.com/watch?v=DK3y3ZJ4aPo\n모찌뇨 · #씨야: https://www.you
+ tube.com/watch?v=8qOy_OjIwzY\n모찌뇨 · 씨야 전국투어 콘서트 
+ 청주 구두 남규리: https://www.youtube.com/watch?v=2wquf7pCiMY\n스
+ 타로그 (STAR LOG) · 씨야 전국투어콘서트 청주.남규리 - da
+ ngerous 커버 댄스.#씨야#남규리#dangerous#마이클잭슨: https:/
+ /www.youtube.com/watch?v=zkQfaaxSdqM\n백가오 · 씨야 콘서트 청주
+  남규리: https://www.youtube.com/watch?v=G2gh1ulVC64\n김연지 팬채
+ 널 · 씨야 콘서트_청주/ 김연지_i wish: https://www.youtube.com/
+ watch?v=5LCM07mp89o\n씨야바라기 · 씨야-예술이야(청주콘서
+ 트): https://www.youtube.com/watch?v=BlWbaqa9bpw\n모찌뇨 · #씨야: h
+ ttps://www.youtube.com/watch?v=ZDaLQoLB69o\n씨야바라기 · 씨야-내
+ 겐 너무 멋진 그대(청주콘서트): https://www.youtube.com/watch?v
+ =2vAz8oDt30g\n씨야바라기 · 씨야-이브의 경고(청주콘서트):
+  https://www.youtube.com/watch?v=tj3KqH5iB5g\n모찌뇨 · #씨야: https:
+ //www.youtube.com/watch?v=lL2AmBVayPA\n땅콩크림샌드 · [씨야/전
+ 국투어콘서트/청주] 퇴근길: https://www.youtube.com/watch?v=QrJA
+ f9Vl2bI\n모찌뇨 · 씨야 콘서트 청주 사랑의인사: https://www
+ .youtube.com/watch?v=zgp15wSZbBI\n모찌뇨 · 씨야 콘서트 청주 남
+ 규리 퇴근길: https://www.youtube.com/watch?v=54AmPLFjFBg\n김연지 
+ 팬채널 · 씨야 콘서트_청주/ 김연지_네 번의_구두: https:/
+ /www.youtube.com/watch?v=Mm41y16wzv8\n씨야바라기 · 씨야-페스티
+ 벌(청주콘서트): https://www.youtube.com/watch?v=4dBSajecaJo\n모찌
+ 뇨 · 씨야 전국투어 콘서트 청주대 바보 남규리: https://w
+ ww.youtube.com/watch?v=bb_KnHUu4tw\n씨야바라기 · 씨야 김연지 
+ 퇴근길(청주콘서트): https://www.youtube.com/watch?v=_Fh3wAVLwhE\n
+ 모찌뇨 · 씨야 전국투어 콘서트 청주 미워요: https://www.y
+ outube.com/watch?v=GJ0Q10Xca-E\n테이 · 씨야 더팬 전국콘서트 
+ 청주: https://www.youtube.com/watch?v=fF8aWEEtf4w\n모찌뇨 · 씨야 
+ 전국 투어 콘서트 청주 바보: https://www.youtube.com/watch?v=v_m
+ SsPX3PyI\n모찌뇨 · 씨야 전국 투어 콘서트 청주 그 사람 (
+ 구두 Ⅲ): https://www.youtube.com/watch?v=nrwP88wzjOI\n감미로운 음
+ 악생활 · 멋진 무대 속의 알콩달콩함 🥰: https://www.youtub
+ e.com/watch?v=N1uLfar67kw\n감미로운 음악생활 · 두명의 가왕
+ 을 보유한 그룹: https://www.youtube.com/watch?v=mOwIaRQQ5J0\n늘품 
+ · 씨야 청주 콘서트: https://www.youtube.com/watch?v=6vXRARA7xFc\n
+ 감미로운 음악생활 · #씨야: https://www.youtube.com/watch?v=Dsxi
+ AuJzQyA\n모찌뇨 · 씨야 전국 투어 콘서트 청주 미워요: htt
+ ps://www.youtube.com/watch?v=7ZJClagSNyM\n감미로운 음악생활 · 춤
+  바람난 남규리를 설레게하는 그녀: https://www.youtube.com/wa
+ tch?v=IOADYgZX2zE\n출구없는남규리(aka.출남) · 누구보다 장
+ 난에 진심🍊🐶🐿️: https://www.youtube.com/watch?v=UjkOt8MIhHo\
+ n모찌뇨 · 씨야 전국 투어 콘서트 청주 구두2 슬픈발걸
+ 음: https://www.youtube.com/watch?v=WkP-C59ojXk\n감미로운 음악생
+ 활 · 씨야는 댄스그룹이었ㄸr: https://www.youtube.com/watch?v=6
+ KZC0-PSb88\n감미로운 음악생활 · #20주년 기념 데뷔곡: https
+ ://www.youtube.com/watch?v=KImcQJBrSlQ\n감미로운 음악생활 · 리
+ 듬타는 것도 귀여운 람대장: https://www.youtube.com/watch?v=rEzU
+ 1RAbXhQ\n씨야바라기 · 남규리-댄스(청주콘서트): https://www
+ .youtube.com/watch?v=fP-AcGK6hZw\n감미로운 음악생활 · 눈물버
+ 튼곡: https://www.youtube.com/watch?v=0k2dEq-mki4\n모찌뇨 · 씨야 
+ 전국 투어 콘서트 청주 그놈목소리: https://www.youtube.com/wa
+ tch?v=d_uU6MZFo3c\n감미로운 음악생활 · 필살 애교 귤멍: http
+ s://www.youtube.com/watch?v=jveMhieKeJQ\n모찌뇨 · 씨야 전국 투어
+  콘서트 청주 미친사랑의노래 @BoramSEEYA @Official-eu4ex @Gyulm
+ ung: https://www.youtube.com/watch?v=WegqgxfQBHc\n감미로운 음악생
+ 활 · #씨야: https://www.youtube.com/watch?v=8zU98YhAQhs\n씨야바라
+ 기 · 이보람-솜사탕(청주콘서트): https://www.youtube.com/watch
+ ?v=OgLx_3amQRs\n감미로운 음악생활 · #씨야클럽: https://www.yo
+ utube.com/watch?v=FtLwSzeYSEw\n씨야바라기 · 김연지-I wish(청주
+ 콘서트): https://www.youtube.com/watch?v=iBC5yc_rfzE\n감미로운 음
+ 악생활 · 솜사탕처럼 달달하고 녹는 목소리: https://www.yo
+ utube.com/watch?v=wGmRfBwrW94\n김연지 팬채널 · 2026_씨야 콘서
+ 트_김연지_THE FAN_청주_브이로그: https://www.youtube.com/watch?v
+ =IFzOetc4QCM\n감미로운 음악생활 · 인형이 불러주는 바보: 
+ https://www.youtube.com/watch?v=CZH8cJ9x9UQ\n스타로그 (STAR LOG) · 
+ 씨야 전국투어콘서트 청주.Festival(원곡 엄정화) .26.10.10: 
+ https://www.youtube.com/watch?v=AVq-ZKPgQuM\n모찌뇨 · 씨야 전국 
+ 투어 콘서트 청주 여인의향기 @BoramSEEYA @Official-eu4ex @Gyulm
+ ung: https://www.youtube.com/watch?v=0QIn2JTEKyA\n모찌뇨 · 씨야 전
+ 국 투어 콘서트 청주 구두: https://www.youtube.com/watch?v=hfp2qI
+ 0UWpk\n감미로운 음악생활 · #씨야 재결합은 축제!🎉: http
+ s://www.youtube.com/watch?v=nMdD_jDWuVc\n감미로운 음악생활 · #씨
+ 야 꽃길만 걷자~!!🌸: https://www.youtube.com/watch?v=TyuhscppGws\n
+ 감미로운 음악생활 · 사랑스러운 그녀들: https://www.youtub
+ e.com/watch?v=09x-iulDlxE\n감미로운 음악생활 · #씨야: https://w
+ ww.youtube.com/watch?v=Isg0JAftHds\n감미로운 음악생활 · #그럼
+ 에도우린: https://www.youtube.com/watch?v=muuzusWDTuU\n감미로운 
+ 음악생활 · 귀욤 발랄: https://www.youtube.com/watch?v=_0z3F39qFSo
+ \n땅콩크림샌드 · [이보람/전국투어콘서트/청주] 솜사탕
+ : https://www.youtube.com/watch?v=LxPLTYmT9nw\n🐿람보바라기 · 씨
+ 야 - 우리ㅣ씨야 청주 콘서트: https://www.youtube.com/watch?v=3C
+ kW8NySUe4\n🐿람보바라기 · 씨야 - 그럼에도\, 우린ㅣ씨야 
+ 청주콘서트: https://www.youtube.com/watch?v=Mz5FUYRi9MU\n감미로운
+  음악생활 · #씨야 웃는 날들만 이어지길~: https://www.youtu
+ be.com/watch?v=Oa3tMdsf4W0\n🐿람보바라기 · 씨야 청주 콘서트
+  무대 마지막 인사👋🏻: https://www.youtube.com/watch?v=L0PPsz4A
+ Tjw\n🐿람보바라기 · 씨야 - 계절은 돌고 돌아ㅣ청주 콘
+ 서트: https://www.youtube.com/watch?v=DtlEBuQ3-Zc\n감미로운 음악
+ 생활 · #퇴근길: https://www.youtube.com/watch?v=9yn3K-LsVLA\nhttps:/
+ /seeya-fanpage.com/archive/?record=20261010-the-fan-cheongju
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  10-the-fan-cheongju
 END:VEVENT
@@ -9000,8 +9624,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261017-the-fan-suwon@seeya-fanpage.com
-DTSTAMP:20261028T150000Z
-LAST-MODIFIED:20261028T150000Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:1
 DTSTART:20261017T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · SUWON
@@ -9084,8 +9708,122 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n10
  : https://www.instagram.com/reel/DeoGfubNPRQ/\n로라연지 · 수원 콘
  서트 김연지 영상: https://www.instagram.com/p/DeoGO6GPfYc/\nboram_f
  lowerway · 수원 콘서트 이보람 영상: https://www.instagram.com/p
- /Deo4YpLNZzH/\nhttps://seeya-fanpage.com/archive/?record=20261017-the-fan-
- suwon
+ /Deo4YpLNZzH/\n유토피아 · 씨야 20주년  전국투어 수원 Stay :
+  https://www.youtube.com/watch?v=Z-a40nNu4Aw\n자유 직캠 ARTIST · 씨
+ 야(SeeYa)- [#슬픔발걸음 (구두2)] 2026 씨야 20주년 전국 투
+ 어 콘서트 THE FAN 수원 LIVE |: https://www.youtube.com/watch?v=MONq3
+ q56F68\n자유 직캠 ARTIST · 씨야(SeeYa)- [#그사람(구두3)] 2026 
+ 씨야 20주년 전국 투어 콘서트 THE FAN 수원 LIVE |: https://www
+ .youtube.com/watch?v=xfL6m8f_qGs\n자유 직캠 ARTIST · 씨야(SeeYa)- [
+ #내겐너무멋진그대] 2026 씨야 20주년 전국 투어 콘서트 TH
+ E FAN 수원 LIVE |: https://www.youtube.com/watch?v=F5zaO2CADrE\n자유 
+ 직캠 ARTIST · 씨야(SeeYa)- [#사랑의인사] 2026 씨야 20주년 
+ 전국 투어 콘서트 THE FAN 수원 LIVE |: https://www.youtube.com/wat
+ ch?v=iwZWGUR-Xlo\n자유 직캠 ARTIST · 씨야(SeeYa)- [#여인의향기
+ ] 2026 씨야 20주년 전국 투어 콘서트 THE FAN 수원 LIVE |: http
+ s://www.youtube.com/watch?v=i5dAgv7QDys\n자유 직캠 ARTIST · 씨야(Se
+ eYa)- [#미워요] 2026 씨야 20주년 전국 투어 콘서트 THE FAN 
+ 수원 LIVE |: https://www.youtube.com/watch?v=XSDowZdszj0\n자유 직캠 
+ ARTIST · 씨야(SeeYa)- [#IBelieve] 2026 씨야 20주년 전국 투어 
+ 콘서트 THE FAN 수원 LIVE |: https://www.youtube.com/watch?v=vPOHxi9jK
+ xw\n귤이 사랑 · 씨야 수원 콘서트 사랑의 인사~♡: https:/
+ /www.youtube.com/watch?v=bbWAOYYUSOs\n땅콩크림샌드 · [씨야/전국
+ 투어콘서트/수원] 감동을 주세요: https://www.youtube.com/watch
+ ?v=0C_B_-ndp6s\n제리제이 Jerry.j · 남규리한테 장난치려다 
+ 걸린 이보람 | 눈치 빠른 이보람 | 씨야 20주년 전국 투어
+  콘서트 in 수원: https://www.youtube.com/watch?v=QUty9TasfO8\n땅콩
+ 크림샌드 · [씨야/전국투어콘서트/수원] 퇴근길: https://w
+ ww.youtube.com/watch?v=1bp7JKCQDhE\n땅콩크림샌드 · [씨야/전국
+ 투어콘서트/수원] 결혼할까요: https://www.youtube.com/watch?v=e
+ b79yFn6Ib0\n씨야바라기 · 씨야-사랑의 인사(수원콘서트): h
+ ttps://www.youtube.com/watch?v=qOaHFf5QX-M\n씨야바라기 · 씨야-그
+ 놈 목소리(수원콘서트): https://www.youtube.com/watch?v=oOiPnEpiRs
+ w\n씨야바라기 · 씨야-stay(수원콘서트): https://www.youtube.co
+ m/watch?v=RSBctWnerIk\n땅콩크림샌드 · [씨야/전국투어콘서트
+ /수원] 사이즈 좌석의 장단점: https://www.youtube.com/watch?v=JF
+ Qc3T7ep4Y\n땅콩크림샌드 · [씨야/20주년콘서트/수원] 봄처
+ 럼 그댄: https://www.youtube.com/watch?v=V_pyHO5Q3so\n내규리 남 · 
+ 수원콘서트 남규리 구두: https://www.youtube.com/watch?v=Pwb-H6L_
+ R7w\nkyunphg · [4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FA
+ N  - 미친 사랑의 노래(남규리\,김연지\,이보람) 미사노 
+ 트렌디 편곡Ver.: https://www.youtube.com/watch?v=RLiVA9PortI\n씨야
+ 바라기 · 이보람-솜사탕(수원콘서트): https://www.youtube.com
+ /watch?v=72tqNHzjzY0\n내규리 남 · 수원콘서트 남규리 슬픈발
+ 걸음: https://www.youtube.com/watch?v=V9FYhBxljus\n씨야바라기 · 
+ 남규리-Loving you(수원콘서트): https://www.youtube.com/watch?v=bvn
+ tZe4_JtE\n씨야바라기 · 김연지-I wish(수원콘서트): https://ww
+ w.youtube.com/watch?v=N2h9y9nyNDo\nkyunphg · [4K 직캠] 수원 2026 씨
+ 야 20주년 콘서트 : THE FAN - 미워요(남규리\, 김연지\, 이
+ 보람): https://www.youtube.com/watch?v=5fshagT9OEw\n씨야바라기 · 
+ 씨야-미워요(수원콘서트): https://www.youtube.com/watch?v=1MgBw11
+ sgQQ\nkyunphg · [4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE F
+ AN  - 그럼에도 우린(남규리\,김연지\,이보람): https://www.yo
+ utube.com/watch?v=kkyey72raXs\nkyunphg · [4K 직캠] 수원 2026 씨야 2
+ 0주년 콘서트 : THE FAN  - 바보(남규리\,김연지\,이보람): ht
+ tps://www.youtube.com/watch?v=ILjAR-Po3Io\nkyunphg · [4K 직캠] 수원 2
+ 026 씨야 20주년 콘서트 : THE FAN  - 사랑의 인사(남규리\,김
+ 연지\,이보람): https://www.youtube.com/watch?v=s_dkVeBsMQw\n내규리
+  남 · 수원콘서트 남규리 미워요: https://www.youtube.com/watch
+ ?v=TYNqxCrkixI\nkyunphg · [4K 직캠] 수원 2026 씨야 20주년 콘서
+ 트 : THE FAN  - 그 놈 목소리(남규리\,김연지\,이보람): https
+ ://www.youtube.com/watch?v=DBhw5hUS3iU\n보람비타 · 🚨속보🚨 마
+ 이클 잭슨 수원콘서트에서 발견됨! 정체는 남규리?!: http
+ s://www.youtube.com/watch?v=2IDPjRVP1PI\n씨야바라기 · 씨야-퇴근
+ 길(수원콘서트): https://www.youtube.com/watch?v=PLIlINkqjss\n씨야
+ 바라기 · 씨야-결혼할까요(수원콘서트): https://www.youtube.
+ com/watch?v=YSqSogNYfkc\n씨야바라기 · 씨야-감동을 주세요(수
+ 원콘서트) : https://www.youtube.com/watch?v=O2iUxw9Rq_g\n씨야바라
+ 기 · 씨야-바보(수원콘서트): https://www.youtube.com/watch?v=3kO
+ 65Zlf9CY\n씨야바라기 · 씨야-봄처럼 그댄(수원콘서트): htt
+ ps://www.youtube.com/watch?v=lXnoQzGPt_E\n보람비타 · 🐶 인형 너
+ 무 탐난다!! 씨야 수원콘서트 💗: https://www.youtube.com/watch
+ ?v=ogry37wJddI\n보람비타 · 🍭 달달함 한도 초과💗 이보람
+  ‘솜사탕’ | 수원콘서트: https://www.youtube.com/watch?v=mnCWb2
+ zOCeQ\n보람비타 · 🍭 달달함 한도 초과💗 이보람 ‘솜
+ 사탕’ | 수원콘서트: https://www.youtube.com/watch?v=1oCxWQcxbnM\n
+ 🐿람보바라기 · 씨야 - I Believe ㅣ수원 콘서트: https://www
+ .youtube.com/watch?v=rHtzvbhXlc8\n감미로운 음악생활 · 외모만
+ 큼이나: https://www.youtube.com/watch?v=IgoU9__HtGk\n감미로운 음
+ 악생활 · 등장부터: https://www.youtube.com/watch?v=SPZTan4g3lg\nky
+ unphg · [4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN  - 
+ 계절은 돌고 돌아(남규리\,김연지\,이보람): https://www.yout
+ ube.com/watch?v=euK52dcu2hY\nkyunphg · [4K 직캠] 수원 2026 씨야 20
+ 주년 콘서트 : THE FAN  - 끝내 꺽이지 않는 것(남규리\,김
+ 연지\,이보람): https://www.youtube.com/watch?v=1ORcq3DTfUU\nkyunphg 
+ · [4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN  - 내겐 
+ 너무 멋진 그대(남규리\,김연지\,이보람): https://www.youtube
+ .com/watch?v=_w2ZeMRvNkc\nkyunphg · [4K 직캠] 수원 2026 씨야 20주
+ 년 콘서트 : THE FAN  - Stay(남규리\,김연지\,이보람): https://
+ www.youtube.com/watch?v=_S3osDdfT6I\nkyunphg · [4K 직캠] 눈물 없이 
+ 못 듣는 씨야 구두 시리즈 전곡 메들리 풀버전 (남규리·
+ 김연지·이보람) | 수원 콘서트⁠: https://www.youtube.com/watch
+ ?v=SFeQTip8WoU\n감미로운 음악생활 · 사랑스러운: https://www.
+ youtube.com/watch?v=1XiaXEX8VIg\n감미로운 음악생활 · 우아한 
+ 백조 한마리: https://www.youtube.com/watch?v=DuWUvqMnr04\n감미로
+ 운 음악생활 · 팬들 그윽하게 바라보다가 파트 놓치는 
+ 귀여운 남규리 😆😅: https://www.youtube.com/watch?v=dlNM55m0pvI\
+ n[수현집밥]Korea food recipe · 씨야 20주년 전국 투어 콘서
+ 트 in 수원: https://www.youtube.com/watch?v=DHRkrFyL8L0\n[수현집밥]
+ Korea food recipe · 씨야 20주년 전국 투어 콘서트 in 수원: ht
+ tps://www.youtube.com/watch?v=upSt7ig_z4k\n[수현집밥]Korea food recipe
+  · 씨야 20주년 전국 투어 콘서트 in 수원: https://www.youtube
+ .com/watch?v=rVQWOUb4lM4\n[수현집밥]Korea food recipe · 씨야 20주
+ 년 전국 투어 콘서트 in 수원: https://www.youtube.com/watch?v=q2_
+ cYdyoB20\n감미로운 음악생활 · 스윗한: https://www.youtube.com/
+ watch?v=ybx4SemT1XA\nkyunphg · [4K 직캠] 수원 2026 씨야 20주년 
+ 콘서트 : THE FAN  - 감동을 주세요(남규리\,김연지\,이보람
+ ): https://www.youtube.com/watch?v=iWdwBHd9bFQ\n감미로운 음악생활 
+ · 노래도 미모도 씨야는 씨야다!!: https://www.youtube.com/watc
+ h?v=vjZCMVXA4AI\n감미로운 음악생활 · 큐티섹시의 정석: http
+ s://www.youtube.com/watch?v=HKmhgJL88-8\n감미로운 음악생활 · 감
+ 동으로 다시 뭉친: https://www.youtube.com/watch?v=ukhWWCdD27I\n감
+ 미로운 음악생활 · 슬픈 발라드의 정석: https://www.youtube.
+ com/watch?v=jqdVgPHI3Rw\n감미로운 음악생활 · 씨야의 계절은 
+ 이제 시작이야~: https://www.youtube.com/watch?v=BkHRxSDvYEg\n감미
+ 로운 음악생활 · 여신들이 불러주는 위로송: https://www.yo
+ utube.com/watch?v=pE7lwQdBNkU\n김시우 · 261017 김연지 '그 놈 목
+ 소리': https://www.youtube.com/watch?v=duIo30jlgXQ\nhttps://seeya-fanpag
+ e.com/archive/?record=20261017-the-fan-suwon
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  17-the-fan-suwon
 END:VEVENT
@@ -9261,8 +9999,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261025-seeya-hyundai-asan-family@seeya-fanpage.com
-DTSTAMP:20261030T061110Z
-LAST-MODIFIED:20261030T061110Z
+DTSTAMP:20261030T150000Z
+LAST-MODIFIED:20261030T150000Z
 SEQUENCE:2
 DTSTART:20261025T010000Z
 SUMMARY:씨야 · 현대자동차 아산공장 30주년 조합원 가족 
@@ -9305,8 +10043,13 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n10:00 · 전체 행사 시
  행사 퇴근길: https://www.instagram.com/p/De6ghvHBoF7/\nboram_flowerwa
  y · 10월 25일 아산 행사 이보람 사진: https://www.instagram.com
  /p/De6rZABlGKz/\n🐿람보바라기: https://www.youtube.com/watch?v=Mw5t
- IENrRRI\nhttps://seeya-fanpage.com/archive/?record=20261025-seeya-hyundai-
- asan-family
+ IENrRRI\n🐿람보바라기 · 이보람 퇴근길👋🏻ㅣ현대자동
+ 차 아산공장: https://www.youtube.com/watch?v=V3khUlcNl54\n땅콩크
+ 림샌드 · [이보람/직캠] 결혼할까요_현대자동차 한마당 
+ 체육대회 (2026.10.26): https://www.youtube.com/watch?v=sb-QO5R-Jyk\n
+ 🐿람보바라기 · 씨야 무대 오르기 전ㅣ현대자동차 아
+ 산공장: https://www.youtube.com/watch?v=JLqofmSwJZA\nhttps://seeya-fanp
+ age.com/archive/?record=20261025-seeya-hyundai-asan-family
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  25-seeya-hyundai-asan-family
 END:VEVENT

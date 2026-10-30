@@ -1,9 +1,9 @@
 {
   "summary": {
-    "records": 148,
-    "venues": 134,
+    "records": 153,
+    "venues": 139,
     "linked": 89,
-    "pending": 59,
+    "pending": 64,
     "unreviewed": 0
   },
   "rows": [
@@ -1075,6 +1075,14 @@
       "status": "linked"
     },
     {
+      "recordId": "discovered-b7c3357c102b35e9",
+      "title": "이보람 · 2026 괴산 빨간맛 페스티벌 레드핫 콘서트",
+      "venue": "괴산유기농엑스포광장",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "2026-10-31 과거 공연 현장 영상에서 장소명 확인. 정확한 시설 주소·좌표와 기존 장소의 일치 여부 확인 후 지도 핀 연결. 지역 중심의 임의 좌표는 등록하지 않음."
+    },
+    {
       "recordId": "20261009-boram-worldmom-yongin",
       "title": "이보람 · 세상을 바꾸는 여자들 용인 공연",
       "venue": "ICT밸리컨벤션 B1 플로리아홀",
@@ -1295,6 +1303,38 @@
         "pelican-cafe-sangsu"
       ],
       "status": "linked"
+    },
+    {
+      "recordId": "20141105-yeonji-naro-concert",
+      "title": "김연지 · 나로센터 축하공연",
+      "venue": "나로센터",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "2026-10-31 과거 공연 현장 영상에서 장소명 확인. 정확한 시설 주소·좌표와 기존 장소의 일치 여부 확인 후 지도 핀 연결. 지역 중심의 임의 좌표는 등록하지 않음."
+    },
+    {
+      "recordId": "20230507-boram-mokpo-sunset",
+      "title": "이보람 · 목포 노을 드론라이트쇼 노을음악회",
+      "venue": "목포 북항노을공원 야외무대",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "2026-10-31 과거 공연 현장 영상에서 장소명 확인. 정확한 시설 주소·좌표와 기존 장소의 일치 여부 확인 후 지도 핀 연결. 지역 중심의 임의 좌표는 등록하지 않음."
+    },
+    {
+      "recordId": "20230617-yeonji-jeju-today",
+      "title": "김연지 · 제주 문화콘서트 오늘",
+      "venue": "한라수목원",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "2026-10-31 과거 공연 현장 영상에서 장소명 확인. 정확한 시설 주소·좌표와 기존 장소의 일치 여부 확인 후 지도 핀 연결. 지역 중심의 임의 좌표는 등록하지 않음."
+    },
+    {
+      "recordId": "20231007-seeya-gangwon-music-trip",
+      "title": "김연지·이보람 · 강원 음악 여행 「나랑, 노랑」",
+      "venue": "박수근미술관",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "2026-10-31 과거 공연 현장 영상에서 장소명 확인. 정확한 시설 주소·좌표와 기존 장소의 일치 여부 확인 후 지도 핀 연결. 지역 중심의 임의 좌표는 등록하지 않음."
     }
   ]
 }
