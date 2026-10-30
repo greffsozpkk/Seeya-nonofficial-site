@@ -11259,5 +11259,20 @@
         "parentSource": "https://www.youtube.com/watch?v=bqbFGF1FdYY"
       }
     ]
+  },
+  {
+    "id": "archive-2026-10-31-auto-link-review",
+    "checkedAt": "2026-10-31",
+    "additions": [],
+    "updates": [
+      {
+        "id": "20141105-yeonji-naro-concert",
+        "removeAutomaticSources": [
+          "https://www.youtube.com/watch?v=KsVkML_wAIc",
+          "https://www.youtube.com/watch?v=bCgvJ11SnQ8",
+          "https://www.youtube.com/watch?v=RPFHi1RGvcY"
+        ]
+      }
+    ]
   }
 ]
