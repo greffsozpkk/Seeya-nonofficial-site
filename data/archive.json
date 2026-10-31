@@ -31891,6 +31891,12 @@
         "label": "SBS · 남규리 애벌레 시식",
         "url": "https://www.youtube.com/watch?v=HeQJ7m6tUug",
         "publishedDate": "2015-08-15"
+      },
+      {
+        "label": "SBS Entertainment",
+        "url": "https://www.youtube.com/watch?v=IUPASQ6BCFM",
+        "publishedDate": "2015-08-15",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -31901,7 +31907,7 @@
     "note": "남규리가 출연한 정글의 법칙 방송입니다.",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-10-31T06:05:56.957415+00:00",
     "episode": 174
   },
   {
@@ -31938,7 +31944,7 @@
     "id": "20150731-gyuri-jungle172",
     "date": "2015-07-31",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-10-31T06:05:56.957415+00:00",
     "title": "남규리 · 정글의 법칙 172회 · 히든킹덤",
     "program": "SBS 정글의 법칙",
     "type": "variety",
@@ -31953,7 +31959,14 @@
       "url": "https://www.youtube.com/watch?v=GdxYFNTMBA4",
       "publishedDate": "2015-07-31"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "SBS Entertainment",
+        "url": "https://www.youtube.com/watch?v=0RoFWvjNDkI",
+        "publishedDate": "2015-07-31",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "예능",
