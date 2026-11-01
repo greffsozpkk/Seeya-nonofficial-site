@@ -1,5 +1,5 @@
 {
-  "version": "5.71",
+  "version": "5.72",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -65,7 +65,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.1eef21f3372a.js",
+    "assets/site.a8e45f101ea6.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.73191fbcb5b4.js",
@@ -73,8 +73,8 @@
     "assets/seeya-exam.7156e1844878.js",
     "assets/dictionary.00b6d50a564c.css",
     "assets/dictionary.623c0f99a425.js",
-    "assets/calendar.e79a88d0e6f8.css",
-    "assets/calendar.4efaa5ce7243.js",
+    "assets/calendar.e90d4a27a72b.css",
+    "assets/calendar.cffb81165619.js",
     "assets/podcasts.31509824b906.css",
     "assets/podcasts.b668ec70846d.js",
     "assets/radio.608ef52b6a3a.css",
