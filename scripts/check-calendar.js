@@ -46,9 +46,15 @@ assert(read('sitemap.xml').includes('https://seeya-fanpage.com/calendar/'));
 const yongin=data.events.find(e=>e.recordIds.includes('20261009-boram-worldmom-yongin'));
 assert.equal(yongin.date,'2026-10-09');assert.equal(yongin.time,'18:50');assert(yongin.venue.includes('ICT'));
 const songdo=data.events.find(e=>e.recordIds.includes('20261025-boram-worldmom-seocho'));
-assert.equal(songdo.date,'2026-11-08');assert.equal(songdo.time,'14:50');assert(songdo.venue.includes('프리미어볼룸'));
+assert.equal(songdo.date,'2026-11-08');assert.equal(songdo.time,'16:10');assert(songdo.timeLabel.includes('14:50'));assert(songdo.venue.includes('프리미어볼룸'));
 for(const id of ['discovered-0629951a6840de91','discovered-420fb97f3680c434','discovered-54528c2dbda3fe42'])assert(!data.events.some(e=>e.recordIds.includes(id)),'Secondary event clips must not become separate calendar events');
 assert(read('src/template.html').includes('href="/calendar/">CALENDAR'));
 assert(read('.github/workflows/update-news.yml').includes('branches: [main]'));
 for(const p of ['build.yml','update-news.yml'])assert(read('.github/workflows/'+p).includes('assets calendar sitemap.xml'));
 console.log(`PASS calendar: ${data.events.length} deduplicated activities / ${data.anniversaries.length} annual dates; actual dates, KST, filters, leap day, UID changes/cancellation, UTF-8 ICS folding, feeds and automatic build wiring.`);
+
+const pending=buildEvents([{...base,calendar:{state:"tentative",time:"14:40"}}])[0];
+assert.equal(pending.state,"tentative");
+assert(eventCard(pending).includes("확인 중"));
+assert(calendarICS([pending]).includes("STATUS:TENTATIVE"));
+assert(calendarICS([pending]).includes("[확인 중]"));

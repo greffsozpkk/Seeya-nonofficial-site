@@ -19,7 +19,7 @@ function buildEvents(rows){
   const id='activity-'+(c.groupId||row.id);
   if(!/^[a-zA-Z0-9_-]+$/.test(id))throw Error('Invalid calendar id: '+id);
   const state=c.state||({cancelled:'cancelled',changed:'changed'}[row.eventState])||'confirmed';
-  if(!['confirmed','changed','cancelled'].includes(state))throw Error('Invalid calendar state: '+row.id);
+  if(!['confirmed','changed','cancelled','tentative'].includes(state))throw Error('Invalid calendar state: '+row.id);
   const event={id,date:row.date,endDate,time:c.time||'',endTime:c.endTime||'',timeLabel:c.timeLabel||'',title:c.title||row.title.replace(/\s*출연 예정$/,' 출연'),type,members:row.members.filter(m=>MEMBERS.includes(m)),state,venue:row.venue||'',note:c.note??row.note??'',basis:row.dateBasis,recordIds:[row.id],sources:[row.source,...(row.additionalSources||[])].filter(s=>s&&safeUrl(s.url)).map(s=>({label:s.label||'관련 자료',url:safeUrl(s.url)})),updatedAt:row.updatedAt||row.addedAt||row.date,sequence:c.sequence||0};
   if(!Number.isInteger(event.sequence)||event.sequence<0)throw Error('Invalid calendar sequence: '+row.id);
   if(groups.has(id)){
@@ -42,5 +42,5 @@ function buildAnniversaries(members,albums,debut){
 function occurrences(events,month){return events.map(e=>e.annual?{...e,date:month.slice(0,4)+e.date.slice(4),endDate:month.slice(0,4)+e.date.slice(4)}:e).filter(e=>exactDate(e.date)&&e.date.slice(0,7)<=month&&(e.endDate||e.date).slice(0,7)>=month&&(!e.annual||e.date>=events.find(x=>x.id===e.id).date));}
 function filterEvents(events,{member='all',type='all',anniversaries=true}={}){return events.filter(e=>(anniversaries||!e.annual)&&(member==='all'||(member==='group'?MEMBERS.every(m=>e.members.includes(m)):e.members.includes(member)))&&(type==='all'||e.type===type));}
 function timeText(e){return e.annual?'매년 기념':e.time?`${e.time}${e.endTime?'–'+e.endTime:''}${e.timeLabel?' · '+e.timeLabel:''}`:e.type==='release'?'발매일 · 시간 미정':'시간 미정';}
-function stateText(e){return {cancelled:'취소',changed:'변경',confirmed:'확정'}[e.state];}
+function stateText(e){return {cancelled:'취소',changed:'변경',confirmed:'확정',tentative:'확인 중'}[e.state];}
 module.exports={MEMBERS,TYPES,exactDate,koreaDate,addDays,safeUrl,buildEvents,buildAnniversaries,occurrences,filterEvents,timeText,stateText};

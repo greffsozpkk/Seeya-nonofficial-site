@@ -10,7 +10,7 @@ function eventLines(e){
  if(e.time){lines.push('DTSTART:'+stamp(e.date+'T'+e.time+':00+09:00'));if(e.endTime)lines.push('DTEND:'+stamp((e.endDate||e.date)+'T'+e.endTime+':00+09:00'));}
  else lines.push('DTSTART;VALUE=DATE:'+e.date.replace(/-/g,''),'DTEND;VALUE=DATE:'+addDays(e.endDate||e.date,1).replace(/-/g,''));
  if(e.annual)lines.push('RRULE:FREQ=YEARLY');
- lines.push('SUMMARY:'+text((e.state==='cancelled'?'[취소] ':e.state==='changed'?'[변경] ':'')+e.title),'STATUS:'+(e.state==='cancelled'?'CANCELLED':'CONFIRMED'),'TRANSP:TRANSPARENT','CATEGORIES:'+text(e.type),'LOCATION:'+text(e.venue),'DESCRIPTION:'+text([e.members.join(' · '),timeText(e),e.note,...e.sources.map(s=>s.label+': '+(s.url.startsWith('/')?ORIGIN+s.url:s.url)),...e.recordIds.map(id=>ORIGIN+'/archive/?record='+encodeURIComponent(id))].filter(Boolean).join('\n')),'URL:'+url,'END:VEVENT');
+ lines.push('SUMMARY:'+text((e.state==='cancelled'?'[취소] ':e.state==='changed'?'[변경] ':e.state==='tentative'?'[확인 중] ':'')+e.title),'STATUS:'+(e.state==='cancelled'?'CANCELLED':e.state==='tentative'?'TENTATIVE':'CONFIRMED'),'TRANSP:TRANSPARENT','CATEGORIES:'+text(e.type),'LOCATION:'+text(e.venue),'DESCRIPTION:'+text([e.members.join(' · '),timeText(e),e.note,...e.sources.map(s=>s.label+': '+(s.url.startsWith('/')?ORIGIN+s.url:s.url)),...e.recordIds.map(id=>ORIGIN+'/archive/?record='+encodeURIComponent(id))].filter(Boolean).join('\n')),'URL:'+url,'END:VEVENT');
  return lines;
 }
 function calendarICS(events,name='씨야 활동 일정'){return ['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//SEEYA ARCHIVE//Calendar//KO','CALSCALE:GREGORIAN','X-WR-CALNAME:'+text(name),'X-WR-TIMEZONE:Asia/Seoul',...events.flatMap(eventLines),'END:VCALENDAR'].map(fold).join('\r\n')+'\r\n';}
