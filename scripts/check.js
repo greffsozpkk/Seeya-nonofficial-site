@@ -60,3 +60,5 @@ require('./check-deployment');
 execFileSync(process.execPath,['scripts/check-worldcup-public.js'],{cwd:root,stdio:'inherit'});
 
 execFileSync(process.execPath,['scripts/check-clinic.js'],{cwd:root,stdio:'inherit'});
+require('./check-my-concert');
+execFileSync(process.execPath,['scripts/check-my-concert-client.js'],{cwd:root,stdio:'inherit'});
