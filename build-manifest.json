@@ -1,5 +1,5 @@
 {
-  "version": "5.75",
+  "version": "5.76",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -65,7 +65,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.5359ee114799.js",
+    "assets/site.d2708103c9ed.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.73191fbcb5b4.js",
@@ -92,8 +92,8 @@
     "assets/clinic.ea8a0fee6410.js",
     "assets/worldcup.5db3cccf33cf.css",
     "assets/worldcup.aafb374c4848.js",
-    "assets/my-concert.dee9b496c3d1.css",
-    "assets/my-concert.0546be81c638.js"
+    "assets/my-concert.8e2c33b4ec27.css",
+    "assets/my-concert.4143d57b24cc.js"
   ],
   "auxiliary": [
     "game/my-concert/catalog.json",

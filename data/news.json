@@ -11,7 +11,7 @@
       "title": "20주년 씨야, 전국투어 전석 매진…\"15년 기다림은 기적\" - iMBC 연예",
       "source": "iMBC 연예",
       "pubDate": "2026-11-02T01:59:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9ibGNLSVBYLVRELWx2dFdCbXFsQlNWaXRGVXViblJfR0hiZk1nVzdGVFhtYk51UF8wSkFGbERVVVI2aFFaVFRkeVhLbVBmLVFpLXZUV1lXaTNCcVh4UGpZUA?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE8yVWpnaVIycG40QURNWExEN0RVVWZ1VVZleUtHNzI3QVlfZThmMllnV0hEcWpES1BtbW1oaU1WYllUZEROa1QxMWk1eTVZejdxMjFqeg?oc=5",
       "description": "20주년 씨야, 전국투어 전석 매진…\"15년 기다림은 기적\" iMBC 연예"
     },
     {
@@ -147,16 +147,16 @@
       "description": "‘골때녀’ 이보람, ‘0.5골급’ 도움에 끈질긴 수비까지···FC발라드림 새 전력 눈도장 스포츠경향"
     }
   ],
-  "updatedAt": "2026-11-02T14:00:36.723176+00:00",
-  "lastCheckedAt": "2026-11-02T14:00:36.723176+00:00",
+  "updatedAt": "2026-11-02T14:39:39.739873+00:00",
+  "lastCheckedAt": "2026-11-02T14:39:39.739873+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-02T14:00:36.723176+00:00",
-    "남규리": "2026-11-02T14:00:36.723176+00:00",
-    "김연지": "2026-11-02T14:00:36.723176+00:00",
-    "이보람": "2026-11-02T14:00:36.723176+00:00"
+    "씨야": "2026-11-02T14:39:39.739873+00:00",
+    "남규리": "2026-11-02T14:39:39.739873+00:00",
+    "김연지": "2026-11-02T14:39:39.739873+00:00",
+    "이보람": "2026-11-02T14:39:39.739873+00:00"
   },
   "categoryContentUpdatedAt": {
-    "씨야": "2026-11-02T13:31:44.812571+00:00",
+    "씨야": "2026-11-02T14:39:39.739873+00:00",
     "남규리": "2026-11-02T06:11:20.460675+00:00",
     "이보람": "2026-11-02T14:00:36.723176+00:00",
     "김연지": "2026-10-29T05:51:58.045299+00:00"
@@ -165,30 +165,30 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 181,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 165,
+      "changed": true,
+      "status": "changed"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 122,
+      "accepted": 113,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 26,
+      "accepted": 22,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 91,
-      "changed": true,
-      "status": "changed"
+      "accepted": 80,
+      "changed": false,
+      "status": "unchanged"
     }
   }
 }
