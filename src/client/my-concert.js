@@ -37,7 +37,7 @@ if(root){
   const count=M.count(draft);$('mcTotal').textContent=`${count} / 32`;$('mcMobileCount').textContent=`선택한 곡 ${count} / 32`;$('mcTabCount').textContent=count;$('mcPickCount').textContent=`${count} / 32`;$('mcProgress').value=count;
   $('mcTarget').value=target;
  }
- function update(){metadata();setlist();library();$('mcCompleteError').textContent='';}
+ function update(){metadata();setlist();library();$('mcCompleteError').textContent='';$('mcTopError').textContent='';}
  function tab(name){root.querySelector('.mc-columns').dataset.mobileTab=name;root.querySelectorAll('[role="tab"]').forEach(b=>{b.setAttribute('aria-selected',String(b.dataset.tab===name));b.tabIndex=b.dataset.tab===name?0:-1;});}
  function editing(){playback.close();result=false;shared=null;renderToken++;$('mcSharedError').hidden=true;$('mcResult').hidden=true;$('mcEditor').hidden=false;$('mcCopy').hidden=true;history.replaceState(null,'',location.pathname);$('mcTitle').value=draft.title;$('mcPlanner').value=draft.planner;refreshAlbums();update();}
  function invalidateUndo(){clearTimeout(undoTimer);undo=null;$('mcUndo').hidden=true;}
@@ -56,7 +56,7 @@ if(root){
  async function showResult(d){
   playback.summary(d,songs);result=true;$('mcEditor').hidden=true;$('mcResult').hidden=false;$('mcSharedError').hidden=true;$('mcCopy').hidden=true;
   $('mcResultTitle').textContent=shared?'팬이 꿈꾸는 씨야 콘서트':'당신의 무대가 완성됐어요';$('mcResultHint').textContent=shared?'공유받은 구성이에요. 내 편집본은 그대로 보관됩니다.':'첫 곡부터 앙코르까지, 좋아하는 마음을 한 장에 담았어요.';$('mcEditButton').textContent=shared?'이 구성으로 만들기':'다시 편집하기';
-  root.querySelectorAll('[data-theme]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.theme===d.theme)));
+  $('mcPosterTheme').value=d.theme;$('mcPosterFont').value=d.font;
   $('mcTextList').innerHTML='<h3>'+esc(d.title.trim())+'</h3>'+M.SECTIONS.map(section=>'<h4>'+section.name+'</h4>'+Show.rows(d).filter(e=>e.section===section.id).map(e=>'<p>'+(e.kind==='vcr'?Show.vcrLabel:e.number+'. '+esc(Show.songInfo(e.id,songs).title))+'</p>').join('')).join('');
   const token=++renderToken;$('mcPosterStatus').textContent='포스터를 만들고 있어요.';$('mcPoster').hidden=true;
   try{const off=document.createElement('canvas');await P.render(off,d,songs);if(token!==renderToken)return;$('mcPoster').height=off.height;$('mcPoster').getContext('2d').drawImage(off,0,0);$('mcPoster').hidden=false;$('mcPosterStatus').textContent='1080 × '+off.height+' · 조작 버튼 없이 포스터만 저장됩니다.';}
@@ -81,6 +81,10 @@ if(root){
   if(['mcTitle','mcPlanner'].includes(e.target.id)){draft[e.target.id==='mcTitle'?'title':'planner']=e.target.value;metadata();dirty=true;clearTimeout(timer);timer=setTimeout(save,500);}
  });
  root.addEventListener('change',e=>{
+  if(e.target.id==='mcPosterTheme'||e.target.id==='mcPosterFont'){
+   const d=shared||draft;d[e.target.id==='mcPosterTheme'?'theme':'font']=e.target.value;
+   if(!shared)persist();showResult(d);return;
+  }
   if(e.target.id==='mcAlbum'){album=e.target.value;page=1;library();}
   if(e.target.id==='mcTarget'){target=e.target.value;announce(M.SECTIONS.find(s=>s.id===target).ko+'에 노래를 담습니다.');}
   if(e.target.dataset.move){const v=e.target.value;e.target.value='';if(v)mutate({type:'move',id:e.target.dataset.move,section:e.target.dataset.section,target:v});}
@@ -93,12 +97,12 @@ if(root){
   if(b.dataset.remove){mutate({type:'remove',id:b.dataset.remove,section:b.dataset.section});return;}
   if(b.dataset.order){mutate({type:'order',id:b.dataset.id,section:b.dataset.section,to:draft.sections[b.dataset.section].indexOf(b.dataset.id)+Number(b.dataset.order)});return;}
   if(b.dataset.page){page=Number(b.dataset.page);library();return;}
-  if(b.dataset.theme){const d=shared||draft;d.theme=b.dataset.theme;if(!shared)persist();showResult(d);return;}
+  
   switch(b.dataset.action){
    case 'retry':load();break;
    case 'clearFilters':artist='all';album='all';query='';page=1;$('mcSearch').value='';root.querySelectorAll('[data-artist]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.artist==='all')));refreshAlbums();library();break;
    case 'undo':if(undo){Object.assign(draft,undo);invalidateUndo();persist();update();announce('삭제한 곡을 원래 위치에 돌려놓았어요.');}break;
-   case 'finish':metadata();{const errors=M.problems(draft);try{Show.session(draft,songs,()=>0.5);}catch(e){errors.push(e.message);}$('mcCompleteError').textContent=errors.join(' ');if(errors.length){tab('set');announce(errors.join(' '));if($('mcTitleError').textContent)$('mcTitle').focus();else if($('mcPlannerError').textContent)$('mcPlanner').focus();else $('mcCompleteError').scrollIntoView({block:'nearest'});break;}persist();showResult(draft);$('mcResultTitle').focus();}break;
+   case 'finish':metadata();{const errors=M.problems(draft);try{Show.session(draft,songs,()=>0.5);}catch(e){errors.push(e.message);}const errorBox=$(b.nextElementSibling?.id==='mcTopError'?'mcTopError':'mcCompleteError');$('mcTopError').textContent='';$('mcCompleteError').textContent='';errorBox.textContent=errors.join(' ');if(errors.length){tab('set');announce(errors.join(' '));if($('mcTitleError').textContent)$('mcTitle').focus();else if($('mcPlannerError').textContent)$('mcPlanner').focus();else errorBox.scrollIntoView({block:'nearest'});break;}persist();showResult(draft);$('mcResultTitle').focus();}break;
    case 'reset':case 'new':case 'recover':confirm('현재 이 브라우저의 편집본을 지우고 빈 콘서트로 시작합니다.',()=>{clearTimeout(timer);invalidateUndo();blocked=false;draft=M.fresh();target='opening';$('mcRecovery').hidden=true;clearShared();persist();editing();announce('새 콘서트를 시작했어요.');});break;
    case 'own':clearShared();editing();break;
    case 'edit':if(shared){const use=()=>{clearTimeout(timer);draft=JSON.parse(JSON.stringify(shared));blocked=false;$('mcRecovery').hidden=true;clearShared();persist();editing();announce('공유 구성을 내 편집본으로 가져왔어요.');};if(rawSaved)confirm('이 브라우저에 보관된 편집본을 이 공유 구성으로 교체합니다.',use);else use();}else editing();break;

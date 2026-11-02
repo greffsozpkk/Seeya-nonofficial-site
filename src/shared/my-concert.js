@@ -1,11 +1,12 @@
 'use strict';
 const Show=require('./my-concert-show');
 const SECTIONS=[{id:'opening',name:'OPENING',ko:'오프닝',limit:3},{id:'main',name:'MAIN STAGE',ko:'본 무대',limit:25},{id:'encore',name:'ENCORE',ko:'앙코르',limit:4}];
-const THEMES=['rose','night'],KEY='seeya-my-concert-test-v1';
+const design=require('./my-concert-design');
+const THEMES=Object.keys(design.themes),KEY='seeya-my-concert-test-v1';
 const segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter('ko',{granularity:'grapheme'}):null;
 const chars=s=>segmenter?[...segmenter.segment(String(s))].map(x=>x.segment):Array.from(String(s));
 const clean=s=>typeof s==='string'?s.normalize('NFC').replace(/[\u0000-\u001f\u007f-\u009f\u202a-\u202e\u2066-\u2069]/g,''):'';
-const fresh=()=>({schema:3,hidden:{},vcrs:[],title:'우리, 다시 같은 무대에서',planner:'',sections:{opening:[],main:[],encore:[]},theme:'rose',updatedAt:''});
+const fresh=()=>({schema:3,hidden:{},vcrs:[],title:'우리, 다시 같은 무대에서',planner:'',sections:{opening:[],main:[],encore:[]},theme:'curtain',font:'dodum',updatedAt:''});
 const count=d=>SECTIONS.reduce((n,s)=>n+d.sections[s.id].length,0);
 const find=(d,id)=>SECTIONS.find(s=>d.sections[s.id].includes(id));
 function problems(d){
@@ -44,6 +45,8 @@ function validate(raw,songs,strict=false){
  if(strict && d.vcrs.some(v=>v.after>=count(d)))throw Error('VCR은 노래와 노래 사이에 배치해 주세요.');
  if(strict&&(Object.keys(raw.sections).length!==3||SECTIONS.some(s=>d.sections[s.id].length===0)))throw Error('완성되지 않은 공유 구성이에요.');
  if(!THEMES.includes(raw.theme)){if(strict)throw Error('지원하지 않는 포스터 테마예요.');issues.push('기본 포스터 테마로 복원했어요.');}else d.theme=raw.theme;
+ if(raw.font!==undefined && !Object.hasOwn(design.fonts,raw.font)){if(strict)throw Error('지원하지 않는 글꼴이에요.');}
+ else if(raw.font)d.font=raw.font;
  d.updatedAt=typeof raw.updatedAt==='string'?raw.updatedAt:'';
  return {draft:d,issues:[...new Set(issues)]};
 }
@@ -73,7 +76,7 @@ function change(d,action,songs){
  Show.alignVcrs(d,next);
  return {draft:next,message};
 }
-function encode(d){const payload={schema:3,hidden:Object.fromEntries(Object.entries(d.hidden||{}).filter(([id])=>find(d,id))),vcrs:d.vcrs||[],title:clean(d.title).trim(),planner:clean(d.planner).trim(),sections:d.sections,theme:d.theme};const bytes=new TextEncoder().encode(JSON.stringify(payload));return btoa(Array.from(bytes,b=>String.fromCharCode(b)).join('')).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
+function encode(d){const payload={schema:3,hidden:Object.fromEntries(Object.entries(d.hidden||{}).filter(([id])=>find(d,id))),vcrs:d.vcrs||[],title:clean(d.title).trim(),planner:clean(d.planner).trim(),sections:d.sections,theme:d.theme,font:d.font};const bytes=new TextEncoder().encode(JSON.stringify(payload));return btoa(Array.from(bytes,b=>String.fromCharCode(b)).join('')).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
 function decode(value,songs){if(typeof value!=='string'||value.length>1000000||!/^[\w-]+$/.test(value))throw Error('공유 링크 형식을 확인해 주세요.');let raw;try{raw=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from(atob(value.replace(/-/g,'+').replace(/_/g,'/')),c=>c.charCodeAt(0))));}catch{throw Error('공유 링크를 읽지 못했어요.');}return validate(raw,songs,true).draft;}
 function filter(songs,query,artist,album){const q=clean(query).trim().toLocaleLowerCase('ko');return songs.filter(s=>s.enabled&&(artist==='all'||(artist==='group'?s.artistType==='group':s.memberId===artist))&&(album==='all'||s.albumId===album)&&s.title.toLocaleLowerCase('ko').includes(q));}
 function restore(raw,songs){if(!raw)return {draft:fresh(),issues:[]};if(raw.length>1000000)throw Error('저장된 구성의 크기를 확인해 주세요.');let data;try{data=JSON.parse(raw);}catch{throw Error('이전 편집본을 읽지 못했어요. 원본은 지우지 않았습니다.');}return validate(data,songs);}

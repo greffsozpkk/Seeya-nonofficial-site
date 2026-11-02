@@ -10,7 +10,7 @@ async function session({raw=null,search='',storageFails=false,networkFails=false
  let unavailable=networkFails;
  const scope={require:n=>n.includes('concert-drag')?()=>{}:n.includes('poster')?{render:async()=>{}}:n.includes('specials')?()=>({gapRows:()=>''}):n.includes('playback')?()=>({summary(){},close(){}}):n.endsWith('my-concert-show')?require('../src/shared/my-concert-show'):M,document:{getElementById:el,createElement:()=>el('canvas')},window:{addEventListener(){}},localStorage:{getItem(){return raw;},setItem(k,v){if(storageFails)throw Error('blocked');raw=v;writes.push(v);}},fetch:async()=>{if(unavailable)throw Error('offline');return{ok:true,json:async()=>catalog};},navigator:{clipboard:{writeText:async()=>{throw Error('denied');}}},history:{replaceState(){}},location:{search,pathname:'/game/my-concert/test/',origin:'https://example.test'},URL,URLSearchParams,TextEncoder,TextDecoder,console,setTimeout:()=>1,clearTimeout(){}};
  vm.runInNewContext(code,scope);await flush();
- return {el,writes,get raw(){return raw;},online(){unavailable=false;},async click(dataset){const b={dataset,hasAttribute:()=>false};events.click({target:{closest:()=>b}});await flush();}};
+ return {el,writes,get raw(){return raw;},online(){unavailable=false;},async change(id,value){const target=el(id);target.value=value;events.change({target});await flush();},async click(dataset){const b={dataset,hasAttribute:()=>false};events.click({target:{closest:()=>b}});await flush();}};
 }
 (async()=>{
  let s=await session({storageFails:true});await s.click({add:catalog.songs[0].id});assert.equal(s.el('mcTotal').textContent,'1 / 32');assert.match(s.el('mcSaved').textContent,/사용할 수 없/);assert.equal(s.writes.length,0);
@@ -20,9 +20,9 @@ async function session({raw=null,search='',storageFails=false,networkFails=false
  s=await session({raw:original,networkFails:true});assert.equal(s.el('mcLoadError').hidden,false);assert.equal(s.raw,original);s.online();await s.click({action:'retry'});assert.equal(s.el('mcTitle').value,d.title);
  const shared=M.fresh();shared.title='<공유 공연>';shared.sections={opening:[catalog.songs[0].id],main:catalog.songs.slice(1,10).map(x=>x.id),encore:catalog.songs.slice(10,12).map(x=>x.id)};
  s=await session({raw:original,search:'?concert='+M.encode(shared)});assert.equal(s.el('mcResult').hidden,false);assert.equal(s.raw,original);assert.match(s.el('mcTextList').innerHTML,/&lt;공유 공연&gt;/);
- await s.click({theme:'night'});assert.equal(s.writes.length,0);await s.click({action:'share'});assert.equal(s.el('mcCopy').hidden,false);assert(s.el('mcCopyLink').value.startsWith('https://example.test/'));
+ await s.change('mcPosterTheme','night');await s.change('mcPosterFont','pen');assert.equal(s.writes.length,0);await s.click({action:'share'});assert.equal(s.el('mcCopy').hidden,false);assert(s.el('mcCopyLink').value.startsWith('https://example.test/'));
  await s.click({action:'edit'});assert(s.el('mcConfirm').open);await s.click({action:'cancelConfirm'});assert.equal(s.raw,original);
- await s.click({action:'edit'});await s.click({action:'confirm'});assert.equal(JSON.parse(s.raw).title,shared.title);assert.equal(JSON.parse(s.raw).theme,'night');
+ await s.click({action:'edit'});await s.click({action:'confirm'});assert.equal(JSON.parse(s.raw).title,shared.title);assert.equal(JSON.parse(s.raw).theme,'night');assert.equal(JSON.parse(s.raw).font,'pen');
  s=await session({raw:original,search:'?concert=e30'});assert.equal(s.el('mcSharedError').hidden,false);assert.equal(s.writes.length,0);await s.click({action:'own'});assert.equal(s.el('mcTitle').value,d.title);
  s=await session({search:'?concert='+M.encode(shared)});assert.equal(s.el('mcResult').hidden,false);assert.equal(s.writes.length,0);await s.click({action:'edit'});assert.equal(JSON.parse(s.raw).sections.main.length,9);
  console.log('My concert client: storage failures, corrupt draft recovery, network retry, share isolation and clipboard fallback passed.');

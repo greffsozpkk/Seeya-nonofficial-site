@@ -44,6 +44,18 @@ assert.equal(index,32);assert.deepEqual(M.problems(full),[]);
 full.vcrs=[{mode:'link',after:31,value:'nn639JifcBQ'}];
 assert.deepEqual(M.decode(M.encode(full),songs).vcrs,full.vcrs);
 const large=P.draw(canvas,full,songs);assert.equal(large.rows.length,32);assert(large.rows.at(-1).bottom<large.height-120);
+const design=require('../src/shared/my-concert-design');
+for(const [theme,style] of Object.entries(design.themes)){
+ for(const font of Object.keys(design.fonts)){
+  full.theme=theme;full.font=font;full.title='공'.repeat(30);full.planner='팬'.repeat(20);
+  full.vcrs=Array.from({length:31},(_,i)=>({mode:'link',after:i+1,value:'nn639JifcBQ'}));
+  const poster=P.draw(canvas,full,longSongs);
+  assert.equal(poster.height,1350);assert.equal(poster.rows.length,32);
+  assert(poster.rows.every(row=>row.bottom<=style.bottom));
+  assert.deepEqual(poster.rows.map(r=>r.id),M.SECTIONS.flatMap(s=>full.sections[s.id]));
+  assert.equal(M.decode(M.encode(full),songs).font,font);
+ }
+}
 const small=M.fresh();M.SECTIONS.forEach((s,i)=>small.sections[s.id]=[songs[i].id]);assert.deepEqual(M.problems(small),[]);
 small.sections.encore=[];assert(M.problems(small).length);assert.throws(()=>M.decode(M.encode(small),songs));
 const oldShare={...d,schema:2,vcrs:[{mode:'fixed',after:10,value:'rrMkSeKS4eM'}]};

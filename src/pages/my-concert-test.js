@@ -1,4 +1,6 @@
 const {W}=require('../shared/common');
+const {themes,fonts}=require('../shared/my-concert-design');
+const finish='<button type="button" class="mc-primary mc-complete" data-action="finish">콘서트 포스터 완성하기 <span aria-hidden="true">↗</span></button>';
 module.exports=()=>W(`<section class="mc" id="myConcert">
  <header class="mc-hero"><div><a class="mc-breadcrumb" href="/game/test/">SEEYA PLAY / MY CONCERT</a><div class="eye">A STAGE MADE BY YOU</div><h1>나만의 씨야 콘서트</h1><p>첫 곡이 흐르는 순간부터, 마지막 앙코르까지.<br>당신이 꿈꾸던 씨야의 무대를 만들어보세요.</p></div><img class="mc-concert-art" src="/images/game/seeya-my-concert.png" width="1536" height="1024" alt="연습실에서 함께 세트리스트를 고르는 씨야"></header>
  <div class="mc-status" id="mcStatus" role="status" aria-live="polite">곡 목록을 불러오고 있어요.</div>
@@ -24,14 +26,16 @@ module.exports=()=>W(`<section class="mc" id="myConcert">
     <label>기획자 이름 <small>선택</small><span id="mcPlannerCount">0 / 20</span><input id="mcPlanner" placeholder="팬 닉네임을 적어주세요" aria-describedby="mcPlannerError" autocomplete="off"></label><p class="mc-field-error" id="mcPlannerError"></p>
     <p class="mc-footnote">닉네임은 공유 링크와 포스터에 함께 담깁니다.</p>
     <div class="mc-progress-head"><span>선택한 곡</span><strong id="mcTotal">0 / 32</strong></div><progress id="mcProgress" max="32" value="0" aria-label="선택한 곡 수"></progress>
+    ${finish}<p class="mc-field-error" id="mcTopError" role="alert"></p>
     <p class="mc-rule">곡 왼쪽 손잡이를 끌어 순서나 구간을 바꿔보세요.</p><div id="mcSections"></div><div class="mc-undo" id="mcUndo" hidden><span>곡을 뺐어요.</span><button type="button" data-action="undo">되돌리기</button></div>
     <div class="mc-save-row"><span id="mcSaved">이 브라우저에서 이어 만들 수 있어요.</span><button type="button" data-action="reset">전체 초기화</button></div>
-    <p id="mcCompleteError" class="mc-field-error" role="alert"></p><button type="button" class="mc-primary mc-complete" data-action="finish">콘서트 포스터 완성하기 <span aria-hidden="true">↗</span></button>
+    <p id="mcCompleteError" class="mc-field-error" role="alert"></p>${finish}
    </section>
   </div>
  </div>
  <section id="mcResult" class="mc-result" hidden aria-labelledby="mcResultTitle"><div class="mc-result-heading"><span class="mc-kicker">MY DREAM CONCERT</span><h2 id="mcResultTitle" tabindex="-1">당신의 무대가 완성됐어요</h2><p id="mcResultHint">첫 곡부터 앙코르까지, 좋아하는 마음을 한 장에 담았어요.</p></div>
-  <div class="mc-themes" aria-label="포스터 테마"><button type="button" data-theme="rose" aria-pressed="true">로즈 티켓</button><button type="button" data-theme="night" aria-pressed="false">나이트 스테이지</button></div>
+  <div class="mc-design"><label>포스터 배경<select id="mcPosterTheme">${Object.entries(themes).map(([id,t])=>`<option value="${id}">${t.label}</option>`).join('')}</select></label>
+  <label>글씨체<select id="mcPosterFont">${Object.entries(fonts).map(([id,f])=>`<option value="${id}">${f.label}</option>`).join('')}</select></label></div>
   <div class="mc-poster-wrap"><canvas id="mcPoster" width="1080" height="1350" role="img" aria-label="내 콘서트 포스터. 아래 텍스트 세트리스트에서도 내용을 읽을 수 있습니다."></canvas></div>
   <p id="mcPosterStatus" role="status"></p><p id="mcCoverage"></p><div class="mc-result-actions"><button type="button" class="mc-primary" id="mcStart" data-watch="start">▶ 내 콘서트 재생</button><button type="button" data-action="export">이미지 저장</button><button type="button" data-action="share">공유 링크 복사</button><button type="button" id="mcEditButton" data-action="edit">다시 편집하기</button></div>
   <div class="mc-copy" id="mcCopy" hidden><label>아래 링크를 선택해 직접 복사해 주세요.<input id="mcCopyLink" readonly></label></div>
