@@ -42,3 +42,10 @@
 @media(max-width:650px){.mc-hero{flex-wrap:wrap}.mc-concert-art{width:100%;max-height:220px;object-fit:contain;background:#fff7f0}.mc-vcr-filters{grid-template-columns:minmax(0,1fr) minmax(105px,.6fr);gap:8px}#mcVcrList{grid-template-columns:1fr}.mc-vcr-choice img{width:75px}.mc-vcr-dialog .mc-tools button{flex:1}}
 
 .mc-design{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:18px auto}.mc-design label{display:grid;gap:5px}.mc-design select{min-width:135px}.mc-vcr-dialog{overscroll-behavior:contain}
+
+.mc-set-heading{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:0 8px;margin-top:9px}
+.mc-set-heading h2{margin:0;word-break:keep-all}
+.mc-set-heading button{min-height:44px;padding:8px 12px;font-size:13px}
+.mc-set-heading .mc-field-error{grid-column:1/-1}
+.mc-set-heading .mc-field-error:empty{display:none}
+.mc-now-card #mcPlayingCredit{font-size:13px}

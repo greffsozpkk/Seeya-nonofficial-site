@@ -21,12 +21,11 @@ module.exports=()=>W(`<section class="mc" id="myConcert">
     <button type="button" class="mc-mobile-only mc-primary" data-tab="set">세트리스트 보기 <span id="mcPickCount">0 / 32</span></button>
     <p class="mc-footnote">기존 카탈로그에서 확인된 발매곡입니다. 반주곡·미발매 커버는 제외했어요. 과거 씨야 명의 곡도 함께 담았습니다.</p>
    </section>
-   <section class="mc-panel mc-setlist" id="mcSetlist" aria-labelledby="mcSetTitle"><div class="mc-panel-head"><span class="mc-kicker">YOUR SETLIST</span><h2 id="mcSetTitle">이 무대의 이름은</h2></div>
+   <section class="mc-panel mc-setlist" id="mcSetlist" aria-labelledby="mcSetTitle"><div class="mc-panel-head"><span class="mc-kicker">YOUR SETLIST</span><div class="mc-set-heading"><h2 id="mcSetTitle">이 무대의 이름은</h2><button type="button" class="mc-primary" data-action="finish" aria-label="콘서트 포스터 완성하기">포스터 완성하기</button><p class="mc-field-error" id="mcTopError" role="alert"></p></div></div>
     <label>공연 제목 <span id="mcTitleCount">0 / 30</span><input id="mcTitle" aria-describedby="mcTitleError" autocomplete="off"></label><p class="mc-field-error" id="mcTitleError"></p>
     <label>기획자 이름 <small>선택</small><span id="mcPlannerCount">0 / 20</span><input id="mcPlanner" placeholder="팬 닉네임을 적어주세요" aria-describedby="mcPlannerError" autocomplete="off"></label><p class="mc-field-error" id="mcPlannerError"></p>
     <p class="mc-footnote">닉네임은 공유 링크와 포스터에 함께 담깁니다.</p>
     <div class="mc-progress-head"><span>선택한 곡</span><strong id="mcTotal">0 / 32</strong></div><progress id="mcProgress" max="32" value="0" aria-label="선택한 곡 수"></progress>
-    ${finish}<p class="mc-field-error" id="mcTopError" role="alert"></p>
     <p class="mc-rule">곡 왼쪽 손잡이를 끌어 순서나 구간을 바꿔보세요.</p><div id="mcSections"></div><div class="mc-undo" id="mcUndo" hidden><span>곡을 뺐어요.</span><button type="button" data-action="undo">되돌리기</button></div>
     <div class="mc-save-row"><span id="mcSaved">이 브라우저에서 이어 만들 수 있어요.</span><button type="button" data-action="reset">전체 초기화</button></div>
     <p id="mcCompleteError" class="mc-field-error" role="alert"></p>${finish}

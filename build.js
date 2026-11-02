@@ -108,7 +108,17 @@ const retiredRoutes=json('src/data/retired-test-routes.json');
 const worldcupCss=asset('worldcup','css',read('src/styles/worldcup.css'));
 const worldcupJs=asset('worldcup','js',bundle('src/client/worldcup.js'));
 const myConcertRoute=json('src/data/my-concert-test-route.json');
-const myConcertCss=asset('my-concert','css',passportFontCss+'\n'+read('src/styles/my-concert.css'));
+const concertFontCss=[
+ ['Concert Jua','Jua-Regular',400],
+ ['Concert Yeon Sung','YeonSung-Regular',400],
+ ['Concert Gaegu','Gaegu-Regular',400],
+ ['Concert Gaegu','Gaegu-Bold',700]
+].map(([family,name,weight])=>{
+ const file=fs.readFileSync(path.join(root,'src/vendor/concert-fonts',name+'.woff2'));
+ const url=asset(name,'woff2',file);
+ return `@font-face{font-family:"${family}";src:url("${url}") format("woff2");font-weight:${weight};font-display:swap}`;
+}).join('\n');
+const myConcertCss=asset('my-concert','css',[passportFontCss,concertFontCss,read('src/styles/my-concert.css')].join('\n'));
 const myConcertJs=asset('my-concert','js',bundle('src/client/my-concert.js'));
 write('game/my-concert/catalog.json',JSON.stringify(require('./src/shared/my-concert-catalog').catalog(archiveRows))+'\n');
 const photosRaw=json('data/photos.json');

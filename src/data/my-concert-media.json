@@ -408,6 +408,18 @@
     ],
     "group-track-022": [
       {
+        "videoId": "iWdwBHd9bFQ",
+        "title": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN  - 감동을 주세요(남규리,김연지,이보람)",
+        "channel": "kyunphg",
+        "channelId": "UC3nEDqvVuqBnigVc88fiMyA",
+        "duration": 252,
+        "kind": "stage",
+        "date": "2026-10-17",
+        "checkedOn": "2026-11-03",
+        "embedAllowed": true,
+        "played": false
+      },
+      {
         "videoId": "jnRBe9IktFs",
         "title": "감동을 주세요",
         "channel": "SeeYa - Topic",
@@ -1145,17 +1157,16 @@
     ],
     "group-track-060": [
       {
-        "videoId": "m9fbiFor9F0",
-        "title": "2026년 10월 31일 씨야 20주년 인천 콘서트 김연지 직캠 - I Believe",
-        "channel": "냥펀치",
-        "channelId": "UCdJ2pixI027OrcraTPH303w",
-        "duration": 216,
-        "published": "2026-11-01",
+        "videoId": "pr3jaMISgsk",
+        "title": "260829 씨야 20주년 전국 투어 콘서트 THEFAN - 서울 씨야 Seeya - I Believe",
+        "channel": "콘서트 직촬",
+        "channelId": "UCzNyK9awuAbwFKM4TUF2ofQ",
+        "duration": 227,
+        "kind": "stage",
+        "date": "2026-08-29",
+        "checkedOn": "2026-11-03",
         "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-m9fbiFor9F0",
-        "date": null
+        "played": false
       },
       {
         "videoId": "_CGekO1IRGc",

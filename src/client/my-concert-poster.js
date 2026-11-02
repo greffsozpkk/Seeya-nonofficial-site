@@ -79,7 +79,7 @@ function draw(canvas,d,songs,logo,background){
  }
  let titleSize=60,lines;
  do{
-  ctx.font=titleSize+'px '+family;lines=wrap(ctx,d.title.trim(),t.right-t.left);
+  ctx.font='bold '+titleSize+'px '+family;lines=wrap(ctx,d.title.trim(),t.right-t.left);
   if(lines.length<=2)break;
   titleSize-=2;
  }while(titleSize>=30);
@@ -124,7 +124,8 @@ function image(src){
 async function render(canvas,d,songs){
  const bg=backdrop(d.theme);
  const [logo,background]=await Promise.all([image(require('../data/passport-brand.json').logo),bg?image(bg):null,
-  document.fonts?.load('30px '+(fonts[d.font]||fonts.dodum).family),document.fonts?.load('20px '+metaFont)]);
+  document.fonts?.load('30px '+(fonts[d.font]||fonts.dodum).family),
+  document.fonts?.load('bold 60px '+(fonts[d.font]||fonts.dodum).family),document.fonts?.load('20px '+metaFont)]);
  return draw(canvas,d,songs,logo,background);
 }
 function png(canvas){return new Promise((resolve,reject)=>{try{canvas.toBlob(b=>b?resolve(b):reject(Error('이미지를 만들지 못했어요. 다시 시도해 주세요.')),'image/png');}catch{reject(Error('이미지 저장을 다시 시도해 주세요.'));}});}

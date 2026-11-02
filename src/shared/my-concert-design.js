@@ -10,6 +10,9 @@ const themes = {
 };
 const fonts = {
   dodum: {label:'고운돋움', family:'"Passport Dodum", sans-serif'},
+  jua: {label:'배민 주아체', family:'"Concert Jua", sans-serif'},
+  yeonsung: {label:'배민 연성체', family:'"Concert Yeon Sung", serif'},
+  gaegu: {label:'개구체', family:'"Concert Gaegu", cursive'},
   pen: {label:'나눔손글씨 펜', family:'"Passport Pen", cursive'},
   batang: {label:'고운바탕', family:'"Passport Batang", serif'}
 };
