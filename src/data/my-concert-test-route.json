@@ -2,7 +2,7 @@
   "key": "my-concert-test",
   "path": "/game/my-concert/test/",
   "title": "나만의 씨야 콘서트 · SEEYA PLAY",
-  "description": "오프닝부터 앙코르까지 12곡으로 만드는 나만의 가상 콘서트",
+  "description": "오프닝부터 앙코르까지 3~32곡으로 만드는 나만의 가상 콘서트",
   "unlisted": true,
   "noindex": true
 }

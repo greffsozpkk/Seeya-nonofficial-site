@@ -13,7 +13,7 @@ async function session({raw=null,search='',storageFails=false,networkFails=false
  return {el,writes,get raw(){return raw;},online(){unavailable=false;},async click(dataset){const b={dataset,hasAttribute:()=>false};events.click({target:{closest:()=>b}});await flush();}};
 }
 (async()=>{
- let s=await session({storageFails:true});await s.click({add:catalog.songs[0].id});assert.equal(s.el('mcTotal').textContent,'1 / 12');assert.match(s.el('mcSaved').textContent,/사용할 수 없/);assert.equal(s.writes.length,0);
+ let s=await session({storageFails:true});await s.click({add:catalog.songs[0].id});assert.equal(s.el('mcTotal').textContent,'1 / 32');assert.match(s.el('mcSaved').textContent,/사용할 수 없/);assert.equal(s.writes.length,0);
  s=await session({raw:'{broken'});assert.equal(s.el('mcRecovery').hidden,false);await s.click({add:catalog.songs[0].id});assert.equal(s.raw,'{broken');assert.equal(s.writes.length,0);
  await s.click({action:'recover'});assert(s.el('mcConfirm').open);await s.click({action:'cancelConfirm'});assert.equal(s.raw,'{broken');
  const d=M.fresh();d.title='내 원래 편집본';const original=JSON.stringify(d);

@@ -18,13 +18,14 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
  const status=msg=>{$('mcPlayStatus').textContent=msg;};
  const current=()=>queue[index],video=()=>current()?.videos[alternative];
  function destroy(){generation++;ready=false;playing=false;clearTimeout(readyTimer);if(player){try{player.destroy();}catch{}player=null;}$('mcMount').innerHTML='';}
- function close(){active=false;destroy();$('mcWatch').hidden=true;queue=[];}
- const sectionName={opening:'OPENING',main:'MAIN STAGE',encore:'ENCORE'};
+ function close(){root.classList?.remove('mc-when-playing');active=false;destroy();$('mcWatch').hidden=true;queue=[];}
+ const sectionName={opening:'오프닝',main:'본 무대',encore:'앙코르'};
+ const trackCount=()=>queue.filter(e=>e.kind!=='vcr').length;
  function controls(){
   let section='';
   $('mcQueue').innerHTML=queue.map((e,i)=>{
    let heading='';if(section!==e.section){section=e.section;heading='<h3>'+sectionName[section]+'</h3>';}
-   return heading+'<button data-queue="'+i+'"'+(i===index?' aria-current="step"':'')+'>'+esc(e.kind==='vcr'?'VCR':String(e.number).padStart(2,'0'))+' · '+esc(e.label)+(i===index?(playing?' · 재생 중':' · 현재 항목'):'')+(failed.has(i)?' · '+esc(failed.get(i)):!e.videos.length?' · 무대 영상 준비 중':'')+'</button>';
+   return heading+'<button data-queue="'+i+'"'+(i===index?' aria-current="step"':'')+'>'+esc(e.kind==='vcr'?'VCR':String(e.number).padStart(2,'0'))+' · '+esc(e.label)+(i===index?(playing?' · 재생 중':' · 현재 항목'):'')+(failed.has(i)?' · '+esc(failed.get(i)):!e.videos.length?' · 영상 준비 중':'')+'</button>';
   }).join('');
   $('mcPrevious').disabled=nextPlayable(index-1,-1)<0;
   $('mcNext').disabled=finished||nextPlayable(index+1,1)>=queue.length;
@@ -39,9 +40,9 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
  function advance(){lastMove=Date.now();const next=nextPlayable(index+1,1);if(next>=queue.length)finish();else select(next);}
  function describe(){
   const e=current(),v=video();
-  $('mcNow').textContent=(e.kind==='vcr'?'VCR · 다음 노래 '+(e.after+1):e.number)+' / 12 · '+sectionName[e.section];
+  $('mcNow').textContent=sectionName[e.section]+' · '+(e.kind==='vcr'?e.after+'번째 곡 뒤 VCR':e.number+' / '+trackCount()+'곡');
   $('mcPlayingTitle').textContent=(e.kind==='hidden'?'히든 스테이지 공개 · ':'')+e.title;
-  $('mcPlayingCredit').textContent=[e.artist,v?.title,v?.date,v?.channel].filter(Boolean).join(' · ');
+  $('mcPlayingCredit').textContent=[v?.kind==='official'?'공식 영상':e.kind==='vcr'?'VCR':'라이브 무대',v?.channel,v?.title!==e.title?v?.title:''].filter(Boolean).join(' · ');
   const link=$('mcOriginal');link.hidden=!v;if(v)link.href='https://www.youtube.com/watch?v='+v.videoId;
  }
  function videoError(code){
@@ -64,7 +65,9 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
     onReady(event){if(!alive())return;clearTimeout(readyTimer);ready=true;player=event.target;player.loadVideoById(video().videoId);},
     onStateChange(event){
      if(!matches()||event.target.getPlayerState()!==event.data)return;
-     if(event.data===1){playing=true;ended=false;failed.delete(index);status('재생 중');controls();}
+     if(event.data===1){if(current().kind==='vcr'&&current().config.mode==='link'){
+       const title=event.target.getVideoData()?.title;if(title)$('mcPlayingTitle').textContent=title;
+     }playing=true;ended=false;failed.delete(index);status('재생 중');controls();}
      if(event.data===2){status('일시정지');playing=false;controls();}
      if(event.data===0&&!ended&&hasStarted){ended=true;playing=false;advance();}
      if(event.data===1)hasStarted=true;
@@ -84,13 +87,13 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
  function select(i){
   if(i<0||i>=queue.length)return;
   index=i;alternative=0;finished=false;playing=false;ended=false;hasStarted=false;
-  if(!current().videos.length){destroy();describe();controls();status('무대 영상 준비 중 · 다음 항목을 선택해 주세요.');return;}
+  if(!current().videos.length){destroy();describe();controls();status('영상 준비 중 · 다음 항목을 선택해 주세요.');return;}
   status('영상을 연결하고 있어요.');requestVideo();
  }
  function start(fresh){
   const d=getShow();
   if(fresh||!queue.length)queue=Show.session(d,getSongs());
-  failed.clear();active=true;finished=false;
+  root.classList?.add('mc-when-playing');failed.clear();active=true;finished=false;
   $('mcWatchTitle').textContent=d.title;$('mcWatch').hidden=false;$('mcResult').hidden=true;
   const i=nextPlayable(0,1);if(i===queue.length){finish();return;}select(i);$('mcWatchTitle').focus();
  }
@@ -98,7 +101,7 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
   const rows=Show.rows(d),hidden=rows.filter(r=>r.kind==='hidden').length,vcr=rows.filter(r=>r.kind==='vcr').length;
   const connected=rows.filter(r=>r.kind==='song'&&Show.media.performances[r.id]?.length).length;
   let problem='';try{Show.session(d,songs,()=>0.5);}catch(e){problem=e.message;}
-  $('mcCoverage').textContent=problem||('지정곡 '+(12-hidden)+'곡 중 무대 연결 '+connected+'곡 · 히든 스테이지 '+hidden+'개 · VCR '+vcr+'개'+(!connected&&!hidden&&!vcr?' · 연결된 영상이 없어요.':''));
+  $('mcCoverage').textContent=problem||('지정곡 '+(rows.filter(e=>e.kind==='song').length)+'곡 중 영상 연결 '+connected+'곡 · 히든 스테이지 '+hidden+'개 · VCR '+vcr+'개'+(!connected&&!hidden&&!vcr?' · 연결된 영상이 없어요.':''));
   $('mcStart').disabled=!!problem||!connected&&!hidden&&!vcr;
  }
  root.addEventListener('click',event=>{

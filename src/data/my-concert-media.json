@@ -8,17 +8,15 @@
   "performances": {
     "group-track-001": [
       {
-        "videoId": "sIkd5n4Nppw",
-        "title": "여인의 향기 - 씨야 (SeeYa) / 이보람 (Lee Boram) [보람씨야]",
-        "channel": "보람씨야",
-        "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-        "duration": 226,
-        "published": "2020-02-27",
+        "videoId": "nn639JifcBQ",
+        "title": "씨야  - '여인의 향기' [KBS 콘서트7080, 20060826] | SeeYa",
+        "channel": "Again 가요톱10 : KBS KPOP Classic",
+        "channelId": "UCmZ19AIj_wcpwRcqG7p9L8g",
+        "duration": 231,
+        "kind": "stage",
         "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-sIkd5n4Nppw",
-        "date": "2020-02-27"
+        "played": false,
+        "checkedOn": "2026-11-02"
       },
       {
         "videoId": "-X63BGTttGM",
@@ -32,6 +30,28 @@
         "played": true,
         "performanceId": "stage--X63BGTttGM",
         "date": "2026-10-10"
+      },
+      {
+        "videoId": "_8nBbgv5DJI",
+        "title": "[MV] 씨야(SeeYa) \"여인의 향기\" - 여인의 향기",
+        "channel": "DanalEntertainment",
+        "channelId": "UCpmctTnUfbeoycGhieZQAmw",
+        "duration": 451,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "YKW0KSHTF1k",
+        "title": "여인의 향기",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 227,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-002": [
@@ -60,6 +80,169 @@
         "played": true,
         "performanceId": "stage-eQ0KOxJL1kg",
         "date": "2026-10-10"
+      },
+      {
+        "videoId": "yu2GPWuI4oI",
+        "title": "구두",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 251,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-003": [
+      {
+        "videoId": "D9k98OKgfJ8",
+        "title": "[뮤직] 워너비 - With(씨야 See Ya) 사랑하기 때문에 06.05.07",
+        "channel": "ajax wang",
+        "channelId": "UCHaf6i978GU126WwRjZGrSA",
+        "duration": 208,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "Qq5vnQOAo70",
+        "title": "사랑하기때문에",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 235,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-004": [
+      {
+        "videoId": "3AokMjrjDD4",
+        "title": "접시꽃",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 232,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-005": [
+      {
+        "videoId": "eCk7xwAIDDQ",
+        "title": "씨야(See ya ) - Promise U [윤도현의 러브레터] | KBS 20060414 방송",
+        "channel": "Again 가요톱10 : KBS KPOP Classic",
+        "channelId": "UCmZ19AIj_wcpwRcqG7p9L8g",
+        "duration": 196,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "xWVlz_ThGTk",
+        "title": "Promise U",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 221,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-006": [
+      {
+        "videoId": "sgpSPvBDUlI",
+        "title": "처음부터 또다시",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 264,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-007": [
+      {
+        "videoId": "Sv123H1lVI0",
+        "title": "유죄",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 245,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-008": [
+      {
+        "videoId": "2923ZP17xVA",
+        "title": "이별해보기",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 239,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-009": [
+      {
+        "videoId": "gCc_mJwuZTs",
+        "title": "TearsandFears",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 209,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-010": [
+      {
+        "videoId": "6JQ1KkBQZDw",
+        "title": "사랑했다면",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 265,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-011": [
+      {
+        "videoId": "bA8F0v603OM",
+        "title": "그냥",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 265,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-012": [
+      {
+        "videoId": "DQ_9e-iKRtA",
+        "title": "내 잘못입니다",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 252,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-013": [
@@ -69,30 +252,185 @@
         "channel": "MBCkpop",
         "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
         "duration": 221,
-        "published": "2012-02-17",
+        "kind": "stage",
         "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-HwOHSUttRfY",
-        "date": "2007-05-26"
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "lu1kJ25OWfg",
+        "title": "[MV] 씨야(SeeYa) \"Lovely Sweet Heart\" - 사랑의 인사",
+        "channel": "DanalEntertainment",
+        "channelId": "UCpmctTnUfbeoycGhieZQAmw",
+        "duration": 368,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "wRdNZKsh_a0",
+        "title": "사랑의 인사",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 275,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-014": [
       {
-        "videoId": "B77V1wfmhqw",
-        "title": "결혼할까요 - 씨야 (SeeYa) / 이보람 (Lee Boram) [보람씨야]",
-        "channel": "보람씨야",
-        "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-        "duration": 203,
-        "published": "2020-03-12",
+        "videoId": "tIiNpSJoQ6k",
+        "title": "씨야(Seeya) - 결혼할까요 💎몽글몽글 그 시절 사랑노래💙 @2007 바다축제 개막 축하쇼",
+        "channel": "BAAMBC LIVE | 뱀비씨 라이브",
+        "channelId": "UCiqZSNtipGd0IH59WfriBfA",
+        "duration": 229,
+        "kind": "stage",
         "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-B77V1wfmhqw",
-        "date": "2020-03-12"
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "Ut_QWvPwvgA",
+        "title": "[MV] 씨야(SeeYa) \"Lovely Sweet Heart\" - 결혼할까요",
+        "channel": "DanalEntertainment",
+        "channelId": "UCpmctTnUfbeoycGhieZQAmw",
+        "duration": 255,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "0ROaJ2Rp9UU",
+        "title": "결혼할까요",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 254,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-015": [
+      {
+        "videoId": "A9RgzfE7_os",
+        "title": "너는 내 남자",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 211,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-016": [
+      {
+        "videoId": "Swo_UcXurL8",
+        "title": "Dirty Dancing",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 239,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-017": [
+      {
+        "videoId": "RShXr9We_DA",
+        "title": "어떻게 널 잊겠니",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 256,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-018": [
+      {
+        "videoId": "iIgUm9J3csg",
+        "title": "사랑아",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 262,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-019": [
+      {
+        "videoId": "-cdNcji7uow",
+        "title": "그 사람이 나를 사랑해요",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 257,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-020": [
+      {
+        "videoId": "qJQQQi5Tdx8",
+        "title": "Summer Dream",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 255,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-021": [
+      {
+        "videoId": "alI0-z40e1U",
+        "title": "사랑이 간다",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 171,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-022": [
+      {
+        "videoId": "jnRBe9IktFs",
+        "title": "감동을 주세요",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 246,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-023": [
+      {
+        "videoId": "AlabxMtT3YI",
+        "title": "070913 씨야 얼음인형 엠카",
+        "channel": "seeyalover",
+        "channelId": "UC3yj9gHFG88rsHJUenBp5Vg",
+        "duration": 223,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
       {
         "videoId": "DpIkcrhqobw",
         "title": "[4K]씨야 대구 콘서트 얼음인형 직캠 #씨야#남규리#김연지#이보람#SEEYA#씨야콘서트#라이브#직캠#live#concert#kpop#idol#youtube#music#video",
@@ -105,9 +443,68 @@
         "played": true,
         "performanceId": "stage-DpIkcrhqobw",
         "date": "2026-09-12"
+      },
+      {
+        "videoId": "_veObwyUQj8",
+        "title": "[MV] 씨야(SeeYa) \"Lovely Sweet Heart\" - 얼음인형",
+        "channel": "DanalEntertainment",
+        "channelId": "UCpmctTnUfbeoycGhieZQAmw",
+        "duration": 289,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "k9nKPduDfUg",
+        "title": "얼음인형",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 218,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-024": [
+      {
+        "videoId": "zK-pL3A1MeM",
+        "title": "순애보",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 295,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-025": [
+      {
+        "videoId": "IwU9XiTITMs",
+        "title": "남",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 238,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-026": [
+      {
+        "videoId": "0nFA9QPlnjg",
+        "title": "See Ya - Sad Step, 씨야 - 슬픈 발걸음, Music Core 20080105",
+        "channel": "MBCkpop",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "duration": 197,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
       {
         "videoId": "zDjkCVF9zzI",
         "title": "Seeya - Sad steps (씨야-슬픈발걸음) @SBS Inkigayo 인기가요 20080113",
@@ -120,9 +517,31 @@
         "played": true,
         "performanceId": "stage-zDjkCVF9zzI",
         "date": "2008-01-13"
+      },
+      {
+        "videoId": "cFEE7KZZUy0",
+        "title": "슬픈 발걸음 (구두 II)",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 270,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-027": [
+      {
+        "videoId": "kzbky4z5gu4",
+        "title": "See Ya - I still like you, 씨야 - 그래도 좋아, Music Core 20080202",
+        "channel": "MBCkpop",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "duration": 186,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
       {
         "videoId": "1fzT-UcIF5E",
         "title": "Seeya - I still like you (씨야-그래도좋아)@SBS Inkigayo 인기가요 200802017",
@@ -135,9 +554,81 @@
         "played": true,
         "performanceId": "stage-1fzT-UcIF5E",
         "date": "2012-01-10"
+      },
+      {
+        "videoId": "Wu2mflg_tyk",
+        "title": "그래도 좋아",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 267,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-028": [
+      {
+        "videoId": "cav_38-1kBU",
+        "title": "Classic",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 200,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-029": [
+      {
+        "videoId": "tDFsPmjW3uc",
+        "title": "연가",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 230,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-030": [
+      {
+        "videoId": "R2Sf4TVhBVQ",
+        "title": "07.03.01 씨야 미워요 엠 카운트다운",
+        "channel": "씨야박물관",
+        "channelId": "UCbQr4QmfQqvOAT7aSY09KBw",
+        "duration": 250,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "N4z5AUvKkaw",
+        "title": "미워요",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 259,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-034": [
+      {
+        "videoId": "dRu8mfIa2Ak",
+        "title": "[화질개선] 씨야 - 미친 사랑의 노래 #한곡인가 #인기가요",
+        "channel": "SBS 옛날 예능 - 빽능",
+        "channelId": "UCvRIeQeTZDHRcqVZRu0XBug",
+        "duration": 622,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
       {
         "videoId": "FhGp3Q4ZXtk",
         "title": "[풀버전] 씨야 메인보컬 김연지 등장?!😮 라이브 실력에 난리 난 연습생들 반응ㄷㄷ🔥| 씨야 '미친 사랑의 노래' | SOONIGROUP",
@@ -150,6 +641,75 @@
         "played": true,
         "performanceId": "stage-FhGp3Q4ZXtk",
         "date": "2026-04-02"
+      },
+      {
+        "videoId": "tnjV-wOYok8",
+        "title": "미친 사랑의 노래",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 240,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-035": [
+      {
+        "videoId": "kya1JSJak9A",
+        "title": "Seeya & BrownEyedGirls - The Day [09_24_06]",
+        "channel": "pamy15",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "3aGZFjkZZsY",
+        "title": "The Day",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 240,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-036": [
+      {
+        "videoId": "p8vMZP9T1t4",
+        "title": "정",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 229,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-037": [
+      {
+        "videoId": "Ppd8T3vwHoY",
+        "title": "음악중심 - See Ya - Are you leaving, 씨야 - 가니, Music Core 20081101",
+        "channel": "MBCkpop",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "duration": 179,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "4aQEJqWtSzs",
+        "title": "가니 (Feat. SG워너비 김용준, 황정음, Mario)",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 202,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-038": [
@@ -159,15 +719,186 @@
         "channel": "SBSKPOP X INKIGAYO",
         "channelId": "UCS_hnpJLQTvBkqALgapi_4g",
         "duration": 181,
-        "published": "2012-01-18",
+        "kind": "stage",
         "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-iEl0SHS7XAk",
-        "date": "2008-10-19"
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "VYvKqDIxERQ",
+        "title": "Hot girl",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 196,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-039": [
+      {
+        "videoId": "3MlJembFD7s",
+        "title": "Turn it up",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 222,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-040": [
+      {
+        "videoId": "d25C3kMqdps",
+        "title": "집으로 돌아오는길 (Feat. SG워너비 김진호)",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 213,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-041": [
+      {
+        "videoId": "6EWtPi95ytY",
+        "title": "내가 울더라도",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 201,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-042": [
+      {
+        "videoId": "87lN0cAX-FY",
+        "title": "덩그러니",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 273,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-043": [
+      {
+        "videoId": "MzfMWx7hTuE",
+        "title": "사모곡",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 213,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-044": [
+      {
+        "videoId": "0d6qNoyLVII",
+        "title": "I wish",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 234,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-045": [
+      {
+        "videoId": "6kOSSc2Sk4s",
+        "title": "남자는 그래요",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 270,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-046": [
+      {
+        "videoId": "PZQnPnaAee4",
+        "title": "081102 씨야 그사람",
+        "channel": "휴우흐",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "GM8MyJ7ejJ4",
+        "title": "그 사람 (구두 Ⅲ)",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 212,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-047": [
+      {
+        "videoId": "haW2RdDxZJM",
+        "title": "솜사탕",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 190,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-048": [
+      {
+        "videoId": "1zsvEKsRU3s",
+        "title": "나 없이도",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 282,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-049": [
+      {
+        "videoId": "O80eQwDaEuI",
+        "title": "Loving you",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 208,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-050": [
+      {
+        "videoId": "iXzTNAD2m20",
+        "title": "SeeYa - His voice, 씨야 - 그놈 목소리, Music Core 20091114",
+        "channel": "MBCkpop",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "duration": 180,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
       {
         "videoId": "9AseMGUeNqY",
         "title": "See Ya- His voice (씨야 - 그놈 목소리) @ SBS Inkigayo 인기가요 091220",
@@ -180,21 +911,139 @@
         "played": true,
         "performanceId": "stage-9AseMGUeNqY",
         "date": "2009-12-20"
+      },
+      {
+        "videoId": "_esZucb02gs",
+        "title": "MV | 씨야(SeeYa) - 그 놈 목소리 (His Voice) | Rebloom",
+        "channel": "DanalEntertainment",
+        "channelId": "UCpmctTnUfbeoycGhieZQAmw",
+        "duration": 185,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "678GDIWAgPg",
+        "title": "그 놈 목소리",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 185,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-051": [
+      {
+        "videoId": "TTEB9BXpMuk",
+        "title": "앗차!",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 176,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-052": [
+      {
+        "videoId": "QiSUtXJY_ws",
+        "title": "눈물의 여왕",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 262,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-053": [
+      {
+        "videoId": "kfgEH8WBpsc",
+        "title": "바람핀다 믿었니",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 194,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-054": [
+      {
+        "videoId": "FyN34Vw1SAw",
+        "title": "T-Gana",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 204,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-055": [
       {
-        "videoId": "w4DHifb4nCE",
-        "title": "9년 만에 부르는!! 내겐 너무 멋진 그대 - 씨야 (SeeYa) / 이보람 (Lee Boram) [보람씨야]",
-        "channel": "보람씨야",
-        "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-        "duration": 227,
-        "published": "2020-08-10",
+        "videoId": "KsqChvjaI6w",
+        "title": "SeeYa - So Nice To Meet You, 씨야 - 내겐 너무 멋진 그대, Music Core 20110129",
+        "channel": "MBCkpop",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "duration": 218,
+        "kind": "stage",
         "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-w4DHifb4nCE",
-        "date": "2020-08-10"
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "Yax4nGDtkW4",
+        "title": "MV | 씨야(SeeYa) - 내겐 너무 멋진 그대 | See You Again",
+        "channel": "DanalEntertainment",
+        "channelId": "UCpmctTnUfbeoycGhieZQAmw",
+        "duration": 227,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "kkjuZvmpLFo",
+        "title": "내겐 너무 멋진 그대",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 229,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-056": [
+      {
+        "videoId": "4gpfFganjz4",
+        "title": "SeeYa - The Last, 씨야 - 더 라스트, Music Core 20110129",
+        "channel": "MBCkpop",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "duration": 127,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "wGRlWbfddJk",
+        "title": "The last",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 204,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-057": [
@@ -223,9 +1072,52 @@
         "played": true,
         "performanceId": "stage-Tm2OdWE8KBc",
         "date": "2026-06-21"
+      },
+      {
+        "videoId": "I1zhkwIuZ0A",
+        "title": "씨야 SEEYA - Stay Official MV (SEEYA Ver.)",
+        "channel": "SEEYA Official",
+        "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+        "duration": 202,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-058": [
+      {
+        "videoId": "5NHQjIoadto",
+        "title": "[4K]씨야 SEEYA - 계절은 돌고 돌아 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+        "channel": "DodongFancam도동직캠",
+        "channelId": "UCgm2Xzs8djJCUemRhGM6S-g",
+        "duration": 210,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "Uq9Tw4NERmQ",
+        "title": "Returning to You",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 218,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-059": [
+      {
+        "videoId": "vH8QBCYO0Yc",
+        "title": "[열린예술무대 뒤란] 씨야(SeeYa) - 봄처럼 그댄(You, Like Spring) | ubc 260821 방송",
+        "channel": "열린예술무대 뒤란",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
       {
         "videoId": "QY-F5iSN8aM",
         "title": "씨야(SeeYa) 콘서트「봄처럼 그댄」직캠 Full Ver | 261004 씨야 20주년 콘서트 The Fan in 고양",
@@ -238,6 +1130,17 @@
         "played": true,
         "performanceId": "stage-QY-F5iSN8aM",
         "date": "2026-10-04"
+      },
+      {
+        "videoId": "JeNLPdkh6FM",
+        "title": "씨야 SEEYA - 봄처럼 그댄 Official MV",
+        "channel": "SEEYA Official",
+        "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+        "duration": 267,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-060": [
@@ -253,9 +1156,28 @@
         "played": true,
         "performanceId": "stage-m9fbiFor9F0",
         "date": null
+      },
+      {
+        "videoId": "_CGekO1IRGc",
+        "title": "씨야 SEEYA - I Believe Official MV",
+        "channel": "SEEYA Official",
+        "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+        "duration": 260,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-061": [
+      {
+        "videoId": "whTAN8EeeB8",
+        "title": "씨야 -  그럼에도 우린 [열린 음악회/Open Concert] | KBS 260607 방송",
+        "channel": "KBS 레전드 케이팝",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
       {
         "videoId": "SKZr7-QfysI",
         "title": "씨야 - 그럼에도 우린 [260912 ‘The Fan’ 20주년 콘서트 - 대구]",
@@ -268,6 +1190,93 @@
         "played": true,
         "performanceId": "stage-SKZr7-QfysI",
         "date": "2026-09-12"
+      },
+      {
+        "videoId": "dmsw-tEenZ0",
+        "title": "씨야 SEEYA - 그럼에도 우린 Official MV",
+        "channel": "SEEYA Official",
+        "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+        "duration": 222,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-062": [
+      {
+        "videoId": "OvNfsRAnG74",
+        "title": "260829 씨야 20주년 전국 투어 콘서트 THEFAN - 서울 씨야 Seeya 안돼요",
+        "channel": "콘서트 직촬",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "aECHa9GVJok",
+        "title": "Please Don't",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 242,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-063": [
+      {
+        "videoId": "UMpTyqk0sRA",
+        "title": "씨야(SeeYa) 콘서트「잔향-4집」직캠 | 260829 씨야 20주년 콘서트 The Fan in 서울",
+        "channel": "🐿람보바라기",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "nFo1grp3Bjw",
+        "title": "Traces of You",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 236,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-064": [
+      {
+        "videoId": "mPgTjK3GurQ",
+        "title": "2026 08 29 끝내 꺾이지 않는 것 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+        "channel": "햄햄햄",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "iOQddZHdcLQ",
+        "title": "The Unbroken",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 224,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-065": [
+      {
+        "videoId": "OfaMxNJlD_I",
+        "title": "씨야 SEEYA - 우리 Live Ver. Official MV",
+        "channel": "SEEYA Official",
+        "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+        "duration": 279,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ],
     "group-track-066": [
@@ -283,6 +1292,802 @@
         "played": true,
         "performanceId": "stage-si3VEPvpr9A",
         "date": "2026-10-04"
+      },
+      {
+        "videoId": "ANUSI5FfWFM",
+        "title": "[MV] 씨야 _ 바보",
+        "channel": "1theK (원더케이)",
+        "channelId": "UCweOkPb1wVVH0Q0Tlj4a5Pw",
+        "duration": 205,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-068": [
+      {
+        "videoId": "sHeo6FDdH_A",
+        "title": "[2K] 씨야 & 다비치 & 지연 - 여성시대 (인기가요 2009.05.31)",
+        "channel": "화질중시채널",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "JQ-5-HjuSv0",
+        "title": "여성시대",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 212,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-070": [
+      {
+        "videoId": "ubVtYiAopyg",
+        "title": "【TVPP】Davichi(with T-ARA & SeeYa) - Wonder Woman, 다비치(티아라 & 씨야) - 원더우먼 @ Show! Music Core Live",
+        "channel": "TV-People",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "HuTfUAuwkdU",
+        "title": "원더우먼",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 218,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-071": [
+      {
+        "videoId": "sHnPOsZSpFQ",
+        "title": "씨야 - 가슴이 뭉클 (2010년)",
+        "channel": "MBC강원영동 MUSIC",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "mhmDf1o1hw0",
+        "title": "Personal Taste (Original Television Soundtrack) Pt. 2 - My heart is touched (개인의 취향...",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 230,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-072": [
+      {
+        "videoId": "NObuBFWx9RM",
+        "title": "미쳤나봐",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCXh-QU9pBl7UgJQaFjbA6gQ",
+        "duration": 239,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-074": [
+      {
+        "videoId": "1a0vB1PsHJg",
+        "title": "[10.10.16][다비치][이해리][씨야]세대공감 나눔콘서트_다 컸잖아_Happy Voice",
+        "channel": "Davichi Happy Voice",
+        "kind": "stage",
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "hpPNSxHK2Mw",
+        "title": "씨야 그리고 다비치 - 다 컸잖아 (다 컸잖아)",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCXh-QU9pBl7UgJQaFjbA6gQ",
+        "duration": 218,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-075": [
+      {
+        "videoId": "5xVPQKrZ-yI",
+        "title": "시차 (With DAVICHI, Black Pearl) (시차)",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 229,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-track-076": [
+      {
+        "videoId": "7rs0gK-ahIg",
+        "title": "씨야 SeeYa - 용기를 주세요",
+        "channel": "MusicActionPlus",
+        "channelId": "UCbkYJV9r3qDOHYVvCoX2AAQ",
+        "duration": 141,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "group-fate-one-person": [
+      {
+        "videoId": "oqNMOWPuEW0",
+        "title": "가슴속에 한사람 (가슴속에 한사람)",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 264,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-MiUAHBTO55g": [
+      {
+        "videoId": "cUb8m6bpbyw",
+        "title": "Nam Gyu-ri - Man, 남규리 - 남자, Music Core 20080809",
+        "channel": "MBCkpop",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "duration": 179,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "MiUAHBTO55g",
+        "title": "고사: 피의 중간고사 (Original Motion Picture Soundtrack) - 남자 (남자 (男子))",
+        "channel": "Nam Gyu ri - Topic",
+        "channelId": "UCKRsSjFGndJb9VrTisc60ig",
+        "duration": 226,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-Sn7YYiXgQ6Y": [
+      {
+        "videoId": "MbHnINHWyC0",
+        "title": "남규리(Nam Kyuri) - 깊은 밤을 날아서 [콘서트7080] | KBS 20070505 방송",
+        "channel": "Again 가요톱10 : KBS KPOP Classic",
+        "channelId": "UCmZ19AIj_wcpwRcqG7p9L8g",
+        "duration": 125,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "Sn7YYiXgQ6Y",
+        "title": "깊은 밤을 날아서",
+        "channel": "SeeYa - Topic",
+        "channelId": "UCcZrxE5zk2zKYmMe9lg9xKA",
+        "duration": 121,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-cjuv_qVAgRA": [
+      {
+        "videoId": "ZhGOpr2lljo",
+        "title": "남규리 'HALO' 라이브클립 VER.1",
+        "channel": "뮤직카우",
+        "channelId": "UCWMPzEshTKfeQZKFRxyX8_w",
+        "duration": 184,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "cjuv_qVAgRA",
+        "title": "[MV] Nam Kyu Ri(남규리) _ HALO",
+        "channel": "1theK (원더케이)",
+        "channelId": "UCweOkPb1wVVH0Q0Tlj4a5Pw",
+        "duration": 186,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-siyf1bcO5Gc": [
+      {
+        "videoId": "FbOzui3wk1Q",
+        "title": "남규리 - 그래도 좋아해요ㅣENA 케이팝업 차트쇼ㅣENA250829 방송",
+        "channel": "ENA K-POP",
+        "channelId": "UCFpfKdO4MMSc9ZoMjk2Tikg",
+        "duration": 216,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "siyf1bcO5Gc",
+        "title": "[MV] Nam Gyu ri(남규리) _ Still, I Like You(그래도 좋아해요)",
+        "channel": "1theK (원더케이)",
+        "channelId": "UCweOkPb1wVVH0Q0Tlj4a5Pw",
+        "duration": 227,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-9klPsmjNPDw": [
+      {
+        "videoId": "7CsBU-Pk-Po",
+        "title": "남규리 - 디셈버드림 (December Dream) Live Ver.",
+        "channel": "남규리 Nam Gyu Ri",
+        "channelId": "UCNbU5_rEMwaqy6PSXS1wiBA",
+        "duration": 187,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "9klPsmjNPDw",
+        "title": "남규리 - 디셈버드림 (December Dream) Official Music Video",
+        "channel": "남규리 Nam Gyu Ri",
+        "channelId": "UCNbU5_rEMwaqy6PSXS1wiBA",
+        "duration": 189,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-nN7NV5FBhBw": [
+      {
+        "videoId": "nN7NV5FBhBw",
+        "title": "LIVE CLIP | 남규리(Nam Gyu Ri) - 슬픔이 찾아와서 그래(Prod. 로코베리)",
+        "channel": "에잇 8recordz x studio8",
+        "channelId": "UCWQTae3cFaQke_LchN7cGaQ",
+        "duration": 198,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-5USUHmWpPcg": [
+      {
+        "videoId": "jsZqyfW7-7M",
+        "title": "남규리 - 가슴앓이 (Love, Unspoken) LIVE Clip",
+        "channel": "남규리 Nam Gyu Ri",
+        "channelId": "UCNbU5_rEMwaqy6PSXS1wiBA",
+        "duration": 196,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "5USUHmWpPcg",
+        "title": "[MV] Nam Gyu Ri(남규리) _ Love, Unspoken(가슴앓이)",
+        "channel": "1theK (원더케이)",
+        "channelId": "UCweOkPb1wVVH0Q0Tlj4a5Pw",
+        "duration": 225,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-Mjl8tBDX5Ik": [
+      {
+        "videoId": "UkOV4Z8Vpm8",
+        "title": "[Live Clip] 남규리(Nam Gyu Ri)_고백하는 거 맞아(I'm in love with you)",
+        "channel": "뮤직카우",
+        "channelId": "UCWMPzEshTKfeQZKFRxyX8_w",
+        "duration": 247,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "Mjl8tBDX5Ik",
+        "title": "[Special Clip] 남규리(Nam Gyu Ri)_고백하는 거 맞아(I'm in love with you)",
+        "channel": "뮤직카우",
+        "channelId": "UCWMPzEshTKfeQZKFRxyX8_w",
+        "duration": 249,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-06MOxzzMPvI": [
+      {
+        "videoId": "njcupKAaiLM",
+        "title": "[LIVE] 씨야 남규리(Nam Gyu Ri) - 우리 사랑 그런 거 해요 Part.1 | 12시엔 주현영",
+        "channel": "SBS Radio 에라오",
+        "channelId": "UCAmff0euQRf6RwVlbB8PLMw",
+        "duration": 204,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "06MOxzzMPvI",
+        "title": "남규리 - 우리 사랑 그런 거 해요 Part.1 Official MV",
+        "channel": "남규리 Nam Gyu Ri",
+        "channelId": "UCNbU5_rEMwaqy6PSXS1wiBA",
+        "duration": 210,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-DFBk5oSn72Y": [
+      {
+        "videoId": "YMRvsqIF7QM",
+        "title": "남규리 - 우리 사랑 그런 거 해요 Part.2 (feat. KoN)ㅣ#케이팝업차트쇼 24회 #KPopUpChartShow #클립 ENA260929",
+        "channel": "ENA K-POP",
+        "channelId": "UCFpfKdO4MMSc9ZoMjk2Tikg",
+        "duration": 241,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "DFBk5oSn72Y",
+        "title": "남규리 - 우리 사랑 그런 거 해요 Part.2 (feat.KoN) Official MV",
+        "channel": "남규리 Nam Gyu Ri",
+        "channelId": "UCNbU5_rEMwaqy6PSXS1wiBA",
+        "duration": 240,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-8UAxgcnvk2E": [
+      {
+        "videoId": "mNbm_SAKk_E",
+        "title": "[SBS]최화정의파워타임,잊었니, 김연지 라이브",
+        "channel": "SBS Radio 에라오",
+        "channelId": "UCAmff0euQRf6RwVlbB8PLMw",
+        "duration": 190,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "8UAxgcnvk2E",
+        "title": "[M/V] 잊었니(Forgot) - 김연지(KIMYEONJI)",
+        "channel": "SUPER SOUND Bugs!",
+        "channelId": "UC9PVYlrwFSlqG7w8TDsqRvQ",
+        "duration": 220,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-lOvBRahMvtQ": [
+      {
+        "videoId": "lOvBRahMvtQ",
+        "title": "김연지 - 바람이 불면 [유희열의 스케치북/You Heeyeol's Sketchbook] 20200306",
+        "channel": "KBS Kpop",
+        "channelId": "UCeLPm9yH_a_QH8n6445G-Ow",
+        "duration": 252,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-_FJkNLkV82U": [
+      {
+        "videoId": "_FJkNLkV82U",
+        "title": "[Live Clip] 내 맘(Mom) - 김연지 Official",
+        "channel": "김연지 Official",
+        "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+        "duration": 201,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-JIpU0HXvc_E": [
+      {
+        "videoId": "JIpU0HXvc_E",
+        "title": "목소리를 되찾은 김연지의 진짜 이야기 | 김연지 (Kim Yeon Ji) - 노래ㅣ숲세권 라이브 (For:Rest LIVE)",
+        "channel": "숲세권 라이브 (For:Rest LIVE)",
+        "channelId": "UCEDGYiAk2qmg63pamdGMHSQ",
+        "duration": 339,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-Uko7Y-Tfj-8": [
+      {
+        "videoId": "Uko7Y-Tfj-8",
+        "title": "[Official] '김연지 - 당신은 천사와 커피를 마셔본 적이 있습니까' Special Clip (Full ver.)",
+        "channel": "TOON STUDIO",
+        "channelId": "UCve0b6qhfxTpKeqzZ4u0MjQ",
+        "duration": 280,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-arm2c6NH9vg": [
+      {
+        "videoId": "pI5rjwb-y2s",
+        "title": "[4K] 김연지(KIM YEON JI) “비가 오면 마음껏 울어도 되니까” Band LIVE Concert 노래방 18번 예약이요💘 [it’s KPOP LIVE 잇츠라이브]",
+        "channel": "it's Live",
+        "channelId": "UCB9e3pof1o83aa0kkaoeJGA",
+        "duration": 285,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "arm2c6NH9vg",
+        "title": "[MV] KIM YEON JI(김연지) _ You can cry when it rains(비가 오면 마음껏 울어도 되니까)",
+        "channel": "1theK (원더케이)",
+        "channelId": "UCweOkPb1wVVH0Q0Tlj4a5Pw",
+        "duration": 197,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-gwRkvYc59_s": [
+      {
+        "videoId": "Xm5Oma6TVTE",
+        "title": "김연지 – 사랑의 인사 (원곡 : 씨야) | 피크닉라이브 소풍 | EP.134",
+        "channel": "ALL THE K-POP",
+        "channelId": "UCPde4guD9yFBRzkxk2PatoA",
+        "duration": 247,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "gwRkvYc59_s",
+        "title": "[Live Clip] 사랑의인사 - 김연지",
+        "channel": "김연지 Official",
+        "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+        "duration": 254,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-atp-TU4Xezs": [
+      {
+        "videoId": "atp-TU4Xezs",
+        "title": "[Live Clip] 가슴으로운다 - 김연지",
+        "channel": "김연지 Official",
+        "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+        "duration": 206,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-8k-YrZ5Gg2g": [
+      {
+        "videoId": "8k-YrZ5Gg2g",
+        "title": "[Live Clip] 빨간풍선 (빨간풍선ost) - 김연지",
+        "channel": "김연지 Official",
+        "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+        "duration": 231,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-7h3ndp05JN0": [
+      {
+        "videoId": "NRhYAttexQ0",
+        "title": "[Live] Whisky on the Rock _ 김연지 [임백천의 백뮤직] | KBS 220817 방송",
+        "channel": "KBS KONG",
+        "channelId": "UC4GVSWFx-E6At_bnRIUmP4A",
+        "duration": 304,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "7h3ndp05JN0",
+        "title": "[MV] 김연지(Kim Yeon-Ji) - Whisky on the Rock | 우리들의 블루스(Our Blues) OST Part 1",
+        "channel": "냠냠엔터테인먼트 YAMYAM ENTERTAINMENT",
+        "channelId": "UCx_IoWPI_v4jI230YSvAHWQ",
+        "duration": 307,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-_lTZCnkpoyQ": [
+      {
+        "videoId": "_lTZCnkpoyQ",
+        "title": "[MV] Kim Yeon Ji(김연지) _ 10 years without you…(10년이나 버티니)",
+        "channel": "1theK (원더케이)",
+        "channelId": "UCweOkPb1wVVH0Q0Tlj4a5Pw",
+        "duration": 209,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-PHQbDyffSTw": [
+      {
+        "videoId": "PHQbDyffSTw",
+        "title": "[MV] 김연지 \"군주 - 가면의 주인 OST Part.5\" (Ruler: Master Of The Mask OST Part 5) - 계절사이 (Between Seasons)",
+        "channel": "DanalEntertainment",
+        "channelId": "UCpmctTnUfbeoycGhieZQAmw",
+        "duration": 275,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-6yrrTYk4sMs": [
+      {
+        "videoId": "6yrrTYk4sMs",
+        "title": "[RBW 아티스트 다이어리 시즌2] 김연지 '너만 있으면 다였는데' Live",
+        "channel": "RainbowbridgeWorld (RBW Inc.)",
+        "channelId": "UC4Rt2GpPPCr6IEhm1Jt967A",
+        "duration": 280,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-ppe9vyChKLs": [
+      {
+        "videoId": "H_U4HugKNK8",
+        "title": "★신곡★ '흩어지는 중' - 이보람 (Lee Boram) ▷Live clip◁ / [보람씨야]",
+        "channel": "보람씨야",
+        "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+        "duration": 171,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "ppe9vyChKLs",
+        "title": "[Full ver.] 흩어지는 중 (음원ver.) - 이보람 (Lee Boram) / [보람씨야]",
+        "channel": "보람씨야",
+        "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+        "duration": 252,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-2WyOq7IMEnc": [
+      {
+        "videoId": "zWTxdwT2Gqo",
+        "title": "이보람 - 처음 그 자리에 (드라마 ＜풀하우스＞ OST) [더 시즌즈-성시경의 고막남친] | KBS 260529 방송",
+        "channel": "KBS Kpop",
+        "channelId": "UCeLPm9yH_a_QH8n6445G-Ow",
+        "duration": 45,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "2WyOq7IMEnc",
+        "title": "처음 그 자리에",
+        "channel": "leeboram - Topic",
+        "channelId": "UCO_OtqR33fYqev4XIZ69jvQ",
+        "duration": 233,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-L5Cn7BpkEeQ": [
+      {
+        "videoId": "L5Cn7BpkEeQ",
+        "title": "FREAK (Korean Version)",
+        "channel": "leeboram - Topic",
+        "channelId": "UCO_OtqR33fYqev4XIZ69jvQ",
+        "duration": 203,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-yjvTqgRzcXY": [
+      {
+        "videoId": "gyzBkqs65xY",
+        "title": "[ALLIVE] 이보람 - 빛의 반대편에서 | #MBCRADIO #정오의희망곡김신영입니다 #이보람 #씨야 #빛의반대편에서 #라이브 #무대 | MBC 260804 방송",
+        "channel": "Mhz 므흐즈: MBC RADIO",
+        "channelId": "UCKNZsAeQXpvI-Mpoc0ZKhsA",
+        "duration": 211,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "yjvTqgRzcXY",
+        "title": "이보람 (씨야) Lee Boram - 빛의 반대편에서 Beyond the light Official M/V",
+        "channel": "GENIE MUSIC",
+        "channelId": "UCd-OrgPLrnQiQBcq19j5oEQ",
+        "duration": 209,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-7VGw30BGkyw": [
+      {
+        "videoId": "7VGw30BGkyw",
+        "title": "매일 이렇게 비가 내려 -이보람 (IONY의 오선지 : Project #01)",
+        "channel": "보람씨야",
+        "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+        "duration": 151,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-pwdQrpNpFyA": [
+      {
+        "videoId": "a6AZzPh9m4E",
+        "title": "이보람 신곡 \"너를 사랑하니까\" 풀버전 in 보광사 산사음악회 (2024.06.14)",
+        "channel": "땅콩크림샌드",
+        "channelId": "UCj710bQ6P55kmiknJ3RlXrw",
+        "duration": 183,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "pwdQrpNpFyA",
+        "title": "[OFFICIAL SPECIAL VIDEO] 이보람(Lee Bo-Ram) - 너를 사랑하니까(Love, Always) 녹음실 버전",
+        "channel": "냠냠엔터테인먼트 YAMYAM ENTERTAINMENT",
+        "channelId": "UCx_IoWPI_v4jI230YSvAHWQ",
+        "duration": 187,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-oukYixC1ldo": [
+      {
+        "videoId": "_y5Pbme0BBo",
+        "title": "한계라고 느껴질 때... 이보람(Lee Boram)이 전하는 마음 '형 (兄)'♬｜비긴어게인 오픈마이크",
+        "channel": "Beginagain 비긴어게인",
+        "channelId": "UC8WoHUeN-eLynnLKGkwajYQ",
+        "duration": 401,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "oukYixC1ldo",
+        "title": "[최초 공개] 이보람 (씨야) - 형 (兄) Special Clip #이보람 #형",
+        "channel": "방구석 캐스팅",
+        "channelId": "UCqxtYw8SCaYFNQmCdjnvZrw",
+        "duration": 250,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-c6MlQvbbZw0": [
+      {
+        "videoId": "7sgBNEHjpZ0",
+        "title": "[OFFICIAL SPECIAL VIDEO] 이보람(Lee Bo-Ram) - 한 밤의 꿈처럼(Dream) 실외라이브",
+        "channel": "냠냠엔터테인먼트 YAMYAM ENTERTAINMENT",
+        "channelId": "UCx_IoWPI_v4jI230YSvAHWQ",
+        "duration": 191,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "c6MlQvbbZw0",
+        "title": "이보람 (LEE BORAM) (씨야 (SeeYa)) - 한 밤의 꿈처럼 (Dream) MV",
+        "channel": "STONE MUSIC",
+        "channelId": "UC_pwIXKXNm5KGhdEVzmY60A",
+        "duration": 189,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-q4jtpVDemFE": [
+      {
+        "videoId": "BLALkFyMUOk",
+        "title": "[풀버전] 가로라이브 '이보람 - 사랑하니까'",
+        "channel": "보람씨야",
+        "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+        "duration": 220,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      },
+      {
+        "videoId": "q4jtpVDemFE",
+        "title": "[뮤비] 이보람 - 사랑하니까",
+        "channel": "보람씨야",
+        "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+        "duration": 223,
+        "kind": "official",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
+      }
+    ],
+    "solo-solo-DujKGd4aA60": [
+      {
+        "videoId": "DujKGd4aA60",
+        "title": "▶Live clip◀ 이렇게 좋은 날 - 이보람 (Lee Boram) / [보람씨야]",
+        "channel": "보람씨야",
+        "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+        "duration": 184,
+        "kind": "stage",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-02"
       }
     ]
   },
@@ -374,6 +2179,3378 @@
       "embedAllowed": true,
       "checkedOn": "2026-11-02",
       "played": true
+    },
+    {
+      "videoId": "JvCo9GItLaE",
+      "title": "씨야의 리즈시절은 지금! 🤣",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "V3VvyytAW1U",
+      "title": "📢 씨야 전국투어 콘서트 예매는 티켓링크와 Yes24에서! #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "frBg_RzSfd0",
+      "title": "📢 씨야 전국투어 콘서트 예매는 티켓링크와 Yes24에서! #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "GaY5Hi4O9xM",
+      "title": "📢 씨야 전국투어 콘서트 예매는 티켓링크와 Yes24에서! #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "Fc0AFR1Mguo",
+      "title": "🎉 씨야 20주년 전국투어 콘서트 합니다 🎉 티켓 예매는 Yes24에서 🩷",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "vsoslE-hZvA",
+      "title": "#테이 선배님의 #씨야 의 #stay 뺏기에 성공하셨습니다 🎵",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "hG8wvCu--4I",
+      "title": "#피프티피프티 #예원 #아테나 후배님들과 오늘도 귀여움 \"Stay\" 🩷 @WE_FIFTYFIFTY  #FIFTYFIFTY #YEWON #ATHENA#남규리 #STAY",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "MUx5pquM6gk",
+      "title": "보이넥스트도어@BOYNEXTDOOR 성호 후배님과 \"Stay\" 하고싶은 분? 🫢 #BOYNEXTDOOR #성호#씨야 #남규리 #STAY",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "oizr5swPErA",
+      "title": "뭔진 잘 모르겠지만 유행이래요 🫪 콘서트 홍보를 위해 열심히 챌린지 공부 중",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "n-QfT6M-5e4",
+      "title": "라이즈(@RIIZE) 은석 후배님과 음중에서 \"Stay\"✨️ #RIIZE #라이즈#EUNSEOK #은석#SEEYA #씨야 #남규리#STAY #스테이",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "7RFH_IzUWU0",
+      "title": "계속 함께 \"Stay\"하고 싶은 스테이씨 세은 후배님과🩷 @STAYC #STAYC #세은 #씨야 #남규리 #stay",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "RzKQByBoX6o",
+      "title": "스테이씨@STAYC 후배님들! 같이 놀아줘서 고마워요🩷 #STAYC #스테이씨 #시은 #아이사 #재이#씨야 #남규리",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "y-4OHMWz2-E",
+      "title": "오늘은 씨야 대구 콘서트 티켓 오픈날 🫣",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "8c0DhTuDeD8",
+      "title": "씨야 전국 투어 콘서트를 위해 E로 개조(?) 중! #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "cGVGqZpHIx4",
+      "title": "씨야 20주년 콘서트 The Fan에서 만나요 👋 Yes24에서 예매하기! 🫣#씨야 #남규리 #김연지 #이보람 #콘서트",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "4wZpr4oSygM",
+      "title": "2026년 9월 5일, 씨야 부산 갑니다! 지금 Yes24로 고고 🩷",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "Xr4Z_WbAeAE",
+      "title": "여러분들의 많은 사랑과 관심 하나도 빠짐없이 마음에 담을게요! 감사하고 사랑합니다 🩷 -씨야 올림 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "e7YLmydYRqc",
+      "title": "2026.05.14 6PM 씨야 정규앨범 [First, Again] D-1 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "lG5qlYP93Qk",
+      "title": "2026.05.14 6PM 씨야 정규앨범 [First, Again] D-2 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "Jt8whrpLmyg",
+      "title": "2026.05.14 6PM 씨야 정규앨범 [First, Again] D-3 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "EvdD3pMkxTM",
+      "title": "2026.05.14 6PM 씨야 정규앨범 [First, Again] D-4 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "kWlQgOXZ0jM",
+      "title": "2026.05.14 6PM 씨야 정규앨범 [First, Again] D-5 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "f2xHyZJHheM",
+      "title": "2026.05.14 6PM 씨야 정규앨범 [First, Again] D-6 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "9pI-ACDbMVw",
+      "title": "2026.05.14 6PM 씨야 정규앨범 [First, Again] D-7 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "aq5Kynr1sAA",
+      "title": "2026.05.14 6PM 씨야 정규앨범 [First, Again] D-8 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "IMgKVlFZv2o",
+      "title": "2026.05.14 6PM 씨야 정규앨범 [First, Again] D-9 #씨야 #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "-WsgsQkVzJI",
+      "title": "2026.05.14 6PM SEEYA Special Album [First, Again] 🎵 #씨야 #SEEYA #남규리 #김연지 #이보람",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "QOxBzlWPFlc",
+      "title": "#남규리 의 사랑의 인사 2026 with #김연지 ❤ 무해한 조합 🤣",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "ZR1v0Zau09A",
+      "title": "#남규리 님이 #김연지 님의 #구두 노래뺏기에 도전하셨습니다 👠 과연 그 결과는?!",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "Pzl9mpZ-f5Y",
+      "title": "챌린지 뚝딱이들의 '그럼에도 우린' LIVE Ver. 많관사부 💗 #씨야 #남규리 #김연지 #이보람 #허각 #그럼에도우린",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "mv7LonElRgQ",
+      "title": "씨야 남규리 - 그럼에도 우린 LIVE Ver. 🎤 많관사부 💗 @Gyulmung",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "W3JI-zs9aEg",
+      "title": "씨야 김연지 - 그럼에도 우린 LIVE Ver. 🎤 많관사부 💗 @Official-eu4ex",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "Nzub6TrI8DU",
+      "title": "씨야 이보람 - 그럼에도 우린 LIVE Ver. 🎤 많관사부 💗 @BoramSEEYA",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "rSneZtiwVsc",
+      "title": "씨야 SEEYA '그럼에도 우린' Teaser 규리 ver.",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "3PlZg9_iTh8",
+      "title": "씨야 SEEYA '그럼에도 우린' Teaser 연지 ver.",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "pCU5V_4VyRM",
+      "title": "씨야 SEEYA '그럼에도 우린' Teaser 보람 ver.",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "Xfy-v6uFwqQ",
+      "title": "10월에 씨야 전국투어콘서트에서 만나요!",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "b7NzrBXnWnI",
+      "title": "씨야 전국투어콘서트 10월엔 더 즐거울 걸요? 🤣",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "7RA6GClaMgU",
+      "title": "씨야 전국투어 콘서트 [The Fan]은 계속 됩니다!",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "M-eCxfaBBoA",
+      "title": "씨야 전국투어 콘서트 [The Fan] 이젠 부산으로 갑니다!",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "n_n5s6i_diE",
+      "title": "씨야 -  Stay 응원법 (Fanchant Guide)",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "_CGekO1IRGc",
+      "title": "씨야 SEEYA - I Believe Official MV",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "OfaMxNJlD_I",
+      "title": "씨야 SEEYA - 우리 Live Ver. Official MV",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "JeNLPdkh6FM",
+      "title": "씨야 SEEYA - 봄처럼 그댄 Official MV",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "I1zhkwIuZ0A",
+      "title": "씨야 SEEYA - Stay Official MV (SEEYA Ver.)",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "RMNcT5AqLGA",
+      "title": "씨야 SEEYA - Stay Official MV",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "GsoQyLvtqi4",
+      "title": "[씨야 SEEYA - Stay] Teaser 03",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "l9kscOVD9UA",
+      "title": "[씨야 SEEYA - Stay] Teaser 02",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "fUMtb3QZMU0",
+      "title": "[씨야 SEEYA - Stay] Teaser 01",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "qqvOlrAx4p4",
+      "title": "[비하인드 클립] Nice to See You Again!",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "dmsw-tEenZ0",
+      "title": "씨야 SEEYA - 그럼에도 우린 Official MV",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "7JUhMkPNIXU",
+      "title": "씨야 SEEYA '그럼에도 우린' MV Teaser",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "iEK5HhRNzoQ",
+      "title": "씨야 SEEYA '그럼에도 우린' Teaser",
+      "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
+      "channel": "SEEYA Official"
+    },
+    {
+      "videoId": "TfdmlPWnEkQ",
+      "title": "보고만 있어도 미소 지어지는 치즈 냥이네 😺",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "QleGsEuPEDA",
+      "title": "온 세상이 귀여워 🥰",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "5IGU9JCcVUs",
+      "title": "한강공원의 소리를 찾아서...!  #남규리 #asmr #한강공원",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "4CD3d5uGZjU",
+      "title": "편집자는 소리가 잘 안들려서 안경을 썼습니다...? 🤓 #남규리 #귤멍 #ASMR",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "rSforGsXP7A",
+      "title": "ASMR 재밌네요 🤣 #남규리 #귤멍 #ASMR",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "qtEsRUrIjZg",
+      "title": "우리 사랑 그런 거 해요 콘서트 Ver.🎤🎵 (feat. 씨야 전국투어콘서트)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "4SwCN_toeKk",
+      "title": "역시 락발라드하면 허각 @singer.huhgak ! 노래 뺏긴 것 같은데 어쩌죠? 🤣 #남규리 #우사그 #허각",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Iw4Iitj0PsI",
+      "title": "우사그 Part.1과 Part.2 가사로 드라마 한 편 탄생 🫪🩷",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "zgPmcyfCtds",
+      "title": "노래도 잘하고 너무 착하신 #황가람 후배님과 사랑의 인사를 전합니다 ☺️ #남규리 #사랑의인사2026",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "fZRczmoAggc",
+      "title": "원하고 또 원하고 있는데~~~~~~ 경환님 함께해주셔서 감사합니다☺️ #허경환 #남규리 #사랑의인사2026",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "eZLx6be0Drw",
+      "title": "내겐 그대가 하나뿐이라 다른 사랑 못할 것 같아요🎵 #이세영 #남규리 #사랑의인사2026 #많관사부 🩷",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "XwL35GMb_bM",
+      "title": "사랑의 인사 2026 with 김용준 🎵 #남규리 #김용준 #씨야 #SG워너비",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "2Lt0UKzVuy8",
+      "title": "산에서 뛰지 맙시다 🫠",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "-DwR0EqHGfA",
+      "title": "드라마 인간시장 대본 리딩 현장 👀 배우 남규리의 역할은?!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "gSe6LziFH1M",
+      "title": "🍊🐷 듣자마자 군침이 도는 삼겹살송 🎵",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Puc1uh7yuso",
+      "title": "새해 복 많이 받으시고 행복한 설 연휴 보내세요🍊⭐️🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "3gIhIZWe2ns",
+      "title": "🍊 vs 🤖 남규리의 새로운 친구(?)를 소개합니다",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "YNCslwKHw5c",
+      "title": "🍊 + 🍓 + 🍫 남규리의 딸기 두쫀쿠 만들기",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "WEjtFPR2xJY",
+      "title": "🍊한테 🍫 #두쫀쿠 사줄 사람~? 😁",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "fPQIwFYPHzU",
+      "title": "🍊 남규리의 #홍콩여행 은 계속 됩니다 #귤멍 #남규리 #브이로그",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "BC6vq6QzTDc",
+      "title": "🍊 in #홍콩 ! 혼자서 홍콩은 처음이라서 😂 #홍콩여행 과연 무사히 마쳤을까요?",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "OaX7K0TN-Hc",
+      "title": "🍊 남규리, 식당 오픈한다?! 남셰프의 요리실력을 #귤멍 에서 확인하세요 🙃",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "N8KUIHIftsw",
+      "title": "🍊 ☕️ 마시고 마시고 또 마시고! 배가 터질 뻔 했던 #강릉여행 ! 같이 #커피 한 잔 하실래요? 😂",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "4vJecNsnSZE",
+      "title": "남규리 X SLAY - 디셈버드림 (December Dream) Duet cover #남규리 #slay #decemberdream",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "-M7IibL8pA0",
+      "title": "2026년 귤도 귤별이도 원하는 일 다 이루어져라 얍🍊 ⭐️🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "PsxQWhATlDA",
+      "title": "우리 귤별이들은 2026년 어떤 새해 소원을 빌었나요? 👀",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "DMOnCJ3jm-s",
+      "title": "드디어 귤멍 구독자 애칭을 결정했습니다 🍊🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "B2pYJbvHvdo",
+      "title": "🍊 남규리 #DecemberDream 뮤비 촬영 현장",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "qbAJITv_Hr8",
+      "title": "🍊's 신곡 디셈버드림(December Dream)이 12월 23일(화) 오후 6시 공개됩니다! 많은 관심 부탁드려요 🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "DRLD4c0fdkk",
+      "title": "2025 남규리 목소리로 듣는 #씨야 #결혼할까요",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "2rLqObTrDMg",
+      "title": "다시 돌아온 🍊 휴게소 먹방!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "-bmaW-61dXw",
+      "title": "🍊 신곡이 12월 23일 발매됩니다 #남규리 #Decemberdream",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "DICaD9bKqHM",
+      "title": "🍊 in 결혼식! 저의 오랜 팬을 만나러 광주까지 달려 갔습니다",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "0q6OJpqYct8",
+      "title": "귤멍 내일 예고! 규리의 비밀 작전이 펼쳐집니다 🫣",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "TGp-VQlYnrQ",
+      "title": "보부상st 🍊의 가방 속을 공개합니다 😬",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "11kcsgcOzNY",
+      "title": "🍊 남규리 중국 출장 헤메코",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "rIu9Fxw62bI",
+      "title": "🍊 집에 몰래(?) 온 손님은? 내일 #귤멍 에서 확인하세요 😬",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "NQWde0xKsFk",
+      "title": "귤 & 멍 듀엣🎵 #그래도좋아해요",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "jcob_oe-g64",
+      "title": "촬영장에 커피차 선물받았🍊🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "i-VpN290pyw",
+      "title": "드라마 촬영장 속 🍊은 어떤 모습일까요? #남규리 #배우 #비하인드",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "XV_ub5fyEeY",
+      "title": "여러분은 #그래도좋아해요 뮤비 다 보셨죠? 😂",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "HFqo3cRWePs",
+      "title": "유튜브 #먹방 꿈나무 🍊 입니다 🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "3KIo5Dgl1z8",
+      "title": "🍊도 가끔 빡친답니다...!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "xycH73F9D0A",
+      "title": "배우 남규리의 연기 열정 뿜뿜 😬🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "vC6Ct8n-TC0",
+      "title": "웃기는 동생 자월이와 함께한 떡볶이 투어, 함께 보실래요? ☺️",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "svM4V9SErN0",
+      "title": "🍊 오아시스 내한 공연 다녀왔어요 #남규리 #오아시스",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "eiw5_ayqGng",
+      "title": "🍊🐬🍀 여러분에게도 행운이 함께하길 바라며!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Phr_VOLlb9k",
+      "title": "🍊's 드라이브! 아름다운 신창 해안도로 풍경을 담아왔어요 ☺️",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "G5iqrE-FWrU",
+      "title": "매주 일요일 #남규리 의 귤멍타임이 찾아옵니다 🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "JV7GVJlA0EE",
+      "title": "남규리의 #힐링 #브이로그 지금 시작합니다 🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Ajn6wJMUJx0",
+      "title": "🍊🥑🥪 아보카도 샌드위치 ASMR #남규리 #레시피",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "--IHejqqjNA",
+      "title": "🍊🍫🍰 #남규리 의 #티라미수케이크 #레시피 ASMR",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "_vSZqKP0Db8",
+      "title": "#남규리 작사 🎵 나만을 위해",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Ar15_1Zh78A",
+      "title": "혼자서도 잘 먹는 🍊 #먹방 #브이로그",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "23mKW4zJxnI",
+      "title": "🍊 우리집에 부장님이 놀러오셨어요 😁",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "g1kI0iiBy7U",
+      "title": "꿈같이 행복한 날들이 계속 되기를 🍊🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "M8K4FBtbNNU",
+      "title": "🍊 새로운 노래도 많이 기대해주세요^^",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "jYT9uH7fLH8",
+      "title": "🍊 #남규리 #그래도좋아해요 곧 발매됩니다^^",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "S_7mbxOfYHA",
+      "title": "🍊's 우당탕탕 #솔로캠핑 기록! 😬",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "XsG6uiLceeY",
+      "title": "오직 귤멍🍊에서만 볼 수 있는 #허용별 #고민중독 LIVE (feat.소시지 마이크)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "aH34h0M2WPg",
+      "title": "여러분, 그래도 좋아해요 🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "2cEiN8WY_Jk",
+      "title": "🍊 8월 17일 #남규리 #그래도좋아해요",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "xaK2DN7t0pc",
+      "title": "남규리 - 그래도 좋아해요 D-1 🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "oO5FmttBXV0",
+      "title": "자랑스런 내 친구의 노래^^ #허각 #혼자한잔",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "dEplPqErYCA",
+      "title": "귤멍과 너무 잘 어울렸던 #신용재 #불멍 (feat. MC귤🍊)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Oar6mot3rfE",
+      "title": "역주행각! #임한별 안녕, 오늘의 그대에게 (feat.MC귤🍊)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "HHN9ncjr2R8",
+      "title": "그래도 좋아해요 🍊🧡 with 남규리 밴드",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "SfBnm7lUTYM",
+      "title": "🍊's 쇼핑 in 동묘!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "2LUJGLqTgjo",
+      "title": "미친 허용별귤의 노래...🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "boM6aJ-h0Os",
+      "title": "허용별🍊이 전하는 사랑의 인사 👋",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "8N2L40Hw33A",
+      "title": "현장 LIVE를 듣고 더 좋아진 황가람님의 나는 반딧불입니다 🍊🎵",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "ZCqSUW8OsFI",
+      "title": "🍊 여수 먹방 🐟",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "BUncYP66LwI",
+      "title": "규리의 업사이클링 리폼 도전! 안입는 옷들을 재탄생시켜 볼까요? ☺️ #패션 #스타일링 #리폼",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "ooooRNIgqbs",
+      "title": "🍊's New Mate 이야누(Iyana)를 소개합니다 ☺️",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "JzyV4zpIffk",
+      "title": "🍊만 몰랐던 이야기...?! 본편에서 확인하세요 😂",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "J9G9RWjDE4o",
+      "title": "사랑을 나누러 갔다가 사랑을 가득 채우고 온 날의 기록 🍊  #HUG #만나샘",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "5k6GmZ5eUG4",
+      "title": "열정 뿜뿜! 호기심 많은 🍊의 질문 폭격 주의! 🚨",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "MGLqMkidH8w",
+      "title": "추석특집! 충격과 공포의 송편 만들기 대작전! ☺️🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "ut2OmROBB4A",
+      "title": "여러분~~ 행복한 한가위 되세요 🍊🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "8AmlrduO1NY",
+      "title": "핫도그, 문어라면, 흑돼지삼겹살...! 제주여행은 먹으려고 가는 거죠! 🫣",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "B4IZ9ZR0R2c",
+      "title": "규리의 셀프힐링여행☺️🍊🧡 #제주도 #제주여행",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Pcw00-0_4g8",
+      "title": "🍊's 제주루트 2일차!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "mab7cyUudfA",
+      "title": "🍊 제주 먹방은 계속 됩니다 ☺️ #고기국수 #아이스크림 #돌하르방빵 #핫도그 #문어라면",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "XYxAjjpYz5Y",
+      "title": "🍊 드디어 신곡이 나왔어요!! 우리 라이브 그런거해요!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "XeuhMsp44_s",
+      "title": "🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "2AGkX5SjOJY",
+      "title": "[Special Story with 씨야 마지막 콘서트] 기적같은 여러분! 우리 다시 만나요 👋",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "7ESzhJT7lDQ",
+      "title": "[🍊's Pick] Dr.Shin 류신 아르기닌 & 관절 6",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "vjH-71Nliko",
+      "title": "Ep.66 바쁘다 바빠! 남대표 남규리의 요즘 근황 🐷♥️ with 돼지",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "1cK268hTM8Y",
+      "title": "[Special Clip] 나의 별이 되어준 귤별이들에게 💕",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "_ij_QXFCzHY",
+      "title": "Ep65. 귤별이를 위한 팬송 공개🍊⭐🩷 넌 감동이라고 말하고 싶었어! (feat. 팬 선물 언박싱)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "U8xKCKSkhhk",
+      "title": "Ep.64 남규리, 울보된 날! 왜 자꾸 눈물이 날까요? 🥲음악방송 비하인드 (feat. KoN)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "PQuBCS74HxM",
+      "title": "Ep.63 남규리, 10만 유튜버 되다! 실버버튼 언박싱과 구독자 Q&A 함께 해요! 🍊♥️",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "wBJxsUK0nc8",
+      "title": "Ep.62 살다보니 이런 날이 오네요! 씨야 전국투어 콘서트 [The Fan] 비하인드 🍊🐿️🐶",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "2FBZ9Vib3Lw",
+      "title": "Ep.61 남규리, 단발로 변신! 우리 사랑 그런 거 해요 😘 뮤직비디오 현장 비하인드",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "uSVVyzQBRyw",
+      "title": "Ep.60 솔로라이프 이제 안녕! 이제 같이 살기로 했어요 😺♥️",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "j9bpzfdX5yc",
+      "title": "Ep.59 우린 조금 멀리 돌아와 같은 곳에 서 있나 봐 🙂 씨야가 콘서트에 진심인 이유 (feat. The Fan)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "COprzuxGen4",
+      "title": "Ep.58 남규리 해외 출장 브이로그! 저 어디 다녀왔게요? @.@)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "0zcLLAFvpmw",
+      "title": "Ep.57 게임광 남규리의 달콤살벌 힐링데이 a.k.a. 오락실 도장깨기?!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "WsyxwPl55wQ",
+      "title": "Ep.56 전시보러 울산 다녀왔어요! 규리의 우아한 하루 브이로그 (feat. 하이퍼리얼리즘)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "POheFIIwsqo",
+      "title": "Ep.55 이번엔 대구 다녀왔습니다 🌞 남규리의 두 번째 버스킹 🎶",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Qdi_gVUmhXI",
+      "title": "Ep.54 여러분! 씨야도 음방 돌아요! 씨야~호! 🤗 / 씨야 음악방송 비하인드 🎶",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "aZKPgZHFd0c",
+      "title": "Ep.53 씨야 엔터 남대표가 쏜다! 고생하는 멤버들을 위한 당근타임 🥕",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "dKVDn4pUiLc",
+      "title": "Ep.52 대한민국, 북중미 월드컵! 기적을 바라며 응원했지만.. 🥲",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "ytKnBh5tA30",
+      "title": "Ep. 51 부산하면 시장투어! 남규리의 국제시장 & 깡통시장 털기 (feat.씨야 콘서트 홍보)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "17gUWdAZWEA",
+      "title": "Ep. 50 남대표는 열심히 부산콘서트 홍보 중!🎙 남규리 & 순순희 부산 버스킹 현장 두 번째",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "c8NnJNnkvt0",
+      "title": "Ep. 49 버스킹하기 딱 좋은 날씨네! 😎 남규리 & 순순희 부산 버스킹 현장 첫 번째",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "b8d3lpKFLrE",
+      "title": "Ep.48 남대표의 부산 출장길 브이로그🚙 | 이 상무의 단콘 축하합니다🎉",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "qMxYWkAXPXU",
+      "title": "[스페셜 클립] 씨야 SEEYA 정규 4집 앨범 'First, Again' 랜선음감회 🎧 여러분의 최애곡은?! 🩷",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Ud_KJY1I1vQ",
+      "title": "Ep.47 오늘 밤은 씨야와 함께 STAY 🌟 🤗 | 씨야 정규 4집 타이틀곡 촬영현장 (with 아이키)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "FYrV4XZdbFE",
+      "title": "Ep.46 안녕하세요! 정규 4집으로 돌아온 씨야입니다! 🤗 | 씨야 자켓 촬영 현장 비하인드 📸",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "uyMM80OZCMY",
+      "title": "Ep.45 해피귤스데이 🎂🍊♥️ | 울고 웃었던 아주 특별한 하루 with 특별 게스트들",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "VE1bXWiCp-4",
+      "title": "[보너스 클립] 남규리 - 사랑의 인사 2026 홈비디오 ver.",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "esccpk5IGbY",
+      "title": "Ep.44 📚책 읽어주는 귤 Part.2 | 꽃을 보듯 너를 본다 나태주 (feat. 수면유도 ASMR)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "7FAHv1Xt-Fo",
+      "title": "🍊귤's 레시피｜근대쌈밥 with 후무스",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "LtGGq6cQxvo",
+      "title": "🍊남규리 힐링 브이로그｜Ep 01.멈추니까 보이는 것들｜숨이 차오를 때 한 번씩 잠시 멈춰보세요",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "4DLmyJxXkkc",
+      "title": "🍊남규리 힐링 브이로그｜Ep 02. 내 시간을 변화시키는 작은 시작 Part1｜망설이지 말고 그냥 시작하세요!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "rZROlcGGWb0",
+      "title": "🍊귤's 레시피｜아보카도 샌드위치",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "fjWWE-dE6To",
+      "title": "🍊남규리 힐링 브이로그｜Ep 02. 내 시간을 변화시키는 작은 시작 Part2 ｜ 잘 쉰다는 건 나와 친해지는 일이래요!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "hBRNG286too",
+      "title": "🍊귤's 레시피｜홈메이드 티라미수",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "9Fo5VYRNnm8",
+      "title": "🍊 남규리 힐링 브이로그｜ Ep 03. 나를 위로하는 시간｜혼자서도 밥 잘 먹어요! 나만을 위한 밥상",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "hP4Xwjr_J8Q",
+      "title": "🍊귤's 레시피｜꽃차",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Akw-DaBjhQ8",
+      "title": "🍊 귤's 레시피 | 할머니 갈비찜",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "mMGx3-CdDyE",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.04 소중한 사람과 함께하는 소중한 순간 | 조카랑 놀아주기 (feat. 짜장면 & 딸기라떼)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Q6wN8rNK9dA",
+      "title": "🍊귤's 레시피 | 나나이모짜장면",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "DUwwXeRiQVA",
+      "title": "🍊 귤's 레시피 | 나나이모 딸기라테",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "zjytr57_Its",
+      "title": "🍊 배우 남규리 브이로그 | Ep.05 이 꿈에 머물고 싶어 | 칸 영화제 핑크카펫 &서울가요대상 비하인드",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "UHwGZGI-nyE",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.06 혼자라서 더 즐거운 시간 | 석모도 글램핑 (feat.조양방직)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "3NxLrvrnzAo",
+      "title": "🍊 귤's 핫플레이스 | 조양방직",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "89QLwY_GngY",
+      "title": "🍊 남규리 뮤직토크쇼 | Ep.07 함께 해줘서 고마워🧡 | 한 여름밤의 친구들(feat.허용별)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "G_B9p2RZ8vQ",
+      "title": "🍊 귤's LIVE | 여름 안에서 (feat.허용별)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "D8XBjkcX7Z0",
+      "title": "[남규리 스페셜 다큐멘터리] 이제야 말하는 진심, 노래로 전하는 고백｜씨야에서 그래도 좋아해요까지",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "72dkRGcIYgk",
+      "title": "🍊 남규리 뮤직토크쇼 | Ep.08 여름밤 허용별 콘서트 | MC규리는 성장 중...!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "JSD0go1lLII",
+      "title": "🍊 귤's LIVE | 허각 - 혼자, 한잔",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "dIL1Qdg7_xs",
+      "title": "🍊 귤's LIVE | 임한별 - 안녕, 오늘의 그대에게",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "t6RZwGdhX98",
+      "title": "🍊 귤's LIVE | 신용재 - 불멍",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "QLCHun_k69Q",
+      "title": "[Special Clip] 그래도 좋아해요 MV 비하인드 토크",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "D2g3gaQdqVI",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.09 그래도 좋아한다고 고백하는 거 맞아 | 밴드 멤버들과 동묘나들이 (feat. 스타일리스트 귤)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "v94ggr3izUk",
+      "title": "🍊 남규리 뮤직토크쇼 | Ep.10 허용별귤 함께 LIVE | 노래할 때 가장 빛나는 사람들",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "FG3pspmrsrw",
+      "title": "🍊  귤's LIVE | 허용별 - 이게 뭐냔 말이야",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "q3--9xMqPew",
+      "title": "🍊  귤's LIVE | 허용별귤 - 미친 사랑의 노래",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "wPcNvicmkPo",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.11 여수 밤바다 그리고 반딧불 | 여수여행 & 페스티벌 MC 도전기 (특별출연 황가람님)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "1oLXlAEXcBU",
+      "title": "🍊 남규리 마음대로 브이로그 | Ep.12 만원짜리 패션스타일링?! | 귤실장님 업사이클링 리폼 도전 😀",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "qU2fayONEp0",
+      "title": "🍊 남규리 우당탕탕 브이로그 | Ep.13 나의 영국 친구를 소개합니다 | 영어 공부 열심히 하고 있어요 🫣",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "5JANf4FmbNQ",
+      "title": "🍊 남규리 배움 브이로그 | Ep.14 귤식당 오픈 준비 중 | 열심히 메뉴 개발 중! (feat.  어바웃 박준영 셰프)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "JwmAXqvpR-g",
+      "title": "🍊귤's 레시피｜삼겹살 토마토 파스타",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "bi4NCaz__OA",
+      "title": "🍊귤's 레시피｜마라 크림 리소토 with 삼겹살",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "VtouIEjeNnI",
+      "title": "🍊귤's 레시피｜삼겹살 떡볶이",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "KNOasVMSYrU",
+      "title": "🍊 남규리 우당탕탕 브이로그 | Ep.15 추석특집 🥟 달콤살벌 송편 만들기 대작전(?) | 행복한 추석 보내세요 🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "60dNYPs5RJ4",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.16 남규리의 제주루트 Day 1 | 제주하늘,제주바다, 그리고 먹방🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "pmhw1lyc0M4",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.17 남규리의 제주루트 Day 2 | 규리야! 뭐 햄시냐? 👀",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "jVCa6jPn3JA",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.18 남규리의 제주루트 Day3 | 제주여행, 폭싹 속았수다! 🍀",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "YCtzV3bR6hc",
+      "title": "🍊 남규리 일상 브이로그 | Ep.19 남규리의 평범하지만 조금은 특별한 일주일 | 일본어공부 🖊 노래•연기연습 🎤 친구랑 수다👭 김완선 선배님 전시회 🖼  오아시스 콘서트 🎸",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "NIeNbStvYa0",
+      "title": "🍊 남규리 일상 브이로그 | Ep.20 변강쇠, 신당동, 엽기의 공통점은?! 🫣 | 매콤 달콤 떡볶이 투어 (feat. 위자월)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "EZDH03RfPKQ",
+      "title": "🍊 남규리 일상 브이로그 | Ep.21 남규리 충격 변신! 맑은 눈의 연기광 규리 | 드라마 촬영현장 살짝 보여드릴게요 (feat. 카카오페이지 인간시장)",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "4TSdt2-DT80",
+      "title": "🍊 남규리 일상 브이로그 | Ep.22 눈물 펑펑 🥲 촬영장에서 생긴 일?! | 드라마 촬영현장 비하인드 두 번째 이야기",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "6JiTQ12-tFg",
+      "title": " 🍊 남규리 힐링 브이로그 | Ep.23 이상한 나라에서 온 두부 | 남규리의 1일 펫시터 체험기 🐶",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "AD77imZkwlM",
+      "title": "귤식당 당첨자 발표합니다 🍊🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "dkpgvfS_7RA",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.24 낯선 도시, 익숙한 설레임의 중국 출장기 | 오늘 저 예쁜가요?",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "6h86trNY6zc",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.25 남규리의 왓츠인마이백 👝 | 여배우 파우치 털기! 뭐가 계속 나와요...!",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "HnUQU1QkZRA",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.26 깜짝 몰래카메라 나의 오랜 팬에게 | 광주가서 축가 부르고 왔어요 🎤 #씨야 #결혼할까요",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "wmOhX7wUndk",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.27 디셈버드림(December Dream) 뮤비 촬영 비하인드 | 드디어 구독자 애칭 발표 😬🧡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "9eL33u9f3CE",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.28 2026년 새해 복 많이 받으세요! | 강원도 강릉으로 해돋이 기차여행 🌞",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "RaK_jf5PwRc",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.29 같이 커피 한 잔 할래요? | 강원도 강릉 이색 커피 투어 ☕️",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "frUkQQcK6iQ",
+      "title": "🍊 남규리 힐링 브이로그 | Ep.30 넌 감동이었어🧡 | 귤별이들과 함께하는 귤식당 오픈! 🎉",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "fIehhuyApqI",
+      "title": "🍊 남규리 여행 브이로그 | Ep.31 남규리의 우당탕탕 홍콩 여행 🛫 | 혼자 여행 쉽지 않네요...! 🤣",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "5CD4IThQet0",
+      "title": "🍊 남규리 여행 브이로그 | Ep.32 남규리의 화양연화는 지금! 🌸 | 프로 유튜버로 거듭나는 중입니다 🫡",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "1ca4er9zDD0",
+      "title": "🍊 남규리 우당탕탕  브이로그 | Ep.33 규리한테 두쫀쿠 사줄 사람? 저요! | 두바이st. 디저트 뿌시기! 👩‍🍳",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "DtW-I-B1Pa4",
+      "title": "Ep.34 ChatGPT와 함께하는 한남동 투어! 우리..친구가 될 수 있을까? 🤔 |  남규리 우당탕탕 브이로그 🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "4m7JqK5odjo",
+      "title": "Ep.35 한남동을 방황하는 남규리?! with chatGPT (BGM 삼겹살송 🐷🎵) |  남규리 우당탕탕 브이로그 🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "_tCxUsVAd_U",
+      "title": "Ep.36 규리야~ 뭐하니? 배우 남규리 드라마 [인간시장] 대본리딩 & 시사회 현장 전격 공개! 😍 |  남규리 힐링 브이로그 🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "dfZxJIH4cCI",
+      "title": "Ep.37 남규리의 야밤 셀프 세차 도전기! 미안하고 고마운 나의 친구 붕붕이 목욕 시켜줬어요 🚗✨ |  남규리 힐링 브이로그 🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "uS_C2lANbP0",
+      "title": "Ep.38 남규리의 꿀피부를 위한 소소한 꿀팁들 공개합니다! ☺️ |  남규리 뷰티 브이로그 🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "HQQl-3OPp0U",
+      "title": "Ep.39 관악산 남다람쥐 등장! 좋은 기운 받으러 같이 등산해요 ⛰️ |  남규리 힐링 브이로그 🍊",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "QwEAjrfN8WE",
+      "title": "Ep.40 그럼에도 우린 씨야입니다 💗 |  씨야 남규리, 김연지, 이보람 브이로그",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "evYuFOqyJys",
+      "title": "Ep.41 15년을 기다린 꿈같은 하루 ✨️ |  씨야 신곡 그럼에도 우린 뮤직비디오 촬영현장 브이로그 🎵",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "ctLA9ECbcoo",
+      "title": "Ep.42 야구왕(이 되고 싶은) 남규리 고척돔 가다! |  키움 히어로즈 시구하러 고척돔 간 브이로그 🎵",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "UdgmRKp8A-M",
+      "title": "남규리 - 사랑의 인사 2026 Teaser 3",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "sMV9vkvXV1c",
+      "title": "Ep.43 규리가 2026년에 전하는 사랑의 인사 |  그토록 부르고 싶었던 노래 뮤직비디오 촬영 현장 비하인드🎥",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "Y1136sZlQHs",
+      "title": "Ep.44 📚책 읽어주는 귤 Part.1 | 우리 같이 책 읽을까요? 졸면 안돼요 🤣 본격 꿀잠 유발 영상",
+      "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
+      "channel": "남규리의 귤멍"
+    },
+    {
+      "videoId": "dPUQRulJx-0",
+      "title": "🔔#징글벨락 🔔 #크리스마스송 #캐롤송 #김연지 #생목라이브 #메리크리스마스 🎅🎄#jinglebellsrock #merrychristmas",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "0UOyAoaehBI",
+      "title": "#생목라이브 #차안 #가슴으로운다 #김연지 #목풀기 #연습 #풀려라 #신곡 #리메이크 #kpop #발라드 #라이브",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "wf7pWfHTkOI",
+      "title": "모차르트 막공 퇴근길~",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "YpaUJoDM_MM",
+      "title": "연지시는 아니지만 인이어 언박싱!!!",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "-_I13nTF-L0",
+      "title": "4월22일 연지시",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "1Vg27yBtWUM",
+      "title": "3월15일 연지시",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "Dk4nQoGfh2g",
+      "title": "3월8일 연지시",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "afk_AwDkE1Y",
+      "title": "이걸 다시 부른다고요? 성대수술 후 ‘구두’ 로 돌아왔습니다!",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "OFAHe024sH0",
+      "title": "씨야 김연지, 성대 수술 6개월 만에 처음 노래해 봤습니다",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "yKevwM9DHk8",
+      "title": "씨야 노래를... 다시 부를 수 있을까요? (성대 수술 후 첫 도전)",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "a2Q-Psdhi4I",
+      "title": "데뷔 20년 만에 말 못하는 멤버를 처음 보는 씨야 보람이 반응",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "Y5niUKlWVQY",
+      "title": "20년 차 가수가 목소리를 낼 수 없게 된다면?",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "mlNsbQEm8Yw",
+      "title": "20년 차 가수 생활.. 중단해야할까요?",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "T9UJ3PcPxu0",
+      "title": "[VLOG] 2주만에 불후의명곡 우승하는 방법!!",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "g5ZJBeFQuGg",
+      "title": "[Real live] 🔔Jingle Bell Rock 🔔- 캐롤송 🎶🎄",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "p9M3n_ayuOw",
+      "title": "[VLOG] 연지의 부산여행 - 해변요가ㅣ브런치ㅣ요트투어ㅣ친구집에서 수다 타임까지ㅣ힐링여행",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "qSUpPP7vHpc",
+      "title": "[비하인드] ★ M/V 촬영 비하인드!!★\"비가오면 마음껏울어도되니까\" 뮤비 준비과정 &촬영현장 대.공.개!!",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "HvlsJ-sHt04",
+      "title": "[Live Clip] 비가오면 마음껏 울어도 되니까 - 김연지",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "5p_WUIHRNPk",
+      "title": "[VLOG] #전시회 나들이 VIOG -당신에게 '인연'은 무엇인가요??",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "gwRkvYc59_s",
+      "title": "[Live Clip] 사랑의인사 - 김연지",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "atp-TU4Xezs",
+      "title": "[Live Clip] 가슴으로운다 - 김연지",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "8k-YrZ5Gg2g",
+      "title": "[Live Clip] 빨간풍선 (빨간풍선ost) - 김연지",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "yhRSBlT-zq8",
+      "title": "[Live Clip] 시간이 지나면 잊혀진다 누가 그랬어 (뷰티풀모먼트ost) - 김연지",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "Vtbod5RDRog",
+      "title": "[Live Clip] 상상 (이상한변호사우영우ost) -김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "EPx3mcT-wZI",
+      "title": "[Live Clip] Whisky on the rock (우리들의 블루스 OST) - 김연지",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "fpwo3qTQxuY",
+      "title": "[VLOG] 연지의 퍼스널 컬러는?",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "DHLZEUD8BJk",
+      "title": "[Q&A] 미스트롯? 뮤지컬?  연지가 다 알려드립니다~!",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "zcgC6NDD0tQ",
+      "title": "[VLOG] ✨연지 노래방 OPEN✨ - 글램핑 브이로그 2탄",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "b17N4UnAMts",
+      "title": "[VLOG] 🏕연지의 가을 글램핑 VLOG - 매니저 1일 체험, 휴게소 간식 flex, 과자 asmr, 바닷가 라이브, 불멍까지🔥",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "qq7VPSJKwk8",
+      "title": "[Live Clip] Shallow (A Star Is Born OST) Vocal only ver. - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "i0iVyaJVyc4",
+      "title": "[Live Clip] Shallow(A Star Is Born OST) - 김연지  Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "hNpaQELx8uw",
+      "title": "[비하인드]★뮤지컬 모차르트!★ 연콘과 함께하는 대기실 비하인드(with.난넬)",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "uSWmUJF6Oeg",
+      "title": "[비하인드] 첫! 커스텀 인이어 제작기(feat. 언박싱 라이브)",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "0-VgHCHe91s",
+      "title": "[Live Clip] 김연지 단독 콘서트 직캠 ✨하이라이트✨ - 2편",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "K02MHUVQ-6k",
+      "title": "[Live Clip] 김연지 단독 콘서트 직캠  ✨하이라이트✨ - 1편",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "Y1eBMRxDtLo",
+      "title": "김연지 - 우리 다시 만나요 [MP3 Audio]",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "BezuQgMKfYA",
+      "title": "김연지 - 도망쳐 [MP3 Audio]",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "BKr4WHOP07g",
+      "title": "[Live Clip] 김연지 - 10년이나버티니",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "Ce8_oX93cMA",
+      "title": "[커버라이브] 우리 그만하자 - 김연지",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "yKi9ryETvBo",
+      "title": "[커버라이브] 전하지 못한 진심(방탄소년단_BTS) - 김연지",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "ylpCN-CXWJQ",
+      "title": "[Official Audio] 10년이나 버티니 - 김연지",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "_FJkNLkV82U",
+      "title": "[Live Clip] 내 맘(Mom) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "M_FPSyuVae4",
+      "title": "[Teaser] 바람이 불면(When The Wind Blows) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "cLaC4v0kRWk",
+      "title": "[스포라이브 티저] 바람이 불면(When The Wind Blows) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "lRY2u_9IQLE",
+      "title": "[커버라이브] Love Poem (IU 아이유) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "wRyD0sv1k8c",
+      "title": "[MV] 바람이 불면 (When The Wind Blows) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "yg5sLcy7tCw",
+      "title": "[비하인드] ★씨야★ 멤버들과 함께한 슈가맨3 비하인드 영상 대!공!개!",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "r1ZWK8KxAIM",
+      "title": "[스포라이브] 김연지 - 바람이 불면 full ver.",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "Sp0HDqM-xHU",
+      "title": "[Official Audio] 바람이 불면 - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "bgSdWO0-iMk",
+      "title": "[커버라이브] Best Part(H.E.R) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "h0o0CtFw1I0",
+      "title": "[비하인드] 경★유희열의 스케치북★축 돌아온 김연지의 유.스.케 나들이 + 콘푸로스트 언박싱",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "eJcxC1f-YTM",
+      "title": "[Live Clip] 사랑의인사 (씨야_SeeYa)  - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "NJRvSCPIlpQ",
+      "title": "[Live Clip] 비하인드! 사랑의인사 (씨야_SeeYa) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "YTjhddY18WI",
+      "title": "[Live Clip] 미친사랑의 노래 (SeeYa_씨야) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "PJai01nhBDw",
+      "title": "[Live Clip] 미친사랑의 노래(Vocal ver.) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "CZy8Z1rDlrM",
+      "title": "[비하인드] ★불후의 명곡★ 깨발랄한 연지의 P.R.O적 모먼트 대.공.개",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "8D50dA-bWr8",
+      "title": "[Live Clip] 2002(Anne Marie) - 김연지 Official",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "Us3kFQ39f2Y",
+      "title": "[비하인드] ★뮤지컬 모차르트!★ 연지콘스탄체의 연습 현장 대.공.개",
+      "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
+      "channel": "김연지 Official"
+    },
+    {
+      "videoId": "4YuwjlXda4s",
+      "title": "빛의 반대편에서 by 김연지 #이보람 #김연지 #KimYeonJi #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "dT48xQRbqrc",
+      "title": "빛의 반대편에서 with 경서 #이보람 #경서 #KyoungSeo #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "N5xtqno2aoI",
+      "title": "노래🎵#김연지 #노래",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "dSvveFDnLhE",
+      "title": "빛의 반대편에서 by 알리(ALi) #이보람 #알리 #ALi #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "aJvQYuTiilc",
+      "title": "빛의 반대편에서 by HYNN(박혜원) #이보람 #박혜원 #HYNN #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "DmB3Frs6x5Q",
+      "title": "빛의 반대편에서 by 이솔로몬 #이보람 #이솔로몬 #leesolomon #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "QyAHFzU7b6Y",
+      "title": "빛의 반대편에서 by 임한별 #이보람 #임한별 #Onestar #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "l6E1_bRCOGk",
+      "title": "빛의 반대편에서 by 쏘머즈 #이보람 #쏘머즈 #somerz #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "2adhvJ-9anM",
+      "title": "빛의 반대편에서 by 제아 #이보람 #제아 #JeA #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "B2uSDXuJhOs",
+      "title": "☀️ 요즘 날씨 요약 🌧️ #이보람 #씨야",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "vCiKmDWJnLc",
+      "title": "빛의 반대편에서 by 정동하 #이보람 #정동하 #JungDongHa #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "VEm8U00raMY",
+      "title": "빛의 반대편에서 by 김예찬 #이보람 #김예찬 #YECHAN #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ZTQ0dWqiux8",
+      "title": "파격 변신!! 드디어 돌아온 빨머람💇‍♀️ #씨야 #이보람",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "pYE7U7Ifb74",
+      "title": "빛의 반대편에서 by 하은 #이보람 #하은 #haeun #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "OWVEOmnAhVY",
+      "title": "🎬✨ 이보람 신곡 [빛의 반대편에서] 비하인드!  #이보람 #씨야 #빛의반대편에서",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "QtmrMGKP4tA",
+      "title": "빛의 반대편에서 by 허각  #이보람 #허각 #HuhGak #빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "pjuVbvMGP14",
+      "title": "빛의 반대편에서 by SF9 인성#이보람 #LEEBORAM #SF9 #에스에프나인 #인성 #INSEONG#빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "d0UxjB8qJNk",
+      "title": "빛의 반대편에서 by DK (디셈버) #이보람 #LEEBORAM #디케이 #DK#빛의반대편에서 #Beyond_the_light",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "dmlWyVxZVLg",
+      "title": "🐯⚾️ 갸보람, 시구하러 가기 전 특훈(?) 받는 중  #씨야 #이보람",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "EhnA1riBvFk",
+      "title": "#이제야사랑이보이네 #이선희",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "MNkq3Hy7f20",
+      "title": "#그대에게불러봐요 #정소연",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "9O--CDE2ErM",
+      "title": "Mute is Off by 이보람 #이보람 #leeboram #MuteisOff챌린지",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "WxLSAf8aiXU",
+      "title": "#RETURN #DK #디셈버",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "m5AhI339WPg",
+      "title": "#그집앞 #정동하",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "YXZpEBb2Nn8",
+      "title": "#당신을위하여 #더크로스",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Ufm2t1N5ekk",
+      "title": "#물고기자리 #이안",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "1GOS-MSvLoA",
+      "title": "#숙녀에게 #변진섭 #송필근",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "CCDiQH8Uruk",
+      "title": "#Golden #연습",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "8p64YYbPyCI",
+      "title": "#운명 #풀하우스ost #why",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "mqYgq98EuuE",
+      "title": "#너에게닿기를 #10cm",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "AC4zOPFH94E",
+      "title": "#이럴거면 #아이비",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "3kl-wqnW8fI",
+      "title": "매일 이렇게 비가 내려 - 이보람 25.06.23 오후 12시 💙",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "tt0uG1HrEAk",
+      "title": "'매일 이렇게 비가 내려' - 이보람 25.06.23 오후 12:00",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Wg088E533ws",
+      "title": "#아시나요 #조성모",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Lo9HeSxc9p8",
+      "title": "Never Ending Story - 아이유(IU) (원곡 : 부활)",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "pXZ5U8cjhiQ",
+      "title": "얼음인형 연습중 🎤 #얼음인형 #씨야",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "mEHxqn2t4fo",
+      "title": "반가운 목소리 🩷 한서인 - 시간을 지나 🎶",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "lXOUFuh24qw",
+      "title": "#고민중독 #qwer 연습중 🎤",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "rp6cw0eAW3Y",
+      "title": "겨울 플리에 추가해야징 🧡 #녹지않을게 #케이시 #kassy",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "KbN2F8o4O0g",
+      "title": "‘어떻게 이별까지 사랑하겠어, 널 사랑하는 거지’ 두 번째 미리보기  #어떻게이별까지사랑하겠어 #akmu #cover",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "-7undJTsmCs",
+      "title": "HAPPY - DAY6(데이식스)",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "rszZxGzq5yY",
+      "title": "보람씨야 이보람이 추천하는 '2024 Everything we do is music' 뮤지션 모집",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "PZxV32jEC8I",
+      "title": "#그그그 가사가 뭐였더라..🥲",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "aPL94FV7u3Q",
+      "title": "#형 살려줘... 행사 연습중🤤",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "xHrfSq_swgM",
+      "title": "[보람씨야] I AM - 아이브 무반주 라이브 #shorts",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "1kl1AnjHaNQ",
+      "title": "[보람씨야] 늦은후회 - 보보 #shorts",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "TYGALsPfGuY",
+      "title": "[보람씨야] 결국엔 너에게 닿아서 - WSG워너비(가야G) #shorts",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "8P8ryEGx0_U",
+      "title": "[보람씨야] Blue Moon - 씨야, 다비치, 블랙펄 #shorts",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "wbiDHPTtqVs",
+      "title": "냥이와 함께 😺 에스파 #DreamsComeTrue #YouTubeShorts #드컴챌",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "eFi6rasGFbM",
+      "title": "준비하시고 쏘세요 🔫 #댓댓 #thatthat #싸이",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ZnP8ug8cv2c",
+      "title": "의리의 가야G 가야G 평생 가야G 🥹❤️",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "cCbgFNrqhLk",
+      "title": "#NeoSeoulChallenge #NCT127Challenge #광고",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "vjdFfiMeLlE",
+      "title": "[보람씨야] 사건의 지평선 - 윤하 #shorts",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "k_f_oFhA71o",
+      "title": "람봉 골라보람 🐿️💛",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "sDtfWK-qFtM",
+      "title": "보람씨야 라이브 스트리밍 중",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "S27UvqQdUs0",
+      "title": "수다라방📢 당신을 위하여 🎶🎧",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "xE2qsy-Ao8c",
+      "title": "보람씨야 라이브 스트리밍 중",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Ns0t_K9VX38",
+      "title": "보람씨야 라이브 스트리밍 중",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "2F8lbmAIe9E",
+      "title": "보람씨야 라이브 스트리밍 중",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "5EFMPIOC0q4",
+      "title": "수다라방 😆",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "obqGtsQI-bY",
+      "title": "더 울어라~ 젊은 인생아~~",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "x1PvT31_vck",
+      "title": "오랜만에 깜짝 라방🫣",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "oD9ITwOT9_E",
+      "title": "오랜만이람",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "kvSnASgOItM",
+      "title": "구독자 애칭 발표 🥁",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "KONXltUM2DA",
+      "title": "퇴근길 🚗",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "OLg6GfKb7Yc",
+      "title": "가야G 가야G 라이브 가야G!!!!❤️",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "c6PoIF3PQ04",
+      "title": "30만 감사합니다 🙇🏻‍♀️",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "gxb926KhG0c",
+      "title": "데뷔 16주년이라니!! 근데 이제 코로나를 곁들인..",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ljV61LAl3Ss",
+      "title": "치킨 라이브 🐯",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "mhbZnyxouAM",
+      "title": "눕방 😴 얼마만에 라이브지? 🤭",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "CdtBBO_KV8o",
+      "title": "오랜만이에요❤️",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "f9j0Cj91emE",
+      "title": "너무 늦어 죄송해요ㅠ 복면가왕 Q&A 👉🏻👈🏻",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "WTZFDr_ZP9Y",
+      "title": "이보람 음원발매 기념 버스킹",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "yRYZeoEBWDU",
+      "title": "[보람씨야] 맛있는 것도 먹고! 우석대학교 씨야 행사🎤 | [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "dW8vBqXwWGE",
+      "title": "[보람씨야] 씨야 콘서트 '대구' VLOG 🎤 | 짧음 주의! 대구 콘서트 비하인드",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "yyj8xNAfjUs",
+      "title": "[보람씨야] 눈물광광🥹 테라리움 만들고 왔어요! 🌿 | 일상 브이로그 VLOG",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "05rfQa2tRYw",
+      "title": "[보람씨야] 제주도 호캉스에 천지연폭포 산책까지!🌴(2부) [제주도 여행 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "_AbFDbCDAHI",
+      "title": "[보람씨야] 제주도 호캉스! (1부)🌴✈️ 먹고! 놀고! 쉬고! [제주도 여행 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "EKj0dbTGa8M",
+      "title": "[보람씨야] 파격 변신!!💇‍♀️ 염색부터 NEW 앨범 라이브 촬영까지! [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "171P24SS1hM",
+      "title": "[보람씨야] (2부) 15년만에 씨야 완전체 음방투어 브이로그!! [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "wUBH9MJAO_w",
+      "title": "[보람씨야] (1부) 15년만에 씨야 완전체 음방투어 브이로그!! [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "gLoFe4TpFSA",
+      "title": "[보람씨야] 갸보람 8년만에 시구하고 왔어요! 🐯⚾️ [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "g2YE1HfEDv0",
+      "title": "RETURN - DK(디셈버) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "BizTUTWCwyc",
+      "title": "그 집 앞 - 정동하 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "eP4cvTgvRys",
+      "title": "당신을 위하여 - 더크로스 김혁건x이보람 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "3puQpiw9Ps4",
+      "title": "당신을 위하여 / 더 크로스(The Cross) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "sVRdHDy1i5c",
+      "title": "물고기자리 -이안 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "3hGcIbMd_Lc",
+      "title": "숙녀에게 (원곡 : 변진섭) - 송필근 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Cq7U0pxRzmg",
+      "title": "운명 (풀하우스 OST) - WHY / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "SiQa6tzVkUw",
+      "title": "너에게 닿기를 - 10CM / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "_Vq6xCg4Vro",
+      "title": "이럴거면 - 아이비 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "0O9DWnIC9ok",
+      "title": "#매일이렇게비가내려 #이보람 #무반주 #lyricvideo",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "7VGw30BGkyw",
+      "title": "매일 이렇게 비가 내려 -이보람 (IONY의 오선지 : Project #01)",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "p7GbnNbMuTE",
+      "title": "매일 이렇게 비가 내려 -이보람 (IONY의 오선지 : Project #01) (Liveclip Acoustic ver.)",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Pkw7SA5Gdx8",
+      "title": "모르시나요 - 다비치 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ZxHFkXjNZ2A",
+      "title": "#모르시나요 #다비치",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "LvUdZoTQGJ0",
+      "title": "아시나요 - 조성모 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "PVTeDuQW-Ng",
+      "title": "Never Ending Story - 아이유(IU) (원곡 : 부활) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "8qxl7p8sDPI",
+      "title": "다정히 내 이름을 부르면 - 경서예지, 전건호 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "SS2W1KpMIvc",
+      "title": "사랑..그게 뭔데 - 지아 (원곡 : 양파) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "M-97dYACT8U",
+      "title": "얼음인형 - 씨야(SeeYa) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "6GRYPTsYKJo",
+      "title": "★데뷔 13주년 기념★ 미친 사랑의 노래 - 씨야(SeeYa) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "MR4HGTG0CfQ",
+      "title": "구두 - 씨야(SeeYa) / 씨야의 '구두 시리즈' 첫 번째 이야기 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "rcG8XAi3OPA",
+      "title": "180도 - 벤(BEN) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "hpAheGUSvTk",
+      "title": "180도 촬영중 무슨일이??? / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ObSPf7YptQY",
+      "title": "[보이는노래방] 처음 그 자리에(풀하우스 OST) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "kRHM1rP4gmk",
+      "title": "넘쳐흘러 - 엠씨더맥스 (M.C The Max) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "SpOLbureBk4",
+      "title": "★신곡발매기념★ '그때의 나 그때의 너' 녹음실 라이브!! / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Gc1_sEj-IrU",
+      "title": "[보이는노래방] 여성시대 - 씨야, 다비치, 티아라 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "CySMA0bphao",
+      "title": "[보이는노래방] 사랑의 인사 - 씨야 (SeeYa) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "LuorknUivWc",
+      "title": "사계 (Four Seasons) - 태연 (TAEYEON) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "NVA1IdgcuBA",
+      "title": "잊어가지마 (Prod. 로코베리) - 윤미래 / 이보람 (Lee boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "i1aFaLwsqvM",
+      "title": "사계 (하루살이) - 엠씨더맥스 (M.C The Max) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "51O7VJheD9E",
+      "title": "★복면가왕 ver.★ 나를 슬프게 하는 사람들 - 김경호 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "DujKGd4aA60",
+      "title": "▶Live clip◀ 이렇게 좋은 날 - 이보람 (Lee Boram) / [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "LQKWuMBJuFQ",
+      "title": "[복면가왕] 103, 104, 105대 가왕 나이팅게일 이보람 인사드립니다♥",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "H_U4HugKNK8",
+      "title": "★신곡★ '흩어지는 중' - 이보람 (Lee Boram) ▷Live clip◁ / [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "T2Vy2QnAxLg",
+      "title": "[보이는노래방] ▶LIVE◀ 흩어지는 중 - 이보람 (Lee Boram) / [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "orvzqEviTfQ",
+      "title": "그때가 좋았어 - 케이시(Kassy) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ppe9vyChKLs",
+      "title": "[Full ver.] 흩어지는 중 (음원ver.) - 이보람 (Lee Boram) / [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "2iSzvt7hmpA",
+      "title": "너에 대한 모든 것 - 로코베리 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "pBCWMCG92ms",
+      "title": "지우지 못한 사진들처럼 (Vocal.정미) - 아이오니 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "p8T0WjpGr-M",
+      "title": "가을밤 떠난 너 - 케이시(Kassy) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "kiQF638_yBE",
+      "title": "시든 꽃에 물을 주듯 - HYNN(박혜원) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "LIkmnZmomGM",
+      "title": "'보람하다'  나만의 향수만들기 ♥",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "9dJFlFTMlSk",
+      "title": "헤어지자는 말은 사랑한다는 말이야 - 베이지(Beige) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Outw2iebvDs",
+      "title": "오늘도 빛나는 너에게 (To You My Light) (Feat. 이라온) - 마크툽(Maktub) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Qqg4KmkfkV0",
+      "title": "늦은 밤 너의 집 앞 골목길에서 - 노을 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "-QWumNvRJdM",
+      "title": "Into the Unknown 'Frozen 2 (겨울왕국 2 OST)' - Idina Menzel, Aurora / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "UEsPL6tqCp4",
+      "title": "하얀 크리스마스 - 이보람 (Lee Boram) / [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "sIkd5n4Nppw",
+      "title": "여인의 향기 - 씨야 (SeeYa) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "WeMuc0cFk0I",
+      "title": "미워요 - 씨야 (SeeYa) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "B77V1wfmhqw",
+      "title": "결혼할까요 - 씨야 (SeeYa) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "pmhgDj1J3UQ",
+      "title": "실버버튼 언박싱이 왔습니다! 감동의 개봉식✨[보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "fU0TvPPWxBk",
+      "title": "방구석 콘서트 같은 '발코니 콘서트'  봄 커버송 메들리 [아로하 / 흔들리는 꽃들속에서  네 샴푸향이 느껴진거야 / 봄 사랑 벚꽃말고 / 러브블러썸 / 봄이 좋냐 / 우연히 봄]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Ne5glv53Rn8",
+      "title": "실버버튼 기념 '보람씨야' Q&A '이것이 궁금해 보람' ?!",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "1fjX0ibzUlE",
+      "title": "데뷔 15년 만에 인이어 이어폰이 생겼습니다~~ '나만의 커스텀 인이어' [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "1aajfv0l_z8",
+      "title": "복면가왕 나이팅게일 1주년 기념~! 3라운드 미공개곡 공개! '양파 - A'ddio' [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "JwvWLf-iYDo",
+      "title": "뷰티데이/ 메이크업 받기, 머리 붙이기, 뿌염하기, 그리고 저녁메뉴는???!! [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "gaoZ40kWZo4",
+      "title": "Lonely Night - 부활 / 슬기로운 의사생활 OST 원곡 ver. [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "sjgD4-10HpM",
+      "title": "Memories- Maroon 5 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "N5YSV7xejoI",
+      "title": "복면가왕 역대 최다득표곡!! 나이팅게일 ver. '그 여자 - 백지영 '/ 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "h5j9eoeP-ss",
+      "title": "갸보람의 야구 사랑 ♥ 보물상자 공개!! (Feat. 남행열차)",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "cDN_odyS1Gk",
+      "title": "Part of your world - The Little Mermaid (인어공주 ost) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "yQdFh57QgX4",
+      "title": "잠시만 안녕 - M.C the MAX (복면가왕 나이팅게일 ver.) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "G6Afw4ni6tQ",
+      "title": "헬곡!!! My Way (돈꽃 OST) - 이수 (M.C the MAX) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "K_GGhmCnVRc",
+      "title": "하늘 끝에서 흘린 눈물 - 주니퍼 / 이보람 (Lee boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Gd-ES77t1eQ",
+      "title": "3 Days 클렌즈주스 디톡스 리얼 후기!! (다이어트 포기할 뻔 ?!) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "w4DHifb4nCE",
+      "title": "9년 만에 부르는!! 내겐 너무 멋진 그대 - 씨야 (SeeYa) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "hcaCPLuKsFg",
+      "title": "바람기억 - 나얼 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "CfBcdJovUj0",
+      "title": "컴알못의 컴퓨터 조립 도전!! 1탄! (부품설명편) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "NbXCoYTC1Lk",
+      "title": "현명한 선택 - 소찬휘 (복면가왕 나이팅게일 ver.) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "oQ7HR-3SNYk",
+      "title": "컴알못의 컴퓨터 조립 도전!! 2탄! (조립편) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "IS8Rdor6suU",
+      "title": "여름 노래 메들리 [여름 안에서/아틀란티스 소녀/SHAKE IT/그 여름을 틀어줘/여행/비행기] / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ZTE1Oq8Z_04",
+      "title": "오랜만에 연예인보람! 복면가왕 다녀왔어요~! [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "qagiSVG5MyE",
+      "title": "연 - 이영현 (빅마마) (복면가왕 나이팅게일 ver.) / 이보람(Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "BtNY_6QXXvk",
+      "title": "Dynamite - 방탄소년단 (BTS) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "LrkSXt9YhPg",
+      "title": "야생화 - 박효신 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "tBkXPEddWD4",
+      "title": "이 노래 아시는 분!!🙋🏼‍♀️ '입모양 - 이승기' / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "wD3H4dR706k",
+      "title": "흔들리는 꽃들 속에서 네 샴푸향이 느껴진거야 - 장범준 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "YjIJ28LSyUw",
+      "title": "'음색여신' 펀치의 신곡♥ 너의 목소리 - 펀치 (Punch) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "erD8CrzmE60",
+      "title": "오래된 노래 - 스탠딩 에그 (Standing Egg) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Tn6VPGgZqcU",
+      "title": "반려견 사랑이와 함께한 화보 촬영 현장 🐶💕 견생샷 찍고 왔어요📸",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "viCpi-KTXbU",
+      "title": "힘든 건 사랑이 아니다 - 임창정 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "t-btii-76E0",
+      "title": "행복하니 - 케이시(Kassy) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "S26yKHgCpLQ",
+      "title": "어디에도 - 엠씨더맥스 (M.C the MAX) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "XP0NRwP4LyU",
+      "title": "형 (兄) - 노라조 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "nLpIgkzAa1A",
+      "title": "눈의 꽃 - 박효신 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "6ZjBUuEIKds",
+      "title": "술 한잔 해요 - 지아 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "A7x52bJ6nRQ",
+      "title": "상사화 - 안예은 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "GAjn-2-qUDg",
+      "title": "희재 - 성시경 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "wKsaKuZebsM",
+      "title": "Celebrity - 아이유(IU) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "8EzsOCUpAIw",
+      "title": "Don't cry - 더 크로스 (The Cross) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "i2pxhIgWj8s",
+      "title": "VLOG ｜ 생애 첫 셀프세차! 제 차가 생겼어요 ♥",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "CDTK_FEPsKs",
+      "title": "밤하늘의 별을 (2020) - 경서 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "q6YQAvSIo84",
+      "title": "VLOG ｜ 💐데뷔 15주년, 보람씨야 2주년 기념! ❤",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "PvqSbY1VfNU",
+      "title": "롤린 (Rollin') - 브레이브걸스(Brave Girls) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "pD7suketqvE",
+      "title": "내 손을 잡아 - 아이유(IU) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ib6T90JptX8",
+      "title": "VLOG ｜ 카레 만들어 먹기🍛, 호텔식 수건 접기, 소창행주 삶기",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "NH0uUxO0MCw",
+      "title": "오르막길 - 정인, 윤종신 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "d4F7IvAx1qA",
+      "title": "행복한 나를 - 에코 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "erONHczFnGA",
+      "title": "삭제 - 이승기 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "CHwqt8Ngu0c",
+      "title": "묘해, 너와 - 어쿠스틱 콜라보 (연애의 발견 ost) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "JqlXCrcSJ80",
+      "title": "만약에 - 태연 (쾌도 홍길동 ost) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "gcd9t0ZFVcI",
+      "title": "끝사랑 - 김범수  / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "TtXJpgG8bzY",
+      "title": "좋니 - 윤종신 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "K9bkqIrGJuY",
+      "title": "해바라기도 가끔 목이 아프죠 - 엠씨더맥스 (M.C the MAX) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "6i4gBYneDic",
+      "title": "술 노래 메들리 (술이야/소주 한 잔/밤이 되니까/술 한 잔 해요/취중진담) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "EW5WaO64Wa4",
+      "title": "바라만 본다 - MSG워너비(M.O.M) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "MFGbHLC4cjw",
+      "title": "VLOG ｜ 다이어트 시즌 / 프로필촬영📸 / 보상 폭식데이",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "_GuO0h0bVCE",
+      "title": "소주 한 잔 - 임창정 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "TSd7SW59ZW8",
+      "title": "[티저] 드디어 신곡 나와요! ♥ '사랑하니까 - 이보람'",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "14p6foEx1Y4",
+      "title": "[티저] 가로라이브 '이보람 - 사랑하니까'",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "MxQA54orKlE",
+      "title": "사랑앓이 - FT아일랜드 (FTISLAND) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "cEC1MYO8SMs",
+      "title": "[녹음실 티저] 이보람 - 사랑하니까",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "q4jtpVDemFE",
+      "title": "[뮤비] 이보람 - 사랑하니까",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "BLALkFyMUOk",
+      "title": "[풀버전] 가로라이브 '이보람 - 사랑하니까'",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "0ANfHmkSyoQ",
+      "title": "[세로라이브] '이보람 - 사랑하니까'",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "hNBitlLkebo",
+      "title": "[녹음실 풀버전] 이보람 - 사랑하니까",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "xkpwmaCJ9uI",
+      "title": "못해 - 포맨(4MEN) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "5C8O5IEBfXw",
+      "title": "비가 오는 날엔 - 비스트(Beast) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "bshC6bXVnos",
+      "title": "You - 김상민 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "q-USEdXO8xI",
+      "title": "시간을 거슬러 (해를 품은 달 OST) - 린(LYn) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "akQz5sPv6Yc",
+      "title": "칵테일 사랑 - 마로니에 (권인하/신윤미), (로맨스가 필요해 2012 - 옥상달빛 ver.) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "cx1rw5h7Mi8",
+      "title": "기다리다 - 윤하 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "R7trKzGtTtU",
+      "title": "기억을 걷는 시간 - 넬(NELL) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Zj7GVXcF7x8",
+      "title": "VLOG ｜(스포주의) 손목 걸고 오징어게임??! 달고나 만들기 / 구슬 홀짝 게임",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "yhDlGFZyd9k",
+      "title": "사랑 안 해 - 백지영 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "cb96dqwR6tM",
+      "title": "OHAYO MY NIGHT - 디핵(D-Hack), PATEKO(파테코) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "GsJmvkeW44s",
+      "title": "널 사랑하지 않아 - 어반자카파 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ZNm0mB9bKmE",
+      "title": "사랑은 늘 도망가 - 임영웅 (신사와 아가씨 OST) (원곡 : 이문세) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "QdSvK75Tx0w",
+      "title": "두 사람 - 성시경 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "p_hYS33CUs0",
+      "title": "질풍가도 - 유정석 (쾌걸 근육맨 2세 OST) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "I2SaTVt-OwQ",
+      "title": "응급실 (쾌걸춘향 OST) - izi / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "6l72TmYsxig",
+      "title": "12월의 기적 (Miracles in December) - EXO / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "ipmP7tnhY-Y",
+      "title": "Heaven - 김현성 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "uAHkNFE9lmI",
+      "title": "12월32일 - 별 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "yp3-w2fRjEk",
+      "title": "말하는 대로 - 처진 달팽이 (유재석 & 이적) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "-_j3UCirOio",
+      "title": "첫눈처럼 너에게 가겠다 - 에일리(Ailee) (도깨비 ost) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "-WFvjBB8xqo",
+      "title": "가질 수 없는 너 - 뱅크 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "aIlo_-8iWB4",
+      "title": "사랑에 빠지고 싶다 - 김조한 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "miB25j6VFA0",
+      "title": "tvN즐거움송 커버 콘테스트 함께해요 🎤🎵",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Bup6nyspaxk",
+      "title": "너의 모든 순간 - 성시경 (별에서 온 그대 OST) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "NXRd7NRTg8c",
+      "title": "호랑수월가 (나와 호랑이님 ost) - 상록수(feat.나래) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "lV_badY3Bi8",
+      "title": "덩그러니 - 이수영 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "agdpOKt8EBA",
+      "title": "That That (prod. ＆ feat. SUGA of BTS) - 싸이 (PSY) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "tg2IuFVhUps",
+      "title": "어마어마해 - WSG워너비 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "g7nYVmFX23Q",
+      "title": "한 밤의 꿈처럼 - 이보람 / 방구석 라이브🫶🏻❤️",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "P8o3Ss-xPAQ",
+      "title": "애교 폭발 길냥이 고양이 냥줍! 이게 바로 간택이란 건가...? [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "5auNDhYBVI4",
+      "title": "그때 그 순간 그대로 (그그그) - WSG워너비(가야G) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "HslC4f6pQWA",
+      "title": "냥줍 길냥이! 너의 이름은? 집사 첫 번째 과제! 캣타워 조립하기 [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "2ShLQvkT9QI",
+      "title": "우리 구독자 애칭 정해요😍❤️",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "EdjxuH4Z5aY",
+      "title": "돈가스 맛집 '정돈'｜백화점에서 블러셔, 안경 구매｜친구들과 수다, 커피 [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "IgQe-vV6Ivo",
+      "title": "가슴으로 낳아 지갑으로 모신다 🙇🏻‍♀️ 펫박람회, 두끼 떡볶이, 분식데이! [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Hn5KtY2Dlns",
+      "title": "따끈한 청국장 만들어 먹기 ! 스투키캣vs로마샌드 모래 테스트, 아우어 베이커리, 식세기 강추!!! [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "SwlPn9ZqMVw",
+      "title": "십 년 만에 새 안경, 전설의 핫도그, 애슐리 퀸즈 다녀왔어요! 지비츠 추천! 크록스 꾸미기 [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "KPSR-eFXSgE",
+      "title": "먹고 또 먹고 먹기만 하는 크리스마스 연휴 🎄｜백화점 푸드코트｜백미당｜굴찜｜창문해먹설치｜팥칼국수｜조개롱 [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "P-wM7YnPb24",
+      "title": "먹고 또 먹고! 오늘도 먹는 브이로그🍜 순두부열라면, 에그샌드위치, 크로플, 구구크러스터, 수제간식 만들기 [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "EWxFYLtGRXc",
+      "title": "잡채만들기, 온센텐동, 모래 전체갈이 [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Dx8G_cQ0Ym8",
+      "title": "집사 맴찢 ㅠ 동물병원 방문｜마켓컬리 추천템!! 🍤🍝 [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "DEEQmmrQLgs",
+      "title": "[보람씨야X수페] 촬영현장, 압구정 하루, 카레돈가스, 카페 수다, 이보람의 숲킨케어?! 나이트루틴",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "uZ15Br_Zrvo",
+      "title": "생일주간 브이로그🥳🎂 선물 언박싱 🎁｜애플워치SE 44mm｜커스텀에어팟｜브레오 눈마사지기｜브리츠 블루투스 스피커｜후원증서,고기,화장품,족욕기｜밀리 자동급식기😻",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "IHGTxWrJRag",
+      "title": "'그그그' 커버 녹음하던 날🎙｜거제 행사 가던 날 🎤 VLOG",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "MrpO55KORTE",
+      "title": "오랜만에 보컬쌤으로 보낸 하루 ㅣ 셀프메이크업 ㅣ 노래 잘 부르는 꿀팁전수 ㅣ카페투어 ㅣ마무리는 고기🥩🍖[일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "u8qQCBsd-QA",
+      "title": "사건의 지평선 - 윤하 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "NXvCPVKKwEI",
+      "title": "Blue Moon - 씨야, 다비치, 블랙펄 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "o7iYsuxWLz0",
+      "title": "[VLOG] 막방 가야G ..",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "tE0DpENLHn4",
+      "title": "결국엔 너에게 닿아서 - WSG워너비(가야G) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Qn69Fv_2z24",
+      "title": "늦은후회 - 보보 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "bm83_9NjE9Q",
+      "title": "[Medley] 가족을 위한 노래 (가족사진/걱정말아요 그대/꽃길/엄마/아버지/하늘바라기) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "GvjvBSwl7Pk",
+      "title": "5월의 일상 모음.zip  (일하고🎤먹고🥐놀고🐶힐링하고🌿) [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Hw4zJ634t4s",
+      "title": "놀고 먹는 갓벽한 편의점 세일 제품 먹방편 🍽️ [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "dJ3oh792Gkk",
+      "title": "[무반주메들리] 밤/혼자가아닌나/사랑이야/찰나가영원이될때/열애중/I AM / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "LSecsdCJH6k",
+      "title": "[Medley] 비 노래 메들리 (빗속에서/비/장마/rain drop/rain/비도오고그래서) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "uLMExuJ2DkQ",
+      "title": "헤어지자 말해요 - 박재정 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Zc1xppiQJk0",
+      "title": "[무반주메들리] 어른/기댈곳/사랑의바보/그대를알고/해바라기/중독된사랑 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "H9fSg8R9YWY",
+      "title": "심(心) - DK(디셈버) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "3xqcLnd2ZvM",
+      "title": "돌아와줘요 - 주주시크릿 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "qH-VA8u8BVY",
+      "title": "나트랑 브이로그 🥭🌿🪂🔥 주로 먹고 노는 여행🍽️ [일상 브이로그/VLOG]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "3U55-CJIfOE",
+      "title": "모래알갱이 - 임영웅 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "SlzpUt53NoU",
+      "title": "사랑시 고백구 행복동 - 최수호 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Fr_7Lo_u8mI",
+      "title": "속는 셈 치고 다시 만나자 - 케이시(Kassy) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "if9HWsWUsDY",
+      "title": "천상연 - 이창섭 (웹툰 '선녀외전' X 이창섭 (LEE CHANGSUB)) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "Hlj0ItkkP4A",
+      "title": "Love wins all - 아이유 (IU) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "yC9B9CHDtyA",
+      "title": "태연 - 꿈 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "bfPnBgdlkbE",
+      "title": "소나기 - 이클립스(ECLIPSE) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "-z0OzrD2lTw",
+      "title": "미인 - 이기찬 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "3rkxlYWemP4",
+      "title": "영원 (남은 인생 10년 X DK(디셈버)) - 원곡 : 최진영 (SKY) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "_ghnqdvLHVc",
+      "title": "HAPPY - DAY6(데이식스) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "807qH9sWxa0",
+      "title": "‘어떻게 이별까지 사랑하겠어, 널 사랑하는 거지’ 첫 번째 미리보기  #어떻게이별까지사랑하겠어 #akmu #cover",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "DEdF_b1bpsw",
+      "title": "어떻게 이별까지 사랑하겠어, 널 사랑하는 거지 - AKMU(악뮤) / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
+    },
+    {
+      "videoId": "9l4XXP5Tlhk",
+      "title": "나는 반딧불 - 황가람 / 이보람 (Lee Boram) [보람씨야]",
+      "channelId": "UCz11CPccQ2AnizJrdp58Bog",
+      "channel": "보람씨야"
     }
   ]
 }
