@@ -1,10 +1,11 @@
 'use strict';
+const Show=require('./my-concert-show');
 const SECTIONS=[{id:'opening',name:'OPENING',ko:'오프닝',limit:1},{id:'main',name:'MAIN STAGE',ko:'본 무대',limit:9},{id:'encore',name:'ENCORE',ko:'앙코르',limit:2}];
 const THEMES=['rose','night'],KEY='seeya-my-concert-test-v1';
 const segmenter=typeof Intl.Segmenter==='function'?new Intl.Segmenter('ko',{granularity:'grapheme'}):null;
 const chars=s=>segmenter?[...segmenter.segment(String(s))].map(x=>x.segment):Array.from(String(s));
 const clean=s=>typeof s==='string'?s.normalize('NFC').replace(/[\u0000-\u001f\u007f-\u009f\u202a-\u202e\u2066-\u2069]/g,''):'';
-const fresh=()=>({schema:1,title:'우리, 다시 같은 무대에서',planner:'',sections:{opening:[],main:[],encore:[]},theme:'rose',updatedAt:''});
+const fresh=()=>({schema:2,hidden:{},vcrs:[],title:'우리, 다시 같은 무대에서',planner:'',sections:{opening:[],main:[],encore:[]},theme:'rose',updatedAt:''});
 const count=d=>SECTIONS.reduce((n,s)=>n+d.sections[s.id].length,0);
 const find=(d,id)=>SECTIONS.find(s=>d.sections[s.id].includes(id));
 function problems(d){
@@ -16,15 +17,22 @@ function problems(d){
 function validate(raw,songs,strict=false){
  if(!raw||typeof raw!=='object'||Array.isArray(raw)||!raw.sections||typeof raw.sections!=='object')throw Error('저장된 구성의 형식을 읽을 수 없어요.');
  const ids=new Set(songs.filter(s=>s.enabled).map(s=>s.id)),d=fresh(),issues=[],seen=new Set();
- if(raw.schema!==1){if(strict)throw Error('지원하지 않는 공유 버전이에요.');issues.push('이전 버전에서 복원 가능한 내용을 불러왔어요.');}
+ if(raw.schema!==1 && raw.schema!==2){if(strict)throw Error('지원하지 않는 공유 버전이에요.');issues.push('이전 버전에서 복원 가능한 내용을 불러왔어요.');}
  for(const [key,max] of [['title',30],['planner',20]]){
   if(typeof raw[key]!=='string'){if(strict)throw Error('공연 이름 정보를 확인해 주세요.');issues.push('일부 이름 정보를 복원하지 못했어요.');continue;}
   const text=clean(raw[key]).trim();if(strict&&(chars(text).length>max||(key==='title'&&!text)))throw Error('공연 제목·기획자 이름 길이를 확인해 주세요.');
   d[key]=strict?text:chars(text).slice(0,max).join('');if(chars(text).length>max)issues.push('너무 긴 이름은 허용 길이까지 복원했어요.');
  }
+ if(raw.schema===2){
+  if(raw.vcrs!==undefined&&!Array.isArray(raw.vcrs))throw Error('VCR 구성을 읽을 수 없어요.');
+  d.vcrs=(raw.vcrs||[]).map(Show.vcrConfig);
+  for(const slot of SECTIONS.flatMap(s=>Array.isArray(raw.sections[s.id])?raw.sections[s.id]:[])){
+   if(Show.isHidden(slot)){d.hidden[slot]=Show.config(raw.hidden?.[slot],songs);ids.add(slot);}
+  }
+ }
  for(const s of SECTIONS){
   if(!Array.isArray(raw.sections[s.id])){if(strict)throw Error('공연 구간이 올바르지 않아요.');issues.push(s.ko+' 구성을 복원하지 못했어요.');continue;}
-  for(const id of raw.sections[s.id].slice(0,300)){
+  for(const id of raw.sections[s.id]){
    if(typeof id!=='string'||!ids.has(id)||seen.has(id)||d.sections[s.id].length>=s.limit){if(strict)throw Error('알 수 없는 곡·중복 곡 또는 구간별 곡 수를 확인해 주세요.');issues.push('없어졌거나 중복된 곡을 빈자리로 두었어요.');continue;}
    d.sections[s.id].push(id);seen.add(id);
   }
@@ -38,7 +46,7 @@ function change(d,action,songs){
  const next=JSON.parse(JSON.stringify(d)),section=SECTIONS.find(s=>s.id===action.section);let message='';
  if(!section)throw Error('구간을 선택해 주세요.');
  if(action.type==='add'){
-  if(!songs.some(s=>s.id===action.id&&s.enabled))throw Error('선택할 수 없는 곡이에요.');
+  if(!songs.some(s=>s.id===action.id&&s.enabled)&&!(Show.isHidden(action.id)&&d.hidden?.[action.id]))throw Error('선택할 수 없는 곡이에요.');
   const selected=find(d,action.id);if(selected)throw Error(selected.name+'에 이미 담긴 곡이에요.');
   if(next.sections[section.id].length>=section.limit)throw Error(section.ko+'이 가득 찼어요. 다른 구간을 골라주세요.');
   next.sections[section.id].push(action.id);message=section.ko+'에 담았어요.';
@@ -57,8 +65,8 @@ function change(d,action,songs){
  }
  return {draft:next,message};
 }
-function encode(d){const payload={schema:1,title:clean(d.title).trim(),planner:clean(d.planner).trim(),sections:d.sections,theme:d.theme};const bytes=new TextEncoder().encode(JSON.stringify(payload));return btoa(Array.from(bytes,b=>String.fromCharCode(b)).join('')).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
-function decode(value,songs){if(typeof value!=='string'||value.length>8192||!/^[\w-]+$/.test(value))throw Error('공유 링크 형식을 확인해 주세요.');let raw;try{raw=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from(atob(value.replace(/-/g,'+').replace(/_/g,'/')),c=>c.charCodeAt(0))));}catch{throw Error('공유 링크를 읽지 못했어요.');}return validate(raw,songs,true).draft;}
+function encode(d){const payload={schema:2,hidden:Object.fromEntries(Object.entries(d.hidden||{}).filter(([id])=>find(d,id))),vcrs:d.vcrs||[],title:clean(d.title).trim(),planner:clean(d.planner).trim(),sections:d.sections,theme:d.theme};const bytes=new TextEncoder().encode(JSON.stringify(payload));return btoa(Array.from(bytes,b=>String.fromCharCode(b)).join('')).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');}
+function decode(value,songs){if(typeof value!=='string'||value.length>1000000||!/^[\w-]+$/.test(value))throw Error('공유 링크 형식을 확인해 주세요.');let raw;try{raw=JSON.parse(new TextDecoder('utf-8',{fatal:true}).decode(Uint8Array.from(atob(value.replace(/-/g,'+').replace(/_/g,'/')),c=>c.charCodeAt(0))));}catch{throw Error('공유 링크를 읽지 못했어요.');}return validate(raw,songs,true).draft;}
 function filter(songs,query,artist,album){const q=clean(query).trim().toLocaleLowerCase('ko');return songs.filter(s=>s.enabled&&(artist==='all'||(artist==='group'?s.artistType==='group':s.memberId===artist))&&(album==='all'||s.albumId===album)&&s.title.toLocaleLowerCase('ko').includes(q));}
-function restore(raw,songs){if(!raw)return {draft:fresh(),issues:[]};if(raw.length>40000)throw Error('저장된 구성의 크기를 확인해 주세요.');let data;try{data=JSON.parse(raw);}catch{throw Error('이전 편집본을 읽지 못했어요. 원본은 지우지 않았습니다.');}return validate(data,songs);}
+function restore(raw,songs){if(!raw)return {draft:fresh(),issues:[]};if(raw.length>1000000)throw Error('저장된 구성의 크기를 확인해 주세요.');let data;try{data=JSON.parse(raw);}catch{throw Error('이전 편집본을 읽지 못했어요. 원본은 지우지 않았습니다.');}return validate(data,songs);}
 module.exports={SECTIONS,THEMES,KEY,chars,clean,fresh,count,find,problems,validate,change,encode,decode,filter,restore};

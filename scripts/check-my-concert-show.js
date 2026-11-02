@@ -1,0 +1,31 @@
+'use strict';
+const assert = require('node:assert/strict');
+const S = require('../src/shared/my-concert-show');
+const M = require('../src/shared/my-concert');
+const {songs} = require('../game/my-concert/catalog.json');
+const fixed = S.checkedSongs(songs).slice(0, 10);
+const d = M.fresh();
+d.sections = {opening:['hidden-a'], main:['hidden-b', ...fixed.slice(0,8).map(s=>s.id)], encore:fixed.slice(8).map(s=>s.id)};
+const pool = S.checkedSongs(songs).slice(10);
+d.hidden = {'hidden-a':{mode:'all'}, 'hidden-b':{mode:'custom',ids:[pool[0].id]}};
+const v = S.media.vcr[0];
+d.vcrs = [{after:1,mode:'fixed',value:v.videoId},{after:1,mode:'fixed',value:v.videoId},{after:2,mode:'random',value:v.channelId}];
+for(let i=0;i<30;i++){
+ const q=S.session(d,songs);
+ assert.equal(q.length,15);
+ assert.equal(q[3].title,pool[0].title);
+ assert.equal(q[4].videos[0].channelId,v.channelId);
+ assert.notEqual(q[4].videos[0].videoId,v.videoId);
+ assert.equal(new Set(q.filter(e=>e.kind!=='vcr').map(e=>e.videos[0].videoId)).size,12);
+ assert(q.filter(e=>e.kind==='hidden').every(e=>e.label===S.hiddenLabel));
+}
+const restored=M.decode(M.encode(d),songs);
+assert.deepEqual(restored.hidden,d.hidden);
+assert.deepEqual(restored.vcrs,d.vcrs);
+assert(S.candidates({mode:'album',album:pool[0].albumId},songs).every(id=>songs.find(s=>s.id===id).albumId===pool[0].albumId));
+assert.throws(()=>S.vcrConfig({...d.vcrs[0],after:12}));
+assert.throws(()=>S.config({mode:'custom',ids:[v.videoId,v.videoId]},songs));
+assert.throws(()=>S.matching([['a'],['a']],new Set()));
+assert.deepEqual(S.matching([['a','b'],['a']],new Set(),()=>.99),['b','a']);
+assert(S.media.vcr.every(v=>Object.hasOwn(S.media.channels,v.channelId) && v.played));
+console.log('PASS concert draw constraints, fixed repeats, VCR positions, share round trip, checked channels and generic labels.');
