@@ -2358,25 +2358,29 @@
       "videoId": "Pzl9mpZ-f5Y",
       "title": "챌린지 뚝딱이들의 '그럼에도 우린' LIVE Ver. 많관사부 💗 #씨야 #남규리 #김연지 #이보람 #허각 #그럼에도우린",
       "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
-      "channel": "SEEYA Official"
+      "channel": "SEEYA Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "mv7LonElRgQ",
       "title": "씨야 남규리 - 그럼에도 우린 LIVE Ver. 🎤 많관사부 💗 @Gyulmung",
       "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
-      "channel": "SEEYA Official"
+      "channel": "SEEYA Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "W3JI-zs9aEg",
       "title": "씨야 김연지 - 그럼에도 우린 LIVE Ver. 🎤 많관사부 💗 @Official-eu4ex",
       "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
-      "channel": "SEEYA Official"
+      "channel": "SEEYA Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "Nzub6TrI8DU",
       "title": "씨야 이보람 - 그럼에도 우린 LIVE Ver. 🎤 많관사부 💗 @BoramSEEYA",
       "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
-      "channel": "SEEYA Official"
+      "channel": "SEEYA Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "rSneZtiwVsc",
@@ -2436,7 +2440,8 @@
       "videoId": "OfaMxNJlD_I",
       "title": "씨야 SEEYA - 우리 Live Ver. Official MV",
       "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
-      "channel": "SEEYA Official"
+      "channel": "SEEYA Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "JeNLPdkh6FM",
@@ -2856,7 +2861,8 @@
       "videoId": "XsG6uiLceeY",
       "title": "오직 귤멍🍊에서만 볼 수 있는 #허용별 #고민중독 LIVE (feat.소시지 마이크)",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "aH34h0M2WPg",
@@ -3000,13 +3006,15 @@
       "videoId": "XYxAjjpYz5Y",
       "title": "🍊 드디어 신곡이 나왔어요!! 우리 라이브 그런거해요!",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "XeuhMsp44_s",
       "title": "🍊",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "2AGkX5SjOJY",
@@ -3276,7 +3284,8 @@
       "videoId": "G_B9p2RZ8vQ",
       "title": "🍊 귤's LIVE | 여름 안에서 (feat.허용별)",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "D8XBjkcX7Z0",
@@ -3294,19 +3303,22 @@
       "videoId": "JSD0go1lLII",
       "title": "🍊 귤's LIVE | 허각 - 혼자, 한잔",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "dIL1Qdg7_xs",
       "title": "🍊 귤's LIVE | 임한별 - 안녕, 오늘의 그대에게",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "t6RZwGdhX98",
       "title": "🍊 귤's LIVE | 신용재 - 불멍",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "QLCHun_k69Q",
@@ -3324,19 +3336,22 @@
       "videoId": "v94ggr3izUk",
       "title": "🍊 남규리 뮤직토크쇼 | Ep.10 허용별귤 함께 LIVE | 노래할 때 가장 빛나는 사람들",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "FG3pspmrsrw",
       "title": "🍊  귤's LIVE | 허용별 - 이게 뭐냔 말이야",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "q3--9xMqPew",
       "title": "🍊  귤's LIVE | 허용별귤 - 미친 사랑의 노래",
       "channelId": "UC_naRJKw5Isgpv5nF8yNXLw",
-      "channel": "남규리의 귤멍"
+      "channel": "남규리의 귤멍",
+      "excludeFromVcr": true
     },
     {
       "videoId": "wPcNvicmkPo",
@@ -3576,43 +3591,50 @@
       "videoId": "dPUQRulJx-0",
       "title": "🔔#징글벨락 🔔 #크리스마스송 #캐롤송 #김연지 #생목라이브 #메리크리스마스 🎅🎄#jinglebellsrock #merrychristmas",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "0UOyAoaehBI",
       "title": "#생목라이브 #차안 #가슴으로운다 #김연지 #목풀기 #연습 #풀려라 #신곡 #리메이크 #kpop #발라드 #라이브",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "wf7pWfHTkOI",
       "title": "모차르트 막공 퇴근길~",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "YpaUJoDM_MM",
       "title": "연지시는 아니지만 인이어 언박싱!!!",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "-_I13nTF-L0",
       "title": "4월22일 연지시",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "1Vg27yBtWUM",
       "title": "3월15일 연지시",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "Dk4nQoGfh2g",
       "title": "3월8일 연지시",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "afk_AwDkE1Y",
@@ -3660,7 +3682,8 @@
       "videoId": "g5ZJBeFQuGg",
       "title": "[Real live] 🔔Jingle Bell Rock 🔔- 캐롤송 🎶🎄",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "p9M3n_ayuOw",
@@ -3678,7 +3701,8 @@
       "videoId": "HvlsJ-sHt04",
       "title": "[Live Clip] 비가오면 마음껏 울어도 되니까 - 김연지",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "5p_WUIHRNPk",
@@ -3690,37 +3714,43 @@
       "videoId": "gwRkvYc59_s",
       "title": "[Live Clip] 사랑의인사 - 김연지",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "atp-TU4Xezs",
       "title": "[Live Clip] 가슴으로운다 - 김연지",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "8k-YrZ5Gg2g",
       "title": "[Live Clip] 빨간풍선 (빨간풍선ost) - 김연지",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "yhRSBlT-zq8",
       "title": "[Live Clip] 시간이 지나면 잊혀진다 누가 그랬어 (뷰티풀모먼트ost) - 김연지",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "Vtbod5RDRog",
       "title": "[Live Clip] 상상 (이상한변호사우영우ost) -김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "EPx3mcT-wZI",
       "title": "[Live Clip] Whisky on the rock (우리들의 블루스 OST) - 김연지",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "fpwo3qTQxuY",
@@ -3750,13 +3780,15 @@
       "videoId": "qq7VPSJKwk8",
       "title": "[Live Clip] Shallow (A Star Is Born OST) Vocal only ver. - 김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "i0iVyaJVyc4",
       "title": "[Live Clip] Shallow(A Star Is Born OST) - 김연지  Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "hNpaQELx8uw",
@@ -3774,13 +3806,15 @@
       "videoId": "0-VgHCHe91s",
       "title": "[Live Clip] 김연지 단독 콘서트 직캠 ✨하이라이트✨ - 2편",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "K02MHUVQ-6k",
       "title": "[Live Clip] 김연지 단독 콘서트 직캠  ✨하이라이트✨ - 1편",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "Y1eBMRxDtLo",
@@ -3798,19 +3832,22 @@
       "videoId": "BKr4WHOP07g",
       "title": "[Live Clip] 김연지 - 10년이나버티니",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "Ce8_oX93cMA",
       "title": "[커버라이브] 우리 그만하자 - 김연지",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "yKi9ryETvBo",
       "title": "[커버라이브] 전하지 못한 진심(방탄소년단_BTS) - 김연지",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "ylpCN-CXWJQ",
@@ -3822,7 +3859,8 @@
       "videoId": "_FJkNLkV82U",
       "title": "[Live Clip] 내 맘(Mom) - 김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "M_FPSyuVae4",
@@ -3834,13 +3872,15 @@
       "videoId": "cLaC4v0kRWk",
       "title": "[스포라이브 티저] 바람이 불면(When The Wind Blows) - 김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "lRY2u_9IQLE",
       "title": "[커버라이브] Love Poem (IU 아이유) - 김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "wRyD0sv1k8c",
@@ -3858,7 +3898,8 @@
       "videoId": "r1ZWK8KxAIM",
       "title": "[스포라이브] 김연지 - 바람이 불면 full ver.",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "Sp0HDqM-xHU",
@@ -3870,7 +3911,8 @@
       "videoId": "bgSdWO0-iMk",
       "title": "[커버라이브] Best Part(H.E.R) - 김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "h0o0CtFw1I0",
@@ -3882,7 +3924,8 @@
       "videoId": "eJcxC1f-YTM",
       "title": "[Live Clip] 사랑의인사 (씨야_SeeYa)  - 김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "NJRvSCPIlpQ",
@@ -3894,13 +3937,15 @@
       "videoId": "YTjhddY18WI",
       "title": "[Live Clip] 미친사랑의 노래 (SeeYa_씨야) - 김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "PJai01nhBDw",
       "title": "[Live Clip] 미친사랑의 노래(Vocal ver.) - 김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "CZy8Z1rDlrM",
@@ -3912,7 +3957,8 @@
       "videoId": "8D50dA-bWr8",
       "title": "[Live Clip] 2002(Anne Marie) - 김연지 Official",
       "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
-      "channel": "김연지 Official"
+      "channel": "김연지 Official",
+      "excludeFromVcr": true
     },
     {
       "videoId": "Us3kFQ39f2Y",
@@ -4188,7 +4234,8 @@
       "videoId": "xHrfSq_swgM",
       "title": "[보람씨야] I AM - 아이브 무반주 라이브 #shorts",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "1kl1AnjHaNQ",
@@ -4242,121 +4289,141 @@
       "videoId": "k_f_oFhA71o",
       "title": "람봉 골라보람 🐿️💛",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "sDtfWK-qFtM",
       "title": "보람씨야 라이브 스트리밍 중",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "S27UvqQdUs0",
       "title": "수다라방📢 당신을 위하여 🎶🎧",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "xE2qsy-Ao8c",
       "title": "보람씨야 라이브 스트리밍 중",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "Ns0t_K9VX38",
       "title": "보람씨야 라이브 스트리밍 중",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "2F8lbmAIe9E",
       "title": "보람씨야 라이브 스트리밍 중",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "5EFMPIOC0q4",
       "title": "수다라방 😆",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "obqGtsQI-bY",
       "title": "더 울어라~ 젊은 인생아~~",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "x1PvT31_vck",
       "title": "오랜만에 깜짝 라방🫣",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "oD9ITwOT9_E",
       "title": "오랜만이람",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "kvSnASgOItM",
       "title": "구독자 애칭 발표 🥁",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "KONXltUM2DA",
       "title": "퇴근길 🚗",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "OLg6GfKb7Yc",
       "title": "가야G 가야G 라이브 가야G!!!!❤️",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "c6PoIF3PQ04",
       "title": "30만 감사합니다 🙇🏻‍♀️",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "gxb926KhG0c",
       "title": "데뷔 16주년이라니!! 근데 이제 코로나를 곁들인..",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "ljV61LAl3Ss",
       "title": "치킨 라이브 🐯",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "mhbZnyxouAM",
       "title": "눕방 😴 얼마만에 라이브지? 🤭",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "CdtBBO_KV8o",
       "title": "오랜만이에요❤️",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "f9j0Cj91emE",
       "title": "너무 늦어 죄송해요ㅠ 복면가왕 Q&A 👉🏻👈🏻",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "WTZFDr_ZP9Y",
       "title": "이보람 음원발매 기념 버스킹",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "yRYZeoEBWDU",
@@ -4470,7 +4537,8 @@
       "videoId": "0O9DWnIC9ok",
       "title": "#매일이렇게비가내려 #이보람 #무반주 #lyricvideo",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "7VGw30BGkyw",
@@ -4566,7 +4634,8 @@
       "videoId": "SpOLbureBk4",
       "title": "★신곡발매기념★ '그때의 나 그때의 너' 녹음실 라이브!! / 이보람 (Lee Boram) [보람씨야]",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "Gc1_sEj-IrU",
@@ -4608,7 +4677,8 @@
       "videoId": "DujKGd4aA60",
       "title": "▶Live clip◀ 이렇게 좋은 날 - 이보람 (Lee Boram) / [보람씨야]",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "LQKWuMBJuFQ",
@@ -4620,13 +4690,15 @@
       "videoId": "H_U4HugKNK8",
       "title": "★신곡★ '흩어지는 중' - 이보람 (Lee Boram) ▷Live clip◁ / [보람씨야]",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "T2Vy2QnAxLg",
       "title": "[보이는노래방] ▶LIVE◀ 흩어지는 중 - 이보람 (Lee Boram) / [보람씨야]",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "orvzqEviTfQ",
@@ -5076,7 +5148,8 @@
       "videoId": "14p6foEx1Y4",
       "title": "[티저] 가로라이브 '이보람 - 사랑하니까'",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "MxQA54orKlE",
@@ -5100,13 +5173,15 @@
       "videoId": "BLALkFyMUOk",
       "title": "[풀버전] 가로라이브 '이보람 - 사랑하니까'",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "0ANfHmkSyoQ",
       "title": "[세로라이브] '이보람 - 사랑하니까'",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "hNBitlLkebo",
@@ -5286,7 +5361,8 @@
       "videoId": "g7nYVmFX23Q",
       "title": "한 밤의 꿈처럼 - 이보람 / 방구석 라이브🫶🏻❤️",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "P8o3Ss-xPAQ",
@@ -5436,7 +5512,8 @@
       "videoId": "dJ3oh792Gkk",
       "title": "[무반주메들리] 밤/혼자가아닌나/사랑이야/찰나가영원이될때/열애중/I AM / 이보람 (Lee Boram) [보람씨야]",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "LSecsdCJH6k",
@@ -5454,7 +5531,8 @@
       "videoId": "Zc1xppiQJk0",
       "title": "[무반주메들리] 어른/기댈곳/사랑의바보/그대를알고/해바라기/중독된사랑 / 이보람 (Lee Boram) [보람씨야]",
       "channelId": "UCz11CPccQ2AnizJrdp58Bog",
-      "channel": "보람씨야"
+      "channel": "보람씨야",
+      "excludeFromVcr": true
     },
     {
       "videoId": "H9fSg8R9YWY",

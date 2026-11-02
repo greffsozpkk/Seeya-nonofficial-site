@@ -1,6 +1,6 @@
 const {W}=require('../shared/common');
 module.exports=()=>W(`<section class="mc" id="myConcert">
- <header class="mc-hero"><div><a class="mc-breadcrumb" href="/game/test/">SEEYA PLAY / MY CONCERT</a><div class="eye">A STAGE MADE BY YOU</div><h1>나만의 씨야 콘서트</h1><p>첫 곡이 흐르는 순간부터, 마지막 앙코르까지.<br>당신이 꿈꾸던 씨야의 무대를 만들어보세요.</p></div><div class="mc-ticket" aria-hidden="true"><span>ADMIT ONE</span><strong>SEEYA</strong><small>YOUR STAGE · YOUR STORY</small><i>MY SETLIST</i></div></header>
+ <header class="mc-hero"><div><a class="mc-breadcrumb" href="/game/test/">SEEYA PLAY / MY CONCERT</a><div class="eye">A STAGE MADE BY YOU</div><h1>나만의 씨야 콘서트</h1><p>첫 곡이 흐르는 순간부터, 마지막 앙코르까지.<br>당신이 꿈꾸던 씨야의 무대를 만들어보세요.</p></div><img class="mc-concert-art" src="/images/game/seeya-my-concert.png" width="1536" height="1024" alt="연습실에서 함께 세트리스트를 고르는 씨야"></header>
  <div class="mc-status" id="mcStatus" role="status" aria-live="polite">곡 목록을 불러오고 있어요.</div>
  <div id="mcLoadError" class="mc-notice" hidden><p>곡 목록을 불러오지 못했어요. 저장된 편집본은 그대로 보관됩니다.</p><button type="button" data-action="retry">다시 불러오기</button></div>
  <div id="mcRecovery" class="mc-notice" hidden><p id="mcRecoveryText"></p><button type="button" data-action="recover">새 편집 시작</button></div>
@@ -24,7 +24,7 @@ module.exports=()=>W(`<section class="mc" id="myConcert">
     <label>기획자 이름 <small>선택</small><span id="mcPlannerCount">0 / 20</span><input id="mcPlanner" placeholder="팬 닉네임을 적어주세요" aria-describedby="mcPlannerError" autocomplete="off"></label><p class="mc-field-error" id="mcPlannerError"></p>
     <p class="mc-footnote">닉네임은 공유 링크와 포스터에 함께 담깁니다.</p>
     <div class="mc-progress-head"><span>선택한 곡</span><strong id="mcTotal">0 / 32</strong></div><progress id="mcProgress" max="32" value="0" aria-label="선택한 곡 수"></progress>
-    <div id="mcSections"></div><div class="mc-undo" id="mcUndo" hidden><span>곡을 뺐어요.</span><button type="button" data-action="undo">되돌리기</button></div>
+    <p class="mc-rule">곡 왼쪽 손잡이를 끌어 순서나 구간을 바꿔보세요.</p><div id="mcSections"></div><div class="mc-undo" id="mcUndo" hidden><span>곡을 뺐어요.</span><button type="button" data-action="undo">되돌리기</button></div>
     <div class="mc-save-row"><span id="mcSaved">이 브라우저에서 이어 만들 수 있어요.</span><button type="button" data-action="reset">전체 초기화</button></div>
     <p id="mcCompleteError" class="mc-field-error" role="alert"></p><button type="button" class="mc-primary mc-complete" data-action="finish">콘서트 포스터 완성하기 <span aria-hidden="true">↗</span></button>
    </section>

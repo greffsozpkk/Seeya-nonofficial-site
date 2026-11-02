@@ -3,21 +3,24 @@ const Show=require('../shared/my-concert-show');
 const M=require('../shared/my-concert');
 module.exports=function specials({root,$,esc,getDraft,getSongs,getTarget,apply,announce}){
  const dialog=$('mcSpecial'),fields=$('mcSpecialFields');
- let kind,slot,vIndex;
+ let kind,slot,vIndex,selectedVideo,page=1;
+ const pageSize=6;
  function options(items,selected){return items.map(([v,name])=>'<option value="'+esc(v)+'"'+(v===selected?' selected':'')+'>'+esc(name)+'</option>').join('');}
- function filterVcr(selected){
-  const query=$('mcVcrSearch').value.trim().toLowerCase();
-  const list=Show.media.vcr.filter(v=>[v.title,v.channel,Show.media.channels[v.channelId]].join(' ').toLowerCase().includes(query));
-  $('mcFixed').innerHTML=options(list.map(v=>[v.videoId,v.title]),selected);
-  $('mcVcrMatches').textContent=list.length+'편';
-}
+ function renderVcr(){
+  const query=$('mcVcrSearch').value.trim().toLocaleLowerCase(), channel=$('mcBrowseChannel').value;
+  const list=Show.vcrLibrary.filter(v=>(!channel||channel===v.channelId)&&[v.title,v.channel,Show.media.channels[v.channelId]].join(' ').toLocaleLowerCase().includes(query));
+  const pages=Math.max(1,Math.ceil(list.length/pageSize));
+  page=Math.min(pages,Math.max(1,page));
+  $('mcVcrMatches').textContent=list.length+'편'+(list.length?' · '+page+' / '+pages+' 페이지':'');
+  $('mcVcrList').innerHTML=list.slice((page-1)*pageSize,page*pageSize).map(v=>'<button type="button" class="mc-vcr-choice" data-video="'+v.videoId+'" aria-pressed="'+(v.videoId===selectedVideo)+'"><img src="https://i.ytimg.com/vi/'+v.videoId+'/mqdefault.jpg" alt="" loading="lazy"><span><small>'+esc(v.channel)+'</small><strong>'+esc(v.title)+'</strong></span><i aria-hidden="true">'+(v.videoId===selectedVideo?'✓':'')+'</i></button>').join('')||'<p>검색 결과가 없어요. 다른 제목이나 채널을 골라주세요.</p>';
+  $('mcVcrPrev').disabled=page===1;$('mcVcrNext').disabled=page===pages;
+  $('mcVcrNav').hidden=pages<=1;
+  const selected=Show.media.vcr.find(v=>v.videoId===selectedVideo);
+  $('mcVcrSelected').textContent=selected?'선택한 영상 · '+selected.title:'VCR에 담을 영상을 선택해 주세요.';
+ }
  function displayChoices(){
   const mode=$('mcMode').value;
   fields.querySelectorAll('[data-for]').forEach(el=>el.hidden=el.dataset.for!==mode);
-  if(kind==='vcr' && mode==='fixed'){
-   const v=Show.media.vcr.find(v=>v.videoId===$('mcFixed').value);
-   $('mcVcrPreview').innerHTML=v?'<img alt="" src="https://i.ytimg.com/vi/'+v.videoId+'/mqdefault.jpg"><span>'+esc(v.channel)+' · '+(v.duration?Math.floor(v.duration/60)+':'+String(v.duration%60).padStart(2,'0'):'채널 영상')+'</span>':'';
-  }
   if(kind==='hidden'){
    const range=readRange();
    $('mcCandidateCount').textContent='현재 후보 '+Show.candidates(range,getSongs()).length+'곡';
@@ -39,13 +42,21 @@ module.exports=function specials({root,$,esc,getDraft,getSongs,getTarget,apply,a
    fields.innerHTML='<label>담을 구간<select id="mcDestination">'+M.SECTIONS.map(s=>'<option value="'+s.id+'"'+(selected===s.id?' selected':'')+(d.sections[s.id].length>=s.limit&&(!id||s.id!==destination)?' disabled':'')+'>'+s.ko+' · '+d.sections[s.id].length+' / '+s.limit+'</option>').join('')+'</select></label><label>추첨 범위<select id="mcMode">'+options([['all','전체 랜덤'],['album','앨범별 랜덤'],['custom','직접 고른 곡 중 랜덤']],range.mode)+'</select></label><label data-for="album">앨범<select id="mcHiddenAlbum">'+options([...albums],range.album)+'</select></label><fieldset class="mc-candidates" data-for="custom"><legend>후보곡 선택</legend>'+Show.checkedSongs(songs).map(s=>'<label><input type="checkbox" value="'+esc(s.id)+'"'+(range.ids?.includes(s.id)?' checked':'')+'> '+esc(s.title)+'</label>').join('')+'</fieldset><p id="mcCandidateCount"></p>';
   }else{
    const v=d.vcrs?.[index]||{mode:'fixed',after:gap},media=Show.media;
-   fields.innerHTML='<label>위치<select id="mcGap">'+options(Array.from({length:Math.max(0,M.count(d)-1)},(_,i)=>[i+1,(i+1)+'번 노래 뒤 · '+(i+2)+'번 노래 앞']),v.after)+'</select></label><label>영상 선택<select id="mcMode">'+options([['fixed','직접 선택'],['random','채널에서 랜덤'],['link','YouTube 링크 입력']],v.mode)+'</select></label><div data-for="fixed"><label>공식 채널 영상 검색<input type="search" id="mcVcrSearch" placeholder="제목 또는 채널명"></label><span id="mcVcrMatches"></span><label>영상<select id="mcFixed">'+options(media.vcr.map(x=>[x.videoId,x.title]),v.value)+'</select></label><div id="mcVcrPreview"></div></div><label data-for="link">YouTube 영상 주소<input id="mcVideoLink" type="url" placeholder="https://youtu.be/…" value="'+(v.mode==='link'?'https://youtu.be/'+esc(v.value):'')+'"></label><label data-for="random">채널<select id="mcChannel">'+options([['all','전체 채널'],...Object.entries(media.channels)],v.value)+'</select></label>';
+   fields.innerHTML='<label>위치<select id="mcGap">'+options(Array.from({length:Math.max(0,M.count(d)-1)},(_,i)=>[i+1,(i+1)+'번 노래 뒤 · '+(i+2)+'번 노래 앞']),v.after)+'</select></label><label>영상 선택<select id="mcMode">'+options([['fixed','직접 선택'],['random','채널에서 랜덤'],['link','YouTube 링크 입력']],v.mode)+'</select></label><div data-for="fixed"><div class="mc-vcr-filters"><label>영상 검색<input type="search" id="mcVcrSearch" placeholder="제목 또는 채널명"></label><label>채널<select id="mcBrowseChannel">'+options([['','전체 채널'],...Object.entries(media.channels)],'')+'</select></label></div><p id="mcVcrMatches" aria-live="polite"></p><div id="mcVcrList"></div><nav id="mcVcrNav" aria-label="VCR 목록 페이지"><button type="button" id="mcVcrPrev" data-vpage="-1">이전</button><button type="button" id="mcVcrNext" data-vpage="1">다음</button></nav><p id="mcVcrSelected" role="status"></p></div><label data-for="link">YouTube 영상 주소<input id="mcVideoLink" type="url" placeholder="https://youtu.be/…" value="'+(v.mode==='link'?'https://youtu.be/'+esc(v.value):'')+'"></label><label data-for="random">채널<select id="mcChannel">'+options([['all','전체 채널'],...Object.entries(media.channels)],v.value)+'</select></label>';
   }
-  if(type==='vcr'){filterVcr(vIndex===null?'':d.vcrs[vIndex].value);if(M.count(d)<2)$('mcSpecialError').textContent='노래를 두 곡 이상 담으면 그 사이에 VCR을 넣을 수 있어요.';}
+  dialog.classList.toggle('mc-vcr-dialog',type==='vcr');
+  if(type==='vcr'){selectedVideo=vIndex!==null&&d.vcrs[vIndex].mode==='fixed'?d.vcrs[vIndex].value:'';page=Math.max(1,1+Math.floor(Show.vcrLibrary.findIndex(v=>v.videoId===selectedVideo)/pageSize));renderVcr();if(M.count(d)<2)$('mcSpecialError').textContent='노래를 두 곡 이상 담으면 그 사이에 VCR을 넣을 수 있어요.';}
   displayChoices();dialog.showModal();
  }
- fields.addEventListener('input',event=>{if(event.target.id==='mcVcrSearch'){filterVcr($('mcFixed').value);displayChoices();}});
- fields.addEventListener('change',displayChoices);
+ fields.addEventListener('input',event=>{if(event.target.id==='mcVcrSearch'){page=1;renderVcr();}});
+ fields.addEventListener('change',event=>{
+  if(event.target.id==='mcBrowseChannel'){page=1;renderVcr();}else displayChoices();
+ });
+ fields.addEventListener('click',event=>{
+  const b=event.target.closest('button');if(!b)return;
+  if(b.dataset.vpage){page+=Number(b.dataset.vpage);renderVcr();$('mcVcrList').querySelector('button')?.focus();}
+  if(b.dataset.video){selectedVideo=b.dataset.video;renderVcr();$('mcVcrList').querySelector('[aria-pressed="true"]')?.focus();}
+ });
  function commit(){
   const d=JSON.parse(JSON.stringify(getDraft()));
   if(kind==='hidden'){
@@ -61,7 +72,7 @@ module.exports=function specials({root,$,esc,getDraft,getSongs,getTarget,apply,a
   }else{
    const mode=$('mcMode').value;
    if(!$('mcGap').value)throw Error('먼저 노래를 두 곡 이상 담아 주세요.');
-   const value=mode==='link'?Show.youtubeId($('mcVideoLink').value):$(mode==='fixed'?'mcFixed':'mcChannel').value;
+   const value=mode==='link'?Show.youtubeId($('mcVideoLink').value):mode==='fixed'?selectedVideo:$('mcChannel').value;
    if(!value)throw Error(mode==='link'?'개별 YouTube 영상 주소를 확인해 주세요.':'영상을 선택해 주세요.');
    const next=Show.vcrConfig({after:Number($('mcGap').value),mode,value});
    if(vIndex===null)d.vcrs.push(next);else d.vcrs[vIndex]=next;

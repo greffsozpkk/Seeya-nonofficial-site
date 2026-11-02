@@ -1,5 +1,6 @@
 'use strict';
 const media = require('../data/my-concert-media.json');
+const vcrLibrary=media.vcr.filter(v=>!v.excludeFromVcr);
 const hiddenLabel = '히든 스테이지 (랜덤 노래)';
 const vcrLabel = 'VCR 재생';
 const sections = ['opening','main','encore'];
@@ -87,7 +88,7 @@ function session(d,songs,random=Math.random) {
   const drawn=matching(slots.map(e=>candidates(config(d.hidden?.[e.id],songs),songs)),fixed,random);
   const vcrs=(d.vcrs||[]).map(vcrConfig);
   const vFixed=new Set(vcrs.filter(v=>v.mode!=='random').map(v=>v.value));
-  const vDraw=matching(entries.filter(e=>e.kind==='vcr'&&e.config.mode==='random').map(e=>media.vcr.filter(v=>(e.config.value==='all'||e.config.value===v.channelId)).map(v=>v.videoId)),vFixed,random);
+  const vDraw=matching(entries.filter(e=>e.kind==='vcr'&&e.config.mode==='random').map(e=>vcrLibrary.filter(v=>(e.config.value==='all'||e.config.value===v.channelId)).map(v=>v.videoId)),vFixed,random);
   let h=0,v=0;
   return entries.map(e=>{
     if(e.kind==='vcr'){
@@ -101,4 +102,4 @@ function session(d,songs,random=Math.random) {
     return {...e,label:e.kind==='hidden'?hiddenLabel:song.title,title:song.title,artist:song.artistNames.join(' · '),videos:choices};
   });
 }
-module.exports={alignVcrs,youtubeId,media,hiddenLabel,vcrLabel,isHidden,songInfo,checkedSongs,config,vcrConfig,candidates,matching,rows,session};
+module.exports={vcrLibrary,alignVcrs,youtubeId,media,hiddenLabel,vcrLabel,isHidden,songInfo,checkedSongs,config,vcrConfig,candidates,matching,rows,session};

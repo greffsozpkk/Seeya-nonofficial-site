@@ -1,5 +1,23 @@
 [
   {
+    "id": "my-concert",
+    "image": "/images/game/seeya-my-concert.png",
+    "width": 1536,
+    "height": 1024,
+    "usedOn": [
+      {
+        "label": "나만의 씨야 콘서트",
+        "path": "/game/my-concert/test/",
+        "unlisted": true
+      },
+      {
+        "label": "SEEYA PLAY 테스트",
+        "path": "/game/test/",
+        "unlisted": true
+      }
+    ]
+  },
+  {
     "id": "clinic",
     "image": "/images/game/seeya-clinic.png",
     "width": 1536,

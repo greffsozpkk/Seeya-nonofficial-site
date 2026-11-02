@@ -19,6 +19,11 @@ for(let i=0;i<30;i++){
  assert.equal(new Set(q.filter(e=>e.kind!=='vcr').map(e=>e.videos[0].videoId)).size,12);
  assert(q.filter(e=>e.kind==='hidden').every(e=>e.label===S.hiddenLabel));
 }
+assert(S.vcrLibrary.length>400 && S.vcrLibrary.length<S.media.vcr.length);
+assert(S.vcrLibrary.every(v=>!v.excludeFromVcr));
+const moved=M.change(d,{type:'move',section:'main',id:fixed[0].id,target:'encore',to:1},songs).draft;
+assert.equal(moved.sections.encore[1],fixed[0].id);
+assert(!moved.sections.main.includes(fixed[0].id));
 const restored=M.decode(M.encode(d),songs);
 assert.deepEqual(restored.hidden,d.hidden);
 assert.deepEqual(restored.vcrs,d.vcrs);

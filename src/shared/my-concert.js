@@ -62,7 +62,9 @@ function change(d,action,songs){
    const target=SECTIONS.find(s=>s.id===action.target);if(!target)throw Error('이동할 구간을 선택해 주세요.');
    if(target.id===section.id)return {draft:next,message:'같은 구간이에요.'};
    if(next.sections[target.id].length>=target.limit)throw Error(target.ko+'이 가득 찼어요. 먼저 빈자리를 만들어 주세요.');
-   list.splice(index,1);next.sections[target.id].push(action.id);message=target.ko+'로 옮겼어요.';
+   const to=action.to??next.sections[target.id].length;
+   if(!Number.isInteger(to)||to<0||to>next.sections[target.id].length)throw Error('놓을 위치를 다시 선택해 주세요.');
+   list.splice(index,1);next.sections[target.id].splice(to,0,action.id);message=target.ko+'로 옮겼어요.';
   }else if(action.type==='order'){
    const to=action.to;if(!Number.isInteger(to)||to<0||to>=list.length)throw Error('더 이동할 수 없어요.');
    list.splice(index,1);list.splice(to,0,action.id);message='순서를 바꿨어요.';
