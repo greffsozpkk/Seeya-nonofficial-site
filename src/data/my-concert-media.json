@@ -8,28 +8,39 @@
   "performances": {
     "group-track-001": [
       {
+        "videoId": "I6yE2PFlSaU",
+        "title": "060319 씨야(Seeya) - 여인의 향기(Scent of a Woman) | SBS 인기가요",
+        "channel": "여돌음방모음",
+        "channelId": "UCFil7uLJDTsOQPLGb9AwZyg",
+        "duration": 213,
+        "date": "2006-03-19",
+        "kind": "broadcast",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-03"
+      },
+      {
+        "videoId": "L0plLJw2v-I",
+        "title": "씨야(See ya ) - 여인의 향기 [윤도현의 러브레터] | KBS 20060414 방송",
+        "channel": "Again 가요톱10 : KBS KPOP Classic",
+        "channelId": "UCmZ19AIj_wcpwRcqG7p9L8g",
+        "duration": 216,
+        "date": "2006-04-14",
+        "kind": "broadcast",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-03"
+      },
+      {
         "videoId": "nn639JifcBQ",
         "title": "씨야  - '여인의 향기' [KBS 콘서트7080, 20060826] | SeeYa",
         "channel": "Again 가요톱10 : KBS KPOP Classic",
         "channelId": "UCmZ19AIj_wcpwRcqG7p9L8g",
         "duration": 231,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
-      },
-      {
-        "videoId": "-X63BGTttGM",
-        "title": "씨야(SeeYa) 콘서트「여인의 향기」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
-        "channel": "🐿람보바라기",
-        "channelId": "UChSBTXCJyi5jb8eesVMDdfA",
-        "duration": 219,
-        "published": "2026-10-14",
-        "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage--X63BGTttGM",
-        "date": "2026-10-10"
       },
       {
         "videoId": "_8nBbgv5DJI",
@@ -66,20 +77,8 @@
         "checkedOn": "2026-11-02",
         "played": true,
         "performanceId": "stage-jJypqIDNcv4",
-        "date": "2006-07-09"
-      },
-      {
-        "videoId": "eQ0KOxJL1kg",
-        "title": "씨야(SeeYa) 콘서트「구두」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
-        "channel": "🐿람보바라기",
-        "channelId": "UChSBTXCJyi5jb8eesVMDdfA",
-        "duration": 236,
-        "published": "2026-10-13",
-        "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-eQ0KOxJL1kg",
-        "date": "2026-10-10"
+        "date": "2006-07-09",
+        "kind": "broadcast"
       },
       {
         "videoId": "yu2GPWuI4oI",
@@ -100,7 +99,7 @@
         "channel": "ajax wang",
         "channelId": "UCHaf6i978GU126WwRjZGrSA",
         "duration": 208,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -137,7 +136,7 @@
         "channel": "Again 가요톱10 : KBS KPOP Classic",
         "channelId": "UCmZ19AIj_wcpwRcqG7p9L8g",
         "duration": 196,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -252,7 +251,7 @@
         "channel": "MBCkpop",
         "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
         "duration": 221,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -287,7 +286,7 @@
         "channel": "BAAMBC LIVE | 뱀비씨 라이브",
         "channelId": "UCiqZSNtipGd0IH59WfriBfA",
         "duration": 229,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -413,7 +412,7 @@
         "channel": "kyunphg",
         "channelId": "UC3nEDqvVuqBnigVc88fiMyA",
         "duration": 252,
-        "kind": "stage",
+        "kind": "tour",
         "date": "2026-10-17",
         "checkedOn": "2026-11-03",
         "embedAllowed": true,
@@ -438,23 +437,10 @@
         "channel": "seeyalover",
         "channelId": "UC3yj9gHFG88rsHJUenBp5Vg",
         "duration": 223,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
-      },
-      {
-        "videoId": "DpIkcrhqobw",
-        "title": "[4K]씨야 대구 콘서트 얼음인형 직캠 #씨야#남규리#김연지#이보람#SEEYA#씨야콘서트#라이브#직캠#live#concert#kpop#idol#youtube#music#video",
-        "channel": "투카로그",
-        "channelId": "UCVxB_XeTHjFT3o9-8HVPqnQ",
-        "duration": 197,
-        "published": "2026-09-13",
-        "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-DpIkcrhqobw",
-        "date": "2026-09-12"
       },
       {
         "videoId": "_veObwyUQj8",
@@ -512,7 +498,7 @@
         "channel": "MBCkpop",
         "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
         "duration": 197,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -528,7 +514,8 @@
         "checkedOn": "2026-11-02",
         "played": true,
         "performanceId": "stage-zDjkCVF9zzI",
-        "date": "2008-01-13"
+        "date": "2008-01-13",
+        "kind": "broadcast"
       },
       {
         "videoId": "cFEE7KZZUy0",
@@ -549,7 +536,7 @@
         "channel": "MBCkpop",
         "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
         "duration": 186,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -565,7 +552,8 @@
         "checkedOn": "2026-11-02",
         "played": true,
         "performanceId": "stage-1fzT-UcIF5E",
-        "date": "2012-01-10"
+        "date": "2012-01-10",
+        "kind": "broadcast"
       },
       {
         "videoId": "Wu2mflg_tyk",
@@ -612,7 +600,7 @@
         "channel": "씨야박물관",
         "channelId": "UCbQr4QmfQqvOAT7aSY09KBw",
         "duration": 250,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -636,7 +624,7 @@
         "channel": "SBS 옛날 예능 - 빽능",
         "channelId": "UCvRIeQeTZDHRcqVZRu0XBug",
         "duration": 622,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -652,7 +640,8 @@
         "checkedOn": "2026-11-02",
         "played": true,
         "performanceId": "stage-FhGp3Q4ZXtk",
-        "date": "2026-04-02"
+        "date": "2026-04-02",
+        "kind": "live"
       },
       {
         "videoId": "tnjV-wOYok8",
@@ -671,7 +660,7 @@
         "videoId": "kya1JSJak9A",
         "title": "Seeya & BrownEyedGirls - The Day [09_24_06]",
         "channel": "pamy15",
-        "kind": "stage",
+        "kind": "broadcast",
         "played": false,
         "checkedOn": "2026-11-02"
       },
@@ -707,7 +696,7 @@
         "channel": "MBCkpop",
         "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
         "duration": 179,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -731,7 +720,7 @@
         "channel": "SBSKPOP X INKIGAYO",
         "channelId": "UCS_hnpJLQTvBkqALgapi_4g",
         "duration": 181,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -844,7 +833,7 @@
         "videoId": "PZQnPnaAee4",
         "title": "081102 씨야 그사람",
         "channel": "휴우흐",
-        "kind": "stage",
+        "kind": "broadcast",
         "played": false,
         "checkedOn": "2026-11-02"
       },
@@ -906,7 +895,7 @@
         "channel": "MBCkpop",
         "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
         "duration": 180,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -922,7 +911,8 @@
         "checkedOn": "2026-11-02",
         "played": true,
         "performanceId": "stage-9AseMGUeNqY",
-        "date": "2009-12-20"
+        "date": "2009-12-20",
+        "kind": "broadcast"
       },
       {
         "videoId": "_esZucb02gs",
@@ -1006,7 +996,7 @@
         "channel": "MBCkpop",
         "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
         "duration": 218,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1041,7 +1031,7 @@
         "channel": "MBCkpop",
         "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
         "duration": 127,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1070,7 +1060,8 @@
         "checkedOn": "2026-11-02",
         "played": true,
         "performanceId": "stage-XZOKi5OMtAs",
-        "date": "2026-06-27"
+        "date": "2026-06-27",
+        "kind": "broadcast"
       },
       {
         "videoId": "Tm2OdWE8KBc",
@@ -1083,7 +1074,8 @@
         "checkedOn": "2026-11-02",
         "played": true,
         "performanceId": "stage-Tm2OdWE8KBc",
-        "date": "2026-06-21"
+        "date": "2026-06-21",
+        "kind": "broadcast"
       },
       {
         "videoId": "I1zhkwIuZ0A",
@@ -1104,7 +1096,7 @@
         "channel": "DodongFancam도동직캠",
         "channelId": "UCgm2Xzs8djJCUemRhGM6S-g",
         "duration": 210,
-        "kind": "stage",
+        "kind": "tour",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1126,22 +1118,9 @@
         "videoId": "vH8QBCYO0Yc",
         "title": "[열린예술무대 뒤란] 씨야(SeeYa) - 봄처럼 그댄(You, Like Spring) | ubc 260821 방송",
         "channel": "열린예술무대 뒤란",
-        "kind": "stage",
+        "kind": "broadcast",
         "played": false,
         "checkedOn": "2026-11-02"
-      },
-      {
-        "videoId": "QY-F5iSN8aM",
-        "title": "씨야(SeeYa) 콘서트「봄처럼 그댄」직캠 Full Ver | 261004 씨야 20주년 콘서트 The Fan in 고양",
-        "channel": "🐿람보바라기",
-        "channelId": "UChSBTXCJyi5jb8eesVMDdfA",
-        "duration": 226,
-        "published": "2026-10-05",
-        "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-QY-F5iSN8aM",
-        "date": "2026-10-04"
       },
       {
         "videoId": "JeNLPdkh6FM",
@@ -1162,7 +1141,7 @@
         "channel": "콘서트 직촬",
         "channelId": "UCzNyK9awuAbwFKM4TUF2ofQ",
         "duration": 227,
-        "kind": "stage",
+        "kind": "tour",
         "date": "2026-08-29",
         "checkedOn": "2026-11-03",
         "embedAllowed": true,
@@ -1185,22 +1164,9 @@
         "videoId": "whTAN8EeeB8",
         "title": "씨야 -  그럼에도 우린 [열린 음악회/Open Concert] | KBS 260607 방송",
         "channel": "KBS 레전드 케이팝",
-        "kind": "stage",
+        "kind": "broadcast",
         "played": false,
         "checkedOn": "2026-11-02"
-      },
-      {
-        "videoId": "SKZr7-QfysI",
-        "title": "씨야 - 그럼에도 우린 [260912 ‘The Fan’ 20주년 콘서트 - 대구]",
-        "channel": "정아선",
-        "channelId": "UChvTqi62fYg7i0PFBSEGh5A",
-        "duration": 203,
-        "published": "2026-09-13",
-        "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-SKZr7-QfysI",
-        "date": "2026-09-12"
       },
       {
         "videoId": "dmsw-tEenZ0",
@@ -1219,7 +1185,7 @@
         "videoId": "OvNfsRAnG74",
         "title": "260829 씨야 20주년 전국 투어 콘서트 THEFAN - 서울 씨야 Seeya 안돼요",
         "channel": "콘서트 직촬",
-        "kind": "stage",
+        "kind": "tour",
         "played": false,
         "checkedOn": "2026-11-02"
       },
@@ -1240,7 +1206,7 @@
         "videoId": "UMpTyqk0sRA",
         "title": "씨야(SeeYa) 콘서트「잔향-4집」직캠 | 260829 씨야 20주년 콘서트 The Fan in 서울",
         "channel": "🐿람보바라기",
-        "kind": "stage",
+        "kind": "tour",
         "played": false,
         "checkedOn": "2026-11-02"
       },
@@ -1261,7 +1227,7 @@
         "videoId": "mPgTjK3GurQ",
         "title": "2026 08 29 끝내 꺾이지 않는 것 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
         "channel": "햄햄햄",
-        "kind": "stage",
+        "kind": "tour",
         "played": false,
         "checkedOn": "2026-11-02"
       },
@@ -1284,7 +1250,7 @@
         "channel": "SEEYA Official",
         "channelId": "UCn6SB-9q1gNfGhx9_fFxIxg",
         "duration": 279,
-        "kind": "official",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1297,24 +1263,11 @@
         "channel": "SBSKPOP X INKIGAYO",
         "channelId": "UCS_hnpJLQTvBkqALgapi_4g",
         "duration": 190,
-        "kind": "stage",
+        "kind": "broadcast",
         "checkedOn": "2026-11-03",
         "embedAllowed": true,
         "played": false,
         "date": "2008-04-13"
-      },
-      {
-        "videoId": "si3VEPvpr9A",
-        "title": "씨야(SeeYa) 콘서트「바보」직캠 | 261004 씨야 20주년 콘서트 The Fan in 고양",
-        "channel": "🐿람보바라기",
-        "channelId": "UChSBTXCJyi5jb8eesVMDdfA",
-        "duration": 194,
-        "published": "2026-10-04",
-        "embedAllowed": true,
-        "checkedOn": "2026-11-02",
-        "played": true,
-        "performanceId": "stage-si3VEPvpr9A",
-        "date": "2026-10-04"
       },
       {
         "videoId": "ANUSI5FfWFM",
@@ -1333,7 +1286,7 @@
         "videoId": "sHeo6FDdH_A",
         "title": "[2K] 씨야 & 다비치 & 지연 - 여성시대 (인기가요 2009.05.31)",
         "channel": "화질중시채널",
-        "kind": "stage",
+        "kind": "broadcast",
         "played": false,
         "checkedOn": "2026-11-02"
       },
@@ -1354,7 +1307,7 @@
         "videoId": "ubVtYiAopyg",
         "title": "【TVPP】Davichi(with T-ARA & SeeYa) - Wonder Woman, 다비치(티아라 & 씨야) - 원더우먼 @ Show! Music Core Live",
         "channel": "TV-People",
-        "kind": "stage",
+        "kind": "broadcast",
         "played": false,
         "checkedOn": "2026-11-02"
       },
@@ -1375,7 +1328,7 @@
         "videoId": "sHnPOsZSpFQ",
         "title": "씨야 - 가슴이 뭉클 (2010년)",
         "channel": "MBC강원영동 MUSIC",
-        "kind": "stage",
+        "kind": "broadcast",
         "played": false,
         "checkedOn": "2026-11-02"
       },
@@ -1405,14 +1358,6 @@
       }
     ],
     "group-track-074": [
-      {
-        "videoId": "1a0vB1PsHJg",
-        "title": "[10.10.16][다비치][이해리][씨야]세대공감 나눔콘서트_다 컸잖아_Happy Voice",
-        "channel": "Davichi Happy Voice",
-        "kind": "stage",
-        "played": false,
-        "checkedOn": "2026-11-02"
-      },
       {
         "videoId": "hpPNSxHK2Mw",
         "title": "씨야 그리고 다비치 - 다 컸잖아 (다 컸잖아)",
@@ -1471,7 +1416,7 @@
         "channel": "MBCkpop",
         "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
         "duration": 179,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1495,7 +1440,7 @@
         "channel": "Again 가요톱10 : KBS KPOP Classic",
         "channelId": "UCmZ19AIj_wcpwRcqG7p9L8g",
         "duration": 125,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1519,7 +1464,7 @@
         "channel": "뮤직카우",
         "channelId": "UCWMPzEshTKfeQZKFRxyX8_w",
         "duration": 184,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1543,7 +1488,7 @@
         "channel": "ENA K-POP",
         "channelId": "UCFpfKdO4MMSc9ZoMjk2Tikg",
         "duration": 216,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1567,7 +1512,7 @@
         "channel": "남규리 Nam Gyu Ri",
         "channelId": "UCNbU5_rEMwaqy6PSXS1wiBA",
         "duration": 187,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1591,7 +1536,7 @@
         "channel": "에잇 8recordz x studio8",
         "channelId": "UCWQTae3cFaQke_LchN7cGaQ",
         "duration": 198,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1604,7 +1549,7 @@
         "channel": "남규리 Nam Gyu Ri",
         "channelId": "UCNbU5_rEMwaqy6PSXS1wiBA",
         "duration": 196,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1628,7 +1573,7 @@
         "channel": "뮤직카우",
         "channelId": "UCWMPzEshTKfeQZKFRxyX8_w",
         "duration": 247,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1652,7 +1597,7 @@
         "channel": "SBS Radio 에라오",
         "channelId": "UCAmff0euQRf6RwVlbB8PLMw",
         "duration": 204,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1676,7 +1621,7 @@
         "channel": "ENA K-POP",
         "channelId": "UCFpfKdO4MMSc9ZoMjk2Tikg",
         "duration": 241,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1700,7 +1645,7 @@
         "channel": "SBS Radio 에라오",
         "channelId": "UCAmff0euQRf6RwVlbB8PLMw",
         "duration": 190,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1724,7 +1669,7 @@
         "channel": "KBS Kpop",
         "channelId": "UCeLPm9yH_a_QH8n6445G-Ow",
         "duration": 252,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1737,7 +1682,7 @@
         "channel": "김연지 Official",
         "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
         "duration": 201,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1750,7 +1695,7 @@
         "channel": "숲세권 라이브 (For:Rest LIVE)",
         "channelId": "UCEDGYiAk2qmg63pamdGMHSQ",
         "duration": 339,
-        "kind": "official",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1776,7 +1721,7 @@
         "channel": "it's Live",
         "channelId": "UCB9e3pof1o83aa0kkaoeJGA",
         "duration": 285,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1800,7 +1745,7 @@
         "channel": "ALL THE K-POP",
         "channelId": "UCPde4guD9yFBRzkxk2PatoA",
         "duration": 247,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1811,7 +1756,7 @@
         "channel": "김연지 Official",
         "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
         "duration": 254,
-        "kind": "official",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1824,7 +1769,7 @@
         "channel": "김연지 Official",
         "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
         "duration": 206,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1837,7 +1782,7 @@
         "channel": "김연지 Official",
         "channelId": "UCjLZIdvRV7fQ3m_DA9NEkOg",
         "duration": 231,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1850,7 +1795,7 @@
         "channel": "KBS KONG",
         "channelId": "UC4GVSWFx-E6At_bnRIUmP4A",
         "duration": 304,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1900,7 +1845,7 @@
         "channel": "RainbowbridgeWorld (RBW Inc.)",
         "channelId": "UC4Rt2GpPPCr6IEhm1Jt967A",
         "duration": 280,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1913,7 +1858,7 @@
         "channel": "보람씨야",
         "channelId": "UCz11CPccQ2AnizJrdp58Bog",
         "duration": 171,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1937,7 +1882,7 @@
         "channel": "KBS Kpop",
         "channelId": "UCeLPm9yH_a_QH8n6445G-Ow",
         "duration": 45,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -1974,7 +1919,7 @@
         "channel": "Mhz 므흐즈: MBC RADIO",
         "channelId": "UCKNZsAeQXpvI-Mpoc0ZKhsA",
         "duration": 211,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -2006,23 +1951,12 @@
     ],
     "solo-solo-pwdQrpNpFyA": [
       {
-        "videoId": "a6AZzPh9m4E",
-        "title": "이보람 신곡 \"너를 사랑하니까\" 풀버전 in 보광사 산사음악회 (2024.06.14)",
-        "channel": "땅콩크림샌드",
-        "channelId": "UCj710bQ6P55kmiknJ3RlXrw",
-        "duration": 183,
-        "kind": "stage",
-        "embedAllowed": true,
-        "played": false,
-        "checkedOn": "2026-11-02"
-      },
-      {
         "videoId": "pwdQrpNpFyA",
         "title": "[OFFICIAL SPECIAL VIDEO] 이보람(Lee Bo-Ram) - 너를 사랑하니까(Love, Always) 녹음실 버전",
         "channel": "냠냠엔터테인먼트 YAMYAM ENTERTAINMENT",
         "channelId": "UCx_IoWPI_v4jI230YSvAHWQ",
         "duration": 187,
-        "kind": "official",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -2035,7 +1969,7 @@
         "channel": "Beginagain 비긴어게인",
         "channelId": "UC8WoHUeN-eLynnLKGkwajYQ",
         "duration": 401,
-        "kind": "stage",
+        "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -2059,7 +1993,7 @@
         "channel": "냠냠엔터테인먼트 YAMYAM ENTERTAINMENT",
         "channelId": "UCx_IoWPI_v4jI230YSvAHWQ",
         "duration": 191,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -2083,7 +2017,7 @@
         "channel": "보람씨야",
         "channelId": "UCz11CPccQ2AnizJrdp58Bog",
         "duration": 220,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"
@@ -2107,7 +2041,7 @@
         "channel": "보람씨야",
         "channelId": "UCz11CPccQ2AnizJrdp58Bog",
         "duration": 184,
-        "kind": "stage",
+        "kind": "live",
         "embedAllowed": true,
         "played": false,
         "checkedOn": "2026-11-02"

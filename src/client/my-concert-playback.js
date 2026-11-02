@@ -42,7 +42,8 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
   const e=current(),v=video();
   $('mcNow').textContent=sectionName[e.section]+' · '+(e.kind==='vcr'?e.after+'번째 곡 뒤 VCR':e.number+' / '+trackCount()+'곡');
   $('mcPlayingTitle').textContent=(e.kind==='hidden'?'히든 스테이지 공개 · ':'')+e.title;
-  $('mcPlayingCredit').textContent=[v?.kind==='official'?'공식 영상':e.kind==='vcr'?'VCR':'라이브 무대',v?.channel,v?.title!==e.title?v?.title:''].filter(Boolean).join(' · ');
+  const sourceLabels={broadcast:'방송 무대',live:'공식 라이브',tour:'20주년 투어 직캠',official:'공식 영상'};
+  $('mcPlayingCredit').textContent=[e.kind==='vcr'?'VCR':sourceLabels[v?.kind],v?.channel,v?.title!==e.title?v?.title:''].filter(Boolean).join(' · ');
   const link=$('mcOriginal');link.hidden=!v;if(v)link.href='https://www.youtube.com/watch?v='+v.videoId;
  }
  function videoError(code){
@@ -99,7 +100,7 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
  }
  function summary(d,songs){
   const rows=Show.rows(d),hidden=rows.filter(r=>r.kind==='hidden').length,vcr=rows.filter(r=>r.kind==='vcr').length;
-  const connected=rows.filter(r=>r.kind==='song'&&Show.media.performances[r.id]?.length).length;
+  const connected=rows.filter(r=>r.kind==='song'&&Show.performanceVideos(r.id).length).length;
   let problem='';try{Show.session(d,songs,()=>0.5);}catch(e){problem=e.message;}
   $('mcCoverage').textContent=problem||('지정곡 '+(rows.filter(e=>e.kind==='song').length)+'곡 중 영상 연결 '+connected+'곡 · 히든 스테이지 '+hidden+'개 · VCR '+vcr+'개'+(!connected&&!hidden&&!vcr?' · 연결된 영상이 없어요.':''));
   $('mcStart').disabled=!!problem||!connected&&!hidden&&!vcr;

@@ -8,8 +8,19 @@ const isHidden = id => typeof id === 'string' && /^hidden-[0-9a-z-]+$/.test(id);
 function songInfo(id, songs) {
   return isHidden(id) ? {id,title:hiddenLabel,artistNames:[],enabled:true} : songs.find(s=>s.id===id);
 }
+// Only these six songs have a tour recording approved for the concert player.
+const tourSongs = new Set(['group-track-022','group-track-058','group-track-060','group-track-062','group-track-063','group-track-064']);
+function performanceVideos(id) {
+  const sources=media.performances[id]||[];
+  for(const kind of ['broadcast','live','tour','official']){
+    if(kind==='tour'&&!tourSongs.has(id))continue;
+    const videos=sources.filter(v=>v.kind===kind && v.embedAllowed!==false);
+    if(videos.length)return videos;
+  }
+  return [];
+}
 function checkedSongs(songs) {
-  return songs.filter(song => song.enabled && media.performances[song.id]?.length);
+  return songs.filter(song => song.enabled && performanceVideos(song.id).length);
 }
 function config(value,songs) {
   if(value?.mode==='all') return {mode:'all'};
@@ -98,8 +109,8 @@ function session(d,songs,random=Math.random) {
       return {...e,label:vcrLabel,title:video.title,artist:video.channel,videos:[video]};
     }
     const id=e.kind==='hidden'?drawn[h++]:e.id,song=songInfo(id,songs);
-    const choices=media.performances[id]||[];
+    const choices=performanceVideos(id);
     return {...e,label:e.kind==='hidden'?hiddenLabel:song.title,title:song.title,artist:song.artistNames.join(' · '),videos:choices};
   });
 }
-module.exports={vcrLibrary,alignVcrs,youtubeId,media,hiddenLabel,vcrLabel,isHidden,songInfo,checkedSongs,config,vcrConfig,candidates,matching,rows,session};
+module.exports={vcrLibrary,alignVcrs,youtubeId,media,hiddenLabel,vcrLabel,isHidden,songInfo,performanceVideos,checkedSongs,config,vcrConfig,candidates,matching,rows,session};
