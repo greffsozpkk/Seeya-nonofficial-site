@@ -340,9 +340,105 @@
         "label": "씨야 팬 서포트팀 · 김연지 생일 케이크 서포트",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10400",
         "publishedDate": "2026-11-01"
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=9h16Yvpncwo",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "SPONG",
+        "url": "https://www.youtube.com/watch?v=ugeASA-zV4M",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=Dhy-iACgMFQ",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "SPONG",
+        "url": "https://www.youtube.com/watch?v=ieSDdiZPPAg",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "SPONG",
+        "url": "https://www.youtube.com/watch?v=4tMEy0F1pDs",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=IrsiZJCPmQE",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=mhQQyxMzEJA",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=0M_57JySH3A",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=zsaSRByFRFA",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=m_Xyiw1DBm0",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=ChT_3iA8FrY",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=K6FS4hpNbII",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=_h_SgTUCPIo",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=8kZw7SCDhms",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=Y1R5Nm5YsFc",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=VI5QCYwiTH0",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-01T06:35:37.978792+00:00",
+    "updatedAt": "2026-11-02T06:35:44.103967+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -52149,7 +52245,7 @@
     "id": "20261101-boram-kia-music-festa",
     "date": "2026-11-01",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-01",
+    "updatedAt": "2026-11-02T06:35:44.103967+00:00",
     "title": "이보람 · 2026 기아 PLUS 뮤직 페스타",
     "program": "2026 기아 People Link US 뮤직 페스타",
     "type": "event",
@@ -52188,6 +52284,30 @@
         "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
         "publishedDate": "2026-10-26"
+      },
+      {
+        "label": "배안심TV",
+        "url": "https://www.youtube.com/watch?v=vvMA3ySZZW0",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=JxOAcbJucus",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "오등심tv",
+        "url": "https://www.youtube.com/watch?v=r8ATGMwoqyo",
+        "publishedDate": "2026-11-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "처키아빠",
+        "url": "https://www.youtube.com/watch?v=NyYVLcOUIBA",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
