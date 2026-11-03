@@ -481,9 +481,69 @@
         "label": "씨야 갤러리 · 전국 투어 슬로건 인증 이벤트 안내",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10452",
         "publishedDate": "2026-11-02"
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=YydPYIIdOcY",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=VRLLev_6hDo",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=su5HfkyuMBM",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=3Hk8MOU05g4",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=N27GxT09g7k",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=UQwD6mZFCtE",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=ikjuuZdMBRQ",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=GSuz61os5UY",
+        "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=xfiVaDw3Dek",
+        "publishedDate": "2026-11-03",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=_nviqfOfi4Q",
+        "publishedDate": "2026-11-03",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-02T06:35:44.103967+00:00",
+    "updatedAt": "2026-11-03T07:05:57.601350+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -48439,7 +48499,7 @@
     "id": "20060319-seeya-inkigayo",
     "date": "2006-03-19",
     "addedAt": "2026-09-19",
-    "updatedAt": "2026-09-19",
+    "updatedAt": "2026-11-03T07:05:57.601350+00:00",
     "title": "씨야 · SBS 인기가요 · 여인의 향기",
     "program": "SBS 인기가요",
     "type": "music-show",
@@ -48461,6 +48521,12 @@
       {
         "label": "씨야 갤러리 · 팬 보관자료 목록",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=5169"
+      },
+      {
+        "label": "여돌음방모음",
+        "url": "https://www.youtube.com/watch?v=I6yE2PFlSaU",
+        "publishedDate": "2026-03-20",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -52290,7 +52356,7 @@
     "id": "20261101-boram-kia-music-festa",
     "date": "2026-11-01",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-02T06:35:44.103967+00:00",
+    "updatedAt": "2026-11-03T07:05:57.601350+00:00",
     "title": "이보람 · 2026 기아 PLUS 뮤직 페스타",
     "program": "2026 기아 People Link US 뮤직 페스타",
     "type": "event",
@@ -52352,6 +52418,18 @@
         "label": "처키아빠",
         "url": "https://www.youtube.com/watch?v=NyYVLcOUIBA",
         "publishedDate": "2026-11-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=yJ4_s5Qijpk",
+        "publishedDate": "2026-11-03",
+        "autoDiscovery": true
+      },
+      {
+        "label": "배안심TV",
+        "url": "https://www.youtube.com/watch?v=GKMlVgjvWAo",
+        "publishedDate": "2026-11-03",
         "autoDiscovery": true
       }
     ],
