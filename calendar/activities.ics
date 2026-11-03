@@ -6,8 +6,8 @@ X-WR-CALNAME:씨야 활동 일정
 X-WR-TIMEZONE:Asia/Seoul
 BEGIN:VEVENT
 UID:activity-20060319-seeya-inkigayo@seeya-fanpage.com
-DTSTAMP:20260918T150000Z
-LAST-MODIFIED:20260918T150000Z
+DTSTAMP:20261103T070557Z
+LAST-MODIFIED:20261103T070557Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20060319
 DTEND;VALUE=DATE:20060320
@@ -19,8 +19,9 @@ LOCATION:
 DESCRIPTION:남규리 · 김연지 · 이보람\n시간 미정\nSBS · 387
  회 출연 안내·다시보기: https://programs.sbs.co.kr/programTemplat
  e/amp/vod/gayo/22000006462\n씨야 갤러리 · 팬 보관자료 목록: h
- ttps://gall.dcinside.com/mini/board/view/?id=seeya&no=5169\nhttps://seeya-
- fanpage.com/archive/?record=20060319-seeya-inkigayo
+ ttps://gall.dcinside.com/mini/board/view/?id=seeya&no=5169\n여돌음방
+ 모음: https://www.youtube.com/watch?v=I6yE2PFlSaU\nhttps://seeya-fanpage
+ .com/archive/?record=20060319-seeya-inkigayo
 URL:https://seeya-fanpage.com/calendar/?month=2006-03&event=activity-200603
  19-seeya-inkigayo
 END:VEVENT
@@ -10153,8 +10154,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261031-the-fan-incheon@seeya-fanpage.com
-DTSTAMP:20261102T063544Z
-LAST-MODIFIED:20261102T063544Z
+DTSTAMP:20261103T070557Z
+LAST-MODIFIED:20261103T070557Z
 SEQUENCE:2
 DTSTART:20261031T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · INCHEON
@@ -10278,14 +10279,23 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n20
  연 츄러스·커피차 서포트 현장 영상: https://www.youtube.com/
  shorts/6RhZFYBce_k\n씨야 갤러리 · 전국 투어 슬로건 인증 이
  벤트 안내: https://gall.dcinside.com/mini/board/view/?id=seeya&no=1045
- 2\nhttps://seeya-fanpage.com/archive/?record=20261031-the-fan-incheon
+ 2\n유튜브매니한: https://www.youtube.com/watch?v=YydPYIIdOcY\n유튜
+ 브매니한: https://www.youtube.com/watch?v=VRLLev_6hDo\n제리제이 Je
+ rry.j: https://www.youtube.com/watch?v=su5HfkyuMBM\n유튜브매니한: ht
+ tps://www.youtube.com/watch?v=3Hk8MOU05g4\n투카로그: https://www.youtu
+ be.com/watch?v=N27GxT09g7k\n유튜브매니한: https://www.youtube.com/wa
+ tch?v=UQwD6mZFCtE\n유튜브매니한: https://www.youtube.com/watch?v=ikj
+ uuZdMBRQ\n유튜브매니한: https://www.youtube.com/watch?v=GSuz61os5UY\
+ n🐿람보바라기: https://www.youtube.com/watch?v=xfiVaDw3Dek\n투카
+ 로그: https://www.youtube.com/watch?v=_nviqfOfi4Q\nhttps://seeya-fanpage
+ .com/archive/?record=20261031-the-fan-incheon
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  31-the-fan-incheon
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261101-boram-kia-music-festa@seeya-fanpage.com
-DTSTAMP:20261102T063544Z
-LAST-MODIFIED:20261102T063544Z
+DTSTAMP:20261103T070557Z
+LAST-MODIFIED:20261103T070557Z
 SEQUENCE:2
 DTSTART:20261101T095000Z
 SUMMARY:이보람 · 2026 기아 PLUS 뮤직 페스타
@@ -10310,8 +10320,9 @@ DESCRIPTION:이보람\n18:50 · 이보람 출연\n11월 1일 광주시청
  V: https://www.youtube.com/watch?v=vvMA3ySZZW0\n🐿람보바라기: https
  ://www.youtube.com/watch?v=JxOAcbJucus\n오등심tv: https://www.youtube.c
  om/watch?v=r8ATGMwoqyo\n처키아빠: https://www.youtube.com/watch?v=NyYV
- LcOUIBA\nhttps://seeya-fanpage.com/archive/?record=20261101-boram-kia-musi
- c-festa
+ LcOUIBA\n제리제이 Jerry.j: https://www.youtube.com/watch?v=yJ4_s5Qijpk
+ \n배안심TV: https://www.youtube.com/watch?v=GKMlVgjvWAo\nhttps://seeya-
+ fanpage.com/archive/?record=20261101-boram-kia-music-festa
 URL:https://seeya-fanpage.com/calendar/?month=2026-11&event=activity-202611
  01-boram-kia-music-festa
 END:VEVENT
