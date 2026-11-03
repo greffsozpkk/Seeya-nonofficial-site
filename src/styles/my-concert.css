@@ -49,3 +49,9 @@
 .mc-set-heading .mc-field-error{grid-column:1/-1}
 .mc-set-heading .mc-field-error:empty{display:none}
 .mc-now-card #mcPlayingCredit{font-size:13px}
+
+.mc-candidates label[data-candidate-artist]{display:flex;align-items:center;gap:.7rem;border-bottom:1px solid #ebd7df;padding:.5rem}
+.mc-candidates label[hidden]{display:none}
+.mc-candidates small{display:block;color:#694b57}
+.mc-progress-head{flex-wrap:wrap;gap:.5rem}
+#mcReady{font-size:.9rem;color:#70445a}

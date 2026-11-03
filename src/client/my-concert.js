@@ -18,6 +18,9 @@ if(root){
   $('mcTitleError').textContent=!title||M.chars(title).length>30?'공연 제목은 1~30자로 입력해 주세요.':'';
   $('mcPlannerError').textContent=M.chars(planner).length>20?'기획자 이름은 20자 이내로 입력해 주세요.':'';
   $('mcTitle').setAttribute('aria-invalid',String(!!$('mcTitleError').textContent));$('mcPlanner').setAttribute('aria-invalid',String(!!$('mcPlannerError').textContent));
+  const problems=M.problems(draft);
+  $('mcReady').textContent=problems[0]||'공연 완성 가능';
+  $('mcMobileCount').textContent='현재 '+M.count(draft)+'곡 · 최대 32곡'+(problems.length?'':' · 공연 완성 가능');
   $('mcMobileTitle').textContent=title||'공연 제목을 적어주세요';
  }
  function refreshAlbums(){
@@ -34,7 +37,7 @@ if(root){
  function setlist(){
   let n=1;const byid=new Map(songs.map(s=>[s.id,s]));
   $('mcSections').innerHTML=M.SECTIONS.map(section=>`<section class="mc-section" data-destination="${section.id}" aria-label="${section.ko}"><div class="mc-section-title"><h3>${section.name}</h3><span>${draft.sections[section.id].length} / ${section.limit}</span></div><ol>${draft.sections[section.id].map((id,index)=>{const s=Show.songInfo(id,songs);return `<li class="mc-track" draggable="true" data-track="${esc(id)}" data-section="${section.id}"><div class="mc-track-head"><span class="mc-grip" title="잡아서 순서 바꾸기" aria-hidden="true">⠿</span><div class="mc-track-name"><span class="mc-track-number">${String(n++).padStart(2,'0')}</span><strong>${esc(s.title)}</strong><small>${esc(s.artistNames.join(' · '))}</small></div></div><div class="mc-track-actions">${Show.isHidden(id)?'<button data-special="hidden" data-slot="'+esc(id)+'">후보 설정</button>':''}<button type="button" data-order="-1" data-id="${esc(id)}" data-section="${section.id}" aria-label="${esc(s.title)} 위로"${index===0?' disabled':''}>↑</button><button type="button" data-order="1" data-id="${esc(id)}" data-section="${section.id}" aria-label="${esc(s.title)} 아래로"${index===draft.sections[section.id].length-1?' disabled':''}>↓</button><select data-move="${esc(id)}" data-section="${section.id}" aria-label="${esc(s.title)} 다른 구간으로 이동"><option value="">구간 이동</option>${M.SECTIONS.filter(x=>x.id!==section.id).map(x=>`<option value="${x.id}">${x.ko}${draft.sections[x.id].length>=x.limit?' (가득 참)':''}</option>`).join('')}</select><button type="button" data-remove="${esc(id)}" data-section="${section.id}" aria-label="${esc(s.title)} 삭제">삭제</button></div></li>${extras.gapRows(draft,n-1)}`;}).join('')}${!draft.sections[section.id].length?'<li class="mc-slot">이 구간에 첫 곡을 담아 주세요.</li>':''}</ol></section>`).join('');
-  const count=M.count(draft);$('mcTotal').textContent=`${count} / 32`;$('mcMobileCount').textContent=`선택한 곡 ${count} / 32`;$('mcTabCount').textContent=count;$('mcPickCount').textContent=`${count} / 32`;$('mcProgress').value=count;
+  const count=M.count(draft);$('mcTotal').textContent=`현재 ${count}곡 · 최대 32곡`;$('mcTabCount').textContent=count;$('mcPickCount').textContent=`현재 ${count}곡`;
   $('mcTarget').value=target;
  }
  function update(){metadata();setlist();library();$('mcCompleteError').textContent='';$('mcTopError').textContent='';}

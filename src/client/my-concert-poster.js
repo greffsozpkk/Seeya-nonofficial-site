@@ -6,9 +6,16 @@ const W=1080,H=1350,metaFont='"Passport Dodum", sans-serif';
 
 function wrap(ctx,text,width){
  const lines=[];let line='';
- for(const ch of chars(text)){
-  if(line && ctx.measureText(line+ch).width>width){lines.push(line);line='';}
-  line+=ch;
+ for(const word of text.trim().split(/\s+/)){
+  const next=line?line+' '+word:word;
+  if(ctx.measureText(next).width<=width){line=next;continue;}
+  if(line)lines.push(line);
+  line='';
+  if(ctx.measureText(word).width<=width || /[A-Za-z]/.test(word)){line=word;continue;}
+  for(const ch of chars(word)){
+   if(line && ctx.measureText(line+ch).width>width){lines.push(line);line='';}
+   line+=ch;
+  }
  }
  if(line)lines.push(line);
  return lines;
@@ -20,8 +27,10 @@ function tracks(d,songs){
  let number=0;
  return SECTIONS.flatMap(section=>d.sections[section.id].map((id,i)=>{
   const song=Show.songInfo(id,songs);
-  const text=song.title+(song.artistType==='solo'?'  /  '+song.artistNames.join(' · '):'');
-  return {id,text,section:i===0?section.name:'',number:++number,vcr:interruptions.get(number)||0};
+  const feature=song.title.match(/\s*\((feat\.\s*.+)\)\s*$/i);
+  const text=Show.isHidden(id)?'히든 스테이지':song.title.slice(0,feature?.index??song.title.length);
+  const credit=[feature?.[1],song.artistType==='solo'?song.artistNames.join(' · '):''].filter(Boolean).join(' / ');
+  return {id,text,credit,section:i===0?section.name:'',number:++number,vcr:interruptions.get(number)||0};
  }));
 }
 
@@ -35,10 +44,14 @@ function layout(ctx,entries,area,family){
    ctx.font=size+'px '+family;
    const step=Math.ceil(size*1.28), indent=size*1.65;
    const rows=entries.map(row=>{
+    ctx.font=size+'px '+family;
     const lines=wrap(ctx,row.text,width-indent);
+    const creditSize=Math.max(9,Math.round(size*.75)),creditStep=Math.ceil(creditSize*1.22);
+    ctx.font=creditSize+'px '+family;
+    const credits=row.credit?wrap(ctx,row.credit,width-indent):[];
     const heading=row.section?step:0;
-    const height=heading+Math.max(lines.length*step,row.vcr?step*1.65:0)+Math.ceil(size*.25);
-    return {...row,lines,height,heading};
+    const height=heading+Math.max(lines.length*step+credits.length*creditStep,row.vcr?step*1.65:0)+Math.ceil(size*.25);
+    return {...row,lines,credits,creditSize,creditStep,height,heading};
    });
    const total=rows.reduce((n,r)=>n+r.height,0);
    let split=rows.length,tallest=total;
@@ -85,7 +98,7 @@ function draw(canvas,d,songs,logo,background){
  }while(titleSize>=30);
  let y=t.top+36+28+titleSize;
  ctx.fillStyle=ink;
- for(const line of lines){ctx.fillText(line,anchor,y);y+=titleSize*1.12;}
+ for(const line of lines){ctx.fillText(line,anchor,y,t.right-t.left);y+=titleSize*1.12;}
  y-=titleSize*1.12;
  if(d.planner.trim()){y+=35;ctx.font='24px '+family;ctx.fillStyle=accent;ctx.fillText('기획 · '+d.planner.trim(),anchor,y);}
  y+=29;ctx.strokeStyle=accent;ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(t.left,y);ctx.lineTo(t.right,y);ctx.stroke();
@@ -104,7 +117,9 @@ function draw(canvas,d,songs,logo,background){
    ctx.fillStyle=accent;ctx.font=Math.round(size*.73)+'px '+metaFont;
    ctx.fillText(String(r.number).padStart(2,'0'),x,base+size);
    ctx.fillStyle=ink;ctx.font=size+'px '+family;
-   r.lines.forEach((line,i)=>ctx.fillText(line,x+indent,base+size+i*step));
+   r.lines.forEach((line,i)=>ctx.fillText(line,x+indent,base+size+i*step,width-indent));
+   ctx.fillStyle=accent;ctx.font=r.creditSize+'px '+family;
+   r.credits.forEach((line,i)=>ctx.fillText(line,x+indent,base+r.lines.length*step+r.creditSize+i*r.creditStep,width-indent));
    if(r.vcr){ctx.fillStyle=accent;ctx.font=Math.round(size*.53)+'px '+metaFont;ctx.fillText('VCR'+(r.vcr>1?'×'+r.vcr:''),x,base+size+step*.55,indent-2);}
    rowY+=r.height;bounds.push({id:r.id,lines:r.lines,bottom:rowY});
   }

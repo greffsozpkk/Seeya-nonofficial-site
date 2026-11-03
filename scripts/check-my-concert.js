@@ -33,7 +33,7 @@ assert.equal(M.filter(songs,'','gyuri','not-an-album').length,0);
 const drawn=[];const ctx={font:'',measureText(s){return {width:M.chars(s).length*(Number(this.font.match(/(\d+)px/)?.[1])||20)*.9};},fillText(s,x,y){drawn.push({s,x,y});},createLinearGradient(){return {addColorStop(){}};},createRadialGradient(){return {addColorStop(){}};},fillRect(){},strokeRect(){},setLineDash(){},beginPath(){},moveTo(){},lineTo(){},stroke(){},save(){},translate(){},scale(){},restore(){}};
 const canvas={getContext:()=>ctx};const longSongs=songs.map(s=>({...s,title:'아주 길고 긴 노래 제목과 함께 떠나는 우리들의 꿈같은 무대 (Special Live Version)'}));
 d.title='별'.repeat(29)+'👨‍👩‍👧‍👦';d.planner='팬'.repeat(20);
-for(const theme of ['rose','night']){d.theme=theme;drawn.length=0;const result=P.draw(canvas,d,longSongs);assert.equal(canvas.width,1080);assert.equal(canvas.height,1350);assert.equal(result.rows.length,12);assert(result.rows.every(r=>r.bottom<1215));assert(!drawn.some(x=>x.s.includes('…')));for(const row of result.rows)assert(row.lines.join('').includes('Special Live Version'));assert(drawn.some(x=>x.s.includes('팬이 만든 가상 콘서트')));}
+for(const theme of ['rose','night']){d.theme=theme;drawn.length=0;const result=P.draw(canvas,d,longSongs);assert.equal(canvas.width,1080);assert.equal(canvas.height,1350);assert.equal(result.rows.length,12);assert(result.rows.every(r=>r.bottom<1215));assert(!drawn.some(x=>x.s.includes('…')));for(const row of result.rows)assert(row.lines.join(' ').includes('Special Live Version'));assert(drawn.some(x=>x.s.includes('팬이 만든 가상 콘서트')));}
 // A short show, a full bill and a legacy link all use the same editor.
 const full=M.fresh();let index=0;
 for(const s of M.SECTIONS){

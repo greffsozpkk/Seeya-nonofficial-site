@@ -1,6 +1,20 @@
 'use strict';
 const media = require('../data/my-concert-media.json');
 const vcrLibrary=media.vcr.filter(v=>!v.excludeFromVcr);
+const vcrTypes={vlog:'브이로그',behind:'비하인드',promo:'홍보·예고',music:'뮤직비디오',challenge:'챌린지',other:'기타 콘텐츠'};
+function vcrType(video){
+  const t=video.title;
+  if(/예매|티켓|홍보|yes\s*24|티저|teaser|trailer|ticket|D-\d+|전국투어\s*콘서트.*(?:만나요|즐거울|계속 됩니다|갑니다)/i.test(t))return 'promo';
+  if(/비하인드|behind|스케치|메이킹|making|리허설/i.test(t))return 'behind';
+  if(/브이로그|vlog|일상|나들이|여행|먹방|귤멍|ep\.\s*\d+/i.test(t))return 'vlog';
+  if(/챌린지|challenge/i.test(t))return 'challenge';
+  if(/뮤직비디오|\bMV\b|M\/V|music video/i.test(t))return 'music';
+  return 'other';
+}
+function randomVcrs(channel,type='recommended'){
+  return vcrLibrary.filter(v=>(channel==='all'||channel===v.channelId) &&
+    (type==='recommended'?vcrType(v)!=='promo':vcrType(v)===type));
+}
 const hiddenLabel = '히든 스테이지 (랜덤 노래)';
 const vcrLabel = 'VCR 재생';
 const sections = ['opening','main','encore'];
@@ -33,7 +47,11 @@ function vcrConfig(v) {
   if(!v || !Number.isInteger(v.after) || v.after<1 || v.after>31) throw Error('VCR 위치를 확인해 주세요.');
   if(v.mode==='link' && typeof v.value==='string' && /^[a-zA-Z0-9_-]{11}$/.test(v.value))return {after:v.after,mode:'link',value:v.value};
   if(v.mode==='fixed' && media.vcr.some(x=>x.videoId===v.value)) return {after:v.after,mode:v.mode,value:v.value};
-  if(v.mode==='random' && (v.value==='all'||Object.hasOwn(media.channels,v.value))) return {after:v.after,mode:v.mode,value:v.value};
+  if(v.mode==='random' && (v.value==='all'||Object.hasOwn(media.channels,v.value))){
+    const type=v.type??'recommended';
+    if(type!=='recommended'&&!Object.hasOwn(vcrTypes,type))throw Error('VCR 유형을 다시 선택해 주세요.');
+    return {after:v.after,mode:v.mode,value:v.value,...(type==='recommended'?{}:{type})};
+  }
   throw Error('VCR 영상 또는 채널을 다시 설정해 주세요.');
 }
 function candidates(range,songs) {
@@ -99,7 +117,7 @@ function session(d,songs,random=Math.random) {
   const drawn=matching(slots.map(e=>candidates(config(d.hidden?.[e.id],songs),songs)),fixed,random);
   const vcrs=(d.vcrs||[]).map(vcrConfig);
   const vFixed=new Set(vcrs.filter(v=>v.mode!=='random').map(v=>v.value));
-  const vDraw=matching(entries.filter(e=>e.kind==='vcr'&&e.config.mode==='random').map(e=>vcrLibrary.filter(v=>(e.config.value==='all'||e.config.value===v.channelId)).map(v=>v.videoId)),vFixed,random);
+  const vDraw=matching(entries.filter(e=>e.kind==='vcr'&&e.config.mode==='random').map(e=>randomVcrs(e.config.value,e.config.type).map(v=>v.videoId)),vFixed,random);
   let h=0,v=0;
   return entries.map(e=>{
     if(e.kind==='vcr'){
@@ -113,4 +131,4 @@ function session(d,songs,random=Math.random) {
     return {...e,label:e.kind==='hidden'?hiddenLabel:song.title,title:song.title,artist:song.artistNames.join(' · '),videos:choices};
   });
 }
-module.exports={vcrLibrary,alignVcrs,youtubeId,media,hiddenLabel,vcrLabel,isHidden,songInfo,performanceVideos,checkedSongs,config,vcrConfig,candidates,matching,rows,session};
+module.exports={vcrLibrary,vcrType,vcrTypes,randomVcrs,alignVcrs,youtubeId,media,hiddenLabel,vcrLabel,isHidden,songInfo,performanceVideos,checkedSongs,config,vcrConfig,candidates,matching,rows,session};
