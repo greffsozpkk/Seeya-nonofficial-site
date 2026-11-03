@@ -205,12 +205,10 @@ main{margin-left:225px}.page{max-width:1160px;margin:auto;padding:50px 46px 90px
 .current-copy .meta{font-size:9px;letter-spacing:.16em;opacity:.78}
 .current-copy h3{font:700 clamp(28px,3.3vw,48px)/1 "Gowun Batang",serif;margin:8px 0 18px}
 .current-copy .go{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #ffffff80;padding-top:13px;font-size:11px}
-.current-card.ticket{background:linear-gradient(145deg,#f0cbd9,#9f6179)}
-.ticket-art{
-  position:absolute;inset:0;display:grid;place-items:center;
-  font:700 clamp(52px,7vw,108px)/.85 "Gowun Batang",serif;
-  letter-spacing:-.08em;color:#fff3f7;text-align:center;transform:rotate(-5deg);
-  opacity:.72
+.current-card.community{background:linear-gradient(145deg,#f0cbd9,#9f6179)}
+.community-art{
+  position:absolute;top:8%;right:9%;width:clamp(84px,24%,140px);
+  height:auto;color:#fff3f7;opacity:.8
 }
 .home-logo-wrap{background:transparent!important;box-shadow:none!important;backdrop-filter:none!important;padding:0!important}
 .home-logo-wrap img{filter:drop-shadow(0 8px 22px rgba(0,0,0,.24))}
