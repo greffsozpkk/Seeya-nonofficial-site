@@ -1,5 +1,5 @@
 {
-  "version": "5.79",
+  "version": "5.80",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -65,7 +65,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.276aeb3e0d64.js",
+    "assets/site.9c501ffc3140.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.73191fbcb5b4.js",
@@ -96,8 +96,8 @@
     "assets/YeonSung-Regular.0b4d1d0e50c8.woff2",
     "assets/Gaegu-Regular.13ff1bfdfd0b.woff2",
     "assets/Gaegu-Bold.f7accbcc5543.woff2",
-    "assets/my-concert.304abd343f33.css",
-    "assets/my-concert.0498cd45e0a9.js"
+    "assets/my-concert.c2c31f2d936e.css",
+    "assets/my-concert.ce8679fd4e76.js"
   ],
   "auxiliary": [
     "game/my-concert/catalog.json",
