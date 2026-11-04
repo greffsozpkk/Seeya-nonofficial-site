@@ -48,7 +48,8 @@ module.exports=()=>W(`<section class="mc" id="myConcert">
    <section class="mc-deck" aria-label="콘서트 무대">
     <div class="mc-proscenium"><div class="mc-stage-lights" aria-hidden="true"></div><div id="mcMount"></div><div class="mc-stage-edge" aria-hidden="true"></div></div>
     <div class="mc-now-card"><small id="mcNow"></small><h3 id="mcPlayingTitle"></h3><p id="mcPlayingCredit"></p><p role="status" id="mcPlayStatus"></p>
-     <div class="mc-tools"><button id="mcPrevious" data-watch="prev">이전 순서</button><button data-watch="resume">재생 / 다시 시도</button><button id="mcNext" data-watch="next">다음 순서</button></div><a id="mcOriginal" target="_blank" rel="noopener">YouTube에서 보기 ↗</a>
+     <div class="mc-transport" aria-label="콘서트 재생 제어"><input id="mcSeek" type="range" min="0" max="0" value="0" step="1" aria-label="재생 위치" disabled><div class="mc-times"><span id="mcElapsed">0:00</span><span id="mcDuration">--:--</span></div><div class="mc-main-controls"><button id="mcBack15" class="mc-skip" type="button" data-watch="back15" aria-label="15초 뒤로" disabled><span aria-hidden="true">↶</span><small>15</small></button><button id="mcToggle" class="mc-play" type="button" data-watch="toggle" aria-label="재생" disabled><span aria-hidden="true">▶</span></button><button id="mcForward15" class="mc-skip" type="button" data-watch="forward15" aria-label="15초 앞으로" disabled><small>15</small><span aria-hidden="true">↷</span></button></div></div>
+     <div class="mc-tools"><button id="mcPrevious" data-watch="prev">이전 순서</button><button id="mcRetry" data-watch="resume" hidden>다시 연결</button><button id="mcNext" data-watch="next">다음 순서</button></div><a id="mcOriginal" target="_blank" rel="noopener">YouTube에서 보기 ↗</a>
     </div>
    </section>
    <section class="mc-program"><span class="mc-kicker">SETLIST</span><h3>공연 순서</h3><div id="mcQueue" aria-label="감상 순서"></div></section>

@@ -17,7 +17,31 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
  let queue=[],index=-1,alternative=0,player=null,ready=false,generation=0,playing=false,ended=false,active=false,finished=false,readyTimer,failed=new Map(),lastMove=0;
  const status=msg=>{$('mcPlayStatus').textContent=msg;};
  const current=()=>queue[index],video=()=>current()?.videos[alternative];
- function destroy(){generation++;ready=false;playing=false;clearTimeout(readyTimer);if(player){try{player.destroy();}catch{}player=null;}$('mcMount').innerHTML='';}
+ let progressTimer,mediaReady=false,scrubbing=false;
+ const clock=seconds=>{const n=Math.max(0,Math.floor(Number(seconds)||0)),h=Math.floor(n/3600),m=Math.floor(n%3600/60),s=String(n%60).padStart(2,'0');return h?h+':'+String(m).padStart(2,'0')+':'+s:m+':'+s;};
+ function resetProgress(){
+  mediaReady=false;scrubbing=false;$('mcSeek').max='0';$('mcSeek').value='0';$('mcSeek').disabled=true;
+  $('mcElapsed').textContent='0:00';$('mcDuration').textContent='--:--';$('mcSeek').setAttribute('aria-valuetext','재생 준비 중');
+  for(const id of ['mcToggle','mcBack15','mcForward15'])$(id).disabled=true;
+  $('mcToggle').innerHTML='<span aria-hidden="true">▶</span>';$('mcToggle').setAttribute('aria-label','재생');
+ }
+ function syncProgress(){
+  const available=active&&ready&&!finished&&!!video();
+  $('mcToggle').disabled=!available;
+  $('mcToggle').innerHTML='<span aria-hidden="true">'+(playing?'❚❚':'▶')+'</span>';$('mcToggle').setAttribute('aria-label',playing?'일시정지':'재생');
+  let duration=0,time=0;
+  try{if(available&&mediaReady&&player.getVideoData?.()?.video_id===video().videoId){duration=Number(player.getDuration());time=Number(player.getCurrentTime());}}catch{}
+  const seekable=Number.isFinite(duration)&&duration>0&&Number.isFinite(time);
+  for(const id of ['mcSeek','mcBack15','mcForward15'])$(id).disabled=!seekable;
+  if(!seekable)return;
+  $('mcSeek').max=String(Math.floor(duration));$('mcDuration').textContent=clock(duration);
+  if(!scrubbing){$('mcSeek').value=String(Math.floor(Math.max(0,Math.min(duration,time))));$('mcElapsed').textContent=clock(time);$('mcSeek').setAttribute('aria-valuetext',clock(time)+' / '+clock(duration));}
+ }
+ function seek(seconds){
+  if($('mcSeek').disabled||!Number.isFinite(seconds))return;
+  try{const duration=Number(player.getDuration());if(duration>0&&Number.isFinite(duration))player.seekTo(Math.max(0,Math.min(duration,seconds)),true);syncProgress();}catch{status('재생 위치를 바꾸지 못했어요. 다시 시도해 주세요.');}
+ }
+ function destroy(){generation++;ready=false;playing=false;clearTimeout(readyTimer);clearInterval(progressTimer);progressTimer=null;resetProgress();if(player){try{player.destroy();}catch{}player=null;}$('mcMount').innerHTML='';}
  function close(){root.classList?.remove('mc-when-playing');active=false;destroy();$('mcWatch').hidden=true;queue=[];}
  const sectionName={opening:'오프닝',main:'본 무대',encore:'앙코르'};
  const trackCount=()=>queue.filter(e=>e.kind!=='vcr').length;
@@ -29,8 +53,9 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
   }).join('');
   $('mcPrevious').disabled=nextPlayable(index-1,-1)<0;
   $('mcNext').disabled=finished||nextPlayable(index+1,1)>=queue.length;
+  syncProgress();
  }
- function pauseForNetwork(){playing=false;ended=true;destroy();status('플레이어를 불러오지 못했어요. 연결을 확인한 뒤 다시 시도해 주세요.');controls();}
+ function pauseForNetwork(){playing=false;ended=true;destroy();$('mcRetry').hidden=false;status('플레이어를 불러오지 못했어요. 연결을 확인한 뒤 다시 시도해 주세요.');controls();}
  function finish(){
   finished=true;playing=false;ended=true;destroy();controls();
   const misses=queue.filter((e,i)=>!e.videos.length||failed.has(i)).length;
@@ -63,13 +88,15 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
    const matches=()=>alive()&&player?.getVideoData?.()?.video_id===video()?.videoId;
    readyTimer=setTimeout(()=>{if(alive()&&!ready)pauseForNetwork();},15000);
    player=new YT.Player(frame,{events:{
-    onReady(event){if(!alive())return;clearTimeout(readyTimer);ready=true;player=event.target;player.loadVideoById(video().videoId);},
+    onReady(event){if(!alive())return;clearTimeout(readyTimer);ready=true;player=event.target;player.loadVideoById(video().videoId);clearInterval(progressTimer);progressTimer=setInterval(syncProgress,500);syncProgress();},
     onStateChange(event){
      if(!matches()||event.target.getPlayerState()!==event.data)return;
+     if([1,2,5].includes(event.data))mediaReady=true;
      if(event.data===1){if(current().kind==='vcr'&&current().config.mode==='link'){
        const title=event.target.getVideoData()?.title;if(title)$('mcPlayingTitle').textContent=title;
      }playing=true;ended=false;failed.delete(index);status('재생 중');controls();}
      if(event.data===2){status('일시정지');playing=false;controls();}
+     if(event.data===5){playing=false;status('재생 버튼을 눌러 시작해 주세요.');controls();}
      if(event.data===0&&!ended&&hasStarted){ended=true;playing=false;advance();}
      if(event.data===1)hasStarted=true;
     },
@@ -81,6 +108,7 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
  let hasStarted=false,lastVideo='';
  function requestVideo(){
   const id=video().videoId,repeat=lastVideo===id;lastVideo=id;
+  resetProgress();$('mcRetry').hidden=true;
   hasStarted=false;playing=false;ended=false;describe();controls();
   if(!navigator.onLine){pauseForNetwork();return;}
   if(!ready||repeat)mount();else {try{player.loadVideoById(id);}catch{pauseForNetwork();}}
@@ -109,6 +137,8 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
   const b=event.target.closest('button');if(!b)return;
   if(b.dataset.queue!==undefined){select(Number(b.dataset.queue));return;}
   switch(b.dataset.watch){
+   case 'toggle':if(ready&&!finished){try{if(playing||player.getPlayerState()===1||player.getPlayerState()===3)player.pauseVideo();else player.playVideo();}catch{pauseForNetwork();}}break;
+   case 'back15':case 'forward15':if(ready){try{seek(Number(player.getCurrentTime())+(b.dataset.watch==='back15'?-15:15));}catch{}}break;
    case 'start':try{start(true);}catch(e){status(e.message);}break;
    case 'same':start(false);break;case 'redraw':start(true);break;
    case 'prev':case 'next':{const now=Date.now();if(now-lastMove<250)return;lastMove=now;const step=b.dataset.watch==='next'?1:-1;select(nextPlayable(index+step,step));break;}
@@ -117,6 +147,9 @@ module.exports=function playback({root,$,esc,getShow,getSongs,edit}){
    case 'edit':close();$('mcResult').hidden=false;edit();break;
   }
  });
+ $('mcSeek').addEventListener('input',()=>{if($('mcSeek').disabled)return;scrubbing=true;$('mcElapsed').textContent=clock($('mcSeek').value);$('mcSeek').setAttribute('aria-valuetext',clock($('mcSeek').value)+' / '+$('mcDuration').textContent);});
+ $('mcSeek').addEventListener('change',()=>{const value=Number($('mcSeek').value);scrubbing=false;seek(value);});
+ for(const event of ['blur','pointercancel'])$('mcSeek').addEventListener(event,()=>{scrubbing=false;syncProgress();});
  window.addEventListener('pagehide',()=>{if(active){close();$('mcResult').hidden=false;}});
  window.addEventListener('offline',()=>{if(active&&!finished)pauseForNetwork();});
  return {summary,close};
