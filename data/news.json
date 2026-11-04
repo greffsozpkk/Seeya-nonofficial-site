@@ -45,6 +45,13 @@
       "description": "“살다 보니 이런 날이 오네요” 남규리, 씨야 20주년 투어 마무리… ‘기적’ 같았던 여정 아시아뉴스통신"
     },
     {
+      "title": "\"살다 보니 이런 날이..\" 남규리, 씨야 '불화설' 딛고 20주년 투어 마무리 - 스타뉴스",
+      "source": "스타뉴스",
+      "pubDate": "2026-11-01T08:59:29+00:00",
+      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93T1hQSVFFWE1BR2VIS3pkcHo3UUQ0TWU2NFItWjlZVjB1ZEtuVm15dVYzaEZoeDdJT2NzcGkxNUs2ZjUzcnI4VXdmVktlRk1FRWpoemMwblIyU0cxQkkxWVFIVkhkWVBkNUUyTnpxeDM2MnZM?oc=5",
+      "description": "\"살다 보니 이런 날이..\" 남규리, 씨야 '불화설' 딛고 20주년 투어 마무리 스타뉴스"
+    },
+    {
       "title": "남규리, 씨야 20주년 투어 마무리 - BNT뉴스",
       "source": "BNT뉴스",
       "pubDate": "2026-11-01T07:53:36+00:00",
@@ -64,13 +71,6 @@
       "pubDate": "2026-11-01T05:12:34+00:00",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTE40a2tKSFlldW9EY3ZJcFZ1ZmJmcG9DRFlXUlhwd1NEekx0enVyeHN0eFVEWjQ3U1NBc1FPeFNVM2I4cHdNd1NHSUxHYXMxbUlLaXFwZFlRQy1XWEEtQV80akFJYVJENnJCbTUw?oc=5",
       "description": "남규리, 씨야 20주년 전국투어 마무리…\"여러분 덕에 가능했던 기적\" 티브이데일리"
-    },
-    {
-      "title": "남규리, 씨야 20주년 전국투어 ‘THE FAN’ 성황리 마감…“모든 게 기적, 팬들 사랑 덕분” - 스포츠서울",
-      "source": "스포츠서울",
-      "pubDate": "2026-11-01T04:58:40+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBYZHJMaTBxenllYWZFZkttOExPTVRjUUZudmZTMklTQWU0OC1kcUJydTFVeG9qdVZURTFMTDBTNjZpMkg1S1RCNkNlTU82NDFRSFJLWWxPeTA?oc=5",
-      "description": "남규리, 씨야 20주년 전국투어 ‘THE FAN’ 성황리 마감…“모든 게 기적, 팬들 사랑 덕분” 스포츠서울"
     }
   ],
   "김연지": [
@@ -147,17 +147,17 @@
       "description": "‘골때녀’ 이보람, ‘0.5골급’ 도움에 끈질긴 수비까지···FC발라드림 새 전력 눈도장 스포츠경향"
     }
   ],
-  "updatedAt": "2026-11-03T23:25:42.969622+00:00",
-  "lastCheckedAt": "2026-11-03T23:25:42.969622+00:00",
+  "updatedAt": "2026-11-04T06:29:30.097652+00:00",
+  "lastCheckedAt": "2026-11-04T06:29:30.097652+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-03T23:25:42.969622+00:00",
-    "남규리": "2026-11-03T23:25:42.969622+00:00",
-    "김연지": "2026-11-03T23:25:42.969622+00:00",
-    "이보람": "2026-11-03T23:25:42.969622+00:00"
+    "씨야": "2026-11-04T06:29:30.097652+00:00",
+    "남규리": "2026-11-04T06:29:30.097652+00:00",
+    "김연지": "2026-11-04T06:29:30.097652+00:00",
+    "이보람": "2026-11-04T06:29:30.097652+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-03T14:30:02.699798+00:00",
-    "남규리": "2026-11-02T06:11:20.460675+00:00",
+    "남규리": "2026-11-04T06:29:30.097652+00:00",
     "이보람": "2026-11-02T14:00:36.723176+00:00",
     "김연지": "2026-10-29T05:51:58.045299+00:00"
   },
@@ -173,20 +173,20 @@
       "queries": 3,
       "succeeded": 3,
       "accepted": 108,
-      "changed": false,
-      "status": "unchanged"
+      "changed": true,
+      "status": "changed"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 26,
+      "accepted": 27,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 77,
+      "accepted": 75,
       "changed": false,
       "status": "unchanged"
     }
