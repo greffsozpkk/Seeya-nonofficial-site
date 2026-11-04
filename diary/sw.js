@@ -1,6 +1,6 @@
 'use strict';
 // Only public application files are cached. Personal entries stay in browser storage.
-const CACHE="seeya-diary-shell-b081e78d8aff",FILES=["/assets/GowunDodum-Regular.385f1f238065.woff2","/assets/GowunBatang-Regular.d66f8f3914dc.woff2","/assets/NanumPenScript-Regular.d083eb8197a2.woff2","/diary/","/assets/site.40ae99b9b8bc.css","/assets/passport.986e895a55c7.css","/assets/diary.1818dd06da72.js","/assets/mobile-menu.d34f2de4a9e9.js","/manifest.webmanifest","/images/app/favicon-192.png","/images/app/apple-touch-icon-180-v2.png"];
+const CACHE="seeya-diary-shell-51b10cc14b14",FILES=["/assets/my-concert.510baac6201e.css","/assets/Jua-Regular.70ca2195715d.woff2","/assets/YeonSung-Regular.0b4d1d0e50c8.woff2","/assets/Gaegu-Regular.13ff1bfdfd0b.woff2","/assets/Gaegu-Bold.f7accbcc5543.woff2","/assets/GowunDodum-Regular.385f1f238065.woff2","/assets/GowunBatang-Regular.d66f8f3914dc.woff2","/assets/NanumPenScript-Regular.d083eb8197a2.woff2","/diary/","/assets/site.40ae99b9b8bc.css","/assets/passport.986e895a55c7.css","/assets/diary.4492d030b7bd.js","/assets/mobile-menu.d34f2de4a9e9.js","/manifest.webmanifest","/images/app/favicon-192.png","/images/app/apple-touch-icon-180-v2.png"];
 self.addEventListener('install',event=>event.waitUntil((async()=>{
  const cache=await caches.open(CACHE);
  try{for(const file of FILES){const response=await fetch(new Request(file,{cache:'reload'}));if(!response.ok)throw Error('Passport offline preparation failed');await cache.put(file,response);}}
