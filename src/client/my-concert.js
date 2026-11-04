@@ -59,7 +59,8 @@ if(root){
  async function showResult(d){
   playback.summary(d,songs);result=true;$('mcEditor').hidden=true;$('mcResult').hidden=false;$('mcSharedError').hidden=true;$('mcCopy').hidden=true;
   $('mcResultTitle').textContent=shared?'팬이 꿈꾸는 씨야 콘서트':'당신의 무대가 완성됐어요';$('mcResultHint').textContent=shared?'공유받은 구성이에요. 내 편집본은 그대로 보관됩니다.':'첫 곡부터 앙코르까지, 좋아하는 마음을 한 장에 담았어요.';$('mcEditButton').textContent=shared?'이 구성으로 만들기':'다시 편집하기';
-  $('mcPosterTheme').value=d.theme;$('mcPosterFont').value=d.font;
+  $('mcPosterTheme').value=d.theme;$('mcPosterFont').value=d.font;$('mcPosterFormat').value=d.format||'poster';
+  $('mcFormatHint').textContent=d.format==='long'?'곡명 크기를 유지하고 목록 길이에 맞춰 이미지가 길어집니다.':M.count(d)>=20||d.vcrs.length>=3?'곡이나 VCR이 많다면 ‘읽기 편한 긴 이미지’를 추천해요.':'한 장 포스터는 전체 구성을 한눈에, 긴 이미지는 곡명을 크게 볼 수 있어요.';
   $('mcTextList').innerHTML='<h3>'+esc(d.title.trim())+'</h3>'+M.SECTIONS.map(section=>'<h4>'+section.name+'</h4>'+Show.rows(d).filter(e=>e.section===section.id).map(e=>'<p>'+(e.kind==='vcr'?Show.vcrLabel:e.number+'. '+esc(Show.songInfo(e.id,songs).title))+'</p>').join('')).join('');
   const token=++renderToken;$('mcPosterStatus').textContent='포스터를 만들고 있어요.';$('mcPoster').hidden=true;
   try{const off=document.createElement('canvas');await P.render(off,d,songs);if(token!==renderToken)return;$('mcPoster').height=off.height;$('mcPoster').getContext('2d').drawImage(off,0,0);$('mcPoster').hidden=false;$('mcPosterStatus').textContent='1080 × '+off.height+' · 조작 버튼 없이 포스터만 저장됩니다.';}
@@ -67,7 +68,7 @@ if(root){
  }
  async function exportImage(){
   const b=root.querySelector('[data-action="export"]');b.disabled=true;b.textContent='이미지 만드는 중…';
-  try{const canvas=document.createElement('canvas');await P.render(canvas,shared||draft,songs);$('mcExportSize').textContent='1080 × '+canvas.height;const blob=await P.png(canvas);if(imageUrl)URL.revokeObjectURL(imageUrl);imageUrl=URL.createObjectURL(blob);$('mcExportImage').src=imageUrl;$('mcDownload').href=imageUrl;$('mcOpenImage').href=imageUrl;const date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()).replace(/\D/g,'');$('mcDownload').download='seeya-my-concert-'+date+'.png';$('mcImageDialog').showModal();}
+  try{const canvas=document.createElement('canvas');await P.render(canvas,shared||draft,songs);$('mcExportSize').textContent='1080 × '+canvas.height;const blob=await P.png(canvas);if(imageUrl)URL.revokeObjectURL(imageUrl);imageUrl=URL.createObjectURL(blob);$('mcExportImage').src=imageUrl;$('mcDownload').href=imageUrl;$('mcOpenImage').href=imageUrl;const date=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date()).replace(/\D/g,'');$('mcDownload').download='seeya-my-concert-'+date+'-'+((shared||draft).format||'poster')+'.png';$('mcImageDialog').showModal();}
   catch(e){announce(e.message||'이미지 저장을 다시 시도해 주세요.');$('mcPosterStatus').textContent='이미지를 만들지 못했어요. 다시 저장을 눌러주세요.';}
   finally{b.disabled=false;b.textContent='이미지 저장';}
  }
@@ -84,8 +85,8 @@ if(root){
   if(['mcTitle','mcPlanner'].includes(e.target.id)){draft[e.target.id==='mcTitle'?'title':'planner']=e.target.value;metadata();dirty=true;clearTimeout(timer);timer=setTimeout(save,500);}
  });
  root.addEventListener('change',e=>{
-  if(e.target.id==='mcPosterTheme'||e.target.id==='mcPosterFont'){
-   const d=shared||draft;d[e.target.id==='mcPosterTheme'?'theme':'font']=e.target.value;
+  if(['mcPosterTheme','mcPosterFont','mcPosterFormat'].includes(e.target.id)){
+   const d=shared||draft;d[{mcPosterTheme:'theme',mcPosterFont:'font',mcPosterFormat:'format'}[e.target.id]]=e.target.value;
    if(!shared)persist();showResult(d);return;
   }
   if(e.target.id==='mcAlbum'){album=e.target.value;page=1;library();}

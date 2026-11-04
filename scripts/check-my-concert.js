@@ -57,6 +57,20 @@ for(const [theme,style] of Object.entries(design.themes)){
  }
 }
 const small=M.fresh();M.SECTIONS.forEach((s,i)=>small.sections[s.id]=[songs[i].id]);assert.deepEqual(M.problems(small),[]);
+for(const [theme,style] of Object.entries(design.themes)){
+ small.theme=theme;
+ const short=P.draw(canvas,small,songs);
+ assert.equal(short.columns,1);assert.equal(short.height,1350);
+ assert(Math.abs(short.rows[0].left+short.rows[0].width/2-(style.left+style.right)/2)<1);
+ full.theme=theme;full.format='long';
+ const readable=P.draw(canvas,full,longSongs);
+ assert.equal(readable.fontSize,40);assert.equal(readable.columns,1);assert(readable.height>1350);
+ assert.equal(readable.rows.length,32);assert(readable.rows.every(r=>r.bottom<=readable.contentBottom));
+ assert.equal(M.decode(M.encode(full),songs).format,'long');
+}
+assert.throws(()=>M.validate({...full,format:'unknown'},songs,true));
+const legacyFormat={...full};delete legacyFormat.format;assert.equal(M.validate(legacyFormat,songs,true).draft.format,'poster');
+assert.equal(require('../src/shared/my-concert-show').performanceVideos('group-track-013')[0].videoId,'uYp15-zFr4M');
 small.sections.encore=[];assert(M.problems(small).length);assert.throws(()=>M.decode(M.encode(small),songs));
 const oldShare={...d,schema:2,vcrs:[{mode:'fixed',after:10,value:'rrMkSeKS4eM'}]};
 assert.equal(M.validate(oldShare,songs,true).draft.vcrs[0].after,10);
