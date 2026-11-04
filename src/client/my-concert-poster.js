@@ -1,7 +1,7 @@
 'use strict';
 const {SECTIONS,chars,count}=require('../shared/my-concert');
 const Show=require('../shared/my-concert-show');
-const {themes,fonts,backdrop}=require('../shared/my-concert-design');
+const {themes,fonts,backdrop,outputFormat}=require('../shared/my-concert-design');
 const W=1080,H=1350,metaFont='"Passport Dodum", sans-serif';
 
 function wrap(ctx,text,width){
@@ -99,7 +99,7 @@ function draw(canvas,d,songs,logo,background){
  const ctx=canvas.getContext('2d');if(!ctx)throw Error('이 브라우저에서 이미지 만들기를 사용할 수 없어요.');
  const t=themes[d.theme]||themes.rose,family=(fonts[d.font]||fonts.dodum).family;
  const ink=t.dark?'#fff7f1':'#392c34', accent=t.dark?'#e4cee3':'#75495e';
- const entries=tracks(d,songs),long=d.format==='long',sparse=entries.length<=6;
+ const entries=tracks(d,songs),long=outputFormat(d.theme,d.format)==='long',sparse=entries.length<=6;
  let titleSize=entries.length>=20?46:60,lines;
  do{
   ctx.font='bold '+titleSize+'px '+family;lines=wrap(ctx,d.title.trim(),t.right-t.left);

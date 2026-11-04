@@ -55,3 +55,5 @@
 .mc-candidates small{display:block;color:#694b57}
 .mc-progress-head{flex-wrap:wrap;gap:.5rem}
 #mcReady{font-size:.9rem;color:#70445a}
+
+.mc-diary{text-align:center;margin:20px auto}.mc-diary>a{margin-left:12px}.mc-interlude .mc-grip{flex-shrink:0;width:36px}.mc-interlude[draggable]{position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:6px;border:1px solid #ead2df;border-radius:10px;margin:8px 0}.mc-interlude>strong{flex:1;min-width:80px}.mc-interlude>button{padding:7px 10px}

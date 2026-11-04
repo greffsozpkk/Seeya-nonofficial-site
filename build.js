@@ -145,9 +145,9 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
  if(key==='worldcup-test'||key==='worldcup'){vars.pageHead=`<meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="${worldcupCss}">`;vars.scripts=`<script defer src="${worldcupJs}"></script>`+(key==='worldcup'?`<script defer src="${siteJs}"></script>`:'');}
  if(key==='clinic'||key==='clinic-test'){vars.pageHead=`<link rel="stylesheet" href="${clinicCss}">`;vars.scripts=`<script defer src="${clinicJs}"></script>`;}
- if(key==='my-concert-test'){vars.pageHead=`<link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${myConcertJs}"></script>`;}
+ if(key==='my-concert-test'||key==='my-concert'){vars.pageHead=`<link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${myConcertJs}"></script>`;}
  if(key==='diary-privacy')vars.pageHead+=`<link rel="stylesheet" href="${passportCss}">`;
- if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}">`;vars.scripts=`<script defer src="${diaryJs}"></script>`;}
+ if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}"><link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${diaryJs}"></script>`;}
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
  if((key==='map'||key==='map-preview')){vars.pageHead=`<link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${mapJs}"></script>`;}
  if(key==='podcasts'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}"><link rel="stylesheet" href="${podcastCss}">`;vars.scripts=`<script defer src="${podcastJs}"></script>`;}
@@ -170,7 +170,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
 }
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.filter(r=>r.key!=='letter'&&!r.noindex).map(r=>'  <url><loc>'+esc(site.origin+r.path)+'</loc></url>').join('\n')+'\n</urlset>\n');
 write('passport/index.html',read('src/passport-redirect.html'));
-const diaryFiles=[...passportFonts.map(f=>f.url),'/diary/',siteCss,passportCss,diaryJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png','/images/app/apple-touch-icon-180-v2.png'];
+const diaryFiles=[myConcertCss,...assets.filter(p=>/\/(?:Jua-Regular|YeonSung-Regular|Gaegu-Regular|Gaegu-Bold)\./.test(p)).map(p=>'/'+p),...passportFonts.map(f=>f.url),'/diary/',siteCss,passportCss,diaryJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png','/images/app/apple-touch-icon-180-v2.png'];
 const diaryWorker=read('src/passport-worker.js').replaceAll('/passport/test/','/diary/').replaceAll('/passport/test','/diary').replaceAll('seeya-passport-shell-','seeya-diary-shell-');
 const diaryDigest=crypto.createHash('sha256').update(fs.readFileSync(path.join(outputRoot,'diary/index.html'))).update(diaryWorker).digest('hex').slice(0,12);
 write('diary/sw.js',diaryWorker.replace('__PASSPORT_CACHE__',JSON.stringify('seeya-diary-shell-'+diaryDigest)).replace('__PASSPORT_FILES__',JSON.stringify(diaryFiles)));

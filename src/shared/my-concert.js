@@ -49,11 +49,20 @@ function validate(raw,songs,strict=false){
  else if(raw.font)d.font=raw.font;
  if(raw.format!==undefined&&!Object.hasOwn(design.formats,raw.format)){if(strict)throw Error('지원하지 않는 이미지 형식이에요.');}
  else if(raw.format)d.format=raw.format;
+ d.format=design.outputFormat(d.theme,d.format);
  d.updatedAt=typeof raw.updatedAt==='string'?raw.updatedAt:'';
  return {draft:d,issues:[...new Set(issues)]};
 }
 function change(d,action,songs){
  const next=JSON.parse(JSON.stringify(d)),section=SECTIONS.find(s=>s.id===action.section);let message='';
+ if(action.type==='vcr-order'){
+  if(!Number.isInteger(action.index)||!next.vcrs[action.index]||!Number.isInteger(action.after)||action.after<1||action.after>=count(d))throw Error('VCR은 노래와 노래 사이에 놓아 주세요.');
+  const moved=next.vcrs.splice(action.index,1)[0];moved.after=action.after;
+  const siblings=next.vcrs.filter(v=>v.after===action.after);
+  if(!Number.isInteger(action.to)||action.to<0||action.to>siblings.length)throw Error('VCR 순서를 다시 선택해 주세요.');
+  const before=siblings[action.to];let at=before?next.vcrs.indexOf(before):siblings.length?next.vcrs.indexOf(siblings.at(-1))+1:next.vcrs.length;
+  next.vcrs.splice(at,0,moved);return {draft:next,message:'VCR 순서를 바꿨어요.'};
+ }
  if(!section)throw Error('구간을 선택해 주세요.');
  if(action.type==='add'){
   if(!songs.some(s=>s.id===action.id&&s.enabled)&&!(Show.isHidden(action.id)&&d.hidden?.[action.id]))throw Error('선택할 수 없는 곡이에요.');

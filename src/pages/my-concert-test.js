@@ -37,6 +37,7 @@ module.exports=()=>W(`<section class="mc" id="myConcert">
   <label>글씨체<select id="mcPosterFont">${Object.entries(fonts).map(([id,f])=>`<option value="${id}">${f.label}</option>`).join('')}</select></label><label>출력 형식<select id="mcPosterFormat">${Object.entries(formats).map(([id,label])=>`<option value="${id}">${label}</option>`).join('')}</select></label></div><p id="mcFormatHint" class="mc-footnote"></p>
   <div class="mc-poster-wrap"><canvas id="mcPoster" width="1080" height="1350" role="img" aria-label="내 콘서트 포스터. 아래 텍스트 세트리스트에서도 내용을 읽을 수 있습니다."></canvas></div>
   <p id="mcPosterStatus" role="status"></p><p id="mcCoverage"></p><div class="mc-result-actions"><button type="button" class="mc-primary" id="mcStart" data-watch="start">▶ 내 콘서트 재생</button><button type="button" data-action="export">이미지 저장</button><button type="button" data-action="share">공유 링크 복사</button><button type="button" id="mcEditButton" data-action="edit">다시 편집하기</button></div>
+  <div class="mc-diary"><button type="button" id="mcDiarySave">다이어리에 포스터 남기기</button><a id="mcDiaryLink" href="/diary/" hidden>저장한 기록 보기 →</a><p id="mcDiaryStatus" role="status" class="mc-footnote"></p></div>
   <div class="mc-copy" id="mcCopy" hidden><label>아래 링크를 선택해 직접 복사해 주세요.<input id="mcCopyLink" readonly></label></div>
   <details class="mc-readable"><summary>텍스트로 세트리스트 보기</summary><div id="mcTextList"></div></details>
   <p class="mc-footnote">팬이 만든 가상 콘서트입니다. 실제 공연 안내가 아닙니다.</p>

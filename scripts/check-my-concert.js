@@ -64,9 +64,9 @@ for(const [theme,style] of Object.entries(design.themes)){
  assert(Math.abs(short.rows[0].left+short.rows[0].width/2-(style.left+style.right)/2)<1);
  full.theme=theme;full.format='long';
  const readable=P.draw(canvas,full,longSongs);
- assert.equal(readable.fontSize,40);assert.equal(readable.columns,1);assert(readable.height>1350);
+ if(design.allowsLong(theme)){assert.equal(readable.fontSize,40);assert.equal(readable.columns,1);assert(readable.height>1350);}else assert.equal(readable.height,1350);
  assert.equal(readable.rows.length,32);assert(readable.rows.every(r=>r.bottom<=readable.contentBottom));
- assert.equal(M.decode(M.encode(full),songs).format,'long');
+ assert.equal(M.decode(M.encode(full),songs).format,design.outputFormat(theme,'long'));
 }
 assert.throws(()=>M.validate({...full,format:'unknown'},songs,true));
 const legacyFormat={...full};delete legacyFormat.format;assert.equal(M.validate(legacyFormat,songs,true).draft.format,'poster');
@@ -78,6 +78,6 @@ const S=require('../src/shared/my-concert-show');
 assert.equal(S.youtubeId('https://youtu.be/nn639JifcBQ?t=5'),'nn639JifcBQ');
 assert.equal(S.youtubeId('https://www.youtube.com/shorts/nn639JifcBQ'),'nn639JifcBQ');
 assert.equal(S.youtubeId('https://youtube.com.evil.test/watch?v=nn639JifcBQ'),'');
-const html=read('game/my-concert/test/index.html');assert(html.includes('noindex,nofollow'));assert(!html.includes('googletagmanager'));assert(!read('game/index.html').includes('/game/my-concert/'));assert(read('game/test/index.html').includes('/game/my-concert/test/'));assert(!read('sitemap.xml').includes('/game/my-concert/'));
+const html=read('game/my-concert/test/index.html');assert(html.includes('noindex,nofollow'));assert(!html.includes('googletagmanager'));assert(read('game/index.html').includes('/game/my-concert/'));assert(!read('game/my-concert/index.html').includes('noindex'));assert(!read('game/my-concert/index.html').includes('/game/test/'));assert(read('game/test/index.html').includes('/game/my-concert/test/'));assert(read('sitemap.xml').includes('/game/my-concert/'));assert(!read('sitemap.xml').includes('/game/my-concert/test/'));
 for(const f of ['build.yml','update-news.yml'])assert(read('.github/workflows/'+f).includes('game/my-concert/catalog.json'));
 console.log(`PASS my concert: ${songs.length} researched tracks, variable section limits, duplicates/moves/order, graphemes, strict share validation, damaged draft recovery, filters, 1080x1350 full-text posters and unlisted routing.`);

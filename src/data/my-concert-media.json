@@ -727,15 +727,28 @@
     ],
     "group-track-038": [
       {
-        "videoId": "iEl0SHS7XAk",
-        "title": "Seeya - Hot girl (씨야-핫걸) @SBS Inkigayo 인기가요 20081019",
-        "channel": "SBSKPOP X INKIGAYO",
-        "channelId": "UCS_hnpJLQTvBkqALgapi_4g",
-        "duration": 181,
+        "videoId": "28tmGVxRG3s",
+        "title": "See Ya - Hot Girl, 씨야 - 핫 걸, Music Core 20081004",
+        "channel": "MBCkpop",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "duration": 210,
+        "date": "2008-10-04",
         "kind": "broadcast",
         "embedAllowed": true,
         "played": false,
-        "checkedOn": "2026-11-02"
+        "checkedOn": "2026-11-04"
+      },
+      {
+        "videoId": "CzkUIfl5R4Q",
+        "title": "See Ya - Hot Girl, 씨야 - 핫 걸, Music Core 20081018",
+        "channel": "MBCkpop",
+        "channelId": "UCe52oeb7Xv_KaJsEzcKXJJg",
+        "duration": 189,
+        "date": "2008-10-18",
+        "kind": "broadcast",
+        "embedAllowed": true,
+        "played": false,
+        "checkedOn": "2026-11-04"
       },
       {
         "videoId": "VYvKqDIxERQ",

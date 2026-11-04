@@ -121,7 +121,7 @@ module.exports=function specials({root,$,esc,getDraft,getSongs,getTarget,apply,a
  function gapRows(d,number){
   if(number>=M.count(d) && !d.vcrs?.some(v=>v.after===number))return '';
   const rows=(d.vcrs||[]).map((v,i)=>({v,i})).filter(x=>x.v.after===number);
-  return rows.map(({i},n)=>'<li class="mc-interlude"><strong>VCR 재생</strong> <button data-special="vcr" data-vindex="'+i+'">설정·위치</button> '+(n?'<button data-special="upVcr" data-vindex="'+i+'">위로</button> ':'')+'<button data-special="deleteVcr" data-vindex="'+i+'">삭제</button></li>').join('')+'<li class="mc-vcr-add"><button data-special="vcr" data-gap="'+number+'">+ VCR 추가</button></li>';
+  return rows.map(({i},n)=>'<li class="mc-interlude" draggable="true" data-vcr="'+i+'"><span class="mc-grip" title="잡아서 순서 바꾸기" aria-hidden="true">⠿</span><strong>VCR 재생</strong> <button data-special="vcr" data-vindex="'+i+'">설정·위치</button> '+(n?'<button data-special="upVcr" data-vindex="'+i+'">위로</button> ':'')+'<button data-special="deleteVcr" data-vindex="'+i+'">삭제</button></li>').join('')+'<li class="mc-vcr-add"><button data-special="vcr" data-gap="'+number+'">+ VCR 추가</button></li>';
  }
  return {gapRows};
 };

@@ -342,5 +342,11 @@
     "path": "/diary/privacy/",
     "title": "다이어리 개인정보 처리 안내 | SEEYA ARCHIVE",
     "description": "씨야 다이어리의 기기 내 저장, 선택적인 Google Drive 백업, 개인정보 처리와 삭제 방법을 안내합니다."
+  },
+  {
+    "key": "my-concert",
+    "path": "/game/my-concert/",
+    "title": "나만의 씨야 콘서트 | SEEYA ARCHIVE",
+    "description": "오프닝부터 앙코르까지 나만의 셋리스트를 만들고, 무대 영상과 콘서트 포스터로 즐겨보세요."
   }
 ]

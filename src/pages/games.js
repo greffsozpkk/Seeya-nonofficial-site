@@ -49,5 +49,5 @@ module.exports=()=>W(`<section class="game-hub">
         <span class="game-card-link">검사 시작하기 <span aria-hidden="true">→</span></span>
       </div>
     </a>
-  </div>
+<a class="game-card" href="/game/my-concert/" aria-labelledby="game-my-concert-title"><div class="game-card-art"><img style="display:block;width:100%;height:100%;object-fit:cover" src="/images/game/seeya-my-concert.png" alt="" width="1536" height="1024"></div><div class="game-card-copy"><span class="game-card-kicker">05 · MY CONCERT</span><h2 id="game-my-concert-title">나만의 씨야 콘서트</h2><p>첫 곡부터 마지막 앙코르까지,<br>당신이 꿈꾸던 씨야의 무대를 만들어보세요.</p><div class="game-card-details">3~32곡 · 나만의 세트리스트 포스터</div><span class="game-card-link">콘서트 만들기 →</span></div></a>  </div>
 </section>`);

@@ -23,5 +23,7 @@ const fonts = {
 };
 const formats={poster:'한 장 포스터',long:'읽기 편한 긴 이미지'};
 const backdrop = key => ['curtain','skyline','blossom','paper','breeze','spotlight','pressed','ribbon','blueTicket'].includes(key) ? '/images/game/concert-poster-'+key+'.png' : '';
-module.exports = {themes, fonts, formats, backdrop};
+const allowsLong=theme=>!['curtain','blossom','pressed'].includes(theme);
+const outputFormat=(theme,format)=>format==='long'&&allowsLong(theme)?'long':'poster';
+module.exports = {themes, fonts, formats, backdrop, allowsLong, outputFormat};
 

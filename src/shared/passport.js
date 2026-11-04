@@ -1,5 +1,5 @@
 'use strict';
-const G=require('./passport-goods'),Play=require('./passport-play');
+const G=require('./passport-goods'),Play=require('./passport-play'),Concert=require('./concert-diary');
 const KEY='seeya-passport-v1';
 const DEBUT='2006-03-12';
 const defaultStatus=(date,day=today())=>date&&date<day.slice(0,date.length)?'done':'planned';
@@ -30,7 +30,7 @@ function entry(e){
  if(!Array.isArray(songs)||songs.length>400||songs.some(s=>typeof s!=='string'||s.length>180))throw Error('곡 목록을 확인해 주세요.');
  if(!Array.isArray(links)||links.length>8)throw Error('링크는 최대 8개까지 저장할 수 있어요.');
  const checkedLinks=links.map(l=>{const raw=text(l.url,2000),u=new URL(raw);if(u.protocol!=='https:'||u.username||u.password)throw Error('링크는 https:// 주소로 입력해 주세요.');return {url:u.href,label:text(l.label||'',120)};});
- return {entryId:e.entryId,kind:e.kind,status:e.status,title,date:dt,datePrecision:precision(dt),time,members:[...new Set(e.members)],eventId:text(e.eventId||'',160),placeId:text(e.placeId||'',160),archiveId:text(e.archiveId||'',160),songs:e.kind==='concert'?[...new Set(songs)]:[],links:checkedLinks,seat:text(e.seat||'',100),companions:text(e.companions||'',120),note:text(e.note||'',4000),...(e.kind==='goods'?{goods:G.clean(e.goods)}:{}),...(e.kind==='play'?{play:Play.clean(e.play)}:{}),snapshot:{title:text(snap.title||'',300),place:text(snap.place||'',300),address:text(snap.address||'',400)},createdAt:e.createdAt,updatedAt:e.updatedAt};
+ return {entryId:e.entryId,kind:e.kind,status:e.status,title,date:dt,datePrecision:precision(dt),time,members:[...new Set(e.members)],eventId:text(e.eventId||'',160),placeId:text(e.placeId||'',160),archiveId:text(e.archiveId||'',160),songs:e.kind==='concert'?[...new Set(songs)]:[],links:checkedLinks,seat:text(e.seat||'',100),companions:text(e.companions||'',120),note:text(e.note||'',4000),...(e.kind==='goods'?{goods:G.clean(e.goods)}:{}),...(e.kind==='play'?{play:Play.clean(e.play),...(e.concertPoster?{concertPoster:Concert.clean(e.concertPoster)}:{})}:{}),snapshot:{title:text(snap.title||'',300),place:text(snap.place||'',300),address:text(snap.address||'',400)},createdAt:e.createdAt,updatedAt:e.updatedAt};
 }
 function validate(input,allowLegacyProfile=false){
  if(!input||input.schemaVersion!==1||!Array.isArray(input.entries)||input.entries.length>2000)throw Error('지원하지 않는 백업이거나 기록이 2,000건을 넘습니다.');

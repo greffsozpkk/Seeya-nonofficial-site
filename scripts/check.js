@@ -61,6 +61,7 @@ execFileSync(process.execPath,['scripts/check-worldcup-public.js'],{cwd:root,std
 
 execFileSync(process.execPath,['scripts/check-clinic.js'],{cwd:root,stdio:'inherit'});
 require('./check-my-concert');
+require('./check-concert-diary');
 execFileSync(process.execPath,['scripts/check-my-concert-client.js'],{cwd:root,stdio:'inherit'});
 require('./check-my-concert-show');
 execFileSync(process.execPath,['scripts/check-my-concert-playback.js'],{cwd:root,stdio:'inherit'});
