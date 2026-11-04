@@ -147,13 +147,13 @@
       "description": "‘골때녀’ 이보람, ‘0.5골급’ 도움에 끈질긴 수비까지···FC발라드림 새 전력 눈도장 스포츠경향"
     }
   ],
-  "updatedAt": "2026-11-04T06:29:30.097652+00:00",
-  "lastCheckedAt": "2026-11-04T06:29:30.097652+00:00",
+  "updatedAt": "2026-11-04T06:55:53.061273+00:00",
+  "lastCheckedAt": "2026-11-04T06:55:53.061273+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-04T06:29:30.097652+00:00",
-    "남규리": "2026-11-04T06:29:30.097652+00:00",
-    "김연지": "2026-11-04T06:29:30.097652+00:00",
-    "이보람": "2026-11-04T06:29:30.097652+00:00"
+    "씨야": "2026-11-04T06:55:53.061273+00:00",
+    "남규리": "2026-11-04T06:55:53.061273+00:00",
+    "김연지": "2026-11-04T06:55:53.061273+00:00",
+    "이보람": "2026-11-04T06:55:53.061273+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-03T14:30:02.699798+00:00",
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 167,
+      "accepted": 161,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 108,
-      "changed": true,
-      "status": "changed"
+      "accepted": 106,
+      "changed": false,
+      "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 27,
+      "accepted": 26,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 75,
+      "accepted": 82,
       "changed": false,
       "status": "unchanged"
     }
