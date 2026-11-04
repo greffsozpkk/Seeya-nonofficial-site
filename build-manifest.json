@@ -1,5 +1,5 @@
 {
-  "version": "5.81",
+  "version": "5.82",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -65,7 +65,7 @@
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.8cf5d2466e94.js",
+    "assets/site.f799f8932cf5.js",
     "assets/lyric-quiz.5c21dd4f828d.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.73191fbcb5b4.js",
@@ -97,7 +97,7 @@
     "assets/Gaegu-Regular.13ff1bfdfd0b.woff2",
     "assets/Gaegu-Bold.f7accbcc5543.woff2",
     "assets/my-concert.c2c31f2d936e.css",
-    "assets/my-concert.ce8679fd4e76.js"
+    "assets/my-concert.7af1b2d49264.js"
   ],
   "auxiliary": [
     "game/my-concert/catalog.json",
