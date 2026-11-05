@@ -1,5 +1,5 @@
 {
-  "version": "5.85",
+  "version": "5.86",
   "baseline": "v4.65",
   "files": [
     "index.html",
@@ -61,12 +61,12 @@
     "sw.js"
   ],
   "assets": [
-    "assets/site.40ae99b9b8bc.css",
+    "assets/site.9d3645e31beb.css",
     "assets/pwa.4c8d4bbee1b1.js",
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.ad40989ccadd.js",
+    "assets/site.5244f42b79f5.js",
     "assets/lyric-quiz.15b468609520.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.73191fbcb5b4.js",
