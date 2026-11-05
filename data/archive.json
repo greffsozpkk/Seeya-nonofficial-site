@@ -619,9 +619,63 @@
         "url": "https://www.youtube.com/watch?v=5ejygKTr7Qw",
         "publishedDate": "2026-11-03",
         "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=p4NGjzdfyts",
+        "publishedDate": "2026-11-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=VLYPi1LtZHc",
+        "publishedDate": "2026-11-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=-Zb6W28fT9I",
+        "publishedDate": "2026-11-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=IoyPJs6QZyI",
+        "publishedDate": "2026-11-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=2ZOGw6RnGFk",
+        "publishedDate": "2026-11-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=rmJAW9EH558",
+        "publishedDate": "2026-11-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=3E_OHNfHL1I",
+        "publishedDate": "2026-11-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=xkxWDGcTHDA",
+        "publishedDate": "2026-11-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=SdUivuJtw8E",
+        "publishedDate": "2026-11-05",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-04T06:50:05.468715+00:00",
+    "updatedAt": "2026-11-05T07:09:32.180025+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -13869,6 +13923,12 @@
         "url": "https://www.youtube.com/watch?v=4nAnVAHXbCU",
         "publishedDate": "2026-01-05",
         "autoDiscovery": true
+      },
+      {
+        "label": "구찬성",
+        "url": "https://www.youtube.com/watch?v=xC6FyWIAkRQ",
+        "publishedDate": "2026-01-05",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -13880,7 +13940,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "publishedDate": "2026-01-05",
-    "updatedAt": "2026-10-24T04:53:19.687806+00:00"
+    "updatedAt": "2026-11-05T07:09:32.180025+00:00"
   },
   {
     "id": "v488-audit-040",
@@ -15199,6 +15259,12 @@
       {
         "label": "에잇 8recordz x studio8",
         "url": "https://www.youtube.com/watch?v=nN7NV5FBhBw"
+      },
+      {
+        "label": "에잇 8recordz x studio8",
+        "url": "https://www.youtube.com/watch?v=8rpZ7GO07C4",
+        "publishedDate": "2025-09-29",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -15212,7 +15278,8 @@
     "releaseType": "솔로·프로젝트 음반",
     "titleTracks": [
       "슬픔이 찾아와서 그래(Prod. 로코베리)"
-    ]
+    ],
+    "updatedAt": "2026-11-05T07:09:32.180025+00:00"
   },
   {
     "id": "v4145-5JANf4FmbNQ",
@@ -52446,7 +52513,7 @@
     "id": "20261101-boram-kia-music-festa",
     "date": "2026-11-01",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-04T06:50:05.468715+00:00",
+    "updatedAt": "2026-11-05T07:09:32.180025+00:00",
     "title": "이보람 · 2026 기아 PLUS 뮤직 페스타",
     "program": "2026 기아 People Link US 뮤직 페스타",
     "type": "event",
@@ -52526,6 +52593,18 @@
         "label": "제리제이 Jerry.j",
         "url": "https://www.youtube.com/watch?v=oybvq2-BM7Y",
         "publishedDate": "2026-11-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=sh7jJ94kBF8",
+        "publishedDate": "2026-11-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "오등심tv",
+        "url": "https://www.youtube.com/watch?v=kJNRt72hUu8",
+        "publishedDate": "2026-11-05",
         "autoDiscovery": true
       }
     ],
