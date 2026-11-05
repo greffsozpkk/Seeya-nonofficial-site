@@ -5,7 +5,7 @@ const html=read('diary/index.html'),test=read('passport/test/index.html'),catalo
 assert(html.includes('씨야 다이어리'));assert(!html.includes('noindex'));assert(!html.includes('googletagmanager'));assert(!html.includes('analytics.js'));
 assert(test.includes('noindex,nofollow'));assert(test.includes("location.replace(\"/diary/\"+location.search+location.hash)"));assert(html.includes('/diary/#new'));assert(!html.includes('/passport/test/'));
 assert(!test.includes('passportCatalog'));assert(read('sitemap.xml').includes('/diary/'));assert(!read('sitemap.xml').includes('/passport/test/'));
-assert.equal((read('src/template.html').match(/href="\/diary\/">DIARY/g)||[]).length,3);
+assert.equal((read('guide/index.html').replace(/<main[\s\S]*?<\/main>/,'').match(/href="\/diary\/">DIARY/g)||[]).length,3);
 const script=html.match(/src="(\/assets\/diary\.[a-f0-9]+\.js)"/)[1],bundle=read(script.slice(1));
 assert(!bundle.includes('/passport/test/'));assert(bundle.includes("register('/diary/sw.js'"));assert(bundle.includes("KEY='seeya-passport-v1'"),'Existing personal entries must survive launch');
 const {playFormats}=catalog(html),banks=require('../src/shared/exam').banks,P=require('../src/shared/passport-play');

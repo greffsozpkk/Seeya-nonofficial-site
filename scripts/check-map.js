@@ -116,7 +116,7 @@ assert(publicMap.includes('class="mobile mobile-compact"'));
 assert(publicMap.includes('class="brand logo-brand"'));
 assert(publicMap.includes('rel="canonical" href="https://seeya-fanpage.com/map/"'));
 assert(read('sitemap.xml').includes('https://seeya-fanpage.com/map/'));
-assert.equal((read('src/template.html').match(/href="\/map\/"/g)||[]).length,3);
+assert.equal((read('guide/index.html').replace(/<main[\s\S]*?<\/main>/,'').match(/href="\/map\/"/g)||[]).length,3);
 assert.equal(JSON.parse(publicMap.match(/id="mapData">(.*?)<\/script>/s)[1]).places.length,allRows.length);
 console.log('PASS: public map, shared navigation, subtitle and photo-free place cards.');
 

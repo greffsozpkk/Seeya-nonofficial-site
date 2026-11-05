@@ -123,7 +123,7 @@ const myConcertJs=asset('my-concert','js',bundle('src/client/my-concert.js'));
 write('game/my-concert/catalog.json',JSON.stringify(require('./src/shared/my-concert-catalog').catalog(archiveRows))+'\n');
 const photosRaw=json('data/photos.json');
 const photos=(Array.isArray(photosRaw)?photosRaw:photosRaw.photos||[]).filter(x=>x&&x.hidden!==true).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||Number(a.order||999)-Number(b.order||999));
-const template=read('src/template.html');
+const template=read('src/template.html').replaceAll('{{mainNavigation}}', read('src/main-navigation.html').trim());
 const files=[];
 for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcertRoute]){
  const key=route.key;
