@@ -45,7 +45,7 @@
     "id": "20261215-boram-six-season",
     "date": "2026-12-15",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-10-05T22:15:00+09:00",
+    "updatedAt": "2026-11-05",
     "title": "이보람 · 식스 더 뮤지컬 · 시모어 역 출연 예정",
     "program": "식스 더 뮤지컬",
     "type": "concert",
@@ -80,6 +80,21 @@
         "label": "이보람 공식 Instagram · 식스 시모어 사진",
         "url": "https://www.instagram.com/dlqhfka0217/p/Dd5x1klEwSs/",
         "publishedDate": "2026-09-30"
+      },
+      {
+        "label": "YES24 공식 · 식스 2차 티켓 오픈 안내",
+        "url": "https://m.ticket.yes24.com/Notice/18785",
+        "publishedDate": "2026-11-04"
+      },
+      {
+        "label": "식스 · 2차 캐스팅 스케줄 이미지",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
+        "publishedDate": "2026-11-04"
+      },
+      {
+        "label": "식스 더 뮤지컬 · QUEENS MODE 릴스",
+        "url": "https://www.instagram.com/reel/DfWIf-7hARF/",
+        "publishedDate": "2026-11-05"
       }
     ],
     "status": "available",
@@ -91,7 +106,7 @@
       "시모어",
       "예정"
     ],
-    "note": "이보람이 시모어 역으로 합류하는 2026년 한국어 공연입니다.\n공연 기간: 2026년 12월 15일~2027년 3월 1일.\n표시 날짜는 작품 시즌 개막일이며 이보람의 개별 출연 회차와는 다릅니다.\n1차 캐스팅 스케줄에서 이보람의 첫 출연은 12월 16일 오후 8시로 안내됐습니다.\n1차 예매 오픈: 10월 6일 오후 2시, 대상 공연 12월 15일~27일. 개별 회차는 캐스팅표를 확인해 주세요.\n이보람이 공개한 식스 시모어 사진을 원본 게시물에서 볼 수 있습니다.\n1차 캐스팅표 기준 이보람 출연: 12/16·17·22 20:00, 12/19·25 17:00·20:30, 12/27 15:00. 각 회차는 CALENDAR에서 따로 확인할 수 있습니다.",
+    "note": "이보람이 시모어 역으로 합류하는 2026년 한국어 공연입니다.\n공연 기간: 2026년 12월 15일~2027년 3월 1일.\n표시 날짜는 작품 시즌 개막일이며 이보람의 개별 출연 회차와는 다릅니다.\n1차 캐스팅 스케줄에서 이보람의 첫 출연은 12월 16일 오후 8시로 안내됐습니다.\n1차 예매 오픈: 10월 6일 오후 2시, 대상 공연 12월 15일~27일. 개별 회차는 캐스팅표를 확인해 주세요.\n이보람이 공개한 식스 시모어 사진을 원본 게시물에서 볼 수 있습니다.\n1차 캐스팅표 기준 이보람 출연: 12/16·17·22 20:00, 12/19·25 17:00·20:30, 12/27 15:00. 각 회차는 CALENDAR에서 따로 확인할 수 있습니다.\n2차 예매는 11월 10일 오후 2시 오픈이며, 대상 공연은 12월 29일부터 1월 10일까지입니다.",
     "endDate": "2027-03-01",
     "venue": "홍익대 대학로 아트센터 대극장",
     "eventState": "scheduled",
@@ -561,12 +576,6 @@
         "autoDiscovery": true
       },
       {
-        "label": "투카로그",
-        "url": "https://www.youtube.com/watch?v=UKznVqueEMk",
-        "publishedDate": "2026-11-03",
-        "autoDiscovery": true
-      },
-      {
         "label": "🐿람보바라기",
         "url": "https://www.youtube.com/watch?v=Kd4Auxw_bkk",
         "publishedDate": "2026-11-03",
@@ -587,12 +596,6 @@
       {
         "label": "투카로그",
         "url": "https://www.youtube.com/watch?v=8yOuZwGBATE",
-        "publishedDate": "2026-11-03",
-        "autoDiscovery": true
-      },
-      {
-        "label": "제리제이 Jerry.j",
-        "url": "https://www.youtube.com/watch?v=9iw3j7dAYeo",
         "publishedDate": "2026-11-03",
         "autoDiscovery": true
       },
@@ -639,21 +642,9 @@
         "autoDiscovery": true
       },
       {
-        "label": "제리제이 Jerry.j",
-        "url": "https://www.youtube.com/watch?v=IoyPJs6QZyI",
-        "publishedDate": "2026-11-04",
-        "autoDiscovery": true
-      },
-      {
         "label": "🐿람보바라기",
         "url": "https://www.youtube.com/watch?v=2ZOGw6RnGFk",
         "publishedDate": "2026-11-04",
-        "autoDiscovery": true
-      },
-      {
-        "label": "유튜브매니한",
-        "url": "https://www.youtube.com/watch?v=rmJAW9EH558",
-        "publishedDate": "2026-11-05",
         "autoDiscovery": true
       },
       {
@@ -669,10 +660,54 @@
         "autoDiscovery": true
       },
       {
-        "label": "유튜브매니한",
+        "label": "감미로운 음악생활 · 4시간 10분 공연시간 실화? 집에 가지 말자~ 씨야 인천 막콘 #씨야 #남규리 #이보람 #김연지 #인천막콘 #인천콘 #seeya #인천콘서트",
+        "url": "https://www.youtube.com/watch?v=6HrLgNaICvI",
+        "publishedDate": "2026-11-03"
+      },
+      {
+        "label": "SMILE · 261031 씨야 인천콘서트",
+        "url": "https://www.youtube.com/watch?v=WMMtMWBKYec",
+        "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야(SEEYA) - 그럼에도, 우린, 261031 씨야 20주년 전국 투어 콘서트 in 인천",
+        "url": "https://www.youtube.com/watch?v=8Ip7IrnMQk4",
+        "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야(SEEYA) - 슬픈 발걸음(구두II), 구두, 그 사람(구두III), 261031 씨야 20주년 전국 투어 콘서트 in 인천",
+        "url": "https://www.youtube.com/watch?v=IoyPJs6QZyI",
+        "publishedDate": "2026-11-04"
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야(SEEYA) - 우리, 261031 씨야 20주년 전국 투어 콘서트 in 인천",
+        "url": "https://www.youtube.com/watch?v=9iw3j7dAYeo",
+        "publishedDate": "2026-11-03"
+      },
+      {
+        "label": "투카로그 · [4K]261031 씨야 인천 콘서트 김연지 퇴근길 직캠 #SEEYA#씨야#김연지#kimyeonji #씨야콘서트#인천콘서트#퇴근길#직캠#생일축하#kpop#concert#shorts",
+        "url": "https://www.youtube.com/watch?v=UKznVqueEMk",
+        "publishedDate": "2026-11-03"
+      },
+      {
+        "label": "유튜브매니한 · 씨야 - 결혼할까요 이보람직캠 20261031 #씨야20주년전국투어콘서트인천 #이보람",
+        "url": "https://www.youtube.com/watch?v=rmJAW9EH558",
+        "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "유튜브매니한 · 씨야 - 봄처럼 그댄 이보람직캠 20261031 #씨야20주년전국투어콘서트인천 #이보람",
         "url": "https://www.youtube.com/watch?v=SdUivuJtw8E",
-        "publishedDate": "2026-11-05",
-        "autoDiscovery": true
+        "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "일간스포츠 · 전국 투어 마무리",
+        "url": "https://v.isplus.com/article/view/isp202611020053",
+        "publishedDate": "2026-11-02"
+      },
+      {
+        "label": "씨야 갤러리 · 인천 공연 커피차 업체 사진",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10581",
+        "publishedDate": "2026-11-05"
       }
     ],
     "updatedAt": "2026-11-05T07:09:32.180025+00:00",
@@ -52578,34 +52613,35 @@
         "autoDiscovery": true
       },
       {
-        "label": "제리제이 Jerry.j",
-        "url": "https://www.youtube.com/watch?v=yJ4_s5Qijpk",
-        "publishedDate": "2026-11-03",
-        "autoDiscovery": true
-      },
-      {
-        "label": "배안심TV",
-        "url": "https://www.youtube.com/watch?v=GKMlVgjvWAo",
-        "publishedDate": "2026-11-03",
-        "autoDiscovery": true
-      },
-      {
-        "label": "제리제이 Jerry.j",
-        "url": "https://www.youtube.com/watch?v=oybvq2-BM7Y",
-        "publishedDate": "2026-11-04",
-        "autoDiscovery": true
-      },
-      {
         "label": "🐿람보바라기",
         "url": "https://www.youtube.com/watch?v=sh7jJ94kBF8",
         "publishedDate": "2026-11-04",
         "autoDiscovery": true
       },
       {
-        "label": "오등심tv",
+        "label": "배안심TV · 이보람(씨야) - \"기아 PLUS 뮤직페스타\" 🎉축하공연 #우중에도인산인해 [261101]",
+        "url": "https://www.youtube.com/watch?v=GKMlVgjvWAo",
+        "publishedDate": "2026-11-03"
+      },
+      {
+        "label": "럭키데이즈(Lucky) · 씨야 이보람 외쳐라 최강기아! #기아타이거즈 응원가 (기아뮤직페스타)",
+        "url": "https://www.youtube.com/watch?v=fmQywwxExRU",
+        "publishedDate": "2026-11-02"
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야 이보람이 부르는 기아타이거즈 응원가 '질풍가도' | 261101 기아 [PLUS] 뮤직 페스타",
+        "url": "https://www.youtube.com/watch?v=oybvq2-BM7Y",
+        "publishedDate": "2026-11-04"
+      },
+      {
+        "label": "제리제이 Jerry.j · 씨야 이보람이 부르는 기아타이거즈 응원가 '외쳐라 최강기아' | 261101 기아 [PLUS] 뮤직 페스타",
+        "url": "https://www.youtube.com/watch?v=yJ4_s5Qijpk",
+        "publishedDate": "2026-11-03"
+      },
+      {
+        "label": "오등심tv · 이보람(씨야) - 축하공연 \"기아 PLUS 뮤직페스타 [261101]",
         "url": "https://www.youtube.com/watch?v=kJNRt72hUu8",
-        "publishedDate": "2026-11-05",
-        "autoDiscovery": true
+        "publishedDate": "2026-11-05"
       }
     ],
     "status": "available",
@@ -54918,8 +54954,8 @@
     "id": "20261104-boram-btn-dream-schedule",
     "date": "2026-11-04",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-04T06:50:05.468715+00:00",
-    "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
+    "updatedAt": "2026-11-05",
+    "title": "이보람 · 한밤의 꿈 이보람입니다 28회",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
     "members": [
@@ -54929,33 +54965,32 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
-      "publishedDate": "2026-10-26"
+      "label": "BTN라디오 공식 · 한밤의 꿈 이보람입니다 28회 다시보기",
+      "url": "https://www.youtube.com/watch?v=_xRhzu5-5ec",
+      "publishedDate": "2026-11-04"
     },
     "additionalSources": [
       {
-        "label": "BTN라디오",
-        "url": "https://www.youtube.com/watch?v=_xRhzu5-5ec",
-        "publishedDate": "2026-11-04",
-        "autoDiscovery": true
+        "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
+        "publishedDate": "2026-10-26"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "BTN라디오 · 한밤의 꿈 이보람입니다",
-      "예정"
+      "라디오",
+      "생방송"
     ],
-    "note": "11월 일정표에 안내된 「한밤의 꿈 이보람입니다」 방송 예정입니다.\n오후 9시 방송 예정이며, 회차·게스트·최초 공개 여부는 방송사 공지 후 갱신합니다.",
-    "eventState": "scheduled",
+    "note": "11월 4일 밤 9시 BTN라디오에서 진행한 보이는 라디오 생방송입니다. 공식 채널에서 28회 다시보기를 볼 수 있습니다.",
+    "eventState": "completed",
     "calendar": {
-      "enabled": true,
       "time": "21:00",
-      "timeLabel": "방송 예정 · 팬 일정표 기준",
-      "state": "tentative"
+      "enabled": true,
+      "timeLabel": "BTN라디오 생방송",
+      "sequence": 1
     }
   },
   {
@@ -55073,10 +55108,67 @@
     "id": "20261105-gyuri-yeonji-sharing-awards",
     "date": "2026-11-05",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-01",
-    "title": "남규리·김연지 · 제15회 대한민국 나눔국민대상 출연 예정",
+    "updatedAt": "2026-11-05",
+    "title": "남규리·김연지 · 대한민국 나눔국민대상 시상 및 축하 무대",
     "program": "제15회 대한민국 나눔국민대상",
     "type": "event",
+    "members": [
+      "남규리",
+      "김연지"
+    ],
+    "songs": [
+      "사랑의 인사"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보건복지부 · 시상식 및 KBS 1TV 방송 일정",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788094",
+      "publishedDate": "2026-11-05"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
+        "publishedDate": "2026-10-26"
+      },
+      {
+        "label": "씨야 갤러리 · 남규리·김연지 시상 및 축하 무대 방청 후기",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10623",
+        "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "연지곤지 · 11월 5일 김연지 출근길",
+        "url": "https://www.youtube.com/watch?v=RGVmwqLbE9Q",
+        "publishedDate": "2026-11-05"
+      }
+    ],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [
+      "2026",
+      "시상식",
+      "축하 무대"
+    ],
+    "note": "11월 5일 오후 3시 시작한 시상식입니다. 방청 후기에 따르면 남규리와 김연지는 시상에 참여하고 「사랑의 인사」를 함께 불렀습니다.\n시상식은 11월 28일 오후 3시 10분 KBS 1TV에서 방송 예정입니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": true,
+      "time": "15:00",
+      "timeLabel": "시상식 시작",
+      "sequence": 1
+    },
+    "venue": "KBS 신관 공개홀"
+  },
+  {
+    "id": "20261128-gyuri-yeonji-sharing-awards-broadcast",
+    "date": "2026-11-28",
+    "title": "남규리·김연지 · 대한민국 나눔국민대상 방송 예정",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "제15회 대한민국 나눔국민대상",
+    "type": "music-show",
     "members": [
       "남규리",
       "김연지"
@@ -55085,26 +55177,425 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
-      "publishedDate": "2026-10-26"
+      "label": "보건복지부 · 시상식 및 KBS 1TV 방송 일정",
+      "url": "https://www.korea.kr/briefing/pressReleaseView.do?newsId=156788094",
+      "publishedDate": "2026-11-05"
     },
-    "additionalSources": [],
-    "status": "documented",
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 남규리·김연지 시상 및 축하 무대 방청 후기",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10623",
+        "publishedDate": "2026-11-05"
+      }
+    ],
+    "note": "11월 5일 남규리와 김연지가 시상과 축하 무대에 참여한 시상식의 녹화 방송입니다.\nKBS 1TV에서 11월 28일 오후 3시 10분부터 5시까지 방송할 예정입니다.",
+    "dateBasis": "broadcast",
     "dateStatus": "confirmed",
-    "dateBasis": "event",
+    "eventState": "scheduled",
+    "status": "documented",
     "tags": [
-      "2026",
-      "제15회 대한민국 나눔국민대상",
       "예정"
     ],
-    "note": "11월 5일 오후 2시 40분, 남규리·김연지 출연으로 안내된 일정입니다.\n팬 일정표 기준으로 등록했으며, 공식 출연 공지와 행사 장소는 확인 중입니다.",
-    "eventState": "scheduled",
     "calendar": {
       "enabled": true,
-      "time": "14:40",
-      "timeLabel": "팬 일정표 기준",
-      "state": "tentative"
+      "type": "broadcast",
+      "time": "15:10",
+      "endTime": "17:00",
+      "timeLabel": "KBS 1TV"
     }
+  },
+  {
+    "id": "20261104-boram-paranoia",
+    "date": "2026-11-04",
+    "title": "이보람 · 캐치더영 「PARANOIA」 챌린지",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "캐치더영 · PARANOIA",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "캐치더영 공식 · 이보람과 함께한 PARANOIA",
+      "url": "https://www.youtube.com/shorts/KVOg4_Jbmd4",
+      "publishedDate": "2026-11-04"
+    },
+    "additionalSources": [
+      {
+        "label": "캐치더영 · 같은 영상 Instagram 릴스",
+        "url": "https://www.instagram.com/reel/DfUFcz7BlTQ/",
+        "publishedDate": "2026-11-04"
+      }
+    ],
+    "note": "이보람이 캐치더영의 「PARANOIA」 챌린지에 함께했습니다. 공식 쇼츠와 릴스로 공개된 영상입니다.",
+    "dateBasis": "video-published",
+    "dateStatus": "confirmed",
+    "eventState": "completed",
+    "status": "available",
+    "tags": [],
+    "calendar": {
+      "enabled": false
+    },
+    "publishedDate": "2026-11-04"
+  },
+  {
+    "id": "20261110-boram-six-ticket-round2",
+    "date": "2026-11-10",
+    "title": "이보람 · 식스 더 뮤지컬 2차 예매 오픈",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "식스 더 뮤지컬",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "YES24 공식 · 식스 2차 티켓 오픈 안내",
+      "url": "https://m.ticket.yes24.com/Notice/18785",
+      "publishedDate": "2026-11-04"
+    },
+    "additionalSources": [
+      {
+        "label": "식스 · 2차 캐스팅 스케줄 이미지",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
+        "publishedDate": "2026-11-04"
+      }
+    ],
+    "note": "12월 29일~1월 10일 공연의 2차 예매가 11월 10일 오후 2시에 열립니다. 이보람은 시모어 역으로 출연합니다.",
+    "dateBasis": "event",
+    "dateStatus": "confirmed",
+    "eventState": "scheduled",
+    "status": "documented",
+    "tags": [
+      "예정"
+    ],
+    "calendar": {
+      "type": "booking",
+      "time": "14:00",
+      "timeLabel": "YES24 티켓 오픈"
+    }
+  },
+  {
+    "id": "20261231-boram-six-1700",
+    "date": "2026-12-31",
+    "title": "이보람 · 식스 더 뮤지컬 · 12월 31일 17:00 출연",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "식스 더 뮤지컬",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 · 2차 캐스팅 스케줄 이미지",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
+      "publishedDate": "2026-11-04"
+    },
+    "additionalSources": [
+      {
+        "label": "YES24 공식 · 식스 2차 티켓 오픈 안내",
+        "url": "https://m.ticket.yes24.com/Notice/18785",
+        "publishedDate": "2026-11-04"
+      }
+    ],
+    "note": "2차 캐스팅표에 기재된 이보람의 시모어 출연 회차입니다.",
+    "dateBasis": "event",
+    "dateStatus": "confirmed",
+    "eventState": "scheduled",
+    "status": "documented",
+    "tags": [
+      "예정"
+    ],
+    "calendar": {
+      "time": "17:00",
+      "timeLabel": "공연 시작"
+    },
+    "venue": "홍익대 대학로 아트센터 대극장"
+  },
+  {
+    "id": "20261231-boram-six-2030",
+    "date": "2026-12-31",
+    "title": "이보람 · 식스 더 뮤지컬 · 12월 31일 20:30 출연",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "식스 더 뮤지컬",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 · 2차 캐스팅 스케줄 이미지",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
+      "publishedDate": "2026-11-04"
+    },
+    "additionalSources": [
+      {
+        "label": "YES24 공식 · 식스 2차 티켓 오픈 안내",
+        "url": "https://m.ticket.yes24.com/Notice/18785",
+        "publishedDate": "2026-11-04"
+      }
+    ],
+    "note": "2차 캐스팅표에 기재된 이보람의 시모어 출연 회차입니다.",
+    "dateBasis": "event",
+    "dateStatus": "confirmed",
+    "eventState": "scheduled",
+    "status": "documented",
+    "tags": [
+      "예정"
+    ],
+    "calendar": {
+      "time": "20:30",
+      "timeLabel": "공연 시작"
+    },
+    "venue": "홍익대 대학로 아트센터 대극장"
+  },
+  {
+    "id": "20270101-boram-six-1700",
+    "date": "2027-01-01",
+    "title": "이보람 · 식스 더 뮤지컬 · 1월 1일 17:00 출연",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "식스 더 뮤지컬",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 · 2차 캐스팅 스케줄 이미지",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
+      "publishedDate": "2026-11-04"
+    },
+    "additionalSources": [
+      {
+        "label": "YES24 공식 · 식스 2차 티켓 오픈 안내",
+        "url": "https://m.ticket.yes24.com/Notice/18785",
+        "publishedDate": "2026-11-04"
+      }
+    ],
+    "note": "2차 캐스팅표에 기재된 이보람의 시모어 출연 회차입니다.",
+    "dateBasis": "event",
+    "dateStatus": "confirmed",
+    "eventState": "scheduled",
+    "status": "documented",
+    "tags": [
+      "예정"
+    ],
+    "calendar": {
+      "time": "17:00",
+      "timeLabel": "공연 시작"
+    },
+    "venue": "홍익대 대학로 아트센터 대극장"
+  },
+  {
+    "id": "20270103-boram-six-1500",
+    "date": "2027-01-03",
+    "title": "이보람 · 식스 더 뮤지컬 · 1월 3일 15:00 출연",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "식스 더 뮤지컬",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 · 2차 캐스팅 스케줄 이미지",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
+      "publishedDate": "2026-11-04"
+    },
+    "additionalSources": [
+      {
+        "label": "YES24 공식 · 식스 2차 티켓 오픈 안내",
+        "url": "https://m.ticket.yes24.com/Notice/18785",
+        "publishedDate": "2026-11-04"
+      }
+    ],
+    "note": "2차 캐스팅표에 기재된 이보람의 시모어 출연 회차입니다.",
+    "dateBasis": "event",
+    "dateStatus": "confirmed",
+    "eventState": "scheduled",
+    "status": "documented",
+    "tags": [
+      "예정"
+    ],
+    "calendar": {
+      "time": "15:00",
+      "timeLabel": "공연 시작"
+    },
+    "venue": "홍익대 대학로 아트센터 대극장"
+  },
+  {
+    "id": "20270106-boram-six-2000",
+    "date": "2027-01-06",
+    "title": "이보람 · 식스 더 뮤지컬 · 1월 6일 20:00 출연",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "식스 더 뮤지컬",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 · 2차 캐스팅 스케줄 이미지",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
+      "publishedDate": "2026-11-04"
+    },
+    "additionalSources": [
+      {
+        "label": "YES24 공식 · 식스 2차 티켓 오픈 안내",
+        "url": "https://m.ticket.yes24.com/Notice/18785",
+        "publishedDate": "2026-11-04"
+      }
+    ],
+    "note": "2차 캐스팅표에 기재된 이보람의 시모어 출연 회차입니다.",
+    "dateBasis": "event",
+    "dateStatus": "confirmed",
+    "eventState": "scheduled",
+    "status": "documented",
+    "tags": [
+      "예정"
+    ],
+    "calendar": {
+      "time": "20:00",
+      "timeLabel": "공연 시작"
+    },
+    "venue": "홍익대 대학로 아트센터 대극장"
+  },
+  {
+    "id": "20270107-boram-six-2000",
+    "date": "2027-01-07",
+    "title": "이보람 · 식스 더 뮤지컬 · 1월 7일 20:00 출연",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "식스 더 뮤지컬",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 · 2차 캐스팅 스케줄 이미지",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
+      "publishedDate": "2026-11-04"
+    },
+    "additionalSources": [
+      {
+        "label": "YES24 공식 · 식스 2차 티켓 오픈 안내",
+        "url": "https://m.ticket.yes24.com/Notice/18785",
+        "publishedDate": "2026-11-04"
+      }
+    ],
+    "note": "2차 캐스팅표에 기재된 이보람의 시모어 출연 회차입니다.",
+    "dateBasis": "event",
+    "dateStatus": "confirmed",
+    "eventState": "scheduled",
+    "status": "documented",
+    "tags": [
+      "예정"
+    ],
+    "calendar": {
+      "time": "20:00",
+      "timeLabel": "공연 시작"
+    },
+    "venue": "홍익대 대학로 아트센터 대극장"
+  },
+  {
+    "id": "20270109-boram-six-1700",
+    "date": "2027-01-09",
+    "title": "이보람 · 식스 더 뮤지컬 · 1월 9일 17:00 출연",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "식스 더 뮤지컬",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 · 2차 캐스팅 스케줄 이미지",
+      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
+      "publishedDate": "2026-11-04"
+    },
+    "additionalSources": [
+      {
+        "label": "YES24 공식 · 식스 2차 티켓 오픈 안내",
+        "url": "https://m.ticket.yes24.com/Notice/18785",
+        "publishedDate": "2026-11-04"
+      }
+    ],
+    "note": "2차 캐스팅표에 기재된 이보람의 시모어 출연 회차입니다.",
+    "dateBasis": "event",
+    "dateStatus": "confirmed",
+    "eventState": "scheduled",
+    "status": "documented",
+    "tags": [
+      "예정"
+    ],
+    "calendar": {
+      "time": "17:00",
+      "timeLabel": "공연 시작"
+    },
+    "venue": "홍익대 대학로 아트센터 대극장"
+  },
+  {
+    "id": "20261105-boram-six-queens-mode",
+    "date": "2026-11-05",
+    "title": "이보람 · 식스 더 뮤지컬 QUEENS MODE 릴스",
+    "addedAt": "2026-11-05",
+    "updatedAt": "2026-11-05",
+    "program": "식스 더 뮤지컬",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 더 뮤지컬 · QUEENS MODE 릴스",
+      "url": "https://www.instagram.com/reel/DfWIf-7hARF/",
+      "publishedDate": "2026-11-05"
+    },
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · QUEENS MODE 릴스 소개",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10615",
+        "publishedDate": "2026-11-05"
+      }
+    ],
+    "note": "이보람이 참여한 뮤지컬 「식스」의 QUEENS MODE 영상입니다.",
+    "dateBasis": "video-published",
+    "dateStatus": "confirmed",
+    "eventState": "completed",
+    "status": "available",
+    "tags": [],
+    "calendar": {
+      "enabled": false
+    },
+    "publishedDate": "2026-11-05"
   }
 ]

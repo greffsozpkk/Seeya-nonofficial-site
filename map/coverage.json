@@ -1,8 +1,8 @@
 {
   "summary": {
-    "records": 153,
+    "records": 161,
     "venues": 139,
-    "linked": 89,
+    "linked": 97,
     "pending": 64,
     "unreviewed": 0
   },
@@ -1335,6 +1335,78 @@
       "placeIds": [],
       "status": "pending",
       "reason": "2026-10-31 과거 공연 현장 영상에서 장소명 확인. 정확한 시설 주소·좌표와 기존 장소의 일치 여부 확인 후 지도 핀 연결. 지역 중심의 임의 좌표는 등록하지 않음."
+    },
+    {
+      "recordId": "20261105-gyuri-yeonji-sharing-awards",
+      "title": "남규리·김연지 · 대한민국 나눔국민대상 시상 및 축하 무대",
+      "venue": "KBS 신관 공개홀",
+      "placeIds": [
+        "kbs-new-building"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261231-boram-six-1700",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 31일 17:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261231-boram-six-2030",
+      "title": "이보람 · 식스 더 뮤지컬 · 12월 31일 20:30 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20270101-boram-six-1700",
+      "title": "이보람 · 식스 더 뮤지컬 · 1월 1일 17:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20270103-boram-six-1500",
+      "title": "이보람 · 식스 더 뮤지컬 · 1월 3일 15:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20270106-boram-six-2000",
+      "title": "이보람 · 식스 더 뮤지컬 · 1월 6일 20:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20270107-boram-six-2000",
+      "title": "이보람 · 식스 더 뮤지컬 · 1월 7일 20:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20270109-boram-six-1700",
+      "title": "이보람 · 식스 더 뮤지컬 · 1월 9일 17:00 출연",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
     }
   ]
 }
