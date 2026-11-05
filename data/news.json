@@ -25,7 +25,7 @@
       "title": "“전 도시 전석 매진”… 씨야, 전국 투어 ‘THE FAN’ 성료 - 아시아뉴스통신",
       "source": "아시아뉴스통신",
       "pubDate": "2026-11-02T00:58:39+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9qc2N0eVBjMGNWY0Z0UGIwWGRudlJzVmlWYnEyU0pmeUx6ZVR2U2lQMVpsSzRxMUZwVjdfTkVZTzBvWWdGZFFheTEzMGZxd1VEUHRTTDREWWtUSi1R?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE05OE9QT21palhpZXBZNFhTMFdfTVpQU1E1X3EtajN1LTFGQmZuaVd4NG9lVWxpU2hYWXN2ZlhpbnhNcDJnMU12MWFEaFZHWnh1Q1UxUFdHT2pUcVRNQ0hrLW9B?oc=5",
       "description": "“전 도시 전석 매진”… 씨야, 전국 투어 ‘THE FAN’ 성료 아시아뉴스통신"
     },
     {
@@ -147,16 +147,16 @@
       "description": "‘골때녀’ 이보람, ‘0.5골급’ 도움에 끈질긴 수비까지···FC발라드림 새 전력 눈도장 스포츠경향"
     }
   ],
-  "updatedAt": "2026-11-04T19:48:23.188436+00:00",
-  "lastCheckedAt": "2026-11-04T19:48:23.188436+00:00",
+  "updatedAt": "2026-11-05T06:52:05.049738+00:00",
+  "lastCheckedAt": "2026-11-05T06:52:05.049738+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-04T19:48:23.188436+00:00",
-    "남규리": "2026-11-04T19:48:23.188436+00:00",
-    "김연지": "2026-11-04T19:48:23.188436+00:00",
-    "이보람": "2026-11-04T19:48:23.188436+00:00"
+    "씨야": "2026-11-05T06:52:05.049738+00:00",
+    "남규리": "2026-11-05T06:52:05.049738+00:00",
+    "김연지": "2026-11-05T06:52:05.049738+00:00",
+    "이보람": "2026-11-05T06:52:05.049738+00:00"
   },
   "categoryContentUpdatedAt": {
-    "씨야": "2026-11-04T13:49:58.014063+00:00",
+    "씨야": "2026-11-05T06:52:05.049738+00:00",
     "남규리": "2026-11-04T06:29:30.097652+00:00",
     "이보람": "2026-11-02T14:00:36.723176+00:00",
     "김연지": "2026-10-29T05:51:58.045299+00:00"
@@ -165,14 +165,14 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 121,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 120,
+      "changed": true,
+      "status": "changed"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 68,
+      "accepted": 66,
       "changed": false,
       "status": "unchanged"
     },
@@ -186,7 +186,7 @@
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 68,
+      "accepted": 64,
       "changed": false,
       "status": "unchanged"
     }
