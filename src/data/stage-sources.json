@@ -3122,5 +3122,46 @@
     "scope": "excerpt",
     "category": "live",
     "basis": "2026-11-01 제리제이 기아 PLUS 전체 직캠 설명의 00:05 사랑의 인사 확인."
+  },
+  {
+    "archiveId": "20261031-the-fan-incheon",
+    "url": "https://www.youtube.com/watch?v=8Ip7IrnMQk4",
+    "songIds": [
+      "nevertheless-us"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "인천 콘서트가 명시된 직캠 원본 제목의 곡명과 공연 날짜 확인."
+  },
+  {
+    "archiveId": "20261031-the-fan-incheon",
+    "url": "https://www.youtube.com/watch?v=IoyPJs6QZyI",
+    "songIds": [
+      "sad-footsteps",
+      "shoes"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "인천 콘서트가 명시된 직캠 원본 제목의 곡명과 공연 날짜 확인."
+  },
+  {
+    "archiveId": "20261031-the-fan-incheon",
+    "url": "https://www.youtube.com/watch?v=SdUivuJtw8E",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "인천 콘서트가 명시된 직캠 원본 제목의 곡명과 공연 날짜 확인."
+  },
+  {
+    "archiveId": "20261031-the-fan-incheon",
+    "url": "https://www.youtube.com/watch?v=rmJAW9EH558",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "인천 콘서트가 명시된 직캠 원본 제목의 곡명과 공연 날짜 확인."
   }
 ]
