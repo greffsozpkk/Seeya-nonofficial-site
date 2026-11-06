@@ -708,9 +708,21 @@
         "label": "씨야 갤러리 · 인천 공연 커피차 업체 사진",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10581",
         "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=-YMDn3-yu_4",
+        "publishedDate": "2026-11-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=KLi3AKfYLiY",
+        "publishedDate": "2026-11-05",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-05T07:09:32.180025+00:00",
+    "updatedAt": "2026-11-06T07:09:08.026889+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -24166,7 +24178,7 @@
     "id": "20210406-gyuri-onoff",
     "date": "2021-04-06",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-09-18",
+    "updatedAt": "2026-11-06T07:09:08.026889+00:00",
     "title": "남규리 · 온앤오프 · 일상과 복싱",
     "program": "tvN 온앤오프",
     "type": "variety",
@@ -24181,7 +24193,14 @@
       "url": "https://www.youtube.com/watch?v=dEDW2QwGTxw",
       "publishedDate": "2021-04-08"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "tvN Joy",
+        "url": "https://www.youtube.com/watch?v=l5O4JfddmA8",
+        "publishedDate": "2021-04-09",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "예능",
@@ -25157,6 +25176,12 @@
       {
         "label": "tvN Joy",
         "url": "https://www.youtube.com/watch?v=NOAiyat0ygM"
+      },
+      {
+        "label": "tvN D ENT",
+        "url": "https://www.youtube.com/watch?v=b_Fch4LB8_0",
+        "publishedDate": "2021-02-24",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -25166,7 +25191,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-11-06T07:09:08.026889+00:00"
   },
   {
     "id": "v4145-t-btii-76E0",
@@ -32153,6 +32179,12 @@
         "url": "https://www.youtube.com/watch?v=aPil1Y2RMcQ",
         "publishedDate": "2021-02-06",
         "autoDiscovery": true
+      },
+      {
+        "label": "치평동사우나",
+        "url": "https://www.youtube.com/watch?v=xMzbYAgit6o",
+        "publishedDate": "2021-02-10",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -32163,7 +32195,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-11-01T06:35:37.978792+00:00"
+    "updatedAt": "2026-11-06T07:09:08.026889+00:00"
   },
   {
     "id": "v490-press-gyuri-swan",
@@ -51105,7 +51137,7 @@
     "id": "20261019-seeya-immortal-wax-recording",
     "date": "2026-10-19",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-10-29",
+    "updatedAt": "2026-11-06T07:09:08.026889+00:00",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -51199,6 +51231,12 @@
         "label": "cup_soohans · 10월 19일 불후의 명곡 녹화 씨야 퇴근길",
         "url": "https://www.instagram.com/p/DerbBTlx2Ju/",
         "publishedDate": "2026-10-19"
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=M5DmexUF70c",
+        "publishedDate": "2026-11-06",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
