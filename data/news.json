@@ -147,13 +147,13 @@
       "description": "‘골때녀’ 이보람, FC발라드림 데뷔전서 맹활약 뉴스인사이드"
     }
   ],
-  "updatedAt": "2026-11-06T14:30:20.996470+00:00",
-  "lastCheckedAt": "2026-11-06T14:30:20.996470+00:00",
+  "updatedAt": "2026-11-06T19:26:51.176445+00:00",
+  "lastCheckedAt": "2026-11-06T19:26:51.176445+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-06T14:30:20.996470+00:00",
-    "남규리": "2026-11-06T14:30:20.996470+00:00",
-    "김연지": "2026-11-06T14:30:20.996470+00:00",
-    "이보람": "2026-11-06T14:30:20.996470+00:00"
+    "씨야": "2026-11-06T19:26:51.176445+00:00",
+    "남규리": "2026-11-06T19:26:51.176445+00:00",
+    "김연지": "2026-11-06T19:26:51.176445+00:00",
+    "이보람": "2026-11-06T19:26:51.176445+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-05T06:52:05.049738+00:00",
@@ -165,21 +165,21 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 116,
+      "accepted": 117,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 60,
+      "accepted": 61,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 20,
+      "accepted": 21,
       "changed": false,
       "status": "unchanged"
     },
@@ -187,8 +187,8 @@
       "queries": 4,
       "succeeded": 4,
       "accepted": 61,
-      "changed": true,
-      "status": "changed"
+      "changed": false,
+      "status": "unchanged"
     }
   }
 }
