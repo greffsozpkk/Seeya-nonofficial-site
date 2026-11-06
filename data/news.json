@@ -91,7 +91,7 @@
     {
       "title": "[TD포토] 씨야 김연지 \\'긴머리 휘날리며~\\' - 티브이데일리",
       "source": "티브이데일리",
-      "pubDate": "2026-10-19T01:57:21+00:00",
+      "pubDate": "2026-10-19T07:00:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBCUkJJMjJLUTRYN0Z6UlBjLVRiTVJQVGNBZFVGNGxUTWwxWVV2YUd2NmpBSHdUSEdEaXllMk1ERmR0Q2dPWHBDUTM1N1U5emN6endwZXVHSGF1WFc0bTQ1enN3bHBsSG95MUxJ?oc=5",
       "description": "[TD포토] 씨야 김연지 \\'긴머리 휘날리며~\\' 티브이데일리"
     },
@@ -147,25 +147,25 @@
       "description": "‘골때녀’ 이보람, ‘0.5골급’ 도움에 끈질긴 수비까지···FC발라드림 새 전력 눈도장 스포츠경향"
     }
   ],
-  "updatedAt": "2026-11-05T19:59:11.583241+00:00",
-  "lastCheckedAt": "2026-11-05T19:59:11.583241+00:00",
+  "updatedAt": "2026-11-06T06:52:00.801305+00:00",
+  "lastCheckedAt": "2026-11-06T06:52:00.801305+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-05T19:59:11.583241+00:00",
-    "남규리": "2026-11-05T19:59:11.583241+00:00",
-    "김연지": "2026-11-05T19:59:11.583241+00:00",
-    "이보람": "2026-11-05T19:59:11.583241+00:00"
+    "씨야": "2026-11-06T06:52:00.801305+00:00",
+    "남규리": "2026-11-06T06:52:00.801305+00:00",
+    "김연지": "2026-11-06T06:52:00.801305+00:00",
+    "이보람": "2026-11-06T06:52:00.801305+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-05T06:52:05.049738+00:00",
     "남규리": "2026-11-04T06:29:30.097652+00:00",
     "이보람": "2026-11-02T14:00:36.723176+00:00",
-    "김연지": "2026-10-29T05:51:58.045299+00:00"
+    "김연지": "2026-11-06T06:52:00.801305+00:00"
   },
   "categoryStatus": {
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 116,
+      "accepted": 117,
       "changed": false,
       "status": "unchanged"
     },
@@ -179,9 +179,9 @@
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 19,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 20,
+      "changed": true,
+      "status": "changed"
     },
     "이보람": {
       "queries": 4,
