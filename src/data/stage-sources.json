@@ -3163,5 +3163,56 @@
     "scope": "excerpt",
     "category": "concert",
     "basis": "인천 콘서트가 명시된 직캠 원본 제목의 곡명과 공연 날짜 확인."
+  },
+  {
+    "archiveId": "20261031-the-fan-incheon",
+    "url": "https://www.youtube.com/watch?v=QMHZOumJFpo",
+    "songIds": [
+      "scent-of-a-woman",
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "원본 제목·설명에서 2026년 10월 31일 인천 콘서트 및 해당 곡명을 확인했습니다."
+  },
+  {
+    "archiveId": "20261031-the-fan-incheon",
+    "url": "https://www.instagram.com/reel/DfZJvsPxL7O/",
+    "songIds": [
+      "his-voice"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "원본 제목·설명에서 2026년 10월 31일 인천 콘서트 및 해당 곡명을 확인했습니다."
+  },
+  {
+    "archiveId": "20261031-the-fan-incheon",
+    "url": "https://www.instagram.com/reel/DfWfDaHxf2r/",
+    "songIds": [
+      "like-spring"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "원본 제목·설명에서 2026년 10월 31일 인천 콘서트 및 해당 곡명을 확인했습니다."
+  },
+  {
+    "archiveId": "20261031-the-fan-incheon",
+    "url": "https://www.instagram.com/reel/DfWerhJxCbG/",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "원본 제목·설명에서 2026년 10월 31일 인천 콘서트 및 해당 곡명을 확인했습니다."
+  },
+  {
+    "archiveId": "20261101-boram-kia-music-festa",
+    "url": "https://www.instagram.com/reel/DfQ5gQ0yPal/",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "원문에서 2026년 11월 1일 기아 PLUS 뮤직 페스타 사랑의 인사 직캠을 확인했습니다."
   }
 ]

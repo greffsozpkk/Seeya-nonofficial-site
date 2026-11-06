@@ -12687,5 +12687,179 @@
       "20270109-boram-six-1700",
       "20261105-boram-six-queens-mode"
     ]
+  },
+  {
+    "id": "archive-2026-11-06-official-and-concert-supplements",
+    "checkedAt": "2026-11-06",
+    "additions": [
+      {
+        "id": "20261105-boram-six-rehearsal-photos",
+        "date": "2026-11-05",
+        "addedAt": "2026-11-06",
+        "updatedAt": "2026-11-06",
+        "title": "이보람 · 식스 더 뮤지컬 연습 현장·서포트 사진",
+        "program": "식스 더 뮤지컬",
+        "type": "official",
+        "members": [
+          "이보람"
+        ],
+        "songs": [],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "이보람 공식 Instagram · 우린 SIX",
+          "url": "https://www.instagram.com/p/DfXLhVXE3fw/",
+          "publishedDate": "2026-11-05"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "post-published",
+        "tags": [
+          "2026",
+          "식스 더 뮤지컬"
+        ],
+        "note": "이보람이 식스 더 뮤지컬 연습 현장의 사진을 공개하고 쌍화탕 서포트에 감사 인사를 전했습니다.\n게시일 기준의 사진 기록으로, 공연 일정과는 구분됩니다.",
+        "calendar": {
+          "enabled": false
+        }
+      },
+      {
+        "id": "20260412-yeonji-shoes-recording-vlog",
+        "date": "2026-04-12",
+        "addedAt": "2026-11-06",
+        "updatedAt": "2026-11-06",
+        "title": "김연지 · 「구두」 솔로 리메이크 녹음 브이로그",
+        "program": "김연지 공식 YouTube",
+        "type": "official",
+        "members": [
+          "김연지"
+        ],
+        "songs": [
+          "구두"
+        ],
+        "album": "",
+        "thumbnail": "",
+        "source": {
+          "label": "김연지 공식 · 구두 녹음·컴백 준비 브이로그",
+          "url": "https://www.youtube.com/watch?v=afk_AwDkE1Y",
+          "publishedDate": "2026-04-12"
+        },
+        "additionalSources": [],
+        "status": "available",
+        "dateStatus": "confirmed",
+        "dateBasis": "video-published",
+        "tags": [
+          "2026",
+          "김연지 공식 YouTube"
+        ],
+        "note": "김연지가 솔로 리메이크 「구두」의 녹음과 준비 과정을 공개한 브이로그입니다.\n성대 수술 후 다시 노래하기까지의 마음과 씨야 20주년 선공개곡 준비 과정도 함께 전합니다.\n영상 공개일 기준으로 기록했습니다.",
+        "calendar": {
+          "enabled": false
+        }
+      }
+    ],
+    "updates": [
+      {
+        "id": "20261031-the-fan-incheon",
+        "sources": [
+          {
+            "label": "제리제이 · 인천 콘서트 여인의 향기·미친 사랑의 노래",
+            "url": "https://www.youtube.com/watch?v=QMHZOumJFpo",
+            "publishedDate": "2026-11-06"
+          },
+          {
+            "label": "cup_soohans · 인천 콘서트 사연 소개 토크",
+            "url": "https://www.instagram.com/reel/DfZMTmkxtKO/",
+            "publishedDate": "2026-11-06"
+          },
+          {
+            "label": "cup_soohans · 인천 콘서트 그놈 목소리 · 이보람 직캠",
+            "url": "https://www.instagram.com/reel/DfZJvsPxL7O/",
+            "publishedDate": "2026-11-06"
+          },
+          {
+            "label": "cup_soohans · 인천 콘서트 봄처럼 그댄 · 이보람 직캠",
+            "url": "https://www.instagram.com/reel/DfWfDaHxf2r/",
+            "publishedDate": "2026-11-05"
+          },
+          {
+            "label": "cup_soohans · 인천 콘서트 계절은 돌고 돌아 · 이보람 직캠",
+            "url": "https://www.instagram.com/reel/DfWe42vRwLt/",
+            "publishedDate": "2026-11-05"
+          },
+          {
+            "label": "cup_soohans · 인천 콘서트 결혼할까요 · 이보람 직캠",
+            "url": "https://www.instagram.com/reel/DfWerhJxCbG/",
+            "publishedDate": "2026-11-05"
+          }
+        ]
+      },
+      {
+        "id": "20261104-boram-btn-dream-schedule",
+        "sources": [
+          {
+            "label": "ramirang_ · 11월 4일 한밤의 꿈 현장",
+            "url": "https://www.instagram.com/reel/DfZH1X6ONQI/",
+            "publishedDate": "2026-11-06"
+          },
+          {
+            "label": "ramirang_ · 11월 4일 한밤의 꿈 현장",
+            "url": "https://www.instagram.com/p/DfUn2SOEgaL/",
+            "publishedDate": "2026-11-04"
+          },
+          {
+            "label": "mena299 · 한밤의 꿈 28회 방송 클립",
+            "url": "https://www.instagram.com/reel/DfXari7zWu5/",
+            "publishedDate": "2026-11-06"
+          },
+          {
+            "label": "mena299 · 한밤의 꿈 28회 방송 클립",
+            "url": "https://www.instagram.com/reel/DfXamQuTD-8/",
+            "publishedDate": "2026-11-06"
+          }
+        ]
+      },
+      {
+        "id": "20261101-boram-kia-music-festa",
+        "sources": [
+          {
+            "label": "ramirang_ · 기아 PLUS 뮤직 페스타 무대 직캠",
+            "url": "https://www.instagram.com/reel/DfWKHzIu8E8/",
+            "publishedDate": "2026-11-05"
+          },
+          {
+            "label": "ramirang_ · 기아 PLUS 뮤직 페스타 빛의 반대편에서 무반주 클립",
+            "url": "https://www.instagram.com/reel/DfTmA_TOBrx/",
+            "publishedDate": "2026-11-04"
+          },
+          {
+            "label": "ramirang_ · 기아 PLUS 뮤직 페스타 사랑의 인사 직캠",
+            "url": "https://www.instagram.com/reel/DfQ5gQ0yPal/",
+            "publishedDate": "2026-11-03"
+          }
+        ]
+      },
+      {
+        "id": "20260906-gyuri-our-love-single",
+        "sources": [
+          {
+            "label": "남규리의 귤멍 공식 · 우리 사랑 그런 거 해요 콘서트 버전",
+            "url": "https://www.youtube.com/watch?v=qtEsRUrIjZg",
+            "publishedDate": "2026-09-22"
+          }
+        ]
+      },
+      {
+        "id": "20260916-seeya-october-tour-message",
+        "sources": [
+          {
+            "label": "SEEYA Official · 10월 전국투어 안내",
+            "url": "https://www.youtube.com/watch?v=Xfy-v6uFwqQ",
+            "publishedDate": "2026-09-16"
+          }
+        ]
+      }
+    ]
   }
 ]
