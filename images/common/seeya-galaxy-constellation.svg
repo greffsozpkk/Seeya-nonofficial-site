@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 466 150">
+  <title>SEEYA 별자리</title>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#ffefda" stop-opacity=".7"/><stop offset=".3" stop-color="#efd7ef" stop-opacity=".22"/><stop offset="1" stop-color="#d3b1f3" stop-opacity="0"/></radialGradient>
+    <g id="bright"><circle r="17" fill="url(#glow)"/><path d="M0-8 1.5-1.7 7 0 1.5 1.6 0 8-1.4 1.6-7 0-1.4-1.7Z" fill="#fff1df"/><circle r="1.8" fill="#fff"/></g>
+    <g id="small"><circle r="5" fill="url(#glow)"/><circle r="1.7" fill="#e7defa"/></g>
+  </defs>
+  <!-- The shared cap line, diagonal Y and open A follow the archive wordmark. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#efd9e2" stroke-width="1.65">
+      <path d="M15 124 60 122 76 108 69 86 44 53 42 37 57 24 276 23 303 75"/>
+      <path d="M110 24 111 122 164 122 M111 71 149 71"/>
+      <path d="M196 24 197 121 248 121 M197 70 234 69"/>
+      <path d="M351 22 304 124 M355 123 400 24 447 122"/>
+    </g>
+  </g>
+  <g>
+    <use href="#bright" x="15" y="124"/><use href="#small" x="60" y="122"/><use href="#small" x="76" y="108"/>
+    <use href="#small" x="44" y="53"/><use href="#bright" x="57" y="24"/>
+    <use href="#small" x="110" y="24"/><use href="#small" x="149" y="71"/><use href="#bright" x="111" y="122"/>
+    <use href="#small" x="196" y="24"/><use href="#small" x="197" y="121"/><use href="#bright" x="234" y="69"/>
+    <use href="#small" x="276" y="23"/><use href="#small" x="303" y="75"/><use href="#bright" x="351" y="22"/>
+    <use href="#small" x="304" y="124"/><use href="#small" x="355" y="123"/><use href="#bright" x="400" y="24"/><use href="#small" x="447" y="122"/>
+  </g>
+</svg>

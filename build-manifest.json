@@ -98,9 +98,12 @@
     "assets/Gaegu-Regular.13ff1bfdfd0b.woff2",
     "assets/Gaegu-Bold.f7accbcc5543.woff2",
     "assets/my-concert.3683930a6ef6.css",
-    "assets/my-concert.f57504018d41.js"
+    "assets/my-concert.f57504018d41.js",
+    "assets/galaxy.358aaf0f5ec6.css",
+    "assets/galaxy.05c60a4847c5.js"
   ],
   "auxiliary": [
+    "galaxy/test/index.html",
     "game/my-concert/catalog.json",
     "game/my-concert/test/index.html",
     "game/worldcup/catalog.json",
