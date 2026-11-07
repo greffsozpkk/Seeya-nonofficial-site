@@ -133,53 +133,53 @@
       "description": "‘골때녀’ 이보람, 첫경기부터 빛난 투지…FC발라드림 4강 진출 기여 톡톡 뉴스엔"
     },
     {
+      "title": "‘골때녀’ 이보람, FC발라드림 4강 견인 - BNT뉴스",
+      "source": "BNT뉴스",
+      "pubDate": "2026-10-29T07:00:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE95Q1pLVEYzd01LdjdKMFJ3cUJCbGJ5MlpuZ2ZpeUViZC1vTTdvSlk2RjR5OU1DV0tCLVBIRm1qeTJha1QtYzIxMUxMblpBdmgtZElOQTJjWVBxUWtWYlduWl9xSkc?oc=5",
+      "description": "‘골때녀’ 이보람, FC발라드림 4강 견인 BNT뉴스"
+    },
+    {
       "title": "이보람, '골때녀' 어시스트→몸사리지 않는 수비 투지 - 비즈엔터",
       "source": "비즈엔터",
       "pubDate": "2026-10-29T07:00:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5OT09kMTlNb1R3MEEyQTVDRUpsZms5XzJZM01hX3Etbm5ldHU0RlVNWEkzcXlWWlA2aEgxdTRlZjV2R2JfRHNJNFh2NGZwR2JheXFabjlR?oc=5",
       "description": "이보람, '골때녀' 어시스트→몸사리지 않는 수비 투지 비즈엔터"
-    },
-    {
-      "title": "‘골때녀’ 이보람, FC발라드림 데뷔전서 맹활약 - 뉴스인사이드",
-      "source": "뉴스인사이드",
-      "pubDate": "2026-10-29T02:48:53+00:00",
-      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpVU9Vb1JlUm5lZkNZWlZPcnRjNmlXcnQwYnJseTNzQVFmUi1kc2VVTjhjTEZ2MjRwRkJEd1ZFckxpNDdNMVZwT2dka1BoeHpTMVRRcDZ3eFowM3BmNEZvWXlxXzZ6dzNVcGJqMFVB?oc=5",
-      "description": "‘골때녀’ 이보람, FC발라드림 데뷔전서 맹활약 뉴스인사이드"
     }
   ],
-  "updatedAt": "2026-11-06T19:26:51.176445+00:00",
-  "lastCheckedAt": "2026-11-06T19:26:51.176445+00:00",
+  "updatedAt": "2026-11-07T06:02:04.957880+00:00",
+  "lastCheckedAt": "2026-11-07T06:02:04.957880+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-06T19:26:51.176445+00:00",
-    "남규리": "2026-11-06T19:26:51.176445+00:00",
-    "김연지": "2026-11-06T19:26:51.176445+00:00",
-    "이보람": "2026-11-06T19:26:51.176445+00:00"
+    "씨야": "2026-11-07T06:02:04.957880+00:00",
+    "남규리": "2026-11-07T06:02:04.957880+00:00",
+    "김연지": "2026-11-07T06:02:04.957880+00:00",
+    "이보람": "2026-11-07T06:02:04.957880+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-05T06:52:05.049738+00:00",
     "남규리": "2026-11-04T06:29:30.097652+00:00",
-    "이보람": "2026-11-06T14:30:20.996470+00:00",
+    "이보람": "2026-11-07T06:02:04.957880+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
   },
   "categoryStatus": {
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 117,
+      "accepted": 115,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 61,
+      "accepted": 64,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 21,
+      "accepted": 24,
       "changed": false,
       "status": "unchanged"
     },
@@ -187,8 +187,8 @@
       "queries": 4,
       "succeeded": 4,
       "accepted": 61,
-      "changed": false,
-      "status": "unchanged"
+      "changed": true,
+      "status": "changed"
     }
   }
 }
