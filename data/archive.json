@@ -750,9 +750,63 @@
         "label": "cup_soohans · 인천 콘서트 결혼할까요 · 이보람 직캠",
         "url": "https://www.instagram.com/reel/DfWerhJxCbG/",
         "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=LXbZ9iWGDzA",
+        "publishedDate": "2026-11-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=KnLgM2L-8xY",
+        "publishedDate": "2026-11-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=Wr5jT9QwYE4",
+        "publishedDate": "2026-11-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=E_FOO3ol3Mk",
+        "publishedDate": "2026-11-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=ATQQ9H9-ZnI",
+        "publishedDate": "2026-11-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=8fp3gbr0xAQ",
+        "publishedDate": "2026-11-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=khgpm9V3jVg",
+        "publishedDate": "2026-11-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=RJK6eE0yF3Y",
+        "publishedDate": "2026-11-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "투카로그",
+        "url": "https://www.youtube.com/watch?v=NxaKmQDpT1w",
+        "publishedDate": "2026-11-07",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-06T07:09:08.026889+00:00",
+    "updatedAt": "2026-11-07T06:21:48.992965+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -20876,6 +20930,18 @@
         "url": "https://www.youtube.com/watch?v=CqiB75vSTeE",
         "publishedDate": "2022-12-21",
         "autoDiscovery": true
+      },
+      {
+        "label": "Mhz 므흐즈: MBC RADIO",
+        "url": "https://www.youtube.com/watch?v=RowDpliBJGU",
+        "publishedDate": "2022-12-21",
+        "autoDiscovery": true
+      },
+      {
+        "label": "라밍보",
+        "url": "https://www.youtube.com/watch?v=mDBKiR4Qbb4",
+        "publishedDate": "2022-12-24",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -20886,7 +20952,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-16T04:48:49.690208+00:00"
+    "updatedAt": "2026-11-07T06:21:48.992965+00:00"
   },
   {
     "id": "v491-album-4082402",
@@ -21187,7 +21253,20 @@
       "label": "KBS CoolFM",
       "url": "https://www.youtube.com/watch?v=msRtI7iRpKA"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS CoolFM",
+        "url": "https://www.youtube.com/watch?v=JpbGi4Ff6F4",
+        "publishedDate": "2022-09-29",
+        "autoDiscovery": true
+      },
+      {
+        "label": "WKDWHDRMS",
+        "url": "https://www.youtube.com/watch?v=dSD7B4PARLc",
+        "publishedDate": "2022-10-19",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -21195,7 +21274,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-11-07T06:21:48.992965+00:00"
   },
   {
     "id": "v491-album-4080008",
@@ -21792,6 +21872,12 @@
         "url": "https://www.youtube.com/watch?v=yffqa6HW2kQ",
         "publishedDate": "2022-08-27",
         "autoDiscovery": true
+      },
+      {
+        "label": "mena299",
+        "url": "https://www.youtube.com/watch?v=mC1Kxc7S8nc",
+        "publishedDate": "2022-08-26",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -21802,7 +21888,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-11-01T06:35:37.978792+00:00"
+    "updatedAt": "2026-11-07T06:21:48.992965+00:00"
   },
   {
     "id": "v491-back20220817",
@@ -22251,6 +22337,12 @@
         "url": "https://www.youtube.com/watch?v=9AKCXtyqG6k",
         "publishedDate": "2022-06-25",
         "autoDiscovery": true
+      },
+      {
+        "label": "MBCentertainment",
+        "url": "https://www.youtube.com/watch?v=suVUZXaTiFQ",
+        "publishedDate": "2022-06-28",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -22261,7 +22353,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-17T04:48:42.076832+00:00"
+    "updatedAt": "2026-11-07T06:21:48.992965+00:00"
   },
   {
     "id": "v491-hangout-2022-06-18",
@@ -49770,7 +49862,7 @@
     "id": "discovered-e9c41ffc3602d455",
     "date": "2026-02-10",
     "addedAt": "2026-10-02T16:06:18.417707+00:00",
-    "updatedAt": "2026-10-23",
+    "updatedAt": "2026-11-07T06:21:48.992965+00:00",
     "title": "이보람 · 박준형·박영진의 2시만세 특별 초대석",
     "program": "MBC 박준형·박영진의 2시만세",
     "type": "radio",
@@ -49790,6 +49882,12 @@
         "label": "Mhz 므흐즈: MBC RADIO · [FULL] 2시만세의 특별한 초대석 (with 이보람) | #MBCRADIO #박준형박영진의2시만세 #이보람 | MBC 260210 방송",
         "url": "https://www.youtube.com/watch?v=3PHUTRqRrec",
         "publishedDate": "2026-02-10"
+      },
+      {
+        "label": "Mhz 므흐즈: MBC RADIO",
+        "url": "https://www.youtube.com/watch?v=T8EEakJe1bs",
+        "publishedDate": "2026-02-10",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
