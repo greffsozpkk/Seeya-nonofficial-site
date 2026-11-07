@@ -5333,8 +5333,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2022-06&event=activity-v491-h
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-hangout-2022-06-25@seeya-fanpage.com
-DTSTAMP:20261017T044842Z
-LAST-MODIFIED:20261017T044842Z
+DTSTAMP:20261107T062148Z
+LAST-MODIFIED:20261107T062148Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20220625
 DTEND;VALUE=DATE:20220626
@@ -5353,8 +5353,9 @@ DESCRIPTION:이보람\n시간 미정\nMBCentertainment: https://www.youtube
  비: https://www.youtube.com/watch?v=wzNrrUBVmNk\n엠뚜루마뚜루 : MBC
   공식 종합 채널 · 그그그 노래 이보람 완전 찰떡 [댓모
  아]: https://www.youtube.com/watch?v=ltGhtBfnaEY\nMBCentertainment: https
- ://www.youtube.com/watch?v=9AKCXtyqG6k\nhttps://seeya-fanpage.com/archive/
- ?record=v491-hangout-2022-06-25
+ ://www.youtube.com/watch?v=9AKCXtyqG6k\nMBCentertainment: https://www.yout
+ ube.com/watch?v=suVUZXaTiFQ\nhttps://seeya-fanpage.com/archive/?record=v49
+ 1-hangout-2022-06-25
 URL:https://seeya-fanpage.com/calendar/?month=2022-06&event=activity-v491-h
  angout-2022-06-25
 END:VEVENT
@@ -5566,8 +5567,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2022-08&event=activity-v491-b
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-kexpo2022@seeya-fanpage.com
-DTSTAMP:20261101T063537Z
-LAST-MODIFIED:20261101T063537Z
+DTSTAMP:20261107T062148Z
+LAST-MODIFIED:20261107T062148Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20220825
 DTEND;VALUE=DATE:20220826
@@ -5578,7 +5579,8 @@ CATEGORIES:performance
 LOCATION:
 DESCRIPTION:김연지\n시간 미정\ntv 뉴시스: https://www.youtube.com
  /watch?v=fhkK_d2ITJA\nmena299: https://www.youtube.com/watch?v=yffqa6HW2kQ
- \nhttps://seeya-fanpage.com/archive/?record=v491-kexpo2022
+ \nmena299: https://www.youtube.com/watch?v=mC1Kxc7S8nc\nhttps://seeya-fanp
+ age.com/archive/?record=v491-kexpo2022
 URL:https://seeya-fanpage.com/calendar/?month=2022-08&event=activity-v491-k
  expo2022
 END:VEVENT
@@ -5645,8 +5647,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2022-09&event=activity-v491-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-gayo20220929@seeya-fanpage.com
-DTSTAMP:20260912T150000Z
-LAST-MODIFIED:20260912T150000Z
+DTSTAMP:20261107T062148Z
+LAST-MODIFIED:20261107T062148Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20220929
 DTEND;VALUE=DATE:20220930
@@ -5656,8 +5658,9 @@ TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:이보람\n시간 미정\nKBS CoolFM: https://www.youtube.com/w
- atch?v=msRtI7iRpKA\nhttps://seeya-fanpage.com/archive/?record=v491-gayo202
- 20929
+ atch?v=msRtI7iRpKA\nKBS CoolFM: https://www.youtube.com/watch?v=JpbGi4Ff6F
+ 4\nWKDWHDRMS: https://www.youtube.com/watch?v=dSD7B4PARLc\nhttps://seeya-f
+ anpage.com/archive/?record=v491-gayo20220929
 URL:https://seeya-fanpage.com/calendar/?month=2022-09&event=activity-v491-g
  ayo20220929
 END:VEVENT
@@ -5806,8 +5809,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2022-12&event=activity-v491-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-chin20221220@seeya-fanpage.com
-DTSTAMP:20261016T044849Z
-LAST-MODIFIED:20261016T044849Z
+DTSTAMP:20261107T062148Z
+LAST-MODIFIED:20261107T062148Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20221220
 DTEND;VALUE=DATE:20221221
@@ -5818,8 +5821,9 @@ CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:이보람\n시간 미정\nMhz 므흐즈: MBC RADIO: https://www
  .youtube.com/watch?v=e_YRJcWw8no\n문문문문: https://www.youtube.com/wa
- tch?v=CqiB75vSTeE\nhttps://seeya-fanpage.com/archive/?record=v491-chin2022
- 1220
+ tch?v=CqiB75vSTeE\nMhz 므흐즈: MBC RADIO: https://www.youtube.com/watch
+ ?v=RowDpliBJGU\n라밍보: https://www.youtube.com/watch?v=mDBKiR4Qbb4\nht
+ tps://seeya-fanpage.com/archive/?record=v491-chin20221220
 URL:https://seeya-fanpage.com/calendar/?month=2022-12&event=activity-v491-c
  hin20221220
 END:VEVENT
@@ -7279,8 +7283,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-01&event=activity-v488-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-discovered-e9c41ffc3602d455@seeya-fanpage.com
-DTSTAMP:20261022T150000Z
-LAST-MODIFIED:20261022T150000Z
+DTSTAMP:20261107T062148Z
+LAST-MODIFIED:20261107T062148Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20260210
 DTEND;VALUE=DATE:20260211
@@ -7296,8 +7300,9 @@ DESCRIPTION:이보람\n시간 미정\n2026년 2월 10일 이보람이 출
  s://www.youtube.com/watch?v=oFcWXGP5YYM\nMhz 므흐즈: MBC RADIO · [FULL
  ] 2시만세의 특별한 초대석 (with 이보람) | #MBCRADIO #박준
  형박영진의2시만세 #이보람 | MBC 260210 방송: https://www.yout
- ube.com/watch?v=3PHUTRqRrec\nhttps://seeya-fanpage.com/archive/?record=dis
- covered-e9c41ffc3602d455
+ ube.com/watch?v=3PHUTRqRrec\nMhz 므흐즈: MBC RADIO: https://www.youtube
+ .com/watch?v=T8EEakJe1bs\nhttps://seeya-fanpage.com/archive/?record=discov
+ ered-e9c41ffc3602d455
 URL:https://seeya-fanpage.com/calendar/?month=2026-02&event=activity-discov
  ered-e9c41ffc3602d455
 END:VEVENT
@@ -10161,8 +10166,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261031-the-fan-incheon@seeya-fanpage.com
-DTSTAMP:20261106T070908Z
-LAST-MODIFIED:20261106T070908Z
+DTSTAMP:20261107T062148Z
+LAST-MODIFIED:20261107T062148Z
 SEQUENCE:2
 DTSTART:20261031T090000Z
 SUMMARY:2026 씨야 20주년 전국 투어 콘서트 : THE FAN · INCHEON
@@ -10342,8 +10347,16 @@ DESCRIPTION:남규리 · 김연지 · 이보람\n18:00 · 공연 시작\n20
  tps://www.instagram.com/reel/DfWfDaHxf2r/\ncup_soohans · 인천 콘서트
   계절은 돌고 돌아 · 이보람 직캠: https://www.instagram.com/re
  el/DfWe42vRwLt/\ncup_soohans · 인천 콘서트 결혼할까요 · 이보
- 람 직캠: https://www.instagram.com/reel/DfWerhJxCbG/\nhttps://seeya-fan
- page.com/archive/?record=20261031-the-fan-incheon
+ 람 직캠: https://www.instagram.com/reel/DfWerhJxCbG/\n유튜브매니
+ 한: https://www.youtube.com/watch?v=LXbZ9iWGDzA\n유튜브매니한: http
+ s://www.youtube.com/watch?v=KnLgM2L-8xY\n투카로그: https://www.youtube
+ .com/watch?v=Wr5jT9QwYE4\n투카로그: https://www.youtube.com/watch?v=E_
+ FOO3ol3Mk\n🐿람보바라기: https://www.youtube.com/watch?v=ATQQ9H9-Zn
+ I\n투카로그: https://www.youtube.com/watch?v=8fp3gbr0xAQ\n투카로그
+ : https://www.youtube.com/watch?v=khgpm9V3jVg\n🐿람보바라기: https:
+ //www.youtube.com/watch?v=RJK6eE0yF3Y\n투카로그: https://www.youtube.c
+ om/watch?v=NxaKmQDpT1w\nhttps://seeya-fanpage.com/archive/?record=20261031
+ -the-fan-incheon
 URL:https://seeya-fanpage.com/calendar/?month=2026-10&event=activity-202610
  31-the-fan-incheon
 END:VEVENT
