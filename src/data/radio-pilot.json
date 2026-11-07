@@ -977,5 +977,27 @@
     "checkedAt": "2026-10-31",
     "basis": "SBS 공식 전체 영상 제목·설명의 2025-07-16 방송일과 이보람 출연·라이브 구간 확인. 개별 기기의 재생 가능성을 보증하지 않습니다.",
     "sourceTitle": "[FULL] 꽉 찬 야구 사랑에 다시 돌아온 야구 특집⚾️ 스페셜 DJ 이찬원, 유희관, 이대은, 강재준, 이보람, 한준희 해설위원 보는 라디오 | 두시탈출 컬투쇼 | 250716"
+  },
+  {
+    "recordId": "20160304-yeonji-power-stage",
+    "youtubeId": "u_D4MiPjOI0",
+    "kind": "clip",
+    "channel": "SBS Radio 에라오",
+    "channelUrl": "https://www.youtube.com/channel/UCAmff0euQRf6RwVlbB8PLMw",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-11-07",
+    "basis": "방송사 공식 영상의 제목·설명에서 방송일과 출연자, 라이브 곡을 확인했습니다.",
+    "sourceTitle": "[SBS]파워스테이지더라이브,내 사람, 김연지 라이브"
+  },
+  {
+    "recordId": "20221105-boram-chin-radio",
+    "youtubeId": "qAoAuM6Yf5E",
+    "kind": "clip",
+    "channel": "Mhz 므흐즈: MBC RADIO",
+    "channelUrl": "https://www.youtube.com/channel/UCKNZsAeQXpvI-Mpoc0ZKhsA",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-11-07",
+    "basis": "방송사 공식 영상의 제목·설명에서 방송일과 출연자, 라이브 곡을 확인했습니다.",
+    "sourceTitle": "[노래방 라이브] 이보람 - 형(兄) (원곡: 노라조) / GOT7 영재의 친한친구 / MBC 221105 방송"
   }
 ]
