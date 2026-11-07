@@ -41,14 +41,11 @@
  density.parentElement.hidden=shared;
  if(shared){
   $('glCompose').disabled=true;
-  $('glRefresh').hidden=!service;
   $('glForm').querySelector('.gl-form-note').textContent=sharingNote;
   $('glFind').querySelector('.gl-form-note').textContent='팬들이 함께 남긴 편지를 닉네임으로 찾을 수 있어요.';
-  $('glConnection').textContent=service?'공유 편지를 불러오고 있어요.':'공유 은하수는 구글 시트 연결을 기다리고 있어요. 예시 은하수에서 먼저 둘러볼 수 있어요.';
+  $('glConnection').textContent=service?'공유 편지를 불러오고 있어요.':'공유 은하수는 구글 시트 연결을 기다리고 있어요.';
  }else{
   $('glConnection').textContent='예시 은하수 · 여기서 직접 쓴 편지는 이 브라우저에만 저장됩니다.';
-  $('glSwitch').href=location.pathname;
-  $('glSwitch').textContent='공유 은하수로 돌아가기';
  }
  const demo=Array.from({length:1000},(_,i)=>{const base=samples[i%samples.length];return i<samples.length?base:{...base,id:'demo-'+i,nickname:'예시 팬 '+(i+1),body:'은하수가 커진 모습을 보여주는 예시 편지입니다.\n\n'+base.body};});
  const all=()=>shared?letters:[...demo.slice(0,Number(density.value)),...mine];const filtered=()=>all().filter(x=>filter==='전체'||x.recipient===filter);const size=()=>view==='sky'?Math.max(1,all().length):8;
@@ -249,7 +246,7 @@
  }
  async function refresh(){
   if(!shared||!service||loading)return;
-  const version=generation;loading=true;$('glRefresh').disabled=true;
+  const version=generation;loading=true;
   try{
    const next=await service.list();
    if(version!==generation)return;
@@ -263,10 +260,9 @@
     if(latest)read(latest.id);else{close($('glLetter'));notice('이 편지는 삭제됐어요.');}
    }
   }catch(e){if(version===generation)$('glConnection').textContent=e.message;}
-  finally{loading=false;$('glRefresh').disabled=false;if(version!==generation)refresh();}
+  finally{loading=false;if(version!==generation)refresh();}
  }
  if(shared&&service){
-  $('glRefresh').onclick=refresh;
   const whenVisible=()=>{if(!document.hidden&&Date.now()-lastRead>15000)refresh();};
   document.addEventListener('visibilitychange',whenVisible);window.addEventListener('focus',whenVisible);
   setInterval(whenVisible,60000);refresh();

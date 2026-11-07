@@ -26,7 +26,7 @@ module.exports = function galaxyService(endpoint) {
    return data;
   } catch (e) {
    if (e.code && messages[e.code]) throw e;
-   throw Error(payload ? '저장 결과를 확인하지 못했어요. 이 창에서 다시 눌러 확인해 주세요.' : '공유 편지를 불러오지 못했어요. 잠시 후 다시 불러와 주세요.');
+   throw Error(payload ? '저장 결과를 확인하지 못했어요. 이 창에서 다시 눌러 확인해 주세요.' : '공유 편지를 불러오지 못했어요. 잠시 후 자동으로 다시 확인할게요.');
   } finally { clearTimeout(timeout); }
  }
  return {list:async()=>{const data=await call();if (!Array.isArray(data.letters)) throw Error('편지 목록을 확인할 수 없어요.');return data.letters;}, change:call};

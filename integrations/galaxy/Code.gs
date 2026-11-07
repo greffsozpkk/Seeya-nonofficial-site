@@ -1,16 +1,37 @@
 // 새 비공개 스프레드시트에 바인딩한 후 setupGalaxy를 한 번 실행하세요.
 const GALAXY = 'seeya-galaxy-test-v1';
 const TAB = '은하수 테스트 편지';
-const HEAD = ['별 ID','받는 사람','닉네임','편지','색','위치','작성일','수정 번호','마지막 요청','비밀번호 검증값'];
+const ORIGINAL_HEAD = ['별 ID','받는 사람','닉네임','편지','색','위치','작성일','수정 번호','마지막 요청','비밀번호 검증값'];
+// Keep the creation timestamp last so an edit never rewrites the original instant.
+const HEAD = ORIGINAL_HEAD.concat(['편지 글자 수','마지막 수정 시각 (한국)','최초 작성 시각 (한국)']);
 
 function setupGalaxy() {
+  const lock = LockService.getScriptLock();
+  lock.waitLock(15000);
+  try { prepareGalaxy_(); SpreadsheetApp.flush(); }
+  finally { lock.releaseLock(); }
+}
+
+function prepareGalaxy_() {
   const book = SpreadsheetApp.getActiveSpreadsheet();
   const tab = book.getSheetByName(TAB) || book.insertSheet(TAB);
   if (!tab.getLastRow()) {
     tab.appendRow(HEAD);
     tab.setFrozenRows(1);
+  } else {
+    const existing = tab.getRange(1,1,1,HEAD.length).getValues()[0];
+    if (existing.slice(0,ORIGINAL_HEAD.length).join('|') !== ORIGINAL_HEAD.join('|')) throw Error('SETUP');
+    if (existing.slice(ORIGINAL_HEAD.length).every(v=>v==='') && tab.getLastColumn() === ORIGINAL_HEAD.length) {
+      tab.getRange(1,11,1,3).setValues([HEAD.slice(10)]);
+    }
   }
   checkHeader_(tab);
+  tab.getRange('L2:M').setNumberFormat('yyyy-mm-dd hh:mm:ss');
+  const n = tab.getLastRow()-1;
+  if (n > 0) {
+    const rows = tab.getRange(2,1,n,4).getValues();
+    tab.getRange(2,11,n,1).setValues(rows.map(r=>[r[1] ? Array.from(r[3].slice(1)).length : '']));
+  }
   const props = PropertiesService.getScriptProperties();
   props.setProperty('GALAXY_BOOK', book.getId());
   if (!props.getProperty('GALAXY_SECRET')) props.setProperty('GALAXY_SECRET', Utilities.getUuid() + Utilities.getUuid());
@@ -48,7 +69,7 @@ function publicRow_(r) {
 function doGet() {
   return reply_(function() {
     const rows = table_().getDataRange().getValues().slice(1);
-    return {letters:rows.filter(r=>r[1]).map(publicRow_)};
+    return {schemaVersion:2, letters:rows.filter(r=>r[1]).map(publicRow_)};
   });
 }
 
@@ -95,12 +116,23 @@ function change_(q) {
     if (!prior[1]) throw Error('MISSING');
     if (q.action === 'create' || q.revision !== prior[7]) throw Error('CONFLICT');
   } else if (q.action !== 'create') throw Error('MISSING');
-  const date = prior ? prior[6] : '\u200b'+Utilities.formatDate(new Date(),'Asia/Seoul','yyyy-MM-dd');
+  const now = new Date();
+  const date = prior ? prior[6] : '\u200b'+Utilities.formatDate(now,'Asia/Seoul','yyyy-MM-dd');
+  // Sheets date serial for the Korean wall clock, independent of the book's time zone.
+  const stamp = 25569 + (Math.floor(now.getTime()/1000) + 9*3600)/86400;
   const revision = prior ? prior[7]+1 : 1;
   const deleted = q.action === 'delete';
   const row = deleted ? [q.id,'','','','','','',revision,q.requestId,digest] :
     [q.id,q.recipient,'\u200b'+q.nickname.trim(),'\u200b'+q.body.trim(),q.color,q.place,date,revision,q.requestId,digest];
-  if (rowNumber > tab.getMaxRows()) tab.insertRowsAfter(last,100);
-  tab.getRange(rowNumber,1,1,HEAD.length).setValues([row]);
+  if (deleted) row.push('','','');
+  else {
+    row.push(Array.from(q.body.trim()).length, prior ? stamp : '');
+    if (!prior) row.push(stamp);
+  }
+  if (rowNumber > tab.getMaxRows()) {
+    tab.insertRowsAfter(last,100);
+    tab.getRange(last+1,12,100,2).setNumberFormat('yyyy-mm-dd hh:mm:ss');
+  }
+  tab.getRange(rowNumber,1,1,row.length).setValues([row]);
   return deleted ? {id:q.id} : {letter:publicRow_(row)};
 }
