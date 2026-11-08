@@ -122,6 +122,7 @@ const myConcertCss=asset('my-concert','css',[passportFontCss,concertFontCss,read
 const myConcertJs=asset('my-concert','js',bundle('src/client/my-concert.js'));
 write('game/my-concert/catalog.json',JSON.stringify(require('./src/shared/my-concert-catalog').catalog(archiveRows))+'\n');
 const galaxyRoute=json('src/data/galaxy-test-route.json');
+const magazineCss=asset('magazine','css',read('src/styles/magazine.css'));
 const galaxyCss=asset('galaxy','css',read('src/styles/galaxy.css'));
 const galaxyJs=asset('galaxy','js',bundle('src/client/galaxy.js'));
 const photosRaw=json('data/photos.json');
@@ -149,6 +150,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  if(key==='worldcup-test'||key==='worldcup'){vars.pageHead=`<meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="${worldcupCss}">`;vars.scripts=`<script defer src="${worldcupJs}"></script>`+(key==='worldcup'?`<script defer src="${siteJs}"></script>`:'');}
  if(key==='clinic'||key==='clinic-test'){vars.pageHead=`<link rel="stylesheet" href="${clinicCss}">`;vars.scripts=`<script defer src="${clinicJs}"></script>`;}
  if(key==='my-concert-test'||key==='my-concert'){vars.pageHead=`<link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${myConcertJs}"></script>`;}
+ if(key==='first-again-magazine')vars.pageHead=`<link rel="stylesheet" href="${magazineCss}">`;
  if(key==='galaxy-test'){vars.pageHead=`<link rel="stylesheet" href="${galaxyCss}">`;vars.scripts=`<script defer src="${galaxyJs}"></script>`;}
  if(key==='diary-privacy')vars.pageHead+=`<link rel="stylesheet" href="${passportCss}">`;
  if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}"><link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${diaryJs}"></script>`;}

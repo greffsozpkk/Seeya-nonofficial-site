@@ -1,0 +1,11 @@
+.mag-reader {max-width: 860px; margin: 0 auto; padding: clamp(28px, 6vw, 64px) clamp(6px, 2vw, 20px) 60px;}
+.mag-reader header, .mag-reader footer {padding: 0 12px;}
+.mag-reader h1 {margin: 20px 0 4px; font: 700 clamp(36px, 7vw, 64px)/1.1 "Gowun Batang", serif;}
+.mag-reader header p {margin: 0 0 14px;}
+.mag-reader a, .mag-reader summary {color: #833c56; text-underline-offset: 3px;}
+.mag-reader nav {display: flex; gap: 14px 28px; align-items: baseline; flex-wrap: wrap;}
+.mag-reader summary {cursor: pointer; padding: 10px 0;}
+.mag-reader ol {padding-left: 28px; line-height: 2;}
+.mag-reader figure {margin: 22px 0; scroll-margin-top: 90px;}
+.mag-reader figure img {display: block; width: 100%; height: auto; box-shadow: 0 1px 5px #4e304126;}
+.mag-reader figcaption {padding: 7px 6px; color: #65545b; font-size: 13px;}

@@ -25,6 +25,7 @@
     "gallery/index.html",
     "gallery/characters/index.html",
     "gallery/fans/index.html",
+    "archive/magazine/first-again/index.html",
     "archive/index.html",
     "archive/concerts/index.html",
     "archive/concerts/the-fan-2026/index.html",
@@ -99,6 +100,7 @@
     "assets/Gaegu-Bold.f7accbcc5543.woff2",
     "assets/my-concert.3683930a6ef6.css",
     "assets/my-concert.6839cc208800.js",
+    "assets/magazine.1087b23f82e2.css",
     "assets/galaxy.358aaf0f5ec6.css",
     "assets/galaxy.40f7d35fb74e.js"
   ],

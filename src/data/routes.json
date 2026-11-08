@@ -152,6 +152,12 @@
     "description": "팬의 시선으로 간직한 씨야의 무대와 일상. 팬들이 공개한 Instagram 사진 게시물과 원본 링크를 만나보세요."
   },
   {
+    "key": "first-again-magazine",
+    "path": "/archive/magazine/first-again/",
+    "title": "First, Again · 씨야 4집 활동 특집 매거진 | SEEYA ARCHIVE",
+    "description": "씨야 정규 4집의 재생 기록, 방송 무대와 전국 투어를 담은 매거진 13쪽을 읽어보세요."
+  },
+  {
     "key": "archive",
     "path": "/archive/",
     "title": "씨야 활동 기록 검색 · 디지털 아카이브 | SEEYA ARCHIVE",
