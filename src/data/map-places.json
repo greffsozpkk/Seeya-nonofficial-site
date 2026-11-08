@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-10-31",
+  "checkedAt": "2026-11-08",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -4217,6 +4217,71 @@
         "condition": "공연 당일 콘서트 티켓 지참",
         "sourceUrl": "https://www.instagram.com/p/DfBvdqWmpMx/"
       }
+    },
+    {
+      "id": "taeyang-mart-sindang",
+      "name": "태양식자재마트 신당점",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 중구 동호로7길 38 (신당동)",
+      "coordinates": [
+        37.5521952711783,
+        127.01055635218356
+      ],
+      "category": "쇼핑",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-11-08",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 만 원으로 도시락 세 개를 만들기 위해 장을 본 마트입니다. 2분 20초에 매장 입구가 나오고, 이어서 도시락 재료를 고릅니다.",
+      "source": {
+        "label": "남규리의 귤멍 EP.69 · 태양식자재마트 신당점 방문 장면",
+        "url": "https://www.youtube.com/watch?v=TNEpiX1lzkA&t=140s",
+        "publishedDate": "2026-11-08"
+      },
+      "addressSource": "https://place.map.kakao.com/20948504",
+      "coordinateSource": "https://place.map.kakao.com/20948504",
+      "recordId": "20261108-gyuri-gyulmung69",
+      "checkedAt": "2026-11-08",
+      "locationPrecision": "building"
+    },
+    {
+      "id": "seoul-jungang-market",
+      "name": "서울중앙시장",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 중구 퇴계로85길 36 (황학동)",
+      "coordinates": [
+        37.56737408602461,
+        127.01976321851687
+      ],
+      "category": "쇼핑",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-11-08",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 마트에 들른 뒤 도시락에 넣을 달걀과 김, 곁들일 귤을 산 시장입니다. 5분 22초 장면에서 신중앙시장 현수막을 볼 수 있습니다.",
+      "source": {
+        "label": "남규리의 귤멍 EP.69 · 서울중앙시장 방문 장면",
+        "url": "https://www.youtube.com/watch?v=TNEpiX1lzkA&t=322s",
+        "publishedDate": "2026-11-08"
+      },
+      "addressSource": "https://place.map.kakao.com/18524630",
+      "coordinateSource": "https://place.map.kakao.com/18524630",
+      "recordId": "20261108-gyuri-gyulmung69",
+      "checkedAt": "2026-11-08",
+      "locationPrecision": "area",
+      "note": "신중앙시장 구간이 영상에 등장합니다. 지도 핀은 서울중앙시장의 대표 위치입니다."
     }
   ],
   "researchQueue": [
@@ -5834,7 +5899,7 @@
     ]
   },
   "archiveAudit": {
-    "checkedAt": "2026-10-31",
+    "checkedAt": "2026-11-08",
     "rows": [
       {
         "placeId": "khu-grand-peace-palace",
@@ -6516,6 +6581,16 @@
       {
         "placeId": "omyo-roasters-seochang",
         "recordId": "20261031-the-fan-incheon",
+        "status": "linked"
+      },
+      {
+        "placeId": "taeyang-mart-sindang",
+        "recordId": "20261108-gyuri-gyulmung69",
+        "status": "linked"
+      },
+      {
+        "placeId": "seoul-jungang-market",
+        "recordId": "20261108-gyuri-gyulmung69",
         "status": "linked"
       }
     ]

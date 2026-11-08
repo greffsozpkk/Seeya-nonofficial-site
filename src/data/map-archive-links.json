@@ -131,7 +131,9 @@
     "국수화 남동구 본점": "guksuhwa-namdong",
     "이당 비스트로 인천점": "idang-bistro-incheon",
     "대패신화": "daepae-sinhwa-seochang",
-    "오묘 로스터스": "omyo-roasters-seochang"
+    "오묘 로스터스": "omyo-roasters-seochang",
+    "태양식자재마트 신당점": "taeyang-mart-sindang",
+    "서울중앙시장": "seoul-jungang-market"
   },
   "records": {
     "20260829-the-fan-seoul": [
@@ -330,6 +332,10 @@
     ],
     "20270213-boram-birthday-fancafe": [
       "pelican-cafe-sangsu"
+    ],
+    "20261108-gyuri-gyulmung69": [
+      "taeyang-mart-sindang",
+      "seoul-jungang-market"
     ]
   }
 }

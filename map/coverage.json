@@ -1,8 +1,8 @@
 {
   "summary": {
-    "records": 161,
-    "venues": 139,
-    "linked": 97,
+    "records": 162,
+    "venues": 140,
+    "linked": 98,
     "pending": 64,
     "unreviewed": 0
   },
@@ -22,6 +22,16 @@
       "venue": "홍익대 대학로 아트센터 대극장",
       "placeIds": [
         "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261108-gyuri-gyulmung69",
+      "title": "남규리 · 귤멍 EP.69 만 원으로 도시락 세 개 만들기",
+      "venue": "태양식자재마트 신당점 · 서울중앙시장",
+      "placeIds": [
+        "taeyang-mart-sindang",
+        "seoul-jungang-market"
       ],
       "status": "linked"
     },

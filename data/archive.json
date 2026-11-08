@@ -115,6 +115,41 @@
     ]
   },
   {
+    "id": "20261108-gyuri-gyulmung69",
+    "date": "2026-11-08",
+    "addedAt": "2026-11-08",
+    "updatedAt": "2026-11-08",
+    "title": "남규리 · 귤멍 EP.69 만 원으로 도시락 세 개 만들기",
+    "program": "남규리의 귤멍 EP.69",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 EP.69 · 공식 영상",
+      "url": "https://www.youtube.com/watch?v=TNEpiX1lzkA",
+      "publishedDate": "2026-11-08"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-11-08",
+    "tags": [
+      "2026",
+      "남규리의 귤멍 EP.69"
+    ],
+    "note": "남규리가 만 원으로 편집팀에 선물할 도시락 세 개를 만드는 브이로그입니다. 태양식자재마트 신당점과 서울중앙시장에서 장을 보고, 직접 만든 도시락을 전했습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    },
+    "venue": "태양식자재마트 신당점 · 서울중앙시장"
+  },
+  {
     "id": "20261031-the-fan-incheon",
     "date": "2026-10-31",
     "addedAt": "2026-09-06",
@@ -53310,7 +53345,7 @@
     "id": "20261101-boram-kia-music-festa",
     "date": "2026-11-01",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-07",
+    "updatedAt": "2026-11-08",
     "title": "이보람 · 2026 기아 PLUS 뮤직 페스타",
     "program": "2026 기아 People Link US 뮤직 페스타",
     "type": "event",
@@ -53424,6 +53459,11 @@
         "label": "보람비타 · 🐯 기아 PLUS 페스타를 뒤집어놓은 질풍가도!",
         "url": "https://www.youtube.com/watch?v=xsO1D28nwBo",
         "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "ramirang_ · 기아 PLUS 뮤직 페스타 이보람 무대",
+        "url": "https://www.instagram.com/reel/DfbhybcO1gi/",
+        "publishedDate": "2026-11-07"
       }
     ],
     "status": "available",
