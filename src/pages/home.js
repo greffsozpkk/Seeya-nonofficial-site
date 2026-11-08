@@ -55,6 +55,15 @@ ${homeUpcoming(rows,now)}
       </div>
     </a>
   </div>
+  <a class="home-magazine" href="/assets/magazine/first-again.pdf" target="_blank" rel="noopener">
+    <div>
+      <span class="eye">SEEYA ARCHIVE MAGAZINE</span>
+      <h3>씨야 4집 활동 특집</h3>
+      <p>〈First, Again〉의 음원 기록과 방송 무대, 전국 투어를 한 권에 담았어요.</p>
+      <span class="home-game-go">잡지 바로 읽기 ↗</span> <small>PDF · 13쪽</small>
+    </div>
+    <img src="/assets/magazine/first-again-cover.jpg" alt="" width="195" height="270" loading="lazy">
+  </a>
 </section>
 
 
