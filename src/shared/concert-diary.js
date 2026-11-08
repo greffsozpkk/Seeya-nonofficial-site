@@ -8,7 +8,7 @@ function clean(value){
  const ids=[];const checked={};
  for(const [key,max] of Object.entries(sections)){
   const list=d.sections?.[key];if(!Array.isArray(list)||!list.length||list.length>max)throw Error('포스터 곡 수를 확인해 주세요.');
-  checked[key]=list.map(id=>{text(id,100);if(!/^[-a-zA-Z0-9]+$/.test(id)||ids.includes(id))throw Error('포스터 곡 정보를 확인해 주세요.');ids.push(id);return id;});
+  checked[key]=list.map(id=>{text(id,100);if(!/^[-a-zA-Z0-9_]+$/.test(id)||ids.includes(id))throw Error('포스터 곡 정보를 확인해 주세요.');ids.push(id);return id;});
  }
  if(!Array.isArray(value.songs)||value.songs.length>32)throw Error('포스터 곡 목록을 확인해 주세요.');
  const songs=value.songs.map(s=>({id:text(s.id,100),title:text(s.title,300),artistType:s.artistType==='solo'?'solo':'group',artistNames:Array.isArray(s.artistNames)&&s.artistNames.length<=4?s.artistNames.map(n=>text(n,100)):[]}));

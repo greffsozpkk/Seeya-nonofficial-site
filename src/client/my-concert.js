@@ -57,7 +57,7 @@ if(root){
  function confirm(message,action){confirmAction=action;$('mcConfirmMessage').textContent=message;$('mcConfirm').showModal();}
  function clearShared(){history.replaceState(null,'',location.pathname);shared=null;}
  async function showResult(d){
-  $('mcDiaryStatus').textContent='이 브라우저에 저장되며 다이어리 백업에 포함됩니다.';$('mcDiaryLink').hidden=true;playback.summary(d,songs);result=true;$('mcEditor').hidden=true;$('mcResult').hidden=false;$('mcSharedError').hidden=true;$('mcCopy').hidden=true;
+  $('mcDiarySave').disabled=false;$('mcDiaryStatus').textContent='현재 디자인을 이 브라우저의 다이어리에 남길 수 있어요.';$('mcDiaryLink').hidden=true;playback.summary(d,songs);result=true;$('mcEditor').hidden=true;$('mcResult').hidden=false;$('mcSharedError').hidden=true;$('mcCopy').hidden=true;
   $('mcResultTitle').textContent=shared?'팬이 꿈꾸는 씨야 콘서트':'당신의 무대가 완성됐어요';$('mcResultHint').textContent=shared?'공유받은 구성이에요. 내 편집본은 그대로 보관됩니다.':'첫 곡부터 앙코르까지, 좋아하는 마음을 한 장에 담았어요.';$('mcEditButton').textContent=shared?'이 구성으로 만들기':'다시 편집하기';
   d.format=Design.outputFormat(d.theme,d.format);$('mcPosterFormat').innerHTML=Object.entries(Design.formats).filter(([id])=>id!=='long'||Design.allowsLong(d.theme)).map(([id,label])=>'<option value="'+id+'">'+label+'</option>').join('');
   $('mcPosterTheme').value=d.theme;$('mcPosterFont').value=d.font;$('mcPosterFormat').value=d.format||'poster';
@@ -68,9 +68,9 @@ if(root){
   catch(e){if(token===renderToken)$('mcPosterStatus').textContent=e.message+' 이미지 저장 버튼으로 다시 시도할 수 있어요.';}
  }
  async function saveDiary(){
-  const b=$('mcDiarySave'),status=$('mcDiaryStatus');b.disabled=true;
-  try{const saved=await Diary.save(shared||draft,songs);status.textContent=saved.already?'이미 같은 포스터가 다이어리에 있어요.':'셋리스트와 포스터를 다이어리에 저장했어요.';const a=$('mcDiaryLink');a.href='/diary/#entry='+encodeURIComponent(saved.id);a.hidden=false;}
-  catch(e){status.textContent='다이어리에 저장하지 못했어요. '+e.message;}finally{b.disabled=false;}
+  const b=$('mcDiarySave'),status=$('mcDiaryStatus'),token=renderToken;b.disabled=true;status.textContent='다이어리에 포스터를 저장하고 있어요.';
+  try{const saved=await Diary.save(shared||draft,songs);if(token!==renderToken)return;status.textContent=saved.already?'이미 같은 포스터가 다이어리에 있어요.':'셋리스트와 포스터를 다이어리에 저장했어요.';const a=$('mcDiaryLink');a.href='/diary/#entry='+encodeURIComponent(saved.id);a.hidden=false;}
+  catch(e){if(token===renderToken)status.textContent='다이어리에 저장하지 못했어요. '+e.message+' 저장 버튼으로 다시 시도해 주세요.';}finally{if(token===renderToken)b.disabled=false;}
  }
  $('mcDiarySave').addEventListener('click',saveDiary);
  async function exportImage(){
@@ -113,7 +113,7 @@ if(root){
    case 'retry':load();break;
    case 'clearFilters':artist='all';album='all';query='';page=1;$('mcSearch').value='';root.querySelectorAll('[data-artist]').forEach(x=>x.setAttribute('aria-pressed',String(x.dataset.artist==='all')));refreshAlbums();library();break;
    case 'undo':if(undo){Object.assign(draft,undo);invalidateUndo();persist();update();announce('삭제한 곡을 원래 위치에 돌려놓았어요.');}break;
-   case 'finish':metadata();{const errors=M.problems(draft);try{Show.session(draft,songs,()=>0.5);}catch(e){errors.push(e.message);}const errorBox=$(b.nextElementSibling?.id==='mcTopError'?'mcTopError':'mcCompleteError');$('mcTopError').textContent='';$('mcCompleteError').textContent='';errorBox.textContent=errors.join(' ');if(errors.length){tab('set');announce(errors.join(' '));if($('mcTitleError').textContent)$('mcTitle').focus();else if($('mcPlannerError').textContent)$('mcPlanner').focus();else errorBox.scrollIntoView({block:'nearest'});break;}persist();showResult(draft);$('mcResultTitle').focus();}break;
+   case 'finish':metadata();{const errors=M.problems(draft);try{Show.session(draft,songs,()=>0.5);}catch(e){errors.push(e.message);}const errorBox=$(b.nextElementSibling?.id==='mcTopError'?'mcTopError':'mcCompleteError');$('mcTopError').textContent='';$('mcCompleteError').textContent='';errorBox.textContent=errors.join(' ');if(errors.length){tab('set');announce(errors.join(' '));if($('mcTitleError').textContent)$('mcTitle').focus();else if($('mcPlannerError').textContent)$('mcPlanner').focus();else errorBox.scrollIntoView({block:'nearest'});break;}persist();showResult(draft);saveDiary();$('mcResultTitle').focus();}break;
    case 'reset':case 'new':case 'recover':confirm('현재 이 브라우저의 편집본을 지우고 빈 콘서트로 시작합니다.',()=>{clearTimeout(timer);invalidateUndo();blocked=false;draft=M.fresh();target='opening';$('mcRecovery').hidden=true;clearShared();persist();editing();announce('새 콘서트를 시작했어요.');});break;
    case 'own':clearShared();editing();break;
    case 'edit':if(shared){const use=()=>{clearTimeout(timer);draft=JSON.parse(JSON.stringify(shared));blocked=false;$('mcRecovery').hidden=true;clearShared();persist();editing();announce('공유 구성을 내 편집본으로 가져왔어요.');};if(rawSaved)confirm('이 브라우저에 보관된 편집본을 이 공유 구성으로 교체합니다.',use);else use();}else editing();break;

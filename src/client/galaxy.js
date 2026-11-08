@@ -41,8 +41,8 @@
  density.parentElement.hidden=shared;
  if(shared){
   $('glCompose').disabled=true;
-  $('glForm').querySelector('.gl-form-note').textContent=sharingNote;
-  $('glFind').querySelector('.gl-form-note').textContent='팬들이 함께 남긴 편지를 닉네임으로 찾을 수 있어요.';
+  $('glForm').querySelector('.gl-form-note').textContent=sharingNote+' 작성한 편지는 이 브라우저의 씨야 다이어리에도 저장돼요.';
+  $('glFind').querySelector('.gl-form-note').textContent='닉네임으로 편지를 찾을 수 있어요. 예전에 쓴 편지는 ‘편지 수정’에서 비밀번호를 입력하고 저장하면 이 기기의 다이어리에도 담겨요.';
   $('glConnection').textContent=service?'공유 편지를 불러오고 있어요.':'공유 은하수는 구글 시트 연결을 기다리고 있어요.';
  }else{
   $('glConnection').textContent='예시 은하수 · 여기서 직접 쓴 편지는 이 브라우저에만 저장됩니다.';
@@ -51,7 +51,19 @@
  const all=()=>shared?letters:[...demo.slice(0,Number(density.value)),...mine];const filtered=()=>all().filter(x=>filter==='전체'||x.recipient===filter);const size=()=>view==='sky'?Math.max(1,all().length):8;
  const camera=require('./galaxy-camera')($('glSky'),$('glScene'));
  function save(){try{localStorage.setItem(key,JSON.stringify(mine));storageOK=true;return true;}catch{storageOK=false;return false;}}
- function notice(text){$('glNotice').textContent=text;}
+ function notice(text){$('glNotice').textContent=text;$('glDiaryLink').hidden=true;}
+ async function updateDiary(id,letter){
+  const task=()=>require('../shared/galaxy-diary').update(localStorage,id,letter);
+  try{
+   const entryId=navigator.locks?await navigator.locks.request('seeya-passport-save',task):task();
+   if(letter){
+    notice('은하수와 이 기기의 다이어리에 편지를 저장했어요.');
+    const link=$('glDiaryLink');link.href='/diary/#entry='+encodeURIComponent(entryId);link.hidden=false;
+   }
+  }catch{
+   notice(letter?'은하수에 편지를 저장했지만 이 기기의 다이어리에 담지 못했어요. 저장 공간을 확인한 뒤 편지 수정에서 다시 저장해 주세요.':'은하수에서 삭제했지만 이 기기의 다이어리 기록은 지우지 못했어요. 다이어리에서 삭제해 주세요.');
+  }
+ }
  function open(dialog){lastFocus=document.activeElement;dialog.showModal();}
  function saving(dialog){return shared&&dialog.querySelector('button[type=submit]:disabled');}
  function close(dialog){if(!saving(dialog))dialog.close();}
@@ -202,7 +214,7 @@
     const {letter}=await service.change({action:target?'edit':'create',id:draftId,requestId:writeRequest,revision:target?.revision,proof,nickname,body,recipient,...design});
     applyShared(letter.id,letter);
     $('glWrite').close();form.reset();showOnSky(letter.id);
-    notice(target?'공유 편지를 수정했어요.':'함께 보는 밤하늘에 내 별이 떠올랐어요.');
+    await updateDiary(letter.id,letter);
     return;
    }
    let letter;if(target){if(!await accepts(target,password)){$('glError').textContent='편지 비밀번호가 맞지 않아요.';return;}letter={...target,nickname,body,recipient,...design};}
@@ -216,7 +228,7 @@
   try{if(shared){
     const proof=await verifier(removeForm.elements.password.value,target.id.replaceAll('-',''));
     await service.change({action:'delete',id:target.id,requestId:deleteRequest,revision:target.revision,proof});
-    applyShared(target.id,null);$('glRemove').close();render();notice('공유 은하수에서 편지를 삭제했어요.');return;
+    applyShared(target.id,null);$('glRemove').close();render();notice('공유 은하수에서 편지를 삭제했어요.');await updateDiary(target.id,null);return;
    }
    if(!await accepts(target,removeForm.elements.password.value)){$('glRemoveError').textContent='편지 비밀번호가 맞지 않아요.';return;}if(!$('glRemove').open||target!==removing)return;
    if(!persist(mine.filter(x=>x.id!==target.id))){$('glRemoveError').textContent='삭제 내용을 저장할 수 없어요.';return;}close($('glRemove'));render();notice('편지와 별을 삭제했어요.');

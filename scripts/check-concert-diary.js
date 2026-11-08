@@ -8,6 +8,11 @@ assert.deepEqual(moved.vcrs.map(v=>v.value),['28tmGVxRG3s','uYp15-zFr4M','CzkUIf
 moved=M.change(moved,{type:'vcr-order',index:2,after:1,to:0},songs).draft;assert.equal(moved.vcrs.find(v=>v.value==='CzkUIfl5R4Q').after,1);
 assert.throws(()=>M.change(d,{type:'vcr-order',index:0,after:0,to:0},songs));assert.throws(()=>M.change(d,{type:'vcr-order',index:0,after:4,to:0},songs));
 assert.deepEqual(M.decode(M.encode(moved),songs).vcrs,moved.vcrs);
+for(const song of songs.filter(s=>s.enabled)){
+ const others=songs.filter(s=>s.enabled && s.id!==song.id);
+ const allTracks={...d,vcrs:[],sections:{opening:[song.id],main:[others[0].id],encore:[others[1].id]}};
+ assert(C.snapshot(allTracks,songs).songs.some(s=>s.id===song.id));
+}
 const recipe=C.snapshot(d,songs),now=new Date().toISOString();
 const record=P.entry({entryId:'concert-example',kind:'play',status:'done',date:P.today(),title:d.title,members:['seeya'],play:{game:'other'},concertPoster:recipe,createdAt:now,updatedAt:now});
 const state={...P.empty(),entries:[record]};assert.deepEqual(P.validate(JSON.parse(JSON.stringify(state))).entries[0].concertPoster,recipe);
