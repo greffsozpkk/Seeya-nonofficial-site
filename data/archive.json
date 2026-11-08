@@ -1059,9 +1059,33 @@
         "label": "출구없는남규리(aka.출남) · 26.10.31 전국투어 마지막 in 인천 감동을 주세요",
         "url": "https://www.youtube.com/watch?v=vvQMjBF7Fv0",
         "publishedDate": "2026-11-07"
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=_8_3O7gP_bo",
+        "publishedDate": "2026-11-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=bGx0_DUoqoc",
+        "publishedDate": "2026-11-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "화원 花",
+        "url": "https://www.youtube.com/watch?v=X3asQTkP4uc",
+        "publishedDate": "2026-11-08",
+        "autoDiscovery": true
+      },
+      {
+        "label": "화원 花",
+        "url": "https://www.youtube.com/watch?v=WjpzZay_rmg",
+        "publishedDate": "2026-11-08",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-07",
+    "updatedAt": "2026-11-08T06:28:41.611353+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -19658,6 +19682,12 @@
         "url": "https://www.youtube.com/watch?v=3dqRRUGPPLE",
         "publishedDate": "2023-09-16",
         "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=FQxVDIHi91o",
+        "publishedDate": "2023-09-16",
+        "autoDiscovery": true
       }
     ],
     "note": "‘기억의 노래’ 특집에서 백예빈과 함께 엄정화의 ‘Festival’을 부른 무대입니다.",
@@ -19673,7 +19703,7 @@
     "thumbnail": "",
     "status": "available",
     "dateStatus": "confirmed",
-    "updatedAt": "2026-10-16T04:48:49.690208+00:00"
+    "updatedAt": "2026-11-08T06:28:41.611353+00:00"
   },
   {
     "id": "v491-sunset2023",
@@ -55481,7 +55511,7 @@
     "id": "20221003-boram-youth-arena",
     "date": "2022-10-03",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-10-31",
+    "updatedAt": "2026-11-08T06:28:41.611353+00:00",
     "title": "이보람 · 청춘아레나 대구 · 박혜원·박진주와 합동 무대",
     "program": "청춘아레나 대구",
     "type": "event",
@@ -55504,6 +55534,12 @@
         "label": "스프 · [4k 60p] 221003 가야J (Hynn, 박진주, 이보람) - 눈을 감으면, 단체사진 @청춘아레나",
         "url": "https://www.youtube.com/watch?v=7zNTSbimS90",
         "publishedDate": "2022-10-04"
+      },
+      {
+        "label": "스프",
+        "url": "https://www.youtube.com/watch?v=wmSPywZiTYI",
+        "publishedDate": "2023-07-29",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
