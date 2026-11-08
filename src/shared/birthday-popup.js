@@ -1,14 +1,14 @@
 'use strict';
-const DAY='2026-10-30';
-const STORAGE_KEY='seeya-birthday-popup:yeonji:'+DAY;
-const END=Date.parse('2026-10-31T00:00:00+09:00');
+const DAY='2026-11-08';
+const STORAGE_KEY='seeya-home-notice:gyuri-mv:'+DAY;
+const END=Date.parse('2026-11-09T00:00:00+09:00');
 function isBirthday(now=new Date()){
  const time=now.getTime();
- return Number.isFinite(time)&&time>=Date.parse('2026-10-30T00:00:00+09:00')&&time<END;
+ return Number.isFinite(time)&&time>=Date.parse('2026-11-08T00:00:00+09:00')&&time<END;
 }
-function birthdayPopup(){return `<dialog class="birthday-popup" id="birthdayPopup" aria-label="김연지 생일 축하" aria-describedby="birthdayPopupDate">
- <p class="birthday-popup-sr" id="birthdayPopupDate">김연지의 생일을 축하합니다. 한국 시간 2026년 10월 30일 하루 동안 표시됩니다.</p>
- <img id="birthdayPopupImage" data-birthday-src="/images/events/yeonji-birthday-20261030.png" width="850" height="1063" alt="HAPPY Birthday to yeonji. 우리의 빛 연지야 생일 축하해! 씨야 갤러리의 김연지 생일 축하 이미지">
+function birthdayPopup(){return `<dialog class="birthday-popup" id="birthdayPopup" aria-label="남규리 신곡 뮤직비디오 촬영 현장 초대" aria-describedby="birthdayPopupDate">
+ <p class="birthday-popup-sr" id="birthdayPopupDate">신청은 11월 8일 밤 11시 59분까지입니다. 이미지를 누르면 남규리의 귤멍 유튜브 공지가 새 창에서 열립니다.</p>
+ <a class="birthday-popup-link" href="https://www.youtube.com/post/Ugkxq8hwrQLbrHcHjJHFcOk4t0V46nEDyl55" target="_blank" rel="noopener noreferrer"><img id="birthdayPopupImage" data-birthday-src="/images/events/gyuri-mv-invitation-20261108.png" width="1080" height="1350" alt="남규리 신곡 뮤직비디오 촬영 현장 초대 · 11월 13일 서울 은평구. 유튜브 공지 보기 (새 창)"></a>
  <div class="birthday-popup-actions"><label><input type="checkbox" id="birthdayPopupHide">오늘 다시 보지 않기</label><button type="button" id="birthdayPopupClose" autofocus>닫기 <span aria-hidden="true">×</span></button></div>
 </dialog>`;}
 module.exports={DAY,STORAGE_KEY,END,isBirthday,birthdayPopup};
