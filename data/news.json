@@ -147,13 +147,13 @@
       "description": "이보람, ‘골때녀’ 첫 경기부터 존재감…결정적 패스로 승리 지원 지피코리아"
     }
   ],
-  "updatedAt": "2026-11-09T07:04:38.580547+00:00",
-  "lastCheckedAt": "2026-11-09T07:04:38.580547+00:00",
+  "updatedAt": "2026-11-09T14:02:18.374547+00:00",
+  "lastCheckedAt": "2026-11-09T14:02:18.374547+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-09T07:04:38.580547+00:00",
-    "남규리": "2026-11-09T07:04:38.580547+00:00",
-    "김연지": "2026-11-09T07:04:38.580547+00:00",
-    "이보람": "2026-11-09T07:04:38.580547+00:00"
+    "씨야": "2026-11-09T14:02:18.374547+00:00",
+    "남규리": "2026-11-09T14:02:18.374547+00:00",
+    "김연지": "2026-11-09T14:02:18.374547+00:00",
+    "이보람": "2026-11-09T14:02:18.374547+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-05T06:52:05.049738+00:00",
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 82,
+      "accepted": 78,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 58,
+      "accepted": 55,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 25,
+      "accepted": 26,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 52,
+      "accepted": 41,
       "changed": false,
       "status": "unchanged"
     }
