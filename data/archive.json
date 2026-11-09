@@ -1083,9 +1083,15 @@
         "url": "https://www.youtube.com/watch?v=WjpzZay_rmg",
         "publishedDate": "2026-11-08",
         "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=21VgEYTeLCk",
+        "publishedDate": "2026-11-09",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-08T06:28:41.611353+00:00",
+    "updatedAt": "2026-11-09T06:59:41.297399+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -1101,7 +1107,7 @@
     "id": "20261025-boram-worldmom-seocho",
     "date": "2026-11-08",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-11-01",
+    "updatedAt": "2026-11-09T06:59:41.297399+00:00",
     "title": "이보람 · 세상을 바꾸는 여자들 송도 공연 예정",
     "program": "세상을 바꾸는 여자들 · 송도",
     "type": "event",
@@ -1132,6 +1138,18 @@
         "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
         "publishedDate": "2026-10-26"
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=M53NVYGUMZw",
+        "publishedDate": "2026-11-09",
+        "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=O6xOWdZajLE",
+        "publishedDate": "2026-11-09",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -56746,5 +56764,34 @@
     "calendar": {
       "enabled": false
     }
+  },
+  {
+    "id": "discovered-fddbb70d92f1b6c9",
+    "date": "2024-10-03",
+    "addedAt": "2026-11-09T06:59:41.297399+00:00",
+    "updatedAt": "2026-11-09T06:59:41.297399+00:00",
+    "title": "이세준의 음악이 좋은 밤 🎵 [Seeya 김연지] FULL [보이는 라디오] [24.10.02 PM 22:00-23:30]",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "Hot Issue🎤",
+      "url": "https://www.youtube.com/watch?v=nHHKrwrnnsc",
+      "publishedDate": "2024-10-03",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2024-10-03",
+    "autoDiscovery": true
   }
 ]
