@@ -48,7 +48,7 @@
       "title": "남규리, 물가 상승률 무시하고 ‘20년만 만원의 행복’ 도전 반전 결과(귤멍) - 뉴스엔",
       "source": "뉴스엔",
       "pubDate": "2026-11-08T04:40:02+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFAyYlVST0dNT1pTdC1HdW50djFLYUhvRjhPM01aUEoyXzV6QllKS2VvTGVNUnJzdUxQeUQ0eVJZcWs0WjFuVzc2Z1dGbXVLcExCUW9SY1lwMlc5QkJNemtBRkZpQ243VlZUNll6dENiN2N3dWRNRkg4VUp1Zw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFB1Z2VIQ2dDY1h6Nk5IbV84U1lBcFFqZXdlVTUxMlhpNzctSnVlaWpSS3NtbGE0dnVTMTRIbl9waTU5VDM1eFRweTd3SHdwSWdPOXdUUW5zUkU0ZFFwTC1uSjZqdzg4Y3dS?oc=5",
       "description": "남규리, 물가 상승률 무시하고 ‘20년만 만원의 행복’ 도전 반전 결과(귤멍) 뉴스엔"
     },
     {
@@ -147,17 +147,17 @@
       "description": "이보람, ‘골때녀’ 첫 경기부터 존재감…결정적 패스로 승리 지원 지피코리아"
     }
   ],
-  "updatedAt": "2026-11-09T14:02:18.374547+00:00",
-  "lastCheckedAt": "2026-11-09T14:02:18.374547+00:00",
+  "updatedAt": "2026-11-09T22:24:33.386665+00:00",
+  "lastCheckedAt": "2026-11-09T22:24:33.386665+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-09T14:02:18.374547+00:00",
-    "남규리": "2026-11-09T14:02:18.374547+00:00",
-    "김연지": "2026-11-09T14:02:18.374547+00:00",
-    "이보람": "2026-11-09T14:02:18.374547+00:00"
+    "씨야": "2026-11-09T22:24:33.386665+00:00",
+    "남규리": "2026-11-09T22:24:33.386665+00:00",
+    "김연지": "2026-11-09T22:24:33.386665+00:00",
+    "이보람": "2026-11-09T22:24:33.386665+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-05T06:52:05.049738+00:00",
-    "남규리": "2026-11-09T06:38:48.480091+00:00",
+    "남규리": "2026-11-09T22:24:33.386665+00:00",
     "이보람": "2026-11-08T06:06:16.050437+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
   },
@@ -165,16 +165,16 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 78,
+      "accepted": 81,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 55,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 58,
+      "changed": true,
+      "status": "changed"
     },
     "김연지": {
       "queries": 4,
@@ -186,7 +186,7 @@
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 41,
+      "accepted": 40,
       "changed": false,
       "status": "unchanged"
     }
