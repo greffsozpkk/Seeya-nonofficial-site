@@ -3214,5 +3214,36 @@
     "scope": "excerpt",
     "category": "live",
     "basis": "원문에서 2026년 11월 1일 기아 PLUS 뮤직 페스타 사랑의 인사 직캠을 확인했습니다."
+  },
+  {
+    "archiveId": "20261108-seeya-videotank-shoes",
+    "url": "https://www.youtube.com/watch?v=7lLbEkYynH4",
+    "songIds": [
+      "shoes"
+    ],
+    "scope": "excerpt",
+    "category": "broadcast",
+    "basis": "비디오탱크 공개 영상 제목에서 「구두」를 확인했습니다. 날짜는 영상 게시일입니다."
+  },
+  {
+    "archiveId": "20261025-boram-worldmom-seocho",
+    "url": "https://www.instagram.com/reel/DfgZEaIx1yo/",
+    "songIds": [
+      "ice-doll"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "현장 영상 원문에 송도 공연 날짜와 무반주 신청곡 「얼음인형」이 적혀 있습니다."
+  },
+  {
+    "archiveId": "20261025-boram-worldmom-seocho",
+    "url": "https://www.youtube.com/watch?v=M53NVYGUMZw",
+    "songIds": [
+      "love-greeting",
+      "hot-girl"
+    ],
+    "scope": "multi",
+    "category": "live",
+    "basis": "전체 직캠 설명의 00:01 사랑의 인사, 45:15 무반주 신청곡 코너에 핫걸이 표시되어 있습니다."
   }
 ]

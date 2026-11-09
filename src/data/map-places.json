@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-11-08",
+  "checkedAt": "2026-11-09",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -4282,6 +4282,36 @@
       "checkedAt": "2026-11-08",
       "locationPrecision": "area",
       "note": "신중앙시장 구간이 영상에 등장합니다. 지도 핀은 서울중앙시장의 대표 위치입니다."
+    },
+    {
+      "id": "yeosu-moifin-ocean",
+      "name": "모이핀 오션점",
+      "city": "여수",
+      "region": "전남",
+      "address": "여수시 돌산읍 무술목길 50",
+      "coordinates": [
+        34.6878508,
+        127.7790844
+      ],
+      "category": "카페",
+      "members": [
+        "이보람"
+      ],
+      "group": "",
+      "relations": [
+        "공연"
+      ],
+      "date": "2026-12-18",
+      "dateBasis": "공연 예정일",
+      "story": "12월 18일 오후 6시 30분, 여수 모이핀 오션점 1층 전시관에서 DK와 이보람이 라이브 공연을 엽니다. 유료 공연으로, 티켓 구매 방법과 입장 시간은 모이핀 공식 계정에서 추후 안내합니다.",
+      "source": {
+        "label": "모이핀 공식 · DK·이보람 공연 안내",
+        "url": "https://www.instagram.com/p/DfgNPRbSC_D/"
+      },
+      "addressSource": "https://www.yeosu.go.kr/mice/meeting/unique_conference_info/moifin",
+      "coordinateSource": "https://www.placeview.co.kr/id/MTg2MDMyMTg0",
+      "recordId": "20261218-boram-moifin-live",
+      "checkedAt": "2026-11-09"
     }
   ],
   "researchQueue": [
@@ -5899,7 +5929,7 @@
     ]
   },
   "archiveAudit": {
-    "checkedAt": "2026-11-08",
+    "checkedAt": "2026-11-09",
     "rows": [
       {
         "placeId": "khu-grand-peace-palace",
@@ -6591,6 +6621,11 @@
       {
         "placeId": "seoul-jungang-market",
         "recordId": "20261108-gyuri-gyulmung69",
+        "status": "linked"
+      },
+      {
+        "placeId": "yeosu-moifin-ocean",
+        "recordId": "20261218-boram-moifin-live",
         "status": "linked"
       }
     ]

@@ -1,8 +1,8 @@
 {
   "summary": {
-    "records": 162,
-    "venues": 140,
-    "linked": 98,
+    "records": 163,
+    "venues": 141,
+    "linked": 99,
     "pending": 64,
     "unreviewed": 0
   },
@@ -13,6 +13,15 @@
       "venue": "양재 엘타워",
       "placeIds": [
         "eltower"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20261218-boram-moifin-live",
+      "title": "DK·이보람 · 여수 모이핀 라이브",
+      "venue": "모이핀 오션점 1층 전시관",
+      "placeIds": [
+        "yeosu-moifin-ocean"
       ],
       "status": "linked"
     },
@@ -50,7 +59,7 @@
     },
     {
       "recordId": "20261025-boram-worldmom-seocho",
-      "title": "이보람 · 세상을 바꾸는 여자들 송도 공연 예정",
+      "title": "이보람 · 세상을 바꾸는 여자들 송도 공연",
       "venue": "송도컨벤시아 프리미어볼룸 A룸 (센트럴로 123)",
       "placeIds": [
         "songdo-convensia"
