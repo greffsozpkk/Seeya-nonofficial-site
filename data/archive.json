@@ -14702,6 +14702,12 @@
         "url": "https://www.youtube.com/watch?v=xC6FyWIAkRQ",
         "publishedDate": "2026-01-05",
         "autoDiscovery": true
+      },
+      {
+        "label": "뚝딱이 PD",
+        "url": "https://www.youtube.com/watch?v=XA47qu7TVGc",
+        "publishedDate": "2026-01-05",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -14713,7 +14719,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "publishedDate": "2026-01-05",
-    "updatedAt": "2026-11-05T07:09:32.180025+00:00"
+    "updatedAt": "2026-11-10T07:37:05.149771+00:00"
   },
   {
     "id": "v488-audit-040",
@@ -15294,6 +15300,24 @@
         "label": "🐿람보바라기 · 이보람(Lee Boram) 직캠, 251207 이보람 콘서트 'Still Singing' 앵콜 \"당신을 위하여 & 마무리 인사\"",
         "url": "https://www.youtube.com/watch?v=xiQphfq1C8Q",
         "publishedDate": "2026-10-28"
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=bMCoqODwd9o",
+        "publishedDate": "2025-12-09",
+        "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=81uLGfCeKp4",
+        "publishedDate": "2025-12-11",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=oxu3dDbW5Jg",
+        "publishedDate": "2025-12-12",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -15307,7 +15331,7 @@
     "dateBasis": "event",
     "endDate": "2025-12-07",
     "venue": "성신여자대학교 운정그린캠퍼스 대강당",
-    "updatedAt": "2026-10-31"
+    "updatedAt": "2026-11-10T07:37:05.149771+00:00"
   },
   {
     "id": "v4145-6JiTQ12-tFg",
