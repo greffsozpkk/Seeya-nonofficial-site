@@ -38,6 +38,13 @@
   ],
   "남규리": [
     {
+      "title": "남규리, 19년 만에 '만 원의 행복' 재도전…물가에 깜짝 \"호떡도 못 먹어\" (귤멍) - www.xportsnews.com",
+      "source": "www.xportsnews.com",
+      "pubDate": "2026-11-10T02:06:57+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE42NXJaVUFlaGhoWVJ1Vm45NlBKT09WZWZvSlZIV0hZRzIwcGh2UTFNM2xqbURVWXRCLU1HQUV0NDQ3VWpkMXZfODBNVjIxMFBwcXFDRg?oc=5",
+      "description": "남규리, 19년 만에 '만 원의 행복' 재도전…물가에 깜짝 \"호떡도 못 먹어\" (귤멍) www.xportsnews.com"
+    },
+    {
       "title": "남규리, 돈 문제로 제작진에 불만 쏟아냈다…\"물가 상승률 따지고 줘야지\" 황당함 토로 ('귤멍') - 텐아시아",
       "source": "텐아시아",
       "pubDate": "2026-11-09T05:29:00+00:00",
@@ -64,13 +71,6 @@
       "pubDate": "2026-11-01T08:59:29+00:00",
       "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93T1hQSVFFWE1BR2VIS3pkcHo3UUQ0TWU2NFItWjlZVjB1ZEtuVm15dVYzaEZoeDdJT2NzcGkxNUs2ZjUzcnI4VXdmVktlRk1FRWpoemMwblIyU0cxQkkxWVFIVkhkWVBkNUUyTnpxeDM2MnZM?oc=5",
       "description": "\"살다 보니 이런 날이..\" 남규리, 씨야 '불화설' 딛고 20주년 투어 마무리 스타뉴스"
-    },
-    {
-      "title": "남규리, 씨야 20주년 투어 마무리 - BNT뉴스",
-      "source": "BNT뉴스",
-      "pubDate": "2026-11-01T07:53:36+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBmWXQ2SDVOUlVqbXFYRnZZZE9haF9IdmhnVWtBS1c5MEs2UjV2UHNUaUkwcUZ2ZXktYzNGZFh5akJIOGJtNkotaHdtSUZvd2dPdE9fXzEwRk5PNlFrVzFmYzBja18?oc=5",
-      "description": "남규리, 씨야 20주년 투어 마무리 BNT뉴스"
     }
   ],
   "김연지": [
@@ -147,17 +147,17 @@
       "description": "이보람, ‘골때녀’ 첫 경기부터 존재감…결정적 패스로 승리 지원 지피코리아"
     }
   ],
-  "updatedAt": "2026-11-09T22:24:33.386665+00:00",
-  "lastCheckedAt": "2026-11-09T22:24:33.386665+00:00",
+  "updatedAt": "2026-11-10T07:22:55.375538+00:00",
+  "lastCheckedAt": "2026-11-10T07:22:55.375538+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-09T22:24:33.386665+00:00",
-    "남규리": "2026-11-09T22:24:33.386665+00:00",
-    "김연지": "2026-11-09T22:24:33.386665+00:00",
-    "이보람": "2026-11-09T22:24:33.386665+00:00"
+    "씨야": "2026-11-10T07:22:55.375538+00:00",
+    "남규리": "2026-11-10T07:22:55.375538+00:00",
+    "김연지": "2026-11-10T07:22:55.375538+00:00",
+    "이보람": "2026-11-10T07:22:55.375538+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-05T06:52:05.049738+00:00",
-    "남규리": "2026-11-09T22:24:33.386665+00:00",
+    "남규리": "2026-11-10T07:22:55.375538+00:00",
     "이보람": "2026-11-08T06:06:16.050437+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
   },
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 81,
+      "accepted": 80,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 58,
+      "accepted": 59,
       "changed": true,
       "status": "changed"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 26,
+      "accepted": 25,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 40,
+      "accepted": 41,
       "changed": false,
       "status": "unchanged"
     }
