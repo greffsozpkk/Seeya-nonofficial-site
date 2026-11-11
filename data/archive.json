@@ -5531,7 +5531,7 @@
     "id": "20260921-gyuri-mbc-noon-dj",
     "date": "2026-09-21",
     "addedAt": "2026-09-18",
-    "updatedAt": "2026-10-24T04:53:19.687806+00:00",
+    "updatedAt": "2026-11-11T06:55:01.786605+00:00",
     "title": "남규리 · 정오의 희망곡 스페셜 DJ · 첫 방송",
     "program": "정오의 희망곡 김신영입니다",
     "type": "radio",
@@ -5566,6 +5566,12 @@
       {
         "label": "Mhz 므흐즈: MBC RADIO",
         "url": "https://www.youtube.com/watch?v=dRpmQVi6VOw",
+        "publishedDate": "2026-09-21",
+        "autoDiscovery": true
+      },
+      {
+        "label": "vanillacone0925",
+        "url": "https://www.youtube.com/watch?v=If5afm0ildM",
         "publishedDate": "2026-09-21",
         "autoDiscovery": true
       }
@@ -8707,6 +8713,12 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A71%3AF71"
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=uv9308zdJuA",
+        "publishedDate": "2026-08-21",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -8716,7 +8728,8 @@
     ],
     "note": "",
     "publishedDate": "2026-08-19",
-    "episode": 17
+    "episode": 17,
+    "updatedAt": "2026-11-11T06:55:01.786605+00:00"
   },
   {
     "id": "v475-sheet2-row70",
@@ -10303,6 +10316,36 @@
       {
         "label": "룰리커피 · 버스킹 개최 결과 보도자료",
         "url": "https://www.newswire.co.kr/newsRead.php?no=1037581"
+      },
+      {
+        "label": "무대인사매니아",
+        "url": "https://www.youtube.com/watch?v=9GIfCaR2M1k",
+        "publishedDate": "2026-06-30",
+        "autoDiscovery": true
+      },
+      {
+        "label": "무대인사매니아",
+        "url": "https://www.youtube.com/watch?v=aULQxvkOP_k",
+        "publishedDate": "2026-07-03",
+        "autoDiscovery": true
+      },
+      {
+        "label": "무대인사매니아",
+        "url": "https://www.youtube.com/watch?v=P9TGCXGOa_I",
+        "publishedDate": "2026-07-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "무대인사매니아",
+        "url": "https://www.youtube.com/watch?v=st5qNfzt8EM",
+        "publishedDate": "2026-07-14",
+        "autoDiscovery": true
+      },
+      {
+        "label": "무대인사매니아",
+        "url": "https://www.youtube.com/watch?v=S0V9LWrmOLs",
+        "publishedDate": "2026-07-18",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -10312,7 +10355,7 @@
     ],
     "note": "2026년 6월 28일 룰리커피 가창점에서 진행한 남규리의 룰리버스킹입니다.\n매장 주최 보도자료와 현장 영상을 함께 연결합니다.",
     "venue": "룰리커피 가창점",
-    "updatedAt": "2026-10-08"
+    "updatedAt": "2026-11-11T06:55:01.786605+00:00"
   },
   {
     "id": "v4145-dKVDn4pUiLc",
@@ -11408,6 +11451,12 @@
       {
         "label": "씨야 일정표",
         "url": "https://docs.google.com/spreadsheets/d/1r7aGbHpoYf6f-ixZI3dNZ9v7Pnt0CAVRgKWWNxPdPhI/edit#range=%27%EC%A7%80%EB%82%98%EA%B0%84%EA%B2%83%EB%93%A4%27%21A5%3AF5"
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=p4K9EJxuNIc",
+        "publishedDate": "2026-06-03",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -11417,7 +11466,8 @@
     ],
     "note": "",
     "publishedDate": "2026-06-03",
-    "episode": 6
+    "episode": 6,
+    "updatedAt": "2026-11-11T06:55:01.786605+00:00"
   },
   {
     "id": "20260602-seeya-instagram-live",
@@ -14708,6 +14758,18 @@
         "url": "https://www.youtube.com/watch?v=XA47qu7TVGc",
         "publishedDate": "2026-01-05",
         "autoDiscovery": true
+      },
+      {
+        "label": "KBS CoolFM",
+        "url": "https://www.youtube.com/watch?v=GbdM-R58s9k",
+        "publishedDate": "2026-01-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "뚝딱이 PD",
+        "url": "https://www.youtube.com/watch?v=VbdvCvMl9_g",
+        "publishedDate": "2026-01-05",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -14719,7 +14781,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "publishedDate": "2026-01-05",
-    "updatedAt": "2026-11-10T07:37:05.149771+00:00"
+    "updatedAt": "2026-11-11T06:55:01.786605+00:00"
   },
   {
     "id": "v488-audit-040",
@@ -14809,6 +14871,24 @@
         "url": "https://www.youtube.com/watch?v=iZsYNG_O2E4",
         "publishedDate": "2026-01-05",
         "autoDiscovery": true
+      },
+      {
+        "label": "뚝딱이 PD",
+        "url": "https://www.youtube.com/watch?v=Uyw3QWsqmJ4",
+        "publishedDate": "2026-01-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "뚝딱이 PD",
+        "url": "https://www.youtube.com/watch?v=5vVbCK3zslo",
+        "publishedDate": "2026-01-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "뚝딱이 PD",
+        "url": "https://www.youtube.com/watch?v=CKgjONttM_g",
+        "publishedDate": "2026-01-07",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -14820,7 +14900,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "publishedDate": "2026-01-04",
-    "updatedAt": "2026-10-26T05:07:47.790697+00:00"
+    "updatedAt": "2026-11-11T06:55:01.786605+00:00"
   },
   {
     "id": "v488-audit-012",
@@ -25620,6 +25700,12 @@
         "url": "https://www.youtube.com/watch?v=KxKQl8P7tLo",
         "publishedDate": "2021-02-09",
         "autoDiscovery": true
+      },
+      {
+        "label": "TVCHOSUN JOY",
+        "url": "https://www.youtube.com/watch?v=7Wj-ND9Ls_M",
+        "publishedDate": "2026-09-04",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -25630,7 +25716,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-10-16T04:48:49.690208+00:00"
+    "updatedAt": "2026-11-11T06:55:01.786605+00:00"
   },
   {
     "id": "v4145-A7x52bJ6nRQ",
@@ -56094,7 +56180,7 @@
     "id": "20261111-boram-btn-dream-schedule",
     "date": "2026-11-11",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-01",
+    "updatedAt": "2026-11-11T06:55:01.786605+00:00",
     "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
@@ -56109,7 +56195,14 @@
       "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
       "publishedDate": "2026-10-26"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "BTN라디오",
+        "url": "https://www.youtube.com/watch?v=2Qv0dGzoDy0",
+        "publishedDate": "2026-11-10",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
