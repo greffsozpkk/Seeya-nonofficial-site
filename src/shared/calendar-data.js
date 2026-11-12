@@ -4,6 +4,11 @@ const TYPES={performance:'공연·행사',broadcast:'방송·라디오',release:
 function exactDate(value){return /^\d{4}-\d{2}-\d{2}$/.test(value||'')&&!Number.isNaN(Date.parse(value+'T00:00:00Z'))&&new Date(value+'T00:00:00Z').toISOString().slice(0,10)===value;}
 function koreaDate(now=new Date()){const p=new Intl.DateTimeFormat('en-CA',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);return ['year','month','day'].map(k=>p.find(x=>x.type===k).value).join('-');}
 function addDays(date,n){return new Date(Date.parse(date+'T00:00:00Z')+n*86400000).toISOString().slice(0,10);}
+function weekBounds(date){
+ const day=new Date(date+'T00:00:00Z').getUTCDay();
+ const weekStart=addDays(date,-((day+6)%7));
+ return {weekStart,weekEnd:addDays(weekStart,6)};
+}
 function safeUrl(value){try{const u=new URL(value);return u.protocol==='https:'||u.protocol==='http:'?u.href:'';}catch{return '';}}
 function buildEvents(rows){
  const groups=new Map();
@@ -43,4 +48,4 @@ function occurrences(events,month){return events.map(e=>e.annual?{...e,date:mont
 function filterEvents(events,{member='all',type='all',anniversaries=true}={}){return events.filter(e=>(anniversaries||!e.annual)&&(member==='all'||(member==='group'?MEMBERS.every(m=>e.members.includes(m)):e.members.includes(member)))&&(type==='all'||e.type===type));}
 function timeText(e){return e.annual?'매년 기념':e.time?`${e.time}${e.endTime?'–'+e.endTime:''}${e.timeLabel?' · '+e.timeLabel:''}`:e.type==='release'?'발매일 · 시간 미정':'시간 미정';}
 function stateText(e){return {cancelled:'취소',changed:'변경',confirmed:'확정',tentative:'확인 중'}[e.state];}
-module.exports={MEMBERS,TYPES,exactDate,koreaDate,addDays,safeUrl,buildEvents,buildAnniversaries,occurrences,filterEvents,timeText,stateText};
+module.exports={weekBounds,MEMBERS,TYPES,exactDate,koreaDate,addDays,safeUrl,buildEvents,buildAnniversaries,occurrences,filterEvents,timeText,stateText};

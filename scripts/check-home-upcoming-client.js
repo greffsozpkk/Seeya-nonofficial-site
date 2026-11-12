@@ -30,7 +30,7 @@ async function run(){
  assert.equal(root.dataset.day,'2026-10-01');assert(root.innerHTML.includes('new-day'));assert(!root.innerHTML.includes('yesterday'));
  fail=true;instant='2026-10-01T00:06:00+09:00';tick();await flush();assert(root.innerHTML.includes('new-day'),'Failed fetch preserves last valid data');
  fail=false;response={invalid:true};instant='2026-10-01T00:12:00+09:00';tick();await flush();assert(root.innerHTML.includes('new-day'),'Malformed response preserves last valid data');
- response=[];instant='2026-10-01T00:18:00+09:00';tick();await flush();assert(root.innerHTML.includes('새로운 만남을 기다리고'),'Empty valid archive clears removed records');
+ response=[];instant='2026-10-01T00:18:00+09:00';tick();await flush();assert(root.innerHTML.includes('이번 주에 남은 일정이 없어요'),'Empty valid archive clears removed records');
  document.visibilityState='hidden';instant='2026-10-01T00:24:00+09:00';const previous=calls;tick();await flush();assert.equal(calls,previous);
  console.log('PASS: HOME live archive refresh, KST midnight, offline/malformed fallback, removals and hidden-tab throttling.');
 }

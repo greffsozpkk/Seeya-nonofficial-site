@@ -1,16 +1,15 @@
 'use strict';
-const {buildEvents,koreaDate,addDays,MEMBERS,TYPES,timeText}=require('./calendar-data');
+const {buildEvents,koreaDate,weekBounds,MEMBERS,TYPES,timeText}=require('./calendar-data');
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const shortDate=date=>`${Number(date.slice(5,7))}.${Number(date.slice(8,10))}`;
 const weekday=date=>'일월화수목금토'[new Date(date+'T00:00:00Z').getUTCDay()];
 function upcomingSchedule(rows,now=new Date()){
- const today=koreaDate(now),day=new Date(today+'T00:00:00Z').getUTCDay();
- const weekStart=addDays(today,-((day+6)%7)),weekEnd=addDays(weekStart,6);
+ const today=koreaDate(now),{weekStart,weekEnd}=weekBounds(today);
  const future=buildEvents(rows.filter(row=>row.eventState!=='completed'&&row.eventState!=='cancelled'))
   .filter(e=>e.state!=='cancelled'&&e.endDate>=today)
   .sort((a,b)=>a.date.localeCompare(b.date)||(a.time||'99:99').localeCompare(b.time||'99:99')||a.id.localeCompare(b.id));
  const week=future.filter(e=>e.date<=weekEnd);
- return {today,weekStart,weekEnd,thisWeek:week.length>0,events:(week.length?week:future).slice(0,5)};
+ return {today,weekStart,weekEnd,events:week.slice(0,5)};
 }
 function homeUpcoming(rows,now=new Date()){
  const s=upcomingSchedule(rows,now);
@@ -19,8 +18,8 @@ function homeUpcoming(rows,now=new Date()){
  return `<section class="home-upcoming" id="homeUpcoming" data-day="${s.today}" aria-labelledby="homeUpcomingTitle">
  <div class="home-upcoming-inner">
   <div class="home-upcoming-head"><span class="home-upcoming-kicker">SEEYA SCHEDULE</span>
-   <h2 id="homeUpcomingTitle">${s.thisWeek?'이번 주 씨야':'다가오는 씨야'}</h2>
-   <p>${s.thisWeek?`${shortDate(s.weekStart)} — ${shortDate(s.weekEnd)} · 한국 날짜 기준`:'다음에 만날 씨야의 순간들'}</p>
+   <h2 id="homeUpcomingTitle">이번 주 씨야</h2>
+   <p>${shortDate(s.weekStart)} — ${shortDate(s.weekEnd)} · 한국 날짜 기준</p>
    <a class="home-upcoming-all" href="${allHref}">전체 일정 보기 <span aria-hidden="true">↗</span></a>
   </div>
   ${s.events.length?`<ul class="home-upcoming-list">${s.events.map(e=>{
@@ -33,7 +32,7 @@ function homeUpcoming(rows,now=new Date()){
      <h3>${esc(title)}</h3>${e.time?`<p>${esc(timeText(e))}</p>`:''}
     </div><span class="home-upcoming-chevron" aria-hidden="true">›</span>
    </a></li>`;
-  }).join('')}</ul>`:'<p class="home-upcoming-empty">새로운 만남을 기다리고 있어요.<br>확인된 일정이 등록되면 이곳에 함께 보여드릴게요.</p>'}
+  }).join('')}</ul>`:'<p class="home-upcoming-empty">이번 주에 남은 일정이 없어요.</p>'}
  </div></section>`;
 }
 module.exports={upcomingSchedule,homeUpcoming};

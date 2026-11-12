@@ -29,6 +29,7 @@
 .mobile-tabs { display: none; }
 .activity-inner { max-width: 1180px; margin: auto; display: grid; grid-template-columns: minmax(235px,.8fr) minmax(0,1.6fr); gap: clamp(24px,5vw,76px); }
 .activity-inner h2 { margin: 9px 0 18px; font-size: clamp(27px,3vw,38px); line-height: 1.25; }
+.activity-week { margin: -4px 0 14px; color: #735563; font-size: 13px; }
 .activity-artists, .activity-actions, .activity-eyeline { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
 .activity-artists button, .activity-actions button, .activity-actions a, .activity-card.empty a { box-sizing: border-box; min-height: 42px; padding: 8px 14px; border: 1px solid #d8baca; border-radius: 10px; background: #fff; color: #623e51; font-family: inherit; font-size: 14px; line-height: 1.5; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
 .activity-artists button { border-radius: 99px; }

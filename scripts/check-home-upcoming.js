@@ -13,11 +13,11 @@ assert.equal(selected.weekStart,'2026-09-28');assert.equal(selected.weekEnd,'202
 assert.deepEqual(selected.events.map(e=>e.id),['activity-today','activity-timed','activity-untimed','activity-sunday']);
 assert.equal(upcomingSchedule(Array.from({length:8},(_,i)=>row('many-'+i,'2026-10-01')),now).events.length,5);
 selected=upcomingSchedule([row('later','2026-10-10')],now);
-assert.equal(selected.thisWeek,false);assert.equal(selected.events.length,1);
-assert.match(homeUpcoming([],now),/새로운 만남을 기다리고/);
+assert.equal(selected.events.length,0);
+assert.match(homeUpcoming([],now),/이번 주에 남은 일정이 없어요/);
 assert(!homeUpcoming([row('unknown-time','2026-10-01')],now).includes('시간 미정'));
 assert(homeUpcoming([row('known-time','2026-10-01',{calendar:{time:'17:50'}})],now).includes('17:50'));
-assert.match(homeUpcoming([row('later','2026-10-10')],now),/다가오는 씨야/);
+assert.match(homeUpcoming([row('later','2026-10-10')],now),/이번 주 씨야/);
 // KST midnight, Sunday -> Monday, and year boundary must switch the window correctly.
 assert.equal(upcomingSchedule(fixtures,new Date('2026-10-04T14:59:59Z')).events[0].id,'activity-sunday');
 assert.equal(upcomingSchedule(fixtures,new Date('2026-10-04T15:00:00Z')).events[0].id,'activity-next-week');

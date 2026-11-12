@@ -46,11 +46,11 @@ ${homeUpcoming(rows,now)}
         <div class="go"><span>4집 감상하기</span><span>MELON ↗</span></div>
       </div>
     </a>
-    <a class="current-card community" href="https://gall.dcinside.com/mini/board/lists/?id=seeya" target="_blank" rel="noopener noreferrer">
-      <svg class="community-art" viewBox="0 0 120 84" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M18 8h59a9 9 0 0 1 9 9v31a9 9 0 0 1-9 9H43L24 71V57h-6a9 9 0 0 1-9-9V17a9 9 0 0 1 9-9Z"/><path d="M94 24h7a9 9 0 0 1 9 9v28a9 9 0 0 1-9 9h-4v10L82 70H57"/><path d="M30 33h2m14 0h2m14 0h2" stroke-width="5" stroke-linecap="round"/></svg>
+    <a class="current-card community" href="https://gall.dcinside.com/board/lists/?id=seeya" target="_blank" rel="noopener noreferrer">
+      <img src="/images/seeya-gallery-intro.jpg" alt="씨야 갤러리 소개 사진 속 남규리, 김연지, 이보람" width="550" height="350" loading="lazy">
       <div class="current-copy">
         <div class="meta">FAN COMMUNITY</div>
-        <h3>씨야 미니 갤러리</h3>
+        <h3>씨야 갤러리</h3>
         <div class="go"><span>팬 커뮤니티 바로가기</span><span>디시인사이드 ↗</span></div>
       </div>
     </a>

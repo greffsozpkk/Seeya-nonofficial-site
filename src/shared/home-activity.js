@@ -1,5 +1,5 @@
 'use strict';
-const {buildEvents,koreaDate,addDays,MEMBERS}=require('./calendar-data');
+const {buildEvents,koreaDate,addDays,weekBounds,MEMBERS}=require('./calendar-data');
 const reviewedRadio=new Map(require('../data/radio-pilot.json').filter(v=>v.kind==='replay'&&v.channelStatus==='official-channel-checked').map(v=>[v.recordId,'https://www.youtube.com/watch?v='+v.youtubeId]));
 const ARTISTS=['전체','씨야',...MEMBERS];
 function matches(artist,members){
@@ -8,6 +8,7 @@ function matches(artist,members){
 }
 function activityModel(rows,artist,now,previousVisit=0,refs={}){
  const today=koreaDate(now), yesterday=addDays(today,-1), tomorrow=addDays(today,1);
+ const {weekStart,weekEnd}=weekBounds(today);
  const clock=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(now);
  const visible=rows.filter(r=>!r.hidden&&!r.mergedInto);
  const records=new Map(visible.map(r=>[r.id,r]));
@@ -21,15 +22,15 @@ function activityModel(rows,artist,now,previousVisit=0,refs={}){
  });
  for(const e of events){
   const linked=e.recordIds.map(id=>records.get(id));
-  if(!matches(artist,e.members)||e.endDate<yesterday)continue;
+  if(!matches(artist,e.members)||e.endDate<yesterday||e.endDate<weekStart||e.date>weekEnd)continue;
   const completed=linked.every(r=>r.eventState==='completed');
   const todayEvent=e.date<=today&&e.endDate>=today;
   if(e.state==='cancelled'||linked.some(r=>['cancelled','postponed'].includes(r.eventState))){
-   if(e.endDate>=today&&e.date<=addDays(today,7))notices.push({title:e.title,label:e.state==='cancelled'?'취소 안내':'일정 변경 안내',href:sourceFor(linked[0],'notice')||calendarUrl(e)});
+   if(e.endDate>=today)notices.push({title:e.title,label:e.state==='cancelled'?'취소 안내':'일정 변경 안내',href:sourceFor(linked[0],'notice')||calendarUrl(e)});
    continue;
   }
   if(e.state==='tentative'&&!(e.endDate===yesterday&&linked.some(r=>sourceFor(r,'replay')))){
-   if(e.date>=today&&e.date<=addDays(today,7))notices.push({title:e.title,label:'일정 확인 중',href:sourceFor(linked[0],'notice')||calendarUrl(e)});
+   if(e.date>=today)notices.push({title:e.title,label:'일정 확인 중',href:sourceFor(linked[0],'notice')||calendarUrl(e)});
    continue;
   }
   const ended=completed||(e.endDate===today&&e.endTime&&e.endTime<=clock);
@@ -43,14 +44,8 @@ function activityModel(rows,artist,now,previousVisit=0,refs={}){
   let order=0;
   if(todayEvent)order=ended?3:!e.time?2:e.date===today&&e.time>=clock?0:1;
   const entry={event:e,row:linked[0],rank,order};
-  if(e.date<=addDays(today,7))candidates.push(entry);
+  candidates.push(entry);
   if(e.endDate>=today&&!completed)upcoming.push(entry);
- }
- for(const row of visible){
-  if(!matches(artist,row.members)||row.dateStatus==='confirmed'||!['scheduled','postponed','cancelled'].includes(row.eventState))continue;
-  const changed=row.updatedAt||row.addedAt;
-  if(!changed||changed.slice(0,10)<addDays(today,-7)||changed.slice(0,10)>today)continue;
-  notices.push({title:row.title,label:row.eventState==='cancelled'?'취소 안내':row.eventState==='postponed'?'연기 안내':'날짜 확인 중',href:sourceFor(row,'notice')||'/archive/?record='+encodeURIComponent(row.id)});
  }
  const byStart=(a,b)=>a.event.date.localeCompare(b.event.date)||(a.event.time||'99:99').localeCompare(b.event.time||'99:99')||a.event.id.localeCompare(b.event.id);
  const compare=(a,b)=>a.rank-b.rank||a.order-b.order||byStart(a,b);
@@ -59,12 +54,12 @@ function activityModel(rows,artist,now,previousVisit=0,refs={}){
  let recent=null;
  if(!feature){
   for(const row of visible){
-   if(!matches(artist,row.members)||['cancelled','postponed'].includes(row.eventState))continue;
+   if(!matches(artist,row.members)||row.date>today||['scheduled','cancelled','postponed'].includes(row.eventState))continue;
    const changed=Math.max(...[row.addedAt,row.updatedAt].map(v=>v?Date.parse(v.length===10?v+'T00:00:00+09:00':v)||0:0));
    if(changed>0&&changed<=now.getTime()&&(!recent||changed>recent.changed))recent={row,changed};
   }
  }
- return {artist,today,feature,other,notices,recent,since:!!recent&&previousVisit>0&&recent.changed>previousVisit};
+ return {artist,today,weekStart,weekEnd,feature,other,notices,recent,since:!!recent&&previousVisit>0&&recent.changed>previousVisit};
 }
 // An optional reviewed action references a URL already present on the public archive card.
 function sourceFor(row,action){
