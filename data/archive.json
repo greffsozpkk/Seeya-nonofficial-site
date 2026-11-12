@@ -6638,11 +6638,17 @@
         "label": "투카로그 · 260912 씨야 대구 콘서트 미워요 단체 떼창 직캠",
         "url": "https://www.youtube.com/watch?v=vzPUWM291WQ",
         "publishedDate": "2026-11-04"
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=otgLyGGJJko",
+        "publishedDate": "2026-09-13",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-11-07"
+    "updatedAt": "2026-11-12T07:30:11.284145+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -10346,6 +10352,12 @@
         "url": "https://www.youtube.com/watch?v=S0V9LWrmOLs",
         "publishedDate": "2026-07-18",
         "autoDiscovery": true
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=SJcUr4QWgqE",
+        "publishedDate": "2026-06-29",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -10355,7 +10367,7 @@
     ],
     "note": "2026년 6월 28일 룰리커피 가창점에서 진행한 남규리의 룰리버스킹입니다.\n매장 주최 보도자료와 현장 영상을 함께 연결합니다.",
     "venue": "룰리커피 가창점",
-    "updatedAt": "2026-11-11T06:55:01.786605+00:00"
+    "updatedAt": "2026-11-12T07:30:11.284145+00:00"
   },
   {
     "id": "v4145-dKVDn4pUiLc",
@@ -20170,6 +20182,12 @@
       {
         "label": "방구석 캐스팅",
         "url": "https://www.youtube.com/watch?v=kn7l8lJAwOY"
+      },
+      {
+        "label": "seeyalover",
+        "url": "https://www.youtube.com/watch?v=eTiBK8lL2FE",
+        "publishedDate": "2023-08-15",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -20183,7 +20201,8 @@
     "releaseType": "솔로·프로젝트 음반",
     "titleTracks": [
       "미친 사랑의 노래"
-    ]
+    ],
+    "updatedAt": "2026-11-12T07:30:11.284145+00:00"
   },
   {
     "id": "v491-gamegyuri-extra",
@@ -48106,6 +48125,12 @@
         "label": "머시룸 · 씨야 - 미친 사랑의 노래, See Ya - Crazy Love Song, 텔레콘서트 자유 20060811",
         "url": "https://www.youtube.com/watch?v=lrbJHQ7R1m4",
         "publishedDate": "2019-05-10"
+      },
+      {
+        "label": "머시룸",
+        "url": "https://www.youtube.com/watch?v=CHkCmK3MBKs",
+        "publishedDate": "2019-05-10",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -48114,7 +48139,7 @@
     ],
     "note": "",
     "publishedDate": "2018-04-13",
-    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
+    "updatedAt": "2026-11-12T07:30:11.284145+00:00"
   },
   {
     "id": "20060808-seeya-hellochat",
@@ -55997,7 +56022,7 @@
     "id": "20231007-seeya-gangwon-music-trip",
     "date": "2023-10-07",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-10-31",
+    "updatedAt": "2026-11-12T07:30:11.284145+00:00",
     "title": "김연지·이보람 · 강원 음악 여행 「나랑, 노랑」",
     "program": "강원 음악 여행 나랑, 노랑",
     "type": "event",
@@ -56015,7 +56040,20 @@
       "url": "https://www.youtube.com/watch?v=xHnokd3gzNI",
       "publishedDate": "2023-10-08"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=b63MajXrqiY",
+        "publishedDate": "2026-11-11",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=AeCPiYL1UO8",
+        "publishedDate": "2026-11-11",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
@@ -56180,7 +56218,7 @@
     "id": "20261111-boram-btn-dream-schedule",
     "date": "2026-11-11",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-11T06:55:01.786605+00:00",
+    "updatedAt": "2026-11-12T07:30:11.284145+00:00",
     "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
@@ -56200,6 +56238,12 @@
         "label": "BTN라디오",
         "url": "https://www.youtube.com/watch?v=2Qv0dGzoDy0",
         "publishedDate": "2026-11-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "🐿람보바라기",
+        "url": "https://www.youtube.com/watch?v=QQdll07fQz4",
+        "publishedDate": "2026-11-12",
         "autoDiscovery": true
       }
     ],
