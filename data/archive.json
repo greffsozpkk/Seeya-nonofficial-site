@@ -1228,7 +1228,7 @@
     "id": "20261025-boram-worldmom-seocho",
     "date": "2026-11-08",
     "addedAt": "2026-09-21",
-    "updatedAt": "2026-11-09T13:58:00.555472+00:00",
+    "updatedAt": "2026-11-12T14:24:17.226727+00:00",
     "title": "이보람 · 세상을 바꾸는 여자들 송도 공연",
     "program": "세상을 바꾸는 여자들 · 송도",
     "type": "event",
@@ -1247,7 +1247,8 @@
       "얼음인형",
       "사랑하니까",
       "원더우먼",
-      "여성시대"
+      "여성시대",
+      "결혼할까요"
     ],
     "album": "",
     "thumbnail": "",
@@ -1324,6 +1325,36 @@
         "label": "seeya_tree.weathered · 송도 공연 현장 사진",
         "url": "https://www.instagram.com/p/DfgwFfVmmAD/",
         "publishedDate": "2026-11-09"
+      },
+      {
+        "label": "cup_soohans · 사랑의 인사",
+        "url": "https://www.instagram.com/reel/DfmB4TBRxin/",
+        "publishedDate": "2026-11-11"
+      },
+      {
+        "label": "_jerry.j_ramficial · 핫걸",
+        "url": "https://www.instagram.com/reel/DfjaLgVBUQx/",
+        "publishedDate": "2026-11-10"
+      },
+      {
+        "label": "cup_soohans · 빛의 반대편에서",
+        "url": "https://www.instagram.com/reel/DfjaXWORgqE/",
+        "publishedDate": "2026-11-10"
+      },
+      {
+        "label": "cup_soohans · 결혼할까요 (무반주)",
+        "url": "https://www.instagram.com/reel/DfiJpOgysUN/",
+        "publishedDate": "2026-11-10"
+      },
+      {
+        "label": "cup_soohans · 지금 술 한잔했어",
+        "url": "https://www.instagram.com/reel/DfiJYMXyy1i/",
+        "publishedDate": "2026-11-10"
+      },
+      {
+        "label": "gyuljam0426 · 송도 공연 퇴근길 사진",
+        "url": "https://www.instagram.com/p/Dfh16q7n7oO/",
+        "publishedDate": "2026-11-10"
       }
     ],
     "status": "available",
@@ -1334,7 +1365,7 @@
       "세상을 바꾸는 여자들",
       "송도"
     ],
-    "note": "이보람이 11월 8일 송도컨벤시아에서 「사랑의 인사」로 무대를 열었습니다. 「처음 그 자리에」와 「지금 술 한잔했어」를 이어 부르고, 관객과의 대화 후 「그때 그 순간 그대로」와 「빛의 반대편에서」를 들려주었습니다.\n무반주 신청곡 코너에서는 「형」, 「당신을 위하여」, 「얼음인형」, 「사랑하니까」 등을 불렀고, 마지막은 「원더우먼」과 「여성시대」 메들리로 장식했습니다.",
+    "note": "이보람이 11월 8일 송도컨벤시아에서 「사랑의 인사」로 무대를 열었습니다. 「처음 그 자리에」와 「지금 술 한잔했어」를 이어 부르고, 관객과의 대화 후 「그때 그 순간 그대로」와 「빛의 반대편에서」를 들려주었습니다.\n무반주 신청곡 코너에서는 「결혼할까요」, 「형」, 「당신을 위하여」, 「얼음인형」, 「사랑하니까」 등을 불렀고, 마지막은 「원더우먼」과 「여성시대」 메들리로 장식했습니다.",
     "eventState": "completed",
     "venue": "송도컨벤시아 프리미어볼룸 A룸 (센트럴로 123)",
     "calendar": {
@@ -53712,7 +53743,7 @@
     "id": "20261101-boram-kia-music-festa",
     "date": "2026-11-01",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-09T13:58:00.555472+00:00",
+    "updatedAt": "2026-11-12T14:24:17.226727+00:00",
     "title": "이보람 · 2026 기아 PLUS 뮤직 페스타",
     "program": "2026 기아 People Link US 뮤직 페스타",
     "type": "event",
@@ -53836,6 +53867,11 @@
         "label": "ramirang_ · 기아 PLUS 뮤직 페스타 퇴근길",
         "url": "https://www.instagram.com/reel/DfdzmvLOP6G/",
         "publishedDate": "2026-11-08"
+      },
+      {
+        "label": "gyuljam0426 · 기아 PLUS 뮤직 페스타 현장 사진",
+        "url": "https://www.instagram.com/p/DfkvHVmk4Sa/",
+        "publishedDate": "2026-11-11"
       }
     ],
     "status": "available",
@@ -56230,8 +56266,8 @@
     "id": "20261111-boram-btn-dream-schedule",
     "date": "2026-11-11",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-12T07:30:11.284145+00:00",
-    "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
+    "updatedAt": "2026-11-12T14:24:17.226727+00:00",
+    "title": "이보람 · 한밤의 꿈 이보람입니다 29회",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
     "members": [
@@ -56241,16 +56277,16 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
-      "publishedDate": "2026-10-26"
+      "label": "BTN라디오 공식 · 한밤의 꿈 이보람입니다 29회 다시보기",
+      "url": "https://www.youtube.com/watch?v=2Qv0dGzoDy0",
+      "publishedDate": "2026-11-10",
+      "autoDiscovery": true
     },
     "additionalSources": [
       {
-        "label": "BTN라디오",
-        "url": "https://www.youtube.com/watch?v=2Qv0dGzoDy0",
-        "publishedDate": "2026-11-10",
-        "autoDiscovery": true
+        "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
+        "publishedDate": "2026-10-26"
       },
       {
         "label": "🐿람보바라기",
@@ -56259,22 +56295,64 @@
         "autoDiscovery": true
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "BTN라디오 · 한밤의 꿈 이보람입니다",
-      "예정"
+      "라디오",
+      "보이는 라디오"
     ],
-    "note": "11월 일정표에 안내된 「한밤의 꿈 이보람입니다」 방송 예정입니다.\n오후 9시 방송 예정이며, 회차·게스트·최초 공개 여부는 방송사 공지 후 갱신합니다.",
-    "eventState": "scheduled",
+    "note": "11월 11일 밤 9시 BTN라디오에서 방송된 「한밤의 꿈 이보람입니다」 29회입니다. 이보람이 진행한 방송 전체를 보이는 라디오로 다시 볼 수 있습니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": true,
       "time": "21:00",
-      "timeLabel": "방송 예정 · 팬 일정표 기준",
-      "state": "tentative"
+      "timeLabel": "BTN라디오 방송",
+      "sequence": 1
     }
+  },
+  {
+    "id": "20261111-boram-kickagoal-240",
+    "date": "2026-11-11",
+    "addedAt": "2026-11-12",
+    "updatedAt": "2026-11-12T14:24:17.226727+00:00",
+    "title": "이보람 · 골 때리는 그녀들 240회 FC발라드림 준결승",
+    "program": "SBS · 골 때리는 그녀들",
+    "type": "variety",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "SBS 공식 · 240회 다시보기",
+      "url": "https://programs.sbs.co.kr/programTemplate/amp/vod/kickagoal/22000639641",
+      "publishedDate": "2026-11-11"
+    },
+    "additionalSources": [
+      {
+        "label": "SBS연예뉴스 · FC발라드림 이보람 출연 안내",
+        "url": "https://ent.sbs.co.kr/amp/article.do?article_id=E10010324546",
+        "publishedDate": "2026-11-11"
+      }
+    ],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "broadcast",
+    "tags": [
+      "2026",
+      "SBS · 골 때리는 그녀들"
+    ],
+    "note": "이보람이 FC발라드림 멤버로 출연한 제3회 GIFA컵 준결승입니다. FC발라드림과 FC원더우먼2026의 경기가 11월 11일 밤 9시 SBS에서 방송됐습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": true,
+      "time": "21:00",
+      "timeLabel": "방송 시작"
+    },
+    "episode": 240
   },
   {
     "id": "20261118-boram-btn-dream-schedule",

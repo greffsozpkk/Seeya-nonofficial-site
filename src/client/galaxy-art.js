@@ -1,6 +1,5 @@
 'use strict';
 
-const {spine} = require('../shared/galaxy-layout');
 const palette = [
  ['살구빛', '#f5d9bf'], ['하늘빛', '#bfcdf9'], ['보랏빛', '#dfc6fc'],
  ['분홍빛', '#f4b9d3'], ['민트빛', '#90e2cc'], ['금빛', '#ffcf60']
@@ -33,41 +32,28 @@ function paintLight(ctx,x,y,color,radius) {
 }
 
 function starEditor(form) {
- const place=form.elements.starPlace;
  let color=palette[0][1];
- const canvas=document.getElementById('glPlacePreview'),ctx=canvas.getContext('2d');
  const colors=document.getElementById('glPalette');
- let placed=false,customColor=false;
- function preview(){
-  ctx.clearRect(0,0,canvas.width,canvas.height);
-  const t=Number(place.value)/100;
-  paintLight(ctx,canvas.width*t,canvas.height*spine(t),color,8);
+ let customColor=false;
+ function syncPalette(){
   for(const button of colors.children)button.setAttribute('aria-pressed',String(button.dataset.color===color));
  }
  for(const [name,value] of palette){
   const button=document.createElement('button');button.type='button';
   button.title=name;button.setAttribute('aria-label',name);button.dataset.color=value;
-  button.style.setProperty('--swatch',value);button.onclick=()=>{customColor=true;color=value;preview();};colors.append(button);
+  button.style.setProperty('--swatch',value);button.onclick=()=>{customColor=true;color=value;syncPalette();};colors.append(button);
  }
- place.oninput=()=>{placed=true;preview();};
- canvas.onclick=e=>{
-  const rect=canvas.getBoundingClientRect();
-  place.value=String(Math.round(100*(e.clientX-rect.left)/rect.width));
-  placed=true;preview();
- };
  form.elements.recipient.addEventListener('change',()=>{
   if(!customColor)color=letterColor({recipient:form.elements.recipient.value});
-  preview();
+  syncPalette();
  });
  return {
-  open(letter,originalPosition){
+  open(letter){
    color=letterColor(letter||{recipient:form.elements.recipient.value});
    customColor=Boolean(letter?.color);
-   placed=!letter||Number.isFinite(letter.place);
-   place.value=String(Math.round(100*(letter?.place??originalPosition??(.1+Math.random()*.8))));
-   preview();
+   syncPalette();
   },
-  values(){return {color:color,...(placed?{place:Number(place.value)/100}:{})};}
+  values(){return {color};}
  };
 }
 

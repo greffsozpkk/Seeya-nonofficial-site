@@ -354,5 +354,11 @@
     "path": "/game/my-concert/",
     "title": "나만의 씨야 콘서트 | SEEYA ARCHIVE",
     "description": "오프닝부터 앙코르까지 나만의 셋리스트를 만들고, 무대 영상과 콘서트 포스터로 즐겨보세요."
+  },
+  {
+    "key": "fan-letters",
+    "path": "/fan-letters/",
+    "title": "씨야의 밤을 수놓는 우리의 별자리 · FAN LETTERS | SEEYA ARCHIVE",
+    "description": "씨야에게 보내는 응원과 방문 인사를 밤하늘의 별로 남겨보세요."
   }
 ]

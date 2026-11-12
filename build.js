@@ -131,7 +131,7 @@ const template=read('src/template.html').replaceAll('{{mainNavigation}}', read('
 const files=[];
 for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcertRoute,galaxyRoute]){
  const key=route.key;
- const render=require('./src/pages/'+(key==='fanchant'?'music':key)+'.js');
+ const render=require('./src/pages/'+(key==='fanchant'?'music':key==='fan-letters'?'galaxy-test':key)+'.js');
  let content;
  if(key==='news')content=render(json('data/news.json'));
  else if((key==='map'||key==='map-preview'))content=render(archiveRows);
@@ -152,7 +152,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  if(key==='clinic'||key==='clinic-test'){vars.pageHead=`<link rel="stylesheet" href="${clinicCss}">`;vars.scripts=`<script defer src="${clinicJs}"></script>`;}
  if(key==='my-concert-test'||key==='my-concert'){vars.pageHead=`<link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${myConcertJs}"></script>`;}
  if(key==='first-again-magazine')vars.pageHead=`<link rel="stylesheet" href="${magazineCss}">`;
- if(key==='galaxy-test'){vars.pageHead=`<link rel="stylesheet" href="${galaxyCss}">`;vars.scripts=`<script defer src="${galaxyJs}"></script>`;}
+ if(key==='galaxy-test'||key==='fan-letters'){vars.pageHead=`<link rel="stylesheet" href="${galaxyCss}">`;vars.scripts=`<script defer src="${galaxyJs}"></script>`;}
  if(key==='diary-privacy')vars.pageHead+=`<link rel="stylesheet" href="${passportCss}">`;
  if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}"><link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${diaryJs}"></script>`;}
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}

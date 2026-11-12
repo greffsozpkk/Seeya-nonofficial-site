@@ -30,10 +30,9 @@
 .activity-inner { max-width: 1180px; margin: auto; display: grid; grid-template-columns: minmax(235px,.8fr) minmax(0,1.6fr); gap: clamp(24px,5vw,76px); }
 .activity-inner h2 { margin: 9px 0 18px; font-size: clamp(27px,3vw,38px); line-height: 1.25; }
 .activity-week { margin: -4px 0 14px; color: #735563; font-size: 13px; }
-.activity-artists, .activity-actions, .activity-eyeline { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
-.activity-artists button, .activity-actions button, .activity-actions a, .activity-card.empty a { box-sizing: border-box; min-height: 42px; padding: 8px 14px; border: 1px solid #d8baca; border-radius: 10px; background: #fff; color: #623e51; font-family: inherit; font-size: 14px; line-height: 1.5; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
-.activity-artists button { border-radius: 99px; }
-.activity-artists button[aria-pressed=true], .activity-actions .activity-primary, .activity-card.empty a { background: #703751; border-color: #703751; color: white; font-weight: 700; }
+.activity-actions, .activity-eyeline { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.activity-actions button, .activity-actions a, .activity-card.empty a { box-sizing: border-box; min-height: 42px; padding: 8px 14px; border: 1px solid #d8baca; border-radius: 10px; background: #fff; color: #623e51; font-family: inherit; font-size: 14px; line-height: 1.5; cursor: pointer; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; }
+.activity-actions .activity-primary, .activity-card.empty a { background: #703751; border-color: #703751; color: white; font-weight: 700; }
 .activity-card { background: #fff; border: 1px solid #e4c9d5; border-top: 3px solid #a86882; padding: clamp(18px,3vw,32px); border-radius: 14px; }
 .activity-eyeline { color: #684957; font-size: 13px; }
 .activity-phase { font-family: inherit; background: #f6e6ed; color: #743852; padding: 4px 10px; border-radius: 6px; font-size: 14px; font-weight: 700; margin: 0; display: inline-block; }
@@ -67,8 +66,6 @@
  .home-activity { padding: 24px clamp(14px,4.5vw,30px) 20px; }
  .activity-inner { display: block; }
  .activity-inner h2 { margin: 4px 0 10px; }
- .activity-artists { gap: 5px; margin-bottom: 12px; }
- .activity-artists button { min-height: 44px; padding: 6px clamp(7px,2.45vw,15px); font-size: 13px; }
  .activity-actions a, .activity-actions button { min-height: 44px; }
  .activity-card { padding: 15px 18px; }
  .activity-list a { gap: 8px; }

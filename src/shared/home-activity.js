@@ -1,12 +1,7 @@
 'use strict';
-const {buildEvents,koreaDate,addDays,weekBounds,MEMBERS}=require('./calendar-data');
+const {buildEvents,koreaDate,addDays,weekBounds}=require('./calendar-data');
 const reviewedRadio=new Map(require('../data/radio-pilot.json').filter(v=>v.kind==='replay'&&v.channelStatus==='official-channel-checked').map(v=>[v.recordId,'https://www.youtube.com/watch?v='+v.youtubeId]));
-const ARTISTS=['전체','씨야',...MEMBERS];
-function matches(artist,members){
- const group=MEMBERS.every(m=>members.includes(m));
- return artist==='전체'||(artist==='씨야'?group:!group&&members.includes(artist));
-}
-function activityModel(rows,artist,now,previousVisit=0,refs={}){
+function activityModel(rows,now,previousVisit=0,refs={}){
  const today=koreaDate(now), yesterday=addDays(today,-1), tomorrow=addDays(today,1);
  const {weekStart,weekEnd}=weekBounds(today);
  const clock=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Seoul',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(now);
@@ -22,7 +17,7 @@ function activityModel(rows,artist,now,previousVisit=0,refs={}){
  });
  for(const e of events){
   const linked=e.recordIds.map(id=>records.get(id));
-  if(!matches(artist,e.members)||e.endDate<yesterday||e.endDate<weekStart||e.date>weekEnd)continue;
+  if(e.endDate<yesterday||e.endDate<weekStart||e.date>weekEnd)continue;
   const completed=linked.every(r=>r.eventState==='completed');
   const todayEvent=e.date<=today&&e.endDate>=today;
   if(e.state==='cancelled'||linked.some(r=>['cancelled','postponed'].includes(r.eventState))){
@@ -54,12 +49,12 @@ function activityModel(rows,artist,now,previousVisit=0,refs={}){
  let recent=null;
  if(!feature){
   for(const row of visible){
-   if(!matches(artist,row.members)||row.date>today||['scheduled','cancelled','postponed'].includes(row.eventState))continue;
+   if(row.date>today||['scheduled','cancelled','postponed'].includes(row.eventState))continue;
    const changed=Math.max(...[row.addedAt,row.updatedAt].map(v=>v?Date.parse(v.length===10?v+'T00:00:00+09:00':v)||0:0));
    if(changed>0&&changed<=now.getTime()&&(!recent||changed>recent.changed))recent={row,changed};
   }
  }
- return {artist,today,weekStart,weekEnd,feature,other,notices,recent,since:!!recent&&previousVisit>0&&recent.changed>previousVisit};
+ return {today,weekStart,weekEnd,feature,other,notices,recent,since:!!recent&&previousVisit>0&&recent.changed>previousVisit};
 }
 // An optional reviewed action references a URL already present on the public archive card.
 function sourceFor(row,action){
@@ -88,4 +83,4 @@ function activityActions(entry,refs){
  }
  return [info,{label:'일정 담기',save:e.id}];
 }
-module.exports={ARTISTS,matches,activityModel,activityActions,calendarUrl};
+module.exports={activityModel,activityActions,calendarUrl};

@@ -34,17 +34,26 @@
  let filter='전체',view='sky',page=1,current=null,lastFocus=null;
  const density=$('glDensity'),options=[24,200,300,500,1000],initial=Number(new URLSearchParams(location.search).get('stars'));
  density.value=String(options.includes(initial)?initial:24);
- const shared=!options.includes(initial);
+ const publicPage=document.body.dataset.page==='fan-letters';
+ const shared=publicPage||!options.includes(initial);
+ // Reserve a UUID namespace so the existing sheet can serve separate skies.
+ const publicPrefix='fa11e77e-';
+ function newLetterId(){
+  let id=crypto.randomUUID();
+  if(publicPage)return publicPrefix+id.slice(publicPrefix.length);
+  while(id.startsWith(publicPrefix))id=crypto.randomUUID();
+  return id;
+ }
  const service=require('./galaxy-service')(require('../data/galaxy-connection.json').endpoint);
  let letters=[],generation=0,loading=false,lastRead=0,connected=false;
- const sharingNote='이곳에 남긴 편지는 테스트 주소를 방문한 누구나 읽을 수 있어요.';
  density.parentElement.hidden=shared;
  if(shared){
   $('glCompose').disabled=true;
-  $('glForm').querySelector('.gl-form-note').textContent=sharingNote+' 작성한 편지는 이 브라우저의 씨야 다이어리에도 저장돼요.';
+  $('glForm').querySelector('.gl-form-note').textContent='작성한 편지는 이 브라우저의 씨야 다이어리에도 저장돼요.';
   $('glFind').querySelector('.gl-form-note').textContent='닉네임으로 편지를 찾을 수 있어요. 예전에 쓴 편지는 ‘편지 수정’에서 비밀번호를 입력하고 저장하면 이 기기의 다이어리에도 담겨요.';
   $('glConnection').textContent=service?'공유 편지를 불러오고 있어요.':'공유 은하수는 구글 시트 연결을 기다리고 있어요.';
  }else{
+  $('glForm').querySelector('.gl-form-note').textContent='예시 화면에 작성한 편지는 이 브라우저에서만 보입니다.';
   $('glConnection').textContent='예시 은하수 · 여기서 직접 쓴 편지는 이 브라우저에만 저장됩니다.';
  }
  const demo=Array.from({length:1000},(_,i)=>{const base=samples[i%samples.length];return i<samples.length?base:{...base,id:'demo-'+i,nickname:'예시 팬 '+(i+1),body:'은하수가 커진 모습을 보여주는 예시 편지입니다.\n\n'+base.body};});
@@ -99,7 +108,7 @@
   lastBand=band;
   const stars=$('glStars'),fragment=document.createDocumentFragment();
   stars.classList.toggle('gl-dense',dense);
-  skyCaption.textContent=band?'별무리를 누르면 가까이 모인 편지들이 펼쳐져요.':'가까이 다가가면, 작은 빛 하나에도 마음이 있어요.';
+  skyCaption.textContent=band?'별무리를 누르면 가까이 모인 편지들이 펼쳐져요.':'작은 빛 하나에도 씨야를 향한 진심이 담겨있어요.';
   const cloud=$('glLetterCloud');
   cloud.hidden=!band;
   const rect=$('glSky').getBoundingClientRect(),ratio=Math.min(devicePixelRatio||1,2);
@@ -188,13 +197,13 @@
  async function accepts(letter,password){return validLock(letter?.lock)&&await verifier(password,letter.lock.salt)===letter.lock.hash;}
  function persist(next){const old=mine;mine=next;if(save())return true;mine=old;return false;}
  const form=$('glForm'),removeForm=$('glRemoveForm'),editor=starEditor(form);let editing=null,removing=null;
- let draftId,writeRequest,deleteRequest;
- function compose(letter=null){draftId=letter?.id||crypto.randomUUID();writeRequest=crypto.randomUUID();editing=letter;form.reset();form.elements.body.setCustomValidity('');$('glError').textContent='';$('glWriteTitle').textContent=letter?'별에 담은 마음 고치기':'당신의 마음을 별로 남겨요.';
+ let draftId,draftPlace,writeRequest,deleteRequest;
+ function compose(letter=null){draftId=letter?.id||newLetterId();writeRequest=crypto.randomUUID();editing=letter;form.reset();form.elements.body.setCustomValidity('');$('glError').textContent='';$('glWriteTitle').textContent=letter?'별에 담은 마음 고치기':'당신의 마음을 별로 남겨요.';
   $('glSubmit').textContent=letter?'비밀번호 확인 후 수정':'밤하늘에 내 별 띄우기';form.elements.password.autocomplete=letter?'current-password':'new-password';
   if(letter){form.elements.recipient.value=letter.recipient;form.elements.nickname.value=letter.nickname;form.elements.body.value=letter.body;}
-  const previousPoint=letter&&skyEntries.find(entry=>entry.letter.id===letter.id);
-  const skyWidth=$('glSky').clientWidth;
-  editor.open(letter,previousPoint&&skyWidth?(previousPoint.x-22)/(skyWidth-44):undefined);
+  // Keep one coordinate for this draft, including retries and edits.
+  draftPlace=letter ? letter.place : .05+Math.random()*.90;
+  editor.open(letter);
   $('glLength').textContent=form.elements.body.value.length+' / 1,000';open($('glWrite'));
  }
  $('glCompose').onclick=()=>compose();
@@ -204,7 +213,7 @@
  $('glRemove').addEventListener('close',()=>{removeForm.elements.password.value='';});
  form.elements.body.addEventListener('input',()=>{$('glLength').textContent=form.elements.body.value.length+' / 1,000';form.elements.body.setCustomValidity('');});
  form.addEventListener('submit',async e=>{
-  e.preventDefault();if($('glSubmit').disabled)return;const design=editor.values();const target=editing,body=form.elements.body.value.trim(),nickname=form.elements.nickname.value.trim()||'익명의 씨야 팬',recipient=form.elements.recipient.value,password=form.elements.password.value;
+  e.preventDefault();if($('glSubmit').disabled)return;const design=editor.values();if(Number.isFinite(draftPlace))design.place=draftPlace;const target=editing,body=form.elements.body.value.trim(),nickname=form.elements.nickname.value.trim()||'익명의 씨야 팬',recipient=form.elements.recipient.value,password=form.elements.password.value;
   if(!body){form.elements.body.setCustomValidity('편지를 한 줄 이상 적어주세요.');form.elements.body.reportValidity();return;}
   if(!shared&&!target&&mine.length>=100){$('glError').textContent='이 브라우저에는 편지를 100통까지 저장할 수 있어요.';return;}
   $('glSubmit').disabled=true;$('glError').textContent='';
@@ -250,7 +259,7 @@
  density.onchange=()=>{view='sky';filter='전체';page=1;camera.reset();render();const url=new URL(location.href);url.searchParams.set('stars',density.value);history.replaceState(null,'',url);};
  function applyShared(id,updated){
   generation++;
-  $('glConnection').textContent=sharingNote;
+  $('glConnection').textContent='';
   const idx=letters.findIndex(x=>x.id===id);
   if(!updated)letters=letters.filter(x=>x.id!==id);
   else if(idx<0)letters.push(updated);
@@ -262,9 +271,9 @@
   try{
    const next=await service.list();
    if(version!==generation)return;
-   letters=next;connected=true;lastRead=Date.now();
+   letters=next.filter(letter=>letter.id.startsWith(publicPrefix)===publicPage);connected=true;lastRead=Date.now();
    $('glCompose').disabled=false;
-   $('glConnection').textContent=letters.length?sharingNote:'아직 별이 없어요. 첫 편지를 남겨 함께 보는 은하수를 시작해 주세요.';
+   $('glConnection').textContent=letters.length?'':'아직 별이 없어요. 첫 편지를 남겨 함께 보는 은하수를 시작해 주세요.';
    render();
    if($('glFind').open)search();
    if($('glLetter').open){
