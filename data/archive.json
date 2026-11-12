@@ -76,7 +76,10 @@
       "timeLabel": "공연 시작",
       "sequence": 0
     },
-    "venue": "모이핀 오션점 1층 전시관"
+    "venue": "모이핀 오션점 1층 전시관",
+    "homeActions": {
+      "notice": "https://www.instagram.com/p/DfgNPRbSC_D/"
+    }
   },
   {
     "id": "20261215-boram-six-season",
@@ -186,6 +189,9 @@
       "time": "13:00",
       "timeLabel": "1차 13:00 · 2차 15:00",
       "sequence": 0
+    },
+    "homeActions": {
+      "notice": "https://www.youtube.com/post/Ugkxq8hwrQLbrHcHjJHFcOk4t0V46nEDyl55"
     }
   },
   {
@@ -1213,7 +1219,10 @@
     },
     "appliedUpdates": [
       "schedule-2026-09-30-20261031-the-fan-incheon"
-    ]
+    ],
+    "homeActions": {
+      "notice": "https://ticket.yes24.com/Perf/59365"
+    }
   },
   {
     "id": "20261025-boram-worldmom-seocho",
@@ -53648,6 +53657,9 @@
       "enabled": true,
       "time": "18:05",
       "timeLabel": "방송 시작"
+    },
+    "homeActions": {
+      "notice": "https://enter.major9.net/schedule/"
     }
   },
   {
@@ -56518,6 +56530,9 @@
       "type": "booking",
       "time": "14:00",
       "timeLabel": "YES24 티켓 오픈"
+    },
+    "homeActions": {
+      "notice": "https://m.ticket.yes24.com/Notice/18785"
     }
   },
   {

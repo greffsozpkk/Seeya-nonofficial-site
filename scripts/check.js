@@ -32,6 +32,7 @@ require('./check-exam');
 require('./check-dictionary');
 require('./check-calendar');
 require('./check-home-upcoming');
+require('./check-home-activity');
 execFileSync(process.execPath,['scripts/check-home-upcoming-client.js'],{cwd:root,stdio:'inherit'});
 require('./check-admin');
 require('./check-news-status');

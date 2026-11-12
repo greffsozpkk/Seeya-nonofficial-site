@@ -138,7 +138,8 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  else if(key==='calendar')content=render(calendarData);
  else if(key==='passport')content=render(passportCatalog).replaceAll('/passport/test/',route.path);
  else if(key==='radio'||key==='podcasts')content=render(archiveRows,site.snapshotDate);
- else if(key==='home')content=render(archiveRows,new Date(site.snapshotDate));
+ else if(key==='home')content=render(archiveRows,new Date(site.snapshotDate))+
+  '<script type="application/json" id="homeLinks">'+JSON.stringify(require('./src/shared/home-links').homeLinks(mapPlaces,passportCatalog.tour)).replace(/</g,'\\u003c')+'</script>';
  else if(key==='archive')content=render(require('./src/shared/archive-data').mergeArchive(json('data/archive.json')));
  else if(key==='gallery')content=render(photos,new Date(site.snapshotDate));
  else if(key==='today'){let seed=465;const random=()=>((seed=(seed*1664525+1013904223)>>>0)/4294967296);content=render(new Date(site.snapshotDate),random,json('data/archive.json'));}
@@ -146,7 +147,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  else if(key==='music'||key==='fanchant')content=render(route.path);
  else content=render();
  if(!content||content.includes('undefined'))throw new Error('Invalid content for '+key);
- const vars={pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
+ const vars={mobileTabs:require('./src/shared/mobile-tabs')(route.path),pageHead:(key==='letter'||key==='about')?'<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&amp;display=swap">':'',page:key,title:esc(route.title),description:esc(route.description),canonical:esc(site.origin+(key==='letter'?'/about/':route.path==='/radio/test/'?'/radio/':route.path)),content,siteCss,quizCss,scripts:(key==='quiz'?`<script defer src="${quizJs}"></script>\n`:'')+`<script defer src="${siteJs}"></script>`};
  if(key==='worldcup-test'||key==='worldcup'){vars.pageHead=`<meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="${worldcupCss}">`;vars.scripts=`<script defer src="${worldcupJs}"></script>`+(key==='worldcup'?`<script defer src="${siteJs}"></script>`:'');}
  if(key==='clinic'||key==='clinic-test'){vars.pageHead=`<link rel="stylesheet" href="${clinicCss}">`;vars.scripts=`<script defer src="${clinicJs}"></script>`;}
  if(key==='my-concert-test'||key==='my-concert'){vars.pageHead=`<link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${myConcertJs}"></script>`;}
