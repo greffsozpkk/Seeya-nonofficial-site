@@ -6684,11 +6684,17 @@
         "url": "https://www.youtube.com/watch?v=otgLyGGJJko",
         "publishedDate": "2026-09-13",
         "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=EBnlDypuZyo",
+        "publishedDate": "2026-09-14",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-11-12T07:30:11.284145+00:00"
+    "updatedAt": "2026-11-13T07:02:10.295562+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -10398,6 +10404,12 @@
         "url": "https://www.youtube.com/watch?v=SJcUr4QWgqE",
         "publishedDate": "2026-06-29",
         "autoDiscovery": true
+      },
+      {
+        "label": "DK엔터테인먼트 방송 대행사",
+        "url": "https://www.youtube.com/watch?v=u8GQ7TkuylI",
+        "publishedDate": "2026-06-29",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -10407,7 +10419,7 @@
     ],
     "note": "2026년 6월 28일 룰리커피 가창점에서 진행한 남규리의 룰리버스킹입니다.\n매장 주최 보도자료와 현장 영상을 함께 연결합니다.",
     "venue": "룰리커피 가창점",
-    "updatedAt": "2026-11-12T07:30:11.284145+00:00"
+    "updatedAt": "2026-11-13T07:02:10.295562+00:00"
   },
   {
     "id": "v4145-dKVDn4pUiLc",
@@ -15450,6 +15462,24 @@
         "url": "https://www.youtube.com/watch?v=oxu3dDbW5Jg",
         "publishedDate": "2025-12-12",
         "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=7l2R5GEUs-w",
+        "publishedDate": "2025-12-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=FH7EX1GEASM",
+        "publishedDate": "2025-12-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "꽃길보라미",
+        "url": "https://www.youtube.com/watch?v=kRWDqo6OuIU",
+        "publishedDate": "2025-12-11",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -15463,7 +15493,7 @@
     "dateBasis": "event",
     "endDate": "2025-12-07",
     "venue": "성신여자대학교 운정그린캠퍼스 대강당",
-    "updatedAt": "2026-11-10T07:37:05.149771+00:00"
+    "updatedAt": "2026-11-13T07:02:10.295562+00:00"
   },
   {
     "id": "v4145-6JiTQ12-tFg",
@@ -46661,7 +46691,14 @@
       "label": "MBCkpop",
       "url": "https://www.youtube.com/watch?v=ESHVYVU2ivs"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "옛송TV",
+        "url": "https://www.youtube.com/watch?v=310t_RF9tJA",
+        "publishedDate": "2026-06-27",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
@@ -46669,7 +46706,8 @@
     ],
     "note": "",
     "dateBasis": "broadcast",
-    "publishedDate": "2012-02-16"
+    "publishedDate": "2012-02-16",
+    "updatedAt": "2026-11-13T07:02:10.295562+00:00"
   },
   {
     "id": "v474-stage-research-005",
@@ -55889,7 +55927,7 @@
     "id": "20221003-boram-youth-arena",
     "date": "2022-10-03",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-08T06:28:41.611353+00:00",
+    "updatedAt": "2026-11-13T07:02:10.295562+00:00",
     "title": "이보람 · 청춘아레나 대구 · 박혜원·박진주와 합동 무대",
     "program": "청춘아레나 대구",
     "type": "event",
@@ -55917,6 +55955,12 @@
         "label": "스프",
         "url": "https://www.youtube.com/watch?v=wmSPywZiTYI",
         "publishedDate": "2023-07-29",
+        "autoDiscovery": true
+      },
+      {
+        "label": "수끄니",
+        "url": "https://www.youtube.com/watch?v=HBfHApFxhPw",
+        "publishedDate": "2022-10-04",
         "autoDiscovery": true
       }
     ],
