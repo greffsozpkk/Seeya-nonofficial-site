@@ -1,5 +1,165 @@
 [
   {
+    "id": "20261109-gyuri-kloinm-exhibition",
+    "date": "2026-11-09",
+    "addedAt": "2026-11-13",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
+    "title": "남규리 · 클로인 개인전 「킨츠기: 실존적 정면성」 관람",
+    "program": "클로인 개인전",
+    "type": "event",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "스포츠서울 · 남규리의 KoN 전시 방문 보도",
+      "url": "https://www.sportsseoul.com/news/read/1648864",
+      "publishedDate": "2026-11-10"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [
+      "2026",
+      "클로인 개인전"
+    ],
+    "note": "남규리가 11월 9일 서울 마포아트센터 갤러리맥에서 KoN과 임하나의 전시를 관람했습니다. KoN은 남규리의 「우리 사랑 그런 거 해요」에 바이올린으로 참여했습니다.",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261110-gyuri-bol4-golden-era",
+    "date": "2026-11-10",
+    "addedAt": "2026-11-13",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
+    "title": "남규리 · 볼빨간사춘기 「황금기」 릴스 출연",
+    "program": "볼빨간사춘기 · 황금기",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "볼빨간사춘기 공식 · 남규리 출연 릴스",
+      "url": "https://www.instagram.com/reel/DfjpJ4OzIhf/",
+      "publishedDate": "2026-11-10"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026",
+      "볼빨간사춘기 · 황금기"
+    ],
+    "note": "볼빨간사춘기의 「황금기」 릴스에 남규리가 출연했습니다. 게시물에는 씨야 「I Believe」의 한 구절이 함께 소개됩니다.",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261111-gyuri-hottek-short",
+    "date": "2026-11-11",
+    "addedAt": "2026-11-13",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
+    "title": "남규리 · 귤멍 호떡 쇼츠",
+    "program": "남규리의 귤멍",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 공식 · 호떡 호떡 호떡 호떡!!!!!",
+      "url": "https://www.youtube.com/shorts/fHtBrxh48ck",
+      "publishedDate": "2026-11-11"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026",
+      "남규리의 귤멍"
+    ],
+    "note": "남규리가 호떡을 즐기는 짧은 일상 영상을 공개했습니다.",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261111-boram-final-concert-vlog",
+    "date": "2026-11-11",
+    "addedAt": "2026-11-13",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
+    "title": "이보람 · 씨야 마지막 콘서트 비하인드 브이로그",
+    "program": "보람씨야",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "보람씨야 공식 · 씨야 마지막 콘서트 비하인드",
+      "url": "https://www.youtube.com/watch?v=pdtsjuq9cQQ",
+      "publishedDate": "2026-11-11"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026",
+      "보람씨야"
+    ],
+    "note": "이보람이 씨야 20주년 전국 투어의 마지막 무대 뒤 모습을 브이로그로 공개했습니다.",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
+    "id": "20261113-boram-six-queens-playlist",
+    "date": "2026-11-13",
+    "addedAt": "2026-11-13",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
+    "title": "이보람 · 식스 더 뮤지컬 「QUEEN’S PLAYLIST」",
+    "program": "식스 더 뮤지컬",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 더 뮤지컬 공식 · 나의 노래방 애창곡",
+      "url": "https://www.instagram.com/reel/Dfqu2u6hVb3/",
+      "publishedDate": "2026-11-13"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [
+      "2026",
+      "식스 더 뮤지컬"
+    ],
+    "note": "뮤지컬 「식스」 출연진이 노래방 애창곡을 추천하는 영상입니다. 시모어 역의 이보람은 영상 후반에 등장합니다.",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
     "id": "20261228-yeonji-avahair",
     "date": "2026-12-28",
     "addedAt": "2026-09-29",
@@ -45,7 +205,7 @@
     "id": "20261218-boram-moifin-live",
     "date": "2026-12-18",
     "addedAt": "2026-11-09",
-    "updatedAt": "2026-11-09",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
     "title": "DK·이보람 · 여수 모이핀 라이브",
     "program": "MOIFIN LIVE",
     "type": "event",
@@ -59,7 +219,13 @@
       "label": "모이핀 공식 · DK·이보람 공연 안내",
       "url": "https://www.instagram.com/p/DfgNPRbSC_D/"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "모이핀 공식 · 티켓 판매처와 입장 안내",
+        "url": "https://www.instagram.com/p/DfrPblsklx8/",
+        "publishedDate": "2026-11-13"
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
@@ -68,24 +234,24 @@
       "예정",
       "MOIFIN LIVE"
     ],
-    "note": "12월 18일 오후 6시 30분, 여수 모이핀 오션점 1층 전시관에서 DK와 이보람이 라이브 공연을 엽니다. 유료 공연으로, 티켓 구매 방법과 입장 시간은 모이핀 공식 계정에서 추후 안내합니다.",
+    "note": "12월 18일 오후 6시 30분, 여수 모이핀 오션점 1층 전시관(무술목길 50)에서 DK와 이보람이 공연합니다. 입장은 오후 6시에 마감합니다.\n티켓은 당일 낮 12시부터 모이핀 기프트샵(무술목길 44)에서 현장 판매합니다. 에그타르트 세트와 입장권을 포함해 7만 원이며 전석 자유석입니다.",
     "eventState": "scheduled",
     "calendar": {
       "enabled": true,
       "time": "18:30",
       "timeLabel": "공연 시작",
-      "sequence": 0
+      "sequence": 1
     },
     "venue": "모이핀 오션점 1층 전시관",
     "homeActions": {
-      "notice": "https://www.instagram.com/p/DfgNPRbSC_D/"
+      "notice": "https://www.instagram.com/p/DfrPblsklx8/"
     }
   },
   {
     "id": "20261215-boram-six-season",
     "date": "2026-12-15",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-11-05",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
     "title": "이보람 · 식스 더 뮤지컬 · 시모어 역 출연 예정",
     "program": "식스 더 뮤지컬",
     "type": "concert",
@@ -135,6 +301,36 @@
         "label": "식스 더 뮤지컬 · QUEENS MODE 릴스",
         "url": "https://www.instagram.com/reel/DfWIf-7hARF/",
         "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "식스 더 뮤지컬 공식 · 시모어 소개",
+        "url": "https://www.instagram.com/p/DfoJjqXpVtO/",
+        "publishedDate": "2026-11-12"
+      },
+      {
+        "label": "식스 더 뮤지컬 공식 · 슬로건 이벤트",
+        "url": "https://www.instagram.com/p/DfqgiI6TILg/",
+        "publishedDate": "2026-11-13"
+      },
+      {
+        "label": "식스 더 뮤지컬 공식 · 드레스 코드 이벤트",
+        "url": "https://www.instagram.com/p/DfqgmB6k_6-/",
+        "publishedDate": "2026-11-13"
+      },
+      {
+        "label": "식스 더 뮤지컬 공식 · 달력 포토카드 증정",
+        "url": "https://www.instagram.com/p/Dfqgo_VTW3d/",
+        "publishedDate": "2026-11-13"
+      },
+      {
+        "label": "식스 더 뮤지컬 공식 · 사인회 대상 회차",
+        "url": "https://www.instagram.com/p/DfqgsWaE5ZV/",
+        "publishedDate": "2026-11-13"
+      },
+      {
+        "label": "이보람 공식 · 식스 더 뮤지컬 감사 인사",
+        "url": "https://www.instagram.com/p/DfrjNCdE64C/",
+        "publishedDate": "2026-11-13"
       }
     ],
     "status": "available",
@@ -158,7 +354,7 @@
     "id": "20261113-gyuri-mv-fan-invitation",
     "date": "2026-11-13",
     "addedAt": "2026-11-09",
-    "updatedAt": "2026-11-09",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
     "title": "남규리 · 신곡 뮤직비디오 촬영 현장 팬 초대",
     "program": "남규리 신곡 발매 사전 프로모션",
     "type": "event",
@@ -173,22 +369,38 @@
       "url": "https://www.youtube.com/post/Ugkxq8hwrQLbrHcHjJHFcOk4t0V46nEDyl55",
       "publishedDate": "2026-11-08"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 오후 1시 참석 후기",
+        "url": "https://gall.dcinside.com/board/view/?id=seeya&no=234758",
+        "publishedDate": "2026-11-13"
+      },
+      {
+        "label": "씨야 갤러리 · 오후 3시 참석 후기",
+        "url": "https://gall.dcinside.com/board/view/?id=seeya&no=234751",
+        "publishedDate": "2026-11-13"
+      },
+      {
+        "label": "씨야 갤러리 · 촬영 현장과 라이브 후기",
+        "url": "https://gall.dcinside.com/board/view/?id=seeya&no=234755",
+        "publishedDate": "2026-11-13"
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "tags": [
       "2026",
-      "예정",
-      "남규리 신곡 발매 사전 프로모션"
+      "뮤직비디오",
+      "팬 초대"
     ],
-    "note": "서울 은평구에서 오후 1시와 3시 두 차례 팬을 초대합니다. 회차당 30명씩 총 60명을 추첨하며, 상세 장소는 당첨자에게 개별 안내합니다.\n응모는 11월 8일 마감됐으며, 11월 9일 오후 개별 문자로 참석 여부를 확인합니다.",
-    "eventState": "scheduled",
+    "note": "11월 13일 오후 1시와 3시, 남규리가 신곡 뮤직비디오 촬영 현장에서 팬들과 만났습니다. 참석자들은 촬영을 지켜보고 라이브와 질의응답을 함께한 이야기를 남겼습니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": true,
       "time": "13:00",
       "timeLabel": "1차 13:00 · 2차 15:00",
-      "sequence": 0
+      "sequence": 1
     },
     "homeActions": {
       "notice": "https://www.youtube.com/post/Ugkxq8hwrQLbrHcHjJHFcOk4t0V46nEDyl55"
@@ -1207,9 +1419,14 @@
         "url": "https://www.youtube.com/watch?v=21VgEYTeLCk",
         "publishedDate": "2026-11-09",
         "autoDiscovery": true
+      },
+      {
+        "label": "보람씨야 공식 · 씨야 마지막 콘서트 비하인드",
+        "url": "https://www.youtube.com/watch?v=pdtsjuq9cQQ",
+        "publishedDate": "2026-11-11"
       }
     ],
-    "updatedAt": "2026-11-09T06:59:41.297399+00:00",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -53689,7 +53906,7 @@
     "id": "20261114-seeya-immortal-wax-broadcast",
     "date": "2026-11-14",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-01",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 방송 예정",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -53698,7 +53915,9 @@
       "김연지",
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "사랑하고 싶어"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
@@ -53710,6 +53929,16 @@
         "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
         "publishedDate": "2026-10-26"
+      },
+      {
+        "label": "KBS 레전드 케이팝 · 씨야 「사랑하고 싶어」 무대 미리 보기",
+        "url": "https://www.youtube.com/shorts/c6KDMml9H6A",
+        "publishedDate": "2026-11-12"
+      },
+      {
+        "label": "스포츠투데이 · 780회 아티스트 왁스 출연 안내",
+        "url": "https://stoo.com/article.php?aid=109883027559",
+        "publishedDate": "2026-11-13"
       }
     ],
     "status": "documented",
@@ -53720,16 +53949,18 @@
       "KBS2 · 불후의 명곡",
       "예정"
     ],
-    "note": "10월 19일 녹화에 참여한 씨야의 「불후의 명곡」 방송 일정입니다.\n메이저나인 공식 일정 기준 11월 14일 오후 6시 5분 방송 예정입니다.\n녹화일과 방송일을 구분해 표시합니다.",
+    "note": "11월 14일 오후 6시 5분 KBS2에서 방송 예정인 780회 「아티스트 왁스」 편입니다. 씨야 세 멤버가 부르는 「사랑하고 싶어」를 KBS 공식 미리보기로 만나볼 수 있습니다.",
     "eventState": "scheduled",
     "calendar": {
       "enabled": true,
       "time": "18:05",
-      "timeLabel": "방송 시작"
+      "timeLabel": "방송 시작",
+      "sequence": 1
     },
     "homeActions": {
       "notice": "https://enter.major9.net/schedule/"
-    }
+    },
+    "episode": 780
   },
   {
     "id": "20261122-boram-worldmom-seocho",
@@ -56360,7 +56591,7 @@
     "id": "20261111-boram-kickagoal-240",
     "date": "2026-11-11",
     "addedAt": "2026-11-12",
-    "updatedAt": "2026-11-12T14:24:17.226727+00:00",
+    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
     "title": "이보람 · 골 때리는 그녀들 240회 FC발라드림 준결승",
     "program": "SBS · 골 때리는 그녀들",
     "type": "variety",
@@ -56379,6 +56610,11 @@
       {
         "label": "SBS연예뉴스 · FC발라드림 이보람 출연 안내",
         "url": "https://ent.sbs.co.kr/amp/article.do?article_id=E10010324546",
+        "publishedDate": "2026-11-11"
+      },
+      {
+        "label": "이보람 공식 · FC발라드림 방송 안내",
+        "url": "https://www.instagram.com/p/DfmbTL8E8qG/",
         "publishedDate": "2026-11-11"
       }
     ],
