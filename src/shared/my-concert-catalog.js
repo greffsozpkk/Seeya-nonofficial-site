@@ -3,6 +3,7 @@
 const group=require('./worldcup-catalog');
 const solo=require('../data/worldcup-solo-songs.json');
 const albums=require('../data/albums.json');
+const covers=require('../data/worldcup-covers.json').candidates;
 const norm=s=>String(s||'').normalize('NFC').toLowerCase().replace(/\s+/g,'').replace('brillant','brilliant');
 const memberIds={'남규리':'gyuri','김연지':'yeonji','이보람':'boram'};
 const duration=value=>/^\d+:\d{2}$/.test(value||'')?value.split(':').reduce((n,x)=>n*60+Number(x),0):null;
@@ -21,6 +22,7 @@ function catalog(archive){
  }
  group().candidates.filter(x=>!soloReissues.has(x.title)&&!/\binst\b|instrumental/i.test(x.title)).forEach(x=>add(x,false));
  solos.forEach(x=>add(x,true));
- return {schema:1,songs:rows,notes:['기존 MUSIC·월드컵에서 확인한 발매곡을 사용합니다.','공개 자작곡 관악산, 미발매 커버·반주곡은 제외합니다.','California Dream에 재수록된 깊은 밤을 날아서·처음 그 자리에는 솔로곡으로 한 번만 표시합니다.']};
+ covers.filter(x=>x.concertEnabled).forEach(x=>rows.push({id:x.id,title:x.title,artistType:x.artist==='씨야'?'group':'solo',artistNames:[x.artist],memberId:memberIds[x.artist]||null,albumId:'broadcast-covers',albumTitle:'방송 커버 무대',coverUrl:null,releaseDate:null,durationSec:x.durationSec||null,officialUrl:'https://www.youtube.com/watch?v='+x.youtubeId,archiveRef:x.archiveRef,enabled:true}));
+ return {schema:1,songs:rows,notes:['기존 MUSIC·월드컵에서 확인한 발매곡과 선정한 방송 커버 무대를 사용합니다.','공개 자작곡 관악산과 반주곡은 제외합니다.','California Dream에 재수록된 깊은 밤을 날아서·처음 그 자리에는 솔로곡으로 한 번만 표시합니다.']};
 }
 module.exports={catalog};

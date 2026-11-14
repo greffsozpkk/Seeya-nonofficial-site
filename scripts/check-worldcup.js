@@ -68,9 +68,9 @@ async function checkClient(){
  vm.runInNewContext('(function(){'+read('src/client/worldcup.js')+'})();',context);
  assert.equal((app.innerHTML.match(/data-worldcup=/g)||[]).length,6);assert(!app.innerHTML.includes('data-worldcup="covers"'));
  await click({target:{closest:()=>({dataset:{worldcup:'covers-all'}})}});
- assert(app.innerHTML.includes('131편')&&app.innerHTML.includes('101곡')&&app.innerHTML.includes('256강 1/3 이어하기'));
+ assert(app.innerHTML.includes('132편')&&app.innerHTML.includes('102곡')&&app.innerHTML.includes('256강 1/4 이어하기'));
  await click({target:{closest:()=>({dataset:{coverScope:'covers'}})}});
- assert(app.innerHTML.includes('26편')&&app.innerHTML.includes('19곡')&&app.innerHTML.includes('32강 1/10 이어하기'));
+ assert(app.innerHTML.includes('27편')&&app.innerHTML.includes('20곡')&&app.innerHTML.includes('32강 1/11 이어하기'));
  assert(!app.innerHTML.includes('name="wcSize" value="64"'));
  await click({target:{closest:()=>({dataset:{action:'rank'}})}});assert(app.innerHTML.includes('씨야 커버곡 월드컵 · 방송 무대만')&&app.innerHTML.includes('<b>1판</b>'));
  await click({target:{closest:()=>({dataset:{action:'home'}})}});

@@ -1,5 +1,5 @@
 'use strict';
-function memberCounts(rows){return ['남규리','김연지','이보람'].map(member=>({member,count:rows.filter(r=>String(r.artist||'').includes(member)).length}));}
+function memberCounts(rows){return ['남규리','김연지','이보람'].map(member=>({member,count:rows.filter(r=>r.members?.includes(member)||String(r.artist||'').includes(member)).length}));}
 function descriptionLines(data){const notes={
  group:['씨야 앨범 수록곡과 OST·협업곡을 담았습니다.','솔로 발매곡과 반주곡은 제외했습니다.'],
  solo:['멤버들의 솔로곡·OST·정식 리메이크·공개 자작곡을 담았습니다.','같은 곡은 한 번만 포함했습니다.'],

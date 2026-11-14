@@ -10,7 +10,7 @@
     16,
     "all"
   ],
-  "scopeNote": "복면가왕·미스트롯2·듀엣가요제·끝까지 간다·비긴어게인·피크닉 라이브의 공식 채널 무대 26편입니다. 듀엣·합동 무대와 방송 클립을 포함합니다. 같은 가수의 같은 곡은 한 번만 담았으며, 16강은 무작위 선정, 전체 참가는 26편 모두 참여합니다. 멤버 공식 채널의 커버 영상은 별도의 씨야 커버곡 월드컵에서 만날 수 있습니다.",
+  "scopeNote": "방송 공식 채널의 커버 무대와 듀엣·합동 무대를 담았습니다. 같은 가수의 같은 곡은 한 번만 포함했습니다. 전체 참가는 모든 후보가 참여합니다. 멤버 공식 채널의 커버는 범위를 전체로 선택하면 함께 볼 수 있습니다.",
   "candidates": [
     {
       "id": "cover-_y5Pbme0BBo",
@@ -427,6 +427,32 @@
       "duration": "3:37",
       "embedCheck": "initialized",
       "archiveRef": "v491-picnic143"
+    },
+    {
+      "id": "cover-X6AllgM6ix4",
+      "title": "사랑하고 싶어",
+      "artist": "씨야",
+      "members": [
+        "남규리",
+        "김연지",
+        "이보람"
+      ],
+      "originalArtist": "왁스",
+      "album": "불후의 명곡 · 아티스트 왁스 · 2026-11-14",
+      "scope": "방송 커버",
+      "youtubeId": "X6AllgM6ix4",
+      "videoTitle": "씨야(SEEYA) - 사랑하고 싶어 [불후의 명곡2 전설을 노래하다/Immortal Songs 2] | KBS 261114 방송",
+      "channel": "KBS 레전드 케이팝",
+      "channelUrl": "https://www.youtube.com/@legendkpop",
+      "channelId": "UCR5cyf8hncN_AaQPfmvmlgA",
+      "videoKind": "방송 무대",
+      "archiveRef": "20261114-seeya-immortal-wax-broadcast",
+      "broadcastDate": "2026-11-14",
+      "duration": "5:29",
+      "durationSec": 329,
+      "checkedAt": "2026-11-14",
+      "embedAllowed": true,
+      "concertEnabled": true
     }
   ]
 }

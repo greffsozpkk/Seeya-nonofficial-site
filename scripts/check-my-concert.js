@@ -81,3 +81,17 @@ assert.equal(S.youtubeId('https://youtube.com.evil.test/watch?v=nn639JifcBQ'),''
 const html=read('game/my-concert/test/index.html');assert(html.includes('noindex,nofollow'));assert(!html.includes('googletagmanager'));assert(read('game/index.html').includes('/game/my-concert/'));assert(!read('game/my-concert/index.html').includes('noindex'));assert(!read('game/my-concert/index.html').includes('/game/test/'));assert(read('game/test/index.html').includes('/game/my-concert/test/'));assert(read('sitemap.xml').includes('/game/my-concert/'));assert(!read('sitemap.xml').includes('/game/my-concert/test/'));
 for(const f of ['build.yml','update-news.yml'])assert(read('.github/workflows/'+f).includes('game/my-concert/catalog.json'));
 console.log(`PASS my concert: ${songs.length} researched tracks, variable section limits, duplicates/moves/order, graphemes, strict share validation, damaged draft recovery, filters, 1080x1350 full-text posters and unlisted routing.`);
+
+// A selected broadcast cover must survive editor/share round trips and resolve to its official stage.
+const waxCover=songs.find(s=>s.id==='cover-X6AllgM6ix4');
+assert(waxCover && M.filter(songs,'사랑하고 싶어','group','all').some(s=>s.id===waxCover.id));
+for(const section of M.SECTIONS){
+ const draft=M.fresh();
+ draft.sections.opening=[songs[0].id];draft.sections.main=[songs[1].id];draft.sections.encore=[songs[2].id];
+ const added=M.change(draft,{type:'add',section:section.id,id:waxCover.id},songs).draft;
+ const restored=M.decode(M.encode(added),songs);
+ const track=S.session(restored,songs).find(r=>r.id===waxCover.id);
+ assert.equal(track.videos[0].videoId,'X6AllgM6ix4');
+ assert.equal(track.videos[0].kind,'broadcast');
+}
+console.log('PASS official broadcast cover: group search, every section, share restoration and playback source.');

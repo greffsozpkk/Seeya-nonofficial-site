@@ -1,5 +1,6 @@
 'use strict';
 const media = require('../data/my-concert-media.json');
+const concertCovers = require('../data/worldcup-covers.json').candidates.filter(x=>x.concertEnabled);
 const vcrLibrary=media.vcr.filter(v=>!v.excludeFromVcr);
 const vcrTypes={vlog:'브이로그',behind:'비하인드',promo:'홍보·예고',music:'뮤직비디오',challenge:'챌린지',other:'기타 콘텐츠'};
 function vcrType(video){
@@ -25,7 +26,8 @@ function songInfo(id, songs) {
 // Only these six songs have a tour recording approved for the concert player.
 const tourSongs = new Set(['group-track-022','group-track-058','group-track-060','group-track-062','group-track-063','group-track-064']);
 function performanceVideos(id) {
-  const sources=media.performances[id]||[];
+  const cover=concertCovers.find(x=>x.id===id);
+  const sources=media.performances[id]||(cover?[{videoId:cover.youtubeId,title:cover.videoTitle,channel:cover.channel,channelId:cover.channelId,duration:cover.durationSec,date:cover.broadcastDate,kind:'broadcast',embedAllowed:cover.embedAllowed,checkedOn:cover.checkedAt}]:[]);
   for(const kind of ['broadcast','live','tour','official']){
     if(kind==='tour'&&!tourSongs.has(id))continue;
     const videos=sources.filter(v=>v.kind===kind && v.embedAllowed!==false);
