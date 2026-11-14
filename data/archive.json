@@ -54097,7 +54097,7 @@
     "id": "20261114-seeya-immortal-wax-broadcast",
     "date": "2026-11-14",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
+    "updatedAt": "2026-11-14T11:35:10.858275+00:00",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 사랑하고 싶어",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -54146,6 +54146,21 @@
         "label": "HJ컬쳐 공식 · 씨야·KoN 출연 안내와 사진",
         "url": "https://www.instagram.com/p/DftvbZ4ISxS/",
         "publishedDate": "2026-11-14"
+      },
+      {
+        "label": "티브이데일리 · 「사랑하고 싶어」 무대와 원곡자 왁스의 감상",
+        "url": "https://tvdaily.co.kr/read.php3?aid=17946514551809706010",
+        "publishedDate": "2026-11-14"
+      },
+      {
+        "label": "뉴스엔 · 「보여줄게」 무대 반응과 콘서트 댄스 무대 이야기",
+        "url": "https://ad.newsen.com/news_view.php?code=100100&uid=202611141750352110",
+        "publishedDate": "2026-11-14"
+      },
+      {
+        "label": "스포츠투데이 · 씨야 데뷔 비하인드 토크",
+        "url": "https://www.stoo.com/article.php?aid=109911298501",
+        "publishedDate": "2026-11-14"
       }
     ],
     "status": "available",
@@ -54157,7 +54172,7 @@
       "왁스",
       "라이브"
     ],
-    "note": "11월 14일 KBS2에서 방송된 불후의 명곡 780회 「아티스트 왁스」 편입니다. 씨야 세 멤버가 「사랑하고 싶어」를 불렀으며, 액터뮤지션 KoN(콘)이 함께 참여했습니다.\nKBS 공식 무대 전체 영상과 무대 소개·토크 영상을 함께 볼 수 있습니다.",
+    "note": "11월 14일 KBS2에서 방송된 불후의 명곡 780회 「아티스트 왁스」 편입니다. 씨야 세 멤버가 「사랑하고 싶어」를 불렀으며, 액터뮤지션 KoN(콘)이 함께 참여했습니다.\n원곡자 왁스는 씨야의 보컬과 곡이 잘 어울린다며 무대에 대한 감상을 전했습니다.\nKBS 공식 무대·토크 영상과 함께, 무대 반응 및 씨야의 데뷔 비하인드를 다룬 기사 원문을 볼 수 있습니다.",
     "eventState": "completed",
     "calendar": {
       "enabled": true,
