@@ -10627,6 +10627,36 @@
         "url": "https://www.youtube.com/watch?v=u8GQ7TkuylI",
         "publishedDate": "2026-06-29",
         "autoDiscovery": true
+      },
+      {
+        "label": "무대인사매니아",
+        "url": "https://www.youtube.com/watch?v=JyuioIfv0GE",
+        "publishedDate": "2026-06-28",
+        "autoDiscovery": true
+      },
+      {
+        "label": "강남매TV",
+        "url": "https://www.youtube.com/watch?v=WMaOYRB5H1g",
+        "publishedDate": "2026-07-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "강남매TV",
+        "url": "https://www.youtube.com/watch?v=ntQzTQMfAI0",
+        "publishedDate": "2026-07-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "강남매TV",
+        "url": "https://www.youtube.com/watch?v=uavF2UDnS24",
+        "publishedDate": "2026-07-01",
+        "autoDiscovery": true
+      },
+      {
+        "label": "무대인사매니아",
+        "url": "https://www.youtube.com/watch?v=wsOmBm3gBdY",
+        "publishedDate": "2026-07-11",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -10636,7 +10666,7 @@
     ],
     "note": "2026년 6월 28일 룰리커피 가창점에서 진행한 남규리의 룰리버스킹입니다.\n매장 주최 보도자료와 현장 영상을 함께 연결합니다.",
     "venue": "룰리커피 가창점",
-    "updatedAt": "2026-11-13T07:02:10.295562+00:00"
+    "updatedAt": "2026-11-14T06:51:38.259562+00:00"
   },
   {
     "id": "v4145-dKVDn4pUiLc",
@@ -15697,6 +15727,42 @@
         "url": "https://www.youtube.com/watch?v=kRWDqo6OuIU",
         "publishedDate": "2025-12-11",
         "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=khvqoAHX-Sk",
+        "publishedDate": "2025-12-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=U_LPcFgkwYY",
+        "publishedDate": "2025-12-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=3VQcZ1UULuM",
+        "publishedDate": "2025-12-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=Lx-iHbj0bac",
+        "publishedDate": "2025-12-07",
+        "autoDiscovery": true
+      },
+      {
+        "label": "정아선",
+        "url": "https://www.youtube.com/watch?v=FAprrOM5VaQ",
+        "publishedDate": "2025-12-09",
+        "autoDiscovery": true
+      },
+      {
+        "label": "h.a.p.p.y.3.6.5",
+        "url": "https://www.youtube.com/watch?v=jfN-Po3llDU",
+        "publishedDate": "2025-12-17",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -15710,7 +15776,7 @@
     "dateBasis": "event",
     "endDate": "2025-12-07",
     "venue": "성신여자대학교 운정그린캠퍼스 대강당",
-    "updatedAt": "2026-11-13T07:02:10.295562+00:00"
+    "updatedAt": "2026-11-14T06:51:38.259562+00:00"
   },
   {
     "id": "v4145-6JiTQ12-tFg",
@@ -42668,13 +42734,21 @@
       "label": "공식 무대 영상",
       "url": "https://www.youtube.com/watch?v=8BBTw0eJ4HA"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "OM_KOR",
+        "url": "https://www.youtube.com/watch?v=RKprG1grkXs",
+        "publishedDate": "2019-07-02",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
       "라이브"
     ],
-    "note": ""
+    "note": "",
+    "updatedAt": "2026-11-14T06:51:38.259562+00:00"
   },
   {
     "id": "v485-news-4bf15515c36a",
