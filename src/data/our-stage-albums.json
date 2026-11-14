@@ -1,0 +1,566 @@
+[
+  {
+    "id": "first-mind",
+    "name": "The First Mind",
+    "type": "1ST ALBUM · 2006.02.24",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286",
+    "checkedAt": "2026-11-15",
+    "tracks": [
+      {
+        "id": "scent",
+        "title": "여인의 향기",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "shoes",
+        "title": "구두",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "because",
+        "title": "사랑하기 때문에 (feat. SG 워너비)",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "flower",
+        "title": "접시꽃",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "promise",
+        "title": "Promise U",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "again",
+        "title": "처음부터 또다시",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "guilty",
+        "title": "유죄",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "parting",
+        "title": "이별해보기",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "tears",
+        "title": "Tearsandfears",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "loved",
+        "title": "사랑했다면",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "just",
+        "title": "그냥",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "fault",
+        "title": "내 잘못입니다",
+        "instrumental": false,
+        "reissue": false
+      }
+    ]
+  },
+  {
+    "id": "lovely-sweet-heart",
+    "name": "Lovely Sweet Heart",
+    "type": "2ND ALBUM · 2007.05.25",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "checkedAt": "2026-11-15",
+    "tracks": [
+      {
+        "id": "lovely-sweet-heart-01",
+        "title": "사랑의 인사",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-02",
+        "title": "결혼할까요",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-03",
+        "title": "너는 내 남자",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-04",
+        "title": "Dirty Dancing",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-05",
+        "title": "어떻게 널 잊겠니",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-06",
+        "title": "사랑아",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-07",
+        "title": "그 사람이 나를 사랑해요",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-08",
+        "title": "Summer Dream",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-09",
+        "title": "사랑이 간다",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-10",
+        "title": "감동을 주세요",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-11",
+        "title": "얼음인형",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-12",
+        "title": "순애보",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "lovely-sweet-heart-13",
+        "title": "남",
+        "instrumental": false,
+        "reissue": false
+      }
+    ]
+  },
+  {
+    "id": "california-dream",
+    "name": "California Dream",
+    "type": "2.5 ALBUM · 2008.01.02",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "checkedAt": "2026-11-15",
+    "tracks": [
+      {
+        "id": "california-dream-01",
+        "title": "슬픈 발걸음",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-02",
+        "title": "그래도 좋아",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-03",
+        "title": "Classic",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-04",
+        "title": "연가",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-05",
+        "title": "미워요",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-06",
+        "title": "요즘 나는",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-07",
+        "title": "깊은 밤을 날아서",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-08",
+        "title": "처음 그 자리에",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-09",
+        "title": "미친 사랑의 노래",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-10",
+        "title": "The Day",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "california-dream-11",
+        "title": "정",
+        "instrumental": false,
+        "reissue": false
+      }
+    ]
+  },
+  {
+    "id": "brilliant-change",
+    "name": "Brilliant Change",
+    "type": "3RD ALBUM · 2008.09.26",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "checkedAt": "2026-11-15",
+    "tracks": [
+      {
+        "id": "brilliant-change-01",
+        "title": "가니 (feat. SG워너비 - 김용준, 황정음, Mario)",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-02",
+        "title": "Hot Girl",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-03",
+        "title": "Turn It Up",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-04",
+        "title": "집으로 돌아오는 길 (feat. SG워너비 - 김진호)",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-05",
+        "title": "내가 울더라도",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-06",
+        "title": "덩그러니",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-07",
+        "title": "사모곡",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-08",
+        "title": "I Wish",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-09",
+        "title": "남자는 그래요",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-10",
+        "title": "그 사람 (구두 Ⅲ)",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-11",
+        "title": "솜사탕",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-12",
+        "title": "나 없이도",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "brilliant-change-13",
+        "title": "Loving You",
+        "instrumental": false,
+        "reissue": false
+      }
+    ]
+  },
+  {
+    "id": "rebloom",
+    "name": "Rebloom",
+    "type": "MINI ALBUM · 2009.10.26",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "checkedAt": "2026-11-15",
+    "tracks": [
+      {
+        "id": "rebloom-01",
+        "title": "그 놈 목소리",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "rebloom-02",
+        "title": "앗차!",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "rebloom-03",
+        "title": "눈물의 여왕",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "rebloom-04",
+        "title": "바람핀다 믿었니",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "rebloom-05",
+        "title": "T-Gana (티가나)",
+        "instrumental": false,
+        "reissue": false
+      }
+    ]
+  },
+  {
+    "id": "see-you-again",
+    "name": "See You Again",
+    "type": "BEST ALBUM · 2011.01.21",
+    "source": "https://music.bugs.co.kr/album/259909",
+    "checkedAt": "2026-11-15",
+    "tracks": [
+      {
+        "id": "see-you-again-01",
+        "title": "내겐 너무 멋진 그대",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "see-you-again-02",
+        "title": "The Last",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "see-you-again-03",
+        "title": "여인의 향기",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-04",
+        "title": "구두",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-05",
+        "title": "사랑의 인사",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-06",
+        "title": "결혼할까요",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-07",
+        "title": "사랑이 간다",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-08",
+        "title": "슬픈 발걸음 (구두 Ⅱ)",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-09",
+        "title": "그래도 좋아",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-10",
+        "title": "미워요",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-11",
+        "title": "미친 사랑의 노래",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-12",
+        "title": "가니 (feat. 김용준 Of SG워너비, 황정음, Mario)",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-13",
+        "title": "사모곡",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-14",
+        "title": "그 놈 목소리",
+        "instrumental": false,
+        "reissue": true
+      },
+      {
+        "id": "see-you-again-15",
+        "title": "눈물의 여왕",
+        "instrumental": false,
+        "reissue": true
+      }
+    ]
+  },
+  {
+    "id": "still-here",
+    "name": "그럼에도, 우린",
+    "type": "PRE-RELEASE SINGLE · 2026.03.30",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13299661",
+    "checkedAt": "2026-11-15",
+    "tracks": [
+      {
+        "id": "still-here-01",
+        "title": "그럼에도, 우린",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "still-here-02",
+        "title": "그럼에도, 우린 (Inst.)",
+        "instrumental": true,
+        "reissue": false
+      }
+    ]
+  },
+  {
+    "id": "first-again",
+    "name": "First, Again",
+    "type": "4TH ALBUM · 2026.05.14",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "checkedAt": "2026-11-15",
+    "tracks": [
+      {
+        "id": "first-again-01",
+        "title": "Stay",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "first-again-02",
+        "title": "계절은 돌고 돌아",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "first-again-03",
+        "title": "봄처럼 그댄",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "first-again-04",
+        "title": "I Believe",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "first-again-05",
+        "title": "그럼에도, 우린",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "first-again-06",
+        "title": "안돼요",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "first-again-07",
+        "title": "잔향",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "first-again-08",
+        "title": "끝내 꺾이지 않는 것",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "first-again-09",
+        "title": "우리 Live Ver.",
+        "instrumental": false,
+        "reissue": false
+      },
+      {
+        "id": "first-again-10",
+        "title": "Stay Inst.",
+        "instrumental": true,
+        "reissue": false
+      },
+      {
+        "id": "first-again-11",
+        "title": "그럼에도, 우린 Inst. (To My Fan)",
+        "instrumental": true,
+        "reissue": false
+      }
+    ]
+  }
+]

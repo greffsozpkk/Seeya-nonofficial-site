@@ -1,0 +1,459 @@
+{
+  "legacyIllustrations": {
+    "basicImage": {
+      "file": "images/game/our-stage/seeya-base.png",
+      "source": "User attachment codex-clipboard-25619083-d647-4f7e-927c-c616909c4b41.png",
+      "leftToRight": [
+        "이보람",
+        "남규리",
+        "김연지"
+      ]
+    },
+    "stageImage": {
+      "file": "images/game/our-stage/seeya-first-mind.png",
+      "method": "Built-in image_gen",
+      "reference": "https://www.melon.com/album/detail.htm?albumId=314286",
+      "referenceImage": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/4f/90/b7/4f90b7bb-17a4-9989-4ec0-f5e5ea8eb807/8806163340067_cover.jpg/600x600bf-60.jpg",
+      "note": "2006 1집 앨범 의상과 머리 스타일을 재해석한 팬 게임용 일러스트. 개별 방송의 실제 의상을 그대로 재현했다고 표기하지 않음.",
+      "prompt": "Three full-body chibi singers in the attached character style, left Lee Boram, center Nam Gyuri, right Kim Yeonji. Preserve faces and proportions. Follow The First Mind album cover outfits/hair: Boram short warm brown layered hair and white cropped vest; Gyuri straight black hair with full bangs and white lace hood, off-shoulder white blouse and ribbons; Yeonji long black hair with fine front micro-braids, white lace bolero and dress. Each holding a black microphone, white shoes, generous separation, transparent background. No text/logo. Stylized album-inspired fan-game interpretation."
+    }
+  },
+  "style": {
+    "name": "2D 도트 캐릭터",
+    "approved": "2026-11-14",
+    "rule": "씨야 키우기의 기본 캐릭터는 승인된 도트 3인조를 사용한다. 연습실·카드북·이야기·공연·PLAY 카드에 같은 캐릭터를 사용하며 기존 반실사/치비 일러스트로 되돌리지 않는다. 의상 확장도 같은 픽셀 크기와 비율을 기준으로 한다."
+  },
+  "basicImage": {
+    "file": "images/game/our-stage/seeya-pixel-base.png",
+    "method": "Built-in image_gen; approved concept copied unchanged",
+    "leftToRight": [
+      "이보람",
+      "남규리",
+      "김연지"
+    ],
+    "note": "승인된 기본 의상. 2006년 활동 의상으로 표기하지 않음."
+  },
+  "roomImage": {
+    "file": "images/game/our-stage/pixel-rehearsal-room.png",
+    "method": "Built-in image_gen",
+    "prompt": "Extract the rehearsal room background from the attached approved pixel-art game mockup, as a clean reusable game background. REMOVE ALL three characters, ALL microphone stands, ALL text, ALL UI buttons, ALL top and bottom interface bars and all outer page margins. Fill the entire output rectangle with ONLY the room itself, from ceiling to floor. Keep the original room composition: cream walls, muted pink acoustic wall panels, central large mirror, left window with daylight, keyboard and amplifier on left, bench with bag and water bottles on right, pink door on right. Empty clear central wooden floor where three sprites will be placed by game code. Preserve the exact cozy chunky 2D pixel-art aesthetic and colors, not a realistic illustration. Flat square pixel clusters, crisp block edges, no smooth gradients. Wide landscape ratio approximately 2.2:1. No people, no reflections of people, no lettering, no UI. Front-facing slightly elevated room view like the reference. Leave plenty of open floor in lower half."
+  },
+  "albumOutfits": {
+    "method": "Built-in image_gen",
+    "manifest": "src/data/our-stage-outfits.json",
+    "note": "8 album/single outfits; local preview only. Rebloom explicitly reinterpreted for current trio; not historical lineup."
+  },
+  "badges": {
+    "file": "images/game/our-stage/pixel-badges.png",
+    "method": "Built-in image_gen; background extraction edit; original PNG preserved",
+    "prompt": "Use case: stylized-concept. Asset: game pixel badge sheet. Create SIX individual chunky pixel badges arranged in an exact 3 columns by 2 rows grid, each badge centered in its equal cell with generous transparent margins. Transparent background, no text, no labels, no shadows outside badges. Crisp large square pixels, flat limited palette, 48x48 logical pixels per badge, old cozy 2D game style. Inspired by SeeYa fan-made goods in reference images, reinterpret for game achievements, do not copy typography. TOP LEFT: round pink enamel badge containing cream puppy-eared globe lightstick as seen in reference1. TOP MIDDLE: square lilac photo-card badge with three tiny female pixel silhouettes (red, black, brown hair), cream polaroid border. TOP RIGHT: square cream ringbound fan notebook/album with pink heart and tiny musical note. BOTTOM LEFT: square light blue two-key keycap keyring with little pink and purple hearts, silver keychain ring. BOTTOM MIDDLE: round lavender badge containing three upright microphones and little star. BOTTOM RIGHT: wide rounded rectangular navy concert slogan badge with three pink stars and small cream ticket tabs, no writing. Each icon wholly isolated within own cell, same visual scale. Ref1 shows actual fan lightstick, ref2 shows fan slogan and ringbound calendar, use only motifs not photo realism.\n",
+    "sources": [
+      "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7393",
+      "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10452"
+    ],
+    "note": "Fan merchandise motifs reinterpreted as six game achievements. Not official merchandise."
+  },
+  "chapterArt": {
+    "method": "Built-in image_gen",
+    "stories": {
+      "file": "images/game/our-stage/pixel-stories.png",
+      "prompt": "Create one 4 columns x 2 rows sprite atlas of EIGHT square story illustrations for a cozy SeeYa fan pixel game. EXACT equal grid cells, no gutters, each illustration fills its cell. Hard chunky pixel art, flat 2-3 tones, same low-resolution character style as reference. NO text or lettering. All scenes are symbolic fan game illustrations, no factual depiction. In trio scenes left Boram red long hair, center Gyuri black long hair, right Yeonji brown long hair. TOP row left to right: 1 three characters practicing around piano in warm pink rehearsal room; 2 three singers on debut stage in white outfits with golden spotlights; 3 open cream album scrapbook with tiny three-person photo, music notes and CD on desk; 4 brown-haired Yeonji with a purple masquerade mask held beside her face and microphone under purple spotlight. BOTTOM row: 5 black-haired Gyuri beside film camera and clapperboard, blue film set; 6 red-haired Boram in a teal recording booth singing in harmony with abstract light notes; 7 reunited trio linking hands at center of gentle pink stage, three lights meet; 8 three singers seen from back facing a concert audience of tiny pink lights. Make eight beautiful distinct compositions, readable at small scale, no realistic texture, no gradients. All eight equal square cells. Overall 2:1 image.",
+      "note": "8 symbolic game scenes, not historical footage recreation"
+    },
+    "albumBadges": {
+      "file": "images/game/our-stage/pixel-album-badges.png",
+      "prompt": "Create one sprite sheet of EIGHT chunky pixel art achievement badges, exact 4 columns x 2 rows, equal square cells, each icon fully inside its cell with wide transparent margin. Transparent background, no glow, no outside shadow, no text or numbers. Consistent flat square pixel edges, limited palette, cozy game style matching reference. TOP row left to right: 1 round ivory badge with white feather and tiny microphone; 2 square pastel pink badge with heart-shaped envelope and flower; 3 round sky blue badge with palm tree and travel suitcase; 4 square lime-purple badge with red retro stage hat and disco star. BOTTOM row left to right: 5 dark silver round badge with silver rose and small music note; 6 warm caramel square badge with knitted scarf and two teacups; 7 round midnight blue badge with three white stars rising above horizon; 8 square cream badge with blue ribbon and three pink flowers. Keep icons distinct, no characters necessary. Uniform scale 48x48 logical pixels enlarged. Overall sheet 2:1.",
+      "note": "8 album motifs; OPEN, COMPLETE, MASTER states added in UI"
+    },
+    "trackSources": "src/data/our-stage-albums.json"
+  },
+  "storyScenes": [
+    {
+      "id": "chapter-lovely",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers in coordinated pastel blue and pink stage outfits exchanging heart shaped envelopes amid pink blossom petals on a spring stage.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-d78d6db7-8f41-4ae1-acbc-a57dbadb2b03.png",
+      "file": "images/game/our-stage/stories/chapter-lovely.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "chapter-california",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers with suitcases and a camera at a sunny palm tree travel stop, distant Las Vegas lights and a music scrapbook, warm mint and sand palette.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-50b3cb01-ae89-44ec-8ad7-eb2833b56467.png",
+      "file": "images/game/our-stage/stories/chapter-california.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "chapter-brilliant",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers dancing on a lime and purple retro electronic stage, colorful block spotlights and simple disco floor, lively energy.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-88819325-4af7-4796-bd9a-3be0ed32711d.png",
+      "file": "images/game/our-stage/stories/chapter-brilliant.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "chapter-rebloom",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: A silver flower blossoming beside an open dark album and vintage microphone under violet light. NO people: symbolic album illustration for a changed historical lineup.",
+      "editPrompt": "Keep this exact chunky pixel illustration, square layout, silver flower, microphone and purple lighting. Replace the picture of three people on the left album page with a large silver eighth-note musical symbol on purple paper. Absolutely NO people or faces anywhere, not even tiny photographs. All else unchanged.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-6c5bfbaf-c5ae-470a-a04a-9334eccb92bc.png",
+      "file": "images/game/our-stage/stories/chapter-rebloom.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "chapter-again",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers looking through old photographs and records around a warm wooden table, a farewell letter and winter window in background.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-2bae1f32-abd8-4d3d-836d-73a86c9443b7.png",
+      "file": "images/game/our-stage/stories/chapter-again.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "chapter-still",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers reaching for each other across a small bridge under a dawn sky; a trail of music notes connecting the past to the sunrise.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-ae437a8e-4a95-4160-84a3-3e0c07506c7f.png",
+      "file": "images/game/our-stage/stories/chapter-still.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "chapter-first-again",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers in pale blue and white performing joyfully beneath twenty little star lights, fresh morning blue concert stage, flower bouquets.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-e19893fa-f7f2-4f00-8ff5-d4c0a92c73cf.png",
+      "file": "images/game/our-stage/stories/chapter-first-again.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "event-ost",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers next to a retro television showing a tiny drama scene and a golden music trophy, warm 2006 award celebration.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-d7909f00-9016-4544-93a8-5bbc2646acec.png",
+      "file": "images/game/our-stage/stories/event-ost.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "event-rookie",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers proudly holding a first golden record award together under warm gold spotlights, a little confetti, rookie celebration.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-09364cb9-7654-46e7-aa45-71ff19956d9f.png",
+      "file": "images/game/our-stage/stories/event-rookie.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "event-copyright",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers beside a music manuscript protected by a heart shaped shield, holding a framed appointment certificate, calm blue public ceremony.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-1a2d1394-a6b1-4e52-a67a-b82a6234438d.png",
+      "file": "images/game/our-stage/stories/event-copyright.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "event-netiquette",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers gathered at a cheerful desktop computer, exchanging kind heart shaped chat bubbles, friendly internet etiquette campaign.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-71763d24-db2f-4210-9091-7fcaeb2c0357.png",
+      "file": "images/game/our-stage/stories/event-netiquette.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "event-digital",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers raising a crystal music trophy with a retro mobile phone and tiny musical notes, pink and gold digital music award ceremony.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-4e95f318-0216-4d67-8a17-cde71147f064.png",
+      "file": "images/game/our-stage/stories/event-digital.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "event-seoul",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: Three tiny singers at a winter mountain venue with a gold star trophy, snow outside tall windows and warm celebratory stage inside.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-96e8edcf-57ee-4cc2-88a9-79803294699e.png",
+      "file": "images/game/our-stage/stories/event-seoul.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "event-bcm",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: One black-haired Gyuri character in a neat navy formal dress holding an appointment certificate at a coastal Busan content market with film camera and harbor bridge silhouette. No other people.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-05834b70-de21-461a-ab10-5e353882964c.png",
+      "file": "images/game/our-stage/stories/event-bcm.png",
+      "method": "Built-in image_gen"
+    },
+    {
+      "id": "event-kairos",
+      "prompt": "Create ONE square story illustration for the SeeYa fan game, not a collage. Match the reference chunky low-resolution 2D pixel art: large simple heads, square dot eyes, tiny bodies, hard aligned pixel edges, flat limited 2-3 tone shading. No smooth anime drawing, gradients, text, numerals, logos, borders or badges. This is a symbolic fan-game illustration, not a recreation of an actual photo. When three singers appear, left Boram long red hair, center Gyuri long black hair, right Yeonji long brown hair. Fill the square with a distinct readable composition. Scene: One black-haired Gyuri character in an elegant ivory evening dress holding a crystal acting award beside a film camera, burgundy velvet curtains and gold stage lights. No other people.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-a462d1a1-c622-456b-9b06-f6ff2ed977de.png",
+      "file": "images/game/our-stage/stories/event-kairos.png",
+      "method": "Built-in image_gen"
+    }
+  ],
+  "stageShop": [
+    {
+      "id": "stage-sugarman",
+      "name": "슈가맨3 · 다시 만난 화이트",
+      "type": "STAGE STYLE",
+      "price": 60,
+      "url": "https://www.segye.com/newsView/20200223507996",
+      "date": "2020.02.21",
+      "prompt": "Create ONE transparent PNG sprite lineup, exactly THREE full-body chunky pixel characters. First image is approved game art: match its coarse square pixels, dot eyes, tiny bodies, flat 2-3 tone shading. Second image is wardrobe reference only. No smooth anime, no scenery, no text, no shadows. Each sprite centered in its own equal-width third with generous transparent gaps, same baseline and arms down. Fixed LEFT Boram, CENTER Gyuri, RIGHT Yeonji, unlike photo order. Adapt 2020 Sugarman white costumes: LEFT Boram (photo center) light brown hair tied low with front wisps, white off-shoulder ruffled long sleeve short dress, white shoes. CENTER Gyuri (photo left) long brown hair with bangs, white long-sleeve flared mini dress with small waist belt, white shoes. RIGHT Yeonji (photo right) long burgundy red straight hair, white tailored double-breasted jacket mini dress, white thigh-high boots.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-aaa397ed-2459-481b-95fc-c396401fa52e.png",
+      "note": "방송 무대의 의상과 헤어를 참고한 도트 재해석입니다. 의상과 헤어가 함께 바뀌며, 작은 장식과 보이지 않는 부분은 단순화했어요.",
+      "image": "/images/game/our-stage/pixel-stage-sugarman.png",
+      "width": 1774,
+      "height": 887,
+      "members": [
+        [
+          17,
+          574
+        ],
+        [
+          592,
+          591
+        ],
+        [
+          1184,
+          572
+        ]
+      ],
+      "method": "Built-in image_gen",
+      "identitySource": "https://www.dispatch.co.kr/2066191",
+      "mappingNote": "슈가맨3 남규리의 흰 칼라 의상과 방송 자막을 대조했습니다. 생성본은 실사 디테일을 단순화한 시안입니다."
+    },
+    {
+      "id": "stage-seasons",
+      "name": "더 시즌즈 · 블랙 앤 화이트",
+      "type": "STAGE STYLE",
+      "price": 90,
+      "url": "https://enews.imbc.com/News/RetrieveNewsInfo/506622",
+      "date": "2026.05.29",
+      "prompt": "Create ONE transparent PNG sprite lineup, exactly THREE full-body chunky pixel characters. First image is approved game art: match its coarse square pixels, dot eyes, tiny bodies, flat 2-3 tone shading. Second image is wardrobe reference only. No smooth anime, no scenery, no text, no shadows. Each sprite centered in its own equal-width third with generous transparent gaps, same baseline and arms down. Fixed LEFT Boram, CENTER Gyuri, RIGHT Yeonji, unlike photo order. Adapt 2026 The Seasons black/white costumes: LEFT Boram (photo center) long straight brown hair side part, fitted white lace blouse with flared cuffs and scarf flower, black mini skirt, black shoes. CENTER Gyuri (photo left) long black wavy hair with short bangs, white blouse under black vest with black pleated skirt, black shoes. RIGHT Yeonji (photo right) long dark brown hair in low side ponytail, white high-neck ruffled peplum blouse and black wide-leg trousers, black shoes.",
+      "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-94ee5925-92bc-4a5c-9ddb-cdcc10e82822.png",
+      "note": "방송 무대의 의상과 헤어를 참고한 도트 재해석입니다. 의상과 헤어가 함께 바뀌며, 작은 장식과 보이지 않는 부분은 단순화했어요.",
+      "image": "/images/game/our-stage/pixel-stage-seasons.png",
+      "width": 1774,
+      "height": 887,
+      "members": [
+        [
+          592,
+          591
+        ],
+        [
+          0,
+          591
+        ],
+        [
+          1183,
+          575
+        ]
+      ],
+      "method": "Built-in image_gen",
+      "identitySource": "https://enter.etoday.co.kr/news/view/297930",
+      "mappingNote": "생성본의 중앙 캐릭터(검정 조끼)는 이보람, 왼쪽 캐릭터(레이스 블라우스)는 남규리입니다. members는 실제 멤버 순서 br/gr/yj로 좌표를 연결합니다."
+    }
+  ],
+  "modularWardrobe": {
+    "method": "Built-in image_gen; original PNG copied unchanged. Runtime SVG composes transparent head/hair behind body.",
+    "assets": [
+      {
+        "id": "base",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-6e6e8ac1-ba3b-460c-8f33-97ff0d550ce5.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns retain left red-haired Boram, center black-haired Gyuri, right brown-haired Yeonji. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Top-row sprite bounding regions are entirely above the horizontal halfway line; bottom-row entirely below it. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "first-mind",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-546a1f3a-cd2d-4d5d-a7a5-2bc2af4ee03c.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "lovely-sweet-heart",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-3b68b804-9e6b-425a-bf07-a509efda9ea9.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "california-dream",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-415684f9-2fb2-4fa5-a43a-a1004c3f7ecc.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "brilliant-change",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-9212086d-b788-4ac8-9c79-923da468b9ff.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "rebloom",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-607214b8-41cf-40d2-a97b-caf8baf278a9.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "see-you-again",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-f007f9fb-019d-4f44-a93a-88932431cc25.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "still-here",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-900e141d-7cf1-4a0d-9d75-962280359b20.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "first-again",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-0c577196-d637-440f-abaa-c7155eb796ea.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "stage-sugarman",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-558782e6-dbdd-45a2-bca3-00a97ca6062f.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      },
+      {
+        "id": "stage-seasons",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-b94b277d-95dd-4a71-8745-b563d6aa72f9.png",
+        "prompt": "Create a transparent modular sprite atlas from this pixel character reference. Exactly 3 columns and 2 rows, six separate sprites with generous transparent gaps. TOP ROW: only the three heads with faces and ALL their hair, no torso/arms/clothes/legs; preserve long hair tails extending down beside an empty transparent torso area. BOTTOM ROW: only their three headless bodies from neck to shoes with arms and clothes, absolutely NO hair anywhere. Columns must retain exactly the left, center, right characters of the reference; do not change their hair colors or styles. Top and bottom are separate pieces for later code compositing. Heads very large and bodies tiny, identical to reference. Keep every existing hairstyle/color and outfit exactly. Flat coarse pixel edges, dot eyes, no smooth shading. No text, borders, checkerboard or background. Use a clean transparent background without any colored halos or glow. Each item centered within its cell, same size between columns."
+      }
+    ]
+  },
+  "periodStoryIllustrations": {
+    "method": "Built-in image_gen edits; originals preserved; no raster postprocessing",
+    "assets": [
+      {
+        "id": "chapter-lovely",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-56c3e976-c5e3-4142-b0fb-a8dd6ee2ae87.png",
+        "prompt": "Edit ONLY the hairstyles and outfits of the THREE people in image 1. Keep its pixel-art scene, composition, props, poses, expressive faces, proportions and chunky pixels. Replace hair and clothes with image 2 exactly by corresponding LEFT CENTER RIGHT character. All three must use the album-era hairstyles/colors and clothes from image 2, not their old red/black/brown default hair. Preserve scene lighting but retain wardrobe colors. No text. Full opaque square scene.",
+        "style": "lovely-sweet-heart",
+        "file": "images/game/our-stage/stories/chapter-lovely-period.png"
+      },
+      {
+        "id": "chapter-california",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-8a984f63-57bf-4e8c-9574-29b54b979937.png",
+        "prompt": "Edit ONLY the hairstyles and outfits of the THREE people in image 1. Keep its pixel-art scene, composition, props, poses, expressive faces, proportions and chunky pixels. Replace hair and clothes with image 2 exactly by corresponding LEFT CENTER RIGHT character. All three must use the album-era hairstyles/colors and clothes from image 2, not their old red/black/brown default hair. Preserve scene lighting but retain wardrobe colors. No text. Full opaque square scene.",
+        "style": "california-dream",
+        "file": "images/game/our-stage/stories/chapter-california-period.png"
+      },
+      {
+        "id": "chapter-brilliant",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-89a59631-f617-4c13-8cde-37f0c0d50b47.png",
+        "prompt": "Edit ONLY the hairstyles and outfits of the THREE people in image 1. Keep its pixel-art scene, composition, props, poses, expressive faces, proportions and chunky pixels. Replace hair and clothes with image 2 exactly by corresponding LEFT CENTER RIGHT character. All three must use the album-era hairstyles/colors and clothes from image 2, not their old red/black/brown default hair. Preserve scene lighting but retain wardrobe colors. No text. Full opaque square scene.",
+        "style": "brilliant-change",
+        "file": "images/game/our-stage/stories/chapter-brilliant-period.png"
+      },
+      {
+        "id": "chapter-again",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-fd6fd970-791a-4b8a-8364-489da19da6a2.png",
+        "prompt": "Edit ONLY the hairstyles and outfits of the THREE people in image 1. Keep its pixel-art scene, composition, props, poses, expressive faces, proportions and chunky pixels. Replace hair and clothes with image 2 exactly by corresponding LEFT CENTER RIGHT character. All three must use the album-era hairstyles/colors and clothes from image 2, not their old red/black/brown default hair. Preserve scene lighting but retain wardrobe colors. No text. Full opaque square scene.",
+        "style": "see-you-again",
+        "file": "images/game/our-stage/stories/chapter-again-period.png"
+      },
+      {
+        "id": "chapter-still",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-a79dae29-c3a7-4508-aa27-8e69ba0d6c01.png",
+        "prompt": "Edit ONLY the hairstyles and outfits of the THREE people in image 1. Keep its pixel-art scene, composition, props, poses, expressive faces, proportions and chunky pixels. Replace hair and clothes with image 2 exactly by corresponding LEFT CENTER RIGHT character. All three must use the album-era hairstyles/colors and clothes from image 2, not their old red/black/brown default hair. Preserve scene lighting but retain wardrobe colors. No text. Full opaque square scene.",
+        "style": "still-here",
+        "file": "images/game/our-stage/stories/chapter-still-period.png"
+      },
+      {
+        "id": "chapter-first-again",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-d835c893-2007-4172-a15e-4ac1f621e1f4.png",
+        "prompt": "Edit ONLY the hairstyles and outfits of the THREE people in image 1. Keep its pixel-art scene, composition, props, poses, expressive faces, proportions and chunky pixels. Replace hair and clothes with image 2 exactly by corresponding LEFT CENTER RIGHT character. All three must use the album-era hairstyles/colors and clothes from image 2, not their old red/black/brown default hair. Preserve scene lighting but retain wardrobe colors. No text. Full opaque square scene.",
+        "style": "first-again",
+        "file": "images/game/our-stage/stories/chapter-first-again-period.png"
+      },
+      {
+        "id": "event-ost",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-9364de17-990f-48c5-ac8a-770c6920de5e.png",
+        "prompt": "Edit costumes and hairstyles in image1 using reference2. Keep image1 scene, composition, props, cute coarse pixel art and proportions. Fixed LEFT Boram: photo left woman, brown low ponytail with fringe, white turtleneck, short red crocheted bolero, red plaid skirt. CENTER Gyuri: photo center woman long dark brown waves, red collared dress with belt. RIGHT Yeonji: photo lower-right woman brown layered hair side bangs, red vest over black turtleneck and dark trousers. These are 2006 promotional outfits, not necessarily ceremony outfits. No text, no photorealism. Full opaque square scene.",
+        "ref": "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/wardrobe-refs/event-ost.jpg",
+        "file": "images/game/our-stage/stories/event-ost-period.png"
+      },
+      {
+        "id": "event-rookie",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-2f7d06b4-dd0e-4ef2-8f07-93071b33c486.png",
+        "prompt": "Edit only costumes and hairstyles in image1 using historical photo2 as clothing reference. Keep image1 scene, poses, cute chunky pixel style, very large heads tiny bodies, props. Fixed scene order LEFT Boram CENTER Gyuri RIGHT Yeonji. Use bottom-left panel three women in photo. LEFT Boram = middle woman of that panel: black sleeveless gown and dark brown updo with fringe. CENTER Gyuri = right woman of that panel: white sleeveless long dress with brown/gold vest-like embellished bodice, long brown waves. RIGHT Yeonji = left woman of that panel: black sleeveless gown with metallic gold patterned bodice, long straight brown hair with side fringe. No text. Do not add real people from photo. Replace default red hair with actual period hair colors. Full opaque square illustration.",
+        "ref": "event-rookie-0.jpg",
+        "file": "images/game/our-stage/stories/event-rookie-period.png"
+      },
+      {
+        "id": "event-copyright",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-c3d95635-5a01-4abc-b8b1-f3c2ba248b9a.png",
+        "prompt": "Edit only costumes and hairstyles in image1 using historical photo2 as clothing reference. Keep image1 scene, poses, cute chunky pixel style, very large heads tiny bodies, props. Fixed scene order LEFT Boram CENTER Gyuri RIGHT Yeonji. LEFT Boram is left woman in photo: brown ponytail/fringe, pale blue vest over white short dress. CENTER Gyuri is middle woman: long brown wavy half-up hair, pale pink vest over white short dress. RIGHT Yeonji is right woman: dark brown shoulder-length fringe, ivory vest over white short dress. No text. Do not add real people from photo. Replace default red hair with actual period hair colors. Full opaque square illustration.",
+        "ref": "event-copyright-0.jpg",
+        "file": "images/game/our-stage/stories/event-copyright-period.png"
+      },
+      {
+        "id": "event-netiquette",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-60d49315-ef14-415e-a242-494d78403205.png",
+        "prompt": "Edit only costumes and hairstyles in image1 using historical photo2 as clothing reference. Keep image1 scene, poses, cute chunky pixel style, very large heads tiny bodies, props. Fixed scene order LEFT Boram CENTER Gyuri RIGHT Yeonji. LEFT Boram is left woman in photo: long dark hair with straight bangs, grey long blazer black lapels over silver dress. CENTER Gyuri is center woman: long wavy dark hair with fringe, pale grey cropped blazer over black top and black pants. RIGHT Yeonji is right woman: long brown hair with straight bangs, light grey long trench coat over black top and black pants. No text. Do not add real people from photo. Replace default red hair with actual period hair colors. Full opaque square illustration.",
+        "ref": "event-netiquette.jpg",
+        "file": "images/game/our-stage/stories/event-netiquette-period.png"
+      },
+      {
+        "id": "event-digital",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-7a76a90e-43fa-42f4-b363-aa90563e4159.png",
+        "prompt": "Edit only costumes and hairstyles in image1 using historical photo2 as clothing reference. Keep image1 scene, poses, cute chunky pixel style, very large heads tiny bodies, props. Fixed scene order LEFT Boram CENTER Gyuri RIGHT Yeonji. Use ONLY bottom three women of photo. LEFT Boram = bottom left: long straight brown hair with bangs, silver-grey V-neck sleeveless empire-waist long dress. CENTER Gyuri = bottom center: long brown waves and side-swept bangs, pale silver gathered sleeveless gown. RIGHT Yeonji = bottom right: long brown waves side-swept bangs, charcoal strapless dress. No text. Do not add real people from photo. Replace default red hair with actual period hair colors. Full opaque square illustration.",
+        "ref": "event-digital.jpg",
+        "file": "images/game/our-stage/stories/event-digital-period.png"
+      },
+      {
+        "id": "event-seoul",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-752dbadf-bd39-43e8-85dc-5fcbc15cb7f2.png",
+        "prompt": "Edit costumes and hairstyles in image1 using reference2. Keep image1 scene, composition, props, cute coarse pixel art and proportions. Three people: match photo2 left/center/right hair and wardrobe exactly. This is album-era clothing reinterpretation rather than an exact ceremony. No text, no photorealism. Full opaque square scene.",
+        "ref": "C:/Users/sunil/.codex/visualizations/2026/09/09/01a08667-fbd8-7f31-9126-e64a1c488979/seeya-fanletters-release/images/game/our-stage/pixel-california-dream.png",
+        "file": "images/game/our-stage/stories/event-seoul-period.png"
+      },
+      {
+        "id": "event-bcm",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-bf70aab1-2e07-42f7-bea0-6867f2afe867.png",
+        "prompt": "Edit costumes and hairstyles in image1 using reference2. Keep image1 scene, composition, props, cute coarse pixel art and proportions. Only one woman Gyuri, matching long medium brown hair and pale lilac/white long sleeved blouse worn by woman in bottom-left of reference2, dark simple skirt. This is 2011 drama-era wardrobe, not an exact ceremony outfit. No text, no photorealism. Full opaque square scene.",
+        "ref": "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/wardrobe-refs/core-gr-0.jpg",
+        "file": "images/game/our-stage/stories/event-bcm-period.png"
+      },
+      {
+        "id": "event-kairos",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-a7678643-d705-42fb-a860-0f2c2014d191.png",
+        "prompt": "Edit costumes and hairstyles in image1 using reference2. Keep image1 scene, composition, props, cute coarse pixel art and proportions. Only one woman Gyuri: long dark brown side-parted hair swept over her right shoulder, ivory strapless straight-neck gown and simple necklace, white face mask as seen in reference2. Keep trophy/pose and scene. No text, no photorealism. Full opaque square scene.",
+        "ref": "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/wardrobe-refs/event-kairos.jpg",
+        "file": "images/game/our-stage/stories/event-kairos-period.png"
+      },
+      {
+        "id": "core",
+        "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-81fae080-bd61-4062-be0e-d1eb9b8e684f.png",
+        "prompt": "Edit this EXACT 4-column by 2-row pixel story atlas. Keep all 8 panels at same equal square sizes, positions, scene compositions, props, coarse chunky pixels and dot-eye faces. Only change clothing/hairstyles by panel as specified. No text. Top row panels left to right: (1) preserve rehearsal scene as fictional default characters; (2) debut stage trio wear image2 white debut outfits/hair, left Boram short lightbrown, center Gyuri black bob white hood, right Yeonji black braids; (3) scrapbook tiny photo also same white debut outfits/hair; (4) solo Yeonji match image3 official 2018 video thumbnail: light brown tied-back hair, white high-neck long sleeved blouse, keep mask prop and microphone. Bottom row left to right: (5) solo Gyuri long mediumbrown hair, pale lilac long sleeve blouse from image4 drama still; keep film scene; (6) solo Boram dark brown updo with bangs and pale pink long sleeve blouse as in 2022 GayaG showcase, keep headphones studio; (7) reunion trio use image5 white Sugarman costumes and hair left center right; (8) leave fictional concert finale default outfits unchanged. Absolutely maintain 4x2 atlas layout, not 3x3. Wide 2:1 aspect.",
+        "file": "images/game/our-stage/pixel-stories-period.png"
+      }
+    ],
+    "unconfirmedEventOutfits": [
+      "event-ost",
+      "event-seoul",
+      "event-bcm"
+    ],
+    "coreReferences": {
+      "E02_E03": "The First Mind cover",
+      "E04": "https://www.youtube.com/watch?v=VX4z0syPoWw",
+      "E05": "https://www.bntnews.co.kr/article/view/bnt201105200353",
+      "E06": "https://www.youtube.com/watch?v=cojgPoISAf0",
+      "E07": "https://tv.jtbc.co.kr/clip/pr10011122/pm10055652/vo10354827/view"
+    },
+    "symbolicScene": "Rebloom has no characters to avoid depicting an incorrect historical lineup."
+  },
+  "memberCardbook": {
+    "date": "2026-11-15",
+    "method": "Code-native pixel frames reusing approved modular wardrobe and period story illustrations. Card artwork is fixed, independent of current costume. No new raster generation.",
+    "cards": {
+      "album": 24,
+      "story": 8,
+      "finale": 3
+    },
+    "rebloom": "Current trio costume reinterpretation, explicitly labeled; not historical lineup.",
+    "storyAtlas": "Nested SVG viewBox crops clip each panel, including non-square containers."
+  },
+  "stageMotion": {
+    "date": "2026-11-15",
+    "method": "CSS steps on approved modular sprites: footwork, head nod, microphone lift; code-native pixel microphones, moving beams, confetti and lightstick crowd.",
+    "lightstick": "Pixel reinterpretation of the cream globe/ear-shaped fan lightstick motif already documented in pixel-badges, not a product photograph.",
+    "finale": "Fictional game stage, 54 crowd lightsticks; does not claim to reproduce a historical concert.",
+    "accessibility": "prefers-reduced-motion disables movement; scene hold and next-song controls; close cancels timers."
+  },
+  "achievementBadgesV2": {
+    "date": "2026-11-15",
+    "tool": "image_gen",
+    "method": "Two original transparent 6 by 4 sprite atlases, one unique motif per achievement ID, nested SVG crops; existing reward IDs preserved.",
+    "prompts": [
+      "Create a pixel art sprite atlas of EXACTLY 24 DIFFERENT collectible enamel game badges, exact 6 columns x 4 rows uniform grid. 1536x1024 landscape. Transparent background. Each badge centered within its own equal 256x256 square cell, with 25px empty margin. Crisp chunky square pixels, dark plum outlines, flat cream/pastel colors, no glow outside badge, no text, no numbers. Mix round, square, diamond, ticket, shield and cutout silhouette shapes. Every object must be visibly different even tiny. Row1 left to right: 1 white lily with a small key, 2 open white music notebook with CD, 3 white microphone with gold laurel, 4 pink heart-shaped envelope, 5 pink heart-shaped CD case, 6 pink winged heart trophy. Row2: 1 sunny palm-tree postcard, 2 turquoise cassette and seashell, 3 sunset stage with palm silhouettes, 4 yellow lightning bolt diamond, 5 purple disco ball and CD, 6 black-red dance shoes with spotlight. Row3: 1 green seed sprout in hexagon, 2 open flower with vinyl record center, 3 green blooming vine crown, 4 blue farewell envelope, 5 blue ribbon-bound stack of albums, 6 blue hourglass with silver stars. Row4: 1 two linked golden rings with small pink bud, 2 stitched patch of three joining hands, 3 three pink lightsticks fanned out, 4 sunrise over open cream door, 5 cream album box with golden butterfly, 6 navy concert ticket with gold crown. Cohesive cute Korean pixel game inventory. No characters, no letters. Exactly 24 separated badges, equal-sized cells.",
+      "Create a pixel art sprite atlas of EXACTLY 24 DIFFERENT collectible game badges, exact 6 columns x 4 rows uniform grid. 1536x1024 landscape. Transparent background. Each badge centered in equal 256x256 square cell, with 25px clear margin. Crisp chunky pixels, dark plum outlines, flat cream/pastel colors. No glow outside icons, no text or numbers. Distinct round, square, ticket, shield, ribbon and cutout shapes. Row1 left to right: 1 small silver tuning fork on rose round pin, 2 framed miniature purple stage poster with three spotlights, 3 three silver microphones on lilac shield, 4 three linked gold star charms on blue ribbon, 5 cream dog-eared globe lightstick on pink round pin, 6 blue metronome. Row2: 1 red headphones with musical notes, 2 golden piano keyboard wings, 3 single blue CD, 4 three multicolored vinyl records, 5 purple record cabinet full of discs, 6 pink pencil writing one heart on paper. Row3: 1 stack of three love envelopes tied by ribbon, 2 pink mailbox filled with letters, 3 gold constellation crown with four seasonal leaves, 4 filmstrip wrapped around silver musical note, 5 gold shooting-star rookie trophy, 6 cream copyright scroll with keyhole seal (no letters). Row4: 1 blue computer monitor with pink heart and speech bubble, 2 gold CD on black award pedestal, 3 snowflake on golden laurel shield, 4 blue harbor bridge with film clapperboard, 5 golden actress trophy with red theater curtain, 6 open scrapbook with a path of stars. Cohesive Korean pixel game inventory. Exactly 24 separated icons in 6x4 equal grid, no labels, no words, no humans."
+    ],
+    "files": [
+      "images/game/our-stage/pixel-album-achievements-v2.png",
+      "images/game/our-stage/pixel-activity-achievements-v2.png"
+    ],
+    "originals": [
+      "exec-f03df5a5-80a7-46e2-bda5-f3c9588d3eda.png",
+      "exec-d1e4d4a4-17d8-40c3-b889-fe97bd9fe5da.png"
+    ]
+  }
+}

@@ -1,0 +1,486 @@
+[
+  {
+    "id": "chapter-lovely",
+    "album": "lovely-sweet-heart",
+    "kind": "album",
+    "title": "사랑의 인사를 건네던 계절",
+    "date": "2007",
+    "body": [
+      "2집 Lovely Sweet Heart는 ‘사랑의 인사’를 시작으로 ‘결혼할까요’, ‘얼음인형’ 등을 담았습니다. 1집 이후 씨야의 노래가 한 걸음 더 넓어진 시기예요.",
+      "열세 곡을 따라가며 한 앨범 안에서도 달라지는 목소리와 분위기를 떠올려보세요."
+    ],
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "checkedAt": "2026-11-15",
+    "minTracks": 0,
+    "icon": 2,
+    "quiz": {
+      "question": "Lovely Sweet Heart의 첫 곡과 그다음 곡은?",
+      "correct": "사랑의 인사 → 결혼할까요",
+      "wrong": [
+        "결혼할까요 → 사랑의 인사",
+        "여인의 향기 → 구두"
+      ],
+      "explanation": "2집 Lovely Sweet Heart는 ‘사랑의 인사’를 시작으로 ‘결혼할까요’, ‘얼음인형’ 등을 담았습니다. 1집 이후 씨야의 노래가 한 걸음 더 넓어진 시기예요.",
+      "level": 2,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/chapter-lovely-period.png",
+    "illustrationNote": "앨범 재킷의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "wardrobeStatus": "album-reference",
+    "subject": "씨야",
+    "summary": "씨야가 ‘사랑의 인사’와 함께 새로운 계절을 열었던 2집 활동 이야기입니다."
+  },
+  {
+    "id": "chapter-california",
+    "album": "california-dream",
+    "kind": "album",
+    "title": "각자의 노래가 모인 여행",
+    "date": "2008",
+    "body": [
+      "California Dream은 ‘슬픈 발걸음’과 ‘그래도 좋아’, 멤버들이 참여했던 OST와 협업곡을 함께 담았습니다.",
+      "남규리의 영화·시트콤 OST, 이보람의 ‘풀하우스’ OST, 김연지와 제아의 노래가 씨야의 앨범 안에서 만납니다. 재킷은 LA와 라스베가스 등지에서 촬영했어요."
+    ],
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "checkedAt": "2026-11-15",
+    "minTracks": 0,
+    "icon": 2,
+    "quiz": {
+      "question": "California Dream의 특징으로 맞는 것은?",
+      "correct": "멤버들의 OST·협업곡도 함께 담았다",
+      "wrong": [
+        "모든 곡이 반주곡이다",
+        "전곡이 4집의 라이브 버전이다"
+      ],
+      "explanation": "California Dream은 ‘슬픈 발걸음’과 ‘그래도 좋아’, 멤버들이 참여했던 OST와 협업곡을 함께 담았습니다.",
+      "level": 2,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/chapter-california-period.png",
+    "illustrationNote": "앨범 재킷의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "wardrobeStatus": "album-reference",
+    "subject": "씨야",
+    "summary": "씨야의 California Dream 수록곡과 겨울의 활동을 돌아봅니다."
+  },
+  {
+    "id": "chapter-brilliant",
+    "album": "brilliant-change",
+    "kind": "album",
+    "title": "새로운 비트 위의 세 목소리",
+    "date": "2008",
+    "body": [
+      "3집 Brilliant Change의 ‘Hot Girl’에서 씨야는 일렉트로 하우스 비트의 댄스곡에 도전했습니다.",
+      "당시 인터뷰에서는 다른 장르와 춤을 보여주고 싶었다고 설명했어요. 익숙한 가창력에 새로운 무대 표현을 더한 활동이었습니다."
+    ],
+    "source": "https://www.starnewskorea.com/music/2008/10/01/2008100115361214204",
+    "checkedAt": "2026-11-15",
+    "minTracks": 0,
+    "icon": 2,
+    "quiz": {
+      "question": "3집 Hot Girl 활동의 변화와 맞는 설명은?",
+      "correct": "일렉트로 하우스와 춤에 도전했다",
+      "wrong": [
+        "전곡을 무반주로 발표했다",
+        "기존 앨범의 반주만 모았다",
+        "영화 OST만 발표했다"
+      ],
+      "explanation": "3집 Brilliant Change의 ‘Hot Girl’에서 씨야는 일렉트로 하우스 비트의 댄스곡에 도전했습니다.",
+      "level": 3,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/chapter-brilliant-period.png",
+    "illustrationNote": "앨범 재킷의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "wardrobeStatus": "album-reference",
+    "subject": "씨야",
+    "summary": "씨야가 ‘Hot Girl’로 춤과 새로운 음악 스타일에 도전한 3집 이야기입니다."
+  },
+  {
+    "id": "chapter-rebloom",
+    "album": "rebloom",
+    "kind": "album",
+    "title": "다시 피어난다는 이름",
+    "date": "2009",
+    "body": [
+      "Rebloom은 수미가 합류한 뒤 발표한 앨범입니다. 앨범명에는 꽃이 다시 피어난다는 뜻이 담겼고, 타이틀은 이민수가 작곡한 ‘그 놈 목소리’예요.",
+      "이 시기 활동 멤버는 김연지·이보람·수미였습니다. 게임에서 입어보는 현재 세 멤버의 의상은 재해석 시안이며, 실제 당시 모습과 구분됩니다."
+    ],
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "checkedAt": "2026-11-15",
+    "minTracks": 0,
+    "icon": 2,
+    "quiz": {
+      "question": "Rebloom의 역사와 게임 의상에 대한 설명은?",
+      "correct": "수미 합류 시기이며 게임 의상은 현재 세 멤버의 재해석이다",
+      "wrong": [
+        "남규리가 새 멤버로 합류한 앨범이다",
+        "4집을 달리 부르는 이름이다",
+        "첫 정규 앨범이다"
+      ],
+      "explanation": "Rebloom은 수미가 합류한 뒤 발표한 앨범입니다. 앨범명에는 꽃이 다시 피어난다는 뜻이 담겼고, 타이틀은 이민수가 작곡한 ‘그 놈 목소리’예요.",
+      "level": 3,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/chapter-rebloom.png",
+    "subject": "씨야 · 이보람·김연지·수미",
+    "summary": "이보람·김연지·수미가 함께한 Rebloom의 발매 기록입니다."
+  },
+  {
+    "id": "chapter-again",
+    "album": "see-you-again",
+    "kind": "album",
+    "title": "노래로 묶어 건넨 인사",
+    "date": "2011",
+    "body": [
+      "See You Again에는 ‘내겐 너무 멋진 그대’, ‘The Last’와 이전 활동곡들이 함께 담겼습니다.",
+      "1집의 ‘여인의 향기’, 2집의 ‘사랑의 인사’, 3집의 ‘가니’, Rebloom의 ‘그 놈 목소리’까지 이어지는 목록은 그동안의 노래를 돌아보게 합니다."
+    ],
+    "source": "https://music.bugs.co.kr/album/259909",
+    "checkedAt": "2026-11-15",
+    "minTracks": 0,
+    "icon": 2,
+    "quiz": {
+      "question": "See You Again의 구성을 바르게 설명하면?",
+      "correct": "새 곡과 이전 활동곡을 함께 담았다",
+      "wrong": [
+        "전곡이 반주곡이다",
+        "4집 신곡만 다시 실었다",
+        "California Dream 곡만 실었다"
+      ],
+      "explanation": "See You Again에는 ‘내겐 너무 멋진 그대’, ‘The Last’와 이전 활동곡들이 함께 담겼습니다.",
+      "level": 4,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/chapter-again-period.png",
+    "illustrationNote": "앨범 재킷의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://www.melon.com/album/detail.htm?albumId=1150052",
+    "wardrobeStatus": "album-reference",
+    "subject": "씨야",
+    "summary": "새 곡과 지난 활동곡을 함께 담은 See You Again의 이야기입니다."
+  },
+  {
+    "id": "chapter-still",
+    "album": "still-here",
+    "kind": "album",
+    "title": "그럼에도, 다시 함께",
+    "date": "2026",
+    "body": [
+      "‘그럼에도, 우린’은 2026년 정규 4집에 앞서 공개된 곡입니다. 이후 First, Again에도 보컬곡과 반주 버전이 실렸어요.",
+      "오래된 노래를 모으던 여정이 새로운 노래로 이어집니다. 다시 함께 노래하는 세 사람에게 남기고 싶은 한마디를 떠올려보세요."
+    ],
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "checkedAt": "2026-11-15",
+    "minTracks": 0,
+    "icon": 2,
+    "quiz": {
+      "question": "2026년 곡과 앨범의 순서는?",
+      "correct": "그럼에도, 우린 선공개 → First, Again",
+      "wrong": [
+        "First, Again → 그럼에도, 우린 선공개",
+        "Rebloom → The First Mind",
+        "First, Again → See You Again"
+      ],
+      "explanation": "‘그럼에도, 우린’은 2026년 정규 4집에 앞서 공개된 곡입니다. 이후 First, Again에도 보컬곡과 반주 버전이 실렸어요.",
+      "level": 4,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/chapter-still-period.png",
+    "illustrationNote": "앨범 재킷의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://www.melon.com/album/detail.htm?albumId=13299661",
+    "wardrobeStatus": "album-reference",
+    "subject": "씨야",
+    "summary": "2026년 다시 함께 노래한 씨야의 ‘그럼에도, 우린’을 만납니다."
+  },
+  {
+    "id": "chapter-first-again",
+    "album": "first-again",
+    "kind": "album",
+    "title": "처음처럼, 또 한 번의 시작",
+    "date": "2026",
+    "body": [
+      "First, Again은 데뷔 20주년을 기념한 정규 4집입니다. 타이틀곡 ‘Stay’를 포함해 보컬곡 9개와 반주곡 2개가 담겼습니다.",
+      "앨범 소개는 세 멤버의 작사·작곡 참여와 넓어진 음악적 표현을 설명합니다. 마지막 페이지에서 끝나는 대신, 앞으로 쌓일 노래를 기다리는 장이에요."
+    ],
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "checkedAt": "2026-11-15",
+    "minTracks": 0,
+    "icon": 2,
+    "quiz": {
+      "question": "4집의 소개와 수록 구성이 모두 맞는 것은?",
+      "correct": "20주년 앨범 · Stay 타이틀 · 반주곡 2개",
+      "wrong": [
+        "10주년 앨범 · Hot Girl 타이틀 · 반주곡 2개",
+        "20주년 앨범 · 전곡 반주곡",
+        "20주년 앨범 · 그 놈 목소리 타이틀"
+      ],
+      "explanation": "First, Again은 데뷔 20주년을 기념한 정규 4집입니다. 타이틀곡 ‘Stay’를 포함해 보컬곡 9개와 반주곡 2개가 담겼습니다.",
+      "level": 5,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/chapter-first-again-period.png",
+    "illustrationNote": "앨범 재킷의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "wardrobeStatus": "album-reference",
+    "subject": "씨야",
+    "summary": "씨야의 데뷔 20주년 정규 4집 First, Again을 펼쳐봅니다."
+  },
+  {
+    "id": "event-ost",
+    "album": "first-mind",
+    "kind": "event",
+    "title": "드라마 밖에서도 빛난 노래",
+    "date": "2006",
+    "body": [
+      "씨야는 2006년 Mnet KM 뮤직 페스티벌에서 최우수 OST상을 받았습니다.",
+      "드라마와 함께 기억된 노래가 시상식의 기록으로도 남았어요. 데뷔하던 해의 또 하나의 발자취입니다."
+    ],
+    "source": "https://www.starnewskorea.com/music/2006/11/25/2006112518150646752",
+    "checkedAt": "2026-11-15",
+    "minTracks": 6,
+    "icon": 1,
+    "quiz": {
+      "question": "2006년 MKMF에서 씨야가 받은 부문은?",
+      "correct": "최우수 OST상",
+      "wrong": [
+        "최우수 록음악상",
+        "최우수 댄스음악상"
+      ],
+      "explanation": "씨야는 2006년 Mnet KM 뮤직 페스티벌에서 최우수 OST상을 받았습니다.",
+      "level": 1,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/event-ost-period.png",
+    "illustrationNote": "당시 활동 의상으로 재구성한 장면입니다. 이 행사에서 입은 의상은 확인 전입니다.",
+    "wardrobeSource": "https://www.starnewskorea.com/music/2006/11/25/2006112518150646752",
+    "wardrobeStatus": "period-reference-event-unconfirmed",
+    "subject": "씨야",
+    "summary": "씨야가 2006년 MKMF에서 최우수 OST상을 받은 순간입니다."
+  },
+  {
+    "id": "event-rookie",
+    "album": "first-mind",
+    "kind": "event",
+    "title": "첫해의 이름이 불리다",
+    "date": "2006.12.14",
+    "body": [
+      "씨야는 2006년 골든디스크에서 신인상을 받았습니다.",
+      "데뷔 앨범을 모으는 여정 속에서, 그해 새롭게 등장한 목소리로 인정받았던 순간을 간직해보세요."
+    ],
+    "source": "https://www.nocutnews.co.kr/news/224195",
+    "checkedAt": "2026-11-15",
+    "minTracks": 10,
+    "icon": 1,
+    "quiz": {
+      "question": "2006년 골든디스크에서 씨야의 수상 부문은?",
+      "correct": "신인상",
+      "wrong": [
+        "대상",
+        "디지털 음원 본상"
+      ],
+      "explanation": "씨야는 2006년 골든디스크에서 신인상을 받았습니다.",
+      "level": 1,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/event-rookie-period.png",
+    "illustrationNote": "행사 사진의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://news.nate.com/view/20061214n18649",
+    "wardrobeStatus": "event-photo-reference",
+    "subject": "씨야",
+    "summary": "씨야의 2006년 골든디스크 신인상 수상 기록입니다."
+  },
+  {
+    "id": "event-copyright",
+    "album": "lovely-sweet-heart",
+    "kind": "event",
+    "title": "노래를 지키는 약속",
+    "date": "2007.06.27",
+    "body": [
+      "문화관광부는 2007년 6월 27일 씨야 등을 저작권 홍보대사로 위촉한다고 발표했습니다.",
+      "공식 발표는 저작권 홍보와 교육 활동에 참여하는 역할을 소개했어요. 무대에서 노래하는 것과 더불어 창작의 가치를 알리는 기록입니다."
+    ],
+    "source": "https://www.mcst.go.kr/site/s_notice/press/pressView.jsp?pSeq=8766",
+    "checkedAt": "2026-11-15",
+    "minTracks": 3,
+    "icon": 3,
+    "quiz": {
+      "question": "2007년 6월 문화관광부가 발표한 씨야의 홍보대사 분야는?",
+      "correct": "저작권",
+      "wrong": [
+        "산림 보호",
+        "교통 안전"
+      ],
+      "explanation": "문화관광부는 2007년 6월 27일 씨야 등을 저작권 홍보대사로 위촉한다고 발표했습니다.",
+      "level": 2,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/event-copyright-period.png",
+    "illustrationNote": "행사 사진의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://news.nate.com/view/20070627n09395",
+    "wardrobeStatus": "event-photo-reference",
+    "subject": "씨야",
+    "summary": "씨야가 2007년 저작권 홍보대사로 위촉된 기록입니다."
+  },
+  {
+    "id": "event-netiquette",
+    "album": "lovely-sweet-heart",
+    "kind": "event",
+    "title": "온라인에서도 따뜻한 인사",
+    "date": "2007.09.18",
+    "body": [
+      "씨야는 2007년 9월 18일 정보통신윤리 홍보대사 위촉패를 받았습니다.",
+      "건전한 인터넷 문화와 올바른 네티켓을 알리는 활동이었어요. 위촉식에서는 신고·상담 업무도 체험했다고 보도됐습니다."
+    ],
+    "source": "https://m.etnews.com/200709180162",
+    "checkedAt": "2026-11-15",
+    "minTracks": 7,
+    "icon": 3,
+    "quiz": {
+      "question": "정보통신윤리 홍보대사 활동과 연결되는 것은?",
+      "correct": "건전한 인터넷 문화와 네티켓",
+      "wrong": [
+        "해양 구조 교육",
+        "지역 관광 코스 개발"
+      ],
+      "explanation": "씨야는 2007년 9월 18일 정보통신윤리 홍보대사 위촉패를 받았습니다.",
+      "level": 2,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/event-netiquette-period.png",
+    "illustrationNote": "행사 사진의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://m.etnews.com/200709180162",
+    "wardrobeStatus": "event-photo-reference",
+    "subject": "씨야",
+    "summary": "씨야가 건전한 인터넷 문화와 네티켓을 알린 이야기입니다."
+  },
+  {
+    "id": "event-digital",
+    "album": "lovely-sweet-heart",
+    "kind": "event",
+    "title": "노래가 닿은 자리마다",
+    "date": "2007.12.14",
+    "body": [
+      "씨야는 2007년 골든디스크에서 디지털 음원 본상을 받았습니다.",
+      "전년의 신인상에 이어 또 다른 부문의 수상이 남았습니다. 2집의 곡들을 모은 뒤 이 한 해의 기록도 함께 펼쳐보세요."
+    ],
+    "source": "https://www.osen.co.kr/article/G0712140129",
+    "checkedAt": "2026-11-15",
+    "minTracks": 13,
+    "icon": 1,
+    "quiz": {
+      "question": "씨야의 골든디스크 수상을 연도 순으로 연결하면?",
+      "correct": "2006 신인상 → 2007 디지털 음원 본상",
+      "wrong": [
+        "2006 대상 → 2007 신인상",
+        "2006 디지털 음원 본상 → 2007 신인상"
+      ],
+      "explanation": "씨야는 2007년 골든디스크에서 디지털 음원 본상을 받았습니다.",
+      "level": 2,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/event-digital-period.png",
+    "illustrationNote": "행사 사진의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://www.osen.co.kr/article/G0712140129",
+    "wardrobeStatus": "event-photo-reference",
+    "subject": "씨야",
+    "summary": "씨야가 2007년 골든디스크 디지털 음원 본상을 받은 기록입니다."
+  },
+  {
+    "id": "event-seoul",
+    "album": "california-dream",
+    "kind": "event",
+    "title": "겨울의 시상식에서",
+    "date": "2008.01.31",
+    "body": [
+      "씨야는 2008년 1월 31일 제17회 서울가요대상에서 본상을 받았습니다.",
+      "California Dream 활동 시기에 열린 시상식의 기록이에요. 새 앨범의 노래를 모으며, 그 겨울 무대에 더해진 박수도 기억해보세요."
+    ],
+    "source": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01236566586283296",
+    "checkedAt": "2026-11-15",
+    "minTracks": 6,
+    "icon": 1,
+    "quiz": {
+      "question": "2008년 1월 씨야가 본상을 받은 시상식은?",
+      "correct": "서울가요대상",
+      "wrong": [
+        "MBC 연기대상",
+        "골든디스크 신인상 시상식"
+      ],
+      "explanation": "씨야는 2008년 1월 31일 제17회 서울가요대상에서 본상을 받았습니다.",
+      "level": 2,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/event-seoul-period.png",
+    "illustrationNote": "당시 활동 의상으로 재구성한 장면입니다. 이 행사에서 입은 의상은 확인 전입니다.",
+    "wardrobeSource": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "wardrobeStatus": "period-reference-event-unconfirmed",
+    "subject": "씨야",
+    "summary": "씨야의 2008년 서울가요대상 본상 수상 기록입니다."
+  },
+  {
+    "id": "event-bcm",
+    "album": "see-you-again",
+    "kind": "event",
+    "title": "부산에서 전한 콘텐츠의 인사",
+    "date": "2011.04.26",
+    "body": [
+      "부산시는 2011년 4월 남규리와 조현재를 부산콘텐츠마켓 홍보대사로 소개했습니다. 위촉식 일정은 4월 26일이었어요.",
+      "드라마 ‘49일’에 출연하던 시기의 개인 활동입니다. 그룹의 앨범 이야기 뒤에서 멤버의 또 다른 발자취도 만나보세요."
+    ],
+    "source": "https://www.busan.go.kr/news/totalnews01/view?dataNo=32991&gugun=Next",
+    "checkedAt": "2026-11-15",
+    "minTracks": 5,
+    "icon": 4,
+    "quiz": {
+      "question": "남규리가 2011년 조현재와 함께 홍보대사를 맡은 행사는?",
+      "correct": "부산콘텐츠마켓",
+      "wrong": [
+        "부산국제영화제",
+        "서울가요대상",
+        "골든디스크"
+      ],
+      "explanation": "부산시는 2011년 4월 남규리와 조현재를 부산콘텐츠마켓 홍보대사로 소개했습니다. 위촉식 일정은 4월 26일이었어요.",
+      "level": 4,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/event-bcm-period.png",
+    "illustrationNote": "당시 활동 의상으로 재구성한 장면입니다. 이 행사에서 입은 의상은 확인 전입니다.",
+    "wardrobeSource": "https://www.bntnews.co.kr/article/view/bnt201105200353",
+    "wardrobeStatus": "period-reference-event-unconfirmed",
+    "subject": "남규리",
+    "summary": "남규리가 2011년 부산콘텐츠마켓 홍보대사로 함께한 기록입니다."
+  },
+  {
+    "id": "event-kairos",
+    "album": "see-you-again",
+    "kind": "event",
+    "title": "배우의 이름으로 받은 박수",
+    "date": "2020.12.30",
+    "body": [
+      "남규리는 ‘카이로스’로 2020 MBC 연기대상 월화 미니·단막 부문 여자 우수 연기상을 받았습니다.",
+      "2011년 앨범 이후의 개인 활동을 돌아보는 보너스 이야기입니다. 이 이벤트의 날짜는 앨범 발매일과 다른 실제 수상일이에요."
+    ],
+    "source": "https://enews.imbc.com/News/RetrieveNewsInfo/301881",
+    "checkedAt": "2026-11-15",
+    "minTracks": 15,
+    "icon": 4,
+    "quiz": {
+      "question": "2020년 남규리의 우수 연기상과 연결되는 방송사·작품은?",
+      "correct": "MBC · 카이로스",
+      "wrong": [
+        "SBS · 49일",
+        "MBC · 인생은 아름다워",
+        "KBS · 카이로스"
+      ],
+      "explanation": "남규리는 ‘카이로스’로 2020 MBC 연기대상 월화 미니·단막 부문 여자 우수 연기상을 받았습니다.",
+      "level": 4,
+      "skill": "이야기 기억"
+    },
+    "image": "/images/game/our-stage/stories/event-kairos-period.png",
+    "illustrationNote": "행사 사진의 의상·헤어를 참고한 도트 재구성입니다.",
+    "wardrobeSource": "https://enews.imbc.com/News/RetrieveNewsInfo/301881",
+    "wardrobeStatus": "event-photo-reference",
+    "subject": "남규리",
+    "summary": "남규리가 ‘카이로스’로 2020 MBC 연기대상 우수 연기상을 받은 순간입니다."
+  }
+]

@@ -125,11 +125,14 @@ const galaxyRoute=json('src/data/galaxy-test-route.json');
 const magazineCss=asset('magazine','css',read('src/styles/magazine.css'));
 const galaxyCss=asset('galaxy','css',read('src/styles/galaxy.css'));
 const galaxyJs=asset('galaxy','js',bundle('src/client/galaxy.js'));
+const ourStageRoute=json('src/data/our-stage-test-route.json');
+const ourStageCss=asset('our-stage','css',read('src/styles/our-stage.css'));
+const ourStageJs=asset('our-stage','js',bundle('src/client/our-stage.js'));
 const photosRaw=json('data/photos.json');
 const photos=(Array.isArray(photosRaw)?photosRaw:photosRaw.photos||[]).filter(x=>x&&x.hidden!==true).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||Number(a.order||999)-Number(b.order||999));
 const template=read('src/template.html').replaceAll('{{mainNavigation}}', read('src/main-navigation.html').trim());
 const files=[];
-for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcertRoute,galaxyRoute]){
+for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcertRoute,galaxyRoute,ourStageRoute]){
  const key=route.key;
  const render=require('./src/pages/'+(key==='fanchant'?'music':key==='fan-letters'?'galaxy-test':key)+'.js');
  let content;
@@ -151,6 +154,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  if(key==='worldcup-test'||key==='worldcup'){vars.pageHead=`<meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="${worldcupCss}">`;vars.scripts=`<script defer src="${worldcupJs}"></script>`+(key==='worldcup'?`<script defer src="${siteJs}"></script>`:'');}
  if(key==='clinic'||key==='clinic-test'){vars.pageHead=`<link rel="stylesheet" href="${clinicCss}">`;vars.scripts=`<script defer src="${clinicJs}"></script>`;}
  if(key==='my-concert-test'||key==='my-concert'){vars.pageHead=`<link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${myConcertJs}"></script>`;}
+ if(key==='our-stage-test'){vars.pageHead=`<link rel="stylesheet" href="${ourStageCss}">`;vars.scripts=`<script defer src="${ourStageJs}"></script>`;}
  if(key==='first-again-magazine')vars.pageHead=`<link rel="stylesheet" href="${magazineCss}">`;
  if(key==='galaxy-test'||key==='fan-letters'){vars.pageHead=`<link rel="stylesheet" href="${galaxyCss}">`;vars.scripts=`<script defer src="${galaxyJs}"></script>`;}
  if(key==='diary-privacy')vars.pageHead+=`<link rel="stylesheet" href="${passportCss}">`;
@@ -187,6 +191,6 @@ for(const route of retiredRoutes){const file=route.from.slice(1)+'index.html';wr
 write('passport/sw.js',read('src/retired-passport-worker.js'));
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:[galaxyRoute.path.slice(1)+'index.html','game/my-concert/catalog.json',myConcertRoute.path.slice(1)+'index.html','game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html',clinicRoute.path.slice(1)+'index.html']},null,2)+'\n');
-console.log(`Built ${routes.length} public pages, 5 unlisted test pages and ${assets.length} versioned assets.`);
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:[ourStageRoute.path.slice(1)+'index.html',galaxyRoute.path.slice(1)+'index.html','game/my-concert/catalog.json',myConcertRoute.path.slice(1)+'index.html','game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html',clinicRoute.path.slice(1)+'index.html']},null,2)+'\n');
+console.log(`Built ${routes.length} public pages, 6 unlisted test pages and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

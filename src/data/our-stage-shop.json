@@ -1,0 +1,64 @@
+[
+  {
+    "id": "stage-sugarman",
+    "name": "슈가맨3 · 다시 만난 화이트",
+    "type": "STAGE STYLE",
+    "price": 60,
+    "url": "https://www.segye.com/newsView/20200223507996",
+    "date": "2020.02.21",
+    "prompt": "Create ONE transparent PNG sprite lineup, exactly THREE full-body chunky pixel characters. First image is approved game art: match its coarse square pixels, dot eyes, tiny bodies, flat 2-3 tone shading. Second image is wardrobe reference only. No smooth anime, no scenery, no text, no shadows. Each sprite centered in its own equal-width third with generous transparent gaps, same baseline and arms down. Fixed LEFT Boram, CENTER Gyuri, RIGHT Yeonji, unlike photo order. Adapt 2020 Sugarman white costumes: LEFT Boram (photo center) light brown hair tied low with front wisps, white off-shoulder ruffled long sleeve short dress, white shoes. CENTER Gyuri (photo left) long brown hair with bangs, white long-sleeve flared mini dress with small waist belt, white shoes. RIGHT Yeonji (photo right) long burgundy red straight hair, white tailored double-breasted jacket mini dress, white thigh-high boots.",
+    "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-aaa397ed-2459-481b-95fc-c396401fa52e.png",
+    "note": "방송 무대의 의상과 헤어를 참고한 도트 재해석입니다. 구매한 의상과 헤어는 내 옷장에서 따로 조합할 수 있어요. 작은 장식과 보이지 않는 부분은 단순화했어요.",
+    "image": "/images/game/our-stage/pixel-stage-sugarman.png",
+    "width": 1774,
+    "height": 887,
+    "members": [
+      [
+        17,
+        574
+      ],
+      [
+        592,
+        591
+      ],
+      [
+        1184,
+        572
+      ]
+    ],
+    "method": "Built-in image_gen",
+    "identitySource": "https://www.dispatch.co.kr/2066191",
+    "mappingNote": "슈가맨3 남규리의 흰 칼라 의상과 방송 자막을 대조했습니다. 생성본은 실사 디테일을 단순화한 시안입니다."
+  },
+  {
+    "id": "stage-seasons",
+    "name": "더 시즌즈 · 블랙 앤 화이트",
+    "type": "STAGE STYLE",
+    "price": 90,
+    "url": "https://enews.imbc.com/News/RetrieveNewsInfo/506622",
+    "date": "2026.05.29",
+    "prompt": "Create ONE transparent PNG sprite lineup, exactly THREE full-body chunky pixel characters. First image is approved game art: match its coarse square pixels, dot eyes, tiny bodies, flat 2-3 tone shading. Second image is wardrobe reference only. No smooth anime, no scenery, no text, no shadows. Each sprite centered in its own equal-width third with generous transparent gaps, same baseline and arms down. Fixed LEFT Boram, CENTER Gyuri, RIGHT Yeonji, unlike photo order. Adapt 2026 The Seasons black/white costumes: LEFT Boram (photo center) long straight brown hair side part, fitted white lace blouse with flared cuffs and scarf flower, black mini skirt, black shoes. CENTER Gyuri (photo left) long black wavy hair with short bangs, white blouse under black vest with black pleated skirt, black shoes. RIGHT Yeonji (photo right) long dark brown hair in low side ponytail, white high-neck ruffled peplum blouse and black wide-leg trousers, black shoes.",
+    "source": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-94ee5925-92bc-4a5c-9ddb-cdcc10e82822.png",
+    "note": "방송 무대의 의상과 헤어를 참고한 도트 재해석입니다. 구매한 의상과 헤어는 내 옷장에서 따로 조합할 수 있어요. 작은 장식과 보이지 않는 부분은 단순화했어요.",
+    "image": "/images/game/our-stage/pixel-stage-seasons.png",
+    "width": 1774,
+    "height": 887,
+    "members": [
+      [
+        592,
+        591
+      ],
+      [
+        0,
+        591
+      ],
+      [
+        1183,
+        575
+      ]
+    ],
+    "method": "Built-in image_gen",
+    "identitySource": "https://enter.etoday.co.kr/news/view/297930",
+    "mappingNote": "생성본의 중앙 캐릭터(검정 조끼)는 이보람, 왼쪽 캐릭터(레이스 블라우스)는 남규리입니다. members는 실제 멤버 순서 br/gr/yj로 좌표를 연결합니다."
+  }
+]

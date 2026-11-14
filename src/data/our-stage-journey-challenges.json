@@ -1,0 +1,1211 @@
+{
+  "song:lovely-sweet-heart-01": {
+    "question": "2집 Lovely Sweet Heart에 수록된 곡은?",
+    "choices": [
+      "사랑의 인사",
+      "여인의 향기",
+      "Hot Girl"
+    ],
+    "answer": 0,
+    "explanation": "2집의 1번 트랙은 ‘사랑의 인사’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "곡 알아보기"
+  },
+  "song:lovely-sweet-heart-02": {
+    "question": "2집에서 ‘사랑의 인사’ 바로 다음 곡은?",
+    "choices": [
+      "너는 내 남자",
+      "결혼할까요",
+      "Dirty Dancing"
+    ],
+    "answer": 1,
+    "explanation": "‘사랑의 인사’ 다음에는 ‘결혼할까요’가 이어집니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "수록 순서"
+  },
+  "song:lovely-sweet-heart-03": {
+    "question": "‘너는 내 남자’가 수록된 정규 앨범은?",
+    "choices": [
+      "The First Mind",
+      "Brilliant Change",
+      "Lovely Sweet Heart"
+    ],
+    "answer": 2,
+    "explanation": "‘너는 내 남자’는 Lovely Sweet Heart의 수록곡입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "앨범 연결"
+  },
+  "song:lovely-sweet-heart-04": {
+    "question": "2집 Lovely Sweet Heart에 수록된 곡은?",
+    "choices": [
+      "Dirty Dancing",
+      "여인의 향기",
+      "Hot Girl"
+    ],
+    "answer": 0,
+    "explanation": "2집의 4번 트랙은 ‘Dirty Dancing’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "곡 알아보기"
+  },
+  "song:lovely-sweet-heart-05": {
+    "question": "2집에서 ‘Dirty Dancing’ 바로 다음 곡은?",
+    "choices": [
+      "사랑의 인사",
+      "어떻게 널 잊겠니",
+      "결혼할까요"
+    ],
+    "answer": 1,
+    "explanation": "‘Dirty Dancing’ 다음에는 ‘어떻게 널 잊겠니’가 이어집니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "수록 순서"
+  },
+  "song:lovely-sweet-heart-06": {
+    "question": "‘사랑아’가 수록된 정규 앨범은?",
+    "choices": [
+      "The First Mind",
+      "Brilliant Change",
+      "Lovely Sweet Heart"
+    ],
+    "answer": 2,
+    "explanation": "‘사랑아’는 Lovely Sweet Heart의 수록곡입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "앨범 연결"
+  },
+  "song:lovely-sweet-heart-07": {
+    "question": "2집 Lovely Sweet Heart에 수록된 곡은?",
+    "choices": [
+      "그 사람이 나를 사랑해요",
+      "여인의 향기",
+      "Hot Girl"
+    ],
+    "answer": 0,
+    "explanation": "2집의 7번 트랙은 ‘그 사람이 나를 사랑해요’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "곡 알아보기"
+  },
+  "song:lovely-sweet-heart-08": {
+    "question": "2집에서 ‘그 사람이 나를 사랑해요’ 바로 다음 곡은?",
+    "choices": [
+      "사랑의 인사",
+      "Summer Dream",
+      "결혼할까요"
+    ],
+    "answer": 1,
+    "explanation": "‘그 사람이 나를 사랑해요’ 다음에는 ‘Summer Dream’가 이어집니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "수록 순서"
+  },
+  "song:lovely-sweet-heart-09": {
+    "question": "‘사랑이 간다’가 수록된 정규 앨범은?",
+    "choices": [
+      "The First Mind",
+      "Brilliant Change",
+      "Lovely Sweet Heart"
+    ],
+    "answer": 2,
+    "explanation": "‘사랑이 간다’는 Lovely Sweet Heart의 수록곡입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "앨범 연결"
+  },
+  "song:lovely-sweet-heart-10": {
+    "question": "2집 Lovely Sweet Heart에 수록된 곡은?",
+    "choices": [
+      "감동을 주세요",
+      "여인의 향기",
+      "Hot Girl"
+    ],
+    "answer": 0,
+    "explanation": "2집의 10번 트랙은 ‘감동을 주세요’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "곡 알아보기"
+  },
+  "song:lovely-sweet-heart-11": {
+    "question": "2집에서 ‘감동을 주세요’ 바로 다음 곡은?",
+    "choices": [
+      "사랑의 인사",
+      "얼음인형",
+      "결혼할까요"
+    ],
+    "answer": 1,
+    "explanation": "‘감동을 주세요’ 다음에는 ‘얼음인형’가 이어집니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "수록 순서"
+  },
+  "song:lovely-sweet-heart-12": {
+    "question": "‘순애보’가 수록된 정규 앨범은?",
+    "choices": [
+      "The First Mind",
+      "Brilliant Change",
+      "Lovely Sweet Heart"
+    ],
+    "answer": 2,
+    "explanation": "‘순애보’는 Lovely Sweet Heart의 수록곡입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "앨범 연결"
+  },
+  "song:lovely-sweet-heart-13": {
+    "question": "2집 Lovely Sweet Heart에 수록된 곡은?",
+    "choices": [
+      "남",
+      "여인의 향기",
+      "Hot Girl"
+    ],
+    "answer": 0,
+    "explanation": "2집의 13번 트랙은 ‘남’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 2,
+    "skill": "곡 알아보기"
+  },
+  "song:california-dream-01": {
+    "question": "‘슬픈 발걸음’의 또 다른 이름은?",
+    "choices": [
+      "구두 III",
+      "구두 II",
+      "여인의 향기 II"
+    ],
+    "answer": 1,
+    "explanation": "앨범 소개는 ‘슬픈 발걸음’을 구두 II로 소개합니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-02": {
+    "question": "California Dream에서 ‘슬픈 발걸음’과 함께 타이틀로 표시된 곡은?",
+    "choices": [
+      "Classic",
+      "연가",
+      "그래도 좋아"
+    ],
+    "answer": 2,
+    "explanation": "음원 목록에서 ‘슬픈 발걸음’과 ‘그래도 좋아’가 타이틀로 표시됩니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-03": {
+    "question": "California Dream의 앨범 사진을 촬영한 지역으로 소개된 곳은?",
+    "choices": [
+      "LA와 라스베가스",
+      "서울과 부산",
+      "파리와 런던"
+    ],
+    "answer": 0,
+    "explanation": "앨범 소개에는 LA와 라스베가스에서 재킷 사진을 촬영했다고 나옵니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-04": {
+    "question": "발매 순서에서 California Dream 바로 앞의 정규 앨범은?",
+    "choices": [
+      "The First Mind",
+      "Lovely Sweet Heart",
+      "Brilliant Change"
+    ],
+    "answer": 1,
+    "explanation": "2집 Lovely Sweet Heart 다음에 2.5집 California Dream이 이어집니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-05": {
+    "question": "‘미워요’와 같은 California Dream에 담긴 곡은?",
+    "choices": [
+      "Hot Girl",
+      "그 놈 목소리",
+      "Classic"
+    ],
+    "answer": 2,
+    "explanation": "‘미워요’와 ‘Classic’은 모두 California Dream 수록곡입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-06": {
+    "question": "‘요즘 나는’의 원래 OST에 함께 참여한 두 사람은?",
+    "choices": [
+      "남규리 · 이홍기",
+      "김연지 · 제아",
+      "이보람 · 이홍기"
+    ],
+    "answer": 0,
+    "explanation": "남규리와 FTIsland 이홍기가 시트콤 ‘못말리는 결혼’ OST ‘요즘 나는’에 참여했습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-07": {
+    "question": "‘깊은 밤을 날아서’가 담긴 원래 영화 OST는?",
+    "choices": [
+      "고死: 피의 중간고사",
+      "못말리는 결혼",
+      "풀하우스"
+    ],
+    "answer": 1,
+    "explanation": "남규리가 영화 ‘못말리는 결혼’ OST에서 부른 곡을 이 앨범에도 담았습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-08": {
+    "question": "이보람의 ‘처음 그 자리에’가 나온 원래 드라마는?",
+    "choices": [
+      "49일",
+      "투명인간 최장수",
+      "풀하우스"
+    ],
+    "answer": 2,
+    "explanation": "이보람이 부른 ‘풀하우스’ OST ‘처음 그 자리에’도 앨범에 담겼습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-09": {
+    "question": "‘미친 사랑의 노래’와 연결되는 드라마는?",
+    "choices": [
+      "투명인간 최장수",
+      "풀하우스",
+      "49일"
+    ],
+    "answer": 0,
+    "explanation": "‘미친 사랑의 노래’는 드라마 ‘투명인간 최장수’ OST입니다.",
+    "source": "https://music.bugs.co.kr/album/100005",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-10": {
+    "question": "‘The Day’를 원래 함께 불렀던 두 보컬은?",
+    "choices": [
+      "남규리 · 이홍기",
+      "김연지 · 제아",
+      "이보람 · 제아"
+    ],
+    "answer": 1,
+    "explanation": "앨범 소개에는 김연지와 브라운 아이드 걸스 제아가 함께 부른 곡으로 나옵니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:california-dream-11": {
+    "question": "California Dream 소개에서 ‘The Day’와 함께 언급된 김연지·제아의 곡은?",
+    "choices": [
+      "연가",
+      "Classic",
+      "정"
+    ],
+    "answer": 2,
+    "explanation": "‘The Day’와 ‘정’이 김연지·제아의 참여곡으로 함께 소개됩니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 2,
+    "skill": "활동 연결"
+  },
+  "song:brilliant-change-01": {
+    "question": "3집 ‘가니’의 피처링 명단은?",
+    "choices": [
+      "김용준 · 황정음 · Mario",
+      "김진호 · 황정음 · Mario",
+      "김용준 · 제아 · 이홍기",
+      "김진호 · 제아 · 이홍기"
+    ],
+    "answer": 0,
+    "explanation": "‘가니’에는 SG워너비 김용준, 황정음, Mario가 참여했습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "참여진·무대 연결"
+  },
+  "song:brilliant-change-02": {
+    "question": "‘Hot Girl’ 활동에서 시도한 음악 스타일은?",
+    "choices": [
+      "어쿠스틱 포크",
+      "일렉트로 하우스",
+      "재즈 스윙",
+      "국악 발라드"
+    ],
+    "answer": 1,
+    "explanation": "3집 활동 인터뷰는 ‘Hot Girl’을 일렉트로 하우스 비트의 댄스곡으로 설명합니다.",
+    "source": "https://www.starnewskorea.com/music/2008/10/01/2008100115361214204",
+    "level": 3,
+    "skill": "참여진·무대 연결"
+  },
+  "song:brilliant-change-03": {
+    "question": "3집의 시작 세 곡이 실제 순서대로 연결된 것은?",
+    "choices": [
+      "Hot Girl → 가니 → Turn It Up",
+      "Turn It Up → 가니 → Hot Girl",
+      "가니 → Hot Girl → Turn It Up",
+      "가니 → Turn It Up → Hot Girl"
+    ],
+    "answer": 2,
+    "explanation": "3집은 가니, Hot Girl, Turn It Up 순서로 시작합니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "참여진·무대 연결"
+  },
+  "song:brilliant-change-04": {
+    "question": "‘가니’의 김용준과 달리 ‘집으로 돌아오는 길’에 참여한 SG워너비 멤버는?",
+    "choices": [
+      "김용준",
+      "이석훈",
+      "이홍기",
+      "김진호"
+    ],
+    "answer": 3,
+    "explanation": "‘집으로 돌아오는 길’의 피처링 표기는 SG워너비 김진호입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "참여진·무대 연결"
+  },
+  "song:brilliant-change-05": {
+    "question": "3집 수록 순서에서 두 곡이 바로 이어지는 연결은?",
+    "choices": [
+      "집으로 돌아오는 길 (feat. SG워너비 - 김진호) → 내가 울더라도",
+      "내가 울더라도 → 집으로 돌아오는 길 (feat. SG워너비 - 김진호)",
+      "집으로 돌아오는 길 (feat. SG워너비 - 김진호) → 덩그러니",
+      "사모곡 → 내가 울더라도"
+    ],
+    "answer": 0,
+    "explanation": "3집 4번 ‘집으로 돌아오는 길 (feat. SG워너비 - 김진호)’ 다음은 5번 ‘내가 울더라도’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "두 곡 연결"
+  },
+  "song:brilliant-change-06": {
+    "question": "3집 수록 순서에서 두 곡이 바로 이어지는 연결은?",
+    "choices": [
+      "덩그러니 → 내가 울더라도",
+      "내가 울더라도 → 덩그러니",
+      "내가 울더라도 → 사모곡",
+      "I Wish → 덩그러니"
+    ],
+    "answer": 1,
+    "explanation": "3집 5번 ‘내가 울더라도’ 다음은 6번 ‘덩그러니’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "두 곡 연결"
+  },
+  "song:brilliant-change-07": {
+    "question": "3집 수록 순서에서 두 곡이 바로 이어지는 연결은?",
+    "choices": [
+      "사모곡 → 덩그러니",
+      "덩그러니 → I Wish",
+      "덩그러니 → 사모곡",
+      "남자는 그래요 → 사모곡"
+    ],
+    "answer": 2,
+    "explanation": "3집 6번 ‘덩그러니’ 다음은 7번 ‘사모곡’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "두 곡 연결"
+  },
+  "song:brilliant-change-08": {
+    "question": "3집 수록 순서에서 두 곡이 바로 이어지는 연결은?",
+    "choices": [
+      "I Wish → 사모곡",
+      "사모곡 → 남자는 그래요",
+      "그 사람 (구두 Ⅲ) → I Wish",
+      "사모곡 → I Wish"
+    ],
+    "answer": 3,
+    "explanation": "3집 7번 ‘사모곡’ 다음은 8번 ‘I Wish’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "두 곡 연결"
+  },
+  "song:brilliant-change-09": {
+    "question": "3집 수록 순서에서 두 곡이 바로 이어지는 연결은?",
+    "choices": [
+      "I Wish → 남자는 그래요",
+      "남자는 그래요 → I Wish",
+      "I Wish → 그 사람 (구두 Ⅲ)",
+      "솜사탕 → 남자는 그래요"
+    ],
+    "answer": 0,
+    "explanation": "3집 8번 ‘I Wish’ 다음은 9번 ‘남자는 그래요’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "두 곡 연결"
+  },
+  "song:brilliant-change-10": {
+    "question": "3집 수록 순서에서 두 곡이 바로 이어지는 연결은?",
+    "choices": [
+      "그 사람 (구두 Ⅲ) → 남자는 그래요",
+      "남자는 그래요 → 그 사람 (구두 Ⅲ)",
+      "남자는 그래요 → 솜사탕",
+      "나 없이도 → 그 사람 (구두 Ⅲ)"
+    ],
+    "answer": 1,
+    "explanation": "3집 9번 ‘남자는 그래요’ 다음은 10번 ‘그 사람 (구두 Ⅲ)’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "두 곡 연결"
+  },
+  "song:brilliant-change-11": {
+    "question": "3집 수록 순서에서 두 곡이 바로 이어지는 연결은?",
+    "choices": [
+      "솜사탕 → 그 사람 (구두 Ⅲ)",
+      "그 사람 (구두 Ⅲ) → 나 없이도",
+      "그 사람 (구두 Ⅲ) → 솜사탕",
+      "Loving You → 솜사탕"
+    ],
+    "answer": 2,
+    "explanation": "3집 10번 ‘그 사람 (구두 Ⅲ)’ 다음은 11번 ‘솜사탕’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "두 곡 연결"
+  },
+  "song:brilliant-change-12": {
+    "question": "3집 수록 순서에서 두 곡이 바로 이어지는 연결은?",
+    "choices": [
+      "나 없이도 → 솜사탕",
+      "솜사탕 → Loving You",
+      "가니 (feat. SG워너비 - 김용준, 황정음, Mario) → 나 없이도",
+      "솜사탕 → 나 없이도"
+    ],
+    "answer": 3,
+    "explanation": "3집 11번 ‘솜사탕’ 다음은 12번 ‘나 없이도’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "두 곡 연결"
+  },
+  "song:brilliant-change-13": {
+    "question": "3집 수록 순서에서 두 곡이 바로 이어지는 연결은?",
+    "choices": [
+      "나 없이도 → Loving You",
+      "Loving You → 나 없이도",
+      "나 없이도 → 가니 (feat. SG워너비 - 김용준, 황정음, Mario)",
+      "Hot Girl → Loving You"
+    ],
+    "answer": 0,
+    "explanation": "3집 12번 ‘나 없이도’ 다음은 13번 ‘Loving You’입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 3,
+    "skill": "두 곡 연결"
+  },
+  "song:rebloom-01": {
+    "question": "Rebloom의 타이틀곡과 작곡가를 바르게 연결하면?",
+    "choices": [
+      "그 놈 목소리 · 김도훈",
+      "그 놈 목소리 · 이민수",
+      "Hot Girl · 이민수",
+      "Stay · 박근태"
+    ],
+    "answer": 1,
+    "explanation": "앨범 소개는 타이틀곡 ‘그 놈 목소리’를 이민수 작곡가의 곡으로 소개합니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "level": 3,
+    "skill": "앨범 맥락"
+  },
+  "song:rebloom-02": {
+    "question": "Rebloom의 의미와 당시 새 멤버가 맞게 연결된 것은?",
+    "choices": [
+      "다시 피어남 · 남규리",
+      "첫 만남 · 수미",
+      "다시 피어남 · 수미",
+      "캘리포니아의 꿈 · 남규리"
+    ],
+    "answer": 2,
+    "explanation": "Rebloom은 꽃이 다시 핀다는 뜻이며, 수미 합류 이후의 앨범입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "level": 3,
+    "skill": "앨범 맥락"
+  },
+  "song:rebloom-03": {
+    "question": "Rebloom 소개에서 댄스곡 ‘앗차’와 대비해 발라드로 소개한 곡은?",
+    "choices": [
+      "그 놈 목소리",
+      "T-Gana",
+      "Hot Girl",
+      "눈물의 여왕"
+    ],
+    "answer": 3,
+    "explanation": "앨범 소개에서 ‘앗차’는 댄스곡, ‘눈물의 여왕’은 발라드로 설명합니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "level": 3,
+    "skill": "앨범 맥락"
+  },
+  "song:rebloom-04": {
+    "question": "현재 수집 목록의 Rebloom과 실제 활동을 설명한 것으로 맞는 것은?",
+    "choices": [
+      "당시 활동 멤버와 게임의 현재 세 멤버 의상 시안은 다르다",
+      "당시에도 게임 의상의 세 멤버가 그대로 활동했다",
+      "Rebloom은 2011년 베스트 앨범이다",
+      "그 놈 목소리는 3집 타이틀곡이다"
+    ],
+    "answer": 0,
+    "explanation": "Rebloom은 수미 합류 시기의 앨범입니다. 게임의 도트 의상은 현재 세 멤버로 재해석한 시안입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "level": 3,
+    "skill": "앨범 맥락"
+  },
+  "song:rebloom-05": {
+    "question": "Rebloom의 디지털 수록 목록에서 마지막 두 곡의 순서는?",
+    "choices": [
+      "T-Gana → 바람핀다 믿었니",
+      "바람핀다 믿었니 → T-Gana",
+      "눈물의 여왕 → T-Gana",
+      "앗차! → 바람핀다 믿었니"
+    ],
+    "answer": 1,
+    "explanation": "현재 음원 목록은 4번 바람핀다 믿었니, 5번 T-Gana로 끝납니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "level": 3,
+    "skill": "앨범 맥락"
+  },
+  "song:see-you-again-01": {
+    "question": "See You Again에서 새롭게 발표한 두 곡의 조합은?",
+    "choices": [
+      "여인의 향기 · 구두",
+      "사랑의 인사 · 결혼할까요",
+      "내겐 너무 멋진 그대 · The Last",
+      "그 놈 목소리 · 눈물의 여왕"
+    ],
+    "answer": 2,
+    "explanation": "앞의 두 곡은 이 앨범에서 발표한 곡이며, 뒤에는 이전 활동곡들이 이어집니다.",
+    "source": "https://music.bugs.co.kr/album/259909",
+    "level": 4,
+    "skill": "신곡·재수록 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-02": {
+    "question": "See You Again의 첫 두 곡 뒤에 이어지는 1집 수록곡 조합은?",
+    "choices": [
+      "사랑의 인사 · 결혼할까요",
+      "슬픈 발걸음 · 그래도 좋아",
+      "그 놈 목소리 · 눈물의 여왕",
+      "여인의 향기 · 구두"
+    ],
+    "answer": 3,
+    "explanation": "3번 여인의 향기, 4번 구두는 The First Mind에 실렸던 곡입니다.",
+    "source": "https://music.bugs.co.kr/album/259909",
+    "level": 4,
+    "skill": "재수록 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-03": {
+    "question": "베스트 앨범의 ‘여인의 향기’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "The First Mind",
+      "Lovely Sweet Heart",
+      "California Dream",
+      "Brilliant Change"
+    ],
+    "answer": 0,
+    "explanation": "‘여인의 향기’는 이전 앨범 The First Mind에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-04": {
+    "question": "베스트 앨범의 ‘구두’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "Lovely Sweet Heart",
+      "The First Mind",
+      "California Dream",
+      "Brilliant Change"
+    ],
+    "answer": 1,
+    "explanation": "‘구두’는 이전 앨범 The First Mind에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-05": {
+    "question": "베스트 앨범의 ‘사랑의 인사’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "The First Mind",
+      "California Dream",
+      "Lovely Sweet Heart",
+      "Brilliant Change"
+    ],
+    "answer": 2,
+    "explanation": "‘사랑의 인사’는 이전 앨범 Lovely Sweet Heart에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-06": {
+    "question": "베스트 앨범의 ‘결혼할까요’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "The First Mind",
+      "California Dream",
+      "Brilliant Change",
+      "Lovely Sweet Heart"
+    ],
+    "answer": 3,
+    "explanation": "‘결혼할까요’는 이전 앨범 Lovely Sweet Heart에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-07": {
+    "question": "베스트 앨범의 ‘사랑이 간다’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "Lovely Sweet Heart",
+      "The First Mind",
+      "California Dream",
+      "Brilliant Change"
+    ],
+    "answer": 0,
+    "explanation": "‘사랑이 간다’는 이전 앨범 Lovely Sweet Heart에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=352046",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-08": {
+    "question": "베스트 앨범의 ‘슬픈 발걸음 (구두 Ⅱ)’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "The First Mind",
+      "California Dream",
+      "Lovely Sweet Heart",
+      "Brilliant Change"
+    ],
+    "answer": 1,
+    "explanation": "‘슬픈 발걸음 (구두 Ⅱ)’는 이전 앨범 California Dream에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-09": {
+    "question": "베스트 앨범의 ‘그래도 좋아’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "The First Mind",
+      "Lovely Sweet Heart",
+      "California Dream",
+      "Brilliant Change"
+    ],
+    "answer": 2,
+    "explanation": "‘그래도 좋아’는 이전 앨범 California Dream에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-10": {
+    "question": "베스트 앨범의 ‘미워요’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "The First Mind",
+      "Lovely Sweet Heart",
+      "Brilliant Change",
+      "California Dream"
+    ],
+    "answer": 3,
+    "explanation": "‘미워요’는 이전 앨범 California Dream에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-11": {
+    "question": "베스트 앨범의 ‘미친 사랑의 노래’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "California Dream",
+      "The First Mind",
+      "Lovely Sweet Heart",
+      "Brilliant Change"
+    ],
+    "answer": 0,
+    "explanation": "‘미친 사랑의 노래’는 이전 앨범 California Dream에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-12": {
+    "question": "베스트 앨범의 ‘가니 (feat. 김용준 Of SG워너비, 황정음, Mario)’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "The First Mind",
+      "Brilliant Change",
+      "Lovely Sweet Heart",
+      "California Dream"
+    ],
+    "answer": 1,
+    "explanation": "‘가니 (feat. 김용준 Of SG워너비, 황정음, Mario)’는 이전 앨범 Brilliant Change에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-13": {
+    "question": "베스트 앨범의 ‘사모곡’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "The First Mind",
+      "Lovely Sweet Heart",
+      "Brilliant Change",
+      "California Dream"
+    ],
+    "answer": 2,
+    "explanation": "‘사모곡’는 이전 앨범 Brilliant Change에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=398227",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-14": {
+    "question": "베스트 앨범의 ‘그 놈 목소리’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "The First Mind",
+      "Lovely Sweet Heart",
+      "California Dream",
+      "Rebloom"
+    ],
+    "answer": 3,
+    "explanation": "‘그 놈 목소리’는 이전 앨범 Rebloom에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:see-you-again-15": {
+    "question": "베스트 앨범의 ‘눈물의 여왕’와 이전 앨범이 바르게 연결된 것은?",
+    "choices": [
+      "Rebloom",
+      "The First Mind",
+      "Lovely Sweet Heart",
+      "California Dream"
+    ],
+    "answer": 0,
+    "explanation": "‘눈물의 여왕’는 이전 앨범 Rebloom에서도 만날 수 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "level": 4,
+    "skill": "앨범 간 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y"
+    ]
+  },
+  "song:still-here-01": {
+    "question": "2026년 선공개 싱글과 정규 앨범을 발매 순서대로 연결하면?",
+    "choices": [
+      "First, Again → 그럼에도, 우린",
+      "그럼에도, 우린 → First, Again",
+      "See You Again → Rebloom",
+      "First, Again → See You Again"
+    ],
+    "answer": 1,
+    "explanation": "2026년 선공개 ‘그럼에도, 우린’ 다음에 정규 4집 First, Again이 나왔습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 4,
+    "skill": "발매 흐름",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:still-here-02": {
+    "question": "‘그럼에도, 우린’ 싱글과 4집에 모두 있는 버전 구성을 고르면?",
+    "choices": [
+      "반주곡만 있다",
+      "Live Ver.만 있다",
+      "보컬곡과 반주곡이 모두 있다",
+      "보컬곡만 있고 반주곡은 없다"
+    ],
+    "answer": 2,
+    "explanation": "싱글에는 보컬곡과 Inst.가, 4집에도 보컬곡과 Inst. (To My Fan)가 수록되어 있습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 4,
+    "skill": "버전 비교",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-01": {
+    "question": "3집과 4집의 타이틀곡·스타일을 바르게 짝지으면?",
+    "choices": [
+      "Hot Girl — 칠하우스 / Stay — 일렉트로 하우스",
+      "그 놈 목소리 — 록 / Stay — 재즈",
+      "사랑의 인사 — 하우스 / I Believe — 4집 타이틀",
+      "Hot Girl — 일렉트로 하우스 / Stay — 칠하우스"
+    ],
+    "answer": 3,
+    "explanation": "3집 Hot Girl은 일렉트로 하우스, 4집 타이틀 Stay는 칠하우스로 소개됩니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661",
+      "https://www.starnewskorea.com/music/2008/10/01/2008100115361214204"
+    ]
+  },
+  "song:first-again-02": {
+    "question": "발매 흐름이 맞는 것은?",
+    "choices": [
+      "See You Again → 그럼에도, 우린 → First, Again",
+      "그럼에도, 우린 → See You Again → First, Again",
+      "First, Again → See You Again → 그럼에도, 우린",
+      "See You Again → First, Again → 그럼에도, 우린"
+    ],
+    "answer": 0,
+    "explanation": "2011년 베스트 앨범, 2026년 선공개 싱글, 정규 4집 순서입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-03": {
+    "question": "4집 2~4번 트랙의 순서를 고르면?",
+    "choices": [
+      "봄처럼 그댄 → 계절은 돌고 돌아 → I Believe",
+      "계절은 돌고 돌아 → 봄처럼 그댄 → I Believe",
+      "I Believe → 봄처럼 그댄 → 계절은 돌고 돌아",
+      "계절은 돌고 돌아 → I Believe → 봄처럼 그댄"
+    ],
+    "answer": 1,
+    "explanation": "4집 2번부터 계절은 돌고 돌아, 봄처럼 그댄, I Believe가 이어집니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-04": {
+    "question": "4집 소개에서 세 멤버의 제작 참여를 어떻게 설명하나요?",
+    "choices": [
+      "세 멤버 모두 연주에만 참여했다",
+      "수록곡 전부를 세 멤버만 단독 작곡했다",
+      "멤버들이 직접 작사·작곡에 참여했다",
+      "모든 곡이 기존 곡의 재수록이다"
+    ],
+    "answer": 2,
+    "explanation": "앨범 소개는 남규리·김연지·이보람의 작사·작곡 참여를 설명합니다. 모든 곡의 단독 창작이라는 뜻은 아닙니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-05": {
+    "question": "선공개곡이 4집에서 놓인 위치와 버전이 맞는 것은?",
+    "choices": [
+      "1번 보컬곡 / 10번 Inst.",
+      "4번 Live Ver. / 11번 보컬곡",
+      "5번 Inst. / 11번 보컬곡",
+      "5번 보컬곡 / 11번 Inst. (To My Fan)"
+    ],
+    "answer": 3,
+    "explanation": "그럼에도, 우린은 5번 보컬곡과 11번 반주 버전으로 수록됩니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-06": {
+    "question": "4집 중반 세 곡이 실제 수록 순서대로 놓인 것은?",
+    "choices": [
+      "그럼에도, 우린 → 안돼요 → 잔향",
+      "안돼요 → 그럼에도, 우린 → 잔향",
+      "잔향 → 안돼요 → 그럼에도, 우린",
+      "그럼에도, 우린 → 잔향 → 안돼요"
+    ],
+    "answer": 0,
+    "explanation": "5~7번 트랙은 그럼에도, 우린, 안돼요, 잔향 순서입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-07": {
+    "question": "4집에서 보컬곡 구간의 끝과 반주곡 구간의 시작을 연결하면?",
+    "choices": [
+      "끝내 꺾이지 않는 것 → Stay Inst.",
+      "우리 Live Ver. → Stay Inst.",
+      "잔향 → 우리 Live Ver.",
+      "Stay Inst. → 우리 Live Ver."
+    ],
+    "answer": 1,
+    "explanation": "9번 우리 Live Ver.까지 보컬곡이며 10번 Stay Inst.부터 반주곡입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-08": {
+    "question": "20주년 4집의 디지털 수록 구성을 정확히 나누면?",
+    "choices": [
+      "보컬곡 8개 + 반주곡 3개",
+      "보컬곡 10개 + 반주곡 1개",
+      "보컬곡 9개 + 반주곡 2개",
+      "보컬곡 11개 + 반주곡 0개"
+    ],
+    "answer": 2,
+    "explanation": "총 11트랙 중 마지막 2개는 Inst.이고, 우리 Live Ver.는 보컬곡입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-09": {
+    "question": "이름에 버전 표기가 있는 곡 중 반주곡으로 분류하면 안 되는 것은?",
+    "choices": [
+      "Stay Inst.",
+      "그럼에도, 우린 Inst. (To My Fan)",
+      "그럼에도, 우린 (Inst.)",
+      "우리 Live Ver."
+    ],
+    "answer": 3,
+    "explanation": "Live Ver.는 라이브 버전이며 Inst.와 다릅니다. 우리 Live Ver.는 보컬곡입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-10": {
+    "question": "4집에서 보컬곡과 반주곡이 모두 수록된 두 곡은?",
+    "choices": [
+      "Stay · 그럼에도, 우린",
+      "I Believe · Stay",
+      "우리 · 안돼요",
+      "잔향 · 봄처럼 그댄"
+    ],
+    "answer": 0,
+    "explanation": "반주 트랙은 Stay Inst.와 그럼에도, 우린 Inst. (To My Fan)입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  },
+  "song:first-again-11": {
+    "question": "첫 앨범부터 20주년 앨범까지의 연결이 모두 맞는 것은?",
+    "choices": [
+      "The First Mind — 구두 II / First, Again — Hot Girl",
+      "The First Mind — 여인의 향기 / First, Again — Stay",
+      "Lovely Sweet Heart — 그 놈 목소리 / First, Again — Stay",
+      "Brilliant Change — Stay / First, Again — 사랑의 인사"
+    ],
+    "answer": 1,
+    "explanation": "첫 앨범의 타이틀은 여인의 향기, 20주년 정규 4집의 타이틀은 Stay입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "level": 5,
+    "skill": "종합 연결",
+    "additionalSources": [
+      "https://www.melon.com/album/detail.htm?albumId=314286",
+      "https://www.melon.com/album/detail.htm?albumId=352046",
+      "https://www.melon.com/album/detail.htm?albumId=362767",
+      "https://www.melon.com/album/detail.htm?albumId=398227",
+      "https://www.melon.com/album/detail.htm?albumId=703853",
+      "https://music.bugs.co.kr/album/259909",
+      "https://www.melon.com/album/detail.htm?albumId=13299661"
+    ]
+  }
+}

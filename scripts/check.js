@@ -66,3 +66,12 @@ require('./check-concert-diary');
 execFileSync(process.execPath,['scripts/check-my-concert-client.js'],{cwd:root,stdio:'inherit'});
 require('./check-my-concert-show');
 execFileSync(process.execPath,['scripts/check-my-concert-playback.js'],{cwd:root,stdio:'inherit'});
+
+require('./check-our-stage-cards');
+require('./check-our-stage-decoration');
+require('./check-our-stage-hair');
+require('./check-our-stage-journey');
+require('./check-our-stage-release');
+require('./check-our-stage-shop');
+require('./check-our-stage-stories');
+require('./check-our-stage');

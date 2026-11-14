@@ -1,0 +1,208 @@
+{
+  "song:shoes": {
+    "question": "씨야 1집의 두 번째 수록곡은?",
+    "choices": [
+      "구두",
+      "Stay",
+      "결혼할까요"
+    ],
+    "answer": 0,
+    "explanation": "1집 The First Mind의 2번 트랙은 ‘구두’예요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:because": {
+    "question": "‘사랑하기 때문에’에 피처링한 팀은?",
+    "choices": [
+      "SG워너비",
+      "다비치",
+      "브라운 아이드 걸스"
+    ],
+    "answer": 0,
+    "explanation": "이 곡은 SG워너비가 피처링한 1집 수록곡이에요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:flower": {
+    "question": "1집 수록곡 중 꽃의 이름을 가진 곡은?",
+    "choices": [
+      "접시꽃",
+      "해바라기",
+      "장미"
+    ],
+    "answer": 0,
+    "explanation": "1집 네 번째 트랙은 ‘접시꽃’이에요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:promise": {
+    "question": "1집 다섯 번째 트랙의 제목은?",
+    "choices": [
+      "Stay",
+      "Promise U",
+      "The Last"
+    ],
+    "answer": 1,
+    "explanation": "Promise U는 1집 다섯 번째 트랙이에요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:again": {
+    "question": "‘Promise U’ 다음에 이어지는 1집 곡은?",
+    "choices": [
+      "처음부터 또다시",
+      "구두",
+      "여인의 향기"
+    ],
+    "answer": 0,
+    "explanation": "앨범의 6번 트랙은 ‘처음부터 또다시’예요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:guilty": {
+    "question": "‘처음부터 또다시’ 다음의 1집 수록곡은?",
+    "choices": [
+      "무죄",
+      "유죄",
+      "약속"
+    ],
+    "answer": 1,
+    "explanation": "1집 7번 트랙의 제목은 ‘유죄’예요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:parting": {
+    "question": "1집의 실제 수록곡 제목은?",
+    "choices": [
+      "이별 준비",
+      "이별 일기",
+      "이별 해보기"
+    ],
+    "answer": 2,
+    "explanation": "‘이별 해보기’는 1집 8번 트랙이에요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:tears": {
+    "question": "제목 ‘Tears And ___’에 들어가는 단어는?",
+    "choices": [
+      "Fears",
+      "Stars",
+      "Dreams"
+    ],
+    "answer": 0,
+    "explanation": "정식 곡명은 Tears And Fears예요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:loved": {
+    "question": "1집의 실제 수록곡 제목을 골라보세요.",
+    "choices": [
+      "사랑했다면",
+      "사랑할까요",
+      "사랑의 인사"
+    ],
+    "answer": 0,
+    "explanation": "‘사랑했다면’은 1집 10번 트랙이에요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:just": {
+    "question": "1집에서 ‘사랑했다면’ 다음에 오는 곡은?",
+    "choices": [
+      "그냥",
+      "구두",
+      "접시꽃"
+    ],
+    "answer": 0,
+    "explanation": "1집 11번 트랙은 ‘그냥’이에요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "song:fault": {
+    "question": "씨야 1집을 마무리하는 마지막 곡은?",
+    "choices": [
+      "내 잘못입니다",
+      "Promise U",
+      "유죄"
+    ],
+    "answer": 0,
+    "explanation": "12번 트랙 ‘내 잘못입니다’로 첫 앨범이 마무리돼요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "story:first": {
+    "question": "씨야의 데뷔 앨범 타이틀곡은?",
+    "choices": [
+      "사랑의 인사",
+      "여인의 향기",
+      "Hot Girl"
+    ],
+    "answer": 1,
+    "explanation": "씨야는 1집 타이틀곡 ‘여인의 향기’로 데뷔했어요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "story:album": {
+    "question": "씨야의 첫 정규 앨범 이름은?",
+    "choices": [
+      "Lovely Sweet Heart",
+      "First, Again",
+      "The First Mind"
+    ],
+    "answer": 2,
+    "explanation": "The First Mind는 2006년에 발표된 씨야의 첫 정규 앨범이에요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  },
+  "story:yj": {
+    "question": "이 기록의 주인공, ‘복면가왕 더 위너’ 무대에 선 멤버는?",
+    "choices": [
+      "이보람",
+      "김연지",
+      "남규리"
+    ],
+    "answer": 1,
+    "explanation": "방금 읽은 2018 DMC 페스티벌 무대의 주인공은 김연지예요.",
+    "source": "https://www.youtube.com/watch?v=VX4z0syPoWw",
+    "level": 4,
+    "skill": "멤버 활동의 흐름"
+  },
+  "story:gr": {
+    "question": "남규리의 연기 기록에서 살펴본 드라마는?",
+    "choices": [
+      "49일",
+      "별에서 온 그대",
+      "도깨비"
+    ],
+    "answer": 0,
+    "explanation": "남규리가 출연한 드라마 ‘49일’의 기록을 만났어요.",
+    "source": "https://www.bntnews.co.kr/article/view/bnt201105200353",
+    "level": 4,
+    "skill": "멤버 활동의 흐름"
+  },
+  "story:br": {
+    "question": "이보람이 ‘놀면 뭐하니?’에서 함께한 팀은?",
+    "choices": [
+      "가야G",
+      "씨스타",
+      "오렌지캬라멜"
+    ],
+    "answer": 0,
+    "explanation": "이보람은 WSG워너비의 가야G 멤버로 함께했어요.",
+    "source": "https://www.youtube.com/watch?v=cojgPoISAf0",
+    "level": 4,
+    "skill": "멤버 활동의 흐름"
+  },
+  "story:reunion": {
+    "question": "2020년 씨야 세 사람이 다시 함께 노래한 프로그램은?",
+    "choices": [
+      "슈가맨3",
+      "유희열의 스케치북",
+      "복면가왕"
+    ],
+    "answer": 0,
+    "explanation": "JTBC 슈가맨3에서 원년 멤버 세 사람이 다시 무대에 섰어요.",
+    "source": "https://tv.jtbc.co.kr/clip/pr10011122/pm10055652/vo10354827/view",
+    "level": 4,
+    "skill": "멤버 활동의 흐름"
+  },
+  "story:ending": {
+    "question": "이번에 모아 온 1집의 수록곡은 모두 몇 곡인가요?",
+    "choices": [
+      "10곡",
+      "11곡",
+      "12곡"
+    ],
+    "answer": 2,
+    "explanation": "The First Mind의 열두 곡을 하나씩 모으며 우리만의 무대를 채워요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286"
+  }
+}
