@@ -1230,8 +1230,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2008-02&event=activity-200802
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v480-stage-002@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261114T065138Z
+LAST-MODIFIED:20261114T065138Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20080413
 DTEND;VALUE=DATE:20080414
@@ -1241,8 +1241,9 @@ TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:남규리 · 김연지 · 이보람\n시간 미정\n공식 무
- 대 영상: https://www.youtube.com/watch?v=8BBTw0eJ4HA\nhttps://seeya-fan
- page.com/archive/?record=v480-stage-002
+ 대 영상: https://www.youtube.com/watch?v=8BBTw0eJ4HA\nOM_KOR: https://w
+ ww.youtube.com/watch?v=RKprG1grkXs\nhttps://seeya-fanpage.com/archive/?rec
+ ord=v480-stage-002
 URL:https://seeya-fanpage.com/calendar/?month=2008-04&event=activity-v480-s
  tage-002
 END:VEVENT
@@ -7203,8 +7204,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2025-11&event=activity-v491-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-still-singing@seeya-fanpage.com
-DTSTAMP:20261113T070210Z
-LAST-MODIFIED:20261113T070210Z
+DTSTAMP:20261114T065138Z
+LAST-MODIFIED:20261114T065138Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20251206
 DTEND;VALUE=DATE:20251208
@@ -7239,7 +7240,12 @@ DESCRIPTION:이보람 · 김연지\n시간 미정\n12월 6~7일 열린 이
  바라기: https://www.youtube.com/watch?v=oxu3dDbW5Jg\n정아선: https:/
  /www.youtube.com/watch?v=7l2R5GEUs-w\n정아선: https://www.youtube.com/w
  atch?v=FH7EX1GEASM\n꽃길보라미: https://www.youtube.com/watch?v=kRWDq
- o6OuIU\nhttps://seeya-fanpage.com/archive/?record=v491-still-singing
+ o6OuIU\n정아선: https://www.youtube.com/watch?v=khvqoAHX-Sk\n정아선:
+  https://www.youtube.com/watch?v=U_LPcFgkwYY\n정아선: https://www.youtu
+ be.com/watch?v=3VQcZ1UULuM\n정아선: https://www.youtube.com/watch?v=Lx-
+ iHbj0bac\n정아선: https://www.youtube.com/watch?v=FAprrOM5VaQ\nh.a.p.p.
+ y.3.6.5: https://www.youtube.com/watch?v=jfN-Po3llDU\nhttps://seeya-fanpag
+ e.com/archive/?record=v491-still-singing
 URL:https://seeya-fanpage.com/calendar/?month=2025-12&event=activity-v491-s
  till-singing
 END:VEVENT
@@ -7747,8 +7753,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-06&event=activity-v488-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v475-sheet2-row31@seeya-fanpage.com
-DTSTAMP:20261113T070210Z
-LAST-MODIFIED:20261113T070210Z
+DTSTAMP:20261114T065138Z
+LAST-MODIFIED:20261114T065138Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20260628
 DTEND;VALUE=DATE:20260629
@@ -7776,8 +7782,12 @@ DESCRIPTION:남규리\n시간 미정\n2026년 6월 28일 룰리커피 가
  아: https://www.youtube.com/watch?v=st5qNfzt8EM\n무대인사매니아: h
  ttps://www.youtube.com/watch?v=S0V9LWrmOLs\n제리제이 Jerry.j: https://
  www.youtube.com/watch?v=SJcUr4QWgqE\nDK엔터테인먼트 방송 대행사
- : https://www.youtube.com/watch?v=u8GQ7TkuylI\nhttps://seeya-fanpage.com/a
- rchive/?record=v475-sheet2-row31
+ : https://www.youtube.com/watch?v=u8GQ7TkuylI\n무대인사매니아: http
+ s://www.youtube.com/watch?v=JyuioIfv0GE\n강남매TV: https://www.youtube.
+ com/watch?v=WMaOYRB5H1g\n강남매TV: https://www.youtube.com/watch?v=ntQz
+ TQMfAI0\n강남매TV: https://www.youtube.com/watch?v=uavF2UDnS24\n무대
+ 인사매니아: https://www.youtube.com/watch?v=wsOmBm3gBdY\nhttps://seey
+ a-fanpage.com/archive/?record=v475-sheet2-row31
 URL:https://seeya-fanpage.com/calendar/?month=2026-06&event=activity-v475-s
  heet2-row31
 END:VEVENT
