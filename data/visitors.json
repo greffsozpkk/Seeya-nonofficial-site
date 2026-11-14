@@ -3,8 +3,8 @@
   "metric": "totalUsers",
   "timeZone": "Asia/Seoul",
   "date": "2026-11-14",
-  "users": 0,
-  "updatedAt": "2026-11-14T04:45:26.832740+09:00",
+  "users": 3,
+  "updatedAt": "2026-11-14T09:20:16.866146+09:00",
   "history": [
     {
       "date": "2026-11-07",
@@ -32,11 +32,11 @@
     },
     {
       "date": "2026-11-13",
-      "users": 42
+      "users": 46
     },
     {
       "date": "2026-11-14",
-      "users": 0
+      "users": 3
     }
   ],
   "limited": false
