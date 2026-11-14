@@ -25,7 +25,7 @@
       "title": "씨야, 1승도 못 했던 ‘불후’ 190만뷰 터져 “뜨거운 반응, 댄스 가수로 거듭나” - 뉴스엔",
       "source": "뉴스엔",
       "pubDate": "2026-11-14T09:41:19+00:00",
-      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBWQ2h5NW1MWDdiU2Z2cFlVdTgwQXh3SUVDRExNNnBla21XOUd3d1ZTRXZZX3ZqaDlKdUg3dG9mWFRlV0JrMk4zSklIM2FfQ3B1NU43R2RpNTRyQ2JTS18xRjNUdmNTajNicFhJb1hsN08xSmlQVTUyWEg5VQ?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBoRzNZN3ZHdEUtX3hPOGtEbEthMXM4Z0JELUp6RTRnTExRWDYxYTRpS1JsclMxbms1Mm1qamFBcmN0ckRUdDVTWDZacERvcnZTekN4ZXFIMEhwUHROZEFqZnFkQlFyUEZf?oc=5",
       "description": "씨야, 1승도 못 했던 ‘불후’ 190만뷰 터져 “뜨거운 반응, 댄스 가수로 거듭나” 뉴스엔"
     },
     {
@@ -147,16 +147,16 @@
       "description": "‘골때녀’ 이보람, 첫경기부터 빛난 투지…FC발라드림 4강 진출 기여 톡톡 뉴스엔"
     }
   ],
-  "updatedAt": "2026-11-14T11:09:26.712950+00:00",
-  "lastCheckedAt": "2026-11-14T11:09:26.712950+00:00",
+  "updatedAt": "2026-11-14T11:19:55.402883+00:00",
+  "lastCheckedAt": "2026-11-14T11:19:55.402883+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-14T11:09:26.712950+00:00",
-    "남규리": "2026-11-14T11:09:26.712950+00:00",
-    "김연지": "2026-11-14T11:09:26.712950+00:00",
-    "이보람": "2026-11-14T11:09:26.712950+00:00"
+    "씨야": "2026-11-14T11:19:55.402883+00:00",
+    "남규리": "2026-11-14T11:19:55.402883+00:00",
+    "김연지": "2026-11-14T11:19:55.402883+00:00",
+    "이보람": "2026-11-14T11:19:55.402883+00:00"
   },
   "categoryContentUpdatedAt": {
-    "씨야": "2026-11-14T11:09:26.712950+00:00",
+    "씨야": "2026-11-14T11:19:55.402883+00:00",
     "남규리": "2026-11-14T11:09:26.712950+00:00",
     "이보람": "2026-11-13T19:45:19.566369+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
@@ -172,9 +172,9 @@
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 56,
-      "changed": true,
-      "status": "changed"
+      "accepted": 55,
+      "changed": false,
+      "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
