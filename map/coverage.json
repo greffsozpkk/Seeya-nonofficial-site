@@ -1,12 +1,30 @@
 {
   "summary": {
-    "records": 163,
+    "records": 165,
     "venues": 141,
-    "linked": 99,
+    "linked": 101,
     "pending": 64,
     "unreviewed": 0
   },
   "rows": [
+    {
+      "recordId": "20261123-boram-immortal-sumi-recording",
+      "title": "이보람 · 불후의 명곡 「40주년 소프라노 조수미」 식스 팀 녹화",
+      "venue": "KBS 신관 공개홀",
+      "placeIds": [
+        "kbs-new-building"
+      ],
+      "status": "linked"
+    },
+    {
+      "recordId": "20270109-boram-six-2030",
+      "title": "이보람 · 식스 더 뮤지컬 · 1월 9일 20:30 출연·사인회",
+      "venue": "홍익대 대학로 아트센터 대극장",
+      "placeIds": [
+        "hongik-daehakro"
+      ],
+      "status": "linked"
+    },
     {
       "recordId": "20261228-yeonji-avahair",
       "title": "김연지 · 에이바헤어 송년회 AVA VIP AFFAIR 출연 예정",

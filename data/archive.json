@@ -1,5 +1,122 @@
 [
   {
+    "id": "20261123-boram-immortal-sumi-recording",
+    "date": "2026-11-23",
+    "addedAt": "2026-11-14",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
+    "title": "이보람 · 불후의 명곡 「40주년 소프라노 조수미」 식스 팀 녹화",
+    "program": "KBS2 · 불후의 명곡",
+    "type": "music-show",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "KBS 공식 · 11월 23일 조수미 편 방청 안내",
+      "url": "https://kbsticket.kbs.co.kr/requestnew/list.do?m_seq=114"
+    },
+    "additionalSources": [
+      {
+        "label": "아이즈 · 이보람 포함 식스 팀 출연 및 녹화일 보도",
+        "url": "https://www.mt.co.kr/entertainment/2026/11/13/2026111308347261843",
+        "publishedDate": "2026-11-13"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "recording",
+    "tags": [
+      "2026",
+      "예정"
+    ],
+    "note": "이보람이 「식스 더 뮤지컬」의 손승연·효정·김지우·최현선·유주혜와 함께 조수미 데뷔 40주년 특집 녹화에 참여할 예정입니다.\n11월 23일 KBS 신관 공개홀에서 녹화합니다. KBS 방청 공지는 1부 오후 2시 30분, 2부 오후 7시로 나뉘며, 식스 팀의 참여 부와 방송일은 추후 안내를 확인해 주세요.",
+    "eventState": "scheduled",
+    "calendar": {
+      "enabled": true,
+      "sequence": 0
+    },
+    "venue": "KBS 신관 공개홀",
+    "homeActions": {
+      "notice": "https://kbsticket.kbs.co.kr/requestnew/list.do?m_seq=114"
+    }
+  },
+  {
+    "id": "20270109-boram-six-2030",
+    "date": "2027-01-09",
+    "addedAt": "2026-11-14",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
+    "title": "이보람 · 식스 더 뮤지컬 · 1월 9일 20:30 출연·사인회",
+    "program": "식스 더 뮤지컬",
+    "type": "concert",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "식스 더 뮤지컬 공식 · 이보람 참여 회차 사인회 안내",
+      "url": "https://www.instagram.com/p/DfqgsWaE5ZV/",
+      "publishedDate": "2026-11-13"
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "event",
+    "tags": [
+      "2027",
+      "예정",
+      "식스 더 뮤지컬",
+      "사인회"
+    ],
+    "note": "이보람이 시모어 역으로 출연하는 1월 9일 오후 8시 30분 공연입니다.\n공연 종료 후 객석 1층 로비에서 배우 사인회가 열립니다. 해당 회차 유료 관객 30명이 대상이며, 참여 방법은 공식 안내를 확인해 주세요.",
+    "eventState": "scheduled",
+    "calendar": {
+      "enabled": true,
+      "time": "20:30",
+      "timeLabel": "공연 시작",
+      "sequence": 0
+    },
+    "venue": "홍익대 대학로 아트센터 대극장",
+    "homeActions": {
+      "notice": "https://www.instagram.com/p/DfqgsWaE5ZV/"
+    }
+  },
+  {
+    "id": "20261113-boram-six-support-thanks",
+    "date": "2026-11-13",
+    "addedAt": "2026-11-14",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
+    "title": "이보람 · 식스 더 뮤지컬 연습실 사진과 감사 인사",
+    "program": "식스 더 뮤지컬",
+    "type": "official",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "이보람 공식 Instagram · 식스 선물 감사 인사",
+      "url": "https://www.instagram.com/p/DfrjNCdE64C/",
+      "publishedDate": "2026-11-13"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "post-published",
+    "tags": [
+      "2026"
+    ],
+    "note": "이보람이 「식스 더 뮤지컬」 연습실에서 선물과 함께 찍은 사진을 공개하고 감사 인사를 전했습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    }
+  },
+  {
     "id": "20261109-gyuri-kloinm-exhibition",
     "date": "2026-11-09",
     "addedAt": "2026-11-13",
@@ -205,7 +322,7 @@
     "id": "20261218-boram-moifin-live",
     "date": "2026-12-18",
     "addedAt": "2026-11-09",
-    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
     "title": "DK·이보람 · 여수 모이핀 라이브",
     "program": "MOIFIN LIVE",
     "type": "event",
@@ -216,14 +333,14 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "모이핀 공식 · DK·이보람 공연 안내",
-      "url": "https://www.instagram.com/p/DfgNPRbSC_D/"
+      "label": "모이핀 공식 · 현장 판매 오후 3시 변경 및 공연 안내",
+      "url": "https://www.instagram.com/p/Dfty9WyknD8/",
+      "publishedDate": "2026-11-14"
     },
     "additionalSources": [
       {
-        "label": "모이핀 공식 · 티켓 판매처와 입장 안내",
-        "url": "https://www.instagram.com/p/DfrPblsklx8/",
-        "publishedDate": "2026-11-13"
+        "label": "모이핀 공식 · DK·이보람 공연 안내",
+        "url": "https://www.instagram.com/p/DfgNPRbSC_D/"
       }
     ],
     "status": "documented",
@@ -234,17 +351,17 @@
       "예정",
       "MOIFIN LIVE"
     ],
-    "note": "12월 18일 오후 6시 30분, 여수 모이핀 오션점 1층 전시관(무술목길 50)에서 DK와 이보람이 공연합니다. 입장은 오후 6시에 마감합니다.\n티켓은 당일 낮 12시부터 모이핀 기프트샵(무술목길 44)에서 현장 판매합니다. 에그타르트 세트와 입장권을 포함해 7만 원이며 전석 자유석입니다.",
+    "note": "12월 18일 오후 6시 30분, 여수 모이핀 오션점 1층 전시관(무술목길 50)에서 DK와 이보람이 약 90분간 공연합니다. 입장은 오후 6시에 마감합니다.\n티켓 현장 판매 시간이 오후 3시로 변경됐습니다. 판매 장소는 모이핀 기프트샵(무술목길 44)이며, 오후 2시 이전에는 대기할 수 없습니다.\n에그타르트 세트와 입장권을 포함해 7만 원이며 전석 자유석입니다.",
     "eventState": "scheduled",
     "calendar": {
       "enabled": true,
       "time": "18:30",
       "timeLabel": "공연 시작",
-      "sequence": 1
+      "sequence": 2
     },
     "venue": "모이핀 오션점 1층 전시관",
     "homeActions": {
-      "notice": "https://www.instagram.com/p/DfrPblsklx8/"
+      "notice": "https://www.instagram.com/p/Dfty9WyknD8/"
     }
   },
   {
@@ -52615,7 +52732,7 @@
     "id": "20261019-seeya-immortal-wax-recording",
     "date": "2026-10-19",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-11-06T07:09:08.026889+00:00",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 녹화",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -52726,7 +52843,7 @@
       "왁스",
       "녹화"
     ],
-    "note": "씨야 세 멤버가 10월 19일 KBS 신관 공개홀에서 「불후의 명곡」 ‘아티스트 왁스’ 편 녹화에 참여했습니다.\n출근길과 녹화를 마친 뒤의 퇴근길 영상을 함께 볼 수 있습니다.\n카드 날짜는 녹화일입니다. 방송은 메이저나인 공식 일정 기준 11월 14일 오후 6시 5분 예정입니다.",
+    "note": "씨야 세 멤버가 10월 19일 KBS 신관 공개홀에서 「불후의 명곡」 ‘아티스트 왁스’ 편 녹화에 참여했습니다.\n출근길과 녹화를 마친 뒤의 퇴근길 영상을 함께 볼 수 있습니다.\n카드 날짜는 녹화일입니다. 본방송은 11월 14일 KBS2에서 방송됐으며, 「사랑하고 싶어」 무대 영상은 해당 방송 기록에서 볼 수 있습니다.",
     "eventState": "completed",
     "venue": "KBS 신관 공개홀",
     "calendar": {
@@ -53980,8 +54097,8 @@
     "id": "20261114-seeya-immortal-wax-broadcast",
     "date": "2026-11-14",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
-    "title": "씨야 · 불후의 명곡 「아티스트 왁스」 방송 예정",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
+    "title": "씨야 · 불후의 명곡 「아티스트 왁스」 사랑하고 싶어",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
     "members": [
@@ -53995,8 +54112,9 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "메이저나인 공식 · LEE BO RAM 일정",
-      "url": "https://enter.major9.net/schedule/"
+      "label": "KBS 레전드 케이팝 공식 · 씨야 「사랑하고 싶어」 무대",
+      "url": "https://www.youtube.com/watch?v=X6AllgM6ix4",
+      "publishedDate": "2026-11-14"
     },
     "additionalSources": [
       {
@@ -54013,26 +54131,43 @@
         "label": "스포츠투데이 · 780회 아티스트 왁스 출연 안내",
         "url": "https://stoo.com/article.php?aid=109883027559",
         "publishedDate": "2026-11-13"
+      },
+      {
+        "label": "KBS 레전드 케이팝 공식 · 「사랑하고 싶어」 무대 소개",
+        "url": "https://www.youtube.com/watch?v=l0Kl7qPdrQQ",
+        "publishedDate": "2026-11-14"
+      },
+      {
+        "label": "KBS 레전드 케이팝 공식 · 씨야 데뷔 이야기 토크",
+        "url": "https://www.youtube.com/watch?v=Uko095fG8BM",
+        "publishedDate": "2026-11-14"
+      },
+      {
+        "label": "HJ컬쳐 공식 · 씨야·KoN 출연 안내와 사진",
+        "url": "https://www.instagram.com/p/DftvbZ4ISxS/",
+        "publishedDate": "2026-11-14"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "KBS2 · 불후의 명곡",
-      "예정"
+      "불후의 명곡",
+      "왁스",
+      "라이브"
     ],
-    "note": "11월 14일 오후 6시 5분 KBS2에서 방송 예정인 780회 「아티스트 왁스」 편입니다. 씨야 세 멤버가 부르는 「사랑하고 싶어」를 KBS 공식 미리보기로 만나볼 수 있습니다.",
-    "eventState": "scheduled",
+    "note": "11월 14일 KBS2에서 방송된 불후의 명곡 780회 「아티스트 왁스」 편입니다. 씨야 세 멤버가 「사랑하고 싶어」를 불렀으며, 액터뮤지션 KoN(콘)이 함께 참여했습니다.\nKBS 공식 무대 전체 영상과 무대 소개·토크 영상을 함께 볼 수 있습니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": true,
       "time": "18:05",
       "timeLabel": "방송 시작",
-      "sequence": 1
+      "sequence": 2
     },
     "homeActions": {
-      "notice": "https://enter.major9.net/schedule/"
+      "watch": "https://www.youtube.com/watch?v=X6AllgM6ix4",
+      "replay": "https://www.youtube.com/watch?v=X6AllgM6ix4"
     },
     "episode": 780
   },
@@ -56615,7 +56750,7 @@
     "id": "20261111-boram-btn-dream-schedule",
     "date": "2026-11-11",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-12T14:24:17.226727+00:00",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
     "title": "이보람 · 한밤의 꿈 이보람입니다 29회",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
@@ -56642,6 +56777,11 @@
         "url": "https://www.youtube.com/watch?v=QQdll07fQz4",
         "publishedDate": "2026-11-12",
         "autoDiscovery": true
+      },
+      {
+        "label": "ramirang_ · 한밤의 꿈 29회 방송 사진",
+        "url": "https://www.instagram.com/p/DfmrLHqkhDG/",
+        "publishedDate": "2026-11-11"
       }
     ],
     "status": "available",
@@ -56665,7 +56805,7 @@
     "id": "20261111-boram-kickagoal-240",
     "date": "2026-11-11",
     "addedAt": "2026-11-12",
-    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
     "title": "이보람 · 골 때리는 그녀들 240회 FC발라드림 준결승",
     "program": "SBS · 골 때리는 그녀들",
     "type": "variety",
@@ -56689,6 +56829,11 @@
       {
         "label": "이보람 공식 · FC발라드림 방송 안내",
         "url": "https://www.instagram.com/p/DfmbTL8E8qG/",
+        "publishedDate": "2026-11-11"
+      },
+      {
+        "label": "nam_hee0928 · 이보람 골 때리는 그녀들 방송 클립",
+        "url": "https://www.instagram.com/reel/DfmMuIJSfm_/",
         "publishedDate": "2026-11-11"
       }
     ],
@@ -56786,7 +56931,7 @@
     "id": "20261105-gyuri-yeonji-sharing-awards",
     "date": "2026-11-05",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-07",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
     "title": "남규리·김연지 · 대한민국 나눔국민대상 시상 및 축하 무대",
     "program": "제15회 대한민국 나눔국민대상",
     "type": "event",
@@ -56824,6 +56969,11 @@
         "label": "일산언니 · 귀 호강 부르는 하모니! 씨야 김연지 남규리 축하무대 직캠 (제15회 나눔국민대상) l Kim Yeon-ji & Nam Gyu-ri",
         "url": "https://www.youtube.com/watch?v=ipoFD5HUlNg",
         "publishedDate": "2026-11-06"
+      },
+      {
+        "label": "귤잼 · 11월 5일 김연지 사진",
+        "url": "https://www.instagram.com/p/DfsKQW3nzEi/",
+        "publishedDate": "2026-11-14"
       }
     ],
     "status": "available",
@@ -57132,7 +57282,7 @@
     "date": "2027-01-06",
     "title": "이보람 · 식스 더 뮤지컬 · 1월 6일 20:00 출연",
     "addedAt": "2026-11-05",
-    "updatedAt": "2026-11-05",
+    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
     "program": "식스 더 뮤지컬",
     "type": "concert",
     "members": [
@@ -57142,9 +57292,9 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "식스 · 2차 캐스팅 스케줄 이미지",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10547",
-      "publishedDate": "2026-11-04"
+      "label": "식스 더 뮤지컬 공식 · 이보람 참여 회차 사인회 안내",
+      "url": "https://www.instagram.com/p/DfqgsWaE5ZV/",
+      "publishedDate": "2026-11-13"
     },
     "additionalSources": [
       {
@@ -57153,7 +57303,7 @@
         "publishedDate": "2026-11-04"
       }
     ],
-    "note": "2차 캐스팅표에 기재된 이보람의 시모어 출연 회차입니다.",
+    "note": "이보람이 시모어 역으로 출연하는 1월 6일 오후 8시 공연입니다.\n공연 종료 후 객석 1층 로비에서 배우 사인회가 열립니다. 해당 회차 유료 관객 30명이 대상이며, 참여 방법은 공식 안내를 확인해 주세요.",
     "dateBasis": "event",
     "dateStatus": "confirmed",
     "eventState": "scheduled",
@@ -57163,9 +57313,13 @@
     ],
     "calendar": {
       "time": "20:00",
-      "timeLabel": "공연 시작"
+      "timeLabel": "공연 시작",
+      "sequence": 1
     },
-    "venue": "홍익대 대학로 아트센터 대극장"
+    "venue": "홍익대 대학로 아트센터 대극장",
+    "homeActions": {
+      "notice": "https://www.instagram.com/p/DfqgsWaE5ZV/"
+    }
   },
   {
     "id": "20270107-boram-six-2000",
