@@ -54097,7 +54097,7 @@
     "id": "20261114-seeya-immortal-wax-broadcast",
     "date": "2026-11-14",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-14T11:35:10.858275+00:00",
+    "updatedAt": "2026-11-14T12:32:43.257843+00:00",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 사랑하고 싶어",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -54160,6 +54160,11 @@
       {
         "label": "스포츠투데이 · 씨야 데뷔 비하인드 토크",
         "url": "https://www.stoo.com/article.php?aid=109911298501",
+        "publishedDate": "2026-11-14"
+      },
+      {
+        "label": "불후의 명곡 공식 인스타그램 · 씨야 「사랑하고 싶어」 릴스",
+        "url": "https://www.instagram.com/reel/DfuKBSqGgDi/",
         "publishedDate": "2026-11-14"
       }
     ],
@@ -56946,7 +56951,7 @@
     "id": "20261105-gyuri-yeonji-sharing-awards",
     "date": "2026-11-05",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-14T11:14:09.381770+00:00",
+    "updatedAt": "2026-11-14T12:32:43.257843+00:00",
     "title": "남규리·김연지 · 대한민국 나눔국민대상 시상 및 축하 무대",
     "program": "제15회 대한민국 나눔국민대상",
     "type": "event",
@@ -56989,6 +56994,11 @@
         "label": "귤잼 · 11월 5일 김연지 사진",
         "url": "https://www.instagram.com/p/DfsKQW3nzEi/",
         "publishedDate": "2026-11-14"
+      },
+      {
+        "label": "KBS 공식 · 11월 28일 오후 3시 10분 특집 방송 안내",
+        "url": "https://mylovekbs.kbs.co.kr/index.html?contents_id=70000000404092&sname=mylovekbs&source=mylovekbs&stype=magazine",
+        "publishedDate": "2026-11-06"
       }
     ],
     "status": "available",
@@ -57014,7 +57024,7 @@
     "date": "2026-11-28",
     "title": "남규리·김연지 · 대한민국 나눔국민대상 방송 예정",
     "addedAt": "2026-11-05",
-    "updatedAt": "2026-11-05",
+    "updatedAt": "2026-11-14T12:32:43.257843+00:00",
     "program": "제15회 대한민국 나눔국민대상",
     "type": "music-show",
     "members": [
@@ -57034,9 +57044,14 @@
         "label": "씨야 갤러리 · 남규리·김연지 시상 및 축하 무대 방청 후기",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10623",
         "publishedDate": "2026-11-05"
+      },
+      {
+        "label": "KBS 공식 · 11월 28일 오후 3시 10분 특집 방송 안내",
+        "url": "https://mylovekbs.kbs.co.kr/index.html?contents_id=70000000404092&sname=mylovekbs&source=mylovekbs&stype=magazine",
+        "publishedDate": "2026-11-06"
       }
     ],
-    "note": "11월 5일 남규리와 김연지가 시상과 축하 무대에 참여한 시상식의 녹화 방송입니다.\nKBS 1TV에서 11월 28일 오후 3시 10분부터 5시까지 방송할 예정입니다.",
+    "note": "11월 5일 남규리와 김연지가 시상과 축하 무대에 참여한 시상식의 녹화 방송입니다.\nKBS 공식 안내에 따르면 11월 28일(토) 오후 3시 10분부터 5시까지 KBS 1TV에서 방송 예정입니다.",
     "dateBasis": "broadcast",
     "dateStatus": "confirmed",
     "eventState": "scheduled",
