@@ -21,7 +21,9 @@ module.exports=function(testMode=false){
  function answer(m,id,index){const a=m.active,q=question(a);if(!a||a.id!==id||!q||!Number.isInteger(index)||index<0||index>=q.choices.length)return false;a.answers.push(index);return true;}
  const beats=8,interval=700,lead=2100,windowMs=200;
  const patterns=[{id:'steady',name:'기본 박자',offsets:[0,700,1400,2100,2800,3500,4200,4900]},{id:'pairs',name:'두 번씩 치기',offsets:[0,450,1400,1850,2800,3250,4200,4650]},{id:'offbeat',name:'엇박자',offsets:[0,1050,1750,2100,3150,3850,4200,5250]}];
- const offsets=a=>patterns.find(p=>p.id===(a.pattern||'steady')).offsets;
+ const offsets=a=>a.tempoMs?Array.from({length:8},(_,i)=>i*a.tempoMs):patterns.find(p=>p.id===(a.pattern||'steady')).offsets;
+ function beginSong(m,id,now,tempoMs){if(!Number.isInteger(tempoMs)||tempoMs<400||tempoMs>1500||!beginBeat(m,id,now))return false;m.active.tempoMs=tempoMs;return true;}
+ function resetBeat(m,id){const a=m.active;if(!a||a.id!==id||a.kind!=='rhythm')return false;a.beatStart=null;a.taps=[];delete a.tempoMs;return true;}
  const endAt=a=>a.beatStart+offsets(a)[7]+windowMs;
  function beginBeat(m,id,now){const a=m.active;if(!a||a.id!==id||a.kind!=='rhythm'||a.beatStart!==null||!time(now)||now<a.started)return false;a.beatStart=now+lead;return true;}
  function tap(m,id,now){const a=m.active;if(!a||a.id!==id||a.kind!=='rhythm'||a.beatStart===null||!time(now)||now<a.beatStart-lead||now>endAt(a))return null;
@@ -42,7 +44,7 @@ module.exports=function(testMode=false){
   const a=m.active;if(a===null)return true;
   if(!a||!games.some(g=>g.id===a.kind)||!time(a.started)||a.id!==a.kind+':'+a.started||m.plays<1||m.next[a.kind]<=a.started||!Array.isArray(a.keys)||!Array.isArray(a.answers)||!Array.isArray(a.taps))return false;
   if(a.kind==='quiz')return a.keys.length===3&&new Set(a.keys).size===3&&a.keys.every(k=>pool.includes(k))&&a.answers.length<=3&&a.answers.every((x,i)=>Number.isInteger(x)&&x>=0&&x<bank[a.keys[i]].choices.length)&&a.taps.length===0&&a.beatStart===null;
-  return patterns.some(p=>p.id===(a.pattern||'steady'))&&!a.keys.length&&!a.answers.length&&(a.beatStart===null?!a.taps.length:time(a.beatStart)&&a.beatStart>=a.started+lead)&&a.taps.length<=32&&a.taps.every((t,i)=>time(t)&&t>=a.beatStart-lead&&t<=endAt(a)&&(!i||t-a.taps[i-1]>=100));
+  return (a.tempoMs===undefined||Number.isInteger(a.tempoMs)&&a.tempoMs>=400&&a.tempoMs<=1500&&a.beatStart!==null)&&patterns.some(p=>p.id===(a.pattern||'steady'))&&!a.keys.length&&!a.answers.length&&(a.beatStart===null?!a.taps.length:time(a.beatStart)&&a.beatStart>=a.started+lead)&&a.taps.length<=32&&a.taps.every((t,i)=>time(t)&&t>=a.beatStart-lead&&t<=endAt(a)&&(!i||t-a.taps[i-1]>=100));
  }
- return {patterns,offsets,endAt,games,bank,pool,fresh,day,used,wait,canStart,start,question,answer,beginBeat,tap,score,finish,abandon,valid,cooldown,dailyLimit,beats,interval,lead,windowMs};
+ return {beginSong,resetBeat,patterns,offsets,endAt,games,bank,pool,fresh,day,used,wait,canStart,start,question,answer,beginBeat,tap,score,finish,abandon,valid,cooldown,dailyLimit,beats,interval,lead,windowMs};
 };

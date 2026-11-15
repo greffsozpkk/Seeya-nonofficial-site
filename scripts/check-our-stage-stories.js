@@ -5,8 +5,8 @@ const full=structuredClone(fixtures.complete);
 full.proofs=full.proofs.filter(k=>!M.storyById(k.slice(6)));
 for(const k of Object.keys(full.notes))if(M.storyById(k.slice(6)))delete full.notes[k];
 assert(M.valid(full));assert.deepEqual(M.loadSave(JSON.stringify(full)),full);
-assert.equal(M.storyEntries.length,18);assert.equal(M.storyEntries.filter(e=>e.kind==='album').length,7);
-assert.equal(M.storyEntries.filter(e=>e.kind==='event').length,11);
+assert.equal(M.storyEntries.length,20);assert.equal(M.storyEntries.filter(e=>e.kind==='album').length,7);
+assert.equal(M.storyEntries.filter(e=>e.kind==='event').length,13);
 const fresh=M.fresh();
 for(const e of M.storyEntries){
  const key='story:'+e.id,q=M.challenges[key];
@@ -43,6 +43,6 @@ assert(M.challenges['song:california-dream-08'].choices.includes('풀하우스')
 assert.equal(M.challenges['song:rebloom-01'].choices[M.challenges['song:rebloom-01'].answer],'그 놈 목소리 · 이민수');
 assert.equal(M.challenges['song:first-again-09'].choices[M.challenges['song:first-again-09'].answer],'우리 Live Ver.');
 assert.equal(M.badges(fixtures.complete).filter(b=>b.earned).length,51);
-console.log('PASS story expansion: 18 sourced stories, threshold boundaries, old-v4 saves, wrong/retry/cheer/replay, event badges, backup validation and five quiz tiers.');
+console.log('PASS story expansion: 20 sourced stories, threshold boundaries, old-v4 saves, wrong/retry/cheer/replay, event badges, backup validation and five quiz tiers.');
 module.exports={unread:full};
 

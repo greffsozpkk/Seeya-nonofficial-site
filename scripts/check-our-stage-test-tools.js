@@ -10,4 +10,4 @@ const complete=T.create('complete');assert.equal(M.count(complete),82);assert(M.
 const G=M.mini;
 for(const p of G.patterns){const m=G.fresh(),id=G.start(m,'rhythm',10000,()=>.2,p.id);assert(id);assert(G.beginBeat(m,id,10000));assert(G.valid(m));for(const [i,t]of G.offsets(m.active).entries()){assert.equal(G.tap(m,id,m.active.beatStart+t),i+1);assert.equal(G.tap(m,id,m.active.beatStart+t+1),null);}const end=G.endAt(m.active);assert.equal(G.finish(m,id,end-1),null);assert.equal(G.finish(m,id,end).reward,16);assert(!G.finish(m,id,end));}
 const old=G.fresh();G.start(old,'rhythm',10000);delete old.active.pattern;assert(G.valid(old));assert.deepEqual(G.offsets(old.active),G.patterns[0].offsets);old.active.pattern='bad';assert(!G.valid(old));assert(!G.start(G.fresh(),'rhythm',10000,Math.random,'bad'));
-console.log('PASS 31 test-only checkpoints, playable selected stories, production guard, save roundtrip, three rhythm patterns and old rhythm saves.');
+console.log('PASS 33 test-only checkpoints, playable selected stories, production guard, save roundtrip, three rhythm patterns and old rhythm saves.');

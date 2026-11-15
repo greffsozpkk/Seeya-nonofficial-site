@@ -9,7 +9,7 @@ assert.deepEqual(M.albums.map(a=>a.tracks.length),[12,13,11,13,5,15,2,11]);
 assert(!M.unlockAlbum(s,'first-again'));
 const checkpoints=[];
 for(const a of M.albums.slice(1)){
- if(a.id==='still-here'){for(const id of ['gr','yj','reunion','br']){if(M.has(s,id))continue;assert(M.answer(s,'story:'+id,M.challenges['story:'+id].answer));assert(M.claim(s,id));}assert(M.answer(s,'story:event-wsg',M.challenges['story:event-wsg'].answer));}
+ if(a.id==='still-here'){for(const id of ['gr','yj','reunion','br']){if(M.has(s,id))continue;assert(M.answer(s,'story:'+id,M.challenges['story:'+id].answer));assert(M.claim(s,id));}for(const id of ['event-wsg','event-yeonji-return','event-gyulmung'])assert(M.answer(s,'story:'+id,M.challenges['story:'+id].answer));}
  for(const id of M.albumStoryGates[a.id]||[]){assert(M.storyAvailable(s,id));assert(!M.albumAvailable(s,a.id));assert(M.answer(s,'story:'+id,M.challenges['story:'+id].answer));}
  checkpoints.push(structuredClone(s));
  assert(M.albumAvailable(s,a.id));assert(!M.outfitOwned(s,a.id));

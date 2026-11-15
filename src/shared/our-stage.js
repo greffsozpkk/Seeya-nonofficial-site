@@ -43,11 +43,11 @@ function createModel(testMode=false) {
   const albumMastered=(s,id)=>Boolean(albumById(id)&&albumById(id).tracks.every(t=>ready(s,t.id)));
   const albumUnlocked=(s,id)=>id==='first-mind'?has(s,'album'):s.albums.includes(id);
   const albumStoryGates={'lovely-sweet-heart':['event-rookie'],'brilliant-change':['event-seoul']};
-  const storyDestination=key=>{const id=key.replace(/^story:/,'');if(['gr','yj','reunion','br','event-wsg'].includes(id))return 'still-here';return Object.keys(albumStoryGates).find(a=>albumStoryGates[a].includes(id))||null;};
+  const storyDestination=key=>{const id=key.replace(/^story:/,'');if(['gr','yj','reunion','br','event-wsg','event-yeonji-return','event-gyulmung'].includes(id))return 'still-here';return Object.keys(albumStoryGates).find(a=>albumStoryGates[a].includes(id))||null;};
   const comebackStoryIds=['gr','yj','reunion','br'];
   const comebackRequirements=s=>[
     ...comebackStoryIds.map(id=>({label:id==='reunion'?'씨야 · 하나로 모인 기록':members.find(m=>m.id===id).name+' · '+members.find(m=>m.id===id).title,done:has(s,id),action:'story',value:id})),
-    {label:'이보람 · 씨야를 다시 떠올린 목소리 (WSG워너비)',done:storyDone(s,'event-wsg'),action:'timeline',value:'event-wsg'}
+    ...['event-wsg','event-yeonji-return','event-gyulmung'].map(id=>({label:storyById(id).subject+' · '+storyById(id).title,done:storyDone(s,id),action:'timeline',value:id}))
   ];
   const albumRequirements=(s,id)=>{const i=albums.findIndex(a=>a.id===id);return i<1?[]:[{label:albums[i-1].name+' 전곡 수집',done:albumUnlocked(s,albums[i-1].id)&&albumComplete(s,albums[i-1].id),action:'album-view',value:albums[i-1].id},...(albumStoryGates[id]||[]).map(k=>({label:storyById(k).title,done:storyDone(s,k),action:'timeline',value:k})),...(id==='still-here'?comebackRequirements(s):[])];};
   const albumAvailable=(s,id)=>{const i=albums.findIndex(a=>a.id===id);return i>0&&!albumUnlocked(s,id)&&albumRequirements(s,id).every(r=>r.done);};

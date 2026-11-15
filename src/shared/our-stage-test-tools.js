@@ -20,7 +20,7 @@ module.exports=function(M){
   for(const [i,id] of core.entries())if(personal>=counts[id]&&(stop<0||i<stop))flag(id);
   // Only prerequisites of already-opened albums are pre-completed; selected stories remain playable.
   for(const a of M.albums.slice(1,ai+1))for(const id of M.albumStoryGates[a.id]||[])proof('story:'+id);
-  if(ai>=M.albums.findIndex(a=>a.id==='still-here'))proof('story:event-wsg');
+  if(ai>=M.albums.findIndex(a=>a.id==='still-here'))for(const id of ['event-wsg','event-yeonji-return','event-gyulmung'])proof('story:'+id);
   if(e?.requiresFlags)for(const id of e.requiresFlags)flag(id);
   s.setlist=s.collected.filter(id=>M.ready(s,id)).slice(0,2);
   if(!M.valid(s)||story&&(e?!M.storyAvailable(s,story):!M.coreAvailable(s,story)))throw Error('Invalid test checkpoint');

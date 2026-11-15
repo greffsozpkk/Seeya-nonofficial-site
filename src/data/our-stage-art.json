@@ -180,6 +180,22 @@
       "method": "Built-in image_gen",
       "source": "C:/Users/sunil/.codex/generated_images/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/exec-8abdebf0-4640-413e-ba2e-ef44020aa5e5.png",
       "prompt": "Square symbolic chunky pixel art in mint, cream and pink. Four silver microphones on a small stage and a foreground pink microphone connect to an open scrapbook with three musical notes. WSG/Gaya-G activity and memories of SeeYa. No people, text or logos. Style reference: chapter-rebloom.png. Symbolic fan art, not an actual broadcast scene."
+    },
+    {
+      "id": "event-gyulmung",
+      "file": "images/game/our-stage/stories/event-gyulmung.png",
+      "method": "Built-in image_gen",
+      "reference": "images/game/our-stage/seeya-pixel-base.png",
+      "prompt": "Square story illustration for a Korean pixel game. Match supplied reference chunky low-resolution 2D sprites exactly: big simple pixel heads, tiny bodies, square dot eyes, flat 2-tone shading, large hard pixels. ONLY center black-haired woman from reference (Nam Gyuri), in a simple cream cardigan and jeans seated with a microphone and small tripod vlog camera in cozy recording room. Open scrapbook with three small colored star stickers evokes remembering her group, warm afternoon window. Symbolic fan-game scene about opening up through her YouTube channel, not reconstruction of any actual filming. No text, letters, logos, medical objects, or other people. No smooth anime style.",
+      "note": "Symbolic fan-game scene, not an actual filming or medical reconstruction."
+    },
+    {
+      "id": "event-yeonji-return",
+      "file": "images/game/our-stage/stories/event-yeonji-return.png",
+      "method": "Built-in image_gen",
+      "reference": "images/game/our-stage/seeya-pixel-base.png",
+      "prompt": "Square story illustration for a Korean pixel game. Match reference chunky low-resolution 2D sprites exactly: big simple pixel heads, tiny bodies, square dot eyes, flat 2-tone shading, large hard pixels. ONLY right brown-haired woman from reference (Kim Yeonji), in a comfortable light pink cardigan and plain dark trousers, standing in a quiet rehearsal room gently holding a microphone at waist level beside music stand and a cup of warm tea, soft hopeful sunrise from window, three small paper stars on music stand. Symbolic scene about patiently returning to singing after recovery, not actual event/photo. NO hospital, no bandages, no injury or invented treatment. No text, letters, logos or other people. No smooth anime style.",
+      "note": "Symbolic fan-game scene, not an actual filming or medical reconstruction."
     }
   ],
   "stageShop": [
