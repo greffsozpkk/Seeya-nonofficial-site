@@ -41,7 +41,7 @@
       "title": "남규리, 12월 9일 솔로 신곡 발표 “첫눈 오는 날 커플 질투하는 곡” - 동아일보",
       "source": "동아일보",
       "pubDate": "2026-11-15T07:26:27+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1GUUhlOGZILTZheURTSnJmbDJubVZBZzdwc2VXNm5oNlljeUJDZU03QkxvcU9tNHVBOXZJUlJQSDUxTUJKLXhNQXNpb0pUVTcza1NwS00zdk44eGhsWHRaalVNSm9yZ9IBZkFVX3lxTE1GUUhlOGZILTZheURTSnJmbDJubVZBZzdwc2VXNm5oNlljeUJDZU03QkxvcU9tNHVBOXZJUlJQSDUxTUJKLXhNQXNpb0pUVTcza1NwS00zdk44eGhsWHRaalVNSm9yZw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBjZUlHU1E5ZmtVZTZEQm9CMjBVaHRQYk9VU0dqdGxUWERmTFdIRlY1YWtEd1ZodGJ1VmNFWmJybkEyZGVtN1Bhd0pmeWx4QWJEWWIzS2ZBcVlTUnptaVVhN3dvQ1lSNjd6amNIS3dVWVFGdlhud25HSWI2eHByd9IBZkFVX3lxTE1GUUhlOGZILTZheURTSnJmbDJubVZBZzdwc2VXNm5oNlljeUJDZU03QkxvcU9tNHVBOXZJUlJQSDUxTUJKLXhNQXNpb0pUVTcza1NwS00zdk44eGhsWHRaalVNSm9yZw?oc=5",
       "description": "남규리, 12월 9일 솔로 신곡 발표 “첫눈 오는 날 커플 질투하는 곡” 동아일보"
     },
     {
@@ -147,17 +147,17 @@
       "description": "‘골때녀’ 이보람, 첫경기부터 빛난 투지…FC발라드림 4강 진출 기여 톡톡 뉴스엔"
     }
   ],
-  "updatedAt": "2026-11-15T15:28:41.745896+00:00",
-  "lastCheckedAt": "2026-11-15T15:28:41.745896+00:00",
+  "updatedAt": "2026-11-15T18:53:36.667815+00:00",
+  "lastCheckedAt": "2026-11-15T18:53:36.667815+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-15T15:28:41.745896+00:00",
-    "남규리": "2026-11-15T15:28:41.745896+00:00",
-    "김연지": "2026-11-15T15:28:41.745896+00:00",
-    "이보람": "2026-11-15T15:28:41.745896+00:00"
+    "씨야": "2026-11-15T18:53:36.667815+00:00",
+    "남규리": "2026-11-15T18:53:36.667815+00:00",
+    "김연지": "2026-11-15T18:53:36.667815+00:00",
+    "이보람": "2026-11-15T18:53:36.667815+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-14T22:28:15.010267+00:00",
-    "남규리": "2026-11-15T10:46:15.875827+00:00",
+    "남규리": "2026-11-15T18:53:36.667815+00:00",
     "이보람": "2026-11-13T19:45:19.566369+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
   },
@@ -165,7 +165,7 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 104,
+      "accepted": 105,
       "changed": false,
       "status": "unchanged"
     },
@@ -173,20 +173,20 @@
       "queries": 3,
       "succeeded": 3,
       "accepted": 69,
-      "changed": false,
-      "status": "unchanged"
+      "changed": true,
+      "status": "changed"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 18,
+      "accepted": 17,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 49,
+      "accepted": 48,
       "changed": false,
       "status": "unchanged"
     }
