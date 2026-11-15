@@ -1,0 +1,508 @@
+{
+  "checkedAt": "2026-11-16",
+  "measurementIntervalMs": 12,
+  "note": "Energy/onset values only; no audio recording. Final phone touch/audio latency remains device dependent.",
+  "songs": [
+    {
+      "song": "여인의 향기",
+      "youtubeUrl": "https://www.youtube.com/watch?v=YKW0KSHTF1k",
+      "method": "Official YouTube playback; authored 32-note chart from measured spectral-flux attack times. No audio files stored or served.",
+      "notes": [
+        {
+          "noteMs": 37430,
+          "measuredMs": 37430,
+          "onsetStrength": 0.425071
+        },
+        {
+          "noteMs": 37969,
+          "measuredMs": 37969,
+          "onsetStrength": 0.351563
+        },
+        {
+          "noteMs": 38511,
+          "measuredMs": 38511,
+          "onsetStrength": 0.56407
+        },
+        {
+          "noteMs": 39050,
+          "measuredMs": 39050,
+          "onsetStrength": 0.179827
+        },
+        {
+          "noteMs": 39590,
+          "measuredMs": 39590,
+          "onsetStrength": 0.650001
+        },
+        {
+          "noteMs": 40129,
+          "measuredMs": 40129,
+          "onsetStrength": 0.419181
+        },
+        {
+          "noteMs": 40670,
+          "measuredMs": 40670,
+          "onsetStrength": 0.575311
+        },
+        {
+          "noteMs": 41210,
+          "measuredMs": 41210,
+          "onsetStrength": 0.277035
+        },
+        {
+          "noteMs": 41739,
+          "measuredMs": 41739,
+          "onsetStrength": 0.683489
+        },
+        {
+          "noteMs": 42289,
+          "measuredMs": 42289,
+          "onsetStrength": 0.527443
+        },
+        {
+          "noteMs": 42830,
+          "measuredMs": 42830,
+          "onsetStrength": 0.738697
+        },
+        {
+          "noteMs": 43370,
+          "measuredMs": 43370,
+          "onsetStrength": 0.348809
+        },
+        {
+          "noteMs": 43911,
+          "measuredMs": 43911,
+          "onsetStrength": 0.7928
+        },
+        {
+          "noteMs": 44449,
+          "measuredMs": 44449,
+          "onsetStrength": 0.577572
+        },
+        {
+          "noteMs": 44979,
+          "measuredMs": 44979,
+          "onsetStrength": 0.509265
+        },
+        {
+          "noteMs": 45529,
+          "measuredMs": 45529,
+          "onsetStrength": 0.383985
+        },
+        {
+          "noteMs": 46070,
+          "measuredMs": 46070,
+          "onsetStrength": 0.868411
+        },
+        {
+          "noteMs": 46609,
+          "measuredMs": 46609,
+          "onsetStrength": 0.665965
+        },
+        {
+          "noteMs": 47150,
+          "measuredMs": 47150,
+          "onsetStrength": 0.796594
+        },
+        {
+          "noteMs": 47689,
+          "measuredMs": 47689,
+          "onsetStrength": 0.432395
+        },
+        {
+          "noteMs": 48230,
+          "measuredMs": 48230,
+          "onsetStrength": 0.733555
+        },
+        {
+          "noteMs": 48769,
+          "measuredMs": 48769,
+          "onsetStrength": 0.644502
+        },
+        {
+          "noteMs": 49310,
+          "measuredMs": 49310,
+          "onsetStrength": 0.688072
+        },
+        {
+          "noteMs": 49849,
+          "measuredMs": 49849,
+          "onsetStrength": 0.443515
+        },
+        {
+          "noteMs": 50391,
+          "measuredMs": 50391,
+          "onsetStrength": 0.593573
+        },
+        {
+          "noteMs": 50929,
+          "measuredMs": 50929,
+          "onsetStrength": 0.528128
+        },
+        {
+          "noteMs": 51470,
+          "measuredMs": 51470,
+          "onsetStrength": 0.606905
+        },
+        {
+          "noteMs": 52009,
+          "measuredMs": 52009,
+          "onsetStrength": 0.348612
+        },
+        {
+          "noteMs": 52551,
+          "measuredMs": 52551,
+          "onsetStrength": 0.685673
+        },
+        {
+          "noteMs": 53088,
+          "measuredMs": 53088,
+          "onsetStrength": 0.428576
+        },
+        {
+          "noteMs": 53630,
+          "measuredMs": 53630,
+          "onsetStrength": 0.582246
+        },
+        {
+          "noteMs": 54169,
+          "measuredMs": 54169,
+          "onsetStrength": 0.364545
+        }
+      ]
+    },
+    {
+      "song": "사랑의 인사",
+      "youtubeUrl": "https://www.youtube.com/watch?v=wRdNZKsh_a0",
+      "method": "Official YouTube playback; authored 32-note chart from measured spectral-flux attack times. No audio files stored or served.",
+      "notes": [
+        {
+          "noteMs": 56779,
+          "measuredMs": 56779,
+          "onsetStrength": 0.461241
+        },
+        {
+          "noteMs": 57367,
+          "measuredMs": 57367,
+          "onsetStrength": 0.243087
+        },
+        {
+          "noteMs": 57958,
+          "measuredMs": 57958,
+          "onsetStrength": 0.140828
+        },
+        {
+          "noteMs": 58558,
+          "measuredMs": 58558,
+          "onsetStrength": 0.647107
+        },
+        {
+          "noteMs": 59158,
+          "measuredMs": 59158,
+          "onsetStrength": 0.558733
+        },
+        {
+          "noteMs": 59758,
+          "measuredMs": 59758,
+          "onsetStrength": 0.241065
+        },
+        {
+          "noteMs": 60339,
+          "measuredMs": 60339,
+          "onsetStrength": 0.177762
+        },
+        {
+          "noteMs": 60928,
+          "measuredMs": 60928,
+          "onsetStrength": 0.38971
+        },
+        {
+          "noteMs": 61528,
+          "measuredMs": 61528,
+          "onsetStrength": 0.362016
+        },
+        {
+          "noteMs": 62120,
+          "measuredMs": 62120,
+          "onsetStrength": 0.264117
+        },
+        {
+          "noteMs": 62720,
+          "measuredMs": 62720,
+          "onsetStrength": 0.183878
+        },
+        {
+          "noteMs": 63309,
+          "measuredMs": 63309,
+          "onsetStrength": 0.485424
+        },
+        {
+          "noteMs": 63909,
+          "measuredMs": 63909,
+          "onsetStrength": 0.345678
+        },
+        {
+          "noteMs": 64496,
+          "measuredMs": 64496,
+          "onsetStrength": 0.43612
+        },
+        {
+          "noteMs": 65096,
+          "measuredMs": 65096,
+          "onsetStrength": 0.266587
+        },
+        {
+          "noteMs": 65680,
+          "measuredMs": 65680,
+          "onsetStrength": 0.387323
+        },
+        {
+          "noteMs": 66280,
+          "measuredMs": 66280,
+          "onsetStrength": 0.398789
+        },
+        {
+          "noteMs": 66880,
+          "measuredMs": 66880,
+          "onsetStrength": 0.222571
+        },
+        {
+          "noteMs": 67469,
+          "measuredMs": 67469,
+          "onsetStrength": 0.245981
+        },
+        {
+          "noteMs": 68059,
+          "measuredMs": 68059,
+          "onsetStrength": 0.475133
+        },
+        {
+          "noteMs": 68659,
+          "measuredMs": 68659,
+          "onsetStrength": 0.386817
+        },
+        {
+          "noteMs": 69247,
+          "measuredMs": 69247,
+          "onsetStrength": 0.303058
+        },
+        {
+          "noteMs": 69718,
+          "measuredMs": 69718,
+          "onsetStrength": 0.325345
+        },
+        {
+          "noteMs": 70447,
+          "measuredMs": 70447,
+          "onsetStrength": 0.377504
+        },
+        {
+          "noteMs": 71038,
+          "measuredMs": 71038,
+          "onsetStrength": 0.583268
+        },
+        {
+          "noteMs": 71638,
+          "measuredMs": 71638,
+          "onsetStrength": 0.310295
+        },
+        {
+          "noteMs": 72189,
+          "measuredMs": 72189,
+          "onsetStrength": 0.270908
+        },
+        {
+          "noteMs": 72808,
+          "measuredMs": 72808,
+          "onsetStrength": 0.262883
+        },
+        {
+          "noteMs": 73408,
+          "measuredMs": 73408,
+          "onsetStrength": 0.352492
+        },
+        {
+          "noteMs": 75789,
+          "measuredMs": 75789,
+          "onsetStrength": 0.488752
+        },
+        {
+          "noteMs": 76377,
+          "measuredMs": 76377,
+          "onsetStrength": 0.869319
+        },
+        {
+          "noteMs": 76977,
+          "measuredMs": 76977,
+          "onsetStrength": 0.754171
+        }
+      ]
+    },
+    {
+      "song": "Hot Girl",
+      "youtubeUrl": "https://www.youtube.com/watch?v=VYvKqDIxERQ",
+      "method": "Official YouTube playback; authored 32-note chart from measured spectral-flux attack times. No audio files stored or served.",
+      "notes": [
+        {
+          "noteMs": 30907,
+          "measuredMs": 30907,
+          "onsetStrength": 0.885085
+        },
+        {
+          "noteMs": 31338,
+          "measuredMs": 31338,
+          "onsetStrength": 0.907704
+        },
+        {
+          "noteMs": 31768,
+          "measuredMs": 31768,
+          "onsetStrength": 0.657387
+        },
+        {
+          "noteMs": 32200,
+          "measuredMs": 32200,
+          "onsetStrength": 0.489266
+        },
+        {
+          "noteMs": 32646,
+          "measuredMs": 32646,
+          "onsetStrength": 0.877299
+        },
+        {
+          "noteMs": 33080,
+          "measuredMs": 33080,
+          "onsetStrength": 0.43747
+        },
+        {
+          "noteMs": 33509,
+          "measuredMs": 33509,
+          "onsetStrength": 0.813746
+        },
+        {
+          "noteMs": 33939,
+          "measuredMs": 33939,
+          "onsetStrength": 0.516146
+        },
+        {
+          "noteMs": 34387,
+          "measuredMs": 34387,
+          "onsetStrength": 0.679795
+        },
+        {
+          "noteMs": 35046,
+          "measuredMs": 35046,
+          "onsetStrength": 0.600862
+        },
+        {
+          "noteMs": 35480,
+          "measuredMs": 35480,
+          "onsetStrength": 0.815954
+        },
+        {
+          "noteMs": 36125,
+          "measuredMs": 36125,
+          "onsetStrength": 0.723568
+        },
+        {
+          "noteMs": 36548,
+          "measuredMs": 36548,
+          "onsetStrength": 0.609347
+        },
+        {
+          "noteMs": 36989,
+          "measuredMs": 36989,
+          "onsetStrength": 0.798673
+        },
+        {
+          "noteMs": 37419,
+          "measuredMs": 37419,
+          "onsetStrength": 0.586244
+        },
+        {
+          "noteMs": 37867,
+          "measuredMs": 37867,
+          "onsetStrength": 0.779266
+        },
+        {
+          "noteMs": 38286,
+          "measuredMs": 38286,
+          "onsetStrength": 0.615423
+        },
+        {
+          "noteMs": 38728,
+          "measuredMs": 38728,
+          "onsetStrength": 0.652039
+        },
+        {
+          "noteMs": 39160,
+          "measuredMs": 39160,
+          "onsetStrength": 0.597477
+        },
+        {
+          "noteMs": 39606,
+          "measuredMs": 39606,
+          "onsetStrength": 0.602913
+        },
+        {
+          "noteMs": 40027,
+          "measuredMs": 40027,
+          "onsetStrength": 0.690165
+        },
+        {
+          "noteMs": 40469,
+          "measuredMs": 40469,
+          "onsetStrength": 0.748685
+        },
+        {
+          "noteMs": 40899,
+          "measuredMs": 40899,
+          "onsetStrength": 0.660738
+        },
+        {
+          "noteMs": 41348,
+          "measuredMs": 41348,
+          "onsetStrength": 0.572034
+        },
+        {
+          "noteMs": 41766,
+          "measuredMs": 41766,
+          "onsetStrength": 0.639728
+        },
+        {
+          "noteMs": 42427,
+          "measuredMs": 42427,
+          "onsetStrength": 0.731676
+        },
+        {
+          "noteMs": 43086,
+          "measuredMs": 43086,
+          "onsetStrength": 0.55206
+        },
+        {
+          "noteMs": 43628,
+          "measuredMs": 43628,
+          "onsetStrength": 0.554351
+        },
+        {
+          "noteMs": 43949,
+          "measuredMs": 43949,
+          "onsetStrength": 0.61365
+        },
+        {
+          "noteMs": 44379,
+          "measuredMs": 44379,
+          "onsetStrength": 0.628174
+        },
+        {
+          "noteMs": 44827,
+          "measuredMs": 44827,
+          "onsetStrength": 0.559868
+        },
+        {
+          "noteMs": 45246,
+          "measuredMs": 45246,
+          "onsetStrength": 0.835449
+        }
+      ]
+    }
+  ]
+}

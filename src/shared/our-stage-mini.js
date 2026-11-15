@@ -2,7 +2,7 @@
 // Local game economy. Limits survive reloads; this is not a server anti-cheat system.
 module.exports=function(testMode=false){
  const cooldown=testMode?60000:900000, dailyLimit=6;
- const games=[{id:'quiz',name:'노래 단서 퀴즈',description:'곡과 앨범의 단서를 보고 세 문제를 풀어요.',maxReward:15},{id:'rhythm',name:'응원 리듬 맞추기',description:'다가오는 빛이 중앙에 닿을 때, 여덟 번 박자를 맞춰요.',maxReward:16}];
+ const games=[{id:'quiz',name:'노래 단서 퀴즈',description:'곡과 앨범의 단서를 보고 세 문제를 풀어요.',maxReward:15},{id:'rhythm',name:'응원 리듬 맞추기',description:'노래에 맞춰 다가오는 빛이 중앙에 닿으면 눌러요.',maxReward:16}];
  const bank={...require('../data/our-stage-challenges.json'),...require('../data/our-stage-journey-challenges.json')};
  const pool=Object.keys(bank).filter(k=>k.startsWith('song:'));
  const fresh=()=>({earned:0,day:null,plays:0,next:{quiz:0,rhythm:0},active:null});
@@ -21,13 +21,17 @@ module.exports=function(testMode=false){
  function answer(m,id,index){const a=m.active,q=question(a);if(!a||a.id!==id||!q||!Number.isInteger(index)||index<0||index>=q.choices.length)return false;a.answers.push(index);return true;}
  const beats=8,interval=700,lead=2100,windowMs=200;
  const patterns=[{id:'steady',name:'기본 박자',offsets:[0,700,1400,2100,2800,3500,4200,4900]},{id:'pairs',name:'두 번씩 치기',offsets:[0,450,1400,1850,2800,3250,4200,4650]},{id:'offbeat',name:'엇박자',offsets:[0,1050,1750,2100,3150,3850,4200,5250]}];
- const offsets=a=>a.tempoMs?Array.from({length:8},(_,i)=>i*a.tempoMs):patterns.find(p=>p.id===(a.pattern||'steady')).offsets;
+ const charts=require('../data/our-stage-rhythm-songs.json');
+ const chartById=id=>charts.find(c=>c.id===id);
+ const total=a=>a.kind==='quiz'?3:offsets(a).length;
+ function beginChart(m,id,now,chartId){if(!chartById(chartId)||!beginBeat(m,id,now))return false;m.active.chartId=chartId;return true;}
+ const offsets=a=>a.chartId?chartById(a.chartId).chart.notes.map(t=>t-chartById(a.chartId).chart.notes[0]):a.tempoMs?Array.from({length:8},(_,i)=>i*a.tempoMs):patterns.find(p=>p.id===(a.pattern||'steady')).offsets;
  function beginSong(m,id,now,tempoMs){if(!Number.isInteger(tempoMs)||tempoMs<400||tempoMs>1500||!beginBeat(m,id,now))return false;m.active.tempoMs=tempoMs;return true;}
- function resetBeat(m,id){const a=m.active;if(!a||a.id!==id||a.kind!=='rhythm')return false;a.beatStart=null;a.taps=[];delete a.tempoMs;return true;}
- const endAt=a=>a.beatStart+offsets(a)[7]+windowMs;
+ function resetBeat(m,id){const a=m.active;if(!a||a.id!==id||a.kind!=='rhythm')return false;a.beatStart=null;a.taps=[];delete a.tempoMs;delete a.chartId;return true;}
+ const endAt=a=>a.beatStart+offsets(a).at(-1)+windowMs;
  function beginBeat(m,id,now){const a=m.active;if(!a||a.id!==id||a.kind!=='rhythm'||a.beatStart!==null||!time(now)||now<a.started)return false;a.beatStart=now+lead;return true;}
  function tap(m,id,now){const a=m.active;if(!a||a.id!==id||a.kind!=='rhythm'||a.beatStart===null||!time(now)||now<a.beatStart-lead||now>endAt(a))return null;
-  if(a.taps.length>=32||a.taps.length&&now-a.taps[a.taps.length-1]<100)return null;
+  if(a.taps.length>=total(a)*4||a.taps.length&&now-a.taps[a.taps.length-1]<100)return null;
   a.taps.push(now);return score(a);
  }
  function score(a){if(a.kind==='quiz')return a.answers.reduce((n,x,i)=>n+(x===bank[a.keys[i]].answer?1:0),0);
@@ -35,7 +39,7 @@ module.exports=function(testMode=false){
  }
  function finish(m,id,now){const a=m.active;if(!a||a.id!==id||!time(now))return null;
   if(a.kind==='quiz'?a.answers.length!==3:a.beatStart===null||now<endAt(a))return null;
-  const correct=score(a),reward=correct*(a.kind==='quiz'?5:2),result={kind:a.kind,correct,total:a.kind==='quiz'?3:beats,reward};m.earned+=reward;m.active=null;return result;
+  const correct=score(a),count=total(a),reward=a.kind==='quiz'?correct*5:Math.round(16*correct/count),result={kind:a.kind,correct,total:count,reward};m.earned+=reward;m.active=null;return result;
  }
  function abandon(m,id){if(m.active?.id!==id)return false;m.active=null;return true;}
  function valid(m){
@@ -44,7 +48,7 @@ module.exports=function(testMode=false){
   const a=m.active;if(a===null)return true;
   if(!a||!games.some(g=>g.id===a.kind)||!time(a.started)||a.id!==a.kind+':'+a.started||m.plays<1||m.next[a.kind]<=a.started||!Array.isArray(a.keys)||!Array.isArray(a.answers)||!Array.isArray(a.taps))return false;
   if(a.kind==='quiz')return a.keys.length===3&&new Set(a.keys).size===3&&a.keys.every(k=>pool.includes(k))&&a.answers.length<=3&&a.answers.every((x,i)=>Number.isInteger(x)&&x>=0&&x<bank[a.keys[i]].choices.length)&&a.taps.length===0&&a.beatStart===null;
-  return (a.tempoMs===undefined||Number.isInteger(a.tempoMs)&&a.tempoMs>=400&&a.tempoMs<=1500&&a.beatStart!==null)&&patterns.some(p=>p.id===(a.pattern||'steady'))&&!a.keys.length&&!a.answers.length&&(a.beatStart===null?!a.taps.length:time(a.beatStart)&&a.beatStart>=a.started+lead)&&a.taps.length<=32&&a.taps.every((t,i)=>time(t)&&t>=a.beatStart-lead&&t<=endAt(a)&&(!i||t-a.taps[i-1]>=100));
+  return (a.chartId===undefined||Boolean(chartById(a.chartId))&&a.beatStart!==null&&a.tempoMs===undefined)&&(a.tempoMs===undefined||Number.isInteger(a.tempoMs)&&a.tempoMs>=400&&a.tempoMs<=1500&&a.beatStart!==null)&&patterns.some(p=>p.id===(a.pattern||'steady'))&&!a.keys.length&&!a.answers.length&&(a.beatStart===null?!a.taps.length:time(a.beatStart)&&a.beatStart>=a.started+lead)&&a.taps.length<=total(a)*4&&a.taps.every((t,i)=>time(t)&&t>=a.beatStart-lead&&t<=endAt(a)&&(!i||t-a.taps[i-1]>=100));
  }
- return {beginSong,resetBeat,patterns,offsets,endAt,games,bank,pool,fresh,day,used,wait,canStart,start,question,answer,beginBeat,tap,score,finish,abandon,valid,cooldown,dailyLimit,beats,interval,lead,windowMs};
+ return {charts,chartById,beginChart,total,beginSong,resetBeat,patterns,offsets,endAt,games,bank,pool,fresh,day,used,wait,canStart,start,question,answer,beginBeat,tap,score,finish,abandon,valid,cooldown,dailyLimit,beats,interval,lead,windowMs};
 };
