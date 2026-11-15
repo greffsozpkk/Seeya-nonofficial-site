@@ -7061,11 +7061,17 @@
         "url": "https://www.youtube.com/watch?v=EBnlDypuZyo",
         "publishedDate": "2026-09-14",
         "autoDiscovery": true
+      },
+      {
+        "label": "거햄",
+        "url": "https://www.youtube.com/watch?v=Q3dP6nd1uuk",
+        "publishedDate": "2026-09-13",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-11-13T07:02:10.295562+00:00"
+    "updatedAt": "2026-11-15T06:57:02.415798+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -54166,7 +54172,7 @@
     "id": "20261114-seeya-immortal-wax-broadcast",
     "date": "2026-11-14",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-14T12:32:43.257843+00:00",
+    "updatedAt": "2026-11-15T06:57:02.415798+00:00",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 사랑하고 싶어",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -54235,6 +54241,18 @@
         "label": "불후의 명곡 공식 인스타그램 · 씨야 「사랑하고 싶어」 릴스",
         "url": "https://www.instagram.com/reel/DfuKBSqGgDi/",
         "publishedDate": "2026-11-14"
+      },
+      {
+        "label": "대한민국 대표 공영미디어 KBS",
+        "url": "https://news.google.com/rss/articles/CBMiwAJBVV95cUxNMFhoUlBEZXpmajNnV21Ca0FQYlBoMWdiMGduWmc0TnlrcUhFUnpDY0ZhZ0lZMkwwYUp1UUg5T1B4X1BnXzFzZTZ0dlMwakNHY01pajl6NWVVMm82OHp4NHhrdWRBSWhoVWM4OHJNUnkxSC1ZVFV1ZnhsTUNYM1dmVFVwN0hXQkYxQVVBTHVlWkVaR2RzbTZOc0RzeHYzX3RRb1ljWnhSSzNOY1RheXZvT2ZINk0tZFpUUlpRNjVEOVJzSmdOeTV2TTdQRHFvbFVKZUtmajFJYzRHYU9UTHFmT0J3Z1Y3U2M1c0ZLS0FmVnZQSF8zVW1zVmdjM1Y1eUxtVUl2eTVrdUJkbExTX0RMS2sxc3JOMms5OC1LNy1hSmx1YzB6MEl3ZExSQ0pCUXkxNEpseC1NN3NxdmRKQW1VZA",
+        "publishedDate": "2026-11-14",
+        "autoDiscovery": true
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=nfUtZnVicAw",
+        "publishedDate": "2026-11-14",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -58233,7 +58251,7 @@
     "id": "20210311-yeonji-misstrot-gala",
     "date": "2021-03-11",
     "addedAt": "2026-11-15",
-    "updatedAt": "2026-11-15",
+    "updatedAt": "2026-11-15T06:57:02.415798+00:00",
     "title": "김연지 · 미스트롯2 갈라쇼",
     "program": "TV조선 미스트롯2 갈라쇼",
     "type": "music-show",
@@ -58259,6 +58277,12 @@
       {
         "label": "미스&미스터트롯 · TOP14 강원도 아리랑",
         "url": "https://www.youtube.com/watch?v=nhzd_rP6FeI"
+      },
+      {
+        "label": "TVCHOSUN JOY",
+        "url": "https://www.youtube.com/watch?v=EiNkAL2BMMo",
+        "publishedDate": "2021-03-19",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
