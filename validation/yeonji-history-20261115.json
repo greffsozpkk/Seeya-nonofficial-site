@@ -1,0 +1,131 @@
+{
+  "checkedAt": "2026-11-15",
+  "reference": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=1394&page=1",
+  "added": [
+    {
+      "id": "20071211-yeonji-mtom-yeonga",
+      "date": "2007-12-11",
+      "title": "김연지 · 연가 (Feat. 연지)"
+    },
+    {
+      "id": "20080827-yeonji-crazy-woman",
+      "date": "2008-08-27",
+      "title": "김연지 · Crazy Woman"
+    },
+    {
+      "id": "20100806-yeonji-zia-time",
+      "date": "2010-08-06",
+      "title": "김연지 · 시간아 부탁할게 (Feat. 씨야 연지)"
+    },
+    {
+      "id": "20130816-yeonji-dreamtechno-mind",
+      "date": "2013-08-16",
+      "title": "김연지 · Mind (feat. 김연지)"
+    },
+    {
+      "id": "20130913-yeonji-hongdae",
+      "date": "2013-09-13",
+      "title": "김연지 · 홍대거리에서 (그 여자..)"
+    },
+    {
+      "id": "20240923-yeonji-daejeonmbc60",
+      "date": "2024-09-23",
+      "title": "김연지 · 대전MBC 창사 60주년 라디오 공개방송"
+    },
+    {
+      "id": "20210622-yeonji-twooclock-marie",
+      "date": "2021-06-22",
+      "title": "김연지 · 마리 앙투아네트 출연진과 두시의 데이트"
+    },
+    {
+      "id": "20200624-yeonji-tbs-scoop",
+      "date": "2020-06-24",
+      "title": "김연지 · The Scoop · 모차르트! 콘스탄체 이야기"
+    },
+    {
+      "id": "20200411-yeonji-goodweekend",
+      "date": "2020-04-11",
+      "title": "김연지 · 좋은 주말 3·4부"
+    },
+    {
+      "id": "20190324-yeonji-goodweekend",
+      "date": "2019-03-24",
+      "title": "김연지 · 좋은 주말 3·4부"
+    },
+    {
+      "id": "20150609-yeonji-ladyjane-radio",
+      "date": "2015-06-09",
+      "title": "김연지 · 레이디 제인의 2시 출연"
+    },
+    {
+      "id": "20190916-yeonji-tbs-marie-notice",
+      "date": "2019-09-16",
+      "title": "김연지 · 이은미와 함께라면 출연 안내"
+    },
+    {
+      "id": "20210311-yeonji-misstrot-gala",
+      "date": "2021-03-11",
+      "title": "김연지 · 미스트롯2 갈라쇼"
+    },
+    {
+      "id": "20210312-yeonji-callcenter46",
+      "date": "2021-03-12",
+      "title": "김연지 · 미스레인보우 · 사랑의 콜센타 46회"
+    }
+  ],
+  "enriched": [
+    {
+      "id": "v491-misstrot-10",
+      "title": "김연지 — 물망초 / 사랑아"
+    },
+    {
+      "id": "v491-misstrot-7",
+      "title": "김연지 · 여고시절 / 살다 보면 / 흥부자"
+    },
+    {
+      "id": "v491-sketchbook-20200306",
+      "title": "김연지 · 유희열의 스케치북 · 라이브와 씨야 메들리"
+    },
+    {
+      "id": "v490-noon-20160907",
+      "title": "김연지 · 헤어지는 중입니다 / 한번 더 라이브"
+    },
+    {
+      "id": "v484-news-009",
+      "title": "김연지 · 우리 다시 만나요 발표 소식"
+    },
+    {
+      "id": "discovered-fddbb70d92f1b6c9",
+      "title": "김연지 · 이세준의 음악이 좋은 밤 · 좋은 밤 라이브"
+    }
+  ],
+  "pending": [
+    {
+      "date": "2020-02-23",
+      "title": "김연지 · 두시탈출 컬투쇼",
+      "reason": "정리 글 외에 해당 회차 출연을 확인할 원출처 미확보. 신규 등록 보류."
+    }
+  ],
+  "fanGallery": {
+    "profilesChecked": 15,
+    "profileFailures": 0,
+    "added": 0,
+    "blockedCandidate": "cup_soohans / Dfjsfq0h5oE: 외부 삽입 차단으로 미등록"
+  },
+  "newYouTubeSources": 19,
+  "referenceYouTubeLinksAllCovered": true,
+  "dateCorrection": {
+    "recordId": "discovered-fddbb70d92f1b6c9",
+    "oldDate": "2024-10-03",
+    "oldBasis": "video-published",
+    "date": "2024-10-02",
+    "dateBasis": "broadcast",
+    "evidence": "https://www.igbf.kr/gugak_web/radio/radio_program_board.jsp?sub_num=787&sub_id=3402&idx=RD2023006196&state=view&bIdx=232920&pageNo=1"
+  },
+  "checks": [
+    "node build.js",
+    "node scripts/check.js",
+    "All YouTube IDs linked in the reference post are now present in the archive",
+    "Two official radio selections resolve to existing archive records"
+  ]
+}

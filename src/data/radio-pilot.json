@@ -1010,5 +1010,27 @@
     "checkedAt": "2026-11-07",
     "basis": "방송사 공식 영상의 제목·설명에서 방송일과 출연자, 라이브 곡을 확인했습니다.",
     "sourceTitle": "[노래방 라이브] 이보람 - 형(兄) (원곡: 노라조) / GOT7 영재의 친한친구 / MBC 221105 방송"
+  },
+  {
+    "recordId": "discovered-fddbb70d92f1b6c9",
+    "youtubeId": "C9uUC1bNfak",
+    "kind": "full",
+    "channel": "국악방송 라디오 (Gugak FM)",
+    "channelUrl": "https://www.youtube.com/channel/UChGH9Y7DVCJXFlBtNXTf98A",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-11-15",
+    "basis": "국악방송 공식 영상과 2024년 10월 2일 공식 선곡표에서 출연·방송일·라이브 곡을 확인했습니다.",
+    "sourceTitle": "[이세준의 음악이 좋은 밤] [FULL] 좋은 밤 라이브 초대석 with 김연지"
+  },
+  {
+    "recordId": "20240923-yeonji-daejeonmbc60",
+    "youtubeId": "Zm2ctIseE6w",
+    "kind": "replay",
+    "channel": "대전MBC",
+    "channelUrl": "https://www.youtube.com/channel/UCmOwgVyR_Faye31Wk5v38bw",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-11-15",
+    "basis": "대전MBC 공식 영상 설명에서 2024년 9월 23일 공개방송, 9월 30일 FM 방송 및 김연지 출연을 확인했습니다.",
+    "sourceTitle": "지역민과 함께! 음악과 함께! 2024 대전MBC 창사 60주년 특집 라디오 공개방송 | 2024년 9월 23일"
   }
 ]

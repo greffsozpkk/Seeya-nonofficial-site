@@ -1001,6 +1001,26 @@ URL:https://seeya-fanpage.com/calendar/?month=2007-10&event=activity-200710
  24-seeya-kumamoto-friendship
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20071211-yeonji-mtom-yeonga@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20071211
+DTEND;VALUE=DATE:20071212
+SUMMARY:김연지 · 연가 (Feat. 연지)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:release
+LOCATION:
+DESCRIPTION:김연지\n발매일 · 시간 미정\n엠투엠의 곡에 김
+ 연지가 피처링으로 참여했습니다.\n엠투엠 - Topic · 유통
+ 사 제공 음원: https://www.youtube.com/watch?v=ma_3ksEBWjY\n음원·
+ 음반 정보: https://music.bugs.co.kr/track/80391969\nhttps://seeya-fanp
+ age.com/archive/?record=20071211-yeonji-mtom-yeonga
+URL:https://seeya-fanpage.com/calendar/?month=2007-12&event=activity-200712
+ 11-yeonji-mtom-yeonga
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v487-history-016@seeya-fanpage.com
 DTSTAMP:20260911T150000Z
 LAST-MODIFIED:20260911T150000Z
@@ -1369,6 +1389,26 @@ DESCRIPTION:남규리\n시간 미정\nSBSKPOP X INKIGAYO · 공식 영상:
  hive/?record=v487-history-002
 URL:https://seeya-fanpage.com/calendar/?month=2008-08&event=activity-v487-h
  istory-002
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20080827-yeonji-crazy-woman@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20080827
+DTEND;VALUE=DATE:20080828
+SUMMARY:김연지 · Crazy Woman
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:release
+LOCATION:
+DESCRIPTION:김연지\n발매일 · 시간 미정\n김연지·이해리·
+ 이정민이 함께 부른 OST입니다.\nDanalEntertainment · 공식 뮤
+ 직비디오: https://www.youtube.com/watch?v=Klmc7oLMyn4\n음원·음반 
+ 정보: https://music.bugs.co.kr/album/162243\nhttps://seeya-fanpage.com/a
+ rchive/?record=20080827-yeonji-crazy-woman
+URL:https://seeya-fanpage.com/calendar/?month=2008-08&event=activity-200808
+ 27-yeonji-crazy-woman
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v481-archive-009@seeya-fanpage.com
@@ -2311,6 +2351,26 @@ URL:https://seeya-fanpage.com/calendar/?month=2010-02&event=activity-v480-s
  tage-026
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20100806-yeonji-zia-time@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20100806
+DTEND;VALUE=DATE:20100807
+SUMMARY:김연지 · 시간아 부탁할게 (Feat. 씨야 연지)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:release
+LOCATION:
+DESCRIPTION:김연지\n발매일 · 시간 미정\n지아의 곡에 김연
+ 지가 피처링으로 참여했습니다.\nZia - Topic · 유통사 제
+ 공 음원: https://www.youtube.com/watch?v=DYc6FybvbwI\n음원·음반 
+ 정보: https://www.genie.co.kr/detail/albumInfo?axnm=80167842\nhttps://se
+ eya-fanpage.com/archive/?record=20100806-yeonji-zia-time
+URL:https://seeya-fanpage.com/calendar/?month=2010-08&event=activity-201008
+ 06-yeonji-zia-time
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v481-archive-022@seeya-fanpage.com
 DTSTAMP:20260911T150000Z
 LAST-MODIFIED:20260911T150000Z
@@ -2698,6 +2758,48 @@ URL:https://seeya-fanpage.com/calendar/?month=2013-07&event=activity-v490-a
  lbum-375865
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20130816-yeonji-dreamtechno-mind@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20130816
+DTEND;VALUE=DATE:20130817
+SUMMARY:김연지 · Mind (feat. 김연지)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:release
+LOCATION:
+DESCRIPTION:김연지\n발매일 · 시간 미정\n드림테크노의 곡
+ 에 김연지가 피처링으로 참여했습니다.\nRelease - Topic · 
+ 유통사 제공 음원: https://www.youtube.com/watch?v=YLzUQJbwwDM\n음
+ 원·음반 정보: https://music.apple.com/us/album/mind-feat-kim-yeon-ji
+ -single/1452766029\nhttps://seeya-fanpage.com/archive/?record=20130816-yeo
+ nji-dreamtechno-mind
+URL:https://seeya-fanpage.com/calendar/?month=2013-08&event=activity-201308
+ 16-yeonji-dreamtechno-mind
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20130913-yeonji-hongdae@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20130913
+DTEND;VALUE=DATE:20130914
+SUMMARY:김연지 · 홍대거리에서 (그 여자..)
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:release
+LOCATION:
+DESCRIPTION:김연지\n발매일 · 시간 미정\n포지션의 프로젝
+ 트 음반에 수록된 김연지 가창곡입니다. 날짜는 음원 서
+ 비스와 유통사 제공 음원에 표시된 발매일 기준입니다.\
+ nKim Yeonji - Topic · 유통사 제공 음원: https://www.youtube.com/wa
+ tch?v=Sd18jfdDOSo\n음원·음반 정보: https://music.bugs.co.kr/album/3
+ 88437\nhttps://seeya-fanpage.com/archive/?record=20130913-yeonji-hongdae
+URL:https://seeya-fanpage.com/calendar/?month=2013-09&event=activity-201309
+ 13-yeonji-hongdae
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v490-biff2013@seeya-fanpage.com
 DTSTAMP:20260911T150000Z
 LAST-MODIFIED:20260911T150000Z
@@ -3059,6 +3161,26 @@ DESCRIPTION:김연지\n시간 미정\nSBS Radio 에라오: https://www.yout
  0-cultwo-20150604
 URL:https://seeya-fanpage.com/calendar/?month=2015-06&event=activity-v490-c
  ultwo-20150604
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20150609-yeonji-ladyjane-radio@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20150609
+DTEND;VALUE=DATE:20150610
+SUMMARY:김연지 · 레이디 제인의 2시 출연
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n당일 방송 기사로 출연을 확
+ 인했습니다. 직접 청취 가능한 회차 영상은 아직 연결하
+ 지 않았습니다.\nOSEN · 당일 방송 보도: https://www.osen.co.kr
+ /article/G1110173180\nhttps://seeya-fanpage.com/archive/?record=20150609-y
+ eonji-ladyjane-radio
+URL:https://seeya-fanpage.com/calendar/?month=2015-06&event=activity-201506
+ 09-yeonji-ladyjane-radio
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-album-515245@seeya-fanpage.com
@@ -3481,19 +3603,20 @@ URL:https://seeya-fanpage.com/calendar/?month=2016-08&event=activity-v490-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-noon-20160907@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20160907
 DTEND;VALUE=DATE:20160908
-SUMMARY:김연지 — 헤어지는 중입니다 라이브
+SUMMARY:김연지 · 헤어지는 중입니다 / 한번 더 라이브
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:김연지\n시간 미정\nMBCkpop: https://www.youtube.com/watc
- h?v=scUHoE9f5lY\nhttps://seeya-fanpage.com/archive/?record=v490-noon-20160
- 907
+ h?v=scUHoE9f5lY\nMBCkpop · 한번 더 라이브: https://www.youtube.com/
+ watch?v=XjDe9Tnhbms\nhttps://seeya-fanpage.com/archive/?record=v490-noon-2
+ 0160907
 URL:https://seeya-fanpage.com/calendar/?month=2016-09&event=activity-v490-n
  oon-20160907
 END:VEVENT
@@ -4482,6 +4605,25 @@ URL:https://seeya-fanpage.com/calendar/?month=2019-03&event=activity-v490-a
  lbum-862257
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20190324-yeonji-goodweekend@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20190324
+DTEND;VALUE=DATE:20190325
+SUMMARY:김연지 · 좋은 주말 3·4부
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n2019-03-24 공식 다시듣기 3·4
+ 부에 김연지 출연이 표기되어 있습니다.\nMBC · 공식 다
+ 시듣기: https://m.imbc.com/Radio/PodCast/1002644100000100000?gid=41\nht
+ tps://seeya-fanpage.com/archive/?record=20190324-yeonji-goodweekend
+URL:https://seeya-fanpage.com/calendar/?month=2019-03&event=activity-201903
+ 24-yeonji-goodweekend
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v490-album-865494@seeya-fanpage.com
 DTSTAMP:20260911T150000Z
 LAST-MODIFIED:20260911T150000Z
@@ -4849,22 +4991,28 @@ URL:https://seeya-fanpage.com/calendar/?month=2020-02&event=activity-202002
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-sketchbook-20200306@seeya-fanpage.com
-DTSTAMP:20261030T150000Z
-LAST-MODIFIED:20261030T150000Z
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20200306
 DTEND;VALUE=DATE:20200307
-SUMMARY:김연지 — 야생화 / 바람이 불면
+SUMMARY:김연지 · 유희열의 스케치북 · 라이브와 씨야 메
+ 들리
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
-DESCRIPTION:김연지\n시간 미정\nKBS Kpop: https://www.youtube.com/wat
- ch?v=oIWCLgFO0so\nKBS Kpop: https://www.youtube.com/watch?v=lOvBRahMvtQ\nK
- BS StarTV: 인물사전 · [소장각👍: https://www.youtube.com/watch?v
- =gpuyj0Wv8Uc\n리스펙 뮤직 『Respect Music』 · [유희열의 스케
- 치북] 김연지 - 야생화: https://www.youtube.com/watch?v=lnTAju3Y_9s
- \nhttps://seeya-fanpage.com/archive/?record=v491-sketchbook-20200306
+DESCRIPTION:김연지\n시간 미정\n야생화·바람이 불면 라이브
+ 에 더해\, 뮤지컬 마리 앙투아네트의 더는 참지 않아와 
+ 씨야 메들리 영상을 함께 모았습니다.\nKBS Kpop: https://www.
+ youtube.com/watch?v=oIWCLgFO0so\nKBS Kpop: https://www.youtube.com/watch?v
+ =lOvBRahMvtQ\nKBS StarTV: 인물사전 · [소장각👍: https://www.yout
+ ube.com/watch?v=gpuyj0Wv8Uc\n리스펙 뮤직 『Respect Music』 · [유
+ 희열의 스케치북] 김연지 - 야생화: https://www.youtube.com/wat
+ ch?v=lnTAju3Y_9s\nKBS Kpop · 더는 참지 않아: https://www.youtube.co
+ m/watch?v=NMdBd-aZdYQ\nKBS Kpop · 씨야 명곡 메들리: https://www.yo
+ utube.com/watch?v=0n3rV3SDj-s\nhttps://seeya-fanpage.com/archive/?record=v
+ 491-sketchbook-20200306
 URL:https://seeya-fanpage.com/calendar/?month=2020-03&event=activity-v491-s
  ketchbook-20200306
 END:VEVENT
@@ -4929,6 +5077,45 @@ DESCRIPTION:김연지\n시간 미정\n날짜는 공식 방송 음반 공개
  rd=v491-immortal-2020-03-28
 URL:https://seeya-fanpage.com/calendar/?month=2020-03&event=activity-v491-i
  mmortal-2020-03-28
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20200411-yeonji-goodweekend@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20200411
+DTEND;VALUE=DATE:20200412
+SUMMARY:김연지 · 좋은 주말 3·4부
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n2020-04-11 공식 다시듣기 3·4
+ 부에 김연지 출연이 표기되어 있습니다.\nMBC · 공식 다
+ 시듣기: https://m.imbc.com/Radio/PodCast/1002644100000100000?gid=41\nht
+ tps://seeya-fanpage.com/archive/?record=20200411-yeonji-goodweekend
+URL:https://seeya-fanpage.com/calendar/?month=2020-04&event=activity-202004
+ 11-yeonji-goodweekend
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20200624-yeonji-tbs-scoop@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20200624
+DTEND;VALUE=DATE:20200625
+SUMMARY:김연지 · The Scoop · 모차르트! 콘스탄체 이야기
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n씨야 활동과 뮤지컬 모차르
+ 트!의 콘스탄체 역할에 관해 이야기한 PEOPLE 코너입니다.
+ \ntbs eFM · 공식 팟캐스트 회차: https://podcasts.apple.com/kr/pod
+ cast/id1482111562?i=1000479405024\nhttps://seeya-fanpage.com/archive/?reco
+ rd=20200624-yeonji-tbs-scoop
+URL:https://seeya-fanpage.com/calendar/?month=2020-06&event=activity-202006
+ 24-yeonji-tbs-scoop
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-onoff2020@seeya-fanpage.com
@@ -5029,20 +5216,21 @@ URL:https://seeya-fanpage.com/calendar/?month=2021-01&event=activity-v491-m
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-misstrot-7@seeya-fanpage.com
-DTSTAMP:20260912T150000Z
-LAST-MODIFIED:20260912T150000Z
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20210128
 DTEND;VALUE=DATE:20210129
-SUMMARY:김연지 — 여고시절 / 살다 보면
+SUMMARY:김연지 · 여고시절 / 살다 보면 / 흥부자
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
-DESCRIPTION:김연지\n시간 미정\n미스&미스터트롯: https://www.y
- outube.com/watch?v=Oq9hdvW1CJo\nTVCHOSUN - TV조선: https://www.youtube.c
- om/watch?v=9zvQx4-uAks\nhttps://seeya-fanpage.com/archive/?record=v491-mis
- strot-7
+DESCRIPTION:김연지\n시간 미정\n흥부자는 딸부잣집 팀 무대
+ 입니다.\n미스&미스터트롯: https://www.youtube.com/watch?v=Oq9hdv
+ W1CJo\nTVCHOSUN - TV조선: https://www.youtube.com/watch?v=9zvQx4-uAks\nT
+ VCHOSUN · 딸부잣집 흥부자: https://www.youtube.com/watch?v=UiuRHM0
+ 4hqY\nhttps://seeya-fanpage.com/archive/?record=v491-misstrot-7
 URL:https://seeya-fanpage.com/calendar/?month=2021-01&event=activity-v491-m
  isstrot-7
 END:VEVENT
@@ -5067,8 +5255,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2021-02&event=activity-v491-m
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-misstrot-10@seeya-fanpage.com
-DTSTAMP:20261016T044849Z
-LAST-MODIFIED:20261016T044849Z
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20210218
 DTEND;VALUE=DATE:20210219
@@ -5080,9 +5268,56 @@ LOCATION:
 DESCRIPTION:김연지\n시간 미정\nTVCHOSUN JOY: https://www.youtube.com
  /watch?v=JaAHEh5XsxI\n미스&미스터트롯: https://www.youtube.com/watc
  h?v=agF9scgEA5E\nTVCHOSUN JOY: https://www.youtube.com/watch?v=GLU8prAKcxw
- \nhttps://seeya-fanpage.com/archive/?record=v491-misstrot-10
+ \n미스&미스터트롯 · 물망초 클린 영상: https://www.youtube.c
+ om/watch?v=LDQCuDbGuY4\nhttps://seeya-fanpage.com/archive/?record=v491-mis
+ strot-10
 URL:https://seeya-fanpage.com/calendar/?month=2021-02&event=activity-v491-m
  isstrot-10
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20210311-yeonji-misstrot-gala@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20210311
+DTEND;VALUE=DATE:20210312
+SUMMARY:김연지 · 미스트롯2 갈라쇼
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n공식 클린 영상의 방송일 기
+ 준입니다. 사랑아는 은가은과의 듀엣\, 강원도 아리랑은
+  TOP14 단체 무대입니다.\n미스&미스터트롯 · 10분 내로: ht
+ tps://www.youtube.com/watch?v=OtwEDWNeJZs\n미스&미스터트롯 · 김
+ 연지·은가은 사랑아: https://www.youtube.com/watch?v=6MJgviFhFxg\n
+ 미스&미스터트롯 · TOP14 강원도 아리랑: https://www.youtube.c
+ om/watch?v=nhzd_rP6FeI\nhttps://seeya-fanpage.com/archive/?record=20210311
+ -yeonji-misstrot-gala
+URL:https://seeya-fanpage.com/calendar/?month=2021-03&event=activity-202103
+ 11-yeonji-misstrot-gala
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20210312-yeonji-callcenter46@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20210312
+DTEND;VALUE=DATE:20210313
+SUMMARY:김연지 · 미스레인보우 · 사랑의 콜센타 46회
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n김연지가 참여한 미스레인
+ 보우 단체 무대입니다. 공식 클린 영상의 방송일 기준입
+ 니다.\n미스&미스터트롯 · 부기맨: https://www.youtube.com/watc
+ h?v=anUnQW5I5Fc\n미스&미스터트롯 · 내 나이가 어때서: https:
+ //www.youtube.com/watch?v=MVkRnt98VSY\n미스&미스터트롯 · Tears: ht
+ tps://www.youtube.com/watch?v=jOXGjZQw8H4\nhttps://seeya-fanpage.com/archi
+ ve/?record=20210312-yeonji-callcenter46
+URL:https://seeya-fanpage.com/calendar/?month=2021-03&event=activity-202103
+ 12-yeonji-callcenter46
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-callcenter47@seeya-fanpage.com
@@ -5138,6 +5373,28 @@ DESCRIPTION:남규리\n시간 미정\n남규리의 온앤오프 출연입
  rchive/?record=20210406-gyuri-onoff
 URL:https://seeya-fanpage.com/calendar/?month=2021-04&event=activity-202104
  06-gyuri-onoff
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-20210622-yeonji-twooclock-marie@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20210622
+DTEND;VALUE=DATE:20210623
+SUMMARY:김연지 · 마리 앙투아네트 출연진과 두시의 데이
+ 트
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n김소현·김연지·민우혁이 
+ 출연한 「전문가 납셨네」 코너입니다. 공식 다시듣기
+ 에서 2021년 6월 22일 회차를 확인할 수 있습니다.\nMBC · 
+ 공식 다시듣기 (6월 22일): https://m.imbc.com/program/radio/1000586
+ 100000100000/podcast?q=%EA%B9%80%EC%97%B0%EC%A7%80\nhttps://seeya-fanpage.
+ com/archive/?record=20210622-yeonji-twooclock-marie
+URL:https://seeya-fanpage.com/calendar/?month=2021-06&event=activity-202106
+ 22-yeonji-twooclock-marie
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-openconcert-20210718@seeya-fanpage.com
@@ -6921,6 +7178,26 @@ URL:https://seeya-fanpage.com/calendar/?month=2024-09&event=activity-v491-a
  lbum-20671417
 END:VEVENT
 BEGIN:VEVENT
+UID:activity-20240923-yeonji-daejeonmbc60@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20240923
+DTEND;VALUE=DATE:20240924
+SUMMARY:김연지 · 대전MBC 창사 60주년 라디오 공개방송
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n공개방송은 9월 23일 열렸으
+ 며\, 대전MBC FM 방송일은 9월 30일입니다. 김연지 무대는 
+ 영상 1:32:58\, 1:54:30\, 2:11:48부터 확인할 수 있습니다.\n대
+ 전MBC · 공식 전체 영상: https://www.youtube.com/watch?v=Zm2ctIseE6
+ w\nhttps://seeya-fanpage.com/archive/?record=20240923-yeonji-daejeonmbc60
+URL:https://seeya-fanpage.com/calendar/?month=2024-09&event=activity-202409
+ 23-yeonji-daejeonmbc60
+END:VEVENT
+BEGIN:VEVENT
 UID:activity-v491-album-20671912@seeya-fanpage.com
 DTSTAMP:20260912T150000Z
 LAST-MODIFIED:20260912T150000Z
@@ -6937,6 +7214,31 @@ DESCRIPTION:김연지\n발매일 · 시간 미정\n벅스 음반 정보: ht
  record=v491-album-20671912
 URL:https://seeya-fanpage.com/calendar/?month=2024-09&event=activity-v491-a
  lbum-20671912
+END:VEVENT
+BEGIN:VEVENT
+UID:activity-discovered-fddbb70d92f1b6c9@seeya-fanpage.com
+DTSTAMP:20261114T150000Z
+LAST-MODIFIED:20261114T150000Z
+SEQUENCE:0
+DTSTART;VALUE=DATE:20241002
+DTEND;VALUE=DATE:20241003
+SUMMARY:김연지 · 이세준의 음악이 좋은 밤 · 좋은 밤 라이
+ 브
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+CATEGORIES:broadcast
+LOCATION:
+DESCRIPTION:김연지\n시간 미정\n국악방송 공식 선곡표로 10
+ 월 2일 방송을 확인했습니다. 공식 전체 영상은 10월 4일 
+ 게시되었습니다. 곡 목록에는 선곡표에서 라이브로 표
+ 시된 무대를 담았습니다.\n국악방송 라디오 · 공식 전체
+  영상: https://www.youtube.com/watch?v=C9uUC1bNfak\n국악방송 · 10
+ 월 2일 공식 선곡표: https://www.igbf.kr/gugak_web/radio/radio_progr
+ am_board.jsp?sub_num=787&sub_id=3402&idx=RD2023006196&state=view&bIdx=2329
+ 20&pageNo=1\nHot Issue🎤: https://www.youtube.com/watch?v=nHHKrwrnnsc\nh
+ ttps://seeya-fanpage.com/archive/?record=discovered-fddbb70d92f1b6c9
+URL:https://seeya-fanpage.com/calendar/?month=2024-10&event=activity-discov
+ ered-fddbb70d92f1b6c9
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-album-20682844@seeya-fanpage.com
