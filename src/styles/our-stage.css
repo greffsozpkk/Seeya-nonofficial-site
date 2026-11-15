@@ -342,3 +342,7 @@
 #ourStage .story-subject{display:inline-block;width:fit-content;font-size:12px;font-weight:700;color:#754260;background:#f8e9f1;padding:3px 9px;border-radius:4px}#ourStage .story-summary{font-size:14px;line-height:1.7}#ourStage .story-condition{display:block;border-top:1px solid var(--os-line);padding-top:10px;margin-top:auto;line-height:1.6}#ourStage .unique-badge{display:block;width:100px;height:100px;image-rendering:pixelated;margin:0 auto}
 
 #ourStage .badge-card{min-width:0}#ourStage .badge-card strong,#ourStage .badge-card small{white-space:normal;overflow-wrap:anywhere}
+.os-game .mapped-outfit{display:flex;justify-content:center;gap:8px;padding:10px;box-sizing:border-box;background:#f5e8da;border-radius:5px;height:190px}
+.os-game .mapped-outfit figure{margin:0;min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;gap:5px}
+.os-game .mapped-outfit .member-sprite{width:100%;height:calc(100% - 24px);min-height:0;image-rendering:pixelated}
+.os-game .mapped-outfit figcaption{font-size:12px;font-weight:700;color:#554339;line-height:19px}

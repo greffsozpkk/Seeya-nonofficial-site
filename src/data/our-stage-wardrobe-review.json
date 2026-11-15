@@ -1,0 +1,43 @@
+{
+  "reviewedAt": "2026-11-15",
+  "method": "사진의 얼굴 추정이 아닌 앨범 이름 표기·기사 사진 설명·의상 대조로 연결. 원본 생성 prompt는 제작 이력으로 보존하며 identityReview가 최신 확인 결과.",
+  "corrections": {
+    "first-mind": {
+      "swap": [
+        "gr",
+        "yj"
+      ],
+      "source": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0500&key=20060310.22035155435",
+      "evidence": "앨범 커버의 YEONJI · BORAM · GYURI 표기와 실명 사진 설명 대조. 흰 후드 김연지 / 짧은 갈색 머리 이보람 / 긴 땋은 머리 남규리."
+    },
+    "lovely-sweet-heart": {
+      "source": "https://www.donga.com/news/Entertainment/article/all/20070530/8447950/1",
+      "evidence": "동일 의상 사진에 왼쪽부터 이보람·남규리·김연지 명시. 네이비 재킷 / 흰 재킷과 헤어밴드 / 줄무늬 재킷."
+    },
+    "see-you-again": {
+      "source": "https://www.starnewskorea.com/music/2011/01/30/2011013011312367388",
+      "evidence": "동일 카페 사진에 이보람·남규리·김연지 명시. 크림 니트 / 비니 / 카멜 코트."
+    },
+    "still-here": {
+      "swap": [
+        "br",
+        "yj"
+      ],
+      "source": "https://www.sportschosun.com/entertainment/2026-04-01/202603310100209640014543",
+      "evidence": "커버 사진에 왼쪽부터 김연지·남규리·이보람 명시. 파란 셔츠와 재킷 김연지 / 가죽 코트 남규리 / 네이비 오프숄더 이보람. 뉴스엔 개별 이름 사진으로 재확인."
+    },
+    "first-again": {
+      "swap": [
+        "br",
+        "yj"
+      ],
+      "source": "https://m.tf.co.kr/read/entertain/2302510.htm",
+      "evidence": "같은 흰 상의·청바지 촬영 사진의 왼쪽부터 이보람·남규리·김연지 표기와 의상 대조. 갈색 옆 묶음 머리·흰 셔츠 김연지 / 검은 머리·크림 블라우스 이보람."
+    }
+  },
+  "pending": [
+    "california-dream",
+    "brilliant-change"
+  ],
+  "rebloom": "사용자가 승인한 현재 세 멤버 재해석 유지"
+}

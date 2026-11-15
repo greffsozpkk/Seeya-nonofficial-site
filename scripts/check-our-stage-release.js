@@ -1,4 +1,5 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
+require('./check-our-stage-wardrobe-review');
 const M=require('../src/shared/our-stage').forTest(),art=require('../src/data/our-stage-badge-art.json');
 const badges=M.badges(M.fresh());assert.equal(badges.length,48);assert.equal(Object.keys(art.badges).length,48);
 assert.equal(new Set(badges.map(b=>art.badges[b.id].sheet+':'+art.badges[b.id].index)).size,48);

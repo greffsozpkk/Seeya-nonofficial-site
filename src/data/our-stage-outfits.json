@@ -39,14 +39,19 @@
         445
       ],
       [
-        637,
-        477
-      ],
-      [
         1187,
         457
+      ],
+      [
+        637,
+        477
       ]
-    ]
+    ],
+    "identityReview": {
+      "status": "caption-checked",
+      "source": "https://www.kookje.co.kr/news2011/asp/newsbody.asp?code=0500&key=20060310.22035155435",
+      "evidence": "앨범 커버의 YEONJI · BORAM · GYURI 표기와 실명 사진 설명 대조. 흰 후드 김연지 / 짧은 갈색 머리 이보람 / 긴 땋은 머리 남규리."
+    }
   },
   {
     "id": "lovely-sweet-heart",
@@ -72,14 +77,19 @@
         1183,
         465
       ]
-    ]
+    ],
+    "identityReview": {
+      "status": "caption-checked",
+      "source": "https://www.donga.com/news/Entertainment/article/all/20070530/8447950/1",
+      "evidence": "동일 의상 사진에 왼쪽부터 이보람·남규리·김연지 명시. 네이비 재킷 / 흰 재킷과 헤어밴드 / 줄무늬 재킷."
+    }
   },
   {
     "id": "california-dream",
     "name": "California Dream",
     "type": "2.5 ALBUM · 2008.01.02",
     "image": "/images/game/our-stage/pixel-california-dream.png",
-    "note": "앨범 커버의 의상과 머리 스타일을 참고한 도트 시안입니다. 보이지 않는 하의·신발은 디자인으로 보완했어요.",
+    "note": "커버를 참고한 도트 의상 시안입니다. 멤버별 의상 연결은 추가 확인 중입니다.",
     "url": "https://www.melon.com/album/detail.htm?albumId=362767",
     "cover": "https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/055/420/850/55420850_1405324372412_1_600x600.JPG",
     "prompt": "Create a single transparent PNG sprite lineup with exactly THREE full-body chunky 2D pixel-art characters. Image 1 is the approved game sprite STYLE reference; retain identical large-head tiny-body proportions, simple square eyes and short mouth, hard square pixel edges and flat 2-3 tones. Image 2 is the album wardrobe reference. NO photoreal/anime smoothness, no fine texture, no shadows, no text, no scene, no props. Left-to-right fixed Boram, Gyuri, Yeonji. Three sprites each centered in its own equal-width third with generous transparent gaps and same baseline. Entire body visible. Simple straight standing pose, arms down. Coarse roughly 32x48 logical pixel sprites enlarged. No intricate facial detail. Adapt only hairstyle/clothing as specified. Album wardrobe: Casual travel looks based on photo section. LEFT Boram: long dark hair with bangs, pale pink sleeveless top, blue jeans. CENTER Gyuri: long black hair with bangs, white sleeveless long top with black bust panel and necklace, dark jeans. RIGHT Yeonji: long brown hair, pale cream sleeveless blouse, dark blue jeans. Simplified white shoes.",
@@ -98,14 +108,18 @@
         1183,
         504
       ]
-    ]
+    ],
+    "identityReview": {
+      "status": "pending",
+      "evidence": "커버 의상은 참고했으나 실명 표기가 있는 동일 의상 자료로 멤버별 연결을 아직 확인하지 못함."
+    }
   },
   {
     "id": "brilliant-change",
     "name": "Brilliant Change",
     "type": "3RD ALBUM · 2008.09.26",
     "image": "/images/game/our-stage/pixel-brilliant-change.png",
-    "note": "앨범 커버의 의상과 머리 스타일을 참고한 도트 시안입니다. 보이지 않는 하의·신발은 디자인으로 보완했어요.",
+    "note": "커버를 참고한 도트 의상 시안입니다. 멤버별 의상 연결은 추가 확인 중입니다.",
     "url": "https://www.melon.com/album/detail.htm?albumId=398227",
     "cover": "https://coverartarchive.org/release/dc732f97-ca67-4325-b575-54cebd35a969/front-500",
     "prompt": "Create a single transparent PNG sprite lineup with exactly THREE full-body chunky 2D pixel-art characters. Image 1 is the approved game sprite STYLE reference; retain identical large-head tiny-body proportions, simple square eyes and short mouth, hard square pixel edges and flat 2-3 tones. Image 2 is the album wardrobe reference. NO photoreal/anime smoothness, no fine texture, no shadows, no text, no scene, no props. Left-to-right fixed Boram, Gyuri, Yeonji. Three sprites each centered in its own equal-width third with generous transparent gaps and same baseline. Entire body visible. Simple straight standing pose, arms down. Coarse roughly 32x48 logical pixel sprites enlarged. No intricate facial detail. Adapt only hairstyle/clothing as specified. Album wardrobe: Retro colorful stage looks inspired by cover. LEFT Boram: short light brown pixie hair, black cropped jacket, yellow tie and bright lime yellow short skirt, gray knee high boots. CENTER Gyuri: black bob, little black hat, red sleeveless tunic with bold silver/white shoulder bow and black belt, dark leggings and red heels. RIGHT Yeonji: long brown hair, shiny purple small hat, green/white stripe sleeveless top, black-white patterned pants and purple shoes.",
@@ -124,7 +138,11 @@
         1183,
         468
       ]
-    ]
+    ],
+    "identityReview": {
+      "status": "pending",
+      "evidence": "커버 의상은 참고했으나 실명 표기가 있는 동일 의상 자료로 멤버별 연결을 아직 확인하지 못함."
+    }
   },
   {
     "id": "rebloom",
@@ -176,7 +194,12 @@
         1185,
         448
       ]
-    ]
+    ],
+    "identityReview": {
+      "status": "caption-checked",
+      "source": "https://www.starnewskorea.com/music/2011/01/30/2011013011312367388",
+      "evidence": "동일 카페 사진에 이보람·남규리·김연지 명시. 크림 니트 / 비니 / 카멜 코트."
+    }
   },
   {
     "id": "still-here",
@@ -191,18 +214,23 @@
     "height": 887,
     "members": [
       [
-        110,
-        481
+        1183,
+        483
       ],
       [
         591,
         592
       ],
       [
-        1183,
-        483
+        110,
+        481
       ]
-    ]
+    ],
+    "identityReview": {
+      "status": "caption-checked",
+      "source": "https://www.sportschosun.com/entertainment/2026-04-01/202603310100209640014543",
+      "evidence": "커버 사진에 왼쪽부터 김연지·남규리·이보람 명시. 파란 셔츠와 재킷 김연지 / 가죽 코트 남규리 / 네이비 오프숄더 이보람. 뉴스엔 개별 이름 사진으로 재확인."
+    }
   },
   {
     "id": "first-again",
@@ -217,17 +245,22 @@
     "height": 887,
     "members": [
       [
-        144,
-        439
+        1183,
+        460
       ],
       [
         634,
         549
       ],
       [
-        1183,
-        460
+        144,
+        439
       ]
-    ]
+    ],
+    "identityReview": {
+      "status": "caption-checked",
+      "source": "https://m.tf.co.kr/read/entertain/2302510.htm",
+      "evidence": "같은 흰 상의·청바지 촬영 사진의 왼쪽부터 이보람·남규리·김연지 표기와 의상 대조. 갈색 옆 묶음 머리·흰 셔츠 김연지 / 검은 머리·크림 블라우스 이보람."
+    }
   }
 ]
