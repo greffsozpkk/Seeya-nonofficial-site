@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-11-09",
+  "checkedAt": "2026-11-15",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -4312,6 +4312,120 @@
       "coordinateSource": "https://www.placeview.co.kr/id/MTg2MDMyMTg0",
       "recordId": "20261218-boram-moifin-live",
       "checkedAt": "2026-11-09"
+    },
+    {
+      "id": "cafe-dasique-seongsu",
+      "name": "카페데이지크",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 성동구 연무장5길 6 2층",
+      "coordinates": [
+        37.543633,
+        127.052443
+      ],
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-11-15",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 버거형 박효준과 함께 성수동을 둘러보며 방문한 곳입니다. 귤멍 EP.70의 공식 영상 설명에서 이 매장의 지도 링크를 안내했습니다.",
+      "source": {
+        "label": "남규리의 귤멍 EP.70 · 성수동 방문 영상",
+        "url": "https://www.youtube.com/watch?v=hPKuW6E8Ljc",
+        "publishedDate": "2026-11-15"
+      },
+      "additionalSources": [
+        {
+          "label": "공식 영상이 안내한 네이버 지도",
+          "url": "https://naver.me/Fnm0lUjv"
+        }
+      ],
+      "addressSource": "https://www.diningcode.com/profile.php?rid=9BWZxCQDeiO9",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=9BWZxCQDeiO9",
+      "recordId": "20261115-gyuri-gyulmung70",
+      "checkedAt": "2026-11-15",
+      "locationPrecision": "building"
+    },
+    {
+      "id": "oafu-seongsu",
+      "name": "오푸",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 성동구 뚝섬로 408-7 3층",
+      "coordinates": [
+        37.538466,
+        127.0555843
+      ],
+      "category": "카페",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-11-15",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 버거형 박효준과 함께 성수동을 둘러보며 방문한 곳입니다. 귤멍 EP.70의 공식 영상 설명에서 이 매장의 지도 링크를 안내했습니다.",
+      "source": {
+        "label": "남규리의 귤멍 EP.70 · 성수동 방문 영상",
+        "url": "https://www.youtube.com/watch?v=hPKuW6E8Ljc",
+        "publishedDate": "2026-11-15"
+      },
+      "additionalSources": [
+        {
+          "label": "공식 영상이 안내한 네이버 지도",
+          "url": "https://naver.me/5l7kUVPE"
+        }
+      ],
+      "addressSource": "https://www.diningcode.com/profile.php?rid=TsifjbPJXUSO",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=TsifjbPJXUSO",
+      "recordId": "20261115-gyuri-gyulmung70",
+      "checkedAt": "2026-11-15",
+      "locationPrecision": "building"
+    },
+    {
+      "id": "somunnan-seongsu-gamjatang",
+      "name": "소문난 성수감자탕",
+      "city": "서울",
+      "region": "서울",
+      "address": "서울특별시 성동구 연무장길 45",
+      "coordinates": [
+        37.542837,
+        127.054387
+      ],
+      "category": "식당",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "relations": [
+        "영상 방문"
+      ],
+      "date": "2026-11-15",
+      "dateBasis": "영상 게시일",
+      "story": "남규리가 버거형 박효준과 함께 성수동을 둘러보며 방문한 곳입니다. 귤멍 EP.70의 공식 영상 설명에서 이 매장의 지도 링크를 안내했습니다.",
+      "source": {
+        "label": "남규리의 귤멍 EP.70 · 성수동 방문 영상",
+        "url": "https://www.youtube.com/watch?v=hPKuW6E8Ljc",
+        "publishedDate": "2026-11-15"
+      },
+      "additionalSources": [
+        {
+          "label": "공식 영상이 안내한 네이버 지도",
+          "url": "https://naver.me/GgWkGs9y"
+        }
+      ],
+      "addressSource": "https://www.diningcode.com/profile.php?rid=jAL2mG45kQKq",
+      "coordinateSource": "https://www.diningcode.com/profile.php?rid=jAL2mG45kQKq",
+      "recordId": "20261115-gyuri-gyulmung70",
+      "checkedAt": "2026-11-15",
+      "locationPrecision": "building"
     }
   ],
   "researchQueue": [
@@ -5929,7 +6043,7 @@
     ]
   },
   "archiveAudit": {
-    "checkedAt": "2026-11-09",
+    "checkedAt": "2026-11-15",
     "rows": [
       {
         "placeId": "khu-grand-peace-palace",
@@ -6626,6 +6740,21 @@
       {
         "placeId": "yeosu-moifin-ocean",
         "recordId": "20261218-boram-moifin-live",
+        "status": "linked"
+      },
+      {
+        "placeId": "cafe-dasique-seongsu",
+        "recordId": "20261115-gyuri-gyulmung70",
+        "status": "linked"
+      },
+      {
+        "placeId": "oafu-seongsu",
+        "recordId": "20261115-gyuri-gyulmung70",
+        "status": "linked"
+      },
+      {
+        "placeId": "somunnan-seongsu-gamjatang",
+        "recordId": "20261115-gyuri-gyulmung70",
         "status": "linked"
       }
     ]

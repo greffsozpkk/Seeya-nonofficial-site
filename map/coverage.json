@@ -1,12 +1,23 @@
 {
   "summary": {
-    "records": 165,
-    "venues": 141,
-    "linked": 101,
+    "records": 166,
+    "venues": 142,
+    "linked": 102,
     "pending": 64,
     "unreviewed": 0
   },
   "rows": [
+    {
+      "recordId": "20261115-gyuri-gyulmung70",
+      "title": "남규리 · 귤멍 EP.70 버거형과 성수동 나들이",
+      "venue": "카페데이지크 · 오푸 · 소문난 성수감자탕",
+      "placeIds": [
+        "cafe-dasique-seongsu",
+        "oafu-seongsu",
+        "somunnan-seongsu-gamjatang"
+      ],
+      "status": "linked"
+    },
     {
       "recordId": "20261123-boram-immortal-sumi-recording",
       "title": "이보람 · 불후의 명곡 「40주년 소프라노 조수미」 식스 팀 녹화",

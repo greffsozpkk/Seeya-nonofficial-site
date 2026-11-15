@@ -134,7 +134,10 @@
     "오묘 로스터스": "omyo-roasters-seochang",
     "태양식자재마트 신당점": "taeyang-mart-sindang",
     "서울중앙시장": "seoul-jungang-market",
-    "모이핀 오션점 1층 전시관": "yeosu-moifin-ocean"
+    "모이핀 오션점 1층 전시관": "yeosu-moifin-ocean",
+    "카페데이지크": "cafe-dasique-seongsu",
+    "오푸": "oafu-seongsu",
+    "소문난 성수감자탕": "somunnan-seongsu-gamjatang"
   },
   "records": {
     "20260829-the-fan-seoul": [
@@ -337,6 +340,11 @@
     "20261108-gyuri-gyulmung69": [
       "taeyang-mart-sindang",
       "seoul-jungang-market"
+    ],
+    "20261115-gyuri-gyulmung70": [
+      "cafe-dasique-seongsu",
+      "oafu-seongsu",
+      "somunnan-seongsu-gamjatang"
     ]
   }
 }

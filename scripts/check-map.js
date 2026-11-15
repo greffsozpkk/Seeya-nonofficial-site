@@ -31,7 +31,7 @@ const {promoStatus}=shared;
 for(const p of allRows){assert(p.addressSource&&p.coordinateSource&&p.source.url&&p.dateBasis);assert(p.coordinates.every(Number.isFinite));assert(html.includes(p.name));assert(detail(p).includes(p.source.url.replaceAll('&','&amp;')));}
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'콘서트 혜택'}).length,15);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{relation:'사진·사인'}).length,1);
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'카페'}).length,23);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'카페'}).length,25);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'씨야'}).length,29);
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{member:'이보람'}).length,44);
 assert(!filterPlaces(allRows,{member:'씨야'}).some(p=>p.id==='maboklim'));
@@ -41,7 +41,7 @@ assert.equal(promoStatus(ohji,'2026-10-10T23:59:59+09:00'),'혜택 기간');
 assert.equal(promoStatus(ohji,'2026-10-11T01:00:01+09:00'),'혜택 종료');
 assert.equal(promoStatus(ohji,'2026-10-05T23:59:59+09:00'),'혜택 예정');
 assert(!detail(allRows.find(p=>p.id==='maboklim')).includes('20주년 콘서트 기록관'));
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'식당',region:'서울'}).length,10);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'식당',region:'서울'}).length,11);
 assert.equal(resolvePlaces(config,archive.filter(r=>r.id!=='v4145-NIeNbStvYa0')).find(p=>p.id==='maboklim').recordId,null);
 console.log('PASS: map preview isolation, verified places and seven tour venues, filters, clustering, escaping and library-failure fallback.');
 

@@ -1,5 +1,42 @@
 [
   {
+    "id": "20261115-gyuri-gyulmung70",
+    "date": "2026-11-15",
+    "addedAt": "2026-11-15",
+    "updatedAt": "2026-11-15",
+    "title": "남규리 · 귤멍 EP.70 버거형과 성수동 나들이",
+    "program": "남규리의 귤멍 EP.70",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 EP.70 · 공식 영상",
+      "url": "https://www.youtube.com/watch?v=hPKuW6E8Ljc",
+      "publishedDate": "2026-11-15"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-11-15",
+    "tags": [
+      "2026",
+      "남규리의 귤멍 EP.70",
+      "브이로그",
+      "성수동"
+    ],
+    "note": "남규리가 배우 박효준(버거형)과 함께 성수동을 둘러보는 브이로그입니다.\n카페데이지크, 오푸, 소문난 성수감자탕을 방문했으며, 공식 영상 설명에 각 장소의 지도 링크가 안내되어 있습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    },
+    "venue": "카페데이지크 · 오푸 · 소문난 성수감자탕"
+  },
+  {
     "id": "20261123-boram-immortal-sumi-recording",
     "date": "2026-11-23",
     "addedAt": "2026-11-14",
