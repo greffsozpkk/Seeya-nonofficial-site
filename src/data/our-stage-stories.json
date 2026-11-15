@@ -482,5 +482,110 @@
     "wardrobeStatus": "event-photo-reference",
     "subject": "남규리",
     "summary": "남규리가 ‘카이로스’로 2020 MBC 연기대상 우수 연기상을 받은 순간입니다."
+  },
+  {
+    "id": "event-wsg",
+    "album": "see-you-again",
+    "kind": "event",
+    "title": "씨야를 다시 떠올린 목소리",
+    "date": "2022.07.23",
+    "body": [
+      "2022년 이보람은 MBC 「놀면 뭐하니?」의 WSG워너비 프로젝트에 참여해 소연, HYNN(박혜원), 정지소와 가야G로 함께했습니다.",
+      "가야G의 「그때 그 순간 그대로」 활동은 이보람이 새로운 동료들과 다시 노래를 전한 시간이었습니다. MBC의 방송 안내에는 씨야 해체 이후 무대를 향했던 간절한 마음과, 음원 1위 소식을 듣고 흘린 눈물이 소개됩니다.",
+      "익숙한 목소리를 새로운 무대에서 다시 만나는 순간. 이 이야기는 이보람의 새 활동을 따라 씨야의 노래도 함께 떠올려 보는 장면으로 구성했습니다.",
+      "서로 다른 곳에서 이어 온 세 사람의 시간을 간직했다면, 이제 「그럼에도, 우린」으로 향할 차례입니다."
+    ],
+    "source": "https://enews.imbc.com/News/RetrieveNewsInfo/354733",
+    "checkedAt": "2026-11-15",
+    "minTracks": 15,
+    "requiresFlags": [
+      "br"
+    ],
+    "awardBadge": false,
+    "icon": 5,
+    "quiz": {
+      "question": "이보람의 WSG워너비 활동을 담은 팀과 곡의 연결은?",
+      "correct": "가야G · 그때 그 순간 그대로",
+      "wrong": [
+        "4FIRE · 보고싶었어",
+        "오아시소 · 그때 그 순간 그대로",
+        "가야G · Clink Clink"
+      ],
+      "explanation": "이보람은 소연·HYNN(박혜원)·정지소와 가야G로 함께하며 「그때 그 순간 그대로」를 불렀어요.",
+      "level": 4,
+      "skill": "활동과 노래 연결"
+    },
+    "image": "/images/game/our-stage/stories/event-wsg.png",
+    "illustrationNote": "마이크와 추억의 앨범으로 활동의 의미를 표현한 도트 삽화입니다. 실제 방송 장면을 재현한 그림은 아닙니다.",
+    "subject": "이보람",
+    "summary": "WSG워너비 가야G의 무대에서 이보람의 목소리를 다시 만나고, 씨야의 노래도 함께 떠올려 보는 이야기입니다."
+  },
+  {
+    "id": "event-yeonji-gasoline",
+    "subject": "김연지",
+    "title": "불꽃처럼 오른 가왕의 자리",
+    "badgeName": "김연지 · 불광동 휘발유",
+    "date": "2016.07.31",
+    "minTracks": 7,
+    "icon": 3,
+    "source": "https://enews.imbc.com/News/RetrieveNewsInfo/188082",
+    "identitySource": "https://enews.imbc.com/News/RetrieveNewsInfo/188937",
+    "summary": "김연지가 불광동 휘발유로 35대 가왕에 오른 무대를 간직해요.",
+    "body": [
+      "2016년 7월 31일, 「복면가왕」의 불광동 휘발유가 흑기사를 꺾고 35대 가왕에 올랐습니다.",
+      "8월 14일 가면을 벗은 주인공은 김연지였습니다. 가면 뒤에서 오롯이 목소리로 전한 노래가 가왕의 자리까지 닿은 순간이에요.",
+      "이 이야기는 2016년 첫 가왕 등극을 다룹니다. 별도로 만나는 2018년 DMC 페스티벌 「복면가왕 더 위너」 이야기와는 다른 무대예요."
+    ],
+    "quiz": {
+      "question": "김연지가 2016년 35대 가왕에 올랐을 때의 가면 이름은?",
+      "correct": "불광동 휘발유",
+      "wrong": [
+        "나이팅게일",
+        "걸리버",
+        "흑기사"
+      ],
+      "explanation": "불광동 휘발유는 김연지의 가면 이름이에요. 2016년 7월 31일 35대 가왕에 올랐습니다.",
+      "level": 4,
+      "skill": "멤버와 활동 연결"
+    },
+    "album": "see-you-again",
+    "kind": "event",
+    "checkedAt": "2026-11-15",
+    "image": "/images/game/our-stage/stories/gasoline-story.png",
+    "illustrationNote": "당시 가면·무대 의상을 참고한 도트 재해석입니다. 실제 방송 화면은 아닙니다."
+  },
+  {
+    "id": "event-boram-nightingale",
+    "subject": "이보람",
+    "title": "나이팅게일의 노래가 닿은 곳",
+    "badgeName": "이보람 · 나이팅게일",
+    "date": "2019.06.02",
+    "minTracks": 10,
+    "icon": 5,
+    "source": "https://enews.imbc.com/News/RetrieveNewsInfo/261263",
+    "identitySource": "https://enews.imbc.com/News/RetrieveNewsInfo/263769",
+    "summary": "이보람이 나이팅게일로 103대 가왕에 오른 순간을 간직해요.",
+    "body": [
+      "2019년 6월 2일, 「복면가왕」의 나이팅게일은 「현명한 선택」 무대로 걸리버를 꺾고 103대 가왕에 올랐습니다.",
+      "7월 21일 공개된 나이팅게일의 정체는 이보람이었습니다. 103대부터 105대까지 가왕 자리를 지키며 자신만의 목소리를 들려주었어요.",
+      "커다란 미소의 가면과 가왕의 왕관을 도트 배지에 담았습니다. 이 이야기를 간직하면 이보람의 전용 배지를 받을 수 있어요."
+    ],
+    "quiz": {
+      "question": "이보람이 나이팅게일로 첫 가왕에 올랐을 때 부른 결승 무대 곡은?",
+      "correct": "현명한 선택",
+      "wrong": [
+        "그때 그 순간 그대로",
+        "사랑의 인사",
+        "미친 사랑의 노래"
+      ],
+      "explanation": "2019년 6월 2일 나이팅게일은 「현명한 선택」으로 103대 가왕에 올랐어요.",
+      "level": 4,
+      "skill": "활동과 무대 연결"
+    },
+    "album": "see-you-again",
+    "kind": "event",
+    "checkedAt": "2026-11-15",
+    "image": "/images/game/our-stage/stories/nightingale-story.png",
+    "illustrationNote": "당시 가면·무대 의상을 참고한 도트 재해석입니다. 실제 방송 화면은 아닙니다."
   }
 ]

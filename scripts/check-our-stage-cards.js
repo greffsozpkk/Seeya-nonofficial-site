@@ -18,7 +18,7 @@ for(let n=0;n<=15;n++){
   const t=M.albumById('see-you-again').tracks[n],k='song:'+t.id;
   assert(M.answer(gate,k,M.challenges[k].answer));time+=1000;M.settle(gate,time);assert(M.train(gate,t.id,0,time));time+=1000;M.settle(gate,time);
 }
-let p=structuredClone(fixtures.checkpoints[5]);assert(M.albumUnlocked(p,'see-you-again'));p.flags=p.flags.filter(x=>!['gr','yj','br','reunion'].includes(x));p.proofs=p.proofs.filter(x=>!['story:gr','story:yj','story:br','story:reunion'].includes(x));
+let p=structuredClone(fixtures.checkpoints[5]);assert(M.albumUnlocked(p,'see-you-again'));p.flags=p.flags.filter(x=>!['gr','yj','br','reunion'].includes(x));p.proofs=p.proofs.filter(x=>!['story:gr','story:yj','story:br','story:reunion','story:event-wsg'].includes(x));
 assert(M.coreAvailable(p,'gr'));assert(!M.coreAvailable(p,'yj'));
 for(const id of ['gr','yj','reunion','br']){assert(M.canChallenge(p,'story:'+id));assert(M.answer(p,'story:'+id,M.challenges['story:'+id].answer));assert(M.claim(p,id));assert(M.valid(p));}
 assert(!M.finaleReady(debut));assert(!M.finishFinale(debut));assert(M.finaleReady(s));

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "gasoline-badge",
+    "prompt": "Transparent square game inventory achievement badge inspired by the flame/log campfire mask in reference. Mask only, no person. Tall orange yellow red flame tips, red eye mask, brown logs fanning out as cheeks, turquoise lower face with black mouth. Compact symmetrical cutout silhouette with dark plum outline. True chunky low-resolution 2D pixel art enlarged nearest-neighbor, limited palette, no gradients or smooth edges, no lettering, no TV logo. Clear at 64px. Generous transparent margins.",
+    "reference": "output/our-stage/mask-references/gasoline.jpg",
+    "method": "Built-in image_gen",
+    "file": "images/game/our-stage/gasoline-badge.png"
+  },
+  {
+    "id": "nightingale-badge",
+    "prompt": "Transparent square game inventory achievement badge inspired by the crowned Nightingale mask in reference. Mask only no person. Cream oval face, huge pink smiling mouth, black bob sides, white scalloped lace bonnet, gold eye-mask and tall gold crown with emerald jewel. Compact silhouette with dark plum outline. True chunky low-resolution 2D pixel art enlarged nearest-neighbor, limited palette, no gradients or smooth edges, no lettering, no TV logo. Clear at 64px. Generous transparent margins.",
+    "reference": "output/our-stage/mask-references/nightingale.jpg",
+    "method": "Built-in image_gen",
+    "file": "images/game/our-stage/nightingale-badge.png"
+  },
+  {
+    "id": "gasoline-story",
+    "prompt": "Landscape 3:2 game story illustration, chunky classic 2D pixel art limited palette and sharp square pixels. Solo female masked singer based on reference, red dress and gloves, recognizable tall flame mask orange/yellow/red with brown log cheeks and turquoise open mouth, holding microphone. On a small golden spotlight stage with celebratory pixel confetti and purple curtains, hint of audience silhouettes. Dignified triumphant singing pose. No words, no TV branding, no other singers. Stylized symbolic game scene not exact broadcast reproduction. No smooth anime rendering.",
+    "reference": "output/our-stage/mask-references/gasoline.jpg",
+    "method": "Built-in image_gen",
+    "file": "images/game/our-stage/stories/gasoline-story.png"
+  },
+  {
+    "id": "nightingale-story",
+    "prompt": "Landscape 3:2 game story illustration, chunky classic 2D pixel art limited palette and sharp square pixels. Solo female singer celebrating championship wearing reference Nightingale mask: cream oval face pink open smile, black bob sides white lace bonnet, gold eye mask and tall gold crown green jewel, teal royal cape with gold trim. Holding microphone, under warm stage lights with aqua and violet pixel confetti. No guards, no words, no TV branding. Stylized symbolic game scene not exact broadcast reproduction. No smooth anime rendering.",
+    "reference": "output/our-stage/mask-references/nightingale.jpg",
+    "method": "Built-in image_gen",
+    "file": "images/game/our-stage/stories/nightingale-story.png"
+  }
+]

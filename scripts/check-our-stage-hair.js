@@ -19,7 +19,7 @@ assert.equal(M.equipPart(locked,'br','hair','stage-sugarman'),false);
 assert.equal(M.equipPart(locked,'br','clothes','first-mind'),false);
 assert.equal(M.equipPart(locked,'br','nose','base'),false);
 const old=structuredClone(s);old.version=5;delete old.hair;
-const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,10);assert.deepEqual(migrated.hair,old.equipped);
+const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,11);assert.deepEqual(migrated.hair,old.equipped);
 assert.deepEqual(migrated.purchases,old.purchases);assert.deepEqual(migrated.collected,old.collected);assert.equal(M.coins(migrated),M.coins(s));
 const invalid=structuredClone(locked);invalid.hair.br='stage-sugarman';assert.equal(M.valid(invalid),false);assert.throws(()=>M.loadSave(JSON.stringify(invalid)));
 assert(M.equip(s,'br','base'));assert.equal(s.hair.br,'base');assert.equal(s.equipped.br,'base');

@@ -6,7 +6,7 @@ assert.equal(M.shopJobs.length,4);
 let expected=0,now=1000;
 for(const j of M.shopJobs){
  assert.equal(j.seconds,1);assert(live.shopJobById(j.id).seconds>1);
- assert(M.startShopJob(s,now,j.id));
+ assert(!M.startShopJob(s,now,j.id));s.shopJob={kind:j.id,end:now+1000}; // Old saves can settle once.
  assert(!M.startShopJob(s,now,M.shopJobs.find(other=>other.id!==j.id).id));
  assert.equal(M.settle(s,now+999),0);assert.equal(M.coins(s),expected);
  const restored=M.loadSave(JSON.stringify(s));assert.equal(M.settle(restored,now+1000),1);
@@ -22,7 +22,7 @@ for(const change of [x=>x.jobCounts.soundcheck=-1,x=>x.jobCounts.poster=1.2,x=>x
 // Preserve already earned/spent coins, mixed outfits, and an in-flight old job.
 const old=M.fresh(1000);old.gigs=20;assert(M.purchase(old,'stage-sugarman','br'));assert(M.equipPart(old,'br','hair','stage-sugarman'));
 old.version=8;delete old.jobCounts;old.shopJob={end:2000};
-const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,10);
+const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,11);
 assert.equal(M.coins(migrated),140);assert.deepEqual(migrated.purchases,old.purchases);assert.deepEqual(migrated.hair,old.hair);
 assert.equal(migrated.shopJob.kind,'setup');assert.equal(M.settle(migrated,2000),1);assert.equal(M.coins(migrated),150);assert.equal(M.settle(migrated,3000),0);
 for(const id of ['tour-encore','tour-believe'])for(const m of M.memberIds){
@@ -30,4 +30,4 @@ for(const id of ['tour-encore','tour-believe'])for(const m of M.memberIds){
  assert(M.equipPart(rich,m,'clothes',id));assert.equal(rich.hair[m],'practice');assert(M.equipPart(rich,m,'hair',id));
  assert.deepEqual(M.loadSave(JSON.stringify(rich)),rich);
 }
-console.log('PASS 4 backstage jobs, 1-second boundary, reload and once-only rewards, one active activity, v8 balance/purchase migration, malformed saves and 6 new member purchases.');
+console.log('PASS 4 legacy backstage jobs, 1-second boundary, reload and once-only rewards, one active activity, v8 balance/purchase migration, malformed saves and 6 new member purchases.');

@@ -77,3 +77,10 @@ require('./check-our-stage-backstage');
 require('./check-our-stage-coins');
 require('./check-our-stage-stories');
 require('./check-our-stage');
+
+require('./check-our-stage-mini');
+
+require('./check-our-stage-comeback');
+
+require('./check-our-stage-milestones');
+require('./check-our-stage-mask-badges');

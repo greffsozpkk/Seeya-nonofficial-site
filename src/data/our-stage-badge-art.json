@@ -713,6 +713,12 @@
     },
     "gyul-star": {
       "image": "/images/game/our-stage/pixel-gyul-star-v2.png"
+    },
+    "event-yeonji-gasoline": {
+      "image": "/images/game/our-stage/gasoline-badge.png"
+    },
+    "event-boram-nightingale": {
+      "image": "/images/game/our-stage/nightingale-badge.png"
     }
   },
   "logoSheets": {

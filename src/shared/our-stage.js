@@ -1,5 +1,6 @@
 'use strict';
 function createModel(testMode=false) {
+  const mini=require('./our-stage-mini')(testMode);
   const timing={shopMs:testMode?1000:60000,recoveryMs:testMode?1000:60000,performanceMs:testMode?1000:3300,testMode};
   // Album order follows Melon 314286. Each condition uses permanent progress.
   const songs = [
@@ -32,16 +33,24 @@ function createModel(testMode=false) {
   const albumById=id=>albums.find(a=>a.id===id);
   const storyEntries=require('../data/our-stage-stories.json');
   const storyById=id=>storyEntries.find(e=>e.id===id);
-  const storyAvailable=(s,id)=>{const e=storyById(id);return Boolean(e&&albumUnlocked(s,e.album)&&albumCount(s,e.album)>=e.minTracks);};
+  const storyAvailable=(s,id)=>{const e=storyById(id);return Boolean(e&&albumUnlocked(s,e.album)&&albumCount(s,e.album)>=e.minTracks&&(e.requiresFlags||[]).every(id=>has(s,id)));};
   const storyDone=(s,id)=>Boolean(storyById(id)&&s.proofs.includes('story:'+id));
-  const storyCondition=id=>{const e=storyById(id);return albumById(e.album).name+(e.minTracks?' · '+e.minTracks+'트랙 수집':' 해금');};
+  const storyCondition=id=>{const e=storyById(id);return albumById(e.album).name+(e.minTracks?' · '+e.minTracks+'트랙 수집':' 해금')+(e.requiresFlags||[]).map(id=>' + ‘'+members.find(m=>m.id===id).title+'’ 간직하기').join('');};
   const quizLevels=['','첫걸음','기억 넓히기','연결하기','비교하기','종합하기'];
   const songAlbum=id=>albums.find(a=>a.tracks.some(t=>t.id===id));
   const albumCount=(s,id)=>albumById(id)?.tracks.filter(t=>open(s,t.id)).length||0;
   const albumComplete=(s,id)=>Boolean(albumById(id)&&albumCount(s,id)===albumById(id).tracks.length);
   const albumMastered=(s,id)=>Boolean(albumById(id)&&albumById(id).tracks.every(t=>ready(s,t.id)));
   const albumUnlocked=(s,id)=>id==='first-mind'?has(s,'album'):s.albums.includes(id);
-  const albumAvailable=(s,id)=>{const i=albums.findIndex(a=>a.id===id);return i>0&&!albumUnlocked(s,id)&&albumUnlocked(s,albums[i-1].id)&&albumComplete(s,albums[i-1].id);};
+  const albumStoryGates={'lovely-sweet-heart':['event-rookie'],'brilliant-change':['event-seoul']};
+  const storyDestination=key=>{const id=key.replace(/^story:/,'');if(['gr','yj','reunion','br','event-wsg'].includes(id))return 'still-here';return Object.keys(albumStoryGates).find(a=>albumStoryGates[a].includes(id))||null;};
+  const comebackStoryIds=['gr','yj','reunion','br'];
+  const comebackRequirements=s=>[
+    ...comebackStoryIds.map(id=>({label:id==='reunion'?'씨야 · 하나로 모인 기록':members.find(m=>m.id===id).name+' · '+members.find(m=>m.id===id).title,done:has(s,id),action:'story',value:id})),
+    {label:'이보람 · 씨야를 다시 떠올린 목소리 (WSG워너비)',done:storyDone(s,'event-wsg'),action:'timeline',value:'event-wsg'}
+  ];
+  const albumRequirements=(s,id)=>{const i=albums.findIndex(a=>a.id===id);return i<1?[]:[{label:albums[i-1].name+' 전곡 수집',done:albumUnlocked(s,albums[i-1].id)&&albumComplete(s,albums[i-1].id),action:'album-view',value:albums[i-1].id},...(albumStoryGates[id]||[]).map(k=>({label:storyById(k).title,done:storyDone(s,k),action:'timeline',value:k})),...(id==='still-here'?comebackRequirements(s):[])];};
+  const albumAvailable=(s,id)=>{const i=albums.findIndex(a=>a.id===id);return i>0&&!albumUnlocked(s,id)&&albumRequirements(s,id).every(r=>r.done);};
   function unlockAlbum(s,id){if(!albumAvailable(s,id))return false;s.albums.push(id);return true;}
   // Personal activities belong to the 2011–2022 interval, never the debut tutorial.
   const coreCondition=id=>({gr:'See You Again · 5트랙 수집',yj:'See You Again 9트랙 수집 + ‘카메라 앞에서’ 간직하기',reunion:'See You Again 12트랙 수집 + ‘가면 너머의 목소리’ 간직하기',br:'See You Again 전곡 수집 + ‘하나로 모인 기록’ 간직하기'}[id]||'');
@@ -86,14 +95,16 @@ function createModel(testMode=false) {
     practice:ids.reduce((n,id)=>n+s.tracks[id].length,0)*2,
     stories:s.flags.length*5+storyEntries.filter(e=>storyDone(s,e.id)).length*8,
     jobs:shopJobs.reduce((n,j)=>n+jobCount(s,j.id)*j.reward,0),
-    daily:s.daily.count*dailyReward
+    daily:s.daily.count*dailyReward,
+    mini:s.mini.earned
   });
   const coins=s=>Object.values(earnings(s)).reduce((a,b)=>a+b,0)-s.purchases.reduce((n,p)=>n+(shopById(p.split(':')[0])?.price||0),0);
   const styleOwned=(s,id,member)=>memberIds.includes(member)&&(['base','practice'].includes(id)||Boolean(albumById(id))&&albumUnlocked(s,id)||Boolean(shopById(id))&&s.purchases.includes(id+':'+member));
   function equipPart(s,member,part,id){if(!['clothes','hair'].includes(part)||!styleOwned(s,id,member))return false;(part==='hair'?s.hair:s.equipped)[member]=id;return true;}
   function equip(s,member,id){if(!styleOwned(s,id,member))return false;s.equipped[member]=id;s.hair[member]=id;return true;}
   function purchase(s,id,member){const o=shopById(id);if(!o||!memberIds.includes(member)||s.purchases.includes(id+':'+member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
-  function startShopJob(s,now=Date.now(),kind='setup'){const job=shopJobById(kind);if(!job||s.shopJob||jobCount(s,kind)>=1000000||!Number.isSafeInteger(now)||now<0||!Number.isSafeInteger(now+job.seconds*1000))return false;s.shopJob={kind,end:now+job.seconds*1000};return true;}
+  // Retain historical earnings and settle already-started legacy jobs; no new idle jobs.
+  function startShopJob(){return false;}
   const outfitOwned=(s,id)=>['base','practice'].includes(id)||albumUnlocked(s,id);
   const canWearOutfit=(s,id)=>(['base','practice'].includes(id)||Boolean(albumById(id)))&&(outfitOwned(s,id)||testMode);
   for(const a of albums.slice(1))a.tracks.forEach((t,i)=>songs.push({
@@ -105,7 +116,7 @@ function createModel(testMode=false) {
   const ids = songs.map(s=>s.id);
   const flags = ['first','album','yj','gr','br','reunion','ending'];
   function fresh(now=Date.now()){
-    return {version:10,daily:{lastDay:null,count:0},jobCounts:emptyJobCounts(),cardDecorations:{},displayCard:null,finale:false,purchases:[],equipped:defaultEquipment(),hair:defaultEquipment(),gigs:0,shopJob:null,content:'album-journey',albums:[],points:100,energyAt:now,tracks:Object.fromEntries(ids.map(id=>[id,[]])),flags:[],collected:['scent'],proofs:[],notes:{},active:null,queue:null,setlist:[],display:null};
+    return {version:11,mini:mini.fresh(),daily:{lastDay:null,count:0},jobCounts:emptyJobCounts(),cardDecorations:{},displayCard:null,finale:false,purchases:[],equipped:defaultEquipment(),hair:defaultEquipment(),gigs:0,shopJob:null,content:'album-journey',albums:[],points:100,energyAt:now,tracks:Object.fromEntries(ids.map(id=>[id,[]])),flags:[],collected:['scent'],proofs:[],notes:{},active:null,queue:null,setlist:[],display:null};
   }
   const has=(s,id)=>s.flags.includes(id);
   const eligible=(s,id)=>songs.find(song=>song.id===id)?.unlocked(s)??false;
@@ -155,7 +166,7 @@ function createModel(testMode=false) {
     s.flags.push(id);return true;
   }
   function valid(s){
-    if(!s||s.version!==10||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>100||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
+    if(!s||s.version!==11||!mini.valid(s.mini)||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>100||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
     const subset=(a,opts)=>Array.isArray(a)&&a.every(x=>opts.includes(x))&&new Set(a).size===a.length;
     if(!subset(s.flags,flags)||!s.tracks||!ids.every(id=>subset(s.tracks[id],[0,1,2])))return false;
     if(!subset(s.albums,albums.slice(1).map(a=>a.id)))return false;
@@ -192,6 +203,7 @@ function createModel(testMode=false) {
     if(data?.version===7)data={...data,version:8,cardDecorations:{}};
     if(data?.version===8)data={...data,version:9,jobCounts:emptyJobCounts(),shopJob:data.shopJob?{...data.shopJob,kind:'setup'}:null};
     if(data?.version===9)data={...data,version:10,daily:{lastDay:null,count:0}};
+    if(data?.version===10)data={...data,version:11,mini:mini.fresh()};
     if(!valid(data))throw Error('Invalid stage save');
     return data;
   }
@@ -254,13 +266,13 @@ function createModel(testMode=false) {
       ['cheer','응원의 문장',[1,3,5],notes,3]
     ])for(const target of values)b.push({id:prefix+'-'+target,name:label+' '+target,earned:n>=target,hint:prefix==='practice'?target+'회 연습 완료':prefix==='collection'?target+'트랙 수집':target+'개 이야기에 응원 남기기',group:'활동',kind:'activity',icon});
     b.push({id:'all-master',name:'우리의 모든 계절',earned:albums.every(a=>albumMastered(s,a.id)),hint:'8개 앨범의 모든 트랙 준비도 100%',group:'활동',kind:'activity',icon:5});
-    for(const e of storyEntries.filter(e=>e.kind==='event'))b.push({id:e.id,name:e.title,earned:storyDone(s,e.id),hint:'사이드 이벤트 간직하기 · '+e.date,group:'이벤트',kind:'activity',icon:e.icon});
-    b.push({id:'story-journey',name:'노래 사이의 모든 기억',earned:storyEntries.every(e=>storyDone(s,e.id)),hint:'앨범 이야기 7개와 사이드 이벤트 8개 간직하기',group:'이야기',kind:'activity',icon:2});
+    for(const e of storyEntries.filter(e=>e.kind==='event'&&e.awardBadge!==false))b.push({id:e.id,name:e.badgeName||e.title,earned:storyDone(s,e.id),hint:'사이드 이벤트 간직하기 · '+e.date,group:'이벤트',kind:'activity',icon:e.icon});
+    b.push({id:'story-journey',name:'노래 사이의 모든 기억',earned:storyEntries.every(e=>storyDone(s,e.id)),hint:'앨범 이야기 '+storyEntries.filter(e=>e.kind==='album').length+'개와 사이드 이벤트 '+storyEntries.filter(e=>e.kind==='event').length+'개 간직하기',group:'이야기',kind:'activity',icon:2});
     b.push({id:'gyul-star',name:'귤별이 돼',earned:memberCards(s).filter(c=>c.member==='gr'&&c.earned).length>=3,hint:'남규리 멤버 카드 3장 수집',group:'활동',kind:'activity',icon:2});
     return b;
   }
 
-  return {dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,train,claim,valid};
+  return {albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,train,claim,valid};
 }
 module.exports=createModel();
 module.exports.forTest=()=>createModel(true);
