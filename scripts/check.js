@@ -84,3 +84,4 @@ require('./check-our-stage-comeback');
 
 require('./check-our-stage-milestones');
 require('./check-our-stage-mask-badges');
+require('./check-our-stage-test-tools');
