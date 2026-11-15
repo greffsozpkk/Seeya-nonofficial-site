@@ -156,54 +156,54 @@
     }
   },
   "california-dream": {
-    "image": "/images/game/our-stage/layers/california-dream-v2.png",
+    "image": "/images/game/our-stage/layers/california-dream-stage.png",
     "width": 1536,
     "height": 1024,
     "members": {
       "br": {
         "head": [
-          107,
-          26,
-          346,
-          538
+          84,
+          21,
+          412,
+          476
         ],
         "body": [
-          167,
-          657,
-          263,
-          344
+          159,
+          595,
+          259,
+          416
         ],
-        "chin": 363
+        "chin": 380
       },
       "gr": {
         "head": [
-          602,
-          28,
-          333,
-          529
+          588,
+          48,
+          352,
+          363
         ],
         "body": [
-          628,
-          657,
-          281,
-          344
+          638,
+          595,
+          261,
+          416
         ],
-        "chin": 363
+        "chin": 383
       },
       "yj": {
         "head": [
-          1074,
-          26,
-          348,
-          524
+          1070,
+          7,
+          401,
+          539
         ],
         "body": [
-          1108,
-          657,
-          269,
-          344
+          1119,
+          595,
+          259,
+          416
         ],
-        "chin": 363
+        "chin": 380
       }
     }
   },
@@ -620,6 +620,110 @@
           347
         ],
         "chin": 363
+      }
+    }
+  },
+  "tour-believe": {
+    "image": "/images/game/our-stage/layers/tour-believe.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          71,
+          24,
+          408,
+          571
+        ],
+        "body": [
+          169,
+          658,
+          253,
+          347
+        ],
+        "chin": 362
+      },
+      "gr": {
+        "head": [
+          570,
+          13,
+          382,
+          580
+        ],
+        "body": [
+          631,
+          658,
+          274,
+          347
+        ],
+        "chin": 362
+      },
+      "yj": {
+        "head": [
+          1045,
+          35,
+          403,
+          550
+        ],
+        "body": [
+          1119,
+          658,
+          248,
+          347
+        ],
+        "chin": 362
+      }
+    }
+  },
+  "tour-encore": {
+    "image": "/images/game/our-stage/layers/tour-encore.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          57,
+          23,
+          418,
+          572
+        ],
+        "body": [
+          172,
+          657,
+          249,
+          350
+        ],
+        "chin": 362
+      },
+      "gr": {
+        "head": [
+          551,
+          24,
+          410,
+          566
+        ],
+        "body": [
+          638,
+          657,
+          251,
+          350
+        ],
+        "chin": 362
+      },
+      "yj": {
+        "head": [
+          1040,
+          23,
+          428,
+          551
+        ],
+        "body": [
+          1117,
+          657,
+          248,
+          350
+        ],
+        "chin": 362
       }
     }
   }

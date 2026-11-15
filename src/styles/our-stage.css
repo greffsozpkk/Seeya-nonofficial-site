@@ -346,3 +346,13 @@
 .os-game .mapped-outfit figure{margin:0;min-width:0;flex:1;display:flex;flex-direction:column;align-items:center;gap:5px}
 .os-game .mapped-outfit .member-sprite{width:100%;height:calc(100% - 24px);min-height:0;image-rendering:pixelated}
 .os-game .mapped-outfit figcaption{font-size:12px;font-weight:700;color:#554339;line-height:19px}
+
+/* Repeatable backstage activities share one active job and one wallet. */
+#ourStage .backstage-jobs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}
+#ourStage .backstage-job{display:flex;flex-direction:column;gap:10px;padding:16px;border:1px solid var(--line,#ded8d2);border-radius:12px;background:var(--paper,#fffaf3)}
+#ourStage .backstage-job h4,#ourStage .backstage-job p{margin:0}
+#ourStage .backstage-job p{flex:1}
+#ourStage .backstage-job b small{font-weight:400}
+#ourStage .backstage-job button{width:100%}
+@media(max-width:900px){#ourStage .backstage-jobs{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:380px){#ourStage .backstage-jobs{grid-template-columns:1fr}}

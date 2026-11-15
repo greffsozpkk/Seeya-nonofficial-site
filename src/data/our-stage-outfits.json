@@ -4,7 +4,7 @@
     "name": "처음의 연습복",
     "type": "PRACTICE SET",
     "image": "/images/game/our-stage/layers/practice-v2.png",
-    "note": "흰 티셔츠와 트레이닝 바지로 만든 게임용 기본 연습복입니다. 실제 착용 의상을 재현한 것은 아니에요.",
+    "note": "흰 티셔츠와 트레이닝 바지에 보람·규리·연지 리허설 이름표를 붙인 게임용 기본 연습복입니다.",
     "width": 1536,
     "height": 1024
   },
@@ -97,13 +97,13 @@
     "id": "california-dream",
     "name": "California Dream",
     "type": "2.5 ALBUM · 2008.01.02",
-    "image": "/images/game/our-stage/pixel-california-dream.png",
-    "note": "2.5집 활동기 설 인사 사진의 한복을 참고했어요. 앨범 커버나 방송 무대 의상이 아닌 당시 활동 사진의 재해석입니다.",
+    "image": "/images/game/our-stage/layers/california-dream-stage.png",
+    "note": "2008년 2월 3일 인기가요 ‘그래도 좋아’ 무대의 의상과 헤어를 참고했어요. 작은 장식은 도트로 단순화했습니다.",
     "url": "https://www.melon.com/album/detail.htm?albumId=362767",
     "cover": "https://image.genie.co.kr/Y/IMAGE/IMG_ALBUM/055/420/850/55420850_1405324372412_1_600x600.JPG",
     "prompt": "Create a single transparent PNG sprite lineup with exactly THREE full-body chunky 2D pixel-art characters. Image 1 is the approved game sprite STYLE reference; retain identical large-head tiny-body proportions, simple square eyes and short mouth, hard square pixel edges and flat 2-3 tones. Image 2 is the album wardrobe reference. NO photoreal/anime smoothness, no fine texture, no shadows, no text, no scene, no props. Left-to-right fixed Boram, Gyuri, Yeonji. Three sprites each centered in its own equal-width third with generous transparent gaps and same baseline. Entire body visible. Simple straight standing pose, arms down. Coarse roughly 32x48 logical pixel sprites enlarged. No intricate facial detail. Adapt only hairstyle/clothing as specified. Album wardrobe: Casual travel looks based on photo section. LEFT Boram: long dark hair with bangs, pale pink sleeveless top, blue jeans. CENTER Gyuri: long black hair with bangs, white sleeveless long top with black bust panel and necklace, dark jeans. RIGHT Yeonji: long brown hair, pale cream sleeveless blouse, dark blue jeans. Simplified white shoes.",
-    "width": 1774,
-    "height": 887,
+    "width": 1536,
+    "height": 1024,
     "members": [
       [
         85,
@@ -119,17 +119,16 @@
       ]
     ],
     "identityReview": {
-      "status": "caption-checked",
-      "source": "https://www.joynews24.com/view/311671",
+      "status": "stage-checked",
+      "source": "https://www.youtube.com/watch?v=Z7QOYi6iR70",
       "sources": [
-        "https://www.joynews24.com/view/311684",
-        "https://www.joynews24.com/view/311672",
-        "https://www.joynews24.com/view/311683"
+        "https://www.osen.co.kr/article/G0801090055",
+        "https://music.bugs.co.kr/track/1000049"
       ],
-      "evidence": "2.5집 활동기 2008년 설 인사 개별 실명 기사 대조. 이보람 청록 저고리·분홍 치마 / 남규리 아이보리 저고리·빨강 치마 / 김연지 분홍 저고리·파랑 치마.",
-      "note": "2.5집 활동기 설 인사 사진의 한복을 참고했어요. 앨범 커버나 방송 무대 의상이 아닌 당시 활동 사진의 재해석입니다."
+      "evidence": "2008.02.03 SBS 인기가요 그래도 좋아 무대의 의상·헤어 대조. 남규리 쇼트커트 기사 및 곡 파트 표기를 함께 참고. 도트 열은 이보람 노랑 재킷·검정 허리 장식 / 남규리 분홍 재킷·짧은 단발 / 김연지 네이비 조끼·노랑 허리 리본 순서.",
+      "note": "2008년 2월 3일 인기가요 ‘그래도 좋아’ 무대의 의상과 헤어를 참고했어요. 작은 장식은 도트로 단순화했습니다."
     },
-    "wardrobeSource": "https://www.joynews24.com/view/311671"
+    "wardrobeSource": "https://www.youtube.com/watch?v=Z7QOYi6iR70"
   },
   {
     "id": "brilliant-change",

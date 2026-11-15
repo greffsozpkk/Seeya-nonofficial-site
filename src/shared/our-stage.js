@@ -67,19 +67,28 @@ function createModel(testMode=false) {
   const shop=require('../data/our-stage-shop.json');
   const memberIds=['br','gr','yj'];
   const shopById=id=>shop.find(o=>o.id===id);
+  const shopJobs=[
+    {id:'setup',name:'공연 준비 돕기',description:'소품을 정리하고 조명을 켜요.',reward:10,seconds:testMode?1:60},
+    {id:'soundcheck',name:'사운드 체크',description:'마이크와 모니터 소리를 맞춰요.',reward:15,seconds:testMode?1:90},
+    {id:'lightstick',name:'응원봉 점검',description:'객석을 밝힐 응원봉을 준비해요.',reward:12,seconds:testMode?1:60},
+    {id:'poster',name:'포스터 정리',description:'공연 포스터와 안내물을 정돈해요.',reward:8,seconds:testMode?1:30}
+  ];
+  const shopJobById=id=>shopJobs.find(j=>j.id===id);
+  const emptyJobCounts=()=>({soundcheck:0,lightstick:0,poster:0});
+  const jobCount=(s,id)=>id==='setup'?s.gigs:s.jobCounts[id];
   const defaultEquipment=()=>({br:'practice',gr:'practice',yj:'practice'});
   const earnings=s=>({
     songs:Math.max(0,s.collected.length-1)*5,
     practice:ids.reduce((n,id)=>n+s.tracks[id].length,0)*2,
     stories:s.flags.length*5+storyEntries.filter(e=>storyDone(s,e.id)).length*8,
-    jobs:s.gigs*10
+    jobs:shopJobs.reduce((n,j)=>n+jobCount(s,j.id)*j.reward,0)
   });
   const coins=s=>Object.values(earnings(s)).reduce((a,b)=>a+b,0)-s.purchases.reduce((n,p)=>n+(shopById(p.split(':')[0])?.price||0),0);
   const styleOwned=(s,id,member)=>memberIds.includes(member)&&(['base','practice'].includes(id)||Boolean(albumById(id))&&albumUnlocked(s,id)||Boolean(shopById(id))&&s.purchases.includes(id+':'+member));
   function equipPart(s,member,part,id){if(!['clothes','hair'].includes(part)||!styleOwned(s,id,member))return false;(part==='hair'?s.hair:s.equipped)[member]=id;return true;}
   function equip(s,member,id){if(!styleOwned(s,id,member))return false;s.equipped[member]=id;s.hair[member]=id;return true;}
   function purchase(s,id,member){const o=shopById(id);if(!o||!memberIds.includes(member)||s.purchases.includes(id+':'+member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
-  function startShopJob(s,now=Date.now()){if(s.shopJob||s.gigs>=1000000||!Number.isSafeInteger(now)||now<0)return false;s.shopJob={end:now+timing.shopMs};return true;}
+  function startShopJob(s,now=Date.now(),kind='setup'){const job=shopJobById(kind);if(!job||s.shopJob||jobCount(s,kind)>=1000000||!Number.isSafeInteger(now)||now<0||!Number.isSafeInteger(now+job.seconds*1000))return false;s.shopJob={kind,end:now+job.seconds*1000};return true;}
   const outfitOwned=(s,id)=>['base','practice'].includes(id)||albumUnlocked(s,id);
   const canWearOutfit=(s,id)=>(['base','practice'].includes(id)||Boolean(albumById(id)))&&(outfitOwned(s,id)||testMode);
   for(const a of albums.slice(1))a.tracks.forEach((t,i)=>songs.push({
@@ -91,7 +100,7 @@ function createModel(testMode=false) {
   const ids = songs.map(s=>s.id);
   const flags = ['first','album','yj','gr','br','reunion','ending'];
   function fresh(now=Date.now()){
-    return {version:8,cardDecorations:{},displayCard:null,finale:false,purchases:[],equipped:defaultEquipment(),hair:defaultEquipment(),gigs:0,shopJob:null,content:'album-journey',albums:[],points:100,energyAt:now,tracks:Object.fromEntries(ids.map(id=>[id,[]])),flags:[],collected:['scent'],proofs:[],notes:{},active:null,queue:null,setlist:[],display:null};
+    return {version:9,jobCounts:emptyJobCounts(),cardDecorations:{},displayCard:null,finale:false,purchases:[],equipped:defaultEquipment(),hair:defaultEquipment(),gigs:0,shopJob:null,content:'album-journey',albums:[],points:100,energyAt:now,tracks:Object.fromEntries(ids.map(id=>[id,[]])),flags:[],collected:['scent'],proofs:[],notes:{},active:null,queue:null,setlist:[],display:null};
   }
   const has=(s,id)=>s.flags.includes(id);
   const eligible=(s,id)=>songs.find(song=>song.id===id)?.unlocked(s)??false;
@@ -114,7 +123,7 @@ function createModel(testMode=false) {
   }
   function settle(s,now=Date.now()){
     let finished=0;
-    if(s.shopJob&&s.shopJob.end<=now){s.gigs++;s.shopJob=null;finished++;}
+    if(s.shopJob&&s.shopJob.end<=now){if(s.shopJob.kind==='setup')s.gigs++;else s.jobCounts[s.shopJob.kind]++;s.shopJob=null;finished++;}
     while(s.active&&s.active.end<=now){
       const {track,lesson,end}=s.active;
       if(!s.tracks[track].includes(lesson))s.tracks[track].push(lesson);
@@ -141,7 +150,7 @@ function createModel(testMode=false) {
     s.flags.push(id);return true;
   }
   function valid(s){
-    if(!s||s.version!==8||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>100||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
+    if(!s||s.version!==9||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>100||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
     const subset=(a,opts)=>Array.isArray(a)&&a.every(x=>opts.includes(x))&&new Set(a).size===a.length;
     if(!subset(s.flags,flags)||!s.tracks||!ids.every(id=>subset(s.tracks[id],[0,1,2])))return false;
     if(!subset(s.albums,albums.slice(1).map(a=>a.id)))return false;
@@ -154,7 +163,8 @@ function createModel(testMode=false) {
     if(!storyEntries.every(e=>!storyDone(s,e.id)||storyAvailable(s,e.id)))return false;
     if(!subset(s.setlist,ids.filter(id=>ready(s,id)))||!(s.display===null||members.some(m=>m.id===s.display&&has(s,m.id))))return false;
     if(!Number.isInteger(s.gigs)||s.gigs<0||s.gigs>1000000||!subset(s.purchases,shop.flatMap(o=>memberIds.map(m=>o.id+':'+m))))return false;
-    if(s.shopJob!==null&&(!s.shopJob||!Number.isSafeInteger(s.shopJob.end)||s.shopJob.end<0||s.gigs>=1000000))return false;
+    if(!s.jobCounts||typeof s.jobCounts!=='object'||Array.isArray(s.jobCounts)||Object.keys(s.jobCounts).length!==3||!shopJobs.slice(1).every(j=>Number.isInteger(s.jobCounts[j.id])&&s.jobCounts[j.id]>=0&&s.jobCounts[j.id]<=1000000))return false;
+    if(s.shopJob!==null&&(!s.shopJob||!shopJobById(s.shopJob.kind)||!Number.isSafeInteger(s.shopJob.end)||s.shopJob.end<0||jobCount(s,s.shopJob.kind)>=1000000))return false;
     if(typeof s.finale!=='boolean'||s.finale&&!finaleReady(s)||!(s.displayCard===null||cardOwned(s,s.displayCard)))return false;
     if(!s.cardDecorations||typeof s.cardDecorations!=='object'||Array.isArray(s.cardDecorations))return false;
     const earnedBadges=badges(s).filter(b=>b.earned).map(b=>b.id);
@@ -173,6 +183,7 @@ function createModel(testMode=false) {
     if(data?.version===5)data={...data,version:6,hair:{...data.equipped}};
     if(data?.version===6)data={...data,version:8,cardDecorations:{},displayCard:data.display?'story:'+data.display:null,finale:false};
     if(data?.version===7)data={...data,version:8,cardDecorations:{}};
+    if(data?.version===8)data={...data,version:9,jobCounts:emptyJobCounts(),shopJob:data.shopJob?{...data.shopJob,kind:'setup'}:null};
     if(!valid(data))throw Error('Invalid stage save');
     return data;
   }
@@ -241,7 +252,7 @@ function createModel(testMode=false) {
     return b;
   }
 
-  return {decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,train,claim,valid};
+  return {shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,train,claim,valid};
 }
 module.exports=createModel();
 module.exports.forTest=()=>createModel(true);

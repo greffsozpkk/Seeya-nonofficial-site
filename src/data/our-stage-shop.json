@@ -60,5 +60,68 @@
     "method": "Built-in image_gen",
     "identitySource": "https://enter.etoday.co.kr/news/view/297930",
     "mappingNote": "생성본의 중앙 캐릭터(검정 조끼)는 이보람, 왼쪽 캐릭터(레이스 블라우스)는 남규리입니다. members는 실제 멤버 순서 br/gr/yj로 좌표를 연결합니다."
+  },
+  {
+    "id": "tour-encore",
+    "name": "20주년 · 과잠·앙코르",
+    "type": "CONCERT STYLE",
+    "price": 100,
+    "date": "2026.10.31",
+    "url": "https://www.youtube.com/watch?v=dVjGetjnVzs",
+    "note": "인천 앙코르의 이보람 과잠, 남규리 흰 스커트, 김연지 네이비 착장을 참고했어요. 의상과 헤어를 따로 조합할 수 있어요.",
+    "image": "/images/game/our-stage/layers/tour-encore.png",
+    "width": 1536,
+    "height": 1024,
+    "members": [
+      [
+        0,
+        512
+      ],
+      [
+        512,
+        512
+      ],
+      [
+        1024,
+        512
+      ]
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=wgJ8Ag7YY54"
+    ],
+    "method": "Built-in image_gen",
+    "mappingNote": "멤버 이름이 표시된 개별 영상과 단체 무대의 의상·헤어를 대조. br/gr/yj 순서의 독립 헤어·의상 레이어."
+  },
+  {
+    "id": "tour-believe",
+    "name": "20주년 · I Believe",
+    "type": "CONCERT STYLE",
+    "price": 120,
+    "date": "2026.08–10",
+    "url": "https://www.youtube.com/watch?v=NlNPMFCVrvY",
+    "note": "20주년 투어의 블랙 코르셋·화이트 드레스 무대를 참고했어요. 작은 장식과 화면에서 가려진 부분은 단순화했어요.",
+    "image": "/images/game/our-stage/layers/tour-believe.png",
+    "width": 1536,
+    "height": 1024,
+    "members": [
+      [
+        0,
+        512
+      ],
+      [
+        512,
+        512
+      ],
+      [
+        1024,
+        512
+      ]
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=EXNheFJHMho",
+      "https://www.youtube.com/watch?v=m9fbiFor9F0"
+    ],
+    "method": "Built-in image_gen",
+    "mappingNote": "멤버 이름이 표시된 개별 영상과 단체 무대의 의상·헤어를 대조. br/gr/yj 순서의 독립 헤어·의상 레이어."
   }
 ]

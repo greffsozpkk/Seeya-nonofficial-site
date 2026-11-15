@@ -15,7 +15,7 @@ assert(earned(M.loadSave(JSON.stringify(fixtures.complete))));
 const outfits=require('../src/data/our-stage-outfits.json'),layers=require('../src/data/our-stage-layers.json');
 assert.equal(new Set(outfits.map(o=>o.id)).size,10);
 for(const id of ['california-dream','brilliant-change']){
- const o=outfits.find(o=>o.id===id);assert(o.wardrobeSource);assert.equal(o.identityReview.status,'caption-checked');
+ const o=outfits.find(o=>o.id===id);assert(o.wardrobeSource);assert.equal(o.identityReview.status,id==='california-dream'?'stage-checked':'caption-checked');
  for(const [i,m]of M.memberIds.entries())for(const box of [layers[id].members[m].head,layers[id].members[m].body])assert.equal(Math.floor((box[0]+box[2]/2)/512),i);
 }
 assert.equal(new Set(badges.map(b=>art.badges[b.id].image||art.badges[b.id].sheet+':'+art.badges[b.id].index)).size,49);

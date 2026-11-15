@@ -23,7 +23,7 @@ for(const mutate of [
 const full=structuredClone(require('./check-our-stage-stories').unread);
 const earned=M.coins(full);assert(earned>0);
 const old={...full,version:4};for(const k of ['purchases','gigs','equipped','shopJob'])delete old[k];
-const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,8);
+const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,9);
 assert.deepEqual(migrated.collected,full.collected);assert.equal(M.coins(migrated),earned);
 const event=M.storyEntries[0];assert(M.cheer(migrated,'story:'+event.id,'좋아요'));
 assert.equal(M.coins(migrated),earned+8);assert(!M.cheer(migrated,'story:'+event.id,'다시'));

@@ -17,7 +17,7 @@ const sprite=(id,override)=>{
  const scale=320/(h.chin-h.head[1]),hw=h.head[2]*scale,hh=h.head[3]*scale;
  const bh=320,bw=b.body[2]*bh/b.body[3],headX=(440-hw)/2,headY=25,bodyY=340;
  const part=(data,box,x,y,w,height)=>`<svg x="${x}" y="${y}" width="${w}" height="${height}" viewBox="${box.join(' ')}" overflow="hidden" preserveAspectRatio="none"><image href="${data.image}" width="${data.width}" height="${data.height}"/></svg>`;
- return `<svg class="member-sprite" viewBox="0 0 440 680" role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="crisp-${id}-${clothing.id}-${hair.id}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#crisp-${id}-${clothing.id}-${hair.id})"><g class="sprite-hair">${part(head,h.head,headX,headY,hw,hh)}</g><g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g></g></svg>`;
+ return `<svg class="member-sprite" viewBox="0 0 440 680" role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="crisp-${id}-${clothing.id}-${hair.id}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#crisp-${id}-${clothing.id}-${hair.id})"><g class="sprite-hair">${part(head,h.head,headX,headY,hw,hh)}</g><g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g></g>${clothing.id==='practice'?`<g class="rehearsal-name-tag" aria-label="리허설 이름표 ${M.members.find(m=>m.id===id).name.slice(1)}"><rect x="130" y="397" width="180" height="61" fill="#fffdf6" stroke="#29283a" stroke-width="4"/><text x="220" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#29283a">${M.members.find(m=>m.id===id).name.slice(1)}</text></g>`:''}</svg>`;
 };
 const portrait=id=>`<div class="member-crop">${sprite(id)}</div>`;
 const outfitLineup=o=>`<div class="outfit-sheet mapped-outfit" aria-label="${esc(o.name)} 멤버별 의상">${M.memberIds.map(id=>`<figure>${sprite(id,o)}<figcaption>${M.members.find(m=>m.id===id).name}</figcaption></figure>`).join('')}</div>`;
@@ -32,7 +32,7 @@ let cardMember='all',cardKind='all',cardOnlyOwned=false,cardPage=0,showHeld=fals
 let scene=0,selectedAlbum='first-mind',badgeFilter='all',storyFilter='all',storyAlbum='all',track='scent',s=M.fresh(),warn='',showTimer,showing=false;
 function read(){const raw=localStorage.getItem(key);if(!raw)return M.fresh();return M.loadSave(raw);}
 let needsSaveMigration=false,legacyOutfitMigration=false;
-try{const oldVersion=JSON.parse(localStorage.getItem(key)||'null')?.version;needsSaveMigration=oldVersion<8;legacyOutfitMigration=oldVersion<5;s=read();if(s.active&&s.active.end>Date.now()+1000){s.active.end=Date.now()+1000;localStorage.setItem(key,JSON.stringify(s));}}catch{blocked=true;warn='저장 데이터를 읽을 수 없어요. 저장 관리에서 백업을 복원할 수 있어요.';}
+try{const oldVersion=JSON.parse(localStorage.getItem(key)||'null')?.version;needsSaveMigration=oldVersion<9;legacyOutfitMigration=oldVersion<5;s=read();if(s.active&&s.active.end>Date.now()+1000){s.active.end=Date.now()+1000;localStorage.setItem(key,JSON.stringify(s));}}catch{blocked=true;warn='저장 데이터를 읽을 수 없어요. 저장 관리에서 백업을 복원할 수 있어요.';}
 try{
  const raw=localStorage.getItem(key);
  if(raw&&needsSaveMigration&&!blocked){
@@ -165,7 +165,7 @@ function wardrobe(){
 function shop(){
  const income=M.earnings(s),member=M.members.find(m=>m.id===shopMember);
  return `<div class="line"><div><h2>무대 상점</h2><p>무대의 의상과 헤어를 한 사람씩 모아요.</p></div><strong class="coin-wallet">무대 코인 <b>${M.coins(s)}</b></strong></div>
- ${panel(`<div class="line"><div>${mark('BACKSTAGE')}<h3>공연 준비 돕기</h3><p>소품을 정리하고 무대에 조명을 켜요.<br>한 번 완료하면 10코인 · 테스트 소요 시간 1초</p></div>${button(s.shopJob?'준비 중…':'준비 돕고 10코인 받기','shop-job','','primary',!!s.shopJob)}</div><small>완료 후 다시 도울 수 있어요. 보상은 자동으로 들어와요.</small>`,'shop-job')}
+ ${panel(`${mark('BACKSTAGE')}<h3>함께 준비하는 무대</h3><p>활동을 하나 골라 코인을 모아요. 테스트에서는 모두 1초가 걸려요.</p><div class="backstage-jobs">${M.shopJobs.map(j=>`<div class="backstage-job"><h4>${j.name}</h4><p>${j.description}</p><b>+${j.reward}코인 <small>· ${j.seconds}초</small></b>${button(s.shopJob?.kind===j.id?'진행 중…':'시작하기','shop-job',j.id,'',!!s.shopJob)}</div>`).join('')}</div><small>한 번에 한 활동만 진행해요. 완료 보상은 자동으로 들어오며, 다시 참여할 수 있어요.</small>`,'shop-job')}
  <details class="coin-guide"><summary>코인은 어떻게 모으나요?</summary><p>새 노래 수집 5코인 · 새 연습 과제 완료 2코인 · 첫 여정 이야기 5코인 · 앨범 이야기·이벤트 8코인<br>이미 진행한 기록도 반영돼요. 같은 곡·연습·이야기는 중복 지급하지 않아요.</p><p>누적 획득: 노래 ${income.songs} · 연습 ${income.practice} · 이야기 ${income.stories} · 준비 돕기 ${income.jobs}코인</p><small>현금 결제가 없는 게임 속 재화예요. 구매 내역과 착용 상태도 백업에 포함돼요.</small></details>
  <div class="badge-filters shop-members" aria-label="구매할 멤버">${M.memberIds.map(id=>button(M.members.find(m=>m.id===id).name,'shop-member',id,shopMember===id?'primary':'')).join('')}</div>
  <p>${member.name}의 스타일을 골라주세요. 다른 멤버의 의상은 따로 구매할 수 있어요.</p>
@@ -252,7 +252,7 @@ function handle(a,v){
  if(a==='wear-reward'){if(!M.outfitOwned(s,v))return;close();handle('outfit',v);return;}
  if(a==='wardrobe-view'){wardrobeView=v;draw();return;}
  if(a==='shop-member'){if(M.memberIds.includes(v)){shopMember=v;draw();}return;}
- if(a==='shop-job'){if(M.startShopJob(s)){save();draw();say('공연 준비를 시작했어요. 1초 뒤 10코인이 들어와요.');}return;}
+ if(a==='shop-job'){const job=M.shopJobById(v);if(job&&M.startShopJob(s,Date.now(),v)){save();draw();say(`${job.name} 시작! ${job.seconds}초 뒤 ${job.reward}코인이 들어와요.`);}return;}
  if(a==='match-hair'){const id=styleId(v);if(M.equipPart(s,v,'hair',id)){if(preview[v]){delete preview[v].hair;if(!Object.keys(preview[v]).length)delete preview[v];}}else if(M.canWearOutfit(s,id)){preview[v]??={};preview[v].hair=id;}save();draw();return;}
  if(a==='shop-wear'){if(M.equip(s,shopMember,v)){delete preview[shopMember];save();draw();say('의상을 갈아입었어요. 내 옷장과 연습실에서 확인해 보세요.');}return;}
  if(a==='shop-buy'){
@@ -304,6 +304,6 @@ root.addEventListener('change',e=>{if(['cardMember','cardOwned'].includes(e.targ
 $('#stageFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>64000)throw Error();const data=M.loadSave(await file.text());if(confirm('이 브라우저의 진행 상황을 백업 내용으로 교체할까요?'))await locked(()=>{s=data;M.memberIds.forEach(id=>delete preview[id]);M.settle(s);warn='';blocked=false;save();close();scene=0;draw();say('진행 상황을 복원했어요.');});}catch{$('#saveNote').textContent='이 게임의 유효한 백업 파일을 선택해 주세요.';}e.target.value='';};
 $('#stageClose').onclick=close;$('#stageModal').addEventListener('close',()=>{showing=false;activeChallenge=null;afterChallenge=null;clearTimeout(showTimer);if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});else $('#screen').focus({preventScroll:true});});
 window.addEventListener('storage',e=>{if(e.key===key){sync();draw();}});
-function tick(){if(blocked)return;locked(()=>{sync();const pts=s.points,wasJob=!!s.shopJob,done=M.settle(s);if(done||pts!==s.points){save();draw();if(done)say(wasJob&&!s.shopJob?'공연 준비 완료! 10코인을 받았어요.':'연습을 마쳤어요. 준비도가 올랐어요.');}else if($('#clock'))$('#clock').textContent=clock();});}
+function tick(){if(blocked)return;locked(()=>{sync();const pts=s.points,wasJob=M.shopJobById(s.shopJob?.kind),done=M.settle(s);if(done||pts!==s.points){save();draw();if(done)say(wasJob&&!s.shopJob?`${wasJob.name} 완료! ${wasJob.reward}코인을 받았어요.`:'연습을 마쳤어요. 준비도가 올랐어요.');}else if($('#clock'))$('#clock').textContent=clock();});}
 draw();tick();setInterval(tick,100);if(warn)say(warn);
 })();
