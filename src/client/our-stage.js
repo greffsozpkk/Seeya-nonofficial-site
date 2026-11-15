@@ -18,22 +18,22 @@ const sprite=(id,override)=>{
  const scale=320/(h.chin-h.head[1]),hw=h.head[2]*scale,hh=h.head[3]*scale;
  const bh=320,bw=b.body[2]*bh/b.body[3],headX=(440-hw)/2,headY=25,bodyY=340;
  const part=(data,box,x,y,w,height)=>`<svg x="${x}" y="${y}" width="${w}" height="${height}" viewBox="${box.join(' ')}" overflow="hidden" preserveAspectRatio="none"><image href="${data.image}" width="${data.width}" height="${data.height}"/></svg>`;
- return `<svg class="member-sprite" viewBox="0 0 440 680" role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="crisp-${id}-${clothing.id}-${hair.id}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#crisp-${id}-${clothing.id}-${hair.id})"><g class="sprite-hair">${part(head,h.head,headX,headY,hw,hh)}</g><g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g></g>${clothing.id==='practice'?nameTag(id):''}</svg>`;
+ return `<svg class="member-sprite" viewBox="0 0 440 680" role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="crisp-${id}-${clothing.id}-${hair.id}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#crisp-${id}-${clothing.id}-${hair.id})"><g class="sprite-hair">${part({...head,image:head.headImage||head.image},h.head,headX,headY,hw,hh)}</g><g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g></g>${clothing.id==='practice'?nameTag(id):''}</svg>`;
 };
 const portrait=id=>`<div class="member-crop">${sprite(id)}</div>`;
 const outfitLineup=o=>`<div class="outfit-sheet mapped-outfit" aria-label="${esc(o.name)} 멤버별 의상">${M.memberIds.map(id=>`<figure>${sprite(id,o)}<figcaption>${M.members.find(m=>m.id===id).name}</figcaption></figure>`).join('')}</div>`;
 const outfitSummary=()=>M.memberIds.map(id=>M.members.find(m=>m.id===id).name+' · '+outfit(id).name+(preview[id]?' (미리입기)':'')).join(' / ');
-const glowstick=()=>`<svg viewBox="0 0 24 48" aria-hidden="true" shape-rendering="crispEdges"><path fill="#f5e7c7" d="M4 3h5v5h6V3h5v6h3v14h-4v4H5v-4H1V9h3z"/><path fill="#ff9ac5" d="M6 10h12v12H6z"/><path fill="#fff8e8" d="M10 12h4v8h-4zM9 27h6v18H9z"/><path fill="#cc83b3" d="M9 36h6v4H9z"/></svg>`;
+const glowstick=()=>`<svg viewBox="0 0 48 80" aria-hidden="true" class="seeya-lightstick"><image href="${art}official-lightstick.svg" width="48" height="80"/></svg>`;
 const stageArt=(live=false,finale=false,lead=0)=>`<figure class="stage-art${live?' live':''}${finale?' finale':''}" aria-label="${finale?'씨야 응원봉이 객석을 채우는 4집 피날레':'세 멤버의 도트 공연 무대'}"><div class="stage-beams" aria-hidden="true"><i></i><i></i><i></i></div><div class="stage-banner">${finale?'FIRST, AGAIN · 우리의 빛':'SEEYA · OUR STAGE'}</div><div class="stage-trio">${M.memberIds.map((id,i)=>`<div class="stage-performer ${lead%3===i?'lead':''}" style="--beat:${i*-.19}s">${sprite(id)}<svg class="stage-mic" viewBox="0 0 36 60" aria-hidden="true" shape-rendering="crispEdges"><path fill="#f3c8a6" d="M3 35h9v-7h9v20H3z"/><path fill="#252335" d="M17 14h9v31h-9z"/><path fill="#d8d2e4" d="M13 4h17v18H13z"/><path fill="#8d859b" d="M13 9h17v4H13z"/></svg></div>`).join('')}</div><div class="stage-confetti" aria-hidden="true">${finale?Array.from({length:18},(_,i)=>`<i style="--x:${(i*37)%100}%;--delay:${i*-.23}s"></i>`).join(''):''}</div><div class="stage-audience" aria-hidden="true">${Array.from({length:finale?54:18},(_,i)=>`<span style="--beat:${(i%9)*-.13}s;--rise:${i%3*5}px">${glowstick()}</span>`).join('')}</div><figcaption>${finale?'함께 모은 노래, 함께 밝히는 객석':'한 걸음씩, 세 목소리가 만드는 무대'}${M.memberIds.some(id=>styleId(id)==='rebloom')?' · 현재 세 멤버 의상 재해석':''}</figcaption></figure>`;
 
-let wardrobeView='closet',shopMember='br';
+let wardrobeView='closet',shopMember='br',coinDay=M.kstDay();
 const headings=['연습실','노래','이야기','추억','공연','의상·배지'], icons=['♫','♬','▤','♡','✧','◇'];
 let decoratingCard=null,badgePage=0;
 let cardMember='all',cardKind='all',cardOnlyOwned=false,cardPage=0,showHeld=false;
 let scene=0,selectedAlbum='first-mind',badgeFilter='all',storyFilter='all',storyAlbum='all',track='scent',s=M.fresh(),warn='',showTimer,showing=false;
 function read(){const raw=localStorage.getItem(key);if(!raw)return M.fresh();return M.loadSave(raw);}
 let needsSaveMigration=false,legacyOutfitMigration=false;
-try{const oldVersion=JSON.parse(localStorage.getItem(key)||'null')?.version;needsSaveMigration=oldVersion<9;legacyOutfitMigration=oldVersion<5;s=read();if(s.active&&s.active.end>Date.now()+1000){s.active.end=Date.now()+1000;localStorage.setItem(key,JSON.stringify(s));}}catch{blocked=true;warn='저장 데이터를 읽을 수 없어요. 저장 관리에서 백업을 복원할 수 있어요.';}
+try{const oldVersion=JSON.parse(localStorage.getItem(key)||'null')?.version;needsSaveMigration=oldVersion<10;legacyOutfitMigration=oldVersion<5;s=read();if(s.active&&s.active.end>Date.now()+1000){s.active.end=Date.now()+1000;localStorage.setItem(key,JSON.stringify(s));}}catch{blocked=true;warn='저장 데이터를 읽을 수 없어요. 저장 관리에서 백업을 복원할 수 있어요.';}
 try{
  const raw=localStorage.getItem(key);
  if(raw&&needsSaveMigration&&!blocked){
@@ -81,7 +81,7 @@ function studio(){
  return `<div class="studio-layout"><article class="studio-board">
  <header class="studio-top"><div>${mark('REHEARSAL ROOM')}<h2>세 사람의 연습실</h2></div><div class="resources"><span>연습 포인트 <b>${s.points}<small> / 100</small></b></span><span>모은 응원 <b>♡ ${M.cheers(s)}</b></span><span>모은 노래 <b>${M.count(s)}<small> / ${albumSize}</small></b></span></div></header>
  <div class="room${s.active?' is-practicing':''}${m?' has-keepsake':''}"><p class="room-status" role="status">${s.active?'♫ ':''}${status}</p>${m?`<button class="wall-card" data-action="card-detail" data-value="${m.id}" aria-label="대표 카드 펼치기 · ${M.members.find(x=>x.id===m.member).name} · ${esc(m.title)}">${cardFace(m)}</button>`:''}<div class="pixel-trio">${['br','gr','yj'].map(id=>`<div class="pixel-member member-${id}">${sprite(id)}</div>`).join('')}</div><div class="member-labels"><span>이보람</span><span>남규리</span><span>김연지</span></div></div>
- <div class="outfit-current"><span>${esc(outfitSummary())}</span>${button('의상 바꾸기','tab','5','link')}</div>${practice()}${m?`<p class="display-card">벽에 전시 중 · ${M.members.find(x=>x.id===m.member).name} · ${esc(m.title)} ${button('카드북 열기','tab','3','link')}</p>`:''}</article>
+ <div class="studio-coins"><div><small>무대 코인</small><strong>${M.coins(s)} <span>코인</span></strong><p>${s.shopJob?'활동 진행 중 · '+M.shopJobById(s.shopJob.kind).name:'이야기를 모두 마쳐도, 코인은 계속 모을 수 있어요.'}</p></div>${button('코인 모으기','open-coins','','primary')}</div><div class="outfit-current"><span>${esc(outfitSummary())}</span>${button('의상 바꾸기','tab','5','link')}</div>${practice()}${m?`<p class="display-card">벽에 전시 중 · ${M.members.find(x=>x.id===m.member).name} · ${esc(m.title)} ${button('카드북 열기','tab','3','link')}</p>`:''}</article>
  <div class="studio-followup">${panel(`<div class="line"><div>${mark('OUR AUDIENCE')}<h3>${M.albumById(selectedAlbum).name}의 객석</h3></div><b>${M.albumCount(s,selectedAlbum)} / ${M.albumById(selectedAlbum).tracks.length}</b></div><div class="audience" aria-label="${M.albumCount(s,selectedAlbum)}개 구역 점등">${M.albumById(selectedAlbum).tracks.map(x=>`<i class="${open(x.id)?'on':''}" title="${x.title}"></i>`).join('')}</div><small>곡을 모을 때마다 객석에 하나씩 불이 켜져요.</small>`)}
  ${panel(`${mark('NEXT CHAPTER')}<h2>${waiting.length?'새로운 노래가 기다려요':g[0]}</h2><p>${waiting.length?`${waiting[0].title}의 조건을 달성했어요.<br>짧은 퀴즈를 풀고 노래를 모아보세요.`:g[1]}</p>${waiting.length?button('새 노래 만나기','challenge','song:'+waiting[0].id,'primary'):button(g[2],g[3],g[4],'primary')}`,'next-chapter')}</div></div>`;
 }
@@ -162,21 +162,28 @@ function outfitCard(o){
 }
 function wardrobe(){
  const options=(id,part)=>styles.filter(o=>!M.shopById(o.id)||M.styleOwned(s,o.id,id)).map(o=>`<option value="${o.id}" ${styleId(id,part)===o.id?'selected':''}>${esc(o.name)}${M.styleOwned(s,o.id,id)?'':' · 테스트 미리입기'}</option>`).join('');
- return `<h2>각자의 스타일을 만들어요</h2><p>의상과 헤어를 따로 골라 자유롭게 조합해 보세요.<br>세트로 얻은 의상과 헤어는 각각 선택할 수 있어요.</p>
+ return `<h2>각자의 스타일을 만들어요</h2><p>의상과 헤어를 따로 골라 자유롭게 조합해 보세요. 귀고리는 헤어에 맞춰 바뀌어요.<br>세트로 얻은 의상과 헤어는 각각 선택할 수 있어요.</p>
  <div class="member-wardrobe">${M.memberIds.map(id=>panel(`<div class="wardrobe-sprite">${sprite(id)}</div><h3>${M.members.find(m=>m.id===id).name}</h3><label class="wardrobe-part" for="wear-${id}">의상<select id="wear-${id}" data-member="${id}" data-part="clothes" aria-label="${M.members.find(m=>m.id===id).name} 의상">${options(id,'clothes')}</select></label><label class="wardrobe-part" for="hair-${id}">헤어<select id="hair-${id}" data-member="${id}" data-part="hair" aria-label="${M.members.find(m=>m.id===id).name} 헤어">${options(id,'hair')}</select></label><small>${preview[id]?'미획득 스타일 미리입기 · 새로고침하면 보유 조합으로 돌아가요.':'보유 스타일 · 조합도 자동 저장돼요.'}</small>${button('이 의상과 같은 헤어로','match-hair',id,'link')}`)).join('')}</div>
  <p class="private-note">앨범 미리입기는 테스트 기능이에요. 상점 스타일은 해당 멤버가 구매한 뒤 조합할 수 있어요.<br>Rebloom은 현재 세 멤버의 재해석입니다.</p><h3>연습복·콘서트 세트</h3><div class="outfit-grid">${outfits.filter(o=>['base','practice'].includes(o.id)).map(outfitCard).join('')}</div><h3>앨범 의상 세트</h3><p>앨범을 해금하면 세 멤버의 의상과 헤어를 함께 얻어요.</p><div class="outfit-grid">${outfits.filter(o=>!['base','practice'].includes(o.id)).map(outfitCard).join('')}</div>`;
+}
+function coinRoom(){
+ const active=s.shopJob&&M.shopJobById(s.shopJob.kind),daily=M.canClaimDaily(s);
+ return `<div class="line"><div>${mark('BACKSTAGE')}<h2>코인 모으기</h2><p>모든 이야기를 마친 뒤에도 계속 참여할 수 있어요.</p></div><strong class="coin-wallet">무대 코인 <b>${M.coins(s)}</b></strong></div>
+ ${panel(`<div class="line"><div><h3>오늘의 연습실 출석</h3><p>하루 한 번, ${M.dailyReward}코인 · 한국 시간 자정에 새로 시작해요.</p></div>${button(daily?M.dailyReward+'코인 받기':'오늘 받았어요','daily-coins','','primary',!daily)}</div>`,'daily-coins')}
+ ${panel(`<h3>함께 준비하는 무대</h3><p>활동은 매번 다시 할 수 있어요. 테스트에서는 모두 1초가 걸려요.</p><div class="backstage-jobs">${M.shopJobs.map(j=>`<div class="backstage-job"><h4>${j.name}</h4><p>${j.description}</p><b>+${j.reward}코인 <small>· ${j.seconds}초</small></b>${button(active?.id===j.id?'진행 중…':'시작하기','shop-job',j.id,'',!!active)}</div>`).join('')}</div>${active?`<p class="job-progress" role="status">${active.name} · <span id="jobClock">${Math.max(0,Math.ceil((s.shopJob.end-Date.now())/1000))}</span>초 남음 · 완료 시 +${active.reward}코인</p>`:'<p class="job-progress">원하는 활동을 골라 시작하세요.</p>'}<small>한 번에 한 활동만 진행해요. 완료 보상은 자동으로 들어오며, 다른 화면에 다녀와도 진행 중인 활동은 유지돼요.</small>`,'shop-job')}
+ <div class="coin-actions">${button('무대 상점에서 사용하기','wardrobe-view','shop','primary')}${button('연습실로','tab','0')}</div>`;
 }
 function shop(){
  const income=M.earnings(s),member=M.members.find(m=>m.id===shopMember);
  return `<div class="line"><div><h2>무대 상점</h2><p>무대의 의상과 헤어를 한 사람씩 모아요.</p></div><strong class="coin-wallet">무대 코인 <b>${M.coins(s)}</b></strong></div>
- ${panel(`${mark('BACKSTAGE')}<h3>함께 준비하는 무대</h3><p>활동을 하나 골라 코인을 모아요. 테스트에서는 모두 1초가 걸려요.</p><div class="backstage-jobs">${M.shopJobs.map(j=>`<div class="backstage-job"><h4>${j.name}</h4><p>${j.description}</p><b>+${j.reward}코인 <small>· ${j.seconds}초</small></b>${button(s.shopJob?.kind===j.id?'진행 중…':'시작하기','shop-job',j.id,'',!!s.shopJob)}</div>`).join('')}</div><small>한 번에 한 활동만 진행해요. 완료 보상은 자동으로 들어오며, 다시 참여할 수 있어요.</small>`,'shop-job')}
- <details class="coin-guide"><summary>코인은 어떻게 모으나요?</summary><p>새 노래 수집 5코인 · 새 연습 과제 완료 2코인 · 첫 여정 이야기 5코인 · 앨범 이야기·이벤트 8코인<br>이미 진행한 기록도 반영돼요. 같은 곡·연습·이야기는 중복 지급하지 않아요.</p><p>누적 획득: 노래 ${income.songs} · 연습 ${income.practice} · 이야기 ${income.stories} · 준비 돕기 ${income.jobs}코인</p><small>현금 결제가 없는 게임 속 재화예요. 구매 내역과 착용 상태도 백업에 포함돼요.</small></details>
+ ${panel(`<div class="line"><div><h3>다음 의상도 차근차근</h3><p>매일 출석 보상과 반복 활동으로 코인을 모아요.</p></div>${button('코인 모으기','open-coins','','primary')}</div>`)}
+ <details class="coin-guide"><summary>코인은 어떻게 모으나요?</summary><p>새 노래 수집 5코인 · 새 연습 과제 완료 2코인 · 첫 여정 이야기 5코인 · 앨범 이야기·이벤트 8코인<br>이미 진행한 기록도 반영돼요. 같은 곡·연습·이야기는 중복 지급하지 않아요.</p><p>누적 획득: 노래 ${income.songs} · 연습 ${income.practice} · 이야기 ${income.stories} · 반복 활동 ${income.jobs} · 출석 ${income.daily}코인</p><small>현금 결제가 없는 게임 속 재화예요. 구매 내역과 착용 상태도 백업에 포함돼요.</small></details>
  <div class="badge-filters shop-members" aria-label="구매할 멤버">${M.memberIds.map(id=>button(M.members.find(m=>m.id===id).name,'shop-member',id,shopMember===id?'primary':'')).join('')}</div>
  <p>${member.name}의 스타일을 골라주세요. 다른 멤버의 의상은 따로 구매할 수 있어요.</p>
  <div class="shop-grid">${M.shop.map(o=>{const owned=M.styleOwned(s,o.id,shopMember);return panel(`<div class="shop-sprite">${sprite(shopMember,o)}</div>${mark(o.date)}<h3>${o.name}</h3><p>${member.name} · 의상 + 헤어</p><p class="outfit-note">${o.note}</p>${link('참고한 무대 보기',o.url)}<div class="shop-price"><b>${owned?'보유 중':o.price+'코인'}</b>${button(owned?'입기':M.coins(s)<o.price?(o.price-M.coins(s))+'코인 더 필요':'구매하기',owned?'shop-wear':'shop-buy',o.id,'primary',!owned&&M.coins(s)<o.price)}</div>`,'shop-card');}).join('')}</div>`;
 }
 function designs(){
- return `${mark('PIXEL COLLECTION')}<div class="badge-filters wardrobe-tabs" aria-label="의상과 배지">${[['closet','내 옷장'],['shop','무대 상점'],['badges','배지함']].map(([id,n])=>`<button data-action="wardrobe-view" data-value="${id}" aria-pressed="${wardrobeView===id}">${n}</button>`).join('')}</div>${wardrobeView==='shop'?shop():wardrobeView==='badges'?badgeShelf():wardrobe()}`;
+ return `${mark('PIXEL COLLECTION')}<div class="badge-filters wardrobe-tabs" aria-label="의상과 배지">${[['closet','내 옷장'],['shop','무대 상점'],['coins','코인 모으기'],['badges','배지함']].map(([id,n])=>`<button data-action="wardrobe-view" data-value="${id}" aria-pressed="${wardrobeView===id}">${n}</button>`).join('')}</div>${wardrobeView==='coins'?coinRoom():wardrobeView==='shop'?shop():wardrobeView==='badges'?badgeShelf():wardrobe()}`;
 }
 function concert(){
  const can=has('album')&&s.setlist.length>=2;
@@ -254,6 +261,8 @@ function handle(a,v){
  if(a==='tab'){if($('#stageModal').open)close();scene=Number(v);draw();$('#screen').focus({preventScroll:true});return;}
  if(a==='pick'){if(!open(v))return;if($('#stageModal').open)close();scene=0;track=v;selectedAlbum=M.songAlbum(v).id;draw();$('.practice').scrollIntoView({block:'center'});return;}
  if(a==='wear-reward'){if(!M.outfitOwned(s,v))return;close();handle('outfit',v);return;}
+ if(a==='open-coins'){scene=5;wardrobeView='coins';draw();return;}
+ if(a==='daily-coins'){if(M.claimDaily(s)){save();draw();say(`오늘의 출석 보상 ${M.dailyReward}코인을 받았어요.`);}else{draw();say('오늘의 출석 보상은 이미 받았어요.');}return;}
  if(a==='wardrobe-view'){wardrobeView=v;draw();return;}
  if(a==='shop-member'){if(M.memberIds.includes(v)){shopMember=v;draw();}return;}
  if(a==='shop-job'){const job=M.shopJobById(v);if(job&&M.startShopJob(s,Date.now(),v)){save();draw();say(`${job.name} 시작! ${job.seconds}초 뒤 ${job.reward}코인이 들어와요.`);}return;}
@@ -308,6 +317,6 @@ root.addEventListener('change',e=>{if(['cardMember','cardOwned'].includes(e.targ
 $('#stageFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>64000)throw Error();const data=M.loadSave(await file.text());if(confirm('이 브라우저의 진행 상황을 백업 내용으로 교체할까요?'))await locked(()=>{s=data;M.memberIds.forEach(id=>delete preview[id]);M.settle(s);warn='';blocked=false;save();close();scene=0;draw();say('진행 상황을 복원했어요.');});}catch{$('#saveNote').textContent='이 게임의 유효한 백업 파일을 선택해 주세요.';}e.target.value='';};
 $('#stageClose').onclick=close;$('#stageModal').addEventListener('close',()=>{showing=false;activeChallenge=null;afterChallenge=null;clearTimeout(showTimer);if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});else $('#screen').focus({preventScroll:true});});
 window.addEventListener('storage',e=>{if(e.key===key){sync();draw();}});
-function tick(){if(blocked)return;locked(()=>{sync();const pts=s.points,wasJob=M.shopJobById(s.shopJob?.kind),done=M.settle(s);if(done||pts!==s.points){save();draw();if(done)say(wasJob&&!s.shopJob?`${wasJob.name} 완료! ${wasJob.reward}코인을 받았어요.`:'연습을 마쳤어요. 준비도가 올랐어요.');}else if($('#clock'))$('#clock').textContent=clock();});}
+function tick(){if(blocked)return;locked(()=>{sync();const pts=s.points,wasJob=M.shopJobById(s.shopJob?.kind),done=M.settle(s);if(done||pts!==s.points){save();draw();if(done)say(wasJob&&!s.shopJob?`${wasJob.name} 완료! ${wasJob.reward}코인을 받았어요.`:'연습을 마쳤어요. 준비도가 올랐어요.');}else{if($('#clock'))$('#clock').textContent=clock();if($('#jobClock')&&s.shopJob)$('#jobClock').textContent=Math.max(0,Math.ceil((s.shopJob.end-Date.now())/1000));if(coinDay!==M.kstDay()){coinDay=M.kstDay();draw();}}});}
 draw();tick();setInterval(tick,100);if(warn)say(warn);
 })();

@@ -356,3 +356,9 @@
 #ourStage .backstage-job button{width:100%}
 @media(max-width:900px){#ourStage .backstage-jobs{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:380px){#ourStage .backstage-jobs{grid-template-columns:1fr}}
+
+/* Coin activities remain reachable after the album journey is complete. */
+#ourStage .studio-coins{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;background:#fff3d9;border:1px solid #ddc699;margin:12px 0}
+#ourStage .studio-coins small{display:block;color:#785c37}#ourStage .studio-coins strong{font-size:23px;color:#715031}#ourStage .studio-coins strong span{font-size:13px}#ourStage .studio-coins p{font-size:12px;margin:5px 0 0}#ourStage .studio-coins button{flex-shrink:0}
+#ourStage .daily-coins{margin:16px 0;background:#fff6e3}#ourStage .coin-actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}#ourStage .job-progress{padding:12px;background:#f5e7ec;font-variant-numeric:tabular-nums}
+@media(max-width:480px){#ourStage .studio-coins{padding:12px;gap:10px}#ourStage .studio-coins p{max-width:190px}#ourStage .daily-coins .line{flex-wrap:wrap}}

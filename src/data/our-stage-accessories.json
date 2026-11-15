@@ -1,0 +1,104 @@
+{
+  "note": "게임용 귀고리 디자인입니다. 실제 활동 당시 착용품을 고증한 자료는 아닙니다. 기본 연습복은 귀고리가 없습니다.",
+  "styles": [
+    {
+      "id": "base",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-1b98aed4-f0af-4b57-a14a-8216dbb73dcc.png",
+      "design": "LEFT tiny GOLD open hoop; CENTER PINK heart stud; RIGHT silver elongated diamond drop",
+      "prompt": "Edit only ear jewelry in this exact pixel-game atlas. Preserve 1536x1024 dimensions, exact head/body positions and proportions, hairstyles, faces, clothing, every other pixel. Transparent background. Replace ALL white cross earrings with different small jewelry: LEFT tiny GOLD open hoop; CENTER PINK heart stud; RIGHT silver elongated diamond drop. Each character gets its specified distinct jewelry at the existing visible earlobes only. No cross shapes. Crisp chunky 2D pixel style, only 2-3 colors per tiny ornament. Do NOT redraw hair/clothing, reposition or resize heads/bodies, add text or background. This is game accessory customization, not historical exact jewelry.",
+      "image": "/images/game/our-stage/layers/base-earrings.png"
+    },
+    {
+      "id": "first-mind",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-69ead2fe-631a-43a4-bc46-3e06287ae58f.png",
+      "design": "LEFT cream pearl stud; CENTER tiny silver oval hoop; RIGHT pale-blue teardrop",
+      "prompt": "Edit only ear jewelry in this exact pixel-game atlas. Preserve 1536x1024 dimensions, exact head/body positions and proportions, hairstyles, faces, clothing, every other pixel. Transparent background. Replace ALL white cross earrings with different small jewelry: LEFT cream pearl stud; CENTER tiny silver oval hoop; RIGHT pale-blue teardrop. Each character gets its specified distinct jewelry at the existing visible earlobes only. No cross shapes. Crisp chunky 2D pixel style, only 2-3 colors per tiny ornament. Do NOT redraw hair/clothing, reposition or resize heads/bodies, add text or background. This is game accessory customization, not historical exact jewelry.",
+      "image": "/images/game/our-stage/layers/first-mind-earrings.png"
+    },
+    {
+      "id": "lovely-sweet-heart",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-9fb0fae5-3308-423c-b661-779ae40e7ef5.png",
+      "design": "LEFT small pink heart drop; CENTER turquoise square stud; RIGHT gold sun-shaped round stud",
+      "prompt": "Edit only ear jewelry in this exact pixel-game atlas. Preserve 1536x1024 dimensions, exact head/body positions and proportions, hairstyles, faces, clothing, every other pixel. Transparent background. Replace ALL white cross earrings with different small jewelry: LEFT small pink heart drop; CENTER turquoise square stud; RIGHT gold sun-shaped round stud. Each character gets its specified distinct jewelry at the existing visible earlobes only. No cross shapes. Crisp chunky 2D pixel style, only 2-3 colors per tiny ornament. Do NOT redraw hair/clothing, reposition or resize heads/bodies, add text or background. This is game accessory customization, not historical exact jewelry.",
+      "image": "/images/game/our-stage/layers/lovely-sweet-heart-earrings.png"
+    },
+    {
+      "id": "california-dream",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-bf77f6d5-f076-49e6-89ca-64d453457f4a.png",
+      "design": "LEFT small amber round stud; CENTER small silver single bar stud; RIGHT tiny pearl drop, visible at outer ear",
+      "prompt": "Edit only ear jewelry in this exact pixel-game atlas. Preserve 1536x1024 dimensions, exact head/body positions and proportions, hairstyles, faces, clothing, every other pixel. Transparent background. Replace ALL white cross earrings with different small jewelry: LEFT small amber round stud; CENTER small silver single bar stud; RIGHT tiny pearl drop, visible at outer ear. Each character gets its specified distinct jewelry at the existing visible earlobes only. No cross shapes. Crisp chunky 2D pixel style, only 2-3 colors per tiny ornament. Do NOT redraw hair/clothing, reposition or resize heads/bodies, add text or background. This is game accessory customization, not historical exact jewelry.",
+      "image": "/images/game/our-stage/layers/california-dream-earrings.png"
+    },
+    {
+      "id": "brilliant-change",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-0fba8be2-777a-4993-9dd0-abb2cca79a85.png",
+      "design": "LEFT silver square frame; CENTER small red heart stud; RIGHT gold thin double hoop",
+      "prompt": "Edit ONLY earrings in this exact 1536x1024 transparent game sprite atlas. LEFT silver square frame; CENTER small red heart stud; RIGHT gold thin double hoop. Each character has different tiny jewelry at visible ear. Remove every white cross earring, no crosses. Preserve heads/hair/clothing/body positions, pixel dimensions, face expression and exact existing shapes/colors; do NOT redesign characters. Coarse square pixel earrings, 2-3 shades. Transparent background. Keep both disconnected rows of 3 heads then3 bodies exactly aligned. Accessory customization for the game.",
+      "image": "/images/game/our-stage/layers/brilliant-change-earrings.png"
+    },
+    {
+      "id": "rebloom",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-32eede54-0f35-42ef-b520-13a3b6023c7a.png",
+      "design": "LEFT black-and-silver chain drop; CENTER deep purple oval gemstone; RIGHT silver triangular stud",
+      "prompt": "Edit ONLY earrings in this exact 1536x1024 transparent game sprite atlas. LEFT black-and-silver chain drop; CENTER deep purple oval gemstone; RIGHT silver triangular stud. Each character has different tiny jewelry at visible ear. Remove every white cross earring, no crosses. Preserve heads/hair/clothing/body positions, pixel dimensions, face expression and exact existing shapes/colors; do NOT redesign characters. Coarse square pixel earrings, 2-3 shades. Transparent background. Keep both disconnected rows of 3 heads then3 bodies exactly aligned. Accessory customization for the game.",
+      "image": "/images/game/our-stage/layers/rebloom-earrings.png"
+    },
+    {
+      "id": "see-you-again",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-d72665b6-b827-44c6-bf23-16e298975679.png",
+      "design": "LEFT tiny warm ivory pearl; CENTER small gold button stud; RIGHT amber teardrop pendant",
+      "prompt": "Edit ONLY earrings in this exact 1536x1024 transparent game sprite atlas. LEFT tiny warm ivory pearl; CENTER small gold button stud; RIGHT amber teardrop pendant. Each character has different tiny jewelry at visible ear. Remove every white cross earring, no crosses. Preserve heads/hair/clothing/body positions, pixel dimensions, face expression and exact existing shapes/colors; do NOT redesign characters. Coarse square pixel earrings, 2-3 shades. Transparent background. Keep both disconnected rows of 3 heads then3 bodies exactly aligned. Accessory customization for the game.",
+      "image": "/images/game/our-stage/layers/see-you-again-earrings.png"
+    },
+    {
+      "id": "still-here",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-ab489f7f-0777-4cea-8450-02441c7bbe05.png",
+      "design": "LEFT silver slim long bar; CENTER tiny gold crescent moon; RIGHT navy blue diamond stud",
+      "prompt": "Edit ONLY earrings in this exact 1536x1024 transparent game sprite atlas. LEFT silver slim long bar; CENTER tiny gold crescent moon; RIGHT navy blue diamond stud. Each character has different tiny jewelry at visible ear. Remove every white cross earring, no crosses. Preserve heads/hair/clothing/body positions, pixel dimensions, face expression and exact existing shapes/colors; do NOT redesign characters. Coarse square pixel earrings, 2-3 shades. Transparent background. Keep both disconnected rows of 3 heads then3 bodies exactly aligned. Accessory customization for the game.",
+      "image": "/images/game/our-stage/layers/still-here-earrings.png"
+    },
+    {
+      "id": "first-again",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-d1a657d0-16ed-49ae-9ed0-4f4faf87e5c2.png",
+      "design": "LEFT sky-blue oval stud; CENTER rose-gold open oval hoop; RIGHT tiny pink flower stud",
+      "prompt": "Edit ONLY ear jewelry of this exact transparent 1536x1024 game atlas. LEFT sky-blue oval stud; CENTER rose-gold open oval hoop; RIGHT tiny pink flower stud. Remove all existing white crosses from ears and replace with the specified distinct small pixel earrings. No crosses. Exact same chunky square pixel character style. Preserve all original head/hair/body shapes, colors, hairstyles, costumes, positions, faces, 3 columns and 2 disconnected rows. No moved or scaled sprites, no other changes. Transparent outside sprites. Accessory customization for game.",
+      "image": "/images/game/our-stage/layers/first-again-earrings.png"
+    },
+    {
+      "id": "stage-sugarman",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-013eccea-fe21-465e-a148-ef2ed81573ed.png",
+      "design": "LEFT short pearl drop; CENTER silver open ring with a pearl; RIGHT crystal blue rectangle drop",
+      "prompt": "Edit ONLY ear jewelry of this exact transparent 1536x1024 game atlas. LEFT short pearl drop; CENTER silver open ring with a pearl; RIGHT crystal blue rectangle drop. Remove all existing white crosses from ears and replace with the specified distinct small pixel earrings. No crosses. Exact same chunky square pixel character style. Preserve all original head/hair/body shapes, colors, hairstyles, costumes, positions, faces, 3 columns and 2 disconnected rows. No moved or scaled sprites, no other changes. Transparent outside sprites. Accessory customization for game.",
+      "image": "/images/game/our-stage/layers/stage-sugarman-earrings.png"
+    },
+    {
+      "id": "stage-seasons",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-8bd1028e-3209-45de-8fc6-3632d1ea3608.png",
+      "design": "LEFT small gold leaf stud; CENTER black square with gold rim; RIGHT double pearl drop",
+      "prompt": "Edit ONLY ear jewelry of this exact transparent 1536x1024 game atlas. LEFT small gold leaf stud; CENTER black square with gold rim; RIGHT double pearl drop. Remove all existing white crosses from ears and replace with the specified distinct small pixel earrings. No crosses. Exact same chunky square pixel character style. Preserve all original head/hair/body shapes, colors, hairstyles, costumes, positions, faces, 3 columns and 2 disconnected rows. No moved or scaled sprites, no other changes. Transparent outside sprites. Accessory customization for game.",
+      "image": "/images/game/our-stage/layers/stage-seasons-earrings.png"
+    },
+    {
+      "id": "tour-believe",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-26ec4159-60f6-47fa-bf9d-89fa4c7236d9.png",
+      "design": "LEFT ruby teardrop on silver hook; CENTER long clear crystal diamond; RIGHT tiny ivory bow stud",
+      "prompt": "Edit ONLY ear jewelry of this exact transparent 1536x1024 game atlas. LEFT ruby teardrop on silver hook; CENTER long clear crystal diamond; RIGHT tiny ivory bow stud. Remove all existing white crosses from ears and replace with the specified distinct small pixel earrings. No crosses. Exact same chunky square pixel character style. Preserve all original head/hair/body shapes, colors, hairstyles, costumes, positions, faces, 3 columns and 2 disconnected rows. No moved or scaled sprites, no other changes. Transparent outside sprites. Accessory customization for game.",
+      "image": "/images/game/our-stage/layers/tour-believe-earrings.png"
+    },
+    {
+      "id": "tour-encore",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-c3943eff-6272-48f6-97ad-ad90e6c28280.png",
+      "design": "LEFT medium silver open hoops; CENTER tiny warm pink heart; RIGHT gold rectangular drop",
+      "prompt": "Edit ONLY ear jewelry of this exact transparent1536x1024 game atlas. LEFT medium silver open hoops; CENTER tiny warm pink heart; RIGHT gold rectangular drop. Remove all existing white cross earrings, replace with distinct small pixel ornaments at visible earlobes. No crosses. Preserve ALL hairstyles, clothing, faces, shapes, sizes and positions exactly. Don't change varsity jackets or skirts or body row. Two disconnected rows, heads above, headless bodies below. Crisp chunky flat pixels, transparency. This is game accessory customization.",
+      "image": "/images/game/our-stage/layers/tour-encore-earrings.png"
+    },
+    {
+      "id": "tour-varsity",
+      "path": "C:\\Users\\sunil\\.codex\\generated_images\\01a1da83-87e4-7f53-a9eb-c8eed8d4215d\\exec-4f65a1ce-e165-4a8c-85a8-697af74a9a5b.png",
+      "design": "LEFT small gold hexagon stud; CENTER tiny silver oval stud; RIGHT soft lavender round pearl stud",
+      "prompt": "Edit ONLY ear jewelry of this exact transparent1536x1024 game atlas. LEFT small gold hexagon stud; CENTER tiny silver oval stud; RIGHT soft lavender round pearl stud. Remove all existing white cross earrings, replace with distinct small pixel ornaments at visible earlobes. No crosses. Preserve ALL hairstyles, clothing, faces, shapes, sizes and positions exactly. Don't change varsity jackets or skirts or body row. Two disconnected rows, heads above, headless bodies below. Crisp chunky flat pixels, transparency. This is game accessory customization.",
+      "image": "/images/game/our-stage/layers/tour-varsity-earrings.png"
+    }
+  ],
+  "lightstickSource": "/images/fanchant/seeya-lightstick.png"
+}

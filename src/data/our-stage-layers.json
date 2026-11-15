@@ -49,7 +49,8 @@
         ],
         "chin": 362
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/base-earrings.png"
   },
   "first-mind": {
     "image": "/images/game/our-stage/layers/first-mind.png",
@@ -101,7 +102,8 @@
         ],
         "chin": 372
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/first-mind-earrings.png"
   },
   "lovely-sweet-heart": {
     "image": "/images/game/our-stage/layers/lovely-sweet-heart.png",
@@ -153,7 +155,8 @@
         ],
         "chin": 373
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/lovely-sweet-heart-earrings.png"
   },
   "california-dream": {
     "image": "/images/game/our-stage/layers/california-dream-stage.png",
@@ -205,7 +208,8 @@
         ],
         "chin": 380
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/california-dream-earrings.png"
   },
   "brilliant-change": {
     "image": "/images/game/our-stage/layers/brilliant-change-v2.png",
@@ -257,7 +261,8 @@
         ],
         "chin": 383
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/brilliant-change-earrings.png"
   },
   "rebloom": {
     "image": "/images/game/our-stage/layers/rebloom.png",
@@ -309,7 +314,8 @@
         ],
         "chin": 334
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/rebloom-earrings.png"
   },
   "see-you-again": {
     "image": "/images/game/our-stage/layers/see-you-again.png",
@@ -361,7 +367,8 @@
         ],
         "chin": 389
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/see-you-again-earrings.png"
   },
   "still-here": {
     "image": "/images/game/our-stage/layers/still-here.png",
@@ -413,7 +420,8 @@
         ],
         "chin": 352
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/still-here-earrings.png"
   },
   "first-again": {
     "image": "/images/game/our-stage/layers/first-again.png",
@@ -465,7 +473,8 @@
         ],
         "chin": 355
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/first-again-earrings.png"
   },
   "stage-sugarman": {
     "image": "/images/game/our-stage/layers/stage-sugarman.png",
@@ -517,7 +526,8 @@
         ],
         "chin": 346
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/stage-sugarman-earrings.png"
   },
   "stage-seasons": {
     "image": "/images/game/our-stage/layers/stage-seasons.png",
@@ -569,7 +579,8 @@
         ],
         "chin": 333
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/stage-seasons-earrings.png"
   },
   "practice": {
     "image": "/images/game/our-stage/layers/practice-v3.png",
@@ -673,7 +684,8 @@
         ],
         "chin": 362
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/tour-believe-earrings.png"
   },
   "tour-encore": {
     "image": "/images/game/our-stage/layers/tour-encore.png",
@@ -725,7 +737,8 @@
         ],
         "chin": 362
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/tour-encore-earrings.png"
   },
   "tour-varsity": {
     "image": "/images/game/our-stage/layers/tour-varsity.png",
@@ -777,6 +790,7 @@
         ],
         "chin": 362
       }
-    }
+    },
+    "headImage": "/images/game/our-stage/layers/tour-varsity-earrings.png"
   }
 }

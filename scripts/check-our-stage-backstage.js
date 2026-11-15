@@ -22,7 +22,7 @@ for(const change of [x=>x.jobCounts.soundcheck=-1,x=>x.jobCounts.poster=1.2,x=>x
 // Preserve already earned/spent coins, mixed outfits, and an in-flight old job.
 const old=M.fresh(1000);old.gigs=20;assert(M.purchase(old,'stage-sugarman','br'));assert(M.equipPart(old,'br','hair','stage-sugarman'));
 old.version=8;delete old.jobCounts;old.shopJob={end:2000};
-const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,9);
+const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,10);
 assert.equal(M.coins(migrated),140);assert.deepEqual(migrated.purchases,old.purchases);assert.deepEqual(migrated.hair,old.hair);
 assert.equal(migrated.shopJob.kind,'setup');assert.equal(M.settle(migrated,2000),1);assert.equal(M.coins(migrated),150);assert.equal(M.settle(migrated,3000),0);
 for(const id of ['tour-encore','tour-believe'])for(const m of M.memberIds){

@@ -76,12 +76,17 @@ function createModel(testMode=false) {
   const shopJobById=id=>shopJobs.find(j=>j.id===id);
   const emptyJobCounts=()=>({soundcheck:0,lightstick:0,poster:0});
   const jobCount=(s,id)=>id==='setup'?s.gigs:s.jobCounts[id];
+  const dailyReward=20;
+  const kstDay=(now=Date.now())=>Number.isSafeInteger(now)&&now>=0&&now<=253402268399999?new Date(now+32400000).toISOString().slice(0,10):null;
+  const canClaimDaily=(s,now=Date.now())=>{const day=kstDay(now);return Boolean(day&&(!s.daily.lastDay||day>s.daily.lastDay)&&s.daily.count<1000000);};
+  function claimDaily(s,now=Date.now()){if(!canClaimDaily(s,now))return false;s.daily.lastDay=kstDay(now);s.daily.count++;return true;}
   const defaultEquipment=()=>({br:'practice',gr:'practice',yj:'practice'});
   const earnings=s=>({
     songs:Math.max(0,s.collected.length-1)*5,
     practice:ids.reduce((n,id)=>n+s.tracks[id].length,0)*2,
     stories:s.flags.length*5+storyEntries.filter(e=>storyDone(s,e.id)).length*8,
-    jobs:shopJobs.reduce((n,j)=>n+jobCount(s,j.id)*j.reward,0)
+    jobs:shopJobs.reduce((n,j)=>n+jobCount(s,j.id)*j.reward,0),
+    daily:s.daily.count*dailyReward
   });
   const coins=s=>Object.values(earnings(s)).reduce((a,b)=>a+b,0)-s.purchases.reduce((n,p)=>n+(shopById(p.split(':')[0])?.price||0),0);
   const styleOwned=(s,id,member)=>memberIds.includes(member)&&(['base','practice'].includes(id)||Boolean(albumById(id))&&albumUnlocked(s,id)||Boolean(shopById(id))&&s.purchases.includes(id+':'+member));
@@ -100,7 +105,7 @@ function createModel(testMode=false) {
   const ids = songs.map(s=>s.id);
   const flags = ['first','album','yj','gr','br','reunion','ending'];
   function fresh(now=Date.now()){
-    return {version:9,jobCounts:emptyJobCounts(),cardDecorations:{},displayCard:null,finale:false,purchases:[],equipped:defaultEquipment(),hair:defaultEquipment(),gigs:0,shopJob:null,content:'album-journey',albums:[],points:100,energyAt:now,tracks:Object.fromEntries(ids.map(id=>[id,[]])),flags:[],collected:['scent'],proofs:[],notes:{},active:null,queue:null,setlist:[],display:null};
+    return {version:10,daily:{lastDay:null,count:0},jobCounts:emptyJobCounts(),cardDecorations:{},displayCard:null,finale:false,purchases:[],equipped:defaultEquipment(),hair:defaultEquipment(),gigs:0,shopJob:null,content:'album-journey',albums:[],points:100,energyAt:now,tracks:Object.fromEntries(ids.map(id=>[id,[]])),flags:[],collected:['scent'],proofs:[],notes:{},active:null,queue:null,setlist:[],display:null};
   }
   const has=(s,id)=>s.flags.includes(id);
   const eligible=(s,id)=>songs.find(song=>song.id===id)?.unlocked(s)??false;
@@ -150,7 +155,7 @@ function createModel(testMode=false) {
     s.flags.push(id);return true;
   }
   function valid(s){
-    if(!s||s.version!==9||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>100||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
+    if(!s||s.version!==10||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>100||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
     const subset=(a,opts)=>Array.isArray(a)&&a.every(x=>opts.includes(x))&&new Set(a).size===a.length;
     if(!subset(s.flags,flags)||!s.tracks||!ids.every(id=>subset(s.tracks[id],[0,1,2])))return false;
     if(!subset(s.albums,albums.slice(1).map(a=>a.id)))return false;
@@ -162,6 +167,8 @@ function createModel(testMode=false) {
     if(s.queue!==null&&(!s.active||!job(s.queue)||(s.queue.track===s.active.track&&s.queue.lesson===s.active.lesson)))return false;
     if(!storyEntries.every(e=>!storyDone(s,e.id)||storyAvailable(s,e.id)))return false;
     if(!subset(s.setlist,ids.filter(id=>ready(s,id)))||!(s.display===null||members.some(m=>m.id===s.display&&has(s,m.id))))return false;
+    if(!s.daily||typeof s.daily!=='object'||Array.isArray(s.daily)||!Number.isInteger(s.daily.count)||s.daily.count<0||s.daily.count>1000000)return false;
+    if(s.daily.count===0?s.daily.lastDay!==null:typeof s.daily.lastDay!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(s.daily.lastDay)||!Number.isFinite(Date.parse(s.daily.lastDay+'T00:00:00Z'))||new Date(s.daily.lastDay+'T00:00:00Z').toISOString().slice(0,10)!==s.daily.lastDay)return false;
     if(!Number.isInteger(s.gigs)||s.gigs<0||s.gigs>1000000||!subset(s.purchases,shop.flatMap(o=>memberIds.map(m=>o.id+':'+m))))return false;
     if(!s.jobCounts||typeof s.jobCounts!=='object'||Array.isArray(s.jobCounts)||Object.keys(s.jobCounts).length!==3||!shopJobs.slice(1).every(j=>Number.isInteger(s.jobCounts[j.id])&&s.jobCounts[j.id]>=0&&s.jobCounts[j.id]<=1000000))return false;
     if(s.shopJob!==null&&(!s.shopJob||!shopJobById(s.shopJob.kind)||!Number.isSafeInteger(s.shopJob.end)||s.shopJob.end<0||jobCount(s,s.shopJob.kind)>=1000000))return false;
@@ -184,6 +191,7 @@ function createModel(testMode=false) {
     if(data?.version===6)data={...data,version:8,cardDecorations:{},displayCard:data.display?'story:'+data.display:null,finale:false};
     if(data?.version===7)data={...data,version:8,cardDecorations:{}};
     if(data?.version===8)data={...data,version:9,jobCounts:emptyJobCounts(),shopJob:data.shopJob?{...data.shopJob,kind:'setup'}:null};
+    if(data?.version===9)data={...data,version:10,daily:{lastDay:null,count:0}};
     if(!valid(data))throw Error('Invalid stage save');
     return data;
   }
@@ -252,7 +260,7 @@ function createModel(testMode=false) {
     return b;
   }
 
-  return {shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,train,claim,valid};
+  return {dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,train,claim,valid};
 }
 module.exports=createModel();
 module.exports.forTest=()=>createModel(true);
