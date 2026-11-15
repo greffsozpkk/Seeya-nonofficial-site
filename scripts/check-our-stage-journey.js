@@ -4,7 +4,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
 const M=require('../src/shared/our-stage').forTest();
 let s=structuredClone(require('./check-our-stage').complete),now=Math.max(Date.now(),s.energyAt)+1000;
 const assertValid=()=>assert(M.valid(s),'valid at '+JSON.stringify(s.albums));
-assert.equal(M.songs.length,82);assert.equal(M.badges(s).length,48);
+assert.equal(M.songs.length,82);assert.equal(M.badges(s).length,49);
 assert.deepEqual(M.albums.map(a=>a.tracks.length),[12,13,11,13,5,15,2,11]);
 assert(!M.unlockAlbum(s,'first-again'));
 const checkpoints=[];
@@ -34,12 +34,12 @@ for(const id of ['gr','yj','reunion','br']){assert(M.answer(s,'story:'+id,M.chal
 for(const id of ['first','album','yj','gr','br'])assert(M.cheer(s,'story:'+id,'응원해요'));
 for(const e of M.storyEntries)assert(M.answer(s,'story:'+e.id,M.challenges['story:'+e.id].answer));
 assertValid();assert(M.badges(s).every(b=>b.earned));
-assert.equal(M.badges(s).filter(b=>b.earned).length,48);
+assert.equal(M.badges(s).filter(b=>b.earned).length,49);
 const corrupt=structuredClone(checkpoints[0]);corrupt.albums=['first-again'];assert(!M.valid(corrupt));assert.throws(()=>M.loadSave(JSON.stringify(corrupt)));
 const legacy=require('../src/shared/our-stage-legacy'),old=legacy.fresh();
 const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,8);assert.equal(M.count(migrated),1);assert.deepEqual(migrated.albums,[]);
 assert.equal(old.version,3);
 assert(!fs.readFileSync('game/index.html','utf8').includes('/our-stage/'));
-console.log('PASS album journey: sequential 8 chapters, 82 track slots, wrong/retry gates, 1-second practice, costumes, 48 badges, persistence, v3 migration, invalid skip rejection.');
+console.log('PASS album journey: sequential 8 chapters, 82 track slots, wrong/retry gates, 1-second practice, costumes, 49 badges, persistence, v3 migration, invalid skip rejection.');
 module.exports={complete:s,checkpoints};
 

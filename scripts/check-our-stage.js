@@ -46,9 +46,9 @@ assert.equal(T.settle(t,2000),1);assert.equal(t.active.lesson,1);assert.equal(t.
 assert.equal(T.settle(t,3000),1);assert.equal(t.points,100);assert.equal(t.active,null);
 assert(T.valid(t));assert.deepEqual(T.loadSave(JSON.stringify(t)),t);
 const wardrobe=JSON.parse(fs.readFileSync('src/data/our-stage-outfits.json','utf8'));
-assert.equal(wardrobe.length,9);assert(wardrobe.find(o=>o.id==='rebloom').note.includes('참여하지 않았으며'));
-for(const o of wardrobe){assert(fs.existsSync('.'+o.image));assert.equal(o.members.length,3);}
-console.log('PASS test-only 1-second queue/recovery boundaries, save compatibility, 8 album outfits + base.');
+assert.equal(wardrobe.length,10);assert(wardrobe.find(o=>o.id==='rebloom').note.includes('참여하지 않았으며'));
+for(const o of wardrobe){assert(fs.existsSync('.'+o.image));assert.equal(Object.keys(require('../src/data/our-stage-layers.json')[o.id].members).length,3);}
+console.log('PASS test-only 1-second queue/recovery boundaries, save compatibility, 8 album outfits + practice and concert.');
 
 
 const starter=M.fresh(),tester=M.forTest();

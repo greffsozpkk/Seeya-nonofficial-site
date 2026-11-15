@@ -14,5 +14,5 @@ const client=fs.readFileSync('src/client/our-stage.js','utf8');
 assert(client.includes('sprite(id,o)'));
 assert(!client.includes('<img class="outfit-sheet"'));
 assert(!client.includes('outfits.find(o=>o.id===a.id).image'));
-for(const id of ['california-dream','brilliant-change'])assert.equal(outfits.find(o=>o.id===id).identityReview.status,'pending');
-console.log('PASS named wardrobe mapping, matched head/body columns, shared preview renderer and unresolved evidence labels.');
+for(const id of ['california-dream','brilliant-change'])assert.equal(outfits.find(o=>o.id===id).identityReview.status,'caption-checked');
+console.log('PASS named wardrobe mapping, matched head/body columns, shared preview renderer and activity-period reference labels.');

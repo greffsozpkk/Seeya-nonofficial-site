@@ -33,11 +33,23 @@
       ],
       "source": "https://m.tf.co.kr/read/entertain/2302510.htm",
       "evidence": "같은 흰 상의·청바지 촬영 사진의 왼쪽부터 이보람·남규리·김연지 표기와 의상 대조. 갈색 옆 묶음 머리·흰 셔츠 김연지 / 검은 머리·크림 블라우스 이보람."
+    },
+    "california-dream": {
+      "source": "https://www.joynews24.com/view/311671",
+      "sources": [
+        "https://www.joynews24.com/view/311684",
+        "https://www.joynews24.com/view/311672",
+        "https://www.joynews24.com/view/311683"
+      ],
+      "evidence": "2.5집 활동기 2008년 설 인사 개별 실명 기사 대조. 이보람 청록 저고리·분홍 치마 / 남규리 아이보리 저고리·빨강 치마 / 김연지 분홍 저고리·파랑 치마.",
+      "note": "2.5집 활동기 설 인사 사진의 한복을 참고했어요. 앨범 커버나 방송 무대 의상이 아닌 당시 활동 사진의 재해석입니다."
+    },
+    "brilliant-change": {
+      "source": "https://www.starnewskorea.com/music/2008/10/10/2008101013581404445",
+      "evidence": "3집 활동기 인터뷰 사진에 왼쪽부터 이보람·남규리·김연지 명시. 이보람 체크 원피스와 옆 땋은 머리 / 남규리 회색 체크 원피스와 짧은 갈색 머리·빨강 헤어밴드 / 김연지 검정 조끼와 반바지·긴 갈색 머리.",
+      "note": "3집 활동기 인터뷰 사진의 의상과 헤어를 참고했어요. 앨범 커버 의상이 아닌 당시 활동 사진의 재해석입니다."
     }
   },
-  "pending": [
-    "california-dream",
-    "brilliant-change"
-  ],
+  "pending": [],
   "rebloom": "사용자가 승인한 현재 세 멤버 재해석 유지"
 }

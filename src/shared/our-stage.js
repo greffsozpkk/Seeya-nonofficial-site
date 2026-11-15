@@ -67,7 +67,7 @@ function createModel(testMode=false) {
   const shop=require('../data/our-stage-shop.json');
   const memberIds=['br','gr','yj'];
   const shopById=id=>shop.find(o=>o.id===id);
-  const defaultEquipment=()=>({br:'base',gr:'base',yj:'base'});
+  const defaultEquipment=()=>({br:'practice',gr:'practice',yj:'practice'});
   const earnings=s=>({
     songs:Math.max(0,s.collected.length-1)*5,
     practice:ids.reduce((n,id)=>n+s.tracks[id].length,0)*2,
@@ -75,13 +75,13 @@ function createModel(testMode=false) {
     jobs:s.gigs*10
   });
   const coins=s=>Object.values(earnings(s)).reduce((a,b)=>a+b,0)-s.purchases.reduce((n,p)=>n+(shopById(p.split(':')[0])?.price||0),0);
-  const styleOwned=(s,id,member)=>memberIds.includes(member)&&(id==='base'||Boolean(albumById(id))&&albumUnlocked(s,id)||Boolean(shopById(id))&&s.purchases.includes(id+':'+member));
+  const styleOwned=(s,id,member)=>memberIds.includes(member)&&(['base','practice'].includes(id)||Boolean(albumById(id))&&albumUnlocked(s,id)||Boolean(shopById(id))&&s.purchases.includes(id+':'+member));
   function equipPart(s,member,part,id){if(!['clothes','hair'].includes(part)||!styleOwned(s,id,member))return false;(part==='hair'?s.hair:s.equipped)[member]=id;return true;}
   function equip(s,member,id){if(!styleOwned(s,id,member))return false;s.equipped[member]=id;s.hair[member]=id;return true;}
   function purchase(s,id,member){const o=shopById(id);if(!o||!memberIds.includes(member)||s.purchases.includes(id+':'+member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
   function startShopJob(s,now=Date.now()){if(s.shopJob||s.gigs>=1000000||!Number.isSafeInteger(now)||now<0)return false;s.shopJob={end:now+timing.shopMs};return true;}
-  const outfitOwned=(s,id)=>id==='base'||albumUnlocked(s,id);
-  const canWearOutfit=(s,id)=>(id==='base'||Boolean(albumById(id)))&&(outfitOwned(s,id)||testMode);
+  const outfitOwned=(s,id)=>['base','practice'].includes(id)||albumUnlocked(s,id);
+  const canWearOutfit=(s,id)=>(['base','practice'].includes(id)||Boolean(albumById(id)))&&(outfitOwned(s,id)||testMode);
   for(const a of albums.slice(1))a.tracks.forEach((t,i)=>songs.push({
     ...t,album:a.id,
     hint:i?'앞 트랙을 수집하고 한 번 연습하면 열려요.':'이 앨범을 해금하면 열려요.',
@@ -237,6 +237,7 @@ function createModel(testMode=false) {
     b.push({id:'all-master',name:'우리의 모든 계절',earned:albums.every(a=>albumMastered(s,a.id)),hint:'8개 앨범의 모든 트랙 준비도 100%',group:'활동',kind:'activity',icon:5});
     for(const e of storyEntries.filter(e=>e.kind==='event'))b.push({id:e.id,name:e.title,earned:storyDone(s,e.id),hint:'사이드 이벤트 간직하기 · '+e.date,group:'이벤트',kind:'activity',icon:e.icon});
     b.push({id:'story-journey',name:'노래 사이의 모든 기억',earned:storyEntries.every(e=>storyDone(s,e.id)),hint:'앨범 이야기 7개와 사이드 이벤트 8개 간직하기',group:'이야기',kind:'activity',icon:2});
+    b.push({id:'gyul-star',name:'귤별이 돼',earned:memberCards(s).filter(c=>c.member==='gr'&&c.earned).length>=3,hint:'남규리 멤버 카드 3장 수집',group:'활동',kind:'activity',icon:2});
     return b;
   }
 

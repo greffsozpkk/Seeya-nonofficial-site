@@ -127,6 +127,8 @@ function memories(){
 
 const badgeArt=require('../data/our-stage-badge-art.json');
 const badgeImage=badge=>{
+ const standalone=badgeArt.badges[badge.id].image;
+ if(standalone)return `<img class="pixel-badge unique-badge" src="${standalone}" alt="${esc(badge.name)} 배지" data-badge-art="${badge.id}">`;
  const entry=badgeArt.badges[badge.id],x=entry.index%6*256,y=Math.floor(entry.index/6)*256;
  return `<svg class="pixel-badge unique-badge" viewBox="0 0 256 256" role="img" aria-label="${esc(badge.name)} 배지" data-badge-art="${entry.sheet}:${entry.index}"><svg width="256" height="256" viewBox="${entry.box.join(' ')}" overflow="hidden"><defs><clipPath id="badge-crop-${badge.id}"><rect x="${entry.box[0]}" y="${entry.box[1]}" width="${entry.box[2]}" height="${entry.box[3]}"/></clipPath></defs><image clip-path="url(#badge-crop-${badge.id})" href="${badgeArt.sheets[entry.sheet]}" width="1536" height="1024"/></svg></svg>`;
 };
@@ -150,15 +152,15 @@ function chapterReward(a){
 
 function outfitCard(o){
  const owned=M.outfitOwned(s,o.id),wearing=M.memberIds.every(id=>styleId(id)===o.id&&styleId(id,'hair')===o.id);
- const status=o.id==='base'?'기본 지급':owned?'획득 완료':'미획득 · 테스트 미리입기';
- const condition=o.id==='base'?'처음부터 함께하는 기본 의상이에요.':o.id==='first-mind'?'이야기 E03 「노래로 채운 시간」을 완료하면 얻어요.':`${esc(o.name)} 앨범을 해금하면 얻어요.`;
- return panel(`${outfitLineup(o)}${mark(o.type)}<h3>${esc(o.name)}</h3><span class="outfit-ownership ${owned?'owned':'preview'}">${status}</span><p class="outfit-condition">${condition}</p><p class="outfit-note">${o.note}</p>${o.url?`<details><summary>참고한 앨범 보기</summary>${link('앨범 정보',o.url)} · ${link('커버 이미지',o.cover)}</details>`:''}${button(wearing?(owned?'입고 있는 의상':'미리 입는 중'):owned?'세 멤버 함께 입기':'테스트로 미리 입기','outfit',o.id,wearing?'':'primary',wearing||!M.canWearOutfit(s,o.id))}`,'outfit-card');
+ const status=['base','practice'].includes(o.id)?'처음부터 보유':owned?'획득 완료':'미획득 · 테스트 미리입기';
+ const condition=o.id==='practice'?'새 게임은 이 연습복으로 시작해요.':o.id==='base'?'기존 콘서트 의상도 자유롭게 입을 수 있어요.':o.id==='first-mind'?'이야기 E03 「노래로 채운 시간」을 완료하면 얻어요.':`${esc(o.name)} 앨범을 해금하면 얻어요.`;
+ return panel(`${outfitLineup(o)}${mark(o.type)}<h3>${esc(o.name)}</h3><span class="outfit-ownership ${owned?'owned':'preview'}">${status}</span><p class="outfit-condition">${condition}</p><p class="outfit-note">${o.note}</p>${o.wardrobeSource?link('의상 참고 사진',o.wardrobeSource):''}${o.url?`<details><summary>참고한 앨범 보기</summary>${link('앨범 정보',o.url)} · ${link('커버 이미지',o.cover)}</details>`:''}${button(wearing?(owned?'입고 있는 의상':'미리 입는 중'):owned?'세 멤버 함께 입기':'테스트로 미리 입기','outfit',o.id,wearing?'':'primary',wearing||!M.canWearOutfit(s,o.id))}`,'outfit-card');
 }
 function wardrobe(){
  const options=(id,part)=>styles.filter(o=>!M.shopById(o.id)||M.styleOwned(s,o.id,id)).map(o=>`<option value="${o.id}" ${styleId(id,part)===o.id?'selected':''}>${esc(o.name)}${M.styleOwned(s,o.id,id)?'':' · 테스트 미리입기'}</option>`).join('');
  return `<h2>각자의 스타일을 만들어요</h2><p>의상과 헤어를 따로 골라 자유롭게 조합해 보세요.<br>세트로 얻은 의상과 헤어는 각각 선택할 수 있어요.</p>
  <div class="member-wardrobe">${M.memberIds.map(id=>panel(`<div class="wardrobe-sprite">${sprite(id)}</div><h3>${M.members.find(m=>m.id===id).name}</h3><label class="wardrobe-part" for="wear-${id}">의상<select id="wear-${id}" data-member="${id}" data-part="clothes" aria-label="${M.members.find(m=>m.id===id).name} 의상">${options(id,'clothes')}</select></label><label class="wardrobe-part" for="hair-${id}">헤어<select id="hair-${id}" data-member="${id}" data-part="hair" aria-label="${M.members.find(m=>m.id===id).name} 헤어">${options(id,'hair')}</select></label><small>${preview[id]?'미획득 스타일 미리입기 · 새로고침하면 보유 조합으로 돌아가요.':'보유 스타일 · 조합도 자동 저장돼요.'}</small>${button('이 의상과 같은 헤어로','match-hair',id,'link')}`)).join('')}</div>
- <p class="private-note">앨범 미리입기는 테스트 기능이에요. 상점 스타일은 해당 멤버가 구매한 뒤 조합할 수 있어요.<br>Rebloom은 현재 세 멤버의 재해석입니다.</p><h3>앨범 의상 세트</h3><p>앨범을 해금하면 세 멤버의 의상과 헤어를 함께 얻어요.</p><div class="outfit-grid">${outfits.map(outfitCard).join('')}</div>`;
+ <p class="private-note">앨범 미리입기는 테스트 기능이에요. 상점 스타일은 해당 멤버가 구매한 뒤 조합할 수 있어요.<br>Rebloom은 현재 세 멤버의 재해석입니다.</p><h3>연습복·콘서트 세트</h3><div class="outfit-grid">${outfits.filter(o=>['base','practice'].includes(o.id)).map(outfitCard).join('')}</div><h3>앨범 의상 세트</h3><p>앨범을 해금하면 세 멤버의 의상과 헤어를 함께 얻어요.</p><div class="outfit-grid">${outfits.filter(o=>!['base','practice'].includes(o.id)).map(outfitCard).join('')}</div>`;
 }
 function shop(){
  const income=M.earnings(s),member=M.members.find(m=>m.id===shopMember);

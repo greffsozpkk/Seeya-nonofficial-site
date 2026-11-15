@@ -14,7 +14,7 @@ assert.equal(M.coins(restored),60);
 assert(!M.purchase(restored,'no-style','br'));assert(!M.purchase(restored,'stage-sugarman','xx'));
 assert(M.purchase(restored,'stage-sugarman','br'));assert.equal(M.coins(restored),0);
 assert(!M.purchase(restored,'stage-sugarman','br'));assert(!M.styleOwned(restored,'stage-sugarman','gr'));
-assert(M.equip(restored,'br','stage-sugarman'));assert.equal(restored.equipped.gr,'base');
+assert(M.equip(restored,'br','stage-sugarman'));assert.equal(restored.equipped.gr,'practice');
 assert(M.valid(restored));assert.deepEqual(M.loadSave(JSON.stringify(restored)),restored);
 for(const mutate of [
  x=>x.purchases.push('stage-seasons:br'),x=>x.purchases.push('stage-sugarman:br'),

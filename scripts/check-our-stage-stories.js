@@ -42,7 +42,7 @@ M.albums.forEach((a,ai)=>a.tracks.forEach(t=>{
 assert(M.challenges['song:california-dream-08'].choices.includes('풀하우스'));
 assert.equal(M.challenges['song:rebloom-01'].choices[M.challenges['song:rebloom-01'].answer],'그 놈 목소리 · 이민수');
 assert.equal(M.challenges['song:first-again-09'].choices[M.challenges['song:first-again-09'].answer],'우리 Live Ver.');
-assert.equal(M.badges(fixtures.complete).filter(b=>b.earned).length,48);
+assert.equal(M.badges(fixtures.complete).filter(b=>b.earned).length,49);
 console.log('PASS story expansion: 15 sourced stories, threshold boundaries, old-v4 saves, wrong/retry/cheer/replay, event badges, backup validation and five quiz tiers.');
 module.exports={unread:full};
 

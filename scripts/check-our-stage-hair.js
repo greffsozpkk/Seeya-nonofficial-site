@@ -30,5 +30,5 @@ for(const o of styles){
 const entries=require('../src/data/our-stage-stories.json');
 assert.equal(entries.filter(e=>e.wardrobeStatus==='period-reference-event-unconfirmed').length,3);
 assert.equal(entries.filter(e=>e.image.endsWith('-period.png')).length,14);
-console.log('PASS modular wardrobe: 363 owned outfit/hair combinations, member isolation, v5 migration, backup roundtrip, locked parts, 11 layer atlases, period-source labels.');
+console.log(`PASS modular wardrobe: ${3*styles.length**2} owned outfit/hair combinations, member isolation, v5 migration, backup roundtrip, locked parts, ${styles.length} layer atlases, period-source labels.`);
 
