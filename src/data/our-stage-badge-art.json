@@ -16,7 +16,16 @@
         69,
         199,
         174
-      ]
+      ],
+      "logo": {
+        "box": [
+          94,
+          122,
+          120,
+          34
+        ],
+        "tone": "dark"
+      }
     },
     "first-mind-collect": {
       "sheet": "album",
@@ -26,7 +35,16 @@
         63,
         182,
         182
-      ]
+      ],
+      "logo": {
+        "box": [
+          345,
+          95,
+          84,
+          24
+        ],
+        "tone": "dark"
+      }
     },
     "first-mind-master": {
       "sheet": "album",
@@ -36,7 +54,16 @@
         69,
         216,
         174
-      ]
+      ],
+      "logo": {
+        "box": [
+          597,
+          117,
+          100,
+          29
+        ],
+        "tone": "dark"
+      }
     },
     "lovely-sweet-heart-unlock": {
       "sheet": "album",
@@ -46,7 +73,16 @@
         68,
         199,
         175
-      ]
+      ],
+      "logo": {
+        "box": [
+          858,
+          134,
+          112,
+          32
+        ],
+        "tone": "light"
+      }
     },
     "lovely-sweet-heart-collect": {
       "sheet": "album",
@@ -76,7 +112,16 @@
         319,
         204,
         171
-      ]
+      ],
+      "logo": {
+        "box": [
+          89,
+          371,
+          122,
+          35
+        ],
+        "tone": "dark"
+      }
     },
     "california-dream-collect": {
       "sheet": "album",
@@ -96,7 +141,16 @@
         289,
         173,
         216
-      ]
+      ],
+      "logo": {
+        "box": [
+          581,
+          404,
+          80,
+          23
+        ],
+        "tone": "dark"
+      }
     },
     "brilliant-change-unlock": {
       "sheet": "album",
@@ -106,7 +160,16 @@
         317,
         215,
         172
-      ]
+      ],
+      "logo": {
+        "box": [
+          827,
+          342,
+          113,
+          32
+        ],
+        "tone": "light"
+      }
     },
     "brilliant-change-collect": {
       "sheet": "album",
@@ -126,7 +189,16 @@
         336,
         229,
         134
-      ]
+      ],
+      "logo": {
+        "box": [
+          1344,
+          376,
+          119,
+          34
+        ],
+        "tone": "dark"
+      }
     },
     "rebloom-unlock": {
       "sheet": "album",
@@ -136,7 +208,16 @@
         559,
         205,
         180
-      ]
+      ],
+      "logo": {
+        "box": [
+          110,
+          603,
+          105,
+          30
+        ],
+        "tone": "light"
+      }
     },
     "rebloom-collect": {
       "sheet": "album",
@@ -156,7 +237,16 @@
         543,
         205,
         201
-      ]
+      ],
+      "logo": {
+        "box": [
+          565,
+          690,
+          91,
+          26
+        ],
+        "tone": "light"
+      }
     },
     "see-you-again-unlock": {
       "sheet": "album",
@@ -166,7 +256,16 @@
         561,
         209,
         180
-      ]
+      ],
+      "logo": {
+        "box": [
+          854,
+          606,
+          125,
+          35
+        ],
+        "tone": "dark"
+      }
     },
     "see-you-again-collect": {
       "sheet": "album",
@@ -186,7 +285,16 @@
         558,
         246,
         177
-      ]
+      ],
+      "logo": {
+        "box": [
+          1398,
+          683,
+          57,
+          16
+        ],
+        "tone": "light"
+      }
     },
     "still-here-unlock": {
       "sheet": "album",
@@ -196,7 +304,16 @@
         806,
         205,
         185
-      ]
+      ],
+      "logo": {
+        "box": [
+          101,
+          927,
+          103,
+          29
+        ],
+        "tone": "light"
+      }
     },
     "still-here-collect": {
       "sheet": "album",
@@ -206,7 +323,16 @@
         834,
         225,
         121
-      ]
+      ],
+      "logo": {
+        "box": [
+          333,
+          871,
+          118,
+          34
+        ],
+        "tone": "light"
+      }
     },
     "still-here-master": {
       "sheet": "album",
@@ -226,7 +352,16 @@
         807,
         209,
         185
-      ]
+      ],
+      "logo": {
+        "box": [
+          885,
+          835,
+          90,
+          26
+        ],
+        "tone": "dark"
+      }
     },
     "first-again-collect": {
       "sheet": "album",
@@ -246,7 +381,16 @@
         808,
         220,
         179
-      ]
+      ],
+      "logo": {
+        "box": [
+          1348,
+          873,
+          112,
+          32
+        ],
+        "tone": "dark"
+      }
     },
     "first-practice": {
       "sheet": "activity",
@@ -266,7 +410,16 @@
         78,
         232,
         145
-      ]
+      ],
+      "logo": {
+        "box": [
+          316,
+          120,
+          132,
+          37
+        ],
+        "tone": "light"
+      }
     },
     "three-voices": {
       "sheet": "activity",
@@ -286,7 +439,16 @@
         58,
         236,
         183
-      ]
+      ],
+      "logo": {
+        "box": [
+          845,
+          98,
+          133,
+          38
+        ],
+        "tone": "light"
+      }
     },
     "ending": {
       "sheet": "activity",
@@ -396,6 +558,23 @@
         535,
         224,
         202
+      ],
+      "logo": {
+        "box": [
+          568,
+          668,
+          77,
+          22
+        ],
+        "tone": "light"
+      },
+      "preserve": [
+        [
+          627,
+          532,
+          113,
+          196
+        ]
       ]
     },
     "event-ost": {
@@ -406,7 +585,16 @@
         557,
         226,
         175
-      ]
+      ],
+      "logo": {
+        "box": [
+          841,
+          618,
+          132,
+          37
+        ],
+        "tone": "dark"
+      }
     },
     "event-rookie": {
       "sheet": "activity",
@@ -456,7 +644,16 @@
         793,
         221,
         192
-      ]
+      ],
+      "logo": {
+        "box": [
+          568,
+          911,
+          107,
+          30
+        ],
+        "tone": "dark"
+      }
     },
     "event-bcm": {
       "sheet": "activity",
@@ -466,7 +663,16 @@
         802,
         191,
         195
-      ]
+      ],
+      "logo": {
+        "box": [
+          817,
+          852,
+          98,
+          28
+        ],
+        "tone": "light"
+      }
     },
     "event-kairos": {
       "sheet": "activity",
@@ -486,10 +692,31 @@
         786,
         246,
         212
+      ],
+      "logo": {
+        "box": [
+          1400,
+          872,
+          62,
+          18
+        ],
+        "tone": "light"
+      },
+      "preserve": [
+        [
+          1316,
+          833,
+          81,
+          113
+        ]
       ]
     },
     "gyul-star": {
       "image": "/images/game/our-stage/pixel-gyul-star-v2.png"
     }
+  },
+  "logoSheets": {
+    "album": "/images/game/our-stage/pixel-album-logo-base.png",
+    "activity": "/images/game/our-stage/pixel-activity-logo-base.png"
   }
 }

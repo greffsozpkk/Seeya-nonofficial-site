@@ -6,6 +6,7 @@ const key='seeya-our-stage-local-v1',$=q=>root.querySelector(q),art='/images/gam
 let activeChallenge=null,afterChallenge=null,returnFocus=null,blocked=false;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const outfits=require('../data/our-stage-outfits.json');
+const {nameTag}=require('../shared/our-stage-name-tag');
 const outfitKey='seeya-our-stage-outfit-v1';
 let outfitId='base';
 try{const saved=localStorage.getItem(outfitKey);if(outfits.some(x=>x.id===saved))outfitId=saved;}catch{}
@@ -17,7 +18,7 @@ const sprite=(id,override)=>{
  const scale=320/(h.chin-h.head[1]),hw=h.head[2]*scale,hh=h.head[3]*scale;
  const bh=320,bw=b.body[2]*bh/b.body[3],headX=(440-hw)/2,headY=25,bodyY=340;
  const part=(data,box,x,y,w,height)=>`<svg x="${x}" y="${y}" width="${w}" height="${height}" viewBox="${box.join(' ')}" overflow="hidden" preserveAspectRatio="none"><image href="${data.image}" width="${data.width}" height="${data.height}"/></svg>`;
- return `<svg class="member-sprite" viewBox="0 0 440 680" role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="crisp-${id}-${clothing.id}-${hair.id}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#crisp-${id}-${clothing.id}-${hair.id})"><g class="sprite-hair">${part(head,h.head,headX,headY,hw,hh)}</g><g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g></g>${clothing.id==='practice'?`<g class="rehearsal-name-tag" aria-label="리허설 이름표 ${M.members.find(m=>m.id===id).name.slice(1)}"><rect x="130" y="397" width="180" height="61" fill="#fffdf6" stroke="#29283a" stroke-width="4"/><text x="220" y="443" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="700" fill="#29283a">${M.members.find(m=>m.id===id).name.slice(1)}</text></g>`:''}</svg>`;
+ return `<svg class="member-sprite" viewBox="0 0 440 680" role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="crisp-${id}-${clothing.id}-${hair.id}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#crisp-${id}-${clothing.id}-${hair.id})"><g class="sprite-hair">${part(head,h.head,headX,headY,hw,hh)}</g><g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g></g>${clothing.id==='practice'?nameTag(id):''}</svg>`;
 };
 const portrait=id=>`<div class="member-crop">${sprite(id)}</div>`;
 const outfitLineup=o=>`<div class="outfit-sheet mapped-outfit" aria-label="${esc(o.name)} 멤버별 의상">${M.memberIds.map(id=>`<figure>${sprite(id,o)}<figcaption>${M.members.find(m=>m.id===id).name}</figcaption></figure>`).join('')}</div>`;
@@ -129,8 +130,11 @@ const badgeArt=require('../data/our-stage-badge-art.json');
 const badgeImage=badge=>{
  const standalone=badgeArt.badges[badge.id].image;
  if(standalone)return `<img class="pixel-badge unique-badge" src="${standalone}" alt="${esc(badge.name)} 배지" data-badge-art="${badge.id}">`;
- const entry=badgeArt.badges[badge.id],x=entry.index%6*256,y=Math.floor(entry.index/6)*256;
- return `<svg class="pixel-badge unique-badge" viewBox="0 0 256 256" role="img" aria-label="${esc(badge.name)} 배지" data-badge-art="${entry.sheet}:${entry.index}"><svg width="256" height="256" viewBox="${entry.box.join(' ')}" overflow="hidden"><defs><clipPath id="badge-crop-${badge.id}"><rect x="${entry.box[0]}" y="${entry.box[1]}" width="${entry.box[2]}" height="${entry.box[3]}"/></clipPath></defs><image clip-path="url(#badge-crop-${badge.id})" href="${badgeArt.sheets[entry.sheet]}" width="1536" height="1024"/></svg></svg>`;
+ const entry=badgeArt.badges[badge.id],source=entry.logo?badgeArt.logoSheets[entry.sheet]:badgeArt.sheets[entry.sheet];
+ const logo=entry.logo,box=logo?.box;
+ const lettering=logo?`<image class="official-badge-logo" href="${art}${logo.tone==='light'?'badge-logo-light.svg':'card-logo.svg'}" x="${box[0]}" y="${box[1]}" width="${box[2]}" height="${box[3]}"/>`:'';
+ const preserved=(entry.preserve||[]).map(b=>`<svg x="${b[0]}" y="${b[1]}" width="${b[2]}" height="${b[3]}" viewBox="${b.join(' ')}" overflow="hidden"><image href="${badgeArt.sheets[entry.sheet]}" width="1536" height="1024"/></svg>`).join('');
+ return `<svg class="pixel-badge unique-badge" viewBox="0 0 256 256" role="img" aria-label="${esc(badge.name)} 배지" data-badge-art="${entry.sheet}:${entry.index}"><defs><filter id="badge-crisp-${badge.id}"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><svg width="256" height="256" viewBox="${entry.box.join(' ')}" overflow="hidden"><image href="${source}" width="1536" height="1024" ${entry.logo?'filter="url(#badge-crisp-'+badge.id+')"':''}/>${lettering}${preserved}</svg></svg>`;
 };
 function badgeShelf(){
  const all=M.badges(s),filtered=all.filter(b=>badgeFilter==='all'||badgeFilter==='earned'&&b.earned||badgeFilter==='album'&&b.group==='앨범'||badgeFilter==='activity'&&b.group!=='앨범');

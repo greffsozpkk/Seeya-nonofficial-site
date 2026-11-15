@@ -63,7 +63,7 @@
   },
   {
     "id": "tour-encore",
-    "name": "20주년 · 과잠·앙코르",
+    "name": "20주년 · 앙코르",
     "type": "CONCERT STYLE",
     "price": 100,
     "date": "2026.10.31",
@@ -123,5 +123,38 @@
     ],
     "method": "Built-in image_gen",
     "mappingNote": "멤버 이름이 표시된 개별 영상과 단체 무대의 의상·헤어를 대조. br/gr/yj 순서의 독립 헤어·의상 레이어."
+  },
+  {
+    "id": "tour-varsity",
+    "name": "20주년 · 씨야 과잠",
+    "type": "CONCERT STYLE",
+    "price": 100,
+    "date": "2026.10.31",
+    "url": "https://www.youtube.com/watch?v=OsU2A-Xpq7c",
+    "note": "세 멤버가 과잠을 입은 별도 세트예요. 이보람의 네이비 미니, 남규리의 흰 프릴 스커트, 김연지의 벨트·네이비 스커트 조합을 참고했어요. 작은 장식은 도트로 단순화했어요.",
+    "image": "/images/game/our-stage/layers/tour-varsity.png",
+    "width": 1536,
+    "height": 1024,
+    "members": [
+      [
+        0,
+        512
+      ],
+      [
+        512,
+        512
+      ],
+      [
+        1024,
+        512
+      ]
+    ],
+    "sources": [
+      "https://www.youtube.com/watch?v=dVjGetjnVzs",
+      "https://www.youtube.com/watch?v=8tXCxWsLc_c",
+      "https://www.youtube.com/watch?v=wgJ8Ag7YY54"
+    ],
+    "method": "Built-in image_gen",
+    "mappingNote": "그럼에도 우린의 과잠 장면과 멤버별 앙코르 착장 연속성을 대조. 고정 열 순서는 이보람·남규리·김연지. 기존 tour-encore 레이어와 구매 기록은 유지."
   }
 ]

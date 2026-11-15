@@ -20,6 +20,19 @@ for(const id of ['california-dream','brilliant-change']){
 }
 assert.equal(new Set(badges.map(b=>art.badges[b.id].image||art.badges[b.id].sheet+':'+art.badges[b.id].index)).size,49);
 for(const b of badges){const a=art.badges[b.id];if(a.image){assert(fs.existsSync('.'+a.image));continue;}assert(a.index>=0&&a.index<24);assert(fs.existsSync('.'+art.sheets[a.sheet]));}
+for(const album of M.albums)assert(art.badges[album.id+'-unlock'].logo,'Every album cover uses the official logo');
+for(const a of Object.values(art.badges))if(a.logo){
+ assert(fs.existsSync('.'+art.logoSheets[a.sheet]));
+ const [x,y,w,h]=a.logo.box,[bx,by,bw,bh]=a.box;
+ assert(x>=bx&&y>=by&&x+w<=bx+bw&&y+h<=by+bh,'Logo stays inside its badge');
+ assert(['dark','light'].includes(a.logo.tone));
+}
+// Standalone lightsticks continue to use the unmodified original atlas.
+for(const a of Object.values(art.badges))if(a.sheet==='album'&&a.index===22||a.sheet==='activity'&&[0,2,5,6,7].includes(a.index))assert(!a.logo);
+assert(fs.existsSync('images/game/our-stage/badge-logo-light.svg'));
+const {nameTag}=require('../src/shared/our-stage-name-tag');
+for(const [id,name] of [['br','보람'],['gr','규리'],['yj','연지']]){assert(nameTag(id).includes('<title>'+name+'</title>'));assert(!nameTag(id).includes('<text'));}
+assert.equal(nameTag('unknown'),'');
 assert.equal(M.members.find(m=>m.id==='yj').name,'김연지');assert(M.members.find(m=>m.id==='yj').fact.startsWith('김연지'));
 for(const e of M.storyEntries){assert(e.subject);assert(e.summary);assert(!e.summary.includes('트랙 수집'));if(['event-kairos','event-bcm'].includes(e.id)){assert.equal(e.subject,'남규리');assert(e.summary.startsWith('남규리'));}}
 assert(M.storyById('event-kairos').source.includes('imbc.com'));assert(!M.coreCondition('yj').includes('남규리 이야기'));
