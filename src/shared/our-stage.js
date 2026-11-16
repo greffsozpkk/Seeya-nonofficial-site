@@ -166,8 +166,8 @@ function createModel(testMode=false) {
     if(!allowed||!s.proofs.includes('story:'+id))return false;
     s.flags.push(id);return true;
   }
-  function valid(s){
-    if(!s||s.version!==11||!mini.valid(s.mini)||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>100||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
+  function valid(s,limits={}){
+    if(!s||s.version!==11||!mini.valid(s.mini)||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>(limits.maxPoints??100)||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
     const subset=(a,opts)=>Array.isArray(a)&&a.every(x=>opts.includes(x))&&new Set(a).size===a.length;
     if(!subset(s.flags,flags)||!s.tracks||!ids.every(id=>subset(s.tracks[id],[0,1,2])))return false;
     if(!subset(s.albums,albums.slice(1).map(a=>a.id)))return false;
@@ -188,7 +188,7 @@ function createModel(testMode=false) {
     if(!s.cardDecorations||typeof s.cardDecorations!=='object'||Array.isArray(s.cardDecorations))return false;
     const earnedBadges=badges(s).filter(b=>b.earned).map(b=>b.id);
     if(!Object.entries(s.cardDecorations).every(([id,list])=>cardOwned(s,id)&&Array.isArray(list)&&list.length<=3&&subset(list,earnedBadges)))return false;
-    if(!s.equipped||!s.hair||!memberIds.every(m=>styleOwned(s,s.equipped[m],m)&&styleOwned(s,s.hair[m],m))||coins(s)<0)return false;
+    if(!s.equipped||!s.hair||!memberIds.every(m=>styleOwned(s,s.equipped[m],m)&&styleOwned(s,s.hair[m],m))||(limits.balance??coins(s))<0)return false;
     return s.flags.every(id=>s.proofs.includes('story:'+id))&&(!has(s,'first')||ready(s,'scent'))&&(!has(s,'album')||has(s,'first'))&&(!voices(s)||has(s,'album'))&&(!has(s,'reunion')||has(s,'gr')&&has(s,'yj'))&&(!has(s,'ending')||has(s,'album')&&ids.filter(id=>ready(s,id)).length>=2);
   }
 

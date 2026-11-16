@@ -1,0 +1,105 @@
+{
+  "assumptions": "정식 시간, 3종 연습 모두 수행, 컨디션 최저 0.95, 능력치 효율 우선 성장, 부족하면 직전 무대 반복. 퀴즈·이야기 읽기·조작 시간 제외. 부스터·소품·출석·오프라인 보상 미사용. 예측이며 실제 사용자 검증 아님.",
+  "totalHours": 29.54,
+  "apWaitHours": 25.24,
+  "plays": 133,
+  "upgrades": 50,
+  "chapters": [
+    {
+      "album": "The First Mind",
+      "tracks": 12,
+      "minutes": 5,
+      "apWaitMinutes": 0,
+      "performances": 12,
+      "levels": {
+        "vocal": 3,
+        "harmony": 3,
+        "emotion": 3
+      }
+    },
+    {
+      "album": "Lovely Sweet Heart",
+      "tracks": 13,
+      "minutes": 132,
+      "apWaitMinutes": 110,
+      "performances": 13,
+      "levels": {
+        "vocal": 5,
+        "harmony": 6,
+        "emotion": 6
+      }
+    },
+    {
+      "album": "California Dream",
+      "tracks": 11,
+      "minutes": 224,
+      "apWaitMinutes": 204,
+      "performances": 21,
+      "levels": {
+        "vocal": 7,
+        "harmony": 7,
+        "emotion": 10
+      }
+    },
+    {
+      "album": "Brilliant Change",
+      "tracks": 13,
+      "minutes": 291,
+      "apWaitMinutes": 246,
+      "performances": 18,
+      "levels": {
+        "vocal": 10,
+        "harmony": 8,
+        "emotion": 10
+      }
+    },
+    {
+      "album": "Rebloom",
+      "tracks": 5,
+      "minutes": 104,
+      "apWaitMinutes": 87,
+      "performances": 5,
+      "levels": {
+        "vocal": 10,
+        "harmony": 10,
+        "emotion": 11
+      }
+    },
+    {
+      "album": "See You Again",
+      "tracks": 15,
+      "minutes": 515,
+      "apWaitMinutes": 459,
+      "performances": 38,
+      "levels": {
+        "vocal": 17,
+        "harmony": 14,
+        "emotion": 13
+      }
+    },
+    {
+      "album": "그럼에도, 우린",
+      "tracks": 2,
+      "minutes": 56,
+      "apWaitMinutes": 42,
+      "performances": 1,
+      "levels": {
+        "vocal": 17,
+        "harmony": 14,
+        "emotion": 13
+      }
+    },
+    {
+      "album": "First, Again",
+      "tracks": 11,
+      "minutes": 446,
+      "apWaitMinutes": 368,
+      "performances": 25,
+      "levels": {
+        "vocal": 17,
+        "harmony": 16,
+        "emotion": 20
+      }
+    }
+  ]
+}

@@ -88,3 +88,4 @@ require('./check-our-stage-test-tools');
 require('./check-our-stage-song');
 
 require('./check-our-stage-review');
+require('./check-our-stage-growth');

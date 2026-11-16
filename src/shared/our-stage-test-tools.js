@@ -23,6 +23,7 @@ module.exports=function(M){
   if(ai>=M.albums.findIndex(a=>a.id==='still-here'))for(const id of ['event-wsg','event-yeonji-return','event-gyulmung'])proof('story:'+id);
   if(e?.requiresFlags)for(const id of e.requiresFlags)flag(id);
   s.setlist=s.collected.filter(id=>M.ready(s,id)).slice(0,2);
+  if(M.growth)M.growth.prepareTest(s,option.album);
   if(!M.valid(s)||story&&(e?!M.storyAvailable(s,story):!M.coreAvailable(s,story)))throw Error('Invalid test checkpoint');
   return s;
  }
