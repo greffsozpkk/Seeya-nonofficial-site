@@ -112,6 +112,13 @@
   ],
   "이보람": [
     {
+      "title": "이보람, 웹툰 ‘본능적인 그대’ OST ‘사랑한다는 말로도 채울 수 없던 우리’ 발매 - 스포츠경향",
+      "source": "스포츠경향",
+      "pubDate": "2026-11-16T13:44:00+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WRnpSaUhDVll4ZWVKLUYtTVd1VzhKOV9GWUFra0pGX3FYdHNpeEFGYndyZ2w0U1dXSEFZdDJWQ1dhOHpBZVJiQjk5NXM5SVVxTUJzcDZfTGZBb00xREHSAWNBVV95cUxPV2hONkRidjZBcFB4ZjVqdk0yYk5vcXFXdXdUWldfd1ZSZWRWNTFRdlNHbFpZMjFZOExDTWloaWRDT1c0WmRIVEQtU1djNkdWQTl3REk5WC1IdFpDQW1mRGRtVDQ?oc=5",
+      "description": "이보람, 웹툰 ‘본능적인 그대’ OST ‘사랑한다는 말로도 채울 수 없던 우리’ 발매 스포츠경향"
+    },
+    {
       "title": "이보람, 웹툰 ‘본능적인 그대’ OST 참여…‘사랑한다는 말로도 채울 수 없던 우리’ 발매 - 톱스타뉴스",
       "source": "톱스타뉴스",
       "pubDate": "2026-11-15T23:03:47+00:00",
@@ -138,48 +145,41 @@
       "pubDate": "2026-11-11T12:16:56+00:00",
       "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE52REZOYUtvOV8yV2djejdVQWp5dHMyaDJFbVNVVXJhLVJpYnN2cGc1amlDYWIyQ0VzX1pjNUc0MVFva2txQzNBQkt4VXVQb1NSaXNiaVVpRnJDa1ctYzMwN0FnSnNjT0Q4Y25ZX1phVkZVQQ?oc=5",
       "description": "씨야 이보람, ‘골때녀’ 경기 앞두고 긴장감 가득한 눈빛 톱스타뉴스"
-    },
-    {
-      "title": "씨야 이보람, ‘골때녀’ 4강 질주 이끈 축구 센스 - 톱스타뉴스",
-      "source": "톱스타뉴스",
-      "pubDate": "2026-10-29T10:49:59+00:00",
-      "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5BeVc5WXN4LS1qQzFCU3pjWGZLTU1weFIwa0JGWE1OeGJWVzRBMnNNOVdMVHMyTmY4M0JPdmw0VXRHWU5UczktT3FRbDd1Ym9vNDg1LXZmOXdlLU0wZ1Rpb2Z0LVpEbmk5eDlUbkFockxWZw?oc=5",
-      "description": "씨야 이보람, ‘골때녀’ 4강 질주 이끈 축구 센스 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-11-16T13:43:47.756393+00:00",
-  "lastCheckedAt": "2026-11-16T13:43:47.756393+00:00",
+  "updatedAt": "2026-11-16T14:11:08.948362+00:00",
+  "lastCheckedAt": "2026-11-16T14:11:08.948362+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-16T13:43:47.756393+00:00",
-    "남규리": "2026-11-16T13:43:47.756393+00:00",
-    "김연지": "2026-11-16T13:43:47.756393+00:00",
-    "이보람": "2026-11-16T13:43:47.756393+00:00"
+    "씨야": "2026-11-16T14:11:08.948362+00:00",
+    "남규리": "2026-11-16T14:11:08.948362+00:00",
+    "김연지": "2026-11-16T14:11:08.948362+00:00",
+    "이보람": "2026-11-16T14:11:08.948362+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-16T13:43:47.756393+00:00",
     "남규리": "2026-11-16T06:35:25.749840+00:00",
-    "이보람": "2026-11-16T06:35:25.749840+00:00",
+    "이보람": "2026-11-16T14:11:08.948362+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
   },
   "categoryStatus": {
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 102,
-      "changed": true,
-      "status": "changed"
+      "accepted": 100,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 64,
+      "accepted": 63,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 17,
+      "accepted": 16,
       "changed": false,
       "status": "unchanged"
     },
@@ -187,8 +187,8 @@
       "queries": 4,
       "succeeded": 4,
       "accepted": 52,
-      "changed": false,
-      "status": "unchanged"
+      "changed": true,
+      "status": "changed"
     }
   }
 }
