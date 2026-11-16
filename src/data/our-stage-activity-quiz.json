@@ -1,0 +1,338 @@
+{
+  "song:activity-debut-team": {
+    "question": "씨야의 데뷔곡을 소개하는 라디오 DJ라면, 어떤 곡을 틀어야 할까요?",
+    "choices": [
+      "여인의 향기",
+      "사랑의 인사",
+      "Hot Girl"
+    ],
+    "answer": 0,
+    "explanation": "씨야는 2006년 1집 The First Mind의 여인의 향기로 데뷔했습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286",
+    "album": "first-mind"
+  },
+  "song:activity-debut-duet": {
+    "question": "1집 녹음실에 함께한 피처링 팀! 사랑하기 때문에에 참여한 팀은?",
+    "choices": [
+      "브라운 아이드 소울",
+      "V.O.S",
+      "SG워너비"
+    ],
+    "answer": 2,
+    "explanation": "사랑하기 때문에에는 SG워너비가 피처링했습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=314286",
+    "album": "first-mind"
+  },
+  "song:activity-debut-rookie": {
+    "question": "데뷔 첫해의 트로피를 전시한다면? 2006년 골든디스크에서 받은 상은?",
+    "choices": [
+      "대상",
+      "신인상",
+      "디지털 음원 본상"
+    ],
+    "answer": 1,
+    "explanation": "씨야는 2006년 골든디스크에서 신인상을 받았습니다.",
+    "source": "https://www.nocutnews.co.kr/news/224195",
+    "album": "first-mind"
+  },
+  "song:activity-debut-ost": {
+    "question": "2006년 MKMF 시상식, 씨야의 이름이 불린 부문은?",
+    "choices": [
+      "최우수 OST상",
+      "최우수 댄스상",
+      "최우수 록상"
+    ],
+    "answer": 0,
+    "explanation": "씨야는 2006년 Mnet KM 뮤직 페스티벌에서 최우수 OST상을 받았습니다.",
+    "source": "https://www.starnewskorea.com/music/2006/11/25/2006112518150646752",
+    "album": "first-mind"
+  },
+  "song:activity-copyright": {
+    "question": "2007년 씨야가 창작의 가치를 알리며 맡은 홍보대사 활동은?",
+    "choices": [
+      "관광 홍보",
+      "환경 보호 홍보",
+      "저작권 홍보"
+    ],
+    "answer": 2,
+    "explanation": "문화관광부는 2007년 6월 27일 씨야 등을 저작권 홍보대사로 위촉한다고 발표했습니다.",
+    "source": "https://www.mcst.go.kr/site/s_notice/press/pressView.jsp?pSeq=8766",
+    "album": "lovely-sweet-heart"
+  },
+  "song:activity-netiquette": {
+    "question": "2집 활동기, 씨야가 네티켓 홍보대사로 알리려 한 것은?",
+    "choices": [
+      "교통안전 수칙",
+      "올바른 인터넷 이용 문화",
+      "공연장 좌석 예절"
+    ],
+    "answer": 1,
+    "explanation": "씨야는 2007년 9월 18일 정보통신윤리 홍보대사 위촉패를 받았습니다.",
+    "source": "https://m.etnews.com/200709180162",
+    "album": "lovely-sweet-heart"
+  },
+  "song:activity-digital": {
+    "question": "신인상을 받은 다음 해, 씨야가 골든디스크에서 받은 상은?",
+    "choices": [
+      "디지털 음원 부문 본상",
+      "음반 대상",
+      "인기상"
+    ],
+    "answer": 0,
+    "explanation": "씨야는 2007년 골든디스크에서 디지털 음원 본상을 받았습니다.",
+    "source": "https://www.osen.co.kr/article/G0712140129",
+    "album": "lovely-sweet-heart"
+  },
+  "song:activity-california-ost": {
+    "question": "California Dream에서 다시 만나는 이보람의 OST는 어느 드라마의 노래일까요?",
+    "choices": [
+      "궁",
+      "커피프린스 1호점",
+      "풀하우스"
+    ],
+    "answer": 2,
+    "explanation": "이보람의 풀하우스 OST 처음 그 자리에가 California Dream에도 담겼습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "album": "california-dream"
+  },
+  "song:activity-california-duet": {
+    "question": "California Dream에 담긴 김연지의 협업 상대는?",
+    "choices": [
+      "나르샤",
+      "제아",
+      "가인"
+    ],
+    "answer": 1,
+    "explanation": "김연지는 제아와 함께 부른 노래로 California Dream에 참여했습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "album": "california-dream"
+  },
+  "song:activity-california-jacket": {
+    "question": "California Dream 재킷 촬영 여행의 목적지는?",
+    "choices": [
+      "LA·라스베이거스",
+      "파리·런던",
+      "도쿄·오사카"
+    ],
+    "answer": 0,
+    "explanation": "California Dream 재킷은 LA와 라스베이거스 등지에서 촬영했습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=362767",
+    "album": "california-dream"
+  },
+  "song:activity-seoul-award": {
+    "question": "California Dream 활동 무렵 열린 제17회 서울가요대상에서 씨야가 받은 상은?",
+    "choices": [
+      "신인상",
+      "대상",
+      "본상"
+    ],
+    "answer": 2,
+    "explanation": "씨야는 2008년 1월 31일 제17회 서울가요대상에서 본상을 받았습니다.",
+    "source": "https://www.edaily.co.kr/News/Read?mediaCodeNo=258&newsId=01236566586283296",
+    "album": "california-dream"
+  },
+  "song:activity-new-beat": {
+    "question": "3집 Hot Girl에서 씨야가 도전한 새로운 비트는?",
+    "choices": [
+      "레게",
+      "일렉트로 하우스",
+      "스윙 재즈"
+    ],
+    "answer": 1,
+    "explanation": "3집 Brilliant Change의 ‘Hot Girl’에서 씨야는 일렉트로 하우스 비트의 댄스곡에 도전했습니다.",
+    "source": "https://www.starnewskorea.com/music/2008/10/01/2008100115361214204",
+    "album": "brilliant-change"
+  },
+  "song:activity-rebloom-member": {
+    "question": "Rebloom 활동에 새롭게 합류한 멤버는?",
+    "choices": [
+      "수미",
+      "보람",
+      "연지"
+    ],
+    "answer": 0,
+    "explanation": "Rebloom은 수미가 합류한 뒤 발표한 앨범입니다. 앨범명에는 꽃이 다시 피어난다는 뜻이 담겼고, 타이틀은 이민수가 작곡한 ‘그 놈 목소리’예요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "album": "rebloom"
+  },
+  "song:activity-rebloom-producer": {
+    "question": "그 놈 목소리를 만든 작곡가는?",
+    "choices": [
+      "김도훈",
+      "조영수",
+      "이민수"
+    ],
+    "answer": 2,
+    "explanation": "Rebloom의 타이틀곡 그 놈 목소리는 이민수 작곡가의 곡입니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=703853",
+    "album": "rebloom"
+  },
+  "song:activity-again-new": {
+    "question": "See You Again에서 기존 히트곡들과 함께 만난 새 노래 두 곡은?",
+    "choices": [
+      "사랑의 인사 · 결혼할까요",
+      "내겐 너무 멋진 그대 · The Last",
+      "Stay · 그럼에도, 우린"
+    ],
+    "answer": 1,
+    "explanation": "See You Again에는 ‘내겐 너무 멋진 그대’, ‘The Last’와 이전 활동곡들이 함께 담겼습니다.",
+    "source": "https://music.bugs.co.kr/album/259909",
+    "album": "see-you-again"
+  },
+  "song:activity-gyuri-market": {
+    "question": "2011년 남규리가 조현재와 함께 홍보대사를 맡은 행사는?",
+    "choices": [
+      "부산콘텐츠마켓",
+      "부산국제영화제",
+      "서울드라마어워즈"
+    ],
+    "answer": 0,
+    "explanation": "부산시는 2011년 4월 남규리와 조현재를 부산콘텐츠마켓 홍보대사로 소개했습니다. 위촉식 일정은 4월 26일이었어요.",
+    "source": "https://www.busan.go.kr/news/totalnews01/view?dataNo=32991&gugun=Next",
+    "album": "see-you-again"
+  },
+  "song:activity-gyuri-award": {
+    "question": "남규리에게 2020 MBC 연기대상 우수연기상을 안겨준 작품은?",
+    "choices": [
+      "49일",
+      "붉은 달 푸른 해",
+      "카이로스"
+    ],
+    "answer": 2,
+    "explanation": "남규리는 ‘카이로스’로 2020 MBC 연기대상 월화 미니·단막 부문 여자 우수 연기상을 받았습니다.",
+    "source": "https://enews.imbc.com/News/RetrieveNewsInfo/301881",
+    "album": "see-you-again"
+  },
+  "song:activity-boram-team": {
+    "question": "WSG워너비에서 이보람이 소연·HYNN·정지소와 함께한 팀은?",
+    "choices": [
+      "오아시소",
+      "가야G",
+      "4FIRE"
+    ],
+    "answer": 1,
+    "explanation": "이보람은 소연·HYNN·정지소와 가야G로 함께했습니다.",
+    "source": "https://enews.imbc.com/News/RetrieveNewsInfo/354733",
+    "album": "see-you-again"
+  },
+  "song:activity-boram-song": {
+    "question": "가야G의 첫 활동 무대에서 이보람이 함께 부른 노래는?",
+    "choices": [
+      "그때 그 순간 그대로",
+      "보고싶었어",
+      "Clink Clink"
+    ],
+    "answer": 0,
+    "explanation": "가야G는 그때 그 순간 그대로로 활동했습니다.",
+    "source": "https://enews.imbc.com/News/RetrieveNewsInfo/354733",
+    "album": "see-you-again"
+  },
+  "song:activity-yeonji-mask": {
+    "question": "김연지가 2016년 복면가왕 가왕에 오를 때 쓴 가면의 이름은?",
+    "choices": [
+      "밤의 여왕",
+      "노래요정 지니",
+      "불광동 휘발유"
+    ],
+    "answer": 2,
+    "explanation": "김연지는 불광동 휘발유로 2016년 35대 가왕에 올랐습니다.",
+    "source": "https://enews.imbc.com/News/RetrieveNewsInfo/188082",
+    "album": "see-you-again"
+  },
+  "song:activity-boram-mask": {
+    "question": "이보람이 3연승 가왕에 오른 가면은?",
+    "choices": [
+      "동방불패",
+      "나이팅게일",
+      "동막골소녀"
+    ],
+    "answer": 1,
+    "explanation": "이보람은 나이팅게일로 103~105대 가왕에 올랐습니다.",
+    "source": "https://enews.imbc.com/News/RetrieveNewsInfo/261263",
+    "album": "see-you-again"
+  },
+  "song:activity-gyuri-channel": {
+    "question": "재회 전 남규리가 팬들에게 일상과 마음을 전한 유튜브 채널은?",
+    "choices": [
+      "귤멍",
+      "보람씨야",
+      "연지구"
+    ],
+    "answer": 0,
+    "explanation": "남규리는 귤멍에서 일상과 마음을 팬들에게 전했습니다.",
+    "source": "https://www.youtube.com/watch?v=D8XBjkcX7Z0",
+    "album": "see-you-again"
+  },
+  "song:activity-reunion-show": {
+    "question": "2020년 원년 멤버 세 사람이 함께 선 재회 방송은?",
+    "choices": [
+      "놀면 뭐하니?",
+      "불후의 명곡",
+      "슈가맨3"
+    ],
+    "answer": 2,
+    "explanation": "2020년 2월 21일, 씨야 원년 멤버 세 사람은 JTBC 슈가맨3에서 함께 노래했습니다.",
+    "source": "https://tv.jtbc.co.kr/clip/pr10011122/pm10055652/vo10354827/view",
+    "album": "see-you-again"
+  },
+  "song:activity-pre-release": {
+    "question": "2026년 정규 4집에 앞서 먼저 팬들을 만난 노래는?",
+    "choices": [
+      "Roller Coaster",
+      "그럼에도, 우린",
+      "Stay"
+    ],
+    "answer": 1,
+    "explanation": "‘그럼에도, 우린’은 2026년 정규 4집에 앞서 공개된 곡입니다. 이후 First, Again에도 보컬곡과 반주 버전이 실렸어요.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "album": "still-here"
+  },
+  "song:activity-anniversary": {
+    "question": "First, Again이 기념하는 씨야의 데뷔 주년은?",
+    "choices": [
+      "20주년",
+      "15주년",
+      "25주년"
+    ],
+    "answer": 0,
+    "explanation": "First, Again은 데뷔 20주년을 기념한 정규 4집입니다. 타이틀곡 ‘Stay’를 포함해 보컬곡 9개와 반주곡 2개가 담겼습니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "album": "first-again"
+  },
+  "song:activity-album-writing": {
+    "question": "First, Again 앨범 소개에서 세 사람의 참여를 강조한 작업은?",
+    "choices": [
+      "앨범 재킷 직접 촬영",
+      "전곡 오케스트라 지휘",
+      "작사·작곡"
+    ],
+    "answer": 2,
+    "explanation": "First, Again 앨범 소개는 세 멤버의 작사·작곡 참여를 강조합니다.",
+    "source": "https://www.melon.com/album/detail.htm?albumId=13391243&ref=copyurl&snsGate=Y",
+    "album": "first-again"
+  },
+  "song:activity-yeonji-dmc": {
+    "question": "김연지의 2018 DMC 페스티벌 무대를 다시 찾는다면, 어떤 공연명을 검색하면 될까요?",
+    "choices": [
+      "복면가왕 더 위너",
+      "나는 가수다",
+      "불후의 명곡"
+    ],
+    "answer": 0,
+    "explanation": "김연지는 2018 DMC 페스티벌의 복면가왕 더 위너 무대에 섰습니다.",
+    "source": "https://www.youtube.com/watch?v=VX4z0syPoWw",
+    "album": "see-you-again"
+  },
+  "song:activity-gyuri-49": {
+    "question": "남규리의 2011년 연기 활동을 돌아볼 때 만나는 드라마는?",
+    "choices": [
+      "카이로스",
+      "49일",
+      "붉은 달 푸른 해"
+    ],
+    "answer": 1,
+    "explanation": "남규리는 2011년 드라마 49일에 출연했습니다.",
+    "source": "https://www.bntnews.co.kr/article/view/bnt201105200353",
+    "album": "see-you-again"
+  }
+}

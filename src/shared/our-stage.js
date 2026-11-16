@@ -172,7 +172,7 @@ function createModel(testMode=false) {
     if(!subset(s.flags,flags)||!s.tracks||!ids.every(id=>subset(s.tracks[id],[0,1,2])))return false;
     if(!subset(s.albums,albums.slice(1).map(a=>a.id)))return false;
     if(!s.albums.every((id,i)=>id===albums[i+1].id&&albumUnlocked(s,albums[i].id)&&albumComplete(s,albums[i].id)))return false;
-    if(!subset(s.collected,ids)||!s.collected.includes('scent')||!s.collected.every(id=>eligible(s,id))||!subset(s.proofs,Object.keys(challenges))||!s.notes||typeof s.notes!=='object'||Array.isArray(s.notes)||!Object.entries(s.notes).every(([k,v])=>k.startsWith('story:')&&challenges[k]&&typeof v==='string'&&v.trim().length>0&&v.length<=200))return false;
+    if(!subset(s.collected,ids)||!s.collected.includes('scent')||!s.collected.every(id=>(limits.eligible||eligible)(s,id))||!subset(s.proofs,Object.keys(challenges))||!s.notes||typeof s.notes!=='object'||Array.isArray(s.notes)||!Object.entries(s.notes).every(([k,v])=>k.startsWith('story:')&&challenges[k]&&typeof v==='string'&&v.trim().length>0&&v.length<=200))return false;
     if(!ids.every(id=>!s.tracks[id].length||open(s,id)))return false;
     const job=j=>j&&ids.includes(j.track)&&open(s,j.track)&&[0,1,2].includes(j.lesson)&&!s.tracks[j.track].includes(j.lesson);
     if(s.active!==null&&(!job(s.active)||!Number.isSafeInteger(s.active.end)||s.active.end<0))return false;

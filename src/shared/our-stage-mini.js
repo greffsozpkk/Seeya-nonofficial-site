@@ -1,9 +1,9 @@
 'use strict';
 // Local game economy. Limits survive reloads; this is not a server anti-cheat system.
-module.exports=function(testMode=false){
+module.exports=function(testMode=false,customBank=null){
  const cooldown=testMode?60000:900000, dailyLimit=6;
  const games=[{id:'quiz',name:'노래 단서 퀴즈',description:'곡과 앨범의 단서를 보고 세 문제를 풀어요.',maxReward:15},{id:'rhythm',name:'응원 리듬 맞추기',description:'노래에 맞춰 다가오는 빛이 중앙에 닿으면 눌러요.',maxReward:16}];
- const bank={...require('../data/our-stage-challenges.json'),...require('../data/our-stage-journey-challenges.json')};
+ const bank=customBank||{...require('../data/our-stage-challenges.json'),...require('../data/our-stage-journey-challenges.json')};
  const pool=Object.keys(bank).filter(k=>k.startsWith('song:'));
  const fresh=()=>({earned:0,day:null,plays:0,next:{quiz:0,rhythm:0},active:null});
  const time=n=>Number.isSafeInteger(n)&&n>=0&&n<253402268399999;

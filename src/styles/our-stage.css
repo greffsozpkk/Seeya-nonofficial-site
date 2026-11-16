@@ -415,3 +415,17 @@
 @keyframes stage-word-rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
 @media(max-width:600px){#ourStage .growth-stats .stat-description,#ourStage .growth-stats small{grid-column:1/3}#ourStage .pairs-grid{gap:6px}#ourStage .pair-face b{font-size:12px}#ourStage .pair-face small{font-size:10px}#ourStage .pair-back small{font-size:7px;letter-spacing:0}#ourStage .pair-back,#ourStage .pair-face{border-radius:8px}}
 @media(prefers-reduced-motion:reduce){#ourStage .pair-inner{transition:none}#ourStage .word-reveal span{animation:none}}
+
+/* Mobile practice-first game: readable rows, concise actions, no growth dashboard. */
+#ourStage .coin-income-list{list-style:none;padding:0;margin:14px 0;display:grid;gap:0}
+#ourStage .coin-income-list li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #eadde4;font-size:15px;line-height:1.6}
+#ourStage .coin-income-list b{white-space:nowrap;color:#753951}
+#ourStage .album-concert-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#ourStage .album-concert-card{border:1px solid #e3cdd9;border-radius:12px;background:#fffafd;padding:16px;margin:14px 0}
+#ourStage .album-concert-card h3{margin:0 0 7px;font-size:17px;line-height:1.4}#ourStage .album-concert-card small{font-size:13px;line-height:1.6;display:block;color:#685361}
+#ourStage .album-concert-actions,#ourStage .ticket-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+#ourStage .concert-letter-invite{border-top:1px solid #e6d5df;margin:20px 0;padding:16px 0;text-align:center}#ourStage .concert-letter-invite a{display:inline-block;border-radius:8px;background:#874461;color:white;padding:13px 20px;font-weight:700}
+#ourStage .outfit-current details{min-width:0}#ourStage .outfit-current details span{display:block;font-size:13px;line-height:1.7;margin-top:8px}
+@media(max-width:600px){#ourStage .album-concert-list{grid-template-columns:1fr}#ourStage .album-concert-card{margin:4px 0;padding:14px}#ourStage .song-row{gap:9px;padding:14px 10px}#ourStage .song-row h3{font-size:16px;line-height:1.5}#ourStage .song-row small{font-size:13px;line-height:1.6}#ourStage .song-row button{padding:10px;min-height:44px}#ourStage .ticket-list{display:grid;grid-template-columns:1fr 1fr}#ourStage .ticket-list button{white-space:normal}#ourStage .test-timing{font-size:12px;padding:9px 12px}}
+
+@media(max-width:600px){#ourStage .game-back{margin-bottom:12px}#ourStage .os-heading{gap:8px;margin-bottom:12px}#ourStage .os-heading h1{font-size:29px;margin:3px 0 5px}#ourStage .os-heading p{margin:4px 0 8px}#ourStage .os-heading>.quiet,#ourStage .test-tools-button{padding:8px 12px}#ourStage .os-chapter{gap:5px;padding:10px 12px}#ourStage .os-chapter .eyebrow{margin-bottom:0}#ourStage .os-chapter>strong{font-size:16px}#ourStage .studio-next{padding:14px;gap:10px}#ourStage .studio-next p{margin:4px 0 0;font-size:13px}#ourStage .studio-top{padding:14px}#ourStage .studio-top h2{font-size:20px}#ourStage .studio-top .eyebrow{display:none}#ourStage .studio-coins{padding:14px}#ourStage .studio-coins p{display:none}#ourStage .practice>small{display:block;line-height:1.7}#ourStage .studio-games{margin-top:18px}#ourStage .song-row{display:grid;grid-template-columns:25px minmax(0,1fr) auto;flex-wrap:nowrap}#ourStage .song-row>button{width:auto;margin-left:0}#ourStage .song-row>div{min-width:0}}
