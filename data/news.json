@@ -147,13 +147,13 @@
       "description": "씨야 이보람, ‘골때녀’ 4강 질주 이끈 축구 센스 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-11-16T06:35:25.749840+00:00",
-  "lastCheckedAt": "2026-11-16T06:35:25.749840+00:00",
+  "updatedAt": "2026-11-16T07:10:24.840948+00:00",
+  "lastCheckedAt": "2026-11-16T07:10:24.840948+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-16T06:35:25.749840+00:00",
-    "남규리": "2026-11-16T06:35:25.749840+00:00",
-    "김연지": "2026-11-16T06:35:25.749840+00:00",
-    "이보람": "2026-11-16T06:35:25.749840+00:00"
+    "씨야": "2026-11-16T07:10:24.840948+00:00",
+    "남규리": "2026-11-16T07:10:24.840948+00:00",
+    "김연지": "2026-11-16T07:10:24.840948+00:00",
+    "이보람": "2026-11-16T07:10:24.840948+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-16T06:35:25.749840+00:00",
@@ -166,15 +166,15 @@
       "queries": 3,
       "succeeded": 3,
       "accepted": 106,
-      "changed": true,
-      "status": "changed"
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
       "accepted": 70,
-      "changed": true,
-      "status": "changed"
+      "changed": false,
+      "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
@@ -187,8 +187,8 @@
       "queries": 4,
       "succeeded": 4,
       "accepted": 51,
-      "changed": true,
-      "status": "changed"
+      "changed": false,
+      "status": "unchanged"
     }
   }
 }
