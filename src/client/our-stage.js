@@ -289,11 +289,11 @@ function management(){
 }
 function sync(){try{const next=store?.pull();if(next)s=next;saveNotice();}catch{say('다른 탭의 기록을 읽지 못했어요. 현재 화면의 기록은 유지합니다.');}}
 function handle(a,v){
- if(store?.dirty&&!['storage','export','save-retry','saved-confirm','saved-apply','restore-import'].includes(a)){saveNotice();return;}
+ if(store?.dirty&&!['storage','export','export-before-growth','save-retry','saved-confirm','saved-apply','restore-import'].includes(a)){saveNotice();return;}
  if(a==='save-retry'){if(save()){draw();say('저장했어요. 이제 계속 진행할 수 있어요.');}return;}
  if(a==='saved-confirm'){dialog('<h2>저장된 기록으로 돌아갈까요?</h2><p>아직 저장하지 못한 현재 변경은 사라집니다. 먼저 현재 기록을 백업해 주세요. 다른 탭에 저장된 기록은 유지됩니다.</p>'+button('현재 기록 백업','export')+button('취소','storage')+button('저장된 기록으로 돌아가기','saved-apply'));return;}
  if(a==='saved-apply'){s=store.discard()||M.fresh();close();draw();saveNotice();say('저장된 기록을 불러왔어요.');return;}
- if(blocked&&!['storage','export','import','import-confirm','reset','confirm-reset'].includes(a)){management();return;}
+ if(blocked&&!['storage','export','export-before-growth','import','import-confirm','reset','confirm-reset'].includes(a)){management();return;}
  if(testAction(a,v))return;
  if(a.startsWith('growth-')&&growthUI)return growthUI.handle(a,v);
  if(miniUI.handle(a,v))return;
@@ -374,7 +374,7 @@ function handle(a,v){
  save();draw();
 }
 async function locked(f,recovery=false){const run=async()=>{if(store?.dirty&&!recovery){saveNotice();return;}savingAction=true;try{return await f();}catch(e){if(e!==saveFailure)throw e;close();draw();saveNotice();}finally{savingAction=false;}};if(navigator.locks)await navigator.locks.request(key,run);else run();}
-root.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(el)locked(()=>{sync();if(!store?.dirty&&M.settle(s))save();handle(el.dataset.action,el.dataset.value);},true);});
+root.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(el)locked(()=>{sync();if(!store?.dirty&&M.settle(s))save();return handle(el.dataset.action,el.dataset.value);},true);});
 root.addEventListener('input',e=>{if(e.target.id==='concertQuery'){concertQuery=e.target.value;$('#concertRows').innerHTML=concertRows();}});
 root.addEventListener('change',e=>{if(['concertAlbum','concertKind'].includes(e.target.id)){if(e.target.id==='concertAlbum')concertAlbum=e.target.value;else concertKind=e.target.value;$('#concertRows').innerHTML=concertRows();return;}if(['cardMember','cardOwned'].includes(e.target.id)){if(e.target.id==='cardMember')cardMember=e.target.value;else cardOnlyOwned=e.target.checked;cardPage=0;draw();return;}if(e.target.dataset.member){const member=e.target.dataset.member,id=e.target.value,part=e.target.dataset.part,focus=e.target.id;locked(()=>{sync();if(M.equipPart(s,member,part,id)){if(preview[member]){delete preview[member][part];if(!Object.keys(preview[member]).length)delete preview[member];}}else if(M.canWearOutfit(s,id)){preview[member]??={};preview[member][part]=id;}save();draw();$('#'+focus)?.focus();});return;}if(e.target.id==='track'){track=e.target.value;draw();}if(e.target.id==='storyAlbum'){storyAlbum=e.target.value;if(storyFilter==='core')storyFilter='all';draw();$('#storyAlbum').focus();}});
 $('#stageFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>256000)throw Error();pendingImport=M.loadSave(await file.text());dialog('<h2>백업으로 교체할까요?</h2><p>현재 진행을 백업 파일의 내용으로 교체합니다. 교체 전 기록은 별도로 보관합니다.</p>'+button('취소','storage')+button('백업으로 교체','import-confirm','','primary'));}catch{if($('#saveNote'))$('#saveNote').textContent='이 게임의 유효한 백업 파일을 선택해 주세요.';}e.target.value='';};
