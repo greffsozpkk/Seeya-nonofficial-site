@@ -58334,5 +58334,34 @@
       "활동 기록"
     ],
     "note": "김연지가 참여한 미스레인보우 단체 무대입니다. 공식 클린 영상의 방송일 기준입니다."
+  },
+  {
+    "id": "discovered-1faa1e9897342716",
+    "date": "2026-11-16",
+    "addedAt": "2026-11-16T07:01:37.401000+00:00",
+    "updatedAt": "2026-11-16T07:01:37.401000+00:00",
+    "title": "이보람(Lee Boram) MBC라디오 2023년 잠깐만 캠페인ㅣ 2023.02.13~02.19",
+    "program": "",
+    "type": "radio",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "🐿람보바라기",
+      "url": "https://www.youtube.com/watch?v=zuHRLukuHbI",
+      "publishedDate": "2026-11-16",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2026-11-16",
+    "autoDiscovery": true
   }
 ]
