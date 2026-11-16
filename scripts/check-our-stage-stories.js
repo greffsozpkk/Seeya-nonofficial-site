@@ -15,7 +15,7 @@ for(const e of M.storyEntries){
  const s=structuredClone(full),before=s.proofs.length;
  assert(!M.answer(s,key,(q.answer+1)%q.choices.length));assert.equal(s.proofs.length,before);
  assert(M.answer(s,key,q.answer));assert(M.storyDone(s,e.id));assert(!M.answer(s,key,q.answer));
- assert(!M.cheer(s,key,'반복 보상'));assert(M.valid(s));assert.deepEqual(M.loadSave(JSON.stringify(s)),s);
+ const coins=M.coins(s);assert(M.cheer(s,key,'완료 후 응원'));assert.equal(M.coins(s),coins);assert(M.valid(s));assert.deepEqual(M.loadSave(JSON.stringify(s)),s);
  const note=structuredClone(full);
  assert(!M.cheer(note,key,' '));assert(!M.cheer(note,key,'x'.repeat(201)));
  assert(M.cheer(note,key,'<사진> 대신 마음을 남겨요'));assert(M.storyDone(note,e.id));assert(M.valid(note));

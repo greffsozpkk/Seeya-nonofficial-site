@@ -26,7 +26,7 @@ const old={...full,version:4};for(const k of ['purchases','gigs','equipped','sho
 const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,11);
 assert.deepEqual(migrated.collected,full.collected);assert.equal(M.coins(migrated),earned);
 const event=M.storyEntries[0];assert(M.cheer(migrated,'story:'+event.id,'좋아요'));
-assert.equal(M.coins(migrated),earned+8);assert(!M.cheer(migrated,'story:'+event.id,'다시'));
+assert.equal(M.coins(migrated),earned+8);assert(M.cheer(migrated,'story:'+event.id,'다시'));
 assert.equal(M.coins(migrated),earned+8);
 assert(M.equip(migrated,'br',M.albums[1].id));assert(M.equip(migrated,'gr',M.albums[2].id));
 assert.notEqual(migrated.equipped.br,migrated.equipped.gr);

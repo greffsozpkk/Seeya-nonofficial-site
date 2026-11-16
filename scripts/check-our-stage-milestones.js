@@ -7,7 +7,7 @@ for(const [album,stories]of Object.entries(M.albumStoryGates)){
  assert(M.valid(s));assert(M.storyAvailable(s,id));assert(!M.albumAvailable(s,album));assert(!M.unlockAlbum(s,album));
  assert(!M.eligible(s,M.albumById(album).tracks[0].id));
  const q=M.challenges['story:'+id];assert(!M.answer(s,'story:'+id,(q.answer+1)%q.choices.length));assert(!M.albumAvailable(s,album));
- assert(M.cheer(s,'story:'+id,'다음 무대도 응원해요'));const earned=M.coins(s);assert(!M.cheer(s,'story:'+id,'다시'));assert.equal(M.coins(s),earned);
+ assert(M.cheer(s,'story:'+id,'다음 무대도 응원해요'));const earned=M.coins(s);assert(M.cheer(s,'story:'+id,'다시'));assert.equal(M.coins(s),earned);
  const restored=M.loadSave(JSON.stringify(s));assert(M.albumAvailable(restored,album));assert(M.unlockAlbum(restored,album));assert(!M.unlockAlbum(restored,album));assert(M.valid(restored));
  // Story completion before the last track carries forward; no extra replay or reward.
  const early=structuredClone(before[album]),last=M.albums[index-1].tracks.at(-1).id;

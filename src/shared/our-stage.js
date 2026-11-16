@@ -145,14 +145,15 @@ function createModel(testMode=false) {
       if(!s.tracks[track].includes(lesson))s.tracks[track].push(lesson);
       if(ready(s,track)&&!s.setlist.includes(track))s.setlist.push(track);
       s.active=null;finished++;recover(s,end);
-      if(s.queue){const next=s.queue;s.queue=null;start(s,next,end);}
+      if(s.queue&&start(s,s.queue,end))s.queue=null;
     }
+    if(!s.active&&s.queue){const at=s.points>=5?s.energyAt:s.energyAt+timing.recoveryMs;if(at<=now){recover(s,at);if(start(s,s.queue,at)){s.queue=null;return finished+settle(s,now);}}}
     recover(s,now);return finished;
   }
   function train(s,track,lesson,now=Date.now()){
     if(!ids.includes(track)||!open(s,track)||!lessons[lesson]||s.tracks[track].includes(lesson))return false;
     const same=j=>j&&j.track===track&&j.lesson===lesson;
-    if(same(s.active)||same(s.queue)||s.queue)return false;
+    if(same(s.active)||s.queue)return false;
     const job={track,lesson};
     if(s.active){s.queue=job;return true;}
     return start(s,job,now);
@@ -172,10 +173,10 @@ function createModel(testMode=false) {
     if(!subset(s.albums,albums.slice(1).map(a=>a.id)))return false;
     if(!s.albums.every((id,i)=>id===albums[i+1].id&&albumUnlocked(s,albums[i].id)&&albumComplete(s,albums[i].id)))return false;
     if(!subset(s.collected,ids)||!s.collected.includes('scent')||!s.collected.every(id=>eligible(s,id))||!subset(s.proofs,Object.keys(challenges))||!s.notes||typeof s.notes!=='object'||Array.isArray(s.notes)||!Object.entries(s.notes).every(([k,v])=>k.startsWith('story:')&&challenges[k]&&typeof v==='string'&&v.trim().length>0&&v.length<=200))return false;
-    if(!subset(s.flags,flags)||!s.tracks||!ids.every(id=>subset(s.tracks[id],[0,1,2]))||!ids.every(id=>!s.tracks[id].length||open(s,id)))return false;
+    if(!ids.every(id=>!s.tracks[id].length||open(s,id)))return false;
     const job=j=>j&&ids.includes(j.track)&&open(s,j.track)&&[0,1,2].includes(j.lesson)&&!s.tracks[j.track].includes(j.lesson);
     if(s.active!==null&&(!job(s.active)||!Number.isSafeInteger(s.active.end)||s.active.end<0))return false;
-    if(s.queue!==null&&(!s.active||!job(s.queue)||(s.queue.track===s.active.track&&s.queue.lesson===s.active.lesson)))return false;
+    if(s.queue!==null&&(!job(s.queue)||(s.active&&s.queue.track===s.active.track&&s.queue.lesson===s.active.lesson)))return false;
     if(!storyEntries.every(e=>!storyDone(s,e.id)||storyAvailable(s,e.id)))return false;
     if(!subset(s.setlist,ids.filter(id=>ready(s,id)))||!(s.display===null||members.some(m=>m.id===s.display&&has(s,m.id))))return false;
     if(!s.daily||typeof s.daily!=='object'||Array.isArray(s.daily)||!Number.isInteger(s.daily.count)||s.daily.count<0||s.daily.count>1000000)return false;
@@ -231,9 +232,10 @@ function createModel(testMode=false) {
     if(key.startsWith('song:'))s.collected.push(key.slice(5));
     return true;
   }
+  const canCheer=(s,key)=>Boolean(challenges[key]&&key.startsWith('story:')&&(s.proofs.includes(key)||canChallenge(s,key)));
   function cheer(s,key,text){
     text=String(text||'').trim();
-    if(!key.startsWith('story:')||!canChallenge(s,key)||!text||text.length>200)return false;
+    if(!canCheer(s,key)||!text||text.length>200)return false;
     s.notes[key]=text;if(!s.proofs.includes(key))s.proofs.push(key);return true;
   }
 
@@ -248,7 +250,7 @@ function createModel(testMode=false) {
     const b=[
       {id:'first-practice',name:'첫 연습',earned:ids.some(id=>s.tracks[id].length),hint:'어떤 곡이든 한 번 연습',icon:0},
       {id:'first-stage',name:'첫 무대 포스터',earned:has(s,'first'),hint:'첫 무대 완료',icon:1},
-      {id:'three-voices',name:'세 개의 마이크',earned:voices(s)===3,hint:'멤버 카드 3장 수집',icon:3},
+      {id:'three-voices',name:'세 개의 마이크',earned:voices(s)===3,hint:'김연지 ‘가면 너머의 목소리’ · 남규리 ‘카메라 앞에서’ · 이보람 ‘또 다른 하모니’ 이야기 모두 간직하기',icon:3},
       {id:'reunion',name:'다시 같은 무대',earned:has(s,'reunion'),hint:'재회 이야기 완료',icon:4},
       {id:'ending',name:'우리의 불빛',earned:has(s,'ending'),hint:'첫 콘서트 완료',icon:5}
     ].map(x=>({...x,group:'이야기',kind:'activity'}));
@@ -272,7 +274,7 @@ function createModel(testMode=false) {
     return b;
   }
 
-  return {albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,train,claim,valid};
+  return {canCheer,albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,train,claim,valid};
 }
 module.exports=createModel();
 module.exports.forTest=()=>createModel(true);

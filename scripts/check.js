@@ -86,3 +86,5 @@ require('./check-our-stage-milestones');
 require('./check-our-stage-mask-badges');
 require('./check-our-stage-test-tools');
 require('./check-our-stage-song');
+
+require('./check-our-stage-review');

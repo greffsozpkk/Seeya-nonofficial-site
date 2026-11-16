@@ -1,10 +1,13 @@
 (function(){
 'use strict';
-const M=require('../shared/our-stage').forTest(),root=document.getElementById('ourStage');
+const isTest=location.pathname.replace(/\/$/,'')==='/game/our-stage/test';
+const M=isTest?require('../shared/our-stage').forTest():require('../shared/our-stage'),root=document.getElementById('ourStage');
 if(!root)return;
 const testTools=location.pathname.replace(/\/$/,'')==='/game/our-stage/test'?require('../shared/our-stage-test-tools')(M):null;
 const checkpointKey='seeya-our-stage-before-test-jump-v1';
 const key='seeya-our-stage-local-v1',$=q=>root.querySelector(q),art='/images/game/our-stage/';
+const optimizedImages=require('../data/our-stage-optimized-images.json');
+const optimized=html=>html.replace(/\/images\/game\/our-stage\/[^\s"'<>]+\.png/g,path=>optimizedImages[path]||path);
 let vcrUI=null;
 let activeChallenge=null,afterChallenge=null,returnFocus=null,blocked=false;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -16,12 +19,14 @@ try{const saved=localStorage.getItem(outfitKey);if(outfits.some(x=>x.id===saved)
 const styles=[...outfits,...M.shop],preview={},layers=require('../data/our-stage-layers.json');
 const styleId=(id,part='clothes')=>preview[id]?.[part]||(part==='hair'?s.hair:s.equipped)[id];
 const outfit=(id,part='clothes')=>styles.find(o=>o.id===styleId(id,part));
+let artSequence=0;
 const sprite=(id,override)=>{
+ const filterId='stage-sprite-'+(++artSequence);
  const clothing=override||outfit(id),hair=override||outfit(id,'hair'),head=layers[hair.id],body=layers[clothing.id],h=head.members[id],b=body.members[id];
  const scale=320/(h.chin-h.head[1]),hw=h.head[2]*scale,hh=h.head[3]*scale;
  const bh=320,bw=b.body[2]*bh/b.body[3],headX=(440-hw)/2,headY=25,bodyY=340;
  const part=(data,box,x,y,w,height)=>`<svg x="${x}" y="${y}" width="${w}" height="${height}" viewBox="${box.join(' ')}" overflow="hidden" preserveAspectRatio="none"><image href="${data.image}" width="${data.width}" height="${data.height}"/></svg>`;
- return `<svg class="member-sprite" viewBox="0 0 440 680" role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="crisp-${id}-${clothing.id}-${hair.id}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#crisp-${id}-${clothing.id}-${hair.id})"><g class="sprite-hair">${part({...head,image:head.headImage||head.image},h.head,headX,headY,hw,hh)}</g><g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g></g>${clothing.id==='practice'?nameTag(id):''}</svg>`;
+ return `<svg class="member-sprite" viewBox="0 0 440 680" role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="${filterId}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#${filterId})"><g class="sprite-hair">${part({...head,image:head.headImage||head.image},h.head,headX,headY,hw,hh)}</g><g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g></g>${clothing.id==='practice'?nameTag(id):''}</svg>`;
 };
 const portrait=id=>`<div class="member-crop">${sprite(id)}</div>`;
 const outfitLineup=o=>`<div class="outfit-sheet mapped-outfit" aria-label="${esc(o.name)} 멤버별 의상">${M.memberIds.map(id=>`<figure>${sprite(id,o)}<figcaption>${M.members.find(m=>m.id===id).name}</figcaption></figure>`).join('')}</div>`;
@@ -33,10 +38,11 @@ let wardrobeView='closet',shopMember='br',coinDay=M.kstDay();
 const headings=['연습실','노래','이야기','추억','공연','의상·배지'], icons=['♫','♬','▤','♡','✧','◇'];
 let decoratingCard=null,badgePage=0;
 let cardMember='all',cardKind='all',cardOnlyOwned=false,cardPage=0,showHeld=false;
+let concertQuery='',concertAlbum='all',concertKind='all',pendingImport=null;
 let scene=0,selectedAlbum='first-mind',badgeFilter='all',storyFilter='all',storyAlbum='all',track='scent',s=M.fresh(),warn='',showTimer,showing=false;
 function read(){const raw=localStorage.getItem(key);if(!raw)return M.fresh();return M.loadSave(raw);}
 let needsSaveMigration=false,legacyOutfitMigration=false;
-try{const oldVersion=JSON.parse(localStorage.getItem(key)||'null')?.version;needsSaveMigration=oldVersion<11;legacyOutfitMigration=oldVersion<5;s=read();if(s.active&&s.active.end>Date.now()+1000){s.active.end=Date.now()+1000;localStorage.setItem(key,JSON.stringify(s));}}catch{blocked=true;warn='저장 데이터를 읽을 수 없어요. 저장 관리에서 백업을 복원할 수 있어요.';}
+try{const oldVersion=JSON.parse(localStorage.getItem(key)||'null')?.version;needsSaveMigration=oldVersion<11;legacyOutfitMigration=oldVersion<5;s=read();if(isTest&&s.active&&s.active.end>Date.now()+1000){s.active.end=Date.now()+1000;localStorage.setItem(key,JSON.stringify(s));}}catch{blocked=true;warn='저장 데이터를 읽을 수 없어요. 저장 관리에서 백업을 복원할 수 있어요.';}
 try{
  const raw=localStorage.getItem(key);
  if(raw&&needsSaveMigration&&!blocked){
@@ -46,7 +52,11 @@ try{
 }catch{}
 const title=id=>M.songs.find(x=>x.id===id).title;
 const has=id=>M.has(s,id), ready=id=>M.ready(s,id), open=id=>M.open(s,id),pct=id=>M.percent(s,id);
-function say(msg){$('#feedback').textContent=msg;}
+function say(msg){$('#feedback').textContent=store?.dirty?saveMessage():msg;}
+let store;try{store=require('./our-stage-storage')({storage:localStorage,key,load:M.loadSave});}catch{blocked=true;}
+function saveMessage(){return store?.conflict?'다른 탭의 기록과 충돌했어요. 현재 기록을 백업한 뒤 저장 관리에서 선택해 주세요.':'변경 내용을 저장하지 못했어요. 이 화면을 유지하고 저장을 재시도하거나 백업해 주세요.';}
+function saveNotice(){const box=$('#saveAlert');if(!box)return;box.hidden=!store?.dirty;if(store?.dirty){box.innerHTML='<p>'+saveMessage()+'</p>'+button('저장 재시도','save-retry')+button('현재 기록 백업','export')+button('저장 관리','storage');say('');}}
+let savingAction=false;const saveFailure=new Error('stage-save-failed');
 const albumSize=M.songs.length, albumBadge='첫 번째 앨범을 펼치다';
 
 let lastStories=new Set(M.storyEntries.filter(e=>M.storyAvailable(s,e.id)).map(e=>e.id));
@@ -61,7 +71,7 @@ function updateCollectionNotice(){
  if(added.length||newStories.length||addedCards.length){const notice=$('#albumNotice');notice.textContent=(addedCards.length?'도트 카드 '+addedCards.length+'장을 얻었어요. ':'')+(added.length?'✦ '+added.map(b=>b.name).join(' · ')+' 배지를 얻었어요. ':'')+(newStories.length?'이야기 '+newStories.length+'개가 열렸어요. 이야기 탭에서 만나보세요.':'');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>{notice.textContent='';},8000);}
 }
 
-function save(){if(blocked)return;updateCollectionNotice();try{localStorage.setItem(key,JSON.stringify(s));}catch{warn='이 브라우저에서 자동 저장할 수 없어요. 저장 관리에서 백업을 내려받아 주세요.';}if(warn)say(warn);}
+function save(){if(blocked||!store){warn='저장소를 사용할 수 없어요. 현재 화면을 닫지 말고 백업해 주세요.';say(warn);if(savingAction)throw saveFailure;return false;}const ok=store.write(s);saveNotice();if(!ok){if(savingAction)throw saveFailure;return false;}warn='';updateCollectionNotice();return true;}
 function button(label,action,value='',kind='',disabled=false){return `<button class="${kind}" data-action="${action}" data-value="${value}" ${disabled?'disabled':''}>${label}</button>`;}
 function link(label,url){return `<a target="_blank" rel="noopener noreferrer" href="${url}">${label} ↗</a>`;}
 function panel(body,cls=''){return `<article class="panel ${cls}">${body}</article>`;}
@@ -75,6 +85,7 @@ function goal(){
  const next=M.albums.find(a=>M.albumAvailable(s,a.id));if(next)return ['다음 앨범으로',next.name+'을 해금하고 새 의상과 배지를 받아요.','앨범 해금하기','unlock-album',next.id];
  for(const a of M.albums.slice(1)){const gate=M.albumRequirements(s,a.id);if(!M.albumUnlocked(s,a.id)&&gate[0].done){const todo=gate.find(r=>!r.done);if(todo)return [a.id==='still-here'?'다시 함께하기 전, 각자의 시간':'다음 무대 전에 간직할 이야기',todo.label+' 이야기를 간직하면 '+a.name+'으로 이어져요.','이야기 이어가기',todo.action,todo.value];}}
  const current=M.albums.find(a=>M.albumUnlocked(s,a.id)&&!M.albumComplete(s,a.id));if(current)return [current.name+' 수집 중','앞 트랙을 한 번 연습하면 다음 곡이 열려요.','앨범 펼치기','album-view',current.id];
+ if(M.albumComplete(s,'first-again')&&!M.finaleReady(s)&&!s.finale){const vocals=M.albumById('first-again').tracks.filter(t=>!t.instrumental),n=vocals.filter(t=>ready(t.id)).length,next=vocals.find(t=>!ready(t.id));return ['피날레를 준비하는 중',`준비도 100%인 4집 보컬곡 ${n} / 2곡 · 수집과 공연 준비는 달라요.`,'피날레 곡 연습하기','pick',next.id];}
  if(M.finaleReady(s)&&!s.finale)return ['마지막 장을 빛내는 객석','4집의 노래를 모았어요. 응원봉이 가득한 피날레를 열어보세요.','4집 피날레 열기','perform','finale'];
  return ['공연이 끝난 뒤','무대의 기억은 남아 있어요. 카드북에서 대표 카드를 골라 보세요.','카드북 열기','tab','3'];
 }
@@ -82,9 +93,9 @@ function clock(){return s.active?`${Math.max(0,Math.ceil((s.active.end-Date.now(
 function studio(){
  const g=goal(),m=M.memberCards(s).find(x=>x.id===s.displayCard&&x.earned),waiting=M.songs.filter(x=>M.eligible(s,x.id)&&!open(x.id));
  const status=s.active?M.lessons[s.active.lesson].title+' 중':'오늘도 한 곡씩, 함께 맞춰가요.';
- return `<div class="studio-layout"><article class="studio-board">
- <header class="studio-top"><div>${mark('REHEARSAL ROOM')}<h2>세 사람의 연습실</h2></div><div class="resources"><span>연습 포인트 <b>${s.points}<small> / 100</small></b></span><span>모은 응원 <b>♡ ${M.cheers(s)}</b></span><span>모은 노래 <b>${M.count(s)}<small> / ${albumSize}</small></b></span></div></header>
- <div class="room${s.active?' is-practicing':''}${m?' has-keepsake':''}"><p class="room-status" role="status">${s.active?'♫ ':''}${status}</p>${m?`<button class="wall-card" data-action="card-detail" data-value="${m.id}" aria-label="대표 카드 펼치기 · ${M.members.find(x=>x.id===m.member).name} · ${esc(m.title)}">${cardFace(m)}</button>`:''}<div class="pixel-trio">${['br','gr','yj'].map(id=>`<div class="pixel-member member-${id}">${sprite(id)}</div>`).join('')}</div><div class="member-labels"><span>이보람</span><span>남규리</span><span>김연지</span></div></div>
+ return `<section class="studio-next"><div><small>다음 할 일</small><h3>${g[0]}</h3><p>${g[1]}</p></div>${button(g[2],g[3],g[4],'primary')}</section><div class="studio-games">${button('노래 퀴즈','mini-open','quiz')}${button('응원 리듬','mini-open','rhythm')}<small>코인 보상 · 오늘 남은 도전 ${Math.max(0,M.mini.dailyLimit-M.mini.used(s.mini,Date.now()))} / ${M.mini.dailyLimit}회</small></div><div class="studio-layout"><article class="studio-board">
+ <header class="studio-top"><div>${mark('REHEARSAL ROOM')}<h2>세 사람의 연습실</h2></div><div class="resources"><span>연습 포인트 <b id="studioPoints">${s.points}<small> / 100</small></b></span><span>모은 응원 <b>♡ ${M.cheers(s)}</b></span><span>모은 트랙 <b>${M.count(s)}<small> / ${albumSize}</small></b></span></div></header>
+ <details class="progress-help"><summary>수집·준비도·응원은 무엇인가요?</summary><p>모은 트랙은 앨범별 수집 칸이에요. 재수록·반주 트랙도 포함됩니다. 준비도 100%는 해당 곡의 연습 3종을 마쳤다는 뜻이에요.</p><p>모은 응원은 연습과 첫 여정 이야기의 누적 기록이에요. 공연의 응원 버튼은 연출만 바꾸며 수치나 코인을 올리지 않아요. 무대 코인은 의상·헤어 구매에 사용해요.</p></details><div class="room${s.active?' is-practicing':''}${m?' has-keepsake':''}"><p class="room-status" role="status">${s.active?'♫ ':''}${status}</p>${m?`<button class="wall-card" data-action="card-detail" data-value="${m.id}" aria-label="대표 카드 펼치기 · ${M.members.find(x=>x.id===m.member).name} · ${esc(m.title)}">${cardFace(m)}</button>`:''}<div class="pixel-trio">${['br','gr','yj'].map(id=>`<div class="pixel-member member-${id}">${sprite(id)}</div>`).join('')}</div><div class="member-labels"><span>이보람</span><span>남규리</span><span>김연지</span></div></div>
  <div class="studio-coins"><div><small>무대 코인</small><strong>${M.coins(s)} <span>코인</span></strong><p>${s.shopJob?'활동 진행 중 · '+M.shopJobById(s.shopJob.kind).name:'이야기를 모두 마쳐도, 코인은 계속 모을 수 있어요.'}</p></div>${button('코인 모으기','open-coins','','primary')}</div><div class="outfit-current"><span>${esc(outfitSummary())}</span>${button('의상 바꾸기','tab','5','link')}</div>${practice()}${m?`<p class="display-card">벽에 전시 중 · ${M.members.find(x=>x.id===m.member).name} · ${esc(m.title)} ${button('카드북 열기','tab','3','link')}</p>`:''}</article>
  <div class="studio-followup">${panel(`<div class="line"><div>${mark('OUR AUDIENCE')}<h3>${M.albumById(selectedAlbum).name}의 객석</h3></div><b>${M.albumCount(s,selectedAlbum)} / ${M.albumById(selectedAlbum).tracks.length}</b></div><div class="audience" aria-label="${M.albumCount(s,selectedAlbum)}개 구역 점등">${M.albumById(selectedAlbum).tracks.map(x=>`<i class="${open(x.id)?'on':''}" title="${x.title}"></i>`).join('')}</div><small>곡을 모을 때마다 객석에 하나씩 불이 켜져요.</small>`)}
  ${panel(`${mark('NEXT CHAPTER')}<h2>${waiting.length?'새로운 노래가 기다려요':g[0]}</h2><p>${waiting.length?`${waiting[0].title}의 조건을 달성했어요.<br>짧은 퀴즈를 풀고 노래를 모아보세요.`:g[1]}</p>${waiting.length?button('새 노래 만나기','challenge','song:'+waiting[0].id,'primary'):button(g[2],g[3],g[4],'primary')}`,'next-chapter')}</div></div>`;
@@ -92,7 +103,7 @@ function studio(){
 function practice(){
  const lessonButtons=M.lessons.map((l,i)=>{const done=s.tracks[track].includes(i),active=s.active?.track===track&&s.active.lesson===i,queued=s.queue?.track===track&&s.queue.lesson===i;
  return button(`${l.title}<small>${done?'완료':active?'연습 중':queued?'예약됨':`${s.active?'예약':'시작'} · ${l.seconds}초 · +${l.gain}%`}</small>`,'train',String(i),'lesson',done||active||queued||!!s.queue||(!s.active&&s.points<5));}).join('');
- return panel(`${mark('PRACTICE')}<div class="line"><h2>오늘의 연습</h2><select id="track" aria-label="연습할 곡">${M.songs.filter(x=>open(x.id)).map(x=>`<option value="${x.id}" ${track===x.id?'selected':''}>${x.title} · ${M.songAlbum(x.id).name}</option>`)}</select></div><div class="line"><b>${title(track)}</b><b>${pct(track)}%</b></div>${bars(pct(track))}<div class="lessons">${lessonButtons}</div><small>연습 한 번에 5포인트 · 1초마다 5포인트 회복 · 다음 연습 1개 예약 가능</small><div class="queue">${s.active?`진행 중 · ${title(s.active.track)} / ${M.lessons[s.active.lesson].title} <b id="clock">${clock()}</b>`:'진행 중인 연습이 없어요.'}${s.queue?`<br>다음 · ${title(s.queue.track)} / ${M.lessons[s.queue.lesson].title} ${button('예약 취소','cancel','','link')}`:''}</div>`,'practice');
+ return panel(`${mark('PRACTICE')}<div class="line"><h2>오늘의 연습</h2><select id="track" aria-label="연습할 곡">${M.songs.filter(x=>open(x.id)).map(x=>`<option value="${x.id}" ${track===x.id?'selected':''}>${x.title} · ${M.songAlbum(x.id).name}</option>`)}</select></div><div class="line"><b>${title(track)}</b><b>${pct(track)}%</b></div>${bars(pct(track))}<div class="lessons">${lessonButtons}</div><small>연습 한 번에 5포인트 · ${M.timing.recoveryMs/1000}초마다 5포인트 회복 · 다음 연습 1개 예약 가능</small><div class="queue">${s.active?`진행 중 · ${title(s.active.track)} / ${M.lessons[s.active.lesson].title} <b id="clock">${clock()}</b>`:'진행 중인 연습이 없어요.'}${s.queue?`<br>${s.active?'다음':'포인트 회복 대기 중'} · ${title(s.queue.track)} / ${M.lessons[s.queue.lesson].title} ${button('예약 취소','cancel','','link')}`:''}</div>`,'practice');
 }
 
 function albumChecklist(id){
@@ -129,20 +140,21 @@ function badgeEditor(c){
 function cardDetail(id){const c=M.memberCards(s).find(c=>c.id===id);if(!c)return;dialog(`${mark('MEMBER CARD')}<h2>${M.members.find(m=>m.id===c.member).name} · ${esc(c.title)}</h2>${cardFace(c)}<p>${esc(c.note||'')}</p><p>${c.earned?'카드북에 간직했어요.':esc(c.hint)}</p><div class="card-detail-actions">${button(s.displayCard===c.id?'연습실 벽에 전시 중':'연습실 벽에 전시','display-card',c.id,'primary',!c.earned||s.displayCard===c.id)}${c.earned?button('배지로 꾸미기','decorate-card',c.id):''}${button('카드북으로','tab','3')}</div>${decoratingCard===id&&c.earned?badgeEditor(c):''}`);}
 function refreshCardEditor(focusValue){const top=$('#stageModal').scrollTop;cardDetail(decoratingCard);$('#stageModal').scrollTop=top;if(focusValue)$('#modalBody .badge-picker [data-value="'+focusValue+'"]')?.focus({preventScroll:true});}
 function memories(){
- const notes=Object.entries(s.notes).map(([id,text])=>`<li><b>${id==='story:album'?'첫 앨범':id==='story:first'?'첫 무대':id==='story:ending'?'우리의 콘서트':id==='story:reunion'?'재회의 기억':M.members.find(m=>m.id===id.slice(6))?.name||M.storyById(id.slice(6))?.title||'씨야'}에게</b><p>${esc(text)}</p></li>`).join('');
+ const notes=Object.entries(s.notes).map(([id,text])=>`<li><b>${id==='story:album'?'첫 앨범':id==='story:first'?'첫 무대':id==='story:ending'?'우리의 콘서트':id==='story:reunion'?'재회의 기억':M.members.find(m=>m.id===id.slice(6))?.name||M.storyById(id.slice(6))?.title||'씨야'}에게</b><p>${esc(text)}</p>${noteButton(id.slice(6))}</li>`).join('');
  const all=M.memberCards(s),filtered=all.filter(c=>(cardMember==='all'||c.member===cardMember)&&(cardKind==='all'||c.kind===cardKind)&&(!cardOnlyOwned||c.earned)),pages=Math.max(1,Math.ceil(filtered.length/12));cardPage=Math.min(cardPage,pages-1);
- return `${mark('MEMORY BOOK')}<h2>멤버 도트 카드북</h2><p>앨범을 열면 멤버 카드 3장, 이야기를 간직하면 특별한 활동 카드가 모여요.<br>카드의 모습은 그 시절 그대로 간직됩니다.</p><div class="line"><strong>${all.filter(c=>c.earned).length} / ${all.length}장 수집</strong><label><input id="cardOwned" type="checkbox" ${cardOnlyOwned?'checked':''}> 모은 카드만</label></div><div class="cardbook-tools"><label>멤버 <select id="cardMember">${[['all','전체'],...M.memberIds.map(id=>[id,M.members.find(m=>m.id===id).name])].map(([id,n])=>`<option value="${id}" ${cardMember===id?'selected':''}>${n}</option>`).join('')}</select></label><div class="badge-filters">${[['all','전체'],['album','앨범'],['story','이야기'],['special','피날레']].map(([id,n])=>button(n,'card-kind',id,cardKind===id?'primary':'')).join('')}</div></div><div class="cardbook-grid">${filtered.slice(cardPage*12,cardPage*12+12).map(c=>`<article>${cardFace(c)}<p class="card-condition">${c.earned?'획득 완료':esc(c.hint)}</p>${button(c.earned?'카드 펼치기':'획득 방법 보기','card-detail',c.id)}</article>`).join('')||'<p>아직 모은 카드가 없어요. 앨범의 첫 페이지를 열어보세요.</p>'}</div><nav class="card-pagination" aria-label="카드북 페이지">${button('이전','card-page',String(cardPage-1),'',cardPage===0)}<span>${cardPage+1} / ${pages}</span>${button('다음','card-page',String(cardPage+1),'',cardPage>=pages-1)}</nav>${notes?panel(`<h3>그때 남긴 응원</h3><ul class="saved-cheers">${notes}</ul>`):''}${badgeShelf()}`;
+ return `${mark('MEMORY BOOK')}<h2>멤버 도트 카드북</h2><p>앨범을 열면 멤버 카드 3장, 이야기를 간직하면 특별한 활동 카드가 모여요.<br>카드의 모습은 그 시절 그대로 간직됩니다.</p><div class="line"><strong>${all.filter(c=>c.earned).length} / ${all.length}장 수집</strong><label><input id="cardOwned" type="checkbox" ${cardOnlyOwned?'checked':''}> 모은 카드만</label></div><div class="cardbook-tools"><label>멤버 <select id="cardMember">${[['all','전체'],...M.memberIds.map(id=>[id,M.members.find(m=>m.id===id).name])].map(([id,n])=>`<option value="${id}" ${cardMember===id?'selected':''}>${n}</option>`).join('')}</select></label><div class="badge-filters">${[['all','전체'],['album','앨범'],['story','이야기'],['special','피날레']].map(([id,n])=>button(n,'card-kind',id,cardKind===id?'primary':'')).join('')}</div></div><div class="cardbook-grid">${filtered.slice(cardPage*12,cardPage*12+12).map(c=>`<article>${cardFace(c)}<p class="card-condition">${c.earned?'획득 완료':esc(c.hint)}</p>${button(c.earned?'카드 펼치기':'획득 방법 보기','card-detail',c.id)}</article>`).join('')||'<p>아직 모은 카드가 없어요. 앨범의 첫 페이지를 열어보세요.</p>'}</div><nav class="card-pagination" aria-label="카드북 페이지">${button('이전','card-page',String(cardPage-1),'',cardPage===0)}<span>${cardPage+1} / ${pages}</span>${button('다음','card-page',String(cardPage+1),'',cardPage>=pages-1)}</nav>${panel('<h3>간직한 이야기에 응원 남기기</h3><div class="stack">'+s.proofs.filter(k=>k.startsWith('story:')).map(k=>button(esc(M.storyById(k.slice(6))?.title||M.members.find(m=>m.id===k.slice(6))?.title||({'first':'첫 무대','album':'첫 앨범','reunion':'하나로 모인 기록','ending':'우리의 콘서트'}[k.slice(6)]||'이야기')),'cheer',k)).join('')+'</div>')}${notes?panel(`<h3>그때 남긴 응원</h3><ul class="saved-cheers">${notes}</ul>`):''}${badgeShelf()}`;
 }
 
 const badgeArt=require('../data/our-stage-badge-art.json');
 const badgeImage=badge=>{
+ const filterId='stage-badge-'+(++artSequence);
  const standalone=badgeArt.badges[badge.id].image;
  if(standalone)return `<img class="pixel-badge unique-badge" src="${standalone}" alt="${esc(badge.name)} 배지" data-badge-art="${badge.id}">`;
  const entry=badgeArt.badges[badge.id],source=entry.logo?badgeArt.logoSheets[entry.sheet]:badgeArt.sheets[entry.sheet];
  const logo=entry.logo,box=logo?.box;
  const lettering=logo?`<image class="official-badge-logo" href="${art}${logo.tone==='light'?'badge-logo-light.svg':'card-logo.svg'}" x="${box[0]}" y="${box[1]}" width="${box[2]}" height="${box[3]}"/>`:'';
  const preserved=(entry.preserve||[]).map(b=>`<svg x="${b[0]}" y="${b[1]}" width="${b[2]}" height="${b[3]}" viewBox="${b.join(' ')}" overflow="hidden"><image href="${badgeArt.sheets[entry.sheet]}" width="1536" height="1024"/></svg>`).join('');
- return `<svg class="pixel-badge unique-badge" viewBox="0 0 256 256" role="img" aria-label="${esc(badge.name)} 배지" data-badge-art="${entry.sheet}:${entry.index}"><defs><filter id="badge-crisp-${badge.id}"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><svg width="256" height="256" viewBox="${entry.box.join(' ')}" overflow="hidden"><image href="${source}" width="1536" height="1024" ${entry.logo?'filter="url(#badge-crisp-'+badge.id+')"':''}/>${lettering}${preserved}</svg></svg>`;
+ return `<svg class="pixel-badge unique-badge" viewBox="0 0 256 256" role="img" aria-label="${esc(badge.name)} 배지" data-badge-art="${entry.sheet}:${entry.index}"><defs><filter id="${filterId}"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><svg width="256" height="256" viewBox="${entry.box.join(' ')}" overflow="hidden"><image href="${source}" width="1536" height="1024" ${entry.logo?'filter="url(#'+filterId+')"':''}/>${lettering}${preserved}</svg></svg>`;
 };
 function badgeShelf(){
  const all=M.badges(s),filtered=all.filter(b=>badgeFilter==='all'||badgeFilter==='earned'&&b.earned||badgeFilter==='album'&&b.group==='앨범'||badgeFilter==='activity'&&b.group!=='앨범');
@@ -154,9 +166,10 @@ const storyArt=(i,cls='story-tile')=>`<svg class="${cls}" viewBox="${i%4*450+3} 
 function entryArt(e){
  return `<div class="timeline-art scene-art"><img src="${e.image}" alt="${esc(e.title)} 도트 삽화" loading="lazy"></div>`;
 }
+function noteButton(id){const key='story:'+id;return M.canCheer(s,key)?button(s.notes[key]?'응원 수정하기':'응원 남기기','cheer',key,'quiet'):'';}
 function timeline(id){
  const e=M.storyById(id);if(!e||!M.storyAvailable(s,id))return;
- dialog(`${mark((e.kind==='album'?'ALBUM STORY':'SIDE EVENT')+' · '+e.date)}<span class="story-subject">${esc(e.subject)}</span><h2>${esc(e.title)}</h2>${entryArt(e)}<p class="private-note">${esc(e.illustrationNote||'기록을 바탕으로 재구성한 도트 삽화입니다.')} ${e.wardrobeSource?link('의상 참고 자료',e.wardrobeSource):''}</p><div class="story-prose">${e.body.map(t=>`<p>${esc(t)}</p>`).join('')}</div>${link('원본 기록 확인',e.source)}${e.contextSource?link('관련 인터뷰·보도 확인',e.contextSource):''}${e.identitySource?link('가면의 주인공 확인',e.identitySource):''}${e.badgeName?'<p class="collected-note">완료 보상 · '+esc(e.badgeName)+' 배지</p>':''}<hr>${M.storyDone(s,id)?'<p class="collected-note">이 이야기를 추억에 간직했어요.</p>':button('이야기 한 조각 풀기','challenge','story:'+id,'primary')}${button('이 시기의 이야기 보기','stories-album',e.album)}`);
+ dialog(`${mark((e.kind==='album'?'ALBUM STORY':'SIDE EVENT')+' · '+e.date)}<span class="story-subject">${esc(e.subject)}</span><h2>${esc(e.title)}</h2>${entryArt(e)}<p class="private-note">${esc(e.illustrationNote||'기록을 바탕으로 재구성한 도트 삽화입니다.')} ${e.wardrobeSource?link('의상 참고 자료',e.wardrobeSource):''}</p><div class="story-prose">${e.body.map(t=>`<p>${esc(t)}</p>`).join('')}</div>${link('원본 기록 확인',e.source)}${e.contextSource?link('관련 인터뷰·보도 확인',e.contextSource):''}${e.identitySource?link('가면의 주인공 확인',e.identitySource):''}${e.badgeName?'<p class="collected-note">완료 보상 · '+esc(e.badgeName)+' 배지</p>':''}<hr>${M.storyDone(s,id)?'<p class="collected-note">이 이야기를 추억에 간직했어요.</p>':button('이야기 한 조각 풀기','challenge','story:'+id,'primary')}${noteButton(id)}${button('이 시기의 이야기 보기','stories-album',e.album)}`);
 }
 function chapterReward(a){
  dialog(`${mark('ALBUM UNLOCKED')}<h2>${a.name} 해금!</h2>${a.id==='still-here'?vcrUI.card():''}<div class="outfit-reward">${outfitLineup(outfits.find(o=>o.id===a.id))}<strong>새 의상, 멤버 도트 카드 3장과 앨범 해금 배지를 얻었어요.</strong>${button('새 의상 입기','wear-reward',a.id,'primary')}</div>${button('이 앨범의 곡 만나기','album-view',a.id)}${button('새로 열린 앨범 이야기','timeline',M.storyEntries.find(e=>e.kind==='album'&&e.album===a.id).id)}`);
@@ -193,21 +206,27 @@ function shop(){
 function designs(){
  return `${mark('PIXEL COLLECTION')}<div class="badge-filters wardrobe-tabs" aria-label="의상과 배지">${[['closet','내 옷장'],['shop','무대 상점'],['coins','코인 모으기'],['badges','배지함']].map(([id,n])=>`<button data-action="wardrobe-view" data-value="${id}" aria-pressed="${wardrobeView===id}">${n}</button>`).join('')}</div>${wardrobeView==='coins'?coinRoom():wardrobeView==='shop'?shop():wardrobeView==='badges'?badgeShelf():wardrobe()}`;
 }
+function concertRows(){
+ const match=id=>{const t=M.songAlbum(id).tracks.find(t=>t.id===id);return title(id).toLocaleLowerCase().includes(concertQuery.toLocaleLowerCase())&&(concertAlbum==='all'||M.songAlbum(id).id===concertAlbum)&&(concertKind==='all'||Boolean(t.instrumental)===(concertKind==='inst'));};
+ const label=id=>`<b>${esc(title(id))}</b><small>${esc(M.songAlbum(id).name)} · ${M.songAlbum(id).tracks.find(t=>t.id===id).instrumental?'반주':'보컬'}</small>`;
+ const selected=s.setlist.map((id,i)=>({id,i})).filter(x=>match(x.id)),available=M.ids.filter(id=>ready(id)&&!s.setlist.includes(id)&&match(id));
+ return `<p>담은 곡 ${s.setlist.length}개 · 검색 결과 ${selected.length+available.length}개</p>${selected.map(({id,i})=>`<div class="row"><span class="num">${i+1}</span><div class="concert-track-name">${label(id)}</div><div class="tools">${button('위로','up',id,'',i===0)}${button('빼기','remove',id)}</div></div>`).join('')}${available.map(id=>`<div class="row"><div class="concert-track-name">${label(id)}</div>${button('담기','add',id)}</div>`).join('')||'<p>이 조건의 준비된 곡이 없어요.</p>'}`;
+}
 function concert(){
  const can=has('album')&&s.setlist.length>=2;
- return panel(`${mark('OUR CONCERT')}<h2>우리의 콘서트</h2>${stageArt()}<h3>셋리스트</h3><p>완성한 곡을 선택하고 공연 순서를 정해요.</p>${s.setlist.map((id,i)=>`<div class="row"><span class="num">${i+1}</span><b>${title(id)}</b><div class="tools">${button('위로','up',id,'',i===0)}${button('빼기','remove',id)}</div></div>`).join('')}${M.ids.filter(id=>ready(id)&&!s.setlist.includes(id)).map(id=>button(title(id)+' 담기','add',id)).join('')}<p>${can?'공연을 시작할 준비가 됐어요.':'첫 앨범을 열고 준비도 100%인 곡을 두 곡 이상 담아 주세요.'}</p>${button(has('ending')?'다시 공연하기':'콘서트 열기','perform','ending','primary',!can)}<hr><h3>4집 피날레 · 우리의 빛</h3><p>4집 전곡을 모으고 보컬곡 2곡 이상을 준비하면, 씨야 응원봉이 모이는 마지막 무대가 열려요. 공연을 마치면 피날레 카드 3장을 받아요.</p>${button(s.finale?'4집 피날레 다시 보기':'4집 피날레 열기','perform','finale','primary',!M.finaleReady(s))}`);
+ return panel(`${mark('OUR CONCERT')}<h2>우리의 콘서트</h2>${stageArt()}<h3>셋리스트</h3><p>준비도 100%인 곡을 담고 순서를 정해요. 재수록곡은 앨범명으로 구분해 주세요.</p>${button(has('ending')?'다시 공연하기':'콘서트 열기','perform','ending','primary',!can)}<div class="concert-filters"><label>곡명 검색<input id="concertQuery" type="search" value="${esc(concertQuery)}" placeholder="곡명으로 찾기"></label><label>앨범<select id="concertAlbum"><option value="all">전체 앨범</option>${M.albums.map(a=>`<option value="${a.id}" ${a.id===concertAlbum?'selected':''}>${a.name}</option>`).join('')}</select></label><label>트랙<select id="concertKind">${[['all','전체'],['vocal','보컬'],['inst','반주']].map(([id,name])=>`<option value="${id}" ${id===concertKind?'selected':''}>${name}</option>`).join('')}</select></label></div><div id="concertRows">${concertRows()}</div><p>${can?'공연을 시작할 준비가 됐어요.':'첫 앨범을 열고 준비도 100%인 곡을 두 곡 이상 담아 주세요.'}</p><hr><h3>4집 피날레 · 우리의 빛</h3><p>4집 전곡 수집 + 준비도 100% 보컬곡 ${M.albumById('first-again').tracks.filter(t=>!t.instrumental&&ready(t.id)).length} / 2곡 이상. 공연을 마치면 피날레 카드 3장을 받아요.</p>${button(s.finale?'4집 피날레 다시 보기':'4집 피날레 열기','perform','finale','primary',!M.finaleReady(s))}`);
 }
-function draw(){const a=M.albumById(selectedAlbum);$('.os-chapter').innerHTML=mark(a.type)+'<strong>'+a.name+'</strong><small>'+M.albumCount(s,a.id)+' / '+a.tracks.length+'트랙 수집</small>'; if(!open(track))track='scent';$('#tabs').innerHTML=headings.map((name,i)=>`<button data-action="tab" data-value="${i}" aria-current="${scene===i?'page':'false'}"><span>${icons[i]}</span>${name}</button>`).join('');$('#screen').innerHTML=[studio,songs,stories,memories,concert,designs][scene]();}
-function dialog(content){vcrUI?.destroy();if(!$('#stageModal').open)returnFocus=document.activeElement;$('#modalBody').innerHTML=content;const h=$('#modalBody h2');if(h){h.id='stageModalTitle';h.tabIndex=-1;}if(!$('#stageModal').open)$('#stageModal').showModal();h?.focus({preventScroll:true});}
+function draw(){const focus=document.activeElement,restore=focus&&($('#screen').contains(focus)||$('#tabs').contains(focus)),identity=restore?{id:focus.id,action:focus.dataset.action,value:focus.dataset.value,start:focus.selectionStart,end:focus.selectionEnd}:null;const a=M.albumById(selectedAlbum);$('.os-chapter').innerHTML=mark(a.type)+'<strong>'+a.name+'</strong><small>'+M.albumCount(s,a.id)+' / '+a.tracks.length+'트랙 수집</small>'; if(!open(track))track='scent';$('#tabs').innerHTML=headings.map((name,i)=>`<button data-action="tab" data-value="${i}" aria-current="${scene===i?'page':'false'}"><span>${icons[i]}</span>${name}</button>`).join('');$('#screen').innerHTML=optimized([studio,songs,stories,memories,concert,designs][scene]());if(identity){const next=identity.id?document.getElementById(identity.id):[...root.querySelectorAll('[data-action]')].find(e=>e.dataset.action===identity.action&&e.dataset.value===identity.value);if(next){next.focus({preventScroll:true});if(identity.start!=null&&next.setSelectionRange)try{next.setSelectionRange(identity.start,identity.end);}catch{}}}}
+function dialog(content){vcrUI?.destroy();if(!$('#stageModal').open)returnFocus=document.activeElement;$('#modalBody').innerHTML=optimized(content);const h=$('#modalBody h2');if(h){h.id='stageModalTitle';h.tabIndex=-1;}if(!$('#stageModal').open)$('#stageModal').showModal();h?.focus({preventScroll:true});}
 function close(){window.clearTimeout(showTimer);showing=false;$('#stageModal').close();}
 function book(id){
  const m=M.members.find(x=>x.id===id),isReunion=id==='reunion';
  if((!m&&!isReunion)||(!has(id)&&!M.coreAvailable(s,id)))return;
- dialog(`${mark(isReunion?'E07 · 재회':m.episode+' · '+m.name)}<h2>${isReunion?'하나로 모인 기록':m.title}</h2>${storyArt(isReunion?6:{yj:3,gr:4,br:5}[m.id],'story-modal-art')}<small>${isReunion?'2020.02.21':m.date}</small><p>${isReunion?'JTBC 슈가맨3에서 원년 멤버 세 사람이 다시 함께 노래했어요.':m.fact}</p>${link('이야기의 원본 기록',isReunion?M.reunionUrl:m.url)}<hr>${has(id)?'<p class="collected-note">이 추억은 이미 카드북에 간직했어요.</p>':button('이야기 한 조각 풀기','challenge','story:'+id,'primary')}`);
+ dialog(`${mark(isReunion?'E07 · 재회':m.episode+' · '+m.name)}<h2>${isReunion?'하나로 모인 기록':m.title}</h2>${storyArt(isReunion?6:{yj:3,gr:4,br:5}[m.id],'story-modal-art')}<small>${isReunion?'2020.02.21':m.date}</small><p>${isReunion?'JTBC 슈가맨3에서 원년 멤버 세 사람이 다시 함께 노래했어요.':m.fact}</p>${link('이야기의 원본 기록',isReunion?M.reunionUrl:m.url)}<hr>${has(id)?'<p class="collected-note">이 추억은 이미 카드북에 간직했어요.</p>':button('이야기 한 조각 풀기','challenge','story:'+id,'primary')}${noteButton(id)}`);
 }
 function album(){
  if(!has('first'))return;
- dialog(`${mark('E03 · ALBUM NOTES')}<h2>노래로 채운 시간</h2>${storyArt(2,'story-modal-art')}<p>2006년에 발표한 첫 정규 앨범 <b>The First Mind</b>에는 ‘여인의 향기’, ‘구두’, ‘Promise U’가 담겨 있어요.</p>${link('앨범 펼쳐보기','https://www.melon.com/album/detail.htm?albumId=314286')}<hr>${has('album')?'<p>앨범 기록을 간직했어요. 노래 탭에서 Promise U를 만나보세요.</p>':button('앨범 퀴즈 풀기','challenge','story:album','primary')}`);
+ dialog(`${mark('E03 · ALBUM NOTES')}<h2>노래로 채운 시간</h2>${storyArt(2,'story-modal-art')}<p>2006년에 발표한 첫 정규 앨범 <b>The First Mind</b>에는 ‘여인의 향기’, ‘구두’, ‘Promise U’가 담겨 있어요.</p>${link('앨범 펼쳐보기','https://www.melon.com/album/detail.htm?albumId=314286')}<hr>${has('album')?'<p>앨범 기록을 간직했어요. 노래 탭에서 Promise U를 만나보세요.</p>':button('앨범 퀴즈 풀기','challenge','story:album','primary')}${noteButton('album')}`);
 }
 function challenge(key,then=null,note=''){
  if(!M.canChallenge(s,key))return;
@@ -224,20 +243,20 @@ function finishChallenge(){
  dialog(`${mark('MEMORY UNLOCKED')}<div class="reward-symbol" aria-hidden="true">✦</div><h2>${key.startsWith('song:')?title(key.slice(5))+' 수집 완료':'추억을 간직했어요'}</h2><p>${q.explanation}</p>${key==='story:album'?`<div class="outfit-reward">${outfitLineup(outfits.find(o=>o.id==='first-mind'))}<strong>The First Mind 의상을 얻었어요!</strong>${button('새 의상 입기','wear-reward','first-mind','primary')}</div>`:''}${key.startsWith('song:')?button('이 곡 연습하기','pick',key.slice(5),'primary'):M.storyById(key.slice(6))?button('다음 이야기 보기','stories-album',M.storyById(key.slice(6)).album,'primary'):button('추억 보러 가기','tab','3','primary')}${M.storyDestination(key)?button('다음 앨범 준비 확인하기','album-view',M.storyDestination(key),'primary'):''}${key.startsWith('song:')&&M.albumComplete(s,M.songAlbum(key.slice(5)).id)?`<p class="collected-note">${M.songAlbum(key.slice(5)).name} 전곡 수집 배지를 받았어요.</p>${button('앨범 여정 보기','album-view',M.songAlbum(key.slice(5)).id)}`:''}`);
 }
 function cheerForm(key){
- if(!M.canChallenge(s,key)||!key.startsWith('story:'))return;
- activeChallenge=key;
- dialog(`${mark('A LITTLE CHEER')}<h2>그때의 씨야에게 한마디</h2><p>이야기를 읽으며 떠오른 마음을 짧게 남겨보세요.</p><label class="cheer-label" for="stageCheer">응원글 <small>최대 200자</small></label><textarea id="stageCheer" maxlength="200" rows="4" placeholder="세 사람의 다음 무대도 함께할게요.">${esc(s.notes[key]||'')}</textarea><p class="private-note">이 글은 게임 속 추억에만 저장돼요. 공개 방명록에는 올라가지 않아요.</p><p class="quiz-note" id="cheerError" role="alert"></p>${button('응원과 함께 추억 간직하기','save-cheer',key,'primary')}<div class="cheer-alternative">${link('공개 FAN LETTERS에도 마음 남기기','/fan-letters/')}<small>공개 글 작성은 선택이에요. 게임 진행에는 필요하지 않아요.</small></div>`);
+ if(!M.canCheer(s,key)||!key.startsWith('story:'))return;
+ activeChallenge=key;if(s.proofs.includes(key))afterChallenge=null;
+ dialog(`${mark('A LITTLE CHEER')}<h2>그때의 씨야에게 한마디</h2><p>이야기를 읽으며 떠오른 마음을 짧게 남겨보세요.</p><label class="cheer-label" for="stageCheer">응원글 <small>최대 200자</small></label><textarea id="stageCheer" maxlength="200" rows="4" placeholder="세 사람의 다음 무대도 함께할게요.">${esc(s.notes[key]||'')}</textarea><p class="private-note">이 글은 게임 속 추억에만 저장돼요. 공개 방명록에는 올라가지 않아요.</p><p class="quiz-note" id="cheerError" role="alert"></p>${button(s.proofs.includes(key)?'응원글 저장':'응원과 함께 추억 간직하기','save-cheer',key,'primary')}<div class="cheer-alternative">${link('공개 FAN LETTERS에도 마음 남기기','/fan-letters/')}<small>공개 글 작성은 선택이에요. 게임 진행에는 필요하지 않아요.</small></div>`);
 }
 function perform(id,checked=false){
  const finale=id==='finale';
  if(finale&&!M.finaleReady(s))return;
- if(!finale&&!checked&&!has(id)){if(!M.canChallenge(s,'story:'+id))return;challenge('story:'+id,()=>perform(id,true));return;}
+ if(!finale&&!checked&&!has(id)&&!s.proofs.includes('story:'+id)){if(!M.canChallenge(s,'story:'+id))return;challenge('story:'+id,()=>perform(id,true));return;}
  if(showing||(!finale&&(id==='first'?!ready('scent'):!has('album')||s.setlist.length<2)))return;
  const list=finale?M.albumById('first-again').tracks.filter(t=>!t.instrumental&&ready(t.id)).map(t=>t.id):id==='first'?['scent']:[...s.setlist];let i=0;showing=true;showHeld=false;
  function next(){
  if(!showing)return;
- if(i>=list.length){if(finale)M.finishFinale(s);else M.claim(s,id);save();draw();showing=false;
- dialog(`${mark('CURTAIN CALL')}<h2>${finale?'우리의 빛, First, Again':id==='first'?'첫 무대의 기억':'우리의 불빛'}</h2>${stageArt(true,finale)}<p>${finale?'객석을 밝힌 마음까지, 피날레 카드 3장에 간직했어요.':id==='first'?'첫 무대를 마쳤어요! 다음 곡 구두를 만나거나 1집 이야기를 열어보세요.':'세 사람이 함께 만든 공연을 추억에 간직했어요.'}</p>${id==='first'&&!finale?button(open('shoes')?'구두 연습하기':'구두 만나기',open('shoes')?'pick':'challenge',open('shoes')?'shoes':'song:shoes','primary')+button('1집 이야기 열기','album'):button('카드북 보러 가기','tab','3','primary')}`);return;}
+ if(i>=list.length){if(finale)M.finishFinale(s);else M.claim(s,id);showing=false;if(!save()){draw();saveNotice();return;}draw();
+ dialog(`${mark('CURTAIN CALL')}<h2>${finale?'우리의 빛, First, Again':id==='first'?'첫 무대의 기억':'우리의 불빛'}</h2>${stageArt(true,finale)}<p>${finale?'객석을 밝힌 마음까지, 피날레 카드 3장에 간직했어요.':id==='first'?'첫 무대를 마쳤어요! 다음 곡 구두를 만나거나 1집 이야기를 열어보세요.':'세 사람이 함께 만든 공연을 추억에 간직했어요.'}</p>${!finale?noteButton(id):''}${id==='first'&&!finale?button(open('shoes')?'구두 연습하기':'구두 만나기',open('shoes')?'pick':'challenge',open('shoes')?'shoes':'song:shoes','primary')+button('1집 이야기 열기','album'):button('카드북 보러 가기','tab','3','primary')}`);return;}
  dialog(`${mark(finale?'FIRST, AGAIN · FINALE':id==='first'?'DEBUT STAGE':'OUR CONCERT')}<h2>${title(list[i])}</h2>${stageArt(true,finale,i)}<p>${++i} / ${list.length}곡 · ${finale?'함께 밝히는 마지막 무대':'노래에 맞춰 한 걸음'}</p><div class="performance-controls">${button('응원 보내기','audience-cheer')}${button(showHeld?'자동 넘김 켜기':'이 장면 더 보기','show-hold')}${button('다음 곡','show-next')}${button('마지막 인사로','skip')}</div><p id="cheerEcho" role="status"></p>`);if(!showHeld)showTimer=setTimeout(next,M.timing.performanceMs);
  }
  $('#stageModal')._next=next;$('#stageModal')._finish=()=>{clearTimeout(showTimer);i=list.length;next();};next();
@@ -250,7 +269,7 @@ function testPanel(){
  dialog(`${mark('TEST ONLY')}<h2>원하는 구간부터 테스트</h2><p>선택한 앨범은 해금 직후, 이야기는 읽기 직전으로 이동해요. 이전 구간의 곡·연습·필수 조건은 준비됩니다.</p><label class="test-jump-label">이동할 구간<select id="testDestination"><optgroup label="앨범">${opts.filter(o=>!o.id.startsWith('story:')).map(o=>`<option value="${o.id}">${esc(o.label)}</option>`).join('')}</optgroup><optgroup label="이야기">${opts.filter(o=>o.id.startsWith('story:')).map(o=>`<option value="${o.id}">${esc(o.label)}</option>`).join('')}</optgroup></select></label>${button('선택한 구간으로 이동','test-jump-confirm','','primary')}<p class="private-note">처음 이동하기 전 기록을 이 브라우저에 따로 보관해요. 여러 구간을 테스트해도 원래 기록은 유지됩니다. 테스트 중 만든 기록은 ‘이동 전 기록으로 돌아가기’를 누르면 교체돼요.</p><div class="stack">${button('이동 전 기록으로 돌아가기','test-restore-confirm','','',!backup)}${button('미니게임 대기·오늘 횟수 초기화','test-mini-reset')}</div><p class="private-note">테스트 페이지 전용 기능입니다. 코인 보유량은 초기화하지 않아요.</p>`);
 }
 function replaceTestState(next){
- s=next;M.memberIds.forEach(id=>delete preview[id]);track='scent';lastCards=new Set(M.memberCards(s).filter(c=>c.earned).map(c=>c.id));lastBadges=new Set(M.badges(s).filter(b=>b.earned).map(b=>b.id));lastStories=new Set(M.storyEntries.filter(e=>M.storyAvailable(s,e.id)).map(e=>e.id));clearTimeout(noticeTimer);$('#albumNotice').textContent='';warn='';close();
+ store?.adopt();s=next;M.memberIds.forEach(id=>delete preview[id]);track='scent';lastCards=new Set(M.memberCards(s).filter(c=>c.earned).map(c=>c.id));lastBadges=new Set(M.badges(s).filter(b=>b.earned).map(b=>b.id));lastStories=new Set(M.storyEntries.filter(e=>M.storyAvailable(s,e.id)).map(e=>e.id));clearTimeout(noticeTimer);$('#albumNotice').textContent='';warn='';close();
 }
 function testAction(a,v){
  if(!testTools||!a.startsWith('test-'))return false;
@@ -265,11 +284,15 @@ function testAction(a,v){
  return true;
 }
 function management(){
- dialog(`${mark('LOCAL SAVE')}<h2>저장 관리</h2><p>진행 상황은 이 주소를 여는 브라우저에 자동으로 저장돼요. 다른 기기로 옮기려면 백업 파일을 사용해 주세요.</p><div class="stack">${button('백업 내려받기','export')}${button('백업 불러오기','import')}${button('처음부터 다시 시작','reset')}</div><p role="status" id="saveNote"></p>`);
+ dialog(`${mark('LOCAL SAVE')}<h2>저장 관리</h2><p>진행 상황은 이 주소를 여는 브라우저에 자동으로 저장돼요. 다른 기기로 옮기려면 백업 파일을 사용해 주세요.</p><div class="stack">${button('백업 내려받기','export')}${store?.dirty?button('저장 재시도','save-retry')+button('저장된 기록으로 돌아가기','saved-confirm'):button('백업 불러오기','import')+button('처음부터 다시 시작','reset')}</div>${button('마지막 백업 교체 전 기록 복원','restore-import')}<p role="status" id="saveNote">${store?.dirty?saveMessage():''}</p>`);
 }
-function sync(){try{const raw=localStorage.getItem(key);if(raw){s=M.loadSave(raw);}}catch{}}
+function sync(){try{const next=store?.pull();if(next)s=next;saveNotice();}catch{say('다른 탭의 기록을 읽지 못했어요. 현재 화면의 기록은 유지합니다.');}}
 function handle(a,v){
- if(blocked&&!['storage','export','import','reset','confirm-reset'].includes(a)){management();return;}
+ if(store?.dirty&&!['storage','export','save-retry','saved-confirm','saved-apply','restore-import'].includes(a)){saveNotice();return;}
+ if(a==='save-retry'){if(save()){draw();say('저장했어요. 이제 계속 진행할 수 있어요.');}return;}
+ if(a==='saved-confirm'){dialog('<h2>저장된 기록으로 돌아갈까요?</h2><p>아직 저장하지 못한 현재 변경은 사라집니다. 먼저 현재 기록을 백업해 주세요. 다른 탭에 저장된 기록은 유지됩니다.</p>'+button('현재 기록 백업','export')+button('취소','storage')+button('저장된 기록으로 돌아가기','saved-apply'));return;}
+ if(a==='saved-apply'){s=store.discard()||M.fresh();close();draw();saveNotice();say('저장된 기록을 불러왔어요.');return;}
+ if(blocked&&!['storage','export','import','import-confirm','reset','confirm-reset'].includes(a)){management();return;}
  if(testAction(a,v))return;
  if(miniUI.handle(a,v))return;
  if(a==='reunion-vcr'){vcrUI.show();return;}
@@ -293,6 +316,7 @@ function handle(a,v){
  if(a==='tab'){if($('#stageModal').open)close();scene=Number(v);draw();$('#screen').focus({preventScroll:true});return;}
  if(a==='pick'){if(!open(v))return;if($('#stageModal').open)close();scene=0;track=v;selectedAlbum=M.songAlbum(v).id;draw();$('.practice').scrollIntoView({block:'center'});return;}
  if(a==='wear-reward'){if(!M.outfitOwned(s,v))return;close();handle('outfit',v);return;}
+ if(a==='mini-open'){scene=5;wardrobeView='coins';draw();const card=$('[data-action="mini-start"][data-value="'+v+'"]');card?.scrollIntoView({block:'center'});card?.focus();return;}
  if(a==='open-coins'){scene=5;wardrobeView='coins';draw();return;}
  if(a==='daily-coins'){if(M.claimDaily(s)){save();draw();say(`오늘의 출석 보상 ${M.dailyReward}코인을 받았어요.`);}else{draw();say('오늘의 출석 보상은 이미 받았어요.');}return;}
  if(a==='wardrobe-view'){wardrobeView=v;draw();return;}
@@ -325,12 +349,15 @@ function handle(a,v){
  if(a==='cheer'){cheerForm(v);return;}
  if(a==='save-cheer'){
   if(v!==activeChallenge)return;
-  if(!M.cheer(s,v,$('#stageCheer').value)){$('#cheerError').textContent='1~200자로 마음을 남겨주세요.';$('#stageCheer').focus();return;}
-  finishChallenge();return;
+  const already=s.proofs.includes(v);if(!M.cheer(s,v,$('#stageCheer').value)){$('#cheerError').textContent='1~200자로 마음을 남겨주세요.';$('#stageCheer').focus();return;}
+  if(already){activeChallenge=null;afterChallenge=null;save();draw();dialog('<h2>응원글을 저장했어요</h2><p>같은 이야기의 수정은 한 번만 집계돼요. 기존 이야기 보상은 다시 지급하지 않아요.</p>'+button('닫기','note-close'));}else finishChallenge();return;
  }
+ if(a==='note-close'){close();return;}
  if(a==='perform'){perform(v);return;}
  if(a==='skip'){if(showing)$('#stageModal')._finish();return;}
  if(a==='export'){const u=URL.createObjectURL(new Blob([blocked?localStorage.getItem(key):JSON.stringify(s,null,2)],{type:'application/json'}));const el=document.createElement('a');el.href=u;el.download='seeya-our-stage.json';el.click();setTimeout(()=>URL.revokeObjectURL(u),3000);return;}
+ if(a==='import-confirm'){if(!pendingImport)return;try{localStorage.setItem(key+'-before-import',JSON.stringify(s));}catch{say('교체 전 기록을 보관하지 못했어요. 현재 기록은 유지됩니다.');return;}s=pendingImport;pendingImport=null;M.memberIds.forEach(id=>delete preview[id]);M.settle(s);blocked=false;save();close();scene=0;draw();say('진행 상황을 복원했어요.');return;}
+ if(a==='restore-import'){try{const old=M.loadSave(localStorage.getItem(key+'-before-import'));s=old;save();close();draw();say('백업 교체 전 기록을 복원했어요.');}catch(e){if(e===saveFailure)throw e;say('보관된 기록을 복원하지 못했어요.');}return;}
  if(a==='import'){$('#stageFile').click();return;}
  if(a==='reset'){dialog(`<h2>처음부터 시작할까요?</h2><p>이 기기의 체험 기록이 지워져요.</p>${button('현재 기록 유지','storage')}${button('초기화하기','confirm-reset')}`);return;}
  if(a==='confirm-reset'){outfitId='base';M.memberIds.forEach(id=>delete preview[id]);try{localStorage.removeItem(outfitKey);}catch{}s=M.fresh();lastCards=new Set();lastBadges=new Set();lastStories=new Set();storyFilter='all';storyAlbum='all';selectedAlbum='first-mind';track='scent';scene=0;warn='';blocked=false;close();}
@@ -343,15 +370,20 @@ function handle(a,v){
  if(a==='up'){const i=s.setlist.indexOf(v);if(i>0)[s.setlist[i-1],s.setlist[i]]=[s.setlist[i],s.setlist[i-1]];}
  save();draw();
 }
-async function locked(f){if(navigator.locks)await navigator.locks.request(key,f);else f();}
-root.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(el)locked(()=>{sync();if(M.settle(s))save();handle(el.dataset.action,el.dataset.value);});});
-root.addEventListener('change',e=>{if(['cardMember','cardOwned'].includes(e.target.id)){if(e.target.id==='cardMember')cardMember=e.target.value;else cardOnlyOwned=e.target.checked;cardPage=0;draw();return;}if(e.target.dataset.member){const member=e.target.dataset.member,id=e.target.value,part=e.target.dataset.part,focus=e.target.id;locked(()=>{sync();if(M.equipPart(s,member,part,id)){if(preview[member]){delete preview[member][part];if(!Object.keys(preview[member]).length)delete preview[member];}}else if(M.canWearOutfit(s,id)){preview[member]??={};preview[member][part]=id;}save();draw();$('#'+focus)?.focus();});return;}if(e.target.id==='track'){track=e.target.value;draw();}if(e.target.id==='storyAlbum'){storyAlbum=e.target.value;if(storyFilter==='core')storyFilter='all';draw();$('#storyAlbum').focus();}});
-$('#stageFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>64000)throw Error();const data=M.loadSave(await file.text());if(confirm('이 브라우저의 진행 상황을 백업 내용으로 교체할까요?'))await locked(()=>{s=data;M.memberIds.forEach(id=>delete preview[id]);M.settle(s);warn='';blocked=false;save();close();scene=0;draw();say('진행 상황을 복원했어요.');});}catch{$('#saveNote').textContent='이 게임의 유효한 백업 파일을 선택해 주세요.';}e.target.value='';};
+async function locked(f,recovery=false){const run=()=>{if(store?.dirty&&!recovery){saveNotice();return;}savingAction=true;try{return f();}catch(e){if(e!==saveFailure)throw e;close();draw();saveNotice();}finally{savingAction=false;}};if(navigator.locks)await navigator.locks.request(key,run);else run();}
+root.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(el)locked(()=>{sync();if(!store?.dirty&&M.settle(s))save();handle(el.dataset.action,el.dataset.value);},true);});
+root.addEventListener('input',e=>{if(e.target.id==='concertQuery'){concertQuery=e.target.value;$('#concertRows').innerHTML=concertRows();}});
+root.addEventListener('change',e=>{if(['concertAlbum','concertKind'].includes(e.target.id)){if(e.target.id==='concertAlbum')concertAlbum=e.target.value;else concertKind=e.target.value;$('#concertRows').innerHTML=concertRows();return;}if(['cardMember','cardOwned'].includes(e.target.id)){if(e.target.id==='cardMember')cardMember=e.target.value;else cardOnlyOwned=e.target.checked;cardPage=0;draw();return;}if(e.target.dataset.member){const member=e.target.dataset.member,id=e.target.value,part=e.target.dataset.part,focus=e.target.id;locked(()=>{sync();if(M.equipPart(s,member,part,id)){if(preview[member]){delete preview[member][part];if(!Object.keys(preview[member]).length)delete preview[member];}}else if(M.canWearOutfit(s,id)){preview[member]??={};preview[member][part]=id;}save();draw();$('#'+focus)?.focus();});return;}if(e.target.id==='track'){track=e.target.value;draw();}if(e.target.id==='storyAlbum'){storyAlbum=e.target.value;if(storyFilter==='core')storyFilter='all';draw();$('#storyAlbum').focus();}});
+$('#stageFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>64000)throw Error();pendingImport=M.loadSave(await file.text());dialog('<h2>백업으로 교체할까요?</h2><p>현재 진행을 백업 파일의 내용으로 교체합니다. 교체 전 기록은 별도로 보관합니다.</p>'+button('취소','storage')+button('백업으로 교체','import-confirm','','primary'));}catch{if($('#saveNote'))$('#saveNote').textContent='이 게임의 유효한 백업 파일을 선택해 주세요.';}e.target.value='';};
 $('#stageClose').onclick=close;$('#stageModal').addEventListener('close',()=>{showing=false;activeChallenge=null;afterChallenge=null;clearTimeout(showTimer);if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});else $('#screen').focus({preventScroll:true});});
 window.addEventListener('storage',e=>{if(e.key===key){sync();draw();}});
-function tick(){if(blocked)return;miniUI.update();locked(()=>{sync();const pts=s.points,wasJob=M.shopJobById(s.shopJob?.kind),done=M.settle(s);if(done||pts!==s.points){save();draw();if(done)say(wasJob&&!s.shopJob?`${wasJob.name} 완료! ${wasJob.reward}코인을 받았어요.`:'연습을 마쳤어요. 준비도가 올랐어요.');}else{if($('#clock'))$('#clock').textContent=clock();if($('#jobClock')&&s.shopJob)$('#jobClock').textContent=Math.max(0,Math.ceil((s.shopJob.end-Date.now())/1000));if(coinDay!==M.kstDay()){coinDay=M.kstDay();draw();}}});}
+function tick(){if(blocked||store?.dirty)return;miniUI.update();const now=Date.now();if($('#clock'))$('#clock').textContent=clock();if($('#jobClock')&&s.shopJob)$('#jobClock').textContent=Math.max(0,Math.ceil((s.shopJob.end-now)/1000));
+ const due=s.active&&s.active.end<=now||s.shopJob&&s.shopJob.end<=now||s.points<100&&now>=s.energyAt+M.timing.recoveryMs||!s.active&&s.queue&&s.points>=5;
+ if(due)locked(()=>{sync();const wasJob=M.shopJobById(s.shopJob?.kind),before={points:s.points,active:s.active,queue:s.queue},done=M.settle(s);save();if(done||before.active!==s.active||before.queue!==s.queue||(before.points<5)!==(s.points<5))draw();else if($('#studioPoints'))$('#studioPoints').innerHTML=s.points+'<small> / 100</small>';if(done)say(wasJob&&!s.shopJob?`${wasJob.name} 완료! ${wasJob.reward}코인을 받았어요.`:'연습을 마쳤어요. 준비도가 올랐어요.');});
+ if(coinDay!==M.kstDay()){coinDay=M.kstDay();draw();}
+}
 vcrUI=require('./our-stage-vcr')({M,root,state:()=>s,dialog,button,mark});
 const miniUI=require('./our-stage-mini')({M,root,state:()=>s,save,draw,dialog,button,esc,mark,locked,sync});
 if(testTools)$('.os-heading').insertAdjacentHTML('beforeend',button('테스트 이동','test-tools','','test-tools-button'));
-draw();tick();setInterval(tick,100);if(warn)say(warn);
+draw();tick();setInterval(tick,250);if(warn)say(warn);
 })();

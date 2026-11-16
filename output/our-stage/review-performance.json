@@ -1,0 +1,32 @@
+{
+  "browser": "157.0.4341.60",
+  "environment": "Headless Edge, localhost, separate empty-cache context, 390x844; image bytes are file bytes, not mobile network timings.",
+  "results": [
+    {
+      "mode": "PNG comparison",
+      "imageBytes": 2517205,
+      "images": [
+        "/images/game/our-stage/layers/practice-v3.png",
+        "/images/game/our-stage/pixel-rehearsal-room.png"
+      ],
+      "loadMs": 496,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "mode": "lossless WebP",
+      "imageBytes": 1231528,
+      "images": [
+        "/images/game/our-stage/layers/practice-v3.webp",
+        "/images/game/our-stage/pixel-rehearsal-room.webp"
+      ],
+      "loadMs": 466,
+      "viewport": [
+        390,
+        844
+      ]
+    }
+  ]
+}
