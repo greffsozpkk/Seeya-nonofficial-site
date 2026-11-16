@@ -167,7 +167,7 @@ function createModel(testMode=false) {
     s.flags.push(id);return true;
   }
   function valid(s,limits={}){
-    if(!s||s.version!==11||!mini.valid(s.mini)||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>(limits.maxPoints??100)||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
+    if(!s||s.version!==11||!(limits.miniValid||mini.valid)(s.mini)||s.content!=='album-journey'||!Number.isInteger(s.points)||s.points<0||s.points>(limits.maxPoints??100)||!Number.isSafeInteger(s.energyAt)||s.energyAt<0)return false;
     const subset=(a,opts)=>Array.isArray(a)&&a.every(x=>opts.includes(x))&&new Set(a).size===a.length;
     if(!subset(s.flags,flags)||!s.tracks||!ids.every(id=>subset(s.tracks[id],[0,1,2])))return false;
     if(!subset(s.albums,albums.slice(1).map(a=>a.id)))return false;

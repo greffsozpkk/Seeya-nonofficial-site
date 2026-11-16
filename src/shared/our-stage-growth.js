@@ -1,6 +1,7 @@
 'use strict';
 // Opt-in test economy; original collection/story IDs and legacy save schema survive.
 module.exports=function(B){
+ const mini=require('./our-stage-puzzles')(B.mini),wordGates=require('./our-stage-word-gates');
  const test=B.timing.testMode,stats=['vocal','harmony','emotion'],names=['보컬','화음','감성'];
  const time=n=>Number.isSafeInteger(n)&&n>=0&&n<253402268399999;
  const integer=(n,max=1e9)=>Number.isSafeInteger(n)&&n>=0&&n<=max;
@@ -15,7 +16,7 @@ module.exports=function(B){
  const value=l=>30+12*(l-1)+30*Math.floor(l/10);
  const spent=levels=>stats.reduce((sum,k)=>{for(let l=1;l<levels[k];l++)sum+=cost(l);return sum;},0);
  const seed=now=>({version:1,testGrant:0,levels:{vocal:1,harmony:1,emotion:1},stageEarned:0,offlineEarned:0,offlineUnits:0,records:{},items:[],booster:{day:B.kstDay(now),used:0,armed:false},representative:null,lastActiveAt:now,offlineReceipt:null,pending:null,sequence:0,receipts:{},nickname:'',lastResult:null});
- function init(s,now=Date.now()){if(!s.growth)s.growth=seed(now);return s;}
+ function init(s,now=Date.now()){if(!s.growth)s.growth=seed(now);mini.migrate(s.mini);if(s.chapterWords===undefined)s.chapterWords=[];return s;}
  const profile=id=>{const a=B.songAlbum(id);if(!a)return null;const ai=B.albums.indexOf(a),i=a.tracks.findIndex(t=>t.id===id),t=a.tracks[i],r=ranges[ai],ratio=i/Math.max(1,a.tracks.length-1);const tempo=/Hot Girl|그 놈 목소리|가니|그래도 좋아/i.test(t.title);return {album:a,track:t,chapter:ai,theme:themes[ai],target:Math.round(r[0]+(r[1]-r[0])*Math.pow(ratio,1.2)),reward:Math.round(r[2]+(r[3]-r[2])*ratio),ap:r[4],seconds:ai===0&&i<3?3:Math.round(r[5]+(r[6]-r[5])*ratio),weights:tempo?[1.4,1.1,.9]:[1,1.2,1.5],kind:tempo?'템포':'발라드',role:i===0?'첫 트랙':'수록 트랙'};};
  const cleared=(s,a)=>a.tracks.filter(t=>!t.instrumental).every(t=>s.growth?.records[t.id]?.wins>0);
  const cap=s=>100+20*B.albums.filter(a=>cleared(s,a)).length;
@@ -50,6 +51,7 @@ module.exports=function(B){
   g.lastActiveAt=now;return reward;
  }
  function validate(s){try{
+  if(!Array.isArray(s.chapterWords)||new Set(s.chapterWords).size!==s.chapterWords.length||!s.chapterWords.every(id=>wordGates.some(q=>q.album===id)))return false;
   const g=s.growth;if(!exact(g,Object.keys(seed(0)))||g.version!==1||!integer(g.testGrant,1000000)||(!test&&g.testGrant!==0)||!exact(g.levels,stats)||!stats.every(k=>integer(g.levels[k],500)&&g.levels[k]>=1)||!integer(g.stageEarned)||!integer(g.offlineEarned)||!integer(g.offlineUnits,1e7)||!integer(g.sequence,1e6)||!time(g.lastActiveAt))return false;
   if(!object(g.records)||!Object.entries(g.records).every(([id,r])=>B.ids.includes(id)&&B.ready(s,id)&&!profile(id).track.instrumental&&exact(r,['plays','wins','best','rank','mastery'])&&integer(r.plays,1e6)&&integer(r.wins,r.plays)&&integer(r.best,1e6)&&r.rank===rank(r.best,profile(id).target)&&integer(r.mastery,1e8)&&r.mastery>=r.wins&&r.mastery<=r.wins+g.offlineUnits&&Boolean(r.wins)===(r.best>=profile(id).target)))return false;
   if(Object.values(g.records).reduce((n,r)=>n+r.mastery-r.wins,0)!==g.offlineUnits)return false;
@@ -64,13 +66,15 @@ module.exports=function(B){
   if(g.offlineReceipt!==null&&(!exact(g.offlineReceipt,['at','seconds','reward'])||!time(g.offlineReceipt.at)||!integer(g.offlineReceipt.seconds,21600)||!integer(g.offlineReceipt.reward,5400)))return false;
   if(typeof g.nickname!=='string'||g.nickname.length>24||!integer(s.points,cap(s))||coins(s)<0)return false;
   // Validate all legacy collection fields without interpreting the new AP cap as corruption.
-  return B.valid(s,{maxPoints:cap(s),balance:coins(s)});
+  return B.valid(s,{maxPoints:cap(s),balance:coins(s),miniValid:mini.valid});
  }catch{return false;}}
- function loadSave(raw){if(typeof raw!=='string'||raw.length>256000)throw Error('Invalid stage save');const parsed=JSON.parse(raw);let s;if(parsed?.growth!==undefined){s=parsed;if(!validate(s))throw Error('Invalid growth save');}else{s=init(B.loadSave(raw));}return s;}
+ function loadSave(raw){if(typeof raw!=='string'||raw.length>256000)throw Error('Invalid stage save');const parsed=JSON.parse(raw);let s;if(parsed?.growth!==undefined){s=init(parsed);if(!validate(s))throw Error('Invalid growth save');}else{s=init(B.loadSave(raw));}return s;}
  function prepareTest(s,id){if(!test)return false;const a=B.albumById(id);if(!a)return false;const p=profile(a.tracks.filter(t=>!t.instrumental).at(-1).id);while(score(s,p.track.id,.95)<p.target)stats.forEach(k=>s.growth.levels[k]++);s.growth.testGrant=spent(s.growth.levels);return true;}
- const albumRequirements=(s,id)=>{const req=B.albumRequirements(s,id),i=B.albums.findIndex(a=>a.id===id);if(i>0&&!B.albumUnlocked(s,id))req.push({label:B.albums[i-1].name+' 보컬 무대 모두 A 이상',done:cleared(s,B.albums[i-1]),action:'growth-album',value:B.albums[i-1].id});return req;};
+ const albumRequirements=(s,id)=>{const req=B.albumRequirements(s,id),i=B.albums.findIndex(a=>a.id===id);if(i>0&&!B.albumUnlocked(s,id))req.push({label:B.albums[i-1].name+' 보컬 무대 모두 A 이상',done:cleared(s,B.albums[i-1]),action:'growth-album',value:B.albums[i-1].id});if(i>0&&!B.albumUnlocked(s,id)&&wordGates.some(q=>q.album===id))req.push({label:'대표곡 가사 블록 완성',done:s.chapterWords.includes(id),action:'chapter-words',value:id});return req;};
  const albumAvailable=(s,id)=>B.albumAvailable(s,id)&&albumRequirements(s,id).every(r=>r.done);
+ const wordAvailable=(s,id)=>wordGates.some(q=>q.album===id)&&!B.albumUnlocked(s,id)&&!s.chapterWords.includes(id)&&albumRequirements(s,id).filter(r=>r.action!=='chapter-words').every(r=>r.done);
+ function answerWords(s,id,guess){const q=wordGates.find(q=>q.album===id);if(!q||!wordAvailable(s,id)||!Array.isArray(guess)||guess.length!==q.tokens.length||new Set(guess).size!==guess.length||!guess.every((n,i)=>Number.isInteger(n)&&q.tokens[n]===q.tokens[i]))return false;s.chapterWords.push(id);return true;}
  function unlockAlbum(s,id){return albumAvailable(s,id)&&B.unlockAlbum(s,id);}
  function purchase(s,id,member){const o=B.shopById(id);if(!o||!B.memberIds.includes(member)||s.purchases.includes(id+':'+member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
- return {...B,growth:{stats,names,items,themes,ranges,prepareTest,cost,value,profile,cap,coins,buff,score,rank,cleared,trainingSeconds,apCost,perform,upgrade,buy,boost,resume,init},timing:{...B.timing,recoveryMs},fresh:now=>init(B.fresh(now),now),loadSave,valid:validate,train,settle,coins,purchase,albumRequirements,albumAvailable,unlockAlbum};
+ return {...B,mini,wordGates,wordAvailable,answerWords,growth:{stats,names,items,themes,ranges,prepareTest,cost,value,profile,cap,coins,buff,score,rank,cleared,trainingSeconds,apCost,perform,upgrade,buy,boost,resume,init},timing:{...B.timing,recoveryMs},fresh:now=>init(B.fresh(now),now),loadSave,valid:validate,train,settle,coins,purchase,albumRequirements,albumAvailable,unlockAlbum};
 };
