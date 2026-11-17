@@ -156,5 +156,38 @@
     ],
     "method": "Built-in image_gen",
     "mappingNote": "그럼에도 우린의 과잠 장면과 멤버별 앙코르 착장 연속성을 대조. 고정 열 순서는 이보람·남규리·김연지. 기존 tour-encore 레이어와 구매 기록은 유지."
+  },
+  {
+    "id": "stage-hanbok",
+    "name": "설날 · 색동 한복",
+    "type": "SPECIAL STYLE",
+    "price": 80,
+    "date": "2008 설 인사",
+    "url": "https://www.joynews24.com/view/311671",
+    "sourceLabel": "참고한 설 인사 사진",
+    "note": "예전에 선보인 한복 세트예요. 2008년 설 인사 사진을 참고한 도트 의상으로, 이보람은 청록·분홍, 남규리는 아이보리·빨강, 김연지는 분홍·파랑 한복을 입어요. 의상과 헤어는 따로 조합할 수 있어요.",
+    "image": "/images/game/our-stage/layers/california-dream-v2.png",
+    "width": 1536,
+    "height": 1024,
+    "members": [
+      [
+        0,
+        512
+      ],
+      [
+        512,
+        512
+      ],
+      [
+        1024,
+        512
+      ]
+    ],
+    "sources": [
+      "https://www.joynews24.com/view/311684",
+      "https://www.joynews24.com/view/311672",
+      "https://www.joynews24.com/view/311683"
+    ],
+    "mappingNote": "기존 2.5집 설 인사 한복 레이어를 별도 상점 세트로 복원. br/gr/yj 멤버별 좌표와 헤어를 유지하며 현행 앨범 무대 의상은 변경하지 않음."
   }
 ]

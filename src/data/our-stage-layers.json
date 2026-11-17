@@ -792,5 +792,57 @@
       }
     },
     "headImage": "/images/game/our-stage/layers/tour-varsity-earrings.png"
+  },
+  "stage-hanbok": {
+    "image": "/images/game/our-stage/layers/california-dream-v2.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          107,
+          26,
+          346,
+          538
+        ],
+        "body": [
+          167,
+          657,
+          263,
+          344
+        ],
+        "chin": 363
+      },
+      "gr": {
+        "head": [
+          602,
+          28,
+          333,
+          529
+        ],
+        "body": [
+          628,
+          657,
+          281,
+          344
+        ],
+        "chin": 363
+      },
+      "yj": {
+        "head": [
+          1074,
+          26,
+          348,
+          524
+        ],
+        "body": [
+          1108,
+          657,
+          269,
+          344
+        ],
+        "chin": 363
+      }
+    }
   }
 }
