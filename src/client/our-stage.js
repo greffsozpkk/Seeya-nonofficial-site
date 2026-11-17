@@ -20,20 +20,27 @@ try{const saved=localStorage.getItem(outfitKey);if(outfits.some(x=>x.id===saved)
 const styles=[...outfits,...M.shop],preview={},layers=require('../data/our-stage-layers.json');
 const styleId=(id,part='clothes')=>preview[id]?.[part]||(part==='hair'?s.hair:s.equipped)[id];
 const outfit=(id,part='clothes')=>styles.find(o=>o.id===styleId(id,part));
+const motions={
+ scent:{title:'여인의 향기',album:'first-mind',label:'1집',description:'가슴에 모았다가 뻗는 손짓 · 고음의 강조 자세',source:'https://www.youtube.com/watch?v=rFCNRIpPukY&t=61s'},
+ greeting:{title:'사랑의 인사',album:'lovely-sweet-heart',label:'2집',description:'팔 모으기 · 방향 전환 · 낮게 펼치는 인사',source:'https://www.youtube.com/watch?v=0w_viJPsbOk&t=198s'}
+};
+const motionFor=id=>id==='scent'?'scent':id==='lovely-sweet-heart-01'?'greeting':false;
 let artSequence=0;
-const sprite=(id,override)=>{
+const sprite=(id,override,motion=false)=>{
  const filterId='stage-sprite-'+(++artSequence);
  const clothing=override||outfit(id),hair=override||outfit(id,'hair'),head=layers[hair.id],body=layers[clothing.id],h=head.members[id],b=body.members[id];
  const scale=320/(h.chin-h.head[1]),hw=h.head[2]*scale,hh=h.head[3]*scale;
  const bh=320,bw=b.body[2]*bh/b.body[3],headX=(440-hw)/2,headY=25,bodyY=340;
  const part=(data,box,x,y,w,height)=>`<svg x="${x}" y="${y}" width="${w}" height="${height}" viewBox="${box.join(' ')}" overflow="hidden" preserveAspectRatio="none"><image href="${data.image}" width="${data.width}" height="${data.height}"/></svg>`;
- return `<svg class="member-sprite" viewBox="0 0 440 680" role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="${filterId}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#${filterId})"><g class="sprite-hair">${part({...head,image:head.headImage||head.image},h.head,headX,headY,hw,hh)}</g><g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g></g>${clothing.id==='practice'?nameTag(id):''}</svg>`;
+ const headMarkup=`<g class="sprite-hair">${part({...head,image:head.headImage||head.image},h.head,headX,headY,hw,hh)}</g>`;
+ const bodyMarkup=motion?require('./our-stage-choreo')({uid:filterId,image:part(body,b.body,0,0,234,333),head:headMarkup,x:(440-bw)/2,width:bw,mode:motion}):`${headMarkup}<g class="sprite-body">${part(body,b.body,(440-bw)/2,bodyY,bw,bh)}</g>`;
+ return `<svg class="member-sprite" viewBox="0 0 440 680" ${motion?'preserveAspectRatio="xMidYMax meet"':''} role="img" aria-label="${M.members.find(x=>x.id===id).name} · 의상 ${clothing.name} · 헤어 ${hair.name}" data-clothes="${clothing.id}" data-hair="${hair.id}"><defs><filter id="${filterId}" color-interpolation-filters="sRGB"><feComponentTransfer><feFuncA type="discrete" tableValues="0 0 0 0 0 0 0 1"/></feComponentTransfer></filter></defs><g filter="url(#${filterId})">${bodyMarkup}</g>${clothing.id==='practice'?nameTag(id):''}</svg>`;
 };
 const portrait=id=>`<div class="member-crop">${sprite(id)}</div>`;
 const outfitLineup=o=>`<div class="outfit-sheet mapped-outfit" aria-label="${esc(o.name)} 멤버별 의상">${M.memberIds.map(id=>`<figure>${sprite(id,o)}<figcaption>${M.members.find(m=>m.id===id).name}</figcaption></figure>`).join('')}</div>`;
 const outfitSummary=()=>M.memberIds.map(id=>M.members.find(m=>m.id===id).name+' · '+outfit(id).name+(preview[id]?' (미리입기)':'')).join(' / ');
 const glowstick=()=>`<svg viewBox="0 0 48 80" aria-hidden="true" class="seeya-lightstick"><image href="${art}official-lightstick.svg" width="48" height="80"/></svg>`;
-const stageArt=(live=false,finale=false,lead=0,album=null,caption='')=>`<figure class="stage-art${live?' live':''}${finale?' finale':''}" aria-label="${finale?'씨야 응원봉이 객석을 채우는 4집 피날레':'세 멤버의 도트 공연 무대'}"><div class="stage-trio">${M.memberIds.map((id,i)=>`<div class="stage-performer ${lead%3===i?'lead':''}" style="--beat:${i*-.19}s">${sprite(id,album?outfits.find(o=>o.id===album.id):undefined)}<svg class="stage-mic" viewBox="0 0 36 60" aria-hidden="true" shape-rendering="crispEdges"><path fill="#f3c8a6" d="M3 35h9v-7h9v20H3z"/><path fill="#252335" d="M17 14h9v31h-9z"/><path fill="#d8d2e4" d="M13 4h17v18H13z"/><path fill="#8d859b" d="M13 9h17v4H13z"/></svg></div>`).join('')}</div><div class="stage-confetti" aria-hidden="true">${finale?Array.from({length:18},(_,i)=>`<i style="--x:${(i*37)%100}%;--delay:${i*-.23}s"></i>`).join(''):''}</div><div class="stage-audience" aria-hidden="true">${Array.from({length:album?18+Math.round(M.albums.indexOf(album)*36/7):finale?54:18},(_,i)=>`<span style="--beat:${(i%9)*-.13}s;--rise:${i%3*5}px">${glowstick()}</span>`).join('')}</div><figcaption>${finale?'함께 모은 노래, 함께 밝히는 객석':'한 걸음씩, 세 목소리가 만드는 무대'}${(album?.id==='rebloom'||!album&&M.memberIds.some(id=>styleId(id)==='rebloom'))?' · 현재 세 멤버 의상 재해석':''}</figcaption></figure>`;
+const stageArt=(live=false,finale=false,lead=0,album=null,caption='',motion=false)=>`<figure class="stage-art${live?' live':''}${finale?' finale':''}${motion?' scent-choreo '+(motion==='greeting'?'greeting-choreo':''):''}" aria-label="${finale?'씨야 응원봉이 객석을 채우는 4집 피날레':'세 멤버의 도트 공연 무대'}"><div class="stage-trio">${M.memberIds.map((id,i)=>`<div class="stage-performer ${lead%3===i?'lead':''}" style="--beat:${i*-.19}s;--phrase-delay:${i*.06}s">${sprite(id,motion?outfits.find(o=>o.id===motions[motion].album):album?outfits.find(o=>o.id===album.id):undefined,motion)}<svg class="stage-mic" viewBox="0 0 36 60" aria-hidden="true" shape-rendering="crispEdges"><path fill="#f3c8a6" d="M3 35h9v-7h9v20H3z"/><path fill="#252335" d="M17 14h9v31h-9z"/><path fill="#d8d2e4" d="M13 4h17v18H13z"/><path fill="#8d859b" d="M13 9h17v4H13z"/></svg></div>`).join('')}</div><div class="stage-confetti" aria-hidden="true">${finale?Array.from({length:18},(_,i)=>`<i style="--x:${(i*37)%100}%;--delay:${i*-.23}s"></i>`).join(''):''}</div><div class="stage-audience" aria-hidden="true">${Array.from({length:album?18+Math.round(M.albums.indexOf(album)*36/7):finale?54:18},(_,i)=>`<span style="--beat:${(i%9)*-.13}s;--rise:${i%3*5}px">${glowstick()}</span>`).join('')}</div><figcaption>${finale?'함께 모은 노래, 함께 밝히는 객석':'한 걸음씩, 세 목소리가 만드는 무대'}${(album?.id==='rebloom'||!album&&M.memberIds.some(id=>styleId(id)==='rebloom'))?' · 현재 세 멤버 의상 재해석':''}</figcaption></figure>`;
 
 let wardrobeView='closet',shopMember='br',coinDay=M.kstDay();
 const headings=['연습실','노래','이야기','추억','공연','의상·배지'], icons=['♫','♬','▤','♡','✧','◇'];
@@ -254,12 +261,17 @@ function perform(id){
  const footer=`${following?`<div class="curtain-next"><h3>${opened?'다음 앨범이 열렸어요': '다음 여정'} · ${esc(following.name)}</h3>${opened?'<p>앨범 의상과 멤버 카드도 함께 받았어요.</p>':''}${button('다음 앨범으로','album-view',following.id,'primary')}</div>`:'<p>모든 앨범의 무대를 함께 완성했어요.</p>'}${fanLetterInvite()}${button('공연 목록으로','tab','4')}`;
  ticketUI.show(albumId,footer);return;
  }
- const phase=phases[i],last=i===phases.length-1,theme=a?require('../data/our-stage-album-keepsakes.json')[a.id].colors[1]:'#895570';i++;
- dialog(`<div class="album-show" style="--album-light:${theme}"><h2 class="concert-accessible-title">우리의 콘서트</h2>${stageArt(true,last&&!!a,i-1,a,esc(phase.name))}<div class="concert-medley${phase.name==='메들리'?' is-medley':''}"><div>${phase.songs.map(t=>`<span>${esc(title(t))}</span>`).join('')}</div></div><p>${esc(phase.name)} · ${i} / ${phases.length}곡</p><div class="performance-controls">${button('응원 보내기','audience-cheer')}${button(showHeld?'자동 넘김 켜기':'잠시 멈추기','show-hold')}${button('다음 곡','show-next')}${button('마지막 인사로','skip')}</div><p id="cheerEcho" role="status"></p></div>`);if(!showHeld)showTimer=setTimeout(()=>$('#stageModal')._next(),duration);
+ const phase=phases[i],phaseDuration=motionFor(phase.songs[0])?8000:duration,last=i===phases.length-1,theme=a?require('../data/our-stage-album-keepsakes.json')[a.id].colors[1]:'#895570';i++;$('#stageModal')._duration=phaseDuration;
+ dialog(`<div class="album-show" style="--album-light:${theme}"><h2 class="concert-accessible-title">우리의 콘서트</h2>${stageArt(true,last&&!!a,i-1,a,esc(phase.name),motionFor(phase.songs[0]))}<div class="concert-medley${phase.name==='메들리'?' is-medley':''}"><div>${phase.songs.map(t=>`<span>${esc(title(t))}</span>`).join('')}</div></div><p>${esc(phase.name)} · ${i} / ${phases.length}곡</p><div class="performance-controls">${button('응원 보내기','audience-cheer')}${button(showHeld?'자동 넘김 켜기':'잠시 멈추기','show-hold')}${button('다음 곡','show-next')}${button('마지막 인사로','skip')}</div><p id="cheerEcho" role="status"></p></div>`);if(!showHeld)showTimer=setTimeout(()=>$('#stageModal')._next(),phaseDuration);
  }
  $('#stageModal')._advance=next;$('#stageModal')._next=()=>locked(()=>{sync();next();});$('#stageModal')._finish=()=>{clearTimeout(showTimer);i=phases.length;next();};$('#stageModal')._duration=duration;next();
 }
 
+function motionPreview(id='scent'){
+ if(!isTest||!motions[id])return;
+ const m=motions[id];
+ dialog(`<div class="motion-preview"><small class="eyebrow">${m.label} · 동작 미리보기</small><h2>${m.title}</h2><div class="motion-song-picker" aria-label="미리볼 무대">${Object.entries(motions).map(([key,item])=>`<button data-action="motion-preview" data-value="${key}" aria-pressed="${id===key}">${item.title}</button>`).join('')}</div><p>${m.description}<br>음원 없이 반복해서 볼 수 있어요.</p>${stageArt(true,false,0,M.albumById(m.album),'',id)}<div class="motion-tuning"><fieldset class="motion-size"><legend>움직임 크기</legend>${['작게','기본','크게'].map((label,i)=>`<button data-action="motion-size" data-value="${[.65,1,1.25][i]}" aria-pressed="${i===2}">${label}</button>`).join('')}</fieldset><fieldset class="motion-size"><legend>재생 속도</legend>${[1,2].map(speed=>`<button data-action="motion-speed" data-value="${speed}" aria-pressed="${speed===2}">${speed}배</button>`).join('')}</fieldset></div><div class="motion-preview-controls">${button('동작 멈추기','motion-pause')}${link('참고한 후렴 보기',m.source)}</div></div>`);
+}
 function testPanel(){
  if(!testTools)return;
  let backup=false;try{backup=Boolean(localStorage.getItem(checkpointKey));}catch{}
@@ -292,6 +304,10 @@ function handle(a,v){
  if(a==='saved-confirm'){dialog('<h2>저장된 기록으로 돌아갈까요?</h2><p>아직 저장하지 못한 현재 변경은 사라집니다. 먼저 현재 기록을 백업해 주세요. 다른 탭에 저장된 기록은 유지됩니다.</p>'+button('현재 기록 백업','export')+button('취소','storage')+button('저장된 기록으로 돌아가기','saved-apply'));return;}
  if(a==='saved-apply'){s=store.discard()||M.fresh();close();draw();saveNotice();say('저장된 기록을 불러왔어요.');return;}
  if(blocked&&!['storage','export','export-before-simple','import','import-confirm','reset','confirm-reset'].includes(a)){management();return;}
+ if(isTest&&a==='motion-preview'){motionPreview(v||'scent');return;}
+ if(isTest&&a==='motion-size'){const box=$('.motion-preview');if(!box||![.65,1,1.25].includes(Number(v)))return;box.style.setProperty('--motion',v);box.querySelectorAll('[data-action="motion-size"]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.value===v)));return;}
+ if(isTest&&a==='motion-speed'){const box=$('.motion-preview');if(!box||![1,2].includes(Number(v)))return;box.style.setProperty('--motion-speed',v);box.querySelectorAll('[data-action="motion-speed"]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.value===v)));return;}
+ if(isTest&&a==='motion-pause'){const box=$('.motion-preview');if(!box)return;const paused=box.classList.toggle('motion-paused');box.querySelector('[data-action="motion-pause"]').textContent=paused?'동작 재생하기':'동작 멈추기';return;}
  if(testAction(a,v))return;
  const ticketAction=ticketUI?.handle(a,v);if(ticketAction)return ticketAction;
  if(giftUI?.handle(a,v))return;
@@ -383,7 +399,8 @@ vcrUI=require('./our-stage-vcr')({M,root,state:()=>s,dialog,button,mark});
 giftUI=require('./our-stage-gifts')({M,state:()=>s,root,dialog,button,esc,save,draw,close,goPractice:id=>handle('pick',id)});
 ticketUI=require('./our-stage-tickets')({M,state:()=>s,root,dialog,button,esc,save});
 const miniUI=require('./our-stage-mini-v2')({M,root,state:()=>s,save,draw,dialog,button,esc,mark,locked,sync});
-if(testTools)$('.os-heading').insertAdjacentHTML('beforeend',button('테스트 이동','test-tools','','test-tools-button'));
+if(testTools)$('.os-heading').insertAdjacentHTML('beforeend',button('테스트 이동','test-tools','','test-tools-button')+button('무대 동작 보기','motion-preview','','test-tools-button'));
 draw();tick();setInterval(tick,250);if(warn)say(warn);
 if(!blocked){locked(()=>{sync();M.settle(s);save();draw();});document.addEventListener('visibilitychange',()=>{if(!document.hidden)locked(()=>{sync();M.settle(s);save();draw();});});}
+if(isTest&&motions[new URLSearchParams(location.search).get('stagePreview')])motionPreview(new URLSearchParams(location.search).get('stagePreview'));
 })();
