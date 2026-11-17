@@ -91,3 +91,4 @@ require('./check-our-stage-review');
 require('./check-our-stage-growth');
 require('./check-our-stage-puzzles');
 require('./check-our-stage-simple');
+require('./check-our-stage-keepsakes');
