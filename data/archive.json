@@ -7067,11 +7067,17 @@
         "url": "https://www.youtube.com/watch?v=Q3dP6nd1uuk",
         "publishedDate": "2026-09-13",
         "autoDiscovery": true
+      },
+      {
+        "label": "냥펀치",
+        "url": "https://www.youtube.com/watch?v=5vzEGDjPRpQ",
+        "publishedDate": "2026-09-16",
+        "autoDiscovery": true
       }
     ],
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "updatedAt": "2026-11-15T06:57:02.415798+00:00"
+    "updatedAt": "2026-11-17T08:16:49.000204+00:00"
   },
   {
     "id": "v492-nam-news",
@@ -10817,6 +10823,18 @@
         "url": "https://www.youtube.com/watch?v=wsOmBm3gBdY",
         "publishedDate": "2026-07-11",
         "autoDiscovery": true
+      },
+      {
+        "label": "강남매TV",
+        "url": "https://www.youtube.com/watch?v=IditI44F70E",
+        "publishedDate": "2026-06-29",
+        "autoDiscovery": true
+      },
+      {
+        "label": "무대인사매니아",
+        "url": "https://www.youtube.com/watch?v=GlHNi7Q1EJ8",
+        "publishedDate": "2026-07-09",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -10826,7 +10844,7 @@
     ],
     "note": "2026년 6월 28일 룰리커피 가창점에서 진행한 남규리의 룰리버스킹입니다.\n매장 주최 보도자료와 현장 영상을 함께 연결합니다.",
     "venue": "룰리커피 가창점",
-    "updatedAt": "2026-11-14T06:51:38.259562+00:00"
+    "updatedAt": "2026-11-17T08:16:49.000204+00:00"
   },
   {
     "id": "v4145-dKVDn4pUiLc",
@@ -32864,6 +32882,18 @@
       {
         "label": "헤럴드경제 공연 기사",
         "url": "https://v.daum.net/v/20170716105947857"
+      },
+      {
+        "label": "fwang 1230",
+        "url": "https://www.youtube.com/watch?v=_k08v1bfqw8",
+        "publishedDate": "2017-07-23",
+        "autoDiscovery": true
+      },
+      {
+        "label": "DW_TT",
+        "url": "https://www.youtube.com/watch?v=6X0m1QKiBP4",
+        "publishedDate": "2022-04-26",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -32874,7 +32904,8 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "venue": "봉산문화회관 가온홀"
+    "venue": "봉산문화회관 가온홀",
+    "updatedAt": "2026-11-17T08:16:49.000204+00:00"
   },
   {
     "id": "v490-album-20100389",
@@ -56300,7 +56331,7 @@
     "id": "20141105-yeonji-naro-concert",
     "date": "2014-11-05",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-10-30T16:59:25.684303+00:00",
+    "updatedAt": "2026-11-17T08:16:49.000204+00:00",
     "title": "김연지 · 나로센터 축하공연",
     "program": "나로센터 축하공연",
     "type": "event",
@@ -56323,6 +56354,12 @@
         "label": "mena299 · [씨야/김연지] 141105 - KimYeonji - Angel (cover) 나로센터에서 축하공연",
         "url": "https://www.youtube.com/watch?v=RSCcjyQfY78",
         "publishedDate": "2015-04-02"
+      },
+      {
+        "label": "mena299",
+        "url": "https://www.youtube.com/watch?v=IMUbekTuPBo",
+        "publishedDate": "2016-12-24",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
