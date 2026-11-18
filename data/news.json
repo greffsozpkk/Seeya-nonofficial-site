@@ -32,7 +32,7 @@
       "title": "씨야, 원곡자 왁스도 극찬한 감동의 \\'사랑하고 싶어\\' 무대(불후의 명곡) [TV나우] - 티브이데일리",
       "source": "티브이데일리",
       "pubDate": "2026-11-14T10:17:35+00:00",
-      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBWTEswTTVlellkbFJ6NTNOUmxSUEh5djFoZ2FpaEt4SnhEUEZGaVBsVFktZ3N1cGtaaEtGZGY4Rmx3dGVGVzRVUHBEVXdEb3k0MlZoYmp2Vy1QTkJyOXRmWXpXWEJUNnZJUGxj?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBlc2IzRDlYeUtobDktcmlWWUF4WFRjZklMNWJ1aXYxUGhtVmdoUUZkTTM5UHg1OFd4ZXEweEk5cjVhaVV6ZUVFUGNBS2czRFI1eHFTYjRCckpta1c3OEN6d1JFRVBLR3EzaXM0?oc=5",
       "description": "씨야, 원곡자 왁스도 극찬한 감동의 \\'사랑하고 싶어\\' 무대(불후의 명곡) [TV나우] 티브이데일리"
     }
   ],
@@ -147,16 +147,16 @@
       "description": "씨야 이보람, ‘골때녀’ 경기 앞두고 긴장감 가득한 눈빛 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-11-18T07:33:13.310450+00:00",
-  "lastCheckedAt": "2026-11-18T07:33:13.310450+00:00",
+  "updatedAt": "2026-11-18T07:56:16.538744+00:00",
+  "lastCheckedAt": "2026-11-18T07:56:16.538744+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-18T07:33:13.310450+00:00",
-    "남규리": "2026-11-18T07:33:13.310450+00:00",
-    "김연지": "2026-11-18T07:33:13.310450+00:00",
-    "이보람": "2026-11-18T07:33:13.310450+00:00"
+    "씨야": "2026-11-18T07:56:16.538744+00:00",
+    "남규리": "2026-11-18T07:56:16.538744+00:00",
+    "김연지": "2026-11-18T07:56:16.538744+00:00",
+    "이보람": "2026-11-18T07:56:16.538744+00:00"
   },
   "categoryContentUpdatedAt": {
-    "씨야": "2026-11-17T20:58:29.232013+00:00",
+    "씨야": "2026-11-18T07:56:16.538744+00:00",
     "남규리": "2026-11-18T07:33:13.310450+00:00",
     "이보람": "2026-11-16T14:11:08.948362+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
@@ -166,15 +166,15 @@
       "queries": 3,
       "succeeded": 3,
       "accepted": 89,
-      "changed": false,
-      "status": "unchanged"
+      "changed": true,
+      "status": "changed"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 62,
-      "changed": true,
-      "status": "changed"
+      "accepted": 61,
+      "changed": false,
+      "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
