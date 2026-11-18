@@ -35974,7 +35974,14 @@
       "label": "SBSKPOP X INKIGAYO",
       "url": "https://www.youtube.com/watch?v=GyWqSC7E0zg"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "세포청사",
+        "url": "https://www.youtube.com/watch?v=Bmr9zEVy9RI",
+        "publishedDate": "2012-10-01",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
@@ -35986,7 +35993,8 @@
     "collaborators": [
       "양파",
       "소연"
-    ]
+    ],
+    "updatedAt": "2026-11-18T07:49:40.017695+00:00"
   },
   {
     "id": "v490-album-328938",
@@ -50681,7 +50689,7 @@
     "id": "discovered-817d3496bc57accd",
     "date": "2026-03-22",
     "addedAt": "2026-09-30T13:59:14.662333+00:00",
-    "updatedAt": "2026-09-30T13:59:14.662333+00:00",
+    "updatedAt": "2026-11-18T07:49:40.017695+00:00",
     "title": "이보람 부산 단독콘서트 26.05.02(토) 영화의 전당",
     "program": "",
     "type": "concert",
@@ -50697,7 +50705,14 @@
       "publishedDate": "2026-03-22",
       "autoDiscovery": true
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "꽁",
+        "url": "https://www.youtube.com/watch?v=uQYXy-aAN6g",
+        "publishedDate": "2026-05-03",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -56479,7 +56494,7 @@
     "id": "20221002-boram-bohyeonsan-festival",
     "date": "2022-10-02",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-10-31",
+    "updatedAt": "2026-11-18T07:49:40.017695+00:00",
     "title": "이보람 · 영천 보현산 별빛축제",
     "program": "영천 보현산 별빛축제",
     "type": "event",
@@ -56496,7 +56511,14 @@
       "url": "https://www.youtube.com/watch?v=C9dgxgmNa_I",
       "publishedDate": "2022-10-03"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "성민",
+        "url": "https://www.youtube.com/watch?v=ZxLcfi0w53g",
+        "publishedDate": "2022-10-05",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
@@ -56660,7 +56682,7 @@
     "id": "20230923-boram-yangju-flower",
     "date": "2023-09-23",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-10-31",
+    "updatedAt": "2026-11-18T07:49:40.017695+00:00",
     "title": "이보람 · 양주 천만송이 천일홍축제",
     "program": "양주 천만송이 천일홍축제",
     "type": "event",
@@ -56682,6 +56704,12 @@
         "label": "동구 · [이보람] 230923 양주 천만송이 천일홍축제 '한 밤의 꿈처럼' 직캠/fancam (가사/Lyrics/CC)",
         "url": "https://www.youtube.com/watch?v=6nENmIRNnAg",
         "publishedDate": "2023-09-25"
+      },
+      {
+        "label": "동구",
+        "url": "https://www.youtube.com/watch?v=tCgeW8R5ffY",
+        "publishedDate": "2023-09-25",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -57001,7 +57029,7 @@
     "id": "20261118-boram-btn-dream-schedule",
     "date": "2026-11-18",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-01",
+    "updatedAt": "2026-11-18T07:49:40.017695+00:00",
     "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
@@ -57016,7 +57044,14 @@
       "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
       "publishedDate": "2026-10-26"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "BTN라디오",
+        "url": "https://www.youtube.com/watch?v=ve25tYL3mVw",
+        "publishedDate": "2026-11-18",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
