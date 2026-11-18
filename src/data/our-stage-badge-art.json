@@ -719,6 +719,9 @@
     },
     "event-boram-nightingale": {
       "image": "/images/game/our-stage/nightingale-badge.png"
+    },
+    "trainee-complete": {
+      "image": "/images/game/our-stage/trainee-complete.svg"
     }
   },
   "logoSheets": {

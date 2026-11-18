@@ -41,7 +41,7 @@ function createModel(testMode=false) {
   const albumCount=(s,id)=>albumById(id)?.tracks.filter(t=>open(s,t.id)).length||0;
   const albumComplete=(s,id)=>Boolean(albumById(id)&&albumCount(s,id)===albumById(id).tracks.length);
   const albumMastered=(s,id)=>Boolean(albumById(id)&&albumById(id).tracks.every(t=>ready(s,t.id)));
-  const albumUnlocked=(s,id)=>id==='first-mind'?has(s,'album'):s.albums.includes(id);
+  const albumUnlocked=(s,id)=>id==='first-mind'?(has(s,'album')||s.simple?.debuted===true):s.albums.includes(id);
   const albumStoryGates={'lovely-sweet-heart':['event-rookie'],'brilliant-change':['event-seoul']};
   const storyDestination=key=>{const id=key.replace(/^story:/,'');if(['gr','yj','reunion','br','event-wsg','event-yeonji-return','event-gyulmung'].includes(id))return 'still-here';return Object.keys(albumStoryGates).find(a=>albumStoryGates[a].includes(id))||null;};
   const comebackStoryIds=['gr','yj','reunion','br'];
@@ -133,22 +133,30 @@ function createModel(testMode=false) {
     if(n){s.points=Math.min(100,s.points+n*5);s.energyAt=s.points===100?now:s.energyAt+n*timing.recoveryMs;}
   }
   function start(s,job,at){
-    if(s.points<5)return false;
+    const cost=job.chain?(s.simple?.debuted===false?0:(3-s.tracks[job.track].length)*5):5;
+    if(s.points<cost)return false;
     if(s.points===100)s.energyAt=at;
-    s.points-=5;s.active={...job,end:at+lessons[job.lesson].seconds*1000};return true;
+    s.points-=cost;s.active={...job,end:at+(job.chain&&s.simple?.debuted===false?(timing.testMode?333:1000):lessons[job.lesson].seconds*1000)};return true;
   }
   function settle(s,now=Date.now()){
     let finished=0;
     if(s.shopJob&&s.shopJob.end<=now){if(s.shopJob.kind==='setup')s.gigs++;else s.jobCounts[s.shopJob.kind]++;s.shopJob=null;finished++;}
     while(s.active&&s.active.end<=now){
-      const {track,lesson,end}=s.active;
+      const {track,lesson,end,chain}=s.active;
       if(!s.tracks[track].includes(lesson))s.tracks[track].push(lesson);
       if(ready(s,track)&&!s.setlist.includes(track))s.setlist.push(track);
       s.active=null;finished++;recover(s,end);
-      if(s.queue&&start(s,s.queue,end))s.queue=null;
+      if(chain&&!ready(s,track)){const next=[0,1,2].find(i=>!s.tracks[track].includes(i));s.active={track,lesson:next,chain:true,end:end+(s.simple?.debuted===false?(timing.testMode?333:1000):lessons[next].seconds*1000)};}
+      else if(s.queue&&start(s,s.queue,end))s.queue=null;
     }
-    if(!s.active&&s.queue){const at=s.points>=5?s.energyAt:s.energyAt+timing.recoveryMs;if(at<=now){recover(s,at);if(start(s,s.queue,at)){s.queue=null;return finished+settle(s,now);}}}
+    if(!s.active&&s.queue){const cost=s.queue.chain?(s.simple?.debuted===false?0:(3-s.tracks[s.queue.track].length)*5):5;const at=s.energyAt+Math.ceil(Math.max(0,cost-s.points)/5)*timing.recoveryMs;if(at<=now){recover(s,at);if(start(s,s.queue,at)){s.queue=null;return finished+settle(s,now);}}}
     recover(s,now);return finished;
+  }
+  function trainAll(s,track,now=Date.now()){
+    if(!ids.includes(track)||!open(s,track)||ready(s,track)||s.queue||s.active?.track===track)return false;
+    const job={track,lesson:[0,1,2].find(i=>!s.tracks[track].includes(i)),chain:true};
+    if(s.active){s.queue=job;return true;}
+    return start(s,job,now);
   }
   function train(s,track,lesson,now=Date.now()){
     if(!ids.includes(track)||!open(s,track)||!lessons[lesson]||s.tracks[track].includes(lesson))return false;
@@ -174,7 +182,7 @@ function createModel(testMode=false) {
     if(!s.albums.every((id,i)=>id===albums[i+1].id&&albumUnlocked(s,albums[i].id)&&albumComplete(s,albums[i].id)))return false;
     if(!subset(s.collected,ids)||!s.collected.includes('scent')||!s.collected.every(id=>(limits.eligible||eligible)(s,id))||!subset(s.proofs,Object.keys(challenges))||!s.notes||typeof s.notes!=='object'||Array.isArray(s.notes)||!Object.entries(s.notes).every(([k,v])=>k.startsWith('story:')&&challenges[k]&&typeof v==='string'&&v.trim().length>0&&v.length<=200))return false;
     if(!ids.every(id=>!s.tracks[id].length||open(s,id)))return false;
-    const job=j=>j&&ids.includes(j.track)&&open(s,j.track)&&[0,1,2].includes(j.lesson)&&!s.tracks[j.track].includes(j.lesson);
+    const job=j=>j&&(j.chain===undefined||typeof j.chain==='boolean')&&ids.includes(j.track)&&open(s,j.track)&&[0,1,2].includes(j.lesson)&&!s.tracks[j.track].includes(j.lesson);
     if(s.active!==null&&(!job(s.active)||!Number.isSafeInteger(s.active.end)||s.active.end<0))return false;
     if(s.queue!==null&&(!job(s.queue)||(s.active&&s.queue.track===s.active.track&&s.queue.lesson===s.active.lesson)))return false;
     if(!storyEntries.every(e=>!storyDone(s,e.id)||storyAvailable(s,e.id)))return false;
@@ -189,7 +197,7 @@ function createModel(testMode=false) {
     const earnedBadges=badges(s).filter(b=>b.earned).map(b=>b.id);
     if(!Object.entries(s.cardDecorations).every(([id,list])=>cardOwned(s,id)&&Array.isArray(list)&&list.length<=3&&subset(list,earnedBadges)))return false;
     if(!s.equipped||!s.hair||!memberIds.every(m=>styleOwned(s,s.equipped[m],m)&&styleOwned(s,s.hair[m],m))||(limits.balance??coins(s))<0)return false;
-    return s.flags.every(id=>s.proofs.includes('story:'+id))&&(!has(s,'first')||ready(s,'scent'))&&(!has(s,'album')||has(s,'first'))&&(!voices(s)||has(s,'album'))&&(!has(s,'reunion')||has(s,'gr')&&has(s,'yj'))&&(!has(s,'ending')||has(s,'album')&&ids.filter(id=>ready(s,id)).length>=2);
+    return s.flags.every(id=>s.proofs.includes('story:'+id))&&(!has(s,'first')||ready(s,'scent'))&&(!has(s,'album')||has(s,'first'))&&(!voices(s)||has(s,'album'))&&(!has(s,'reunion')||has(s,'gr')&&has(s,'yj'))&&(!has(s,'ending')||albumUnlocked(s,'first-mind')&&ids.filter(id=>ready(s,id)).length>=2);
   }
 
   function loadSave(raw){
@@ -271,10 +279,11 @@ function createModel(testMode=false) {
     for(const e of storyEntries.filter(e=>e.kind==='event'&&e.awardBadge!==false))b.push({id:e.id,name:e.badgeName||e.title,earned:storyDone(s,e.id),hint:'사이드 이벤트 간직하기 · '+e.date,group:'이벤트',kind:'activity',icon:e.icon});
     b.push({id:'story-journey',name:'노래 사이의 모든 기억',earned:storyEntries.every(e=>storyDone(s,e.id)),hint:'앨범 이야기 '+storyEntries.filter(e=>e.kind==='album').length+'개와 사이드 이벤트 '+storyEntries.filter(e=>e.kind==='event').length+'개 간직하기',group:'이야기',kind:'activity',icon:2});
     b.push({id:'gyul-star',name:'귤별이 돼',earned:memberCards(s).filter(c=>c.member==='gr'&&c.earned).length>=3,hint:'남규리 멤버 카드 3장 수집',group:'활동',kind:'activity',icon:2});
+    if(s.simple?.phaseOne===1)b.push({id:'trainee-complete',name:'연습생 수료',earned:ready(s,'scent'),hint:'첫 노래 연습 완료',group:'이야기',kind:'activity',icon:0});
     return b;
   }
 
-  return {canCheer,albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,train,claim,valid};
+  return {canCheer,albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,trainAll,train,claim,valid};
 }
 module.exports=createModel();
 module.exports.forTest=()=>createModel(true);

@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
 require('./check-our-stage-wardrobe-review');
 const M=require('../src/shared/our-stage').forTest(),art=require('../src/data/our-stage-badge-art.json');
-const badges=M.badges(M.fresh());assert.equal(badges.length,51);assert.equal(Object.keys(art.badges).length,51);
+const badges=M.badges(M.fresh());assert.equal(badges.length,51);assert.equal(Object.keys(art.badges).length,52);
 // New games start in practice clothes; existing concert equipment remains valid.
 const fresh=M.fresh();assert.deepEqual(fresh.equipped,{br:'practice',gr:'practice',yj:'practice'});
 assert.deepEqual(fresh.hair,fresh.equipped);

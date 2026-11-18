@@ -1,10 +1,66 @@
 {
- "first-mind":{"colors":["#ead7e2","#81536d"],"line":"처음 만난 세 목소리, 오래 간직할 첫 무대."},
- "lovely-sweet-heart":{"colors":["#f3d7de","#9c5269"],"line":"사랑의 인사처럼, 다정하게 건네는 마음."},
- "california-dream":{"colors":["#dce9df","#4e7467"],"line":"함께 걸어서 따뜻했던 우리의 겨울."},
- "brilliant-change":{"colors":["#dce3f1","#4b658c"],"line":"새로운 빛으로 채운, 또 하나의 씨야."},
- "rebloom":{"colors":["#e7dcf1","#795d93"],"line":"다시 피어난 노래를 이 한 장에 간직해요."},
- "see-you-again":{"colors":["#f1e2cf","#906c43"],"line":"끝인 줄 알았던 인사는, 다시 만날 약속이었어요."},
- "still-here":{"colors":["#dce8ef","#4c7186"],"line":"긴 시간을 건너, 다시 같은 무대에."},
- "first-again":{"colors":["#e5dcf0","#785493"],"line":"다시 시작한 우리의 계절, 함께라서 빛나요."}
+  "first-mind": {
+    "colors": [
+      "#ead7e2",
+      "#81536d"
+    ],
+    "line": "처음 만난 세 목소리, 오래 간직할 첫 무대.",
+    "band": "처음 만난 세 목소리"
+  },
+  "lovely-sweet-heart": {
+    "colors": [
+      "#f3d7de",
+      "#9c5269"
+    ],
+    "line": "사랑의 인사처럼, 다정하게 건네는 마음.",
+    "band": "다정한 인사의 계절"
+  },
+  "california-dream": {
+    "colors": [
+      "#dce9df",
+      "#4e7467"
+    ],
+    "line": "함께 걸어서 따뜻했던 우리의 겨울.",
+    "band": "함께 걸은 겨울"
+  },
+  "brilliant-change": {
+    "colors": [
+      "#dce3f1",
+      "#4b658c"
+    ],
+    "line": "새로운 빛으로 채운, 또 하나의 씨야.",
+    "band": "가장 눈부신 변화"
+  },
+  "rebloom": {
+    "colors": [
+      "#e7dcf1",
+      "#795d93"
+    ],
+    "line": "다시 피어난 노래를 이 한 장에 간직해요.",
+    "band": "다시 피어난 노래"
+  },
+  "see-you-again": {
+    "colors": [
+      "#f1e2cf",
+      "#906c43"
+    ],
+    "line": "끝인 줄 알았던 인사는, 다시 만날 약속이었어요.",
+    "band": "다시 만날 약속"
+  },
+  "still-here": {
+    "colors": [
+      "#dce8ef",
+      "#4c7186"
+    ],
+    "line": "긴 시간을 건너, 다시 같은 무대에.",
+    "band": "긴 시간을 건너, 다시"
+  },
+  "first-again": {
+    "colors": [
+      "#e5dcf0",
+      "#785493"
+    ],
+    "line": "다시 시작한 우리의 계절, 함께라서 빛나요.",
+    "band": "다시, 처음처럼"
+  }
 }

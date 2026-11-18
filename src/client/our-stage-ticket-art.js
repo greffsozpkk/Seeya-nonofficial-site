@@ -4,8 +4,8 @@ const themes=require('../data/our-stage-album-keepsakes.json');
 const optimized=require('../data/our-stage-optimized-images.json');
 function load(src){return new Promise((resolve,reject)=>{const img=new Image(),timer=setTimeout(()=>reject(new Error('이미지를 불러오지 못했어요.')),15000);img.onload=()=>{clearTimeout(timer);resolve(img);};img.onerror=()=>{clearTimeout(timer);reject(new Error('이미지를 불러오지 못했어요.'));};img.src=optimized[src]||src;});}
 module.exports=async function({album,index,receipt,nickname}){
- const badge=art.badges[album.id+'-master'],source=badge.logo?art.logoSheets[badge.sheet]:art.sheets[badge.sheet];
- const [logo,sheet,badgeLogo]=await Promise.all([load('/images/game/our-stage/card-logo.svg'),load(source),load('/images/game/our-stage/'+(badge.logo?.tone==='light'?'badge-logo-light.svg':'card-logo.svg'))]);
+ const keepsake=require('./our-stage-keepsake-art');
+ const [logo,picture]=await Promise.all([load('/images/game/our-stage/card-logo.svg'),keepsake.panel(album.id)]);
  await document.fonts.ready;
  const canvas=document.createElement('canvas');canvas.width=1800;canvas.height=840;
  const c=canvas.getContext('2d');c.scale(2,2);
@@ -19,14 +19,10 @@ module.exports=async function({album,index,receipt,nickname}){
  c.drawImage(logo,396,23,108,30.61);c.textAlign='center';text('A R C H I V E',450,70,150,10,ink,600);c.textAlign='left';
  text('OUR STAGE',40,49,220,12,accent,700);c.textAlign='right';text('ALBUM CONCERT · '+String(index+1).padStart(2,'0'),860,49,240,12,accent,700);c.textAlign='left';
  line(40,86,860,86,'#ded2d5');
- rect(615,104,245,244,wash);
- // A soft spotlight and a stage underline frame the approved album sprites.
- const glow=c.createRadialGradient(738,180,5,738,220,175);glow.addColorStop(0,'#ffffffd9');glow.addColorStop(1,'#ffffff00');rect(615,104,245,244,glow);
- for(const [x,y,r] of [[642,133,4],[829,154,3],[808,122,5]]){c.fillStyle=accent;c.beginPath();c.moveTo(x,y-r);c.lineTo(x+2,y);c.lineTo(x,y+r);c.lineTo(x-2,y);c.closePath();c.fill();}
- const crop=document.createElement('canvas');crop.width=badge.box[2];crop.height=badge.box[3];const cc=crop.getContext('2d');cc.drawImage(sheet,...badge.box,0,0,crop.width,crop.height);
- if(badge.logo){const pixels=cc.getImageData(0,0,crop.width,crop.height);for(let i=3;i<pixels.data.length;i+=4)pixels.data[i]=pixels.data[i]<224?0:255;cc.putImageData(pixels,0,0);const [x,y,w,h]=badge.logo.box;cc.drawImage(badgeLogo,x-badge.box[0],y-badge.box[1],w,h);}
- const size=Math.min(166/crop.width,132/crop.height),w=crop.width*size,h=crop.height*size;c.imageSmoothingEnabled=false;c.drawImage(crop,738-w/2,202-h/2,w,h);c.imageSmoothingEnabled=true;
- line(636,278,840,278,accent);c.textAlign='center';text('함께 완성한 우리의 무대',738,310,225,14,accent,600);text('CHAPTER '+String(index+1).padStart(2,'0')+' · '+album.type.split(' · ')[1].slice(0,4),738,332,220,10,accent,600);c.textAlign='left';
+ c.imageSmoothingEnabled=false;c.drawImage(picture,616,100,244,250);c.imageSmoothingEnabled=true;
+ rect(616,300,244,50,'rgba(22,14,34,.73)');rect(616,299,244,2,'#CDA55F');c.textAlign='center';
+ text(themes[album.id].band||'함께 완성한 우리의 무대',738,320,230,15,'#FFF1E2',700);
+ text('CHAPTER '+String(index+1).padStart(2,'0')+' · '+album.type.split(' · ')[1].slice(0,4),738,338,230,10,'#CDA55F',600);c.textAlign='left';
  text('CHAPTER '+String(index+1).padStart(2,'0')+'  /  앨범 완주 기념',42,121,540,13,accent,700);
  text(album.name,40,170,545,38,ink,750);
  text(themes[album.id].line,42,202,540,15,'#766771');

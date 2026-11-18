@@ -1,0 +1,52 @@
+/* First release: fewer controls, keepsakes in the room, optional play. */
+#ourStage .unified-practice{margin:18px 0 12px}
+#ourStage .unified-practice>button{width:100%;min-height:52px;font-size:16px}
+#ourStage .practice-segments{display:flex;justify-content:space-between;gap:8px;font-size:13px;margin:8px 0;color:#796774}
+#ourStage .practice-segments .done{color:#68465c;font-weight:700}
+#ourStage .practice-segments .current{color:#8d315a;font-weight:800;text-decoration:underline;text-underline-offset:5px}
+#ourStage .practice-next{margin-top:24px}
+#ourStage .room-status{left:61%;max-width:66%;white-space:normal;line-height:1.5}
+#ourStage .wall-pass{position:absolute;left:4%;top:24%;width:11%;min-width:44px;aspect-ratio:.7;min-height:0;background:#fff4e6;border:2px solid #7e5269;border-top:12px solid #986a7e;border-radius:2px;padding:4px 2px;z-index:2;display:flex;flex-direction:column;justify-content:space-around;gap:2px;box-shadow:3px 3px 0 #39243933;transform:rotate(-3deg);color:#633e58}
+#ourStage .wall-pass span{font-size:8px;font-weight:800;letter-spacing:1px}
+#ourStage .wall-pass b{font-size:9px}
+#ourStage .wall-pass small{font-size:7px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:100%}
+#ourStage .trainee-pass{border-top-color:#8a7a88;filter:saturate(.4)}
+#ourStage .wall-debut-poster{position:absolute;top:4%;left:3%;width:15%;aspect-ratio:1.2;max-height:18%;overflow:hidden;padding:6px 4px;background:linear-gradient(#f4d4e4,#fff0db);border:3px solid #fff4e8;box-shadow:2px 2px 0 #39243933;display:flex;flex-direction:column;justify-content:center;gap:6px;text-align:center;color:#653e58;transform:rotate(2deg);z-index:2}
+#ourStage .wall-debut-poster img{width:80%;height:auto;max-height:30%;padding:0;filter:none;object-fit:contain;flex:0 0 auto;margin:0 auto}
+#ourStage .wall-debut-poster b{font-size:8px}
+#ourStage .wall-debut-poster span{font-size:7px}
+#ourStage .trainee-studio .pixel-trio{left:18%;width:64%}
+#ourStage .trainee-studio .member-labels{left:18%;right:18%}
+#ourStage .artist-pass-preview{width:min(100%,360px);display:block;margin:18px auto}
+#ourStage .ticket-extras{padding:16px 0;border-top:1px solid #e5d4df;margin-top:16px}
+#ourStage .ticket-extras p{font-size:13px;line-height:1.6}
+#ourStage .restored-seal{display:inline-block;color:#855b31;padding:8px;font-size:13px}
+#ourStage .ticket-puzzle{width:min(100%,390px);display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin:20px auto;padding:5px;background:#e9dbe3;border-radius:12px}
+#ourStage .ticket-puzzle button{aspect-ratio:1;min-height:0;padding:0;border:3px solid transparent;border-radius:4px;background-size:300% 300%;background-origin:border-box;background-clip:border-box;position:relative}
+#ourStage .ticket-puzzle button[aria-pressed=true]{border-color:#b04779;outline:3px solid #fff3bc;z-index:1}
+#ourStage .ticket-puzzle button:disabled{opacity:1}
+#ourStage .ticket-puzzle button span{position:absolute;bottom:3px;left:3px;background:#342536bb;color:white;border-radius:3px;font-size:10px;padding:1px 5px}
+#ourStage .puzzle-guide img{width:min(100%,220px);display:block;margin:12px auto;border-radius:8px}
+#ourStage .debut-rewards{margin-top:20px;padding-top:16px;border-top:1px solid #e5d4df}
+#ourStage .debut-rewards>.outfit-sheet{max-height:190px}
+#ourStage .reunion-bridge{background:#171121;color:#fff2e4;padding:65px 22px;text-align:center;border-radius:14px}
+#ourStage .reunion-bridge h2{font-size:clamp(44px,10vw,76px);color:#f7e7ee;margin:26px 0}
+#ourStage .reunion-bridge p{color:#eddae8}
+#ourStage .stage-lift{position:relative;width:100%;height:100%}
+#ourStage .stage-led{position:absolute;inset:0;background:repeating-linear-gradient(90deg,#ffffff08 0 2px,transparent 2px 18px),repeating-linear-gradient(0deg,#ffffff06 0 2px,transparent 2px 18px),radial-gradient(ellipse at 50% 30%,var(--album-light,#694367),#1d172d 72%);opacity:.8;pointer-events:none}
+#ourStage .stage-rail{position:absolute;left:0;right:0;bottom:24%;height:3px;background:#b19bbe;box-shadow:0 4px 0 #49354c;pointer-events:none}
+#ourStage .stage-trio{position:relative;z-index:2}
+#ourStage .stage-entrance{--lift:1.6s;--gap:1s}
+#ourStage .slow-entrance{--lift:3.2s;--gap:2s}
+#ourStage .stage-entrance .stage-performer{overflow:hidden}
+#ourStage .stage-entrance .stage-lift{transform:translateY(115%);animation:our-stage-lift var(--lift) cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--o)*var(--gap))}
+#ourStage .stage-entrance .stage-performer .stage-lift *{--phrase-delay:var(--arrival)}
+#ourStage .stage-entrance .stage-audience{opacity:.35;transition:opacity .5s}
+#ourStage .stage-entrance.entrance-lit .stage-audience{opacity:1}
+@keyframes our-stage-lift{to{transform:translateY(0)}}
+@media(max-width:650px){#ourStage .wall-pass{left:3%;top:24%;width:12%;border-top-width:7px}#ourStage .wall-debut-poster{left:3%;top:4%;width:15%;padding:3px 1px;gap:3px}#ourStage .wall-debut-poster b{font-size:6px}#ourStage .wall-debut-poster span{font-size:5px}#ourStage .room-status{font-size:12px;max-width:66%}#ourStage .ticket-name input{width:100%;min-width:0}#ourStage .practice .line{align-items:flex-start;gap:10px;flex-wrap:wrap}#ourStage .practice select{max-width:100%;width:100%}}
+@media(prefers-reduced-motion:reduce){#ourStage .stage-entrance .stage-lift{animation:none;transform:none}#ourStage .stage-entrance .stage-audience{opacity:1;transition:none}#ourStage .stage-entrance .stage-performer .stage-lift *{--phrase-delay:0s}}
+
+#ourStage #passNameStatus{display:block;min-height:1.6em;margin:6px 0;color:#6b485b;font-size:13px}
+
+#ourStage .room .pixel-trio{pointer-events:none}
