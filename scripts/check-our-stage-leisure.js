@@ -3,7 +3,7 @@ const assert=require('node:assert/strict'),base=require('../src/shared/our-stage
 const wrap=B=>require('../src/shared/our-stage-leisure')(require('../src/shared/our-stage-first-release')(require('../src/shared/our-stage-simple')(B)));
 const M=wrap(base.forTest()),G=M.play,C=M.capsules,T=require('../src/shared/our-stage-test-tools')(M);
 let now=Date.parse('2026-11-19T03:00:00Z'),s=T.create('album:lovely-sweet-heart',now);
-assert(M.valid(s));assert.equal(G.bank.length,41);assert.equal(C.pool.length,28);assert.deepEqual(Object.fromEntries(['normal','rare','special'].map(k=>[k,C.pool.filter(i=>i.rarity===k).length])),{normal:10,rare:10,special:8});
+assert(M.valid(s));assert.equal(G.bank.length,41);assert.equal(C.pool.length,31);assert.deepEqual(Object.fromEntries(['normal','rare','special'].map(k=>[k,C.pool.filter(i=>i.rarity===k).length])),{normal:10,rare:11,special:10});
 const balance=M.coins(s),legacy=JSON.parse(JSON.stringify(s));delete legacy.leisure;const migrated=M.loadSave(JSON.stringify(legacy));assert.equal(M.coins(migrated),balance);assert(M.valid(migrated));
 assert(!M.capsuleUnlocked(T.create('album:first-mind',now)));assert(!M.pullCapsule(T.create('album:first-mind',now),now));
 let id=G.start(s,'quiz',now);assert(id);const firstIds=s.leisure.play.active.questions.map(q=>q.id);assert.equal(new Set(firstIds).size,3);
@@ -29,4 +29,4 @@ for(const mutate of [x=>x.leisure.capsules.rareMiss=10,x=>x.leisure.capsules.spe
 const prod=wrap(base);assert.equal(prod.play.cooldown,900000);assert.equal(M.play.cooldown,10000);assert(!M.play.canStart(M.fresh(now),'quiz',now));
 // Existing unfinished games and their already-counted daily attempt survive the update.
 const old=require('../src/shared/our-stage-first-release')(require('../src/shared/our-stage-simple')(base.forTest())),oldSave=require('../src/shared/our-stage-test-tools')(old).create('album:lovely-sweet-heart',now);old.mini.start(oldSave.mini,'pairs',now);const recovered=M.loadSave(JSON.stringify(oldSave));assert(recovered.mini.active);assert.equal(recovered.leisure.play.plays,1);assert(!G.canStart(recovered,'quiz',now));
-console.log('PASS leisure: 41 sourced questions, diverse unlocked decks, three games, resume/once-only rewards, shared six/day and cooldown, 28 cosmetics, free/KST/pity/duplicate/exchange, persistence, shop balance and legacy migration.');
+console.log('PASS leisure: 41 sourced questions, diverse unlocked decks, three games, resume/once-only rewards, shared six/day and cooldown, 31 cosmetics, free/KST/pity/duplicate/exchange, persistence, shop balance and legacy migration.');

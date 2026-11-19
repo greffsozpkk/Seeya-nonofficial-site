@@ -1052,5 +1052,71 @@
         "chin": 364
       }
     }
+  },
+  "capsule-nightingale": {
+    "image": "/images/game/our-stage/layers/capsule-solo-20261119.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          0,
+          0,
+          512,
+          580
+        ],
+        "body": [
+          100,
+          600,
+          350,
+          424
+        ],
+        "chin": 400
+      }
+    }
+  },
+  "capsule-kairos": {
+    "image": "/images/game/our-stage/layers/capsule-solo-20261119.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "gr": {
+        "head": [
+          512,
+          0,
+          512,
+          580
+        ],
+        "body": [
+          612,
+          600,
+          350,
+          424
+        ],
+        "chin": 358
+      }
+    }
+  },
+  "capsule-gasoline": {
+    "image": "/images/game/our-stage/layers/capsule-solo-20261119.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "yj": {
+        "head": [
+          1024,
+          0,
+          512,
+          580
+        ],
+        "body": [
+          1124,
+          600,
+          350,
+          424
+        ],
+        "chin": 452
+      }
+    }
   }
 }

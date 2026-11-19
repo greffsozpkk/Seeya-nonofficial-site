@@ -70,3 +70,10 @@
 #ourStage .skin-stage-sample.stage-art{display:block;position:relative;width:100%;aspect-ratio:4/3;min-height:0;padding:0;margin:0 0 8px;overflow:hidden;border-radius:6px;border:2px solid #b6a2ba}
 #ourStage .skin-stage-sample.stage-art .stage-set{inset:0}
 @media(max-width:650px){#ourStage .capsule-collection{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#ourStage .capsule-item{padding:9px}#ourStage .skin-options>button{width:calc(50% - 6px)}#ourStage .skin-card-preview{max-width:260px}#ourStage .pixel-collectible[data-skin-frame]:not([data-skin-frame=""]){padding:15px 14px 23px;border-width:5px}#ourStage .capsule-outfit-trio{padding:6px 0}#ourStage .capsule-item:has(.capsule-outfit-trio){grid-column:1/-1}#ourStage .capsule-item .capsule-outfit-trio .member-sprite{max-height:190px}}
+
+#ourStage .capsule-outfit-trio.solo{justify-content:center}
+#ourStage .capsule-outfit-trio.solo .member-sprite{width:190px;max-width:100%;flex:none}
+#ourStage .capsule-outfit-meta{font-size:.9rem;line-height:1.65;color:#574960;margin:8px 0}
+#ourStage .capsule-source{display:inline-block;font-size:.83rem;margin:0 0 12px;color:#795271}
+
+#ourStage .capsule-costume-note{font-size:.875rem;margin:0 0 12px;line-height:1.65;color:#65536b}

@@ -10,6 +10,7 @@ assert(!M.cardOwned(before,'heritage:sumi'));assert(!M.valid({...before,displayC
 after.displayCard='heritage:sumi';assert(M.decorateCard(after,'heritage:sumi','all-members-unlocked'));assert(M.valid(after));assert.deepEqual(M.loadSave(JSON.stringify(after)),after);
 const old=JSON.parse(JSON.stringify(after));old.displayCard=null;delete old.cardDecorations['heritage:sumi'];assert(card(M.loadSave(JSON.stringify(old))).earned,'existing Rebloom players receive the card retroactively');
 for(const hair of Object.keys(layers))for(const clothes of Object.keys(layers))for(const member of M.memberIds){
+ if(!layers[hair].members[member]||!layers[clothes].members[member])continue;
  const g=geometry(member,hair,clothes,layers),h=layers[hair].members[member],b=layers[clothes].members[member],ha=anchors[hair][member].head,na=anchors[clothes][member].neck;
  const hx=g.headX+(ha[0]-h.head[0])*g.hw/h.head[2],nx=g.bodyX+(na[0]-b.body[0])*g.bw/b.body[2];
  assert(Math.abs(hx-nx)<.001,'chin/neck alignment '+hair+' '+clothes+' '+member);

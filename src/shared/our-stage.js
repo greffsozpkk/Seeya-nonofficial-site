@@ -101,7 +101,7 @@ function createModel(testMode=false) {
     mini:s.mini.earned
   });
   const coins=s=>Object.values(earnings(s)).reduce((a,b)=>a+b,0)-s.purchases.reduce((n,p)=>n+(shopById(p.split(':')[0])?.price||0),0);
-  const styleOwned=(s,id,member)=>memberIds.includes(member)&&(['base','practice'].includes(id)||Boolean(albumById(id))&&albumUnlocked(s,id)||Boolean(shopById(id))&&s.purchases.includes(id+':'+member)||capsuleOutfits.some(o=>o.id===id&&s.leisure?.capsules?.owned?.includes(o.reward)));
+  const styleOwned=(s,id,member)=>memberIds.includes(member)&&(['base','practice'].includes(id)||Boolean(albumById(id))&&albumUnlocked(s,id)||Boolean(shopById(id))&&s.purchases.includes(id+':'+member)||capsuleOutfits.some(o=>o.id===id&&o.members.includes(member)&&s.leisure?.capsules?.owned?.includes(o.reward)));
   function equipPart(s,member,part,id){if(!['clothes','hair'].includes(part)||!styleOwned(s,id,member))return false;(part==='hair'?s.hair:s.equipped)[member]=id;return true;}
   function equip(s,member,id){if(!styleOwned(s,id,member))return false;s.equipped[member]=id;s.hair[member]=id;return true;}
   function purchase(s,id,member){const o=shopById(id);if(!o||!memberIds.includes(member)||s.purchases.includes(id+':'+member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}

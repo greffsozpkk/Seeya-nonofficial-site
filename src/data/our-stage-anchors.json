@@ -638,5 +638,41 @@
         364.0
       ]
     }
+  },
+  "capsule-nightingale": {
+    "br": {
+      "head": [
+        301,
+        400
+      ],
+      "neck": [
+        300,
+        614
+      ]
+    }
+  },
+  "capsule-kairos": {
+    "gr": {
+      "head": [
+        777,
+        358
+      ],
+      "neck": [
+        769,
+        614
+      ]
+    }
+  },
+  "capsule-gasoline": {
+    "yj": {
+      "head": [
+        1237,
+        452
+      ],
+      "neck": [
+        1238,
+        614
+      ]
+    }
   }
 }

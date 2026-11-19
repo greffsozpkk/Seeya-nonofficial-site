@@ -26,8 +26,8 @@ const rows=[
  ['stage-moon','stage','rare','달빛 발라드','moon','#b7b4ee','#202846'],
  ['stage-gold','stage','special','THE FAN · 황금빛 밤','gold','#f2ce78','#37274e']
 ];
-rows.push(['outfit-white','outfit','special','화이트 하모니 · 3인 세트','white','#849bb7','#f0f5ff'],['outfit-silver','outfit','special','보여줄게 · 3인 세트','silver','#a08ac8','#f3edff']);
-rows.push(['outfit-cocktail','outfit','special','칵테일 사랑 · 3인 세트','cocktail','#577db4','#eaf3ff'],['outfit-hotgirl','outfit','special','Hot Girl · 3인 세트','hotgirl','#d64c95','#fff0f7']);
+const outfits=require('../data/our-stage-capsule-outfits.json');
+for(const o of outfits)rows.push([o.reward,'outfit',o.rarity,o.name,o.id.replace('capsule-',''),o.color,o.paper]);
 const pool=rows.map(([id,kind,rarity,name,motif,color,paper])=>({id,kind,rarity,name,motif,color,paper}));
 const byId=id=>pool.find(x=>x.id===id),rates={normal:70,rare:25,special:5},refund={normal:1,rare:2,special:3},cost={normal:3,rare:6,special:12};
 const fresh=()=>({pulls:0,freePulls:0,freeDay:null,day:null,rareMiss:0,specialMiss:0,owned:[],tickets:0,exchanges:[],history:[],last:null});
