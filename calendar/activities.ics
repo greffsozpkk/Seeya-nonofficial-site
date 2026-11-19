@@ -591,8 +591,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2007-04&event=activity-200704
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v474-stage-research-043@seeya-fanpage.com
-DTSTAMP:20260910T150000Z
-LAST-MODIFIED:20260910T150000Z
+DTSTAMP:20261119T074515Z
+LAST-MODIFIED:20261119T074515Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20070505
 DTEND;VALUE=DATE:20070506
@@ -602,8 +602,9 @@ TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:남규리\n시간 미정\nAgain 가요톱10 : KBS KPOP Classic:
-  https://www.youtube.com/watch?v=MbHnINHWyC0\nhttps://seeya-fanpage.com/ar
- chive/?record=v474-stage-research-043
+  https://www.youtube.com/watch?v=MbHnINHWyC0\nAgain 가요톱10 : KBS KPOP
+  Classic: https://www.youtube.com/watch?v=tIGVfIxY9wY\nhttps://seeya-fanpa
+ ge.com/archive/?record=v474-stage-research-043
 URL:https://seeya-fanpage.com/calendar/?month=2007-05&event=activity-v474-s
  tage-research-043
 END:VEVENT
@@ -7513,8 +7514,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2025-11&event=activity-v491-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-still-singing@seeya-fanpage.com
-DTSTAMP:20261114T065138Z
-LAST-MODIFIED:20261114T065138Z
+DTSTAMP:20261119T074515Z
+LAST-MODIFIED:20261119T074515Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20251206
 DTEND;VALUE=DATE:20251208
@@ -7553,8 +7554,10 @@ DESCRIPTION:이보람 · 김연지\n시간 미정\n12월 6~7일 열린 이
   https://www.youtube.com/watch?v=U_LPcFgkwYY\n정아선: https://www.youtu
  be.com/watch?v=3VQcZ1UULuM\n정아선: https://www.youtube.com/watch?v=Lx-
  iHbj0bac\n정아선: https://www.youtube.com/watch?v=FAprrOM5VaQ\nh.a.p.p.
- y.3.6.5: https://www.youtube.com/watch?v=jfN-Po3llDU\nhttps://seeya-fanpag
- e.com/archive/?record=v491-still-singing
+ y.3.6.5: https://www.youtube.com/watch?v=jfN-Po3llDU\n꽃길보라미: htt
+ ps://www.youtube.com/watch?v=g7HHZOv4TlM\nh.a.p.p.y.3.6.5: https://www.you
+ tube.com/watch?v=iTtqKFZizDs\nhttps://seeya-fanpage.com/archive/?record=v4
+ 91-still-singing
 URL:https://seeya-fanpage.com/calendar/?month=2025-12&event=activity-v491-s
  till-singing
 END:VEVENT
