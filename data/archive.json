@@ -15941,6 +15941,18 @@
         "url": "https://www.youtube.com/watch?v=jfN-Po3llDU",
         "publishedDate": "2025-12-17",
         "autoDiscovery": true
+      },
+      {
+        "label": "꽃길보라미",
+        "url": "https://www.youtube.com/watch?v=g7HHZOv4TlM",
+        "publishedDate": "2025-12-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "h.a.p.p.y.3.6.5",
+        "url": "https://www.youtube.com/watch?v=iTtqKFZizDs",
+        "publishedDate": "2025-12-13",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -15954,7 +15966,7 @@
     "dateBasis": "event",
     "endDate": "2025-12-07",
     "venue": "성신여자대학교 운정그린캠퍼스 대강당",
-    "updatedAt": "2026-11-14T06:51:38.259562+00:00"
+    "updatedAt": "2026-11-19T07:45:15.880969+00:00"
   },
   {
     "id": "v4145-6JiTQ12-tFg",
@@ -47354,7 +47366,14 @@
       "label": "Again 가요톱10 : KBS KPOP Classic",
       "url": "https://www.youtube.com/watch?v=MbHnINHWyC0"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "Again 가요톱10 : KBS KPOP Classic",
+        "url": "https://www.youtube.com/watch?v=tIGVfIxY9wY",
+        "publishedDate": "2021-10-31",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
@@ -47362,7 +47381,8 @@
     ],
     "note": "",
     "dateBasis": "broadcast",
-    "publishedDate": "2021-10-30"
+    "publishedDate": "2021-10-30",
+    "updatedAt": "2026-11-19T07:45:15.880969+00:00"
   },
   {
     "id": "v485-news-4005184fe592",
