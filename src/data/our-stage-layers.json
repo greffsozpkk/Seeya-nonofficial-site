@@ -844,5 +844,213 @@
         "chin": 363
       }
     }
+  },
+  "capsule-white": {
+    "image": "/images/game/our-stage/layers/capsule-white.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          0,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          100,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      },
+      "gr": {
+        "head": [
+          512,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          612,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      },
+      "yj": {
+        "head": [
+          1024,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          1124,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      }
+    }
+  },
+  "capsule-silver": {
+    "image": "/images/game/our-stage/layers/capsule-silver.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          0,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          100,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      },
+      "gr": {
+        "head": [
+          512,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          612,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      },
+      "yj": {
+        "head": [
+          1024,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          1124,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      }
+    }
+  },
+  "capsule-cocktail": {
+    "image": "/images/game/our-stage/layers/capsule-cocktail.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          0,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          100,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      },
+      "gr": {
+        "head": [
+          512,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          612,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      },
+      "yj": {
+        "head": [
+          1024,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          1124,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      }
+    }
+  },
+  "capsule-hotgirl": {
+    "image": "/images/game/our-stage/layers/capsule-hotgirl.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          0,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          100,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      },
+      "gr": {
+        "head": [
+          512,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          612,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      },
+      "yj": {
+        "head": [
+          1024,
+          0,
+          512,
+          610
+        ],
+        "body": [
+          1124,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      }
+    }
   }
 }

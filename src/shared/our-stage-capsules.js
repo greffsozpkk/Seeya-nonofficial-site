@@ -15,10 +15,10 @@ const rows=[
  ['back-stamp','background','normal','마음의 우표','stamp','#a2819d','#f5edf7'],
  ['back-night','background','rare','밤하늘의 오선지','night','#d9caed','#292841'],
  ['back-fan','background','special','객석의 불빛','fan','#edb3de','#302345'],
- ['effect-petals','effect','rare','살랑이는 꽃잎','petals','#e69ab7','#fff1f4'],
- ['effect-record','effect','rare','레코드의 빛','record','#aa9bdb','#ede6ff'],
- ['effect-twinkle','effect','rare','별빛 한 조각','twinkle','#e6c78b','#fff4d7'],
- ['effect-confetti','effect','rare','커튼콜 색종이','confetti','#c188a9','#fff0f6'],
+ ['effect-petals','frame','rare','꽃잎 리본','ribbon','#e69ab7','#fff1f4'],
+ ['effect-record','frame','rare','레코드 컬렉션','record','#aa9bdb','#ede6ff'],
+ ['effect-twinkle','frame','rare','별빛 브로치','twinkle','#e6c78b','#fff4d7'],
+ ['effect-confetti','frame','rare','커튼콜 리본','confetti','#c188a9','#fff0f6'],
  ['stage-sunset','stage','normal','노을빛 무대','sunset','#d37d82','#422b51'],
  ['stage-blue','stage','normal','푸른 새벽','blue','#78aace','#182842'],
  ['stage-spring','stage','rare','벚꽃 앙코르','spring','#e9a3c1','#583652'],
@@ -26,6 +26,8 @@ const rows=[
  ['stage-moon','stage','rare','달빛 발라드','moon','#b7b4ee','#202846'],
  ['stage-gold','stage','special','THE FAN · 황금빛 밤','gold','#f2ce78','#37274e']
 ];
+rows.push(['outfit-white','outfit','special','화이트 하모니 · 3인 세트','white','#849bb7','#f0f5ff'],['outfit-silver','outfit','special','보여줄게 · 3인 세트','silver','#a08ac8','#f3edff']);
+rows.push(['outfit-cocktail','outfit','special','칵테일 사랑 · 3인 세트','cocktail','#577db4','#eaf3ff'],['outfit-hotgirl','outfit','special','Hot Girl · 3인 세트','hotgirl','#d64c95','#fff0f7']);
 const pool=rows.map(([id,kind,rarity,name,motif,color,paper])=>({id,kind,rarity,name,motif,color,paper}));
 const byId=id=>pool.find(x=>x.id===id),rates={normal:70,rare:25,special:5},refund={normal:1,rare:2,special:3},cost={normal:3,rare:6,special:12};
 const fresh=()=>({pulls:0,freePulls:0,freeDay:null,day:null,rareMiss:0,specialMiss:0,owned:[],tickets:0,exchanges:[],history:[],last:null});
@@ -47,5 +49,5 @@ function pull(g,now,balance,random=Math.random){if(!time(now)||g.day&&day(now)<g
  if(duplicate)g.tickets+=refund[rarity];else g.owned.push(item.id);
  g.last={number:g.pulls,item:item.id,duplicate,free};g.history=[{item:item.id,duplicate,free,day:today},...g.history].slice(0,10);return {...g.last,refund:duplicate?refund[rarity]:0};
 }
-function exchange(g,id){const item=byId(id);if(!item||g.owned.includes(id)||g.tickets<cost[item.rarity])return false;g.tickets-=cost[item.rarity];g.owned.push(id);g.exchanges.push(id);return true;}
+function exchange(g,id){const item=byId(id);if(!item||item.kind==='outfit'||g.owned.includes(id)||g.tickets<cost[item.rarity])return false;g.tickets-=cost[item.rarity];g.owned.push(id);g.exchanges.push(id);return true;}
 module.exports={pool,byId,rates,refund,cost,fresh,valid,pull,exchange,day,time,price:30};

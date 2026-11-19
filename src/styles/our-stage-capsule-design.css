@@ -1,0 +1,72 @@
+/* The exact same card artwork is used in the catalogue and on owned cards. */
+#ourStage .pixel-collectible[data-skin-frame]:not([data-skin-frame=""]){--card-color:var(--skin-frame);background:var(--skin-frame-paper);color:#42354b;border:6px solid var(--skin-frame);box-shadow:3px 5px 0 #30283b33,inset 0 0 0 2px #fff6dd;padding:18px 19px 26px;isolation:isolate}
+#ourStage .card-frame-art{position:absolute;inset:0;width:100%;height:100%;z-index:4;pointer-events:none;overflow:visible}
+#ourStage .pixel-collectible[data-skin-frame]:not([data-skin-frame=""]) .collectible-top{justify-content:center}
+#ourStage .pixel-collectible[data-skin-frame]:not([data-skin-frame=""]) .collectible-top>span:not(.card-brand){display:none}
+#ourStage .pixel-collectible[data-skin-frame]:not([data-skin-frame=""]) .collectible-art{background-color:var(--skin-frame-paper);background-image:none;box-shadow:inset 0 0 0 1px #59486322}
+#ourStage .pixel-collectible[data-skin-frame]:not([data-skin-frame=""]) .card-brand img{filter:none}
+#ourStage .pixel-collectible[data-skin-frame]:not([data-skin-frame=""]) .card-brand>span,#ourStage .pixel-collectible[data-skin-frame]:not([data-skin-frame=""])>small{color:#65536b}
+#ourStage .pixel-collectible[data-skin-frame=stars]:not([data-skin-frame=""]){color:#fff1cb}
+#ourStage .pixel-collectible[data-skin-frame=stars]:not([data-skin-frame=""]) .card-brand>span,#ourStage .pixel-collectible[data-skin-frame=stars]:not([data-skin-frame=""])>small{color:#ead4a6}
+#ourStage .pixel-collectible[data-skin-frame=stars] .card-brand img{filter:brightness(0) invert(1)!important}
+#ourStage .pixel-collectible[data-skin-frame=encore]{border-style:double!important;border-width:9px!important}
+#ourStage .pixel-collectible[data-skin-frame=varsity]{border-top-width:12px!important;border-bottom-width:12px!important}
+#ourStage .pixel-collectible[data-skin-frame=ticket]{border-radius:10px;clip-path:none}
+#ourStage .pixel-collectible[data-skin-back]:not([data-skin-back=""]) .collectible-art{background-color:var(--skin-back-paper);background-image:none}
+#ourStage .pixel-collectible[data-skin-back=note] .collectible-art{background-image:repeating-linear-gradient(0deg,transparent 0 20px,#9f8daa55 20px 21px)}
+#ourStage .pixel-collectible[data-skin-back=check] .collectible-art{background-image:repeating-linear-gradient(0deg,transparent 0 16px,#7995a425 16px 32px),repeating-linear-gradient(90deg,transparent 0 16px,#7995a425 16px 32px)}
+#ourStage .pixel-collectible[data-skin-back=petals] .collectible-art{background-image:radial-gradient(ellipse at 20% 35%,#eab3c5 0 3px,transparent 4px),radial-gradient(ellipse at 85% 65%,#eab3c5 0 3px,transparent 4px);background-size:45px 65px}
+#ourStage .pixel-collectible[data-skin-back=stamp] .collectible-art{background-image:radial-gradient(circle,#9e82a555 0 1px,transparent 2px);background-size:15px 15px}
+#ourStage .pixel-collectible[data-skin-back=night] .collectible-art{background-image:radial-gradient(circle,#f8e3b9 0 1px,transparent 2px);background-size:23px 29px}
+#ourStage .pixel-collectible[data-skin-back=fan] .collectible-art{background-image:radial-gradient(ellipse at 50% 80%,#efacd9 0 2px,transparent 4px);background-size:21px 31px}
+#ourStage .skin-card-select{display:grid;gap:7px;font-size:13px}#ourStage .skin-card-select select{width:100%;min-width:0}
+#ourStage .skin-card-preview{max-width:290px;margin:20px auto}#ourStage .skin-slot{border-top:1px solid #e2d2dc;padding:16px 0}#ourStage .skin-slot h3{font-size:15px;margin:0 0 12px}
+#ourStage .skin-options{display:flex;gap:12px;flex-wrap:wrap}#ourStage .skin-options>button{width:calc(33.333% - 8px);padding:8px;font-size:12px;line-height:1.5;min-width:0;border-radius:8px}
+#ourStage .skin-options [aria-pressed=true]{outline:3px solid #9b577e;outline-offset:1px}
+#ourStage .skin-card-sample.pixel-collectible{display:flex;flex-direction:column;aspect-ratio:3/4.8;width:100%;padding:13px 11px 17px!important;border-width:4px!important;max-width:210px;margin:auto;box-sizing:border-box}
+#ourStage .skin-card-sample .collectible-top{display:block;flex:0 0 auto}
+#ourStage .skin-card-sample .card-brand{width:55%;margin:0 auto;gap:2px}
+#ourStage .skin-card-sample .card-brand>span{font-size:6px;letter-spacing:1px}
+#ourStage .skin-card-sample .collectible-art,#ourStage #modalBody .skin-card-sample .collectible-art{flex:1;min-height:0;height:auto!important;margin:6px 0;padding:2px 0;aspect-ratio:1/1.2}
+#ourStage .skin-card-sample .member-sprite{height:100%;width:100%;max-height:200px}
+#ourStage .skin-card-sample>strong{font-size:10px!important;letter-spacing:1px}
+#ourStage .skin-options .skin-card-sample{margin-bottom:8px;padding:9px 6px 12px!important}
+#ourStage .capsule-collection{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+#ourStage .capsule-item{display:flex;flex-direction:column;gap:5px;background:#fffaf5;padding:13px}
+#ourStage .capsule-item>button,#ourStage .capsule-item>.capsule-only{margin-top:auto}
+#ourStage .capsule-item.unowned .skin-card-sample,#ourStage .capsule-item.unowned .skin-stage-sample{opacity:1;filter:none}
+#ourStage .capsule-result .skin-card-sample{max-width:220px;margin:20px auto}
+#ourStage .capsule-only{display:block;color:#765775;font-size:12px;text-align:center;padding:10px;background:#eee4f3;border-radius:7px}
+#ourStage .capsule-outfit-trio{display:flex;align-items:flex-end;justify-content:center;min-width:0;width:100%;background:#f4edf7;border-radius:9px;padding:8px 2px}
+#ourStage .capsule-outfit-trio .member-sprite{width:33.333%;height:auto;max-height:220px}
+#ourStage .capsule-item:has(.capsule-outfit-trio){grid-column:1/-1}
+#ourStage .capsule-outfit-card{padding:15px;background:#fffaf4;border:1px solid #e0cdd8;border-radius:12px}
+#ourStage .capsule-outfit-card h4{font-size:16px}#ourStage .capsule-outfit-card p{font-size:13px;line-height:1.8}#ourStage .capsule-outfit-card a{display:block;font-size:12px;margin:12px 0}
+#ourStage .capsule-wardrobe{margin:22px 0;padding:18px 0;border-top:1px solid #e0cdd8;border-bottom:1px solid #e0cdd8}
+/* Six concert sets: curtains, scenic LED panels, risers and lighting fixtures. */
+#ourStage .capsule-scenery{display:none}
+#ourStage .stage-art[data-stage-skin]{background:var(--skin-stage-dark)}
+#ourStage .stage-art[data-stage-skin] .stage-set{background:var(--skin-stage-dark);overflow:hidden}
+#ourStage .stage-art[data-stage-skin] .stage-set:before,#ourStage .stage-art[data-stage-skin] .stage-set:after{content:none!important}
+#ourStage .stage-art[data-stage-skin] .capsule-scenery{display:block;position:absolute;inset:0;overflow:hidden}
+#ourStage .scenery-led{position:absolute;inset:13% 12% 23%;display:flex;gap:2%;padding:1%;background:#080e23;border:3px solid #4d5266;box-shadow:0 0 0 2px #13172c}
+#ourStage .scenery-led i{flex:1;background:linear-gradient(0deg,var(--skin-stage),transparent 80%),repeating-linear-gradient(0deg,#ffffff08 0 1px,transparent 1px 4px),var(--skin-stage-dark)}
+#ourStage .scenery-curtain{position:absolute;top:0;bottom:12%;width:15%;background:repeating-linear-gradient(90deg,#0008 0 9%,transparent 12% 23%,#0005 30%),var(--skin-stage);box-shadow:3px 0 9px #0007}
+#ourStage .scenery-curtain.left{left:0;border-radius:0 0 65% 0}#ourStage .scenery-curtain.right{right:0;border-radius:0 0 0 65%;box-shadow:-3px 0 9px #0007}
+#ourStage .scenery-valance{position:absolute;inset:0 0 auto;height:12%;background:repeating-linear-gradient(90deg,#0006 0 7%,transparent 10% 17%),var(--skin-stage);border-bottom:3px solid #d4b77a;box-shadow:0 6px 12px #0006}
+#ourStage .scenery-truss{position:absolute;top:13%;left:14%;width:72%;height:4%;border-top:2px solid #818594;border-bottom:2px solid #818594;background:repeating-linear-gradient(90deg,transparent 0 12%,#818594 12% 13%)}
+#ourStage .scenery-lamps{position:absolute;top:16%;left:17%;width:66%;display:flex;justify-content:space-between}
+#ourStage .scenery-lamps i{display:block;width:7%;aspect-ratio:1.4;background:#fff4ce;border:3px solid #303346;border-radius:2px;box-shadow:0 5px 16px var(--skin-stage)}
+#ourStage .scenery-risers{position:absolute;bottom:10%;left:12%;width:76%;height:16%;background:repeating-linear-gradient(0deg,#17192a 0 25%,var(--skin-stage) 25% 28%,#2d2d43 28% 35%);border:1px solid #56556a}
+#ourStage .scenery-floor{position:absolute;bottom:0;width:100%;height:12%;background:linear-gradient(180deg,#8c7e8466,#11172b),repeating-linear-gradient(90deg,#383043 0 19%,#8c829c 20%);border-top:3px solid #cebaa4}
+#ourStage [data-stage-skin=blue] .scenery-curtain{width:8%;border-radius:0}#ourStage [data-stage-skin=blue] .scenery-led{inset:9% 9% 17%}#ourStage [data-stage-skin=blue] .scenery-led i{background:linear-gradient(180deg,#121f45,#324f7b 60%,#8ab0c9)}
+#ourStage [data-stage-skin=sunset] .scenery-led i{background:linear-gradient(0deg,#e8aa8b,#b36e8d 45%,#453c70)}
+#ourStage [data-stage-skin=spring] .scenery-led i{background:radial-gradient(ellipse at 10% 10%,#f3bdd5 0 13%,transparent 14%),radial-gradient(ellipse at 90% 15%,#f3bdd5 0 12%,transparent 13%),linear-gradient(#ba9ec0,#f7dece)}
+#ourStage [data-stage-skin=neon] .scenery-curtain{width:6%;border-radius:0;background:repeating-linear-gradient(0deg,#10182b 0 12%,#83d6d0 12% 14%)}
+#ourStage [data-stage-skin=neon] .scenery-led{gap:3%;inset:14% 9% 20%}#ourStage [data-stage-skin=neon] .scenery-led i{background:repeating-linear-gradient(0deg,#2b214c 0 7%,#bb8fe855 7% 8%,#2b214c 8% 14%,#5fd5c977 14% 16%)}
+#ourStage [data-stage-skin=moon] .scenery-led i{background:radial-gradient(circle at 50% 27%,#f2e6c8 0 9%,transparent 10%),linear-gradient(#131c3e,#444977);background-size:300% 100%}#ourStage [data-stage-skin=moon] .scenery-led i:nth-child(2){background-position:50% 0}#ourStage [data-stage-skin=moon] .scenery-led i:nth-child(3){background-position:100% 0}
+#ourStage [data-stage-skin=gold] .scenery-curtain,#ourStage [data-stage-skin=gold] .scenery-valance{background-color:#7c3b51}
+#ourStage [data-stage-skin=gold] .scenery-led i{background:radial-gradient(circle,#f7df9b 0 1px,transparent 2px) 0 0/16px 23px,linear-gradient(#29263d,#805c45)}
+#ourStage .skin-stage-sample.stage-art{display:block;position:relative;width:100%;aspect-ratio:4/3;min-height:0;padding:0;margin:0 0 8px;overflow:hidden;border-radius:6px;border:2px solid #b6a2ba}
+#ourStage .skin-stage-sample.stage-art .stage-set{inset:0}
+@media(max-width:650px){#ourStage .capsule-collection{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#ourStage .capsule-item{padding:9px}#ourStage .skin-options>button{width:calc(50% - 6px)}#ourStage .skin-card-preview{max-width:260px}#ourStage .pixel-collectible[data-skin-frame]:not([data-skin-frame=""]){padding:15px 14px 23px;border-width:5px}#ourStage .capsule-outfit-trio{padding:6px 0}#ourStage .capsule-item:has(.capsule-outfit-trio){grid-column:1/-1}#ourStage .capsule-item .capsule-outfit-trio .member-sprite{max-height:190px}}

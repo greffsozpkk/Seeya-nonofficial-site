@@ -1,0 +1,50 @@
+[
+  {
+    "id": "capsule-white",
+    "reward": "outfit-white",
+    "name": "불후의 명곡 · 화이트 하모니",
+    "type": "CAPSULE STYLE",
+    "date": "2026.11.14",
+    "url": "https://www.youtube.com/watch?v=X6AllgM6ix4",
+    "note": "‘사랑하고 싶어’ 무대의 의상과 헤어를 참고한 도트 재해석. 한 세트로 세 멤버의 의상과 헤어를 함께 얻어요.",
+    "image": "/images/game/our-stage/layers/capsule-white.png",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "capsule-silver",
+    "reward": "outfit-silver",
+    "name": "불후의 명곡 · 보여줄게",
+    "type": "CAPSULE STYLE",
+    "date": "2026.05.30",
+    "url": "https://www.youtube.com/watch?v=vK1eUYoklQY",
+    "note": "‘보여줄게’ 무대의 실버·라벤더 의상과 헤어를 참고한 도트 재해석. 한 세트로 세 멤버의 의상과 헤어를 함께 얻어요.",
+    "image": "/images/game/our-stage/layers/capsule-silver.png",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "capsule-cocktail",
+    "reward": "outfit-cocktail",
+    "name": "칵테일 사랑 · 블루 화이트",
+    "date": "2006.08.26",
+    "note": "콘서트 7080 ‘칵테일 사랑’ 무대의 블루·화이트 의상과 헤어를 참고했어요. 이보람의 파란 땋은 머리 장식, 남규리의 조끼·셔츠, 김연지의 줄무늬 상의를 도트로 재해석했습니다.",
+    "type": "CAPSULE STYLE",
+    "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=917s",
+    "image": "/images/game/our-stage/layers/capsule-cocktail.png",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "capsule-hotgirl",
+    "reward": "outfit-hotgirl",
+    "name": "Hot Girl · 핑크 레트로",
+    "date": "2008.10.03",
+    "note": "뮤직뱅크 ‘Hot Girl’ 무대의 핑크 착장과 헤드폰을 참고했어요. 이보람의 리본·노랑 벨트, 남규리의 미니 모자·후드 세트, 김연지의 체크 셔츠·오버롤을 도트로 재해석했습니다. 작은 장식과 불명확한 신발 디테일은 단순화했어요.",
+    "type": "CAPSULE STYLE",
+    "url": "https://www.youtube.com/watch?v=Cu2s2DCmK6A&t=3208s",
+    "image": "/images/game/our-stage/layers/capsule-hotgirl.png",
+    "width": 1536,
+    "height": 1024
+  }
+]
