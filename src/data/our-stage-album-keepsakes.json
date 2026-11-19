@@ -1,5 +1,6 @@
 {
   "first-mind": {
+    "image": "/images/game/our-stage/ticket-first-mind.png",
     "colors": [
       "#ead7e2",
       "#81536d"
@@ -8,6 +9,7 @@
     "band": "처음 만난 세 목소리"
   },
   "lovely-sweet-heart": {
+    "image": "/images/game/our-stage/ticket-lovely-sweet-heart.png",
     "colors": [
       "#f3d7de",
       "#9c5269"
@@ -16,6 +18,7 @@
     "band": "다정한 인사의 계절"
   },
   "california-dream": {
+    "image": "/images/game/our-stage/ticket-california-dream.png",
     "colors": [
       "#dce9df",
       "#4e7467"
@@ -24,6 +27,7 @@
     "band": "오래도록 노래로 남은 꿈"
   },
   "brilliant-change": {
+    "image": "/images/game/our-stage/ticket-brilliant-change.png",
     "colors": [
       "#dce3f1",
       "#4b658c"
@@ -32,6 +36,7 @@
     "band": "가장 눈부신 변화"
   },
   "rebloom": {
+    "image": "/images/game/our-stage/ticket-rebloom.png",
     "colors": [
       "#e7dcf1",
       "#795d93"
@@ -40,6 +45,7 @@
     "band": "다시 피어난 노래"
   },
   "see-you-again": {
+    "image": "/images/game/our-stage/ticket-see-you-again.png",
     "colors": [
       "#f1e2cf",
       "#906c43"
@@ -48,6 +54,7 @@
     "band": "다시 만날 약속"
   },
   "still-here": {
+    "image": "/images/game/our-stage/ticket-still-here.png",
     "colors": [
       "#dce8ef",
       "#4c7186"
@@ -56,6 +63,7 @@
     "band": "긴 시간을 건너, 다시"
   },
   "first-again": {
+    "image": "/images/game/our-stage/ticket-first-again.png",
     "colors": [
       "#e5dcf0",
       "#785493"

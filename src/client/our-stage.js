@@ -9,7 +9,7 @@ const checkpointKey='seeya-our-stage-before-test-jump-v1';
 const key='seeya-our-stage-local-v1',$=q=>root.querySelector(q),art='/images/game/our-stage/';
 const optimizedImages=require('../data/our-stage-optimized-images.json');
 const optimized=html=>html.replace(/\/images\/game\/our-stage\/[^\s"'<>]+\.png/g,path=>optimizedImages[path]||path);
-let vcrUI=null,ticketUI=null,giftUI=null,wallUI=null;
+let vcrUI=null,ticketUI=null,giftUI=null,wallUI=null,coinUI=null;
 let activeChallenge=null,afterChallenge=null,returnFocus=null,blocked=false;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const outfits=require('../data/our-stage-outfits.json');
@@ -223,8 +223,8 @@ function concertRows(){
 }
 function concert(){return panel(`<div class="line"><h2>앨범 콘서트</h2>${button('내 아티스트 패스','pass-open')}</div><p>연습한 노래가 하나의 공연으로. 콘서트를 마치면 다음 앨범이 열려요.</p><div class="album-concert-list">${M.albums.map(albumConcertCard).join('')}</div><div class="growth-actions">${link('라디오로 여운 이어가기','/radio/')}${link('다이어리에 추억 남기기','/diary/')}</div>`);}
 function draw(){const focus=document.activeElement,restore=focus&&($('#screen').contains(focus)||$('#tabs').contains(focus)),identity=restore?{id:focus.id,action:focus.dataset.action,value:focus.dataset.value,start:focus.selectionStart,end:focus.selectionEnd}:null;const a=M.albumById(selectedAlbum);if(!s.simple.debuted)scene=0;$('.os-chapter').innerHTML=!s.simple.debuted?mark('CHAPTER 00 · TRAINEE')+'<strong>연습실에 처음 모인 날</strong>':mark(a.type)+'<strong>'+a.name+'</strong><small>'+M.albumCount(s,a.id)+' / '+a.tracks.length+'트랙 수집</small>'; if(!open(track))track='scent';$('#tabs').innerHTML=(s.simple.debuted?headings:headings.slice(0,1)).map((name,i)=>`<button data-action="tab" data-value="${i}" aria-current="${scene===i?'page':'false'}"><span>${icons[i]}</span>${name}</button>`).join('');$('#screen').innerHTML=optimized([studio,songs,stories,memories,concert,designs][scene]());wallUI?.refresh();if(identity){const next=identity.id?document.getElementById(identity.id):[...root.querySelectorAll('[data-action]')].find(e=>e.dataset.action===identity.action&&e.dataset.value===identity.value);if(next){next.focus({preventScroll:true});if(identity.start!=null&&next.setSelectionRange)try{next.setSelectionRange(identity.start,identity.end);}catch{}}}}
-function dialog(content){vcrUI?.destroy();if(!$('#stageModal').open)returnFocus=document.activeElement;$('#modalBody').innerHTML=optimized(content);const h=$('#modalBody h2');if(h){h.id='stageModalTitle';h.tabIndex=-1;}if(!$('#stageModal').open)$('#stageModal').showModal();h?.focus({preventScroll:true});}
-function close(){window.clearTimeout(showTimer);showing=false;$('#stageModal').close();}
+function dialog(content){coinUI?.clearStage();vcrUI?.destroy();if(!$('#stageModal').open)returnFocus=document.activeElement;$('#modalBody').innerHTML=optimized(content);const h=$('#modalBody h2');if(h){h.id='stageModalTitle';h.tabIndex=-1;}if(!$('#stageModal').open)$('#stageModal').showModal();h?.focus({preventScroll:true});}
+function close(){coinUI?.clearStage();window.clearTimeout(showTimer);showing=false;$('#stageModal').close();}
 function book(id){
  const m=M.members.find(x=>x.id===id),isReunion=id==='reunion';
  if((!m&&!isReunion)||(!has(id)&&!M.coreAvailable(s,id)))return;
@@ -254,21 +254,21 @@ function perform(id){
  if(showing||encore&&(!s.simple.concerts[albumId]||!M.concertTracks(s,albumId).includes(encoreId))||a&&!encore&&!M.concertReady(s,albumId)||!a&&id!=='first'||id==='first'&&!ready('scent'))return;
  const list=a?M.concertTracks(s,albumId):['scent'];
  const phases=(encore?[encoreId]:list).map((song,i,all)=>({name:encore?'앙코르':!a?'첫 무대':i===0?'오프닝':i===all.length-1?'마지막 곡':'메인 무대',songs:[song]}));
- let i=0;showing=true;showHeld=false;
+ let i=0;showing=true;showHeld=false;coinUI.begin();
  const duration=4000;
  function next(){
  if(!showing)return;
- if(i>=phases.length){showing=false;
- if(encore){dialog(`${mark('ENCORE')}<h2>다시 만난 ${esc(title(encoreId))}</h2>${fanLetterInvite()}${button('공연 목록으로','tab','4')}`);return;}
- if(!a){M.finishDebut(s);if(!save())return;draw();ticketUI.showPass(`<div class="debut-rewards"><h3>첫 무대를 함께 완성했어요</h3><p>연습생 수료 배지 · 첫 무대 포스터 · 1집 의상 · 아티스트 패스</p>${outfitLineup(outfits.find(o=>o.id==='first-mind'))}${button('1집 의상 입기','wear-reward','first-mind')}<p>성공적으로 데뷔했어요. 이제 연습에 포인트가 소모됩니다.</p>${button('1집 연습 시작하기','pick','shoes','primary')}</div>`);return;}
+ if(i>=phases.length){showing=false;coinUI.clearStage();
+ if(encore){dialog(`${mark('ENCORE')}<h2>다시 만난 ${esc(title(encoreId))}</h2>${coinUI.summary()}${fanLetterInvite()}${button('공연 목록으로','tab','4')}`);return;}
+ if(!a){M.finishDebut(s);if(!save())return;draw();ticketUI.showPass(`<div class="debut-rewards"><h3>첫 무대를 함께 완성했어요</h3>${coinUI.summary()}<p>연습생 수료 배지 · 첫 무대 포스터 · 1집 의상 · 아티스트 패스</p>${outfitLineup(outfits.find(o=>o.id==='first-mind'))}${button('1집 의상 입기','wear-reward','first-mind')}<p>성공적으로 데뷔했어요. 이제 연습에 포인트가 소모됩니다.</p>${button('1집 연습 시작하기','pick','shoes','primary')}</div>`);return;}
 
  const wasOpen=new Set(s.albums);M.finishConcert(s,albumId,list);if(albumId==='first-again')M.finishFinale(s);M.settle(s);if(!save())return;draw();
  const following=M.albums[M.albums.indexOf(a)+1],opened=following&&!wasOpen.has(following.id)&&M.albumUnlocked(s,following.id);
- const footer=`${following?`<div class="curtain-next"><h3>${opened?'다음 앨범이 열렸어요': '다음 여정'} · ${esc(following.name)}</h3>${opened?'<p>앨범 의상과 멤버 카드도 함께 받았어요.</p>':''}${button('다음 앨범으로',opened&&following.id==='still-here'?'bridge-then-album':'album-view',following.id,'primary')}</div>`:'<p>모든 앨범의 무대를 함께 완성했어요.</p>'}${fanLetterInvite()}${button('공연 목록으로','tab','4')}`;
+ const footer=`${coinUI.summary()}${following?`<div class="curtain-next"><h3>${opened?'다음 앨범이 열렸어요': '다음 여정'} · ${esc(following.name)}</h3>${opened?'<p>앨범 의상과 멤버 카드도 함께 받았어요.</p>':''}${button('다음 앨범으로',opened&&following.id==='still-here'?'bridge-then-album':'album-view',following.id,'primary')}</div>`:'<p>모든 앨범의 무대를 함께 완성했어요.</p>'}${fanLetterInvite()}${button('공연 목록으로','tab','4')}`;
  ticketUI.show(albumId,footer);return;
  }
  const phase=phases[i],phaseDuration=(motionFor(phase.songs[0])?motions[motionFor(phase.songs[0])].seconds/motions[motionFor(phase.songs[0])].speed*1000:duration)+(a&&!encore&&i===0?(a.id==='still-here'?8100:4500):0),last=i===phases.length-1,theme=a?require('../data/our-stage-album-keepsakes.json')[a.id].colors[1]:'#895570';i++;$('#stageModal')._duration=phaseDuration;
- dialog(`<div class="album-show" style="--album-light:${theme}"><h2 class="concert-accessible-title">우리의 콘서트</h2>${stageArt(true,last&&!!a,i-1,a,esc(phase.name),motionFor(phase.songs[0]),!!a&&!encore&&i===1)}<div class="concert-medley${phase.name==='메들리'?' is-medley':''}"><div>${phase.songs.map(t=>`<span>${esc(title(t))}</span>`).join('')}</div></div><p>${esc(phase.name)} · ${i} / ${phases.length}곡</p><div class="performance-controls">${button('응원 보내기','audience-cheer')}${button(showHeld?'자동 넘김 켜기':'잠시 멈추기','show-hold')}${button('다음 곡','show-next')}${button('마지막 인사로','skip')}</div><p id="cheerEcho" role="status"></p></div>`);const stage=$('#modalBody .stage-art');if(stage?.classList.contains('stage-entrance')){stage.addEventListener('animationend',e=>{if(e.animationName==='our-stage-lift'&&e.target.closest('.stage-performer')?.style.getPropertyValue('--o')==='2')stage.classList.add('entrance-lit');});}if(!showHeld)showTimer=setTimeout(()=>$('#stageModal')._next(),phaseDuration);
+ dialog(`<div class="album-show" style="--album-light:${theme}"><h2 class="concert-accessible-title">우리의 콘서트</h2>${stageArt(true,last&&!!a,i-1,a,esc(phase.name),motionFor(phase.songs[0]),!!a&&!encore&&i===1)}<div class="concert-medley${phase.name==='메들리'?' is-medley':''}"><div>${phase.songs.map(t=>`<span>${esc(title(t))}</span>`).join('')}</div></div><p>${esc(phase.name)} · ${i} / ${phases.length}곡</p>${coinUI.counter()}<div class="performance-controls">${button('응원 보내기','audience-cheer')}${button(showHeld?'자동 넘김 켜기':'잠시 멈추기','show-hold')}${button('다음 곡','show-next')}${button('마지막 인사로','skip')}</div><p id="cheerEcho" role="status"></p></div>`);const stage=$('#modalBody .stage-art');coinUI.mount(stage,phaseDuration,a&&!encore&&i===1?(a.id==='still-here'?8100:4500):0);coinUI.pause(showHeld||document.hidden);if(stage?.classList.contains('stage-entrance')){stage.addEventListener('animationend',e=>{if(e.animationName==='our-stage-lift'&&e.target.closest('.stage-performer')?.style.getPropertyValue('--o')==='2')stage.classList.add('entrance-lit');});}if(!showHeld)showTimer=setTimeout(()=>$('#stageModal')._next(),phaseDuration);
  }
  $('#stageModal')._advance=next;$('#stageModal')._next=()=>locked(()=>{sync();next();});$('#stageModal')._finish=()=>{clearTimeout(showTimer);i=phases.length;next();};$('#stageModal')._duration=duration;next();
 }
@@ -338,7 +338,8 @@ function handle(a,v){
  if(a==='card-badge'&&decoratingCard){if(M.decorateCard(s,decoratingCard,v)){save();draw();refreshCardEditor(v);}return;}
  if(a==='display-card'){if(M.cardOwned(s,v)){s.displayCard=v;save();draw();cardDetail(v);}return;}
  if(a==='audience-cheer'){const stage=$('#modalBody .stage-art');if(stage){stage.classList.remove('cheer-burst');void stage.offsetWidth;stage.classList.add('cheer-burst');$('#cheerEcho').textContent='씨야! 우리의 응원이 무대를 밝혀요.';}return;}
- if(a==='show-hold'&&showing){showHeld=!showHeld;clearTimeout(showTimer);$('#modalBody [data-action="show-hold"]').textContent=showHeld?'자동 넘김 켜기':'이 장면 더 보기';if(!showHeld)showTimer=setTimeout($('#stageModal')._next,$('#stageModal')._duration||M.timing.performanceMs);return;}
+ if(a==='concert-coin'){coinUI.claim(v);return;}
+ if(a==='show-hold'&&showing){showHeld=!showHeld;coinUI.pause(showHeld||document.hidden);clearTimeout(showTimer);$('#modalBody [data-action="show-hold"]').textContent=showHeld?'자동 넘김 켜기':'이 장면 더 보기';if(!showHeld)showTimer=setTimeout($('#stageModal')._next,$('#stageModal')._duration||M.timing.performanceMs);return;}
  if(a==='show-next'&&showing){clearTimeout(showTimer);$('#stageModal')._advance();return;}
  if(a==='story-filter'){storyFilter=v;if(v==='core')storyAlbum='all';draw();return;}
  if(a==='stories-album'){storyAlbum=v;storyFilter='all';scene=2;if($('#stageModal').open)close();draw();$('#screen').focus({preventScroll:true});return;}
@@ -408,7 +409,7 @@ root.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(
 root.addEventListener('input',e=>{if(e.target.id==='concertQuery'){concertQuery=e.target.value;$('#concertRows').innerHTML=concertRows();}});
 root.addEventListener('change',e=>{if(['concertAlbum','concertKind'].includes(e.target.id)){if(e.target.id==='concertAlbum')concertAlbum=e.target.value;else concertKind=e.target.value;$('#concertRows').innerHTML=concertRows();return;}if(['cardMember','cardOwned'].includes(e.target.id)){if(e.target.id==='cardMember')cardMember=e.target.value;else cardOnlyOwned=e.target.checked;cardPage=0;draw();return;}if(e.target.dataset.member){const member=e.target.dataset.member,id=e.target.value,part=e.target.dataset.part,focus=e.target.id;locked(()=>{sync();if(M.equipPart(s,member,part,id)){if(preview[member]){delete preview[member][part];if(!Object.keys(preview[member]).length)delete preview[member];}}else if(M.canWearOutfit(s,id)){preview[member]??={};preview[member][part]=id;}save();draw();$('#'+focus)?.focus();});return;}if(e.target.id==='track'){track=e.target.value;draw();}if(e.target.id==='storyAlbum'){storyAlbum=e.target.value;if(storyFilter==='core')storyFilter='all';draw();$('#storyAlbum').focus();}});
 $('#stageFile').onchange=async e=>{const file=e.target.files[0];if(!file)return;try{if(file.size>256000)throw Error();pendingImport=M.loadSave(await file.text());dialog('<h2>백업으로 교체할까요?</h2><p>현재 진행을 백업 파일의 내용으로 교체합니다. 교체 전 기록은 별도로 보관합니다.</p>'+button('취소','storage')+button('백업으로 교체','import-confirm','','primary'));}catch{if($('#saveNote'))$('#saveNote').textContent='이 게임의 유효한 백업 파일을 선택해 주세요.';}e.target.value='';};
-$('#stageClose').onclick=close;$('#stageModal').addEventListener('close',()=>{showing=false;activeChallenge=null;afterChallenge=null;clearTimeout(showTimer);if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});else $('#screen').focus({preventScroll:true});});
+$('#stageClose').onclick=close;$('#stageModal').addEventListener('close',()=>{coinUI?.clearStage();showing=false;activeChallenge=null;afterChallenge=null;clearTimeout(showTimer);if(returnFocus?.isConnected)returnFocus.focus({preventScroll:true});else $('#screen').focus({preventScroll:true});});
 window.addEventListener('storage',e=>{if(e.key===key){sync();draw();}});
 function tick(){if(!s.simple.debuted&&ready('scent')&&!showing&&!$('#stageModal').open&&!blocked&&!store?.dirty){locked(()=>{sync();perform('first');});}
  if(blocked||store?.dirty||document.hidden)return;miniUI.update();const now=Date.now();if($('#clock'))$('#clock').textContent=clock();if($('#jobClock')&&s.shopJob)$('#jobClock').textContent=Math.max(0,Math.ceil((s.shopJob.end-now)/1000));
@@ -419,11 +420,12 @@ function tick(){if(!s.simple.debuted&&ready('scent')&&!showing&&!$('#stageModal'
 vcrUI=require('./our-stage-vcr')({M,root,state:()=>s,dialog,button,mark});
 giftUI=require('./our-stage-gifts')({M,state:()=>s,root,dialog,button,esc,save,draw,close,goPractice:id=>handle('pick',id)});
 wallUI=require('./our-stage-wall-keepsakes')({M,state:()=>s,root,esc});
+coinUI=require('./our-stage-concert-coins')({root,allowed:()=>showing&&!showHeld&&!document.hidden&&$('#stageModal').open,award:()=>{if(s.simple.walletOffset>=1e12)return false;s.simple.walletOffset++;return save();}});
 ticketUI=require('./our-stage-tickets')({M,state:()=>s,root,dialog,button,esc,save,draw,refreshWall:()=>wallUI.refresh()});
 const miniUI=require('./our-stage-mini-v2')({M,root,state:()=>s,save,draw,dialog,button,esc,mark,locked,sync});
 if(isTest){const speed=root.querySelector('.test-timing');if(speed)speed.textContent='로컬 테스트 · 첫 연습 약 1초, 이후 한 곡 연습 3초';}
 if(testTools)$('.os-heading').insertAdjacentHTML('beforeend',button('테스트 이동','test-tools','','test-tools-button')+button('무대 동작 보기','motion-preview','','test-tools-button'));
 draw();tick();setInterval(tick,250);if(warn)say(warn);
-if(!blocked){locked(()=>{sync();M.settle(s);save();draw();});document.addEventListener('visibilitychange',()=>{if(!document.hidden)locked(()=>{sync();M.settle(s);save();draw();});});}
+if(!blocked){locked(()=>{sync();M.settle(s);save();draw();});document.addEventListener('visibilitychange',()=>{coinUI?.pause(document.hidden||showHeld);if(!document.hidden)locked(()=>{sync();M.settle(s);save();draw();});});}
 if(isTest&&motions[new URLSearchParams(location.search).get('stagePreview')])motionPreview(new URLSearchParams(location.search).get('stagePreview'));
 })();

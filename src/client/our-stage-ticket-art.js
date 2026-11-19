@@ -19,10 +19,8 @@ module.exports=async function({album,index,receipt,nickname}){
  c.drawImage(logo,396,23,108,30.61);c.textAlign='center';text('A R C H I V E',450,70,150,10,ink,600);c.textAlign='left';
  text('OUR STAGE',40,49,220,12,accent,700);c.textAlign='right';text('ALBUM CONCERT · '+String(index+1).padStart(2,'0'),860,49,240,12,accent,700);c.textAlign='left';
  line(40,86,860,86,'#ded2d5');
- c.imageSmoothingEnabled=false;c.drawImage(picture,616,100,244,250);c.imageSmoothingEnabled=true;
- rect(616,300,244,50,'rgba(22,14,34,.73)');rect(616,299,244,2,'#CDA55F');c.textAlign='center';
- text(themes[album.id].band||'함께 완성한 우리의 무대',738,320,230,15,'#FFF1E2',700);
- text('CHAPTER '+String(index+1).padStart(2,'0')+' · '+album.type.split(' · ')[1].slice(0,4),738,338,230,10,'#CDA55F',600);c.textAlign='left';
+ c.imageSmoothingEnabled=false;c.drawImage(picture,616,98,244,244);c.imageSmoothingEnabled=true;
+ c.textAlign='center';text(themes[album.id].band||'함께 완성한 우리의 무대',738,357,244,11,accent,600);c.textAlign='left';
  text('CHAPTER '+String(index+1).padStart(2,'0')+'  /  앨범 완주 기념',42,121,540,13,accent,700);
  text(album.name,40,170,545,38,ink,750);
  const quote=themes[album.id].line,split=quote.indexOf(',');
