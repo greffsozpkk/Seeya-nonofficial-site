@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-19",
+  "method": "Built-in image_gen; square chunky pixel reinterpretation; PNG delivery.",
+  "styleReference": "images/game/our-stage/stories/event-seoul-period.png",
+  "assets": [
+    {
+      "file": "images/game/our-stage/stories/gasoline-story-pixel.png",
+      "prompt": "Edit target is image 1. Style reference is image 2. Redraw image 1 as a SQUARE 1:1 story illustration matching the chunky simple low-resolution pixel game style of image 2, same big-headed short-bodied tiny sprite proportions, oversized uniform square pixels and flat limited palette. Solo Kim Yeonji masked singer, recognisable red/orange flame and brown log cheek mask with turquoise mouth, red dress/gloves, singing with microphone on purple-curtain warm golden stage. Full body entirely in frame, character occupies lower middle 55% height with room around mask and shoes. Simplify ornament and fabric into large pixel clusters. No realistic anatomy, no detailed skin, no fine embroidery, no high-resolution painted rendering, no smooth anime, no lettering, no logo. Keep the flame mask identity and celebratory setting but match the reference pixel-scale and friendliness."
+    },
+    {
+      "file": "images/game/our-stage/stories/nightingale-story-pixel.png",
+      "prompt": "Edit target is image 1. Style reference is image 2. Redraw image 1 as a SQUARE 1:1 story illustration matching the chunky simple low-resolution pixel game style of image 2, same big-headed short-bodied tiny sprite proportions, oversized uniform square pixels and flat limited palette. Solo Lee Boram wearing recognisable Nightingale mask: cream face, huge pink smile, black bob sides, white lace bonnet simplified to square blocks, gold crown with green gem. Teal royal cape with simple golden trim, holding microphone, small trophy next to her feet on warm celebratory stage with sparse purple/aqua square confetti. Full body entirely in frame, crown and shoes visible, character occupies lower middle 60% height with generous background margins. Simplify embroidery/crown to chunky large blocks. No realistic anatomy, no detailed fingers, no fine textures, no high-resolution painting, no smooth anime, no text or logo."
+    }
+  ]
+}

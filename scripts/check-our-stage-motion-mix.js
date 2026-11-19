@@ -2,6 +2,17 @@
 const assert=require('node:assert/strict'),create=require('../src/client/our-stage-concert-motion'),tracks=require('../src/data/our-stage-choreography.json'),library=require('../src/shared/our-stage-motion-library'),channels=require('../src/shared/our-stage-motion-channels');
 for(const random of [()=>0,()=>.999,Math.random]){const pick=create.makeQueue(random),ids=Array.from({length:120},pick);for(let i=0;i<ids.length;i++){assert(library[ids[i]]);if(i){assert.notEqual(ids[i],ids[i-1]);if(ids[i-1]==='scent')assert.equal(ids[i],'greeting');}if(i%4===3)assert.equal(new Set(ids.slice(i-3,i+1)).size,4);}}
 for(const [id,t]of Object.entries(tracks)){assert.equal(t.frames[0].time,0);assert.equal(t.frames.at(-1).time,t.end-t.start);assert.equal(library[id].seconds,t.end-t.start);t.frames.forEach((f,i)=>{assert(!i||f.time>t.frames[i-1].time);for(const m of ['br','gr','yj'])assert(f.members[m].every(Number.isFinite));});}
+const degrees=transform=>Number(transform.match(/rotate\(([-\d.]+)deg\)/)[1]);
+for(const t of Object.values(tracks))for(const f of t.frames)for(const v of Object.values(f.members)){
+ const left=degrees(channels[' .scent-elbow-left'](v)),right=degrees(channels[' .scent-elbow-right'](v));
+ if(v[4]>=60)assert(left>=0,'raised right arm folds outward, away from face');
+ if(v[6]<=-60)assert(right<=0,'raised left arm mirrors the outward bend');
+ if(v[4]<=25)assert.equal(left,v[5],'low chest gestures remain intact');
+ if(v[6]>=-25)assert.equal(right,v[7],'microphone hold remains intact');
+}
+const lifted=[0,0,0,0,158,-75,100,90,0,0];
+assert.equal(channels[' .scent-elbow-left'](lifted),'rotate(75deg)');
+assert.equal(channels[' .scent-elbow-right'](lifted),'rotate(90deg)');
 const made=[];let mounts=0;
 const element={animate:(frames,timing)=>{let resolve;const a={frames,timing,finished:new Promise(r=>resolve=r),finish:()=>resolve(),cancel(){this.cancelled=true;},pause(){this.paused=true;},play(){this.paused=false;}};made.push(a);return a;},querySelector:()=>element};
 const stage={isConnected:true,dataset:{},classList:{add:()=>mounts++},querySelector:()=>element};
