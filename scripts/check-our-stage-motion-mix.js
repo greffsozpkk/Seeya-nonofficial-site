@@ -19,7 +19,9 @@ const stage={isConnected:true,dataset:{},classList:{add:()=>mounts++},querySelec
 (async()=>{const ui=create({random:()=>.999,reduced:()=>false});ui.mount(stage,4500);assert.equal(stage.dataset.motion,'scent');assert.equal(made.length,33);assert.equal(made[0].timing.duration,32000);assert.equal(made[0].timing.delay,4500);
  ui.pause(true);assert(made.every(a=>a.paused));ui.pause(false);assert(made.every(a=>!a.paused));
  const first=made[0];first.finish();await Promise.resolve();assert.equal(stage.dataset.motion,'greeting');assert.equal(mounts,1);assert(first.cancelled);const second=made[33];assert.equal(second.timing.duration,28650);assert.equal(second.frames[0].transform,channels[''](tracks.scent.frames.at(-1).members.br));assert.equal(second.frames[1].transform,channels[''](tracks.greeting.frames[0].members.br));assert(second.frames[1].offset>0,'blend interval before next phrase');
- ui.stop();const count=made.length;second.finish();await Promise.resolve();assert.equal(made.length,count,'closed modal cannot schedule another phrase');assert(made.every(a=>a.cancelled));
+ second.finish();await Promise.resolve();assert.equal(stage.dataset.motion,'marry');assert.equal(made[66].timing.duration,12650,'24-second phrase plays at 2x plus blend');
+ made[66].finish();await Promise.resolve();assert.equal(stage.dataset.motion,'voice');assert.equal(made[99].timing.duration,10650,'20-second phrase plays at 2x plus blend');assert.equal(mounts,1,'all four phrases use the same stage');
+ ui.stop();const count=made.length;made[99].finish();await Promise.resolve();assert.equal(made.length,count,'closed modal cannot schedule another phrase');assert(made.every(a=>a.cancelled));
  const reduced=create({reduced:()=>true});reduced.mount(stage);assert.equal(made.length,count,'reduced motion does not start animations');reduced.stop();
  console.log('PASS motion mix: complete 4-phrase shuffle, scent to greeting, no immediate repeats, smooth bridge, pause/resume, close cancellation and reduced motion.');
 })().catch(e=>{console.error(e);process.exitCode=1;});

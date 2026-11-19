@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "createdAt": "2026-11-19",
+  "reference": "images/game/our-stage/stories/chapter-still-period.png",
+  "assets": [
+    "images/game/our-stage/stories/event-rebloom-fanmeeting.png",
+    "images/game/our-stage/stories/event-the-fan-tour.png"
+  ],
+  "prompts": [
+    "Generate one square 1:1 game story illustration matching the reference's exact chunky low resolution pixel art style, stepped edges, tiny simple faces, big heads and short bodies. Three Korean women, left Boram long brown hair, center Gyuri long black hair, right Yeonji black wavy hair with bangs. Full characters visible. Preserve the reference clothing and identities as a symbolic reinterpretation, not a documentary reproduction. No text or letters, no photorealism, no soft painterly rendering. Scene: reunion fan meeting. Cozy small indoor event venue with a warm cream and sage backdrop, three seated singers holding microphones, pink flowers beside the stage, small audience silhouettes waving at the bottom. Warm joyful intimate welcome after a long wait. Distinct from a grand concert.",
+    "Generate one square 1:1 game story illustration matching the reference's exact chunky low resolution pixel art style, stepped edges, tiny simple faces, big heads and short bodies. Three Korean women, left Boram long brown hair, center Gyuri long black hair, right Yeonji black wavy hair with bangs. Full characters visible. Preserve the reference clothing and identities as a symbolic reinterpretation, not a documentary reproduction. No text or letters, no photorealism, no soft painterly rendering. Scene: 20th anniversary nationwide concert tour finale. Three singers standing hand in hand and bowing slightly toward a vast audience of pink glow sticks. Large midnight blue arena, small gold confetti, vivid purple stage floor, warm smiles. Wide epic atmosphere but square composition, keep characters readable and full length, no giant spotlights obscuring them."
+  ]
+}
