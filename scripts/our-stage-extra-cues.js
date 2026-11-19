@@ -1,44 +1,42 @@
 'use strict';
-// Visual cues from the two user-supplied passages, adapted to the existing front-facing pixel rig.
+// Selected gestures from the supplied passages, enlarged for the front-facing pixel rig.
+// This is an in-place adaptation, not frame-exact reconstruction: travelling/closeups
+// become rhythmic knee lifts. Actor x, body yaw and crossing steps stay at zero.
 module.exports=({cue,rest})=>{
  const p=(b,c={})=>Array.from({length:12},(_,i)=>c[i]??b[i]??0);
- const sing=p(rest,{4:8,5:-25,6:100,7:90}),waist=p(rest,{4:-22,5:-90,6:22,7:90}),promise=p(sing,{4:68,5:-125});
- const marry=[
- cue(0,'2:23: 보람 중앙 보컬, 규리 앞발 들기, 연지 허리 손.',sing,p(waist,{8:22,9:-8}),p(waist,{2:3})),
- cue(1.4,'앞발을 내리며 짧게 체중 이동.',p(sing,{1:2}),p(waist,{0:-4,8:-9,9:12}),p(waist,{0:4,8:10,9:-6})),
- cue(2.8,'양옆 멤버의 작은 무릎 반동, 보컬은 마이크 유지.',p(sing,{4:25,5:-65}),p(waist,{1:3,8:12,9:-8}),p(waist,{1:3,8:-8,9:12})),
- cue(4,'2:27: 세 멤버의 손을 얼굴/가슴 가까이 모으는 팔선.',p(sing,{4:64,5:-132}),p(waist,{4:60,5:-135,6:70,7:120}),p(sing,{4:58,5:-130})),
- cue(5.6,'모았던 손을 풀고 연지 보컬로 이어짐.',p(waist,{0:-3}),p(waist,{0:3,4:20,5:-45}),p(sing,{4:45,5:-100})),
- cue(8,'2:31: 연지 약속 손짓. 손가락 대신 굽힌 팔과 앞쪽 손으로 표현.',p(waist,{1:1}),p(waist,{1:1}),promise),
- cue(9.2,'약속 손을 살짝 내밀었다 가슴 쪽으로.',p(waist,{0:2}),p(waist,{0:-2}),p(promise,{4:52,5:-95,2:-2})),
- cue(10.6,'연지 자유 손을 내리고 노래를 이어감. 클로즈업 밖은 작은 호흡만.',waist,waist,p(sing,{4:8,5:-35})),
- cue(12,'2:35: 연지 어깨 높이 손바닥을 위로 펼침.',p(waist,{1:1}),p(waist,{1:1}),p(sing,{4:72,5:-100})),
- cue(13.6,'자유 손을 내렸다 다시 들어 가볍게 흔들기.',waist,waist,p(sing,{4:46,5:-70})),
- cue(16,'2:39: 연지 얼굴 옆에서 열린 손을 흔드는 동작.',p(waist,{0:-2}),p(waist,{0:2}),p(sing,{4:95,5:-115,3:-2})),
- cue(17,'손바닥 방향 변화는 팔꿈치의 작은 회전으로 단순화.',waist,waist,p(sing,{4:80,5:-95,3:1})),
- cue(18.2,'세 멤버가 얼굴 옆으로 자유 손을 올리는 연결.',p(sing,{4:94,5:-128}),p(sing,{4:88,5:-125}),p(sing,{4:92,5:-120})),
- cue(20,'2:43: 얼굴 옆 손과 작은 좌우 스텝.',p(sing,{0:-4,4:90,5:-125,8:8,9:-4}),p(sing,{0:-4,4:94,5:-125,8:8,9:-4}),p(sing,{0:-4,4:90,5:-125,8:8,9:-4})),
- cue(21.4,'팔을 내려 허리로, 발을 모으기.',p(waist,{0:2,1:2}),p(sing,{0:2,4:-15,5:-90}),p(sing,{0:2,4:-12,5:-85})),
- cue(24,'2:47: 보람 허리 손, 규리·연지 마이크 유지하며 정면.',waist,p(sing,{4:-18,5:-95}),p(sing,{4:12,5:-60}))
+ const sing=p(rest,{6:100,7:90}),waist=p(rest,{6:22,7:90});
+ function pose(shoulder,elbow,beat,lead,accent=0){
+  const side=beat%2?1:-1;
+  const v=p(lead?sing:waist,{1:beat%2?5:0,2:side*(4+accent),3:-side*3,4:shoulder,5:elbow,8:side*(14+accent),9:-side*(11+accent)});
+  v.push(1.3);return v; // Slightly longer free-arm reach keeps gestures readable below the large pixel head.
+ }
+ const marry=[];
+ // Toe lifts; gathering hands to the chest; a promise offered forward;
+ // an open palm by the cheek. Smaller members echo the lead instead of freezing.
+ const phrases=[
+  {name:'앞발 들기와 가슴으로 모았다 펴는 손',lead:0,arms:[[8,-25],[35,-70],[-18,-115],[50,-55],[82,-18],[35,-65],[-15,-110],[65,-35]]},
+  {name:'약속 손을 얼굴 옆에 들고 앞으로 건네기',lead:2,arms:[[65,-125],[95,-105],[55,-55],[90,-15],[40,-75],[-18,-115],[65,-95],[90,-30]]},
+  {name:'손바닥을 어깨 높이로 펼치고 얼굴 옆으로 흔들기',lead:2,arms:[[78,-70],[112,-105],[70,-45],[115,-90],[78,-35],[110,-110],[60,-65],[25,-95]]},
+  {name:'세 멤버 얼굴 옆 웨이브와 번갈아 발끝 들기',lead:1,arms:[[92,-110],[120,-95],[74,-60],[115,-100],[68,-40],[98,-105],[42,-65],[-20,-95]]}
  ];
- const raised=p(waist,{4:142,5:-35}),temple=p(waist,{4:100,5:-128});
- const voice=[
- cue(0,'0:47: 연지 보컬, 규리·보람 교차하며 앞으로 걷는 리듬.',p(rest,{0:22,8:-10,9:14,11:7}),p(rest,{0:-2,8:14,9:-8,11:-7}),p(sing,{0:-22,8:12,9:-6})),
- cue(1,'좌우 발을 번갈아 내딛음.',p(rest,{0:20,1:3,8:14,9:-8,11:-7}),p(rest,{0:-2,1:3,8:-10,9:14,11:7}),p(sing,{0:-20,1:2,8:-8,9:12})),
- cue(2,'발을 모으며 다음 걸음.',p(rest,{0:18,8:-8,9:12,11:6}),p(rest,{0:-2,8:12,9:-8,11:-6}),p(sing,{0:-18,8:10,9:-6})),
- cue(3.2,'0:50: 낮은 팔과 교차 스텝을 마침.',p(rest,{0:17,1:2,8:8,9:-8}),p(rest,{0:-2,1:2,8:-8,9:8}),p(sing,{0:-17,1:2})),
- cue(4.6,'0:52: 머리 위로 손을 올리고 반대 손은 허리에.',p(raised,{0:16,8:16,9:-4}),p(raised,{0:-2,8:16,9:-4}),p(sing,{0:-16,4:145,5:-25,8:9,9:-5})),
- cue(5.7,'손을 머리 위에서 바깥으로 크게 펼침.',p(raised,{0:13,4:92,5:-15,1:3}),p(raised,{0:-4,4:92,5:-15,1:3}),p(sing,{0:-16,4:98,5:-15,1:3})),
- cue(6.8,'머리 위로 다시 올리는 후렴 팔선.',p(raised,{0:16,4:150,5:-45,8:-6,9:12}),p(raised,{0:-2,4:150,5:-45,8:-6,9:12}),p(sing,{0:-16,4:145,5:-35,8:-4,9:9})),
- cue(8,'0:55: 팔을 옆으로 열며 골반/무릎 반동.',p(raised,{0:13,4:85,5:-12,2:-3,1:3}),p(raised,{0:-4,4:85,5:-12,2:-3,1:3}),p(sing,{0:-16,4:94,5:-20,2:-2,1:3})),
- cue(9.3,'자유 손을 관자놀이로 가져가기.',p(temple,{0:12,8:10,9:-5}),p(temple,{0:-4,8:10,9:-5}),p(sing,{0:-16,4:102,5:-130})),
- cue(11,'0:58: 관자놀이를 가리키며 사선 체중 이동.',p(temple,{0:9,2:-3,8:13,9:-8,10:-15}),p(temple,{0:-5,2:-3,8:13,9:-8,10:-15}),p(sing,{0:-16,4:108,5:-132,2:-2,10:-12})),
- cue(12,'손을 내리고 보람 보컬 중심으로 이동 시작.',p(sing,{0:5,8:-8,9:10}),p(rest,{0:3,8:10,9:-8,11:-5}),p(rest,{0:-16,8:-8,9:10,11:5})),
- cue(14,'1:01: 보람 중앙 보컬, 나머지는 낮은 손과 좌우 걸음.',p(sing,{0:0,1:2,4:5,5:-15}),p(rest,{0:18,1:2,8:-8,9:10}),p(rest,{0:-20,1:2,8:10,9:-8})),
- cue(15.4,'양옆 멤버가 발끝을 벌려 체중 이동.',p(sing,{4:4,5:-20}),p(rest,{0:20,8:13,9:-6}),p(rest,{0:-22,8:-6,9:13})),
- cue(17,'1:04: 보람 노래, 규리·연지 손을 낮게 둔 스텝.',p(sing,{1:1,4:8,5:-30}),p(rest,{0:18,1:3,8:-8,9:12}),p(rest,{0:-20,1:3,8:12,9:-8})),
- cue(18.5,'앞으로 한 걸음, 보컬 교대 준비.',p(sing,{1:2,8:10,9:-5}),p(sing,{0:15,8:-8,9:10}),p(rest,{0:-18,8:10,9:-8})),
- cue(20,'1:07: 보람·규리 마이크, 연지 낮은 팔로 다음 구간에 연결.',p(sing,{4:24,5:-60}),p(sing,{0:12,4:6,5:-25}),p(rest,{0:-16,8:5,9:-5}))
- ];
+ phrases.forEach((phrase,section)=>phrase.arms.forEach(([arm,elbow],i)=>{
+  const members=[0,1,2].map(m=>pose(arm+(m-1)*5,elbow,i,m===phrase.lead,section===3?2:0));
+  marry.push(cue(section*6+i*.75,phrase.name+' · '+(i+1),...members));
+ }));
+ marry.push(cue(24,'허리 손과 정면 자세로 다음 무대에 연결',pose(8,-25,0,true),pose(8,-25,0,true),pose(8,-25,0,true)));
+ const voice=[];
+ // Four unmistakable overhead→temple→outward accents from the chorus motif.
+ // The reference's travelling passages are replaced by in-place steps as requested.
+ const arms=[[20,-65],[95,-45],[158,-25],[123,-75],[165,-15],[92,-12],[110,-110],[65,-45],[12,-35],[50,-65]];
+ for(let repeat=0;repeat<4;repeat++)arms.forEach(([arm,elbow],i)=>{
+  const members=[0,1,2].map(m=>{
+   const v=pose(arm+(m-1)*4,elbow,i,m===(repeat<2?2:0),2);
+   // Keep the microphone near the singer; other members punctuate the open-arm beat.
+   if(m!==(repeat<2?2:0)&&i===5){v[6]=-65;v[7]=25;}
+   return v;
+  });
+  voice.push(cue(repeat*5+i*.5,`${repeat+1}번째 후렴 강조 · ${['준비 반동','팔 올리기','머리 위 큰 팔선','머리 옆 접기','위로 한 번 더','옆으로 크게 펼치기','관자놀이 손짓','앞으로 펼치기','제자리 발 구르기','다음 강조로 연결'][i]}`,...members));
+ });
+ voice.push(cue(20,'마지막 반동을 풀며 다음 무대로 연결',pose(20,-65,0,true),pose(20,-65,0,false),pose(20,-65,0,false)));
  return {marry,voice};
 };

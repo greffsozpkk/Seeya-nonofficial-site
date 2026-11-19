@@ -82,3 +82,7 @@
 #ourStage .album-show .concert-motion-mix [class^="scent-"]{animation:none!important}
 #ourStage .concert-coin-daily{text-align:center;font-size:13px;color:#745563;margin:-8px 0 16px}
 #ourStage .motion-song-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+
+#ourStage .concert-coin-daily{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 16px;line-height:1.6;margin:0 0 16px}
+#ourStage .concert-coin-daily>span{padding:6px 12px;border-radius:9px;background:#fff4df;color:#725129;white-space:nowrap}
+#ourStage .concert-coin-complete{flex-basis:100%;color:#78526a;font-size:14px;margin-top:3px}

@@ -8,7 +8,9 @@ module.exports=function({root,award,allowed,remaining=()=>Infinity,dailyLimit=30
  function later(fn,ms){cancel();task={fn,due:now()+ms,id:setTimer(()=>{task=null;fn();},ms)};}
  function clearStage(){cancel();layer?.remove();layer=null;stage=null;active=null;pausedAt=null;}
  function begin(){clearStage();total=0;spawned=0;serial++;lastPlace=-1;}
- function update(){const n=$('#concertCoinCount');if(n)n.textContent=String(total);const d=$('#concertCoinDaily');if(d)d.textContent=remaining()>0?'오늘 남은 보너스 '+remaining()+' / '+dailyLimit+'코인':'오늘 보너스 코인을 모두 모았어요. 내일 다시 만나요.';}
+ function dailyText(){const left=Math.max(0,Math.min(dailyLimit,remaining()));return '오늘 모은 코인 '+(dailyLimit-left)+' / '+dailyLimit+'개 · 더 얻을 수 있는 코인 '+left+'개'+(left===0?' — 오늘 코인을 전부 모았어요! 내일 다시 만나요.':'');}
+ function dailyMarkup(){const left=Math.max(0,Math.min(dailyLimit,remaining()));return '<span>오늘 모음 <b>'+(dailyLimit-left)+' / '+dailyLimit+'코인</b></span><span>추가 획득 가능 <b>'+left+'코인</b></span>'+(left===0?'<strong class="concert-coin-complete">오늘 코인을 전부 모았어요!<br>내일 다시 만나요.</strong>':'');}
+ function update(){const n=$('#concertCoinCount');if(n)n.textContent=String(total);const d=$('#concertCoinDaily');if(d)d.innerHTML=dailyMarkup();}
  function schedule(delay=1300+random()*1900){if(!stage?.isConnected||spawned>=limit||remaining()<=0||now()+delay+lifetime>end)return;later(spawn,delay);}
  function expire(){active=null;layer?.replaceChildren();schedule();}
  function spawn(){update();if(remaining()<=0||!allowed()||!stage?.isConnected||pausedAt!==null)return;
@@ -27,13 +29,13 @@ module.exports=function({root,award,allowed,remaining=()=>Infinity,dailyLimit=30
   // Consume before saving: repeated taps and a delayed queued click cannot pay twice.
   if(!award()){layer?.replaceChildren();update();return false;}
   total++;coin.className='concert-coin concert-coin-earned';coin.removeAttribute('data-action');coin.setAttribute('aria-label','1코인을 받았어요');coin.innerHTML='<span>+1</span>';update();
-  const status=$('#concertCoinStatus');if(status)status.textContent='1코인을 받았어요. 이번 공연 '+total+'코인';
+  const status=$('#concertCoinStatus');if(status)status.textContent='1코인을 받았어요. 이번 공연 '+total+'코인. '+dailyText();
   schedule();return true;
  }
  function pause(value){if(value&&pausedAt===null){pausedAt=now();if(task){task.remaining=Math.max(0,task.due-now());clearTimer(task.id);}if(layer)layer.hidden=true;}
   else if(!value&&pausedAt!==null){const elapsed=now()-pausedAt;end+=elapsed;if(active)active.expires+=elapsed;pausedAt=null;if(layer)layer.hidden=false;if(task){const {fn,remaining}=task;later(fn,remaining);}}
  }
- function counter(){return '<p class="concert-coin-counter">보너스 <b id="concertCoinCount">'+total+'</b>코인 <small>반짝이는 코인을 누르면 +1</small></p><p id="concertCoinDaily" class="concert-coin-daily">'+(remaining()>0?'오늘 남은 보너스 '+remaining()+' / '+dailyLimit+'코인':'오늘 보너스 코인을 모두 모았어요. 내일 다시 만나요.')+'</p><span id="concertCoinStatus" class="concert-accessible-title" role="status"></span>';}
- function summary(){return total?'<p class="concert-coin-result">공연 중 모은 보너스 <strong>'+total+'코인</strong>을 지갑에 담았어요.</p>':'';}
+ function counter(){return '<p class="concert-coin-counter">이번 공연 <b id="concertCoinCount">'+total+'</b>코인 <small>반짝이는 코인을 누르면 +1</small></p><p id="concertCoinDaily" class="concert-coin-daily">'+dailyMarkup()+'</p><span id="concertCoinStatus" class="concert-accessible-title" role="status"></span>';}
+ function summary(){return total?'<p class="concert-coin-result">공연 중 모은 보너스 <strong>'+total+'코인</strong>을 지갑에 담았어요.</p><p class="concert-coin-daily">'+dailyMarkup()+'</p>':'<p class="concert-coin-daily">'+dailyMarkup()+'</p>';}
  return {begin,mount,claim,pause,clearStage,counter,summary};
 };

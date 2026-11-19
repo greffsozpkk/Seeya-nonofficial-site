@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('node:fs');
 let clock=0,next=0,paid=0,allowed=true,fail=false;const timers=new Map();
 class Element{constructor(){this.style={};this.dataset={};this.isConnected=true;this.children=[];}setAttribute(){}removeAttribute(k){if(k==='data-action')delete this.dataset.action;}append(e){this.children.push(e);}replaceChildren(...e){this.children=e;}remove(){this.isConnected=false;} }
-const nodes={'#concertCoinCount':new Element(),'#concertCoinStatus':new Element()},ctx={module:{exports:{}},document:{createElement:()=>new Element()}};
+const nodes={'#concertCoinDaily':new Element(),'#concertCoinCount':new Element(),'#concertCoinStatus':new Element()},ctx={module:{exports:{}},document:{createElement:()=>new Element()}};
 vm.runInNewContext(fs.readFileSync(require.resolve('../src/client/our-stage-concert-coins'),'utf8'),ctx);
 const ui=ctx.module.exports({root:{querySelector:q=>nodes[q]},award:()=>{if(fail)throw Error('save failed');paid++;return true;},allowed:()=>allowed,now:()=>clock,random:()=>0,setTimer:(fn,ms)=>{timers.set(++next,{fn,at:clock+ms});return next;},clearTimer:id=>timers.delete(id)});
 function advance(ms){const until=clock+ms;for(;;){const entry=[...timers].sort((a,b)=>a[1].at-b[1].at)[0];if(!entry||entry[1].at>until)break;clock=entry[1].at;timers.delete(entry[0]);entry[1].fn();}clock=until;}
@@ -18,3 +18,14 @@ ui.clearStage();allowed=false;stage=mount();advance(4000);assert(!coin(stage),'b
 ui.begin();const before=paid;for(let i=0;i<15;i++){stage=mount();advance(650);const c=coin(stage);if(c)ui.claim(c.dataset.value);}assert.equal(paid-before,12,'bounded bonuses even if user repeats a paused scene');
 ui.begin();stage=mount();advance(650);id=coin(stage).dataset.value;fail=true;assert.throws(()=>ui.claim(id),/save failed/);assert(!ui.claim(id),'save failure cannot replay consumed tap');ui.clearStage();
 console.log('PASS concert coins: once-only claims, expiry, pause/resume, scene/close cleanup, hidden tabs, per-show limit and save failures.');
+
+let left=1;
+const daily=ctx.module.exports({root:{querySelector:q=>nodes[q]},remaining:()=>left,award:()=>{left--;return true;},allowed:()=>true,now:()=>clock,random:()=>0,setTimer:(fn,ms)=>{timers.set(++next,{fn,at:clock+ms});return next;},clearTimer:id=>timers.delete(id)});
+daily.begin();const dailyStage=new Element();daily.mount(dailyStage,20000);advance(650);
+assert.match(nodes['#concertCoinDaily'].innerHTML,/29 \/ 30코인/);assert.match(daily.counter(),/추가 획득 가능 <b>1코인/);
+assert(daily.claim(coin(dailyStage).dataset.value));assert.equal(left,0);
+assert.match(nodes['#concertCoinDaily'].innerHTML,/30 \/ 30코인/);assert.match(nodes['#concertCoinDaily'].innerHTML,/추가 획득 가능 <b>0코인/);
+assert.match(nodes['#concertCoinDaily'].innerHTML,/오늘 코인을 전부 모았어요/);assert.match(daily.summary(),/오늘 코인을 전부 모았어요/);
+advance(5000);assert.equal(timers.size,0,'no more coins at daily cap');daily.clearStage();
+left=30;assert.match(daily.counter(),/0 \/ 30코인/,'fresh day shows zero collected');
+console.log('PASS concert daily UI: collected/remaining counters, 30th claim announcement, result and next-day reset.');

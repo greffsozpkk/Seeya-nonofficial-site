@@ -12,3 +12,13 @@ const stage={isConnected:true,dataset:{},classList:{add:()=>mounts++},querySelec
  const reduced=create({reduced:()=>true});reduced.mount(stage);assert.equal(made.length,count,'reduced motion does not start animations');reduced.stop();
  console.log('PASS motion mix: complete 4-phrase shuffle, scent to greeting, no immediate repeats, smooth bridge, pause/resume, close cancellation and reduced motion.');
 })().catch(e=>{console.error(e);process.exitCode=1;});
+
+for(const id of ['marry','voice'])for(const m of ['br','gr','yj']){
+ const frames=tracks[id].frames;
+ assert(frames.every(f=>f.members[m][0]===0&&f.members[m][10]===0&&f.members[m][11]===0),'new routines keep each member in place');
+ assert(frames.every((f,i)=>!i||f.time-frames[i-1].time<=.76),'no long held poses');
+ for(let part=0;part<4;part++){
+  const values=frames.filter(f=>f.time>=part*library[id].seconds/4&&f.time<(part+1)*library[id].seconds/4).map(f=>f.members[m][4]);
+  assert(Math.max(...values)-Math.min(...values)>65,'each phrase has a visible arm sweep');
+ }
+}
