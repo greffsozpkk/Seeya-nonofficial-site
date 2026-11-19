@@ -722,6 +722,9 @@
     },
     "trainee-complete": {
       "image": "/images/game/our-stage/trainee-complete.svg"
+    },
+    "all-members-unlocked": {
+      "image": "/images/game/our-stage/badges/all-members.svg"
     }
   },
   "logoSheets": {

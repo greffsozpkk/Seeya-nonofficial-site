@@ -671,7 +671,7 @@
     "awardBadge": false,
     "icon": 2,
     "checkedAt": "2026-11-19",
-    "illustrationNote": "재결합 후 팬들과 만난 순간의 의미를 표현한 도트 삽화입니다. 실제 현장·의상을 그대로 재현한 그림은 아닙니다.",
+    "illustrationNote": "2026년 3월 30일 팬미팅 사진의 멤버별 흰 상의·청바지 착장을 참고한 도트 재해석입니다.",
     "id": "event-rebloom-fanmeeting",
     "album": "still-here",
     "title": "다시 피어난 만남, RE:BLOOM",
@@ -697,7 +697,7 @@
       "level": 4,
       "skill": "활동과 만남 연결"
     },
-    "image": "/images/game/our-stage/stories/event-rebloom-fanmeeting.png"
+    "image": "/images/game/our-stage/stories/event-rebloom-fanmeeting-v2.png"
   },
   {
     "subject": "씨야",
@@ -705,10 +705,10 @@
     "awardBadge": false,
     "icon": 2,
     "checkedAt": "2026-11-19",
-    "illustrationNote": "재결합 후 팬들과 만난 순간의 의미를 표현한 도트 삽화입니다. 실제 현장·의상을 그대로 재현한 그림은 아닙니다.",
+    "illustrationNote": "20주년 전국투어의 씨야 과잠과 멤버별 하의·헤어를 참고한 도트 재해석입니다.",
     "id": "event-the-fan-tour",
     "album": "first-again",
-    "title": "스무 해의 노래, THE FAN",
+    "title": "전국 투어 콘서트, THE FAN",
     "date": "2026.10.31",
     "minTracks": 11,
     "summary": "서울부터 인천까지, 20주년 전국투어에서 함께 부른 노래로 이야기의 마지막 장을 채워요.",
@@ -731,6 +731,6 @@
       "level": 5,
       "skill": "공연의 의미 읽기"
     },
-    "image": "/images/game/our-stage/stories/event-the-fan-tour.png"
+    "image": "/images/game/our-stage/stories/event-the-fan-tour-v2.png"
   }
 ]

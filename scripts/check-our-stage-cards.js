@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict'),M=require('../src/shared/our-stage').forTest();
 const fixtures=require('./check-our-stage-journey');
 const s=structuredClone(fixtures.complete),debut=structuredClone(require('./check-our-stage').complete);
-assert.equal(M.memberCards(s).length,35);assert.equal(new Set(M.memberCards(s).map(c=>c.id)).size,35);
+assert.equal(M.memberCards(s).length,36);assert.equal(new Set(M.memberCards(s).map(c=>c.id)).size,36);
 assert.equal(M.memberCards(debut).filter(c=>c.earned).length,3);
 for(const stage of [M.fresh(),debut,...fixtures.checkpoints.slice(0,5)])for(const id of ['gr','yj','reunion','br'])assert(!M.coreAvailable(stage,id));
 // Cross the real timeline thresholds by ordinary collection/practice, without needing future stories for old songs.
@@ -28,5 +28,5 @@ const old=structuredClone(s);old.version=6;old.display='yj';delete old.displayCa
 const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.displayCard,'story:yj');assert.equal(migrated.finale,false);assert.deepEqual(migrated.collected,s.collected);assert.deepEqual(migrated.purchases,s.purchases);assert.deepEqual(migrated.hair,s.hair);
 assert(!M.valid({...debut,displayCard:'finale:br'}));assert(!M.valid({...debut,finale:true}));
 assert(M.memberCards(s).filter(c=>c.style==='rebloom').every(c=>c.note.includes('재해석')));
-console.log('PASS 35 pixel cards, debut without future stories, chronological gates, automatic retroactive album rewards, one-time finale cards, v6 wardrobe/save migration, invalid card display rejection.');
+console.log('PASS 36 pixel cards, debut without future stories, chronological gates, automatic retroactive album rewards, one-time finale cards, v6 wardrobe/save migration, invalid card display rejection.');
 module.exports={complete:s};

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" role="img" aria-label="모든 멤버 해금 · 함께한 네 목소리">
+<path fill="#55344f" d="M36 12h184v12h12v12h12v184h-12v12h-12v12H36v-12H24v-12H12V36h12V24h12z"/>
+<path fill="#eab6c8" d="M40 24h176v12h12v180h-12v12H40v-12H28V36h12z"/>
+<path fill="#fff3df" d="M48 36h160v12h8v160h-8v8H48v-8H40V48h8z"/>
+<path d="M70 82h116M70 82l58 62 58-62M70 82v68h116V82" fill="none" stroke="#d4b7c8" stroke-width="4" stroke-dasharray="5 5"/>
+<defs><path id="star" d="M-5-21H5v11h9v6h9v8H12v10H5v9H-5V14h-7V4h-11v-8h9v-6h9z"/></defs>
+<g stroke="#65445e" stroke-width="3" stroke-linejoin="miter"><use href="#star" transform="translate(70 78)" fill="#ee9cab"/><use href="#star" transform="translate(186 78)" fill="#b7a6df"/><use href="#star" transform="translate(70 144)" fill="#e6ba6d"/><use href="#star" transform="translate(186 144)" fill="#9fcabd"/></g>
+<path fill="#7d5573" d="M116 73h24v8h8v40h-8v8h-24v-8h-8V81h8zm8 56h8v20h16v8h-40v-8h16z"/>
+<path fill="#f7dfba" d="M116 84h24v8h-24zm0 16h24v8h-24z"/>
+<path fill="#7d5573" d="M40 174h176v29H40z"/>
+<text x="128" y="194" fill="#fff7ed" text-anchor="middle" font-family="Malgun Gothic,sans-serif" font-size="18" font-weight="700">모든 멤버 해금</text>
+</svg>

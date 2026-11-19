@@ -1,0 +1,43 @@
+{
+  "method": "Built-in image_gen",
+  "createdAt": "2026-11-19",
+  "sources": {
+    "fanmeeting": "https://www.bntnews.co.kr/article/view/bnt202603310091",
+    "sumi": "https://cm.asiae.co.kr/ampview.htm?no=2009110522093173690",
+    "tour": "https://www.youtube.com/watch?v=OsU2A-Xpq7c"
+  },
+  "jobs": [
+    {
+      "key": "fanmeeting-v2",
+      "refs": [
+        "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/stage-release/images/game/our-stage/stories/event-rebloom-fanmeeting.png",
+        "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/stage-release/output/our-stage/nov19-references/fanmeeting.jpg"
+      ],
+      "prompt": "Edit the first pixel illustration to correct clothes and venue based on second actual fanmeeting photo. Keep chunky pixel art, square 1:1, three chibi singers readable. In PIXEL illustration order left Lee Boram, middle Nam Gyuri, right Kim Yeonji. Photo order is DIFFERENT: photo LEFT is Yeonji, middle Gyuri, RIGHT Boram. Boram left: long brown hair no bangs, white collared loose button-up long sleeve shirt, light blue loose jeans. Gyuri middle: long black hair parted center, white asymmetric off-shoulder fitted top with long sleeves and small flower/ribbon detail at upper arm, light blue jeans. Yeonji right: very long straight black hair with wispy bangs, white fold-over off-shoulder blouse with thin visible white shoulder strap, light blue jeans. All seated holding microphones, black chairs, magenta/purple backdrop and piano to side, audience pink balloons. Match individual costume to correct person, no black stage clothes, no mini skirts. Tiny dot eyes and stepped pixels, no photo texture, no words."
+    },
+    {
+      "key": "tour-v2",
+      "refs": [
+        "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/stage-release/images/game/our-stage/stories/event-the-fan-tour.png",
+        "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/stage-release/images/game/our-stage/layers/tour-varsity.png"
+      ],
+      "prompt": "Edit first pixel concert illustration. Keep square scene, hand-in-hand bow, three tiny big-headed pixel singers, arena pink lights and confetti. Replace ALL three outfits AND hairstyles with the SECOND wardrobe reference, left-to-right Boram / Gyuri / Yeonji. All wear navy varsity jacket with cream sleeves, stripe rib trim and small pink S chest patch. Left Boram: long RED hair, navy short pleated mini skirt, black boots. Center Gyuri: long BLACK hair, WHITE layered frill skirt, black tall boots. Right Yeonji: BROWN softly wavy hair, navy pleated skirt with visible dark belt and square buckle, black boots. Preserve extremely chunky low resolution pixel style. Exactly three people, no additional characters, no black blazers or blue shirt cuffs. No title text."
+    },
+    {
+      "key": "intro-practice",
+      "refs": [
+        "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/stage-release/images/game/our-stage/pixel-stories-period.png",
+        "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/stage-release/images/game/our-stage/layers/practice-v3.png"
+      ],
+      "prompt": "Create ONE square 1:1 pixel illustration recreating ONLY the TOP LEFT panel of first reference: three trainees rehearsing around a piano in a cozy pink practice room. Use the second reference exact simple practice outfits and hairstyles left-to-right Boram, Gyuri, Yeonji. All plain WHITE short sleeve T shirts, dark gray loose sweatpants, white sneakers. No earrings, necklaces, stage makeup or jewelry. Boram short brown bob, Gyuri simple black side braid/long black hair, Yeonji straight dark hair with bangs. Gyuri sits playing piano, Boram and Yeonji hold lyric sheets and sing. Large crisp stepped pixels, tiny dot eyes, cute original game proportions, not detailed chibi painting. Full single composition no grid, no words."
+    },
+    {
+      "key": "sumi-card",
+      "refs": [
+        "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/stage-release/images/game/our-stage/layers/practice-v3.png",
+        "C:/Users/sunil/.codex/visualizations/2026/11/14/01a1da83-87e4-7f53-a9eb-c8eed8d4215d/stage-release/output/our-stage/nov19-references/sumi.jpg"
+      ],
+      "prompt": "Create a single square 1:1 collectible character illustration of Sumi from SeeYa, using first reference ONLY for the exact chunky low-resolution pixel game style, big head short body and tiny dot eyes, and second photo for Sumi's 2009 performance hairstyle and costume. One woman only, full body centered on simple pale lavender star-pattern backdrop. Dark brown HIGH PONYTAIL with side-swept bangs, small round earrings, BLACK long-sleeve mini tunic/dress with structured embellished shoulders, decorative shiny cuffs and buttons, silver waist belt, vertically striped black sheer leggings, black ankle boots, holding microphone and other hand on hip. Cheerful dignified expression. No red hair, no white top, no other members, no watermark, no text, no card border because UI provides frame. Clearly pixel art like a retro 32-bit game."
+    }
+  ]
+}

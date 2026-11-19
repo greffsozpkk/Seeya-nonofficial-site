@@ -61,6 +61,7 @@ function createModel(testMode=false) {
   };
   const finaleReady=s=>albumComplete(s,'first-again')&&albumById('first-again').tracks.filter(t=>!t.instrumental&&ready(s,t.id)).length>=2;
   function finishFinale(s){if(!finaleReady(s)||s.finale)return false;s.finale=true;return true;}
+  const cardMembers=[...members.map(({id,name})=>({id,name})),{id:'sm',name:'수미'}];
   function memberCards(s){
     const cards=[];
     for(const a of albums)for(const member of ['br','gr','yj'])cards.push({id:'album:'+a.id+':'+member,member,kind:'album',title:a.name,style:a.id,earned:albumUnlocked(s,a.id),hint:a.name+' 해금',note:a.id==='rebloom'?'현재 세 멤버 의상의 재해석 카드 · 실제 활동 멤버 구성과 다릅니다.':'앨범 의상 도트 카드'});
@@ -70,6 +71,7 @@ function createModel(testMode=false) {
       cards.push({id:'finale:'+member,member,kind:'special',title:'우리의 빛, First, Again',style:'first-again',earned:s.finale,hint:'4집 전곡 수집 · 보컬곡 2곡 준비 · 4집 피날레 완료',note:'게임 속 콘서트 기념 카드'});
     }
     for(const id of ['event-bcm','event-kairos']){const e=storyById(id);cards.push({id:'event:'+id,member:'gr',kind:'story',title:e.title,image:e.image,earned:storyDone(s,id),hint:storyCondition(id)+' 후 이야기 간직하기',note:e.illustrationNote});}
+    cards.push({id:'heritage:sumi',member:'sm',kind:'heritage',title:'함께했던 목소리 · Rebloom',image:'/images/game/our-stage/cards/sumi-rebloom.png',earned:albumUnlocked(s,'rebloom'),hint:'Rebloom 앨범 해금',note:'2009년 합류해 Rebloom 활동을 함께한 수미를 기억하는 카드입니다. 당시 방송 의상과 헤어를 참고한 도트 재해석이에요.',source:'https://www.hankyung.com/article/2009102079027'});
     return cards;
   }
   const cardOwned=(s,id)=>memberCards(s).some(c=>c.id===id&&c.earned);
@@ -280,10 +282,11 @@ function createModel(testMode=false) {
     b.push({id:'story-journey',name:'노래 사이의 모든 기억',earned:storyEntries.every(e=>storyDone(s,e.id)),hint:'앨범 이야기 '+storyEntries.filter(e=>e.kind==='album').length+'개와 사이드 이벤트 '+storyEntries.filter(e=>e.kind==='event').length+'개 간직하기',group:'이야기',kind:'activity',icon:2});
     b.push({id:'gyul-star',name:'귤별이 돼',earned:memberCards(s).filter(c=>c.member==='gr'&&c.earned).length>=3,hint:'남규리 멤버 카드 3장 수집',group:'활동',kind:'activity',icon:2});
     if(s.simple?.phaseOne===1)b.push({id:'trainee-complete',name:'연습생 수료',earned:ready(s,'scent'),hint:'첫 노래 연습 완료',group:'이야기',kind:'activity',icon:0});
+    b.push({id:'all-members-unlocked',name:'모든 멤버 해금',earned:albumUnlocked(s,'rebloom'),hint:'Rebloom 해금 · 씨야를 함께한 네 멤버의 기록',group:'이야기',kind:'activity',icon:2});
     return b;
   }
 
-  return {canCheer,albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,trainAll,train,claim,valid};
+  return {canCheer,albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,cardMembers,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,trainAll,train,claim,valid};
 }
 module.exports=createModel();
 module.exports.forTest=()=>createModel(true);

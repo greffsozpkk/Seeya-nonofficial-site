@@ -97,3 +97,4 @@ require('./check-our-stage-concert-rewards');
 require('./check-our-stage-concert-coins');
 require('./check-our-stage-continuous-concert');
 require('./check-our-stage-motion-mix');
+require('./check-our-stage-member-history');

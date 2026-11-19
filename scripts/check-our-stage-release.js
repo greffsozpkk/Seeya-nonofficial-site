@@ -1,7 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
 require('./check-our-stage-wardrobe-review');
 const M=require('../src/shared/our-stage').forTest(),art=require('../src/data/our-stage-badge-art.json');
-const badges=M.badges(M.fresh());assert.equal(badges.length,51);assert.equal(Object.keys(art.badges).length,52);
+const badges=M.badges(M.fresh());assert.equal(badges.length,52);assert.equal(Object.keys(art.badges).length,53);
 // New games start in practice clothes; existing concert equipment remains valid.
 const fresh=M.fresh();assert.deepEqual(fresh.equipped,{br:'practice',gr:'practice',yj:'practice'});
 assert.deepEqual(fresh.hair,fresh.equipped);
@@ -18,7 +18,7 @@ for(const id of ['california-dream','brilliant-change']){
  const o=outfits.find(o=>o.id===id);assert(o.wardrobeSource);assert.equal(o.identityReview.status,id==='california-dream'?'stage-checked':'caption-checked');
  for(const [i,m]of M.memberIds.entries())for(const box of [layers[id].members[m].head,layers[id].members[m].body])assert.equal(Math.floor((box[0]+box[2]/2)/512),i);
 }
-assert.equal(new Set(badges.map(b=>art.badges[b.id].image||art.badges[b.id].sheet+':'+art.badges[b.id].index)).size,51);
+assert.equal(new Set(badges.map(b=>art.badges[b.id].image||art.badges[b.id].sheet+':'+art.badges[b.id].index)).size,52);
 for(const b of badges){const a=art.badges[b.id];if(a.image){assert(fs.existsSync('.'+a.image));continue;}assert(a.index>=0&&a.index<24);assert(fs.existsSync('.'+art.sheets[a.sheet]));}
 for(const album of M.albums)assert(art.badges[album.id+'-unlock'].logo,'Every album cover uses the official logo');
 for(const a of Object.values(art.badges))if(a.logo){
