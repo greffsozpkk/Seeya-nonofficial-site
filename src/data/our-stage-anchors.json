@@ -674,5 +674,101 @@
         614
       ]
     }
+  },
+  "capsule-brother": {
+    "br": {
+      "head": [
+        294,
+        359
+      ],
+      "neck": [
+        294,
+        639
+      ]
+    }
+  },
+  "capsule-good-day": {
+    "br": {
+      "head": [
+        294,
+        364
+      ],
+      "neck": [
+        294,
+        655
+      ]
+    }
+  },
+  "capsule-sorrow": {
+    "gr": {
+      "head": [
+        766,
+        359
+      ],
+      "neck": [
+        766,
+        639
+      ]
+    }
+  },
+  "capsule-confession": {
+    "gr": {
+      "head": [
+        770,
+        364
+      ],
+      "neck": [
+        766,
+        655
+      ]
+    }
+  },
+  "capsule-mom": {
+    "yj": {
+      "head": [
+        1248,
+        359
+      ],
+      "neck": [
+        1248,
+        639
+      ]
+    }
+  },
+  "capsule-wind": {
+    "yj": {
+      "head": [
+        1217,
+        364
+      ],
+      "neck": [
+        1215,
+        655
+      ]
+    }
+  },
+  "capsule-49days": {
+    "gr": {
+      "head": [
+        354,
+        402
+      ],
+      "neck": [
+        352,
+        695
+      ]
+    }
+  },
+  "capsule-cruel-city": {
+    "gr": {
+      "head": [
+        900,
+        402
+      ],
+      "neck": [
+        899,
+        695
+      ]
+    }
   }
 }

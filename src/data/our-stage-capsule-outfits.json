@@ -160,5 +160,181 @@
     "image": "/images/game/our-stage/layers/capsule-solo-20261119.png",
     "width": 1536,
     "height": 1024
+  },
+  {
+    "id": "capsule-brother",
+    "reward": "outfit-brother",
+    "name": "형 (兄) - 2024",
+    "title": "형 (兄)",
+    "year": 2024,
+    "date": "2024.02.21",
+    "members": [
+      "br"
+    ],
+    "rarity": "normal",
+    "headKind": "헤어",
+    "color": "#6a6179",
+    "paper": "#f3edf6",
+    "sourceLabel": "방구석 캐스팅 · Special Clip",
+    "url": "https://www.youtube.com/watch?v=oukYixC1ldo",
+    "note": "짧은 검은 단발과 흰 칼라의 체크 의상을 참고했어요. 영상에서 확인한 상반신을 바탕으로 하의와 신발은 도트 의상으로 재해석했습니다.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-solo-normal-20261119.png",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "capsule-good-day",
+    "reward": "outfit-good-day",
+    "name": "이렇게 좋은 날 - 2019",
+    "title": "이렇게 좋은 날",
+    "year": 2019,
+    "date": "2019.04.23",
+    "members": [
+      "br"
+    ],
+    "rarity": "rare",
+    "headKind": "헤어",
+    "color": "#bd788f",
+    "paper": "#fff0f4",
+    "sourceLabel": "보람씨야 · Live clip",
+    "url": "https://www.youtube.com/watch?v=DujKGd4aA60",
+    "note": "꽃무늬 분홍 원피스·짧은 웨이브 머리와 드롭 귀고리를 참고했어요. 영상에서 보이지 않는 치마 길이와 신발은 게임에 맞춰 재해석했습니다.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-solo-rare-20261119.png",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "capsule-sorrow",
+    "reward": "outfit-sorrow",
+    "name": "슬픔이 찾아와서 그래 - 2025",
+    "title": "슬픔이 찾아와서 그래",
+    "year": 2025,
+    "date": "2025.09",
+    "members": [
+      "gr"
+    ],
+    "rarity": "normal",
+    "headKind": "헤어",
+    "color": "#ad9479",
+    "paper": "#faf2e8",
+    "sourceLabel": "에잇 8recordz · LIVE CLIP",
+    "url": "https://www.youtube.com/watch?v=nN7NV5FBhBw",
+    "note": "베이지 니트와 긴 머리를 참고했어요. 영상의 상반신 착장을 도트로 옮기고, 하의와 신발은 크림색으로 재해석했습니다.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-solo-normal-20261119.png",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "capsule-confession",
+    "reward": "outfit-confession",
+    "name": "고백하는 거 맞아 - 2024",
+    "title": "고백하는 거 맞아",
+    "year": 2024,
+    "date": "2024",
+    "members": [
+      "gr"
+    ],
+    "rarity": "rare",
+    "headKind": "헤어",
+    "color": "#9d94b1",
+    "paper": "#f3eff9",
+    "sourceLabel": "뮤직카우 · Live Clip",
+    "url": "https://www.youtube.com/watch?v=UkOV4Z8Vpm8",
+    "note": "턱선 단발, 회색 끈 원피스와 목의 꽃 장식·흰 카디건을 참고했어요. 작은 장식과 화면 밖 하의 길이·신발은 단순화했습니다.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-solo-rare-20261119.png",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "capsule-mom",
+    "reward": "outfit-mom",
+    "name": "내 맘 (Mom) - 2020",
+    "title": "내 맘 (Mom)",
+    "year": 2020,
+    "date": "2020.02.13",
+    "members": [
+      "yj"
+    ],
+    "rarity": "normal",
+    "headKind": "헤어",
+    "color": "#b6a083",
+    "paper": "#fff8ec",
+    "sourceLabel": "김연지 Official · Live Clip",
+    "url": "https://www.youtube.com/watch?v=_FJkNLkV82U",
+    "note": "크림색 브이넥 니트와 밝은 갈색 웨이브 머리를 참고했어요. 하의와 신발은 게임에 맞춰 재해석했습니다. 표기 연도는 음원 발매가 아닌 라이브 클립 공개 연도예요.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-solo-normal-20261119.png",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "capsule-wind",
+    "reward": "outfit-wind",
+    "name": "바람이 불면 - 2020",
+    "title": "바람이 불면",
+    "year": 2020,
+    "date": "2020.03.06",
+    "members": [
+      "yj"
+    ],
+    "rarity": "rare",
+    "headKind": "헤어",
+    "color": "#677d9b",
+    "paper": "#eff4fa",
+    "sourceLabel": "KBS · 유희열의 스케치북",
+    "url": "https://www.youtube.com/watch?v=lOvBRahMvtQ",
+    "note": "흰 브이넥 블라우스, 푸른 바지와 청록색 구두를 실제 전신 무대 화면에서 확인했어요. 활동기 머리와 귀고리를 함께 도트로 재해석했습니다.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-solo-rare-20261119.png",
+    "width": 1536,
+    "height": 1024
+  },
+  {
+    "id": "capsule-49days",
+    "reward": "outfit-49days",
+    "name": "49일 - 2011",
+    "title": "49일",
+    "year": 2011,
+    "date": "2011",
+    "members": [
+      "gr"
+    ],
+    "rarity": "rare",
+    "headKind": "헤어",
+    "color": "#cb93aa",
+    "paper": "#fff0f5",
+    "sourceLabel": "드라마 · 신지현",
+    "url": "https://www.chosun.com/site/data/html_dir/2011/04/15/2011041500845.html",
+    "note": "신지현의 분홍 시폰 원피스·허리 리본과 긴 머리를 당시 SBS 촬영 사진에서 참고했어요. 시폰의 층과 작은 디테일은 도트로 단순화했습니다.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-drama-20261119.png",
+    "width": 1254,
+    "height": 1254
+  },
+  {
+    "id": "capsule-cruel-city",
+    "reward": "outfit-cruel-city",
+    "name": "무정도시 - 2013",
+    "title": "무정도시",
+    "year": 2013,
+    "date": "2013.06.25",
+    "members": [
+      "gr"
+    ],
+    "rarity": "normal",
+    "headKind": "헤어",
+    "color": "#686575",
+    "paper": "#f0eef4",
+    "sourceLabel": "드라마 · 윤수민",
+    "url": "https://cm.asiae.co.kr/article/2013062518111747114",
+    "note": "윤수민의 잠입 장면 속 검은 모자·가죽 재킷·검은 스키니 바지와 배낭을 참고했어요. 화면 밖 신발과 작은 장식은 단순화했습니다.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-drama-20261119.png",
+    "width": 1254,
+    "height": 1254
   }
 ]

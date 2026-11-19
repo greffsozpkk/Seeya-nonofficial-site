@@ -1118,5 +1118,181 @@
         "chin": 452
       }
     }
+  },
+  "capsule-brother": {
+    "image": "/images/game/our-stage/layers/capsule-solo-normal-20261119.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          0,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          100,
+          630,
+          350,
+          394
+        ],
+        "chin": 359
+      }
+    }
+  },
+  "capsule-good-day": {
+    "image": "/images/game/our-stage/layers/capsule-solo-rare-20261119.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          0,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          100,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      }
+    }
+  },
+  "capsule-sorrow": {
+    "image": "/images/game/our-stage/layers/capsule-solo-normal-20261119.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "gr": {
+        "head": [
+          512,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          612,
+          630,
+          350,
+          394
+        ],
+        "chin": 359
+      }
+    }
+  },
+  "capsule-confession": {
+    "image": "/images/game/our-stage/layers/capsule-solo-rare-20261119.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "gr": {
+        "head": [
+          512,
+          0,
+          460,
+          440
+        ],
+        "body": [
+          612,
+          630,
+          350,
+          394
+        ],
+        "chin": 364
+      }
+    }
+  },
+  "capsule-mom": {
+    "image": "/images/game/our-stage/layers/capsule-solo-normal-20261119.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "yj": {
+        "head": [
+          1024,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          1124,
+          630,
+          350,
+          394
+        ],
+        "chin": 359
+      }
+    }
+  },
+  "capsule-wind": {
+    "image": "/images/game/our-stage/layers/capsule-solo-rare-20261119.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "yj": {
+        "head": [
+          1008,
+          0,
+          528,
+          590
+        ],
+        "body": [
+          1080,
+          630,
+          360,
+          394
+        ],
+        "chin": 364
+      }
+    }
+  },
+  "capsule-49days": {
+    "image": "/images/game/our-stage/layers/capsule-drama-20261119.png",
+    "width": 1254,
+    "height": 1254,
+    "members": {
+      "gr": {
+        "head": [
+          0,
+          0,
+          627,
+          650
+        ],
+        "body": [
+          150,
+          690,
+          430,
+          550
+        ],
+        "chin": 402
+      }
+    }
+  },
+  "capsule-cruel-city": {
+    "image": "/images/game/our-stage/layers/capsule-drama-20261119.png",
+    "width": 1254,
+    "height": 1254,
+    "members": {
+      "gr": {
+        "head": [
+          627,
+          0,
+          627,
+          650
+        ],
+        "body": [
+          710,
+          690,
+          430,
+          550
+        ],
+        "chin": 402
+      }
+    }
   }
 }
