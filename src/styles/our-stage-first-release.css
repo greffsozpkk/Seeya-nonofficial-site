@@ -75,3 +75,10 @@
 #ourStage .album-show .scent-choreo .stage-performer,
 #ourStage .album-show .scent-choreo .sprite-hair,
 #ourStage .album-show .scent-choreo [class^="scent-"]{animation-iteration-count:infinite!important}
+
+/* Web Animations blends full phrases; CSS preview animations must not compete. */
+#ourStage .album-show .concert-motion-mix .stage-performer,
+#ourStage .album-show .concert-motion-mix .sprite-hair,
+#ourStage .album-show .concert-motion-mix [class^="scent-"]{animation:none!important}
+#ourStage .concert-coin-daily{text-align:center;font-size:13px;color:#745563;margin:-8px 0 16px}
+#ourStage .motion-song-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}

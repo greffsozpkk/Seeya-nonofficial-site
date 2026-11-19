@@ -93,3 +93,7 @@ require('./check-our-stage-puzzles');
 require('./check-our-stage-simple');
 require('./check-our-stage-first-release');
 require('./check-our-stage-keepsakes');
+require('./check-our-stage-concert-rewards');
+require('./check-our-stage-concert-coins');
+require('./check-our-stage-continuous-concert');
+require('./check-our-stage-motion-mix');

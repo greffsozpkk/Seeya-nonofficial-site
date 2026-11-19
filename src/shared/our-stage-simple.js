@@ -4,17 +4,18 @@ module.exports=function(B){
  const old=require('./our-stage-growth')(B),activity=require('../data/our-stage-activity-quiz.json'),mini=require('./our-stage-puzzles')(require('./our-stage-mini')(B.timing.testMode,activity));
  mini.games[0]={...mini.games[0],name:'씨야 활동 퀴즈',description:'무대·방송·수상·협업의 순간을 떠올리는 세 문제예요.'};
  const wordTasks=require('./our-stage-word-tasks');
- const seed=()=>({version:2,walletOffset:0,concerts:{},nickname:'',nicknameSet:false,wordDone:{},legacyAlbums:[]});
+ const concertRewards=require('./our-stage-concert-rewards');
+ const seed=()=>({version:2,walletOffset:0,concertCoins:concertRewards.fresh(),concerts:{},nickname:'',nicknameSet:false,wordDone:{},legacyAlbums:[]});
  const eligible=(s,id)=>{const a=B.songAlbum(id);if(!a||a.id!=='first-mind'&&!B.albumUnlocked(s,a.id))return false;const i=a.tracks.findIndex(t=>t.id===id);return i===0||B.ready(s,a.tracks[i-1].id);};
  function collect(s){let n=0;for(const id of B.ids)if(!B.open(s,id)&&eligible(s,id)){s.collected.push(id);n++;}return n;}
  const coins=s=>B.coins(s)+s.simple.walletOffset;
- function valid(s){try{const x=s.simple;if(!x||x.version!==2||!Number.isSafeInteger(x.walletOffset)||Math.abs(x.walletOffset)>1e12||typeof x.nickname!=='string'||x.nickname.length>24||!x.concerts||typeof x.concerts!=='object'||Array.isArray(x.concerts))return false;
+ function valid(s){try{const x=s.simple;if(!x||!concertRewards.valid(x.concertCoins)||x.version!==2||!Number.isSafeInteger(x.walletOffset)||Math.abs(x.walletOffset)>1e12||typeof x.nickname!=='string'||x.nickname.length>24||!x.concerts||typeof x.concerts!=='object'||Array.isArray(x.concerts))return false;
  if(!Object.entries(x.concerts).every(([id,r])=>B.albumById(id)&&r&&Number.isSafeInteger(r.at)&&r.at>=0&&r.at<253402268399999&&Array.isArray(r.tracks)&&r.tracks.length===new Set(r.tracks).size&&B.albumById(id).tracks.filter(t=>!t.instrumental).every(t=>r.tracks.includes(t.id)&&B.ready(s,t.id))&&r.tracks.every(t=>B.songAlbum(t)?.id===id)&&r.serial==='OS-'+id+'-'+r.at))return false;
  if(typeof x.nicknameSet!=='boolean'||!x.wordDone||typeof x.wordDone!=='object'||Array.isArray(x.wordDone)||!Object.entries(x.wordDone).every(([id,at])=>wordTasks.some(q=>q.track===id)&&B.open(s,id)&&Number.isSafeInteger(at)&&at>0&&at<253402268399999))return false;
  if(!Array.isArray(x.legacyAlbums)||new Set(x.legacyAlbums).size!==x.legacyAlbums.length||!x.legacyAlbums.every(id=>s.albums.includes(id))||!s.albums.every(id=>x.legacyAlbums.includes(id)||x.concerts[B.albums[B.albums.findIndex(a=>a.id===id)-1].id]))return false;
  return B.valid(s,{balance:coins(s),miniValid:mini.valid,eligible:(s,id)=>eligible(s,id)||B.eligible(s,id)});
  }catch{return false;}}
- function loadSave(raw){if(typeof raw!=='string'||raw.length>512000)throw Error('Invalid stage save');let s=JSON.parse(raw);if(s?.simple){if(s.simple.version===1){s.simple={...s.simple,version:2,nicknameSet:!!s.simple.nickname,wordDone:{},legacyAlbums:[...s.albums]};}if(!valid(s))throw Error('Invalid practice save');return s;}
+ function loadSave(raw){if(typeof raw!=='string'||raw.length>512000)throw Error('Invalid stage save');let s=JSON.parse(raw);if(s?.simple){if(s.simple.version===1){s.simple={...s.simple,version:2,nicknameSet:!!s.simple.nickname,wordDone:{},legacyAlbums:[...s.albums]};}if(s.simple.concertCoins===undefined)s.simple.concertCoins=concertRewards.fresh();if(!valid(s))throw Error('Invalid practice save');return s;}
  s=s?.growth?old.loadSave(raw):B.loadSave(raw);const balance=s.growth?old.coins(s):B.coins(s);s.simple=seed();s.simple.legacyAlbums=[...s.albums];s.simple.nicknameSet=!!s.simple.nickname;s.simple.walletOffset=balance-B.coins(s);s.points=Math.min(100,s.points);mini.migrate(s.mini);
  if(s.mini.active?.kind==='quiz'){s.mini.active=null;s.mini.plays=Math.max(0,s.mini.plays-1);s.mini.next.quiz=0;}
  if(!valid(s))throw Error('Invalid migrated practice save');return s;}
@@ -38,5 +39,5 @@ module.exports=function(B){
  function answerWords(s,id,guess,now=Date.now()){const q=wordTasks.find(q=>q.track===id);if(!q||!wordAvailable(s,id)||!Number.isSafeInteger(now)||now<=0||now>=253402268399999||!Array.isArray(guess)||guess.length!==q.tokens.length||new Set(guess).size!==guess.length||!guess.every((n,i)=>Number.isInteger(n)&&n>=0&&n<q.tokens.length&&q.tokens[n]===q.tokens[i]))return false;s.simple.wordDone[id]=now;return true;}
  const giftDesigns=require('./our-stage-gift-designs');
  function gifts(s){return [...B.albums.filter(a=>s.simple.concerts[a.id]).map(a=>({id:'concert:'+a.id,kind:'bouquet',label:a.name+' 콘서트',at:s.simple.concerts[a.id].at})),...wordTasks.filter(q=>s.simple.wordDone[q.track]).map((q,i)=>({id:'word:'+q.track,kind:['box','bear','towel'][wordTasks.indexOf(q)%3],giftName:giftDesigns.forGift('word:'+q.track).name,label:q.song+' · '+giftDesigns.forGift('word:'+q.track).name,at:s.simple.wordDone[q.track]})),...(s.daily.count?[{id:'attendance',kind:'letters',label:s.daily.count+'번의 연습실 출석',at:null}]:[])];}
- return {...B,simpleMode:true,wordTasks,wordAvailable,answerWords,gifts,fresh,loadSave,valid,mini,coins,purchase,settle,eligible,songs,albumRequirements,albumAvailable,unlockAlbum,challenges,canChallenge,answer,claim,badges,concertTracks,concertReady,finishConcert};
+ return {...B,concertCoinLimit:concertRewards.limit,concertCoinRemaining:concertRewards.remaining,claimConcertCoin:concertRewards.claim,simpleMode:true,wordTasks,wordAvailable,answerWords,gifts,fresh,loadSave,valid,mini,coins,purchase,settle,eligible,songs,albumRequirements,albumAvailable,unlockAlbum,challenges,canChallenge,answer,claim,badges,concertTracks,concertReady,finishConcert};
 };

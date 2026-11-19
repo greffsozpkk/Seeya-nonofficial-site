@@ -11,7 +11,7 @@ for(const [albumId,songs] of [['first-mind',['scent','shoes','love']],['lovely-s
  motionFor:id=>id==='scent'?'scent':id==='lovely-sweet-heart-01'?'greeting':false,
  stageArt:(...args)=>{renders.push(args);return '<figure></figure>';},esc:x=>x,title:x=>x,button:()=>'',fanLetterInvite:()=>'',mark:()=>'',
  dialog:()=>mounted.push('dialog'),coinUI:{begin(){},clearStage(){},mount:(...args)=>mounted.push(args),pause(){},counter:()=>'',summary:()=>''},
- ticketUI:{show:()=>mounted.push('ticket')},locked:fn=>fn(),sync(){},save:()=>true,draw(){},setTimeout:(fn,ms)=>{delays.push(ms);return 1;},clearTimeout(){}};
+ motionUI:{mount(){},pause(){},stop(){}},ticketUI:{show:()=>mounted.push('ticket')},locked:fn=>fn(),sync(){},save:()=>true,draw(){},setTimeout:(fn,ms)=>{delays.push(ms);return 1;},clearTimeout(){}};
  vm.createContext(ctx);vm.runInContext(source.slice(source.indexOf('function perform(id){'),source.indexOf('\nfunction bridge(')),ctx);
  ctx.perform('album:'+albumId);
  assert.deepEqual(delays,[8500],'entrance plus exactly four seconds for first song');
