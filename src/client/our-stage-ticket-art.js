@@ -25,7 +25,9 @@ module.exports=async function({album,index,receipt,nickname}){
  text('CHAPTER '+String(index+1).padStart(2,'0')+' · '+album.type.split(' · ')[1].slice(0,4),738,338,230,10,'#CDA55F',600);c.textAlign='left';
  text('CHAPTER '+String(index+1).padStart(2,'0')+'  /  앨범 완주 기념',42,121,540,13,accent,700);
  text(album.name,40,170,545,38,ink,750);
- text(themes[album.id].line,42,202,540,15,'#766771');
+ const quote=themes[album.id].line,split=quote.indexOf(',');
+ const quoteLines=split<0?[quote]:[quote.slice(0,split+1),quote.slice(split+1).trim()];
+ quoteLines.forEach((part,i)=>text(part,42,202+i*22,540,15,'#766771'));
  text('함께한 팬',42,246,540,11,accent,700);text(nickname||'익명의 씨야 팬',42,276,540,24,ink,700);
  text('함께 부른 노래',42,312,190,11,accent,600);text(receipt.tracks.length===1?'싱글 무대':receipt.tracks.length+'곡',42,338,190,21,ink,700);
  text('콘서트를 마친 날',250,312,300,11,accent,600);text(new Date(receipt.at).toLocaleDateString('ko-KR',{timeZone:'Asia/Seoul'}),250,338,340,18,ink,600);

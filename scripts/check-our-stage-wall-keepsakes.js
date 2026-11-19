@@ -1,0 +1,21 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+(async()=>{
+ const s={simple:{debuted:false,nickname:'old',passIssuedAt:1,concerts:{}}},albums=[{id:'a',name:'First'},{id:'b',name:'Second'}];
+ const pending=[],nodes={};let calls=0;
+ const canvas=name=>({width:840,height:1200,name});
+ const context={module:{exports:{}},Map,Promise,Image:class{async decode(){}},document:{createElement:()=>({getContext(){return {drawImage:c=>{this.name=c.name;}};},toDataURL(){return 'data:'+this.name;}})},require:id=>id.endsWith('keepsake-art')?{drawPass:({nickname})=>{calls++;return new Promise(resolve=>pending.push(()=>resolve(canvas(nickname))));}}:async({album})=>canvas(album.id)};
+ vm.runInNewContext(fs.readFileSync(require.resolve('../src/client/our-stage-wall-keepsakes'),'utf8'),context);
+ const ui=context.module.exports({M:{albums},state:()=>s,root:{querySelector:q=>nodes[q]},esc:x=>x});
+ assert(!ui.markup().includes('wall-ticket'));assert(ui.markup().includes('trainee-info'));
+ s.simple.debuted=true;assert(!ui.markup().includes('wall-ticket'));
+ const target={isConnected:true,dataset:{},querySelector(){return this.img;},replaceChildren(img){this.img=img;}};nodes['[data-keepsake="pass"]']=target;
+ ui.refresh();ui.refresh();assert.equal(calls,1,'concurrent renders share one image job');
+ s.simple.nickname='new';ui.refresh();assert.equal(calls,2);
+ pending[1]();await new Promise(setImmediate);assert.equal(target.img.src,'data:new');
+ pending[0]();await new Promise(setImmediate);assert.equal(target.img.src,'data:new','slow old name cannot overwrite new name');
+ ui.refresh();await new Promise(setImmediate);assert.equal(calls,2,'cached image reused');
+ s.simple.concerts={a:{at:1},b:{at:2}};assert(ui.markup().includes('Second 콘서트'));assert(!ui.markup().includes('First 콘서트'));
+ s.simple.nickname='detached';ui.refresh();target.isConnected=false;pending[2]();await new Promise(setImmediate);assert.equal(target.img.src,'data:new');
+ console.log('PASS wall keepsakes: no unearned tickets, latest concert, shared cache, name races and detached screen safety.');
+})().catch(e=>{console.error(e);process.exitCode=1;});

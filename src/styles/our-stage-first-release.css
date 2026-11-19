@@ -11,10 +11,6 @@
 #ourStage .wall-pass b{font-size:9px}
 #ourStage .wall-pass small{font-size:7px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:100%}
 #ourStage .trainee-pass{border-top-color:#8a7a88;filter:saturate(.4)}
-#ourStage .wall-debut-poster{position:absolute;top:4%;left:3%;width:15%;aspect-ratio:1.2;max-height:18%;overflow:hidden;padding:6px 4px;background:linear-gradient(#f4d4e4,#fff0db);border:3px solid #fff4e8;box-shadow:2px 2px 0 #39243933;display:flex;flex-direction:column;justify-content:center;gap:6px;text-align:center;color:#653e58;transform:rotate(2deg);z-index:2}
-#ourStage .wall-debut-poster img{width:80%;height:auto;max-height:30%;padding:0;filter:none;object-fit:contain;flex:0 0 auto;margin:0 auto}
-#ourStage .wall-debut-poster b{font-size:8px}
-#ourStage .wall-debut-poster span{font-size:7px}
 #ourStage .trainee-studio .pixel-trio{left:18%;width:64%}
 #ourStage .trainee-studio .member-labels{left:18%;right:18%}
 #ourStage .artist-pass-preview{width:min(100%,360px);display:block;margin:18px auto}
@@ -33,8 +29,6 @@
 #ourStage .reunion-bridge h2{font-size:clamp(44px,10vw,76px);color:#f7e7ee;margin:26px 0}
 #ourStage .reunion-bridge p{color:#eddae8}
 #ourStage .stage-lift{position:relative;width:100%;height:100%}
-#ourStage .stage-led{position:absolute;inset:0;background:repeating-linear-gradient(90deg,#ffffff08 0 2px,transparent 2px 18px),repeating-linear-gradient(0deg,#ffffff06 0 2px,transparent 2px 18px),radial-gradient(ellipse at 50% 30%,var(--album-light,#694367),#1d172d 72%);opacity:.8;pointer-events:none}
-#ourStage .stage-rail{position:absolute;left:0;right:0;bottom:24%;height:3px;background:#b19bbe;box-shadow:0 4px 0 #49354c;pointer-events:none}
 #ourStage .stage-trio{position:relative;z-index:2}
 #ourStage .stage-entrance{--lift:1.6s;--gap:1s}
 #ourStage .slow-entrance{--lift:3.2s;--gap:2s}
@@ -44,9 +38,21 @@
 #ourStage .stage-entrance .stage-audience{opacity:.35;transition:opacity .5s}
 #ourStage .stage-entrance.entrance-lit .stage-audience{opacity:1}
 @keyframes our-stage-lift{to{transform:translateY(0)}}
-@media(max-width:650px){#ourStage .wall-pass{left:3%;top:24%;width:12%;border-top-width:7px}#ourStage .wall-debut-poster{left:3%;top:4%;width:15%;padding:3px 1px;gap:3px}#ourStage .wall-debut-poster b{font-size:6px}#ourStage .wall-debut-poster span{font-size:5px}#ourStage .room-status{font-size:12px;max-width:66%}#ourStage .ticket-name input{width:100%;min-width:0}#ourStage .practice .line{align-items:flex-start;gap:10px;flex-wrap:wrap}#ourStage .practice select{max-width:100%;width:100%}}
+@media(max-width:650px){#ourStage .wall-pass{left:3%;top:24%;width:12%;border-top-width:7px}#ourStage .room-status{font-size:12px;max-width:66%}#ourStage .ticket-name input{width:100%;min-width:0}#ourStage .practice .line{align-items:flex-start;gap:10px;flex-wrap:wrap}#ourStage .practice select{max-width:100%;width:100%}}
 @media(prefers-reduced-motion:reduce){#ourStage .stage-entrance .stage-lift{animation:none;transform:none}#ourStage .stage-entrance .stage-audience{opacity:1;transition:none}#ourStage .stage-entrance .stage-performer .stage-lift *{--phrase-delay:0s}}
 
 #ourStage #passNameStatus{display:block;min-height:1.6em;margin:6px 0;color:#6b485b;font-size:13px}
 
 #ourStage .room .pixel-trio{pointer-events:none}
+
+/* Display the actual issued keepsakes; no empty ticket placeholder before a concert. */
+#ourStage .room .wall-keepsake{display:block;padding:0;border:0;border-radius:2px;background:#fff4e6;overflow:hidden;min-height:0;line-height:0;box-shadow:2px 3px 0 #39243940;z-index:2}
+#ourStage .room .wall-pass.wall-keepsake{left:4%;top:5%;width:12%;aspect-ratio:7/10;min-width:44px}
+#ourStage .room .wall-ticket{position:absolute;left:20%;top:5%;width:25%;aspect-ratio:15/7;transform:rotate(2deg)}
+#ourStage .room .wall-keepsake img{display:block;width:100%;height:auto;max-height:none;margin:0;padding:0;filter:none;object-fit:contain;image-rendering:auto;background:none}
+#ourStage .keepsake-loading{display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-size:8px;line-height:1.4;color:#81536d}
+/* Sugar Man reunion reference: star LED wall, waveform trim, steel frames and reflective platform. */
+#ourStage .stage-art .stage-set{position:absolute;inset:0 0 62px;background:#080f29 url('/images/game/our-stage/reunion-stage.svg') center/100% 100% no-repeat;pointer-events:none;z-index:0}
+#ourStage .stage-art .stage-trio{padding-top:45px;border-bottom:0;background:none}
+#ourStage .stage-art .stage-audience{background:linear-gradient(#080d22cc,#111022)}
+@media(max-width:650px){#ourStage .room .wall-pass.wall-keepsake{left:3%;top:5%;width:13%}#ourStage .room .wall-ticket{left:20%;width:27%;top:5%}#ourStage .room-status{left:74%;max-width:45%;font-size:10px}#ourStage .stage-art .stage-trio{padding-top:32px}}

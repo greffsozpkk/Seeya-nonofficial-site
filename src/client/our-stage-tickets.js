@@ -1,6 +1,6 @@
 'use strict';
 const drawTicket=require('./our-stage-ticket-art'),art=require('./our-stage-keepsake-art');
-module.exports=function({M,state,root,dialog,button,esc,save,draw}){
+module.exports=function({M,state,root,dialog,button,esc,save,draw,refreshWall}){
  const $=q=>root.querySelector(q);let ticket=null,activeId=null,extra='',sequence=0,mode='ticket',puzzle=null;
  async function render(name){const s=state(),target=$('#ticketCanvasSlot'),version=++sequence;if(!target)return;
  const preview=target.querySelector('.stage-ticket-preview');
@@ -24,7 +24,7 @@ module.exports=function({M,state,root,dialog,button,esc,save,draw}){
  dialog(`<small class="eyebrow">A PIECE OF OUR STAGE · 선택</small><h2>${done?'한 장의 기억이 완성됐어요':'티켓 그림 맞추기'}</h2><p>조각 두 개를 차례로 누르면 자리가 바뀝니다.</p><div class="ticket-puzzle" aria-label="티켓 그림 9조각">${p.perm.map((v,i)=>`<button data-action="ticket-piece" data-value="${i}" aria-label="${i+1}번 자리 · 그림 ${v+1}번 조각${v===i?' · 맞는 자리':''}" aria-pressed="${p.selected===i}" ${done?'disabled':''} style="background-image:url('${p.url}');background-position:${v%3*50}% ${Math.floor(v/3)*50}%"><span>${i+1}</span></button>`).join('')}</div><p role="status">${done?'✦ 그림 복원 완료':count+' / 9조각이 제자리에 있어요.'}</p><details class="puzzle-guide"><summary>완성 그림 보기</summary><img src="${p.url}" alt="맞출 그림 전체"></details><div class="growth-actions">${button(done?'기념 티켓 보기':'나중에 하고 티켓 보기','ticket-puzzle-back',p.id,'primary')}</div>`);}
  function handle(a,id){if(!a.startsWith('ticket-')&&!a.startsWith('pass-'))return false;
  if(a==='ticket-open')return show(id)||true;if(a==='pass-open')return showPass()||true;
- if(a==='pass-name-save'){state().simple.nickname=$('#passNickname').value.trim().slice(0,24);state().simple.nicknameSet=true;if(save()){$('#passNameStatus').textContent='이름을 저장했어요.';const wall=$('.wall-pass small');if(wall)wall.textContent=state().simple.nickname||'OUR STAGE';return render();}return true;}
+ if(a==='pass-name-save'){state().simple.nickname=$('#passNickname').value.trim().slice(0,24);state().simple.nicknameSet=true;if(save()){$('#passNameStatus').textContent='이름을 저장했어요.';refreshWall?.();return render();}return true;}
  if(a==='ticket-refresh')return render();if(a==='ticket-puzzle')return openPuzzle(id);
  if(a==='ticket-puzzle-back'){const footer=puzzle?.footer||'';puzzle=null;return show(id,footer);}
  if(a==='ticket-piece'&&puzzle){const i=Number(id);if(!Number.isInteger(i)||i<0||i>8)return true;const p=puzzle;if(p.selected===i)p.selected=null;else if(p.selected===null)p.selected=i;else{[p.perm[i],p.perm[p.selected]]=[p.perm[p.selected],p.perm[i]];p.selected=null;if(p.perm.every((v,i)=>v===i)&&M.restoreTicket(state(),p.id,p.perm)){save();draw?.();}}renderPuzzle();const focus=$(`[data-action="ticket-piece"][data-value="${i}"]`);if(focus&&!focus.disabled)focus.focus();else $('[data-action="ticket-puzzle-back"]')?.focus();return true;}
