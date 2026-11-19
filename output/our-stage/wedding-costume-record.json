@@ -1,0 +1,113 @@
+{
+  "outfit": {
+    "id": "capsule-wedding",
+    "reward": "outfit-wedding",
+    "name": "결혼할까요 - 2007",
+    "title": "결혼할까요",
+    "year": 2007,
+    "date": "2007.09.09",
+    "members": [
+      "br",
+      "gr",
+      "yj"
+    ],
+    "rarity": "special",
+    "headKind": "헤어",
+    "color": "#b798cc",
+    "paper": "#fff7fc",
+    "sourceLabel": "SBS 인기가요 · 웨딩드레스",
+    "url": "https://www.youtube.com/watch?v=D-mng72Hx1w",
+    "note": "이보람의 홀터넥·튤 드레스, 남규리의 연보라 리본·벌룬 드레스, 김연지의 층층이 레이스 드레스와 당시 헤어를 참고했어요. 작은 장식은 도트로 단순화했으며, 한 번 뽑으면 세 멤버의 의상과 헤어를 함께 얻어요.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-wedding-2007.png",
+    "width": 1536,
+    "height": 1024
+  },
+  "layers": {
+    "image": "/images/game/our-stage/layers/capsule-wedding-2007.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          0,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          100,
+          610,
+          350,
+          414
+        ],
+        "chin": 363
+      },
+      "gr": {
+        "head": [
+          512,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          612,
+          610,
+          350,
+          414
+        ],
+        "chin": 363
+      },
+      "yj": {
+        "head": [
+          1024,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          1124,
+          610,
+          350,
+          414
+        ],
+        "chin": 363
+      }
+    }
+  },
+  "anchors": {
+    "br": {
+      "head": [
+        298,
+        363
+      ],
+      "neck": [
+        296,
+        632
+      ]
+    },
+    "gr": {
+      "head": [
+        765,
+        363
+      ],
+      "neck": [
+        766,
+        629
+      ]
+    },
+    "yj": {
+      "head": [
+        1244,
+        363
+      ],
+      "neck": [
+        1245,
+        630
+      ]
+    }
+  },
+  "method": "built-in image_gen",
+  "prompt": "Create a transparent pixel-art modular wardrobe atlas for the SEEYA game. 1536x1024, exactly3 columns512 wide. Reference1 is mandatory exact chunky pixel style and detached-head/body layout. References2-4 are actual September2007 Marry Me stage wedding dresses, for costume detail only; do not copy photo realism, people, scenery or typography. Fixed left-to-right LEFT Lee Boram, CENTER Nam Gyuri, RIGHT Kim Yeonji, matching left/center/right in reference2 thumbnail. TOP y0-590: standalone heads with hair only facing straightforward, simple square eyes, tiny red mouth, thick darkpixel outlines; chins at y365; all hair within y575. BOTTOM y640-1010: HEADLESS full bodies from tiny visible neck to shoes, centered x290,770,1245, width<=330px, arms neutrally at sides. Transparent separation between head and body. LEFT BORAM: long black loose curls, half-up with side-swept fringe, large silver oval dangling earrings; white sparkling HALTER V-neck fitted bodice (not strapless), waist sash, flared knee-length tulle skirt with delicate frilled lace hem, white ankle-strap heels. CENTER GYURI: long dark-brown curly two low ponytails and wispy straight bangs with tiny braids/hairpins along crown, silver drop earrings; white strapless bodice with prominent pastel LAVENDER ribbon bow at waist, rounded balloon/bubble mini skirt with large gathered petal folds, white ankle-strap shoes. RIGHT YEONJI: long straight chestnut hair, full side-swept bangs across forehead, slender silver drop earrings; white strapless fitted bodice, narrow sparkly belt, knee-length skirt formed of FOUR distinct horizontal lace ruffle tiers, white platform ankle-strap heels. No invented bridal veil, no tiara/crown, no bouquet or microphone. All skirts remain short/knee length and feet visible. Preserve game style rather than realistic bridal fashion drawing. No shadows, background, text, labels or scenery. Genuine transparent alpha; crisp square pixels, no antialiased painterly faces.",
+  "asset": "images/game/our-stage/layers/capsule-wedding-2007.png"
+}

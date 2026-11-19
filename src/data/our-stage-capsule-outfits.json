@@ -336,5 +336,29 @@
     "image": "/images/game/our-stage/layers/capsule-drama-20261119.png",
     "width": 1254,
     "height": 1254
+  },
+  {
+    "id": "capsule-wedding",
+    "reward": "outfit-wedding",
+    "name": "결혼할까요 - 2007",
+    "title": "결혼할까요",
+    "year": 2007,
+    "date": "2007.09.09",
+    "members": [
+      "br",
+      "gr",
+      "yj"
+    ],
+    "rarity": "special",
+    "headKind": "헤어",
+    "color": "#b798cc",
+    "paper": "#fff7fc",
+    "sourceLabel": "SBS 인기가요 · 웨딩드레스",
+    "url": "https://www.youtube.com/watch?v=D-mng72Hx1w",
+    "note": "이보람의 홀터넥·튤 드레스, 남규리의 연보라 리본·벌룬 드레스, 김연지의 층층이 레이스 드레스와 당시 헤어를 참고했어요. 작은 장식은 도트로 단순화했으며, 한 번 뽑으면 세 멤버의 의상과 헤어를 함께 얻어요.",
+    "type": "CAPSULE STYLE",
+    "image": "/images/game/our-stage/layers/capsule-wedding-2007.png",
+    "width": 1536,
+    "height": 1024
   }
 ]

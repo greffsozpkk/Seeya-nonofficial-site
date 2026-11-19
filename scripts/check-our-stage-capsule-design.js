@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
 const B=require('../src/shared/our-stage').forTest(),M=require('../src/shared/our-stage-leisure')(require('../src/shared/our-stage-first-release')(require('../src/shared/our-stage-simple')(B))),C=M.capsules,T=require('../src/shared/our-stage-test-tools')(M),V=require('../src/client/our-stage-skins');
 const now=Date.parse('2026-11-19T04:00:00Z');let s=T.create('album:lovely-sweet-heart',now);s.simple.walletOffset+=1000;
-assert.equal(C.pool.filter(i=>i.kind==='effect').length,0);assert.equal(C.pool.filter(i=>i.kind==='frame').length,12);assert.equal(M.capsuleOutfits.length,15);
+assert.equal(C.pool.filter(i=>i.kind==='effect').length,0);assert.equal(C.pool.filter(i=>i.kind==='frame').length,12);assert.equal(M.capsuleOutfits.length,16);
 assert(!M.equip(s,'br','capsule-white'));assert(!M.purchase(s,'capsule-white','br'));assert(!M.exchangeCapsule(s,'outfit-white'));
 assert(M.capsuleOutfits.filter(o=>o.members.length===3).every(o=>o.rarity==='special'));
 for(const o of M.capsuleOutfits){assert(o.title&&o.year&&o.members.length);assert(C.byId(o.reward).name.includes(String(o.year)));}

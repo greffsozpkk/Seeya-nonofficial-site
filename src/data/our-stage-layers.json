@@ -1294,5 +1294,57 @@
         "chin": 402
       }
     }
+  },
+  "capsule-wedding": {
+    "image": "/images/game/our-stage/layers/capsule-wedding-2007.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          0,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          100,
+          610,
+          350,
+          414
+        ],
+        "chin": 363
+      },
+      "gr": {
+        "head": [
+          512,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          612,
+          610,
+          350,
+          414
+        ],
+        "chin": 363
+      },
+      "yj": {
+        "head": [
+          1024,
+          0,
+          512,
+          590
+        ],
+        "body": [
+          1124,
+          610,
+          350,
+          414
+        ],
+        "chin": 363
+      }
+    }
   }
 }
