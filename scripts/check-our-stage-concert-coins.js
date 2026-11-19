@@ -6,11 +6,11 @@ const nodes={'#concertCoinCount':new Element(),'#concertCoinStatus':new Element(
 vm.runInNewContext(fs.readFileSync(require.resolve('../src/client/our-stage-concert-coins'),'utf8'),ctx);
 const ui=ctx.module.exports({root:{querySelector:q=>nodes[q]},award:()=>{if(fail)throw Error('save failed');paid++;return true;},allowed:()=>allowed,now:()=>clock,random:()=>0,setTimer:(fn,ms)=>{timers.set(++next,{fn,at:clock+ms});return next;},clearTimer:id=>timers.delete(id)});
 function advance(ms){const until=clock+ms;for(;;){const entry=[...timers].sort((a,b)=>a[1].at-b[1].at)[0];if(!entry||entry[1].at>until)break;clock=entry[1].at;timers.delete(entry[0]);entry[1].fn();}clock=until;}
-function mount(duration=4000){const stage=new Element();ui.mount(stage,duration);return stage;}
+function mount(duration=5000){const stage=new Element();ui.mount(stage,duration);return stage;}
 function coin(stage){return stage.children.at(-1).children[0];}
 ui.begin();let stage=mount();advance(650);let id=coin(stage).dataset.value;
 assert(ui.claim(id));assert(!ui.claim(id));assert.equal(paid,1);assert.equal(nodes['#concertCoinCount'].textContent,'1');
-stage=mount();advance(650);id=coin(stage).dataset.value;advance(2400);assert(!ui.claim(id),'expired coins do not pay');
+stage=mount();advance(650);id=coin(stage).dataset.value;advance(3000);assert(coin(stage),'coin remains after the former expiry');advance(500);assert(!ui.claim(id),'expired coins do not pay');
 stage=mount();advance(650);id=coin(stage).dataset.value;ui.pause(true);advance(10000);assert(!ui.claim(id));ui.pause(false);assert(ui.claim(id),'pause preserves remaining lifetime');
 stage=mount();advance(650);id=coin(stage).dataset.value;ui.clearStage();assert(!ui.claim(id));assert.equal(timers.size,0);
 stage=mount();advance(650);id=coin(stage).dataset.value;mount();assert(!ui.claim(id),'old scene token rejected');

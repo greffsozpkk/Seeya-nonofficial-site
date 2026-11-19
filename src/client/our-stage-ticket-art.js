@@ -25,9 +25,8 @@ module.exports=async function({album,index,receipt,nickname}){
  text(album.name,40,170,545,38,ink,750);
  const quote=themes[album.id].line,split=quote.indexOf(',');
  const quoteLines=split<0?[quote]:[quote.slice(0,split+1),quote.slice(split+1).trim()];
- quoteLines.forEach((part,i)=>text(part,42,202+i*22,540,15,'#766771'));
- text('함께한 팬',42,246,540,11,accent,700);text(nickname||'익명의 씨야 팬',42,276,540,24,ink,700);
- text('함께 부른 노래',42,312,190,11,accent,600);text(receipt.tracks.length===1?'싱글 무대':receipt.tracks.length+'곡',42,338,190,21,ink,700);
+ quoteLines.forEach((part,i)=>text(part,42,216+i*22,540,15,'#766771'));
+ text('함께한 팬',42,312,190,11,accent,700);text(nickname||'익명의 씨야 팬',42,338,190,21,ink,700);
  text('콘서트를 마친 날',250,312,300,11,accent,600);text(new Date(receipt.at).toLocaleDateString('ko-KR',{timeZone:'Asia/Seoul'}),250,338,340,18,ink,600);
  c.setLineDash([3,5]);line(27,365,873,365,'#cabbc5');c.setLineDash([]);
  text('팬 게임 기념 티켓 · 실제 입장권이 아닙니다',42,393,500,11,'#766771');c.textAlign='right';text('OS-'+String(index+1).padStart(2,'0')+'-'+new Date(receipt.at+9*3600000).toISOString().slice(2,16).replace(/[-T:]/g,''),860,393,350,10,'#766771');c.textAlign='left';

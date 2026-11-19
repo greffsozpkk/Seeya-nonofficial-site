@@ -1,7 +1,7 @@
 'use strict';
 // One ephemeral show session. The existing save/lock path owns wallet updates.
 module.exports=function({root,award,allowed,now=()=>performance.now(),random=Math.random,setTimer=setTimeout,clearTimer=clearTimeout}){
- const limit=12,lifetime=2400,places=[[10,20],[30,13],[50,16],[72,13],[90,20],[10,51],[90,51],[20,70],[80,70]];
+ const limit=12,lifetime=3500,places=[[10,20],[30,13],[50,16],[72,13],[90,20],[10,51],[90,51],[20,70],[80,70]];
  let total=0,spawned=0,serial=0,stage=null,layer=null,active=null,task=null,end=0,pausedAt=null,lastPlace=-1;
  const $=q=>root.querySelector(q);
  function cancel(){if(task)clearTimer(task.id);task=null;}
@@ -20,7 +20,7 @@ module.exports=function({root,award,allowed,now=()=>performance.now(),random=Mat
  }
  function mount(target,duration,entrance=0){clearStage();stage=target;end=now()+duration;if(!stage)return;
   layer=document.createElement('div');layer.className='concert-coin-layer';stage.append(layer);update();
-  schedule(entrance+650+random()*650);
+  schedule(entrance+(duration-entrance<=4000?300+random()*150:650+random()*650));
  }
  function claim(id){if(!active||active.id!==id||pausedAt!==null||!allowed()||!stage?.isConnected||now()>=active.expires)return false;
   const coin=active.coin;active=null;cancel();coin.disabled=true;
