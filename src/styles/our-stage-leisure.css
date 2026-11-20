@@ -142,8 +142,7 @@
 #ourStage .stage-art[data-shop-background]:not([data-shop-background=""]) .stage-set{background:#292838;overflow:hidden}
 #ourStage .stage-art[data-shop-background]:not([data-shop-background=""]) .stage-set:before,#ourStage .stage-art[data-shop-background]:not([data-shop-background=""]) .stage-set:after{content:none!important}
 #ourStage .stage-set>.shop-backdrop{position:absolute;inset:0;width:100%;height:100%}
-#ourStage .stage-trio>.shop-props{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none}
-#ourStage .stage-audience:has(>.shop-audience){padding:0;height:auto;min-height:0;display:block}
+#ourStage .stage-audience:has(>.shop-audience){background:transparent;padding:0;height:auto;min-height:0;display:block}
 #ourStage .stage-audience>.shop-audience{display:block;width:100%;height:auto;aspect-ratio:600/128}
 @media(max-width:650px){#ourStage .decor-shop-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#ourStage .decor-shop-card{padding:8px;gap:5px}#ourStage .decor-shop-card strong{font-size:13px}#ourStage .decor-options{gap:8px}#ourStage .decor-options button{font-size:12px;padding:10px}#ourStage .decor-buy-row button{flex:1}}
 
@@ -161,3 +160,20 @@
 #ourStage .drive-difficulty-note{font-size:12px;line-height:1.5;color:#77586c;margin:8px 0 12px;word-break:keep-all}
 
 @media(max-width:650px){#ourStage .drive-page:has(.drive-difficulties) .drive-road{max-width:min(100%,calc(39svh * 2 / 3))}}
+
+/* Effects stay behind the performers and never intercept concert coin taps. */
+#ourStage .stage-set>.shop-effect{position:absolute;inset:0;width:100%;height:100%;overflow:hidden;pointer-events:none}
+#ourStage .shop-fx-fall{transform:translateY(var(--fx-rest))}
+#ourStage .shop-fx-star{opacity:.7}
+#ourStage :is(.live,.decor-detail) .shop-fx-fall{animation:shop-fx-fall var(--fx-speed) var(--fx-delay) linear infinite}
+#ourStage :is(.live,.decor-detail) .shop-fx-star{animation:shop-fx-star var(--fx-speed) var(--fx-delay) ease-in-out infinite alternate}
+#ourStage .decor-detail .audience-phone-glow{animation:audience-shimmer var(--audience-speed) var(--audience-delay) ease-in-out infinite alternate}
+@keyframes shop-fx-fall{from{transform:translate(0,0) rotate(0deg);opacity:0}10%{opacity:.85}85%{opacity:.85}to{transform:translate(var(--fx-drift),400px) rotate(160deg);opacity:0}}
+@keyframes shop-fx-star{from{opacity:.25}to{opacity:1}}
+@media(prefers-reduced-motion:reduce){#ourStage :is(.shop-fx-fall,.shop-fx-star,.audience-phone-glow){animation:none!important}}
+
+#ourStage .stage-art .stage-audience{background:transparent}
+
+#ourStage .audience-lightstick{filter:drop-shadow(0 0 3px #ffb4e8)}
+#ourStage :is(.live,.decor-detail) .audience-lightstick{animation:audience-float var(--audience-speed) var(--audience-delay) ease-in-out infinite alternate}
+@media(prefers-reduced-motion:reduce){#ourStage .audience-lightstick{animation:none!important}}

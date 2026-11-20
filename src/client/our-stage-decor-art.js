@@ -22,21 +22,35 @@ function backdrop(id){let b='';
  }
  return b?svg(b,'shop-backdrop'):'';
 }
-function prop(id){let b='';
- for(const x of [20,532]){
-  if(id==='mic')b+=rect(x+18,175,5,135,'#96929f')+rect(x+2,308,40,5,'#282335')+rect(x+8,172,30,6,'#282335')+rect(x+4,164,15,13,'#d4c5d1')+rect(x+5,167,13,3,'#817987');
-  if(id==='speakers')b+=rect(x,224,47,92,'#302e40')+rect(x+5,230,37,80,'#514b5e')+rect(x+12,237,23,20,'#262534')+rect(x+7,268,33,31,'#282635')+rect(x+16,277,15,13,'#746576');
-  if(id==='flowers'){b+=rect(x+6,285,36,32,'#b88d69')+rect(x+2,283,44,6,'#dfbd91');for(const [j,dx,dy]of [[0,0,0],[1,20,-12],[2,36,2],[3,12,15]]){b+=rect(x+dx+4,267+dy,4,20,'#759773')+rect(x+dx-5,257+dy,24,8,j%2?'#e3abbb':'#f3ced0')+rect(x+dx+2,250+dy,10,23,j%2?'#e3abbb':'#f3ced0')+rect(x+dx+3,258+dy,8,7,'#f4dfb3');}}
- }
- return b?svg(b,'shop-props'):'';
-}
-// Stable irregular positions: a redraw never makes the audience jump.
 const scatter=(n,salt=0)=>{const v=Math.sin((n+1)*127.1+(salt+1)*311.7)*43758.5453;return v-Math.floor(v);};
-function crowd(){let b='';for(let row=0;row<3;row++)for(let n=0;n<29;n++){const x=n*22+(row%2)*9-5,y=48+row*28+Math.floor(scatter(n,row*17)*13);b+=rect(x,y,13,12,['#342e45','#403149','#513b54'][row])+rect(x-4,y+12,21,19,['#302b40','#382d43','#453247'][row]);}return b;}
+function effect(id,preview=false){
+ if(!['petals','confetti','starlight'].includes(id))return '';
+ let b=preview?rect(0,0,600,360,'#29263e'):'';
+ const stars=id==='starlight',count=stars?23:id==='petals'?25:38;
+ for(let n=0;n<count;n++){
+  const x=Math.round(12+scatter(n,31)*576),y=Math.round(12+scatter(n,32)*325),size=3+Math.round(scatter(n,33)*4),speed=stars?3+scatter(n,34)*4:7+scatter(n,34)*6;
+  const color=(id==='petals'?['#f8c4d8','#e99dbf','#ffe1e8']:stars?['#fff2c7','#ddd8ff','#e4f3ff']:['#ffd49d','#f2aecf','#c4b3f3','#afdfdd'])[n% (stars?3:id==='petals'?3:4)];
+  const shape=stars?rect(-1,-size,2,size*2,color)+rect(-size,-1,size*2,2,color)+rect(-2,-2,4,4,'#fff8e9'):id==='petals'?`<path d="M-4-5h6v3h3v5H2v3h-5V3h-3V-2h2Z" fill="${color}"/>`:rect(-2,-size/2,4,size,color);
+  b+=`<g transform="translate(${x} ${stars?y:-16})"><g class="${stars?'shop-fx-star':'shop-fx-fall'}" style="--fx-speed:${speed}s;--fx-delay:${-scatter(n,35)*speed}s;--fx-drift:${Math.round(scatter(n,36)*60-30)}px;--fx-rest:${y}px">${shape}</g></g>`;
+ }
+ return svg(b,preview?'shop-effect-thumb':'shop-effect');
+}
 function pixelName(name,x,y,color){const {glyphs}=require('../shared/our-stage-name-tag');let d='';[...name].forEach((letter,i)=>glyphs[letter].forEach((row,yy)=>[...row].forEach((dot,xx)=>{if(dot==='1')d+=`M${x+i*26+xx*2} ${y+yy*2}h2v2h-2z`;})));return `<path fill="${color}" d="${d}"/>`;}
 const heart=(x,y,color)=>`<path fill="${color}" d="M${x} ${y+3}h3v-3h6v3h3v-3h6v3h3v6h-3v3h-3v3h-3v3h-3v-3h-3v-3h-3v-3h-3Z"/>`;
-function audience(id){let b=rect(0,0,600,128,'#201e32')+crowd();
- if(id==='balloons'){
+function crowd(){let b='';
+ for(let row=0;row<3;row++)for(let n=0;n<29;n++){
+  const x=n*22+(row%2)*9-5,y=48+row*28+Math.floor(scatter(n,row*17)*13);
+  b+=rect(x+2,y,9,3,'#342c43')+rect(x,y+3,13,10,'#342c43')+rect(x-4,y+13,21,19,'#342c43');
+ }
+ return `<g class="audience-crowd">${b}</g>`;
+}
+function audience(id){let b=crowd();
+ if(id==='lightsticks'){
+  for(let row=0;row<3;row++)for(let n=0;n<29;n++){
+   const k=row*29+n,x=Math.round(n*21+(row%2)*8-5+scatter(k,41)*7),y=Math.round(4+row*32+scatter(k,42)*16),w=17+row*2;
+   b+=`<g class="audience-lightstick" style="--audience-delay:${-scatter(k,43)*4}s;--audience-speed:${2.5+scatter(k,44)*2}s"><image href="/images/game/our-stage/official-lightstick.svg" x="${x}" y="${y}" width="${w}" height="${w*80/48}"/></g>`;
+  }
+ }else if(id==='balloons'){
   for(let row=0;row<3;row++)for(let n=0;n<29;n++){
    const k=row*29+n,x=Math.round(n*21+(row%2)*9-7+scatter(k,5)*8),y=Math.round(5+row*31+scatter(k,12)*22),scale=.65+row*.13+scatter(k,21)*.16;
    b+=`<g class="audience-balloon" style="--audience-delay:${-scatter(k,2)*5}s;--audience-speed:${3+scatter(k,3)*2}s"><g transform="translate(${x} ${y}) scale(${scale})">`+rect(9,23,1,47,'#a97691')+`<path d="M5 0h10v3h4v4h3v12h-3v4h-4v3h-4v3H8v-3H5v-3H1v-4h-3V7h3V3h4Z" fill="${['#ef99bb','#f3b4cd','#db7fa8','#ffc6dc'][Math.floor(scatter(k,4)*4)]}"/>`+rect(3,7,3,8,'#ffe9f2')+rect(6,4,5,3,'#ffe9f2')+'</g></g>';
@@ -44,8 +58,8 @@ function audience(id){let b=rect(0,0,600,128,'#201e32')+crowd();
  }else if(id==='phone-lights'){
   for(let row=0;row<4;row++)for(let n=0;n<30;n++){
    const k=row*30+n,x=Math.round(n*20+(row%2)*8+scatter(k,6)*9-5),y=Math.round(10+row*26+scatter(k,15)*17),w=6+row*2,h=10+row*3;
-   b+=rect(x,y,w,h,'#8e8ea5')+rect(x+1,y+2,w-2,h-3,'#343448')+rect(x+Math.floor(w/2)-1,y+h,3,7,'#b49399');
-   b+=`<g class="audience-phone-glow" style="--audience-delay:${-scatter(k,8)*4}s;--audience-speed:${2.8+scatter(k,9)*2}s">`+`<circle cx="${x+2}" cy="${y+3}" r="${7+row*2}" fill="#d9e9ff" opacity=".055"/><circle cx="${x+2}" cy="${y+3}" r="${3+row}" fill="#d9e9ff" opacity=".18"/>`+rect(x,y+1,4,4,'#fffef4')+(k%9===0?rect(x-3,y+2,10,1,'#edf4ff')+rect(x+1,y-2,1,10,'#edf4ff'):'')+'</g>';
+   b+=rect(x,y,w,h,'#373347')+rect(x+1,y+2,w-2,h-3,'#272536')+rect(x+Math.floor(w/2)-1,y+h,3,7,'#514255');
+   b+=`<g class="audience-phone-glow" style="--audience-delay:${-scatter(k,8)*4}s;--audience-speed:${2.8+scatter(k,9)*2}s">`+`<circle cx="${x+2}" cy="${y+3}" r="${11+row*2}" fill="#d9e9ff" opacity=".11"/><circle cx="${x+2}" cy="${y+3}" r="${6+row}" fill="#e8efff" opacity=".3"/><circle cx="${x+2}" cy="${y+3}" r="${3+row*.4}" fill="#fffef4" opacity=".65"/>`+rect(x-1,y,6,6,'#fffef4')+(k%7===0?rect(x-5,y+2,14,2,'#edf4ff')+rect(x+1,y-4,2,14,'#edf4ff'):'')+'</g>';
   }
  }else if(id==='banner'){
   const boards=[{x:8,y:33,name:'보람',paper:'#f5c4d8',ink:'#733d61'},{x:155,y:14,name:'규리',paper:'#f4d2a8',ink:'#745044'},{x:305,y:43,name:'연지',paper:'#d6c8ed',ink:'#594477'},{x:454,y:24,name:null,paper:'#e9d8e0',ink:'#764b67'}];
@@ -59,5 +73,5 @@ function audience(id){let b=rect(0,0,600,128,'#201e32')+crowd();
  }else return '';
  return svg(b,'shop-audience',128).replace('preserveAspectRatio="none"','preserveAspectRatio="xMidYMid meet"');
 }
-function thumbnail(id){const i=D.byId(id);if(!i)return '';if(i.slot==='background')return backdrop(id);if(i.slot==='audience')return audience(id);return `<svg class="shop-item-art" viewBox="0 145 82 190" aria-hidden="true" shape-rendering="crispEdges">${rect(0,145,82,190,'#e7dbd6')+prop(id).replace(/^<svg[^>]*>|<\/svg>$/g,'')}</svg>`;}
-module.exports={backdrop,prop,audience,thumbnail};
+function thumbnail(id){const i=D.byId(id);if(!i)return '';return i.slot==='background'?backdrop(id):i.slot==='effect'?effect(id,true):audience(id);}
+module.exports={backdrop,effect,audience,thumbnail};
