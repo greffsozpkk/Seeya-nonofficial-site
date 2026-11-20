@@ -47,7 +47,7 @@ ${homeUpcoming(rows,now)}
       </div>
     </a>
     <a class="current-card community" href="https://gall.dcinside.com/board/lists/?id=seeya" target="_blank" rel="noopener noreferrer">
-      <img src="/images/seeya-gallery-intro.jpg" alt="씨야 갤러리 소개 사진 속 남규리, 김연지, 이보람" width="550" height="350" loading="lazy">
+      <img src="/images/seeya-gallery-intro-20261120.jpg" alt="씨야 갤러리 소개 사진 속 남규리, 김연지, 이보람" width="550" height="350" loading="lazy">
       <div class="current-copy">
         <div class="meta">FAN COMMUNITY</div>
         <h3>씨야 갤러리</h3>

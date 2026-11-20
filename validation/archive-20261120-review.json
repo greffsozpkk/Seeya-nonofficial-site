@@ -1,0 +1,140 @@
+{
+  "checkedAt": "2026-11-20",
+  "before": 1517,
+  "after": 1522,
+  "added": [
+    "20261119-seeya-reunion-feature",
+    "20070621-seeya-phone-launch",
+    "20261209-gyuri-solo-release",
+    "20261115-gyuri-instagram-photos",
+    "20261119-yeonji-shine-message"
+  ],
+  "updated": [
+    "20261115-gyuri-gyulmung70",
+    "20261215-boram-six-season",
+    "20200307-seeya-phone-reaction",
+    "20261114-seeya-immortal-wax-broadcast",
+    "20261118-boram-btn-dream-schedule",
+    "20261105-gyuri-yeonji-sharing-awards"
+  ],
+  "radioAdded": [
+    "20261118-boram-btn-dream-schedule"
+  ],
+  "fanGallery": {
+    "profilesChecked": 15,
+    "profileFailures": 0,
+    "added": [
+      {
+        "id": "Df3A5AagWFK",
+        "account": "_jerry.j_ramficial",
+        "postedOn": "2026-11-18",
+        "label": "씨야",
+        "kind": "reel"
+      },
+      {
+        "id": "Df4rgIdEqDl",
+        "account": "ramirang_",
+        "postedOn": "2026-11-18",
+        "label": "이보람",
+        "kind": "post"
+      },
+      {
+        "id": "Df4UDv-H5xb",
+        "account": "gyuljam0426",
+        "postedOn": "2026-11-18",
+        "label": "남규리",
+        "kind": "post"
+      },
+      {
+        "id": "Df4RAWmH8hK",
+        "account": "gyuljam0426",
+        "postedOn": "2026-11-18",
+        "label": "남규리",
+        "kind": "post"
+      },
+      {
+        "id": "Df0mxmzmtoF",
+        "account": "seeya_tree.weathered",
+        "postedOn": "2026-11-17",
+        "label": "남규리",
+        "kind": "post"
+      },
+      {
+        "id": "Df0gQw_AMEP",
+        "account": "_jerry.j_ramficial",
+        "postedOn": "2026-11-17",
+        "label": "남규리 · 이보람",
+        "kind": "post"
+      },
+      {
+        "id": "Dfx5IYAANyF",
+        "account": "_jerry.j_ramficial",
+        "postedOn": "2026-11-16",
+        "label": "김연지 · 이보람",
+        "kind": "post"
+      },
+      {
+        "id": "DfzM4Wwn5Xu",
+        "account": "gyuljam0426",
+        "postedOn": "2026-11-16",
+        "label": "남규리",
+        "kind": "post"
+      },
+      {
+        "id": "DfwgFg_nz2M",
+        "account": "gyuljam0426",
+        "postedOn": "2026-11-15",
+        "label": "남규리",
+        "kind": "post"
+      }
+    ],
+    "held": [
+      {
+        "id": "DfwmEBNyCbc",
+        "reason": "외부 삽입 응답에서 게시물·작성자 확인 불가"
+      },
+      {
+        "id": "Dfxku5NTKmA",
+        "reason": "Instagram 외부 삽입 copyright_blocked=true"
+      }
+    ],
+    "excluded": [
+      {
+        "id": "DfwUPPZPcaY",
+        "reason": "방송 영상 재게시: 팬 촬영 사진·영상이 아니므로 공식 무대 링크를 유지"
+      }
+    ],
+    "scope": "공개 프로필의 최근 게시물과 확보한 행사별 원본 링크. 비공개·삭제 게시물 및 프로필 조회 범위 밖의 모든 과거 게시물을 확인한 것은 아닙니다."
+  },
+  "homeGalleryCover": {
+    "source": "https://gall.dcinside.com/board/lists/?id=seeya",
+    "file": "images/seeya-gallery-intro-20261120.jpg"
+  },
+  "caveats": [
+    "씨야폰 반응 영상의 실제 촬영일은 미확인으로 유지",
+    "라디오 방송일 11월 18일과 YouTube 메타데이터의 게시일 11월 19일(KST)을 구분",
+    "모바일 실기기 라디오 재생은 이번 점검에 포함하지 않음"
+  ],
+  "snapshotDate": {
+    "before": "2026-11-14",
+    "after": "2026-11-20",
+    "reason": "완료된 11월 18일 라디오가 정적 목록에서 제외되지 않도록 기준일 갱신"
+  },
+  "browserChecks": {
+    "results": [
+      "PC: new gallery cover loads and points to SEEYA gallery",
+      "Mobile 390px: gallery cover and no horizontal overflow",
+      "Fan gallery: first/second/back pages, six cards per page and verified source links",
+      "Archive search: episode 30 uses November 18 broadcast date and official replay link",
+      "Radio: episode 30 selected with official iframe; search and sorting preserve player"
+    ],
+    "errors": [],
+    "externalEmbeds": "network blocked for layout checks; public embed author/ID verified separately"
+  },
+  "checks": {
+    "build": "pass",
+    "fullRepositoryChecks": "pass",
+    "browserLayoutAndNavigation": "pass",
+    "physicalMobilePlayback": "not tested"
+  }
+}

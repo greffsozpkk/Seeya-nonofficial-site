@@ -1,9 +1,172 @@
 [
   {
+    "id": "20261119-seeya-reunion-feature",
+    "date": "2026-11-19",
+    "addedAt": "2026-11-20",
+    "updatedAt": "2026-11-20",
+    "title": "씨야 · 재결합 아이돌 활동을 조명한 기사",
+    "program": "매일경제",
+    "type": "news",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "매일경제 · 핑클·시크릿·씨야, 추억의 아이돌 줄컴백",
+      "url": "https://www.mk.co.kr/news/culture/12213730",
+      "publishedDate": "2026-11-19"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published",
+    "tags": [
+      "2026",
+      "매일경제"
+    ],
+    "note": "여성 그룹들의 복귀를 다룬 기사에서 씨야의 데뷔 20주년 재결합과 정규 4집 활동을 함께 소개했습니다."
+  },
+  {
+    "id": "20070621-seeya-phone-launch",
+    "date": "2007-06-21",
+    "addedAt": "2026-11-20",
+    "updatedAt": "2026-11-20",
+    "title": "씨야 · 씨야폰 한정 제작·경품 이벤트 공개",
+    "program": "LG텔레콤·엠넷미디어 씨야폰",
+    "type": "news",
+    "members": [
+      "남규리",
+      "김연지",
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "한국경제 · LG텔레콤 씨야폰 한정 제작·경품 안내",
+      "url": "https://www.hankyung.com/article/2007062191081",
+      "publishedDate": "2007-06-21"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "article-published",
+    "tags": [
+      "2007",
+      "LG텔레콤·엠넷미디어 씨야폰"
+    ],
+    "note": "LG텔레콤과 엠넷미디어가 씨야 이미지와 2집 음원 등을 담은 씨야폰을 공개했습니다. 당시 보도에 따르면 약 40대를 한정 제작해 프로모션·경품으로 제공했으며, 응모 행사는 7월 13일까지 안내됐습니다. 일반 판매 제품의 출시 기록과는 구분합니다."
+  },
+  {
+    "id": "20261209-gyuri-solo-release",
+    "date": "2026-12-09",
+    "addedAt": "2026-11-20",
+    "updatedAt": "2026-11-20",
+    "title": "남규리 · 솔로 신곡 발매 예정",
+    "program": "남규리 솔로 신곡",
+    "type": "album",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "뉴스1 · 남규리 12월 9일 솔로 신곡 발표 예고",
+      "url": "https://www.news1.kr/entertain/broadcast-tv/6354481",
+      "publishedDate": "2026-11-15"
+    },
+    "additionalSources": [
+      {
+        "label": "남규리의 귤멍 EP.70 · 신곡 예고",
+        "url": "https://www.youtube.com/watch?v=hPKuW6E8Ljc",
+        "publishedDate": "2026-11-15"
+      }
+    ],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "release",
+    "tags": [
+      "2026",
+      "남규리 솔로 신곡",
+      "예정"
+    ],
+    "note": "귤멍 EP.70에서 예고한 솔로 신곡 발매 일정입니다. 11월 15일 보도에서 12월 9일 발매 예정임을 확인했습니다. 곡명과 공개 시각은 확인 전입니다.",
+    "eventState": "scheduled",
+    "calendar": {
+      "enabled": true,
+      "timeLabel": "발매 예정 · 시각 미정"
+    }
+  },
+  {
+    "id": "20261115-gyuri-instagram-photos",
+    "date": "2026-11-15",
+    "addedAt": "2026-11-20",
+    "updatedAt": "2026-11-20",
+    "title": "남규리 · 공식 Instagram 근황 사진",
+    "program": "남규리 공식 Instagram",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리 공식 · 근황 사진",
+      "url": "https://www.instagram.com/p/Dfv7bEIE7tt/",
+      "publishedDate": "2026-11-15"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "post-published",
+    "tags": [
+      "2026",
+      "남규리 공식 Instagram"
+    ],
+    "note": "남규리 공식 계정에 공개된 셀카 등 사진 모음입니다. 게시일을 기준으로 기록하며 촬영 장소와 날짜는 추정하지 않습니다.",
+    "publishedDate": "2026-11-15"
+  },
+  {
+    "id": "20261119-yeonji-shine-message",
+    "date": "2026-11-19",
+    "addedAt": "2026-11-20",
+    "updatedAt": "2026-11-20",
+    "title": "김연지 · 「넌 빛날꺼야」 수험생 응원 영상",
+    "program": "김연지 공식 Instagram",
+    "type": "official",
+    "members": [
+      "김연지"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "김연지 공식 · 「넌 빛날꺼야」 응원 영상",
+      "url": "https://www.instagram.com/reel/Df6aJ72pGCz/",
+      "publishedDate": "2026-11-19"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "post-published",
+    "tags": [
+      "2026",
+      "김연지 공식 Instagram"
+    ],
+    "note": "김종서의 「넌 빛날꺼야」를 소개하며 수험생들을 응원한 공식 영상입니다. 표시 날짜는 게시일이며 촬영일은 별도로 확인되지 않았습니다.",
+    "publishedDate": "2026-11-19"
+  },
+  {
     "id": "20261115-gyuri-gyulmung70",
     "date": "2026-11-15",
     "addedAt": "2026-11-15",
-    "updatedAt": "2026-11-15",
+    "updatedAt": "2026-11-20",
     "title": "남규리 · 귤멍 EP.70 버거형과 성수동 나들이",
     "program": "남규리의 귤멍 EP.70",
     "type": "official",
@@ -18,7 +181,13 @@
       "url": "https://www.youtube.com/watch?v=hPKuW6E8Ljc",
       "publishedDate": "2026-11-15"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "뉴스1 · 남규리 12월 9일 솔로 신곡 발표 예고",
+        "url": "https://www.news1.kr/entertain/broadcast-tv/6354481",
+        "publishedDate": "2026-11-15"
+      }
+    ],
     "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "video-published",
@@ -29,7 +198,7 @@
       "브이로그",
       "성수동"
     ],
-    "note": "남규리가 배우 박효준(버거형)과 함께 성수동을 둘러보는 브이로그입니다.\n카페데이지크, 오푸, 소문난 성수감자탕을 방문했으며, 공식 영상 설명에 각 장소의 지도 링크가 안내되어 있습니다.",
+    "note": "남규리가 배우 박효준(버거형)과 함께 성수동을 둘러보는 브이로그입니다.\n카페데이지크, 오푸, 소문난 성수감자탕을 방문했으며, 공식 영상 설명에 각 장소의 지도 링크가 안내되어 있습니다.\n12월 9일 솔로 신곡 발매를 예고했으며, 발매 예정 일정은 캘린더에 별도로 연결했습니다.",
     "eventState": "completed",
     "calendar": {
       "enabled": false
@@ -405,7 +574,7 @@
     "id": "20261215-boram-six-season",
     "date": "2026-12-15",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
+    "updatedAt": "2026-11-20",
     "title": "이보람 · 식스 더 뮤지컬 · 시모어 역 출연 예정",
     "program": "식스 더 뮤지컬",
     "type": "concert",
@@ -485,6 +654,16 @@
         "label": "이보람 공식 · 식스 더 뮤지컬 감사 인사",
         "url": "https://www.instagram.com/p/DfrjNCdE64C/",
         "publishedDate": "2026-11-13"
+      },
+      {
+        "label": "식스 더 뮤지컬 공식 · NOL 티켓 예매처 추가 안내",
+        "url": "https://www.instagram.com/p/Df4kAfapfpb/",
+        "publishedDate": "2026-11-18"
+      },
+      {
+        "label": "식스 더 뮤지컬 공식 · 수험생 할인 안내",
+        "url": "https://www.instagram.com/p/Df1dGl3JLN9/",
+        "publishedDate": "2026-11-17"
       }
     ],
     "status": "available",
@@ -496,7 +675,7 @@
       "시모어",
       "예정"
     ],
-    "note": "이보람이 시모어 역으로 합류하는 2026년 한국어 공연입니다.\n공연 기간: 2026년 12월 15일~2027년 3월 1일.\n표시 날짜는 작품 시즌 개막일이며 이보람의 개별 출연 회차와는 다릅니다.\n1차 캐스팅 스케줄에서 이보람의 첫 출연은 12월 16일 오후 8시로 안내됐습니다.\n1차 예매 오픈: 10월 6일 오후 2시, 대상 공연 12월 15일~27일. 개별 회차는 캐스팅표를 확인해 주세요.\n이보람이 공개한 식스 시모어 사진을 원본 게시물에서 볼 수 있습니다.\n1차 캐스팅표 기준 이보람 출연: 12/16·17·22 20:00, 12/19·25 17:00·20:30, 12/27 15:00. 각 회차는 CALENDAR에서 따로 확인할 수 있습니다.\n2차 예매는 11월 10일 오후 2시 오픈이며, 대상 공연은 12월 29일부터 1월 10일까지입니다.",
+    "note": "이보람이 시모어 역으로 합류하는 2026년 한국어 공연입니다.\n공연 기간: 2026년 12월 15일~2027년 3월 1일.\n표시 날짜는 작품 시즌 개막일이며 이보람의 개별 출연 회차와는 다릅니다.\n1차 캐스팅 스케줄에서 이보람의 첫 출연은 12월 16일 오후 8시로 안내됐습니다.\n1차 예매 오픈: 10월 6일 오후 2시, 대상 공연 12월 15일~27일. 개별 회차는 캐스팅표를 확인해 주세요.\n이보람이 공개한 식스 시모어 사진을 원본 게시물에서 볼 수 있습니다.\n1차 캐스팅표 기준 이보람 출연: 12/16·17·22 20:00, 12/19·25 17:00·20:30, 12/27 15:00. 각 회차는 CALENDAR에서 따로 확인할 수 있습니다.\n2차 예매는 11월 10일 오후 2시 오픈이며, 대상 공연은 12월 29일부터 1월 10일까지입니다.\n공식 계정의 NOL 티켓 예매처 추가 안내와 수험생 할인 안내를 함께 연결했습니다. 적용 공연과 예매 조건은 각 원문에서 확인할 수 있습니다.",
     "endDate": "2027-03-01",
     "venue": "홍익대 대학로 아트센터 대극장",
     "eventState": "scheduled",
@@ -28943,7 +29122,7 @@
     "id": "20200307-seeya-phone-reaction",
     "date": "2020-03-07",
     "addedAt": "2026-09-20",
-    "updatedAt": "2026-09-20",
+    "updatedAt": "2026-11-20",
     "title": "씨야 · 씨야폰 공개 현장",
     "program": "씨야폰 공개 현장",
     "type": "interview",
@@ -28960,12 +29139,18 @@
       "url": "https://www.youtube.com/watch?v=3Sfz1UcmBTI",
       "publishedDate": "2020-03-07"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "한국경제 · LG텔레콤 씨야폰 한정 제작·경품 안내",
+        "url": "https://www.hankyung.com/article/2007062191081",
+        "publishedDate": "2007-06-21"
+      }
+    ],
     "status": "available",
     "tags": [
       "씨야폰 공개 현장"
     ],
-    "note": "씨야폰을 처음 접한 멤버들의 반응을 담은 영상입니다.\n방송·촬영일 미상으로 영상 게시일을 표시합니다.",
+    "note": "씨야폰을 처음 접한 멤버들의 반응을 담은 영상입니다.\n방송·촬영일 미상으로 영상 게시일을 표시합니다.\n2007년 6월 21일 씨야폰 공개 보도를 함께 연결했습니다. 다만 이 영상의 촬영일이 해당 날짜와 같다는 근거는 없어 영상 날짜는 보정하지 않았습니다.",
     "dateStatus": "unknown",
     "dateBasis": "video-published",
     "publishedDate": "2020-03-07"
@@ -54238,7 +54423,7 @@
     "id": "20261114-seeya-immortal-wax-broadcast",
     "date": "2026-11-14",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-15T06:57:02.415798+00:00",
+    "updatedAt": "2026-11-20",
     "title": "씨야 · 불후의 명곡 「아티스트 왁스」 사랑하고 싶어",
     "program": "KBS2 · 불후의 명곡",
     "type": "music-show",
@@ -54319,6 +54504,16 @@
         "url": "https://www.youtube.com/watch?v=nfUtZnVicAw",
         "publishedDate": "2026-11-14",
         "autoDiscovery": true
+      },
+      {
+        "label": "이보람 공식 · 불후의 명곡 무대 소감·사진",
+        "url": "https://www.instagram.com/p/DfwrnL2k-1E/",
+        "publishedDate": "2026-11-15"
+      },
+      {
+        "label": "스포츠동아·이지데이 게재 · 씨야와 KoN의 협연",
+        "url": "https://www.ezday.co.kr/bbs/view_board.html?q_id_info=1351&q_sq_board=9706968",
+        "publishedDate": "2026-11-16"
       }
     ],
     "status": "available",
@@ -57049,8 +57244,8 @@
     "id": "20261118-boram-btn-dream-schedule",
     "date": "2026-11-18",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-18T07:49:40.017695+00:00",
-    "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
+    "updatedAt": "2026-11-20",
+    "title": "이보람 · 한밤의 꿈 이보람입니다 30회",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
     "members": [
@@ -57060,34 +57255,39 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
-      "publishedDate": "2026-10-26"
+      "label": "BTN라디오 공식 · 한밤의 꿈 이보람입니다 30회 다시보기",
+      "url": "https://www.youtube.com/watch?v=ve25tYL3mVw",
+      "publishedDate": "2026-11-19"
     },
     "additionalSources": [
       {
-        "label": "BTN라디오",
-        "url": "https://www.youtube.com/watch?v=ve25tYL3mVw",
-        "publishedDate": "2026-11-18",
-        "autoDiscovery": true
+        "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
+        "publishedDate": "2026-10-26"
+      },
+      {
+        "label": "ramirang_ · 한밤의 꿈 30회 이보람 사진",
+        "url": "https://www.instagram.com/p/Df4rgIdEqDl/",
+        "publishedDate": "2026-11-18"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "BTN라디오 · 한밤의 꿈 이보람입니다",
-      "예정"
+      "라디오",
+      "보이는 라디오"
     ],
-    "note": "11월 일정표에 안내된 「한밤의 꿈 이보람입니다」 방송 예정입니다.\n오후 9시 방송 예정이며, 회차·게스트·최초 공개 여부는 방송사 공지 후 갱신합니다.",
-    "eventState": "scheduled",
+    "note": "11월 18일 밤 9시 BTN라디오에서 방송된 「한밤의 꿈 이보람입니다」 30회입니다. 공식 채널의 보이는 라디오 다시보기와 방송일에 공개된 팬 사진을 연결했습니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": true,
       "time": "21:00",
-      "timeLabel": "방송 예정 · 팬 일정표 기준",
-      "state": "tentative"
-    }
+      "timeLabel": "BTN라디오 방송",
+      "sequence": 1
+    },
+    "episode": 30
   },
   {
     "id": "20261125-boram-btn-dream-schedule",
@@ -57130,7 +57330,7 @@
     "id": "20261105-gyuri-yeonji-sharing-awards",
     "date": "2026-11-05",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-14T12:32:43.257843+00:00",
+    "updatedAt": "2026-11-20",
     "title": "남규리·김연지 · 대한민국 나눔국민대상 시상 및 축하 무대",
     "program": "제15회 대한민국 나눔국민대상",
     "type": "event",
@@ -57178,6 +57378,26 @@
         "label": "KBS 공식 · 11월 28일 오후 3시 10분 특집 방송 안내",
         "url": "https://mylovekbs.kbs.co.kr/index.html?contents_id=70000000404092&sname=mylovekbs&source=mylovekbs&stype=magazine",
         "publishedDate": "2026-11-06"
+      },
+      {
+        "label": "귤잼 · 11월 5일 남규리 사진",
+        "url": "https://www.instagram.com/p/Df4UDv-H5xb/",
+        "publishedDate": "2026-11-18"
+      },
+      {
+        "label": "귤잼 · 11월 5일 남규리 사진",
+        "url": "https://www.instagram.com/p/Df4RAWmH8hK/",
+        "publishedDate": "2026-11-18"
+      },
+      {
+        "label": "귤잼 · 11월 5일 남규리 사진",
+        "url": "https://www.instagram.com/p/DfzM4Wwn5Xu/",
+        "publishedDate": "2026-11-16"
+      },
+      {
+        "label": "귤잼 · 11월 5일 남규리 사진",
+        "url": "https://www.instagram.com/p/DfwgFg_nz2M/",
+        "publishedDate": "2026-11-15"
       }
     ],
     "status": "available",
