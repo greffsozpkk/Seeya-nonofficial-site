@@ -77,3 +77,60 @@
 #ourStage .capsule-source{display:inline-block;font-size:.83rem;margin:0 0 12px;color:#795271}
 
 #ourStage .capsule-costume-note{font-size:.875rem;margin:0 0 12px;line-height:1.65;color:#65536b}
+/* Compact browsing: explanations stay in detail dialogs. */
+#ourStage .story-image-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0}
+#ourStage .story-image-card{display:flex;flex-direction:column;gap:10px;min-width:0;margin:0;padding:10px;border:1px solid #e6d7df;border-radius:12px;background:#fffaf6;color:#614855;text-align:left;white-space:normal;cursor:pointer}
+#ourStage .story-card-art{position:relative;display:block;width:100%;aspect-ratio:1;overflow:hidden;border-radius:7px;background:#f8eadb}
+#ourStage .story-card-art>img,#ourStage .story-card-art>svg{display:block;width:100%;height:100%;margin:0;object-fit:contain;image-rendering:pixelated}
+#ourStage .story-card-title{display:block;font-size:14px;font-weight:700;line-height:1.5;word-break:keep-all;overflow-wrap:anywhere}
+#ourStage .story-card-status{position:absolute;right:6px;top:6px;display:grid;place-items:center;min-width:26px;height:26px;border-radius:50%;background:#fffaf6f2;color:#885170;font-size:12px;box-shadow:0 1px 4px #49313d22}
+#ourStage .story-image-card.is-locked .story-card-art>img,#ourStage .story-image-card.is-locked .story-card-art>svg{filter:grayscale(.65);opacity:.65}
+#ourStage .story-image-card:focus-visible{outline:2px solid #935577;outline-offset:3px}
+@media(max-width:650px){#ourStage .story-image-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}#ourStage .story-image-card{padding:8px;gap:8px}#ourStage .story-card-title{font-size:13px}}
+#ourStage .collection-help{font-size:13px;margin:10px 0 18px}#ourStage .collection-help summary{cursor:pointer;padding:10px 0}
+#ourStage .cardbook-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 12px}
+#ourStage .cardbook-grid .collectible-art{height:150px}
+#ourStage .cardbook-grid .collectible-top>span,#ourStage .cardbook-grid .pixel-collectible>small{display:none}
+#ourStage .cardbook-grid .collectible-caption{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:34px;font-size:11px;line-height:17px}
+#ourStage .cardbook-grid .card-condition{font-size:11px;line-height:1.4;min-height:0;margin:7px 0;text-align:center}
+#ourStage .cardbook-grid button{font-size:12px;min-height:42px;padding:8px 4px}
+#ourStage .outfit-grid,#ourStage .shop-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0}
+#ourStage .compact-outfit,#ourStage .capsule-outfit-card,#ourStage .shop-grid .shop-card{padding:12px;display:flex;flex-direction:column;gap:8px;min-width:0}
+#ourStage .compact-outfit h3,#ourStage .capsule-outfit-card h4,#ourStage .shop-grid h3{font-size:14px;line-height:1.5;margin:0;word-break:keep-all}
+#ourStage .compact-outfit button,#ourStage .capsule-outfit-card button{margin-top:auto;font-size:12px;min-height:42px;padding:8px 4px}
+#ourStage .compact-outfit .outfit-sheet{height:150px;margin:0}
+#ourStage .compact-outfit .mapped-outfit figure{min-width:0;margin:0}
+#ourStage .compact-outfit .mapped-outfit figcaption{display:none}
+#ourStage .outfit-grid .capsule-outfit-trio{height:150px;box-sizing:border-box}
+#ourStage .outfit-grid .capsule-outfit-trio .member-sprite{max-height:134px}
+#ourStage .shop-grid .shop-sprite{height:150px}#ourStage .shop-grid .shop-price{display:grid;gap:8px}
+#ourStage .capsule-item:has(.capsule-outfit-trio){grid-column:auto}
+#ourStage .capsule-collection .capsule-outfit-trio{height:150px;box-sizing:border-box}
+#ourStage .capsule-collection .capsule-outfit-trio .member-sprite{max-height:134px}
+@media(max-width:650px){
+ #ourStage .cardbook-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:16px 8px}
+ #ourStage .cardbook-grid .pixel-collectible{padding:6px 5px 8px;border-width:2px;box-shadow:2px 2px #402d4822}
+ #ourStage .cardbook-grid .collectible-art{height:96px;padding:4px 0;margin:4px 0}
+ #ourStage .cardbook-grid .collectible-top{padding:0 0 5px;justify-content:center}
+ #ourStage .cardbook-grid .card-brand{width:100%;gap:1px}
+ #ourStage .cardbook-grid .card-brand img{max-width:48px;height:auto}
+ #ourStage .cardbook-grid .card-brand span{font-size:7px;letter-spacing:0}
+ #ourStage .cardbook-grid .pixel-collectible>strong{font-size:13px;letter-spacing:0}
+ #ourStage .cardbook-grid .collectible-caption{font-size:10px;line-height:14px;min-height:28px;margin:3px 0}
+ #ourStage .cardbook-grid .card-badge-row{gap:2px;height:20px;min-height:0}
+ #ourStage .cardbook-grid .card-badge-row>span,#ourStage .cardbook-grid .card-badge-row .pixel-badge{width:18px;height:18px}
+ #ourStage .cardbook-tools{gap:10px;margin:12px 0}
+ #ourStage .outfit-grid,#ourStage .shop-grid,#ourStage .capsule-collection{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ #ourStage .compact-outfit .outfit-sheet,#ourStage .outfit-grid .capsule-outfit-trio{height:138px}
+ #ourStage .shop-grid button{font-size:12px;padding:8px 5px;min-height:42px}
+ #ourStage .shop-grid .shop-price b{font-size:13px}
+}
+/* Badge shelf: four compact, tappable badges per mobile row. */
+#ourStage .compact-badges{grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+#ourStage .compact-badges .badge-card{display:flex;flex-direction:column;align-items:center;gap:6px;min-width:0;margin:0;padding:10px 5px;white-space:normal;color:#614855;cursor:pointer}
+#ourStage .compact-badges .pixel-badge{width:64px;height:64px;max-width:100%;margin:0;object-fit:contain;flex-shrink:0}
+#ourStage .compact-badges .badge-card strong{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;width:100%;height:32px;font-size:12px;line-height:16px;word-break:keep-all;overflow-wrap:anywhere}
+#ourStage .compact-badges .badge-card small{font-size:10px;line-height:14px;font-weight:400}
+#ourStage .compact-badges .badge-card:focus-visible{outline:2px solid #935577;outline-offset:3px}
+#ourStage .badge-detail{text-align:center}#ourStage .badge-detail .pixel-badge{width:180px;height:180px;margin:20px auto}#ourStage .badge-detail p{line-height:1.8}
+@media(max-width:650px){#ourStage .compact-badges{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 6px}#ourStage .compact-badges .badge-card{padding:9px 3px;gap:5px}#ourStage .compact-badges .pixel-badge{width:52px;height:52px}#ourStage .compact-badges .badge-card strong{font-size:11px}}
