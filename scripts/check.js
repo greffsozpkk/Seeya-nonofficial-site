@@ -100,3 +100,4 @@ require('./check-our-stage-motion-mix');
 require('./check-our-stage-member-history');
 require('./check-our-stage-leisure');
 require('./check-our-stage-capsule-design');
+require('./check-our-stage-capsule-page');
