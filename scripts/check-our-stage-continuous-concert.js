@@ -15,12 +15,18 @@ for(const [albumId,songs] of [['first-mind',['scent','shoes','love']],['lovely-s
  vm.createContext(ctx);vm.runInContext(source.slice(source.indexOf('function perform(id){'),source.indexOf('\nfunction bridge(')),ctx);
  ctx.perform('album:'+albumId);
  assert.deepEqual(delays,[8500],'entrance plus exactly four seconds for first song');
- const firstStage=renders[0];assert.equal(firstStage[5],albumId==='first-mind'?'scent':'greeting');
+ const firstStage=renders[0];assert.equal(firstStage[8],false,'first album concert uses album styling');assert.equal(firstStage[5],albumId==='first-mind'?'scent':'greeting');
  nodes['#stageModal']._next();nodes['#stageModal']._next();
  assert.deepEqual(delays,[8500,4000,4000]);assert.equal(renders.length,1,'song changes must not rebuild sprite DOM');
  assert.equal(mounted.filter(x=>x==='dialog').length,1,'dialog is rendered once');
  assert.equal(mounted.find(Array.isArray)[1],16500,'coin lifetime spans the whole concert');
  assert.equal(nodes['#concertPhase'].textContent,'마지막 곡 · 3 / 3곡');
  nodes['#stageModal']._next();assert.equal(mounted.at(-1),'ticket');assert.equal(ctx.showing,false);
+ s.simple.concerts[albumId]={completedAt:Date.now()};
+ ctx.perform('album:'+albumId);assert.equal(renders.at(-1)[8],true,'replay uses equipped clothes and hair');
+ nodes['#stageModal']._finish();
+ ctx.M.songAlbum=()=>album;ctx.perform('encore:'+songs[0]);
+ assert.equal(renders.at(-1)[8],true,'encore uses equipped clothes and hair');
+ nodes['#stageModal']._next();assert.equal(ctx.showing,false);
 }
 console.log('PASS continuous concerts: both choreographies keep one stage, four seconds per song, shared coin session, normal ticket completion.');
