@@ -4,7 +4,7 @@
       "title": "핑클·시크릿·씨야 … 추억의 아이돌 줄컴백 - 매일경제",
       "source": "매일경제",
       "pubDate": "2026-11-19T08:04:46+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE93QmFNa2V5YnZaSmd1azd2SmtNcEkwaUcySjlfbXRzaXZ0MmR1em92eS1rQ0ZXdGtWMmU1aWpwMEhGSWNvd0Etdm9pTG01cGlFaGFxaw?oc=5",
+      "link": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE53TXd2MEF5NS1GUUM4MlNnbkZGcmY1dGVNMFZkcERERmFpYWZiNmNqb2FETlZvd190d3VYZEI2bllyUERtNnc?oc=5",
       "description": "핑클·시크릿·씨야 … 추억의 아이돌 줄컴백 매일경제"
     },
     {
@@ -147,16 +147,16 @@
       "description": "씨야 이보람, ‘골때녀’ 경기 앞두고 긴장감 가득한 눈빛 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-11-20T07:20:50.549394+00:00",
-  "lastCheckedAt": "2026-11-20T07:20:50.549394+00:00",
+  "updatedAt": "2026-11-20T07:44:27.272855+00:00",
+  "lastCheckedAt": "2026-11-20T07:44:27.272855+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-20T07:20:50.549394+00:00",
-    "남규리": "2026-11-20T07:20:50.549394+00:00",
-    "김연지": "2026-11-20T07:20:50.549394+00:00",
-    "이보람": "2026-11-20T07:20:50.549394+00:00"
+    "씨야": "2026-11-20T07:44:27.272855+00:00",
+    "남규리": "2026-11-20T07:44:27.272855+00:00",
+    "김연지": "2026-11-20T07:44:27.272855+00:00",
+    "이보람": "2026-11-20T07:44:27.272855+00:00"
   },
   "categoryContentUpdatedAt": {
-    "씨야": "2026-11-20T05:04:50.791676+00:00",
+    "씨야": "2026-11-20T07:44:27.272855+00:00",
     "남규리": "2026-11-18T07:33:13.310450+00:00",
     "이보람": "2026-11-20T07:20:50.549394+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
@@ -165,9 +165,9 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 94,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 93,
+      "changed": true,
+      "status": "changed"
     },
     "남규리": {
       "queries": 3,
@@ -187,8 +187,8 @@
       "queries": 4,
       "succeeded": 4,
       "accepted": 46,
-      "changed": true,
-      "status": "changed"
+      "changed": false,
+      "status": "unchanged"
     }
   }
 }

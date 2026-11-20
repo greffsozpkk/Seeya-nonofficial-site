@@ -3338,8 +3338,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2015-08&event=activity-v490-j
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-immortal-2015-09-12@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261120T073729Z
+LAST-MODIFIED:20261120T073729Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20150912
 DTEND;VALUE=DATE:20150913
@@ -3350,8 +3350,8 @@ CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:김연지\n시간 미정\n날짜는 공식 방송 음반 공개
  일입니다.\n벅스 방송 음반 정보: https://music.bugs.co.kr/album
- /531531\nhttps://seeya-fanpage.com/archive/?record=v490-immortal-2015-09-1
- 2
+ /531531\nKBS 레전드 케이팝: https://www.youtube.com/watch?v=b6qho02w
+ 9A0\nhttps://seeya-fanpage.com/archive/?record=v490-immortal-2015-09-12
 URL:https://seeya-fanpage.com/calendar/?month=2015-09&event=activity-v490-i
  mmortal-2015-09-12
 END:VEVENT
@@ -3394,8 +3394,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2015-12&event=activity-v474-s
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-kbs-20151213@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261120T073729Z
+LAST-MODIFIED:20261120T073729Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20151213
 DTEND;VALUE=DATE:20151214
@@ -3405,8 +3405,8 @@ TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:김연지\n시간 미정\n치평동사우나: https://www.youtu
- be.com/watch?v=eBsS6it44VQ\nhttps://seeya-fanpage.com/archive/?record=v490
- -kbs-20151213
+ be.com/watch?v=eBsS6it44VQ\nKBS Kpop: https://www.youtube.com/watch?v=OHla
+ UDmfOgM\nhttps://seeya-fanpage.com/archive/?record=v490-kbs-20151213
 URL:https://seeya-fanpage.com/calendar/?month=2015-12&event=activity-v490-k
  bs-20151213
 END:VEVENT
