@@ -110,3 +110,4 @@ require('./check-our-stage-pacing');
 require('./check-our-stage-play-days');
 
 require('./check-our-stage-solo');
+require('./check-our-stage-connect');
