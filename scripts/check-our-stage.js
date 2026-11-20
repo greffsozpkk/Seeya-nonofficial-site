@@ -38,7 +38,7 @@ console.log('PASS our stage: all 12 unlocks and badge, quiz/retry gates, queue/t
 module.exports={complete:s};
 const T=M.forTest(),t=T.fresh(1000);
 assert.deepEqual(T.lessons.map(x=>x.seconds),[1,1,1]);
-assert.deepEqual(M.lessons.map(x=>x.seconds),[10,12,15]);
+assert.deepEqual(M.lessons.map(x=>x.seconds),[5,5,5]);
 assert.equal(T.timing.recoveryMs,1000);assert.equal(T.timing.performanceMs,1000);
 assert(T.train(t,'scent',0,1000));assert(T.train(t,'scent',1,1000));
 assert.equal(T.settle(t,1999),0);assert.equal(t.points,95);

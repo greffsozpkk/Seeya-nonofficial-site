@@ -1,0 +1,242 @@
+[
+  {
+    "id": "solo-br",
+    "member": "br",
+    "name": "이보람 솔로 콘서트",
+    "artist": "이보람",
+    "type": "SOLO CONCERT",
+    "style": "capsule-brother",
+    "colors": [
+      "#f6e2ec",
+      "#a55179"
+    ],
+    "line": "한 곡씩 쌓아 온 마음, 이보람의 목소리로 만나는 무대.",
+    "band": "이보람 · 나의 목소리",
+    "tracks": [
+      {
+        "id": "solo-h28bQxTXKYs",
+        "title": "엎질러진 물처럼",
+        "album": "엎질러진 물처럼",
+        "youtubeId": "h28bQxTXKYs"
+      },
+      {
+        "id": "solo-wBus8ecrRvs",
+        "title": "니가 보고 싶어",
+        "album": "니가 보고 싶어",
+        "youtubeId": "wBus8ecrRvs"
+      },
+      {
+        "id": "solo-1Hk-bc4enn4",
+        "title": "술이 생각나는 밤",
+        "album": "술이 생각나는 밤",
+        "youtubeId": "1Hk-bc4enn4"
+      },
+      {
+        "id": "solo-5nMVw8v_eF4",
+        "title": "사랑은 스쳐가는 바람인가요",
+        "album": "사랑은 스쳐가는 바람인가요",
+        "youtubeId": "5nMVw8v_eF4"
+      },
+      {
+        "id": "solo-DMJ0rx41-Fc",
+        "title": "텅빈 거리",
+        "album": "텅빈 거리",
+        "youtubeId": "DMJ0rx41-Fc"
+      },
+      {
+        "id": "solo-uHGopkuaC7w",
+        "title": "축가",
+        "album": "축가",
+        "youtubeId": "uHGopkuaC7w"
+      },
+      {
+        "id": "solo-666dgFSDYvg",
+        "title": "찬바람이 부니까",
+        "album": "찬바람이 부니까",
+        "youtubeId": "666dgFSDYvg"
+      },
+      {
+        "id": "solo-KncXz5s4UKU",
+        "title": "하얀 크리스마스",
+        "album": "하얀 크리스마스",
+        "youtubeId": "KncXz5s4UKU"
+      },
+      {
+        "id": "solo-TsLpu5H-jMI",
+        "title": "너의 키스를",
+        "album": "너의 키스를",
+        "youtubeId": "TsLpu5H-jMI"
+      },
+      {
+        "id": "solo-Bl9XgEl8jdw",
+        "title": "좋아보여",
+        "album": "좋아보여",
+        "youtubeId": "Bl9XgEl8jdw"
+      },
+      {
+        "id": "solo-HHqJFGNNiKo",
+        "title": "그 때의 나, 그 때의 너",
+        "album": "그 때의 나, 그 때의 너",
+        "youtubeId": "HHqJFGNNiKo"
+      },
+      {
+        "id": "solo-DujKGd4aA60",
+        "title": "이렇게 좋은날",
+        "album": "이렇게 좋은날",
+        "youtubeId": "DujKGd4aA60"
+      },
+      {
+        "id": "solo-ppe9vyChKLs",
+        "title": "흩어지는 중",
+        "album": "흩어지는 중",
+        "youtubeId": "ppe9vyChKLs"
+      },
+      {
+        "id": "solo-c6MlQvbbZw0",
+        "title": "한 밤의 꿈처럼",
+        "album": "한 밤의 꿈처럼",
+        "youtubeId": "c6MlQvbbZw0"
+      },
+      {
+        "id": "solo-pwdQrpNpFyA",
+        "title": "너를 사랑하니까",
+        "album": "너를 사랑하니까",
+        "youtubeId": "pwdQrpNpFyA"
+      },
+      {
+        "id": "solo-yjvTqgRzcXY",
+        "title": "빛의 반대편에서",
+        "album": "빛의 반대편에서",
+        "youtubeId": "yjvTqgRzcXY"
+      }
+    ],
+    "catalogVersion": 2,
+    "scopeNote": "개인 오리지널 솔로곡. 남규리의 그래도 좋아해요와 우리 사랑 그런 거 해요 Part.2 포함."
+  },
+  {
+    "id": "solo-gr",
+    "member": "gr",
+    "name": "남규리 솔로 콘서트",
+    "artist": "남규리",
+    "type": "SOLO CONCERT",
+    "style": "capsule-sorrow",
+    "colors": [
+      "#fae9d9",
+      "#a56b43"
+    ],
+    "line": "오래 간직한 이야기, 남규리의 목소리로 건네는 인사.",
+    "band": "남규리 · 나의 목소리",
+    "tracks": [
+      {
+        "id": "solo-xHB6Pn5rNxo",
+        "title": "그 남자",
+        "album": "그 남자",
+        "youtubeId": "xHB6Pn5rNxo"
+      },
+      {
+        "id": "solo-cjuv_qVAgRA",
+        "title": "HALO",
+        "album": "기적:奇跡",
+        "youtubeId": "cjuv_qVAgRA"
+      },
+      {
+        "id": "solo-Mjl8tBDX5Ik",
+        "title": "고백하는 거 맞아",
+        "album": "고백하는 거 맞아",
+        "youtubeId": "Mjl8tBDX5Ik"
+      },
+      {
+        "id": "solo-siyf1bcO5Gc",
+        "title": "그래도 좋아해요",
+        "album": "그래도 좋아해요",
+        "youtubeId": "siyf1bcO5Gc"
+      },
+      {
+        "id": "solo-9klPsmjNPDw",
+        "title": "December Dream",
+        "album": "December Dream",
+        "youtubeId": "9klPsmjNPDw"
+      },
+      {
+        "id": "solo-VGi-Jh4xB3o",
+        "title": "삼겹살송",
+        "album": "삼겹살송",
+        "youtubeId": "VGi-Jh4xB3o"
+      },
+      {
+        "id": "solo-06MOxzzMPvI",
+        "title": "우리 사랑 그런 거 해요 Part.1",
+        "album": "우리 사랑 그런 거 해요",
+        "youtubeId": "06MOxzzMPvI"
+      },
+      {
+        "id": "solo-DFBk5oSn72Y",
+        "title": "우리 사랑 그런 거 해요 Part.2 (feat. KoN)",
+        "album": "우리 사랑 그런 거 해요",
+        "youtubeId": "DFBk5oSn72Y"
+      }
+    ],
+    "catalogVersion": 2,
+    "scopeNote": "개인 오리지널 솔로곡. 남규리의 그래도 좋아해요와 우리 사랑 그런 거 해요 Part.2 포함."
+  },
+  {
+    "id": "solo-yj",
+    "member": "yj",
+    "name": "김연지 솔로 콘서트",
+    "artist": "김연지",
+    "type": "SOLO CONCERT",
+    "style": "capsule-wind",
+    "colors": [
+      "#e4e4f7",
+      "#6662a3"
+    ],
+    "line": "마음을 채우는 울림, 김연지의 목소리로 이어지는 밤.",
+    "band": "김연지 · 나의 목소리",
+    "tracks": [
+      {
+        "id": "solo-8UAxgcnvk2E",
+        "title": "잊었니",
+        "album": "잊었니",
+        "youtubeId": "8UAxgcnvk2E"
+      },
+      {
+        "id": "solo-mZttjZ9KsQA",
+        "title": "어쩌다",
+        "album": "어쩌다",
+        "youtubeId": "mZttjZ9KsQA"
+      },
+      {
+        "id": "solo-_lTZCnkpoyQ",
+        "title": "10년이나 버티니",
+        "album": "10년이나 버티니",
+        "youtubeId": "_lTZCnkpoyQ"
+      },
+      {
+        "id": "solo-lOvBRahMvtQ",
+        "title": "바람이 불면",
+        "album": "바람이 불면",
+        "youtubeId": "lOvBRahMvtQ"
+      },
+      {
+        "id": "solo-1nBWqLheBGI",
+        "title": "안부",
+        "album": "안부",
+        "youtubeId": "1nBWqLheBGI"
+      },
+      {
+        "id": "solo-pZ7RisNx0bo",
+        "title": "그래, 너야",
+        "album": "그래, 너야",
+        "youtubeId": "pZ7RisNx0bo"
+      },
+      {
+        "id": "solo-JIpU0HXvc_E",
+        "title": "노래",
+        "album": "노래",
+        "youtubeId": "JIpU0HXvc_E"
+      }
+    ],
+    "catalogVersion": 2,
+    "scopeNote": "개인 오리지널 솔로곡. 남규리의 그래도 좋아해요와 우리 사랑 그런 거 해요 Part.2 포함."
+  }
+]

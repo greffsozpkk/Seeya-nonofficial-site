@@ -1,0 +1,21 @@
+'use strict';
+const assert=require('node:assert/strict');
+const B=require('../src/shared/our-stage'),M=require('../src/shared/our-stage-leisure')(require('../src/shared/our-stage-first-release')(require('../src/shared/our-stage-simple')(B)));
+const start=Date.parse('2026-01-01T00:00:00+09:00'),day=86400000;
+let s=M.fresh(start),coins=M.coins(s);
+assert.equal(M.playDayCount(s),0);
+assert(M.recordPlayDay(s,start));assert.equal(M.playDayCount(s),1);assert.equal(M.coins(s),coins);
+assert(!M.recordPlayDay(s,start+day-1));assert(!M.recordPlayDay(s,start-1));assert(!M.recordPlayDay(s,NaN));
+s=M.loadSave(JSON.stringify(s));assert(!M.recordPlayDay(s,start));
+assert(M.recordPlayDay(s,start+day));assert.equal(M.playDayCount(s),2);
+assert(M.recordPlayDay(s,start+20*day));assert.equal(M.playDayCount(s),3,'missed days do not count or reset progress');
+const earned=n=>M.badges(s).find(b=>b.id==='play-days-'+n).earned;
+s.playDays={count:49,lastDay:'2026-02-18'};assert(!earned(50));assert(!earned(100));
+assert(M.recordPlayDay(s,Date.parse('2026-02-19T00:00:00+09:00')));assert(earned(50));assert(!earned(100));
+s=M.loadSave(JSON.stringify(s));assert(earned(50));assert(!M.recordPlayDay(s,Date.parse('2026-02-19T12:00:00+09:00')));
+s.playDays={count:99,lastDay:'2026-04-09'};assert(!earned(100));assert(M.recordPlayDay(s,Date.parse('2026-04-10T00:00:00+09:00')));assert(earned(100));assert(M.valid(s));
+const old=M.fresh(start);old.daily={count:50,lastDay:'2026-02-19'};const legacy=M.loadSave(JSON.stringify(old));assert.equal(M.playDayCount(legacy),50);assert(!M.recordPlayDay(legacy,Date.parse('2026-02-19T00:00:00+09:00')));assert(M.recordPlayDay(legacy,Date.parse('2026-02-20T00:00:00+09:00')));assert.equal(M.playDayCount(legacy),51);assert.equal(legacy.daily.count,50);
+for(const bad of [null,[],{count:-1,lastDay:null},{count:1.5,lastDay:'2026-01-01'},{count:1,lastDay:'2026-02-30'},{count:0,lastDay:'2026-01-01'}]){const corrupt=structuredClone(s);corrupt.playDays=bad;assert(!M.valid(corrupt));assert.throws(()=>M.loadSave(JSON.stringify(corrupt)));}
+const T=require('../src/shared/our-stage-leisure')(require('../src/shared/our-stage-first-release')(require('../src/shared/our-stage-simple')(B.forTest()))),all=require('../src/shared/our-stage-test-tools')(T).create('all-content',start);
+assert(T.badges(all).filter(b=>b.id.startsWith('play-days-')).every(b=>b.earned));assert.throws(()=>require('../src/shared/our-stage-test-tools')(M).create('all-content',start));
+console.log('PASS play-day badges: KST midnight, gaps, repeat visits/reload, 49/50/99/100 thresholds, legacy attendance, unchanged coins, corrupt backups and test-only preview.');

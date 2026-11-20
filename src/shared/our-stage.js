@@ -1,7 +1,9 @@
 'use strict';
 function createModel(testMode=false) {
   const mini=require('./our-stage-mini')(testMode);
-  const timing={shopMs:testMode?1000:60000,recoveryMs:testMode?1000:60000,performanceMs:testMode?1000:3300,testMode};
+  const playDays=require('./our-stage-play-days');
+  const playDayCount=playDays.count,recordPlayDay=(s,now=Date.now())=>playDays.record(s,kstDay(now));
+  const timing={shopMs:testMode?1000:60000,recoveryMs:testMode?1000:90000,performanceMs:testMode?1000:3300,testMode};
   // Album order follows Melon 314286. Each condition uses permanent progress.
   const songs = [
     {id:'scent', title:'여인의 향기', hint:'연습실에 처음 들어오면 열려요.', unlocked:()=>true},
@@ -18,9 +20,9 @@ function createModel(testMode=false) {
     {id:'fault', title:'내 잘못입니다', hint:'그냥을 한 번 연습하면 열려요.', unlocked:s=>has(s,'ending')||s.tracks.just.length>0}
   ];
   const lessons = [
-    {title:'보컬 연습', seconds:testMode?1:10, gain:30},
-    {title:'팀 호흡 맞추기', seconds:testMode?1:12, gain:30},
-    {title:'무대 동선 연습', seconds:testMode?1:15, gain:40}
+    {title:'보컬 연습', seconds:testMode?1:5, gain:30},
+    {title:'팀 호흡 맞추기', seconds:testMode?1:5, gain:30},
+    {title:'무대 동선 연습', seconds:testMode?1:5, gain:40}
   ];
   const members = [
     {id:'yj', name:'김연지', episode:'E04', title:'가면 너머의 목소리', date:'2018.09.07', fact:'김연지의 DMC 페스티벌 ‘복면가왕 더 위너’ 무대를 아카이브에서 만날 수 있어요.', url:'https://www.youtube.com/watch?v=VX4z0syPoWw'},
@@ -31,6 +33,14 @@ function createModel(testMode=false) {
 
   const albums=require('../data/our-stage-albums.json');
   const albumById=id=>albums.find(a=>a.id===id);
+  const practiceDurations=[15,20,25,30,35,40,45,60];
+  const lessonSeconds=(id,lesson)=>{
+    if(testMode)return 1;
+    const total=practiceDurations[albums.findIndex(a=>a.tracks.some(t=>t.id===id))]||15;
+    const part=Math.floor(total/3);return lesson===2?total-part*2:part;
+  };
+  const trainingMs=(s,id,lesson,chain=false)=>chain&&s.simple?.debuted===false?(testMode?333:1000):lessonSeconds(id,lesson)*1000;
+  const practiceSeconds=(s,id)=>Math.ceil(lessons.reduce((n,l,i)=>n+(s.tracks[id].includes(i)?0:trainingMs(s,id,i,true)),0)/1000);
   const storyEntries=require('../data/our-stage-stories.json');
   const storyById=id=>storyEntries.find(e=>e.id===id);
   const storyAvailable=(s,id)=>{const e=storyById(id);return Boolean(e&&albumUnlocked(s,e.album)&&albumCount(s,e.album)>=e.minTracks&&(e.requiresFlags||[]).every(id=>has(s,id)));};
@@ -61,7 +71,7 @@ function createModel(testMode=false) {
   };
   const finaleReady=s=>albumComplete(s,'first-again')&&albumById('first-again').tracks.filter(t=>!t.instrumental&&ready(s,t.id)).length>=2;
   function finishFinale(s){if(!finaleReady(s)||s.finale)return false;s.finale=true;return true;}
-  const cardMembers=[...members.map(({id,name})=>({id,name})),{id:'sm',name:'수미'}];
+  const cardMembers=[...members.map(({id,name})=>({id,name})),{id:'sm',name:'수미'},{id:'group',name:'씨야'}];
   function memberCards(s){
     const cards=[];
     for(const a of albums)for(const member of ['br','gr','yj'])cards.push({id:'album:'+a.id+':'+member,member,kind:'album',title:a.name,style:a.id,earned:albumUnlocked(s,a.id),hint:a.name+' 해금',note:a.id==='rebloom'?'현재 세 멤버 의상의 재해석 카드 · 실제 활동 멤버 구성과 다릅니다.':'앨범 의상 도트 카드'});
@@ -72,6 +82,7 @@ function createModel(testMode=false) {
     }
     for(const id of ['event-bcm','event-kairos']){const e=storyById(id);cards.push({id:'event:'+id,member:'gr',kind:'story',title:e.title,image:e.image,earned:storyDone(s,id),hint:storyCondition(id)+' 후 이야기 간직하기',note:e.illustrationNote});}
     cards.push({id:'heritage:sumi',member:'sm',kind:'heritage',title:'함께했던 목소리 · Rebloom',image:'/images/game/our-stage/cards/sumi-rebloom.png',earned:albumUnlocked(s,'rebloom'),hint:'Rebloom 앨범 해금',note:'2009년 합류해 Rebloom 활동을 함께한 수미를 기억하는 카드입니다. 당시 방송 의상과 헤어를 참고한 도트 재해석이에요.',source:'https://www.hankyung.com/article/2009102079027'});
+    cards.push({id:'group:the-fan',member:'group',kind:'special',title:'우리 셋, 스무 해의 무대',image:'/images/game/our-stage/cards/group-the-fan-heart-v2.png',earned:Boolean(s.simple?.concerts?.['first-again']),hint:'20주년 콘서트 · First, Again 앨범 콘서트 완료',note:'이보람 · 남규리 · 김연지가 함께한 20주년 콘서트 기념 단체 카드'});
     return cards;
   }
   const cardOwned=(s,id)=>memberCards(s).some(c=>c.id===id&&c.earned);
@@ -138,7 +149,7 @@ function createModel(testMode=false) {
     const cost=job.chain?(s.simple?.debuted===false?0:(3-s.tracks[job.track].length)*5):5;
     if(s.points<cost)return false;
     if(s.points===100)s.energyAt=at;
-    s.points-=cost;s.active={...job,end:at+(job.chain&&s.simple?.debuted===false?(timing.testMode?333:1000):lessons[job.lesson].seconds*1000)};return true;
+    s.points-=cost;s.active={...job,end:at+trainingMs(s,job.track,job.lesson,job.chain)};return true;
   }
   function settle(s,now=Date.now()){
     let finished=0;
@@ -148,7 +159,7 @@ function createModel(testMode=false) {
       if(!s.tracks[track].includes(lesson))s.tracks[track].push(lesson);
       if(ready(s,track)&&!s.setlist.includes(track))s.setlist.push(track);
       s.active=null;finished++;recover(s,end);
-      if(chain&&!ready(s,track)){const next=[0,1,2].find(i=>!s.tracks[track].includes(i));s.active={track,lesson:next,chain:true,end:end+(s.simple?.debuted===false?(timing.testMode?333:1000):lessons[next].seconds*1000)};}
+      if(chain&&!ready(s,track)){const next=[0,1,2].find(i=>!s.tracks[track].includes(i));s.active={track,lesson:next,chain:true,end:end+trainingMs(s,track,next,true)};}
       else if(s.queue&&start(s,s.queue,end))s.queue=null;
     }
     if(!s.active&&s.queue){const cost=s.queue.chain?(s.simple?.debuted===false?0:(3-s.tracks[s.queue.track].length)*5):5;const at=s.energyAt+Math.ceil(Math.max(0,cost-s.points)/5)*timing.recoveryMs;if(at<=now){recover(s,at);if(start(s,s.queue,at)){s.queue=null;return finished+settle(s,now);}}}
@@ -196,6 +207,7 @@ function createModel(testMode=false) {
     if(s.shopJob!==null&&(!s.shopJob||!shopJobById(s.shopJob.kind)||!Number.isSafeInteger(s.shopJob.end)||s.shopJob.end<0||jobCount(s,s.shopJob.kind)>=1000000))return false;
     if(typeof s.finale!=='boolean'||s.finale&&!finaleReady(s)||!(s.displayCard===null||cardOwned(s,s.displayCard)))return false;
     if(!s.cardDecorations||typeof s.cardDecorations!=='object'||Array.isArray(s.cardDecorations))return false;
+    if(!playDays.valid(s))return false;
     const earnedBadges=badges(s).filter(b=>b.earned).map(b=>b.id);
     if(!Object.entries(s.cardDecorations).every(([id,list])=>cardOwned(s,id)&&Array.isArray(list)&&list.length<=3&&subset(list,earnedBadges)))return false;
     if(!s.equipped||!s.hair||!memberIds.every(m=>styleOwned(s,s.equipped[m],m)&&styleOwned(s,s.hair[m],m))||(limits.balance??coins(s))<0)return false;
@@ -271,6 +283,7 @@ function createModel(testMode=false) {
         ['master',a.name+' · 무대 완성',albumMastered(s,a.id),'모든 트랙 준비도 100%']
       ])b.push({id:a.id+'-'+kind,name,earned,hint,group:'앨범',kind,album:a.id,icon:i});
     });
+    for(const [target,name] of [[50,'함께한 50일'],[100,'함께한 100일']])b.push({id:'play-days-'+target,name,earned:playDayCount(s)>=target,hint:'누적 '+target+'일 방문 · 현재 '+playDayCount(s)+'일. 한국 시간 기준 하루 한 번, 연속 방문이 아니어도 괜찮아요.',group:'활동',kind:'activity',icon:2});
     const practices=ids.reduce((n,id)=>n+s.tracks[id].length,0),notes=Object.keys(s.notes).length;
     for(const [prefix,label,values,n,icon] of [
       ['practice','차곡차곡 연습',[10,30,60],practices,0],
@@ -283,10 +296,11 @@ function createModel(testMode=false) {
     b.push({id:'gyul-star',name:'귤별이 돼',earned:memberCards(s).filter(c=>c.member==='gr'&&c.earned).length>=3,hint:'남규리 멤버 카드 3장 수집',group:'활동',kind:'activity',icon:2});
     if(s.simple?.phaseOne===1)b.push({id:'trainee-complete',name:'연습생 수료',earned:ready(s,'scent'),hint:'첫 노래 연습 완료',group:'이야기',kind:'activity',icon:0});
     b.push({id:'all-members-unlocked',name:'모든 멤버 해금',earned:albumUnlocked(s,'rebloom'),hint:'Rebloom 해금 · 씨야를 함께한 네 멤버의 기록',group:'이야기',kind:'activity',icon:2});
+    for(const [member,name] of [['br','이보람'],['gr','남규리'],['yj','김연지']])b.push({id:'solo-concert-'+member,name:name+'의 솔로 무대',earned:Boolean(s.solo?.concerts?.['solo-'+member]),hint:name+' 솔로 콘서트 완료',group:'솔로 콘서트',kind:'activity',icon:2});
     return b;
   }
 
-  return {capsuleOutfits,canCheer,albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,cardMembers,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,trainAll,train,claim,valid};
+  return {playDayCount,recordPlayDay,capsuleOutfits,canCheer,albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,cardMembers,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,lessonSeconds,practiceSeconds,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,trainAll,train,claim,valid};
 }
 module.exports=createModel();
 module.exports.forTest=()=>createModel(true);

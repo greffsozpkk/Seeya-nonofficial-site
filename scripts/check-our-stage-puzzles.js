@@ -1,4 +1,4 @@
-const assert=require('node:assert/strict'),B=require('../src/shared/our-stage').forTest(),M=require('../src/shared/our-stage-growth')(B),G=M.mini,now=Date.now();
+const assert=require('node:assert/strict'),B=require('../src/shared/our-stage').forTest(),M=require('../src/shared/our-stage-growth')(B),G=M.mini,now=Date.parse('2026-11-20T12:00:00+09:00');
 let s=M.fresh(now),m=s.mini,id=G.start(m,'pairs',now,()=>.4);assert(id);assert(M.valid(s));assert(!G.start(m,'quiz',now));assert(!G.canStart(m,'rhythm',now));assert(!G.finish(m,id,now));
 const deck=[...m.active.deck],other=deck.findIndex(x=>x!==deck[0]);assert(G.flip(m,id,0,now));assert(!G.flip(m,id,0,now));assert(G.flip(m,id,other,now));assert(!G.flip(m,id,deck.findIndex((_,i)=>i!==0&&i!==other),now));assert(!G.settle(m,now+849));assert(G.settle(m,now+850));assert(M.valid(s));
 assert.deepEqual(M.loadSave(JSON.stringify(s)).mini,m);const corrupt=structuredClone(s);corrupt.mini.active.deck[0]=99;assert(!M.valid(corrupt));

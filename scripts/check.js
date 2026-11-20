@@ -104,3 +104,9 @@ require('./check-our-stage-capsule-page');
 require('./check-our-stage-drive');
 
 require('./check-our-stage-stage-shop');
+
+require('./check-our-stage-pacing');
+
+require('./check-our-stage-play-days');
+
+require('./check-our-stage-solo');

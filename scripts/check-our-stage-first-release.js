@@ -23,10 +23,10 @@ q.points=20;q.energyAt=now;const t=P.albums[1].tracks[0].id,other='shoes';q.trac
 // Use an independent save for the partial-lesson case so completed album receipts stay consistent.
 let partial=P.fresh(now);partial.tracks.scent=[0,1];assert(P.trainAll(partial,'scent',now));P.settle(partial,now+1001);assert(P.finishDebut(partial,now+1001));
 partial.points=20;partial.energyAt=now;assert(P.trainAll(partial,'shoes',now));assert.equal(partial.points,5);
-P.settle(partial,now+10000);assert.equal(partial.points,5);assert.deepEqual(partial.tracks.shoes,[0]);
-partial=P.loadSave(JSON.stringify(partial));P.settle(partial,now+37000);assert(P.ready(partial,'shoes'));assert.equal(partial.points,5);assert(P.valid(partial));
-partial.tracks.shoes=[0,1];partial.setlist=partial.setlist.filter(id=>id!=='shoes');assert(P.trainAll(partial,'shoes',now+37000));assert.equal(partial.points,0);
-assert(P.trainAll(partial,'because',now+37000));assert(!P.trainAll(partial,'because',now+37000));P.settle(partial,now+240000);assert(P.ready(partial,'because'));assert(P.valid(partial));
+P.settle(partial,now+5000);assert.equal(partial.points,5);assert.deepEqual(partial.tracks.shoes,[0]);
+partial=P.loadSave(JSON.stringify(partial));P.settle(partial,now+15000);assert(P.ready(partial,'shoes'));assert.equal(partial.points,5);assert(P.valid(partial));
+partial.tracks.shoes=[0,1];partial.setlist=partial.setlist.filter(id=>id!=='shoes');assert(P.trainAll(partial,'shoes',now+15000));assert.equal(partial.points,0);
+assert(P.trainAll(partial,'because',now+15000));assert(!P.trainAll(partial,'because',now+15000));P.settle(partial,now+300000);assert(P.ready(partial,'because'));assert(P.valid(partial));
 // Legacy migration preserves coins, optional tasks, existing tickets and issuance timestamp.
 const legacy=JSON.parse(JSON.stringify(s));legacy.flags.push('album');legacy.proofs.push('story:album');delete legacy.simple.phaseOne;delete legacy.simple.debuted;delete legacy.simple.passIssuedAt;for(const r of Object.values(legacy.simple.concerts))delete r.restored;
 const balance=M.coins(legacy),migrated=M.loadSave(JSON.stringify(legacy));assert.equal(M.coins(migrated),balance);assert(Object.values(migrated.simple.concerts).every(r=>r.restored));assert(M.valid(migrated));

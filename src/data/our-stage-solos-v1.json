@@ -1,0 +1,260 @@
+[
+  {
+    "id": "solo-br",
+    "member": "br",
+    "name": "이보람 솔로 콘서트",
+    "artist": "이보람",
+    "type": "SOLO CONCERT",
+    "style": "capsule-brother",
+    "colors": [
+      "#f6e2ec",
+      "#a55179"
+    ],
+    "line": "한 곡씩 쌓아 온 마음, 이보람의 목소리로 만나는 무대.",
+    "band": "이보람 · 나의 목소리",
+    "tracks": [
+      {
+        "id": "solo-ppe9vyChKLs",
+        "title": "흩어지는 중",
+        "album": "흩어지는 중",
+        "youtubeId": "ppe9vyChKLs"
+      },
+      {
+        "id": "solo-2WyOq7IMEnc",
+        "title": "처음 그 자리에",
+        "album": "풀하우스 OST",
+        "youtubeId": "2WyOq7IMEnc"
+      },
+      {
+        "id": "solo-L5Cn7BpkEeQ",
+        "title": "FREAK (Korean Version)",
+        "album": "하이에나 OST · Korean Version",
+        "youtubeId": "L5Cn7BpkEeQ"
+      },
+      {
+        "id": "solo-yjvTqgRzcXY",
+        "title": "빛의 반대편에서",
+        "album": "빛의 반대편에서",
+        "youtubeId": "yjvTqgRzcXY"
+      },
+      {
+        "id": "solo-7VGw30BGkyw",
+        "title": "매일 이렇게 비가 내려",
+        "album": "IONY의 오선지 : Project #01",
+        "youtubeId": "7VGw30BGkyw"
+      },
+      {
+        "id": "solo-pwdQrpNpFyA",
+        "title": "너를 사랑하니까",
+        "album": "너를 사랑하니까",
+        "youtubeId": "pwdQrpNpFyA"
+      },
+      {
+        "id": "solo-oukYixC1ldo",
+        "title": "형 (兄)",
+        "album": "형 (兄)",
+        "youtubeId": "oukYixC1ldo"
+      },
+      {
+        "id": "solo-c6MlQvbbZw0",
+        "title": "한 밤의 꿈처럼",
+        "album": "한 밤의 꿈처럼",
+        "youtubeId": "c6MlQvbbZw0"
+      },
+      {
+        "id": "solo-q4jtpVDemFE",
+        "title": "사랑하니까",
+        "album": "너를 사랑하니까",
+        "youtubeId": "q4jtpVDemFE"
+      },
+      {
+        "id": "solo-DujKGd4aA60",
+        "title": "이렇게 좋은날",
+        "album": "이렇게 좋은날",
+        "youtubeId": "DujKGd4aA60"
+      }
+    ]
+  },
+  {
+    "id": "solo-gr",
+    "member": "gr",
+    "name": "남규리 솔로 콘서트",
+    "artist": "남규리",
+    "type": "SOLO CONCERT",
+    "style": "capsule-sorrow",
+    "colors": [
+      "#fae9d9",
+      "#a56b43"
+    ],
+    "line": "오래 간직한 이야기, 남규리의 목소리로 건네는 인사.",
+    "band": "남규리 · 나의 목소리",
+    "tracks": [
+      {
+        "id": "solo-xHB6Pn5rNxo",
+        "title": "그 남자",
+        "album": "그 남자",
+        "youtubeId": "xHB6Pn5rNxo"
+      },
+      {
+        "id": "solo-MiUAHBTO55g",
+        "title": "남자",
+        "album": "고사: 피의 중간고사 OST",
+        "youtubeId": "MiUAHBTO55g"
+      },
+      {
+        "id": "solo-Sn7YYiXgQ6Y",
+        "title": "깊은 밤을 날아서",
+        "album": "California Dream · 못말리는 결혼 OST",
+        "youtubeId": "Sn7YYiXgQ6Y"
+      },
+      {
+        "id": "solo-cjuv_qVAgRA",
+        "title": "HALO",
+        "album": "기적:奇跡",
+        "youtubeId": "cjuv_qVAgRA"
+      },
+      {
+        "id": "solo-siyf1bcO5Gc",
+        "title": "그래도 좋아해요",
+        "album": "그래도 좋아해요",
+        "youtubeId": "siyf1bcO5Gc"
+      },
+      {
+        "id": "solo-9klPsmjNPDw",
+        "title": "December Dream",
+        "album": "December Dream",
+        "youtubeId": "9klPsmjNPDw"
+      },
+      {
+        "id": "solo-nN7NV5FBhBw",
+        "title": "슬픔이 찾아와서 그래",
+        "album": "슬픔이 찾아와서 그래",
+        "youtubeId": "nN7NV5FBhBw"
+      },
+      {
+        "id": "solo-5USUHmWpPcg",
+        "title": "가슴앓이",
+        "album": "기억",
+        "youtubeId": "5USUHmWpPcg"
+      },
+      {
+        "id": "solo-Mjl8tBDX5Ik",
+        "title": "고백하는 거 맞아",
+        "album": "고백하는 거 맞아",
+        "youtubeId": "Mjl8tBDX5Ik"
+      },
+      {
+        "id": "solo-06MOxzzMPvI",
+        "title": "우리 사랑 그런 거 해요 Part.1",
+        "album": "우리 사랑 그런 거 해요 Part.1",
+        "youtubeId": "06MOxzzMPvI"
+      },
+      {
+        "id": "solo-DFBk5oSn72Y",
+        "title": "우리 사랑 그런 거 해요 Part.2 (feat. KoN)",
+        "album": "우리 사랑 그런 거 해요 Part.2 (feat. KoN)",
+        "youtubeId": "DFBk5oSn72Y"
+      },
+      {
+        "id": "solo-gwanaksan",
+        "title": "관악산",
+        "album": "부를텐데 · 공개 자작곡",
+        "youtubeId": "pXHDS6tqN5Q"
+      }
+    ]
+  },
+  {
+    "id": "solo-yj",
+    "member": "yj",
+    "name": "김연지 솔로 콘서트",
+    "artist": "김연지",
+    "type": "SOLO CONCERT",
+    "style": "capsule-wind",
+    "colors": [
+      "#e4e4f7",
+      "#6662a3"
+    ],
+    "line": "마음을 채우는 울림, 김연지의 목소리로 이어지는 밤.",
+    "band": "김연지 · 나의 목소리",
+    "tracks": [
+      {
+        "id": "solo-8UAxgcnvk2E",
+        "title": "잊었니",
+        "album": "잊었니",
+        "youtubeId": "8UAxgcnvk2E"
+      },
+      {
+        "id": "solo-lOvBRahMvtQ",
+        "title": "바람이 불면",
+        "album": "바람이 불면",
+        "youtubeId": "lOvBRahMvtQ"
+      },
+      {
+        "id": "solo-_FJkNLkV82U",
+        "title": "내 맘",
+        "album": "내 맘",
+        "youtubeId": "_FJkNLkV82U"
+      },
+      {
+        "id": "solo-JIpU0HXvc_E",
+        "title": "노래",
+        "album": "미친 사랑의 노래",
+        "youtubeId": "JIpU0HXvc_E"
+      },
+      {
+        "id": "solo-Uko7Y-Tfj-8",
+        "title": "당신은 천사와 커피를 마셔본 적이 있습니까",
+        "album": "당신은 천사와 커피를 마셔본 적이 있습니까 (청설 X 김연지)",
+        "youtubeId": "Uko7Y-Tfj-8"
+      },
+      {
+        "id": "solo-arm2c6NH9vg",
+        "title": "비가 오면 마음껏 울어도 되니까",
+        "album": "비가 오면 마음껏 울어도 되니까",
+        "youtubeId": "arm2c6NH9vg"
+      },
+      {
+        "id": "solo-gwRkvYc59_s",
+        "title": "사랑의 인사",
+        "album": "사랑의 인사",
+        "youtubeId": "gwRkvYc59_s"
+      },
+      {
+        "id": "solo-atp-TU4Xezs",
+        "title": "가슴으로 운다",
+        "album": "가슴으로 운다",
+        "youtubeId": "atp-TU4Xezs"
+      },
+      {
+        "id": "solo-8k-YrZ5Gg2g",
+        "title": "빨간풍선",
+        "album": "빨간풍선 OST Part.1",
+        "youtubeId": "8k-YrZ5Gg2g"
+      },
+      {
+        "id": "solo-7h3ndp05JN0",
+        "title": "Whisky on the Rock",
+        "album": "우리들의 블루스 OST Part 1",
+        "youtubeId": "7h3ndp05JN0"
+      },
+      {
+        "id": "solo-_lTZCnkpoyQ",
+        "title": "10년이나 버티니",
+        "album": "10년이나 버티니",
+        "youtubeId": "_lTZCnkpoyQ"
+      },
+      {
+        "id": "solo-PHQbDyffSTw",
+        "title": "계절사이",
+        "album": "군주 - 가면의 주인 (MBC 수목드라마) OST - Part.5",
+        "youtubeId": "PHQbDyffSTw"
+      },
+      {
+        "id": "solo-6yrrTYk4sMs",
+        "title": "너만 있으면 다였는데",
+        "album": "너만 있으면 다였는데.. - RBW 아티스트 다이어리 시즌2",
+        "youtubeId": "6yrrTYk4sMs"
+      }
+    ]
+  }
+]

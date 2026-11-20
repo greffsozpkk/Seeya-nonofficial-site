@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict'),M=require('../src/shared/our-stage').forTest();
 const fixtures=require('./check-our-stage-journey');
 const s=structuredClone(fixtures.complete),debut=structuredClone(require('./check-our-stage').complete);
-assert.equal(M.memberCards(s).length,36);assert.equal(new Set(M.memberCards(s).map(c=>c.id)).size,36);
+assert.equal(M.memberCards(s).length,37);assert.equal(new Set(M.memberCards(s).map(c=>c.id)).size,37);
 assert.equal(M.memberCards(debut).filter(c=>c.earned).length,3);
 for(const stage of [M.fresh(),debut,...fixtures.checkpoints.slice(0,5)])for(const id of ['gr','yj','reunion','br'])assert(!M.coreAvailable(stage,id));
 // Cross the real timeline thresholds by ordinary collection/practice, without needing future stories for old songs.

@@ -4,7 +4,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs');
 const M=require('../src/shared/our-stage').forTest();
 let s=structuredClone(require('./check-our-stage').complete),now=Math.max(Date.now(),s.energyAt)+1000;
 const assertValid=()=>assert(M.valid(s),'valid at '+JSON.stringify(s.albums));
-assert.equal(M.songs.length,82);assert.equal(M.badges(s).length,52);
+assert.equal(M.songs.length,82);assert.equal(M.badges(s).length,57);
 assert.deepEqual(M.albums.map(a=>a.tracks.length),[12,13,11,13,5,15,2,11]);
 assert(!M.unlockAlbum(s,'first-again'));
 const checkpoints=[];
@@ -35,7 +35,7 @@ for(const id of M.ids)for(let lesson=0;lesson<3;lesson++)if(!s.tracks[id].includ
 for(const id of ['gr','yj','reunion','br']){if(M.has(s,id))continue;assert(M.answer(s,'story:'+id,M.challenges['story:'+id].answer));assert(M.claim(s,id));}
 for(const id of ['first','album','yj','gr','br'])assert(M.cheer(s,'story:'+id,'응원해요'));
 for(const e of M.storyEntries)if(!M.storyDone(s,e.id))assert(M.answer(s,'story:'+e.id,M.challenges['story:'+e.id].answer));
-assertValid();assert(M.badges(s).every(b=>b.earned));
+assertValid();assert(M.badges(s).filter(b=>!b.id.startsWith('play-days-')&&!b.id.startsWith('solo-concert-')).every(b=>b.earned));
 assert.equal(M.badges(s).filter(b=>b.earned).length,52);
 const corrupt=structuredClone(checkpoints[0]);corrupt.albums=['first-again'];assert(!M.valid(corrupt));assert.throws(()=>M.loadSave(JSON.stringify(corrupt)));
 const legacy=require('../src/shared/our-stage-legacy'),old=legacy.fresh();

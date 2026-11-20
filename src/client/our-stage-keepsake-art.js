@@ -3,7 +3,15 @@ const optimized=require('../data/our-stage-optimized-images.json'),stories=requi
 function load(src){return new Promise((resolve,reject)=>{const img=new Image(),timer=setTimeout(()=>reject(Error('image timeout')),12000);img.onload=()=>{clearTimeout(timer);resolve(img);};img.onerror=()=>{clearTimeout(timer);reject(Error('image unavailable'));};img.src=optimized[src]||src;});}
 function cover(c,img,x,y,w,h,box){const [sx,sy,sw,sh]=box||[0,0,img.width,img.height],r=Math.max(w/sw,h/sh);c.save();c.beginPath();c.rect(x,y,w,h);c.clip();c.imageSmoothingEnabled=false;c.drawImage(img,sx,sy,sw,sh,x+(w-sw*r)/2,y+(h-sh*r)/2,sw*r,sh*r);c.restore();}
 function panelSource(id){const image=require('../data/our-stage-album-keepsakes.json')[id]?.image;if(image)return {src:image};const story=stories.find(e=>e.kind==='album'&&e.album===id);return story?{src:story.image}:{src:'/images/game/our-stage/pixel-stories-period.png',box:[903,3,444,444]};}
-async function panel(id){const source=panelSource(id),canvas=document.createElement('canvas');canvas.width=600;canvas.height=600;const c=canvas.getContext('2d');c.fillStyle='#e9dce5';c.fillRect(0,0,600,600);try{cover(c,await load(source.src),0,0,600,600,source.box);}catch{c.fillStyle='#81536d';c.font='bold 46px sans-serif';c.textAlign='center';c.fillText('OUR STAGE',300,290);c.fillText('SEEYA',300,350);}return canvas;}
+async function panel(id){const solo=require('../data/our-stage-album-keepsakes.json')[id];if(solo?.member&&!solo.image)return soloPanel(solo);const source=panelSource(id),canvas=document.createElement('canvas');canvas.width=600;canvas.height=600;const c=canvas.getContext('2d');c.fillStyle='#e9dce5';c.fillRect(0,0,600,600);try{cover(c,await load(source.src),0,0,600,600,source.box);}catch{c.fillStyle='#81536d';c.font='bold 46px sans-serif';c.textAlign='center';c.fillText('OUR STAGE',300,290);c.fillText('SEEYA',300,350);}return canvas;}
+async function soloPanel(theme){
+ const canvas=document.createElement('canvas');canvas.width=600;canvas.height=600;const c=canvas.getContext('2d');
+ const l=layers[theme.style],m=l.members[theme.member],g=require('../shared/our-stage-sprite-geometry')(theme.member,theme.style,theme.style,layers);
+ const [body,head]=await Promise.all([load(l.image),load(l.headImage||l.image)]);
+ c.fillStyle=theme.colors[0];c.fillRect(0,0,600,600);c.fillStyle=theme.colors[1];c.fillRect(24,24,552,8);c.fillRect(24,568,552,8);c.globalAlpha=.12;
+ for(let x=40;x<600;x+=80)c.fillRect(x,40,30,510);c.globalAlpha=1;c.imageSmoothingEnabled=false;
+ c.save();c.translate(102,5);c.scale(.9,.85);c.drawImage(head,...m.head,g.headX,g.headY,g.hw,g.hh);c.drawImage(body,...m.body,g.bodyX,g.bodyY,g.bw,g.bh);c.restore();return canvas;
+}
 async function drawPass({nickname,issuedAt}){
  const canvas=document.createElement('canvas');canvas.width=840;canvas.height=1200;const c=canvas.getContext('2d');c.scale(2,2);await document.fonts.ready;
  const text=(t,x,y,w,size,color='#40343e',weight=600)=>{c.fillStyle=color;c.font=weight+' '+size+'px system-ui,sans-serif';while(c.measureText(t).width>w&&size>9){c.font=weight+' '+--size+'px system-ui,sans-serif';}c.fillText(t,x,y);};

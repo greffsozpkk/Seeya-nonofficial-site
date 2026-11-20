@@ -2,11 +2,12 @@
 // Deliberately separate from normal unlock rules. Only the test client calls this.
 module.exports=function(M){
  const core=['gr','yj','reunion','br'],counts={gr:5,yj:9,reunion:12,br:15};
- const options=()=>[...(M.decorStore?[{id:'all-content',label:'모든 콘텐츠 해금 · 의상·무대·뽑기까지 전부',album:'first-again'}]:[]),...(M.finishDebut?[{id:'trainee',label:'연습생부터 · 첫 연습과 데뷔',album:'first-mind'}]:[]),...M.albums.map(a=>({id:'album:'+a.id,label:a.name+' · 앨범 시작',album:a.id})),{id:'complete',label:'전체 앨범 전곡 수집 · 이야기와 피날레는 직접 진행',album:'first-again'},...core.map(id=>({id:'story:'+id,label:id==='reunion'?'씨야 · 하나로 모인 기록':M.members.find(m=>m.id===id).name+' · '+M.members.find(m=>m.id===id).title,album:'see-you-again'})),...M.storyEntries.map(e=>({id:'story:'+e.id,label:e.date+' · '+e.subject+' · '+e.title,album:e.album}))];
+ const options=()=>[...(M.soloAlbums?[{id:'solo-start',label:'20주년 콘서트 완료 · 솔로곡 연습 시작',album:'first-again'}]:[]),...(M.decorStore?[{id:'all-content',label:'모든 콘텐츠 해금 · 의상·무대·뽑기까지 전부',album:'first-again'}]:[]),...(M.finishDebut?[{id:'trainee',label:'연습생부터 · 첫 연습과 데뷔',album:'first-mind'}]:[]),...M.albums.map(a=>({id:'album:'+a.id,label:a.name+' · 앨범 시작',album:a.id})),{id:'complete',label:'전체 앨범 전곡 수집 · 이야기와 피날레는 직접 진행',album:'first-again'},...core.map(id=>({id:'story:'+id,label:id==='reunion'?'씨야 · 하나로 모인 기록':M.members.find(m=>m.id===id).name+' · '+M.members.find(m=>m.id===id).title,album:'see-you-again'})),...M.storyEntries.map(e=>({id:'story:'+e.id,label:e.date+' · '+e.subject+' · '+e.title,album:e.album}))];
  function create(target,now=Date.now()){
   if(!M.timing.testMode)throw Error('Test tools disabled');
   const option=options().find(o=>o.id===target);if(!option)throw Error('Unknown test target');
   if(target==='trainee')return M.fresh(now);
+  if(target==='solo-start'){const s=create('complete',now);M.finishConcert(s,'first-again',M.concertTracks(s,'first-again'),now);M.finishFinale(s);if(!M.valid(s))throw Error('Invalid solo checkpoint');return s;}
   if(target==='all-content'){
    const s=create('complete',now);
    s.flags=['first','album','gr','yj','br','reunion','ending'];s.proofs=Object.keys(M.challenges);s.finale=true;
@@ -16,6 +17,8 @@ module.exports=function(M){
    const pool=M.capsules.pool,g=s.leisure.capsules;
    Object.assign(g,{pulls:pool.length,freePulls:1,day:M.capsules.day(now),freeDay:M.capsules.day(now),owned:pool.map(i=>i.id),last:{number:pool.length,item:pool[pool.length-1].id,duplicate:false,free:false}});
    s.leisure.decor.owned=M.decorStore.items.map(i=>i.id);
+   s.playDays={count:100,lastDay:M.kstDay(now)};
+   if(M.soloAlbums){s.solo={catalogVersion:2,done:M.soloAlbums.flatMap(a=>a.tracks.map(t=>t.id)),active:null,concerts:{}};for(const a of M.soloAlbums)M.finishSoloConcert(s,a.id,now);}
    s.simple.walletOffset+=10000-M.coins(s);
    if(!M.valid(s))throw Error('Invalid full-content checkpoint');return s;
   }

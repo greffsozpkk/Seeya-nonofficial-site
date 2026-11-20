@@ -1,5 +1,6 @@
 'use strict';
 module.exports=function(M){
+ M=require('./our-stage-solo')(M);
  const drive=require('./our-stage-drive'),decorStore=require('./our-stage-stage-shop');
  const play=require('./our-stage-play')(M),capsules=require('./our-stage-capsules');
  const migrate=s=>{if(s.leisure===undefined)s.leisure={version:2,play:play.fresh(s.mini),capsules:capsules.fresh(),skins:{cards:{},stage:null}};if(s.leisure?.version===1){for(const slots of Object.values(s.leisure.skins?.cards||{})){if(slots.effect){if(!s.leisure.capsules?.owned?.includes(slots.effect)||!['effect-petals','effect-record','effect-twinkle','effect-confetti'].includes(slots.effect))throw Error('Invalid old effect');if(!slots.frame)slots.frame=slots.effect;delete slots.effect;}}s.leisure.version=2;}if(s.leisure.decor===undefined)s.leisure.decor=decorStore.fresh();else s.leisure.decor=decorStore.migrate(s.leisure.decor);if(s.leisure.drive===undefined)s.leisure.drive=drive.fresh();return s;};

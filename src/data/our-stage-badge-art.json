@@ -725,6 +725,21 @@
     },
     "all-members-unlocked": {
       "image": "/images/game/our-stage/badges/all-members.svg"
+    },
+    "play-days-50": {
+      "image": "/images/game/our-stage/badge-play-days-50.svg"
+    },
+    "play-days-100": {
+      "image": "/images/game/our-stage/badge-play-days-100.svg"
+    },
+    "solo-concert-br": {
+      "image": "/images/game/our-stage/badge-solo-br-v1.png"
+    },
+    "solo-concert-gr": {
+      "image": "/images/game/our-stage/badge-solo-gr-v1.png"
+    },
+    "solo-concert-yj": {
+      "image": "/images/game/our-stage/badge-solo-yj-v1.png"
     }
   },
   "logoSheets": {

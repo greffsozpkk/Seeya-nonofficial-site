@@ -70,5 +70,38 @@
     ],
     "line": "기적 위에서 다시 시작하는, 모두가 꿈꾸던 Always를 향해.",
     "band": "다시, 처음처럼"
+  },
+  "solo-br": {
+    "member": "br",
+    "style": "capsule-brother",
+    "colors": [
+      "#f6e2ec",
+      "#a55179"
+    ],
+    "line": "한 곡씩 쌓아 온 마음, 이보람의 목소리로 만나는 무대.",
+    "band": "이보람 · 나의 목소리",
+    "image": "/images/game/our-stage/ticket-solo-br-v1.png"
+  },
+  "solo-gr": {
+    "member": "gr",
+    "style": "capsule-sorrow",
+    "colors": [
+      "#fae9d9",
+      "#a56b43"
+    ],
+    "line": "오래 간직한 이야기, 남규리의 목소리로 건네는 인사.",
+    "band": "남규리 · 나의 목소리",
+    "image": "/images/game/our-stage/ticket-solo-gr-v1.png"
+  },
+  "solo-yj": {
+    "member": "yj",
+    "style": "capsule-wind",
+    "colors": [
+      "#e4e4f7",
+      "#6662a3"
+    ],
+    "line": "마음을 채우는 울림, 김연지의 목소리로 이어지는 밤.",
+    "band": "김연지 · 나의 목소리",
+    "image": "/images/game/our-stage/ticket-solo-yj-v1.png"
   }
 }
