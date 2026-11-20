@@ -34133,7 +34133,14 @@
       "label": "치평동사우나",
       "url": "https://www.youtube.com/watch?v=eBsS6it44VQ"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=OHlaUDmfOgM",
+        "publishedDate": "2015-12-13",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
@@ -34141,7 +34148,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-11-20T07:37:29.951029+00:00"
   },
   {
     "id": "v474-stage-research-037",
@@ -34265,7 +34273,14 @@
       "label": "벅스 방송 음반 정보",
       "url": "https://music.bugs.co.kr/album/531531"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=b6qho02w9A0",
+        "publishedDate": "2026-11-19",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "tags": [
       "2012~2019",
@@ -34273,7 +34288,8 @@
     ],
     "note": "날짜는 공식 방송 음반 공개일입니다.",
     "dateStatus": "confirmed",
-    "dateBasis": "release"
+    "dateBasis": "release",
+    "updatedAt": "2026-11-20T07:37:29.951029+00:00"
   },
   {
     "id": "v490-acting-midnight",
