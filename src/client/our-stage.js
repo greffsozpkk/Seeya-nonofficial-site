@@ -362,6 +362,7 @@ function handle(a,v){
  if(isTest&&a==='motion-restart'){restartMotion();return;}
  if(isTest&&a==='motion-pause'){const box=$('.motion-preview');if(!box)return;const paused=box.classList.toggle('motion-paused');box.querySelector('[data-action="motion-pause"]').textContent=paused?'동작 재생하기':'동작 멈추기';return;}
  if(a==='room-posters'){roomPosters.open();return;}
+ if(a==='room-poster-view'){roomPosters.view();return;}
  if(a==='room-poster-select'){roomPosters.choose(v);return;}
  if(a==='room-display'){roomDisplay.open();return;}
  if(a==='room-cardbook'){close();scene=5;wardrobeView='cards';draw();return;}
