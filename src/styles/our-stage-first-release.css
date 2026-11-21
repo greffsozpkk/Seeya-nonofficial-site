@@ -51,8 +51,8 @@
 #ourStage .room .wall-ticket{position:absolute;left:20%;top:5%;width:21%;aspect-ratio:15/7;transform:rotate(2deg)}
 #ourStage .room .wall-keepsake img{display:block;width:100%;height:auto;max-height:none;margin:0;padding:0;filter:none;object-fit:contain;image-rendering:auto;background:none}
 #ourStage .keepsake-loading{display:flex;align-items:center;justify-content:center;width:100%;height:100%;font-size:8px;line-height:1.4;color:#81536d}
-/* Sugar Man reunion reference: star LED wall, waveform trim, steel frames and reflective platform. */
-#ourStage .stage-art .stage-set{position:absolute;inset:0 0 62px;background:#080f29 url('/images/game/our-stage/reunion-stage.svg') center/100% 100% no-repeat;pointer-events:none;z-index:0}
+/* Default wooden auditorium; the reunion set is a collectible stage. */
+#ourStage .stage-art .stage-set{position:absolute;inset:0 0 62px;background:#a47c5a url('/images/game/our-stage/auditorium-stage.svg') center/100% 100% no-repeat;pointer-events:none;z-index:0}
 #ourStage .stage-art .stage-trio{padding-top:45px;border-bottom:0;background:none}
 #ourStage .stage-art .stage-audience{background:linear-gradient(#080d22cc,#111022)}
 @media(max-width:650px){#ourStage .room .wall-pass.wall-keepsake{left:3%;top:5%;width:13%}#ourStage .room .wall-ticket{left:20%;width:27%;top:5%}#ourStage .room-status{left:74%;max-width:45%;font-size:10px}#ourStage .stage-art .stage-trio{padding-top:32px}}

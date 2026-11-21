@@ -13,12 +13,12 @@
 #ourStage .pixel-collectible[data-skin-frame=varsity]{border-top-width:12px!important;border-bottom-width:12px!important}
 #ourStage .pixel-collectible[data-skin-frame=ticket]{border-radius:10px;clip-path:none}
 #ourStage .pixel-collectible[data-skin-back]:not([data-skin-back=""]) .collectible-art{background-color:var(--skin-back-paper);background-image:none}
-#ourStage .pixel-collectible[data-skin-back=note] .collectible-art{background-image:repeating-linear-gradient(0deg,transparent 0 20px,#9f8daa55 20px 21px)}
-#ourStage .pixel-collectible[data-skin-back=check] .collectible-art{background-image:repeating-linear-gradient(0deg,transparent 0 16px,#7995a425 16px 32px),repeating-linear-gradient(90deg,transparent 0 16px,#7995a425 16px 32px)}
-#ourStage .pixel-collectible[data-skin-back=petals] .collectible-art{background-image:radial-gradient(ellipse at 20% 35%,#eab3c5 0 3px,transparent 4px),radial-gradient(ellipse at 85% 65%,#eab3c5 0 3px,transparent 4px);background-size:45px 65px}
-#ourStage .pixel-collectible[data-skin-back=stamp] .collectible-art{background-image:radial-gradient(circle,#9e82a555 0 1px,transparent 2px);background-size:15px 15px}
-#ourStage .pixel-collectible[data-skin-back=night] .collectible-art{background-image:radial-gradient(circle,#f8e3b9 0 1px,transparent 2px);background-size:23px 29px}
-#ourStage .pixel-collectible[data-skin-back=fan] .collectible-art{background-image:radial-gradient(ellipse at 50% 80%,#efacd9 0 2px,transparent 4px);background-size:21px 31px}
+#ourStage .pixel-collectible[data-skin-back=note]:not([data-skin-back=""]) .collectible-art{background-image:repeating-linear-gradient(0deg,transparent 0 20px,#9f8daa55 20px 21px)}
+#ourStage .pixel-collectible[data-skin-back=check]:not([data-skin-back=""]) .collectible-art{background-image:repeating-linear-gradient(0deg,transparent 0 16px,#7995a425 16px 32px),repeating-linear-gradient(90deg,transparent 0 16px,#7995a425 16px 32px)}
+#ourStage .pixel-collectible[data-skin-back=petals]:not([data-skin-back=""]) .collectible-art{background-image:radial-gradient(ellipse at 20% 35%,#eab3c5 0 3px,transparent 4px),radial-gradient(ellipse at 85% 65%,#eab3c5 0 3px,transparent 4px);background-size:45px 65px}
+#ourStage .pixel-collectible[data-skin-back=stamp]:not([data-skin-back=""]) .collectible-art{background-image:radial-gradient(circle,#9e82a555 0 1px,transparent 2px);background-size:15px 15px}
+#ourStage .pixel-collectible[data-skin-back=night]:not([data-skin-back=""]) .collectible-art{background-image:radial-gradient(circle,#f8e3b9 0 1px,transparent 2px);background-size:23px 29px}
+#ourStage .pixel-collectible[data-skin-back=fan]:not([data-skin-back=""]) .collectible-art{background-image:radial-gradient(ellipse at 50% 80%,#efacd9 0 2px,transparent 4px);background-size:21px 31px}
 #ourStage .skin-card-select{display:grid;gap:7px;font-size:13px}#ourStage .skin-card-select select{width:100%;min-width:0}
 #ourStage .skin-card-preview{max-width:290px;margin:20px auto}#ourStage .skin-slot{border-top:1px solid #e2d2dc;padding:16px 0}#ourStage .skin-slot h3{font-size:15px;margin:0 0 12px}
 #ourStage .skin-options{display:flex;gap:12px;flex-wrap:wrap}#ourStage .skin-options>button{width:calc(33.333% - 8px);padding:8px;font-size:12px;line-height:1.5;min-width:0;border-radius:8px}
@@ -134,3 +134,9 @@
 #ourStage .compact-badges .badge-card:focus-visible{outline:2px solid #935577;outline-offset:3px}
 #ourStage .badge-detail{text-align:center}#ourStage .badge-detail .pixel-badge{width:180px;height:180px;margin:20px auto}#ourStage .badge-detail p{line-height:1.8}
 @media(max-width:650px){#ourStage .compact-badges{grid-template-columns:repeat(4,minmax(0,1fr));gap:8px 6px}#ourStage .compact-badges .badge-card{padding:9px 3px;gap:5px}#ourStage .compact-badges .pixel-badge{width:52px;height:52px}#ourStage .compact-badges .badge-card strong{font-size:11px}}
+
+/* Explicit artwork remains visible with any frame, in previews and owned cards. */
+#ourStage .pixel-collectible[data-skin-back=night]:not([data-skin-back=""]) .collectible-art{background:#282d5a url('/images/game/our-stage/card-back-night.svg') center/100% 100% no-repeat}
+#ourStage .pixel-collectible[data-skin-back=fan]:not([data-skin-back=""]) .collectible-art{background:#321e43 url('/images/game/our-stage/card-back-fan.svg') center/100% 100% no-repeat}
+#ourStage .stage-art[data-stage-skin=reunion] .stage-set{background:#101b38 url('/images/game/our-stage/reunion-stage.svg') center/100% 100% no-repeat}
+#ourStage .stage-art[data-stage-skin=reunion] .capsule-scenery{display:none}

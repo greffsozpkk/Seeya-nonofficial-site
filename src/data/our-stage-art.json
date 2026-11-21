@@ -38,6 +38,11 @@
     "method": "Built-in image_gen",
     "prompt": "Extract the rehearsal room background from the attached approved pixel-art game mockup, as a clean reusable game background. REMOVE ALL three characters, ALL microphone stands, ALL text, ALL UI buttons, ALL top and bottom interface bars and all outer page margins. Fill the entire output rectangle with ONLY the room itself, from ceiling to floor. Keep the original room composition: cream walls, muted pink acoustic wall panels, central large mirror, left window with daylight, keyboard and amplifier on left, bench with bag and water bottles on right, pink door on right. Empty clear central wooden floor where three sprites will be placed by game code. Preserve the exact cozy chunky 2D pixel-art aesthetic and colors, not a realistic illustration. Flat square pixel clusters, crisp block edges, no smooth gradients. Wide landscape ratio approximately 2.2:1. No people, no reflections of people, no lettering, no UI. Front-facing slightly elevated room view like the reference. Leave plenty of open floor in lower half."
   },
+  "defaultPerformanceBackdrop": {
+    "file": "images/game/our-stage/auditorium-stage.svg",
+    "method": "Code-native pixel SVG scenery",
+    "note": "기본 공연장: 나무판자 바닥과 자주색 커튼이 있는 소박한 학교 강당. 기존 슈가맨 배경은 레어 뽑기 무대로 이동."
+  },
   "performanceBackdrop": {
     "file": "images/game/our-stage/reunion-stage.svg",
     "method": "Code-native SVG scenery",

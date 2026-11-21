@@ -24,6 +24,7 @@ const rows=[
  ['stage-spring','stage','rare','벚꽃 앙코르','spring','#e9a3c1','#583652'],
  ['stage-neon','stage','rare','Hot 네온','neon','#66e5d8','#271744'],
  ['stage-moon','stage','rare','달빛 발라드','moon','#b7b4ee','#202846'],
+ ['stage-reunion','stage','rare','슈가맨 · 다시 만난 무대','reunion','#8acdde','#101b38'],
  ['stage-gold','stage','special','THE FAN · 황금빛 밤','gold','#f2ce78','#37274e']
 ];
 const outfits=require('../data/our-stage-capsule-outfits.json');

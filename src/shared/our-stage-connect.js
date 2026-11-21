@@ -2,7 +2,14 @@
 const cols=6,rows=8;
 const members=[['br','보람'],['gr','규리'],['yj','연지']];
 const styles=[['first-mind','1집'],['lovely-sweet-heart','2집'],['california-dream','2.5집'],['brilliant-change','3집']];
-const tiles=styles.flatMap(([style,era])=>members.map(([member,name])=>({member,name,style,era})));
+// Keep the original twelve IDs stable for saved games.
+const tiles=styles.flatMap(([style,era])=>members.map(([member,name])=>({member,name,style,era,part:'hair'})));
+const outfits=[...require('../data/our-stage-outfits.json'),...require('../data/our-stage-shop.json'),...require('../data/our-stage-capsule-outfits.json')];
+for(const outfit of outfits)for(const [member,name] of members)for(const part of ['hair','clothes']){
+ if(outfit.reward&&!outfit.members.includes(member))continue;
+ if(!tiles.some(t=>t.style===outfit.id&&t.member===member&&t.part===part))tiles.push({member,name,style:outfit.id,era:styles.find(s=>s[0]===outfit.id)?.[1]||({'practice':'연습복','base':'20주년','first-again':'4집','still-here':'재결합'})[outfit.id]||outfit.name,part});
+}
+const pick=require('./our-stage-style-pick');
 const point=i=>({x:i%cols+1,y:Math.floor(i/cols)+1});
 function route(board,a,b,match=true){
  if(!Number.isInteger(a)||!Number.isInteger(b)||a<0||b<0||a>=48||b>=48||a===b||board[a]===null||board[b]===null||match&&board[a]!==board[b])return null;
@@ -38,7 +45,7 @@ function shuffle(board,random=Math.random){
  }
  return next;
 }
-const fresh=(random=Math.random)=>({version:1,board:shuffle(tiles.flatMap((_,id)=>[id,id,id,id]),random),elapsed:0,moves:0,shuffles:0});
+const fresh=(random=Math.random)=>({version:1,board:shuffle(pick(tiles.map((t,id)=>({...t,id})),12,random).flatMap(t=>[t.id,t.id,t.id,t.id]),random),elapsed:0,moves:0,shuffles:0});
 function valid(s){return !!s&&s.version===1&&Array.isArray(s.board)&&s.board.length===48&&s.board.every(v=>v===null||Number.isInteger(v)&&v>=0&&v<tiles.length)&&tiles.every((_,i)=>{const n=s.board.filter(v=>v===i).length;return n<=4&&n%2===0;})&&['elapsed','moves','shuffles'].every(k=>Number.isSafeInteger(s[k])&&s[k]>=0&&s[k]<=1e9);}
 function remove(s,a,b){const path=route(s.board,a,b);if(!path)return null;s.board[a]=null;s.board[b]=null;s.moves++;return path;}
 module.exports={cols,rows,tiles,point,route,hint,shuffle,fresh,valid,remove};

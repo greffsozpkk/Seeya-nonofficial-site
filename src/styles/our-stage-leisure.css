@@ -177,3 +177,5 @@
 #ourStage .audience-lightstick{filter:drop-shadow(0 0 3px #ffb4e8)}
 #ourStage :is(.live,.decor-detail) .audience-lightstick{animation:audience-float var(--audience-speed) var(--audience-delay) ease-in-out infinite alternate}
 @media(prefers-reduced-motion:reduce){#ourStage .audience-lightstick{animation:none!important}}
+
+#ourStage .leisure-pair-portrait svg.style-tile-art{height:100%;width:100%;max-height:100%;transform:none;image-rendering:pixelated}

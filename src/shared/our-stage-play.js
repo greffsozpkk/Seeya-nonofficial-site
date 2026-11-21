@@ -1,22 +1,25 @@
 'use strict';
-const bank=require('./our-stage-play-bank');
+const bank=require('./our-stage-play-bank'),pick=require('./our-stage-style-pick');
 module.exports=function(M){
  const cooldown=M.timing.testMode?10000:900000,limit=6;
- const games=[{id:'quiz',name:'씨야 활동 퀴즈',description:'무대와 이야기 속 순간을 떠올려요.',detail:'3문제 · 모두 맞히면 20코인',icon:'?'},{id:'pairs',name:'멤버 스타일 짝 맞추기',description:'모은 앨범의 의상으로 매번 새로운 조합.',detail:'16장 · 8쌍 · 최대 20코인',icon:'♡'},{id:'jigsaw',name:'이야기 그림 맞추기',description:'두 조각을 눌러 추억의 그림을 완성해요.',detail:'4 × 4 · 최대 20코인',icon:'▦'}];
+ const games=[{id:'quiz',name:'씨야 활동 퀴즈',description:'무대와 이야기 속 순간을 떠올려요.',detail:'3문제 · 모두 맞히면 20코인',icon:'?'},{id:'pairs',name:'멤버 스타일 짝 맞추기',description:'앨범의 헤어와 의상을 섞어 매번 새로운 조합.',detail:'16장 · 8쌍 · 최대 20코인',icon:'♡'},{id:'jigsaw',name:'이야기 그림 맞추기',description:'두 조각을 눌러 추억의 그림을 완성해요.',detail:'4 × 4 · 최대 20코인',icon:'▦'}];
  const fresh=(old={})=>({day:old.day||null,plays:old.plays||0,total:0,earned:0,next:{quiz:old.next?.quiz||0,pairs:old.next?.pairs||0,jigsaw:0},recent:[],active:null});
  const time=n=>Number.isSafeInteger(n)&&n>=0&&n<253402200000000;
  const day=n=>new Date(n+32400000).toISOString().slice(0,10);
  const used=(m,now)=>!m.day||day(now)>m.day?0:m.plays;
  const wait=(m,kind,now)=>Math.max(0,m.next[kind]-now);
  const shuffle=(a,r=Math.random)=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.max(0,Math.min(.999999,Number(r())||0))*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;};
- const cardPool=s=>[...['practice','base'],...M.albums.filter(a=>M.albumUnlocked(s,a.id)).map(a=>a.id)].flatMap(style=>M.memberIds.map(member=>({id:style+':'+member,style,member,label:style==='practice'?'연습복':style==='base'?'20주년':M.albumById(style).name})));
+ const cardPool=s=>{
+  const albums=[...['practice','base'],...M.albums.filter(a=>M.albumUnlocked(s,a.id)).map(a=>a.id)].map(id=>({id,name:id==='practice'?'연습복':id==='base'?'20주년':M.albumById(id).name}));
+  return [...albums,...M.shop,...M.capsuleOutfits].flatMap(o=>M.memberIds.filter(member=>albums.includes(o)||M.styleOwned(s,o.id,member)).flatMap(member=>['hair','clothes'].map(part=>({id:o.id+':'+member+(part==='clothes'?':clothes':''),style:o.id,member,part,label:o.name}))));
+ };
  const stories=s=>M.storyEntries.filter(e=>M.storyDone(s,e.id)&&e.image);
  const questionPool=s=>bank.filter(q=>M.albumUnlocked(s,q.album));
  const available=(s,kind)=>kind!=='jigsaw'||stories(s).length>0;
  function canStart(s,kind,now){const m=s.leisure.play;return time(now)&&time(now+cooldown)&&s.simple.debuted&&games.some(g=>g.id===kind)&&available(s,kind)&&!m.active&&!s.mini.active&&(!m.day||day(now)>=m.day)&&used(m,now)<limit&&!wait(m,kind,now)&&m.total<1000000;}
  function start(s,kind,now,random=Math.random){if(!canStart(s,kind,now))return false;const m=s.leisure.play;let a={id:kind+':'+now,kind,started:now};
  if(kind==='quiz'){const pool=questionPool(s),unused=pool.filter(q=>!m.recent.includes(q.id));const qs=shuffle(unused.length>=3?unused:pool,random).slice(0,3);if(qs.length<3)return false;a.questions=qs.map(q=>({id:q.id,order:shuffle(q.choices.map((_,i)=>i),random)}));a.answers=[];m.recent=[...qs.map(q=>q.id),...m.recent.filter(id=>!qs.some(q=>q.id===id))].slice(0,9);}
- if(kind==='pairs'){const cards=shuffle(cardPool(s),random).slice(0,8);if(cards.length<8)return false;a.deck=shuffle(cards.flatMap(c=>[c.id,c.id]),random);a.history=[];a.open=null;a.reveal=null;a.hideAt=0;}
+ if(kind==='pairs'){const cards=pick(cardPool(s),8,random);if(cards.length<8)return false;a.deck=shuffle(cards.flatMap(c=>[c.id,c.id]),random);a.history=[];a.open=null;a.reveal=null;a.hideAt=0;}
  if(kind==='jigsaw'){const list=stories(s).sort((a,b)=>a.id.localeCompare(b.id)),hash=[...day(now)].reduce((n,c)=>(n*31+c.charCodeAt(0))>>>0,0);a.story=list[hash%list.length].id;a.perm=shuffle(Array.from({length:16},(_,i)=>i),random);if(a.perm.filter((n,i)=>n===i).length>=5)a.perm=a.perm.map((_,i)=> (i+5)%16);a.swaps=0;}
  if(m.day!==day(now)){m.day=day(now);m.plays=0;}m.plays++;m.total++;m.next[kind]=now+cooldown;m.active=a;return a.id;
  }

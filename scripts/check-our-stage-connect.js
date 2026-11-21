@@ -31,7 +31,7 @@ for(let sample=0;sample<100;sample++){
  }
  assert.equal(s.moves,24);assert(s.board.every(v=>v===null));
 }
-for(const mutate of [s=>s.board.pop(),s=>s.board[0]=100,s=>s.board[0]=null,s=>s.elapsed=-1,s=>s.version=2,s=>s.moves=Infinity]){const s=G.fresh(random);mutate(s);assert(!G.valid(s));}
+for(const mutate of [s=>s.board.pop(),s=>s.board[0]=G.tiles.length,s=>s.board[0]=null,s=>s.elapsed=-1,s=>s.version=2,s=>s.moves=Infinity]){const s=G.fresh(random);mutate(s);assert(!G.valid(s));}
 // Client uses a separate save and never receives the game's coin/point model.
 const make=require('../src/client/our-stage-connect'),mem=new Map(),listeners={};let now=1000;
 const saved={document:global.document,window:global.window,localStorage:global.localStorage,performance:global.performance};
