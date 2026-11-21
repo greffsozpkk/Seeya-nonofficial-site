@@ -519,5 +519,11 @@
         "file": "images/game/our-stage/stories/nightingale-story.png"
       }
     ]
+  },
+  "roomDisplayPreview": {
+    "file": "images/game/our-stage/pixel-rehearsal-room-display-v1.png",
+    "method": "Built-in image_gen",
+    "scope": "Unlisted Our Stage test page: A room proportions with B low cabinet; separate wall card and unlocked album poster.",
+    "prompt": "Front-facing 5:4 pixel rehearsal room; peach walls, dusty rose acoustic panels, empty wide foreground floor, keyboard and bench left, mirror center, low empty two-shelf cabinet right. No characters, UI, text or collectibles baked into the background. Actual pass, ticket, card and latest three gifts rendered separately."
   }
 }

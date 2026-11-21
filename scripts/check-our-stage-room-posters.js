@@ -1,0 +1,18 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const M=require('../src/shared/our-stage-leisure')(require('../src/shared/our-stage-first-release')(require('../src/shared/our-stage-simple')(require('../src/shared/our-stage').forTest())));
+const checkpoints=require('../src/shared/our-stage-test-tools')(M);
+let s=M.fresh(),saved=0,closed=0,drawn=0,html='';
+const ui=require('../src/client/our-stage-room-posters')({M,state:()=>s,esc:String,dialog:x=>{html=x;},save:()=>{assert(M.valid(s));saved++;return true;},close:()=>closed++,draw:()=>drawn++});
+assert.equal(ui.selected(),undefined);assert(!ui.choose('first-mind'));assert.equal(saved,0);
+s=checkpoints.create('album:first-mind');assert.equal(ui.selected().id,'first-mind');
+ui.open();assert(html.includes('앨범 해금 후'));assert(!ui.choose('first-again'));assert(!ui.choose('__proto__'));
+assert(ui.choose('first-mind'));assert.equal(saved,1);assert.equal(closed,1);assert.equal(drawn,1);
+assert.equal(M.loadSave(JSON.stringify(s)).displayPoster,'first-mind');
+const bad=structuredClone(s);bad.displayPoster='first-again';assert(!M.valid(bad));assert.throws(()=>M.loadSave(JSON.stringify(bad)));
+delete s.displayPoster;assert(M.valid(M.loadSave(JSON.stringify(s))),'old backups remain compatible');
+s=checkpoints.create('complete');
+for(const a of M.albums){assert(ui.choose(a.id));assert.equal(ui.selected().id,a.id);assert.equal(M.loadSave(JSON.stringify(s)).displayPoster,a.id);}
+const art=require('../src/data/our-stage-album-keepsakes.json');
+for(const a of M.albums)assert(fs.existsSync(path.join(__dirname,'..',art[a.id].image)),'poster art exists: '+a.id);
+console.log('PASS posters: trainee/locked guards, eight unlocked selections, save/restore, legacy saves and all artwork files.');

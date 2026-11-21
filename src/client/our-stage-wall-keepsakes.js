@@ -12,7 +12,7 @@ module.exports=function({M,state,root,esc}){
   return items().map(item=>`<button class="wall-${item.kind} wall-keepsake" data-action="${item.action}" data-value="${item.id}" data-keepsake="${item.kind}" data-image-key="${esc(item.key)}" aria-label="${esc(item.label)}" title="${esc(item.label)}">${cache.get(item.key)?.url?`<img src="${cache.get(item.key).url}" alt="${esc(item.label)}">`:'<span class="keepsake-loading" aria-hidden="true">'+(item.kind==='pass'?'ARTIST PASS':'CONCERT TICKET')+'</span>'}</button>`).join('');
  }
  function refresh(){for(const item of items()){
-  const target=root.querySelector(`[data-keepsake="${item.kind}"]`);if(!target)continue;target.dataset.imageKey=item.key;
+  const targets=[...root.querySelectorAll(`[data-keepsake="${item.kind}"]`)];for(const target of targets){target.dataset.imageKey=item.key;
   let entry=cache.get(item.key);
   if(!entry){entry={};cache.set(item.key,entry);entry.pending=item.make().then(c=>{
    // Small wall previews reuse the full keepsake composition without retaining full-size canvases.
@@ -25,6 +25,6 @@ module.exports=function({M,state,root,esc}){
    if(!target.isConnected||target.dataset.imageKey!==item.key)return;
    const old=target.querySelector('img');if(old)old.src=url;else target.replaceChildren(img);
   });
- }}
+ }}}
  return {markup,refresh};
 };

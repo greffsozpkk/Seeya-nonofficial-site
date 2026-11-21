@@ -6,7 +6,7 @@ const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('nod
  const canvas=name=>({width:840,height:1200,name});
  const context={module:{exports:{}},Map,Promise,Image:class{async decode(){}},document:{createElement:()=>({getContext(){return {drawImage:c=>{this.name=c.name;}};},toDataURL(){return 'data:'+this.name;}})},require:id=>id.endsWith('keepsake-art')?{drawPass:({nickname})=>{calls++;return new Promise(resolve=>pending.push(()=>resolve(canvas(nickname))));}}:async({album})=>canvas(album.id)};
  vm.runInNewContext(fs.readFileSync(require.resolve('../src/client/our-stage-wall-keepsakes'),'utf8'),context);
- const ui=context.module.exports({M:{albums},state:()=>s,root:{querySelector:q=>nodes[q]},esc:x=>x});
+ const ui=context.module.exports({M:{albums},state:()=>s,root:{querySelectorAll:q=>nodes[q]?[nodes[q]]:[]},esc:x=>x});
  assert(!ui.markup().includes('wall-ticket'));assert(ui.markup().includes('trainee-info'));
  s.simple.debuted=true;assert(!ui.markup().includes('wall-ticket'));
  const target={isConnected:true,dataset:{},querySelector(){return this.img;},replaceChildren(img){this.img=img;}};nodes['[data-keepsake="pass"]']=target;

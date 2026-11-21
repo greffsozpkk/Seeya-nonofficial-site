@@ -206,6 +206,7 @@ function createModel(testMode=false) {
     if(!s.jobCounts||typeof s.jobCounts!=='object'||Array.isArray(s.jobCounts)||Object.keys(s.jobCounts).length!==3||!shopJobs.slice(1).every(j=>Number.isInteger(s.jobCounts[j.id])&&s.jobCounts[j.id]>=0&&s.jobCounts[j.id]<=1000000))return false;
     if(s.shopJob!==null&&(!s.shopJob||!shopJobById(s.shopJob.kind)||!Number.isSafeInteger(s.shopJob.end)||s.shopJob.end<0||jobCount(s,s.shopJob.kind)>=1000000))return false;
     if(typeof s.finale!=='boolean'||s.finale&&!finaleReady(s)||!(s.displayCard===null||cardOwned(s,s.displayCard)))return false;
+    if(s.displayPoster!==undefined&&!(typeof s.displayPoster==='string'&&albums.some(a=>a.id===s.displayPoster)&&albumUnlocked(s,s.displayPoster)))return false;
     if(!s.cardDecorations||typeof s.cardDecorations!=='object'||Array.isArray(s.cardDecorations))return false;
     if(!playDays.valid(s))return false;
     const earnedBadges=badges(s).filter(b=>b.earned).map(b=>b.id);

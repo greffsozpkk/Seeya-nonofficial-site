@@ -1,0 +1,157 @@
+/* A deeper front-facing studio; one cabinet holds the actual saved keepsakes. */
+#ourStage .room.studio-room-v2{aspect-ratio:5/4;background:#efd1b4 url('/images/game/our-stage/pixel-rehearsal-room-display-v1.png') center/100% 100% no-repeat;max-width:900px;margin-inline:auto;width:100%;container-type:inline-size}
+#ourStage .studio-room-v2 .pixel-trio{left:17%;width:66%;bottom:9%;gap:4%;z-index:3;pointer-events:none}
+#ourStage .studio-room-v2 .pixel-member{width:30.66%;flex:none}
+#ourStage .studio-room-v2 .member-labels{left:17%;right:17%;bottom:3.5%;gap:4%;font-size:clamp(10px,2.8cqw,15px)}
+#ourStage .studio-room-v2 .member-labels span{margin:0;flex:1;padding:2px 0;background:#fff8e8d9}
+#ourStage .studio-room-v2 .room-status{top:10%;left:50%;max-width:88%;font-size:clamp(11px,2.7cqw,16px);padding:3px 10px;z-index:1}
+#ourStage .room-cabinet{position:absolute;left:70.1%;top:32.7%;width:21%;height:24%;z-index:2}
+#ourStage .cabinet-miniatures{position:absolute;inset:0;pointer-events:none}
+#ourStage .cabinet-top{position:absolute;top:0;left:2%;right:2%;height:27%;display:flex;gap:5%;align-items:end;justify-content:center}
+#ourStage .room .cabinet-top .wall-pass,#ourStage .room .cabinet-top .wall-ticket,#ourStage .room .cabinet-top .cabinet-card{position:relative;inset:auto;width:auto;min-width:0;height:100%;max-width:30%;min-height:0;transform:none;padding:0;border:0;box-shadow:1px 1px 0 #321c2255;border-radius:0;flex:0 1 auto;overflow:hidden;background:#fff7e8;aspect-ratio:7/10}
+#ourStage .room .cabinet-top .wall-ticket{aspect-ratio:15/7;height:auto;width:42%;max-width:42%}
+#ourStage .room .cabinet-top .wall-keepsake img{width:100%;height:100%;object-fit:contain}
+#ourStage .room .cabinet-top .trainee-pass{font-size:5px;gap:0;justify-content:center}
+#ourStage .room .cabinet-top .trainee-pass small{display:none}
+#ourStage .room .cabinet-top .trainee-pass span,#ourStage .room .cabinet-top .trainee-pass b{font-size:4px}
+#ourStage .cabinet-card .pixel-collectible{width:100%;height:100%;min-height:0;padding:2px;border-width:1px;display:flex;flex-direction:column;overflow:hidden;border-radius:0}
+#ourStage .cabinet-card .collectible-art{height:0;min-height:0;flex:1;margin:0;padding:0}
+#ourStage .cabinet-card .collectible-art>img{height:100%;width:100%;object-fit:contain;padding:0;filter:none}
+#ourStage .cabinet-card .collectible-top,#ourStage .cabinet-card .collectible-caption,#ourStage .cabinet-card .card-badge-row,#ourStage .cabinet-card strong,#ourStage .cabinet-card small{display:none}
+#ourStage .cabinet-bottom{position:absolute;left:2%;right:2%;top:34%;height:29%;display:flex;align-items:end;justify-content:center;gap:5%}
+#ourStage .cabinet-gift{height:100%;width:30%;display:block}
+#ourStage .cabinet-gift svg{height:100%;width:100%;display:block}
+#ourStage .cabinet-open{position:absolute;inset:0;width:100%;height:100%;min-height:44px;padding:0;border:0;background:none;border-radius:0;box-shadow:none;display:flex;justify-content:center;align-items:end}
+#ourStage .cabinet-open:hover:not(:disabled){background:#fff4d51a;border:0;box-shadow:inset 0 0 0 2px #ffecc2}
+#ourStage .cabinet-open span{font-size:clamp(10px,2.5cqw,14px);line-height:1.6;color:#603d32;background:#fff3d9;border:1px solid #996649;padding:0 6px;margin-bottom:5%}
+#ourStage .cabinet-open:focus-visible{outline:3px solid #824461;outline-offset:4px}
+#ourStage .room-quick-actions{display:flex;gap:10px;flex-wrap:wrap;padding:12px 16px;border-top:1px solid #dec1b4;background:#fff9ee}
+#ourStage .room-quick-actions button{flex:1;min-height:44px}
+#ourStage .display-keepsakes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:center;justify-items:center;gap:16px;padding:18px 0;max-width:320px;margin-inline:auto}
+#ourStage .room-display-detail .wall-pass,#ourStage .room-display-detail .wall-ticket,#ourStage .room-display-detail .cabinet-card{position:relative;inset:auto;transform:none;display:block;width:110px;min-width:0;height:auto;min-height:44px;aspect-ratio:7/10;padding:0;border:1px solid #c49c88;border-radius:4px;background:#fff3e1;overflow:hidden}
+#ourStage .room-display-detail .wall-ticket{width:220px;max-width:100%;aspect-ratio:15/7;grid-column:1/-1;order:3}
+#ourStage .room-display-detail .wall-keepsake img{display:block;width:100%;height:auto;padding:0;object-fit:contain}
+#ourStage .room-display-detail .cabinet-card{height:157px}
+#ourStage .display-gifts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:12px 0 20px}
+#ourStage .display-gifts article{text-align:center;min-width:0}
+#ourStage .display-gifts svg{width:100%;height:85px;display:block}
+#ourStage .display-gifts strong{font-size:13px;line-height:1.5;display:block;word-break:keep-all}
+@media(min-width:1000px){#ourStage .studio-layout{max-width:900px;margin-inline:auto}}
+
+/* The wall card stays separate from the cabinet. Actors walk on the clear floor. */
+#ourStage .studio-room-v2 .room-featured-card{left:14%;right:auto;top:18%;width:11%;min-width:32px;aspect-ratio:.66;transform:rotate(2deg);z-index:2}
+#ourStage .room-featured-card .pixel-collectible{padding:3px;border-width:1px}
+#ourStage .room-featured-card .collectible-top{padding:0;max-height:15%;overflow:hidden}
+#ourStage .room-featured-card .card-brand{width:75%}
+#ourStage .room-featured-card .card-brand>span,#ourStage .room-featured-card .pixel-collectible>strong,#ourStage .room-featured-card .card-badge-row{display:none}
+#ourStage .room-featured-card .collectible-art{margin:2px 0 0}
+#ourStage .studio-room-v2 .room-capsule{left:auto;right:2.5%;bottom:13%;width:9%;min-width:30px;z-index:2;filter:drop-shadow(2px 2px 0 #30283e44)}
+#ourStage .studio-room-v2 .room-capsule>span{font-size:clamp(9px,2.3cqw,12px);padding:2px 0}
+#ourStage .room-residents{position:absolute;inset:0;pointer-events:none;z-index:3}
+#ourStage .room-actor{position:absolute;width:18%;aspect-ratio:440/680;min-height:44px;padding:0;border:0;background:none;box-shadow:none;border-radius:0;transform:translate(-50%,-100%);overflow:visible;pointer-events:auto;touch-action:manipulation;isolation:isolate}
+#ourStage .room-actor:hover:not(:disabled){background:none;border:0;box-shadow:none}
+#ourStage .room-actor:focus-visible{outline:2px dashed #874861;outline-offset:5px;border-radius:5px}
+#ourStage .room-actor-art{display:block;width:100%;height:100%;transform-origin:50% 100%}
+#ourStage .room-actor .member-sprite{overflow:visible;pointer-events:none}
+#ourStage .room-actor .scent-hand-mic{display:none}
+#ourStage .room-actor .scent-arm{transform-box:view-box}
+#ourStage .room-actor .scent-free-arm{transform-origin:66px 50px}
+#ourStage .room-actor .scent-singing-arm{transform-origin:168px 50px}
+#ourStage .room-actor .scent-elbow-left{transform-origin:42px 112px}
+#ourStage .room-actor .scent-elbow-right{transform-origin:192px 112px}
+#ourStage .room-actor .sprite-hair{transform-origin:220px 340px}
+#ourStage .room-actor .scent-leg-left{transform-origin:80px 208px}
+#ourStage .room-actor .scent-leg-right{transform-origin:156px 208px}
+#ourStage .room-actor-name{position:absolute;top:100%;left:50%;transform:translateX(-50%);font-size:clamp(10px,2.5cqw,14px);white-space:nowrap;background:#fff5dfdf;color:#5a393d;padding:1px 5px;line-height:1.4;border-radius:2px}
+#ourStage .room-emote{position:absolute;bottom:103%;left:50%;transform:translateX(-50%);font-size:clamp(10px,2.5cqw,15px);white-space:nowrap;color:#68364e;background:#fff9ee;border:1px solid #bb8596;padding:3px 7px;line-height:1.5;z-index:5;pointer-events:none}
+#ourStage .room-emote:empty{display:none}
+#ourStage .room-emote{max-width:24cqw;white-space:normal;word-break:keep-all;text-align:center;width:max-content;box-sizing:border-box}
+#ourStage .room-prop{position:absolute;left:43%;top:58%;width:45%;height:30%;pointer-events:none;z-index:3}
+#ourStage .room-prop svg{display:block;width:100%;height:100%;image-rendering:pixelated;shape-rendering:crispEdges}
+#ourStage .room-actor[data-pose="walk"] .room-actor-art{animation:room-walk .45s steps(2,end) infinite}
+#ourStage .room-actor[data-pose="walk"] .scent-leg-left{animation:room-step .45s steps(2,end) infinite}
+#ourStage .room-actor[data-pose="walk"] .scent-leg-right{animation:room-step .45s steps(2,end) -.225s infinite}
+#ourStage .room-actor[data-pose="walk"] .scent-free-arm{animation:room-arm-swing .45s ease-in-out infinite alternate}
+#ourStage .room-actor[data-pose="walk"] .scent-singing-arm{animation:room-arm-swing .45s ease-in-out -.45s infinite alternate}
+@keyframes room-walk{50%{transform:translateY(-2%)}}
+@keyframes room-step{50%{transform:translateY(-6px) rotate(5deg)}}
+@keyframes room-arm-swing{from{transform:rotate(-9deg)}to{transform:rotate(9deg)}}
+#ourStage .room-actor[data-pose="wave"] .scent-singing-arm{animation:room-wave .4s ease-in-out infinite alternate}
+#ourStage .room-actor[data-pose="wave"] .scent-elbow-right{transform:rotate(-55deg)}
+@keyframes room-wave{from{transform:rotate(-105deg)}to{transform:rotate(-125deg)}}
+#ourStage .room-actor[data-pose="nod"] .sprite-hair,#ourStage .room-actor[data-pose="score"] .sprite-hair{animation:room-nod 1.1s ease-in-out infinite}
+@keyframes room-nod{50%{transform:translateY(8px) rotate(3deg)}}
+/* Small daily gestures keep the face forward and preserve the sprite's pixel proportions. */
+#ourStage .room-actor[data-pose="hair"] .scent-singing-arm{animation:room-hair-arm 1.7s ease-in-out infinite}
+#ourStage .room-actor[data-pose="hair"] .scent-elbow-right{transform:rotate(-48deg)}
+#ourStage .room-actor[data-pose="hair"] .sprite-hair{animation:room-hair-check 3.4s ease-in-out infinite}
+@keyframes room-hair-arm{0%,100%{transform:rotate(-105deg)}50%{transform:rotate(-119deg)}}
+@keyframes room-hair-check{0%,100%{transform:rotate(0)}25%{transform:rotate(-3deg)}75%{transform:rotate(3deg)}}
+#ourStage .room-actor[data-pose="hum"] .room-actor-art{animation:room-hum 1.4s ease-in-out infinite}
+#ourStage .room-actor[data-pose="hum"] .scent-leg-right{animation:room-toe-tap .7s steps(2,end) infinite}
+#ourStage .room-actor[data-pose="hum"] .scent-free-arm{animation:room-arm-swing .7s ease-in-out infinite alternate}
+#ourStage .room-actor[data-pose="hum"] .room-emote{background:none;border:0;color:#95527c;font-size:clamp(18px,4.5cqw,28px);animation:room-notes 1.4s ease-in-out infinite}
+@keyframes room-hum{25%{transform:rotate(-3deg)}75%{transform:rotate(3deg)}}
+@keyframes room-toe-tap{50%{transform:translateY(-5px) rotate(4deg)}}
+@keyframes room-notes{0%,100%{transform:translate(-50%,0);opacity:.6}50%{transform:translate(-50%,-7px);opacity:1}}
+#ourStage .room-actor[data-pose="greet"][data-greeting-side="right"] .scent-singing-arm{animation:room-wave .45s ease-in-out infinite alternate}
+#ourStage .room-actor[data-pose="greet"][data-greeting-side="right"] .scent-elbow-right{transform:rotate(-55deg)}
+#ourStage .room-actor[data-pose="greet"][data-greeting-side="left"] .scent-free-arm{animation:room-wave-left .45s ease-in-out infinite alternate}
+#ourStage .room-actor[data-pose="greet"][data-greeting-side="left"] .scent-elbow-left{transform:rotate(55deg)}
+@keyframes room-wave-left{from{transform:rotate(105deg)}to{transform:rotate(125deg)}}
+#ourStage .room-actor[data-pose="heart"] .scent-free-arm{transform:rotate(-38deg)}
+#ourStage .room-actor[data-pose="heart"] .scent-singing-arm{transform:rotate(38deg)}
+#ourStage .room-actor[data-pose="heart"] .room-emote{color:#c45883;font-size:clamp(18px,5cqw,28px);animation:room-heart .7s ease-in-out infinite alternate}
+@keyframes room-heart{to{transform:translate(-50%,-5px) scale(1.12)}}
+#ourStage .room-actor[data-pose="stretch"] .scent-free-arm{animation:room-stretch-left 2s ease-in-out infinite}
+#ourStage .room-actor[data-pose="stretch"] .scent-singing-arm{animation:room-stretch-right 2s ease-in-out infinite}
+@keyframes room-stretch-left{0%,100%{transform:rotate(15deg)}50%{transform:rotate(135deg)}}
+@keyframes room-stretch-right{0%,100%{transform:rotate(-15deg)}50%{transform:rotate(-135deg)}}
+#ourStage .room-actor[data-pose="water"] .scent-singing-arm{transform:rotate(-95deg)}
+#ourStage .room-actor[data-pose="water"] .scent-elbow-right{transform:rotate(-50deg)}
+#ourStage .room-actor[data-pose="water"] .room-prop{top:35%;left:54%;width:30%;animation:room-sip 1.8s ease-in-out infinite}
+@keyframes room-sip{50%{transform:rotate(-18deg) translateY(-6%)}}
+#ourStage .room-actor[data-pose="score"] .scent-free-arm{transform:rotate(-25deg)}
+#ourStage .room-actor[data-pose="score"] .scent-singing-arm{transform:rotate(25deg)}
+#ourStage .room-actor[data-pose="score"] .room-prop{left:18%;top:55%;width:68%}
+#ourStage .room-actor[data-pose="capsule"] .scent-singing-arm{transform:rotate(-65deg)}
+#ourStage .room-actor[data-pose="capsule"] .scent-elbow-right{animation:room-crank .65s ease-in-out infinite alternate}
+@keyframes room-crank{from{transform:rotate(-18deg)}to{transform:rotate(18deg)}}
+#ourStage .room-actor[data-pose="capsule"] .room-prop{opacity:0;left:69%;top:57%;width:35%}
+#ourStage .room-actor.capsule-received .room-prop{opacity:1;animation:room-capsule-pop .5s ease-out both}
+#ourStage .room-actor.capsule-received .scent-elbow-right{animation:none}
+@keyframes room-capsule-pop{from{transform:translate(35%,60%) scale(.5)}to{transform:none}}
+#ourStage .machine-turning .room-capsule .capsule-machine-art{animation:room-machine .2s steps(2,end) infinite}
+@keyframes room-machine{50%{transform:translateX(2px) rotate(2deg)}}
+#ourStage .life-paused .room-actor *,#ourStage .life-paused .room-capsule *{animation-play-state:paused!important}
+#ourStage .room-life-controls{display:flex;gap:8px;flex-wrap:wrap;padding:0 16px 12px;background:#fff9ee}
+#ourStage .room-life-controls button{font-size:12px;min-height:36px;padding:7px 10px;background:transparent}
+#ourStage .room-life-status{position:absolute;clip-path:inset(50%);height:1px;width:1px;overflow:hidden}
+@media(prefers-reduced-motion:reduce){#ourStage .room-actor *,#ourStage .room-capsule *{animation:none!important}}
+
+/* Album posters occupy the clear wall above the cabinet, away from the mirror. */
+#ourStage .room-album-poster{position:absolute;left:73%;top:7%;width:13%;aspect-ratio:3/4;padding:2px;border:2px solid #805c4b;border-radius:0;background:#fff7e8;box-shadow:2px 3px 0 #49303240;z-index:2;min-height:0;container-type:inline-size}
+#ourStage .room-album-poster:before{content:"";position:absolute;left:35%;top:-4px;width:30%;height:6px;background:#dbbc91d9;transform:rotate(-3deg)}
+#ourStage .room-album-poster:hover:not(:disabled){border-color:#a65b7b;background:#fff7e8;box-shadow:2px 3px 0 #49303240}
+#ourStage .album-poster-art{display:flex;flex-direction:column;align-items:center;justify-content:space-between;gap:3%;width:100%;aspect-ratio:3/4;box-sizing:border-box;padding:5%;background:var(--poster-paper);color:var(--poster-ink);overflow:hidden}
+#ourStage .poster-brand{height:10%;width:48%;display:flex;align-items:center}
+#ourStage .poster-brand img{width:100%;height:100%;object-fit:contain}
+#ourStage .poster-illustration{display:block;width:100%;aspect-ratio:1;object-fit:contain;image-rendering:pixelated}
+#ourStage .album-poster-art strong{display:block;font-size:12px;line-height:1.1;text-align:center;word-break:keep-all;margin:0}
+#ourStage .album-poster-art small{font-size:8px;line-height:1.1;white-space:nowrap}
+#ourStage .room-album-poster .album-poster-art strong{font-size:9cqw}
+#ourStage .room-album-poster .album-poster-art small{font-size:5cqw}
+#ourStage .room .room-album-poster img{padding:0;margin:0;filter:none}
+#ourStage .room .room-album-poster .poster-brand img{height:100%}
+#ourStage .room .room-album-poster .poster-illustration{height:auto}
+#ourStage .poster-empty{display:grid;place-content:center;height:100%;font-size:12cqw;line-height:1.6;color:#967465}
+#ourStage .room-poster-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px 10px;margin:20px 0}
+#ourStage .room-poster-grid>button{padding:4px;min-width:0;background:#fff8ee;border:1px solid #ddc2af;container-type:inline-size;display:flex;flex-direction:column;gap:8px;border-radius:4px}
+#ourStage .room-poster-grid .album-poster-art strong{font-size:9cqw}
+#ourStage .room-poster-grid .album-poster-art small{font-size:5cqw}
+#ourStage .room-poster-grid>button>span:last-child:not(.album-poster-art){font-size:12px;line-height:1.5;align-self:center}
+#ourStage .room-poster-grid>button[aria-pressed="true"]{border:2px solid #995574;box-shadow:0 0 0 2px #99557422}
+#ourStage .room-poster-grid .is-locked{opacity:.6}
+#ourStage .room-poster-grid .is-locked .album-poster-art{filter:grayscale(1)}
+#ourStage .room-quick-actions button{flex:1 1 100px}
+@media(min-width:650px){#ourStage .room-poster-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
