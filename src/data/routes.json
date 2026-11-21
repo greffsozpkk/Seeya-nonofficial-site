@@ -360,5 +360,11 @@
     "path": "/fan-letters/",
     "title": "씨야의 밤을 수놓는 우리의 별자리 · FAN LETTERS | SEEYA ARCHIVE",
     "description": "씨야에게 보내는 응원과 방문 인사를 밤하늘의 별로 남겨보세요."
+  },
+  {
+    "key": "our-stage",
+    "path": "/game/our-stage/",
+    "title": "씨야 키우기 · SEEYA PLAY",
+    "description": "연습하고, 노래와 추억을 모아 씨야의 무대를 완성해요. 의상과 도트 카드, 앨범 기념 티켓까지 함께 모아보세요."
   }
 ]

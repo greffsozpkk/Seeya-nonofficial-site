@@ -1,6 +1,6 @@
 'use strict';
-module.exports=function({root,sprite,styles,esc}){
- const G=require('../shared/our-stage-connect'),key='seeya-our-stage-connect-v1';
+module.exports=function({root,sprite,styles,esc,key='seeya-our-stage-connect-v1'}){
+ const G=require('../shared/our-stage-connect');
  let game=null,selected=null,highlight=[],path=null,pathUntil=0,paused=true,last=0,saveAt=0,resetAsked=false,message='',storageFailed=false;
  try{const raw=localStorage.getItem(key);if(raw){const parsed=JSON.parse(raw);if(G.valid(parsed))game=parsed;else message='저장된 판을 읽지 못했어요. 새 판으로 시작해 주세요.';}}catch{message='저장된 판을 불러오지 못했어요. 이 화면에서 새 판을 시작할 수 있어요.';}
  const tileArt=require('./our-stage-style-tile'),faces=G.tiles.map(t=>tileArt(t));

@@ -77,6 +77,7 @@ require('./check-our-stage-backstage');
 require('./check-our-stage-coins');
 require('./check-our-stage-stories');
 require('./check-our-stage');
+require('./check-our-stage-public');
 
 require('./check-our-stage-mini');
 

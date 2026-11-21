@@ -41,7 +41,8 @@ const corrupt=structuredClone(checkpoints[0]);corrupt.albums=['first-again'];ass
 const legacy=require('../src/shared/our-stage-legacy'),old=legacy.fresh();
 const migrated=M.loadSave(JSON.stringify(old));assert.equal(migrated.version,11);assert.equal(M.count(migrated),1);assert.deepEqual(migrated.albums,[]);
 assert.equal(old.version,3);
-assert(!fs.readFileSync('game/index.html','utf8').includes('/our-stage/'));
+assert(fs.readFileSync('game/index.html','utf8').includes('href="/game/our-stage/"'));
+assert(!fs.readFileSync('game/index.html','utf8').includes('/game/our-stage/test/'));
 console.log('PASS album journey: sequential 8 chapters, 82 track slots, wrong/retry gates, 1-second practice, costumes, 52 badges, persistence, v3 migration, invalid skip rejection.');
 module.exports={complete:s,checkpoints};
 

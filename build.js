@@ -154,7 +154,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  if(key==='worldcup-test'||key==='worldcup'){vars.pageHead=`<meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="${worldcupCss}">`;vars.scripts=`<script defer src="${worldcupJs}"></script>`+(key==='worldcup'?`<script defer src="${siteJs}"></script>`:'');}
  if(key==='clinic'||key==='clinic-test'){vars.pageHead=`<link rel="stylesheet" href="${clinicCss}">`;vars.scripts=`<script defer src="${clinicJs}"></script>`;}
  if(key==='my-concert-test'||key==='my-concert'){vars.pageHead=`<link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${myConcertJs}"></script>`;}
- if(key==='our-stage-test'){vars.pageHead=`<link rel="stylesheet" href="${ourStageCss}">`;vars.scripts=`<script defer src="${ourStageJs}"></script>`;}
+ if(key==='our-stage-test'||key==='our-stage'){vars.pageHead=`<link rel="stylesheet" href="${ourStageCss}">`;vars.scripts=`<script defer src="${ourStageJs}"></script>`;}
  if(key==='first-again-magazine')vars.pageHead=`<link rel="stylesheet" href="${magazineCss}">`;
  if(key==='galaxy-test'||key==='fan-letters'){vars.pageHead=`<link rel="stylesheet" href="${galaxyCss}">`;vars.scripts=`<script defer src="${galaxyJs}"></script>`;}
  if(key==='diary-privacy')vars.pageHead+=`<link rel="stylesheet" href="${passportCss}">`;

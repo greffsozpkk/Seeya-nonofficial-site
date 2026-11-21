@@ -1,0 +1,24 @@
+"use strict";
+const assert=require('node:assert/strict'),fs=require('node:fs');
+const env=require('../src/shared/our-stage-environment'),storageFactory=require('../src/client/our-stage-storage');
+const base=require('../src/shared/our-stage'),wrap=B=>require('../src/shared/our-stage-leisure')(require('../src/shared/our-stage-first-release')(require('../src/shared/our-stage-simple')(B)));
+const P=wrap(base),T=wrap(base.forTest()),pub=env('/game/our-stage/'),test=env('/game/our-stage/test/');
+assert.equal(pub.isTest,false);assert.equal(test.isTest,true);assert.deepEqual(env('/game/our-stage'),pub);
+assert.equal(test.key,'seeya-our-stage-local-v1');
+for(const k of ['key','outfitKey','connectKey'])assert.notEqual(pub[k],test[k]);
+const savedTest=require('../src/shared/our-stage-test-tools')(T).create('all-content',1800000000000);
+const memory=new Map([[test.key,JSON.stringify(savedTest)],[test.outfitKey,'first-again'],[test.connectKey,'existing puzzle']]);
+const storage={getItem:k=>memory.get(k)||null,setItem:(k,v)=>memory.set(k,v)};
+const testBefore=memory.get(test.key),testStore=storageFactory({storage,key:test.key,load:T.loadSave});
+assert.equal(storage.getItem(pub.key),null);
+const publicStore=storageFactory({storage,key:pub.key,load:P.loadSave}),fresh=P.fresh(1800000000000);
+assert.equal(fresh.simple.debuted,false);assert.equal(P.practiceSeconds(fresh,'scent'),3);
+assert(publicStore.write(fresh));assert.equal(testStore.pull(),null);assert.equal(memory.get(test.key),testBefore);
+assert.equal(storage.getItem(test.outfitKey),'first-again');assert.equal(storage.getItem(test.connectKey),'existing puzzle');
+assert.equal(P.timing.recoveryMs,90000);assert.equal(T.timing.recoveryMs,1000);
+const read=p=>fs.readFileSync(p,'utf8'),html=read('game/our-stage/index.html'),preview=read('game/our-stage/test/index.html');
+assert(html.includes('href="/game/"'));assert(!html.includes('test-timing'));assert(!html.includes('noindex'));assert(html.includes('rel="canonical" href="https://seeya-fanpage.com/game/our-stage/"'));
+assert(preview.includes('test-timing'));assert(preview.includes('noindex,nofollow'));assert(preview.includes('href="/game/test/"'));
+for(const [file,dest] of [['game/index.html','/game/our-stage/'],['game/test/index.html','/game/our-stage/test/']]){const hub=read(file);assert.equal(hub.split('id="game-growing-title"').length-1,1);assert(hub.includes('href="'+dest+'"'));}
+assert(read('sitemap.xml').includes('/game/our-stage/</loc>'));assert(!read('sitemap.xml').includes('/game/our-stage/test/'));
+console.log('PASS Our Stage launch: public hub/canonical/sitemap, retained test route, separate saves/outfits/puzzle, no automatic test carry and production timing.');

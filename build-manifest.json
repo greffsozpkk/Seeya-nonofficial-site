@@ -58,6 +58,7 @@
     "diary/privacy/index.html",
     "game/my-concert/index.html",
     "fan-letters/index.html",
+    "game/our-stage/index.html",
     "sitemap.xml",
     "manifest.webmanifest",
     "sw.js"
@@ -105,7 +106,7 @@
     "assets/galaxy.d1a4b969c212.css",
     "assets/galaxy.7c55ff52e76a.js",
     "assets/our-stage.1940c6de3a4d.css",
-    "assets/our-stage.78c0a6f78d92.js"
+    "assets/our-stage.7939d7fa4604.js"
   ],
   "auxiliary": [
     "game/our-stage/test/index.html",
