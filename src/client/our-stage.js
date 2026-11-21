@@ -249,7 +249,7 @@ function concertRows(){
 }
 function concert(){return panel(`<div class="line"><h2>앨범 콘서트</h2><div class="action-row">${button('무대 꾸미기','capsule-stage')}${button('내 아티스트 패스','pass-open')}</div></div><p>연습한 노래가 하나의 공연으로. 콘서트를 마치면 다음 앨범이 열려요.</p><div class="album-concert-list">${M.albums.map(albumConcertCard).join('')}</div>${soloConcertList()}<div class="growth-actions">${link('라디오로 여운 이어가기','/radio/')}${link('다이어리에 추억 남기기','/diary/')}</div>`);}
 function draw(){const focus=document.activeElement,restore=focus&&($('#screen').contains(focus)||$('#tabs').contains(focus)),identity=restore?{id:focus.id,action:focus.dataset.action,value:focus.dataset.value,start:focus.selectionStart,end:focus.selectionEnd}:null;const a=M.albumById(selectedAlbum);if(!s.simple.debuted)scene=0;$('.os-chapter').innerHTML=!s.simple.debuted?mark('CHAPTER 00 · TRAINEE')+'<strong>연습실에 처음 모인 날</strong>':mark(a.type)+'<strong>'+a.name+'</strong><small>'+M.albumCount(s,a.id)+' / '+a.tracks.length+'트랙 수집</small>'; if(!open(track))track='scent';$('#tabs').innerHTML=(s.simple.debuted?headings:headings.slice(0,1)).map((name,i)=>`<button data-action="tab" data-value="${i}" aria-current="${scene===i?'page':'false'}"><span>${icons[i]}</span>${name}</button>`).join('');$('#screen').innerHTML=optimized([studio,songs,stories,memories,concert,designs][scene]());wallUI?.refresh();ticketUI?.refreshGallery();roomLife?.bind();if(identity){const next=identity.id?document.getElementById(identity.id):[...root.querySelectorAll('[data-action]')].find(e=>e.dataset.action===identity.action&&e.dataset.value===identity.value);if(next){next.focus({preventScroll:true});if(identity.start!=null&&next.setSelectionRange)try{next.setSelectionRange(identity.start,identity.end);}catch{}}}}
-function dialog(content){motionUI?.stop();coinUI?.clearStage();vcrUI?.destroy();if(!$('#stageModal').open)returnFocus=document.activeElement;$('#modalBody').innerHTML=optimized(content);const h=$('#modalBody h2');if(h){h.id='stageModalTitle';h.tabIndex=-1;}if(!$('#stageModal').open)$('#stageModal').showModal();h?.focus({preventScroll:true});}
+function dialog(content){motionUI?.stop();coinUI?.clearStage();vcrUI?.destroy();if(!$('#stageModal').open)returnFocus=document.activeElement;$('#modalBody').innerHTML=optimized(content);$('#modalBody').scrollTop=0;$('#stageModal').scrollTop=0;const h=$('#modalBody h2');if(h){h.id='stageModalTitle';h.tabIndex=-1;}if(!$('#stageModal').open)$('#stageModal').showModal();h?.focus({preventScroll:true});}
 function close(){motionUI?.stop();coinUI?.clearStage();window.clearTimeout(showTimer);showing=false;$('#stageModal').close();}
 function book(id){
  const m=M.members.find(x=>x.id===id),isReunion=id==='reunion';
@@ -348,6 +348,7 @@ function management(){
  dialog(`${mark('LOCAL SAVE')}<h2>저장 관리</h2><p>진행 상황은 이 주소를 여는 브라우저에 자동으로 저장돼요. 다른 기기로 옮기려면 백업 파일을 사용해 주세요.</p><div class="stack">${button('백업 내려받기','export')}${store?.dirty?button('저장 재시도','save-retry')+button('저장된 기록으로 돌아가기','saved-confirm'):button('백업 불러오기','import')+button('처음부터 다시 시작','reset')}</div>${button('마지막 백업 교체 전 기록 복원','restore-import')}${button('전환 전 원본 백업','export-before-simple')}<p role="status" id="saveNote">${store?.dirty?saveMessage():''}</p>`);
 }
 function sync(){try{const next=store?.pull();if(next)s=next;saveNotice();}catch{say('다른 탭의 기록을 읽지 못했어요. 현재 화면의 기록은 유지합니다.');}}
+function focusGameScreen(){if(matchMedia('(max-width:650px)').matches)$('#screen').scrollIntoView({block:'start'});$('#screen').focus({preventScroll:true});}
 function handle(a,v){
  if(connectUI.handle(a,v))return;
  if(a==='tab'||a==='wardrobe-view')connectUI.pause();
@@ -405,14 +406,14 @@ function handle(a,v){
  if(a==='train-all'){if(M.trainAll(s,v)){save();draw();say(s.queue?'다음 곡의 연습을 예약했어요.':'연습을 시작했어요.');}return;}
  if(a==='bridge-then-album'){bridge(v);return;}
  if(a==='bridge-skip'){clearTimeout(showTimer);handle('album-view','still-here');return;}
- if(a==='tab'){if($('#stageModal').open)close();scene=Number(v);draw();$('#screen').focus({preventScroll:true});return;}
+ if(a==='tab'){if($('#stageModal').open)close();scene=Number(v);draw();focusGameScreen();return;}
  if(a==='practice-next'){const [from,to]=v.split('|');if(from!==track||!ready(from)||!open(to))return;if(!giftUI.beforeNext(from,to))handle('pick',to);return;}
  if(a==='pick'){if($('#stageModal').open)close();if(!open(v))return;if($('#stageModal').open)close();scene=0;track=v;selectedAlbum=M.songAlbum(v).id;draw();$('.practice').scrollIntoView({block:'center'});return;}
  if(a==='wear-reward'){if(!M.outfitOwned(s,v))return;close();handle('outfit',v);return;}
  if(a==='mini-open'){scene=5;wardrobeView='coins';draw();const card=$('[data-action="mini-start"][data-value="'+v+'"]');card?.scrollIntoView({block:'center'});card?.focus();return;}
- if(a==='open-coins'){scene=5;wardrobeView='coins';draw();return;}
+ if(a==='open-coins'){scene=5;wardrobeView='coins';draw();focusGameScreen();return;}
  if(a==='daily-coins'){if(M.claimDaily(s)){save();draw();say(`오늘의 출석 보상 ${M.dailyReward}코인을 받았어요.`);}else{draw();say('오늘의 출석 보상은 이미 받았어요.');}return;}
- if(a==='wardrobe-view'){close();scene=5;wardrobeView=v;draw();return;}
+ if(a==='wardrobe-view'){close();scene=5;wardrobeView=v;draw();focusGameScreen();return;}
  if(a==='shop-section'){if(['clothes','stage'].includes(v)){shopSection=v;draw();}return;}
  if(a==='shop-member'){if(M.memberIds.includes(v)){shopMember=v;draw();}return;}
  if(a==='shop-job'){const job=M.shopJobById(v);if(job&&M.startShopJob(s,Date.now(),v)){save();draw();say(`${job.name} 시작! ${job.seconds}초 뒤 ${job.reward}코인이 들어와요.`);}return;}

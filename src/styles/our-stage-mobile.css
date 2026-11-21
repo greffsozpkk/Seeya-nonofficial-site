@@ -1,0 +1,26 @@
+/* Keep the close control outside the scroll area, even on short phones. */
+html:has(#stageModal[open]){overflow:hidden}
+#ourStage #stageModal{overflow:hidden;padding:50px 22px 22px;max-height:calc(100dvh - 24px)}
+#ourStage #modalBody{max-height:calc(100dvh - 100px);overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:3px 4px 5px}
+#ourStage #stageClose{top:6px;right:8px;width:44px;height:44px;z-index:10;background:#fffdfd;border:1px solid #eadce3;border-radius:50%}
+#ourStage #modalBody h2{overflow-wrap:anywhere}
+@media(max-width:650px){
+ body:has(#ourStage) .mobile-tabs>a{min-width:0;padding-inline:4px}
+ body:has(#ourStage) .mobile-tabs>a>span{white-space:nowrap}
+ #ourStage #stageModal{width:calc(100% - 16px);padding:50px 12px 16px}
+ #ourStage #modalBody{max-height:calc(100dvh - 94px)}
+ #ourStage #tabs{position:sticky;top:57px;z-index:12;box-shadow:0 3px 7px #482b3c12}
+ #ourStage #tabs button{font-size:12px;min-height:44px;padding:9px 2px}
+ #ourStage #screen,#ourStage .practice{scroll-margin-top:124px}
+ #ourStage .os-heading p{margin-bottom:4px}
+ #ourStage .link,#ourStage .room-life-controls button{min-height:44px;font-size:13px;padding:10px 12px}
+ #ourStage summary{min-height:44px;padding:10px 0;font-size:13px}
+ #ourStage input:not([type=checkbox]):not([type=radio]):not([type=file]),#ourStage select,#ourStage textarea{font-size:16px;min-height:44px;max-width:100%}
+ #ourStage label:has(#cardOwned){display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:8px}
+ #ourStage #cardOwned{width:20px;height:20px;margin:0;accent-color:#874861}
+ #ourStage .private-note{font-size:13px;line-height:1.7}
+ #ourStage .room-life-controls{gap:10px}
+ #ourStage .album-show .performance-controls{gap:10px}
+ #ourStage .album-show .performance-controls button{font-size:13px}
+ #ourStage .card-detail-actions,#ourStage .growth-actions,#ourStage .leisure-actions{gap:10px}
+}

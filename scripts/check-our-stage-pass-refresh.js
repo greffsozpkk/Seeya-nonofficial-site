@@ -9,7 +9,7 @@ const assert=require('node:assert/strict'),vm=require('node:vm'),fs=require('nod
  const context={module:{exports:{}},Image:class{set src(v){this.value=v;}async decode(){if(fail)throw Error('decode');if(defer)await new Promise(r=>{finish=r;});}},File:class{},navigator:{},document:{},
  require:id=>id==='./our-stage-keepsake-art'?{drawPass:async({nickname})=>({toDataURL:()=>{src='data:'+nickname;return src;},toBlob:f=>f({})})}:()=>{}};
  vm.runInNewContext(fs.readFileSync(require.resolve('../src/client/our-stage-tickets'),'utf8'),context);
- const ui=context.module.exports({M:{albumById:()=>null},state:()=>s,root:{querySelector:q=>nodes[q]},dialog:()=>{},button:()=>'',esc:x=>x,save:()=>true,draw:()=>draws++,refreshWall:()=>wallRefreshes++});
+ const ui=context.module.exports({M:{albums:[],albumById:()=>null},state:()=>s,root:{querySelector:q=>nodes[q]},dialog:()=>{},button:()=>'',esc:x=>x,save:()=>true,draw:()=>draws++,refreshWall:()=>wallRefreshes++});
  await ui.showPass();const initial=image,beforeWrites=writes;
  nodes['#passNickname'].value='새 이름';defer=true;const pending=ui.handle('pass-name-save');
  await new Promise(setImmediate);

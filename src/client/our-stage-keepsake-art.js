@@ -20,11 +20,13 @@ async function drawPass({nickname,issuedAt}){
  text('OUR STAGE',28,26,170,10,'#f7e6ee');c.textAlign='right';text('ARTIST · 2006',392,26,170,10,'#f7e6ee');c.textAlign='center';
  try{c.drawImage(await load('/images/game/our-stage/card-logo.svg'),140,109,140,40);}catch{text('SEEYA',210,142,250,32);}
  text('A R C H I V E',210,159,230,9,'#81536d');c.strokeStyle='#cda55f';c.lineWidth=2;c.beginPath();c.roundRect(105,170,210,28,14);c.stroke();text('A R T I S T  P A S S',210,189,200,11,'#8d6a2a');
- c.fillStyle='#2a2140';c.beginPath();c.roundRect(46,208,328,190,14);c.fill();
- const l=layers['first-mind'];try{const [body,head]=await Promise.all([load(l.image),load(l.headImage||l.image)]);c.save();c.beginPath();c.rect(46,208,328,190);c.clip();c.imageSmoothingEnabled=false;
- for(const [i,id] of ['br','gr','yj'].entries()){const m=l.members[id],scale=320/(m.chin-m.head[1]),hw=m.head[2]*scale,hh=m.head[3]*scale,bw=m.body[2]*320/m.body[3],unit=.23,cx=101+i*109;
- c.fillStyle='#ead7e21a';c.fillRect(cx-35,208,70,190);c.drawImage(head,...m.head,cx-hw*unit/2,225,hw*unit,hh*unit);c.drawImage(body,...m.body,cx-bw*unit/2,225+315*unit,bw*unit,320*unit);}
- c.restore();}catch{text('세 목소리와 함께하는 첫 무대',210,307,300,16,'#fff8f1');}
+ // A close-up trio portrait keeps the fan's name as the identity of the pass.
+ c.fillStyle='#f2e3eb';c.beginPath();c.roundRect(46,208,328,190,14);c.fill();
+ const l=layers['first-mind'];try{const head=await load(l.headImage||l.image);c.save();c.beginPath();c.roundRect(46,208,328,190,14);c.clip();c.imageSmoothingEnabled=false;
+ for(const [i,id] of ['br','gr','yj'].entries()){const m=l.members[id],unit=.235,cx=98+i*108,y=320-(m.chin-m.head[1])*unit;
+ c.fillStyle=['#e4d3e4','#f9edf1','#e9d9cb'][i];c.beginPath();c.arc(cx,300,51,0,Math.PI*2);c.fill();
+ c.drawImage(head,...m.head,cx-m.head[2]*unit/2,y,m.head[2]*unit,m.head[3]*unit);}
+ c.restore();}catch{text('세 목소리와 함께하는 첫 무대',210,307,300,16,'#81536d');}
  c.textAlign='left';text('함께한 팬',46,426,328,10,'#9b5a74');text(nickname||'익명의 씨야 팬',46,459,328,30,'#40343e',800);c.fillStyle='#cda55f';c.fillRect(46,478,328,2);
  const date=new Date(issuedAt).toLocaleDateString('ko-KR',{timeZone:'Asia/Seoul'});for(const [i,[label,value]] of [['DEBUT','2006. 02. 24.'],['발급일',date],['CHAPTER','00 → 01']].entries()){const x=46+i*116;text(label,x,501,108,9,'#9b5a74');text(value,x,521,108,13);}
  c.setLineDash([3,3]);c.strokeStyle='#d6c4cd';c.beginPath();c.moveTo(46,555);c.lineTo(374,555);c.stroke();text('팬 게임 기념 패스 · 실제 출입증이 아닙니다',46,573,328,9,'#8b7d86');text('OS-PASS-'+new Date(issuedAt+9*3600000).toISOString().slice(2,16).replace(/[-T:]/g,''),46,588,328,8,'#8b7d86');return canvas;

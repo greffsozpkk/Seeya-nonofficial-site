@@ -126,7 +126,7 @@ const magazineCss=asset('magazine','css',read('src/styles/magazine.css'));
 const galaxyCss=asset('galaxy','css',read('src/styles/galaxy.css'));
 const galaxyJs=asset('galaxy','js',bundle('src/client/galaxy.js'));
 const ourStageRoute=json('src/data/our-stage-test-route.json');
-const ourStageCss=asset('our-stage','css',read('src/styles/our-stage.css')+'\n'+read('src/styles/our-stage-choreo.css')+'\n'+read('src/styles/our-stage-first-release.css')+'\n'+read('src/styles/our-stage-leisure.css')+'\n'+read('src/styles/our-stage-capsule-design.css')+'\n'+read('src/styles/our-stage-room.css'));
+const ourStageCss=asset('our-stage','css',read('src/styles/our-stage.css')+'\n'+read('src/styles/our-stage-choreo.css')+'\n'+read('src/styles/our-stage-first-release.css')+'\n'+read('src/styles/our-stage-leisure.css')+'\n'+read('src/styles/our-stage-capsule-design.css')+'\n'+read('src/styles/our-stage-room.css')+'\n'+read('src/styles/our-stage-mobile.css'));
 const ourStageJs=asset('our-stage','js',bundle('src/client/our-stage.js'));
 const photosRaw=json('data/photos.json');
 const photos=(Array.isArray(photosRaw)?photosRaw:photosRaw.photos||[]).filter(x=>x&&x.hidden!==true).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||Number(a.order||999)-Number(b.order||999));
