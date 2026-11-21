@@ -16132,6 +16132,12 @@
         "url": "https://www.youtube.com/watch?v=iTtqKFZizDs",
         "publishedDate": "2025-12-13",
         "autoDiscovery": true
+      },
+      {
+        "label": "유튜브매니한",
+        "url": "https://www.youtube.com/watch?v=uzlspIuXUUA",
+        "publishedDate": "2025-12-19",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -16145,7 +16151,7 @@
     "dateBasis": "event",
     "endDate": "2025-12-07",
     "venue": "성신여자대학교 운정그린캠퍼스 대강당",
-    "updatedAt": "2026-11-19T07:45:15.880969+00:00"
+    "updatedAt": "2026-11-21T07:33:22.783074+00:00"
   },
   {
     "id": "v4145-6JiTQ12-tFg",
@@ -34104,7 +34110,14 @@
       "label": "벅스 방송 음반 정보",
       "url": "https://music.bugs.co.kr/album/20013938"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=A0jVSs_NXD4",
+        "publishedDate": "2015-12-19",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "tags": [
       "2012~2019",
@@ -34112,7 +34125,8 @@
     ],
     "note": "날짜는 공식 방송 음반 공개일입니다.",
     "dateStatus": "confirmed",
-    "dateBasis": "release"
+    "dateBasis": "release",
+    "updatedAt": "2026-11-21T07:33:22.783074+00:00"
   },
   {
     "id": "v490-kbs-20151213",
@@ -34176,6 +34190,12 @@
         "label": "KBS StarTV: 인물사전 · [소장각👍",
         "url": "https://www.youtube.com/watch?v=SO7TdgbFAJQ",
         "publishedDate": "2020-07-07"
+      },
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=67FPH1-cwkc",
+        "publishedDate": "2015-12-12",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -34189,7 +34209,7 @@
     "collaborators": [
       "황치열"
     ],
-    "updatedAt": "2026-10-02T15:11:10.369139+00:00"
+    "updatedAt": "2026-11-21T07:33:22.783074+00:00"
   },
   {
     "id": "v490-album-540431",
@@ -34581,7 +34601,14 @@
       "label": "KBS 레전드 케이팝",
       "url": "https://www.youtube.com/watch?v=Xvc8kRhU9lM"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "Toscana KIM",
+        "url": "https://www.youtube.com/watch?v=Y4vrTydbrCs",
+        "publishedDate": "2015-07-05",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "무대",
@@ -34589,7 +34616,8 @@
     ],
     "note": "",
     "dateBasis": "broadcast",
-    "publishedDate": "2026-08-18"
+    "publishedDate": "2026-08-18",
+    "updatedAt": "2026-11-21T07:33:22.783074+00:00"
   },
   {
     "id": "v490-album-515245",
