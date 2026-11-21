@@ -66,6 +66,8 @@ const title=id=>M.songs.find(x=>x.id===id)?.title||M.soloTrackById(id)?.title||'
 const has=id=>M.has(s,id), ready=id=>M.ready(s,id), open=id=>M.open(s,id),pct=id=>M.percent(s,id);
 function say(msg){$('#feedback').textContent=store?.dirty?saveMessage():msg;}
 let store;try{store=require('./our-stage-storage')({storage:localStorage,key,load:M.loadSave});}catch{blocked=true;}
+let backups;
+try{backups=require('./our-stage-backups')({storage:localStorage,key,load:M.loadSave,summary:(state,id)=>({album:id?([...M.albums,...M.soloAlbums].find(a=>a.id===id)?.name||id):!state.simple.debuted?'연습생':([...M.albums].reverse().find(a=>M.albumUnlocked(state,a.id))?.name||M.albums[0].name),songs:M.count(state),solo:state.solo?.done.length||0})});}catch{}
 function saveMessage(){return store?.conflict?'다른 탭의 기록과 충돌했어요. 현재 기록을 백업한 뒤 저장 관리에서 선택해 주세요.':'변경 내용을 저장하지 못했어요. 이 화면을 유지하고 저장을 재시도하거나 백업해 주세요.';}
 function saveNotice(){const box=$('#saveAlert');if(!box)return;box.hidden=!store?.dirty;if(store?.dirty){box.innerHTML='<p>'+saveMessage()+'</p>'+button('저장 재시도','save-retry')+button('현재 기록 백업','export')+button('저장 관리','storage');say('');}}
 let savingAction=false;const saveFailure=new Error('stage-save-failed');
@@ -83,7 +85,7 @@ function updateCollectionNotice(){
  if(added.length||newStories.length||addedCards.length){const notice=$('#albumNotice');notice.textContent=(addedCards.length?'도트 카드 '+addedCards.length+'장을 얻었어요. ':'')+(added.length?'✦ '+added.map(b=>b.name).join(' · ')+' 배지를 얻었어요. ':'')+(newStories.length?'이야기 '+newStories.length+'개가 열렸어요. 이야기 탭에서 만나보세요.':'');clearTimeout(noticeTimer);noticeTimer=setTimeout(()=>{notice.textContent='';},8000);}
 }
 
-function save(){if(!M.valid(s)){warn='기록의 형식을 확인하지 못해 저장을 멈췄어요. 현재 화면을 유지하고 백업해 주세요.';say(warn);if(savingAction)throw saveFailure;return false;}if(blocked||!store){warn='저장소를 사용할 수 없어요. 현재 화면을 닫지 말고 백업해 주세요.';say(warn);if(savingAction)throw saveFailure;return false;}const ok=store.write(s);saveNotice();if(!ok){if(savingAction)throw saveFailure;return false;}warn='';updateCollectionNotice();return true;}
+function save(){if(!M.valid(s)){warn='기록의 형식을 확인하지 못해 저장을 멈췄어요. 현재 화면을 유지하고 백업해 주세요.';say(warn);if(savingAction)throw saveFailure;return false;}if(blocked||!store){warn='저장소를 사용할 수 없어요. 현재 화면을 닫지 말고 백업해 주세요.';say(warn);if(savingAction)throw saveFailure;return false;}const ok=store.write(s);saveNotice();if(!ok){if(savingAction)throw saveFailure;return false;}warn='';backups?.auto(s,Date.now(),!document.hidden);updateCollectionNotice();return true;}
 function button(label,action,value='',kind='',disabled=false){return `<button class="${kind}" data-action="${action}" data-value="${value}" ${disabled?'disabled':''}>${label}</button>`;}
 function link(label,url){return `<a target="_blank" rel="noopener noreferrer" href="${url}">${label} ↗</a>`;}
 function panel(body,cls=''){return `<article class="panel ${cls}">${body}</article>`;}
@@ -343,9 +345,26 @@ function testAction(a,v){
  if(a==='test-mini-reset'){const earned=s.mini.earned;s.mini=M.mini.fresh();s.mini.earned=earned;{const earned=s.leisure.play.earned,total=s.leisure.play.total,recent=s.leisure.play.recent;s.leisure.play=M.play.fresh();Object.assign(s.leisure.play,{earned,total,recent});}save();close();scene=5;wardrobeView='coins';draw();say('테스트용으로 도전 횟수와 대기 시간을 초기화했어요. 보유 코인은 유지됩니다.');}
  return true;
 }
-function management(){
- dialog(`${mark('LOCAL SAVE')}<h2>저장 관리</h2><p>진행 상황은 이 주소를 여는 브라우저에 자동으로 저장돼요. 다른 기기로 옮기려면 백업 파일을 사용해 주세요.</p><div class="stack">${button('백업 내려받기','export')}${store?.dirty?button('저장 재시도','save-retry')+button('저장된 기록으로 돌아가기','saved-confirm'):button('백업 불러오기','import')+button('처음부터 다시 시작','reset')}</div>${button('마지막 백업 교체 전 기록 복원','restore-import')}${button('전환 전 원본 백업','export-before-simple')}<p role="status" id="saveNote">${store?.dirty?saveMessage():''}</p>`);
+const backupTime=at=>new Date(at).toLocaleString('ko-KR',{timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+function backupDescription(entry){return entry.valid?esc(entry.album)+' · '+entry.songs+'곡 수집'+(entry.solo?' · 솔로 '+entry.solo+'곡':''):'읽을 수 없는 원본 · 파일로 보관할 수 있어요.';}
+function management(note=''){
+ const entries=backups?.entries()||[],message=note||backups?.error||(!backups?'이 브라우저에서는 백업 목록을 사용할 수 없어요. 파일 백업을 이용해 주세요.':'');
+ dialog(`${mark('SAVE & BACKUP')}<h2>저장 관리</h2><p>진행 상황은 자동으로 저장됩니다.<br>이전 진행으로 돌아가려면 아래 백업을 선택해 주세요.</p><section class="stage-backups"><div class="line"><h3>이 브라우저의 백업</h3>${button('지금 백업하기','backup-create','','',!backups||blocked||store?.dirty)}</div><p class="private-note">하루 첫 접속·앨범 및 솔로 콘서트 첫 완료 시 자동 백업합니다. 최근 ${backups?.limit||12}개를 보관하며, 공간이 부족하면 오래된 백업부터 정리됩니다.</p><p id="backupNote" role="status">${esc(message)}</p><div class="stage-backup-list">${entries.map(e=>`<article class="stage-backup-item"><strong>${esc(backupTime(e.at))}</strong><span>${esc(e.reason)}</span><small>${backupDescription(e)}</small>${button(e.valid?'이 기록으로 복원':'원본 파일 내려받기',e.valid?'backup-preview':'backup-export',e.id,'',!!store?.dirty)}</article>`).join('')||'<p>아직 보관된 백업이 없어요.</p>'}</div><p class="private-note">현재 브라우저에만 보관됩니다. 브라우저 데이터를 삭제하거나 기기를 바꾸기 전에는 파일로 내려받아 주세요.</p></section><h3>파일 백업</h3><div class="growth-actions">${button('백업 내려받기','export')}${store?.dirty?button('저장 재시도','save-retry')+button('저장된 기록으로 돌아가기','saved-confirm'):button('백업 불러오기','import')}</div><details><summary>이전 기록·초기화</summary><div class="stack">${button('마지막 파일 백업 교체 전 기록 복원','restore-import')}${isTest?button('전환 전 원본 백업','export-before-simple'):''}${button('처음부터 다시 시작','reset')}</div></details><p role="status" id="saveNote">${store?.dirty?saveMessage():''}</p>`);
 }
+function backupAction(a,id){
+ if(!a.startsWith('backup-'))return false;
+ if(!backups){management('백업 목록을 사용할 수 없어요.');return true;}
+ if(a==='backup-create'){const result=backups.add(s);management(result.ok?'현재 진행을 백업했어요.':result.error);}
+ if(a==='backup-preview'){const entry=backups.entries().find(e=>e.id===id&&e.valid);if(!entry){management('이 백업을 읽지 못했어요. 다른 기록을 선택해 주세요.');return true;}dialog(`<h2>이 기록으로 돌아갈까요?</h2><p>${esc(backupTime(entry.at))}<br>${backupDescription(entry)}</p><p>현재 진행은 ‘복원 직전 기록’으로 먼저 보관합니다. 복원 후에도 그 기록으로 돌아올 수 있어요.</p><div class="growth-actions">${button('취소','storage')}${button('이 기록으로 복원','backup-restore',id,'primary')}</div>`);}
+ if(a==='backup-restore'){
+  let result;try{result=backups.restore(id,localStorage.getItem(key),next=>{M.settle(next);return !!store?.write(next);});}catch{result={ok:false,error:'복원하지 못했어요. 현재 기록은 유지됩니다.'};}
+  if(!result.ok){management(result.error);return true;}
+  giftUI.resetPending();s=result.state;blocked=false;warn='';pendingImport=null;M.memberIds.forEach(member=>delete preview[member]);lastCards=new Set(M.memberCards(s).filter(c=>c.earned).map(c=>c.id));lastBadges=new Set(M.badges(s).filter(b=>b.earned).map(b=>b.id));lastStories=new Set(M.storyEntries.filter(e=>M.storyAvailable(s,e.id)).map(e=>e.id));track=s.collected.find(t=>!ready(t))||'scent';selectedAlbum=M.songAlbum(track).id;scene=0;close();draw();saveNotice();say('선택한 백업으로 복원했어요. 저장 관리에서 복원 직전 기록으로 돌아갈 수 있어요.');
+ }
+ if(a==='backup-export'){try{const url=URL.createObjectURL(new Blob([backups.raw(id)],{type:'application/json'})),el=document.createElement('a');el.href=url;el.download='seeya-our-stage-recovery.json';el.click();setTimeout(()=>URL.revokeObjectURL(url),3000);}catch{management('원본을 읽지 못했어요.');}}
+ return true;
+}
+
 function sync(){try{const next=store?.pull();if(next)s=next;saveNotice();}catch{say('다른 탭의 기록을 읽지 못했어요. 현재 화면의 기록은 유지합니다.');}}
 function focusGameScreen(){if(matchMedia('(max-width:650px)').matches)$('#screen').scrollIntoView({block:'start'});$('#screen').focus({preventScroll:true});}
 function handle(a,v){
@@ -355,7 +374,8 @@ function handle(a,v){
  if(a==='save-retry'){if(save()){draw();say('저장했어요. 이제 계속 진행할 수 있어요.');}return;}
  if(a==='saved-confirm'){dialog('<h2>저장된 기록으로 돌아갈까요?</h2><p>아직 저장하지 못한 현재 변경은 사라집니다. 먼저 현재 기록을 백업해 주세요. 다른 탭에 저장된 기록은 유지됩니다.</p>'+button('현재 기록 백업','export')+button('취소','storage')+button('저장된 기록으로 돌아가기','saved-apply'));return;}
  if(a==='saved-apply'){s=store.discard()||M.fresh();close();draw();saveNotice();say('저장된 기록을 불러왔어요.');return;}
- if(blocked&&!['storage','export','export-before-simple','import','import-confirm','reset','confirm-reset'].includes(a)){management();return;}
+ if(blocked&&!['storage','export','export-before-simple','import','import-confirm','reset','confirm-reset','backup-preview','backup-restore','backup-export'].includes(a)){management();return;}
+ if(backupAction(a,v))return;
  if(isTest&&a==='motion-preview'){motionPreview(v||'scent');return;}
  if(isTest&&a==='motion-size'){const box=$('.motion-preview');if(!box||![.65,1,1.25].includes(Number(v)))return;box.style.setProperty('--motion',v);box.querySelectorAll('[data-action="motion-size"]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.value===v)));return;}
  if(isTest&&a==='motion-speed'){const box=$('.motion-preview');if(!box||![1,2,4,8].includes(Number(v)))return;box.style.setProperty('--motion-speed',v);const timing=box.querySelector('.motion-duration');if(timing)timing.textContent='한 흐름 '+(motions[box.dataset.motion].seconds/Number(v))+'초 · '+v+'배속';box.querySelectorAll('[data-action="motion-speed"]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.value===v)));restartMotion();return;}
@@ -459,7 +479,7 @@ function handle(a,v){
  save();draw();
 }
 async function locked(f,recovery=false){const run=async()=>{if(store?.dirty&&!recovery){saveNotice();return;}savingAction=true;try{return await f();}catch(e){if(e!==saveFailure)throw e;close();draw();saveNotice();}finally{savingAction=false;}};if(navigator.locks)await navigator.locks.request(key,run);else run();}
-root.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(el)locked(()=>{sync();if(!store?.dirty&&M.settle(s))save();return handle(el.dataset.action,el.dataset.value);},true);});
+root.addEventListener('click',e=>{const el=e.target.closest('[data-action]');if(el)locked(()=>{sync();if(!blocked&&!store?.dirty&&M.settle(s))save();return handle(el.dataset.action,el.dataset.value);},true);});
 root.addEventListener('input',e=>{if(e.target.id==='concertQuery'){concertQuery=e.target.value;$('#concertRows').innerHTML=concertRows();}});
 root.addEventListener('change',e=>{if(['concertAlbum','concertKind'].includes(e.target.id)){if(e.target.id==='concertAlbum')concertAlbum=e.target.value;else concertKind=e.target.value;$('#concertRows').innerHTML=concertRows();return;}if(['cardMember','cardOwned'].includes(e.target.id)){if(e.target.id==='cardMember')cardMember=e.target.value;else cardOnlyOwned=e.target.checked;cardPage=0;draw();return;}if(e.target.dataset.member){const member=e.target.dataset.member,id=e.target.value,part=e.target.dataset.part,focus=e.target.id;locked(()=>{sync();if(M.equipPart(s,member,part,id)){if(preview[member]){delete preview[member][part];if(!Object.keys(preview[member]).length)delete preview[member];}}else if(M.canWearOutfit(s,id)){preview[member]??={};preview[member][part]=id;}save();draw();$('#'+focus)?.focus();});return;}if(['practiceAlbum','track','soloPracticeAlbum','soloPracticeTrack'].includes(e.target.id)){
  const id=e.target.id,value=e.target.value,solo=id.startsWith('solo');

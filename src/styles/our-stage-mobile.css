@@ -24,3 +24,12 @@ html:has(#stageModal[open]){overflow:hidden}
  #ourStage .album-show .performance-controls button{font-size:13px}
  #ourStage .card-detail-actions,#ourStage .growth-actions,#ourStage .leisure-actions{gap:10px}
 }
+
+#ourStage .stage-backups{margin:24px 0}
+#ourStage .stage-backups .line{gap:12px;flex-wrap:wrap}
+#ourStage .stage-backup-list{display:grid;gap:12px;margin:16px 0}
+#ourStage .stage-backup-item{display:grid;gap:7px;padding:15px;border:1px solid #e6d7df;border-radius:12px;background:#fffafc}
+#ourStage .stage-backup-item strong{font-size:15px}
+#ourStage .stage-backup-item span,#ourStage .stage-backup-item small{font-size:13px;line-height:1.6;color:#655561;overflow-wrap:anywhere}
+#ourStage .stage-backup-item button{margin-top:5px;min-height:44px}
+#ourStage #backupNote:empty{display:none}
