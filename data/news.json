@@ -147,13 +147,13 @@
       "description": "씨야 이보람, ‘골때녀’ 경기 앞두고 긴장감 가득한 눈빛 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-11-21T05:19:56.980077+00:00",
-  "lastCheckedAt": "2026-11-21T05:19:56.980077+00:00",
+  "updatedAt": "2026-11-21T07:41:00.335721+00:00",
+  "lastCheckedAt": "2026-11-21T07:41:00.335721+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-21T05:19:56.980077+00:00",
-    "남규리": "2026-11-21T05:19:56.980077+00:00",
-    "김연지": "2026-11-21T05:19:56.980077+00:00",
-    "이보람": "2026-11-21T05:19:56.980077+00:00"
+    "씨야": "2026-11-21T07:41:00.335721+00:00",
+    "남규리": "2026-11-21T07:41:00.335721+00:00",
+    "김연지": "2026-11-21T07:41:00.335721+00:00",
+    "이보람": "2026-11-21T07:41:00.335721+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-20T12:12:21.022993+00:00",
@@ -165,30 +165,30 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 100,
+      "accepted": 98,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 72,
+      "accepted": 71,
       "changed": false,
       "status": "unchanged"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 17,
+      "accepted": 16,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
-      "succeeded": 4,
-      "accepted": 50,
+      "succeeded": 3,
+      "accepted": 39,
       "changed": false,
-      "status": "unchanged"
+      "status": "partial"
     }
   }
 }
