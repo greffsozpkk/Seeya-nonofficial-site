@@ -159,3 +159,4 @@
 #ourStage .room-poster-large .album-poster-art strong{font-size:7cqw;line-height:1.2}
 #ourStage .room-poster-large .album-poster-art small{font-size:3cqw}
 #ourStage .room-poster-detail h2{text-align:center;word-break:keep-all}
+#ourStage .room-poster-export{display:block;width:min(100%,420px,calc((100dvh - 255px)*.75));height:auto;margin:16px auto;box-shadow:3px 5px 0 #49303226;-webkit-touch-callout:default;user-select:auto;-webkit-user-select:auto}

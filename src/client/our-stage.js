@@ -363,6 +363,7 @@ function handle(a,v){
  if(isTest&&a==='motion-pause'){const box=$('.motion-preview');if(!box)return;const paused=box.classList.toggle('motion-paused');box.querySelector('[data-action="motion-pause"]').textContent=paused?'동작 재생하기':'동작 멈추기';return;}
  if(a==='room-posters'){roomPosters.open();return;}
  if(a==='room-poster-view'){roomPosters.view();return;}
+ if(a==='room-poster-download'){roomPosters.download();return;}
  if(a==='room-poster-select'){roomPosters.choose(v);return;}
  if(a==='room-display'){roomDisplay.open();return;}
  if(a==='room-cardbook'){close();scene=5;wardrobeView='cards';draw();return;}
@@ -482,7 +483,7 @@ vcrUI=require('./our-stage-vcr')({M,root,state:()=>s,dialog,button,mark});
 giftUI=require('./our-stage-gifts')({M,state:()=>s,root,dialog,button,esc,save,draw,close,goPractice:id=>handle('pick',id)});
 wallUI=require('./our-stage-wall-keepsakes')({M,state:()=>s,root,esc});
 roomDisplay=require('./our-stage-room-display')({M,state:()=>s,wall:wallUI,cardFace,esc,button,dialog});
-roomPosters=require('./our-stage-room-posters')({M,state:()=>s,esc,dialog,save,draw,close});
+roomPosters=require('./our-stage-room-posters')({M,state:()=>s,esc,dialog,save,draw,close,root,button});
 roomLife=require('./our-stage-room-life')({root,sprite,members:M.members,practiceOutfit:outfits.find(o=>o.id==='practice'),isTest});
 motionUI=require('./our-stage-concert-motion')();
 coinUI=require('./our-stage-concert-coins')({root,dailyLimit:M.concertCoinLimit,remaining:()=>M.concertCoinRemaining(s),allowed:()=>showing&&!showHeld&&!document.hidden&&$('#stageModal').open,award:()=>M.claimConcertCoin(s)&&save()});

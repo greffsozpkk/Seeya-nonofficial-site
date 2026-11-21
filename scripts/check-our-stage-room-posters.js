@@ -8,7 +8,7 @@ assert.equal(ui.selected(),undefined);assert(!ui.choose('first-mind'));assert.eq
 ui.view();assert.equal(html,'','no locked poster preview');assert(ui.markup().includes('disabled'));
 s=checkpoints.create('album:first-mind');assert.equal(ui.selected().id,'first-mind');
 assert(ui.markup().includes('data-action="room-poster-view"'));assert(!ui.markup().includes('data-action="room-posters"'));
-ui.view();assert(html.includes('room-poster-large'));assert(!html.includes('room-poster-select'));assert.equal(saved,0,'viewing never changes saved selection');
+ui.view();assert(html.includes('roomPosterExport'));assert(!html.includes('room-poster-select'));assert.equal(saved,0,'viewing never changes saved selection');
 ui.open();assert(html.includes('앨범 해금 후'));assert(!ui.choose('first-again'));assert(!ui.choose('__proto__'));
 assert(ui.choose('first-mind'));assert.equal(saved,1);assert.equal(closed,1);assert.equal(drawn,1);
 assert.equal(M.loadSave(JSON.stringify(s)).displayPoster,'first-mind');
