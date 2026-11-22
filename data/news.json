@@ -40,8 +40,8 @@
     {
       "title": "남규리 유튜브 채널 귤멍서 고효주와 유쾌한 롱보드 레슨 - 지피코리아",
       "source": "지피코리아",
-      "pubDate": "2026-11-22T06:04:33+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE54bzd2QnhfMGFXM1lULVhvOFlzeE9zN01tWVVQbzF3RDBQbERlTVdSZUlGSHRfRW9XOE95OE1xc1pMOGcwdUtNNVZSWDhYbTlLNG45Z2lxVDRsdlRGNzhoalFEZTViXzlwTFHSAW5BVV95cUxPcTB4d256T1ZibTlYYVBuazVXZ1M1OEZFQ0NlalVBNEVnMWdteEIxaENxZnpDc241dWtIWXpCbHRPM3h4MW9BejN1RnZqSkxsOGJqVElBZElid2NoMGZZMmNoUUJrMmFIdVZ4SFp0UQ?oc=5",
+      "pubDate": "2026-11-22T06:11:56+00:00",
+      "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9xMHh3bnpPVmJtOVhhUG5rNVdnUzU4RkVDQ2VqVUE0RWcxZ214QjFoQ3FmekNzbjV1a0hZekJsdE8zeHgxb0F6M3VGdmpKTGw4YmpUSUFkSWJ3Y2gwZlkyY2hRQmsyYUh1VnhIWnRR0gFuQVVfeXFMT3EweHduek9WYm05WGFQbms1V2dTNThGRUNDZWpVQTRFZzFnbXhCMWhDcWZ6Q3NuNXVrSFl6Qmx0TzN4eDFvQXozdUZ2akpMbDhialRJQWRJYndjaDBmWTJjaFFCazJhSHVWeEhadFE?oc=5",
       "description": "남규리 유튜브 채널 귤멍서 고효주와 유쾌한 롱보드 레슨 지피코리아"
     },
     {
@@ -147,17 +147,17 @@
       "description": "씨야 이보람, ‘골때녀’ 경기 앞두고 긴장감 가득한 눈빛 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-11-22T06:54:39.192347+00:00",
-  "lastCheckedAt": "2026-11-22T06:54:39.192347+00:00",
+  "updatedAt": "2026-11-22T07:25:11.716439+00:00",
+  "lastCheckedAt": "2026-11-22T07:25:11.716439+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-22T06:54:39.192347+00:00",
-    "남규리": "2026-11-22T06:54:39.192347+00:00",
-    "김연지": "2026-11-22T06:54:39.192347+00:00",
-    "이보람": "2026-11-22T06:54:39.192347+00:00"
+    "씨야": "2026-11-22T07:25:11.716439+00:00",
+    "남규리": "2026-11-22T07:25:11.716439+00:00",
+    "김연지": "2026-11-22T07:25:11.716439+00:00",
+    "이보람": "2026-11-22T07:25:11.716439+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-20T12:12:21.022993+00:00",
-    "남규리": "2026-11-22T06:54:39.192347+00:00",
+    "남규리": "2026-11-22T07:25:11.716439+00:00",
     "이보람": "2026-11-20T12:12:21.022993+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
   },
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 73,
+      "accepted": 77,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 60,
+      "accepted": 59,
       "changed": true,
       "status": "changed"
     },
     "김연지": {
       "queries": 4,
-      "succeeded": 4,
-      "accepted": 17,
+      "succeeded": 3,
+      "accepted": 12,
       "changed": false,
-      "status": "unchanged"
+      "status": "partial"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 50,
+      "accepted": 49,
       "changed": false,
       "status": "unchanged"
     }
