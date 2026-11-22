@@ -73,6 +73,7 @@ require('./check-our-stage-hair');
 require('./check-our-stage-journey');
 require('./check-our-stage-release');
 require('./check-our-stage-shop');
+require('./check-our-stage-boram-shop');
 require('./check-our-stage-backstage');
 require('./check-our-stage-coins');
 require('./check-our-stage-stories');

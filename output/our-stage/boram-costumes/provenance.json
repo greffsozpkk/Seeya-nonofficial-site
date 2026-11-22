@@ -1,0 +1,27 @@
+{
+  "styles": [
+    {
+      "id": "boram-still-like-you-hat",
+      "source": "https://www.youtube.com/watch?v=Z7QOYi6iR70",
+      "referenceTime": "00:38 / 01:36",
+      "method": "Reuse approved California Dream Boram costume and head layers; SBS Inkigayo 2008-02-03"
+    },
+    {
+      "id": "boram-hot-girl-yellow-bow",
+      "source": "https://www.youtube.com/watch?v=28tmGVxRG3s",
+      "referenceTime": "01:03",
+      "identity": "Far-left performer with large yellow hair bow; MBC Music Core 2008-10-04",
+      "method": "Built-in image_gen; approved pixel layer sheet + official performance screenshot",
+      "prompt": "Create ONE game-ready transparent PNG costume sprite sheet for Lee Boram of SeeYa in the Hot Girl 2008 stage outfit. Image1 is the approved coarse pixel game STYLE and separated head/body sheet template. Image2 is costume reference ONLY: the performer at FAR LEFT wearing the YELLOW BIG BOW, plaid shirt and coral red miniskirt is Boram. Do NOT copy the other performers. One character only, one centered column, square canvas. TOP HALF: detached head including straight dark brown shoulder-length hair with bangs, very large bright yellow bow on crown, slim light triangle hoop earrings, same two black square eyes and tiny straight red horizontal mouth as style reference, warm peach skin, no neck/body. BOTTOM HALF: separate headless front-facing tiny body from short neck to shoes: coral/orange white and purple plaid long sleeve shirt tied at waist over white tee with abstract green markings, turquoise belt with colorful square belt accents, bright coral red mini skirt, white knee-high socks with two black horizontal stripes at top, simple dark shoes (unseen details simplified). Arms down beside body, symmetrical standing pose. Style must match reference's chunky hard square pixels and dark stepped outline, limited flat 2-3-tone colors, big head tiny body proportions. Keep a large transparent gap between detached head and torso. Hair stays entirely with head layer. No microphone, no scene, no text, no smooth anime, no realistic features, no gradients, no glow, no decorative background. Actual transparent background.",
+      "asset": "images/game/our-stage/layers/boram-hot-girl-yellow-bow.png",
+      "notes": "Small details and unseen shoes simplified. Original alpha is retained; existing sprite renderer thresholds alpha."
+    }
+  ],
+  "verification": [
+    "Full node scripts/check.js passed",
+    "Both purchases cost 60 once; Boram-only; hair and clothes mixing; backup restore; existing California Dream ownership",
+    "Browser purchase 150 -> 90 -> 30; reload retained outfit; Gyuri tab excludes both; 390px shop screenshot"
+  ],
+  "preview": "http://127.0.0.1:8234/game/our-stage/test/",
+  "deployed": false
+}

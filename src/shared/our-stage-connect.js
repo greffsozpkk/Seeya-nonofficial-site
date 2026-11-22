@@ -4,9 +4,11 @@ const members=[['br','보람'],['gr','규리'],['yj','연지']];
 const styles=[['first-mind','1집'],['lovely-sweet-heart','2집'],['california-dream','2.5집'],['brilliant-change','3집']];
 // Keep the original twelve IDs stable for saved games.
 const tiles=styles.flatMap(([style,era])=>members.map(([member,name])=>({member,name,style,era,part:'hair'})));
-const outfits=[...require('../data/our-stage-outfits.json'),...require('../data/our-stage-shop.json'),...require('../data/our-stage-capsule-outfits.json')];
+const shopStyles=require('../data/our-stage-shop.json');
+// Append member-only shop styles after the existing deck to preserve saved tile IDs.
+const outfits=[...require('../data/our-stage-outfits.json'),...shopStyles.filter(o=>!o.allowedMembers),...require('../data/our-stage-capsule-outfits.json'),...shopStyles.filter(o=>o.allowedMembers)];
 for(const outfit of outfits)for(const [member,name] of members)for(const part of ['hair','clothes']){
- if(outfit.reward&&!outfit.members.includes(member))continue;
+ if(outfit.reward&&!outfit.members.includes(member)||outfit.allowedMembers&&!outfit.allowedMembers.includes(member))continue;
  if(!tiles.some(t=>t.style===outfit.id&&t.member===member&&t.part===part))tiles.push({member,name,style:outfit.id,era:styles.find(s=>s[0]===outfit.id)?.[1]||({'practice':'연습복','base':'20주년','first-again':'4집','still-here':'재결합'})[outfit.id]||outfit.name,part});
 }
 const pick=require('./our-stage-style-pick');

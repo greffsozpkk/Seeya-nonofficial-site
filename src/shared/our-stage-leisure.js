@@ -16,7 +16,7 @@ module.exports=function(M){
  const valid=s=>ownStateValid(s)&&M.valid(adjusted(s));
  function loadSave(raw){if(typeof raw!=='string'||raw.length>512000)throw Error('Invalid leisure save');let s=JSON.parse(raw);if(s?.leisure===undefined)return migrate(M.loadSave(raw));migrate(s);if(!ownStateValid(s))throw Error('Invalid leisure data');const offset=s.simple.walletOffset;s=M.loadSave(JSON.stringify(adjusted(s)));s.simple.walletOffset=offset;if(!valid(s))throw Error('Invalid leisure save');return s;}
  const fresh=now=>migrate(M.fresh(now));
- function purchase(s,id,member){const o=M.shopById(id);if(!o||!M.memberIds.includes(member)||s.purchases.includes(id+':'+member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
+ function purchase(s,id,member){const o=M.shopById(id);if(!o||!M.shopMembers(o).includes(member)||M.styleOwned(s,id,member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
  const capsuleUnlocked=s=>Boolean(s.simple.concerts['first-mind']);
  const pull=(s,now=Date.now(),random=Math.random)=>capsuleUnlocked(s)?capsules.pull(s.leisure.capsules,now,coins(s),random):null;
  const exchange=(s,id)=>capsuleUnlocked(s)&&capsules.exchange(s.leisure.capsules,id);

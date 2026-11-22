@@ -237,7 +237,7 @@ function shop(){
  <details class="coin-guide"><summary>코인은 어떻게 모으나요?</summary><ul class="coin-income-list"><li>새 노래 수집 <b>5코인</b></li><li>연습 과제 완료 <b>2코인</b></li><li>첫 여정 이야기 <b>5코인</b></li><li>앨범 이야기·이벤트 <b>8코인</b></li><li>매일 출석 <b>20코인</b></li><li>활동 퀴즈 <b>최대 20코인</b></li><li>스타일 짝 맞추기 <b>최대 20코인</b></li><li>이야기 그림 맞추기 <b>최대 20코인</b></li><li>스케줄 가는 길 <b>8~12코인 · 하루 2회</b></li></ul><p class="private-note">수집·연습·이야기 보상은 처음 한 번만 받아요.<br>코인은 의상과 헤어 구매에 사용할 수 있어요.</p></details>
  <div class="badge-filters shop-members" aria-label="구매할 멤버">${M.memberIds.map(id=>button(M.members.find(m=>m.id===id).name,'shop-member',id,shopMember===id?'primary':'')).join('')}</div>
  <p>${member.name}의 스타일을 골라주세요. 다른 멤버의 의상은 따로 구매할 수 있어요.</p>
- <div class="shop-grid">${M.shop.map(o=>{const owned=M.styleOwned(s,o.id,shopMember);return panel(`<div class="shop-sprite">${sprite(shopMember,o)}</div><h3>${esc(o.name)}</h3>${button('상세 보기','shop-detail',o.id)}<div class="shop-price"><b>${owned?'보유 중':o.price+'코인'}</b>${button(owned?'입기':M.coins(s)<o.price?(o.price-M.coins(s))+'코인 더 필요':'구매하기',owned?'shop-wear':'shop-buy',o.id,'primary',!owned&&M.coins(s)<o.price)}</div>`,'shop-card');}).join('')}</div>`;
+ <div class="shop-grid">${M.shop.filter(o=>M.shopMembers(o).includes(shopMember)).map(o=>{const owned=M.styleOwned(s,o.id,shopMember);return panel(`<div class="shop-sprite">${sprite(shopMember,o)}</div><h3>${esc(o.name)}</h3>${button('상세 보기','shop-detail',o.id)}<div class="shop-price"><b>${owned?'보유 중':o.price+'코인'}</b>${button(owned?'입기':M.coins(s)<o.price?(o.price-M.coins(s))+'코인 더 필요':'구매하기',owned?'shop-wear':'shop-buy',o.id,'primary',!owned&&M.coins(s)<o.price)}</div>`,'shop-card');}).join('')}</div>`;
 }
 function designs(){
  return `<div class="badge-filters wardrobe-tabs" aria-label="꾸미기 메뉴">${[['closet','내 옷장'],['cards','카드북'],['badges','배지함'],['stage','무대 꾸미기'],['shop','코인 상점'],['capsule','뽑기'],['coins','코인 모으기'],['rest','쉬어가기']].map(([id,n])=>`<button data-action="${id==='capsule'?'capsule-open':'wardrobe-view'}" data-value="${id}" aria-pressed="${wardrobeView===id}">${n}</button>`).join('')}</div>${wardrobeView==='rest'?connectUI.render():wardrobeView==='drive'?miniUI.drivePanel():wardrobeView==='capsule'?miniUI.capsulePanel():wardrobeView==='cards'?cardbook():wardrobeView==='stage'?miniUI.stagePanel():wardrobeView==='coins'?coinRoom():wardrobeView==='shop'?shop():wardrobeView==='badges'?badgeShelf():wardrobe()}`;
@@ -408,7 +408,7 @@ function handle(a,v){
  if(a==='show-next'&&showing){clearTimeout(showTimer);$('#stageModal')._advance();return;}
  if(a==='story-detail'){storyDetail(v);return;}
  if(a==='outfit-detail'){const o=outfits.find(o=>o.id===v);if(o)dialog(outfitCard(o,true));return;}
- if(a==='shop-detail'){const o=M.shopById(v);if(o)dialog(`${mark(o.date)}<h2>${esc(o.name)}</h2><div class="shop-sprite">${sprite(shopMember,o)}</div><p>${esc(o.note)}</p>${link(o.sourceLabel||'참고한 무대 보기',o.url)}<p>${M.members.find(m=>m.id===shopMember).name} · 의상 + 헤어 · ${o.price}코인</p>${button('상점으로','wardrobe-view','shop')}`);return;}
+ if(a==='shop-detail'){const o=M.shopById(v);if(o&&M.shopMembers(o).includes(shopMember))dialog(`${mark(o.date)}<h2>${esc(o.name)}</h2><div class="shop-sprite">${sprite(shopMember,o)}</div><p>${esc(o.note)}</p>${link(o.sourceLabel||'참고한 무대 보기',o.url)}<p>${M.members.find(m=>m.id===shopMember).name} · 의상 + 헤어 · ${o.price}코인</p>${button('상점으로','wardrobe-view','shop')}`);return;}
  if(a==='story-filter'){storyFilter=v;if(v==='core')storyAlbum='all';draw();return;}
  if(a==='stories-album'){storyAlbum=v;storyFilter='all';scene=2;if($('#stageModal').open)close();draw();$('#screen').focus({preventScroll:true});return;}
  if(a==='timeline'){timeline(v);return;}
@@ -439,7 +439,7 @@ function handle(a,v){
  if(a==='match-hair'){const id=styleId(v);if(M.equipPart(s,v,'hair',id)){if(preview[v]){delete preview[v].hair;if(!Object.keys(preview[v]).length)delete preview[v];}}else if(M.canWearOutfit(s,id)){preview[v]??={};preview[v].hair=id;}save();draw();return;}
  if(a==='shop-wear'){if(M.equip(s,shopMember,v)){delete preview[shopMember];save();draw();say('의상을 갈아입었어요. 내 옷장과 연습실에서 확인해 보세요.');}return;}
  if(a==='shop-buy'){
-  const o=M.shopById(v);if(!o||M.styleOwned(s,v,shopMember)||M.coins(s)<o.price)return;
+  const o=M.shopById(v);if(!o||!M.shopMembers(o).includes(shopMember)||M.styleOwned(s,v,shopMember)||M.coins(s)<o.price)return;
   dialog(`${mark('STAGE STYLE')}<h2>${M.members.find(m=>m.id===shopMember).name}의 스타일을 구매할까요?</h2><div class="shop-sprite">${sprite(shopMember,o)}</div><h3>${o.name}</h3><p>의상과 헤어 한 세트 · ${o.price}코인<br>구매 후 남는 코인: ${M.coins(s)-o.price}</p>${button('취소','shop-cancel')}${button('구매하고 입기','shop-confirm',v+':'+shopMember,'primary')}`);return;
  }
  if(a==='shop-cancel'){close();return;}

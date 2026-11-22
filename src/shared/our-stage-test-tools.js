@@ -13,7 +13,7 @@ module.exports=function(M){
    s.flags=['first','album','gr','yj','br','reunion','ending'];s.proofs=Object.keys(M.challenges);s.finale=true;
    for(const a of M.albums)s.simple.concerts[a.id]={at:now,tracks:M.concertTracks(s,a.id),serial:'OS-'+a.id+'-'+now,restored:true};
    for(const q of M.wordTasks)s.simple.wordDone[q.track]=now;
-   s.purchases=M.shop.flatMap(o=>M.memberIds.map(id=>o.id+':'+id));
+   s.purchases=M.shop.flatMap(o=>M.shopMembers(o).map(id=>o.id+':'+id));
    const pool=M.capsules.pool,g=s.leisure.capsules;
    Object.assign(g,{pulls:pool.length,freePulls:1,day:M.capsules.day(now),freeDay:M.capsules.day(now),owned:pool.map(i=>i.id),last:{number:pool.length,item:pool[pool.length-1].id,duplicate:false,free:false}});
    s.leisure.decor.owned=M.decorStore.items.map(i=>i.id);

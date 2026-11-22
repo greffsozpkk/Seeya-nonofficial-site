@@ -89,6 +89,7 @@ function createModel(testMode=false) {
   const shop=require('../data/our-stage-shop.json'),capsuleOutfits=require('../data/our-stage-capsule-outfits.json');
   const memberIds=['br','gr','yj'];
   const shopById=id=>shop.find(o=>o.id===id);
+  const shopMembers=o=>o.allowedMembers||memberIds;
   const shopJobs=[
     {id:'setup',name:'공연 준비 돕기',description:'소품을 정리하고 조명을 켜요.',reward:10,seconds:testMode?1:60},
     {id:'soundcheck',name:'사운드 체크',description:'마이크와 모니터 소리를 맞춰요.',reward:15,seconds:testMode?1:90},
@@ -112,10 +113,10 @@ function createModel(testMode=false) {
     mini:s.mini.earned
   });
   const coins=s=>Object.values(earnings(s)).reduce((a,b)=>a+b,0)-s.purchases.reduce((n,p)=>n+(shopById(p.split(':')[0])?.price||0),0);
-  const styleOwned=(s,id,member)=>memberIds.includes(member)&&(['base','practice'].includes(id)||Boolean(albumById(id))&&albumUnlocked(s,id)||Boolean(shopById(id))&&s.purchases.includes(id+':'+member)||capsuleOutfits.some(o=>o.id===id&&o.members.includes(member)&&s.leisure?.capsules?.owned?.includes(o.reward)));
+  const styleOwned=(s,id,member)=>memberIds.includes(member)&&(['base','practice'].includes(id)||Boolean(albumById(id))&&albumUnlocked(s,id)||Boolean(shopById(id))&&shopMembers(shopById(id)).includes(member)&&(s.purchases.includes(id+':'+member)||Boolean(shopById(id).includedWithAlbum)&&albumUnlocked(s,shopById(id).includedWithAlbum))||capsuleOutfits.some(o=>o.id===id&&o.members.includes(member)&&s.leisure?.capsules?.owned?.includes(o.reward)));
   function equipPart(s,member,part,id){if(!['clothes','hair'].includes(part)||!styleOwned(s,id,member))return false;(part==='hair'?s.hair:s.equipped)[member]=id;return true;}
   function equip(s,member,id){if(!styleOwned(s,id,member))return false;s.equipped[member]=id;s.hair[member]=id;return true;}
-  function purchase(s,id,member){const o=shopById(id);if(!o||!memberIds.includes(member)||s.purchases.includes(id+':'+member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
+  function purchase(s,id,member){const o=shopById(id);if(!o||!shopMembers(o).includes(member)||styleOwned(s,id,member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
   // Retain historical earnings and settle already-started legacy jobs; no new idle jobs.
   function startShopJob(){return false;}
   const outfitOwned=(s,id)=>['base','practice'].includes(id)||albumUnlocked(s,id);
@@ -202,7 +203,7 @@ function createModel(testMode=false) {
     if(!subset(s.setlist,ids.filter(id=>ready(s,id)))||!(s.display===null||members.some(m=>m.id===s.display&&has(s,m.id))))return false;
     if(!s.daily||typeof s.daily!=='object'||Array.isArray(s.daily)||!Number.isInteger(s.daily.count)||s.daily.count<0||s.daily.count>1000000)return false;
     if(s.daily.count===0?s.daily.lastDay!==null:typeof s.daily.lastDay!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(s.daily.lastDay)||!Number.isFinite(Date.parse(s.daily.lastDay+'T00:00:00Z'))||new Date(s.daily.lastDay+'T00:00:00Z').toISOString().slice(0,10)!==s.daily.lastDay)return false;
-    if(!Number.isInteger(s.gigs)||s.gigs<0||s.gigs>1000000||!subset(s.purchases,shop.flatMap(o=>memberIds.map(m=>o.id+':'+m))))return false;
+    if(!Number.isInteger(s.gigs)||s.gigs<0||s.gigs>1000000||!subset(s.purchases,shop.flatMap(o=>shopMembers(o).map(m=>o.id+':'+m))))return false;
     if(!s.jobCounts||typeof s.jobCounts!=='object'||Array.isArray(s.jobCounts)||Object.keys(s.jobCounts).length!==3||!shopJobs.slice(1).every(j=>Number.isInteger(s.jobCounts[j.id])&&s.jobCounts[j.id]>=0&&s.jobCounts[j.id]<=1000000))return false;
     if(s.shopJob!==null&&(!s.shopJob||!shopJobById(s.shopJob.kind)||!Number.isSafeInteger(s.shopJob.end)||s.shopJob.end<0||jobCount(s,s.shopJob.kind)>=1000000))return false;
     if(typeof s.finale!=='boolean'||s.finale&&!finaleReady(s)||!(s.displayCard===null||cardOwned(s,s.displayCard)))return false;
@@ -301,7 +302,7 @@ function createModel(testMode=false) {
     return b;
   }
 
-  return {playDayCount,recordPlayDay,capsuleOutfits,canCheer,albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,cardMembers,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,lessonSeconds,practiceSeconds,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,trainAll,train,claim,valid};
+  return {playDayCount,recordPlayDay,capsuleOutfits,canCheer,albumStoryGates,storyDestination,comebackRequirements,albumRequirements,mini,dailyReward,kstDay,canClaimDaily,claimDaily,shopJobs,shopJobById,decorateCard,cardMembers,memberCards,cardOwned,coreAvailable,coreCondition,finaleReady,finishFinale,shop,shopById,shopMembers,memberIds,earnings,coins,styleOwned,equip,equipPart,purchase,startShopJob,storyEntries,storyById,storyAvailable,storyDone,storyCondition,quizLevels,albums,albumById,songAlbum,albumCount,albumComplete,albumMastered,albumAvailable,unlockAlbum,badges,albumUnlocked,outfitOwned,canWearOutfit,timing,lessonSeconds,practiceSeconds,challenges,canChallenge,answer,cheer,eligible,loadSave,songs,lessons,members,reunionUrl,ids,fresh,has,open,ready,percent,voices,count,cheers,settle,trainAll,train,claim,valid};
 }
 module.exports=createModel();
 module.exports.forTest=()=>createModel(true);

@@ -802,5 +802,29 @@
         630
       ]
     }
+  },
+  "boram-hot-girl-yellow-bow": {
+    "br": {
+      "head": [
+        627,
+        403
+      ],
+      "neck": [
+        627,
+        648
+      ]
+    }
+  },
+  "boram-still-like-you-hat": {
+    "br": {
+      "neck": [
+        290.5,
+        595
+      ],
+      "head": [
+        292,
+        381
+      ]
+    }
   }
 }

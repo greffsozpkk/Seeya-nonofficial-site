@@ -189,5 +189,52 @@
       "https://www.joynews24.com/view/311683"
     ],
     "mappingNote": "기존 2.5집 설 인사 한복 레이어를 별도 상점 세트로 복원. br/gr/yj 멤버별 좌표와 헤어를 유지하며 현행 앨범 무대 의상은 변경하지 않음."
+  },
+  {
+    "id": "boram-still-like-you-hat",
+    "name": "그래도 좋아 · 모자 (2008)",
+    "type": "STAGE STYLE",
+    "price": 60,
+    "allowedMembers": [
+      "br"
+    ],
+    "includedWithAlbum": "california-dream",
+    "date": "2008.02.03",
+    "url": "https://www.youtube.com/watch?v=Z7QOYi6iR70",
+    "note": "이보람의 인기가요 무대 착장. 노란 띠 모자와 노란 상의를 따로 조합할 수 있어요. 2.5집을 열었다면 추가 구매 없이 사용할 수 있어요.",
+    "image": "/images/game/our-stage/layers/california-dream-stage.png",
+    "width": 1536,
+    "height": 1024,
+    "members": [
+      [
+        84,
+        412
+      ]
+    ],
+    "method": "Existing approved California Dream Boram layers",
+    "sourceLabel": "SBS 인기가요 무대 보기"
+  },
+  {
+    "id": "boram-hot-girl-yellow-bow",
+    "name": "Hot Girl · 노란 리본 (2008)",
+    "type": "STAGE STYLE",
+    "price": 60,
+    "allowedMembers": [
+      "br"
+    ],
+    "date": "2008.10.04",
+    "url": "https://www.youtube.com/watch?v=28tmGVxRG3s",
+    "note": "이보람의 음악중심 무대 착장. 커다란 노란 리본, 체크 셔츠와 빨간 미니스커트를 도트로 담았어요. 의상과 헤어를 따로 조합할 수 있어요.",
+    "image": "/images/game/our-stage/layers/boram-hot-girl-yellow-bow.png",
+    "width": 1254,
+    "height": 1254,
+    "members": [
+      [
+        430,
+        390
+      ]
+    ],
+    "method": "Built-in image_gen",
+    "sourceLabel": "MBC 음악중심 무대 보기"
   }
 ]

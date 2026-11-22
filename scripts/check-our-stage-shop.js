@@ -32,7 +32,7 @@ assert(M.equip(migrated,'br',M.albums[1].id));assert(M.equip(migrated,'gr',M.alb
 assert.notEqual(migrated.equipped.br,migrated.equipped.gr);
 assert.equal(new Set(M.storyEntries.map(e=>e.image)).size,22);
 for(const e of M.storyEntries)assert(fs.existsSync('.'+e.image),e.image);
-for(const o of M.shop){assert(fs.existsSync('.'+o.image));assert.equal(o.members.length,3);assert(o.price>0);assert(o.url.startsWith('https://'));}
+for(const o of M.shop){assert(fs.existsSync('.'+o.image));assert.equal(o.members.length,M.shopMembers(o).length);assert(o.price>0);assert(o.url.startsWith('https://'));}
 console.log('PASS stage shop: migrated progress earnings, legacy in-flight job settlement, once-only rewards, balance, per-member purchases/equipment, invalid backup rejection, 22 distinct scenes.');
 module.exports={full:migrated};
 

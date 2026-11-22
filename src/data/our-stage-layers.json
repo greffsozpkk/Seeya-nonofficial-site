@@ -1346,5 +1346,50 @@
         "chin": 363
       }
     }
+  },
+  "boram-hot-girl-yellow-bow": {
+    "image": "/images/game/our-stage/layers/boram-hot-girl-yellow-bow.png",
+    "width": 1254,
+    "height": 1254,
+    "members": {
+      "br": {
+        "head": [
+          430,
+          15,
+          390,
+          472
+        ],
+        "body": [
+          449,
+          644,
+          357,
+          594
+        ],
+        "chin": 403
+      }
+    }
+  },
+  "boram-still-like-you-hat": {
+    "image": "/images/game/our-stage/layers/california-dream-stage.png",
+    "width": 1536,
+    "height": 1024,
+    "members": {
+      "br": {
+        "head": [
+          84,
+          21,
+          412,
+          476
+        ],
+        "body": [
+          159,
+          595,
+          259,
+          416
+        ],
+        "chin": 380
+      }
+    },
+    "headImage": "/images/game/our-stage/layers/california-dream-earrings.png"
   }
 }

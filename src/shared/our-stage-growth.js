@@ -75,6 +75,6 @@ module.exports=function(B){
  const wordAvailable=(s,id)=>wordGates.some(q=>q.album===id)&&!B.albumUnlocked(s,id)&&!s.chapterWords.includes(id)&&albumRequirements(s,id).filter(r=>r.action!=='chapter-words').every(r=>r.done);
  function answerWords(s,id,guess){const q=wordGates.find(q=>q.album===id);if(!q||!wordAvailable(s,id)||!Array.isArray(guess)||guess.length!==q.tokens.length||new Set(guess).size!==guess.length||!guess.every((n,i)=>Number.isInteger(n)&&q.tokens[n]===q.tokens[i]))return false;s.chapterWords.push(id);return true;}
  function unlockAlbum(s,id){return albumAvailable(s,id)&&B.unlockAlbum(s,id);}
- function purchase(s,id,member){const o=B.shopById(id);if(!o||!B.memberIds.includes(member)||s.purchases.includes(id+':'+member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
+ function purchase(s,id,member){const o=B.shopById(id);if(!o||!B.shopMembers(o).includes(member)||B.styleOwned(s,id,member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
  return {...B,mini,wordGates,wordAvailable,answerWords,growth:{stats,names,items,themes,ranges,prepareTest,cost,value,profile,cap,coins,buff,score,rank,cleared,trainingSeconds,apCost,perform,upgrade,buy,boost,resume,init},timing:{...B.timing,recoveryMs},fresh:now=>init(B.fresh(now),now),loadSave,valid:validate,train,settle,coins,purchase,albumRequirements,albumAvailable,unlockAlbum};
 };

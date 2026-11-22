@@ -32,7 +32,7 @@ module.exports=function(B){
  const canChallenge=(s,key)=>!key.startsWith('song:')&&B.canChallenge(s,key);
  function answer(s,key,index){if(!canChallenge(s,key)||challenges[key].answer!==index)return false;return B.answer(s,key,B.challenges[key].answer);}
  function claim(s,id){if(['first','ending'].includes(id)&&B.canChallenge(s,'story:'+id)&&!s.proofs.includes('story:'+id))s.proofs.push('story:'+id);return B.claim(s,id);}
- function purchase(s,id,member){const o=B.shopById(id);if(!o||!B.memberIds.includes(member)||s.purchases.includes(id+':'+member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
+ function purchase(s,id,member){const o=B.shopById(id);if(!o||!B.shopMembers(o).includes(member)||B.styleOwned(s,id,member)||coins(s)<o.price)return false;s.purchases.push(id+':'+member);return true;}
  const concertTracks=(s,id)=>B.albumById(id)?.tracks.filter(t=>!t.instrumental).map(t=>t.id)||[];
  const concertReady=(s,id)=>B.albumUnlocked(s,id)&&B.albumComplete(s,id)&&concertTracks(s,id).length>0&&concertTracks(s,id).every(t=>B.ready(s,t));
  function finishConcert(s,id,tracks,now=Date.now()){if(!concertReady(s,id)||s.simple.concerts[id]||!Number.isSafeInteger(now)||now<0||now>=253402268399999||!Array.isArray(tracks)||!concertTracks(s,id).every(t=>tracks.includes(t)))return false;s.simple.concerts[id]={at:now,tracks:concertTracks(s,id),serial:'OS-'+id+'-'+now};const next=B.albums[B.albums.findIndex(a=>a.id===id)+1];if(id==='first-mind'){if(!s.proofs.includes('story:ending'))s.proofs.push('story:ending');if(!s.flags.includes('ending'))s.flags.push('ending');}if(next)unlockAlbum(s,next.id);return true;}
