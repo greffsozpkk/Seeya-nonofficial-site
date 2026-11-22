@@ -3433,8 +3433,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2015-12&event=activity-v490-i
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-kbs-20160117@seeya-fanpage.com
-DTSTAMP:20261106T070908Z
-LAST-MODIFIED:20261106T070908Z
+DTSTAMP:20261122T071444Z
+LAST-MODIFIED:20261122T071444Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20160117
 DTEND;VALUE=DATE:20160118
@@ -3447,8 +3447,9 @@ DESCRIPTION:김연지\n시간 미정\n치평동사우나: https://www.youtu
  be.com/watch?v=8eMWOgRdnUk\n치평동사우나: https://www.youtube.com/wa
  tch?v=Dv0FAHmwNCk\n치평동사우나: https://www.youtube.com/watch?v=M5j
  Yp3n7Cr0\n치평동사우나: https://www.youtube.com/watch?v=aPil1Y2RMcQ\
- n치평동사우나: https://www.youtube.com/watch?v=xMzbYAgit6o\nhttps://
- seeya-fanpage.com/archive/?record=v490-kbs-20160117
+ n치평동사우나: https://www.youtube.com/watch?v=xMzbYAgit6o\n치평
+ 동사우나: https://www.youtube.com/watch?v=n1OFKz0v5pc\nhttps://seeya-f
+ anpage.com/archive/?record=v490-kbs-20160117
 URL:https://seeya-fanpage.com/calendar/?month=2016-01&event=activity-v490-k
  bs-20160117
 END:VEVENT
@@ -3554,8 +3555,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2016-07&event=activity-v490-m
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-mask-70@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261122T071444Z
+LAST-MODIFIED:20261122T071444Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20160731
 DTEND;VALUE=DATE:20160801
@@ -3566,7 +3567,8 @@ CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:김연지\n시간 미정\nMBCentertainment: https://www.youtube
  .com/watch?v=4nOFSFZO6PI\nMBCentertainment: https://www.youtube.com/watch?
- v=GY6vfEMDlyc\nhttps://seeya-fanpage.com/archive/?record=v490-mask-70
+ v=GY6vfEMDlyc\n내취향 노래모음: https://www.youtube.com/watch?v=Qyk
+ 4auf5ZIE\nhttps://seeya-fanpage.com/archive/?record=v490-mask-70
 URL:https://seeya-fanpage.com/calendar/?month=2016-07&event=activity-v490-m
  ask-70
 END:VEVENT
@@ -3668,8 +3670,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2016-10&event=activity-v490-f
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-immortal-2016-10-22@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261122T071444Z
+LAST-MODIFIED:20261122T071444Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20161022
 DTEND;VALUE=DATE:20161023
@@ -3679,15 +3681,15 @@ TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:김연지\n시간 미정\nKBS Kpop: https://www.youtube.com/wat
- ch?v=GIBVCiEtba4\nhttps://seeya-fanpage.com/archive/?record=v490-immortal-
- 2016-10-22
+ ch?v=GIBVCiEtba4\nKBS Kpop: https://www.youtube.com/watch?v=4ZPn57QsS5k\nh
+ ttps://seeya-fanpage.com/archive/?record=v490-immortal-2016-10-22
 URL:https://seeya-fanpage.com/calendar/?month=2016-10&event=activity-v490-i
  mmortal-2016-10-22
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v490-immortal-2016-11-05@seeya-fanpage.com
-DTSTAMP:20260911T150000Z
-LAST-MODIFIED:20260911T150000Z
+DTSTAMP:20261122T071444Z
+LAST-MODIFIED:20261122T071444Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20161105
 DTEND;VALUE=DATE:20161106
@@ -3697,8 +3699,8 @@ TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
 DESCRIPTION:김연지\n시간 미정\nKBS Kpop: https://www.youtube.com/wat
- ch?v=OXby3s3CgQM\nhttps://seeya-fanpage.com/archive/?record=v490-immortal-
- 2016-11-05
+ ch?v=OXby3s3CgQM\nKBS Kpop: https://www.youtube.com/watch?v=KooF6yD7cDU\nh
+ ttps://seeya-fanpage.com/archive/?record=v490-immortal-2016-11-05
 URL:https://seeya-fanpage.com/calendar/?month=2016-11&event=activity-v490-i
  mmortal-2016-11-05
 END:VEVENT
@@ -5867,8 +5869,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2022-08&event=activity-v491-k
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-album-20489851@seeya-fanpage.com
-DTSTAMP:20260912T150000Z
-LAST-MODIFIED:20260912T150000Z
+DTSTAMP:20261122T071444Z
+LAST-MODIFIED:20261122T071444Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20220830
 DTEND;VALUE=DATE:20220831
@@ -5879,8 +5881,8 @@ CATEGORIES:release
 LOCATION:
 DESCRIPTION:이보람\n발매일 · 시간 미정\n벅스 음반 정보: ht
  tps://music.bugs.co.kr/album/20489851\nSTONE MUSIC: https://www.youtube.co
- m/watch?v=c6MlQvbbZw0\nhttps://seeya-fanpage.com/archive/?record=v491-albu
- m-20489851
+ m/watch?v=c6MlQvbbZw0\nWanSooMee: https://www.youtube.com/watch?v=EiDraSTi
+ vq8\nhttps://seeya-fanpage.com/archive/?record=v491-album-20489851
 URL:https://seeya-fanpage.com/calendar/?month=2022-08&event=activity-v491-a
  lbum-20489851
 END:VEVENT
@@ -5969,8 +5971,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2022-10&event=activity-202210
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20221003-boram-youth-arena@seeya-fanpage.com
-DTSTAMP:20261113T070210Z
-LAST-MODIFIED:20261113T070210Z
+DTSTAMP:20261122T071444Z
+LAST-MODIFIED:20261122T071444Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20221003
 DTEND;VALUE=DATE:20221004
@@ -5989,8 +5991,9 @@ DESCRIPTION:이보람\n시간 미정\n박혜원·박진주와 함께한 「
  watch?v=JPv8LQwHIdM\n스프 · [4k 60p] 221003 가야J (Hynn\, 박진주\,
   이보람) - 눈을 감으면\, 단체사진 @청춘아레나: https://ww
  w.youtube.com/watch?v=7zNTSbimS90\n스프: https://www.youtube.com/watch?v
- =wmSPywZiTYI\n수끄니: https://www.youtube.com/watch?v=HBfHApFxhPw\nhttp
- s://seeya-fanpage.com/archive/?record=20221003-boram-youth-arena
+ =wmSPywZiTYI\n수끄니: https://www.youtube.com/watch?v=HBfHApFxhPw\n낭
+ 만음치: https://www.youtube.com/watch?v=71yHLBXRaGg\nhttps://seeya-fanp
+ age.com/archive/?record=20221003-boram-youth-arena
 URL:https://seeya-fanpage.com/calendar/?month=2022-10&event=activity-202210
  03-boram-youth-arena
 END:VEVENT
@@ -7516,8 +7519,8 @@ URL:https://seeya-fanpage.com/calendar/?month=2025-11&event=activity-v491-a
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-v491-still-singing@seeya-fanpage.com
-DTSTAMP:20261121T073322Z
-LAST-MODIFIED:20261121T073322Z
+DTSTAMP:20261122T071444Z
+LAST-MODIFIED:20261122T071444Z
 SEQUENCE:0
 DTSTART;VALUE=DATE:20251206
 DTEND;VALUE=DATE:20251208
@@ -7559,8 +7562,8 @@ DESCRIPTION:이보람 · 김연지\n시간 미정\n12월 6~7일 열린 이
  y.3.6.5: https://www.youtube.com/watch?v=jfN-Po3llDU\n꽃길보라미: htt
  ps://www.youtube.com/watch?v=g7HHZOv4TlM\nh.a.p.p.y.3.6.5: https://www.you
  tube.com/watch?v=iTtqKFZizDs\n유튜브매니한: https://www.youtube.com/
- watch?v=uzlspIuXUUA\nhttps://seeya-fanpage.com/archive/?record=v491-still-
- singing
+ watch?v=uzlspIuXUUA\nh.a.p.p.y.3.6.5: https://www.youtube.com/watch?v=ovVx
+ cpWRvPs\nhttps://seeya-fanpage.com/archive/?record=v491-still-singing
 URL:https://seeya-fanpage.com/calendar/?month=2025-12&event=activity-v491-s
  till-singing
 END:VEVENT
