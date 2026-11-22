@@ -16138,6 +16138,12 @@
         "url": "https://www.youtube.com/watch?v=uzlspIuXUUA",
         "publishedDate": "2025-12-19",
         "autoDiscovery": true
+      },
+      {
+        "label": "h.a.p.p.y.3.6.5",
+        "url": "https://www.youtube.com/watch?v=ovVxcpWRvPs",
+        "publishedDate": "2025-12-15",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -16151,7 +16157,7 @@
     "dateBasis": "event",
     "endDate": "2025-12-07",
     "venue": "성신여자대학교 운정그린캠퍼스 대강당",
-    "updatedAt": "2026-11-21T07:33:22.783074+00:00"
+    "updatedAt": "2026-11-22T07:14:44.212064+00:00"
   },
   {
     "id": "v4145-6JiTQ12-tFg",
@@ -23358,6 +23364,12 @@
       {
         "label": "STONE MUSIC",
         "url": "https://www.youtube.com/watch?v=c6MlQvbbZw0"
+      },
+      {
+        "label": "WanSooMee",
+        "url": "https://www.youtube.com/watch?v=EiDraSTivq8",
+        "publishedDate": "2022-08-22",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -23371,7 +23383,8 @@
     "releaseType": "솔로·프로젝트 음반",
     "titleTracks": [
       "한 밤의 꿈처럼"
-    ]
+    ],
+    "updatedAt": "2026-11-22T07:14:44.212064+00:00"
   },
   {
     "id": "v491-kexpo2022",
@@ -33445,7 +33458,14 @@
       "label": "KBS Kpop",
       "url": "https://www.youtube.com/watch?v=OXby3s3CgQM"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=KooF6yD7cDU",
+        "publishedDate": "2016-12-23",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
@@ -33453,7 +33473,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-11-22T07:14:44.212064+00:00"
   },
   {
     "id": "v490-immortal-2016-10-22",
@@ -33474,7 +33495,14 @@
       "label": "KBS Kpop",
       "url": "https://www.youtube.com/watch?v=GIBVCiEtba4"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=4ZPn57QsS5k",
+        "publishedDate": "2016-12-23",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
@@ -33482,7 +33510,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-11-22T07:14:44.212064+00:00"
   },
   {
     "id": "v490-fourcolors",
@@ -33717,6 +33746,12 @@
       {
         "label": "MBCentertainment",
         "url": "https://www.youtube.com/watch?v=GY6vfEMDlyc"
+      },
+      {
+        "label": "내취향 노래모음",
+        "url": "https://www.youtube.com/watch?v=Qyk4auf5ZIE",
+        "publishedDate": "2020-11-03",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -33726,7 +33761,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-11-22T07:14:44.212064+00:00"
   },
   {
     "id": "v490-mask-69",
@@ -34024,6 +34060,12 @@
         "url": "https://www.youtube.com/watch?v=xMzbYAgit6o",
         "publishedDate": "2021-02-10",
         "autoDiscovery": true
+      },
+      {
+        "label": "치평동사우나",
+        "url": "https://www.youtube.com/watch?v=n1OFKz0v5pc",
+        "publishedDate": "2021-02-14",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -34034,7 +34076,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-11-06T07:09:08.026889+00:00"
+    "updatedAt": "2026-11-22T07:14:44.212064+00:00"
   },
   {
     "id": "v490-press-gyuri-swan",
@@ -56792,7 +56834,7 @@
     "id": "20221003-boram-youth-arena",
     "date": "2022-10-03",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-13T07:02:10.295562+00:00",
+    "updatedAt": "2026-11-22T07:14:44.212064+00:00",
     "title": "이보람 · 청춘아레나 대구 · 박혜원·박진주와 합동 무대",
     "program": "청춘아레나 대구",
     "type": "event",
@@ -56825,6 +56867,12 @@
       {
         "label": "수끄니",
         "url": "https://www.youtube.com/watch?v=HBfHApFxhPw",
+        "publishedDate": "2022-10-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "낭만음치",
+        "url": "https://www.youtube.com/watch?v=71yHLBXRaGg",
         "publishedDate": "2022-10-04",
         "autoDiscovery": true
       }
