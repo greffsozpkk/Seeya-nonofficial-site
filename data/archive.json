@@ -1,5 +1,91 @@
 [
   {
+    "id": "20261120-gyuri-gwanaksan-live",
+    "date": "2026-11-20",
+    "addedAt": "2026-11-23",
+    "updatedAt": "2026-11-23",
+    "title": "남규리 · 귤’s LIVE 관악산",
+    "program": "귤’s LIVE",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [
+      "관악산"
+    ],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 공식 · 귤’s LIVE",
+      "url": "https://www.youtube.com/watch?v=8lG48raJ2xo",
+      "publishedDate": "2026-11-20"
+    },
+    "additionalSources": [],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-11-20",
+    "tags": [
+      "2026",
+      "라이브",
+      "관악산"
+    ],
+    "note": "남규리의 귤멍 공식 채널에서 공개한 「관악산」 라이브 영상입니다.\n기타 연주는 유웅렬이 맡았습니다. 표시 날짜는 영상 공개일이며 촬영일이나 음원 발매일을 뜻하지 않습니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    },
+    "venue": ""
+  },
+  {
+    "id": "20261122-gyuri-gyulmung71",
+    "date": "2026-11-22",
+    "addedAt": "2026-11-23",
+    "updatedAt": "2026-11-23",
+    "title": "남규리 · 귤멍 EP.71 고효주와 롱보드 도전",
+    "program": "남규리의 귤멍 EP.71",
+    "type": "official",
+    "members": [
+      "남규리"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "남규리의 귤멍 공식 · 남규리의 귤멍 EP.71",
+      "url": "https://www.youtube.com/watch?v=GoI_Qu_elh4",
+      "publishedDate": "2026-11-22"
+    },
+    "additionalSources": [
+      {
+        "label": "톱스타뉴스 · 고효주와 롱보드 레슨",
+        "url": "https://www.topstarnews.net/news/articleView.html?idxno=16282741",
+        "publishedDate": "2026-11-22"
+      },
+      {
+        "label": "지피코리아 · 귤멍 롱보드 도전",
+        "url": "https://www.gpkorea.com/news/articleView.html?idxno=148879",
+        "publishedDate": "2026-11-22"
+      }
+    ],
+    "status": "available",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "publishedDate": "2026-11-22",
+    "tags": [
+      "2026",
+      "브이로그",
+      "롱보드",
+      "고효주"
+    ],
+    "note": "남규리가 롱보더 고효주에게 롱보드를 배우는 공식 브이로그입니다.\n11월 22일 오전 10시에 공개됐으며, 촬영일과 촬영 장소는 영상 공개일과 구분합니다.",
+    "eventState": "completed",
+    "calendar": {
+      "enabled": false
+    },
+    "venue": ""
+  },
+  {
     "id": "20261119-seeya-reunion-feature",
     "date": "2026-11-19",
     "addedAt": "2026-11-20",
@@ -574,7 +660,7 @@
     "id": "20261215-boram-six-season",
     "date": "2026-12-15",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-11-20",
+    "updatedAt": "2026-11-23",
     "title": "이보람 · 식스 더 뮤지컬 · 시모어 역 출연 예정",
     "program": "식스 더 뮤지컬",
     "type": "concert",
@@ -664,6 +750,11 @@
         "label": "식스 더 뮤지컬 공식 · 수험생 할인 안내",
         "url": "https://www.instagram.com/p/Df1dGl3JLN9/",
         "publishedDate": "2026-11-17"
+      },
+      {
+        "label": "이보람 공식 · 식스 간식·담요 서포트 감사 인사",
+        "url": "https://www.instagram.com/p/DgAK3giE-XL/",
+        "publishedDate": "2026-11-21"
       }
     ],
     "status": "available",
@@ -1757,9 +1848,19 @@
         "label": "보람씨야 공식 · 씨야 마지막 콘서트 비하인드",
         "url": "https://www.youtube.com/watch?v=pdtsjuq9cQQ",
         "publishedDate": "2026-11-11"
+      },
+      {
+        "label": "제리제이 · 이보람 인천 콘서트 사진",
+        "url": "https://www.instagram.com/p/DgADx4SkoSF/",
+        "publishedDate": "2026-11-21"
+      },
+      {
+        "label": "gyuljam0426 · 남규리 인천 콘서트 사진",
+        "url": "https://www.instagram.com/p/DgCUdspn4Sk/",
+        "publishedDate": "2026-11-22"
       }
     ],
-    "updatedAt": "2026-11-13T11:57:56.444932+00:00",
+    "updatedAt": "2026-11-23",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -53069,7 +53170,7 @@
     "id": "20261030-yeonji-birthday-fancafe",
     "date": "2026-10-30",
     "addedAt": "2026-10-08",
-    "updatedAt": "2026-11-09T13:58:00.555472+00:00",
+    "updatedAt": "2026-11-23",
     "title": "김연지 · 생일 카페 방문과 팬 만남",
     "program": "김연지 생일 팬 카페",
     "type": "etc",
@@ -53122,6 +53223,11 @@
       {
         "label": "김연지 갤러리 운영진 · 생일 카페 잔여금 투표 결과 및 기부처·선물 추천 안내",
         "url": "https://gall.dcinside.com/mgallery/board/view/?id=kimyeonji&no=7423"
+      },
+      {
+        "label": "김연지 공식 · 생일 카페 방문 사진과 뒤늦은 후기",
+        "url": "https://www.instagram.com/p/Df_-sv5CYAi/",
+        "publishedDate": "2026-11-21"
       }
     ],
     "status": "available",
@@ -53133,7 +53239,7 @@
       "생일 카페",
       "방문"
     ],
-    "note": "김연지가 10월 30일 자신의 생일을 기념해 팬들이 마련한 델루나 카페&갤러리에 방문해 팬들과 만났습니다.\n카페 운영 계정의 방문 영상과 팬 사진·후기를 함께 볼 수 있습니다.\n생일 카페 행사는 10월 30–31일 진행하며 가챠와 인생네컷 이벤트가 준비됐습니다. 31일 운영 시간은 10:00–15:30, 라스트오더는 15:00입니다.\n31일에도 김연지가 방문한다는 뜻은 아닙니다.",
+    "note": "김연지가 10월 30일 자신의 생일을 기념해 팬들이 마련한 델루나 카페&갤러리에 방문해 팬들과 만났습니다.\n카페 운영 계정의 방문 영상과 팬 사진·후기를 함께 볼 수 있습니다.\n생일 카페 행사는 10월 30–31일 진행하며 가챠와 인생네컷 이벤트가 준비됐습니다. 31일 운영 시간은 10:00–15:30, 라스트오더는 15:00입니다.\n31일에도 김연지가 방문한다는 뜻은 아닙니다.\n11월 21일 공개된 김연지의 공식 후기는 10월 30일 방문을 돌아보는 게시물입니다.",
     "eventState": "completed",
     "calendar": {
       "enabled": false
@@ -54629,8 +54735,8 @@
     "id": "20261122-boram-worldmom-seocho",
     "date": "2026-11-22",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-01",
-    "title": "이보람 · 세상을 바꾸는 여자들 서초 공연 예정",
+    "updatedAt": "2026-11-23",
+    "title": "이보람 · 세상을 바꾸는 여자들 서초 공연",
     "program": "세상을 바꾸는 여자들 · 서초",
     "type": "event",
     "members": [
@@ -54640,10 +54746,15 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "세바여 공식 · 서초 신청 안내",
-      "url": "https://newworldmom.co.kr/apply?event_id=420"
+      "label": "제리제이 · 서초 공연 팬 영상",
+      "url": "https://www.instagram.com/reel/DgC0fQIyq2x/",
+      "publishedDate": "2026-11-22"
     },
     "additionalSources": [
+      {
+        "label": "세바여 공식 · 서초 신청 안내",
+        "url": "https://newworldmom.co.kr/apply?event_id=420"
+      },
       {
         "label": "세바여 공식 · 송도·서초 출연 안내",
         "url": "https://www.instagram.com/p/Deit6kaEnH_/"
@@ -54652,18 +54763,28 @@
         "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
         "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
         "publishedDate": "2026-10-26"
+      },
+      {
+        "label": "cup_soohans · 서초 공연 사진·후기",
+        "url": "https://www.instagram.com/p/DgCP2GzEcuM/",
+        "publishedDate": "2026-11-22"
+      },
+      {
+        "label": "boram_flowerway · 서초 공연 팬 영상",
+        "url": "https://www.instagram.com/reel/DgC1jVHPjih/",
+        "publishedDate": "2026-11-22"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "tags": [
       "2026",
       "세상을 바꾸는 여자들 · 서초",
-      "예정"
+      "공연"
     ],
-    "note": "11월 22일 오후 12시 50분, 흰물결아트센터 B1 화이트홀에서 열리는 세바여 행사에 이보람이 출연합니다.\n표시 시각은 행사 시작 시각입니다.\n무료 사전 신청 행사이며 후원사 홍보 시간이 포함됩니다.",
-    "eventState": "scheduled",
+    "note": "11월 22일 흰물결아트센터 B1 화이트홀에서 열린 세바여 행사에 이보람이 출연했습니다.\n현장 팬 영상과 사진·후기를 함께 볼 수 있습니다. 오후 12시 50분은 행사 시작 시각입니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": true,
       "time": "12:50",

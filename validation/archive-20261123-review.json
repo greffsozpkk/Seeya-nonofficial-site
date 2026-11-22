@@ -1,0 +1,120 @@
+{
+  "checkedAt": "2026-11-23",
+  "before": 1522,
+  "after": 1524,
+  "added": [
+    "20261122-gyuri-gyulmung71",
+    "20261120-gyuri-gwanaksan-live"
+  ],
+  "updated": [
+    "20261122-boram-worldmom-seocho",
+    "20261030-yeonji-birthday-fancafe",
+    "20261215-boram-six-season",
+    "20261031-the-fan-incheon"
+  ],
+  "fanGallery": {
+    "profilesChecked": 15,
+    "profileFailures": 0,
+    "added": [
+      {
+        "id": "DgAVPtWGstX",
+        "account": "seeya_tree.weathered",
+        "postedOn": "2026-11-21",
+        "label": "남규리",
+        "kind": "post"
+      },
+      {
+        "id": "DgC0fQIyq2x",
+        "account": "_jerry.j_ramficial",
+        "postedOn": "2026-11-22",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgADx4SkoSF",
+        "account": "_jerry.j_ramficial",
+        "postedOn": "2026-11-21",
+        "label": "이보람",
+        "kind": "post"
+      },
+      {
+        "id": "DgCUdspn4Sk",
+        "account": "gyuljam0426",
+        "postedOn": "2026-11-22",
+        "label": "남규리",
+        "kind": "post"
+      },
+      {
+        "id": "DgByiZTyPxv",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-22",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "Df_tD0MTwYr",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-21",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgCP2GzEcuM",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-22",
+        "label": "이보람",
+        "kind": "post"
+      },
+      {
+        "id": "DgC1jVHPjih",
+        "account": "boram_flowerway",
+        "postedOn": "2026-11-22",
+        "label": "이보람",
+        "kind": "reel"
+      }
+    ],
+    "held": [
+      {
+        "id": "DfwmEBNyCbc",
+        "reason": "외부 삽입 응답에서 게시물·작성자 확인 불가"
+      },
+      {
+        "id": "Dfjsfq0h5oE",
+        "reason": "외부 삽입 copyright_blocked=true"
+      },
+      {
+        "id": "Dfxku5NTKmA",
+        "reason": "외부 삽입 copyright_blocked=true"
+      }
+    ],
+    "excluded": [
+      {
+        "id": "Df8b7TJEmDB",
+        "reason": "굿즈 인증 사진"
+      }
+    ]
+  },
+  "notes": [
+    "공식 씨야·남규리·김연지·이보람 영상 채널 및 공식 Instagram 확인.",
+    "귤멍 EP.71 촬영 장소는 근거 미확보로 지도에 임의 추가하지 않음.",
+    "새 라디오 공개분은 확인되지 않아 기존 11월 18일 30회 유지.",
+    "팬 갤러리 날짜는 한국 시간 게시일. 인천 콘서트·생일 카페는 실제 활동일 기록에 원본 링크 추가."
+  ],
+  "validation": {
+    "build": "passed",
+    "repositoryChecks": "passed",
+    "browserChecks": {
+      "results": [
+        "PC: new gallery cover loads and points to SEEYA gallery",
+        "Mobile 390px: gallery cover and no horizontal overflow",
+        "Fan gallery: first/second/back pages, six cards per page and verified source links",
+        "Archive: EP.71 searchable and official video linked",
+        "Archive: Seocho event completed with fan footage",
+        "Archive search: episode 30 uses November 18 broadcast date and official replay link",
+        "Radio: episode 30 selected with official iframe; search and sorting preserve player"
+      ],
+      "errors": [],
+      "externalEmbeds": "network blocked for layout checks; public embed author/ID verified separately"
+    }
+  }
+}
