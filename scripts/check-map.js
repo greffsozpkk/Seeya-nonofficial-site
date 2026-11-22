@@ -46,7 +46,7 @@ assert.equal(resolvePlaces(config,archive.filter(r=>r.id!=='v4145-NIeNbStvYa0'))
 console.log('PASS: map preview isolation, verified places and seven tour venues, filters, clustering, escaping and library-failure fallback.');
 
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{region:'제주'}).length,14);
-assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'여행·자연'}).length,8);
+assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'여행·자연'}).length,10);
 assert(filterPlaces(allRows,{category:'문화공간'}).some(p=>p.id==='ulsan-art-museum'));
 assert.equal(filterPlaces(allRows.filter(p=>!p.archiveOnly),{category:'쇼핑'})[0].id,'dongmyo-area');
 assert(filterPlaces(allRows,{relation:'팬 행사'}).some(p=>p.id==='about-project-jamsil'));

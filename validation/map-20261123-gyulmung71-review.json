@@ -1,0 +1,47 @@
+{
+  "checkedAt": "2026-11-23",
+  "recordId": "20261122-gyuri-gyulmung71",
+  "addedPlaceIds": [
+    "banpo-hangang",
+    "ttukseom-hangang"
+  ],
+  "evidence": [
+    {
+      "placeId": "banpo-hangang",
+      "source": {
+        "label": "귤멍 EP.71 · 세빛섬이 보이는 촬영 화면 (0:23)",
+        "url": "https://www.youtube.com/watch?v=GoI_Qu_elh4&t=23s",
+        "publishedDate": "2026-11-22"
+      },
+      "story": "귤멍 EP.71에서 남규리가 고효주에게 롱보드를 배우는 야외 공간입니다.\n영상 0분 23초~41초에 보이는 세빛섬 건물과 강변 전경을 서울시 공식 시설 사진과 대조해 반포한강공원 세빛섬 주변으로 판단했습니다.",
+      "addressSource": "https://hangang.seoul.go.kr/www/contents/663.do?mid=463",
+      "coordinateSource": "https://hangang.seoul.go.kr/www/facility/map.tab",
+      "locationPrecision": "area",
+      "note": "촬영 장소는 영상 속 시설 외관을 대조해 판단했습니다. 핀과 주소는 공원의 대표 위치이며 정확한 촬영 지점이나 세빛섬 실내 방문을 뜻하지 않습니다. 날짜는 영상 공개일입니다."
+    },
+    {
+      "placeId": "ttukseom-hangang",
+      "source": {
+        "label": "귤멍 EP.71 · 뚝섬에서 연습한 기억 (0:32)",
+        "url": "https://www.youtube.com/watch?v=GoI_Qu_elh4&t=32s",
+        "publishedDate": "2026-11-22"
+      },
+      "story": "귤멍 EP.71의 0분 32초~39초에서 남규리가 과거 뚝섬의 스케이트보드를 타는 곳에 가서 밤마다 혼자 연습했다고 회상한 장소입니다.\n이번 영상의 촬영 장소와 구분되는 과거 방문 이야기입니다.",
+      "addressSource": "https://hangang.seoul.go.kr/www/contents/654.do?mid=449",
+      "coordinateSource": "https://hangang.seoul.go.kr/www/facility/map.tab",
+      "locationPrecision": "area",
+      "note": "본인이 영상에서 언급한 과거 방문 기록입니다. 정확한 방문일과 연습 지점은 확인되지 않아 공원의 대표 위치로 표시합니다. 2026년 11월 22일은 실제 방문일이 아닌 회상 영상의 공개일입니다."
+    }
+  ],
+  "distinctions": [
+    "반포는 영상 속 세빛섬 외관과 공식 사진 대조에 따른 장소 판단",
+    "뚝섬은 본인이 언급한 과거 방문이며 이번 촬영지로 표시하지 않음",
+    "영상 공개일을 방문일·촬영일로 변환하지 않음",
+    "서울시 시설지도에 명시된 공원 대표 좌표 사용; 상세 촬영 지점 좌표 추정하지 않음"
+  ],
+  "validation": [
+    "node build.js passed",
+    "node scripts/check.js passed",
+    "검색·아카이브·다이어리 링크 및 두 장소의 지역 대표 핀 확인"
+  ]
+}

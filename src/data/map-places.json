@@ -1,6 +1,6 @@
 {
   "version": 5,
-  "checkedAt": "2026-11-15",
+  "checkedAt": "2026-11-23",
   "tileUrl": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
   "places": [
     {
@@ -4426,6 +4426,85 @@
       "recordId": "20261115-gyuri-gyulmung70",
       "checkedAt": "2026-11-15",
       "locationPrecision": "building"
+    },
+    {
+      "id": "banpo-hangang",
+      "name": "반포한강공원 · 세빛섬 주변",
+      "address": "서울특별시 서초구 신반포로11길 40 (반포한강공원)",
+      "coordinates": [
+        37.5076939718271,
+        126.992730984132
+      ],
+      "relations": [
+        "영상 방문",
+        "촬영지"
+      ],
+      "story": "귤멍 EP.71에서 남규리가 고효주에게 롱보드를 배우는 야외 공간입니다.\n영상 0분 23초~41초에 보이는 세빛섬 건물과 강변 전경을 서울시 공식 시설 사진과 대조해 반포한강공원 세빛섬 주변으로 판단했습니다.",
+      "source": {
+        "label": "귤멍 EP.71 · 세빛섬이 보이는 촬영 화면 (0:23)",
+        "url": "https://www.youtube.com/watch?v=GoI_Qu_elh4&t=23s",
+        "publishedDate": "2026-11-22"
+      },
+      "addressSource": "https://hangang.seoul.go.kr/www/contents/663.do?mid=463",
+      "evidence": [
+        {
+          "label": "서울시 · 세빛섬 위치와 건물 사진",
+          "url": "https://hangang.seoul.go.kr/www/contents/804.do?mid=528"
+        }
+      ],
+      "note": "촬영 장소는 영상 속 시설 외관을 대조해 판단했습니다. 핀과 주소는 공원의 대표 위치이며 정확한 촬영 지점이나 세빛섬 실내 방문을 뜻하지 않습니다. 날짜는 영상 공개일입니다.",
+      "city": "서울",
+      "region": "서울",
+      "category": "여행·자연",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "date": "2026-11-22",
+      "dateBasis": "영상 게시일",
+      "recordId": "20261122-gyuri-gyulmung71",
+      "checkedAt": "2026-11-23",
+      "locationPrecision": "area",
+      "coordinateSource": "https://hangang.seoul.go.kr/www/facility/map.tab"
+    },
+    {
+      "id": "ttukseom-hangang",
+      "name": "뚝섬한강공원",
+      "address": "서울특별시 광진구 강변북로 2273 (뚝섬한강공원)",
+      "coordinates": [
+        37.5293645718995,
+        127.073978164616
+      ],
+      "relations": [
+        "방문"
+      ],
+      "story": "귤멍 EP.71의 0분 32초~39초에서 남규리가 과거 뚝섬의 스케이트보드를 타는 곳에 가서 밤마다 혼자 연습했다고 회상한 장소입니다.\n이번 영상의 촬영 장소와 구분되는 과거 방문 이야기입니다.",
+      "source": {
+        "label": "귤멍 EP.71 · 뚝섬에서 연습한 기억 (0:32)",
+        "url": "https://www.youtube.com/watch?v=GoI_Qu_elh4&t=32s",
+        "publishedDate": "2026-11-22"
+      },
+      "addressSource": "https://hangang.seoul.go.kr/www/contents/654.do?mid=449",
+      "evidence": [
+        {
+          "label": "서울시 · 뚝섬한강공원 X게임장 시설 안내",
+          "url": "https://sports.seoul.go.kr/main/facilities/facilities_view.do?ft_idx=1431"
+        }
+      ],
+      "note": "본인이 영상에서 언급한 과거 방문 기록입니다. 정확한 방문일과 연습 지점은 확인되지 않아 공원의 대표 위치로 표시합니다. 2026년 11월 22일은 실제 방문일이 아닌 회상 영상의 공개일입니다.",
+      "city": "서울",
+      "region": "서울",
+      "category": "여행·자연",
+      "members": [
+        "남규리"
+      ],
+      "group": "",
+      "date": "2026-11-22",
+      "dateBasis": "영상 게시일",
+      "recordId": "20261122-gyuri-gyulmung71",
+      "checkedAt": "2026-11-23",
+      "locationPrecision": "area",
+      "coordinateSource": "https://hangang.seoul.go.kr/www/facility/map.tab"
     }
   ],
   "researchQueue": [
@@ -6043,7 +6122,7 @@
     ]
   },
   "archiveAudit": {
-    "checkedAt": "2026-11-15",
+    "checkedAt": "2026-11-23",
     "rows": [
       {
         "placeId": "khu-grand-peace-palace",
@@ -6755,6 +6834,16 @@
       {
         "placeId": "somunnan-seongsu-gamjatang",
         "recordId": "20261115-gyuri-gyulmung70",
+        "status": "linked"
+      },
+      {
+        "placeId": "banpo-hangang",
+        "recordId": "20261122-gyuri-gyulmung71",
+        "status": "linked"
+      },
+      {
+        "placeId": "ttukseom-hangang",
+        "recordId": "20261122-gyuri-gyulmung71",
         "status": "linked"
       }
     ]
