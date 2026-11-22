@@ -38,6 +38,13 @@
   ],
   "남규리": [
     {
+      "title": "남규리, 10년간 동경한 여신 만났는데…굳어버린 몸에 진땀 뻘뻘 (귤멍) - 뉴스엔",
+      "source": "뉴스엔",
+      "pubDate": "2026-11-22T02:58:07+00:00",
+      "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5JUVBudWRyY1VJeC1iWnJtSTRpZHJRZkNIbTltVmRtY0h4RUxfazM3VGE1RDRCTWthZXBZQmJ6MUFoX2RFM1JMRVJZZVBTNjF1WXpuSlZ5d0FKM0trbDlDd1RYcFdCQWtGNVVmYUJOMEhPZzdZS2VTZm93QQ?oc=5",
+      "description": "남규리, 10년간 동경한 여신 만났는데…굳어버린 몸에 진땀 뻘뻘 (귤멍) 뉴스엔"
+    },
+    {
       "title": "남규리, 버거형과 성수동서 뜻밖의 커플룩…\"얼떨결에 1일 남친\" (귤멍) - 엑스포츠뉴스",
       "source": "엑스포츠뉴스",
       "pubDate": "2026-11-17T06:57:03+00:00",
@@ -64,13 +71,6 @@
       "pubDate": "2026-11-15T07:26:27+00:00",
       "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBjZUlHU1E5ZmtVZTZEQm9CMjBVaHRQYk9VU0dqdGxUWERmTFdIRlY1YWtEd1ZodGJ1VmNFWmJybkEyZGVtN1Bhd0pmeWx4QWJEWWIzS2ZBcVlTUnptaVVhN3dvQ1lSNjd6amNIS3dVWVFGdlhud25HSWI2eHByd9IBZkFVX3lxTE1GUUhlOGZILTZheURTSnJmbDJubVZBZzdwc2VXNm5oNlljeUJDZU03QkxvcU9tNHVBOXZJUlJQSDUxTUJKLXhNQXNpb0pUVTcza1NwS00zdk44eGhsWHRaalVNSm9yZw?oc=5",
       "description": "남규리, 12월 9일 솔로 신곡 발표 “첫눈 오는 날 커플 질투하는 곡” 동아일보"
-    },
-    {
-      "title": "남규리, 12월 9일 솔로 신곡 발매 ‘깜짝 스포’ - 일간스포츠",
-      "source": "일간스포츠",
-      "pubDate": "2026-11-15T05:09:00+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE12dFV3MlZCaU5WemZ4QllHazJRMHBNVlI5bHk5QXFkYVZJN1dIUXVhZ3V5V0Q3YUxRQWk0WkFjOWptcENyWEd2T1Z2U0ppbHRDMU10Q0V3bzh5Z1U?oc=5",
-      "description": "남규리, 12월 9일 솔로 신곡 발매 ‘깜짝 스포’ 일간스포츠"
     }
   ],
   "김연지": [
@@ -147,17 +147,17 @@
       "description": "씨야 이보람, ‘골때녀’ 경기 앞두고 긴장감 가득한 눈빛 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-11-21T19:19:35.572371+00:00",
-  "lastCheckedAt": "2026-11-21T19:19:35.572371+00:00",
+  "updatedAt": "2026-11-22T04:04:10.872229+00:00",
+  "lastCheckedAt": "2026-11-22T04:04:10.872229+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-21T19:19:35.572371+00:00",
-    "남규리": "2026-11-21T19:19:35.572371+00:00",
-    "김연지": "2026-11-21T19:19:35.572371+00:00",
-    "이보람": "2026-11-21T19:19:35.572371+00:00"
+    "씨야": "2026-11-22T04:04:10.872229+00:00",
+    "남규리": "2026-11-22T04:04:10.872229+00:00",
+    "김연지": "2026-11-22T04:04:10.872229+00:00",
+    "이보람": "2026-11-22T04:04:10.872229+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-20T12:12:21.022993+00:00",
-    "남규리": "2026-11-18T07:33:13.310450+00:00",
+    "남규리": "2026-11-22T04:04:10.872229+00:00",
     "이보람": "2026-11-20T12:12:21.022993+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
   },
@@ -165,28 +165,28 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 71,
+      "accepted": 73,
       "changed": false,
       "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 57,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 60,
+      "changed": true,
+      "status": "changed"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 16,
+      "accepted": 17,
       "changed": false,
       "status": "unchanged"
     },
     "이보람": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 45,
+      "accepted": 51,
       "changed": false,
       "status": "unchanged"
     }
