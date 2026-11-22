@@ -27,6 +27,8 @@ module.exports=function(B){
  const songs=B.songs.map(t=>{const a=B.songAlbum(t.id),i=a.tracks.findIndex(x=>x.id===t.id);return {...t,hint:i?'앞 곡의 연습을 모두 마치면 자동으로 열려요.':a.id==='first-mind'?'첫 연습을 시작해요.':'앨범을 열면 바로 연습할 수 있어요.'};});
  const challenges={...B.challenges},map={'first':'debut-team','album':'debut-duet','ending':'debut-ost','chapter-lovely':'copyright','chapter-california':'california-ost','chapter-brilliant':'new-beat','chapter-rebloom':'rebloom-member','chapter-again':'again-new','chapter-still':'pre-release','chapter-first-again':'album-writing','gr':'gyuri-49','yj':'yeonji-dmc','br':'boram-team','reunion':'reunion-show'};
  for(const [id,q]of Object.entries(map))challenges['story:'+id]={...activity['song:activity-'+q],level:1,skill:'활동의 순간'};
+ const storyHints=require('../data/our-stage-story-hints.json');
+ for(const [id,hint]of Object.entries(storyHints))if(challenges['story:'+id])challenges['story:'+id]={...challenges['story:'+id],hint};
  const canChallenge=(s,key)=>!key.startsWith('song:')&&B.canChallenge(s,key);
  function answer(s,key,index){if(!canChallenge(s,key)||challenges[key].answer!==index)return false;return B.answer(s,key,B.challenges[key].answer);}
  function claim(s,id){if(['first','ending'].includes(id)&&B.canChallenge(s,'story:'+id)&&!s.proofs.includes('story:'+id))s.proofs.push('story:'+id);return B.claim(s,id);}

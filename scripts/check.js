@@ -79,6 +79,7 @@ require('./check-our-stage-stories');
 require('./check-our-stage');
 require('./check-our-stage-public');
 require('./check-our-stage-backups');
+require('./check-our-stage-hints');
 
 require('./check-our-stage-mini');
 

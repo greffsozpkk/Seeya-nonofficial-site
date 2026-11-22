@@ -265,7 +265,7 @@ function challenge(key,then=null,note=''){
  if(!M.canChallenge(s,key))return;
  activeChallenge=key;afterChallenge=then;
  const q=M.challenges[key];
- dialog(`${mark(key.startsWith('song:')?'A SONG TO REMEMBER':'A MOMENT TO KEEP')}<h2>${q.question}</h2><p class="quiz-help">한 문제씩, 씨야를 조금 더 알아가요.<br>틀려도 괜찮아요. 힌트를 보고 다시 골라보세요.</p><div class="quiz-options">${q.choices.map((x,i)=>button(`<span>${i+1}</span>${x}`,'challenge-answer',String(i))).join('')}</div><p class="quiz-note" role="status">${note}</p><details class="quiz-hint"><summary>힌트 보기</summary><p>${q.explanation}</p>${link('관련 기록 보기',q.source)}</details>`);
+ dialog(`${mark(key.startsWith('song:')?'A SONG TO REMEMBER':'A MOMENT TO KEEP')}<h2>${q.question}</h2><p class="quiz-help">한 문제씩, 씨야를 조금 더 알아가요.<br>틀려도 괜찮아요. 힌트를 보고 다시 골라보세요.</p><div class="quiz-options">${q.choices.map((x,i)=>button(`<span>${i+1}</span>${x}`,'challenge-answer',String(i))).join('')}</div><p class="quiz-note" role="status">${note}</p><details class="quiz-hint"><summary>힌트 보기</summary><p>${esc(q.hint||'이 시기의 활동과 문제의 단서를 함께 떠올려보세요.')}</p>${link('관련 기록 보기',q.source)}</details>`);
 }
 function finishChallenge(){
  const key=activeChallenge,next=afterChallenge,q=M.challenges[key];
