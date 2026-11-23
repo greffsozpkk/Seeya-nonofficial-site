@@ -54735,7 +54735,7 @@
     "id": "20261122-boram-worldmom-seocho",
     "date": "2026-11-22",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-23",
+    "updatedAt": "2026-11-23T07:59:26.436074+00:00",
     "title": "이보람 · 세상을 바꾸는 여자들 서초 공연",
     "program": "세상을 바꾸는 여자들 · 서초",
     "type": "event",
@@ -54773,6 +54773,18 @@
         "label": "boram_flowerway · 서초 공연 팬 영상",
         "url": "https://www.instagram.com/reel/DgC1jVHPjih/",
         "publishedDate": "2026-11-22"
+      },
+      {
+        "label": "제리제이 Jerry.j",
+        "url": "https://www.youtube.com/watch?v=9dt7sr9o6dg",
+        "publishedDate": "2026-11-22",
+        "autoDiscovery": true
+      },
+      {
+        "label": "람보사랑",
+        "url": "https://www.youtube.com/watch?v=V_cWrud7wpA",
+        "publishedDate": "2026-11-23",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -57110,7 +57122,7 @@
     "id": "20230923-boram-yangju-flower",
     "date": "2023-09-23",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-18T07:49:40.017695+00:00",
+    "updatedAt": "2026-11-23T07:59:26.436074+00:00",
     "title": "이보람 · 양주 천만송이 천일홍축제",
     "program": "양주 천만송이 천일홍축제",
     "type": "event",
@@ -57137,6 +57149,12 @@
         "label": "동구",
         "url": "https://www.youtube.com/watch?v=tCgeW8R5ffY",
         "publishedDate": "2023-09-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "문문문문",
+        "url": "https://www.youtube.com/watch?v=tmuQo1UIddM",
+        "publishedDate": "2023-09-23",
         "autoDiscovery": true
       }
     ],
@@ -58887,6 +58905,35 @@
     "tags": [],
     "note": "",
     "publishedDate": "2026-11-16",
+    "autoDiscovery": true
+  },
+  {
+    "id": "discovered-8a548065ca43df62",
+    "date": "2011-07-29",
+    "addedAt": "2026-11-23T07:59:26.436074+00:00",
+    "updatedAt": "2026-11-23T07:59:26.436074+00:00",
+    "title": "[씨야/이보람]110726 - LeeBoram - Interview in Falling for EvE Show by 스팟TV",
+    "program": "",
+    "type": "interview",
+    "members": [
+      "이보람"
+    ],
+    "songs": [],
+    "album": "",
+    "thumbnail": "",
+    "source": {
+      "label": "mena299",
+      "url": "https://www.youtube.com/watch?v=k178MxvyD94",
+      "publishedDate": "2011-07-29",
+      "autoDiscovery": true
+    },
+    "additionalSources": [],
+    "status": "documented",
+    "dateStatus": "confirmed",
+    "dateBasis": "video-published",
+    "tags": [],
+    "note": "",
+    "publishedDate": "2011-07-29",
     "autoDiscovery": true
   }
 ]
