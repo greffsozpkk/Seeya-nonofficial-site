@@ -1,0 +1,164 @@
+{
+  "checkedAt": "2026-11-24",
+  "before": 1525,
+  "after": 1525,
+  "added": [],
+  "updated": [
+    "20261122-boram-worldmom-seocho",
+    "20261031-the-fan-incheon",
+    "20261125-boram-btn-dream-schedule"
+  ],
+  "fanGallery": {
+    "profilesChecked": 15,
+    "profileFailures": 0,
+    "before": 433,
+    "after": 447,
+    "added": [
+      {
+        "id": "DgGikEfSX7H",
+        "account": "_jerry.j_ramficial",
+        "postedOn": "2026-11-24",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgD9JcVAaGx",
+        "account": "_jerry.j_ramficial",
+        "postedOn": "2026-11-23",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgFn_k7E4Lb",
+        "account": "gyuljam0426",
+        "postedOn": "2026-11-23",
+        "label": "남규리",
+        "kind": "post"
+      },
+      {
+        "id": "DgHvfvNT-ST",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-24",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgFX-4gzPcd",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-23",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgFWagkz1DH",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-23",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgFS9_-Trc8",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-23",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgFQHd3TpRT",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-23",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgFOvCaz_J-",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-23",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgHxitHuKXL",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-24",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgHZSmIRKUq",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-24",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgHUHUtx8Y9",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-24",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgHT88dRKjX",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-24",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgGPoFLzHMD",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-24",
+        "label": "이보람",
+        "kind": "reel"
+      }
+    ],
+    "held": [
+      {
+        "id": "DgG2pIdvMVg",
+        "reason": "Instagram copyright_blocked: 외부 삽입 제한"
+      },
+      {
+        "id": "DgFYRDaoHbd",
+        "reason": "후기 문구는 남규리 관련이나 사진은 차량·카페로 멤버 촬영 자료 확인 불가"
+      },
+      {
+        "id": "DgGP6xyT26n",
+        "reason": "Instagram copyright_blocked: 외부 삽입 제한"
+      }
+    ],
+    "scope": "등록 공개 프로필의 최근 게시물 및 개별 embed의 작성자·ID·본문·이미지를 대조. 전체 게시물 전수 조회는 아님."
+  },
+  "officialChecks": {
+    "instagram": [
+      "nam_gyuri",
+      "dlqhfka0217",
+      "rorakim0927",
+      "seeya_ent_official",
+      "sixthemusical_kr",
+      "btnradio"
+    ],
+    "newArtistPostsSinceLastUpdate": 0,
+    "youtube": "멤버 3명·SEEYA Official 기존 최신 영상 확인. BTN 31회 대기 영상 신규 연결.",
+    "excludedProfile": "newworldmom은 관련 없는 프로필로 확인되어 근거로 사용하지 않음"
+  },
+  "radio": {
+    "id": "20261125-boram-btn-dream-schedule",
+    "videoId": "ScPndgAly7A",
+    "playabilityStatus": "LIVE_STREAM_OFFLINE",
+    "scheduledKST": "2026-11-25T21:00:00+09:00",
+    "keptScheduled": true
+  },
+  "notChanged": [
+    "11/23 불후 조수미 편은 이보람의 실제 참여 후속 자료·방송일 확인 부족으로 예정 기록 유지",
+    "새 장소를 확정할 신규 자료가 없어 지도 변경 없음"
+  ],
+  "checks": [
+    "node build.js",
+    "node scripts/check.js: 전체 검사 통과",
+    "PC 1440px / 모바일 390px 홈·아카이브 검색·갤러리 1→2→1 페이지 이동·원본 링크 확인",
+    "라디오 30회 유지 및 검색·정렬 시 플레이어 재생성 없음",
+    "31회 미래 방송은 라디오 목록에 추가하지 않고 일정·대기 영상만 연결",
+    "뉴스 4개 분류 조회 성공, 새 기사 목록 변경 없음"
+  ]
+}

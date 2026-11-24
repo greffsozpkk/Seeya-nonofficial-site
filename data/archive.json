@@ -1858,9 +1858,14 @@
         "label": "gyuljam0426 · 남규리 인천 콘서트 사진",
         "url": "https://www.instagram.com/p/DgCUdspn4Sk/",
         "publishedDate": "2026-11-22"
+      },
+      {
+        "label": "gyuljam0426 · 인천 콘서트 남규리 사진",
+        "url": "https://www.instagram.com/p/DgFn_k7E4Lb/",
+        "publishedDate": "2026-11-23"
       }
     ],
-    "updatedAt": "2026-11-23",
+    "updatedAt": "2026-11-24",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -54773,14 +54778,19 @@
     "id": "20261122-boram-worldmom-seocho",
     "date": "2026-11-22",
     "addedAt": "2026-10-21",
-    "updatedAt": "2026-11-23T07:59:26.436074+00:00",
+    "updatedAt": "2026-11-24",
     "title": "이보람 · 세상을 바꾸는 여자들 서초 공연",
     "program": "세상을 바꾸는 여자들 · 서초",
     "type": "event",
     "members": [
       "이보람"
     ],
-    "songs": [],
+    "songs": [
+      "행복한 나를",
+      "사랑하니까",
+      "당신을 위하여",
+      "그때 그 순간 그대로"
+    ],
     "album": "",
     "thumbnail": "",
     "source": {
@@ -54823,6 +54833,71 @@
         "url": "https://www.youtube.com/watch?v=V_cWrud7wpA",
         "publishedDate": "2026-11-23",
         "autoDiscovery": true
+      },
+      {
+        "label": "_jerry.j_ramficial · 서초 세바여 공연·토크 팬 영상",
+        "url": "https://www.instagram.com/reel/DgGikEfSX7H/",
+        "publishedDate": "2026-11-24"
+      },
+      {
+        "label": "_jerry.j_ramficial · 서초 세바여 공연·토크 팬 영상",
+        "url": "https://www.instagram.com/reel/DgD9JcVAaGx/",
+        "publishedDate": "2026-11-23"
+      },
+      {
+        "label": "nam_hee0928 · 서초 세바여 공연·토크 팬 영상",
+        "url": "https://www.instagram.com/reel/DgHvfvNT-ST/",
+        "publishedDate": "2026-11-24"
+      },
+      {
+        "label": "nam_hee0928 · 서초 세바여 공연·토크 팬 영상",
+        "url": "https://www.instagram.com/reel/DgFX-4gzPcd/",
+        "publishedDate": "2026-11-23"
+      },
+      {
+        "label": "nam_hee0928 · 서초 세바여 공연·토크 팬 영상",
+        "url": "https://www.instagram.com/reel/DgFWagkz1DH/",
+        "publishedDate": "2026-11-23"
+      },
+      {
+        "label": "nam_hee0928 · 서초 세바여 공연·토크 팬 영상",
+        "url": "https://www.instagram.com/reel/DgFS9_-Trc8/",
+        "publishedDate": "2026-11-23"
+      },
+      {
+        "label": "nam_hee0928 · 서초 세바여 공연·토크 팬 영상",
+        "url": "https://www.instagram.com/reel/DgFQHd3TpRT/",
+        "publishedDate": "2026-11-23"
+      },
+      {
+        "label": "nam_hee0928 · 서초 세바여 공연·토크 팬 영상",
+        "url": "https://www.instagram.com/reel/DgFOvCaz_J-/",
+        "publishedDate": "2026-11-23"
+      },
+      {
+        "label": "cup_soohans · 서초 세바여 · 뮤지컬 관람 포인트 토크",
+        "url": "https://www.instagram.com/reel/DgHxitHuKXL/",
+        "publishedDate": "2026-11-24"
+      },
+      {
+        "label": "cup_soohans · 행복한 나를 · 무반주 신청곡",
+        "url": "https://www.instagram.com/reel/DgHZSmIRKUq/",
+        "publishedDate": "2026-11-24"
+      },
+      {
+        "label": "cup_soohans · 사랑하니까 · 무반주 신청곡",
+        "url": "https://www.instagram.com/reel/DgHUHUtx8Y9/",
+        "publishedDate": "2026-11-24"
+      },
+      {
+        "label": "cup_soohans · 당신을 위하여 · 무반주 신청곡",
+        "url": "https://www.instagram.com/reel/DgHT88dRKjX/",
+        "publishedDate": "2026-11-24"
+      },
+      {
+        "label": "cup_soohans · 그때 그 순간 그대로",
+        "url": "https://www.instagram.com/reel/DgGPoFLzHMD/",
+        "publishedDate": "2026-11-24"
       }
     ],
     "status": "available",
@@ -54833,7 +54908,7 @@
       "세상을 바꾸는 여자들 · 서초",
       "공연"
     ],
-    "note": "11월 22일 흰물결아트센터 B1 화이트홀에서 열린 세바여 행사에 이보람이 출연했습니다.\n현장 팬 영상과 사진·후기를 함께 볼 수 있습니다. 오후 12시 50분은 행사 시작 시각입니다.",
+    "note": "11월 22일 흰물결아트센터 B1 화이트홀에서 열린 세바여 행사에 이보람이 출연했습니다.\n현장 팬 영상과 사진·후기를 함께 볼 수 있습니다. 오후 12시 50분은 행사 시작 시각입니다.\n11월 23–24일 공개된 현장 토크와 「그때 그 순간 그대로」, 무반주 신청곡 「행복한 나를」·「사랑하니까」·「당신을 위하여」 팬 영상을 추가했습니다. 영상 게시일과 공연일은 구분해 기록했습니다.",
     "eventState": "completed",
     "calendar": {
       "enabled": true,
@@ -57581,8 +57656,8 @@
     "id": "20261125-boram-btn-dream-schedule",
     "date": "2026-11-25",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-01",
-    "title": "이보람 · 한밤의 꿈 이보람입니다 방송 예정",
+    "updatedAt": "2026-11-24",
+    "title": "이보람 · 한밤의 꿈 이보람입니다 31회 방송 예정",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
     "members": [
@@ -57592,11 +57667,16 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
-      "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
-      "publishedDate": "2026-10-26"
+      "label": "BTN라디오 공식 · 한밤의 꿈 31회 최초 공개 대기 영상",
+      "url": "https://www.youtube.com/watch?v=ScPndgAly7A"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "씨야 갤러리 · 11월 일정표 (10월 26일 기준)",
+        "url": "https://gall.dcinside.com/mini/board/view/?id=seeya&no=10177",
+        "publishedDate": "2026-10-26"
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
@@ -57605,13 +57685,15 @@
       "BTN라디오 · 한밤의 꿈 이보람입니다",
       "예정"
     ],
-    "note": "11월 일정표에 안내된 「한밤의 꿈 이보람입니다」 방송 예정입니다.\n오후 9시 방송 예정이며, 회차·게스트·최초 공개 여부는 방송사 공지 후 갱신합니다.",
+    "note": "BTN라디오 공식 영상에서 31회 최초 공개가 11월 25일 오후 9시(한국 시간)로 안내되었습니다.\n방송 전 대기 영상이며, 다시듣기 공개 여부는 방송 후 확인합니다.",
     "eventState": "scheduled",
     "calendar": {
       "enabled": true,
       "time": "21:00",
-      "timeLabel": "방송 예정 · 팬 일정표 기준",
-      "state": "tentative"
+      "timeLabel": "최초 공개 · BTN라디오 공식"
+    },
+    "homeActions": {
+      "notice": "https://www.youtube.com/watch?v=ScPndgAly7A"
     }
   },
   {
