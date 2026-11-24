@@ -125,6 +125,10 @@ const galaxyRoute=json('src/data/galaxy-test-route.json');
 const magazineCss=asset('magazine','css',read('src/styles/magazine.css'));
 const galaxyCss=asset('galaxy','css',read('src/styles/galaxy.css'));
 const galaxyJs=asset('galaxy','js',bundle('src/client/galaxy.js'));
+// Keep the local test route alongside the public atlas in routes.json.
+const liveRoutes=outputRoot!==root?[{key:'live-test',path:'/music/live/test/',title:'씨야 라이브 도감 · SEEYA ARCHIVE',description:'THE FAN 8회차의 노래와 근거 자료를 비교하는 라이브 도감',unlisted:true,noindex:true}]:[];
+const liveCss=asset('live','css',read('src/styles/live.css'));
+const liveJs=asset('live','js',bundle('src/client/live.js'));
 const ourStageRoute=json('src/data/our-stage-test-route.json');
 const ourStageCss=asset('our-stage','css',read('src/styles/our-stage.css')+'\n'+read('src/styles/our-stage-choreo.css')+'\n'+read('src/styles/our-stage-first-release.css')+'\n'+read('src/styles/our-stage-leisure.css')+'\n'+read('src/styles/our-stage-capsule-design.css')+'\n'+read('src/styles/our-stage-room.css')+'\n'+read('src/styles/our-stage-mobile.css'));
 const ourStageJs=asset('our-stage','js',bundle('src/client/our-stage.js'));
@@ -132,11 +136,12 @@ const photosRaw=json('data/photos.json');
 const photos=(Array.isArray(photosRaw)?photosRaw:photosRaw.photos||[]).filter(x=>x&&x.hidden!==true).sort((a,b)=>String(b.date||'').localeCompare(String(a.date||''))||Number(a.order||999)-Number(b.order||999));
 const template=read('src/template.html').replaceAll('{{mainNavigation}}', read('src/main-navigation.html').trim());
 const files=[];
-for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcertRoute,galaxyRoute,ourStageRoute]){
+for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcertRoute,galaxyRoute,ourStageRoute,...liveRoutes]){
  const key=route.key;
- const render=require('./src/pages/'+(key==='fanchant'?'music':key==='fan-letters'?'galaxy-test':key)+'.js');
+ const render=require('./src/pages/'+(key==='fanchant'?'music':key==='fan-letters'?'galaxy-test':key==='live'?'live-test':key)+'.js');
  let content;
  if(key==='news')content=render(json('data/news.json'));
+ else if(key==='live'||key==='live-test')content=render(route,archiveRows,passportCatalog);
  else if((key==='map'||key==='map-preview'))content=render(archiveRows);
  else if(key==='calendar')content=render(calendarData);
  else if(key==='passport')content=render(passportCatalog).replaceAll('/passport/test/',route.path);
@@ -157,6 +162,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  if(key==='our-stage-test'||key==='our-stage'){vars.pageHead=`<link rel="stylesheet" href="${ourStageCss}">`;vars.scripts=`<script defer src="${ourStageJs}"></script>`;}
  if(key==='first-again-magazine')vars.pageHead=`<link rel="stylesheet" href="${magazineCss}">`;
  if(key==='galaxy-test'||key==='fan-letters'){vars.pageHead=`<link rel="stylesheet" href="${galaxyCss}">`;vars.scripts=`<script defer src="${galaxyJs}"></script>`;}
+ if(key==='live'||key==='live-test'){vars.pageHead=`<meta name="referrer" content="strict-origin-when-cross-origin"><link rel="stylesheet" href="${liveCss}">`;vars.scripts=`<script defer src="${liveJs}"></script>`;}
  if(key==='diary-privacy')vars.pageHead+=`<link rel="stylesheet" href="${passportCss}">`;
  if(key==='passport'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${passportCss}"><link rel="stylesheet" href="${myConcertCss}">`;vars.scripts=`<script defer src="${diaryJs}"></script>`;}
  if(key==='radio'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}">`;vars.scripts=`<script defer src="${radioJs}"></script>`;}
@@ -191,6 +197,6 @@ for(const route of retiredRoutes){const file=route.from.slice(1)+'index.html';wr
 write('passport/sw.js',read('src/retired-passport-worker.js'));
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:[ourStageRoute.path.slice(1)+'index.html',galaxyRoute.path.slice(1)+'index.html','game/my-concert/catalog.json',myConcertRoute.path.slice(1)+'index.html','game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html',clinicRoute.path.slice(1)+'index.html']},null,2)+'\n');
-console.log(`Built ${routes.length} public pages, 6 unlisted test pages and ${assets.length} versioned assets.`);
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:[...liveRoutes.map(r=>r.path.slice(1)+'index.html'),ourStageRoute.path.slice(1)+'index.html',galaxyRoute.path.slice(1)+'index.html','game/my-concert/catalog.json',myConcertRoute.path.slice(1)+'index.html','game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html',clinicRoute.path.slice(1)+'index.html']},null,2)+'\n');
+console.log(`Built ${routes.length} public pages, ${6+liveRoutes.length} unlisted test pages and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

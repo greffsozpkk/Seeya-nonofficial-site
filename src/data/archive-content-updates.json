@@ -12861,5 +12861,22 @@
         ]
       }
     ]
+  },
+  {
+    "id": "archive-2026-11-24-live-atlas-long-video",
+    "checkedAt": "2026-11-24",
+    "additions": [],
+    "updates": [
+      {
+        "id": "20260829-the-fan-seoul",
+        "sources": [
+          {
+            "label": "너에게기대어 · [4K]260830 씨야(See Ya) 그래도 좋아(Acoustic ver)",
+            "url": "https://www.youtube.com/watch?v=1Zct-L96S8o",
+            "publishedDate": "2026-08-31"
+          }
+        ]
+      }
+    ]
   }
 ]

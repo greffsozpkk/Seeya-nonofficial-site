@@ -22,6 +22,7 @@ require('./check-on-this-day');
 require('./check-birthday-popup');
 
 require('./check-stages');
+require('./check-live-atlas');
 require('./check-concerts');
 require('./check-map');
 require('./check-map-coverage');

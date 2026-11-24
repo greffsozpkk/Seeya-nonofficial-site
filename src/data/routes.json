@@ -18,6 +18,12 @@
     "description": "씨야의 The First Mind부터 First, Again까지 주요 앨범과 노래를 정리한 디스코그래피입니다."
   },
   {
+    "key": "live",
+    "path": "/music/live/",
+    "title": "씨야 라이브 도감 · SEEYA ARCHIVE",
+    "description": "씨야 THE FAN 8회차의 무대와 영상을 살펴보고 공연별 노래를 비교해 보세요."
+  },
+  {
     "key": "stages",
     "path": "/music/stages/",
     "title": "씨야 곡별 무대 모아보기 | SEEYA ARCHIVE",

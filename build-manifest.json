@@ -5,6 +5,7 @@
     "index.html",
     "members/index.html",
     "music/index.html",
+    "music/live/index.html",
     "music/stages/index.html",
     "music/stages/scent-of-a-woman/index.html",
     "music/stages/shoes/index.html",
@@ -64,12 +65,12 @@
     "sw.js"
   ],
   "assets": [
-    "assets/site.2daf3622a431.css",
+    "assets/site.01fd0bbbc5bb.css",
     "assets/pwa.4c8d4bbee1b1.js",
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
     "assets/mobile-menu.d34f2de4a9e9.js",
-    "assets/site.6076f0c12fb0.js",
+    "assets/site.4c6adaa938c1.js",
     "assets/lyric-quiz.a3cd740ffe69.js",
     "assets/fan-gallery.69fa3421ba81.css",
     "assets/fan-gallery.7b36184a564a.js",
@@ -105,6 +106,8 @@
     "assets/magazine.1087b23f82e2.css",
     "assets/galaxy.2cc65ad753f7.css",
     "assets/galaxy.dd6899b3a9b7.js",
+    "assets/live.45745d2598eb.css",
+    "assets/live.b86297f6fccd.js",
     "assets/our-stage.df078334fb67.css",
     "assets/our-stage.86a07cd2ffd0.js"
   ],

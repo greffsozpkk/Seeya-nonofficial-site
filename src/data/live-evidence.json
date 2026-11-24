@@ -1,0 +1,2147 @@
+{
+  "tourId": "the-fan-2026",
+  "checkedAt": "2026-11-24",
+  "scopeNote": "씨야 발표곡 25곡의 기존 아카이브 영상 제목을 기준으로 회차별 무대을 정리한 첫 미리보기입니다. 솔로곡·외부 커버곡과 전체 셋리스트 검토는 아직 포함하지 않았습니다.",
+  "songs": [
+    {
+      "id": "scent-of-a-woman",
+      "trackId": "track-001",
+      "stageId": "scent-of-a-woman"
+    },
+    {
+      "id": "shoes",
+      "trackId": "track-002",
+      "stageId": "shoes"
+    },
+    {
+      "id": "crazy-love-song",
+      "trackId": "track-034",
+      "stageId": "crazy-love-song"
+    },
+    {
+      "id": "love-greeting",
+      "trackId": "track-013",
+      "stageId": "love-greeting"
+    },
+    {
+      "id": "marry-me",
+      "trackId": "track-014",
+      "stageId": "marry-me"
+    },
+    {
+      "id": "sad-footsteps",
+      "trackId": "track-026",
+      "stageId": "sad-footsteps"
+    },
+    {
+      "id": "still-like-you",
+      "trackId": "track-027",
+      "stageId": "still-like-you"
+    },
+    {
+      "id": "hot-girl",
+      "trackId": "track-038",
+      "stageId": "hot-girl"
+    },
+    {
+      "id": "his-voice",
+      "trackId": "track-050",
+      "stageId": "his-voice"
+    },
+    {
+      "id": "wonderful-you",
+      "trackId": "track-055",
+      "stageId": "wonderful-you"
+    },
+    {
+      "id": "stay",
+      "trackId": "track-057",
+      "stageId": "stay"
+    },
+    {
+      "id": "group-track-058",
+      "trackId": "track-058"
+    },
+    {
+      "id": "like-spring",
+      "trackId": "track-059",
+      "stageId": "like-spring"
+    },
+    {
+      "id": "group-track-060",
+      "trackId": "track-060"
+    },
+    {
+      "id": "nevertheless-us",
+      "trackId": "track-061",
+      "stageId": "nevertheless-us"
+    },
+    {
+      "id": "group-track-062",
+      "trackId": "track-062"
+    },
+    {
+      "id": "group-track-063",
+      "trackId": "track-063"
+    },
+    {
+      "id": "group-track-065",
+      "trackId": "track-065",
+      "displayName": "우리"
+    },
+    {
+      "id": "group-track-030",
+      "trackId": "track-030"
+    },
+    {
+      "id": "group-track-022",
+      "trackId": "track-022"
+    },
+    {
+      "id": "group-track-019",
+      "trackId": "track-019"
+    },
+    {
+      "id": "group-track-044",
+      "trackId": "track-044"
+    },
+    {
+      "id": "group-track-049",
+      "trackId": "track-049"
+    },
+    {
+      "id": "cotton-candy",
+      "trackId": "track-047",
+      "stageId": "cotton-candy"
+    },
+    {
+      "id": "fool",
+      "trackId": "track-066",
+      "stageId": "fool"
+    }
+  ],
+  "sessions": [
+    {
+      "id": "the-fan-20260829",
+      "archiveId": "20260829-the-fan-seoul",
+      "date": "2026-08-29",
+      "label": "서울 첫날",
+      "setlistCompleteness": "partial"
+    },
+    {
+      "id": "the-fan-20260830",
+      "archiveId": "20260829-the-fan-seoul",
+      "date": "2026-08-30",
+      "label": "서울 둘째 날",
+      "setlistCompleteness": "partial"
+    },
+    {
+      "id": "the-fan-20260905",
+      "archiveId": "20260905-the-fan-busan",
+      "date": "2026-09-05",
+      "label": "부산",
+      "setlistCompleteness": "partial"
+    },
+    {
+      "id": "the-fan-20260912",
+      "archiveId": "20260912-the-fan-daegu",
+      "date": "2026-09-12",
+      "label": "대구",
+      "setlistCompleteness": "partial"
+    },
+    {
+      "id": "the-fan-20261004",
+      "archiveId": "20261004-the-fan-goyang",
+      "date": "2026-10-04",
+      "label": "고양",
+      "setlistCompleteness": "partial"
+    },
+    {
+      "id": "the-fan-20261010",
+      "archiveId": "20261010-the-fan-cheongju",
+      "date": "2026-10-10",
+      "label": "청주",
+      "setlistCompleteness": "partial"
+    },
+    {
+      "id": "the-fan-20261017",
+      "archiveId": "20261017-the-fan-suwon",
+      "date": "2026-10-17",
+      "label": "수원",
+      "setlistCompleteness": "partial"
+    },
+    {
+      "id": "the-fan-20261031",
+      "archiveId": "20261031-the-fan-incheon",
+      "date": "2026-10-31",
+      "label": "인천",
+      "setlistCompleteness": "partial"
+    }
+  ],
+  "evidence": [
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "scent-of-a-woman",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=-Q2TckgxZdY",
+          "scope": "documented",
+          "videoTitle": "[4K]씨야 SEEYA - 여인의향기 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+          "durationSeconds": 221,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "shoes",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=lfzqNs5rt74",
+          "scope": "documented",
+          "videoTitle": "[4K]씨야 SEEYA - 구두 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+          "durationSeconds": 226,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "crazy-love-song",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=aUgrSPiQGrc",
+          "scope": "documented",
+          "videoTitle": "260829 씨야 20주년 전국 투어 콘서트 THEFAN - 서울 씨야 seeya 미친 사랑의 노래",
+          "durationSeconds": 214,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "love-greeting",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=kamGuV3-d3A",
+          "scope": "documented",
+          "videoTitle": "20260829 씨야 콘서트! 씨야 - 사랑의 인사 LIVE",
+          "durationSeconds": 269,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "marry-me",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=DgMDcEUVeSQ",
+          "scope": "documented",
+          "videoTitle": "260829 씨야 20주년 전국 투어 콘서트 THE FAN 씨야 See Ya 결혼할까요 #직캠",
+          "durationSeconds": 180,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "still-like-you",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=a41Mj9c54mQ",
+          "scope": "documented",
+          "videoTitle": "씨야 - 그래도 좋아 (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+          "durationSeconds": 251,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "hot-girl",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=-Qi0M770Gio",
+          "scope": "excerpt",
+          "videoTitle": "씨야 - Hot girl (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+          "durationSeconds": 32,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "his-voice",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Ye8BWrWrrjc",
+          "scope": "documented",
+          "videoTitle": "260829 씨야 20주년 전국 투어 콘서트 THEFAN - 서울 씨야Seeya 그 놈 목소리",
+          "durationSeconds": 167,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "wonderful-you",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=3gVP3z3Hx34",
+          "scope": "documented",
+          "videoTitle": "2026 08 29 내겐 너무 멋진 그대 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+          "durationSeconds": 219,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "stay",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=WisU1NZP30Q",
+          "scope": "documented",
+          "videoTitle": "260829 씨야 20주년 전국 투어 콘서트 THEFAN 서울 씨야 Seeya - Stay",
+          "durationSeconds": 213,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "group-track-058",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=5NHQjIoadto",
+          "scope": "documented",
+          "videoTitle": "[4K]씨야 SEEYA - 계절은 돌고 돌아 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+          "durationSeconds": 210,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "group-track-060",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=h33N3mSNOKs",
+          "scope": "documented",
+          "videoTitle": "씨야 - I Believe (260829 씨야 단독콘서트 'THE FAN' 서울) 1일차",
+          "durationSeconds": 232,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "nevertheless-us",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=odBfzf4nWmk",
+          "scope": "documented",
+          "videoTitle": "[4K]씨야 SEEYA - 그럼에도 우린 (Fancam│2026.08.29 경희대 평화의전당 2026 씨야 20주년 전국 투어 콘서트 : THE FAN)",
+          "durationSeconds": 193,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "group-track-062",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=AkYPQGlXMw0",
+          "scope": "documented",
+          "videoTitle": "[4K]씨야 SEEYA - 안돼요 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+          "durationSeconds": 233,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "group-track-063",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=-IZThtAE7Q8",
+          "scope": "documented",
+          "videoTitle": "[4K]씨야 SEEYA - 잔향 Fancam│2026.08.29 경희대 평화의전당 콘서트 : THE FAN",
+          "durationSeconds": 230,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "group-track-065",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=dQiemZVbnoQ",
+          "scope": "documented",
+          "videoTitle": "2026 08 29 우리 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+          "durationSeconds": 256,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260829",
+      "songId": "group-track-030",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=wIjVclTD1PU",
+          "scope": "documented",
+          "videoTitle": "20260829 씨야 콘서트! 씨야 - 미워요 LIVE",
+          "durationSeconds": 259,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "scent-of-a-woman",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=K1_-NqSswIM",
+          "scope": "documented",
+          "videoTitle": "20260830 씨야 (SEEYA) - 여인의 향기 @ 20주년 전국 투어 콘서트 : THE FAN - 서울",
+          "durationSeconds": 197,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "shoes",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=xg0WrLFWAic",
+          "scope": "documented",
+          "videoTitle": "20260830 씨야 (SEEYA) - 구두 @ 20주년 전국 투어 콘서트 : THE FAN - 서울",
+          "durationSeconds": 238,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "crazy-love-song",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Wg464ZmfPCc",
+          "scope": "documented",
+          "videoTitle": "2026 08 30 미친 사랑의 노래 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+          "durationSeconds": 241,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "love-greeting",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=04T4eoh8kjU",
+          "scope": "documented",
+          "videoTitle": "[4K]260830 씨야 (SeeYA) - 20주년 콘서트 사랑의인사 남규리 세로직캠 by.JicCam H",
+          "durationSeconds": 225,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "marry-me",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=OL1A61VD928",
+          "scope": "documented",
+          "videoTitle": "[4K]260830 씨야 (SeeYA) - 20주년 콘서트 결혼할까요 남규리 세로직캠 by.JicCam H",
+          "durationSeconds": 302,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "sad-footsteps",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=f_xpDlIRNQ0",
+          "scope": "documented",
+          "videoTitle": "[4K]260830 씨야(See Ya) 슬픈 발걸음(구두 2)+구두",
+          "durationSeconds": 525,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "still-like-you",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=1Zct-L96S8o",
+          "scope": "documented",
+          "durationSeconds": 261,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "hot-girl",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=yCXabjTBszM",
+          "scope": "documented",
+          "videoTitle": "260830 씨야 서울 콘서트 - Hot girl",
+          "durationSeconds": 215,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "his-voice",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=_4cvul3kQBM",
+          "scope": "documented",
+          "videoTitle": "260830 씨야 서울 콘서트 - 그 놈 목소리",
+          "durationSeconds": 203,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "wonderful-you",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=cccoXzxFEuE",
+          "scope": "documented",
+          "videoTitle": "2026 08 30 내겐 너무 멋진 그대 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+          "durationSeconds": 224,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "stay",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=9kiDPyRFCeE",
+          "scope": "documented",
+          "videoTitle": "20260830 씨야 데뷔 20주년 서울 콘서트 남규리 - stay",
+          "durationSeconds": 201,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "group-track-058",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Qn-TlAP2_jI",
+          "scope": "documented",
+          "videoTitle": "2026 08 30 계절은 돌고 돌아 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+          "durationSeconds": 210,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "like-spring",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=YARxeNJevFc",
+          "scope": "documented",
+          "videoTitle": "2026 08 30 봄처럼 그댄 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+          "durationSeconds": 228,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "group-track-060",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Y-dvjgj3sCs",
+          "scope": "documented",
+          "videoTitle": "20260830 씨야 데뷔 20주년 서울 콘서트 김연지 - I Believe",
+          "durationSeconds": 216,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "nevertheless-us",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=cu5PnRP-Vko",
+          "scope": "documented",
+          "videoTitle": "2026 08 30 그럼에도 우린 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+          "durationSeconds": 217,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "group-track-062",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=COc8iG2N7Jc",
+          "scope": "documented",
+          "videoTitle": "20260830 씨야 데뷔 20주년 서울 콘서트 남규리 직캠 - 안돼요",
+          "durationSeconds": 235,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "group-track-063",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=EpcTkfHetws",
+          "scope": "documented",
+          "videoTitle": "2026 08 30 잔향 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+          "durationSeconds": 232,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "group-track-065",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=vvTkoBlOcLc",
+          "scope": "documented",
+          "videoTitle": "2026 08 30 우리 - SEEYA 20주년 기념 콘서트 THE FAN 직캠 4K60P",
+          "durationSeconds": 252,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260830",
+      "songId": "group-track-030",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=NHBBaxlg5OU",
+          "scope": "documented",
+          "videoTitle": "20260830 씨야 (SEEYA) - 미워요 @ 20주년 전국 투어 콘서트 : THE FAN - 서울",
+          "durationSeconds": 238,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "scent-of-a-woman",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=p7QBqArs4Ik",
+          "scope": "documented",
+          "videoTitle": "260905 [부산] 2026 씨야 20주년 전국 투어 콘서트 : THE FAN / 여인의 향기 / KBS부산홀",
+          "durationSeconds": 184,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "crazy-love-song",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=bOU13fd0t2E",
+          "scope": "documented",
+          "videoTitle": "260905 [부산] 2026 씨야 20주년 전국 투어 콘서트 : THE FAN / 미친 사랑의 노래 / KBS부산홀",
+          "durationSeconds": 218,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "love-greeting",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=aCsKkzNZzeE",
+          "scope": "documented",
+          "videoTitle": "인사가 늦어 죄송합니다! 씨야의 호흡 제 1형 씨야-사랑의인사 20주년Thefan 콘서트 부산",
+          "durationSeconds": 263,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "sad-footsteps",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=rcAWYmSx-CE",
+          "scope": "documented",
+          "videoTitle": "260905 [부산] 2026 씨야 20주년 전국 투어 콘서트 : THE FAN / 슬픈 발걸음(구두 2)+구두+그 사람(구두 3) / KBS부산홀",
+          "durationSeconds": 713,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "still-like-you",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=IhDvLxhlYZY",
+          "scope": "documented",
+          "videoTitle": "260905 씨야 20주년 부산콘서트ㅡ그래도 좋아 (원곡ver) #씨야 #youtube #concert",
+          "durationSeconds": 240,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "hot-girl",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=11_tYD_Q-yA",
+          "scope": "documented",
+          "videoTitle": "[260905 씨야 부산 콘서트] Hot Girl",
+          "durationSeconds": 267,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "his-voice",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=WbZ-veH2htE",
+          "scope": "documented",
+          "videoTitle": "2026 씨야 20주년 전국 투어 콘서트 : THE FAN - 부산 20260905 그 놈 목소리",
+          "durationSeconds": 181,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "group-track-060",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=uPu793vf6MY",
+          "scope": "documented",
+          "videoTitle": "견딜 수 있는 것은 나를 놓지 않는 것 일 뿐, 씨야 누나가 가사로써 녹여낸 조언! I believe 씨야 20주년 The fan 전국투어콘서트 부산",
+          "durationSeconds": 232,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "group-track-062",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=NzUetDfygPU",
+          "scope": "excerpt",
+          "videoTitle": "[4K]260905 씨야 부산 콘서트 남규리(F) 안돼요 직캠 #씨야 #남규리 #김연지 #이보람 #부산 #씨야콘서트 #안돼요 #SEEYA #팬 #busan #kpop #shorts",
+          "durationSeconds": 17,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "group-track-030",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=3LgO6DaC5Hk",
+          "scope": "documented",
+          "videoTitle": "[4K] 260905 씨야 부산 콘서트 미워요 라이브 영상 직캠 (가사포함)",
+          "durationSeconds": 212,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260905",
+      "songId": "group-track-022",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=E-Anw8UiPcY",
+          "scope": "documented",
+          "videoTitle": "[씨야/전국투어콘서트/부산] 감동을 주세요_이보람",
+          "durationSeconds": 229,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260912",
+      "songId": "shoes",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=vjtG160YC2w",
+          "scope": "documented",
+          "videoTitle": "20260912 씨야 20주년 대구 콘서트 남규리 직캠 - 구두",
+          "durationSeconds": 234,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260912",
+      "songId": "sad-footsteps",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=t1kB8JK0tEQ",
+          "scope": "documented",
+          "videoTitle": "20260912 씨야 20주년 대구 콘서트 남규리 직캠 - 슬픈 발걸음 (구두 II)",
+          "durationSeconds": 257,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260912",
+      "songId": "his-voice",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=8PNDTCjx7YE",
+          "scope": "documented",
+          "videoTitle": "260912 씨야 - 그 놈 목소리",
+          "durationSeconds": 171,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260912",
+      "songId": "nevertheless-us",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=OvWpYkTR3lQ",
+          "scope": "documented",
+          "videoTitle": "20260912 씨야 20주년 대구 콘서트 남규리 직캠 - 그럼에도 우린",
+          "durationSeconds": 197,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20260912",
+      "songId": "group-track-030",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=736SlL_RabA",
+          "scope": "documented",
+          "videoTitle": "20260912 대구 씨야 20주년 콘서트 \"사랑의 인사, 여인의 향기, 미워요, 얼음인형\"",
+          "durationSeconds": 939,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "scent-of-a-woman",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=pHYrxw9WcGM",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN - 여인의 향기(남규리,김연지,이보람)",
+          "durationSeconds": 198,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "shoes",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=q9dsK--KxnA",
+          "scope": "documented",
+          "videoTitle": "[2026 씨야 The Fan 고양 콘서트] 씨야 - 구두 (김연지 직캠)",
+          "durationSeconds": 240,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "crazy-love-song",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=QmFLhyfhE8Q",
+          "scope": "documented",
+          "videoTitle": "씨야-미친사랑의 노래(고양콘서트)",
+          "durationSeconds": 196,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "love-greeting",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=gTKLbN3xPbM",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN - 사랑의 인사(남규리,김연지,이보람)",
+          "durationSeconds": 272,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "marry-me",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=iBTo-IlfvwM",
+          "scope": "excerpt",
+          "videoTitle": "[2026 씨야 The Fan 고양 콘서트] 씨야 - 결혼할까요 (김연지 직캠)",
+          "durationSeconds": 21,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "sad-footsteps",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=ouxVw3Lhxbc",
+          "scope": "documented",
+          "videoTitle": "261004 씨야(SEEYA) - 슬픈발걸음 직캠 in 고양 콘서트",
+          "durationSeconds": 266,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "hot-girl",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=sOW4neUUnls",
+          "scope": "documented",
+          "videoTitle": "씨야-핫걸(고양콘서트)",
+          "durationSeconds": 207,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "his-voice",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=4YgW8LFS4R4",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN - 그 놈 목소리(남규리, 김연지, 이보람)",
+          "durationSeconds": 206,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "wonderful-you",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=qDQt2LuJTpI",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN - 내겐 너무 멋진 그대(남규리,김연지,이보람)",
+          "durationSeconds": 256,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "stay",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=RHBgHJ8cLDs",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN - STAY(남규리,김연지,이보람)",
+          "durationSeconds": 299,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "group-track-058",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=jxOfjFcRuhk",
+          "scope": "documented",
+          "videoTitle": "[2026 씨야 The Fan 고양 콘서트] 씨야 - 계절은 돌고 돌아 (김연지 직캠)",
+          "durationSeconds": 214,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "like-spring",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=IC7iofZCa9U",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN - 봄처럼 그댄(남규리,김연지,이보람)",
+          "durationSeconds": 256,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "group-track-060",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=FiNUi0_cEJM",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN - I Believe(남규리,김연지,이보람) Concert Ver. 가사 자막추가",
+          "durationSeconds": 241,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "group-track-062",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=qsjDrr8E9hM",
+          "scope": "documented",
+          "videoTitle": "[2026 씨야 The Fan 고양 콘서트] 씨야 - 안돼요 (김연지 직캠)",
+          "durationSeconds": 239,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "group-track-065",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=a1ZJQ2RvD1Q",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 고양 2026 씨야 20주년 콘서트 : THE FAN - 우리(남규리,김연지,이보람)",
+          "durationSeconds": 246,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "group-track-030",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=10h23Qm06Wc",
+          "scope": "documented",
+          "videoTitle": "[2026 씨야 The Fan 고양 콘서트] 씨야 - 미워요 (김연지 직캠)",
+          "durationSeconds": 246,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "group-track-022",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=qgmQ1TYI-1U",
+          "scope": "documented",
+          "videoTitle": "씨야 🩷 감동을 주세요 (The Fan 고양콘서트)",
+          "durationSeconds": 245,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "cotton-candy",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Vl_auwEFYYQ",
+          "scope": "excerpt",
+          "videoTitle": "씨야 띵곡 \"솜사탕\"🩷🩷 넘 좋잖아~~ 고양콘서트 람언니~",
+          "durationSeconds": 60,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261004",
+      "songId": "fool",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Qh9axV1cxOs",
+          "scope": "documented",
+          "videoTitle": "씨야🩷 바보 (10.04 고양콘서트)",
+          "durationSeconds": 207,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "scent-of-a-woman",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=-X63BGTttGM",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트「여인의 향기」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 219,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "shoes",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=eQ0KOxJL1kg",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트「구두」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 236,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "crazy-love-song",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=WegqgxfQBHc",
+          "scope": "documented",
+          "videoTitle": "씨야 전국 투어 콘서트 청주 미친사랑의노래 @BoramSEEYA @Official-eu4ex @Gyulmung #씨야 #남규리 #김연지 #이보람",
+          "durationSeconds": 213,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "love-greeting",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Byq7NDqyyZ8",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트「사랑의 인사」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 269,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "sad-footsteps",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=WkkaEQB5Dg0",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트「슬픈 발걸음」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 225,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "hot-girl",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=9k7_5rDWKic",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트「Hot Girl」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 242,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "his-voice",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=QTqnd0wya7Q",
+          "scope": "documented",
+          "videoTitle": "2026년 10월 10일 씨야 20주년 청주 콘서트 - 그놈 목소리",
+          "durationSeconds": 182,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "wonderful-you",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=2vAz8oDt30g",
+          "scope": "excerpt",
+          "videoTitle": "씨야-내겐 너무 멋진 그대(청주콘서트)",
+          "durationSeconds": 59,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "stay",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Hpw0O4IjpVM",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트「STAY」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 332,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "group-track-058",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=AfQ8k8xi4iM",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트「계절은 돌고 돌아」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 191,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "like-spring",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=n9GLtu0xX7c",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트「봄처럼 그댄」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 244,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "nevertheless-us",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=IxN5j3bz2ZY",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트 앵콜「그럼에도, 우린」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 195,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "group-track-063",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=DLMC4T7uinE",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) 콘서트「잔향」직캠 | 261010 씨야 20주년 콘서트 The Fan in 청주",
+          "durationSeconds": 229,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "group-track-030",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=7ZJClagSNyM",
+          "scope": "documented",
+          "videoTitle": "씨야 전국 투어 콘서트 청주 미워요 #씨야 #남규리 #이보람 #김연지",
+          "durationSeconds": 248,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "group-track-044",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=FnAnjLUo6j4",
+          "scope": "documented",
+          "videoTitle": "씨야(SEEYA) 콘서트 솜사탕, Loving You, I Wish 솔로 Ver, 261010 씨야 20주년 전국 투어 콘서트 in 청주",
+          "durationSeconds": 391,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "group-track-049",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=FnAnjLUo6j4",
+          "scope": "documented",
+          "videoTitle": "씨야(SEEYA) 콘서트 솜사탕, Loving You, I Wish 솔로 Ver, 261010 씨야 20주년 전국 투어 콘서트 in 청주",
+          "durationSeconds": 391,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "cotton-candy",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=FnAnjLUo6j4",
+          "scope": "documented",
+          "videoTitle": "씨야(SEEYA) 콘서트 솜사탕, Loving You, I Wish 솔로 Ver, 261010 씨야 20주년 전국 투어 콘서트 in 청주",
+          "durationSeconds": 391,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261010",
+      "songId": "fool",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=v_mSsPX3PyI",
+          "scope": "documented",
+          "videoTitle": "씨야 전국 투어 콘서트 청주 바보 #남규리 #이보람 #김연지 #씨야",
+          "durationSeconds": 194,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "scent-of-a-woman",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=cDpvCTmN6bk",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - 여인의 향기(남규리,김연지,이보람)",
+          "durationSeconds": 225,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "shoes",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Pwb-H6L_R7w",
+          "scope": "documented",
+          "videoTitle": "수원콘서트 남규리 구두",
+          "durationSeconds": 237,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "crazy-love-song",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=RLiVA9PortI",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - 미친 사랑의 노래(남규리,김연지,이보람) 미사노 트렌디 편곡Ver.",
+          "durationSeconds": 232,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "love-greeting",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=bbWAOYYUSOs",
+          "scope": "documented",
+          "videoTitle": "씨야 수원 콘서트 사랑의 인사~♡",
+          "durationSeconds": 666,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "marry-me",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=eb79yFn6Ib0",
+          "scope": "excerpt",
+          "videoTitle": "[씨야/전국투어콘서트/수원] 결혼할까요",
+          "durationSeconds": 60,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "sad-footsteps",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=V9FYhBxljus",
+          "scope": "documented",
+          "videoTitle": "수원콘서트 남규리 슬픈발걸음",
+          "durationSeconds": 263,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "his-voice",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=oOiPnEpiRsw",
+          "scope": "documented",
+          "videoTitle": "씨야-그놈 목소리(수원콘서트)",
+          "durationSeconds": 165,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "wonderful-you",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=_w2ZeMRvNkc",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - 내겐 너무 멋진 그대(남규리,김연지,이보람)",
+          "durationSeconds": 225,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "stay",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=_S3osDdfT6I",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - Stay(남규리,김연지,이보람)",
+          "durationSeconds": 219,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "group-track-058",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=euK52dcu2hY",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - 계절은 돌고 돌아(남규리,김연지,이보람)",
+          "durationSeconds": 216,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "like-spring",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=V_pyHO5Q3so",
+          "scope": "excerpt",
+          "videoTitle": "[씨야/20주년콘서트/수원] 봄처럼 그댄",
+          "durationSeconds": 60,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "group-track-060",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=4hs8aIayXpg",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - I believe (남규리, 김연지, 이보람)",
+          "durationSeconds": 241,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "nevertheless-us",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=kkyey72raXs",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - 그럼에도 우린(남규리,김연지,이보람)",
+          "durationSeconds": 211,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "group-track-065",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=FKgIK8dk0_8",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - 우리(남규리,김연지,이보람)",
+          "durationSeconds": 247,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "group-track-030",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=5fshagT9OEw",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - 미워요(남규리, 김연지, 이보람)",
+          "durationSeconds": 274,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "group-track-022",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=iWdwBHd9bFQ",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - 감동을 주세요(남규리,김연지,이보람)",
+          "durationSeconds": 252,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "group-track-044",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Qwvi7FjXyP0",
+          "scope": "excerpt",
+          "videoTitle": "이 노래를 라이브로 😭 김연지 'I Wish' / 수원콘서트#김연지 #씨야",
+          "durationSeconds": 58,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "group-track-049",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=slK8YiYieH8",
+          "scope": "documented",
+          "videoTitle": "2026년 10월 17일 씨야 20주년 수원 콘서트 남규리 - Loving You",
+          "durationSeconds": 318,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "cotton-candy",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=72tqNHzjzY0",
+          "scope": "excerpt",
+          "videoTitle": "이보람-솜사탕(수원콘서트)",
+          "durationSeconds": 60,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261017",
+      "songId": "fool",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=ILjAR-Po3Io",
+          "scope": "documented",
+          "videoTitle": "[4K 직캠] 수원 2026 씨야 20주년 콘서트 : THE FAN - 바보(남규리,김연지,이보람)",
+          "durationSeconds": 209,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "scent-of-a-woman",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=QMHZOumJFpo",
+          "scope": "documented",
+          "videoTitle": "씨야(SEEYA) - 여인의 향기, 미친 사랑의 노래, 261031 [씨야 20주년 전국 투어 콘서트] in 인천",
+          "durationSeconds": 449,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "shoes",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=SyJJlMM1aIE",
+          "scope": "documented",
+          "videoTitle": "261031 씨야 (SEEYA) - 구두 | 2026 씨야 20주년 전국 투어 콘서트 : THE FAN",
+          "durationSeconds": 234,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "crazy-love-song",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=QMHZOumJFpo",
+          "scope": "documented",
+          "videoTitle": "씨야(SEEYA) - 여인의 향기, 미친 사랑의 노래, 261031 [씨야 20주년 전국 투어 콘서트] in 인천",
+          "durationSeconds": 449,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "love-greeting",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=2ZOGw6RnGFk",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) \"사랑의 인사\" 직캠 | 261031 씨야 20주년 콘서트 The Fan in 인천",
+          "durationSeconds": 316,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "marry-me",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=KLi3AKfYLiY",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) \"감동을 주세요, 결혼할까요\" 직캠 | 261031 씨야 20주년 콘서트 The Fan in 인천",
+          "durationSeconds": 614,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "sad-footsteps",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=8boXu2Qd5FU",
+          "scope": "documented",
+          "videoTitle": "2026년 10월 31일 씨야 20주년 인천 콘서트 님규리 직캠 - 슬픈 발걸음(구두 II)",
+          "durationSeconds": 243,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "hot-girl",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=VuUP10wlA2I",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa)「Hot Girl」직캠 | 261031 씨야 20주년 콘서트 The Fan in 인천",
+          "durationSeconds": 282,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "his-voice",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=Nw2QSe90PcQ",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa)「그 놈 목소리」직캠 | 261031 씨야 20주년 콘서트 The Fan in 인천",
+          "durationSeconds": 227,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "wonderful-you",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=WFv9kWTSXIE",
+          "scope": "documented",
+          "videoTitle": "261031 씨야 (SEEYA) - 내겐 너무 멋진 그대 | 2026 씨야 20주년 전국 투어 콘서트 : THE FAN",
+          "durationSeconds": 220,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "stay",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=rMyl7EL0isg",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa)「STAY」직캠 | 261031 씨야 20주년 콘서트 The Fan in 인천",
+          "durationSeconds": 312,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "group-track-058",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=9h16Yvpncwo",
+          "scope": "documented",
+          "videoTitle": "2026년 10월 31일 씨야 20주년 인천 콘서트 - 계절은 돌고 돌아",
+          "durationSeconds": 198,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "like-spring",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=vDW_AjRqe2A",
+          "scope": "documented",
+          "videoTitle": "2026년 10월 31일 씨야 20주년 인천 콘서트 - 봄처럼 그댄",
+          "durationSeconds": 212,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "group-track-060",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=m9fbiFor9F0",
+          "scope": "documented",
+          "videoTitle": "2026년 10월 31일 씨야 20주년 인천 콘서트 김연지 직캠 - I Believe",
+          "durationSeconds": 216,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "nevertheless-us",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=OsU2A-Xpq7c",
+          "scope": "documented",
+          "videoTitle": "2026년 10월 31일 씨야 20주년 인천 콘서트 - 그럼에도 우린",
+          "durationSeconds": 181,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "group-track-065",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=9iw3j7dAYeo",
+          "scope": "documented",
+          "videoTitle": "씨야(SEEYA) - 우리, 261031 [씨야 20주년 전국 투어 콘서트] in 인천",
+          "durationSeconds": 257,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "group-track-030",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=RJK6eE0yF3Y",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) \"계절은 돌고 돌아, 미워요\" 직캠 | 261031 씨야 20주년 콘서트 The Fan in 인천",
+          "durationSeconds": 473,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "group-track-022",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=zGJMRh-WCl4",
+          "scope": "documented",
+          "videoTitle": "261031 김연지 ‘감동을 주세요’",
+          "durationSeconds": 231,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "group-track-019",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=_eXHktp8wjw",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) \"그 사람이 나를 사랑해요\" 직캠 | 261031 씨야 20주년 콘서트 The Fan in 인천",
+          "durationSeconds": 273,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "group-track-044",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=qbDg8wv6VZE",
+          "scope": "excerpt",
+          "videoTitle": "[인천] 씨야콘서트_김연지_I Wish #김연지 #씨야 콘서트",
+          "durationSeconds": 52,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "group-track-049",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=yKG_n36vpbw",
+          "scope": "excerpt",
+          "videoTitle": "남규리-Loving you(인천콘서트)",
+          "durationSeconds": 38,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "cotton-candy",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=kwGp2W6HSaY",
+          "scope": "excerpt",
+          "videoTitle": "이보람-솜사탕(인천콘서트)",
+          "durationSeconds": 50,
+          "shortsEligible": true,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    },
+    {
+      "sessionId": "the-fan-20261031",
+      "songId": "fool",
+      "status": "confirmed",
+      "sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=-Zb6W28fT9I",
+          "scope": "documented",
+          "videoTitle": "씨야(SeeYa) '앵콜' \"그럼에도 우린, 바보\" 직캠 | 261031 씨야 20주년 콘서트 The Fan in 인천",
+          "durationSeconds": 373,
+          "shortsEligible": false,
+          "durationCheckedAt": "2026-11-24"
+        }
+      ]
+    }
+  ]
+}
