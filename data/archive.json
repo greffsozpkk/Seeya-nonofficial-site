@@ -11115,6 +11115,12 @@
         "url": "https://www.youtube.com/watch?v=GlHNi7Q1EJ8",
         "publishedDate": "2026-07-09",
         "autoDiscovery": true
+      },
+      {
+        "label": "DK엔터테인먼트 방송 대행사",
+        "url": "https://www.youtube.com/watch?v=Fm8dFdz8hhs",
+        "publishedDate": "2026-06-29",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -11124,7 +11130,7 @@
     ],
     "note": "2026년 6월 28일 룰리커피 가창점에서 진행한 남규리의 룰리버스킹입니다.\n매장 주최 보도자료와 현장 영상을 함께 연결합니다.",
     "venue": "룰리커피 가창점",
-    "updatedAt": "2026-11-17T08:16:49.000204+00:00"
+    "updatedAt": "2026-11-24T10:14:26.036720+00:00"
   },
   {
     "id": "v4145-dKVDn4pUiLc",
@@ -21863,6 +21869,12 @@
         "label": "KBS · Memory 4K 직캠",
         "url": "https://www.youtube.com/watch?v=d4NatG9mC7E",
         "publishedDate": "2023-04-24"
+      },
+      {
+        "label": "KBS 레전드 케이팝",
+        "url": "https://www.youtube.com/watch?v=0sZ-iGfE2SA",
+        "publishedDate": "2023-04-22",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -21873,7 +21885,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-09-25"
+    "updatedAt": "2026-11-24T10:14:26.036720+00:00"
   },
   {
     "id": "v491-hangout-2023-04-15",
@@ -31912,7 +31924,14 @@
       "label": "KBS Kpop",
       "url": "https://www.youtube.com/watch?v=aOxj4lBU1Zk"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=tw1X9AWjE-o",
+        "publishedDate": "2018-12-08",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
@@ -31920,7 +31939,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-11-24T10:14:26.036720+00:00"
   },
   {
     "id": "v490-album-827314",
@@ -32122,7 +32142,7 @@
     "id": "v4145-VX4z0syPoWw",
     "date": "2018-09-07",
     "addedAt": "2026-09-25",
-    "updatedAt": "2026-09-25",
+    "updatedAt": "2026-11-24T10:14:26.036720+00:00",
     "title": "김연지 · DMC 페스티벌 복면가왕 더 위너",
     "program": "DMC 페스티벌 · 복면가왕 더 위너",
     "type": "music-show",
@@ -32143,6 +32163,18 @@
       {
         "label": "MBC · 공연일·방송일 안내",
         "url": "https://imnews.imbc.com/news/2018/culture/article/4827937_30820.html"
+      },
+      {
+        "label": "로퍼",
+        "url": "https://www.youtube.com/watch?v=vsXSiXYX2dM",
+        "publishedDate": "2018-09-10",
+        "autoDiscovery": true
+      },
+      {
+        "label": "Ale song",
+        "url": "https://www.youtube.com/watch?v=ZYujvNu1iX0",
+        "publishedDate": "2018-09-16",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -33211,6 +33243,12 @@
         "url": "https://www.youtube.com/watch?v=6X0m1QKiBP4",
         "publishedDate": "2022-04-26",
         "autoDiscovery": true
+      },
+      {
+        "label": "출구없는김연지",
+        "url": "https://www.youtube.com/watch?v=C9-4Y4bOx5M",
+        "publishedDate": "2022-11-18",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -33222,7 +33260,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "venue": "봉산문화회관 가온홀",
-    "updatedAt": "2026-11-17T08:16:49.000204+00:00"
+    "updatedAt": "2026-11-24T10:14:26.036720+00:00"
   },
   {
     "id": "v490-album-20100389",
@@ -56896,7 +56934,7 @@
     "id": "20200223-yeonji-sinchon-busking",
     "date": "2020-02-23",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-10-31",
+    "updatedAt": "2026-11-24T10:14:26.036720+00:00",
     "title": "김연지 · 신촌 버스킹 · 야생화",
     "program": "신촌 버스킹",
     "type": "event",
@@ -56913,7 +56951,20 @@
       "url": "https://www.youtube.com/watch?v=59ZQ1lbKVjM",
       "publishedDate": "2020-03-05"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "맛있는솜사탕",
+        "url": "https://www.youtube.com/watch?v=PNGD_hYp3LI",
+        "publishedDate": "2020-02-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "울보다람쥐",
+        "url": "https://www.youtube.com/watch?v=SWP3E8J-XWs",
+        "publishedDate": "2020-05-04",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
@@ -56967,7 +57018,7 @@
     "id": "20221003-boram-youth-arena",
     "date": "2022-10-03",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-22T07:14:44.212064+00:00",
+    "updatedAt": "2026-11-24T10:14:26.036720+00:00",
     "title": "이보람 · 청춘아레나 대구 · 박혜원·박진주와 합동 무대",
     "program": "청춘아레나 대구",
     "type": "event",
@@ -57007,6 +57058,12 @@
         "label": "낭만음치",
         "url": "https://www.youtube.com/watch?v=71yHLBXRaGg",
         "publishedDate": "2022-10-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "꽃길보라미",
+        "url": "https://www.youtube.com/watch?v=oeKTFwLYZrI",
+        "publishedDate": "2023-04-02",
         "autoDiscovery": true
       }
     ],
