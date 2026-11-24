@@ -38,6 +38,13 @@
   ],
   "남규리": [
     {
+      "title": "남규리, '롱보드 여신' 고효주 앞 반전 허당미…\"우아하게 타기 쉽지 않네\" (귤멍) - 엑스포츠뉴스",
+      "source": "엑스포츠뉴스",
+      "pubDate": "2026-11-24T07:14:05+00:00",
+      "link": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5qZjlYS2dHUTNydDNZNVdRTXk4eHVzd3lSWHdYNVp6cXBmV3N6M2hHN2w5NEVNdWxRekY2S2lhYTB2YkZpajBMem9KUllyQnlXeHpRMg?oc=5",
+      "description": "남규리, '롱보드 여신' 고효주 앞 반전 허당미…\"우아하게 타기 쉽지 않네\" (귤멍) 엑스포츠뉴스"
+    },
+    {
       "title": "남규리 유튜브 채널 귤멍서 고효주와 유쾌한 롱보드 레슨 - 지피코리아",
       "source": "지피코리아",
       "pubDate": "2026-11-22T06:11:56+00:00",
@@ -64,13 +71,6 @@
       "pubDate": "2026-11-16T08:00:00+00:00",
       "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBVdjFYYmdCd0Fob3NVVFB5M2pGc1hwMkZyWF9UbVlEWWNXSkpXWWxFUVU3SVZGanZqN1ByVFdwTjF1Z0xxakdXS0x4VEotaWpHM2hua0hSTDhQdTlOUm1hZDVsQl8wUTlIeFZpSkdfWFk?oc=5",
       "description": "남규리, 12월 9일 솔로 신곡 발표 \"첫눈 오는 날 커플 질투하는 곡\" > 연예뉴스 SeattleN"
-    },
-    {
-      "title": "“반칙이다” 감탄 터진 씨야의 ‘사랑하고 싶어’…KoN(콘), 남규리와 인연으로 명품 협연 - 스포츠서울",
-      "source": "스포츠서울",
-      "pubDate": "2026-11-16T05:24:53+00:00",
-      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFA5cXJheWxaV2ZqOXp1cG1FTnFyXzJONi0yZWRrUXdWdzVvckM2OU05aUhpVU93RWxyOGE3YXZEUGI4dTZVUDFiNTVGV3hkcjVtbGkxaXNuckY?oc=5",
-      "description": "“반칙이다” 감탄 터진 씨야의 ‘사랑하고 싶어’…KoN(콘), 남규리와 인연으로 명품 협연 스포츠서울"
     }
   ],
   "김연지": [
@@ -147,17 +147,17 @@
       "description": "씨야 이보람, ‘골때녀’ 경기 앞두고 긴장감 가득한 눈빛 톱스타뉴스"
     }
   ],
-  "updatedAt": "2026-11-23T23:56:47.927684+00:00",
-  "lastCheckedAt": "2026-11-23T23:56:47.927684+00:00",
+  "updatedAt": "2026-11-24T09:58:00.437123+00:00",
+  "lastCheckedAt": "2026-11-24T09:58:00.437123+00:00",
   "categoryUpdatedAt": {
-    "씨야": "2026-11-23T23:56:47.927684+00:00",
-    "남규리": "2026-11-23T23:56:47.927684+00:00",
-    "김연지": "2026-11-23T23:56:47.927684+00:00",
-    "이보람": "2026-11-23T23:56:47.927684+00:00"
+    "씨야": "2026-11-24T09:58:00.437123+00:00",
+    "남규리": "2026-11-24T09:58:00.437123+00:00",
+    "김연지": "2026-11-24T09:58:00.437123+00:00",
+    "이보람": "2026-11-24T09:58:00.437123+00:00"
   },
   "categoryContentUpdatedAt": {
     "씨야": "2026-11-23T23:56:47.927684+00:00",
-    "남규리": "2026-11-23T07:43:31.718480+00:00",
+    "남규리": "2026-11-24T09:58:00.437123+00:00",
     "이보람": "2026-11-20T12:12:21.022993+00:00",
     "김연지": "2026-11-06T06:52:00.801305+00:00"
   },
@@ -165,21 +165,21 @@
     "씨야": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 87,
-      "changed": true,
-      "status": "changed"
+      "accepted": 88,
+      "changed": false,
+      "status": "unchanged"
     },
     "남규리": {
       "queries": 3,
       "succeeded": 3,
-      "accepted": 60,
-      "changed": false,
-      "status": "unchanged"
+      "accepted": 61,
+      "changed": true,
+      "status": "changed"
     },
     "김연지": {
       "queries": 4,
       "succeeded": 4,
-      "accepted": 18,
+      "accepted": 17,
       "changed": false,
       "status": "unchanged"
     },
