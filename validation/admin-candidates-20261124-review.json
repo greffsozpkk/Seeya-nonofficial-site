@@ -1,0 +1,2730 @@
+{
+  "reviewDate": "2026-11-24",
+  "scope": "ADMIN 후보 5,560건 제목·설명·날짜·기존 기록 대조. 반영 대상 원본 접근과 기사 본문 확인. 모든 영상을 전편 시청한 것은 아닙니다.",
+  "candidateCount": 5560,
+  "decisions": {
+    "added": 620,
+    "already-archived": 5,
+    "excluded": 261,
+    "held": 4674
+  },
+  "newRecords": [
+    "20080727-gyuri-inkigayo-man",
+    "20080726-gyuri-musiccore-man",
+    "20081116-seeya-inkigayo-thatperson",
+    "20090704-boram-musiccore-feature",
+    "20121222-boram-musiccore-poison",
+    "20161001-yeonji-dmc-festival",
+    "20190928-boram-daegumbc-noon",
+    "20221217-boram-chin-winter",
+    "20220928-boram-denny-show",
+    "20221128-boram-mister-radio",
+    "20171227-yeonji-siheung-abc",
+    "20190722-boram-hongdae-busking",
+    "20110903-yeonji-pvs",
+    "20150725-yeonji-jeju-summer",
+    "20190303-yeonji-showcase",
+    "20190413-yeonji-with-festival",
+    "20220628-boram-navy-concert",
+    "20220825-boram-geoje-concert",
+    "20221229-boram-lovefield",
+    "20230610-boram-dalgubeol",
+    "20230825-yeonji-songdo-beer",
+    "20230915-boram-peaktime",
+    "20231006-yeonji-humanrights",
+    "20240614-boram-bogwangsa",
+    "20240811-boram-nodeul",
+    "20241103-boram-kia-together",
+    "20250531-boram-gm-concert",
+    "20251018-boram-ganghwa"
+  ],
+  "newRecordCount": 28,
+  "archiveCount": 1553,
+  "changedExistingRecords": [
+    "20261122-gyuri-gyulmung71",
+    "20261209-gyuri-solo-release",
+    "20261115-gyuri-gyulmung70",
+    "20261113-boram-six-support-thanks",
+    "20261215-boram-six-season",
+    "20261108-gyuri-gyulmung69",
+    "20261031-the-fan-incheon",
+    "20261025-boram-worldmom-seocho",
+    "20261017-the-fan-suwon",
+    "20261010-the-fan-cheongju",
+    "20261006-boram-dst-autumn",
+    "20261004-the-fan-goyang",
+    "20261002-seeya-yeongwol-garden",
+    "20261002-jecheon-herbal-fair",
+    "20260929-gyuri-ena-kpopup-24",
+    "20260928-gyuri-sugeun-billiards",
+    "20260928-boram-sbsplus-ghost39",
+    "20260927-gyuri-gyulmung-64",
+    "20260926-gyuri-mbc-noon-dj",
+    "20260921-woosuk-festival",
+    "20260920-gyuri-gwangju-charity",
+    "20260916-gyuri-ha-jiyoung-interview",
+    "20260912-the-fan-daegu",
+    "20260905-the-fan-busan",
+    "20260829-the-fan-seoul",
+    "20260827-kwda-listener-choice",
+    "v475-sheet2-row68",
+    "v475-sheet2-row64",
+    "v475-sheet2-row62",
+    "20260804-boram-noon-radio",
+    "v475-sheet2-row56",
+    "v475-sheet2-row54",
+    "v475-sheet2-row53",
+    "v475-sheet2-row49",
+    "20260630-ena-kpopup-stay",
+    "v475-sheet2-row31",
+    "20260626-arirang-simply-kpop-stay",
+    "v475-sheet2-row24",
+    "20260618-mnet-mcountdown-stay",
+    "v475-sheet2-row19",
+    "v475-sheet2-row7",
+    "v475-sheet2-row6",
+    "20260530-seeya-immortal-songs",
+    "20260529-kbs-the-seasons-stay",
+    "v488-audit-037",
+    "20260518-seeya-radio-show",
+    "v487-2026-007",
+    "v488-audit-039",
+    "v487-2026-008",
+    "20260502-boram-sparkle-busan",
+    "v488-audit-038",
+    "20260419-gyuri-love-greeting-2026",
+    "v487-2026-006",
+    "v488-audit-030",
+    "20260405-gyuri-first-pitch",
+    "v488-audit-029",
+    "v488-audit-028",
+    "v488-audit-026",
+    "v488-audit-025",
+    "v488-audit-024",
+    "v488-audit-019",
+    "v488-audit-017",
+    "v488-audit-031",
+    "v487-2026-001",
+    "v488-audit-012",
+    "v491-still-singing",
+    "v491-kia2025",
+    "v491-jejujc",
+    "v491-autoland",
+    "v491-ocheon",
+    "v491-bonghwa2025",
+    "v491-daegujc",
+    "v491-picnic134",
+    "v491-lux",
+    "v491-gongju2024",
+    "v491-immortal-2024-03-09",
+    "v491-immortal-2024-02-03",
+    "v491-navy2023",
+    "v491-jangseong",
+    "v491-sunset2023",
+    "v491-cheonan2023",
+    "v491-culture-boram2023",
+    "v491-daegaya",
+    "v491-album-4084635",
+    "v491-chin20230120",
+    "v491-chin20221220",
+    "v491-chin20221210",
+    "v491-yangcheon",
+    "v491-summer2022",
+    "v491-youth2022",
+    "v491-hangout-2022-06-25",
+    "v491-marie2021",
+    "v491-kairos",
+    "v491-mozart2020",
+    "20200311-yeonji-boram-instagram",
+    "20200221-sugarman3-reunion",
+    "v490-hug2019",
+    "v490-boramhada",
+    "v490-album-20235951",
+    "v490-godoflive",
+    "v490-acting-redmoon",
+    "20180519-yeonji-boram-kia",
+    "v490-lifebar",
+    "v490-dejavu-press",
+    "v490-daegu2017",
+    "v490-immortal-2016-12-10",
+    "v490-mask-72",
+    "v490-sabita",
+    "v490-gwangju2016",
+    "v490-acting-yeah",
+    "v490-immortal-2015-12-19",
+    "v490-immortal-2015-09-12",
+    "v474-stage-research-027",
+    "20150724-gyuri-jungle171",
+    "v474-stage-research-026",
+    "v490-pops-20150422",
+    "v490-jtbc-25",
+    "v490-mcount-20150409",
+    "20150325-gyuri-invisible11",
+    "20130315-gyuri-sketchbook",
+    "v490-barber",
+    "v490-iknow-2012-05-05",
+    "v482-event-010",
+    "20110130-sbs-inkigayo-goodbye",
+    "20100130-mbc-musiccore-wonder-woman",
+    "v480-stage-015",
+    "v480-stage-014",
+    "20091114-mbc-musiccore-his-voice",
+    "v480-stage-013",
+    "v480-stage-012",
+    "v474-stage-research-044",
+    "v480-stage-019",
+    "v487-history-003",
+    "v480-stage-018",
+    "v480-stage-009",
+    "v480-stage-017",
+    "20090308-seeya-sadder-movie-concert",
+    "v474-stage-research-013",
+    "20081004-mbc-musiccore-hot-girl",
+    "v487-history-010",
+    "20080831-gyuri-inkigayo-nosmoking",
+    "v480-stage-002",
+    "20080131-seoul-music-awards-bonsang",
+    "20080120-inkigayo-sad-footsteps-win",
+    "20071214-golden-disc-digital-bonsang",
+    "v480-stage-048",
+    "v481-archive-007",
+    "v474-stage-research-002",
+    "v474-stage-research-005",
+    "20061214-golden-disc-rookie",
+    "20060727-seeya-radio-afternoon",
+    "v487-history-005",
+    "20060625-seeya-inkigayo",
+    "20060507-seeya-inkigayo",
+    "20060331-seeya-mtvwow",
+    "20060316-seeya-mcount",
+    "20261001-gyuri-handonday",
+    "discovered-e9c41ffc3602d455",
+    "discovered-e98d25eb9821ca14",
+    "discovered-b9fde119d3f21a6c",
+    "20261004-gyuri-gyulmung65",
+    "20261009-boram-worldmom-yongin",
+    "20261030-yeonji-birthday-fancafe",
+    "20261019-seeya-immortal-wax-recording",
+    "20261025-seeya-hyundai-asan-family",
+    "20261009-gyuri-musicshow-backstage",
+    "20261011-gyuri-gyulmung66",
+    "20261011-yeonji-song-studio-live",
+    "20261016-yeonji-younghyun-ep08",
+    "20261114-seeya-immortal-wax-broadcast",
+    "20261122-boram-worldmom-seocho",
+    "20261101-boram-kia-music-festa",
+    "20261023-gyuri-sungsikyung-sing",
+    "20261025-gyuri-gyulmung68",
+    "20261028-boram-kickagoal-238",
+    "20200223-yeonji-sinchon-busking",
+    "20261101-gyuri-gyulmung-the-fan-finale",
+    "20261111-boram-kickagoal-240",
+    "20160304-yeonji-power-stage",
+    "20221105-boram-chin-radio",
+    "discovered-fddbb70d92f1b6c9"
+  ],
+  "addedSources": [
+    {
+      "recordId": "v474-stage-research-013",
+      "url": "https://www.youtube.com/watch?v=1bwsltY4YdM"
+    },
+    {
+      "recordId": "20091114-mbc-musiccore-his-voice",
+      "url": "https://www.youtube.com/watch?v=DVl1CYyDvcM"
+    },
+    {
+      "recordId": "v480-stage-014",
+      "url": "https://www.youtube.com/watch?v=AuZWEHddvTE"
+    },
+    {
+      "recordId": "v474-stage-research-044",
+      "url": "https://www.youtube.com/watch?v=kXgb0vhCUdM"
+    },
+    {
+      "recordId": "v487-history-010",
+      "url": "https://www.youtube.com/watch?v=zUBuxXTdeZg"
+    },
+    {
+      "recordId": "20110130-sbs-inkigayo-goodbye",
+      "url": "https://www.youtube.com/watch?v=Bts_luVINkA"
+    },
+    {
+      "recordId": "v474-stage-research-013",
+      "url": "https://www.youtube.com/watch?v=boM1LH8aVfE"
+    },
+    {
+      "recordId": "v482-event-010",
+      "url": "https://www.youtube.com/watch?v=-IT1cm_eOM0"
+    },
+    {
+      "recordId": "20060507-seeya-inkigayo",
+      "url": "https://www.youtube.com/watch?v=D9k98OKgfJ8"
+    },
+    {
+      "recordId": "v480-stage-018",
+      "url": "https://www.youtube.com/watch?v=kOiy9jB9-YE"
+    },
+    {
+      "recordId": "v480-stage-019",
+      "url": "https://www.youtube.com/watch?v=zgT-kEyqqIU"
+    },
+    {
+      "recordId": "20110903-yeonji-pvs",
+      "url": "https://www.youtube.com/watch?v=lXezkoyYOfM"
+    },
+    {
+      "recordId": "20110903-yeonji-pvs",
+      "url": "https://www.youtube.com/watch?v=M43r_kx8GXQ"
+    },
+    {
+      "recordId": "20110903-yeonji-pvs",
+      "url": "https://www.youtube.com/watch?v=xepZyriU1D0"
+    },
+    {
+      "recordId": "20080727-gyuri-inkigayo-man",
+      "url": "https://www.youtube.com/watch?v=4zTfsknv8FM"
+    },
+    {
+      "recordId": "20081116-seeya-inkigayo-thatperson",
+      "url": "https://www.youtube.com/watch?v=bKYdFvR4iss"
+    },
+    {
+      "recordId": "20090704-boram-musiccore-feature",
+      "url": "https://www.youtube.com/watch?v=Xh6ReEfnSx8"
+    },
+    {
+      "recordId": "20080726-gyuri-musiccore-man",
+      "url": "https://www.youtube.com/watch?v=7eGw7eDHWJs"
+    },
+    {
+      "recordId": "v490-barber",
+      "url": "https://www.youtube.com/watch?v=SyEGgzFqfgw"
+    },
+    {
+      "recordId": "v490-barber",
+      "url": "https://www.youtube.com/watch?v=EueDgDWBfYE"
+    },
+    {
+      "recordId": "v481-archive-007",
+      "url": "https://www.youtube.com/watch?v=dvqubGDfXks"
+    },
+    {
+      "recordId": "20080831-gyuri-inkigayo-nosmoking",
+      "url": "https://www.youtube.com/watch?v=wzF9SxZm9Kc"
+    },
+    {
+      "recordId": "20121222-boram-musiccore-poison",
+      "url": "https://www.youtube.com/watch?v=hLgqBO3dlh0"
+    },
+    {
+      "recordId": "20130315-gyuri-sketchbook",
+      "url": "https://www.youtube.com/watch?v=5k-NseNE8C4"
+    },
+    {
+      "recordId": "20060625-seeya-inkigayo",
+      "url": "https://www.youtube.com/watch?v=oNarFztvqRg"
+    },
+    {
+      "recordId": "v480-stage-048",
+      "url": "https://www.youtube.com/watch?v=5j9yZnFLcyY"
+    },
+    {
+      "recordId": "20080120-inkigayo-sad-footsteps-win",
+      "url": "https://www.youtube.com/watch?v=IopOpJd5Tz0"
+    },
+    {
+      "recordId": "v480-stage-002",
+      "url": "https://www.youtube.com/watch?v=95zKEUkL3Wk"
+    },
+    {
+      "recordId": "v490-iknow-2012-05-05",
+      "url": "https://www.youtube.com/watch?v=uslizIv5gZM"
+    },
+    {
+      "recordId": "v487-history-010",
+      "url": "https://www.youtube.com/watch?v=PFyX75I25tg"
+    },
+    {
+      "recordId": "v480-stage-009",
+      "url": "https://www.youtube.com/watch?v=_MsHUVPF-hs"
+    },
+    {
+      "recordId": "v480-stage-018",
+      "url": "https://www.youtube.com/watch?v=AiiaQsJd5-0"
+    },
+    {
+      "recordId": "20110903-yeonji-pvs",
+      "url": "https://www.youtube.com/watch?v=8VOzG81uKcg"
+    },
+    {
+      "recordId": "20100130-mbc-musiccore-wonder-woman",
+      "url": "https://www.youtube.com/watch?v=ubVtYiAopyg"
+    },
+    {
+      "recordId": "20080131-seoul-music-awards-bonsang",
+      "url": "https://www.youtube.com/watch?v=xXsBWdczGyI"
+    },
+    {
+      "recordId": "v480-stage-012",
+      "url": "https://www.youtube.com/watch?v=jTQqGAAyrqo"
+    },
+    {
+      "recordId": "v474-stage-research-002",
+      "url": "https://www.youtube.com/watch?v=s4LrprhZ_UI"
+    },
+    {
+      "recordId": "20150325-gyuri-invisible11",
+      "url": "https://www.youtube.com/watch?v=DQwSep_tc9A"
+    },
+    {
+      "recordId": "v490-pops-20150422",
+      "url": "https://www.youtube.com/watch?v=8GMEI67VAIw"
+    },
+    {
+      "recordId": "v490-mcount-20150409",
+      "url": "https://www.youtube.com/watch?v=hhNcD4hqvFc"
+    },
+    {
+      "recordId": "v474-stage-research-026",
+      "url": "https://www.youtube.com/watch?v=YMpmzia_VyM"
+    },
+    {
+      "recordId": "20150724-gyuri-jungle171",
+      "url": "https://www.youtube.com/watch?v=-1-8GWcpmJ0"
+    },
+    {
+      "recordId": "20150725-yeonji-jeju-summer",
+      "url": "https://www.youtube.com/watch?v=tv1yKZ1HV3Y"
+    },
+    {
+      "recordId": "20150725-yeonji-jeju-summer",
+      "url": "https://www.youtube.com/watch?v=X0tndrpkqL4"
+    },
+    {
+      "recordId": "20150725-yeonji-jeju-summer",
+      "url": "https://www.youtube.com/watch?v=cCVblorBp54"
+    },
+    {
+      "recordId": "20150725-yeonji-jeju-summer",
+      "url": "https://www.youtube.com/watch?v=cjvfIVpfcrk"
+    },
+    {
+      "recordId": "v474-stage-research-027",
+      "url": "https://www.youtube.com/watch?v=2vtLST-5wWs"
+    },
+    {
+      "recordId": "v490-immortal-2015-09-12",
+      "url": "https://www.youtube.com/watch?v=m5QGomKfkFk"
+    },
+    {
+      "recordId": "v490-immortal-2015-12-19",
+      "url": "https://www.youtube.com/watch?v=civX8yUxSnc"
+    },
+    {
+      "recordId": "v490-acting-yeah",
+      "url": "https://www.youtube.com/watch?v=YBTro6W1I6M"
+    },
+    {
+      "recordId": "20160304-yeonji-power-stage",
+      "url": "https://www.youtube.com/watch?v=veZ5EF-0Mpg"
+    },
+    {
+      "recordId": "20160304-yeonji-power-stage",
+      "url": "https://www.youtube.com/watch?v=OUfFeDYsL1g"
+    },
+    {
+      "recordId": "v490-gwangju2016",
+      "url": "https://www.youtube.com/watch?v=Ofd1D9oqQmk"
+    },
+    {
+      "recordId": "v490-gwangju2016",
+      "url": "https://www.youtube.com/watch?v=abQLgAON1to"
+    },
+    {
+      "recordId": "v490-gwangju2016",
+      "url": "https://www.youtube.com/watch?v=ELIifR3S2vM"
+    },
+    {
+      "recordId": "v490-acting-yeah",
+      "url": "https://www.youtube.com/watch?v=q3mncyA3T2U"
+    },
+    {
+      "recordId": "v490-sabita",
+      "url": "https://www.youtube.com/watch?v=kYsP_4asIhI"
+    },
+    {
+      "recordId": "20161001-yeonji-dmc-festival",
+      "url": "https://www.youtube.com/watch?v=A6I45ApIMHk"
+    },
+    {
+      "recordId": "v490-sabita",
+      "url": "https://www.youtube.com/watch?v=CeIa0H1n50s"
+    },
+    {
+      "recordId": "v490-sabita",
+      "url": "https://www.youtube.com/watch?v=IEcZoOTRTGI"
+    },
+    {
+      "recordId": "v490-immortal-2016-12-10",
+      "url": "https://www.youtube.com/watch?v=mMqfbhKgjHk"
+    },
+    {
+      "recordId": "20171227-yeonji-siheung-abc",
+      "url": "https://www.youtube.com/watch?v=OltD09L0w3g"
+    },
+    {
+      "recordId": "20171227-yeonji-siheung-abc",
+      "url": "https://www.youtube.com/watch?v=xCIImSz5Qzc"
+    },
+    {
+      "recordId": "20060316-seeya-mcount",
+      "url": "https://www.youtube.com/watch?v=TorF3UEcmMk"
+    },
+    {
+      "recordId": "v490-dejavu-press",
+      "url": "https://www.youtube.com/watch?v=ncAKW2TINT8"
+    },
+    {
+      "recordId": "v490-lifebar",
+      "url": "https://www.youtube.com/watch?v=LNNuhpUdErs"
+    },
+    {
+      "recordId": "20180519-yeonji-boram-kia",
+      "url": "https://www.youtube.com/watch?v=LxpPApFcUK0"
+    },
+    {
+      "recordId": "v490-acting-redmoon",
+      "url": "https://www.youtube.com/watch?v=942QSbuVO-U"
+    },
+    {
+      "recordId": "v490-godoflive",
+      "url": "https://www.youtube.com/watch?v=3IsvKNvtaZM"
+    },
+    {
+      "recordId": "20190303-yeonji-showcase",
+      "url": "https://www.youtube.com/watch?v=otzdIkt9Odw"
+    },
+    {
+      "recordId": "v490-album-20235951",
+      "url": "https://www.youtube.com/watch?v=gQrXtchQ-6E"
+    },
+    {
+      "recordId": "20190303-yeonji-showcase",
+      "url": "https://www.youtube.com/watch?v=_qxso8LuFk0"
+    },
+    {
+      "recordId": "20190413-yeonji-with-festival",
+      "url": "https://www.youtube.com/watch?v=bS32s3VhJjQ"
+    },
+    {
+      "recordId": "20190413-yeonji-with-festival",
+      "url": "https://www.youtube.com/watch?v=CJ7nCFzMzwc"
+    },
+    {
+      "recordId": "v480-stage-017",
+      "url": "https://www.youtube.com/watch?v=nckrW7N7GGw"
+    },
+    {
+      "recordId": "20190722-boram-hongdae-busking",
+      "url": "https://www.youtube.com/watch?v=pAR1YlzsWS0"
+    },
+    {
+      "recordId": "20190722-boram-hongdae-busking",
+      "url": "https://www.youtube.com/watch?v=kosLPcADFQE"
+    },
+    {
+      "recordId": "20190722-boram-hongdae-busking",
+      "url": "https://www.youtube.com/watch?v=_qcPgdo9VX8"
+    },
+    {
+      "recordId": "20190722-boram-hongdae-busking",
+      "url": "https://www.youtube.com/watch?v=QO0XUOU92PU"
+    },
+    {
+      "recordId": "20190722-boram-hongdae-busking",
+      "url": "https://www.youtube.com/watch?v=6ifVqpA_gBk"
+    },
+    {
+      "recordId": "v490-boramhada",
+      "url": "https://www.youtube.com/watch?v=K5Pz0AMtYos"
+    },
+    {
+      "recordId": "v490-boramhada",
+      "url": "https://www.youtube.com/watch?v=a7TIXvnUoMo"
+    },
+    {
+      "recordId": "v490-boramhada",
+      "url": "https://www.youtube.com/watch?v=uMT0j-VvxN4"
+    },
+    {
+      "recordId": "v490-boramhada",
+      "url": "https://www.youtube.com/watch?v=smtq28hFSQA"
+    },
+    {
+      "recordId": "20190928-boram-daegumbc-noon",
+      "url": "https://www.youtube.com/watch?v=zaiWkdJvyvM"
+    },
+    {
+      "recordId": "20200223-yeonji-sinchon-busking",
+      "url": "https://www.youtube.com/watch?v=-qrILFuAC4I"
+    },
+    {
+      "recordId": "20200223-yeonji-sinchon-busking",
+      "url": "https://www.youtube.com/watch?v=YdG-EKLfYWk"
+    },
+    {
+      "recordId": "20081004-mbc-musiccore-hot-girl",
+      "url": "https://www.youtube.com/watch?v=sDT-94Gkcqo"
+    },
+    {
+      "recordId": "v487-history-005",
+      "url": "https://www.youtube.com/watch?v=sukg2UUOPko"
+    },
+    {
+      "recordId": "20060507-seeya-inkigayo",
+      "url": "https://www.youtube.com/watch?v=mKc_ZQJhxW4"
+    },
+    {
+      "recordId": "v490-hug2019",
+      "url": "https://www.youtube.com/watch?v=K02MHUVQ-6k"
+    },
+    {
+      "recordId": "20071214-golden-disc-digital-bonsang",
+      "url": "https://www.youtube.com/watch?v=Csy0gzMVBCM"
+    },
+    {
+      "recordId": "v491-mozart2020",
+      "url": "https://www.youtube.com/watch?v=uY8OUuiqvn0"
+    },
+    {
+      "recordId": "v491-kairos",
+      "url": "https://www.youtube.com/watch?v=5hhCRbWMF6c"
+    },
+    {
+      "recordId": "v480-stage-015",
+      "url": "https://www.youtube.com/watch?v=Zt_XMMygG0I"
+    },
+    {
+      "recordId": "v480-stage-014",
+      "url": "https://www.youtube.com/watch?v=HGePaQk_wto"
+    },
+    {
+      "recordId": "v480-stage-013",
+      "url": "https://www.youtube.com/watch?v=t56Dvj1_DIo"
+    },
+    {
+      "recordId": "v491-kairos",
+      "url": "https://www.youtube.com/watch?v=Poawe4XB1zY"
+    },
+    {
+      "recordId": "v491-kairos",
+      "url": "https://www.youtube.com/watch?v=dpJwVKKgNzA"
+    },
+    {
+      "recordId": "20200311-yeonji-boram-instagram",
+      "url": "https://www.youtube.com/watch?v=Q1mHuXKlSw8"
+    },
+    {
+      "recordId": "20200221-sugarman3-reunion",
+      "url": "https://www.youtube.com/watch?v=upthVFO9asc"
+    },
+    {
+      "recordId": "v491-marie2021",
+      "url": "https://www.youtube.com/watch?v=bySqXiWrcOs"
+    },
+    {
+      "recordId": "v487-history-005",
+      "url": "https://www.youtube.com/watch?v=5xY_n5JnDvk"
+    },
+    {
+      "recordId": "v490-daegu2017",
+      "url": "https://www.youtube.com/watch?v=kGkjLhgJ-98"
+    },
+    {
+      "recordId": "v490-hug2019",
+      "url": "https://www.youtube.com/watch?v=aj_e7i8_3E8"
+    },
+    {
+      "recordId": "20090308-seeya-sadder-movie-concert",
+      "url": "https://www.youtube.com/watch?v=0myYfs_1cT8"
+    },
+    {
+      "recordId": "20171227-yeonji-siheung-abc",
+      "url": "https://www.youtube.com/watch?v=Sj0_Y07Nshs"
+    },
+    {
+      "recordId": "20220628-boram-navy-concert",
+      "url": "https://www.youtube.com/watch?v=EW490CyXK30"
+    },
+    {
+      "recordId": "20220628-boram-navy-concert",
+      "url": "https://www.youtube.com/watch?v=Lwt8m_h0fxA"
+    },
+    {
+      "recordId": "v491-hangout-2022-06-25",
+      "url": "https://www.youtube.com/watch?v=l90OHPBQLm8"
+    },
+    {
+      "recordId": "v491-youth2022",
+      "url": "https://www.youtube.com/watch?v=x4lGTdF8JXA"
+    },
+    {
+      "recordId": "v491-youth2022",
+      "url": "https://www.youtube.com/watch?v=IM_6c61SAkY"
+    },
+    {
+      "recordId": "v491-summer2022",
+      "url": "https://www.youtube.com/watch?v=aK3aE7327fY"
+    },
+    {
+      "recordId": "20220825-boram-geoje-concert",
+      "url": "https://www.youtube.com/watch?v=1Ze0tKVXzio"
+    },
+    {
+      "recordId": "20220928-boram-denny-show",
+      "url": "https://www.youtube.com/watch?v=-syhxx4-YSo"
+    },
+    {
+      "recordId": "20220928-boram-denny-show",
+      "url": "https://www.youtube.com/watch?v=8WYu1q63c8E"
+    },
+    {
+      "recordId": "20220928-boram-denny-show",
+      "url": "https://www.youtube.com/watch?v=tpKv-ympF70"
+    },
+    {
+      "recordId": "20220928-boram-denny-show",
+      "url": "https://www.youtube.com/watch?v=bV3tD1h16aM"
+    },
+    {
+      "recordId": "20060331-seeya-mtvwow",
+      "url": "https://www.youtube.com/watch?v=pWeg_2uh8KA"
+    },
+    {
+      "recordId": "v491-yangcheon",
+      "url": "https://www.youtube.com/watch?v=iW6UCs20_zo"
+    },
+    {
+      "recordId": "20061214-golden-disc-rookie",
+      "url": "https://www.youtube.com/watch?v=whQfyCi4bAY"
+    },
+    {
+      "recordId": "v490-hug2019",
+      "url": "https://www.youtube.com/watch?v=_3zAXR4o2E0"
+    },
+    {
+      "recordId": "v490-godoflive",
+      "url": "https://www.youtube.com/watch?v=NsoLVGimR1k"
+    },
+    {
+      "recordId": "20221105-boram-chin-radio",
+      "url": "https://www.youtube.com/watch?v=knWQg_H69d4"
+    },
+    {
+      "recordId": "20221128-boram-mister-radio",
+      "url": "https://www.youtube.com/watch?v=jStLpV1MnSU"
+    },
+    {
+      "recordId": "v491-chin20221210",
+      "url": "https://www.youtube.com/watch?v=VlNcT3QNUOA"
+    },
+    {
+      "recordId": "20221217-boram-chin-winter",
+      "url": "https://www.youtube.com/watch?v=OBI6V6z_QcM"
+    },
+    {
+      "recordId": "v491-chin20221220",
+      "url": "https://www.youtube.com/watch?v=jRkjUMULyNE"
+    },
+    {
+      "recordId": "v491-chin20221220",
+      "url": "https://www.youtube.com/watch?v=PrIvRZqkLe8"
+    },
+    {
+      "recordId": "v490-hug2019",
+      "url": "https://www.youtube.com/watch?v=TW_nwcyLiM0"
+    },
+    {
+      "recordId": "v490-hug2019",
+      "url": "https://www.youtube.com/watch?v=6aBQMSCDe2Y"
+    },
+    {
+      "recordId": "v490-hug2019",
+      "url": "https://www.youtube.com/watch?v=FoUK3sOwL24"
+    },
+    {
+      "recordId": "v490-hug2019",
+      "url": "https://www.youtube.com/watch?v=E24gngz42eI"
+    },
+    {
+      "recordId": "v490-hug2019",
+      "url": "https://www.youtube.com/watch?v=3fqRrIn2u3w"
+    },
+    {
+      "recordId": "20221229-boram-lovefield",
+      "url": "https://www.youtube.com/watch?v=Fz0Ps4gGAHA"
+    },
+    {
+      "recordId": "v491-chin20230120",
+      "url": "https://www.youtube.com/watch?v=jwP_LoSvzgw"
+    },
+    {
+      "recordId": "20080131-seoul-music-awards-bonsang",
+      "url": "https://www.youtube.com/watch?v=PrWVa5Ncr6s"
+    },
+    {
+      "recordId": "v491-album-4084635",
+      "url": "https://www.youtube.com/watch?v=lG2LMmF9cBo"
+    },
+    {
+      "recordId": "v490-boramhada",
+      "url": "https://www.youtube.com/watch?v=cUlcx6Xcq9g"
+    },
+    {
+      "recordId": "v491-daegaya",
+      "url": "https://www.youtube.com/watch?v=IkOH1ejO1Aw"
+    },
+    {
+      "recordId": "20230610-boram-dalgubeol",
+      "url": "https://www.youtube.com/watch?v=JEvSFiRb45Q"
+    },
+    {
+      "recordId": "20230610-boram-dalgubeol",
+      "url": "https://www.youtube.com/watch?v=oiCDJUnVMrM"
+    },
+    {
+      "recordId": "20230610-boram-dalgubeol",
+      "url": "https://www.youtube.com/watch?v=NW2xWCp_5wE"
+    },
+    {
+      "recordId": "v490-mask-72",
+      "url": "https://www.youtube.com/watch?v=ABgABEaydq8"
+    },
+    {
+      "recordId": "v491-cheonan2023",
+      "url": "https://www.youtube.com/watch?v=34hDq2xagKc"
+    },
+    {
+      "recordId": "v491-cheonan2023",
+      "url": "https://www.youtube.com/watch?v=2H1j0maNwV4"
+    },
+    {
+      "recordId": "20230825-yeonji-songdo-beer",
+      "url": "https://www.youtube.com/watch?v=VR1BzeqnoL0"
+    },
+    {
+      "recordId": "20230825-yeonji-songdo-beer",
+      "url": "https://www.youtube.com/watch?v=ZwDqg1y_bx4"
+    },
+    {
+      "recordId": "20060727-seeya-radio-afternoon",
+      "url": "https://www.youtube.com/watch?v=0bGSxwC0NnA"
+    },
+    {
+      "recordId": "v491-sunset2023",
+      "url": "https://www.youtube.com/watch?v=iaSxEXbVLYo"
+    },
+    {
+      "recordId": "20230915-boram-peaktime",
+      "url": "https://www.youtube.com/watch?v=JBoDdrmJUzc"
+    },
+    {
+      "recordId": "20230915-boram-peaktime",
+      "url": "https://www.youtube.com/watch?v=BxV6dk2zXxs"
+    },
+    {
+      "recordId": "20231006-yeonji-humanrights",
+      "url": "https://www.youtube.com/watch?v=hK7ZScFiLAU"
+    },
+    {
+      "recordId": "v490-jtbc-25",
+      "url": "https://www.youtube.com/watch?v=K9JV5N-zzGA"
+    },
+    {
+      "recordId": "v491-immortal-2024-02-03",
+      "url": "https://www.youtube.com/watch?v=H11r9tiMWak"
+    },
+    {
+      "recordId": "v491-immortal-2024-03-09",
+      "url": "https://www.youtube.com/watch?v=rD_l2DeZyVQ"
+    },
+    {
+      "recordId": "v491-gongju2024",
+      "url": "https://www.youtube.com/watch?v=x8jthOCik9o"
+    },
+    {
+      "recordId": "v491-lux",
+      "url": "https://www.youtube.com/watch?v=IzLrVDYnPAc"
+    },
+    {
+      "recordId": "v491-lux",
+      "url": "https://www.youtube.com/watch?v=xZXo0EU8bvQ"
+    },
+    {
+      "recordId": "v491-lux",
+      "url": "https://www.youtube.com/watch?v=miJQ4lXC6I8"
+    },
+    {
+      "recordId": "20240614-boram-bogwangsa",
+      "url": "https://www.youtube.com/watch?v=CIir02nlFdw"
+    },
+    {
+      "recordId": "v491-lux",
+      "url": "https://www.youtube.com/watch?v=radm99hGyGI"
+    },
+    {
+      "recordId": "discovered-fddbb70d92f1b6c9",
+      "url": "https://www.youtube.com/watch?v=EayLgG1MqlM"
+    },
+    {
+      "recordId": "discovered-fddbb70d92f1b6c9",
+      "url": "https://www.youtube.com/watch?v=XJWy1VDGBpU"
+    },
+    {
+      "recordId": "discovered-fddbb70d92f1b6c9",
+      "url": "https://www.youtube.com/watch?v=wXKNO5FdL6s"
+    },
+    {
+      "recordId": "20240614-boram-bogwangsa",
+      "url": "https://www.youtube.com/watch?v=nUmm-I1XJL4"
+    },
+    {
+      "recordId": "20240811-boram-nodeul",
+      "url": "https://www.youtube.com/watch?v=imDlRumfgyA"
+    },
+    {
+      "recordId": "20240811-boram-nodeul",
+      "url": "https://www.youtube.com/watch?v=iKXLDTdWxOg"
+    },
+    {
+      "recordId": "20241103-boram-kia-together",
+      "url": "https://www.youtube.com/watch?v=93ivHd8s7ug"
+    },
+    {
+      "recordId": "v491-picnic134",
+      "url": "https://www.youtube.com/watch?v=i_eph2UGzO4"
+    },
+    {
+      "recordId": "20241103-boram-kia-together",
+      "url": "https://www.youtube.com/watch?v=vfR0zL8H0IY"
+    },
+    {
+      "recordId": "v491-picnic134",
+      "url": "https://www.youtube.com/watch?v=gN3IhAZqjxo"
+    },
+    {
+      "recordId": "v491-navy2023",
+      "url": "https://www.youtube.com/watch?v=GbiDV0FGuaM"
+    },
+    {
+      "recordId": "20241103-boram-kia-together",
+      "url": "https://www.youtube.com/watch?v=ZP0LghrJp5I"
+    },
+    {
+      "recordId": "v490-jtbc-25",
+      "url": "https://www.youtube.com/watch?v=VSXoNf-qOuA"
+    },
+    {
+      "recordId": "20230915-boram-peaktime",
+      "url": "https://www.youtube.com/watch?v=SV5VLjrjugE"
+    },
+    {
+      "recordId": "20250531-boram-gm-concert",
+      "url": "https://www.youtube.com/watch?v=kkPFdzax-Cs"
+    },
+    {
+      "recordId": "v491-daegujc",
+      "url": "https://www.youtube.com/watch?v=rPKLAGCtj24"
+    },
+    {
+      "recordId": "v491-daegujc",
+      "url": "https://www.youtube.com/watch?v=JhkPjboxPWQ"
+    },
+    {
+      "recordId": "v491-daegujc",
+      "url": "https://www.youtube.com/watch?v=Ji5uItUvObE"
+    },
+    {
+      "recordId": "v491-daegujc",
+      "url": "https://www.youtube.com/watch?v=p9lVA2-4V7s"
+    },
+    {
+      "recordId": "v491-daegujc",
+      "url": "https://www.youtube.com/watch?v=T03j1B4KeDA"
+    },
+    {
+      "recordId": "v491-daegujc",
+      "url": "https://www.youtube.com/watch?v=ILndV-RNSI8"
+    },
+    {
+      "recordId": "v491-daegujc",
+      "url": "https://www.youtube.com/watch?v=QjTSBpHj77w"
+    },
+    {
+      "recordId": "v491-bonghwa2025",
+      "url": "https://www.youtube.com/watch?v=uDja8HO2HMs"
+    },
+    {
+      "recordId": "v491-ocheon",
+      "url": "https://www.youtube.com/watch?v=aP38gBhNLnA"
+    },
+    {
+      "recordId": "v491-autoland",
+      "url": "https://www.youtube.com/watch?v=0Km7XUQlS0c"
+    },
+    {
+      "recordId": "v491-autoland",
+      "url": "https://www.youtube.com/watch?v=YqgrAaCP2bY"
+    },
+    {
+      "recordId": "v491-autoland",
+      "url": "https://www.youtube.com/watch?v=JTnQ4NqBpGo"
+    },
+    {
+      "recordId": "v491-autoland",
+      "url": "https://www.youtube.com/watch?v=Qqa5TUQyHJc"
+    },
+    {
+      "recordId": "v491-autoland",
+      "url": "https://www.youtube.com/watch?v=gX9lLRLLXvg"
+    },
+    {
+      "recordId": "v491-jejujc",
+      "url": "https://www.youtube.com/watch?v=G_MTeY9_o6k"
+    },
+    {
+      "recordId": "v491-kia2025",
+      "url": "https://www.youtube.com/watch?v=50FQOhxo-Gk"
+    },
+    {
+      "recordId": "v491-kia2025",
+      "url": "https://www.youtube.com/watch?v=HmXD20CGqGY"
+    },
+    {
+      "recordId": "v491-still-singing",
+      "url": "https://www.youtube.com/watch?v=6EBzKhs1xzg"
+    },
+    {
+      "recordId": "v491-still-singing",
+      "url": "https://www.youtube.com/watch?v=t5lSsr-9FhI"
+    },
+    {
+      "recordId": "v491-still-singing",
+      "url": "https://www.youtube.com/watch?v=LoM4gIU_UFc"
+    },
+    {
+      "recordId": "v491-still-singing",
+      "url": "https://www.youtube.com/watch?v=yuW2CkN73Lw"
+    },
+    {
+      "recordId": "v491-still-singing",
+      "url": "https://www.youtube.com/watch?v=5PvvYvoCF8Q"
+    },
+    {
+      "recordId": "v491-still-singing",
+      "url": "https://www.youtube.com/watch?v=p1R4-dC3PAY"
+    },
+    {
+      "recordId": "20190303-yeonji-showcase",
+      "url": "https://www.youtube.com/watch?v=w_VmVeyi4SU"
+    },
+    {
+      "recordId": "v491-still-singing",
+      "url": "https://www.youtube.com/watch?v=xXToM5Cvm-s"
+    },
+    {
+      "recordId": "v491-still-singing",
+      "url": "https://www.youtube.com/watch?v=_36cjBR4MZI"
+    },
+    {
+      "recordId": "v487-2026-001",
+      "url": "https://www.youtube.com/watch?v=bUVVAYrYDUA"
+    },
+    {
+      "recordId": "v487-2026-001",
+      "url": "https://www.youtube.com/watch?v=lYUFBpGRF78"
+    },
+    {
+      "recordId": "v488-audit-031",
+      "url": "https://www.youtube.com/watch?v=ixCLj5RQjys"
+    },
+    {
+      "recordId": "v488-audit-031",
+      "url": "https://www.youtube.com/watch?v=2xB8dPsmL9Y"
+    },
+    {
+      "recordId": "v488-audit-031",
+      "url": "https://www.youtube.com/watch?v=WFlCj2rXAE0"
+    },
+    {
+      "recordId": "v488-audit-012",
+      "url": "https://www.youtube.com/watch?v=h91gbXoSLWE"
+    },
+    {
+      "recordId": "v488-audit-017",
+      "url": "https://www.youtube.com/watch?v=gnl7EnV5n3k"
+    },
+    {
+      "recordId": "discovered-e9c41ffc3602d455",
+      "url": "https://www.youtube.com/watch?v=wJ3IEh8R8j8"
+    },
+    {
+      "recordId": "discovered-e9c41ffc3602d455",
+      "url": "https://www.youtube.com/watch?v=HdC0ov9WLYU"
+    },
+    {
+      "recordId": "v488-audit-019",
+      "url": "https://www.youtube.com/watch?v=_f-I3NU-4Q0"
+    },
+    {
+      "recordId": "v488-audit-019",
+      "url": "https://www.youtube.com/watch?v=0DV_omidVWg"
+    },
+    {
+      "recordId": "v488-audit-024",
+      "url": "https://www.youtube.com/watch?v=bAyovU2ynDk"
+    },
+    {
+      "recordId": "v488-audit-025",
+      "url": "https://www.youtube.com/watch?v=TmRrxPNtIpk"
+    },
+    {
+      "recordId": "v488-audit-026",
+      "url": "https://www.youtube.com/watch?v=ZrGZT0iDMTc"
+    },
+    {
+      "recordId": "v488-audit-026",
+      "url": "https://www.youtube.com/watch?v=uM7FbdN7OfY"
+    },
+    {
+      "recordId": "v488-audit-026",
+      "url": "https://www.youtube.com/watch?v=4J7LiJypUA4"
+    },
+    {
+      "recordId": "v488-audit-026",
+      "url": "https://www.youtube.com/watch?v=54065iGdUM0"
+    },
+    {
+      "recordId": "discovered-e98d25eb9821ca14",
+      "url": "https://www.youtube.com/watch?v=bSlHMB2UDQo"
+    },
+    {
+      "recordId": "discovered-b9fde119d3f21a6c",
+      "url": "https://www.youtube.com/watch?v=ZjmuhrhyGoM"
+    },
+    {
+      "recordId": "discovered-e98d25eb9821ca14",
+      "url": "https://www.youtube.com/watch?v=THkxXEghidc"
+    },
+    {
+      "recordId": "discovered-b9fde119d3f21a6c",
+      "url": "https://www.youtube.com/watch?v=cmh7l6oqndk"
+    },
+    {
+      "recordId": "20200221-sugarman3-reunion",
+      "url": "https://www.youtube.com/watch?v=NnsUsqWNO2k"
+    },
+    {
+      "recordId": "v488-audit-029",
+      "url": "https://www.youtube.com/watch?v=2ay8-brDTVg"
+    },
+    {
+      "recordId": "20260405-gyuri-first-pitch",
+      "url": "https://www.youtube.com/watch?v=HlT5X2Jcj9g"
+    },
+    {
+      "recordId": "20260405-gyuri-first-pitch",
+      "url": "https://www.youtube.com/watch?v=3VA21vTCNnE"
+    },
+    {
+      "recordId": "v488-audit-029",
+      "url": "https://www.youtube.com/watch?v=PlGwx0a2x9I"
+    },
+    {
+      "recordId": "v488-audit-029",
+      "url": "https://www.youtube.com/watch?v=FaNZq4Xcc7s"
+    },
+    {
+      "recordId": "v488-audit-030",
+      "url": "https://www.youtube.com/watch?v=2XoZlGcQxYk"
+    },
+    {
+      "recordId": "v488-audit-030",
+      "url": "https://www.youtube.com/watch?v=k-n6RZngQZ8"
+    },
+    {
+      "recordId": "v487-2026-006",
+      "url": "https://www.youtube.com/watch?v=Nrd6k6oy2Fg"
+    },
+    {
+      "recordId": "v487-2026-006",
+      "url": "https://www.youtube.com/watch?v=D-xWT9F3h5g"
+    },
+    {
+      "recordId": "20260419-gyuri-love-greeting-2026",
+      "url": "https://www.youtube.com/watch?v=HcHgE468ax8"
+    },
+    {
+      "recordId": "20260419-gyuri-love-greeting-2026",
+      "url": "https://www.youtube.com/watch?v=XwL35GMb_bM"
+    },
+    {
+      "recordId": "v488-audit-038",
+      "url": "https://www.youtube.com/watch?v=mxHwyv7ldxQ"
+    },
+    {
+      "recordId": "v488-audit-038",
+      "url": "https://www.youtube.com/watch?v=jevAMOFFKYk"
+    },
+    {
+      "recordId": "20260502-boram-sparkle-busan",
+      "url": "https://www.youtube.com/watch?v=3zXRGo8BfkQ"
+    },
+    {
+      "recordId": "v487-2026-008",
+      "url": "https://www.youtube.com/watch?v=z4ts_YgE7LA"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=UzyoZfnBNAc"
+    },
+    {
+      "recordId": "v488-audit-030",
+      "url": "https://www.youtube.com/watch?v=jfWgcKuyIVg"
+    },
+    {
+      "recordId": "20260518-seeya-radio-show",
+      "url": "https://www.youtube.com/watch?v=lJZEhq3V5vs"
+    },
+    {
+      "recordId": "20260518-seeya-radio-show",
+      "url": "https://www.youtube.com/watch?v=zq9VqPndtAI"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=hITnhGr7WYM"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=KN3sRfsXUms"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=g_6z37Zus1A"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=uaxI8cupLuw"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=vOTIwiQ4x48"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=8O5h0RyP5dg"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=NA18PJQHdRI"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=jd1Gw55M0gs"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=noEPRubsvAc"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=-Feoubmb4Gs"
+    },
+    {
+      "recordId": "20260530-seeya-immortal-songs",
+      "url": "https://www.youtube.com/watch?v=gEEFKfUn4DE"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=a-nTZ3QTD9Y"
+    },
+    {
+      "recordId": "v488-audit-037",
+      "url": "https://www.youtube.com/watch?v=_4B97D_rnb0"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=FnhTv-j5wkA"
+    },
+    {
+      "recordId": "v475-sheet2-row6",
+      "url": "https://www.youtube.com/watch?v=BG8IlDPK4ig"
+    },
+    {
+      "recordId": "v475-sheet2-row6",
+      "url": "https://www.youtube.com/watch?v=7yme5i2kyfs"
+    },
+    {
+      "recordId": "v475-sheet2-row7",
+      "url": "https://www.youtube.com/watch?v=-PjZgPbSgpE"
+    },
+    {
+      "recordId": "v475-sheet2-row7",
+      "url": "https://www.youtube.com/watch?v=pvz-fBXV2wU"
+    },
+    {
+      "recordId": "v475-sheet2-row7",
+      "url": "https://www.youtube.com/watch?v=_49stNByndQ"
+    },
+    {
+      "recordId": "v475-sheet2-row7",
+      "url": "https://www.youtube.com/watch?v=Z1SfuKqFbI4"
+    },
+    {
+      "recordId": "v475-sheet2-row7",
+      "url": "https://www.youtube.com/watch?v=vv1qe5V4y_k"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=J8Gc5OUnAds"
+    },
+    {
+      "recordId": "v475-sheet2-row7",
+      "url": "https://www.youtube.com/watch?v=XAqkpvdJ1qA"
+    },
+    {
+      "recordId": "v475-sheet2-row7",
+      "url": "https://www.youtube.com/watch?v=S3VJvjIn6Aw"
+    },
+    {
+      "recordId": "v475-sheet2-row7",
+      "url": "https://www.youtube.com/watch?v=yOz7EH2oeA4"
+    },
+    {
+      "recordId": "v474-stage-research-005",
+      "url": "https://www.youtube.com/watch?v=aEolp8aoA7I"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=1eSL25UJFEw"
+    },
+    {
+      "recordId": "20260618-mnet-mcountdown-stay",
+      "url": "https://www.youtube.com/watch?v=E611cg1qi2U"
+    },
+    {
+      "recordId": "v475-sheet2-row24",
+      "url": "https://www.youtube.com/watch?v=AbSdT5xRHZI"
+    },
+    {
+      "recordId": "v475-sheet2-row24",
+      "url": "https://www.youtube.com/watch?v=hvUH0KfCAs8"
+    },
+    {
+      "recordId": "v475-sheet2-row19",
+      "url": "https://www.youtube.com/watch?v=H-aOIFkX9fE"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=hp8oi9p1s6U"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=d2jwU-QHvVo"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=KplDo3Kzack"
+    },
+    {
+      "recordId": "20260626-arirang-simply-kpop-stay",
+      "url": "https://www.youtube.com/watch?v=lwgpLAlrDI8"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=SfZzyw2yXKU"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=smVjwUFIRNc"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=J3OtK4ePneM"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=e5QiAVZm_3Q"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=NX7SQj3TcPU"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=IGqdKAGLQ-4"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=Wrzn3o-zTII"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=duCQgRwWDJk"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=v6eRq54bdUA"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=IcJiRd1bWRM"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=JECmeb_WuDw"
+    },
+    {
+      "recordId": "v475-sheet2-row24",
+      "url": "https://www.youtube.com/watch?v=aZyh-I6KUIE"
+    },
+    {
+      "recordId": "v475-sheet2-row31",
+      "url": "https://www.youtube.com/watch?v=E6pTLV4tikU"
+    },
+    {
+      "recordId": "20260630-ena-kpopup-stay",
+      "url": "https://www.youtube.com/watch?v=h38KH6nELj8"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=UnZOYvicito"
+    },
+    {
+      "recordId": "v487-2026-007",
+      "url": "https://www.youtube.com/watch?v=lZXoBJmaSas"
+    },
+    {
+      "recordId": "v475-sheet2-row49",
+      "url": "https://www.youtube.com/watch?v=_ZCscAar_sU"
+    },
+    {
+      "recordId": "v475-sheet2-row49",
+      "url": "https://www.youtube.com/watch?v=IqtoVeV50TQ"
+    },
+    {
+      "recordId": "v475-sheet2-row49",
+      "url": "https://www.youtube.com/watch?v=EGI1Rg_gI_w"
+    },
+    {
+      "recordId": "v475-sheet2-row54",
+      "url": "https://www.youtube.com/watch?v=I_DdM1WeMXA"
+    },
+    {
+      "recordId": "v475-sheet2-row56",
+      "url": "https://www.youtube.com/watch?v=XJ4DdjVKf_s"
+    },
+    {
+      "recordId": "v475-sheet2-row56",
+      "url": "https://www.youtube.com/watch?v=dBXW7R2RHUw"
+    },
+    {
+      "recordId": "v475-sheet2-row56",
+      "url": "https://www.youtube.com/watch?v=iDqWNDMZ21g"
+    },
+    {
+      "recordId": "v475-sheet2-row56",
+      "url": "https://www.youtube.com/watch?v=0IujTae5rYQ"
+    },
+    {
+      "recordId": "20260804-boram-noon-radio",
+      "url": "https://www.youtube.com/watch?v=q8kG8nVCCIk"
+    },
+    {
+      "recordId": "v475-sheet2-row62",
+      "url": "https://www.youtube.com/watch?v=XIA0w1Uk3is"
+    },
+    {
+      "recordId": "v475-sheet2-row62",
+      "url": "https://www.youtube.com/watch?v=GSPM8gqqyNQ"
+    },
+    {
+      "recordId": "v475-sheet2-row64",
+      "url": "https://www.youtube.com/watch?v=ZpTgfpPIdyQ"
+    },
+    {
+      "recordId": "v475-sheet2-row68",
+      "url": "https://www.youtube.com/watch?v=r9RhyBnKHdQ"
+    },
+    {
+      "recordId": "v475-sheet2-row68",
+      "url": "https://www.youtube.com/watch?v=L36wKVaHemk"
+    },
+    {
+      "recordId": "v475-sheet2-row56",
+      "url": "https://www.youtube.com/watch?v=Um2MfCUcokc"
+    },
+    {
+      "recordId": "v475-sheet2-row56",
+      "url": "https://www.youtube.com/watch?v=lmsQbr3_s58"
+    },
+    {
+      "recordId": "20260827-kwda-listener-choice",
+      "url": "https://www.youtube.com/watch?v=rM2Dxwb2gBc"
+    },
+    {
+      "recordId": "20260827-kwda-listener-choice",
+      "url": "https://www.youtube.com/watch?v=oTQuPi-f4fM"
+    },
+    {
+      "recordId": "20260827-kwda-listener-choice",
+      "url": "https://www.youtube.com/watch?v=w1n9Nv_dzwg"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=18DGtWP4reA"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=KifIUVKwF4w"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=M1oW6KUCMQc"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=OvNfsRAnG74"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=YWuxNfqBQos"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=maofKiEAp1A"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=VmnsyKVY3-M"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=yCXabjTBszM"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=_4cvul3kQBM"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=cmWztw73NpQ"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=DhJqRr9Irhw"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=0Yz1JGrDqcI"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=9ZTeyVZ5boc"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=BC3-8rYg6tc"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=vS1uLvoJmFk"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=f_xpDlIRNQ0"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=Pfh4pp808XA"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=ScGNNgwEKr0"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=2ZgBTGl2Onw"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=70M3dO9zPsY"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=OL1A61VD928"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=jh54JJMhbbM"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=RKqMvXNel98"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=iKuVTxbRAKw"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=wIjVclTD1PU"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=3cKMSVgi8sw"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=2gvKcGPzDbQ"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=9zb1KlZYjy0"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=exDATO7usvc"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=bQ8iAFBMMYU"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=Igpb3VI6e7w"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=bOU13fd0t2E"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=eiRkREcKfrM"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=HFuvdqjj_fE"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=UR9vJLZ4c-g"
+    },
+    {
+      "recordId": "v487-history-003",
+      "url": "https://www.youtube.com/watch?v=6GD2aWmnAS0"
+    },
+    {
+      "recordId": "20260912-the-fan-daegu",
+      "url": "https://www.youtube.com/watch?v=GIdQ1xTXPL8"
+    },
+    {
+      "recordId": "20260912-the-fan-daegu",
+      "url": "https://www.youtube.com/watch?v=mpC0t-0-rUM"
+    },
+    {
+      "recordId": "20260912-the-fan-daegu",
+      "url": "https://www.youtube.com/watch?v=muVsMQcrDAk"
+    },
+    {
+      "recordId": "20260912-the-fan-daegu",
+      "url": "https://www.youtube.com/watch?v=B7kbE04AUWQ"
+    },
+    {
+      "recordId": "20260912-the-fan-daegu",
+      "url": "https://www.youtube.com/watch?v=MMUG40MLuNQ"
+    },
+    {
+      "recordId": "20260912-the-fan-daegu",
+      "url": "https://www.youtube.com/watch?v=yXQQWRhCkU8"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=xxJy8p7wkcY"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=d_cem3CEQEI"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=dG_lPd4Ipy8"
+    },
+    {
+      "recordId": "20260912-the-fan-daegu",
+      "url": "https://www.youtube.com/watch?v=d4_0UGhBXcE"
+    },
+    {
+      "recordId": "20260921-woosuk-festival",
+      "url": "https://www.youtube.com/watch?v=jAImgp1bl5U"
+    },
+    {
+      "recordId": "20260926-gyuri-mbc-noon-dj",
+      "url": "https://www.youtube.com/watch?v=PBGHRUrsW_Q"
+    },
+    {
+      "recordId": "20261002-seeya-yeongwol-garden",
+      "url": "https://www.youtube.com/watch?v=PXiNc2G6mRM"
+    },
+    {
+      "recordId": "20261002-seeya-yeongwol-garden",
+      "url": "https://www.youtube.com/watch?v=AVsHI_p8xHI"
+    },
+    {
+      "recordId": "20261002-seeya-yeongwol-garden",
+      "url": "https://www.youtube.com/watch?v=ljzE3G7anz4"
+    },
+    {
+      "recordId": "20261002-seeya-yeongwol-garden",
+      "url": "https://www.youtube.com/watch?v=vtSdhZjaup8"
+    },
+    {
+      "recordId": "20261002-jecheon-herbal-fair",
+      "url": "https://www.youtube.com/watch?v=eqaHVRYChUs"
+    },
+    {
+      "recordId": "v488-audit-039",
+      "url": "https://www.youtube.com/watch?v=K-oI_hJQmnc"
+    },
+    {
+      "recordId": "20261006-boram-dst-autumn",
+      "url": "https://www.youtube.com/watch?v=sr0keScy7Ns"
+    },
+    {
+      "recordId": "20261006-boram-dst-autumn",
+      "url": "https://www.youtube.com/watch?v=Qfr7Xwons3E"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=YSgjrSLcWgE"
+    },
+    {
+      "recordId": "20261006-boram-dst-autumn",
+      "url": "https://www.youtube.com/watch?v=mp66nkL37aA"
+    },
+    {
+      "recordId": "v475-sheet2-row24",
+      "url": "https://www.youtube.com/watch?v=u-gA2uKVbuU"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=zk_2Ki9701c"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=hANTlEVOEY4"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=FdFQrLK6ris"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=XLJI4QfPiHo"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=uBZvEY-3SeY"
+    },
+    {
+      "recordId": "20261004-the-fan-goyang",
+      "url": "https://www.youtube.com/watch?v=xg3kUmVp9zc"
+    },
+    {
+      "recordId": "20261004-the-fan-goyang",
+      "url": "https://www.youtube.com/watch?v=NvTDogdBaG4"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=CUaOslqN6dg"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=sYbC1Tv1nUw"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=Jl9Hmmkgk0o"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=C9a6Mn0HyTY"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=JQ4IzA6iepA"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=iu1GDEn6MeI"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=7r6ZxqYSLcI"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=-0IA5khAiwU"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=S1PK_ib0hRI"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=vUzDxNWPzsI"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=cFP3wSYPEgo"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=ZtuSI1qQc7Q"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=Idy0IoPrWgg"
+    },
+    {
+      "recordId": "20261002-jecheon-herbal-fair",
+      "url": "https://www.youtube.com/watch?v=Xh_tUPYPQC8"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=i1OarH2r14Y"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=rbhuN25ht2M"
+    },
+    {
+      "recordId": "20261009-boram-worldmom-yongin",
+      "url": "https://www.youtube.com/watch?v=doJduVS4f6U"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=hKaNBMQxZh4"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=yn6_G5GNAt0"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=sU30xl_o9Aw"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=ikashTr_Byo"
+    },
+    {
+      "recordId": "20261006-boram-dst-autumn",
+      "url": "https://www.youtube.com/watch?v=bElMPJcZlHg"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=La8Xt2xFuCc"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=QxwymcNeyMs"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=5xhOiRS6ESE"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=3ujM1SEsY-Y"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=r52d3fIhcII"
+    },
+    {
+      "recordId": "20261017-the-fan-suwon",
+      "url": "https://www.youtube.com/watch?v=gJfruVC0fzo"
+    },
+    {
+      "recordId": "20261017-the-fan-suwon",
+      "url": "https://www.youtube.com/watch?v=5YwkN-_9VrE"
+    },
+    {
+      "recordId": "20261017-the-fan-suwon",
+      "url": "https://www.youtube.com/watch?v=pwDurFDEka8"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=ZmSlFeIINXM"
+    },
+    {
+      "recordId": "20261017-the-fan-suwon",
+      "url": "https://www.youtube.com/watch?v=sj9mkRwASFQ"
+    },
+    {
+      "recordId": "20261017-the-fan-suwon",
+      "url": "https://www.youtube.com/watch?v=QB6N5G4I9hk"
+    },
+    {
+      "recordId": "v488-audit-024",
+      "url": "https://www.youtube.com/watch?v=O3nalIfKwVg"
+    },
+    {
+      "recordId": "20261017-the-fan-suwon",
+      "url": "https://www.youtube.com/watch?v=OS2pfUKnY2g"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=dQG3KfeNRmU"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=ccziFLn9t7c"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=XLTAz_Ln1FY"
+    },
+    {
+      "recordId": "20261028-boram-kickagoal-238",
+      "url": "https://www.youtube.com/watch?v=bQeCJHxxocw"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=xAO_9hx0yvk"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=jRd6XYl_OdQ"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=FrdKWhcUWE8"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=aA8sLR4Q_80"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=lMD8Hb7MqjU"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=Fe1LiWX2V64"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=5t0U-2vsEPE"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=2z2-ejS6ZhM"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=k7ex3kJGfO4"
+    },
+    {
+      "recordId": "20261101-boram-kia-music-festa",
+      "url": "https://www.youtube.com/watch?v=IsPHi9cGbqk"
+    },
+    {
+      "recordId": "20261030-yeonji-birthday-fancafe",
+      "url": "https://www.youtube.com/watch?v=sz9Ov7HyHk4"
+    },
+    {
+      "recordId": "20261101-boram-kia-music-festa",
+      "url": "https://www.youtube.com/watch?v=CNJyy10kLHg"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=nJQFyiOZnI8"
+    },
+    {
+      "recordId": "20261101-boram-kia-music-festa",
+      "url": "https://www.youtube.com/watch?v=wfnmsILMkig"
+    },
+    {
+      "recordId": "20261030-yeonji-birthday-fancafe",
+      "url": "https://www.youtube.com/watch?v=zgq4n3XSWrY"
+    },
+    {
+      "recordId": "20261030-yeonji-birthday-fancafe",
+      "url": "https://www.youtube.com/watch?v=Wk4hpiEmijE"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=x366At8r2dQ"
+    },
+    {
+      "recordId": "20261030-yeonji-birthday-fancafe",
+      "url": "https://www.youtube.com/watch?v=FVr3xsYCi6w"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=vkD5HfTx_ZA"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=aGlTgEe-gSQ"
+    },
+    {
+      "recordId": "20261101-boram-kia-music-festa",
+      "url": "https://www.youtube.com/watch?v=IWtjrNvCNlo"
+    },
+    {
+      "recordId": "20261101-boram-kia-music-festa",
+      "url": "https://www.youtube.com/watch?v=HsJMBjtH8kU"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=H5Ka5DcQcFE"
+    },
+    {
+      "recordId": "20261101-boram-kia-music-festa",
+      "url": "https://www.youtube.com/watch?v=E1conG6szLI"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=Ccye7tEXMwQ"
+    },
+    {
+      "recordId": "20261101-boram-kia-music-festa",
+      "url": "https://www.youtube.com/watch?v=IJpGCCLdjXg"
+    },
+    {
+      "recordId": "20260912-the-fan-daegu",
+      "url": "https://www.youtube.com/watch?v=pIQZ23Xmrj0"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=gdwjbMNlngo"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=Zix94xO0-NU"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=czyQPJj4WHI"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=mC-GtS6jVPc"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=mqz114smdnA"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=B9hsfZPiRFg"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=1LDXjHbfVaU"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=m9OB1XFRyqo"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=60DaAQQzQDw"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=x6XwNbBjzgw"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=FQddJXiDNIE"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=oCUgjM8Otas"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=95OtLpCI3LQ"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=CUEHz-q63-w"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=XR66CoK7AJo"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=XsYcyk0YPsE"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=xUxT8sXPKBw"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=LCWJxTXLN2g"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=5MEL18sDPK8"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=25GUYIeLfFM"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=lFtekI2RM-U"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=Vs1KfBU6IbQ"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=N5QNqV8hVUY"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=vycUE1n1FKw"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=TpopfVe_DN4"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=no55dKwX7Y0"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=OcbfbQLGPvs"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=vA801fKa3ls"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=lUF0zK9Lr1s"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=oFqhAVCzIts"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=qJAYjQw2s-o"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=E7t0TLYtCbc"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=YOc4HNo9gqg"
+    },
+    {
+      "recordId": "20261025-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=kweZp9O7CA0"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=a-YHDvtqdV0"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=38-o-AMAzKs"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=uCiJJW_eWVY"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=QYq5WYNpkUA"
+    },
+    {
+      "recordId": "20261025-seeya-hyundai-asan-family",
+      "url": "https://www.youtube.com/watch?v=054--YepPqE"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=0LQHjzT1O_4"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=E-Anw8UiPcY"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=aBTyXoKOJOw"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=-gkDIZ2mGdo"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=K8HPMPCNKz8"
+    },
+    {
+      "recordId": "20260905-the-fan-busan",
+      "url": "https://www.youtube.com/watch?v=1d3GE3YYPfA"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=zGJMRh-WCl4"
+    },
+    {
+      "recordId": "20260529-kbs-the-seasons-stay",
+      "url": "https://www.youtube.com/watch?v=H1VyBgyL7MM"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.youtube.com/watch?v=WvesWySHmPI"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=0SgEBaXGW-4"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=AEF33MPDj60"
+    },
+    {
+      "recordId": "v491-jangseong",
+      "url": "https://www.youtube.com/watch?v=OUPO5p6bYWM"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=1IEOxZQ2DJs"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=NvVsJbFvjBA"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.youtube.com/watch?v=iRQ3eZ7qXTs"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=IfRsOfle7yE"
+    },
+    {
+      "recordId": "20261115-gyuri-gyulmung70",
+      "url": "https://www.youtube.com/watch?v=AyLEpFTzhxU"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=jlljcTpIxTo"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=Cmik0Mwd4IA"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=6glq37_DMUQ"
+    },
+    {
+      "recordId": "20261115-gyuri-gyulmung70",
+      "url": "https://www.youtube.com/watch?v=aK6VwN62dvc"
+    },
+    {
+      "recordId": "20261010-the-fan-cheongju",
+      "url": "https://www.youtube.com/watch?v=V3CSyPUX2kw"
+    },
+    {
+      "recordId": "v475-sheet2-row53",
+      "url": "https://www.youtube.com/watch?v=OJCSHyqm9BU"
+    },
+    {
+      "recordId": "v488-audit-028",
+      "url": "https://www.youtube.com/watch?v=YpS479v3xzM"
+    },
+    {
+      "recordId": "v475-sheet2-row53",
+      "url": "https://www.youtube.com/watch?v=1z3g6uI5sQ8"
+    },
+    {
+      "recordId": "v475-sheet2-row53",
+      "url": "https://www.youtube.com/watch?v=spGVbQF6sQs"
+    },
+    {
+      "recordId": "v475-sheet2-row53",
+      "url": "https://www.youtube.com/watch?v=sdKRJsovk2Y"
+    },
+    {
+      "recordId": "v488-audit-028",
+      "url": "https://www.youtube.com/watch?v=La3jaC43UQs"
+    },
+    {
+      "recordId": "v488-audit-028",
+      "url": "https://www.youtube.com/watch?v=tJejW9mFR2Q"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=8ELLz__oXZw"
+    },
+    {
+      "recordId": "20260829-the-fan-seoul",
+      "url": "https://www.youtube.com/watch?v=8moheqvCLJc"
+    },
+    {
+      "recordId": "20261017-the-fan-suwon",
+      "url": "https://www.youtube.com/watch?v=4hs8aIayXpg"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=QYIi9qviFXQ"
+    },
+    {
+      "recordId": "20261017-the-fan-suwon",
+      "url": "https://www.youtube.com/watch?v=cDpvCTmN6bk"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=yUyui7A6G7w"
+    },
+    {
+      "recordId": "v488-audit-028",
+      "url": "https://www.youtube.com/watch?v=uFCl7fikfSo"
+    },
+    {
+      "recordId": "20251018-boram-ganghwa",
+      "url": "https://www.youtube.com/watch?v=DRPZ8TPsCV4"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=yNutIFZVkN8"
+    },
+    {
+      "recordId": "v488-audit-028",
+      "url": "https://www.youtube.com/watch?v=DFCH7MEAr6Y"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=3EhVZbyIVhY"
+    },
+    {
+      "recordId": "v488-audit-028",
+      "url": "https://www.youtube.com/watch?v=LLNsMP6wccY"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=jqAZvfEIMMA"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=spM95xTdTwU"
+    },
+    {
+      "recordId": "v488-audit-028",
+      "url": "https://www.youtube.com/watch?v=6tvr8_jVJh4"
+    },
+    {
+      "recordId": "20261122-gyuri-gyulmung71",
+      "url": "https://www.youtube.com/watch?v=3XbGzJ8JXAw"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=mDjpapEF4kA"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=twTSX_vQ5YI"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=VY6o-1Ny2Ns"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=jA_ZVcnZQlM"
+    },
+    {
+      "recordId": "20261122-boram-worldmom-seocho",
+      "url": "https://www.youtube.com/watch?v=XajkGSUFluc"
+    },
+    {
+      "recordId": "20260916-gyuri-ha-jiyoung-interview",
+      "url": "http://m.tvdaily.co.kr/article.php?aid=17896006371802566010"
+    },
+    {
+      "recordId": "20260916-gyuri-ha-jiyoung-interview",
+      "url": "https://biz.chosun.com/entertainment/enter_general/2026/09/17/HFQWCZBQGE2TMY3CMRRWEMBRMQ/"
+    },
+    {
+      "recordId": "20260920-gyuri-gwangju-charity",
+      "url": "https://www.slist.kr/news/articleView.html?idxno=768034"
+    },
+    {
+      "recordId": "20260927-gyuri-gyulmung-64",
+      "url": "https://www.starnewskorea.com/star/2026/09/27/2026092719264622148"
+    },
+    {
+      "recordId": "20260927-gyuri-gyulmung-64",
+      "url": "https://biz.chosun.com/entertainment/enter_general/2026/09/27/GZRGMNTEHE4DSMBTG5QWCOBXGU/"
+    },
+    {
+      "recordId": "20260927-gyuri-gyulmung-64",
+      "url": "http://m.tvdaily.co.kr/article.php?aid=17904793241803530010"
+    },
+    {
+      "recordId": "20260927-gyuri-gyulmung-64",
+      "url": "https://www.sportsseoul.com/news/read/1639077"
+    },
+    {
+      "recordId": "20260928-gyuri-sugeun-billiards",
+      "url": "https://biz.chosun.com/entertainment/enter_general/2026/09/28/MZRGMMLCGI3GMZBTGQZWENZYGE/"
+    },
+    {
+      "recordId": "20260928-boram-sbsplus-ghost39",
+      "url": "https://www.sportschosun.com/entertainment/2026-09-28/202609280100185240012234"
+    },
+    {
+      "recordId": "20260928-boram-sbsplus-ghost39",
+      "url": "http://www.atstar1.com/news/articleView.html?idxno=6039010"
+    },
+    {
+      "recordId": "20260928-boram-sbsplus-ghost39",
+      "url": "https://www.chosun.com/entertainments/broadcast/2026/09/28/GVQWMYLBGE3DEZDGHA3TGOLFMQ/"
+    },
+    {
+      "recordId": "20260928-boram-sbsplus-ghost39",
+      "url": "https://www.tenasia.co.kr/article/2026092884984"
+    },
+    {
+      "recordId": "20260929-gyuri-ena-kpopup-24",
+      "url": "https://www.tenasia.co.kr/article/2026092921284"
+    },
+    {
+      "recordId": "20260929-gyuri-ena-kpopup-24",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16227085"
+    },
+    {
+      "recordId": "20260929-gyuri-ena-kpopup-24",
+      "url": "https://sports.donga.com/ent/article/all/20261002/134774320/1"
+    },
+    {
+      "recordId": "20261215-boram-six-season",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16229767"
+    },
+    {
+      "recordId": "20261001-gyuri-handonday",
+      "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/01/2026100100160.html"
+    },
+    {
+      "recordId": "20261001-gyuri-handonday",
+      "url": "https://www.dt.co.kr/article/12086974"
+    },
+    {
+      "recordId": "20261001-gyuri-handonday",
+      "url": "https://biz.newdaily.co.kr/site/data/html/2026/10/01/2026100100137.html"
+    },
+    {
+      "recordId": "20261001-gyuri-handonday",
+      "url": "https://v.daum.net/v/20261001150344349?f=m"
+    },
+    {
+      "recordId": "20261001-gyuri-handonday",
+      "url": "https://www.tenasia.co.kr/article/2026100316264"
+    },
+    {
+      "recordId": "20261004-gyuri-gyulmung65",
+      "url": "https://biz.chosun.com/entertainment/enter_general/2026/10/04/GE2DQZJXGFRDIZBTMYZTGNRQGA/?outputType=amp"
+    },
+    {
+      "recordId": "20261004-the-fan-goyang",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16239418"
+    },
+    {
+      "recordId": "20261006-boram-dst-autumn",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16239992"
+    },
+    {
+      "recordId": "20261019-seeya-immortal-wax-recording",
+      "url": "http://www.tvdaily.co.kr/read.php3?aid=17914551581805121010"
+    },
+    {
+      "recordId": "20261019-seeya-immortal-wax-recording",
+      "url": "https://www.newsinstar.com/news/article.html?no=84104"
+    },
+    {
+      "recordId": "20261019-seeya-immortal-wax-recording",
+      "url": "http://m.tvdaily.co.kr/article.php?aid=17923750411806028017"
+    },
+    {
+      "recordId": "20261019-seeya-immortal-wax-recording",
+      "url": "https://www.newsinstar.com/news/article.html?no=84109"
+    },
+    {
+      "recordId": "20261019-seeya-immortal-wax-recording",
+      "url": "http://m.tvdaily.co.kr/article.php?aid=17923740941806016017"
+    },
+    {
+      "recordId": "20261009-gyuri-musicshow-backstage",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16242425"
+    },
+    {
+      "recordId": "20261011-gyuri-gyulmung66",
+      "url": "https://sports.donga.com/ent/article/all/20261011/134819212/1"
+    },
+    {
+      "recordId": "20261011-gyuri-gyulmung66",
+      "url": "https://www.osen.co.kr/article/G1112891125"
+    },
+    {
+      "recordId": "20261011-gyuri-gyulmung66",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16243675"
+    },
+    {
+      "recordId": "20261011-yeonji-song-studio-live",
+      "url": "https://www.jnilbo.com/news/articleView.html?idxno=90000072726"
+    },
+    {
+      "recordId": "20261016-yeonji-younghyun-ep08",
+      "url": "http://www.sportsworldi.com/newsView/20261016518157"
+    },
+    {
+      "recordId": "20261016-yeonji-younghyun-ep08",
+      "url": "http://m.tvdaily.co.kr/article.php?aid=17921291261805886002"
+    },
+    {
+      "recordId": "20261023-gyuri-sungsikyung-sing",
+      "url": "https://tvreport.co.kr/breaking/article/1085497/amp/"
+    },
+    {
+      "recordId": "20261023-gyuri-sungsikyung-sing",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16256115"
+    },
+    {
+      "recordId": "20261025-gyuri-gyulmung68",
+      "url": "https://www.xportsnews.com/article/2211176"
+    },
+    {
+      "recordId": "20261028-boram-kickagoal-238",
+      "url": "https://www.gukjenews.com/news/articleView.html?idxno=3735775"
+    },
+    {
+      "recordId": "20261028-boram-kickagoal-238",
+      "url": "https://www.bntnews.co.kr/article/view/bnt202610280155"
+    },
+    {
+      "recordId": "20261028-boram-kickagoal-238",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16261521"
+    },
+    {
+      "recordId": "20261028-boram-kickagoal-238",
+      "url": "https://www.newsinside.kr/news/articleView.html?idxno=5035879"
+    },
+    {
+      "recordId": "20261101-gyuri-gyulmung-the-fan-finale",
+      "url": "https://isplus.com/article/view/isp202611010079"
+    },
+    {
+      "recordId": "20261101-gyuri-gyulmung-the-fan-finale",
+      "url": "https://www.starnewskorea.com/music/2026/11/01/2026110117332171457"
+    },
+    {
+      "recordId": "20261101-gyuri-gyulmung-the-fan-finale",
+      "url": "https://sports.donga.com/ent/article/all/20261101/134944203/1"
+    },
+    {
+      "recordId": "20261101-gyuri-gyulmung-the-fan-finale",
+      "url": "https://m.anewsa.com/article_sub3.php?number=3213331&type=&mobile="
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://enews.imbc.com/News/ViewAmp/523188"
+    },
+    {
+      "recordId": "20261031-the-fan-incheon",
+      "url": "https://www.famtimes.co.kr/news/articleView.html?idxno=704721"
+    },
+    {
+      "recordId": "20261108-gyuri-gyulmung69",
+      "url": "https://www.newsen.com/news_view.php?uid=202611081336146710&code=100100"
+    },
+    {
+      "recordId": "20261108-gyuri-gyulmung69",
+      "url": "https://www.tenasia.co.kr/article/2026110829654"
+    },
+    {
+      "recordId": "20261108-gyuri-gyulmung69",
+      "url": "https://www.xportsnews.com/article/2217808"
+    },
+    {
+      "recordId": "20261111-boram-kickagoal-240",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16274170"
+    },
+    {
+      "recordId": "20261113-boram-six-support-thanks",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16276127"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.stardailynews.co.kr/news/articleView.html?idxno=602104"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.newsinstar.com/news/article.html?no=84282"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.sisakoreanews.kr/123373"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.newscj.com/news/articleView.html?idxno=3448503"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.purpress.com/bbs/board.php?bo_table=star&wr_id=27679"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.rnx.kr/news/articleView.html?idxno=917782"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://sisatoday.co.kr/article/1065570240962865"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "http://m.celuvmedia.com/article.php?aid=1794535969530823010"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.slist.kr/news/articleView.html?idxno=781323"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "http://www.ksw-news.com/news/articleView.html?idxno=3060995"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "http://sagunin.com/121784"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.bntnews.co.kr/article/view/bnt202611140118"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.newsen.com/news_view.php?uid=202611141751082110&code=100100"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.thefairnews.co.kr/news/articleView.html?idxno=94085"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "http://www.tvdaily.co.kr/read.php3?aid=17946478801809672010"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "http://www.sisakoreanews.kr/123378"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.mdtoday.co.kr/news/articleView.html?idxno=625249"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.kookminnews.com/124473"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "http://m.tvdaily.co.kr/article.php?aid=17946514551809706010"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "http://m.celuvmedia.com/article_amp.php?aid=1794647822530877010"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.newsen.com/news_view.php?uid=202611141750352110&code=100100"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.ksw-news.com/news/articleView.html?idxno=3061604"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://www.sportsseoul.com/news/read/1650038"
+    },
+    {
+      "recordId": "20261114-seeya-immortal-wax-broadcast",
+      "url": "https://sports.donga.com/ent/article/all/20261116/135034426/1"
+    },
+    {
+      "recordId": "20261209-gyuri-solo-release",
+      "url": "http://isplus.live.joins.com/article/view/isp202611150056"
+    },
+    {
+      "recordId": "20261209-gyuri-solo-release",
+      "url": "https://www.donga.com/news/Entertainment/article/all/20261115/135027017/1"
+    },
+    {
+      "recordId": "20261209-gyuri-solo-release",
+      "url": "https://www.topstarnews.net/news/articleView.html?idxno=16277031"
+    },
+    {
+      "recordId": "20261115-gyuri-gyulmung70",
+      "url": "https://www.xportsnews.com/article/2220378"
+    },
+    {
+      "recordId": "20261122-gyuri-gyulmung71",
+      "url": "https://www.newsen.com/news_view.php?uid=202611221134545710&code=100100"
+    },
+    {
+      "recordId": "20261122-gyuri-gyulmung71",
+      "url": "https://www.xportsnews.com/article/2222450"
+    },
+    {
+      "recordId": "v491-culture-boram2023",
+      "url": "https://www.youtube.com/watch?v=IzBayWQhKAc"
+    }
+  ],
+  "heldReasons": {
+    "date-source-unresolved": 3786,
+    "performer-unresolved": 216,
+    "event-match-unresolved": 538,
+    "source-unavailable": 105,
+    "news-unresolved": 29
+  },
+  "radioAdded": 2,
+  "fanGallery": {
+    "profilesChecked": 15,
+    "profileFailures": 0,
+    "added": 0,
+    "held": [
+      "DgH6BNcydXH: 노래방 신청 안내. 멤버 사진·영상 원문 검증 전 보류"
+    ],
+    "limitations": "프로필 최신 게시물 조회 및 기존 원문과 대조. 과거 모든 게시물을 열람한 것은 아님"
+  },
+  "dateCorrections": [
+    "v491-culture-boram2023: 2023-06-04 게시일 → 2023-05-31 공연일"
+  ],
+  "privateAudit": "세부 보류 사유와 원본 후보는 비공개 ADMIN 저장소에 보관",
+  "stageLinksAdded": 14
+}

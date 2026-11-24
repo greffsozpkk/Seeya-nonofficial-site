@@ -3245,5 +3245,145 @@
     "scope": "multi",
     "category": "live",
     "basis": "전체 직캠 설명의 00:01 사랑의 인사, 45:15 무반주 신청곡 코너에 핫걸이 표시되어 있습니다."
+  },
+  {
+    "archiveId": "v475-sheet2-row6",
+    "url": "https://www.youtube.com/watch?v=BG8IlDPK4ig",
+    "songIds": [
+      "nevertheless-us"
+    ],
+    "scope": "single",
+    "category": "broadcast",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "v475-sheet2-row6",
+    "url": "https://www.youtube.com/watch?v=7yme5i2kyfs",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "single",
+    "category": "broadcast",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "20260626-arirang-simply-kpop-stay",
+    "url": "https://www.youtube.com/watch?v=lwgpLAlrDI8",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "single",
+    "category": "broadcast",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "20260630-ena-kpopup-stay",
+    "url": "https://www.youtube.com/watch?v=h38KH6nELj8",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "single",
+    "category": "broadcast",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "v475-sheet2-row53",
+    "url": "https://www.youtube.com/watch?v=sdKRJsovk2Y",
+    "songIds": [
+      "stay"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "v475-sheet2-row53",
+    "url": "https://www.youtube.com/watch?v=OJCSHyqm9BU",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "v475-sheet2-row53",
+    "url": "https://www.youtube.com/watch?v=spGVbQF6sQs",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "20260829-the-fan-seoul",
+    "url": "https://www.youtube.com/watch?v=DhJqRr9Irhw",
+    "songIds": [
+      "his-voice"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "20260829-the-fan-seoul",
+    "url": "https://www.youtube.com/watch?v=iKuVTxbRAKw",
+    "songIds": [
+      "scent-of-a-woman"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "20190722-boram-hongdae-busking",
+    "url": "https://www.youtube.com/watch?v=QO0XUOU92PU",
+    "songIds": [
+      "marry-me"
+    ],
+    "scope": "excerpt",
+    "category": "live",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "20190722-boram-hongdae-busking",
+    "url": "https://www.youtube.com/watch?v=6ifVqpA_gBk",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "single",
+    "category": "live",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "20220628-boram-navy-concert",
+    "url": "https://www.youtube.com/watch?v=Lwt8m_h0fxA",
+    "songIds": [
+      "love-greeting"
+    ],
+    "scope": "single",
+    "category": "concert",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "20240614-boram-bogwangsa",
+    "url": "https://www.youtube.com/watch?v=nUmm-I1XJL4",
+    "songIds": [
+      "crazy-love-song"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
+  },
+  {
+    "archiveId": "20250531-boram-gm-concert",
+    "url": "https://www.youtube.com/watch?v=kkPFdzax-Cs",
+    "songIds": [
+      "scent-of-a-woman"
+    ],
+    "scope": "excerpt",
+    "category": "concert",
+    "basis": "2026-11-24 ADMIN 후보 검토: 원본 제목의 곡명·출연자·공연일을 대조했습니다. 무반주/메들리/Shorts는 발췌로 구분합니다."
   }
 ]

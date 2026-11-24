@@ -1043,5 +1043,27 @@
     "checkedAt": "2026-11-15",
     "basis": "대전MBC 공식 영상 설명에서 2024년 9월 23일 공개방송, 9월 30일 FM 방송 및 김연지 출연을 확인했습니다.",
     "sourceTitle": "지역민과 함께! 음악과 함께! 2024 대전MBC 창사 60주년 특집 라디오 공개방송 | 2024년 9월 23일"
+  },
+  {
+    "recordId": "20190928-boram-daegumbc-noon",
+    "youtubeId": "zaiWkdJvyvM",
+    "kind": "replay",
+    "channel": "대구MBC Program",
+    "channelUrl": "https://www.youtube.com/@DGMBCpro",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-11-24",
+    "basis": "방송사 공식 채널과 영상 제목·설명의 방송일을 확인했습니다. 전체 방송과 짧은 메들리 클립을 구분합니다.",
+    "sourceTitle": "[김소영의 정오의 희망곡] 9월28일 김광석길 생방송 with 이보람"
+  },
+  {
+    "recordId": "20221217-boram-chin-winter",
+    "youtubeId": "OBI6V6z_QcM",
+    "kind": "clip",
+    "channel": "Mhz 므흐즈: MBC RADIO",
+    "channelUrl": "https://www.youtube.com/@radiombc",
+    "channelStatus": "official-channel-checked",
+    "checkedAt": "2026-11-24",
+    "basis": "방송사 공식 채널과 영상 제목·설명의 방송일을 확인했습니다. 전체 방송과 짧은 메들리 클립을 구분합니다.",
+    "sourceTitle": "이보람 겨울 노래 한소절 메들리"
   }
 ]

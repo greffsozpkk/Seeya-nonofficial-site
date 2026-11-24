@@ -1,9 +1,9 @@
 {
   "summary": {
-    "records": 166,
-    "venues": 142,
+    "records": 167,
+    "venues": 143,
     "linked": 102,
-    "pending": 64,
+    "pending": 65,
     "unreviewed": 0
   },
   "rows": [
@@ -676,6 +676,14 @@
         "olympic-hall"
       ],
       "status": "linked"
+    },
+    {
+      "recordId": "v491-culture-boram2023",
+      "title": "이보람 — 문화가 흐르는 예술마당",
+      "venue": "광화문광장 놀이마당",
+      "placeIds": [],
+      "status": "pending",
+      "reason": "서울문화포털의 2023-05-31 행사장 표기를 확인했습니다. 광장 내 공연 구역의 위치·주소를 확인한 뒤 지도에 연결합니다."
     },
     {
       "recordId": "v491-green",
