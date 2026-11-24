@@ -268,6 +268,12 @@
  async function refresh(){
   if(!shared||!service||loading)return;
   const version=generation;loading=true;
+  $('glStars').setAttribute('aria-busy','true');
+  if(!connected){
+   $('glSkyStatusText').textContent='편지를 불러오는 중이에요.';
+   $('glSkySpinner').hidden=false;
+   $('glSkyStatus').hidden=false;
+  }
   try{
    const next=await service.list();
    if(version!==generation)return;
@@ -275,13 +281,17 @@
    $('glCompose').disabled=false;
    $('glConnection').textContent=letters.length?'':'아직 별이 없어요. 첫 편지를 남겨 함께 보는 은하수를 시작해 주세요.';
    render();
+   $('glSkyStatus').hidden=true;
    if($('glFind').open)search();
    if($('glLetter').open){
     const latest=letters.find(x=>x.id===current?.id);
     if(latest)read(latest.id);else{close($('glLetter'));notice('이 편지는 삭제됐어요.');}
    }
-  }catch(e){if(version===generation)$('glConnection').textContent=e.message;}
-  finally{loading=false;if(version!==generation)refresh();}
+  }catch(e){if(version===generation){
+   $('glConnection').textContent=e.message;
+   if(!connected){$('glSkyStatusText').textContent=e.message;$('glSkySpinner').hidden=true;}
+  }}
+  finally{loading=false;$('glStars').setAttribute('aria-busy','false');if(version!==generation)refresh();}
  }
  if(shared&&service){
   const whenVisible=()=>{if(!document.hidden&&Date.now()-lastRead>15000)refresh();};
