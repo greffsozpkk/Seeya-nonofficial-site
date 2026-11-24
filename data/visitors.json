@@ -2,14 +2,10 @@
   "schemaVersion": 2,
   "metric": "totalUsers",
   "timeZone": "Asia/Seoul",
-  "date": "2026-11-24",
-  "users": 23,
-  "updatedAt": "2026-11-24T23:15:44.947252+09:00",
+  "date": "2026-11-25",
+  "users": 0,
+  "updatedAt": "2026-11-25T00:17:46.472130+09:00",
   "history": [
-    {
-      "date": "2026-11-17",
-      "users": 27
-    },
     {
       "date": "2026-11-18",
       "users": 27
@@ -37,6 +33,10 @@
     {
       "date": "2026-11-24",
       "users": 23
+    },
+    {
+      "date": "2026-11-25",
+      "users": 0
     }
   ],
   "limited": false
