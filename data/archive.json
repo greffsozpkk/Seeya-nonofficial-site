@@ -4134,9 +4134,27 @@
         "label": "땅콩크림샌드 · [씨야/전국투어콘서트/청주] 미워요_김연지",
         "url": "https://www.youtube.com/watch?v=V3CSyPUX2kw",
         "publishedDate": "2026-11-19"
+      },
+      {
+        "label": "댄디 Dandy",
+        "url": "https://www.youtube.com/watch?v=tcrsB-WEbaw",
+        "publishedDate": "2026-11-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "댄디 Dandy",
+        "url": "https://www.youtube.com/watch?v=NsxBo8rmOEA",
+        "publishedDate": "2026-11-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "댄디 Dandy",
+        "url": "https://www.youtube.com/watch?v=ROxaYsf4tTs",
+        "publishedDate": "2026-11-25",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-24",
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "calendar": {
@@ -7071,6 +7089,12 @@
         "label": "싱글리스트 · 송가인·나태주·남규리 등 재능기부…광주서 ‘한마음 대축제’ < 연예 < 문화 < 기사본문 - 싱글리스트",
         "url": "https://www.slist.kr/news/articleView.html?idxno=768034",
         "publishedDate": "2026-09-22"
+      },
+      {
+        "label": "가요한국방송\"능이채널TV\"",
+        "url": "https://www.youtube.com/watch?v=ARFCWFPIPEs",
+        "publishedDate": "2026-09-20",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -7085,7 +7109,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "venue": "광주교육대학교 제1운동장",
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00"
   },
   {
     "id": "20260919-gyuri-tvreport-interview",
@@ -23447,6 +23471,12 @@
       {
         "label": "서울문화포털 · 5월 31일 문화가 흐르는 예술마당 출연 안내",
         "url": "https://culture.seoul.go.kr/culture/culture/cultureEvent/view.do?cultcode=141493&menuNo=200008"
+      },
+      {
+        "label": "동구",
+        "url": "https://www.youtube.com/watch?v=xXDESblHTBA",
+        "publishedDate": "2023-06-01",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -23458,7 +23488,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "publishedDate": "2023-06-04",
-    "updatedAt": "2026-11-24",
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
     "venue": "광화문광장 놀이마당"
   },
   {
@@ -28374,6 +28404,12 @@
         "url": "https://www.youtube.com/watch?v=7Wj-ND9Ls_M",
         "publishedDate": "2026-09-04",
         "autoDiscovery": true
+      },
+      {
+        "label": "백억티비",
+        "url": "https://www.youtube.com/watch?v=eNeQ9lOLK2M",
+        "publishedDate": "2021-02-05",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -28384,7 +28420,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-11-11T06:55:01.786605+00:00"
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00"
   },
   {
     "id": "v4145-A7x52bJ6nRQ",
@@ -33357,7 +33393,14 @@
       "label": "KBS Kpop",
       "url": "https://www.youtube.com/watch?v=TZvVx65IIgU"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "KBS Kpop",
+        "url": "https://www.youtube.com/watch?v=OJzjHJIm1Hg",
+        "publishedDate": "2019-03-16",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2012~2019",
@@ -33365,7 +33408,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00"
   },
   {
     "id": "v4145-rcG8XAi3OPA",
@@ -47179,6 +47223,12 @@
       {
         "label": "스포츠코리아 현장 사진 기사",
         "url": "https://sports.news.nate.com/view/20071211n16783"
+      },
+      {
+        "label": "보람아몇씨야",
+        "url": "https://www.youtube.com/watch?v=Lq6tgd_FJ2Y",
+        "publishedDate": "2020-07-04",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -47190,7 +47240,8 @@
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "activityYear": "2007",
-    "publishedDate": "2020-03-07"
+    "publishedDate": "2020-03-07",
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00"
   },
   {
     "id": "20071208-first-concert-daegu",
@@ -59910,7 +59961,7 @@
     "id": "20200223-yeonji-sinchon-busking",
     "date": "2020-02-23",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-24",
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
     "title": "김연지 · 신촌 버스킹 · 야생화",
     "program": "신촌 버스킹",
     "type": "event",
@@ -59949,6 +60000,12 @@
         "label": "shinlim · 200223 김연지(씨야) - 2002 @신촌Busking [직캠 shinlim]",
         "url": "https://www.youtube.com/watch?v=YdG-EKLfYWk",
         "publishedDate": "2020-03-05"
+      },
+      {
+        "label": "맛있는솜사탕",
+        "url": "https://www.youtube.com/watch?v=PdnrU4JToiw",
+        "publishedDate": "2020-02-25",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -60165,7 +60222,7 @@
     "id": "20230923-boram-yangju-flower",
     "date": "2023-09-23",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-23T07:59:26.436074+00:00",
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
     "title": "이보람 · 양주 천만송이 천일홍축제",
     "program": "양주 천만송이 천일홍축제",
     "type": "event",
@@ -60197,6 +60254,12 @@
       {
         "label": "문문문문",
         "url": "https://www.youtube.com/watch?v=tmuQo1UIddM",
+        "publishedDate": "2023-09-23",
+        "autoDiscovery": true
+      },
+      {
+        "label": "밥하는 홍",
+        "url": "https://www.youtube.com/watch?v=BA_GreLcWGY",
         "publishedDate": "2023-09-23",
         "autoDiscovery": true
       }
@@ -62496,9 +62559,75 @@
         "label": "승승 · [19.07.22.] 이보람 - 미친 사랑의 노래(SeeYa) (홍대 버스킹)",
         "url": "https://www.youtube.com/watch?v=6ifVqpA_gBk",
         "publishedDate": "2019-07-25"
+      },
+      {
+        "label": "홍낙현",
+        "url": "https://www.youtube.com/watch?v=wcjNhgyRzOE",
+        "publishedDate": "2019-07-22",
+        "autoDiscovery": true
+      },
+      {
+        "label": "홍낙현",
+        "url": "https://www.youtube.com/watch?v=Ej0H1eA31Bw",
+        "publishedDate": "2019-07-22",
+        "autoDiscovery": true
+      },
+      {
+        "label": "홍낙현",
+        "url": "https://www.youtube.com/watch?v=_cUtPa288uk",
+        "publishedDate": "2019-07-22",
+        "autoDiscovery": true
+      },
+      {
+        "label": "홍낙현",
+        "url": "https://www.youtube.com/watch?v=244X3A0qiEw",
+        "publishedDate": "2019-07-22",
+        "autoDiscovery": true
+      },
+      {
+        "label": "승승",
+        "url": "https://www.youtube.com/watch?v=5wsgJGtvyJ0",
+        "publishedDate": "2019-07-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "승승",
+        "url": "https://www.youtube.com/watch?v=pTNXOwSRiqc",
+        "publishedDate": "2019-07-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "승승",
+        "url": "https://www.youtube.com/watch?v=Mm1DB6aOicA",
+        "publishedDate": "2019-07-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "승승",
+        "url": "https://www.youtube.com/watch?v=fzvSLppYoAI",
+        "publishedDate": "2019-07-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "승승",
+        "url": "https://www.youtube.com/watch?v=wZHNUFQG7XU",
+        "publishedDate": "2019-07-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "승승",
+        "url": "https://www.youtube.com/watch?v=UWusVNxIhiA",
+        "publishedDate": "2019-07-26",
+        "autoDiscovery": true
+      },
+      {
+        "label": "승승",
+        "url": "https://www.youtube.com/watch?v=tf_xA5CYmdo",
+        "publishedDate": "2019-07-26",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-24",
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
     "source": {
       "label": "승승 · [19.07.22.] 이보람 - 연(빅마마/Bigmama) 복면가왕.ver (홍대 버스킹)",
       "url": "https://www.youtube.com/watch?v=pAR1YlzsWS0",
@@ -62646,9 +62775,21 @@
         "label": "출구없는김연지 · 김연지 - 우리다시만나요 [십년이나버티니 첫쇼케이스190303]",
         "url": "https://www.youtube.com/watch?v=w_VmVeyi4SU",
         "publishedDate": "2025-12-09"
+      },
+      {
+        "label": "S.H Kim",
+        "url": "https://www.youtube.com/watch?v=MdNnX3q6sRs",
+        "publishedDate": "2019-03-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "S.H Kim",
+        "url": "https://www.youtube.com/watch?v=_Penv9dpGwE",
+        "publishedDate": "2019-03-05",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-24",
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
     "source": {
       "label": "S.H Kim · [10년이나 버티니 showcase] 김연지님-어떤가요(19.03.03)",
       "url": "https://www.youtube.com/watch?v=otzdIkt9Odw",
@@ -62687,9 +62828,27 @@
         "label": "천둥 · 190413 김연지 직캠[4K60P] '나는 나비' I Am A Flying Butterfly KimYeonJi Fancam @우리하나되어 세상밖으로 WITH 페스티벌 By 천둥",
         "url": "https://www.youtube.com/watch?v=CJ7nCFzMzwc",
         "publishedDate": "2019-04-15"
+      },
+      {
+        "label": "mang2goon",
+        "url": "https://www.youtube.com/watch?v=2RoWon4phw4",
+        "publishedDate": "2019-04-14",
+        "autoDiscovery": true
+      },
+      {
+        "label": "천둥",
+        "url": "https://www.youtube.com/watch?v=CBYPO6Pvhtg",
+        "publishedDate": "2019-04-15",
+        "autoDiscovery": true
+      },
+      {
+        "label": "천둥",
+        "url": "https://www.youtube.com/watch?v=wnZ2OSyVMlU",
+        "publishedDate": "2019-04-15",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-24",
+    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
     "source": {
       "label": "mang2goon · 190413 김연지 ( 헤어지는 중입니다 ) 우리 하나 되어 세상 밖으로 문화축제",
       "url": "https://www.youtube.com/watch?v=bS32s3VhJjQ",
