@@ -11944,24 +11944,24 @@ URL:https://seeya-fanpage.com/calendar/?month=2026-11&event=activity-202611
 END:VEVENT
 BEGIN:VEVENT
 UID:activity-20261125-boram-btn-dream-schedule@seeya-fanpage.com
-DTSTAMP:20261123T150000Z
-LAST-MODIFIED:20261123T150000Z
-SEQUENCE:0
+DTSTAMP:20261125T150000Z
+LAST-MODIFIED:20261125T150000Z
+SEQUENCE:1
 DTSTART:20261125T120000Z
-SUMMARY:이보람 · 한밤의 꿈 이보람입니다 31회 방송 예정
+SUMMARY:이보람 · 한밤의 꿈 이보람입니다 31회
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 CATEGORIES:broadcast
 LOCATION:
-DESCRIPTION:이보람\n21:00 · 최초 공개 · BTN라디오 공식\nBTN
- 라디오 공식 영상에서 31회 최초 공개가 11월 25일 오후 9
- 시(한국 시간)로 안내되었습니다.\n방송 전 대기 영상이
- 며\, 다시듣기 공개 여부는 방송 후 확인합니다.\nBTN라디
- 오 공식 · 한밤의 꿈 31회 최초 공개 대기 영상: https://www
- .youtube.com/watch?v=ScPndgAly7A\n씨야 갤러리 · 11월 일정표 (10
- 월 26일 기준): https://gall.dcinside.com/mini/board/view/?id=seeya&no=
- 10177\nhttps://seeya-fanpage.com/archive/?record=20261125-boram-btn-dream-
- schedule
+DESCRIPTION:이보람\n21:00 · BTN라디오 방송\n11월 25일 밤 9시 B
+ TN라디오에서 최초 공개된 「한밤의 꿈 이보람입니다」 
+ 31회입니다. 공식 채널의 방송 종료와 보이는 라디오 다
+ 시보기 공개를 확인했습니다. 영상 길이는 1시간 57분 16
+ 초입니다.\nBTN라디오 공식 · 한밤의 꿈 이보람입니다 31
+ 회 다시보기: https://www.youtube.com/watch?v=ScPndgAly7A\n씨야 갤
+ 러리 · 11월 일정표 (10월 26일 기준): https://gall.dcinside.com/
+ mini/board/view/?id=seeya&no=10177\nhttps://seeya-fanpage.com/archive/?rec
+ ord=20261125-boram-btn-dream-schedule
 URL:https://seeya-fanpage.com/calendar/?month=2026-11&event=activity-202611
  25-boram-btn-dream-schedule
 END:VEVENT

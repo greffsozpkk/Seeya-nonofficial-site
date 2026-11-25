@@ -60680,8 +60680,8 @@
     "id": "20261125-boram-btn-dream-schedule",
     "date": "2026-11-25",
     "addedAt": "2026-11-01",
-    "updatedAt": "2026-11-24",
-    "title": "이보람 · 한밤의 꿈 이보람입니다 31회 방송 예정",
+    "updatedAt": "2026-11-26",
+    "title": "이보람 · 한밤의 꿈 이보람입니다 31회",
     "program": "BTN라디오 · 한밤의 꿈 이보람입니다",
     "type": "radio",
     "members": [
@@ -60691,8 +60691,9 @@
     "album": "",
     "thumbnail": "",
     "source": {
-      "label": "BTN라디오 공식 · 한밤의 꿈 31회 최초 공개 대기 영상",
-      "url": "https://www.youtube.com/watch?v=ScPndgAly7A"
+      "label": "BTN라디오 공식 · 한밤의 꿈 이보람입니다 31회 다시보기",
+      "url": "https://www.youtube.com/watch?v=ScPndgAly7A",
+      "publishedDate": "2026-11-25"
     },
     "additionalSources": [
       {
@@ -60701,24 +60702,26 @@
         "publishedDate": "2026-10-26"
       }
     ],
-    "status": "documented",
+    "status": "available",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
     "tags": [
       "2026",
-      "BTN라디오 · 한밤의 꿈 이보람입니다",
-      "예정"
+      "라디오",
+      "보이는 라디오"
     ],
-    "note": "BTN라디오 공식 영상에서 31회 최초 공개가 11월 25일 오후 9시(한국 시간)로 안내되었습니다.\n방송 전 대기 영상이며, 다시듣기 공개 여부는 방송 후 확인합니다.",
-    "eventState": "scheduled",
+    "note": "11월 25일 밤 9시 BTN라디오에서 최초 공개된 「한밤의 꿈 이보람입니다」 31회입니다. 공식 채널의 방송 종료와 보이는 라디오 다시보기 공개를 확인했습니다. 영상 길이는 1시간 57분 16초입니다.",
+    "eventState": "completed",
     "calendar": {
       "enabled": true,
       "time": "21:00",
-      "timeLabel": "최초 공개 · BTN라디오 공식"
+      "timeLabel": "BTN라디오 방송",
+      "sequence": 1
     },
     "homeActions": {
-      "notice": "https://www.youtube.com/watch?v=ScPndgAly7A"
-    }
+      "replay": "https://www.youtube.com/watch?v=ScPndgAly7A"
+    },
+    "episode": 31
   },
   {
     "id": "20261105-gyuri-yeonji-sharing-awards",
