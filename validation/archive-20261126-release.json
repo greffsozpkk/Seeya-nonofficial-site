@@ -1,0 +1,64 @@
+{
+  "checkedAt": "2026-11-25",
+  "publishedOn": "2026-11-26",
+  "scope": "서초 세바여 공연 영상 보완 및 팬이 담은 씨야 갤러리 갱신",
+  "archive": {
+    "recordId": "20261122-boram-worldmom-seocho",
+    "addedSources": 4,
+    "recordCount": 1553
+  },
+  "fanGallery": {
+    "addedPosts": 6,
+    "posts": [
+      {
+        "id": "DgJk062T5Cr",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-25",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgH6BNcydXH",
+        "account": "nam_hee0928",
+        "postedOn": "2026-11-24",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgJ8X-GRHcl",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-25",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgIz8KwzitE",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-25",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgIzxp1TV5l",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-25",
+        "label": "이보람",
+        "kind": "reel"
+      },
+      {
+        "id": "DgIzogVzRw9",
+        "account": "cup_soohans",
+        "postedOn": "2026-11-25",
+        "label": "이보람",
+        "kind": "reel"
+      }
+    ],
+    "profilesChecked": 15,
+    "profileFailures": 0,
+    "embeddingRestricted": [
+      "DgG2pIdvMVg",
+      "DgJIV0ayDXF"
+    ]
+  },
+  "excluded": "팬 이벤트 테스트 페이지, 신규 팬 행사 20건, 생일 카페 보완 및 관련 변경은 로컬 검토용으로 유지"
+}
