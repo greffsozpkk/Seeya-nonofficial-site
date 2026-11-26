@@ -6,7 +6,7 @@ module.exports=function installGuide(){return `<section id="install" class="inst
  <p id="pwaStatus" role="status" aria-live="polite">사용 중인 기기에 맞는 방법으로 추가해 주세요.</p>
  <div class="install-methods">
   <details><summary>아이폰 · 아이패드</summary><ol><li>Safari에서 seeya-fanpage.com을 열어요.</li><li>공유 메뉴에서 ‘홈 화면에 추가’를 선택해요.</li><li>‘웹 앱으로 열기’가 표시되면 켠 뒤 ‘추가’를 눌러요.</li></ol></details>
-  <details><summary>아이폰에 예전 아이콘이 남아 있을 때</summary><p>Safari에서 사이트를 새로 연 뒤 ‘홈 화면에 추가’ 미리보기의 아이콘을 확인해 주세요. 기존 홈 화면 아이콘은 이전 이미지를 계속 표시할 수 있어요.</p><p>기존 웹 앱을 삭제하기 전에는 다이어리에서 백업을 저장해 주세요. 사이트 데이터 전체 삭제는 필요하지 않습니다.</p></details>
+  <details><summary>아이폰에 예전 아이콘이 남아 있을 때</summary><p>Safari에서 사이트를 새로 연 뒤 ‘홈 화면에 추가’ 미리보기의 아이콘을 확인해 주세요. 기존 홈 화면 아이콘은 이전 이미지를 계속 표시할 수 있어요.</p><p>기존 웹 앱을 삭제하기 전에는 다이어리와 씨야 키우기에서 각각 백업을 저장해 주세요. 사이트 데이터 전체 삭제는 필요하지 않습니다.</p></details>
   <details><summary>안드로이드</summary><ol><li>Chrome에서 seeya-fanpage.com을 열어요.</li><li>위에 설치 버튼이 나타나면 누르거나, 브라우저 메뉴(⋮)를 열어요.</li><li>‘홈 화면에 추가’ 또는 ‘앱 설치’를 선택해요.</li></ol></details>
   <details><summary>PC · 설치 메뉴가 보이지 않을 때</summary><p>PC에서는 Chrome·Edge의 주소창 또는 메뉴에서 설치 항목을 찾아보세요. 메뉴 이름과 설치 지원 여부는 기기·브라우저에 따라 달라요.</p><p>인스타그램·카카오톡 안에서 열었다면 Safari나 Chrome으로 다시 열어 주세요. 이미 추가했다면 홈 화면이나 앱 목록에서 확인할 수 있어요.</p></details>
  </div></section>`;};
