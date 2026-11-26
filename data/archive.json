@@ -28546,7 +28546,14 @@
       "label": "미스&미스터트롯",
       "url": "https://www.youtube.com/watch?v=31t-Ps4FHwk"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "TVCHOSUN - TV조선",
+        "url": "https://www.youtube.com/watch?v=JpGRfQ5KUmc",
+        "publishedDate": "2021-01-14",
+        "autoDiscovery": true
+      }
+    ],
     "status": "available",
     "tags": [
       "2020~2025",
@@ -28554,7 +28561,8 @@
     ],
     "note": "",
     "dateStatus": "confirmed",
-    "dateBasis": "broadcast"
+    "dateBasis": "broadcast",
+    "updatedAt": "2026-11-26T08:44:33.976574+00:00"
   },
   {
     "id": "v4145-nLpIgkzAa1A",
@@ -35807,6 +35815,12 @@
         "label": "Kim Yeonji - Topic · 그립고 그립고 그립다 (불광동 휘발유)",
         "url": "https://www.youtube.com/watch?v=ABgABEaydq8",
         "publishedDate": "2023-07-08"
+      },
+      {
+        "label": "내취향 노래모음",
+        "url": "https://www.youtube.com/watch?v=qgQ19bvY7U4",
+        "publishedDate": "2020-11-03",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -35817,7 +35831,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-26T08:44:33.976574+00:00"
   },
   {
     "id": "v490-sabita",
@@ -51492,6 +51506,12 @@
         "url": "https://www.youtube.com/watch?v=CHkCmK3MBKs",
         "publishedDate": "2019-05-10",
         "autoDiscovery": true
+      },
+      {
+        "label": "보람아몇씨야",
+        "url": "https://www.youtube.com/watch?v=b5tQPCVIV2Q",
+        "publishedDate": "2020-06-12",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -51500,7 +51520,7 @@
     ],
     "note": "",
     "publishedDate": "2018-04-13",
-    "updatedAt": "2026-11-12T07:30:11.284145+00:00"
+    "updatedAt": "2026-11-26T08:44:33.976574+00:00"
   },
   {
     "id": "20060808-seeya-hellochat",
@@ -59985,7 +60005,7 @@
     "id": "20200223-yeonji-sinchon-busking",
     "date": "2020-02-23",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
+    "updatedAt": "2026-11-26T08:44:33.976574+00:00",
     "title": "김연지 · 신촌 버스킹 · 야생화",
     "program": "신촌 버스킹",
     "type": "event",
@@ -60029,6 +60049,96 @@
         "label": "맛있는솜사탕",
         "url": "https://www.youtube.com/watch?v=PdnrU4JToiw",
         "publishedDate": "2020-02-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "Greeming *",
+        "url": "https://www.youtube.com/watch?v=VK48sIoL0os",
+        "publishedDate": "2020-02-23",
+        "autoDiscovery": true
+      },
+      {
+        "label": "Greeming *",
+        "url": "https://www.youtube.com/watch?v=dYVqtvBZoco",
+        "publishedDate": "2020-02-23",
+        "autoDiscovery": true
+      },
+      {
+        "label": "귭TV",
+        "url": "https://www.youtube.com/watch?v=k5D_e2NHznY",
+        "publishedDate": "2020-02-23",
+        "autoDiscovery": true
+      },
+      {
+        "label": "DGK CAM",
+        "url": "https://www.youtube.com/watch?v=VQiqigQUotU",
+        "publishedDate": "2020-02-23",
+        "autoDiscovery": true
+      },
+      {
+        "label": "DaftTaengk",
+        "url": "https://www.youtube.com/watch?v=tKdmF0E889U",
+        "publishedDate": "2020-02-24",
+        "autoDiscovery": true
+      },
+      {
+        "label": "DaftTaengk",
+        "url": "https://www.youtube.com/watch?v=6uKpV4zk8jI",
+        "publishedDate": "2020-02-24",
+        "autoDiscovery": true
+      },
+      {
+        "label": "맛있는솜사탕",
+        "url": "https://www.youtube.com/watch?v=LyxrzqJXMsY",
+        "publishedDate": "2020-02-24",
+        "autoDiscovery": true
+      },
+      {
+        "label": "DaftTaengk",
+        "url": "https://www.youtube.com/watch?v=QtJJ2Aawtg0",
+        "publishedDate": "2020-02-24",
+        "autoDiscovery": true
+      },
+      {
+        "label": "맛있는솜사탕",
+        "url": "https://www.youtube.com/watch?v=5cL9FQF5vnQ",
+        "publishedDate": "2020-02-25",
+        "autoDiscovery": true
+      },
+      {
+        "label": "데일리코리아뉴스",
+        "url": "https://www.youtube.com/watch?v=seOnNKwV2q4",
+        "publishedDate": "2020-03-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "울보다람쥐",
+        "url": "https://www.youtube.com/watch?v=_M4ROPmIZ04",
+        "publishedDate": "2020-05-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "바람의물결",
+        "url": "https://www.youtube.com/watch?v=qzib0xDmVnE",
+        "publishedDate": "2020-07-27",
+        "autoDiscovery": true
+      },
+      {
+        "label": "바람의물결",
+        "url": "https://www.youtube.com/watch?v=Dmc0eO2DtWQ",
+        "publishedDate": "2020-07-27",
+        "autoDiscovery": true
+      },
+      {
+        "label": "바람의물결",
+        "url": "https://www.youtube.com/watch?v=v5ubhb4wqQo",
+        "publishedDate": "2020-07-27",
+        "autoDiscovery": true
+      },
+      {
+        "label": "바람의물결",
+        "url": "https://www.youtube.com/watch?v=I-etdBaRpaY",
+        "publishedDate": "2020-07-27",
         "autoDiscovery": true
       }
     ],
@@ -60085,7 +60195,7 @@
     "id": "20221003-boram-youth-arena",
     "date": "2022-10-03",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-24T10:14:26.036720+00:00",
+    "updatedAt": "2026-11-26T08:44:33.976574+00:00",
     "title": "이보람 · 청춘아레나 대구 · 박혜원·박진주와 합동 무대",
     "program": "청춘아레나 대구",
     "type": "event",
@@ -60131,6 +60241,12 @@
         "label": "꽃길보라미",
         "url": "https://www.youtube.com/watch?v=oeKTFwLYZrI",
         "publishedDate": "2023-04-02",
+        "autoDiscovery": true
+      },
+      {
+        "label": "오니짱테레비",
+        "url": "https://www.youtube.com/watch?v=ruLmm-nYH9I",
+        "publishedDate": "2022-10-06",
         "autoDiscovery": true
       }
     ],
