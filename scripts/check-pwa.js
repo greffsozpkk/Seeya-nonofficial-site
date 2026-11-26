@@ -19,12 +19,25 @@ const ico=fs.readFileSync(path.join(root,'favicon.ico'));assert.equal(ico.readUI
 assert(manifest.icons.some(icon=>icon.purpose==='maskable'));
 for(const shortcut of manifest.shortcuts)assert(fs.existsSync(path.join(root,shortcut.url.slice(1),'index.html')));
 const build=JSON.parse(read('build-manifest.json'));
+const appleIcons=build.assets.filter(p=>/^assets\/apple-touch-icon\.[a-f0-9]{12}\.png$/.test(p));
+assert.equal(appleIcons.length,1,'Exactly one content-addressed Apple icon');
+const appleIconPath=appleIcons[0],appleBytes=fs.readFileSync(path.join(root,appleIconPath));
+const digest=require('node:crypto').createHash('sha256').update(appleBytes).digest('hex').slice(0,12);
+assert(appleIconPath.includes('.'+digest+'.png'),'Apple icon URL follows actual image content');
+assert.deepEqual(appleBytes,fs.readFileSync(path.join(root,'images/app/apple-touch-icon-180-v2.png')));
+for(const name of ['apple-touch-icon.png','apple-touch-icon-precomposed.png']){
+ assert(build.auxiliary.includes(name),'Root icon fallback must be deployed');
+ assert.deepEqual(fs.readFileSync(path.join(root,name)),appleBytes,'Root fallback must match linked icon');
+}
+require('./check-icon-pixels')(appleBytes,'Content-addressed Apple icon');
+assert(read('diary/sw.js').includes('/'+appleIconPath),'Diary offline shell uses current Apple icon');
 for(const file of build.files.filter(p=>p.endsWith('.html'))){
  const html=read(file);
  assert.equal((html.match(/rel="icon"/g)||[]).length,1,file+' dedicated search favicon');
  assert(html.includes('href="/images/app/favicon-192.png"'),file+' favicon link');
  assert.equal((html.match(/rel="manifest"/g)||[]).length,1,file);
- assert(html.includes('href="/images/app/apple-touch-icon-180-v2.png"'),file+' updated Apple icon');
+ assert(html.includes('href="/'+appleIconPath+'"'),file+' current Apple icon');
+ assert.equal((html.match(/rel="apple-touch-icon"/g)||[]).length,1,file+' unambiguous Apple icon');
  assert.equal((html.match(/name="theme-color"/g)||[]).length,1,file);
  assert(html.includes(`name="theme-color" content="${manifest.theme_color}"`));
  assert(html.includes('href="/about/">ABOUT</a>'),file);

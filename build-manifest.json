@@ -65,6 +65,7 @@
     "sw.js"
   ],
   "assets": [
+    "assets/apple-touch-icon.62889f813363.png",
     "assets/site.01fd0bbbc5bb.css",
     "assets/pwa.4c8d4bbee1b1.js",
     "assets/offline.77447a17de0b.js",
@@ -112,6 +113,8 @@
     "assets/our-stage.86a07cd2ffd0.js"
   ],
   "auxiliary": [
+    "apple-touch-icon.png",
+    "apple-touch-icon-precomposed.png",
     "game/our-stage/test/index.html",
     "galaxy/test/index.html",
     "game/my-concert/catalog.json",

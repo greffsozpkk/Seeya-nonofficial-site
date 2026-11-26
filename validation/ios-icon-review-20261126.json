@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-11-26",
+  "reported": "Previously installed iPhone web app shows white border outside pink square.",
+  "liveBefore": {
+    "icon": "/images/app/apple-touch-icon-180-v2.png",
+    "pixelCheck": "PASS: all edges pink, fully opaque",
+    "rootFallbacks": "Both apple-touch-icon.png and apple-touch-icon-precomposed.png returned 404"
+  },
+  "assessment": "Old installed icon is a plausible cause; not confirmed on physical iPhone. Missing root fallbacks do not invalidate the existing explicit link.",
+  "changes": [
+    "Content-addressed Apple icon URL used on public pages and diary offline shell",
+    "Matching root fallback files generated and deployed",
+    "Original SEEYA and ARCHIVE artwork preserved byte-for-byte",
+    "Install guide asks to back up diary before removing an old web app"
+  ],
+  "reference": "https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html",
+  "limitations": "Physical iPhone icon refresh not tested. Existing installed icons may require a fresh Home Screen addition."
+}

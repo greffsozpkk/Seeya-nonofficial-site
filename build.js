@@ -45,6 +45,10 @@ function bundle(entry){
 }
 const assets=[];
 function asset(name,ext,source){const hash=crypto.createHash('sha256').update(source).digest('hex').slice(0,12);const p=`assets/${name}.${hash}.${ext}`;write(p,source);assets.push(p);return '/'+p;}
+// A content-addressed URL makes corrected Apple icons distinct from older cached exports.
+const appleIconBytes=fs.readFileSync(path.join(root,'images/app/apple-touch-icon-180-v2.png'));
+const appleIcon=asset('apple-touch-icon','png',appleIconBytes);
+for(const name of ['apple-touch-icon.png','apple-touch-icon-precomposed.png'])write(name,appleIconBytes);
 const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css')+'\n'+read('src/styles/concerts.css')+'\n'+read('src/styles/letter.css')+'\n'+read('src/styles/pwa.css')+'\n'+read('src/styles/home-upcoming.css')+'\n'+read('src/styles/birthday-popup.css'));
 const pwaJs=asset('pwa','js',bundle('src/client/pwa.js'));
 const offlineJs=asset('offline','js',bundle('src/client/offline.js'));
@@ -174,7 +178,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  if(key==='exam'||key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
  vars.scripts+=`\n<script defer src="${mobileMenuJs}"></script>`;
  vars.themeColor=esc(pwa.theme_color);
- vars.pwaHead=route.unlisted?'':`<link rel="icon" type="image/png" sizes="192x192" href="/images/app/favicon-192.png">\n<link rel="manifest" href="/manifest.webmanifest">\n<link rel="apple-touch-icon" sizes="180x180" href="/images/app/apple-touch-icon-180-v2.png">\n<meta name="mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="${esc(pwa.short_name)}">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">`;
+ vars.pwaHead=route.unlisted?'':`<link rel="icon" type="image/png" sizes="192x192" href="/images/app/favicon-192.png">\n<link rel="manifest" href="/manifest.webmanifest">\n<link rel="apple-touch-icon" sizes="180x180" href="${appleIcon}">\n<meta name="mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-capable" content="yes">\n<meta name="apple-mobile-web-app-title" content="${esc(pwa.short_name)}">\n<meta name="apple-mobile-web-app-status-bar-style" content="default">`;
  if(!route.unlisted&&key!=='passport')vars.scripts+=`\n<script defer src="${pwaJs}"></script>\n<script defer src="${offlineJs}"></script>`;
  let output=template.replace(/\{\{(\w+)\}\}/g,(_,key)=>{if(!(key in vars))throw new Error('Unknown template key '+key);return vars[key];});
  if(route.noindex)output=output.replace(/(<meta name="(?:robots|googlebot)" content=")[^"]+/g,'$1noindex,follow');
@@ -187,7 +191,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
 }
 write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+routes.filter(r=>r.key!=='letter'&&!r.noindex).map(r=>'  <url><loc>'+esc(site.origin+r.path)+'</loc></url>').join('\n')+'\n</urlset>\n');
 write('passport/index.html',read('src/passport-redirect.html'));
-const diaryFiles=[myConcertCss,...assets.filter(p=>/\/(?:Jua-Regular|YeonSung-Regular|Gaegu-Regular|Gaegu-Bold)\./.test(p)).map(p=>'/'+p),...passportFonts.map(f=>f.url),'/diary/',siteCss,passportCss,diaryJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png','/images/app/apple-touch-icon-180-v2.png'];
+const diaryFiles=[myConcertCss,...assets.filter(p=>/\/(?:Jua-Regular|YeonSung-Regular|Gaegu-Regular|Gaegu-Bold)\./.test(p)).map(p=>'/'+p),...passportFonts.map(f=>f.url),'/diary/',siteCss,passportCss,diaryJs,mobileMenuJs,'/manifest.webmanifest','/images/app/favicon-192.png',appleIcon];
 const diaryWorker=read('src/passport-worker.js').replaceAll('/passport/test/','/diary/').replaceAll('/passport/test','/diary').replaceAll('seeya-passport-shell-','seeya-diary-shell-');
 const diaryDigest=crypto.createHash('sha256').update(fs.readFileSync(path.join(outputRoot,'diary/index.html'))).update(diaryWorker).digest('hex').slice(0,12);
 write('diary/sw.js',diaryWorker.replace('__PASSPORT_CACHE__',JSON.stringify('seeya-diary-shell-'+diaryDigest)).replace('__PASSPORT_FILES__',JSON.stringify(diaryFiles)));
@@ -197,6 +201,6 @@ for(const route of retiredRoutes){const file=route.from.slice(1)+'index.html';wr
 write('passport/sw.js',read('src/retired-passport-worker.js'));
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:[...liveRoutes.map(r=>r.path.slice(1)+'index.html'),ourStageRoute.path.slice(1)+'index.html',galaxyRoute.path.slice(1)+'index.html','game/my-concert/catalog.json',myConcertRoute.path.slice(1)+'index.html','game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html',clinicRoute.path.slice(1)+'index.html']},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['apple-touch-icon.png','apple-touch-icon-precomposed.png',...liveRoutes.map(r=>r.path.slice(1)+'index.html'),ourStageRoute.path.slice(1)+'index.html',galaxyRoute.path.slice(1)+'index.html','game/my-concert/catalog.json',myConcertRoute.path.slice(1)+'index.html','game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html',clinicRoute.path.slice(1)+'index.html']},null,2)+'\n');
 console.log(`Built ${routes.length} public pages, ${6+liveRoutes.length} unlisted test pages and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');
