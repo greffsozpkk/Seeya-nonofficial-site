@@ -28234,6 +28234,12 @@
       {
         "label": "미스&미스터트롯 · 물망초 클린 영상",
         "url": "https://www.youtube.com/watch?v=LDQCuDbGuY4"
+      },
+      {
+        "label": "TVCHOSUN - TV조선",
+        "url": "https://www.youtube.com/watch?v=E6rCsTcU1Wc",
+        "publishedDate": "2021-02-18",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -28244,7 +28250,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-11-15"
+    "updatedAt": "2026-11-27T08:55:22.196266+00:00"
   },
   {
     "id": "v4145-wKsaKuZebsM",
@@ -37179,6 +37185,12 @@
         "label": "JTBC · 기억상실",
         "url": "https://www.youtube.com/watch?v=DwJCZR3mRfg",
         "publishedDate": "2015-04-28"
+      },
+      {
+        "label": "JTBC Voyage",
+        "url": "https://www.youtube.com/watch?v=PA-5FWcPiEA",
+        "publishedDate": "2021-08-11",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -37189,7 +37201,7 @@
     "note": "",
     "dateStatus": "confirmed",
     "dateBasis": "broadcast",
-    "updatedAt": "2026-09-18"
+    "updatedAt": "2026-11-27T08:55:22.196266+00:00"
   },
   {
     "id": "v490-pops-20150422",
@@ -60156,7 +60168,7 @@
     "id": "20221002-boram-bohyeonsan-festival",
     "date": "2022-10-02",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-18T07:49:40.017695+00:00",
+    "updatedAt": "2026-11-27T08:55:22.196266+00:00",
     "title": "이보람 · 영천 보현산 별빛축제",
     "program": "영천 보현산 별빛축제",
     "type": "event",
@@ -60178,6 +60190,12 @@
         "label": "성민",
         "url": "https://www.youtube.com/watch?v=ZxLcfi0w53g",
         "publishedDate": "2022-10-05",
+        "autoDiscovery": true
+      },
+      {
+        "label": "라밍보",
+        "url": "https://www.youtube.com/watch?v=San5UCFnA0Y",
+        "publishedDate": "2022-10-03",
         "autoDiscovery": true
       }
     ],
@@ -60362,7 +60380,7 @@
     "id": "20230923-boram-yangju-flower",
     "date": "2023-09-23",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
+    "updatedAt": "2026-11-27T08:55:22.196266+00:00",
     "title": "이보람 · 양주 천만송이 천일홍축제",
     "program": "양주 천만송이 천일홍축제",
     "type": "event",
@@ -60401,6 +60419,12 @@
         "label": "밥하는 홍",
         "url": "https://www.youtube.com/watch?v=BA_GreLcWGY",
         "publishedDate": "2023-09-23",
+        "autoDiscovery": true
+      },
+      {
+        "label": "동구",
+        "url": "https://www.youtube.com/watch?v=O3vMoq_pdSs",
+        "publishedDate": "2023-09-25",
         "autoDiscovery": true
       }
     ],
