@@ -15,8 +15,8 @@ export async function scheduled(env,now=new Date(),loadCalendar=calendar){
  const [h,m]=time.split(':').map(Number),elapsed=m%30,slot=String(h).padStart(2,'0')+':'+(m<30?'00':'30');
  await sql(env,"INSERT INTO metadata(key,value) VALUES('last_cron',?) ON CONFLICT(key) DO UPDATE SET value=excluded.value",now.toISOString()).run();
  if(elapsed<5){
- const exists=await sql(env,'SELECT 1 AS found FROM subscribers WHERE daily=1 AND expired=0 AND daily_time=? LIMIT 1',slot).first();
- if(exists){try{const payload=message(todayEvents(await loadCalendar(),now),date);if(payload)await sql(env,"INSERT OR IGNORE INTO jobs(id,subscriber_id,payload,due_at,expires_at) SELECT ?||id,id,?,?,? FROM subscribers WHERE daily=1 AND expired=0 AND daily_time=?",'daily:'+date+':',JSON.stringify(payload),now.getTime(),now.getTime()+20*60000,slot).run();}catch{console.error('Calendar unavailable; no digest created.');}}
+ const {results:groups}=await sql(env,'SELECT DISTINCT notification_types FROM subscribers WHERE daily=1 AND expired=0 AND daily_time=?',slot).all();
+ if(groups.length){try{const data=await loadCalendar();const queries=groups.map(({notification_types:types})=>{const payload=message(todayEvents(data,now,types),date);return payload?sql(env,"INSERT OR IGNORE INTO jobs(id,subscriber_id,payload,due_at,expires_at) SELECT ?||id,id,?,?,? FROM subscribers WHERE daily=1 AND expired=0 AND daily_time=? AND notification_types=?",'daily:'+date+':',JSON.stringify(payload),now.getTime(),now.getTime()+20*60000,slot,types):null;}).filter(Boolean);if(queries.length)await env.DB.batch(queries);}catch{console.error('Calendar unavailable; no digest created.');}}
  }
  const {results}=await sql(env,"SELECT DISTINCT substr(subscriber_id,1,1) AS shard FROM jobs WHERE status='pending' AND due_at<=? AND expires_at>?",Date.now(),Date.now()).all();
  // Each send gets its own Worker request/CPU budget. Bound recursive hops;

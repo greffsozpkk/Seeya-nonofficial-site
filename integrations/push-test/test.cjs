@@ -78,3 +78,20 @@ test('notification details retain verified end time and channel without guessing
  const concert=message([{...event,endTime:'',timeLabel:'공연 시작',venue:'공연장'}],date);
  assert.equal(concert.body.split('\n')[0],'15:10 · 공연장');
 });
+
+test('opt-in anniversary categories, default activity-only, leap dates and stable title/deep link',()=>{
+ const now=new Date('2026-10-30T00:00:00Z'),date='2026-10-30';
+ const a=(id,title)=>({id,title,annual:true,date:'2007-10-30',state:'confirmed',members:['김연지']});
+ const data={events:[{id:'show',date,state:'confirmed',title:'방송',time:'10:00'}],anniversaries:[a('birthday-yeonji','김연지 생일'),a('seeya-debut','씨야 데뷔 기념일'),a('album-1','First 앨범 발매 기념일'),a('other','기타')]};
+ assert.deepEqual(todayEvents(data,now).map(x=>x.id),['show']);
+ for(let mask=1;mask<16;mask++){
+  const list=todayEvents(data,now,mask);assert.equal(list.length,[1,2,4,8].filter(bit=>mask&bit).length);
+  assert.equal(message(list,date).title,'씨야 일정 · 10월 30일');
+ }
+ const birth=message(todayEvents(data,now,2),date);assert.equal(birth.body,'김연지\n생일');assert.equal(new URL(birth.url).searchParams.get('anniversaries'),'1');
+ const {selectionFromURL}=require('../../src/shared/calendar-state');assert.equal(selectionFromURL(new URL(birth.url).search,data.anniversaries,'2026-11-27').day,date);
+ const leap={events:[],anniversaries:[{...a('birthday-leap','윤일 생일'),date:'2020-02-29'}]};
+ assert.equal(todayEvents(leap,new Date('2026-02-28T00:00:00Z'),2).length,0);
+ assert.equal(todayEvents(leap,new Date('2028-02-29T00:00:00Z'),2).length,1);
+ const preview=previews(data,new Date('2026-11-27T00:00:00Z'),2).find(x=>x.payload);assert(preview.events.every(x=>x.id.startsWith('birthday-')));
+});

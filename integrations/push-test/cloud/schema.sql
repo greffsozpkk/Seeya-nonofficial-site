@@ -5,6 +5,7 @@ CREATE TABLE IF NOT EXISTS subscribers (
  created_at TEXT NOT NULL,
  daily INTEGER NOT NULL DEFAULT 0,
  daily_time TEXT NOT NULL DEFAULT '09:00',
+ notification_types INTEGER NOT NULL DEFAULT 1 CHECK(notification_types BETWEEN 1 AND 15),
  expired INTEGER NOT NULL DEFAULT 0,
  last_request INTEGER NOT NULL DEFAULT 0,
  last_result TEXT NOT NULL DEFAULT '',

@@ -1,6 +1,6 @@
 import {buildPushPayload} from '@block65/webcrypto-web-push';
 import schedule from '../schedule.cjs';
-const {dateInKorea,todayEvents,message,validTime,validSubscription,due,previews}=schedule;
+const {validTypes,dateInKorea,todayEvents,message,validTime,validSubscription,due,previews}=schedule;
 const headers={'Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','X-Robots-Tag':'noindex, nofollow, noarchive'};
 const json=(data,status=200)=>Response.json(data,{status,headers});
 const hash=async text=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text))),b=>b.toString(16).padStart(2,'0')).join('');
@@ -60,8 +60,8 @@ export async function tick(env,now=new Date(),loadCalendar=calendar,sendFetch=fe
  const targets=subscribers.filter(s=>due({daily:s.daily,dailyTime:s.daily_time},now));
  if(targets.length){
  try{
- const events=todayEvents(await loadCalendar(),now),date=dateInKorea(now),payload=message(events,date);
- if(payload)await env.DB.batch(targets.map(s=>sql(env,'INSERT OR IGNORE INTO jobs(id,subscriber_id,payload,due_at,expires_at) VALUES(?,?,?,?,?)','daily:'+date+':'+s.id,s.id,JSON.stringify(payload),now.getTime(),now.getTime()+300000)));
+ const data=await loadCalendar(),date=dateInKorea(now);
+ for(const s of targets){const payload=message(todayEvents(data,now,s.notification_types??1),date);if(payload)await sql(env,'INSERT OR IGNORE INTO jobs(id,subscriber_id,payload,due_at,expires_at) VALUES(?,?,?,?,?)','daily:'+date+':'+s.id,s.id,JSON.stringify(payload),now.getTime(),now.getTime()+300000).run();}
  }catch{console.error('Calendar fetch unavailable; no schedule sent.');}
  }
  const {results:jobs}=await sql(env,"SELECT id FROM jobs WHERE status='pending' AND due_at<=? AND expires_at>? ORDER BY due_at LIMIT 8",Date.now(),Date.now()).all();
@@ -77,9 +77,10 @@ export async function handle(req,env,ctx){
  if((!env.PUBLIC_APP_ORIGIN&&!env.PREVIEW_GATE)||!url.pathname.startsWith(base))return json({error:'Not found'},404);
  const route=url.pathname.slice(base.length);
  if(req.method==='GET'&&route==='api/config'){
- const data=await calendar(),items=previews(data);for(const item of items)if(item.payload)item.ticket=await ticket(env,item.payload);
+ const types=url.searchParams.has('types')?Number(url.searchParams.get('types')):1;if(!validTypes(types))return json({error:'알림 종류를 하나 이상 선택해 주세요.'},400);
+ const data=await calendar(),items=previews(data,new Date(),types);for(const item of items)if(item.payload)item.ticket=await ticket(env,item.payload);
  const cron=await sql(env,"SELECT value FROM metadata WHERE key='last_cron'").first();
- return json({publicKey:env.VAPID_PUBLIC_KEY,date:dateInKorea(),events:todayEvents(data),previews:items,mode:'cloud',lastCron:cron?.value||'',serverTime:new Date().toISOString()});
+ return json({publicKey:env.VAPID_PUBLIC_KEY,date:dateInKorea(),events:todayEvents(data,new Date(),types),types,previews:items,mode:'cloud',lastCron:cron?.value||'',serverTime:new Date().toISOString()});
  }
  if(route.startsWith('api/')){
  if(req.method!=='POST'||!req.headers.get('content-type')?.startsWith('application/json'))return json({error:'POST JSON required'},405);
@@ -99,17 +100,19 @@ export async function handle(req,env,ctx){
  if(!own)return json({error:'이 기기에서 알림 받기를 먼저 신청해 주세요.'},401);
  if(route==='api/status'){
  const job=await sql(env,"SELECT status FROM jobs WHERE subscriber_id=? ORDER BY due_at DESC LIMIT 1",id).first();
- return json({daily:!!own.daily,dailyTime:own.daily_time,expired:!!own.expired,lastResult:job&&['unknown','expired'].includes(job.status)?'이전 발송 완료를 확인하지 못했어요. 테스트를 다시 눌러 주세요.':own.last_result,lastSentAt:own.last_sent_at,pending:job?.status==='pending'});
+ return json({daily:!!own.daily,dailyTime:own.daily_time,types:own.notification_types??1,expired:!!own.expired,lastResult:job&&['unknown','expired'].includes(job.status)?'이전 발송 완료를 확인하지 못했어요. 테스트를 다시 눌러 주세요.':own.last_result,lastSentAt:own.last_sent_at,pending:job?.status==='pending'});
  }
  if(route==='api/unsubscribe'){await sql(env,'DELETE FROM subscribers WHERE id=?',id).run();return json({ok:true});}
  if(route==='api/daily'){
+ const types=b.types===undefined?(own.notification_types??1):b.types;
+ if(!validTypes(types))return json({error:'알림 종류를 하나 이상 선택해 주세요.'},400);
  if(!validTime(b.time))return json({error:'알림 시간은 30분 단위로 선택해 주세요.'},400);
- await env.DB.batch([sql(env,'UPDATE subscribers SET daily=?,daily_time=? WHERE id=?',Number(b.enabled===true),b.time,id),sql(env,"UPDATE jobs SET status='cancelled' WHERE subscriber_id=? AND id LIKE 'daily:%' AND status='pending'",id)]);return json({daily:b.enabled===true,dailyTime:b.time});
+ await env.DB.batch([sql(env,'UPDATE subscribers SET daily=?,daily_time=?,notification_types=? WHERE id=?',Number(b.enabled===true),b.time,types,id),sql(env,"UPDATE jobs SET status='cancelled' WHERE subscriber_id=? AND id LIKE 'daily:%' AND status='pending'",id)]);return json({daily:b.enabled===true,dailyTime:b.time,types});
  }
  if(route==='api/test'){
  if(own.expired)return json({error:'만료된 구독입니다. 해제 후 다시 신청해 주세요.'},410);
  let payload;
- if(b.kind==='today'){const events=todayEvents(await calendar());payload=message(events,dateInKorea());if(!payload)return json({empty:true});}
+ if(b.kind==='today'){const events=todayEvents(await calendar(),new Date(),own.notification_types??1);payload=message(events,dateInKorea());if(!payload)return json({empty:true});}
  else if(b.kind==='preview')payload=await verifyTicket(env,b.ticket);
  if(!payload)return json({error:'미리보기가 만료됐어요. 연결 상태를 다시 확인한 뒤 눌러 주세요.'},400);
  const now=Date.now(),jobId='test:'+crypto.randomUUID();
