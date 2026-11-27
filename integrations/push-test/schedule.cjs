@@ -5,7 +5,7 @@ function todayEvents(data,now=new Date()){
  return (data.events||[]).filter(e=>['confirmed','changed'].includes(e.state)&&e.date<=date&&(e.endDate||e.date)>=date)
  .sort((a,b)=>(a.time||'99:99').localeCompare(b.time||'99:99')||a.id.localeCompare(b.id))
  .filter((e,i,a)=>a.findIndex(x=>x.id===e.id)===i)
- .map(e=>({id:e.id,title:e.title,time:e.time||'',timeLabel:e.timeLabel||'',date:e.date,members:e.members||[]}));
+ .map(e=>({id:e.id,title:e.title,time:e.time||'',endTime:e.endTime||'',timeLabel:e.timeLabel||'',venue:e.venue||'',date:e.date,members:e.members||[]}));
 }
 function artist(e){return e.members?.length===3?'씨야':e.members?.join('·')||'씨야';}
 function shortTitle(e){
@@ -20,8 +20,13 @@ function message(events,date){
  const query=new URLSearchParams({month:date.slice(0,7),day:date,view:'list',anniversaries:'0'});
  if(events.length===1)query.set('event',events[0].id);
  return {
- title:events.length===1?'오늘의 씨야 · '+artist(events[0]):'오늘의 씨야 · 일정 '+events.length+'개',
- body:events.slice(0,2).map(e=>`${e.time||'시간 미정'} ${events.length>1?artist(e)+' · ':''}${shortTitle(e)}`).join('\n')+(events.length>2?`\n외 ${events.length-2}개 일정`:''),
+ title:`씨야 일정 · ${Number(date.slice(5,7))}월 ${Number(date.slice(8,10))}일`,
+ body:events.slice(0,2).map(e=>{
+  const time=e.time?e.time+(e.endTime?'–'+e.endTime:''):'시간 미정';
+  const label=String(e.timeLabel||'').trim();
+  const place=(!['공연 시작','방송 시작','시작','방송','공연'].includes(label)&&label)||e.venue||'';
+  return [time+(place?' · '+place:''),artist(e),shortTitle(e)].join('\n');
+ }).join('\n\n')+(events.length>2?`\n\n외 ${events.length-2}개 일정`:''),
  url:'https://seeya-fanpage.com/calendar/?'+query,tag:'seeya-schedule-'+date};
 }
 const validTime=value=>typeof value==='string'&&/^([01]\d|2[0-3]):(00|30)$/.test(value);

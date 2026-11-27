@@ -53,9 +53,9 @@ test('message shape and calendar deep links preserve notification date even when
  const {selectionFromURL}=require('../../src/shared/calendar-state');
  const e={id:'event-1',title:'이보람 한밤의 꿈',date:'2026-11-25',time:'21:00',members:['이보람']};
  assert.equal(message([],'2026-11-25'),null);
- const one=message([e],'2026-11-25');assert.equal(one.title,'오늘의 씨야 · 이보람');assert.equal(one.body,'21:00 한밤의 꿈');
+ const one=message([e],'2026-11-25');assert.equal(one.title,'씨야 일정 · 11월 25일');assert.equal(one.body,'21:00\n이보람\n한밤의 꿈');
  const selected=selectionFromURL(new URL(one.url).search,[e],'2026-12-02');assert.equal(selected.day,'2026-11-25');assert.equal(selected.event,e.id);assert.equal(selected.view,'list');assert.equal(selected.anniversaries,false);
- const many=message([e,{...e,id:'2',time:''},{...e,id:'3'},{...e,id:'4'}],'2026-11-25');assert.match(many.title,/4개/);assert.equal(many.body.split('\n').length,3);assert.match(many.body,/시간 미정/);assert.match(many.body,/외 2개 일정/);
+ const many=message([e,{...e,id:'2',time:''},{...e,id:'3'},{...e,id:'4'}],'2026-11-25');assert.equal(many.title,'씨야 일정 · 11월 25일');assert.equal(many.body.split('\n\n').length,3);assert.match(many.body,/시간 미정/);assert.match(many.body,/외 2개 일정/);
  const multiple=selectionFromURL(new URL(many.url).search,[e],'2026-12-02');assert.equal(multiple.day,'2026-11-25');assert.equal(multiple.event,'');
  const sample=previews({events:[{...e,state:'confirmed'}]},new Date('2026-11-27T03:00:00Z')).find(p=>p.key==='example1');assert.match(sample.payload.title,/^\[예시\]/);assert.equal(sample.date,'2026-11-25');
 });
@@ -65,4 +65,16 @@ test('device times, 30-minute validation, short grace window, and per-day duplic
  assert.equal(due(s,new Date('2026-11-26T23:29:00Z')),false);assert.equal(due(s,new Date('2026-11-26T23:30:00Z')),true);assert.equal(due(s,new Date('2026-11-26T23:34:00Z')),true);assert.equal(due(s,new Date('2026-11-26T23:35:00Z')),false);
  assert.equal(due({...s,dailyDate:'2026-11-27'},new Date('2026-11-26T23:30:00Z')),false);
  assert.equal(due({...s,dailyTime:'09:00'},new Date('2026-11-26T23:30:00Z')),false);
+});
+
+test('notification details retain verified end time and channel without guessing missing data',()=>{
+ const date='2026-11-28',event={id:'awards',date,state:'confirmed',time:'15:10',endTime:'17:00',timeLabel:'KBS 1TV',members:['남규리','김연지'],title:'남규리·김연지 · 대한민국 나눔국민대상 방송 예정'};
+ const events=todayEvents({events:[event]},new Date(date+'T00:00:00Z'));
+ const result=message(events,date);
+ assert.equal(result.title,'씨야 일정 · 11월 28일');
+ assert.equal(result.body,'15:10–17:00 · KBS 1TV\n남규리·김연지\n대한민국 나눔국민대상 방송 예정');
+ const missing=message([{...event,time:'',endTime:'17:00',timeLabel:''}],date);
+ assert.equal(missing.body.split('\n')[0],'시간 미정');
+ const concert=message([{...event,endTime:'',timeLabel:'공연 시작',venue:'공연장'}],date);
+ assert.equal(concert.body.split('\n')[0],'15:10 · 공연장');
 });
