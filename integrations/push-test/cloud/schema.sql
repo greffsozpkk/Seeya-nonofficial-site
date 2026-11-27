@@ -1,0 +1,22 @@
+CREATE TABLE IF NOT EXISTS subscribers (
+ id TEXT PRIMARY KEY,
+ endpoint TEXT NOT NULL UNIQUE,
+ subscription TEXT NOT NULL,
+ created_at TEXT NOT NULL,
+ daily INTEGER NOT NULL DEFAULT 0,
+ daily_time TEXT NOT NULL DEFAULT '09:00',
+ expired INTEGER NOT NULL DEFAULT 0,
+ last_request INTEGER NOT NULL DEFAULT 0,
+ last_result TEXT NOT NULL DEFAULT '',
+ last_sent_at TEXT NOT NULL DEFAULT ''
+);
+CREATE TABLE IF NOT EXISTS jobs (
+ id TEXT PRIMARY KEY,
+ subscriber_id TEXT NOT NULL REFERENCES subscribers(id) ON DELETE CASCADE,
+ payload TEXT NOT NULL,
+ due_at INTEGER NOT NULL,
+ expires_at INTEGER NOT NULL,
+ status TEXT NOT NULL DEFAULT 'pending'
+);
+CREATE INDEX IF NOT EXISTS jobs_due ON jobs(status,due_at);
+CREATE TABLE IF NOT EXISTS metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL);

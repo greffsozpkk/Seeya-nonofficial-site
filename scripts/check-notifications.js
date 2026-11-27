@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('fs'),assert=require('node:assert/strict'),vm=require('node:vm');
+const read=p=>fs.readFileSync(p,'utf8');
+assert(read('about/index.html').includes('/about/notifications/'));
+const html=read('about/notifications/index.html');
+assert(html.includes('/manifest.webmanifest'));assert(html.includes('알림 허용하고 신청하기'));assert(!html.includes('preview/f32'));
+assert(read('src/client/notifications.js').includes("scope:'/about/notifications/'"));
+const listeners={},shown=[];const self={location:{origin:'https://seeya-fanpage.com'},addEventListener:(k,fn)=>listeners[k]=fn,registration:{showNotification:async(t,o)=>shown.push({t,o})}};
+vm.runInNewContext(read('src/notifications-worker.js'),{self,URL});
+(async()=>{for(const target of ['https://evil.example/','https://seeya-fanpage.com/calendar/?day=2026-11-27']){await new Promise(resolve=>listeners.push({data:{json:()=>({title:'미리보기',body:'알림 본문',url:target})},waitUntil:p=>p.then(resolve)}));}assert.equal(shown[0].o.data.url,'https://seeya-fanpage.com/calendar/');assert(shown[1].o.data.url.endsWith('?day=2026-11-27'));assert.equal(shown[0].o.badge,'/images/app/notification-badge.png');assert(fs.existsSync(shown[0].o.badge.slice(1)));console.log('PASS notifications: ABOUT entry, shared PWA identity, isolated SW, safe calendar destinations and logo.');})();

@@ -1,0 +1,23 @@
+{
+  "name": "seeya-push-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.cjs",
+    "test": "node --test test.cjs",
+    "cloud:prepare": "node cloud/prepare.cjs",
+    "cloud:check": "node cloud/prepare.cjs && wrangler deploy --dry-run --outdir .runtime/worker-build && node --test cloud/test.mjs",
+    "cloud:deploy": "node cloud/prepare.cjs && wrangler deploy",
+    "public:check": "wrangler deploy --dry-run --outdir .runtime/public-worker-build -c wrangler.public.jsonc && node --test cloud/public-test.mjs",
+    "public:deploy": "wrangler deploy -c wrangler.public.jsonc"
+  },
+  "dependencies": {
+    "@block65/webcrypto-web-push": "2.0.0",
+    "web-push": "3.6.7"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "wrangler": "^4.168.0",
+    "miniflare": "5.20261123.1-beta"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "seeya-notifications-test",
+  "main": "cloud/worker.mjs",
+  "compatibility_date": "2026-11-01",
+  "account_id": "0814cff0725142a14093e3299f4d9055",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {"directory": ".cloud-assets", "binding": "ASSETS", "run_worker_first": true},
+  "d1_databases": [{"binding": "DB", "database_name": "seeya-push-test", "database_id": "1524f682-0efc-476e-ad7d-097e3eb3875d"}],
+  "triggers": {"crons": ["* * * * *"]},
+  "observability": {"enabled": false}
+}

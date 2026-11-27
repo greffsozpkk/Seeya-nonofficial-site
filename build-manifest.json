@@ -51,6 +51,7 @@
     "letter/index.html",
     "about/index.html",
     "about/install/index.html",
+    "about/notifications/index.html",
     "radio/index.html",
     "music/stages/cotton-candy/index.html",
     "music/stages/fool/index.html",
@@ -67,6 +68,8 @@
   "assets": [
     "assets/apple-touch-icon.62889f813363.png",
     "assets/site.01fd0bbbc5bb.css",
+    "assets/notifications.65ecdf5169a1.css",
+    "assets/notifications.47c6e31aa3fa.js",
     "assets/pwa.4c8d4bbee1b1.js",
     "assets/offline.77447a17de0b.js",
     "assets/lyric-quiz.bbcb38b0018d.css",
@@ -113,6 +116,7 @@
     "assets/our-stage.86a07cd2ffd0.js"
   ],
   "auxiliary": [
+    "about/notifications/sw.js",
     "apple-touch-icon.png",
     "apple-touch-icon-precomposed.png",
     "game/our-stage/test/index.html",

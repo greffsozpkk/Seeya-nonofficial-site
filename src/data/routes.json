@@ -317,6 +317,12 @@
     "description": "SEEYA ARCHIVE를 홈 화면에 추가해 가까이 만나보세요. 아이폰·안드로이드·PC 설치 방법을 안내합니다."
   },
   {
+    "key": "notifications",
+    "path": "/about/notifications/",
+    "title": "일정 알림 | SEEYA ARCHIVE",
+    "description": "씨야와 멤버들의 일정이 있는 날, 원하는 시간에 웹 푸시 알림을 받아보세요."
+  },
+  {
     "key": "radio",
     "path": "/radio/",
     "title": "씨야 라디오 모아듣기 | SEEYA ARCHIVE",

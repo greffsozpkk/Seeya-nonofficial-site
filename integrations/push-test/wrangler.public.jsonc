@@ -1,0 +1,13 @@
+{
+ "name":"seeya-notifications",
+ "main":"cloud/public-worker.mjs",
+ "compatibility_date":"2026-11-01",
+ "account_id":"0814cff0725142a14093e3299f4d9055",
+ "workers_dev":true,
+ "preview_urls":false,
+ "vars":{"PUBLIC_APP_ORIGIN":"https://seeya-fanpage.com"},
+ "d1_databases":[{"binding":"DB","database_name":"seeya-notifications","database_id":"841e70ec-c99e-4781-a21d-1f3a6878037f"}],
+ "services":[{"binding":"DISPATCH","service":"seeya-notifications"}],
+ "triggers":{"crons":["* * * * *"]},
+ "observability":{"enabled":false}
+}

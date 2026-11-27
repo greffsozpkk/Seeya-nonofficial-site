@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#793952"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="씨야 알림"><title>오늘의 씨야 알림 · 테스트</title><link rel="manifest" href="./manifest.webmanifest"><link rel="apple-touch-icon" href="./apple-touch-icon.png"><link rel="stylesheet" href="./style.css"><script defer src="./client.js"></script></head>
+<body><header><a href="https://seeya-fanpage.com/">SEEYA <span>ARCHIVE</span></a><span class="badge">알림 테스트</span></header>
+<main><div class="intro"><span class="eyebrow">A LITTLE REMINDER</span><h1>오늘의 씨야를<br>놓치지 않도록.</h1><p>일정이 있는 날 아침, 씨야의 하루를 알려드려요.</p></div>
+<div class="grid"><section class="panel"><div class="section-head"><h2>이 기기로 알림 받기</h2><span id="connection" class="pill">확인 중</span></div>
+<p id="environment">알림을 지원하는 환경인지 확인하고 있어요.</p><div id="install" class="notice" hidden>아이폰에서는 Safari의 공유 → <b>홈 화면에 추가</b> 후, 설치된 ‘씨야 알림’ 앱을 열어 신청해 주세요.</div>
+<button id="subscribe" class="primary" disabled>알림 받기</button><button id="unsubscribe" class="text-button" hidden>이 기기 알림 해제</button>
+<p class="privacy">회원가입 없이 기기의 알림 수신 주소와 설정만 저장합니다. 다이어리·게임 기록은 전송하지 않습니다. 해제하면 서버의 구독 정보도 삭제합니다.</p>
+<hr><h2>직접 받아보기</h2><p>버튼을 누른 뒤 화면을 닫거나 잠가보세요.<br>선택한 미리보기 내용이 그대로 알림에 들어갑니다.</p>
+<div class="test-payload"><strong id="testTitle"></strong><p id="testBody"></p></div><div class="actions"><button id="test" disabled>테스트 알림 받기</button><button id="today" disabled>오늘 일정으로 받아보기</button></div>
+<label class="daily"><input id="daily" type="checkbox" disabled><span><b>일정 있는 날 하루 한 번 알림</b><small id="hostingNote">서버 연결을 확인하고 있어요.</small></span></label>
+<label class="time-setting" for="dailyTime">받을 시간 <select id="dailyTime" disabled></select><small>한국 시간 · 기기별로 저장됩니다.</small></label>
+<p id="status" class="status" role="status" aria-live="polite">서버 연결을 확인하고 있어요.</p><button id="refresh" class="text-button">연결 상태 다시 확인</button></section>
+<section class="panel"><div class="section-head"><h2>오늘의 일정</h2><span id="date" class="date"></span></div><div id="events"><p>일정을 불러오고 있어요.</p></div><a class="calendar" href="https://seeya-fanpage.com/calendar/" target="_blank" rel="noopener noreferrer">전체 캘린더 보기 ↗</a>
+<hr><h2>알림 내용 미리보기</h2><label class="preview-choice" for="previewKind">확인할 구성 <select id="previewKind"></select></label><p id="previewNote" class="privacy"></p>
+<div class="notification"><div><img src="./icon-192.png" width="32" height="32" alt=""><b>SEEYA ARCHIVE</b><span>미리보기</span></div><strong id="previewTitle">일정을 확인하고 있어요.</strong><p id="previewBody"></p><small>실제 알림 디자인과 표시 길이는 기기에 따라 달라요.</small></div>
+<a id="previewLink" class="calendar" target="_blank" rel="noopener noreferrer" hidden>알림을 누르면 열리는 화면 ↗</a><button id="sendPreview" disabled>이 구성으로 알림 받아보기</button>
+<details><summary>테스트할 때 알아두세요</summary><ul><li>‘테스트 알림 받기’는 선택한 미리보기 내용을 보냅니다. 과거 일정 예시는 [예시]로 표시합니다. 오늘 일정이 없으면 자동 알림은 보내지 않아요.</li><li id="sourceNote"></li><li>방해금지·절전·네트워크 상태에 따라 도착이 늦을 수 있어요.</li><li id="serverNote"></li><li>아카이브 로고와 작은 단색 로고를 함께 지정합니다. 인터넷·Chrome 표시와 배치는 휴대전화와 브라우저에 따라 달라요.</li><li>이 페이지의 연결은 공개 사이트 알림과 별개입니다.</li></ul></details></section></div>
+<footer>SEEYA ARCHIVE · 공개 전 알림 테스트<br>테스트 주소는 공유하지 마세요. 메인 페이지에는 연결되지 않습니다.</footer></main></body></html>

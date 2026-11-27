@@ -50,6 +50,9 @@ const appleIconBytes=fs.readFileSync(path.join(root,'images/app/apple-touch-icon
 const appleIcon=asset('apple-touch-icon','png',appleIconBytes);
 for(const name of ['apple-touch-icon.png','apple-touch-icon-precomposed.png'])write(name,appleIconBytes);
 const siteCss=asset('site','css',read('src/styles/site.css')+'\n'+read('src/styles/stages.css')+'\n'+read('src/styles/concerts.css')+'\n'+read('src/styles/letter.css')+'\n'+read('src/styles/pwa.css')+'\n'+read('src/styles/home-upcoming.css')+'\n'+read('src/styles/birthday-popup.css'));
+const notificationsCss=asset('notifications','css',read('src/styles/notifications.css'));
+const notificationsJs=asset('notifications','js',bundle('src/client/notifications.js'));
+write('about/notifications/sw.js',read('src/notifications-worker.js'));
 const pwaJs=asset('pwa','js',bundle('src/client/pwa.js'));
 const offlineJs=asset('offline','js',bundle('src/client/offline.js'));
 // Inline the original image so the single cached fallback works without any network request.
@@ -173,6 +176,7 @@ for(const route of [...routes,worldcupRoute,gamesTestRoute,clinicRoute,myConcert
  if((key==='map'||key==='map-preview')){vars.pageHead=`<link rel="stylesheet" href="${mapCss}">`;vars.scripts=`<script defer src="${mapJs}"></script>`;}
  if(key==='podcasts'){vars.pageHead+=`<link rel="stylesheet" href="${radioCss}"><link rel="stylesheet" href="${podcastCss}">`;vars.scripts=`<script defer src="${podcastJs}"></script>`;}
  if(key==='dictionary'){vars.pageHead+=`<link rel="stylesheet" href="${dictionaryCss}">`;vars.scripts+=`\n<script defer src="${dictionaryJs}"></script>`;}
+ if(key==='notifications'){vars.pageHead+=`<link rel="stylesheet" href="${notificationsCss}">`;vars.scripts+=`<script defer src="${notificationsJs}"></script>`;}
  if(key==='calendar'){vars.pageHead+=`<link rel="stylesheet" href="${calendarCss}">`;vars.scripts=`<script defer src="${calendarJs}"></script>`;}
  if(key==='fans'){vars.pageHead+=`<link rel="stylesheet" href="${fanCss}">`;vars.scripts+=`\n<script defer src="${fanJs}"></script>`;}
  if(key==='exam'||key==='exam-preview'){vars.pageHead=`<meta name="referrer" content="no-referrer"><link rel="stylesheet" href="${examCss}">`;vars.scripts=`<script defer src="${examJs}"></script>`;}
@@ -201,6 +205,6 @@ for(const route of retiredRoutes){const file=route.from.slice(1)+'index.html';wr
 write('passport/sw.js',read('src/retired-passport-worker.js'));
 // Keep previously published hashed assets: cached HTML may still reference them.
 write('manifest.webmanifest',JSON.stringify(pwa,null,2)+'\n');
-write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['apple-touch-icon.png','apple-touch-icon-precomposed.png',...liveRoutes.map(r=>r.path.slice(1)+'index.html'),ourStageRoute.path.slice(1)+'index.html',galaxyRoute.path.slice(1)+'index.html','game/my-concert/catalog.json',myConcertRoute.path.slice(1)+'index.html','game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html',clinicRoute.path.slice(1)+'index.html']},null,2)+'\n');
+write('build-manifest.json',JSON.stringify({version:site.version,baseline:site.baseline,files:[...files,'sitemap.xml','manifest.webmanifest','sw.js'],assets,auxiliary:['about/notifications/sw.js','apple-touch-icon.png','apple-touch-icon-precomposed.png',...liveRoutes.map(r=>r.path.slice(1)+'index.html'),ourStageRoute.path.slice(1)+'index.html',galaxyRoute.path.slice(1)+'index.html','game/my-concert/catalog.json',myConcertRoute.path.slice(1)+'index.html','game/worldcup/catalog.json','diary/sw.js','passport/index.html','passport/sw.js','map/coverage.json','offline.html','manage/index.html','calendar/events.json','calendar/activities.ics','calendar/anniversaries.ics',...retiredFiles,worldcupRoute.path.slice(1)+'index.html',gamesTestRoute.path.slice(1)+'index.html',clinicRoute.path.slice(1)+'index.html']},null,2)+'\n');
 console.log(`Built ${routes.length} public pages, ${6+liveRoutes.length} unlisted test pages and ${assets.length} versioned assets.`);
 if(outputRoot!==root)console.log('Local preview prepared. Repository HTML files were not changed.');

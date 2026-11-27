@@ -116,3 +116,5 @@ require('./check-our-stage-play-days');
 
 require('./check-our-stage-solo');
 require('./check-our-stage-connect');
+
+execFileSync(process.execPath,['scripts/check-notifications.js'],{cwd:root,stdio:'inherit'});
