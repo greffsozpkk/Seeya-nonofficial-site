@@ -1,6 +1,8 @@
 const policy=require('../data/news-filter.json');
 // Korean particles are valid suffixes; another word such as 씨야드 is not.
 function groupMention(text){
+  // Ignore the other group's name while retaining independent SeeYa mentions.
+  for(const pattern of policy.otherGroupPatterns)text=text.replace(new RegExp(pattern,'gi'),' ');
   const suffix=policy.groupSuffixes.join('|');
   return new RegExp('(?:^|[^가-힣A-Za-z0-9_])씨야(?:(?:'+suffix+'))?(?=$|[^가-힣A-Za-z0-9_])').test(text)||/\bseeya\b/i.test(text);
 }

@@ -6,6 +6,21 @@ from news_filter import relevant_news, POLICY
 
 ROOT = Path(__file__).resolve().parents[1]
 CASES = [
+    ('씨야', '더 씨야 송민경·한서인, 듀엣 블리스로 재결합…윈터스토리 발매', '', False),
+    ('씨야', "'더 씨야' 송민경·한서인, 듀엣 '블리스'로 새 출발", '가수 씨야를 검색한 결과', False),
+    ('씨야', '걸그룹‘더 씨야’출신 송민경·한서인, 신곡 발매', '', False),
+    ('씨야', '더씨야, 새 앨범 발매', '', False),
+    ('씨야', '더\u00a0씨야, 새 앨범 발매', '', False),
+    ('씨야', '더  씨야, 새 앨범 발매', '', False),
+    ('씨야', 'The SeeYa announces new album', '', False),
+    ('씨야', 'THE SEE YA comeback concert', '', False),
+    ('씨야', 'TheSeeYa new album', '', False),
+    ('씨야', 'The-SeeYa new album', '', False),
+    ('씨야', '씨야와 더 씨야, 함께한 콘서트', '', True),
+    ('씨야', 'SeeYa and The SeeYa concert', '', True),
+    ('김연지', '김연지, 더 씨야 언급', '', False),
+    ('김연지', '김연지, 새 앨범 발매', '더 씨야와 함께 거론됐다', True),
+    ('씨야', '다시 한 번 더, 씨야의 콘서트', '', True),
     ('남규리', '남규리, 오직 팬들만을 위해 만든 미발매 자작곡 깜짝 공개', '', True),
     ('김연지', '정치 현안 논란 - 김연지 기자', '', False),
     ('이보람', '이보람 귀묘한 하루 공개', '', True),
@@ -58,12 +73,14 @@ class FilterTests(unittest.TestCase):
 
     def test_prerender_filters_unreviewed_cache(self):
         data={'씨야':[
+            {'title':'더 씨야 송민경·한서인, 블리스로 재결합','link':'https://example.com/other-group'},
             {'title':"거제 대형카페 '씨야드', 블루리본서베이 2026 선정",'link':'https://example.com/cafe'},
             {'title':"메타 'VR 글래스'용 디스플레이는 씨야가 공급 - KIPOST",'link':'https://example.com/display'},
             {'title':'씨야의 20주년 전국투어','link':'https://example.com/concert'}]}
         script="const fs=require('fs');process.stdout.write(require('./src/pages/news')(JSON.parse(fs.readFileSync(0,'utf8'))));"
         html=subprocess.check_output(['node','-e',script],input=json.dumps(data).encode(),cwd=ROOT).decode()
         self.assertNotIn('씨야드',html)
+        self.assertNotIn('블리스',html)
         self.assertNotIn('디스플레이',html)
         self.assertIn('씨야의 20주년 전국투어',html)
 

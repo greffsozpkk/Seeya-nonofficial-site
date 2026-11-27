@@ -1,4 +1,8 @@
 {
+  "otherGroupPatterns": [
+    "더[\\s·ㆍ-]*씨야",
+    "(?:^|[^A-Za-z0-9_])the[\\s·ㆍ-]*see[\\s-]*ya(?=$|[^A-Za-z0-9_])"
+  ],
   "blockedArticleIds": [
     "CBMiWkFVX3lxTE1sbGRidEZrc0paazcyb3hlSEdpaGN0ZldudU9fcVhGZE5PeEJvbDVPTnFmMVpLcVVyUlFtOW1QQmVhaHgxbTR4SWd3ODJvemtCTThNSW0yTUJfQQ",
     "CBMiYkFVX3lxTE9wcVZyWlhxaHI1bksxSWllTW02RGViankxRk4yVmNaSm01UHJ3ek5PNU5OWm9iamJtVGxCckpta3RLcmtwdjk1MGZsSGdGZ3hMR25ndDUxZlFPWjY1TGtfR0Nn0gFmQVVfeXFMTnAwXzJ3SFFoWFdxd1FMZnJGWm9OU1B4VzVVVkk1eFNuSEs4dU1OV0FhUmVjNGlEbTBYNlJ3eUw3RnI3dXA4bllrOXN0V19zeVFsNk11MHV4a3NXcks4ME5rdXJvekFR"

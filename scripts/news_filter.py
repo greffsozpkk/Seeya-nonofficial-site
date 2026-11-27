@@ -6,6 +6,10 @@ from urllib.parse import urlparse
 POLICY = json.loads((Path(__file__).resolve().parents[1] / 'src/data/news-filter.json').read_text(encoding='utf-8'))
 
 def group_mention(text):
+    # The SeeYa is a different group. Remove its name before looking for
+    # a separate SeeYa mention, so genuine joint articles remain eligible.
+    for pattern in POLICY['otherGroupPatterns']:
+        text = re.sub(pattern, ' ', text, flags=re.I)
     suffix = '|'.join(re.escape(x) for x in POLICY['groupSuffixes'])
     return (re.search(r'(?:^|[^가-힣A-Za-z0-9_])씨야(?:(?:' + suffix + r'))?(?=$|[^가-힣A-Za-z0-9_])', text) is not None
             or re.search(r'(?<![A-Za-z0-9_])seeya(?![A-Za-z0-9_])', text, re.I) is not None)
