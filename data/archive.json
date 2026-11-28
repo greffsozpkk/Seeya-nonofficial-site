@@ -23519,6 +23519,12 @@
       {
         "label": "Whisky on the Rock · 현장 직캠 (James Lee TV)",
         "url": "https://www.youtube.com/watch?v=HobMjZbKrgM"
+      },
+      {
+        "label": "이카 IKA [Independence K-pop Archive]",
+        "url": "https://www.youtube.com/watch?v=mfldnWdRZhY",
+        "publishedDate": "2023-06-08",
+        "autoDiscovery": true
       }
     ],
     "status": "available",
@@ -23529,7 +23535,8 @@
     "note": "서원밸리 자선 그린콘서트 출연입니다. 곡 목록은 일부 무대이며 전체 세트리스트는 아닙니다.",
     "dateStatus": "confirmed",
     "dateBasis": "event",
-    "venue": "서원밸리CC"
+    "venue": "서원밸리CC",
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00"
   },
   {
     "id": "v4145-Qn69Fv_2z24",
@@ -33799,6 +33806,12 @@
         "label": "출구없는김연지 · 김연지(Kimyeonji) - 헤어지는 중입니다 (181229)",
         "url": "https://www.youtube.com/watch?v=NsoLVGimR1k",
         "publishedDate": "2022-11-18"
+      },
+      {
+        "label": "DW_TT",
+        "url": "https://www.youtube.com/watch?v=Lgh7yqSYtzw",
+        "publishedDate": "2022-04-24",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -33810,7 +33823,7 @@
     "dateStatus": "confirmed",
     "dateBasis": "event",
     "venue": "동덕여자대학교 백주년기념관",
-    "updatedAt": "2026-11-24"
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00"
   },
   {
     "id": "v490-album-20217347",
@@ -60017,7 +60030,7 @@
     "id": "20200223-yeonji-sinchon-busking",
     "date": "2020-02-23",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-26T08:44:33.976574+00:00",
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00",
     "title": "김연지 · 신촌 버스킹 · 야생화",
     "program": "신촌 버스킹",
     "type": "event",
@@ -60152,6 +60165,12 @@
         "url": "https://www.youtube.com/watch?v=I-etdBaRpaY",
         "publishedDate": "2020-07-27",
         "autoDiscovery": true
+      },
+      {
+        "label": "출구없는김연지",
+        "url": "https://www.youtube.com/watch?v=E_hPgLWVmTQ",
+        "publishedDate": "2022-11-18",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -60168,7 +60187,7 @@
     "id": "20221002-boram-bohyeonsan-festival",
     "date": "2022-10-02",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-27T08:55:22.196266+00:00",
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00",
     "title": "이보람 · 영천 보현산 별빛축제",
     "program": "영천 보현산 별빛축제",
     "type": "event",
@@ -60197,6 +60216,18 @@
         "url": "https://www.youtube.com/watch?v=San5UCFnA0Y",
         "publishedDate": "2022-10-03",
         "autoDiscovery": true
+      },
+      {
+        "label": "라밍보",
+        "url": "https://www.youtube.com/watch?v=mWbm4113ISI",
+        "publishedDate": "2022-10-03",
+        "autoDiscovery": true
+      },
+      {
+        "label": "라밍보",
+        "url": "https://www.youtube.com/watch?v=GnD3K7l1xZ0",
+        "publishedDate": "2022-10-03",
+        "autoDiscovery": true
       }
     ],
     "status": "documented",
@@ -60213,7 +60244,7 @@
     "id": "20221003-boram-youth-arena",
     "date": "2022-10-03",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-11-26T08:44:33.976574+00:00",
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00",
     "title": "이보람 · 청춘아레나 대구 · 박혜원·박진주와 합동 무대",
     "program": "청춘아레나 대구",
     "type": "event",
@@ -60265,6 +60296,54 @@
         "label": "오니짱테레비",
         "url": "https://www.youtube.com/watch?v=ruLmm-nYH9I",
         "publishedDate": "2022-10-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "수끄니",
+        "url": "https://www.youtube.com/watch?v=477JG_mHhus",
+        "publishedDate": "2022-10-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "탐정단_fancam",
+        "url": "https://www.youtube.com/watch?v=XnyjpFjFYYc",
+        "publishedDate": "2022-10-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "한우스팸",
+        "url": "https://www.youtube.com/watch?v=c27fV1SUPOo",
+        "publishedDate": "2022-10-04",
+        "autoDiscovery": true
+      },
+      {
+        "label": "오니짱테레비",
+        "url": "https://www.youtube.com/watch?v=UmzkoqFLM6k",
+        "publishedDate": "2022-10-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "오니짱테레비",
+        "url": "https://www.youtube.com/watch?v=IJpYxYLjraU",
+        "publishedDate": "2022-10-06",
+        "autoDiscovery": true
+      },
+      {
+        "label": "낭만음치",
+        "url": "https://www.youtube.com/watch?v=fv8-RslLkS4",
+        "publishedDate": "2022-10-11",
+        "autoDiscovery": true
+      },
+      {
+        "label": "김쎄",
+        "url": "https://www.youtube.com/watch?v=486-QSOipPY",
+        "publishedDate": "2022-10-13",
+        "autoDiscovery": true
+      },
+      {
+        "label": "김쎄",
+        "url": "https://www.youtube.com/watch?v=MxB0-TV1zmo",
+        "publishedDate": "2022-10-13",
         "autoDiscovery": true
       }
     ],
@@ -60347,7 +60426,7 @@
     "id": "20230617-yeonji-jeju-today",
     "date": "2023-06-17",
     "addedAt": "2026-10-31",
-    "updatedAt": "2026-10-31",
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00",
     "title": "김연지 · 제주 문화콘서트 오늘",
     "program": "제주 문화콘서트 오늘",
     "type": "event",
@@ -60364,7 +60443,14 @@
       "url": "https://www.youtube.com/watch?v=vUSOkLNmBhk",
       "publishedDate": "2023-06-20"
     },
-    "additionalSources": [],
+    "additionalSources": [
+      {
+        "label": "Orot Nuna",
+        "url": "https://www.youtube.com/watch?v=MeTAMxebFuw",
+        "publishedDate": "2023-06-20",
+        "autoDiscovery": true
+      }
+    ],
     "status": "documented",
     "dateStatus": "confirmed",
     "dateBasis": "event",
@@ -62954,9 +63040,15 @@
         "url": "https://www.youtube.com/watch?v=_Penv9dpGwE",
         "publishedDate": "2019-03-05",
         "autoDiscovery": true
+      },
+      {
+        "label": "DW_TT",
+        "url": "https://www.youtube.com/watch?v=zgiI3k8xWwA",
+        "publishedDate": "2022-04-17",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-25T08:58:41.695459+00:00",
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00",
     "source": {
       "label": "S.H Kim · [10년이나 버티니 showcase] 김연지님-어떤가요(19.03.03)",
       "url": "https://www.youtube.com/watch?v=otzdIkt9Odw",
@@ -63053,9 +63145,15 @@
         "label": "WanSooMee · [2022.06.28] 이보람 - 사랑의 인사 @ 제2연평해전 승전 20주년 기념 2022 대한민국해군 호국음악회",
         "url": "https://www.youtube.com/watch?v=Lwt8m_h0fxA",
         "publishedDate": "2022-06-28"
+      },
+      {
+        "label": "WanSooMee",
+        "url": "https://www.youtube.com/watch?v=0h_J_44WVO8",
+        "publishedDate": "2022-06-28",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-24",
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00",
     "source": {
       "label": "mena299 · [이보람] 220628 - LeeBoram - 인사 (1)",
       "url": "https://www.youtube.com/watch?v=EW490CyXK30",
@@ -63088,8 +63186,21 @@
     "calendar": {
       "enabled": false
     },
-    "additionalSources": [],
-    "updatedAt": "2026-11-24",
+    "additionalSources": [
+      {
+        "label": "Cam ECU",
+        "url": "https://www.youtube.com/watch?v=Dm2OnOs0aWc",
+        "publishedDate": "2022-08-26",
+        "autoDiscovery": true
+      },
+      {
+        "label": "Cam ECU",
+        "url": "https://www.youtube.com/watch?v=dsS96Gv7wMM",
+        "publishedDate": "2022-08-26",
+        "autoDiscovery": true
+      }
+    ],
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00",
     "source": {
       "label": "Cam ECU · 이보람 (Lee Boram) '처음 그자리' [4K60P] 220825 거제 시민음악회 직캠",
       "url": "https://www.youtube.com/watch?v=1Ze0tKVXzio",
@@ -63216,9 +63327,15 @@
         "label": "JSPRO LIVE · 20230825_(씨야) 김연지_  (SONGDO BEER FESTIVAL)",
         "url": "https://www.youtube.com/watch?v=ZwDqg1y_bx4",
         "publishedDate": "2023-08-28"
+      },
+      {
+        "label": "태민월드",
+        "url": "https://www.youtube.com/watch?v=N42pW5Retos",
+        "publishedDate": "2023-08-26",
+        "autoDiscovery": true
       }
     ],
-    "updatedAt": "2026-11-24",
+    "updatedAt": "2026-11-28T08:16:12.233080+00:00",
     "source": {
       "label": "idori73 · 230825 송도맥주축제 김연지 ( KIM YEON JI )",
       "url": "https://www.youtube.com/watch?v=VR1BzeqnoL0",
